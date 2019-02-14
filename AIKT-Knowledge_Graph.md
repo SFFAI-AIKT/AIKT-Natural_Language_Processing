@@ -1,0 +1,47 @@
+# AIKT-Knowledge_Graph
+
+- 表示学习方法
+  - 基于事实的表示学习方法
+    - 基于距离的评分函数：翻译模型
+      - TransE及其拓展方法
+        - TransE: Translating embeddings for modeling multi-relational data.
+        - TransH: Knowledge graph embedding by translating on hyperplanes.
+        - TransR: Learning entity and relation embeddings for knowledge graph completion.
+        - TransD, TransSparse, TransM, ManifoldE, TransF, TransA
+      - 高斯分布表示向量
+        - KG2E: Learning to represent knowledge graphs with gaussian embedding.
+    - 基于相似度的评分函数：语义匹配模型
+      - RESCAL及其拓展方法
+        - RESCAL: A three-way model for collective learning on multi-relational data.
+        - HolE: Holographic embeddings of knowledge graphs.
+        - DisMult: Embedding entities and relations for learning and inference in knowledge bases.
+        - ComplEx: Complex embeddings for simple link prediction.
+      - 基于神经网络的语义匹配模型
+        - SME: A semantic matching energy function for learning with multi-relational data.
+        - NAM: Probabilistic reasoning via deep learning: Neural association models.
+    - 模型训练方法
+      - 根据开放世界假设进行训练
+      - 根据封闭世界假设进行训练
+  - 融合多源信息的表示学习方法
+    - 实体类型
+      - SSE: Semantically smooth knowledge graph embedding.
+      - TKRL: Representation learning of knowledge graphs with entity descriptions.
+    - 关系路径
+      - Modeling relation paths for representation learning of knowledge bases.
+    - 逻辑规则
+      - Knowledge base completion using embeddings and rules.
+      - Jointly embedding knowledge graphs and logical rules.
+    - 其它多源信息：文本描述信息, 实体属性, 图结构等
+- 知识图谱应用
+  - 链路预测
+    - Modeling relation paths for representation learning of knowledge bases.
+  - 三元组分类
+    - Learning entity and relation embeddings for knowledge graph completion.
+  - 实体识别
+    - A semantic matching energy function for learning with multi-relational data.
+    - A three-way model for collective learning on multi-relational data.
+  - 关系抽取
+    - Relation extraction with matrix factorization and universal schemas.
+    - Connecting language and knowledge bases with embedding models for relation extraction.
+  - 自动问答
+  - 推荐系统
