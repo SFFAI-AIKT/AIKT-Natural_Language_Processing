@@ -1,0 +1,454 @@
+# AIKT-Machine_Translation
+
+- [机器翻译十篇必读](https://github.com/THUNLP-MT/MT-Reading-List)
+  - Peter E. Brown, Stephen A. Della Pietra, Vincent J. Della Pietra, and Robert L. Mercer. 1993. The Mathematics of Statistical Machine Translation: Parameter Estimation. Computational Linguistics. [<http://aclweb.org/anthology/J93-2003>]
+  - Kishore Papineni, Salim Roukos, Todd Ward, and Wei-Jing Zhu. 2002. BLEU: a Method for Automatic Evaluation of Machine Translation. In Proceedings of ACL 2002. [<http://aclweb.org/anthology/P02-1040>]
+  - Philipp Koehn, Franz J. Och, and Daniel Marcu. 2003. Statistical Phrase-Based Translation. In Proceedings of NAACL 2003. [<http://aclweb.org/anthology/N03-1017>]
+  - Franz Josef Och. 2003. Minimum Error Rate Training in Statistical Machine Translation. In Proceedings of ACL 2003. [<http://aclweb.org/anthology/P03-1021>]
+  - David Chiang. 2007. Hierarchical Phrase-Based Translation. Computational Linguistics. [<http://aclweb.org/anthology/J07-2003>]
+  - Ilya Sutskever, Oriol Vinyals, and Quoc V. Le. 2014. Sequence to Sequence Learning with Neural Networks. In Proceedings of NIPS 2014. [<https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf>]
+  - Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. 2015. Neural Machine Translation by Jointly Learning to Align and Translate. In Proceedings of ICLR 2015. [<https://arxiv.org/pdf/1409.0473.pdf>]
+  - Diederik P. Kingma, Jimmy Ba. 2015. Adam: A Method for Stochastic Optimization. In Proceedings of ICLR 2015. [<https://arxiv.org/pdf/1412.6980>]
+  - Rico Sennrich, Barry Haddow, and Alexandra Birch. 2016. Neural Machine Translation of Rare Words with Subword Units. In Proceedings of ACL 2016. [<https://arxiv.org/pdf/1508.07909.pdf>]
+  - Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin. 2017. Attention is All You Need. In Proceedings of NIPS 2017. [<https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf>]
+- 统计机器翻译（Statistical Machine Translation）
+  - Tutorial
+    - Philipp Koehn. 2006. Statistical Machine Translation: the Basic, the Novel, and the Speculative. EACL 2006 Tutorial.
+    - Adam Lopez. 2008. Statistical machine translation. ACM Computing Surveys.
+  - 基于词的模型、方法
+    - Peter E. Brown, Stephen A. Della Pietra, Vincent J. Della Pietra, and Robert L. Mercer. 1993. The Mathematics of Statistical Machine Translation: Parameter Estimation. Computational Linguistics.
+    - Stephan Vogel, Hermann Ney, and Christoph Tillmann. 1996. HMM-Based Word Alignment in Statistical Translation. In Proceedings of COLING 1996.
+    - Franz Josef Och and Hermann Ney. 2002. Discriminative Training and Maximum Entropy Models for Statistical Machine Translation. In Proceedings of ACL 2002.
+    - Franz Josef Och and Hermann Ney. 2003. A Systematic Comparison of Various Statistical Alignment Models. Computational Linguistics.
+    - Percy Liang, Ben Taskar, and Dan Klein. 2006. Alignment by Agreement. In Proceedings of NAACL 2006.
+    - Chris Dyer, Victor Chahuneau, and Noah A. Smith. 2013. A Simple, Fast, and Effective Reparameterization of IBM Model 2. In Proceedings of NAACL 2013.
+  - 基于短语的模型、方法
+    - Philipp Koehn, Franz J. Och, and Daniel Marcu. 2003. Statistical Phrase-Based Translation. In Proceedings of NAACL 2003.
+    - Michel Galley and Christopher D. Manning. 2008. A Simple and Effective Hierarchical Phrase Reordering Model. In Proceedings of EMNLP 2008.
+  - 基于句法的模型、方法
+    - Dekai Wu. 1997. Stochastic Inversion Transduction Grammars and Bilingual Parsing of Parallel Corpora. Computational Linguistics.
+    - Michel Galley, Jonathan Graehl, Kevin Knight, Daniel Marcu, Steve DeNeefe, Wei Wang, and Ignacio Thayer. 2006. Scalable Inference and Training of Context-Rich Syntactic Translation Models. In Proceedings of COLING/ACL 2006
+    - Yang Liu, Qun Liu, and Shouxun Lin. 2006. Tree-to-String Alignment Template for Statistical Machine Translation. In Proceedings of COLING/ACL 2006.
+    - Deyi Xiong, Qun Liu, and Shouxun Lin. 2006. Maximum Entropy Based Phrase Reordering Model for Statistical Machine Translation. In Proceedings of COLING/ACL 2006.
+    - David Chiang. 2007. Hierarchical Phrase-Based Translation. Computational Linguistics.
+    - Liang Huang and David Chiang. 2007. Forest Rescoring: Faster Decoding with Integrated Language Models. In Proceedings of ACL 2007.
+    - Haitao Mi, Liang Huang, and Qun Liu. 2008. Forest-based Translation. In Proceedings of ACL 2008.
+    - Min Zhang, Hongfei Jiang, Aiti Aw, Haizhou Li, Chew Lim Tan, and Sheng Li. 2008. A Tree Sequence Alignment-based Tree-to-Tree Translation Model. In Proceedings of ACL 2008.
+    - Libin Shen, Jinxi Xu, and Ralph Weischedel. 2008. A New String-to-Dependency Machine Translation Algorithm with a Target Dependency Language Model. In Proceedings of ACL 2008.
+    - Haitao Mi and Liang Huang. 2008. Forest-based Translation Rule Extraction. In Proceedings of EMNLP 2008.
+    - Yang Liu, Yajuan Lü, and Qun Liu. 2009. Improving Tree-to-Tree Translation with Packed Forests. In Proceedings of ACL/IJNLP 2009.
+  - 训练方法
+    - Franz Josef Och. 2003. Minimum Error Rate Training in Statistical Machine Translation. In Proceedings of ACL 2003.
+    - Taro Watanabe, Jun Suzuki, Hajime Tsukada, and Hideki Isozaki. 2007. Online Large-Margin Training for Statistical Machine Translation. In Proceedings of EMNLP-CoNLL 2007.
+    - David Chiang, Kevin Knight, and Wei Wang. 2009. 11,001 New Features for Statistical Machine Translation. In Proceedings of NAACL 2009.
+  - 系统融合
+    - Antti-Veikko Rosti, Spyros Matsoukas, and Richard Schwartz. 2007. Improved Word-Level System Combination for Machine Translation. In Proceedings of ACL 2007.
+    - Xiaodong He, Mei Yang, Jianfeng Gao, Patrick Nguyen, and Robert Moore. 2008. Indirect-HMM-based Hypothesis Alignment for Combining Outputs from Machine Translation Systems. In Proceedings of EMNLP 2008.
+    - Long Zhou, Wenpeng Hu, Jiajun Zhang and Chengqing Zong. Neural System Combination for Machine Translation. In Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (ACL2017),Vancouver, Canada, July 30-August 4, 2017, pp. 378-384.
+  - 测试方法
+    - Kishore Papineni, Salim Roukos, Todd Ward, and Wei-Jing Zhu. 2002. BLEU: a Method for Automatic Evaluation of Machine Translation. In Proceedings of ACL 2002.
+    - Philipp Koehn. 2004. Statistical Significance Tests for Machine Translation Evaluation. In Proceedings of EMNLP 2004.
+    - Satanjeev Banerjee and Alon Lavie. 2005. METEOR: An Automatic Metric for MT Evaluation with Improved Correlation with Human Judgments. In Proceedings of the ACL Workshop on Intrinsic and Extrinsic Evaluation Measures for Machine Translation and/or Summarization.
+    - Matthew Snover and Bonnie Dorr, Richard Schwartz, Linnea Micciulla, and John Makhoul. 2006. A Study of Translation Edit Rate with Targeted Human Annotation. In Proceedings of AMTA 2006.
+    - Xin Wang, Wenhu Chen, Yuan-Fang Wang, and William Yang Wang. 2018. No Metrics Are Perfect: Adversarial Reward Learning for Visual Storytelling. In Proceedings of ACL 2018.
+- 神经机器翻译（Neural Machine Translation）
+  - Tutorial
+    - Thang Luong, Kyunghyun Cho, and Christopher Manning. 2016. Neural Machine Translation. ACL 2016 Tutorial.
+    - Graham Neubig. 2017. Neural Machine Translation and Sequence-to-sequence Models: A Tutorial. arXiv:1703.01619.
+    - Oriol Vinyals and Navdeep Jaitly. 2017. Seq2Seq ICML Tutorial. ICML 2017 Tutorial.
+    - Philipp Koehn. 2017. Neural Machine Translation. arxiv:1709.07809.
+  - 模型框架
+    - Nal Kalchbrenner and Phil Blunsom. 2013. Recurrent Continuous Translation Models. In Proceedings of EMNLP 2013.
+    - Ilya Sutskever, Oriol Vinyals, and Quoc V. Le. 2014. Sequence to Sequence Learning with Neural Networks. In Proceedings of NIPS 2014.
+    - Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. 2015. Neural Machine Translation by Jointly Learning to Align and Translate. In Proceedings of ICLR 2015.
+    - Yonghui Wu, Mike Schuster, Zhifeng Chen, Quoc V. Le, Mohammad Norouzi, Wolfgang Macherey, Maxim Krikun, Yuan Cao, Qin Gao, Klaus Macherey, Jeff Klingner, Apurva Shah, Melvin Johnson, Xiaobing Liu, Łukasz Kaiser, Stephan Gouws, Yoshikiyo Kato, Taku Kudo, Hideto Kazawa, Keith Stevens, George Kurian, Nishant Patil, Wei Wang, Cliff Young, Jason Smith, Jason Riesa, Alex Rudnick, Oriol Vinyals, Greg Corrado, Macduff Hughes, and Jeffrey Dean. 2016. Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation. In Proceedings of NIPS 2016.
+    - Jie Zhou, Ying Cao, Xuguang Wang, Peng Li, and Wei Xu. 2016. Deep Recurrent Models with Fast-Forward Connections for Neural Machine Translation. Transactions of the Association for Computational Linguistics.
+    - Ekaterina Garmash, and Christof Monz. 2016. Ensemble Learning for Multi-Source Neural Machine Translation. In Proceedings of COLING 2016.
+    - Biao Zhang, Deyi Xiong, Jinsong Su, Hong Duan, and Min Zhang. 2016. Variational Neural Machine Translation. In Proceedings of EMNLP 2016.
+    - Jonas Gehring, Michael Auli, David Grangier, Denis Yarats, and Yann N. Dauphin. 2017. Convolutional Sequence to Sequence Learning. In Proceedings of ICML 2017.
+    - Jonas Gehring, Michael Auli, David Grangier, and Yann Dauphin. 2017. A Convolutional Encoder Model for Neural Machine Translation. In Proceedings of ACL 2017.
+    - Mingxuan Wang, Zhengdong Lu, Jie Zhou, and Qun Liu. 2017. Deep Neural Machine Translation with Linear Associative Unit. In Proceedings of ACL 2017.
+    - Long Zhou, Wenpeng Hu, Jiajun Zhang, and Chengqing Zong. 2017. Neural System Combination for Machine Translation. In Proceedings of ACL 2017.
+    - Matthias Sperber, Graham Neubig, Jan Niehues, and Alex Waibel. 2017. Neural Lattice-to-Sequence Models for Uncertain Inputs. In Proceedings of EMNLP 2017.
+    - Denny Britz, Anna Goldie, Minh-Thang Luong, and Quoc Le. 2017. Massive Exploration of Neural Machine Translation Architectures. In Proceedings of EMNLP 2017.
+    - Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin. 2017. Attention is All You Need. In Proceedings of NIPS 2017.
+    - Lukasz Kaiser, Aidan N. Gomez, and Francois Chollet. 2018. Depthwise Separable Convolutions for Neural Machine Translation. In Proceedings of ICLR 2018.
+    - Yanyao Shen, Xu Tan, Di He, Tao Qin, and Tie-Yan Liu. 2018. Dense Information Flow for Neural Machine Translation. In Proceedings of NAACL 2018.
+    - Mia Xu Chen, Orhan Firat, Ankur Bapna, Melvin Johnson, Wolfgang Macherey, George Foster, Llion Jones, Mike Schuster, Noam Shazeer, Niki Parmar, Ashish Vaswani, Jakob Uszkoreit, Lukasz Kaiser, Zhifeng Chen, Yonghui Wu, and Macduff Hughes. 2018. The Best of Both Worlds: Combining Recent Advances in Neural Machine Translation. In Proceedings of ACL 2018.
+    - Weiyue Wang, Derui Zhu, Tamer Alkhouli, Zixuan Gan, and Hermann Ney. 2018. Neural Hidden Markov Model for Machine Translation. In Proceedings of ACL 2018.
+    - Qiang Wang, Fuxue Li, Tong Xiao, Yanyang Li, Yinqiao Li, and Jingbo Zhu. 2018. Multi-layer Representation Fusion for Neural Machine Translation. In Proceedings of COLING 2018.
+    - Yachao Li, Junhui Li, and Min Zhang. 2018. Adaptive Weighting for Neural Machine Translation. In Proceedings of COLING 2018.
+    - Zi-Yi Dou, Zhaopeng Tu, Xing Wang, Shuming Shi, and Tong Zhang. 2018. Exploiting Deep Representations for Neural Machine Translation. In Proceedings of EMNLP 2018.
+    - Biao Zhang, Deyi Xiong, Jinsong Su, Qian Lin, and Huiji Zhang. 2018. Simplifying Neural Machine Translation with Addition-Subtraction Twin-Gated Recurrent Networks. In Proceedings of EMNLP 2018.
+    - Gongbo Tang, Mathias Müller, Annette Rios, and Rico Sennrich. 2018. Why Self-Attention? A Targeted Evaluation of Neural Machine Translation Architectures. In Proceedings of EMNLP 2018.
+    - Ke Tran, Arianna Bisazza, and Christof Monz. 2018. The Importance of Being Recurrent for Modeling Hierarchical Structure. In Proceedings of EMNLP 2018.
+    - Parnia Bahar, Christopher Brix, and Hermann Ney. 2018. Towards Two-Dimensional Sequence to Sequence Model in Neural Machine Translation. In Proceedings of EMNLP 2018.
+    - Tianyu He, Xu Tan, Yingce Xia, Di He, Tao Qin, Zhibo Chen, and Tie-Yan Liu. 2018. Layer-Wise Coordination between Encoder and Decoder for Neural Machine Translation. In Proceedings of NeurIPS 2018.
+    - Hany Hassan, Anthony Aue, Chang Chen, Vishal Chowdhary, Jonathan Clark, Christian Federmann, Xuedong Huang, Marcin Junczys-Dowmunt, William Lewis, Mu Li, Shujie Liu, Tie-Yan Liu, Renqian Luo, Arul Menezes, Tao Qin, Frank Seide, Xu Tan, Fei Tian, Lijun Wu, Shuangzhi Wu, Yingce Xia, Dongdong Zhang, Zhirui Zhang, and Ming Zhou. 2018. Achieving Human Parity on Automatic Chinese to English News Translation. Technical report. Microsoft AI & Research.
+    - Mostafa Dehghani, Stephan Gouws, Oriol Vinyals, Jakob Uszkoreit, Lukasz Kaiser. 2019. Universal Transformers. In Proceedings of ICLR 2019.
+  - 注意力机制
+    - Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. 2015. Neural Machine Translation by Jointly Learning to Align and Translate. In Proceedings of ICLR 2015.
+    - Minh-Thang Luong, Hieu Pham, and Christopher D. Manning. 2015. Effective Approaches to Attention-based Neural Machine Translation. In Proceedings of EMNLP 2015.
+    - Haitao Mi, Zhiguo Wang, and Abe Ittycheriah. 2016. Supervised Attentions for Neural Machine Translation. In Proceedings of EMNLP 2016.
+    - Zhouhan Lin, Minwei Feng, Cicero Nogueira dos Santos, Mo Yu, Bing Xiang, Bowen Zhou, and Yoshua Bengio. 2017. A structured self-attentive sentence embedding. In Proceedings of ICLR 2017.
+    - Tao Shen, Tianyi Zhou, Guodong Long, Jing Jiang, Shirui Pan, and Chengqi Zhang. 2018. DiSAN: Directional Self-Attention Network for RNN/CNN-Free Language Understanding. In Proceedings of AAAI 2018.
+    - Tao Shen, Tianyi Zhou, Guodong Long, Jing Jiang, and Chengqi Zhang. 2018. Bi-directional block self-attention for fast and memory-efficient sequence modeling. In Proceedings of ICLR 2018.
+    - Tao Shen, Tianyi Zhou, Guodong Long, Jing Jiang, Sen Wang, Chengqi Zhang. 2018. Reinforced Self-Attention Network: a Hybrid of Hard and Soft Attention for Sequence Modeling. In Proceedings of IJCAI 2018.
+    - Peter Shaw, Jakob Uszkorei, and Ashish Vaswani. 2018. Self-Attention with Relative Position Representations. In Proceedings of NAACL 2018.
+    - Lesly Miculicich Werlen, Nikolaos Pappas, Dhananjay Ram, and Andrei Popescu-Belis. 2018. Self-Attentive Residual Decoder for Neural Machine Translation. In Proceedings of NAACL 2018.
+    - Xintong Li, Lemao Liu, Zhaopeng Tu, Shuming Shi, and Max Meng. 2018. Target Foresight Based Attention for Neural Machine Translation. In Proceedings of NAACL 2018.
+    - Biao Zhang, Deyi Xiong, and Jinsong Su. 2018. Accelerating Neural Transformer via an Average Attention Network. In Proceedings of ACL 2018.
+    - Tobias Domhan. 2018. How Much Attention Do You Need? A Granular Analysis of Neural Machine Translation Architectures. In Proceedings of ACL 2018.
+    - Shaohui Kuang, Junhui Li, António Branco, Weihua Luo, and Deyi Xiong. 2018. Attention Focusing for Neural Machine Translation by Bridging Source and Target Embeddings. In Proceedings of ACL 2018.
+    - Chaitanya Malaviya, Pedro Ferreira, and André F. T. Martins. 2018. Sparse and Constrained Attention for Neural Machine Translation. In Proceedings of ACL 2018.
+    - Jian Li, Zhaopeng Tu, Baosong Yang, Michael R. Lyu, and Tong Zhang. 2018. Multi-Head Attention with Disagreement Regularization. In Proceedings of EMNLP 2018.
+    - Wei Wu, Houfeng Wang, Tianyu Liu and Shuming Ma. 2018. Phrase-level Self-Attention Networks for Universal Sentence Encoding. In Proceedings of EMNLP 2018.
+    - Baosong Yang, Zhaopeng Tu, Derek F. Wong, Fandong Meng, Lidia S. Chao, and Tong Zhang. 2018. Modeling Localness for Self-Attention Networks. In Proceedings of EMNLP 2018.
+    - Junyang Lin, Xu Sun, Xuancheng Ren, Muyu Li, and Qi Su. 2018. Learning When to Concentrate or Divert Attention: Self-Adaptive Attention Temperature for Neural Machine Translation. In Proceedings of EMNLP 2018.
+    - Ankur Bapna, Mia Chen, Orhan Firat, Yuan Cao, and Yonghui Wu. 2018. Training Deeper Neural Machine Translation Models with Transparent Attention. In Proceedings of EMNLP 2018.
+    - Maha Elbayad, Laurent Besacier, and Jakob Verbeek. 2018. Pervasive Attention: {2D} Convolutional Neural Networks for Sequence-to-Sequence Prediction. In Proceedings of CoNLL 2018.
+  - 开放词典及字符级神经机器翻译
+    - Felix Hill, Kyunghyun Cho, Sebastien Jean, Coline Devin, and Yoshua Bengio. 2015. Embedding Word Similarity with Neural Machine Translation. In Proceedings of ICLR 2015.
+    - Thang Luong, Ilya Sutskever, Quoc Le, Oriol Vinyals, and Wojciech Zaremba. 2015. Addressing the Rare Word Problem in Neural Machine Translation. In Proceedings of ACL 2015.
+    - Sébastien Jean, Kyunghyun Cho, Roland Memisevic, and Yoshua Bengio. 2015. On Using Very Large Target Vocabulary for Neural Machine Translation. In Proceedings of ACL 2015.
+    - Rico Sennrich, Barry Haddow, and Alexandra Birch. 2016. Neural Machine Translation of Rare Words with Subword Units. In Proceedings of ACL 2016.
+    - Minh-Thang Luong and Christopher D. Manning. 2016. Achieving Open Vocabulary Neural Machine Translation with Hybrid Word-Character Models. In Proceedings of ACL 2016.
+    - Junyoung Chung, Kyunghyun Cho, and Yoshua Bengio. 2016. A Character-level Decoder without Explicit Segmentation for Neural Machine Translation. In Proceedings of ACL 2016.
+    - Jason Lee, Kyunghyun Cho, and Thomas Hofmann. 2017. Fully Character-Level Neural Machine Translation without Explicit Segmentation. Transactions of the Association for Computational Linguistics.
+    - Yang Feng, Shiyue Zhang, Andi Zhang, Dong Wang, and Andrew Abel. 2017. Memory-augmented Neural Machine Translation. In Proceedings of EMNLP 2017.
+    - Baosong Yang, Derek F. Wong, Tong Xiao, Lidia S. Chao, and Jingbo Zhu. 2017. Towards Bidirectional Hierarchical Representations for Attention-based Neural Machine Translation. In Proceedings of EMNLP 2017.
+    - Peyman Passban, Qun Liu, and Andy Way. 2018. Improving Character-Based Decoding Using Target-Side Morphological Information for Neural Machine Translation. In Proceedings of NAACL 2018.
+    - Huadong Chen, Shujian Huang, David Chiang, Xinyu Dai, and Jiajun Chen. 2018. Combining Character and Word Information in Neural Machine Translation Using a Multi-Level Attention. In Proceedings of NAACL 2018.
+    - Frederick Liu, Han Lu, and Graham Neubig. 2018. Handling Homographs in Neural Machine Translation. In Proceedings of NAACL 2018.
+    - Taku Kudo. 2018. Subword Regularization: Improving Neural Network Translation Models with Multiple Subword Candidates. In Proceedings of ACL 2018.
+    - Makoto Morishita, Jun Suzuki, and Masaaki Nagata. 2018. Improving Neural Machine Translation by Incorporating Hierarchical Subword Features. In Proceedings of COLING 2018.
+    - Yang Zhao, Jiajun Zhang, Zhongjun He, Chengqing Zong, and Hua Wu. 2018. Addressing Troublesome Words in Neural Machine Translation. In Proceedings of EMNLP 2018.
+    - Colin Cherry, George Foster, Ankur Bapna, Orhan Firat, and Wolfgang Macherey. 2018. Revisiting Character-Based Neural Machine Translation with Capacity and Compression. In Proceedings of EMNLP 2018.
+    - Rebecca Knowles and Philipp Koehn. 2018. Context and Copying in Neural Machine Translation. In Proceedings of EMNLP 2018.
+  - 训练目标及框架
+    - Marc'Aurelio Ranzato, Sumit Chopra, Michael Auli, and Wojciech Zaremba. 2016. Sequence Level Training with Recurrent Neural Networks. In Proceedings of ICLR 2016.
+    - Minh-Thang Luong, Quoc V. Le, Ilya Sutskever, Oriol Vinyals, and Lukasz Kaiser. 2016. Multi-task Sequence to Sequence Learning. In Proceedings of ICLR 2016.
+    - Shiqi Shen, Yong Cheng, Zhongjun He, Wei He, Hua Wu, Maosong Sun, and Yang Liu. 2016. Minimum Risk Training for Neural Machine Translation. In Proceedings of ACL 2016.
+    - Sam Wiseman and Alexander M. Rush. 2016. Sequence-to-Sequence Learning as Beam-Search Optimization. In Proceedings of EMNLP 2016.
+    - Di He, Yingce Xia, Tao Qin, Liwei Wang, Nenghai Yu, Tie-Yan Liu, Wei-Ying Ma. 2016. Dual Learning for Machine Translation. In Proceedings of NIPS 2016.
+    - Dzmitry Bahdanau, Philemon Brakel, Kelvin Xu, Anirudh Goyal, Ryan Lowe, Joelle Pineau, Aaron Courville, and Yoshua Bengio. 2017. An Actor-Critic Algorithm for Sequence Prediction. In Proceedings of ICLR 2017.
+    - Khanh Nguyen, Hal Daumé III, and Jordan Boyd-Graber. 2017. Reinforcement Learning for Bandit Neural Machine Translation with Simulated Human Feedback. In Proceedings of EMNLP 2017.
+    - Nima Pourdamghani and Kevin Knight. 2017. Deciphering Related Languages. In Proceedings of EMNLP 2017.
+    - Di He, Hanqing Lu, Yingce Xia, Tao Qin, Liwei Wang, and Tieyan Liu. 2017. Decoding with Value Networks for Neural Machine Translation. In Proceedings of NIPS 2017.
+    - Sergey Edunov, Myle Ott, Michael Auli, David Grangier, and Marc’Aurelio Ranzato. 2018. Classical Structured Prediction Losses for Sequence to Sequence Learning. In Proceedings of NAACL 2018.
+    - Zhen Yang, Wei Chen, Feng Wang, and Bo Xu. 2018. Improving Neural Machine Translation with Conditional Sequence Generative Adversarial Nets. In Proceedings of NAACL 2018.
+    - Pavel Petrushkov, Shahram Khadivi and Evgeny Matusov. 2018. Learning from Chunk-based Feedback in Neural Machine Translation. In Proceedings of ACL 2018.
+    - Lijun Wu, Fei Tian, Tao Qin, Jianhuang Lai, and Tie-Yan Liu. 2018. A Study of Reinforcement Learning for Neural Machine Translation. In Proceedings of EMNLP 2018.
+    - Jiatao Gu, Yong Wang, Yun Chen, Kyunghyun Cho, and Victor O.K. Li. 2018. Meta-Learning for Low-Resource Neural Machine Translation. In Proceedings of EMNLP 2018.
+    - Harshil Shah and David Barber. 2018. Generative Neural Machine Translation. In Proceedings of NeurIPS 2018.
+    - Lijun Wu, Fei Tian, Yingce Xia, Yang Fan, Tao Qin, Jianhuang Lai, and Tie-Yan Liu. 2018. Learning to Teach with Dynamic Loss Functions. In Proceedings of NeurIPS 2018.
+    - Yiren Wang, Yingce Xia, Tianyu He, Fei Tian, Tao Qin, ChengXiang Zhai, and Tie-Yan Liu. 2019. Multi-Agent Dual Learning. In Proceedings of ICLR 2019.
+  - 解码方法
+    - Mingxuan Wang, Zhengdong Lu, Hang Li, and Qun Liu. 2016. Memory-enhanced Decoder for Neural Machine Translation. In Proceedings of EMNLP 2016.
+    - Shonosuke Ishiwatari, Jingtao Yao, Shujie Liu, Mu Li, Ming Zhou, Naoki Yoshinaga, Masaru Kitsuregawa, and Weijia Jia. 2017. Chunk-based Decoder for Neural Machine Translation. In Proceedings of ACL 2017.
+    - Hao Zhou, Zhaopeng Tu, Shujian Huang, Xiaohua Liu, Hang Li, and Jiajun Chen. 2017. Chunk-Based Bi-Scale Decoder for Neural Machine Translation. In Proceedings of ACL 2017.
+    - Zichao Yang, Zhiting Hu, Yuntian Deng, Chris Dyer, and Alex Smola. 2017. Neural Machine Translation with Recurrent Attention Modeling. In Proceedings of EACL 2017.
+    - Cong Duy Vu Hoang, Gholamreza Haffari, and Trevor Cohn. 2017. Towards Decoding as Continuous Optimisation in Neural Machine Translation. In Proceedings of EMNLP 2017.
+    - Yin-Wen Chang and Michael Collins. 2017. Source-Side Left-to-Right or Target-Side Left-to-Right? An Empirical Comparison of Two Phrase-Based Decoding Algorithms. In Proceedings of EMNLP 2017.
+    - Jiatao Gu, Kyunghyun Cho, and Victor O.K. Li. 2017. Trainable Greedy Decoding for Neural Machine Translation. In Proceedings of EMNLP 2017.
+    - Jiatao Gu, James Bradbury, Caiming Xiong, Victor O.K. Li, and Richard Socher. 2018. Non-Autoregressive Neural Machine Translation. In Proceedings of ICLR 2018.
+    - Xiangwen Zhang, Jinsong Su, Yue Qin, Yang Liu, Rongrong Ji, and Hongji Wang. 2018. Asynchronous Bidirectional Decoding for Neural Machine Translation. In Proceedings of AAAI 2018.
+    - Philip Schulz, Wilker Aziz, and Trevor Cohn. 2018. A Stochastic Decoder for Neural Machine Translation. In Proceedings of ACL 2018.
+    - Raphael Shu and Hideki Nakayama. 2018. Improving Beam Search by Removing Monotonic Constraint for Neural Machine Translation. In Proceedings of ACL 2018.
+    - Junyang Lin, Xu Sun, Xuancheng Ren, Shuming Ma, Jinsong Su, and Qi Su. 2018. Deconvolution-Based Global Decoding for Neural Machine Translation. In Proceedings of COLING 2018.
+    - Chunqi Wang, Ji Zhang, and Haiqing Chen. 2018. Semi-Autoregressive Neural Machine Translation. In Proceedings of EMNLP 2018.
+    - Xinwei Geng, Xiaocheng Feng, Bing Qin, and Ting Liu. 2018. Adaptive Multi-pass Decoder for Neural Machine Translation. In Proceedings of EMNLP 2018.
+    - Wen Zhang, Liang Huang, Yang Feng, Lei Shen, and Qun Liu. 2018. Speeding Up Neural Machine Translation Decoding by Cube Pruning. In Proceedings of EMNLP 2018.
+    - Xinyi Wang, Hieu Pham, Pengcheng Yin, and Graham Neubig. 2018. A Tree-based Decoder for Neural Machine Translation. In Proceedings of EMNLP 2018.
+    - Chenze Shao, Xilin Chen, and Yang Feng. 2018. Greedy Search with Probabilistic N-gram Matching for Neural Machine Translation. In Proceedings of EMNLP 2018.
+    - Zhisong Zhang, Rui Wang, Masao Utiyama, Eiichiro Sumita, and Hai Zhao. 2018. Exploring Recombination for Efficient Decoding of Neural Machine Translation. In Proceedings of EMNLP 2018.
+    - Jetic Gū, Hassan S. Shavarani, and Anoop Sarkar. 2018. Top-down Tree Structured Decoding with Syntactic Connections for Neural Machine Translation and Parsing. In Proceedings of EMNLP 2018.
+    - Yilin Yang, Liang Huang, and Mingbo Ma. 2018. Breaking the Beam Search Curse: A Study of (Re-)Scoring Methods and Stopping Criteria for Neural Machine Translation. In Proceedings of EMNLP 2018.
+    - Yun Chen, Victor O.K. Li, Kyunghyun Cho, and Samuel R. Bowman. 2018. A Stable and Effective Learning Strategy for Trainable Greedy Decoding. In Proceedings of EMNLP 2018.
+  - 端对端学习（Sequence to Sequence）
+    - Sequence to Sequence Learning with Neural Networks
+  - 监督机器翻译
+    - 常规机器翻译
+      - 循环神经网络机器翻译
+        - GoogleNMT-Google’s neural machine translation system- Bridging the gap between human and machine translation
+      - 卷积神经网络机器翻译
+        - Convolutional Sequence to Sequence Learning
+      - 自注意力机器翻译
+        - Attention is all you need
+    - 篇章机器翻译
+      - 篇章翻译评测指标工作
+        - Evaluating Discourse Phenomena in Neural Machine Translation
+      - 编码器重构
+        - Context-Aware Neural Machine Translation Learns Anaphora Resolution
+        - Document-Level Neural Machine Translation with Hierarchical Attention Networks
+      - 解码器重构
+        - Learning to Remember Translation History with a Continuous Cache
+  - 半监督机器翻译
+    - Rico Sennrich, Barry Haddow, and Alexandra Birch. 2016. Improving Neural Machine Translation Models with Monolingual Data. In Proceedings of ACL 2016.
+    - Yong Cheng, Wei Xu, Zhongjun He, Wei He, Hua Wu, Maosong Sun, and Yang Liu. 2016. Semi-Supervised Learning for Neural Machine Translation. In Proceedings of ACL 2016.
+    - Tobias Domhan and Felix Hieber. 2017. Using Target-side Monolingual Data for Neural Machine Translation through Multi-task Learning. In Proceedings of EMNLP 2017.
+    - Anna Currey, Antonio Valerio Miceli Barone, and Kenneth Heafield. 2017. Copied Monolingual Data Improves Low-Resource Neural Machine Translation. In Proceedings of the Second Conference on Machine Translation.
+  - 无监督机器翻译
+    - Nima Pourdamghani and Kevin Knight. 2017. Deciphering Related Languages. In Proceedings of EMNLP 2017.
+    - Mikel Artetxe, Gorka Labaka, Eneko Agirre, and Kyunghyun Cho. 2018. Unsupervised Neural Machine Translation. In Proceedings of ICLR 2018.
+    - Guillaume Lample, Alexis Conneau, Ludovic Denoyer, and Marc'Aurelio Ranzato. 2018. Unsupervised Machine Translation Using Monolingual Corpora Only. In Proceedings of ICLR 2018.
+    - Zhen Yang, Wei Chen, Feng Wang, and Bo Xu. 2018. Unsupervised Neural Machine Translation with Weight Sharing. In Proceedings of ACL 2018.
+    - Guillaume Lample, Myle Ott, Alexis Conneau, Ludovic Denoyer, and Marc'Aurelio Ranzato. 2018. Phrase-Based & Neural Unsupervised Machine Translation. In Proceedings of EMNLP 2018.
+    - Iftekhar Naim, Parker Riley, and Daniel Gildea. 2018. Feature-Based Decipherment for Machine Translation. Computational Linguistics.
+    - 模型参数共享
+      - Unsupervised Neural Machine Translation
+      - Google's Multilingual Neural Machine Translation System- Enabling Zero-Shot Translation
+      - Unsupervised Neural Machine Translation with Weight Sharing
+    - 特征空间共享
+      - Unsupervised Machine Translation Using Monolingual Corpora Only
+      - Phrase-Based & Neural Unsupervised Machine Translation
+    - 基于交互的模式无监督翻译
+      - Emergent Translation in Multi-Agent Communication
+      - Zero-Resource Neural Machine Translation with Multi-Agent Communication Game
+  - Pivot-based Methods
+    - Orhan Firat, Baskaran Sankaran, Yaser Al-Onaizan, Fatos T. Yarman Vural, and Kyunghyun Cho. 2016. Zero-Resource Translation with Multi-Lingual Neural Machine Translation. In Proceedings of EMNLP 2016.
+    - Hao Zheng, Yong Cheng, and Yang Liu. 2017. Maximum Expected Likelihood Estimation for Zero-resource Neural Machine Translation. In Proceedings of IJCAI 2017.
+    - Yun Chen, Yang Liu, Yong Cheng and Victor O.K. Li. 2017. A Teacher-Student Framework for Zero-resource Neural Machine Translation. In Proceedings of ACL 2017.
+    - Yong Cheng, Qian Yang, Yang Liu, Maosong Sun, and Wei Xu. 2017. Joint Training for Pivot-based Neural Machine Translation. In Proceedings of IJCAI 2017.
+    - Yun Chen, Yang Liu, and Victor O. K. Li. 2018. Zero-Resource Neural Machine Translation with Multi-Agent Communication Game. In Proceedings of AAAI 2018.
+    - Shuo Ren, Wenhu Chen, Shujie Liu, Mu Li, Ming Zhou, and Shuai Ma. 2018. Triangular Architecture for Rare Language Translation. In Proceedings of ACL 2018.
+  - 数据扩充方法
+    - Marzieh Fadaee, Arianna Bisazza, and Christof Monz. 2017. Data Augmentation for Low-Resource Neural Machine Translation. In Proceedings of ACL 2017.
+    - Marzieh Fadaee and Christof Monz. 2018. Back-Translation Sampling by Targeting Difficult Words in Neural Machine Translation. In Proceedings of EMNLP 2018.
+    - Sergey Edunov, Myle Ott, Michael Auli, and David Grangier. 2018. Understanding Back-Translation at Scale. In Proceedings of EMNLP 2018.
+    - Xinyi Wang, Hieu Pham, Zihang Dai, and Graham Neubig. 2018. SwitchOut: an Efficient Data Augmentation Algorithm for Neural Machine Translation. In Proceedings of EMNLP 2018.
+  - 数据选择方法
+    - Marlies van der Wees, Arianna Bisazza and Christof Monz. 2017. Dynamic Data Selection for Neural Machine Translation. In Proceedings of EMNLP 2017.
+  - 迁移学习及多任务学习方法
+    - Barret Zoph, Deniz Yuret, Jonathan May, and Kevin Knight. 2016. Transfer Learning for Low-Resource Neural Machine Translation. In Proceedings of EMNLP 2016.
+    - Jiatao Gu, Hany Hassan, Jacob Devlin, and Victor O.K. Li. 2018. Universal Neural Machine Translation for Extremely Low Resource Languages. In Proceedings of NAACL 2018.
+    - Poorya Zaremoodi and Gholamreza Haffari. 2018. Neural Machine Translation for Bilingually Scarce Scenarios: a Deep Multi-Task Learning Approach. In Proceedings of NAACL 2018.
+    - Poorya Zaremoodi, Wray Buntine, and Gholamreza Haffari. 2018. Adaptive Knowledge Sharing in Multi-Task Learning: Improving Low-Resource Neural Machine Translation. In Proceedings of ACL 2018.
+    - Tom Kocmi and Ondřej Bojar. 2018. Trivial Transfer Learning for Low-Resource Neural Machine Translation. In Proceedings of the Third Conference on Machine Translation: Research Papers.
+  - 元学习方法
+    - Jiatao Gu, Yong Wang, Yun Chen, Kyunghyun Cho, and Victor O.K. Li. 2018. Meta-Learning for Low-Resource Neural Machine Translation. In Proceedings of EMNLP 2018.
+  - 多语言翻译
+    - Daxiang Dong, Hua Wu, Wei He, Dianhai Yu, and Haifeng Wang. 2015. Multi-Task Learning for Multiple Language Translation. In Proceedings of ACL 2015.
+    - Orhan Firat, Kyunghyun Cho and Yoshua Bengio. 2016. Multi-way, multilingual neural machine translation with a Shared Attention Mechanism. In Proceedings of NAACL 2016.
+    - Barret Zoph and Kevin Knight. 2016. Multi-Source Neural Translation. In Proceedings of NAACL 2016.
+    - Orhan Firat, Baskaran SanKaran, Yaser Al-Onaizan, Fatos T.Yarman Vural, Kyunghyun Cho. 2016. Zero-Resource Translation with Multi-Lingual Neural Machine Translation. In Proceedings of EMNLP 2016.
+    - Melvin Johnson, Mike Schuster, Quoc V. Le, Maxim Krikun, Yonghui Wu, Zhifeng Chen, Nikhil Thorat, Fernanda Viégas, Martin Wattenberg, Greg Corrado, Macduff Hughes, and Jeffrey Dean. 2017. Google's Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation. Transactions of the Association for Computational Linguistics.
+    - Surafel Melaku Lakew, Mauro Cettolo, and Marcello Federico. 2018. A Comparison of Transformer and Recurrent Neural Networks on Multilingual Neural Machine Translation. In Proceedings of COLING 2018.
+    - Graeme Blackwood, Miguel Ballesteros, and Todd Ward. 2018. Multilingual Neural Machine Translation with Task-Specific Attention. In Proceedings of COLING 2018.
+    - Devendra Singh Sachan and Graham Neubig. 2018. Parameter Sharing Methods for Multilingual Self-Attentional Translation Models. In Proceedings of the Third Conference on Machine Translation: Research Papers.
+    - Emmanouil Antonios Platanios, Mrinmaya Sachan, Graham Neubig, and Tom Mitchell. 2018. Contextual Parameter Generation for Universal Neural Machine Translation. In Proceedings of EMNLP 2018.
+    - Yining Wang, Jiajun Zhang, Feifei Zhai, Jingfang Xu, and Chengqing Zong. 2018. Three Strategies to Improve One-to-Many Multilingual Translation. In Proceedings of EMNLP 2018.
+    - Xu Tan, Yi Ren, Di He, Tao Qin, Zhou Zhao, and Tie-Yan Liu. 2019. Multilingual Neural Machine Translation with Knowledge Distillation. In Proceedings of ICLR 2019.
+    - Xinyi Wang, Hieu Pham, Philip Arthur, and Graham Neubig. 2019. Multilingual Neural Machine Translation With Soft Decoupled Encoding. In Proceedings of ICLR 2019.
+  - 融合先验知识的神经机器翻译
+    - 词、短语级别的约束
+      - Wei He, Zhongjun He, Hua Wu, and Haifeng Wang. 2016. Improved nerual machine translation with SMT features. In Proceedings of AAAI 2016.
+      - Haitao Mi, Zhiguo Wang, and Abe Ittycheriah. 2016. Vocabulary Manipulation for Neural Machine Translation. In Proceedings of ACL 2016.
+      - Philip Arthur, Graham Neubig, and Satoshi Nakamura. 2016. Incorporating Discrete Translation Lexicons into Neural Machine Translation. In Proceedings of EMNLP 2016.
+      - Jiacheng Zhang, Yang Liu, Huanbo Luan, Jingfang Xu and Maosong Sun. 2017. Prior Knowledge Integration for Neural Machine Translation using Posterior Regularization. In Proceedings of ACL 2017.
+      - Chris Hokamp and Qun Liu. 2017. Lexically Constrained Decoding for Sequence Generation Using Grid Beam Search. In Proceedings of ACL 2017.
+      - Zichao Yang, Zhiting Hu, Yuntian Deng, Chris Dyer, and Alex Smola. 2017. Neural Machine Translation with Recurrent Attention Modeling. In Proceedings of EACL 2017.
+      - Rongxiang Weng, Shujian Huang, Zaixiang Zheng, Xinyu Dai, and Jiajun Chen. 2017. Neural Machine Translation with Word Predictions. In Proceedings of EMNLP 2017.
+      - Yang Feng, Shiyue Zhang, Andi Zhang, Dong Wang, and Andrew Abel. 2017. Memory-augmented Neural Machine Translation. In Proceedings of EMNLP 2017.
+      - Leonard Dahlmann, Evgeny Matusov, Pavel Petrushkov, and Shahram Khadivi. 2017. Neural Machine Translation Leveraging Phrase-based Models in a Hybrid Search. In Proceedings of EMNLP 2017.
+      - Xing Wang, Zhaopeng Tu, Deyi Xiong, and Min Zhang. 2017. Translating Phrases in Neural Machine Translation. In Proceedings of EMNLP 2017.
+      - Baosong Yang, Derek F. Wong, Tong Xiao, Lidia S. Chao, and Jingbo Zhu. 2017. Towards Bidirectional Hierarchical Representations for Attention-based Neural Machine Translation. In Proceedings of EMNLP 2017.
+      - Po-Sen Huang, Chong Wang, Sitao Huang, Dengyong Zhou, and Li Deng. 2018. Towards Neural Phrase-based Machine Translation. In Proceedings of ICLR 2018.
+      - Toan Nguyen and David Chiang. 2018. Improving Lexical Choice in Neural Machine Translation. In Proceedings of NAACL 2018.
+      - Huadong Chen, Shujian Huang, David Chiang, Xinyu Dai, and Jiajun Chen. 2018. Combining Character and Word Information in Neural Machine Translation Using a Multi-Level Attention. In Proceedings of NAACL 2018.
+      - Matt Post and David Vilar. 2018. Fast Lexically Constrained Decoding with Dynamic Beam Allocation for Neural Machine Translation. In Proceedings of NAACL 2018.
+      - Jingyi Zhang, Masao Utiyama, Eiichro Sumita, Graham Neubig, and Satoshi Nakamura. 2018. Guiding Neural Machine Translation with Retrieved Translation Pieces. In Proceedings of NAACL 2018.
+      - Eva Hasler, Adrià de Gispert, Gonzalo Iglesias, and Bill Byrne. 2018. Neural Machine Translation Decoding with Terminology Constraints. In Proceedings of NAACL 2018.
+      - Nima Pourdamghani, Marjan Ghazvininejad, and Kevin Knight. 2018. Using Word Vectors to Improve Word Alignments for Low Resource Machine Translation. In Proceedings of NAACL 2018.
+      - Shuming Ma, Xu SUN, Yizhong Wang, and Junyang Lin. 2018. Bag-of-Words as Target for Neural Machine Translation. In Proceedings of ACL 2018.
+      - Mingxuan Wang, Jun Xie, Zhixing Tan, Jinsong Su, Deyi Xiong, and Chao Bian. 2018. Neural Machine Translation with Decoding-History Enhanced Attention. In Proceedings of COLING 2018.
+      - Arata Ugawa, Akihiro Tamura, Takashi Ninomiya, Hiroya Takamura, and Manabu Okumura. 2018. Neural Machine Translation Incorporating Named Entity. In Proceedings of COLING 2018.
+      - Longyue Wang, Zhaopeng Tu, Andy Way, and Qun Liu. 2018. Learning to Jointly Translate and Predict Dropped Pronouns with a Shared Reconstruction Mechanism. In Proceedings of EMNLP 2018.
+      - Qian Cao and Deyi Xiong. 2018. Encoding Gated Translation Memory into Neural Machine Translation. In Proceedings of EMNLP 2018.
+      - Chengyue Gong, Di He, Xu Tan, Tao Qin, Liwei Wang, and Tie-Yan Liu. 2018. FRAGE: Frequency-Agnostic Word Representation. In Proceedings of NeurIPS 2018.
+    - 句法、语义约束
+      - Trevor Cohn, Cong Duy Vu Hoang, Ekaterina Vymolova, Kaisheng Yao, Chris Dyer, and Gholamreza Haffari. 2016. Incorporating Structural Alignment Biases into an Attentional Neural Translation Model. In Proceedings of NAACL 2016.
+      - Yong Cheng, Shiqi Shen, Zhongjun He, Wei He, Hua Wu, Maosong Sun, and Yang Liu. 2016. Agreement-based Joint Training for Bidirectional Attention-based Neural Machine Translation. In Proceedings of IJCAI 2016.
+      - Akiko Eriguchi, Kazuma Hashimoto, and Yoshimasa Tsuruoka. 2016. Tree-to-Sequence Attentional Neural Machine Translation. In Proceedings of ACL 2016.
+      - Junhui Li, Deyi Xiong, Zhaopeng Tu, Muhua Zhu, Min Zhang, and Guodong Zhou. 2017. Modeling Source Syntax for Neural Machine Translation. In Proceedings of ACL 2017.
+      - Shuangzhi Wu, Dongdong Zhang, Nan Yang, Mu Li, and Ming Zhou. 2017. Sequence-to-Dependency Neural Machine Translation. In Proceedings of ACL 2017.
+      - Jinchao Zhang, Mingxuan Wang, Qun Liu, and Jie Zhou. 2017. Incorporating Word Reordering Knowledge into Attention-based Neural Machine Translation. In Proceedings of ACL 2017.
+      - Huadong Chen, Shujian Huang, David Chiang, and Jiajun Chen. 2017. Improved Neural Machine Translation with a Syntax-Aware Encoder and Decoder. In Proceedings of ACL 2017.
+      - Akiko Eriguchi, Yoshimasa Tsuruoka, and Kyunghyun Cho. 2017. Learning to Parse and Translate Improves Neural Machine Translation. In Proceedings of ACL 2017.
+      - Roee Aharoni and Yoav Goldberg. 2017. Towards String-To-Tree Neural Machine Translation. In Proceedings of ACL 2017.
+      - Kazuma Hashimoto and Yoshimasa Tsuruoka. 2017. Neural Machine Translation with Source-Side Latent Graph Parsing. In Proceedings of EMNLP 2017.
+      - Joost Bastings, Ivan Titov, Wilker Aziz, Diego Marcheggiani, and Khalil Simaan. 2017. Graph Convolutional Encoders for Syntax-aware Neural Machine Translation. In Proceedings of EMNLP 2017.
+      - Kehai Chen, Rui Wang, Masao Utiyama, Lemao Liu, Akihiro Tamura, Eiichiro Sumita, and Tiejun Zhao. 2017. Neural Machine Translation with Source Dependency Representation. In Proceedings of EMNLP 2017.
+      - Peyman Passban, Qun Liu, and Andy Way. 2018. Improving Character-Based Decoding Using Target-Side Morphological Information for Neural Machine Translation. In Proceedings of NAACL 2018.
+      - Diego Marcheggiani, Joost Bastings, and Ivan Titov. 2018. Exploiting Semantics in Neural Machine Translation with Graph Convolutional Networks. In Proceedings of NAACL 2018.
+      - Chunpeng Ma, Akihiro Tamura, Masao Utiyama, Tiejun Zhao, and Eiichiro Sumita. 2018. Forest-Based Neural Machine Translation. In Proceedings of ACL 2018.
+      - Shaohui Kuang, Junhui Li, António Branco, Weihua Luo, and Deyi Xiong. 2018. Attention Focusing for Neural Machine Translation by Bridging Source and Target Embeddings. In Proceedings of ACL 2018.
+      - Duygu Ataman and Marcello Federico. 2018. Compositional Representation of Morphologically-Rich Input for Neural Machine Translation. In Proceedings of ACL 2018.
+      - Danielle Saunders, Felix Stahlberg, Adrià de Gispert, and Bill Byrne. 2018. Multi-representation ensembles and delayed SGD updates improve syntax-based NMT. In Proceedings of ACL 2018.
+      - Wen Zhang, Jiawei Hu, Yang Feng, and Qun Liu. 2018. Refining Source Representations with Relation Networks for Neural Machine Translation. In Proceedings of COLING 2018.
+      - Poorya Zaremoodi and Gholamreza Haffari. 2018. Incorporating Syntactic Uncertainty in Neural Machine Translation with a Forest-to-Sequence Model. In Proceedings of COLING 2018.
+      - Hao Zhang, Axel Ng, and Richard Sproat. 2018. Fast and Accurate Reordering with ITG Transition RNN. In Proceedings of COLING 2018.
+      - Jetic Gū, Hassan S. Shavarani, and Anoop Sarkar. 2018. Top-down Tree Structured Decoding with Syntactic Connections for Neural Machine Translation and Parsing. In Proceedings of EMNLP 2018.
+      - Anna Currey and Kenneth Heafield. 2018. Multi-Source Syntactic Neural Machine Translation. In Proceedings of EMNLP 2018.
+      - Xinyi Wang, Hieu Pham, Pengcheng Yin, and Graham Neubig. 2018. A Tree-based Decoder for Neural Machine Translation. In Proceedings of EMNLP 2018.
+      - Eliyahu Kiperwasser and Miguel Ballesteros. 2018. Scheduled Multi-Task Learning: From Syntax to Translation. Transactions of the Association for Computational Linguistics.
+    - 覆盖度约束
+      - Zhaopeng Tu, Zhengdong Lu, Yang Liu, Xiaohua Liu, and Hang Li. 2016. Modeling Coverage for Neural Machine Translation. In Proceedings of ACL 2016.
+      - Yonghui Wu, Mike Schuster, Zhifeng Chen, Quoc V. Le, Mohammad Norouzi, Wolfgang Macherey, Maxim Krikun, Yuan Cao, Qin Gao, Klaus Macherey, Jeff Klingner, Apurva Shah, Melvin Johnson, Xiaobing Liu, Łukasz Kaiser, Stephan Gouws, Yoshikiyo Kato, Taku Kudo, Hideto Kazawa, Keith Stevens, George Kurian, Nishant Patil, Wei Wang, Cliff Young, Jason Smith, Jason Riesa, Alex Rudnick, Oriol Vinyals, Greg Corrado, Macduff Hughes, and Jeffrey Dean. 2016. Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation. In Proceedings of NIPS 2016.
+      - Haitao Mi, Baskaran Sankaran, Zhiguo Wang, and Abe Ittycheriah. 2016. Coverage Embedding Models for Neural Machine Translation. In Proceedings of EMNLP 2016.
+      - Yanyang Li, Tong Xiao, Yinqiao Li, Qiang Wang, Changming Xu, and Jingbo Zhu. 2018. A Simple and Effective Approach to Coverage-Aware Neural Machine Translation. In Proceedings of ACL 2018.
+      - Zaixiang Zheng, Hao Zhou, Shujian Huang, Lili Mou, Xinyu Dai, Jiajun Chen, and Zhaopeng Tu. 2018. Modeling Past and Future for Neural Machine Translation. Transactions of the Association for Computational Linguistics.
+      - Xiang Kong, Zhaopeng Tu, Shuming Shi, Eduard Hovy, and Tong Zhang. Neural Machine Translation with Adequacy-Oriented Learning. In Proceedings of AAAI 2019.
+  - 文档级别的神经机器翻译
+    - Longyue Wang, Zhaopeng Tu, Andy Way, and Qun Liu. 2017. Exploiting Cross-Sentence Context for Neural Machine Translation. In Proceedings of EMNLP 2017.
+    - Zhaopeng Tu, Yang Liu, Zhengdong Lu, Xiaohua Liu, and Hang Li. 2017. Context Gates for Neural Machine Translation. Transactions of the Association for Computational Linguistics.
+    - Rachel Bawden, Rico Sennrich, Alexandra Birch, and Barry Haddow. 2018. Evaluating Discourse Phenomena in Neural Machine Translation. In Proceedings of NAACL 2018.
+    - Elena Voita, Pavel Serdyukov, Rico Sennrich, and Ivan Titov. 2018. Context-Aware Neural Machine Translation Learns Anaphora Resolution. In Proceedings of ACL 2018.
+    - Sameen Maruf and Gholamreza Haffari. 2018. Document Context Neural Machine Translation with Memory Networks. In Proceedings of ACL 2018.
+    - Modeling Coherence for Neural Machine Translation with Dynamic and Topic Caches. In Proceedings of COLING 2018.
+    - Shaohui Kuang and Deyi Xiong. 2018. Fusing Recency into Neural Machine Translation with an Inter-Sentence Gate Model. In Proceedings of COLING 2018.
+    - Jiacheng Zhang, Huanbo Luan, Maosong Sun, Feifei Zhai, Jingfang Xu, Min Zhang and Yang Liu. 2018. Improving the Transformer Translation Model with Document-Level Context. In Proceedings of EMNLP 2018.
+    - Samuel Läubli, Rico Sennrich, and Martin Volk. 2018. Has Machine Translation Achieved Human Parity? A Case for Document-level Evaluation. In Proceedings of EMNLP 2018.
+    - Lesly Miculicich, Dhananjay Ram, Nikolaos Pappas, and James Henderson. 2018. Document-Level Neural Machine Translation with Hierarchical Attention Networks. In Proceedings of EMNLP 2018.
+    - Zhaopeng Tu, Yang Liu, Shumin Shi, and Tong Zhang. 2018. Learning to Remember Translation History with a Continuous Cache. Transactions of the Association for Computational Linguistics.
+  - 鲁棒机器翻译
+    - Yonatan Belinkov and Yonatan Bisk. 2018. Synthetic and Natural Noise Both Break Neural Machine Translation. In Proceedings of ICLR 2018.
+    - Zhengli Zhao, Dheeru Dua, and Sameer Singh. 2018. Generating Natural Adversarial Examples. In Proceedings of ICLR 2018.
+    - Yong Cheng, Zhaopeng Tu, Fandong Meng, Junjie Zhai, and Yang Liu. 2018. Towards Robust Neural Machine Translation. In Proceedings of ACL 2018.
+    - Marco Tulio Ribeiro, Sameer Singh, and Carlos Guestrin. 2018. Semantically Equivalent Adversarial Rules for Debugging NLP models. In Proceedings of ACL 2018.
+    - Javid Ebrahimi, Daniel Lowd, and Dejing Dou. 2018. On Adversarial Examples for Character-Level Neural Machine Translation. In Proceedings of COLING 2018.
+    - Paul Michel and Graham Neubig. 2018. MTNT: A Testbed for Machine Translation of Noisy Text. In Proceedings of EMNLP 2018.
+  - 可视化及网络理解
+    - Yanzhuo Ding, Yang Liu, Huanbo Luan and Maosong Sun. 2017. Visualizing and Understanding Neural Machine Translation. In Proceedings of ACL 2017.
+    - Hendrik Strobelt, Sebastian Gehrmann, Michael Behrisch, Adam Perer, Hanspeter Pfister, and Alexander M. Rush. 2018. Seq2Seq-Vis: A Visual Debugging Tool for Sequence-to-Sequence Models. In Proceedings of VAST 2018 and Proceedings of EMNLP-BlackBox 2018.
+    - Alessandro Raganato and Jorg Tiedemann. 2018. An Analysis of Encoder Representations in Transformer-Based Machine Translation. In Proceedings of EMNLP-BlackBox 2018.
+    - Felix Stahlberg, Danielle Saunders, and Bill Byrne. 2018. An Operation Sequence Model for Explainable Neural Machine Translation. In Proceedings of EMNLP-BlackBox 2018.
+    - Anthony Bau, Yonatan Belinkov, Hassan Sajjad, Nadir Durrani, Fahim Dalvi, and James Glass. 2019. Identifying and Controlling Important Neurons in Neural Machine Translation. In Proceedings of ICLR 2019.
+  - 融合语言学知识
+    - Felix Hill, Kyunghyun Cho, Sebastien Jean, Coline Devin, and Yoshua Bengio. 2015. Embedding Word Similarity with Neural Machine Translation. In Proceedings of ICLR 2015.
+    - Yonatan Belinkov, Nadir Durrani, Fahim Dalvi, Hassan Sajjad, and James Glass. 2017. What do Neural Machine Translation Models Learn about Morphology?. In Proceedings of ACL 2017.
+    - Ella Rabinovich, Noam Ordan, and Shuly Wintner. 2017. Found in Translation: Reconstructing Phylogenetic Language Trees from Translations. In Proceedings of ACL 2017.
+    - Rico Sennrich. 2017. How Grammatical is Character-level Neural Machine Translation? Assessing MT Quality with Contrastive Translation Pairs. In Proceedings of EACL 2017.
+    - Adam Poliak, Yonatan Belinkov, James Glass, and Benjamin Van Durme. 2018. On the Evaluation of Semantic Phenomena in Neural Machine Translation Using Natural Language Inference. In Proceedings of NAACL 2018.
+    - Arianna Bisazza and Clara Tump. 2018. The Lazy Encoder: A Fine-Grained Analysis of the Role of Morphology in Neural Machine Translation. In Proceedings of EMNLP 2018.
+    - Lijun Wu, Xu Tan, Di He, Fei Tian, Tao Qin, Jianhuang Lai, and Tie-Yan Liu. 2018. Beyond Error Propagation in Neural Machine Translation: Characteristics of Language Also Matter. In Proceedings of EMNLP 2018.
+  - 忠实性、多样性
+    - Hayahide Yamagishi, Shin Kanouchi, Takayuki Sato, and Mamoru Komachi. 2016. Controlling the Voice of a Sentence in Japanese-to-English Neural Machine Translation. In Proceedings of the 3rd Workshop on Asian Translation.
+    - Rico Sennrich, Barry Haddow and Alexandra Birch. 2016. Controlling Politeness in Neural Machine Translation via Side Constraints. In Proceedings of NAACL 2016.
+    - Xing Niu, Marianna Martindale, and Marine Carpuat. 2017. A Study of Style in Machine Translation: Controlling the Formality of Machine Translation Output. In Proceedings of EMNLP 2016.
+    - Ella Rabinovich, Raj Nath Patel, Shachar Mirkin, Lucia Specia, and Shuly Wintner. 2017. Personalized Machine Translation: Preserving Original Author Traits. In Proceedings of EACL 2017.
+    - Myle Ott, Michael Auli, David Grangier, and Marc'Aurelio Ranzato. 2018. Analyzing Uncertainty in Neural Machine Translation. In Proceedings of ICML 2018.
+    - Paul Michel and Graham Neubig. 2018. Extreme Adaptation for Personalized Neural Machine Translation. In Proceedings of ACL 2018.
+    - Philip Schulz, Wilker Aziz, and Trevor Cohn. 2018. A Stochastic Decoder for Neural Machine Translation. In Proceedings of ACL 2018.
+    - Eva Vanmassenhove, Christian Hardmeier, and Andy Way. 2018. Getting Gender Right in Neural Machine Translation. In Proceedings of EMNLP 2018.
+  - 性能提高
+    - Abigail See, Minh-Thang Luong, and Christopher D. Manning. 2016. Compression of Neural Machine Translation Models via Pruning. In Proceedings of CoNLL 2016.
+    - Yusuke Oda, Philip Arthur, Graham Neubig, Koichiro Yoshino, and Satoshi Nakamura. 2017. Neural Machine Translation via Binary Code Prediction. In Proceedings of ACL 2017.
+    - Xing Shi and Kevin Knight. 2017. Speeding Up Neural Machine Translation Decoding by Shrinking Run-time Vocabulary. In Proceedings of ACL 2017.
+    - Xiaowei Zhang, Wei Chen, Feng Wang, Shuang Xu, and Bo Xu. 2017. Towards Compact and Fast Neural Machine Translation Using a Combined Method. In Proceedings of EMNLP 2017.
+    - Felix Stahlberg and Bill Byrne. 2017. Unfolding and Shrinking Neural Machine Translation Ensembles. In Proceedings of EMNLP 2017.
+    - Jacob Devlin. 2017. Sharp Models on Dull Hardware: Fast and Accurate Neural Machine Translation Decoding on the CPU. In Proceedings of EMNLP 2017.
+    - Dakun Zhang, Jungi Kim, Josep Crego, and Jean Senellart. 2017. Boosting Neural Machine Translation. In Proceedings of IJCNLP 2017.
+    - Gonzalo Iglesias, William Tambellini, Adrià de Gispert, Eva Hasler, and Bill Byrne. 2018. Accelerating NMT Batched Beam Decoding with LMBR Posteriors for Deployment. In Proceedings of NAACL 2018.
+    - Jerry Quinn and Miguel Ballesteros. 2018. Pieces of Eight: 8-bit Neural Machine Translation. In Proceedings of NAACL 2018.
+    - Matt Post and David Vilar. 2018. Fast Lexically Constrained Decoding with Dynamic Beam Allocation for Neural Machine Translation. In Proceedings of NAACL 2018.
+    - Biao Zhang, Deyi Xiong, and Jinsong Su. 2018. Accelerating Neural Transformer via an Average Attention Network. In Proceedings of ACL 2018.
+    - Rui Wang, Masao Utiyama, and Eiichiro Sumita. 2018. Dynamic Sentence Sampling for Efficient Training of Neural Machine Translation. In Proceedings of ACL 2018.
+    - Myle Ott, Sergey Edunov, David Grangier, and Michael Auli. 2018. Scaling Neural Machine Translation. In Proceedings of the Third Conference on Machine Translation: Research Papers.
+    - Joern Wuebker, Patrick Simianer, and John DeNero. 2018. Compact Personalized Models for Neural Machine Translation. In Proceedings of EMNLP 2018.
+    - Wen Zhang, Liang Huang, Yang Feng, Lei Shen, and Qun Liu. 2018. Speeding Up Neural Machine Translation Decoding by Cube Pruning. In Proceedings of EMNLP 2018.
+    - Zhisong Zhang, Rui Wang, Masao Utiyama, Eiichiro Sumita, and Hai Zhao. 2018. Exploring Recombination for Efficient Decoding of Neural Machine Translation. In Proceedings of EMNLP 2018.
+    - Nikolay Bogoychev, Kenneth Heafield, Alham Fikri Aji, and Marcin Junczys-Dowmunt. 2018. Accelerating Asynchronous Stochastic Gradient Descent for Neural Machine Translation. In Proceedings of EMNLP 2018.
+    - Mitchell Stern, Noam Shazeer, and Jakob Uszkoreit. 2018. Blockwise Parallel Decoding for Deep Autoregressive Models. In Proceedings of NeurIPS 2018.
+  - 预训练
+    - Bryan McCann, James Bradbury, Caiming Xiong, and Richard Socher. 2017. Learned in Translation: Contextualized Word Vectors. In Proceedings of NIPS 2017.
+    - Ye Qi, Devendra Sachan, Matthieu Felix, Sarguna Padmanabhan, and Graham Neubig. 2018. When and Why Are Pre-Trained Word Embeddings Useful for Neural Machine Translation?. In Proceedings of NAACL 2018.
+    - Matthew Peters, Mark Neumann, Mohit Iyyer, Matt Gardner, Christopher Clark, Kenton Lee, and Luke Zettlemoyer. 2018. Deep Contextualized Word Representations. In Proceedings of NAACL 2018.
+    - Jeremy Howard and Sebastian Ruder. 2018. Universal Language Model Fine-tuning for Text Classification. In Proceedings of ACL 2018.
+    - Alec Radford, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. 2018. Improving Language Understanding by Generative Pre-Training. Technical Report, OpenAI.
+    - Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2018. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. arXiv:1810.04805.
+  - 语音翻译、实时翻译
+    - Matt Post, Gaurav Kumar, Adam Lopez, Damianos Karakos, Chris Callison-Burch and Sanjeev Khudanpur. 2013. Improved Speech-to-Text Translation with the Fisher and Callhome Spanish–English Speech Translation Corpus. In Proceedings of IWSLT 2013.
+    - Gaurav Kumar, Matt Post, Daniel Povey and Sanjeev Khudanpur. 2014. Some insights from translating conversational telephone speech In Proceedings of ICASSP 2014.
+    - Long Duong, Antonios Anastasopoulos, David Chiang, Steven Bird, and Trevor Cohn. 2016. An Attentional Model for Speech Translation without Transcription. In Proceedings of NAACL 2016.
+    - Antonios Anastasopoulos, David Chiang, and Long Duong. 2016. An Unsupervised Probability Model for Speech-to-translation Alignment of Low-resource Languages. In Proceedings of EMNLP 2016.
+    - Ron J. Weiss, Jan Chorowski, Navdeep Jaitly, Yonghui Wu and Zhifeng Chen. 2017. Sequence-to-sequence models can directly translate foreign speech. In Proceedings of Interspeech 2017.
+    - Jiatao Gu, Graham Neubig, Kyunghyun Cho, and Victor O.K. Li. 2017. Learning to Translate in Real-time with Neural Machine Translation. In Proceedings of EACL 2017.
+    - Sameer Bansal, Herman Kamper, Adam Lopez, and Sharon Goldwater. 2017. Towards speech-to-text translation without speech recognition. In Proceedings of EACL 2017.
+    - Jiatao Gu, James Bradbury, Caiming Xiong, Victor O.K. Li, and Richard Socher. 2018. Non-Autoregressive Neural Machine Translation. In Proceedings of ICLR 2018.
+    - Antonios Anastasopoulos and David Chiang. 2018. Tied Multitask Learning for Neural Speech Translation. In Proceedings of NAACL 2018.
+    - Fahim Dalvi, Nadir Durrani, Hassan Sajjad, and Stephan Vogel. 2018. Incremental Decoding and Training Methods for Simultaneous Translation in Neural Machine Translation. In Proceedings of NAACL 2018.
+    - Craig Stewart, Nikolai Vogler, Junjie Hu, Jordan Boyd-Graber, and Graham Neubig. 2018. Automatic Estimation of Simultaneous Interpreter Performance. In Proceedings of ACL 2018.
+    - Florian Dessloch, Thanh-Le Ha, Markus Müller, Jan Niehues, Thai Son Nguyen, Ngoc-Quan Pham, Elizabeth Salesky, Matthias Sperber, Sebastian Stüker, Thomas Zenkel, and Alexander Waibel. 2018. KIT Lecture Translator: Multilingual Speech Translation with One-Shot Learning. In Proceedings of COLING 2018.
+    - Chunqi Wang, Ji Zhang, and Haiqing Chen. 2018. Semi-Autoregressive Neural Machine Translation. In Proceedings of EMNLP 2018.
+    - Jindřich Libovický and Jindřich Helcl. 2018. End-to-End Non-Autoregressive Neural Machine Translation with Connectionist Temporal Classification. In Proceedings of EMNLP 2018.
+    - Ashkan Alinejad, Maryam Siahbani, and Anoop Sarkar. 2018. Prediction Improves Simultaneous Neural Machine Translation. In Proceedings of EMNLP 2018.
+    - Mingbo Ma, Liang Huang, Hao Xiong, Kaibo Liu, Chuanqiang Zhang, Zhongjun He, Hairong Liu, Xing Li, and Haifeng Wang. 2018. STACL: Simultaneous Translation with Integrated Anticipation and Controllable Latency. arXiv:1810.08398.
+  - 多模态机器翻译
+    - Lucia Specia, Stella Frank, Khalil Sima'an, and Desmond Elliott. 2016. A Shared Task on Multimodal Machine Translation and Crosslingual Image Description. In Proceedings of the First Conference on Machine Translation: Volume 2, Shared Task Papers.
+    - Sergio Rodríguez Guasch, Marta R. Costa-jussà. 2016. WMT 2016 Multimodal Translation System Description based on Bidirectional Recurrent Neural Networks with Double-Embeddings. In Proceedings of the First Conference on Machine Translation: Volume 2, Shared Task Papers.
+    - Po-Yao Huang, Frederick Liu, Sz-Rung Shiang, Jean Oh, and Chris Dyer. 2016. Attention-based Multimodal Neural Machine Translation. In Proceedings of the First Conference on Machine Translation: Volume 2, Shared Task Papers.
+    - Iacer Calixto, Desmond Elliott, and Stella Frank. 2016. DCU-UvA Multimodal MT System Report. In Proceedings of the First Conference on Machine Translation: Volume 2, Shared Task Papers.
+    - Desmond Elliott, Stella Frank, Loïc Barrault, Fethi Bougares, and Lucia Specia. 2017. Findings of the Second Shared Task on Multimodal Machine Translation and Multilingual Image Description. In Proceedings of the Second Conference on Machine Translation.
+    - Iacer Calixto, Qun Liu, and Nick Campbell. 2017. Doubly-Attentive Decoder for Multi-modal Neural Machine Translation. In Proceedings of ACL 2017.
+    - Jean-Benoit Delbrouck and Stéphane Dupont. 2017. An empirical study on the effectiveness of images in Multimodal Neural Machine Translation. In Proceedings of EMNLP 2017.
+    - Iacer Calixto and Qun Liu. 2017. Incorporating Global Visual Features into Attention-based Neural Machine Translation. In Proceedings of EMNLP 2017.
+    - Jason Lee, Kyunghyun Cho, Jason Weston, and Douwe Kiela. 2018. Emergent Translation in Multi-Agent Communication. In Proceedings of ICLR 2018.
+    - Yun Chen, Yang Liu, and Victor O. K. Li. 2018. Zero-Resource Neural Machine Translation with Multi-Agent Communication Game. In Proceedings of AAAI 2018.
+    - Loïc Barrault, Fethi Bougares, Lucia Specia, Chiraag Lala, Desmond Elliott, and Stella Frank. 2018. Findings of the Third Shared Task on Multimodal Machine Translation. In Proceedings of the Third Conference on Machine Translation: Shared Task Papers.
+    - John Hewitt, Daphne Ippolito, Brendan Callahan, Reno Kriz, Derry Tanti Wijaya, and Chris Callison-Burch. 2018. Learning Translations via Images with a Massively Multilingual Image Dataset. In Proceedings of ACL 2018.
+    - Mingyang Zhou, Runxiang Cheng, Yong Jae Lee, and Zhou Yu. 2018. A Visual Attention Grounding Neural Model for Multimodal Machine Translation. In Proceedings of EMNLP 2018.
+    - Desmond Elliott. 2018. Adversarial Evaluation of Multimodal Machine Translation. In Proceedings of EMNLP 2018.
+  - 领域适应
+    - Chenhui Chu, Raj Dabre, and Sadao Kurohashi. 2017. An Empirical Comparison of Domain Adaptation Methods for Neural Machine Translation. In Proceedings of ACL 2017.
+    - Rui Wang, Andrew Finch, Masao Utiyama, and Eiichiro Sumita. 2017. Sentence Embedding for Neural Machine Translation Domain Adaptation. In Proceedings of ACL 2017.
+    - Boxing Chen, Colin Cherry, George Foster, and Samuel Larkin. 2017. Cost Weighting for Neural Machine Translation Domain Adaptation. In Proceedings of the First Workshop on Neural Machine Translation.
+    - Rui Wang, Masao Utiyama, Lemao Liu, Kehai Chen, and Eiichiro Sumita. 2017. Instance Weighting for Neural Machine Translation Domain Adaptation. In Proceedings of EMNLP 2017.
+    - Antonio Valerio Miceli Barone, Barry Haddow, Ulrich Germann, and Rico Sennrich. 2017. Regularization techniques for fine-tuning in neural machine translation. In Proceedings of EMNLP 2017.
+    - David Vilar. 2018. Learning Hidden Unit Contribution for Adapting Neural Machine Translation Models. In Proceedings of NAACL 2018.
+    - Shiqi Zhang and Deyi Xiong. 2018. Sentence Weighting for Neural Machine Translation Domain Adaptation. In Proceedings of COLING 2018.
+    - Chenhui Chu and Rui Wang. 2018. A Survey of Domain Adaptation for Neural Machine Translation. In Proceedings of COLING 2018.
+    - Jiali Zeng, Jinsong Su, Huating Wen, Yang Liu, Jun Xie, Yongjing Yin, and Jianqiang Zhao. 2018. Multi-Domain Neural Machine Translation with Word-Level Domain Context Discrimination. In Proceedings of EMNLP 2018.
+    - Graham Neubig and Junjie Hu. 2018. Rapid Adaptation of Neural Machine Translation to New Languages. In Proceedings of EMNLP 2018.
+  - 翻译质量估计
+    - Hyun Kim and Jong-Hyeok Lee. 2016. A Recurrent Neural Networks Approach for Estimating the Quality of Machine Translation Output. In Proceedings of NAACL 2016.
+    - Hyun Kim and Jong-Hyeok Lee, Seung-Hoon Na. 2017. Predictor-Estimator using Multilevel Task Learning with Stack Propagation for Neural Quality Estimation. In Proceedings of WMT 2017.
+    - Osman Baskaya, Eray Yildiz, Doruk Tunaoglu, Mustafa Tolga Eren, and A. Seza Doğruöz. 2017. Integrating Meaning into Quality Evaluation of Machine Translation. In Proceedings of EACL 2017.
+    - Yvette Graham, Qingsong Ma, Timothy Baldwin, Qun Liu, Carla Parra, and Carolina Scarton. 2017. Improving Evaluation of Document-level Machine Translation Quality Estimation. In Proceedings of EACL 2017.
+    - Rico Sennrich. 2017. How Grammatical is Character-level Neural Machine Translation? Assessing MT Quality with Contrastive Translation Pairs. In Proceedings of EACL 2017.
+    - Pierre Isabelle, Colin Cherry, and George Foster. 2017. A Challenge Set Approach to Evaluating Machine Translation. In Proceedings of EMNLP 2017.
+    - André F.T. Martins, Marcin Junczys-Dowmunt, Fabio N. Kepler, Ramón Astudillo, Chris Hokamp, and Roman Grundkiewicz. 2017. Pushing the Limits of Translation Quality Estimation. Transactions of the Association for Computational Linguistics.
+    - Maoxi Li, Qingyu Xiang, Zhiming Chen, and Mingwen Wang. 2018. A Unified Neural Network for Quality Estimation of Machine Translation. IEICE Transactions on Information and Systems.
+    - Lucia Specia, Frédéric Blain, Varvara Logacheva, Ramón F. Astudillo, and André Martins. 2018. Findings of the WMT 2018 Shared Task on Quality Estimation. In Proceedings of WMT 2018.
+    - Craig Stewart, Nikolai Vogler, Junjie Hu, Jordan Boyd-Graber, and Graham Neubig. 2018. Automatic Estimation of Simultaneous Interpreter Performance. In Proceedings of ACL 2018.
+    - Julia Ive, Frédéric Blain, and Lucia Specia. 2018. deepQuest: A Framework for Neural-based Quality Estimation. In Proceedings of COLING 2018.
+    - Kai Fan, Jiayi Wang, Bo Li, Fengming Zhou, Boxing Chen, and Luo Si. 2019. "Bilingual Expert" Can Find Translation Errors. In Proceedings of AAAI 2019.
+  - 自动后处理的方式
+    - Santanu Pal, Sudip Kumar Naskar, Mihaela Vela, and Josef van Genabith. 2016. A neural network based approach to automatic post-editing. In Proceedings of ACL 2016.
+    - Marcin Junczys-Dowmunt and Roman Grundkiewicz. 2016. Log-linear Combinations of Monolingual and Bilingual Neural Machine Translation Models for Automatic Post-Editing. In Proceedings of the First Conference on Machine Translation: Volume 2, Shared Task Papers.
+    - Santanu Pal, Sudip Kumar Naskar, Mihaela Vela, Qun Liu, and Josef van Genabith. 2017. Neural Automatic Post-Editing Using Prior Alignment and Reranking. In Proceedings of EACL 2017.
+    - Rajen Chatterjee, Gebremedhen Gebremelak, Matteo Negri, and Marco Turchi. 2017. Online Automatic Post-editing for MT in a Multi-Domain Translation Environment. In Proceedings of EACL 2017.
+    - David Grangier and Michael Auli. 2018. QuickEdit: Editing Text & Translations by Crossing Words Out. In Proceedings of NAACL 2018.
+    - Thuy-Trang Vu and Gholamreza Haffari. 2018. Automatic Post-Editing of Machine Translation: A Neural Programmer-Interpreter Approach. In Proceedings of EMNLP 2018.
+  - 词翻译及双语词典的构建
+    - Meng Zhang, Yang Liu, Huanbo Luan, Maosong Sun, Tatsuya Izuha, and Jie Hao. 2016. Building Earth Mover's Distance on Bilingual Word Embeddings for Machine Translation. In Proceedings of AAAI 2016.
+    - Meng Zhang, Yang Liu, Huanbo Luan, Yiqun Liu, and Maosong Sun. 2016. Inducing Bilingual Lexica From Non-Parallel Data With Earth Mover's Distance Regularization. In Proceedings of COLING 2016.
+    - Meng Zhang, Haoruo Peng, Yang Liu, Huanbo Luan, and Maosong Sun. Bilingual Lexicon Induction from Non-Parallel Data with Minimal Supervision. In Proceedings of AAAI 2017.
+    - Ann Irvine and Chris Callison-Burch. 2017. A Comprehensive Analysis of Bilingual Lexicon Induction. Computational Linguistics.
+    - Meng Zhang, Yang Liu, Huanbo Luan, and Maosong Sun. 2017. Adversarial Training for Unsupervised Bilingual Lexicon Induction. In Proceedings of ACL 2017.
+    - Geert Heyman, Ivan Vulić, and Marie-Francine Moens. 2017. Bilingual Lexicon Induction by Learning to Combine Word-Level and Character-Level Representations. In Proceedings of EACL 2017.
+    - Bradley Hauer, Garrett Nicolai, and Grzegorz Kondrak. 2017. Bootstrapping Unsupervised Bilingual Lexicon Induction. In Proceedings of EACL 2017.
+    - Yunsu Kim, Julian Schamper, and Hermann Ney. 2017. Unsupervised Training for Large Vocabulary Translation Using Sparse Lexicon and Word Classes. In Proceedings of EACL 2017.
+    - Derry Tanti Wijaya, Brendan Callahan, John Hewitt, Jie Gao, Xiao Ling, Marianna Apidianaki, and Chris Callison-Burch. 2017. Learning Translations via Matrix Completion. In Proceedings of EMNLP 2017.
+    - Meng Zhang, Yang Liu, Huanbo Luan, and Maosong Sun. 2017. Earth Mover's Distance Minimization for Unsupervised Bilingual Lexicon Induction. In Proceedings of EMNLP 2017.
+    - Ndapandula Nakashole and Raphael Flauger. 2017. Knowledge Distillation for Bilingual Dictionary Induction. In Proceedings of EMNLP 2017.
+    - Guillaume Lample, Alexis Conneau, Marc'Aurelio Ranzato, Ludovic Denoyer, and Hervé Jégou. 2018. Word translation without parallel data. In Proceedings of ICLR 2018.
+    - Ndapa Nakashole and Raphael Flauger. 2018. Characterizing Departures from Linearity in Word Translation. In Proceedings of ACL 2018.
+    - Anders Søgaard, Sebastian Ruder, and Ivan Vulić. 2018. On the Limitations of Unsupervised Bilingual Dictionary Induction. In Proceedings of ACL 2018.
+    - Parker Riley and Daniel Gildea. 2018. Orthographic Features for Bilingual Lexicon Induction. In Proceedings of ACL 2018.
+    - Amir Hazem and Emmanuel Morin. 2018. Leveraging Meta-Embeddings for Bilingual Lexicon Extraction from Specialized Comparable Corpora. In Proceedings of COLING 2018.
+    - Sebastian Ruder, Ryan Cotterell, Yova Kementchedjhieva, and Anders Søgaard. 2018. A Discriminative Latent-Variable Model for Bilingual Lexicon Induction. In Proceedings of EMNLP 2018.
+    - Zi-Yi Dou, Zhi-Hao Zhou, and Shujian Huang. 2018. Unsupervised Bilingual Lexicon Induction via Latent Variable Models. In Proceedings of EMNLP 2018.
+    - Armand Joulin, Piotr Bojanowski, Tomas Mikolov, Hervé Jégou, and Edouard Grave. 2018. Loss in Translation: Learning Bilingual Word Mapping with a Retrieval Criterion. In Proceedings of EMNLP 2018.
+  - 诗歌翻译
+    - Marjan Ghazvininejad, Yejin Choi, and Kevin Knight. 2018. Neural Poetry Translation. In Proceedings of NAACL 2018.
