@@ -1,6 +1,6 @@
 # AIKT-Machine_Translation
 
-- [机器翻译十篇必读](https://github.com/THUNLP-MT/MT-Reading-List)
+- [清华自然语言处理组推荐-机器翻译十篇必读](https://github.com/THUNLP-MT/MT-Reading-List)
   - Peter E. Brown, Stephen A. Della Pietra, Vincent J. Della Pietra, and Robert L. Mercer. 1993. The Mathematics of Statistical Machine Translation: Parameter Estimation. Computational Linguistics. [<http://aclweb.org/anthology/J93-2003>]
   - Kishore Papineni, Salim Roukos, Todd Ward, and Wei-Jing Zhu. 2002. BLEU: a Method for Automatic Evaluation of Machine Translation. In Proceedings of ACL 2002. [<http://aclweb.org/anthology/P02-1040>]
   - Philipp Koehn, Franz J. Och, and Daniel Marcu. 2003. Statistical Phrase-Based Translation. In Proceedings of NAACL 2003. [<http://aclweb.org/anthology/N03-1017>]
