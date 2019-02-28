@@ -1,6 +1,10 @@
 # Daily arXiv: Machine Translation
 
-[TOC]
+* [2019-02-28](#2019-02-28)
+  * [1. Non-Autoregressive Machine Translation with Auxiliary Regularization](#1. Non-Autoregressive Machine Translation with Auxiliary Regularization)
+  * [2. Multilingual Neural Machine Translation with Knowledge Distillation](#2. Multilingual Neural Machine Translation with Knowledge Distillation)
+
+
 
 ## 2019-02-28
 
