@@ -1,14 +1,18 @@
-# Daily arXiv: Machine Translation
+# Daily arXiv: Machine Translation - Feb, 2019
+
+### Index
 
 * [2019-02-28](#2019-02-28)
-  * [1. Non-Autoregressive Machine Translation with Auxiliary Regularization](#1. Non-Autoregressive Machine Translation with Auxiliary Regularization)
-  * [2. Multilingual Neural Machine Translation with Knowledge Distillation](#2. Multilingual Neural Machine Translation with Knowledge Distillation)
+  * [1. Non-Autoregressive Machine Translation with Auxiliary Regularization](#20190208-1)
+  * [2. Multilingual Neural Machine Translation with Knowledge Distillation](#20190208-2)
 
 
 
-## 2019-02-28
+# 2019-02-28
 
-### 1. Non-Autoregressive Machine Translation with Auxiliary Regularization
+[Return to Index](#Index)
+
+<h2 id="20190208-1">1.Non-Autoregressive Machine Translation with Auxiliary Regularization</h2> 
 
 Title: [Non-Autoregressive Machine Translation with Auxiliary Regularization](https://arxiv.org/abs/1902.10245)
 
@@ -26,7 +30,9 @@ Authors: [Yiren Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2
 
 
 
-### 2. Multilingual Neural Machine Translation with Knowledge Distillation
+
+
+<h2 id="20190208-2">2. Multilingual Neural Machine Translation with Knowledge Distillation</h2> 
 
 Title: [Multilingual Neural Machine Translation with Knowledge Distillation](https://arxiv.org/abs/1902.10461)
 
