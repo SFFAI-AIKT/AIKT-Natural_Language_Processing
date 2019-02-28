@@ -12,7 +12,7 @@
 
 [Return to Index](#Index)
 
-<h2 id="20190208-1">1.Non-Autoregressive Machine Translation with Auxiliary Regularization</h2> 
+<h2 id="20190208-1">1. Non-Autoregressive Machine Translation with Auxiliary Regularization</h2> 
 
 Title: [Non-Autoregressive Machine Translation with Auxiliary Regularization](https://arxiv.org/abs/1902.10245)
 
