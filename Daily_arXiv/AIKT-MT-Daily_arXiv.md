@@ -15,7 +15,7 @@
 
 <h2 id="2019-03-01-1">1. Efficient Contextual Representation Learning Without Softmax Layer</h2> 
 
-Title: Efficient Contextual Representation Learning Without Softmax Layer
+Title: [Efficient Contextual Representation Learning Without Softmax Layer](https://arxiv.org/pdf/1902.11269)
 
 Authors: [Liunian Harold Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L+H), [Patrick H. Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+P+H), [Cho-Jui Hsieh](https://arxiv.org/search/cs?searchtype=author&query=Hsieh%2C+C), [Kai-Wei Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+K)
 
