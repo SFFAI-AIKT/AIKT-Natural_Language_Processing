@@ -1,6 +1,6 @@
 # AIKT NLP Conference Papers
 
-This file is mianly focus on academic conference of Natural Language Processing, and offer links for researchers to download papers.
+This file is mainly focus on academic conference of Natural Language Processing, and offer links for researchers to download papers.
 
 
 
