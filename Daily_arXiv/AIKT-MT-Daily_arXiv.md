@@ -3,10 +3,10 @@
 ### Index
 
 - [2019-03-04](#2019-03-04)
-  - [1. Chinese-Japanese Unsupervised Neural Machine Translation Using Sub-character Level Information](2019-03-04-1)
-  - [2. Massively Multilingual Neural Machine Translation](2019-03-04-2)
-  - [3. Non-Parametric Adaptation for Neural Machine Translation](2019-03-04-3)
-  - [4. Reinforcement Learning based Curriculum Optimization for Neural Machine Translation](2019-03-04-4)
+  - [1. Chinese-Japanese Unsupervised Neural Machine Translation Using Sub-character Level Information](#2019-03-04-1)
+  - [2. Massively Multilingual Neural Machine Translation](#2019-03-04-2)
+  - [3. Non-Parametric Adaptation for Neural Machine Translation](#2019-03-04-3)
+  - [4. Reinforcement Learning based Curriculum Optimization for Neural Machine Translation](#2019-03-04-4)
 - [2019-03-01](#2019-03-01)
   - [1. Efficient Contextual Representation Learning Without Softmax Layer](#2019-03-01-1)
 
