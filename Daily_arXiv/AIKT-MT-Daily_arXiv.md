@@ -2,6 +2,8 @@
 
 ### Index
 
+- [2019-03-08](#2019-03-08)
+  - [1. Integrating Artificial and Human Intelligence for Efficient Translation](2019-03-08-1)
 - [2019-03-04](#2019-03-04)
   - [1. Chinese-Japanese Unsupervised Neural Machine Translation Using Sub-character Level Information](#2019-03-04-1)
   - [2. Massively Multilingual Neural Machine Translation](#2019-03-04-2)
@@ -11,6 +13,29 @@
   - [1. Efficient Contextual Representation Learning Without Softmax Layer](#2019-03-01-1)
 
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-03-08
+
+[Return to Index](#Index)
+
+<h2 id="2019-03-08-1">1. Integrating Artificial and Human Intelligence for Efficient Translation</h2> 
+
+Title: [Integrating Artificial and Human Intelligence for Efficient Translation](https://arxiv.org/abs/1903.02978)
+
+[Nico Herbig](https://arxiv.org/search/cs?searchtype=author&query=Herbig%2C+N), [Santanu Pal](https://arxiv.org/search/cs?searchtype=author&query=Pal%2C+S), [Josef van Genabith](https://arxiv.org/search/cs?searchtype=author&query=van+Genabith%2C+J), [Antonio Krüger](https://arxiv.org/search/cs?searchtype=author&query=Kr%C3%BCger%2C+A)
+
+*(Submitted on 7 Mar 2019)*
+
+> Current advances in machine translation increase the need for translators to switch from traditional translation to post-editing of machine-translated text, a process that saves time and improves quality. Human and artificial intelligence need to be integrated in an efficient way to leverage the advantages of both for the translation task. This paper outlines approaches at this boundary of AI and HCI and discusses open research questions to further advance the field.
+
+| Subjects: | **Human-Computer Interaction (cs.HC)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1903.02978](https://arxiv.org/abs/1903.02978) [cs.HC] |
+|           | (or **arXiv:1903.02978v1 [cs.HC]** for this version)         |
+
+
 
 
 
