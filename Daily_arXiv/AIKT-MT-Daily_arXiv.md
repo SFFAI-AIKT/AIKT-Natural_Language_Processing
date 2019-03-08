@@ -3,7 +3,7 @@
 ### Index
 
 - [2019-03-08](#2019-03-08)
-  - [1. Integrating Artificial and Human Intelligence for Efficient Translation](2019-03-08-1)
+  - [1. Integrating Artificial and Human Intelligence for Efficient Translation](#2019-03-08-1)
 - [2019-03-04](#2019-03-04)
   - [1. Chinese-Japanese Unsupervised Neural Machine Translation Using Sub-character Level Information](#2019-03-04-1)
   - [2. Massively Multilingual Neural Machine Translation](#2019-03-04-2)
@@ -24,7 +24,7 @@
 
 Title: [Integrating Artificial and Human Intelligence for Efficient Translation](https://arxiv.org/abs/1903.02978)
 
-[Nico Herbig](https://arxiv.org/search/cs?searchtype=author&query=Herbig%2C+N), [Santanu Pal](https://arxiv.org/search/cs?searchtype=author&query=Pal%2C+S), [Josef van Genabith](https://arxiv.org/search/cs?searchtype=author&query=van+Genabith%2C+J), [Antonio Krüger](https://arxiv.org/search/cs?searchtype=author&query=Kr%C3%BCger%2C+A)
+Authors: [Nico Herbig](https://arxiv.org/search/cs?searchtype=author&query=Herbig%2C+N), [Santanu Pal](https://arxiv.org/search/cs?searchtype=author&query=Pal%2C+S), [Josef van Genabith](https://arxiv.org/search/cs?searchtype=author&query=van+Genabith%2C+J), [Antonio Krüger](https://arxiv.org/search/cs?searchtype=author&query=Kr%C3%BCger%2C+A)
 
 *(Submitted on 7 Mar 2019)*
 
