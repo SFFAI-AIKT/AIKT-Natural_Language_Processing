@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-03-11](#2019-03-11)
+  - [1. Context-Aware Crosslingual Mapping](#2019-03-11-1)
+  - [2. Filling Gender & Number Gaps in Neural Machine Translation with Black-box Context Injection](#2019-03-11-2)
 - [2019-03-08](#2019-03-08)
   - [1. Integrating Artificial and Human Intelligence for Efficient Translation](#2019-03-08-1)
 - [2019-03-04](#2019-03-04)
@@ -13,6 +16,50 @@
   - [1. Efficient Contextual Representation Learning Without Softmax Layer](#2019-03-01-1)
 
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-03-11
+
+[Return to Index](#Index)
+
+<h2 id="2019-03-11-1">1. Context-Aware Crosslingual Mapping</h2> 
+
+Title: [Context-Aware Crosslingual Mapping](https://arxiv.org/abs/1903.03243)
+
+Authors:[Hanan Aldarmaki](https://arxiv.org/search/cs?searchtype=author&query=Aldarmaki%2C+H), [Mona Diab](https://arxiv.org/search/cs?searchtype=author&query=Diab%2C+M)
+
+*(Submitted on 8 Mar 2019)*
+
+> Cross-lingual word vectors are typically obtained by fitting an orthogonal matrix that maps the entries of a bilingual dictionary from a source to a target vector space. Word vectors, however, are most commonly used for sentence or document-level representations that are calculated as the weighted average of word embeddings. In this paper, we propose an alternative to word-level mapping that better reflects sentence-level cross-lingual similarity. We incorporate context in the transformation matrix by directly mapping the averaged embeddings of aligned sentences in a parallel corpus. We also implement cross-lingual mapping of deep contextualized word embeddings using parallel sentences with word alignments. In our experiments, both approaches resulted in cross-lingual sentence embeddings that outperformed context-independent word mapping in sentence translation retrieval. Furthermore, the sentence-level transformation could be used for word-level mapping without loss in word translation quality.
+
+| Comments: | NAACL-HLT 2019 (short paper). 5 pages, 1 figure              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1903.03243](https://arxiv.org/abs/1903.03243) [cs.CL] |
+|           | (or **arXiv:1903.03243v1 [cs.CL]** for this version)         |
+
+
+
+
+
+
+
+<h2 id="2019-03-11-2">2. Filling Gender & Number Gaps in Neural Machine Translation with Black-box Context Injection</h2> 
+
+Title: [Filling Gender & Number Gaps in Neural Machine Translation with Black-box Context Injection](https://arxiv.org/abs/1903.03467)
+
+Authors: [Amit Moryossef](https://arxiv.org/search/cs?searchtype=author&query=Moryossef%2C+A), [Roee Aharoni](https://arxiv.org/search/cs?searchtype=author&query=Aharoni%2C+R), [Yoav Goldberg](https://arxiv.org/search/cs?searchtype=author&query=Goldberg%2C+Y)
+
+*(Submitted on 8 Mar 2019)*
+
+> When translating from a language that does not morphologically mark information such as gender and number into a language that does, translation systems must "guess" this missing information, often leading to incorrect translations in the given context. We propose a black-box approach for injecting the missing information to a pre-trained neural machine translation system, allowing to control the morphological variations in the generated translations without changing the underlying model or training data. We evaluate our method on an English to Hebrew translation task, and show that it is effective in injecting the gender and number information and that supplying the correct information improves the translation accuracy in up to 2.3 BLEU on a female-speaker test set for a state-of-the-art online black-box system. Finally, we perform a fine-grained syntactic analysis of the generated translations that shows the effectiveness of our method.
+
+| Comments: | 6 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1903.03467](https://arxiv.org/abs/1903.03467) [cs.CL] |
+|           | (or **arXiv:1903.03467v1 [cs.CL]** for this version)         |
 
 
 
