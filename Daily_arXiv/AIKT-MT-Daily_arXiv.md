@@ -30,9 +30,7 @@
 
 Title: [Partially Shuffling the Training Data to Improve Language Models](https://arxiv.org/abs/1903.04167)
 
-Authors: Partially Shuffling the Training Data to Improve Language Models
-
-[Ofir Press](https://arxiv.org/search/cs?searchtype=author&query=Press%2C+O)
+Authors: [Ofir Press](https://arxiv.org/search/cs?searchtype=author&query=Press%2C+O)
 
 *(Submitted on 11 Mar 2019)*
 
