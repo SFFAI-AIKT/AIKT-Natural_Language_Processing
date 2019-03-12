@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-03-12](#2019-03-12)
+  - [1. Partially Shuffling the Training Data to Improve Language Models](#2019-03-12-1)
+  - [2. ETNLP: A Toolkit for Extraction, Evaluation and Visualization of Pre-trained Word Embeddings](#2019-03-12-2)
 - [2019-03-11](#2019-03-11)
   - [1. Context-Aware Crosslingual Mapping](#2019-03-11-1)
   - [2. Filling Gender & Number Gaps in Neural Machine Translation with Black-box Context Injection](#2019-03-11-2)
@@ -16,6 +19,46 @@
   - [1. Efficient Contextual Representation Learning Without Softmax Layer](#2019-03-01-1)
 
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-03-12
+
+[Return to Index](#Index)
+
+<h2 id="2019-03-12-1">1. Partially Shuffling the Training Data to Improve Language Models</h2> 
+
+Title: [Partially Shuffling the Training Data to Improve Language Models](https://arxiv.org/abs/1903.04167)
+
+Authors: Partially Shuffling the Training Data to Improve Language Models
+
+[Ofir Press](https://arxiv.org/search/cs?searchtype=author&query=Press%2C+O)
+
+*(Submitted on 11 Mar 2019)*
+
+> Although SGD requires shuffling the training data between epochs, currently none of the word-level language modeling systems do this. Naively shuffling all sentences in the training data would not permit the model to learn inter-sentence dependencies. Here we present a method that partially shuffles the training data between epochs. This method makes each batch random, while keeping most sentence ordering intact. It achieves new state of the art results on word-level language modeling on both the Penn Treebank and WikiText-2 datasets.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1903.04167](https://arxiv.org/abs/1903.04167) [cs.CL] |
+|           | (or **arXiv:1903.04167v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-03-12-2">2. ETNLP: A Toolkit for Extraction, Evaluation and Visualization of Pre-trained Word Embeddings</h2> 
+
+Title: [ETNLP: A Toolkit for Extraction, Evaluation and Visualization of Pre-trained Word Embeddings](https://arxiv.org/abs/1903.04433)
+
+Authors: [Xuan-Son Vu](https://arxiv.org/search/cs?searchtype=author&query=Vu%2C+X), [Thanh Vu](https://arxiv.org/search/cs?searchtype=author&query=Vu%2C+T), [Son N. Tran](https://arxiv.org/search/cs?searchtype=author&query=Tran%2C+S+N), [Lili Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+L)
+
+*(Submitted on 11 Mar 2019)*
+
+> In this paper, we introduce a comprehensive toolkit, ETNLP, which can evaluate, extract, and visualize multiple sets of pre-trained word embeddings. First, for evaluation, ETNLP analyses the quality of pre-trained embeddings based on an input word analogy list. Second, for extraction ETNLP provides a subset of the embeddings to be used in the downstream NLP tasks. Finally, ETNLP has a visualization module which is for exploring the embedded words interactively. We demonstrate the effectiveness of ETNLP on our pre-trained word embeddings in Vietnamese. Specifically, we create a large Vietnamese word analogy list to evaluate the embeddings. We then utilize the pre-trained embeddings for the name entity recognition (NER) task in Vietnamese and achieve the new state-of-the-art results on a benchmark dataset for the NER task. A video demonstration of ETNLP is available at [this https URL](https://vimeo.com/317599106). The source code and data are available at https: //github.com/vietnlp/etnlp.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1903.04433](https://arxiv.org/abs/1903.04433) [cs.CL] |
+|           | (or **arXiv:1903.04433v1 [cs.CL]** for this version)         |
 
 
 
