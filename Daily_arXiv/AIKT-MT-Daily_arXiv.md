@@ -2,6 +2,8 @@
 
 ### Index
 
+- [2019-03-13](#2019-03-13)
+  - [1. Context-Aware Learning for Neural Machine Translation](#2019-03-13-1)
 - [2019-03-12](#2019-03-12)
   - [1. Partially Shuffling the Training Data to Improve Language Models](#2019-03-12-1)
   - [2. ETNLP: A Toolkit for Extraction, Evaluation and Visualization of Pre-trained Word Embeddings](#2019-03-12-2)
@@ -19,6 +21,27 @@
   - [1. Efficient Contextual Representation Learning Without Softmax Layer](#2019-03-01-1)
 
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-03-13
+
+[Return to Index](#Index)
+
+<h2 id="2019-03-13-1">1. Context-Aware Learning for Neural Machine Translation</h2> 
+
+Title: [Context-Aware Learning for Neural Machine Translation](https://arxiv.org/abs/1903.04715)
+
+Authors: [Sébastien Jean](https://arxiv.org/search/cs?searchtype=author&query=Jean%2C+S), [Kyunghyun Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+K)
+
+*(Submitted on 12 Mar 2019)*
+
+> Interest in larger-context neural machine translation, including document-level and multi-modal translation, has been growing. Multiple works have proposed new network architectures or evaluation schemes, but potentially helpful context is still sometimes ignored by larger-context translation models. In this paper, we propose a novel learning algorithm that explicitly encourages a neural translation model to take into account additional context using a multilevel pair-wise ranking loss. We evaluate the proposed learning algorithm with a transformer-based larger-context translation system on document-level translation. By comparing performance using actual and random contexts, we show that a model trained with the proposed algorithm is more sensitive to the additional context.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1903.04715](https://arxiv.org/abs/1903.04715) [cs.CL] |
+|           | (or **arXiv:1903.04715v1 [cs.CL]** for this version)         |
 
 
 
