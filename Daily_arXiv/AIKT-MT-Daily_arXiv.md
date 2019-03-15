@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-03-15](#2019-03-15)
+  - [1. Low-Resource Syntactic Transfer with Unsupervised Source Reordering](#2019-03-15-1)
+  - [2. To Tune or Not to Tune? Adapting Pretrained Representations to Diverse Tasks](#2019-03-15-2)
 - [2019-03-13](#2019-03-13)
   - [1. Context-Aware Learning for Neural Machine Translation](#2019-03-13-1)
 - [2019-03-12](#2019-03-12)
@@ -21,6 +24,45 @@
   - [1. Efficient Contextual Representation Learning Without Softmax Layer](#2019-03-01-1)
 
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-03-15
+
+[Return to Index](#Index)
+
+<h2 id="2019-03-15-1">1. Low-Resource Syntactic Transfer with Unsupervised Source Reordering</h2> 
+
+Title: [Low-Resource Syntactic Transfer with Unsupervised Source Reordering](https://arxiv.org/abs/1903.05683)
+
+Authors: [Mohammad Sadegh Rasooli](https://arxiv.org/search/cs?searchtype=author&query=Rasooli%2C+M+S), [Michael Collins](https://arxiv.org/search/cs?searchtype=author&query=Collins%2C+M)
+
+*(Submitted on 13 Mar 2019)*
+
+> We describe a cross-lingual transfer method for dependency parsing that takes into account the problem of word order differences between source and target languages. Our model only relies on the Bible, a considerably smaller parallel data than the commonly used parallel data in transfer methods. We use the concatenation of projected trees from the Bible corpus, and the gold-standard treebanks in multiple source languages along with cross-lingual word representations. We demonstrate that reordering the source treebanks before training on them for a target language improves the accuracy of languages outside the European language family. Our experiments on 68 treebanks (38 languages) in the Universal Dependencies corpus achieve a high accuracy for all languages. Among them, our experiments on 16 treebanks of 12 non-European languages achieve an average UAS absolute improvement of 3.3% over a state-of-the-art method.
+
+| Comments: | Accepted in NAACL 2019                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1903.05683](https://arxiv.org/abs/1903.05683) [cs.CL] |
+|           | (or **arXiv:1903.05683v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-03-15-2">2. To Tune or Not to Tune? Adapting Pretrained Representations to Diverse Tasks</h2> 
+
+Title: [To Tune or Not to Tune? Adapting Pretrained Representations to Diverse Tasks](https://arxiv.org/abs/1903.05987)
+
+Authors: [Matthew Peters](https://arxiv.org/search/cs?searchtype=author&query=Peters%2C+M), [Sebastian Ruder](https://arxiv.org/search/cs?searchtype=author&query=Ruder%2C+S), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith%2C+N+A)
+
+*(Submitted on 14 Mar 2019)*
+
+> While most previous work has focused on different pretraining objectives and architectures for transfer learning, we ask how to best adapt the pretrained model to a given target task. We focus on the two most common forms of adaptation, feature extraction (where the pretrained weights are frozen), and directly fine-tuning the pretrained model. Our empirical results across diverse NLP tasks with two state-of-the-art models show that the relative performance of fine-tuning vs. feature extraction depends on the similarity of the pretraining and target tasks. We explore possible explanations for this finding and provide a set of adaptation guidelines for the NLP practitioner.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1903.05987](https://arxiv.org/abs/1903.05987) [cs.CL] |
+|           | (or **arXiv:1903.05987v1 [cs.CL]** for this version)         |
 
 
 
