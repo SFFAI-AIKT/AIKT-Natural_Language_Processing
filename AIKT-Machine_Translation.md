@@ -3,7 +3,7 @@
 ## Acknowledgements
 
 - Most of the Paper Recommendations are sorted out by [THUNLP_MT](https://github.com/THUNLP-MT/MT-Reading-List)
-- Daily arXiv Papers Section is mainly sorted out by [Cong MA](cong.ma@nlpr.ia.ac.cn)
+- Daily arXiv Papers Section is mainly sorted out by [Cong MA](mailto:cong.ma@nlpr.ia.ac.cn)
 
 
 
