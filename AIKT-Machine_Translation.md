@@ -1,5 +1,14 @@
 # AIKT-Machine_Translation
 
+## Acknowledgements
+
+- Most of the Paper Recommendations are sorted by [THUNLP_MT](https://github.com/THUNLP-MT/MT-Reading-List)
+- Daily arXiv Papers Section is mainly sorted by [Cong MA](cong.ma@nlpr.ia.ac.cn)
+
+
+
+## Machine Translation Paper Recommendation
+
 - [Daily arXiv Papers for Machine Translation](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv.md)
 - [清华自然语言处理组推荐-机器翻译十篇必读](https://github.com/THUNLP-MT/MT-Reading-List)
   - Peter E. Brown, Stephen A. Della Pietra, Vincent J. Della Pietra, and Robert L. Mercer. 1993. The Mathematics of Statistical Machine Translation: Parameter Estimation. Computational Linguistics. [<http://aclweb.org/anthology/J93-2003>]
