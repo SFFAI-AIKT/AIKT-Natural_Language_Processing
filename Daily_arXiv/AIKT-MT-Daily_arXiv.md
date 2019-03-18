@@ -2,6 +2,8 @@
 
 ### Index
 
+- [2019-03-18](#2019-03-18)
+  - [1. On Evaluation of Adversarial Perturbations for Sequence-to-Sequence Models](#2019-03-18-1)
 - [2019-03-15](#2019-03-15)
   - [1. Low-Resource Syntactic Transfer with Unsupervised Source Reordering](#2019-03-15-1)
   - [2. To Tune or Not to Tune? Adapting Pretrained Representations to Diverse Tasks](#2019-03-15-2)
@@ -24,6 +26,28 @@
   - [1. Efficient Contextual Representation Learning Without Softmax Layer](#2019-03-01-1)
 
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-03-18
+
+[Return to Index](#Index)
+
+<h2 id="2019-03-18-1">1. On Evaluation of Adversarial Perturbations for Sequence-to-Sequence Models</h2> 
+
+Title: [On Evaluation of Adversarial Perturbations for Sequence-to-Sequence Models](https://arxiv.org/abs/1903.06620)
+
+Authors: [Paul Michel](https://arxiv.org/search/cs?searchtype=author&query=Michel%2C+P), [Xian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G), [Juan Miguel Pino](https://arxiv.org/search/cs?searchtype=author&query=Pino%2C+J+M)
+
+*(Submitted on 15 Mar 2019)*
+
+> Adversarial examples --- perturbations to the input of a model that elicit large changes in the output --- have been shown to be an effective way of assessing the robustness of sequence-to-sequence (seq2seq) models. However, these perturbations only indicate weaknesses in the model if they do not change the input so significantly that it legitimately results in changes in the expected output. This fact has largely been ignored in the evaluations of the growing body of related literature. Using the example of untargeted attacks on machine translation (MT), we propose a new evaluation framework for adversarial attacks on seq2seq models that takes the semantic equivalence of the pre- and post-perturbation input into account. Using this framework, we demonstrate that existing methods may not preserve meaning in general, breaking the aforementioned assumption that source side perturbations should not result in changes in the expected output. We further use this framework to demonstrate that adding additional constraints on attacks allows for adversarial perturbations that are more meaning-preserving, but nonetheless largely change the output sequence. Finally, we show that performing untargeted adversarial training with meaning-preserving attacks is beneficial to the model in terms of adversarial robustness, without hurting test performance. A toolkit implementing our evaluation framework is released at [this https URL](https://github.com/pmichel31415/teapot-nlp).
+
+| Comments: | NAACL-HLT 2019 long paper                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1903.06620](https://arxiv.org/abs/1903.06620) [cs.CL] |
+|           | (or **arXiv:1903.06620v1 [cs.CL]** for this version)         |
 
 
 
