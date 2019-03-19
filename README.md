@@ -13,7 +13,7 @@ This repository is a sub branch of AI Knowledge Tree, mainly focus on Natural La
 - [机器翻译（Machine Translation）](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/AIKT-Machine_Translation.md)
   - [arXiv每日论文更新（Daily arXiv）](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv.md)
   - [论文推荐（Paper Recommendation）](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/AIKT-Machine_Translation.md)
-- [任务型对话（Task Oriented Dialogue System）](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/AIKT-Task_Oriented_Dialogue_System.md)
+- [对话系统（Dialogue System）](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/AIKT-Dialogue_System.md)
 - [知识图谱（Knowledge Graph）](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/AIKT-Knowledge_Graph.md)
 - [信息抽取（Information Extraction）](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/AIKT-Information_Extraction.md)
 - [自动摘要（Summarization）](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/AIKT-Summarization.md)
