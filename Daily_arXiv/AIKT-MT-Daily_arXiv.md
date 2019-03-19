@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-03-19](#2019-03-19)
+  - [1. The Missing Ingredient in Zero-Shot Neural Machine Translation](#2019-03-19-1)
+  - [2. Topic-Guided Variational Autoencoders for Text Generation](#2019-03-19-2)
 - [2019-03-18](#2019-03-18)
   - [1. On Evaluation of Adversarial Perturbations for Sequence-to-Sequence Models](#2019-03-18-1)
 - [2019-03-15](#2019-03-15)
@@ -26,6 +29,44 @@
   - [1. Efficient Contextual Representation Learning Without Softmax Layer](#2019-03-01-1)
 
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-03-19
+
+[Return to Index](#Index)
+
+<h2 id="2019-03-19-1">1. The Missing Ingredient in Zero-Shot Neural Machine Translation</h2> 
+
+Title: [The Missing Ingredient in Zero-Shot Neural Machine Translation](https://arxiv.org/abs/1903.07091)
+
+Authors: [Naveen Arivazhagan](https://arxiv.org/search/cs?searchtype=author&query=Arivazhagan%2C+N), [Ankur Bapna](https://arxiv.org/search/cs?searchtype=author&query=Bapna%2C+A), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O), [Roee Aharoni](https://arxiv.org/search/cs?searchtype=author&query=Aharoni%2C+R), [Melvin Johnson](https://arxiv.org/search/cs?searchtype=author&query=Johnson%2C+M), [Wolfgang Macherey](https://arxiv.org/search/cs?searchtype=author&query=Macherey%2C+W)
+
+*(Submitted on 17 Mar 2019)*
+
+> Multilingual Neural Machine Translation (NMT) models are capable of translating between multiple source and target languages. Despite various approaches to train such models, they have difficulty with zero-shot translation: translating between language pairs that were not together seen during training. In this paper we first diagnose why state-of-the-art multilingual NMT models that rely purely on parameter sharing, fail to generalize to unseen language pairs. We then propose auxiliary losses on the NMT encoder that impose representational invariance across languages. Our simple approach vastly improves zero-shot translation quality without regressing on supervised directions. For the first time, on WMT14 English-FrenchGerman, we achieve zero-shot performance that is on par with pivoting. We also demonstrate the easy scalability of our approach to multiple languages on the IWSLT 2017 shared task.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1903.07091](https://arxiv.org/abs/1903.07091) [cs.CL] |
+|           | (or **arXiv:1903.07091v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-03-19-2">2. Topic-Guided Variational Autoencoders for Text Generation</h2> 
+
+Title: [Topic-Guided Variational Autoencoders for Text Generation](https://arxiv.org/abs/1903.07137)
+
+Authors: [Wenlin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Zhe Gan](https://arxiv.org/search/cs?searchtype=author&query=Gan%2C+Z), [Hongteng Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+H), [Ruiyi Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+R), [Guoyin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+G), [Dinghan Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+D), [Changyou Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+C), [Lawrence Carin](https://arxiv.org/search/cs?searchtype=author&query=Carin%2C+L)
+
+*(Submitted on 17 Mar 2019)*
+
+> We propose a topic-guided variational autoencoder (TGVAE) model for text generation. Distinct from existing variational autoencoder (VAE) based approaches, which assume a simple Gaussian prior for the latent code, our model specifies the prior as a Gaussian mixture model (GMM) parametrized by a neural topic module. Each mixture component corresponds to a latent topic, which provides guidance to generate sentences under the topic. The neural topic module and the VAE-based neural sequence module in our model are learned jointly. In particular, a sequence of invertible Householder transformations is applied to endow the approximate posterior of the latent code with high flexibility during model inference. Experimental results show that our TGVAE outperforms alternative approaches on both unconditional and conditional text generation, which can generate semantically-meaningful sentences with various topics.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1903.07137](https://arxiv.org/abs/1903.07137) [cs.CL] |
+|           | (or **arXiv:1903.07137v1 [cs.CL]** for this version)         |
 
 
 
