@@ -2,6 +2,10 @@
 
 ### Index
 
+- [2019-03-20](#2019-03-20)
+  - [1. Cloze-driven Pretraining of Self-attention Networks](#2019-03-20-1)
+  - [2. CVIT-MT Systems for WAT-2018](#2018-03-20-2)
+  - [3. compare-mt: A Tool for Holistic Comparison of Language Generation Systems](#2019-03-20-3)
 - [2019-03-19](#2019-03-19)
   - [1. The Missing Ingredient in Zero-Shot Neural Machine Translation](#2019-03-19-1)
   - [2. Topic-Guided Variational Autoencoders for Text Generation](#2019-03-19-2)
@@ -29,6 +33,62 @@
   - [1. Efficient Contextual Representation Learning Without Softmax Layer](#2019-03-01-1)
 
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-03-20
+
+[Return to Index](#Index)
+
+<h2 id="2019-03-20-1">1. Cloze-driven Pretraining of Self-attention Networks</h2> 
+
+Title: [Cloze-driven Pretraining of Self-attention Networks](https://arxiv.org/abs/1903.07785)
+
+Authors: [Alexei Baevski](https://arxiv.org/search/cs?searchtype=author&query=Baevski%2C+A), [Sergey Edunov](https://arxiv.org/search/cs?searchtype=author&query=Edunov%2C+S), [Yinhan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Luke Zettlemoyer](https://arxiv.org/search/cs?searchtype=author&query=Zettlemoyer%2C+L), [Michael Auli](https://arxiv.org/search/cs?searchtype=author&query=Auli%2C+M)
+
+*(Submitted on 19 Mar 2019)*
+
+> We present a new approach for pretraining a bi-directional transformer model that provides significant performance gains across a variety of language understanding problems. Our model solves a cloze-style word reconstruction task, where each word is ablated and must be predicted given the rest of the text. Experiments demonstrate large performance gains on GLUE and new state of the art results on NER as well as constituency parsing benchmarks, consistent with the concurrently introduced BERT model. We also present a detailed analysis of a number of factors that contribute to effective pretraining, including data domain and size, model capacity, and variations on the cloze objective.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1903.07785](https://arxiv.org/abs/1903.07785) [cs.CL] |
+|           | (or **arXiv:1903.07785v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-03-20-2">2. CVIT-MT Systems for WAT-2018</h2> 
+
+Title: [CVIT-MT Systems for WAT-2018](https://arxiv.org/abs/1903.07917)
+
+Authors: [Jerin Philip](https://arxiv.org/search/cs?searchtype=author&query=Philip%2C+J), [Vinay P. Namboodiri](https://arxiv.org/search/cs?searchtype=author&query=Namboodiri%2C+V+P), [C.V. Jawahar](https://arxiv.org/search/cs?searchtype=author&query=Jawahar%2C+C)
+
+*(Submitted on 19 Mar 2019)*
+
+> This document describes the machine translation system used in the submissions of IIIT-Hyderabad CVIT-MT for the WAT-2018 English-Hindi translation task. Performance is evaluated on the associated corpus provided by the organizers. We experimented with convolutional sequence to sequence architectures. We also train with additional data obtained through backtranslation.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1903.07917](https://arxiv.org/abs/1903.07917) [cs.CL] |
+|           | (or **arXiv:1903.07917v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-03-20-3">3. compare-mt: A Tool for Holistic Comparison of Language Generation Systems</h2> 
+
+Title: [compare-mt: A Tool for Holistic Comparison of Language Generation Systems](https://arxiv.org/abs/1903.07926)
+
+Authors: [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G), [Zi-Yi Dou](https://arxiv.org/search/cs?searchtype=author&query=Dou%2C+Z), [Junjie Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+J), [Paul Michel](https://arxiv.org/search/cs?searchtype=author&query=Michel%2C+P), [Danish Pruthi](https://arxiv.org/search/cs?searchtype=author&query=Pruthi%2C+D), [Xinyi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X)
+
+*(Submitted on 19 Mar 2019)*
+
+> In this paper, we describe compare-mt, a tool for holistic analysis and comparison of the results of systems for language generation tasks such as machine translation. The main goal of the tool is to give the user a high-level and coherent view of the salient differences between systems that can then be used to guide further analysis or system improvement. It implements a number of tools to do so, such as analysis of accuracy of generation of particular types of words, bucketed histograms of sentence accuracies or counts based on salient characteristics, and extraction of characteristic n-grams for each system. It also has a number of advanced features such as use of linguistic labels, source side data, or comparison of log likelihoods for probabilistic models, and also aims to be easily extensible by users to new types of analysis. The code is available at [this https URL](https://github.com/neulab/compare-mt)
+
+| Comments: | NAACL 2019 Demo Paper                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1903.07926](https://arxiv.org/abs/1903.07926) [cs.CL] |
+|           | (or **arXiv:1903.07926v1 [cs.CL]** for this version)         |
 
 
 
