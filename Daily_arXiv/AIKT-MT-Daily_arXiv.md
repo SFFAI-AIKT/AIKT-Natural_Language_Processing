@@ -4,7 +4,7 @@
 
 - [2019-03-20](#2019-03-20)
   - [1. Cloze-driven Pretraining of Self-attention Networks](#2019-03-20-1)
-  - [2. CVIT-MT Systems for WAT-2018](#2018-03-20-2)
+  - [2. CVIT-MT Systems for WAT-2018](#2019-03-20-2)
   - [3. compare-mt: A Tool for Holistic Comparison of Language Generation Systems](#2019-03-20-3)
 - [2019-03-19](#2019-03-19)
   - [1. The Missing Ingredient in Zero-Shot Neural Machine Translation](#2019-03-19-1)
