@@ -2,6 +2,8 @@
 
 ### Index
 
+- [2019-03-21](#2019-03-21)
+  - [1. Aligning Biomedical Metadata with Ontologies Using Clustering and Embeddings](#2019-03-21-1)
 - [2019-03-20](#2019-03-20)
   - [1. Cloze-driven Pretraining of Self-attention Networks](#2019-03-20-1)
   - [2. CVIT-MT Systems for WAT-2018](#2019-03-20-2)
@@ -33,6 +35,27 @@
   - [1. Efficient Contextual Representation Learning Without Softmax Layer](#2019-03-01-1)
 
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-03-21
+
+[Return to Index](#Index)
+
+<h2 id="2019-03-21-1">1. Aligning Biomedical Metadata with Ontologies Using Clustering and Embeddings</h2> 
+
+Title: [Aligning Biomedical Metadata with Ontologies Using Clustering and Embeddings](https://arxiv.org/abs/1903.08206)
+
+Authors: [Rafael S. Gonçalves](https://arxiv.org/search/cs?searchtype=author&query=Gon%C3%A7alves%2C+R+S), [Maulik R. Kamdar](https://arxiv.org/search/cs?searchtype=author&query=Kamdar%2C+M+R), [Mark A. Musen](https://arxiv.org/search/cs?searchtype=author&query=Musen%2C+M+A)
+
+*(Submitted on 19 Mar 2019)*
+
+> The metadata about scientific experiments published in online repositories have been shown to suffer from a high degree of representational heterogeneity---there are often many ways to represent the same type of information, such as a geographical location via its latitude and longitude. To harness the potential that metadata have for discovering scientific data, it is crucial that they be represented in a uniform way that can be queried effectively. One step toward uniformly-represented metadata is to normalize the multiple, distinct field names used in metadata (e.g., lat lon, lat and long) to describe the same type of value. To that end, we present a new method based on clustering and embeddings (i.e., vector representations of words) to align metadata field names with ontology terms. We apply our method to biomedical metadata by generating embeddings for terms in biomedical ontologies from the BioPortal repository. We carried out a comparative study between our method and the NCBO Annotator, which revealed that our method yields more and substantially better alignments between metadata and ontology terms.
+
+| Subjects: | **Computation and Language (cs.CL)**; Information Retrieval (cs.IR) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1903.08206](https://arxiv.org/abs/1903.08206) [cs.CL] |
+|           | (or **arXiv:1903.08206v1 [cs.CL]** for this version)         |
 
 
 
