@@ -2,6 +2,10 @@
 
 ### Index
 
+- [2019-03-22](#2019-03-22)
+  - [1. Probing the Need for Visual Context in Multimodal Machine Translation](#2018-03-22-1)
+  - [2. Selective Attention for Context-aware Neural Machine Translation](#2018-03-22-2)
+  - [3. Linguistic Knowledge and Transferability of Contextual Representations](#2018-03-22-3)
 - [2019-03-21](#2019-03-21)
   - [1. Aligning Biomedical Metadata with Ontologies Using Clustering and Embeddings](#2019-03-21-1)
 - [2019-03-20](#2019-03-20)
@@ -35,6 +39,64 @@
   - [1. Efficient Contextual Representation Learning Without Softmax Layer](#2019-03-01-1)
 
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-03-22
+
+[Return to Index](#Index)
+
+<h2 id="2019-03-22-1">1. Probing the Need for Visual Context in Multimodal Machine Translation</h2> 
+
+Title: [Probing the Need for Visual Context in Multimodal Machine Translation](https://arxiv.org/abs/1903.08678)
+
+Authors: [Ozan Caglayan](https://arxiv.org/search/cs?searchtype=author&query=Caglayan%2C+O), [Pranava Madhyastha](https://arxiv.org/search/cs?searchtype=author&query=Madhyastha%2C+P), [Lucia Specia](https://arxiv.org/search/cs?searchtype=author&query=Specia%2C+L), [Loïc Barrault](https://arxiv.org/search/cs?searchtype=author&query=Barrault%2C+L)
+
+*(Submitted on 20 Mar 2019)*
+
+> Current work on multimodal machine translation (MMT) has suggested that the visual modality is either unnecessary or only marginally beneficial. We posit that this is a consequence of the very simple, short and repetitive sentences used in the only available dataset for the task (Multi30K), rendering the source text sufficient as context. In the general case, however, we believe that it is possible to combine visual and textual information in order to ground translations. In this paper we probe the contribution of the visual modality to state-of-the-art MMT models by conducting a systematic analysis where we partially deprive the models from source-side textual context. Our results show that under limited textual context, models are capable of leveraging the visual input to generate better translations. This contradicts the current belief that MMT models disregard the visual modality because of either the quality of the image features or the way they are integrated into the model.
+
+| Comments: | Accepted to NAACL-HLT 2019, reviewer comments addressed. Appendix included for the arXiv version |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1903.08678](https://arxiv.org/abs/1903.08678) [cs.CL] |
+|           | (or **arXiv:1903.08678v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-03-22-2">2. Selective Attention for Context-aware Neural Machine Translation</h2> 
+
+Title: [Selective Attention for Context-aware Neural Machine Translation](https://arxiv.org/abs/1903.08788)
+
+Authors: [Sameen Maruf](https://arxiv.org/search/cs?searchtype=author&query=Maruf%2C+S), [André F. T. Martins](https://arxiv.org/search/cs?searchtype=author&query=Martins%2C+A+F+T), [Gholamreza Haffari](https://arxiv.org/search/cs?searchtype=author&query=Haffari%2C+G)
+
+*(Submitted on 21 Mar 2019)*
+
+> Despite the progress made in sentence-level NMT, current systems still fall short at achieving fluent, good quality translation for a full document. Recent works in context-aware NMT consider only a few previous sentences as context and may not scale to entire documents. To this end, we propose a novel and scalable top-down approach to hierarchical attention for context-aware NMT which uses sparse attention to selectively focus on relevant sentences in the document context and then attends to key words in those sentences. We also propose single-level attention approaches based on sentence or word-level information in the context. The document-level context representation, produced from these attention modules, is integrated into the encoder or decoder of the Transformer model depending on whether we use monolingual or bilingual context. Our experiments and evaluation on English-German datasets in different document MT settings show that our selective attention approach not only significantly outperforms context-agnostic baselines but also surpasses context-aware baselines in most cases.
+
+| Comments: | Accepted at NAACL-HLT 2019                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1903.08788](https://arxiv.org/abs/1903.08788) [cs.CL] |
+|           | (or **arXiv:1903.08788v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-03-22-3">3. Linguistic Knowledge and Transferability of Contextual Representations</h2> 
+
+Title: [Linguistic Knowledge and Transferability of Contextual Representations](https://arxiv.org/abs/1903.08855)
+
+Authors: [Nelson F. Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+N+F), [Matt Gardner](https://arxiv.org/search/cs?searchtype=author&query=Gardner%2C+M), [Yonatan Belinkov](https://arxiv.org/search/cs?searchtype=author&query=Belinkov%2C+Y), [Matthew Peters](https://arxiv.org/search/cs?searchtype=author&query=Peters%2C+M), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith%2C+N+A)
+
+*(Submitted on 21 Mar 2019)*
+
+> Contextual word representations derived from large-scale neural language models are successful across a diverse set of NLP tasks, suggesting that they encode useful and transferable features of language. To shed light on the linguistic knowledge they capture, we study the representations produced by several recent pretrained contextualizers (variants of ELMo, the OpenAI transformer LM, and BERT) with a suite of sixteen diverse probing tasks. We find that linear models trained on top of frozen contextual representations are competitive with state-of-the-art task-specific models in many cases, but fail on tasks requiring fine-grained linguistic knowledge (e.g., conjunct identification). To investigate the transferability of contextual word representations, we quantify differences in the transferability of individual layers within contextualizers, especially between RNNs and transformers. For instance, higher layers of RNNs are more task-specific, while transformer layers do not exhibit the same monotonic trend. In addition, to better understand what makes contextual word representations transferable, we compare language model pretraining with eleven supervised pretraining tasks. For any given task, pretraining on a closely related task yields better performance than language model pretraining (which is better on average) when the pretraining dataset is fixed. However, language model pretraining on more data gives the best results.
+
+| Comments: | 22 pages, 4 figures; accepted to NAACL 2019                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1903.08855](https://arxiv.org/abs/1903.08855) [cs.CL] |
+|           | (or **arXiv:1903.08855v1 [cs.CL]** for this version)         |
 
 
 
