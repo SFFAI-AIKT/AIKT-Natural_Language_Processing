@@ -3,9 +3,9 @@
 ### Index
 
 - [2019-03-22](#2019-03-22)
-  - [1. Probing the Need for Visual Context in Multimodal Machine Translation](#2018-03-22-1)
-  - [2. Selective Attention for Context-aware Neural Machine Translation](#2018-03-22-2)
-  - [3. Linguistic Knowledge and Transferability of Contextual Representations](#2018-03-22-3)
+  - [1. Probing the Need for Visual Context in Multimodal Machine Translation](#2019-03-22-1)
+  - [2. Selective Attention for Context-aware Neural Machine Translation](#2019-03-22-2)
+  - [3. Linguistic Knowledge and Transferability of Contextual Representations](#2019-03-22-3)
 - [2019-03-21](#2019-03-21)
   - [1. Aligning Biomedical Metadata with Ontologies Using Clustering and Embeddings](#2019-03-21-1)
 - [2019-03-20](#2019-03-20)
