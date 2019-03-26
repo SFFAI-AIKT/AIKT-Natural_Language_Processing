@@ -2,7 +2,7 @@
 
 ### Index
 
-- [2019-03-26](#2019-03-22)
+- [2019-03-26](#2019-03-26)
   - [1. Competence-based Curriculum Learning for Neural Machine Translation](#2019-03-26-1)
   - [2. Aligning Vector-spaces with Noisy Supervised Lexicons](#2019-03-26-2)
 - [2019-03-22](#2019-03-22)
