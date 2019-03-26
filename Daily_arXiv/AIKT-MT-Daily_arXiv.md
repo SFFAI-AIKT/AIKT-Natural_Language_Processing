@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-03-26](#2019-03-22)
+  - [1. Competence-based Curriculum Learning for Neural Machine Translation](#2019-03-26-1)
+  - [2. Aligning Vector-spaces with Noisy Supervised Lexicons](#2019-03-26-2)
 - [2019-03-22](#2019-03-22)
   - [1. Probing the Need for Visual Context in Multimodal Machine Translation](#2019-03-22-1)
   - [2. Selective Attention for Context-aware Neural Machine Translation](#2019-03-22-2)
@@ -39,6 +42,50 @@
   - [1. Efficient Contextual Representation Learning Without Softmax Layer](#2019-03-01-1)
 
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-03-26
+
+[Return to Index](#Index)
+
+<h2 id="2019-03-26-1">1. Competence-based Curriculum Learning for Neural Machine Translation</h2> 
+
+Title: [Competence-based Curriculum Learning for Neural Machine Translation](https://arxiv.org/abs/1903.09848)
+
+Auhtors: [Emmanouil Antonios Platanios](https://arxiv.org/search/cs?searchtype=author&query=Platanios%2C+E+A), [Otilia Stretcu](https://arxiv.org/search/cs?searchtype=author&query=Stretcu%2C+O), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G), [Barnabas Poczos](https://arxiv.org/search/cs?searchtype=author&query=Poczos%2C+B), [Tom M. Mitchell](https://arxiv.org/search/cs?searchtype=author&query=Mitchell%2C+T+M)
+
+*(Submitted on 23 Mar 2019)*
+
+> Current state-of-the-art NMT systems use large neural networks that are not only slow to train, but also often require many heuristics and optimization tricks, such as specialized learning rate schedules and large batch sizes. This is undesirable as it requires extensive hyperparameter tuning. In this paper, we propose a curriculum learning framework for NMT that reduces training time, reduces the need for specialized heuristics or large batch sizes, and results in overall better performance. Our framework consists of a principled way of deciding which training samples are shown to the model at different times during training, based on the estimated difficulty of a sample and the current competence of the model. Filtering training samples in this manner prevents the model from getting stuck in bad local optima, making it converge faster and reach a better solution than the common approach of uniformly sampling training examples. Furthermore, the proposed method can be easily applied to existing NMT models by simply modifying their input data pipelines. We show that our framework can help improve the training time and the performance of both recurrent neural network models and Transformers, achieving up to a 70% decrease in training time, while at the same time obtaining accuracy improvements of up to 2.2 BLEU.
+
+| Subjects:          | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | NAACL 2019                                                   |
+| Cite as:           | [arXiv:1903.09848](https://arxiv.org/abs/1903.09848) [cs.CL] |
+|                    | (or **arXiv:1903.09848v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-03-26-2">2. Aligning Vector-spaces with Noisy Supervised Lexicons</h2> 
+
+Title: [Aligning Vector-spaces with Noisy Supervised Lexicons](https://arxiv.org/abs/1903.10238)
+
+Authors: [Noa Yehezkel Lubin](https://arxiv.org/search/cs?searchtype=author&query=Lubin%2C+N+Y), [Jacob Goldberger](https://arxiv.org/search/cs?searchtype=author&query=Goldberger%2C+J), [Yoav Goldberg](https://arxiv.org/search/cs?searchtype=author&query=Goldberg%2C+Y)
+
+*(Submitted on 25 Mar 2019)*
+
+> The problem of learning to translate between two vector spaces given a set of aligned points arises in several application areas of NLP. Current solutions assume that the lexicon which defines the alignment pairs is noise-free. We consider the case where the set of aligned points is allowed to contain an amount of noise, in the form of incorrect lexicon pairs and show that this arises in practice by analyzing the edited dictionaries after the cleaning process. We demonstrate that such noise substantially degrades the accuracy of the learned translation when using current methods. We propose a model that accounts for noisy pairs. This is achieved by introducing a generative model with a compatible iterative EM algorithm. The algorithm jointly learns the noise level in the lexicon, finds the set of noisy pairs, and learns the mapping between the spaces. We demonstrate the effectiveness of our proposed algorithm on two alignment problems: bilingual word embedding translation, and mapping between diachronic embedding spaces for recovering the semantic shifts of words across time periods.
+
+| Comments: | Accepted as a short paper in NAACL 2019                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1903.10238](https://arxiv.org/abs/1903.10238) [cs.CL] |
+|           | (or **arXiv:1903.10238v1 [cs.CL]** for this version)         |
+
+
 
 
 
