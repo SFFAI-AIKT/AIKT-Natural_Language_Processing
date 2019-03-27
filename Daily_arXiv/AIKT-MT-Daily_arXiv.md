@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-03-27](#2019-03-27)
+  - [1. Interoperability and machine-to-machine translation model with mappings to machine learning tasks](#2019-03-27-1)
+  - [2. Reinforcement Learning Based Text Style Transfer without Parallel Training Corpus](#2019-03-27-2)
 - [2019-03-26](#2019-03-26)
   - [1. Competence-based Curriculum Learning for Neural Machine Translation](#2019-03-26-1)
   - [2. Aligning Vector-spaces with Noisy Supervised Lexicons](#2019-03-26-2)
@@ -42,6 +45,45 @@
   - [1. Efficient Contextual Representation Learning Without Softmax Layer](#2019-03-01-1)
 
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-03-27
+
+[Return to Index](#Index)
+
+<h2 id="2019-03-27-1">1. Interoperability and machine-to-machine translation model with mappings to machine learning tasks</h2> 
+
+Title: [Interoperability and machine-to-machine translation model with mappings to machine learning tasks](https://arxiv.org/abs/1903.10735)
+
+Authors: [Jacob Nilsson](https://arxiv.org/search/cs?searchtype=author&query=Nilsson%2C+J), [Fredrik Sandin](https://arxiv.org/search/cs?searchtype=author&query=Sandin%2C+F), [Jerker Delsing](https://arxiv.org/search/cs?searchtype=author&query=Delsing%2C+J)
+
+*(Submitted on 26 Mar 2019)*
+
+> Modern large-scale automation systems integrate thousands to hundreds of thousands of physical sensors and actuators. Demands for more flexible reconfiguration of production systems and optimization across different information models, standards and legacy systems challenge current system interoperability concepts. Automatic semantic translation across information models and standards is an increasingly important problem that needs to be addressed to fulfill these demands in a cost-efficient manner under constraints of human capacity and resources in relation to timing requirements and system complexity. Here we define a translator-based operational interoperability model for interacting cyber-physical systems in mathematical terms, which includes system identification and ontology-based translation as special cases. We present alternative mathematical definitions of the translator learning task and mappings to similar machine learning tasks and solutions based on recent developments in machine learning. Possibilities to learn translators between artefacts without a common physical context, for example in simulations of digital twins and across layers of the automation pyramid are briefly discussed.
+
+| Comments: | 7 pages, 2 figures, 1 table, 1 listing. Submitted to the IEEE International Conference on Industrial Informatics 2019, INDIN'19 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| Cite as:  | [arXiv:1903.10735](https://arxiv.org/abs/1903.10735) [cs.LG] |
+|           | (or **arXiv:1903.10735v1 [cs.LG]** for this version)         |
+
+
+
+<h2 id="2019-03-27-2">2. Reinforcement Learning Based Text Style Transfer without Parallel Training Corpus</h2> 
+
+Title: [Reinforcement Learning Based Text Style Transfer without Parallel Training Corpus](https://arxiv.org/abs/1903.10671)
+
+Authors: [Hongyu Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+H), [Suma Bhat](https://arxiv.org/search/cs?searchtype=author&query=Bhat%2C+S), [Lingfei Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+L), [Jinjun Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+J), [Wen-mei Hwu](https://arxiv.org/search/cs?searchtype=author&query=Hwu%2C+W)
+
+*(Submitted on 26 Mar 2019)*
+
+> Text style transfer rephrases a text from a source style (e.g., informal) to a target style (e.g., formal) while keeping its original meaning. Despite the success existing works have achieved using a parallel corpus for the two styles, transferring text style has proven significantly more challenging when there is no parallel training corpus. In this paper, we address this challenge by using a reinforcement-learning-based generator-evaluator architecture. Our generator employs an attention-based encoder-decoder to transfer a sentence from the source style to the target style. Our evaluator is an adversarially trained style discriminator with semantic and syntactic constraints that score the generated sentence for style, meaning preservation, and fluency. Experimental results on two different style transfer tasks (sentiment transfer and formality transfer) show that our model outperforms state-of-the-art approaches. Furthermore, we perform a manual evaluation that demonstrates the effectiveness of the proposed method using subjective metrics of generated text quality.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1903.10671](https://arxiv.org/abs/1903.10671) [cs.CL] |
+|           | (or **arXiv:1903.10671v1 [cs.CL]** for this version)         |
 
 
 
