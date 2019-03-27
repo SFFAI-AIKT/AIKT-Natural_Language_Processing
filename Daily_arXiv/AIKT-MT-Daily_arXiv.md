@@ -8,6 +8,7 @@
 - [2019-03-26](#2019-03-26)
   - [1. Competence-based Curriculum Learning for Neural Machine Translation](#2019-03-26-1)
   - [2. Aligning Vector-spaces with Noisy Supervised Lexicons](#2019-03-26-2)
+  - [3. Pre-trained Language Model Representations for Language Generation](#2019-03-26-2)
 - [2019-03-22](#2019-03-22)
   - [1. Probing the Need for Visual Context in Multimodal Machine Translation](#2019-03-22-1)
   - [2. Selective Attention for Context-aware Neural Machine Translation](#2019-03-22-2)
@@ -128,6 +129,22 @@ Authors: [Noa Yehezkel Lubin](https://arxiv.org/search/cs?searchtype=author&quer
 |           | (or **arXiv:1903.10238v1 [cs.CL]** for this version)         |
 
 
+
+<h2 id="2019-03-26-3">3. Pre-trained Language Model Representations for Language Generation</h2> 
+
+Title: [Pre-trained Language Model Representations for Language Generation](https://arxiv.org/abs/1903.09722)
+
+Authors:[Sergey Edunov](https://arxiv.org/search/cs?searchtype=author&query=Edunov%2C+S), [Alexei Baevski](https://arxiv.org/search/cs?searchtype=author&query=Baevski%2C+A), [Michael Auli](https://arxiv.org/search/cs?searchtype=author&query=Auli%2C+M)
+
+*(Submitted on 22 Mar 2019)*
+
+> Pre-trained language model representations have been successful in a wide range of language understanding tasks. In this paper, we examine different strategies to integrate pre-trained representations into sequence to sequence models and apply it to neural machine translation and abstractive summarization. We find that pre-trained representations are most effective when added to the encoder network which slows inference by only 14%. Our experiments in machine translation show gains of up to 5.3 BLEU in a simulated resource-poor setup. While returns diminish with more labeled data, we still observe improvements when millions of sentence-pairs are available. Finally, on abstractive summarization we achieve a new state of the art on the full text version of CNN/DailyMail.
+
+| Comments: | NAACL 2019                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1903.09722](https://arxiv.org/abs/1903.09722) [cs.CL] |
+|           | (or **arXiv:1903.09722v1 [cs.CL]** for this version)         |
 
 
 
