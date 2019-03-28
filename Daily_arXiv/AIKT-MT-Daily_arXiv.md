@@ -2,6 +2,10 @@
 
 ### Index
 
+- [2019-03-28](#2019-03-28)
+  - [1. Using Monolingual Data in Neural Machine Translation: a Systematic Study](#2019-03-28-1)
+  - [2. Multilevel Text Normalization with Sequence-to-Sequence Networks and Multisource Learning](#2019-03-28-2)
+  - [3. Grammatical Error Correction and Style Transfer via Zero-shot Monolingual Translation](#2019-03-28-3)
 - [2019-03-27](#2019-03-27)
   - [1. Interoperability and machine-to-machine translation model with mappings to machine learning tasks](#2019-03-27-1)
   - [2. Reinforcement Learning Based Text Style Transfer without Parallel Training Corpus](#2019-03-27-2)
@@ -46,6 +50,65 @@
   - [1. Efficient Contextual Representation Learning Without Softmax Layer](#2019-03-01-1)
 
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-03-28
+
+[Return to Index](#Index)
+
+<h2 id="2019-03-28-1">1. 
+Using Monolingual Data in Neural Machine Translation: a Systematic Study</h2> 
+
+Title: [Using Monolingual Data in Neural Machine Translation: a Systematic Study](<https://arxiv.org/abs/1903.11437>)
+
+Authors: [Franck Burlot](https://arxiv.org/search/cs?searchtype=author&query=Burlot%2C+F), [François Yvon](https://arxiv.org/search/cs?searchtype=author&query=Yvon%2C+F)
+
+*(Submitted on 27 Mar 2019)*
+
+> Neural Machine Translation (MT) has radically changed the way systems are developed. A major difference with the previous generation (Phrase-Based MT) is the way monolingual target data, which often abounds, is used in these two paradigms. While Phrase-Based MT can seamlessly integrate very large language models trained on billions of sentences, the best option for Neural MT developers seems to be the generation of artificial parallel data through \textsl{back-translation} - a technique that fails to fully take advantage of existing datasets. In this paper, we conduct a systematic study of back-translation, comparing alternative uses of monolingual data, as well as multiple data generation procedures. Our findings confirm that back-translation is very effective and give new explanations as to why this is the case. We also introduce new data simulation techniques that are almost as effective, yet much cheaper to implement.
+
+| Comments: | Published in the Proceedings of the Third Conference on Machine Translation (Research Papers), 2018 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1903.11437](https://arxiv.org/abs/1903.11437) [cs.CL] |
+|           | (or **arXiv:1903.11437v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-03-28-2">2. 
+Multilevel Text Normalization with Sequence-to-Sequence Networks and Multisource Learning</h2> 
+
+Title: [Multilevel Text Normalization with Sequence-to-Sequence Networks and Multisource Learning](<https://arxiv.org/abs/1903.11340>)
+
+Authors: [Tatyana Ruzsics](https://arxiv.org/search/cs?searchtype=author&query=Ruzsics%2C+T), [Tanja Samardžić](https://arxiv.org/search/cs?searchtype=author&query=Samard%C5%BEi%C4%87%2C+T)
+
+*(Submitted on 27 Mar 2019)*
+
+> We define multilevel text normalization as sequence-to-sequence processing that transforms naturally noisy text into a sequence of normalized units of meaning (morphemes) in three steps: 1) writing normalization, 2) lemmatization, 3) canonical segmentation. These steps are traditionally considered separate NLP tasks, with diverse solutions, evaluation schemes and data sources. We exploit the fact that all these tasks involve sub-word sequence-to-sequence transformation to propose a systematic solution for all of them using neural encoder-decoder technology. The specific challenge that we tackle in this paper is integrating the traditional know-how on separate tasks into the neural sequence-to-sequence framework to improve the state of the art. We address this challenge by enriching the general framework with mechanisms that allow processing the information on multiple levels of text organization (characters, morphemes, words, sentences) in combination with structural information (multilevel language model, part-of-speech) and heterogeneous sources (text, dictionaries). We show that our solution consistently improves on the current methods in all three steps. In addition, we analyze the performance of our system to show the specific contribution of the integrating components to the overall improvement.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1903.11340](https://arxiv.org/abs/1903.11340) [cs.CL] |
+|           | (or **arXiv:1903.11340v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-03-28-3">3. 
+Grammatical Error Correction and Style Transfer via Zero-shot Monolingual Translation</h2> 
+
+Title: [Grammatical Error Correction and Style Transfer via Zero-shot Monolingual Translation](<https://arxiv.org/abs/1903.11283>)
+
+Authors: [Elizaveta Korotkova](https://arxiv.org/search/cs?searchtype=author&query=Korotkova%2C+E), [Agnes Luhtaru](https://arxiv.org/search/cs?searchtype=author&query=Luhtaru%2C+A), [Maksym Del](https://arxiv.org/search/cs?searchtype=author&query=Del%2C+M), [Krista Liin](https://arxiv.org/search/cs?searchtype=author&query=Liin%2C+K), [Daiga Deksne](https://arxiv.org/search/cs?searchtype=author&query=Deksne%2C+D), [Mark Fishel](https://arxiv.org/search/cs?searchtype=author&query=Fishel%2C+M)
+
+*(Submitted on 27 Mar 2019)*
+
+> Both grammatical error correction and text style transfer can be viewed as monolingual sequence-to-sequence transformation tasks, but the scarcity of directly annotated data for either task makes them unfeasible for most languages. We present an approach that does both tasks within the same trained model, and only uses regular language parallel data, without requiring error-corrected or style-adapted texts. We apply our model to three languages and present a thorough evaluation on both tasks, showing that the model is reliable for a number of error types and style transfer aspects.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1903.11283](https://arxiv.org/abs/1903.11283) [cs.CL] |
+|           | (or **arXiv:1903.11283v1 [cs.CL]** for this version)         |
 
 
 
