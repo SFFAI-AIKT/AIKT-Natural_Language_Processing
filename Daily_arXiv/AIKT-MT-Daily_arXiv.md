@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-03-29](#2019-03-29)
+  - [1. Mining Discourse Markers for Unsupervised Sentence Representation Learning](#2019-03-29-1)
+  - [2. Train, Sort, Explain: Learning to Diagnose Translation Models](2019-03-29-2)
 - [2019-03-28](#2019-03-28)
   - [1. Using Monolingual Data in Neural Machine Translation: a Systematic Study](#2019-03-28-1)
   - [2. Multilevel Text Normalization with Sequence-to-Sequence Networks and Multisource Learning](#2019-03-28-2)
@@ -50,6 +53,46 @@
   - [1. Efficient Contextual Representation Learning Without Softmax Layer](#2019-03-01-1)
 
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-03-29
+
+[Return to Index](#Index)
+
+<h2 id="2019-03-29-1">1. Mining Discourse Markers for Unsupervised Sentence Representation Learning</h2> 
+
+Title: [Mining Discourse Markers for Unsupervised Sentence Representation Learning](<https://arxiv.org/abs/1903.11850>)
+
+Authors: [Damien Sileo](https://arxiv.org/search/cs?searchtype=author&query=Sileo%2C+D), [Tim Van-De-Cruys](https://arxiv.org/search/cs?searchtype=author&query=Van-De-Cruys%2C+T), [Camille Pradel](https://arxiv.org/search/cs?searchtype=author&query=Pradel%2C+C), [Philippe Muller](https://arxiv.org/search/cs?searchtype=author&query=Muller%2C+P)
+
+*(Submitted on 28 Mar 2019)*
+
+> Current state of the art systems in NLP heavily rely on manually annotated datasets, which are expensive to construct. Very little work adequately exploits unannotated data -- such as discourse markers between sentences -- mainly because of data sparseness and ineffective extraction methods. In the present work, we propose a method to automatically discover sentence pairs with relevant discourse markers, and apply it to massive amounts of data. Our resulting dataset contains 174 discourse markers with at least 10k examples each, even for rare markers such as coincidentally or amazingly We use the resulting data as supervision for learning transferable sentence embeddings. In addition, we show that even though sentence representation learning through prediction of discourse markers yields state of the art results across different transfer tasks, it is not clear that our models made use of the semantic relation between sentences, thus leaving room for further improvements. Our datasets are publicly available ([this https URL](https://github.com/synapse-developpement/Discovery))
+
+| Comments: | Camera-ready for NAACL HLT 2019                              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1903.11850](https://arxiv.org/abs/1903.11850) [cs.CL] |
+|           | (or **arXiv:1903.11850v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-03-29-2">2. Train, Sort, Explain: Learning to Diagnose Translation Models</h2> 
+
+Title: [Train, Sort, Explain: Learning to Diagnose Translation Models](<https://arxiv.org/abs/1903.12017>)
+
+*Authors: (Submitted on 28 Mar 2019)*
+
+> Evaluating translation models is a trade-off between effort and detail. On the one end of the spectrum there are automatic count-based methods such as BLEU, on the other end linguistic evaluations by humans, which arguably are more informative but also require a disproportionately high effort. To narrow the spectrum, we propose a general approach on how to automatically expose systematic differences between human and machine translations to human experts. Inspired by adversarial settings, we train a neural text classifier to distinguish human from machine translations. A classifier that performs and generalizes well after training should recognize systematic differences between the two classes, which we uncover with neural explainability methods. Our proof-of-concept implementation, DiaMaT, is open source. Applied to a dataset translated by a state-of-the-art neural Transformer model, DiaMaT achieves a classification accuracy of 75% and exposes meaningful differences between humans and the Transformer, amidst the current discussion about human parity.
+
+| Comments: | NAACL-HLT 2019: Demonstrations                               |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:1903.12017](https://arxiv.org/abs/1903.12017) [cs.CL] |
+|           | (or **arXiv:1903.12017v1 [cs.CL]** for this version)         |
+
+
 
 
 
