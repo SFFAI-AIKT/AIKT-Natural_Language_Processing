@@ -1,3 +1,3 @@
 git add .
-git commit -m `date +"%Y-%m-%d-%H:%M:%S"`
+git commit -m $USER:`date +"%Y-%m-%d_%H:%M:%S"`
 git push
