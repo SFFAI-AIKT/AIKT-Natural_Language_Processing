@@ -2,6 +2,11 @@
 
 ### Index
 
+- [2019-04-04](#2019-04-04)
+  - [1. Attentive Mimicking: Better Word Embeddings by Attending to Informative Contexts](#2019-04-04-1)
+  - [2. Identification, Interpretability, and Bayesian Word Embeddings](#2019-04-04-2)
+  - [3. Cross-lingual transfer learning for spoken language understanding](#2019-04-04-3)
+  - [4. Modeling Vocabulary for Big Code Machine Learning](#2019-04-04-4)
 - [2019-04-03](#2019-04-03)
   - [1. Learning to Stop in Structured Prediction for Neural Machine Translation](#2019-04-03-1)
   - [2. A Multi-Task Approach for Disentangling Syntax and Semantics in Sentence Representations](#2019-04-03-2)
@@ -15,6 +20,80 @@
 
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-04-03
+
+[Return to Index](#Index)
+
+<h2 id="2019-04-04-1">1. Attentive Mimicking: Better Word Embeddings by Attending to Informative Contexts</h2> 
+
+Title: [Attentive Mimicking: Better Word Embeddings by Attending to Informative Contexts](<https://arxiv.org/abs/1904.01617>)
+
+Authors: [Timo Schick](https://arxiv.org/search/cs?searchtype=author&query=Schick%2C+T), [Hinrich Schütze](https://arxiv.org/search/cs?searchtype=author&query=Sch%C3%BCtze%2C+H)
+
+*(Submitted on 2 Apr 2019)*
+
+> Learning high-quality embeddings for rare words is a hard problem because of sparse context information. Mimicking (Pinter et al., 2017) has been proposed as a solution: given embeddings learned by a standard algorithm, a model is first trained to reproduce embeddings of frequent words from their surface form and then used to compute embeddings for rare words. In this paper, we introduce attentive mimicking: the mimicking model is given access not only to a word's surface form, but also to all available contexts and learns to attend to the most informative and reliable contexts for computing an embedding. In an evaluation on four tasks, we show that attentive mimicking outperforms previous work for both rare and medium-frequency words. Thus, compared to previous work, attentive mimicking improves embeddings for a much larger part of the vocabulary, including the medium-frequency range.
+
+| Comments: | Accepted at NAACL2019                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1904.01617](https://arxiv.org/abs/1904.01617) [cs.CL] |
+|           | (or **arXiv:1904.01617v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-04-04-2">2. Identification, Interpretability, and Bayesian Word Embeddings</h2> 
+
+Title: [Identification, Interpretability, and Bayesian Word Embeddings](<https://arxiv.org/abs/1904.01628>)
+
+Authors: [Adam M. Lauretig](https://arxiv.org/search/cs?searchtype=author&query=Lauretig%2C+A+M)
+
+*(Submitted on 2 Apr 2019)*
+
+> Social scientists have recently turned to analyzing text using tools from natural language processing like word embeddings to measure concepts like ideology, bias, and affinity. However, word embeddings are difficult to use in the regression framework familiar to social scientists: embeddings are are neither identified, nor directly interpretable. I offer two advances on standard embedding models to remedy these problems. First, I develop Bayesian Word Embeddings with Automatic Relevance Determination priors, relaxing the assumption that all embedding dimensions have equal weight. Second, I apply work identifying latent variable models to anchor the dimensions of the resulting embeddings, identifying them, and making them interpretable and usable in a regression. I then apply this model and anchoring approach to two cases, the shift in internationalist rhetoric in the American presidents' inaugural addresses, and the relationship between bellicosity in American foreign policy decision-makers' deliberations. I find that inaugural addresses became less internationalist after 1945, which goes against the conventional wisdom, and that an increase in bellicosity is associated with an increase in hostile actions by the United States, showing that elite deliberations are not cheap talk, and helping confirm the validity of the model.
+
+| Comments: | Accepted to the Third Workshop on Natural Language Processing and Computational Social Science at NAACL-HLT 2019 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Applications (stat.AP) |
+| Cite as:  | [arXiv:1904.01628](https://arxiv.org/abs/1904.01628) [cs.CL] |
+|           | (or **arXiv:1904.01628v1 [cs.CL]** for this version)         |
+
+<h2 id="2019-04-04-3">3. Cross-lingual transfer learning for spoken language understanding</h2> 
+
+Title: [Cross-lingual transfer learning for spoken language understanding](<https://arxiv.org/abs/1904.01825>)
+
+Authors: [Quynh Ngoc Thi Do](https://arxiv.org/search/cs?searchtype=author&query=Do%2C+Q+N+T), [Judith Gaspers](https://arxiv.org/search/cs?searchtype=author&query=Gaspers%2C+J)
+
+*(Submitted on 3 Apr 2019)*
+
+> Typically, spoken language understanding (SLU) models are trained on annotated data which are costly to gather. Aiming to reduce data needs for bootstrapping a SLU system for a new language, we present a simple but effective weight transfer approach using data from another language. The approach is evaluated with our promising multi-task SLU framework developed towards different languages. We evaluate our approach on the ATIS and a real-world SLU dataset, showing that i) our monolingual models outperform the state-of-the-art, ii) we can reduce data amounts needed for bootstrapping a SLU system for a new language greatly, and iii) while multitask training improves over separate training, different weight transfer settings may work best for different SLU modules.
+
+| Comments: | accepted at ICASSP, 2019                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1904.01825](https://arxiv.org/abs/1904.01825) [cs.CL] |
+|           | (or **arXiv:1904.01825v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-04-04-4">4. Modeling Vocabulary for Big Code Machine Learning</h2> 
+
+Title: [Modeling Vocabulary for Big Code Machine Learning](<https://arxiv.org/abs/1904.01873>)
+
+Authors: [Hlib Babii](https://arxiv.org/search/cs?searchtype=author&query=Babii%2C+H), [Andrea Janes](https://arxiv.org/search/cs?searchtype=author&query=Janes%2C+A), [Romain Robbes](https://arxiv.org/search/cs?searchtype=author&query=Robbes%2C+R)
+
+*(Submitted on 3 Apr 2019)*
+
+> When building machine learning models that operate on source code, several decisions have to be made to model source-code vocabulary. These decisions can have a large impact: some can lead to not being able to train models at all, others significantly affect performance, particularly for Neural Language Models. Yet, these decisions are not often fully described. This paper lists important modeling choices for source code vocabulary, and explores their impact on the resulting vocabulary on a large-scale corpus of 14,436 projects. We show that a subset of decisions have decisive characteristics, allowing to train accurate Neural Language Models quickly on a large corpus of 10,106 projects.
+
+| Comments: | 12 pages, 1 figure                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Software Engineering (cs.SE) |
+| Cite as:  | [arXiv:1904.01873](https://arxiv.org/abs/1904.01873) [cs.CL] |
+|           | (or **arXiv:1904.01873v1 [cs.CL]** for this version)         |
 
 
 
