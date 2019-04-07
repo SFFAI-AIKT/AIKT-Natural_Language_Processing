@@ -68,7 +68,7 @@ Authors: [Peter Potash](https://arxiv.org/search/cs?searchtype=author&query=Pota
 
 
 
-<h2 id="2019-04-05-4">3 Density Matching for Bilingual Word Embedding</h2> 
+<h2 id="2019-04-05-3">3. Density Matching for Bilingual Word Embedding</h2> 
 
 Title： [Density Matching for Bilingual Word Embedding](<https://arxiv.org/abs/1904.02343>)
 
