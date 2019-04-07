@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-04-05](#2019-04-05)
+  - [1. Consistency by Agreement in Zero-shot Neural Machine Translation](#2019-04-05-1)
+  - [2. The Effect of Downstream Classification Tasks for Evaluating Sentence Embeddings](#2019-04-05-2)
 - [2019-04-04](#2019-04-04)
   - [1. Attentive Mimicking: Better Word Embeddings by Attending to Informative Contexts](#2019-04-04-1)
   - [2. Identification, Interpretability, and Bayesian Word Embeddings](#2019-04-04-2)
@@ -20,6 +23,46 @@
 
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-04-05 
+
+[Return to Index](#Index)
+
+<h2 id="2019-04-05-1">1. Consistency by Agreement in Zero-shot Neural Machine Translation</h2> 
+
+Title: [Consistency by Agreement in Zero-shot Neural Machine Translation](<https://arxiv.org/abs/1904.02338>)
+
+Authors: [Maruan Al-Shedivat](https://arxiv.org/search/cs?searchtype=author&query=Al-Shedivat%2C+M), [Ankur P. Parikh](https://arxiv.org/search/cs?searchtype=author&query=Parikh%2C+A+P)
+
+*(Submitted on 4 Apr 2019)*
+
+> Generalization and reliability of multilingual translation often highly depend on the amount of available parallel data for each language pair of interest. In this paper, we focus on zero-shot generalization---a challenging setup that tests models on translation directions they have not been optimized for at training time. To solve the problem, we (i) reformulate multilingual translation as probabilistic inference, (ii) define the notion of zero-shot consistency and show why standard training often results in models unsuitable for zero-shot tasks, and (iii) introduce a consistent agreement-based training method that encourages the model to produce equivalent translations of parallel sentences in auxiliary languages. We test our multilingual NMT models on multiple public zero-shot translation benchmarks (IWSLT17, UN corpus, Europarl) and show that agreement-based learning often results in 2-3 BLEU zero-shot improvement over strong baselines without any loss in performance on supervised translation directions.
+
+| Comments: | NAACL 2019                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Neural and Evolutionary Computing (cs.NE); Machine Learning (stat.ML) |
+| Cite as:  | [arXiv:1904.02338](https://arxiv.org/abs/1904.02338) [cs.LG] |
+|           | (or **arXiv:1904.02338v1 [cs.LG]** for this version)         |
+
+
+
+<h2 id="2019-04-05-2">2. The Effect of Downstream Classification Tasks for Evaluating Sentence Embeddings</h2> 
+
+Title: [The Effect of Downstream Classification Tasks for Evaluating Sentence Embeddings](<https://arxiv.org/abs/1904.02228>)
+
+Authors: [Peter Potash](https://arxiv.org/search/cs?searchtype=author&query=Potash%2C+P)
+
+*(Submitted on 3 Apr 2019)*
+
+> One popular method for quantitatively evaluating the performance of sentence embeddings involves their usage on downstream language processing tasks that require sentence representations as input. One simple such task is classification, where the sentence representations are used to train and test models on several classification datasets. We argue that by evaluating sentence representations in such a manner, the goal of the representations becomes learning a low-dimensional factorization of a sentence-task label matrix. We show how characteristics of this matrix can affect the ability for a low-dimensional factorization to perform as sentence representations in a suite of classification tasks. Primarily, sentences that have more labels across all possible classification tasks have a higher reconstruction loss, though this effect can be drastically negated if the amount of such sentences is small.
+
+| Comments: | 5 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1904.02228](https://arxiv.org/abs/1904.02228) [cs.CL] |
+|           | (or **arXiv:1904.02228v1 [cs.CL]** for this version)         |
 
 
 
