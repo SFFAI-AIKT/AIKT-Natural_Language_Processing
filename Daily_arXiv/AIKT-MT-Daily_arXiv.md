@@ -5,6 +5,8 @@
 - [2019-04-05](#2019-04-05)
   - [1. Consistency by Agreement in Zero-shot Neural Machine Translation](#2019-04-05-1)
   - [2. The Effect of Downstream Classification Tasks for Evaluating Sentence Embeddings](#2019-04-05-2)
+  - [3. Density Matching for Bilingual Word Embedding](#2019-04-05-3)
+  - [4. ReWE: Regressing Word Embeddings for Regularization of Neural Machine Translation Systems](#2019-04-05-4)
 - [2019-04-04](#2019-04-04)
   - [1. Attentive Mimicking: Better Word Embeddings by Attending to Informative Contexts](#2019-04-04-1)
   - [2. Identification, Interpretability, and Bayesian Word Embeddings](#2019-04-04-2)
@@ -63,6 +65,42 @@ Authors: [Peter Potash](https://arxiv.org/search/cs?searchtype=author&query=Pota
 | Subjects: | **Computation and Language (cs.CL)**                         |
 | Cite as:  | [arXiv:1904.02228](https://arxiv.org/abs/1904.02228) [cs.CL] |
 |           | (or **arXiv:1904.02228v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-04-05-4">3 Density Matching for Bilingual Word Embedding</h2> 
+
+Title： [Density Matching for Bilingual Word Embedding](<https://arxiv.org/abs/1904.02343>)
+
+Authors: [Chunting Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+C), [Xuezhe Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+X), [Di Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+D), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
+
+*(Submitted on 4 Apr 2019)*
+
+> Recent approaches to cross-lingual word embedding have generally been based on linear transformations between the sets of embedding vectors in the two languages. In this paper, we propose an approach that instead expresses the two monolingual embedding spaces as probability densities defined by a Gaussian mixture model, and matches the two densities using a method called normalizing flow. The method requires no explicit supervision, and can be learned with only a seed dictionary of words that have identical strings. We argue that this formulation has several intuitively attractive properties, particularly with the respect to improving robustness and generalization to mappings between difficult language pairs or word pairs. On a benchmark data set of bilingual lexicon induction and cross-lingual word similarity, our approach can achieve competitive or superior performance compared to state-of-the-art published results, with particularly strong results being found on etymologically distant and/or morphologically rich languages.
+
+| Comments: | Accepted by NAACL-HLT 2019                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:1904.02343](https://arxiv.org/abs/1904.02343) [cs.CL] |
+|           | (or **arXiv:1904.02343v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-04-05-4">4. ReWE: Regressing Word Embeddings for Regularization of Neural Machine Translation Systems</h2> 
+
+Title: [ReWE: Regressing Word Embeddings for Regularization of Neural Machine Translation Systems](<https://arxiv.org/abs/1904.02461>)
+
+Authors: [Inigo Jauregi Unanue](https://arxiv.org/search/cs?searchtype=author&query=Unanue%2C+I+J), [Ehsan Zare Borzeshi](https://arxiv.org/search/cs?searchtype=author&query=Borzeshi%2C+E+Z), [Nazanin Esmaili](https://arxiv.org/search/cs?searchtype=author&query=Esmaili%2C+N), [Massimo Piccardi](https://arxiv.org/search/cs?searchtype=author&query=Piccardi%2C+M)
+
+*(Submitted on 4 Apr 2019)*
+
+> Regularization of neural machine translation is still a significant problem, especially in low-resource settings. To mollify this problem, we propose regressing word embeddings (ReWE) as a new regularization technique in a system that is jointly trained to predict the next word in the translation (categorical value) and its word embedding (continuous value). Such a joint training allows the proposed system to learn the distributional properties represented by the word embeddings, empirically improving the generalization to unseen sentences. Experiments over three translation datasets have showed a consistent improvement over a strong baseline, ranging between 0.91 and 2.54 BLEU points, and also a marked improvement over a state-of-the-art system.
+
+| Comments: | Accepted at NAACL-HLT 2019                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1904.02461](https://arxiv.org/abs/1904.02461) [cs.CL] |
+|           | (or **arXiv:1904.02461v1 [cs.CL]** for this version)         |
 
 
 
