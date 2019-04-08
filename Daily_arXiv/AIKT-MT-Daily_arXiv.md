@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-04-08](#2019-04-08)
+  - [1. Modeling Recurrence for Transformer](#2019-04-08-1)
+  - [2. ](#2019-04-08-2)
 - [2019-04-05](#2019-04-05)
   - [1. Consistency by Agreement in Zero-shot Neural Machine Translation](#2019-04-05-1)
   - [2. The Effect of Downstream Classification Tasks for Evaluating Sentence Embeddings](#2019-04-05-2)
@@ -25,6 +28,46 @@
 
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-04-08
+
+[Return to Index](#Index)
+
+<h2 id="2019-04-08-1">1. Modeling Recurrence for Transformer</h2> 
+
+Title： [Modeling Recurrence for Transformer](<https://arxiv.org/abs/1904.03092>)
+
+Authors: [Jie Hao](https://arxiv.org/search/cs?searchtype=author&query=Hao%2C+J), [Xing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Baosong Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+B), [Longyue Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Jinfeng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Zhaopeng Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+Z)
+
+*(Submitted on 5 Apr 2019)*
+
+> Recently, the Transformer model that is based solely on attention mechanisms, has advanced the state-of-the-art on various machine translation tasks. However, recent studies reveal that the lack of recurrence hinders its further improvement of translation capacity. In response to this problem, we propose to directly model recurrence for Transformer with an additional recurrence encoder. In addition to the standard recurrent neural network, we introduce a novel attentive recurrent network to leverage the strengths of both attention and recurrent networks. Experimental results on the widely-used WMT14 English-German and WMT17 Chinese-English translation tasks demonstrate the effectiveness of the proposed approach. Our studies also reveal that the proposed model benefits from a short-cut that bridges the source and target sequences with a single recurrent layer, which outperforms its deep counterpart.
+
+| Comments: | NAACL 2019                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | [arXiv:1904.03092](https://arxiv.org/abs/1904.03092) [cs.CL] |
+|           | (or **arXiv:1904.03092v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-04-08-2">2. Convolutional Self-Attention Networks</h2> 
+
+Title: [Convolutional Self-Attention Networks](<https://arxiv.org/abs/1904.03107>)
+
+Authors: [Baosong Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+B), [Longyue Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Derek Wong](https://arxiv.org/search/cs?searchtype=author&query=Wong%2C+D), [Lidia S. Chao](https://arxiv.org/search/cs?searchtype=author&query=Chao%2C+L+S), [Zhaopeng Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+Z)
+
+*(Submitted on 5 Apr 2019)*
+
+> Self-attention networks (SANs) have drawn increasing interest due to their high parallelization in computation and flexibility in modeling dependencies. SANs can be further enhanced with multi-head attention by allowing the model to attend to information from different representation subspaces. In this work, we propose novel convolutional self-attention networks, which offer SANs the abilities to 1) strengthen dependencies among neighboring elements, and 2) model the interaction between features extracted by multiple attention heads. Experimental results of machine translation on different language pairs and model settings show that our approach outperforms both the strong Transformer baseline and other existing models on enhancing the locality of SANs. Comparing with prior studies, the proposed model is parameter free in terms of introducing no more parameters.
+
+| Comments: | NAACL 2019                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | [arXiv:1904.03107](https://arxiv.org/abs/1904.03107) [cs.CL] |
+|           | (or **arXiv:1904.03107v1 [cs.CL]** for this version)         |
 
 
 
