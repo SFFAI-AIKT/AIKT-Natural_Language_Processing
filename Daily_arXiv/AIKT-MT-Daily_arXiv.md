@@ -4,7 +4,7 @@
 
 - [2019-04-08](#2019-04-08)
   - [1. Modeling Recurrence for Transformer](#2019-04-08-1)
-  - [2. ](#2019-04-08-2)
+  - [2. Convolutional Self-Attention Networks](#2019-04-08-2)
 - [2019-04-05](#2019-04-05)
   - [1. Consistency by Agreement in Zero-shot Neural Machine Translation](#2019-04-05-1)
   - [2. The Effect of Downstream Classification Tasks for Evaluating Sentence Embeddings](#2019-04-05-2)
