@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-04-09](#2019-04-09)
+  - [1. Differentiable Sampling with Flexible Reference Word Order for Neural Machine Translation](#2019-04-09-1)
+  - [2. Revisiting Adversarial Autoencoder for Unsupervised Word Translation with Cycle Consistency and Improved Training](#2019-04-09-2)
 - [2019-04-08](#2019-04-08)
   - [1. Modeling Recurrence for Transformer](#2019-04-08-1)
   - [2. Convolutional Self-Attention Networks](#2019-04-08-2)
@@ -28,6 +31,48 @@
 
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-04-09
+
+[Return to Index](#Index)
+
+<h2 id="2019-04-09-1">1. Differentiable Sampling with Flexible Reference Word Order for Neural Machine Translation</h2> 
+
+Title: [Differentiable Sampling with Flexible Reference Word Order for Neural Machine Translation](<https://arxiv.org/abs/1904.04079>)
+
+Authors: [Weijia Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+W), [Xing Niu](https://arxiv.org/search/cs?searchtype=author&query=Niu%2C+X), [Marine Carpuat](https://arxiv.org/search/cs?searchtype=author&query=Carpuat%2C+M)
+
+*(Submitted on 4 Apr 2019)*
+
+> Despite some empirical success at correcting exposure bias in machine translation, scheduled sampling algorithms suffer from a major drawback: they incorrectly assume that words in the reference translations and in sampled sequences are aligned at each time step. Our new differentiable sampling algorithm addresses this issue by optimizing the probability that the reference can be aligned with the sampled output, based on a soft alignment predicted by the model itself. As a result, the output distribution at each time step is evaluated with respect to the whole predicted sequence. Experiments on IWSLT translation tasks show that our approach improves BLEU compared to maximum likelihood and scheduled sampling baselines. In addition, our approach is simpler to train with no need for sampling schedule and yields models that achieve larger improvements with smaller beam sizes.
+
+| Comments: | Accepted at NAACL 2019                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (stat.ML) |
+| Cite as:  | [arXiv:1904.04079](https://arxiv.org/abs/1904.04079) [cs.CL] |
+|           | (or **arXiv:1904.04079v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-04-09-2">2. Revisiting Adversarial Autoencoder for Unsupervised Word Translation with Cycle Consistency and Improved Training</h2> 
+
+Title: [Revisiting Adversarial Autoencoder for Unsupervised Word Translation with Cycle Consistency and Improved Training](<https://arxiv.org/abs/1904.04116>)
+
+Authors: [Tasnim Mohiuddin](https://arxiv.org/search/cs?searchtype=author&query=Mohiuddin%2C+T), [Shafiq Joty](https://arxiv.org/search/cs?searchtype=author&query=Joty%2C+S)
+
+*(Submitted on 4 Apr 2019)*
+
+> Adversarial training has shown impressive success in learning bilingual dictionary without any parallel data by mapping monolingual embeddings to a shared space. However, recent work has shown superior performance for non-adversarial methods in more challenging language pairs. In this work, we revisit adversarial autoencoder for unsupervised word translation and propose two novel extensions to it that yield more stable training and improved results. Our method includes regularization terms to enforce cycle consistency and input reconstruction, and puts the target encoders as an adversary against the corresponding discriminator. Extensive experimentations with European, non-European and low-resource languages show that our method is more robust and achieves better performance than recently proposed adversarial and non-adversarial approaches.
+
+| Comments: | Published in NAACL-HLT 2019                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| Cite as:  | [arXiv:1904.04116](https://arxiv.org/abs/1904.04116) [cs.CL] |
+|           | (or **arXiv:1904.04116v1 [cs.CL]** for this version)         |
+
+
 
 
 
