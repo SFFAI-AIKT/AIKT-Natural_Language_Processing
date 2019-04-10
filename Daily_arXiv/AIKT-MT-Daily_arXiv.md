@@ -2,6 +2,10 @@
 
 ### Index
 
+- [2019-04-10](#2019-04-10)
+  - [1. Text Generation with Exemplar-based Adaptive Decoding](#2019-04-10-1)
+  - [2. Bilingual-GAN: A Step Towards Parallel Text Generation](#2019-04-10-2)
+  - [3.Text Repair Model for Neural Machine Translation ](#2019-04-10-3)
 - [2019-04-09](#2019-04-09)
   - [1. Differentiable Sampling with Flexible Reference Word Order for Neural Machine Translation](#2019-04-09-1)
   - [2. Revisiting Adversarial Autoencoder for Unsupervised Word Translation with Cycle Consistency and Improved Training](#2019-04-09-2)
@@ -31,6 +35,64 @@
 
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-04-10
+
+[Return to Index](#Index)
+
+<h2 id="2019-04-10-1">1. Text Generation with Exemplar-based Adaptive Decoding</h2> 
+
+Title: [Text Generation with Exemplar-based Adaptive Decoding](<https://arxiv.org/abs/1904.04428>)
+
+Authors: [Hao Peng](https://arxiv.org/search/cs?searchtype=author&query=Peng%2C+H), [Ankur P. Parikh](https://arxiv.org/search/cs?searchtype=author&query=Parikh%2C+A+P), [Manaal Faruqui](https://arxiv.org/search/cs?searchtype=author&query=Faruqui%2C+M), [Bhuwan Dhingra](https://arxiv.org/search/cs?searchtype=author&query=Dhingra%2C+B), [Dipanjan Das](https://arxiv.org/search/cs?searchtype=author&query=Das%2C+D)
+
+*(Submitted on 9 Apr 2019)*
+
+> We propose a novel conditioned text generation model. It draws inspiration from traditional template-based text generation techniques, where the source provides the content (i.e., what to say), and the template influences how to say it. Building on the successful encoder-decoder paradigm, it first encodes the content representation from the given input text; to produce the output, it retrieves exemplar text from the training data as "soft templates," which are then used to construct an exemplar-specific decoder. We evaluate the proposed model on abstractive text summarization and data-to-text generation. Empirical results show that this model achieves strong performance and outperforms comparable baselines.
+
+| Comments: | NAACL 2019                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1904.04428](https://arxiv.org/abs/1904.04428) [cs.CL] |
+|           | (or **arXiv:1904.04428v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-04-10-2">2. Bilingual-GAN: A Step Towards Parallel Text Generation</h2> 
+
+Title: [Bilingual-GAN: A Step Towards Parallel Text Generation](<https://arxiv.org/abs/1904.04742>)
+
+Authors: [Ahmad Rashid](https://arxiv.org/search/cs?searchtype=author&query=Rashid%2C+A), [Alan Do-Omri](https://arxiv.org/search/cs?searchtype=author&query=Do-Omri%2C+A), [Md. Akmal Haidar](https://arxiv.org/search/cs?searchtype=author&query=Haidar%2C+M+A), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q), [Mehdi Rezagholizadeh](https://arxiv.org/search/cs?searchtype=author&query=Rezagholizadeh%2C+M)
+
+*(Submitted on 9 Apr 2019)*
+
+> Latent space based GAN methods and attention based sequence to sequence models have achieved impressive results in text generation and unsupervised machine translation respectively. Leveraging the two domains, we propose an adversarial latent space based model capable of generating parallel sentences in two languages concurrently and translating bidirectionally. The bilingual generation goal is achieved by sampling from the latent space that is shared between both languages. First two denoising autoencoders are trained, with shared encoders and back-translation to enforce a shared latent state between the two languages. The decoder is shared for the two translation directions. Next, a GAN is trained to generate synthetic "code" mimicking the languages' shared latent space. This code is then fed into the decoder to generate text in either language. We perform our experiments on Europarl and Multi30k datasets, on the English-French language pair, and document our performance using both supervised and unsupervised machine translation.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1904.04742](https://arxiv.org/abs/1904.04742) [cs.CL] |
+|           | (or **arXiv:1904.04742v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-04-10-3">3. Text Repair Model for Neural Machine Translation</h2> 
+
+Title: [Text Repair Model for Neural Machine Translation](<https://arxiv.org/abs/1904.04790>)
+
+Authors: [Markus Freitag](https://arxiv.org/search/cs?searchtype=author&query=Freitag%2C+M), [Isaac Caswell](https://arxiv.org/search/cs?searchtype=author&query=Caswell%2C+I), [Scott Roy](https://arxiv.org/search/cs?searchtype=author&query=Roy%2C+S)
+
+*(Submitted on 9 Apr 2019)*
+
+> In this work, we train a text repair model as a post-processor for Neural Machine Translation (NMT). The goal of the repair model is to correct typical errors introduced by the translation process, and convert the "translationese" output into natural text. The repair model is trained on monolingual data that has been round-trip translated through English, to mimic errors that are similar to the ones introduced by NMT. Having a trained repair model, we apply it to the output of existing NMT systems. We run experiments for both the WMT18 English to German and the WMT16 English to Romanian task. Furthermore, we apply the repair model on the output of the top submissions of the most recent WMT evaluation campaigns. We see quality improvements on all tasks of up to 2.5 BLEU points.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1904.04790](https://arxiv.org/abs/1904.04790) [cs.CL] |
+|           | (or **arXiv:1904.04790v1 [cs.CL]** for this version)         |
+
+
 
 
 
