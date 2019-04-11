@@ -19,6 +19,7 @@
   - [2. The Effect of Downstream Classification Tasks for Evaluating Sentence Embeddings](#2019-04-05-2)
   - [3. Density Matching for Bilingual Word Embedding](#2019-04-05-3)
   - [4. ReWE: Regressing Word Embeddings for Regularization of Neural Machine Translation Systems](#2019-04-05-4)
+  - [5. An Attentive Survey of Attention Models](#2019-04-05-5)
 - [2019-04-04](#2019-04-04)
   - [1. Attentive Mimicking: Better Word Embeddings by Attending to Informative Contexts](#2019-04-04-1)
   - [2. Identification, Interpretability, and Bayesian Word Embeddings](#2019-04-04-2)
@@ -278,6 +279,24 @@ Authors: [Inigo Jauregi Unanue](https://arxiv.org/search/cs?searchtype=author&qu
 
 
 
+<h2 id="2019-04-05-5">5. An Attentive Survey of Attention Models</h2> 
+
+Title: [An Attentive Survey of Attention Models](<https://arxiv.org/abs/1904.02874>)
+
+Authors: [Sneha Chaudhari](https://arxiv.org/search/cs?searchtype=author&query=Chaudhari%2C+S), [Gungor Polatkan](https://arxiv.org/search/cs?searchtype=author&query=Polatkan%2C+G), [Rohan Ramanath](https://arxiv.org/search/cs?searchtype=author&query=Ramanath%2C+R), [Varun Mithal](https://arxiv.org/search/cs?searchtype=author&query=Mithal%2C+V)
+
+*(Submitted on 5 Apr 2019)*
+
+> Attention Model has now become an important concept in neural networks that has been researched within diverse application domains. This survey provides a structured and comprehensive overview of the developments in modeling attention. In particular, we propose a taxonomy which groups existing techniques into coherent categories. We review the different neural architectures in which attention has been incorporated, and also show how attention improves interpretability of neural models. Finally, we discuss some applications in which modeling attention has a significant impact. We hope this survey will provide a succinct introduction to attention models and guide practitioners while developing approaches for their applications.
+
+| Comments: | submitted to IJCAI 2019 Survey Track; 6 pages, 4 figures, 2 tables |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Machine Learning (stat.ML)     |
+| Cite as:  | [arXiv:1904.02874](https://arxiv.org/abs/1904.02874) [cs.LG] |
+|           | (or **arXiv:1904.02874v1 [cs.LG]** for this version)         |
+
+
+
 # 2019-04-04
 
 [Return to Index](#Index)
@@ -458,7 +477,7 @@ Title: [Machine translation considering context information using Encoder-Decode
 
 Authors:[Tetsuto Takano](https://arxiv.org/search/cs?searchtype=author&query=Takano%2C+T), [Satoshi Yamane](https://arxiv.org/search/cs?searchtype=author&query=Yamane%2C+S)
 
-(Submitted on 30 Mar 2019)
+*(Submitted on 30 Mar 2019)*
 
 > In the task of machine translation, context information is one of the important factor. But considering the context information model dose not proposed. The paper propose a new model which can integrate context information and make translation. In this paper, we create a new model based Encoder Decoder model. When translating current sentence, the model integrates output from preceding encoder with current encoder. The model can consider context information and the result score is higher than existing model.
 
@@ -475,7 +494,7 @@ Title: [Multimodal Machine Translation with Embedding Prediction](<https://arxiv
 
 Authors: [Tosho Hirasawa](https://arxiv.org/search/cs?searchtype=author&query=Hirasawa%2C+T), [Hayahide Yamagishi](https://arxiv.org/search/cs?searchtype=author&query=Yamagishi%2C+H), [Yukio Matsumura](https://arxiv.org/search/cs?searchtype=author&query=Matsumura%2C+Y), [Mamoru Komachi](https://arxiv.org/search/cs?searchtype=author&query=Komachi%2C+M)
 
-(Submitted on 1 Apr 2019)
+*(Submitted on 1 Apr 2019)*
 
 > Multimodal machine translation is an attractive application of neural machine translation (NMT). It helps computers to deeply understand visual objects and their relations with natural languages. However, multimodal NMT systems suffer from a shortage of available training data, resulting in poor performance for translating rare words. In NMT, pretrained word embeddings have been shown to improve NMT of low-resource domains, and a search-based approach is proposed to address the rare word problem. In this study, we effectively combine these two approaches in the context of multimodal NMT and explore how we can take full advantage of pretrained word embeddings to better translate rare words. We report overall performance improvements of 1.24 METEOR and 2.49 BLEU and achieve an improvement of 7.67 F-score for rare word translation.
 
@@ -493,7 +512,7 @@ Title: [Lost in Interpretation: Predicting Untranslated Terminology in Simultane
 
 Authors: [Nikolai Vogler](https://arxiv.org/search/cs?searchtype=author&query=Vogler%2C+N), [Craig Stewart](https://arxiv.org/search/cs?searchtype=author&query=Stewart%2C+C), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
 
-(Submitted on 1 Apr 2019)
+*(Submitted on 1 Apr 2019)*
 
 > Simultaneous interpretation, the translation of speech from one language to another in real-time, is an inherently difficult and strenuous task. One of the greatest challenges faced by interpreters is the accurate translation of difficult terminology like proper names, numbers, or other entities. Intelligent computer-assisted interpreting (CAI) tools that could analyze the spoken word and detect terms likely to be untranslated by an interpreter could reduce translation error and improve interpreter performance. In this paper, we propose a task of predicting which terminology simultaneous interpreters will leave untranslated, and examine methods that perform this task using supervised sequence taggers. We describe a number of task-specific features explicitly designed to indicate when an interpreter may struggle with translating a word. Experimental results on a newly-annotated version of the NAIST Simultaneous Translation Corpus (Shimizu et al., 2014) indicate the promise of our proposed method.
 
