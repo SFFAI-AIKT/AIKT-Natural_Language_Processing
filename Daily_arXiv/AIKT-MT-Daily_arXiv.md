@@ -2,6 +2,8 @@
 
 ### Index
 
+- [2019-04-11](#2019-04-11-1)
+  - [1. Cross-lingual Visual Verb Sense Disambiguation](#2019-04-11-1)
 - [2019-04-10](#2019-04-10)
   - [1. Text Generation with Exemplar-based Adaptive Decoding](#2019-04-10-1)
   - [2. Bilingual-GAN: A Step Towards Parallel Text Generation](#2019-04-10-2)
@@ -35,6 +37,28 @@
 
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-04-11
+
+[Return to Index](#Index)
+
+<h2 id="2019-04-11-1">1. Cross-lingual Visual Verb Sense Disambiguation</h2> 
+
+Title: [Cross-lingual Visual Verb Sense Disambiguation](<https://arxiv.org/abs/1904.05092>)
+
+Authors: [Spandana Gella](https://arxiv.org/search/cs?searchtype=author&query=Gella%2C+S), [Desmond Elliott](https://arxiv.org/search/cs?searchtype=author&query=Elliott%2C+D), [Frank Keller](https://arxiv.org/search/cs?searchtype=author&query=Keller%2C+F)
+
+*(Submitted on 10 Apr 2019)*
+
+> Recent work has shown that visual context improves cross-lingual sense disambiguation for nouns. We extend this line of work to the more challenging task of cross-lingual verb sense disambiguation, introducing the MultiSense dataset of 9,504 images annotated with English, German, and Spanish verbs. Each image in MultiSense is annotated with an English verb and its translation in German or Spanish. We show that cross-lingual verb sense disambiguation models benefit from visual context, compared to unimodal baselines. We also show that the verb sense predicted by our best disambiguation model can improve the results of a text-only machine translation system when used for a multimodal translation task.
+
+| Comments: | NAACL 2019                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | [arXiv:1904.05092](https://arxiv.org/abs/1904.05092) [cs.CL] |
+|           | (or **arXiv:1904.05092v1 [cs.CL]** for this version)         |
 
 
 
