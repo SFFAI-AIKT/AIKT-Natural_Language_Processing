@@ -2,7 +2,7 @@
 
 ### Index
 
-- [2019-04-11](#2019-04-11-1)
+- [2019-04-11](#2019-04-11)
   - [1. Cross-lingual Visual Verb Sense Disambiguation](#2019-04-11-1)
 - [2019-04-10](#2019-04-10)
   - [1. Text Generation with Exemplar-based Adaptive Decoding](#2019-04-10-1)
