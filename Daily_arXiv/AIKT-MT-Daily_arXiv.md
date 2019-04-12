@@ -2,6 +2,10 @@
 
 ### Index
 
+- [2019-04-12](#2019-04-12)
+  - [1. Membership Inference Attacks on Sequence-to-Sequence Models](#2019-04-12-1)
+  - [2. Scalable Cross-Lingual Transfer of Neural Sentence Embeddings](#2019-04-12-2)
+  - [3. Gating Mechanisms for Combining Character and Word-level Word Representations: An Empirical Study](#2019-04-12-3)
 - [2019-04-11](#2019-04-11)
   - [1. Cross-lingual Visual Verb Sense Disambiguation](#2019-04-11-1)
 - [2019-04-10](#2019-04-10)
@@ -38,6 +42,64 @@
 
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-04-12
+
+Return to Index](#Index)
+
+<h2 id="2019-04-12-1">1. Membership Inference Attacks on Sequence-to-Sequence Models</h2> 
+
+Title: [Membership Inference Attacks on Sequence-to-Sequence Models](<https://arxiv.org/abs/1904.05506>)
+
+Authors: [Sorami Hisamoto](https://arxiv.org/search/cs?searchtype=author&query=Hisamoto%2C+S), [Matt Post](https://arxiv.org/search/cs?searchtype=author&query=Post%2C+M), [Kevin Duh](https://arxiv.org/search/cs?searchtype=author&query=Duh%2C+K)
+
+*(Submitted on 11 Apr 2019)*
+
+> Data privacy is an important issue for "machine learning as a service" providers. We focus on the problem of membership inference attacks: given a data sample and black-box access to a model's API, determine whether the sample existed in the model's training data. Our contribution is an investigation of this problem in the context of sequence-to-sequence models, which are important in applications such as machine translation and video captioning. We define the membership inference problem for sequence generation, provide an open dataset based on state-of-the-art machine translation models, and report initial results on whether these models leak private information against several kinds of membership inference attacks.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1904.05506](https://arxiv.org/abs/1904.05506) [cs.LG] |
+|           | (or **arXiv:1904.05506v1 [cs.LG]** for this version)         |
+
+
+
+<h2 id="2019-04-12-2">2. Scalable Cross-Lingual Transfer of Neural Sentence Embeddings</h2> 
+
+Title: [Scalable Cross-Lingual Transfer of Neural Sentence Embeddings](<https://arxiv.org/abs/1904.05542>)
+
+Authors: [Hanan Aldarmaki](https://arxiv.org/search/cs?searchtype=author&query=Aldarmaki%2C+H), [Mona Diab](https://arxiv.org/search/cs?searchtype=author&query=Diab%2C+M)
+
+*(Submitted on 11 Apr 2019)*
+
+> We develop and investigate several cross-lingual alignment approaches for neural sentence embedding models, such as the supervised inference classifier, InferSent, and sequential encoder-decoder models. We evaluate three alignment frameworks applied to these models: joint modeling, representation transfer learning, and sentence mapping, using parallel text to guide the alignment. Our results support representation transfer as a scalable approach for modular cross-lingual alignment of neural sentence embeddings, where we observe better performance compared to joint models in intrinsic and extrinsic evaluations, particularly with smaller sets of parallel data.
+
+| Comments: | accepted in *SEM 2019                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1904.05542](https://arxiv.org/abs/1904.05542) [cs.CL] |
+|           | (or **arXiv:1904.05542v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-04-12-3">3. Gating Mechanisms for Combining Character and Word-level Word Representations: An Empirical Study
+</h2> 
+
+Title: [Gating Mechanisms for Combining Character and Word-level Word Representations: An Empirical Study](<https://arxiv.org/abs/1904.05584>)
+
+Authors: [Jorge A. Balazs](https://arxiv.org/search/cs?searchtype=author&query=Balazs%2C+J+A), [Yutaka Matsuo](https://arxiv.org/search/cs?searchtype=author&query=Matsuo%2C+Y)
+
+*(Submitted on 11 Apr 2019)*
+
+> In this paper we study how different ways of combining character and word-level representations affect the quality of both final word and sentence representations. We provide strong empirical evidence that modeling characters improves the learned representations at the word and sentence levels, and that doing so is particularly useful when representing less frequent words. We further show that a feature-wise sigmoid gating mechanism is a robust method for creating representations that encode semantic similarity, as it performed reasonably well in several word similarity datasets. Finally, our findings suggest that properly capturing semantic similarity at the word level does not consistently yield improved performance in downstream sentence-level tasks. Our code is available at [this https URL](https://github.com/jabalazs/gating)
+
+| Comments: | Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Student Research Workshop |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (stat.ML) |
+| Cite as:  | [arXiv:1904.05584](https://arxiv.org/abs/1904.05584) [cs.CL] |
+|           | (or **arXiv:1904.05584v1 [cs.CL]** for this version)         |
 
 
 
