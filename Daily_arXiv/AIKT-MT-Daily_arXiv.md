@@ -47,7 +47,7 @@
 
 # 2019-04-12
 
-Return to Index](#Index)
+[Return to Index](#Index)
 
 <h2 id="2019-04-12-1">1. Membership Inference Attacks on Sequence-to-Sequence Models</h2> 
 
