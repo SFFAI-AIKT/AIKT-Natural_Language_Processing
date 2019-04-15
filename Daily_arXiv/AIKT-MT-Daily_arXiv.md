@@ -2,6 +2,8 @@
 
 ### Index
 
+- [2019-04-15](#2019-04-15)
+  - [1. Direct speech-to-speech translation with a sequence-to-sequence model](#2019-04-15-1)
 - [2019-04-12](#2019-04-12)
   - [1. Membership Inference Attacks on Sequence-to-Sequence Models](#2019-04-12-1)
   - [2. Scalable Cross-Lingual Transfer of Neural Sentence Embeddings](#2019-04-12-2)
@@ -42,6 +44,28 @@
 
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-04-15
+
+[Return to Index](#Index)
+
+<h2 id="2019-04-15-1">1. Direct speech-to-speech translation with a sequence-to-sequence model</h2> 
+
+Title: [Direct speech-to-speech translation with a sequence-to-sequence model](<https://arxiv.org/abs/1904.06037>)
+
+Authors: [Ye Jia](https://arxiv.org/search/cs?searchtype=author&query=Jia%2C+Y), [Ron J. Weiss](https://arxiv.org/search/cs?searchtype=author&query=Weiss%2C+R+J), [Fadi Biadsy](https://arxiv.org/search/cs?searchtype=author&query=Biadsy%2C+F), [Wolfgang Macherey](https://arxiv.org/search/cs?searchtype=author&query=Macherey%2C+W), [Melvin Johnson](https://arxiv.org/search/cs?searchtype=author&query=Johnson%2C+M), [Zhifeng Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Z), [Yonghui Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Y)
+
+*(Submitted on 12 Apr 2019)*
+
+> We present an attention-based sequence-to-sequence neural network which can directly translate speech from one language into speech in another language, without relying on an intermediate text representation. The network is trained end-to-end, learning to map speech spectrograms into target spectrograms in another language, corresponding to the translated content (in a different canonical voice). We further demonstrate the ability to synthesize translated speech using the voice of the source speaker. We conduct experiments on two Spanish-to-English speech translation datasets, and find that the proposed model slightly underperforms a baseline cascade of a direct speech-to-text translation model and a text-to-speech synthesis model, demonstrating the feasibility of the approach on this very challenging task.
+
+| Comments: | Submitted to Interspeech 2019                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | [arXiv:1904.06037](https://arxiv.org/abs/1904.06037) [cs.CL] |
+|           | (or **arXiv:1904.06037v1 [cs.CL]** for this version)         |
 
 
 
