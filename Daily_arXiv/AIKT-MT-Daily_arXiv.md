@@ -2,6 +2,11 @@
 
 ### Index
 
+- [2019-04-16](#2019-04-16)
+  - [1. Attention-Passing Models for Robust and Data-Efficient End-to-End Speech Translation](#2019-04-16-1)
+  - [2. Distributed representation of multi-sense words: A loss-driven approach](#2019-04-16-2)
+  - [3. End-to-end Text-to-speech for Low-resource Languages by Cross-Lingual Transfer Learning](#2019-04-16-3)
+  - [4. An Empirical Investigation of Global and Local Normalization for Recurrent Neural Sequence Models Using a Continuous Relaxation to Beam Search](#2019-04-16-4)
 - [2019-04-15](#2019-04-15)
   - [1. Direct speech-to-speech translation with a sequence-to-sequence model](#2019-04-15-1)
 - [2019-04-12](#2019-04-12)
@@ -47,11 +52,89 @@
 
 
 
+# 2019-04-16
+
+[Return to Index](#Index)
+
+<h2 id="2019-04-16-1">1. Attention-Passing Models for Robust and Data-Efficient End-to-End Speech Translation</h2>
+
+Title: [Attention-Passing Models for Robust and Data-Efficient End-to-End Speech Translation](<https://arxiv.org/abs/1904.07209>)
+
+Authors: [Matthias Sperber](https://arxiv.org/search/cs?searchtype=author&query=Sperber%2C+M), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G), [Jan Niehues](https://arxiv.org/search/cs?searchtype=author&query=Niehues%2C+J), [Alex Waibel](https://arxiv.org/search/cs?searchtype=author&query=Waibel%2C+A)
+
+*(Submitted on 15 Apr 2019)*
+
+> Speech translation has traditionally been approached through cascaded models consisting of a speech recognizer trained on a corpus of transcribed speech, and a machine translation system trained on parallel texts. Several recent works have shown the feasibility of collapsing the cascade into a single, direct model that can be trained in an end-to-end fashion on a corpus of translated speech. However, experiments are inconclusive on whether the cascade or the direct model is stronger, and have only been conducted under the unrealistic assumption that both are trained on equal amounts of data, ignoring other available speech recognition and machine translation corpora. 
+> In this paper, we demonstrate that direct speech translation models require more data to perform well than cascaded models, and while they allow including auxiliary data through multi-task training, they are poor at exploiting such data, putting them at a severe disadvantage. As a remedy, we propose the use of end-to-end trainable models with two attention mechanisms, the first establishing source speech to source text alignments, the second modeling source to target text alignment. We show that such models naturally decompose into multi-task-trainable recognition and translation tasks and propose an attention-passing technique that alleviates error propagation issues in a previous formulation of a model with two attention stages. Our proposed model outperforms all examined baselines and is able to exploit auxiliary training data much more effectively than direct attentional models.
+
+| Comments: | Authors' final version, accepted at TACL 2019                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1904.07209](https://arxiv.org/abs/1904.07209) [cs.CL] |
+|           | (or **arXiv:1904.07209v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-04-16-2">2. Distributed representation of multi-sense words: A loss-driven approach</h2>
+
+Title: [Distributed representation of multi-sense words: A loss-driven approach](<https://arxiv.org/abs/1904.06725>)
+
+Authors: [Saurav Manchanda](https://arxiv.org/search/cs?searchtype=author&query=Manchanda%2C+S), [George Karypis](https://arxiv.org/search/cs?searchtype=author&query=Karypis%2C+G)
+
+*(Submitted on 14 Apr 2019)*
+
+> Word2Vec's Skip Gram model is the current state-of-the-art approach for estimating the distributed representation of words. However, it assumes a single vector per word, which is not well-suited for representing words that have multiple senses. This work presents LDMI, a new model for estimating distributional representations of words. LDMI relies on the idea that, if a word carries multiple senses, then having a different representation for each of its senses should lead to a lower loss associated with predicting its co-occurring words, as opposed to the case when a single vector representation is used for all the senses. After identifying the multi-sense words, LDMI clusters the occurrences of these words to assign a sense to each occurrence. Experiments on the contextual word similarity task show that LDMI leads to better performance than competing approaches.
+
+| Comments:          | PAKDD 2018 Best paper award runner-up                        |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Journal reference: | Advances in Knowledge Discovery and Data Mining. PAKDD 2018. Lecture Notes in Computer Science, vol 10938. Springer, Cham |
+| DOI:               | [10.1007/978-3-319-93037-4_27](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.1007%252F978-3-319-93037-4_27&v=e65a05b1) |
+| Cite as:           | [arXiv:1904.06725](https://arxiv.org/abs/1904.06725) [cs.CL] |
+|                    | (or **arXiv:1904.06725v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-04-16-3">3. End-to-end Text-to-speech for Low-resource Languages by Cross-Lingual Transfer Learning</h2>
+
+Title: [End-to-end Text-to-speech for Low-resource Languages by Cross-Lingual Transfer Learning](<https://arxiv.org/abs/1904.06508>)
+
+Authors: [Tao Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+T), [Yuan-Jui Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Cheng-chieh Yeh](https://arxiv.org/search/cs?searchtype=author&query=Yeh%2C+C), [Hung-yi Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+H)
+
+*(Submitted on 13 Apr 2019)*
+
+> End-to-end text-to-speech (TTS) has shown great success on large quantities of paired text plus speech data. However, laborious data collection remains difficult for at least 95% of the languages over the world, which hinders the development of TTS in different languages. In this paper, we aim to build TTS systems for such low-resource (target) languages where only very limited paired data are available. We show such TTS can be effectively constructed by transferring knowledge from a high-resource (source) language. Since the model trained on source language cannot be directly applied to target language due to input space mismatch, we propose a method to learn a mapping between source and target linguistic symbols. Benefiting from this learned mapping, pronunciation information can be preserved throughout the transferring procedure. Preliminary experiments show that we only need around 15 minutes of paired data to obtain a relatively good TTS system. Furthermore, analytic studies demonstrated that the automatically discovered mapping correlate well with the phonetic expertise.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1904.06508](https://arxiv.org/abs/1904.06508) [cs.CL] |
+|           | (or **arXiv:1904.06508v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-04-16-4">4. An Empirical Investigation of Global and Local Normalization for Recurrent Neural Sequence Models Using a Continuous Relaxation to Beam Search</h2>
+
+Title: [An Empirical Investigation of Global and Local Normalization for Recurrent Neural Sequence Models Using a Continuous Relaxation to Beam Search](<https://arxiv.org/abs/1904.06834>)
+
+Authors: [Kartik Goyal](https://arxiv.org/search/cs?searchtype=author&query=Goyal%2C+K), [Chris Dyer](https://arxiv.org/search/cs?searchtype=author&query=Dyer%2C+C), [Taylor Berg-Kirkpatrick](https://arxiv.org/search/cs?searchtype=author&query=Berg-Kirkpatrick%2C+T)
+
+*(Submitted on 15 Apr 2019)*
+
+> Globally normalized neural sequence models are considered superior to their locally normalized equivalents because they may ameliorate the effects of label bias. However, when considering high-capacity neural parametrizations that condition on the whole input sequence, both model classes are theoretically equivalent in terms of the distributions they are capable of representing. Thus, the practical advantage of global normalization in the context of modern neural methods remains unclear. In this paper, we attempt to shed light on this problem through an empirical study. We extend an approach for search-aware training via a continuous relaxation of beam search (Goyal et al., 2017b) in order to enable training of globally normalized recurrent sequence models through simple backpropagation. We then use this technique to conduct an empirical study of the interaction between global normalization, high-capacity encoders, and search-aware optimization. We observe that in the context of inexact search, globally normalized neural models are still more effective than their locally normalized counterparts. Further, since our training approach is sensitive to warm-starting with pre-trained models, we also propose a novel initialization strategy based on self-normalization for pre-training globally normalized models. We perform analysis of our approach on two tasks: CCG supertagging and Machine Translation, and demonstrate the importance of global normalization under different conditions while using search-aware training.
+
+| Comments: | Long paper at NAACL 2019                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| Cite as:  | [arXiv:1904.06834](https://arxiv.org/abs/1904.06834) [cs.LG] |
+|           | (or **arXiv:1904.06834v1 [cs.LG]** for this version)         |
+
+
+
 # 2019-04-15
 
 [Return to Index](#Index)
 
-<h2 id="2019-04-15-1">1. Direct speech-to-speech translation with a sequence-to-sequence model</h2> 
+<h2 id="2019-04-15-1">1. Direct speech-to-speech translation with a sequence-to-sequence model</h2>
 
 Title: [Direct speech-to-speech translation with a sequence-to-sequence model](<https://arxiv.org/abs/1904.06037>)
 
