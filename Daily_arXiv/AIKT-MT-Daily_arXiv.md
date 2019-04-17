@@ -2,6 +2,8 @@
 
 ### Index
 
+- [2019-04-17](#2019-04-17)
+  - [1. Latent Code and Text-based Generative Adversarial Networks for Soft-text Generation](#2019-04-17-1)
 - [2019-04-16](#2019-04-16)
   - [1. Attention-Passing Models for Robust and Data-Efficient End-to-End Speech Translation](#2019-04-16-1)
   - [2. Distributed representation of multi-sense words: A loss-driven approach](#2019-04-16-2)
@@ -49,6 +51,27 @@
 
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-04-17
+
+[Return to Index](#Index)
+
+<h2 id="2019-04-17-1">1. Latent Code and Text-based Generative Adversarial Networks for Soft-text Generation</h2>
+
+Title: [Latent Code and Text-based Generative Adversarial Networks for Soft-text Generation](<https://arxiv.org/abs/1904.07293>)
+
+Authors: [Md. Akmal Haidar](https://arxiv.org/search/cs?searchtype=author&query=Haidar%2C+M+A), [Mehdi Rezagholizadeh](https://arxiv.org/search/cs?searchtype=author&query=Rezagholizadeh%2C+M), [Alan Do-Omri](https://arxiv.org/search/cs?searchtype=author&query=Do-Omri%2C+A), [Ahmad Rashid](https://arxiv.org/search/cs?searchtype=author&query=Rashid%2C+A)
+
+*(Submitted on 15 Apr 2019)*
+
+> Text generation with generative adversarial networks (GANs) can be divided into the text-based and code-based categories according to the type of signals used for discrimination. In this work, we introduce a novel text-based approach called Soft-GAN to effectively exploit GAN setup for text generation. We demonstrate how autoencoders (AEs) can be used for providing a continuous representation of sentences, which we will refer to as soft-text. This soft representation will be used in GAN discrimination to synthesize similar soft-texts. We also propose hybrid latent code and text-based GAN (LATEXT-GAN) approaches with one or more discriminators, in which a combination of the latent code and the soft-text is used for GAN discriminations. We perform a number of subjective and objective experiments on two well-known datasets (SNLI and Image COCO) to validate our techniques. We discuss the results using several evaluation metrics and show that the proposed techniques outperform the traditional GAN-based text-generation methods.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1904.07293](https://arxiv.org/abs/1904.07293) [cs.CL] |
+|           | (or **arXiv:1904.07293v1 [cs.CL]** for this version)         |
 
 
 
