@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-04-18](#2019-04-18)
+  - [1. A Systematic Study of Leveraging Subword Information for Learning Word Representations](#2019-04-18-1)
+  - [2. End-to-End Speech Translation with Knowledge Distillation](#2019-04-18-2)
 - [2019-04-17](#2019-04-17)
   - [1. Latent Code and Text-based Generative Adversarial Networks for Soft-text Generation](#2019-04-17-1)
 - [2019-04-16](#2019-04-16)
@@ -51,6 +54,48 @@
 
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-04-18
+
+[Return to Index](#Index)
+
+<h2 id="2019-04-18-1">1. A Systematic Study of Leveraging Subword Information for Learning Word Representations</h2>
+
+Title: [A Systematic Study of Leveraging Subword Information for Learning Word Representations](<https://arxiv.org/abs/1904.07994>)
+
+Authors: [Yi Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+Y), [Ivan Vulić](https://arxiv.org/search/cs?searchtype=author&query=Vuli%C4%87%2C+I), [Anna Korhonen](https://arxiv.org/search/cs?searchtype=author&query=Korhonen%2C+A)
+
+*(Submitted on 16 Apr 2019)*
+
+> The use of subword-level information (e.g., characters, character n-grams, morphemes) has become ubiquitous in modern word representation learning. Its importance is attested especially for morphologically rich languages which generate a large number of rare words. Despite a steadily increasing interest in such subword-informed word representations, their systematic comparative analysis across typologically diverse languages and different tasks is still missing. In this work, we deliver such a study focusing on the variation of two crucial components required for subword-level integration into word representation models: 1) segmentation of words into subword units, and 2) subword composition functions to obtain final word representations. We propose a general framework for learning subword-informed word representations that allows for easy experimentation with different segmentation and composition components, also including more advanced techniques based on position embeddings and self-attention. Using the unified framework, we run experiments over a large number of subword-informed word representation configurations (60 in total) on 3 tasks (general and rare word similarity, dependency parsing, fine-grained entity typing) for 5 languages representing 3 language types. Our main results clearly indicate that there is no "one-sizefits-all" configuration, as performance is both language- and task-dependent. We also show that configurations based on unsupervised segmentation (e.g., BPE, Morfessor) are sometimes comparable to or even outperform the ones based on supervised word segmentation.
+
+| Comments: | NAACL 2019                                           |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1904.07994 [cs.CL]**                         |
+|           | (or **arXiv:1904.07994v1 [cs.CL]** for this version) |
+
+
+
+<h2 id="2019-04-18-2">2. End-to-End Speech Translation with Knowledge Distillation</h2>
+
+Title: [End-to-End Speech Translation with Knowledge Distillation](<https://arxiv.org/abs/1904.08075>)
+
+Authors: [Yuchen Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Hao Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+H), [Zhongjun He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+Z), [Jiajun Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Hua Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+H), [Haifeng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H), [Chengqing Zong](https://arxiv.org/search/cs?searchtype=author&query=Zong%2C+C)
+
+*(Submitted on 17 Apr 2019)*
+
+> End-to-end speech translation (ST), which directly translates from source language speech into target language text, has attracted intensive attentions in recent years. Compared to conventional pipeline systems, end-to-end ST models have advantages of lower latency, smaller model size and less error propagation. However, the combination of speech recognition and text translation in one model is more difficult than each of these two tasks. In this paper, we propose a knowledge distillation approach to improve ST model by transferring the knowledge from text translation model. Specifically, we first train a text translation model, regarded as a teacher model, and then ST model is trained to learn output probabilities from teacher model through knowledge distillation. Experiments on English- French Augmented LibriSpeech and English-Chinese TED corpus show that end-to-end ST is possible to implement on both similar and dissimilar language pairs. In addition, with the instruction of teacher model, end-to-end ST model can gain significant improvements by over 3.5 BLEU points.
+
+| Comments: | Submitted to Interspeech 2019                        |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1904.08075 [cs.CL]**                         |
+|           | (or **arXiv:1904.08075v1 [cs.CL]** for this version) |
+
+
 
 
 
