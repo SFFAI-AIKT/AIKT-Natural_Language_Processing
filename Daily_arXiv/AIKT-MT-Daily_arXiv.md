@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-04-19](#2019-04-19)
+  - [1. One Homonym per Translation](#2019-04-19-1)
+  - [2. Evaluating the Underlying Gender Bias in Contextualized Word Embeddings](#2019-04-19-2)
 - [2019-04-18](#2019-04-18)
   - [1. A Systematic Study of Leveraging Subword Information for Learning Word Representations](#2019-04-18-1)
   - [2. End-to-End Speech Translation with Knowledge Distillation](#2019-04-18-2)
@@ -54,6 +57,46 @@
 
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-04-19
+
+[Return to Index](#Index)
+
+<h2 id="2019-04-19-1">1. One Homonym per Translation</h2>
+
+Title: [One Homonym per Translation](<https://arxiv.org/abs/1904.08533>)
+
+Authors: [Bradley Hauer](https://arxiv.org/search/cs?searchtype=author&query=Hauer%2C+B), [Grzegorz Kondrak](https://arxiv.org/search/cs?searchtype=author&query=Kondrak%2C+G)
+
+*(Submitted on 17 Apr 2019)*
+
+> The study of homonymy is vital to resolving fundamental problems in lexical semantics. In this paper, we propose four hypotheses that characterize the unique behavior of homonyms in the context of translations, discourses, collocations, and sense clusters. We present a new annotated homonym resource that allows us to test our hypotheses on existing WSD resources. The results of the experiments provide strong empirical evidence for the hypotheses. This study represents a step towards a computational method for distinguishing between homonymy and polysemy, and constructing a definitive inventory of coarse-grained senses.
+
+| Comments: | 10 pages, including references                       |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1904.08533 [cs.CL]**                         |
+|           | (or **arXiv:1904.08533v1 [cs.CL]** for this version) |
+
+
+
+<h2 id="2019-04-19-2">2. Evaluating the Underlying Gender Bias in Contextualized Word Embeddings</h2>
+
+Title: [Evaluating the Underlying Gender Bias in Contextualized Word Embeddings](<https://arxiv.org/abs/1904.08783>)
+
+Authors: [Christine Basta](https://arxiv.org/search/cs?searchtype=author&query=Basta%2C+C), [Marta R. Costa-jussà](https://arxiv.org/search/cs?searchtype=author&query=Costa-juss%C3%A0%2C+M+R), [Noe Casas](https://arxiv.org/search/cs?searchtype=author&query=Casas%2C+N)
+
+*(Submitted on 18 Apr 2019)*
+
+> Gender bias is highly impacting natural language processing applications. Word embeddings have clearly been proven both to keep and amplify gender biases that are present in current data sources. Recently, contextualized word embeddings have enhanced previous word embedding techniques by computing word vector representations dependent on the sentence they appear in. 
+> In this paper, we study the impact of this conceptual change in the word embedding computation in relation with gender bias. Our analysis includes different measures previously applied in the literature to standard word embeddings. Our findings suggest that contextualized word embeddings are less biased than standard ones even when the latter are debiased.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1904.08783 [cs.CL]**                                 |
+|           | (or **arXiv:1904.08783v1 [cs.CL]** for this version)         |
 
 
 
