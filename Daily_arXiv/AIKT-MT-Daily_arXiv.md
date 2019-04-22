@@ -2,6 +2,8 @@
 
 ### Index
 
+- [2019-04-22](#2019-04-22)
+  - [1. Code-Switching for Enhancing NMT with Pre-Specified Translation](#2019-04-22-1)
 - [2019-04-19](#2019-04-19)
   - [1. One Homonym per Translation](#2019-04-19-1)
   - [2. Evaluating the Underlying Gender Bias in Contextualized Word Embeddings](#2019-04-19-2)
@@ -57,6 +59,27 @@
 
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-04-22
+
+[Return to Index](#Index)
+
+<h2 id="2019-04-22-1">1. Code-Switching for Enhancing NMT with Pre-Specified Translation</h2>
+
+Title: [Code-Switching for Enhancing NMT with Pre-Specified Translation](<https://arxiv.org/abs/1904.09107>)
+
+Authors: [Kai Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+K), [Yue Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Heng Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+H), [Weihua Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+W), [Kun Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+K), [Min Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M)
+
+*(Submitted on 19 Apr 2019)*
+
+> Leveraging user-provided translation to constrain NMT has practical significance. Existing methods can be classified into two main categories, namely the use of placeholder tags for lexicon words and the use of hard constraints during decoding. Both methods can hurt translation fidelity for various reasons. We investigate a data augmentation method, making code-switched training data by replacing source phrases with their target translations. Our method does not change the MNT model or decoding algorithm, allowing the model to learn lexicon translations by copying source-side target words. Extensive experiments show that our method achieves consistent improvements over existing approaches, improving translation of constrained words without hurting unconstrained words.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1904.09107 [cs.CL]**                         |
+|           | (or **arXiv:1904.09107v1 [cs.CL]** for this version) |
 
 
 
