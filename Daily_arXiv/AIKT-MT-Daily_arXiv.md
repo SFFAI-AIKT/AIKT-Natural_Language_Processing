@@ -2,6 +2,12 @@
 
 ### Index
 
+- [2019-04-23](#2019-04-23)
+  - [1. Constant-Time Machine Translation with Conditional Masked Language Models](#2019-04-23-1)
+  - [2. Weakly-Supervised Concept-based Adversarial Learning for Cross-lingual Word Embeddings](#2019-04-23-2)
+  - [3. Dynamic Past and Future for Neural Machine Translation](#2019-04-23-3)
+  - [4. BERTScore: Evaluating Text Generation with BERT](#2019-04-23-4)
+  - [5. The Curious Case of Neural Text Degeneration](#2019-04-23-5)
 - [2019-04-22](#2019-04-22)
   - [1. Code-Switching for Enhancing NMT with Pre-Specified Translation](#2019-04-22-1)
 - [2019-04-19](#2019-04-19)
@@ -59,6 +65,102 @@
 
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-04-23
+
+[Return to Index](#Index)
+
+<h2 id="2019-04-23-1">1. Constant-Time Machine Translation with Conditional Masked Language Models</h2>
+
+Title: [Constant-Time Machine Translation with Conditional Masked Language Models](<https://arxiv.org/abs/1904.09324>)
+
+Authors: [Marjan Ghazvininejad](https://arxiv.org/search/cs?searchtype=author&query=Ghazvininejad%2C+M), [Omer Levy](https://arxiv.org/search/cs?searchtype=author&query=Levy%2C+O), [Yinhan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Luke Zettlemoyer](https://arxiv.org/search/cs?searchtype=author&query=Zettlemoyer%2C+L)
+
+*(Submitted on 19 Apr 2019)*
+
+> Most machine translation systems generate text autoregressively, by sequentially predicting tokens from left to right. We, instead, use a masked language modeling objective to train a model to predict any subset of the target words, conditioned on both the input text and a partially masked target translation. This approach allows for efficient iterative decoding, where we first predict all of the target words non-autoregressively, and then repeatedly mask out and regenerate the subset of words that the model is least confident about. By applying this strategy for a constant number of iterations, our model improves state-of-the-art performance levels for constant-time translation models by over 3 BLEU on average. It is also able to reach 92-95% of the performance of a typical left-to-right transformer model, while decoding significantly faster.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1904.09324 [cs.CL]**                                 |
+|           | (or **arXiv:1904.09324v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-04-23-2">2. Weakly-Supervised Concept-based Adversarial Learning for Cross-lingual Word Embeddings</h2>
+
+Title: [Weakly-Supervised Concept-based Adversarial Learning for Cross-lingual Word Embeddings](<https://arxiv.org/abs/1904.09446>)
+
+Authors: [Haozhou Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H), [James Henderson](https://arxiv.org/search/cs?searchtype=author&query=Henderson%2C+J), [Paola Merlo](https://arxiv.org/search/cs?searchtype=author&query=Merlo%2C+P)
+
+*(Submitted on 20 Apr 2019)*
+
+> Distributed representations of words which map each word to a continuous vector have proven useful in capturing important linguistic information not only in a single language but also across different languages. Current unsupervised adversarial approaches show that it is possible to build a mapping matrix that align two sets of monolingual word embeddings together without high quality parallel data such as a dictionary or a sentence-aligned corpus. However, without post refinement, the performance of these methods' preliminary mapping is not good, leading to poor performance for typologically distant languages. 
+> In this paper, we propose a weakly-supervised adversarial training method to overcome this limitation, based on the intuition that mapping across languages is better done at the concept level than at the word level. We propose a concept-based adversarial training method which for most languages improves the performance of previous unsupervised adversarial methods, especially for typologically distant language pairs.
+
+| Comments: | 11 pages, 4 figures                                  |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1904.09446 [cs.CL]**                         |
+|           | (or **arXiv:1904.09446v1 [cs.CL]** for this version) |
+
+
+
+<h2 id="2019-04-23-3">3. Dynamic Past and Future for Neural Machine Translation</h2>
+
+Title: [Dynamic Past and Future for Neural Machine Translation](<https://arxiv.org/abs/1904.09646>)
+
+Authors: [Zaixiang Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+Z), [Shujian Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Zhaopeng Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+Z), [Xin-Yu Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+X), [Jiajun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J)
+
+*(Submitted on 21 Apr 2019)*
+
+> Previous studies have shown that neural machine translation (NMT) models can benefit from modeling translated (Past) and un-translated (Future) source contents as recurrent states (Zheng et al., 2018). However, the recurrent process is less interpretable. In this paper, we propose to model Past and Future by Capsule Network (Hinton et al.,2011), which provides an explicit separation of source words into groups of Past and Future by the process of parts-to-wholes assignment. The assignment is learned with a novel variant of routing-by-agreement mechanism (Sabour et al., 2017), namely Guided Dynamic Routing, in which what to translate at current decoding step guides the routing process to assign each source word to its associated group represented by a capsule, and to refine the representation of the capsule dynamically and iteratively. Experiments on translation tasks of three language pairs show that our model achieves substantial improvements over both RNMT and Transformer. Extensive analysis further verifies that our method does recognize translated and untranslated content as expected, and produces better and more adequate translations.
+
+| Comments: | In progress                                          |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1904.09646 [cs.CL]**                         |
+|           | (or **arXiv:1904.09646v1 [cs.CL]** for this version) |
+
+
+
+<h2 id="2019-04-23-4">4. BERTScore: Evaluating Text Generation with BERT</h2>
+
+Title: [BERTScore: Evaluating Text Generation with BERT](<https://arxiv.org/abs/1904.09675>)
+
+Authors: [Tianyi Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+T), [Varsha Kishore](https://arxiv.org/search/cs?searchtype=author&query=Kishore%2C+V), [Felix Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+F), [Kilian Q. Weinberger](https://arxiv.org/search/cs?searchtype=author&query=Weinberger%2C+K+Q), [Yoav Artzi](https://arxiv.org/search/cs?searchtype=author&query=Artzi%2C+Y)
+
+*(Submitted on 21 Apr 2019)*
+
+> We propose BERTScore, an automatic evaluation metric for text generation. Analogous to common metrics, \method computes a similarity score for each token in the candidate sentence with each token in the reference. However, instead of looking for exact matches, we compute similarity using contextualized BERT embeddings. We evaluate on several machine translation and image captioning benchmarks, and show that BERTScore correlates better with human judgments than existing metrics, often significantly outperforming even task-specific supervised metrics.
+
+| Comments: | Code available at [this https URL](https://github.com/Tiiiger/bert_score) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **arXiv:1904.09675 [cs.CL]**                                 |
+|           | (or **arXiv:1904.09675v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-04-23-5">5. The Curious Case of Neural Text Degeneration</h2>
+
+Title: [The Curious Case of Neural Text Degeneration](<https://arxiv.org/abs/1904.09751>)
+
+Authors: [Ari Holtzman](https://arxiv.org/search/cs?searchtype=author&query=Holtzman%2C+A), [Jan Buys](https://arxiv.org/search/cs?searchtype=author&query=Buys%2C+J), [Maxwell Forbes](https://arxiv.org/search/cs?searchtype=author&query=Forbes%2C+M), [Yejin Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi%2C+Y)
+
+*(Submitted on 22 Apr 2019)*
+
+> Despite considerable advancements with deep neural language models, the enigma of neural text degeneration persists when these models are tested as text generators. The counter-intuitive empirical observation is that even though the use of likelihood as training objective leads to high quality models for a broad range of language understanding tasks, using likelihood as a decoding objective leads to text that is bland and strangely repetitive. 
+> In this paper, we reveal surprising distributional differences between human text and machine text. In addition, we find that decoding strategies alone can dramatically effect the quality of machine text, even when generated from exactly the same neural language model. 
+> Our findings motivate Nucleus Sampling, a simple but effective method to draw the best out of neural generation. By sampling text from the dynamic nucleus of the probability distribution, which allows for diversity while effectively truncating the less reliable tail of the distribution, the resulting text better demonstrates the quality of human text, yielding enhanced diversity without sacrificing fluency and coherence.
+
+| Comments: | 9 pages                                              |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1904.09751 [cs.CL]**                         |
+|           | (or **arXiv:1904.09751v1 [cs.CL]** for this version) |
 
 
 
