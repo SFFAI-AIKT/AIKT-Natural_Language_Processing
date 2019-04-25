@@ -95,7 +95,19 @@ Authors: [Hoang-Quoc Nguyen-Son](https://arxiv.org/search/cs?searchtype=author&q
 
 <h2 id="2019-04-25-2">2. End-to-End Spoken Language Translation</h2>
 
+Title: [End-to-End Spoken Language Translation](<https://arxiv.org/abs/1904.10760>)
 
+Authors: [Michelle Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+M), [Albert Haque](https://arxiv.org/search/cs?searchtype=author&query=Haque%2C+A), [Prateek Verma](https://arxiv.org/search/cs?searchtype=author&query=Verma%2C+P)
+
+*(Submitted on 23 Apr 2019)*
+
+> In this paper, we address the task of spoken language understanding. We present a method for translating spoken sentences from one language into spoken sentences in another language. Given spectrogram-spectrogram pairs, our model can be trained completely from scratch to translate unseen sentences. Our method consists of a pyramidal-bidirectional recurrent network combined with a convolutional network to output sentence-level spectrograms in the target language. Empirically, our model achieves competitive performance with state-of-the-art methods on multiple languages and can generalize to unseen speakers.
+
+| Comments: | Technical Report. Stanford University, 2017. arXiv admin note: text overlap with [arXiv:1804.00047](https://arxiv.org/abs/1804.00047) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **arXiv:1904.10760 [cs.CL]**                                 |
+|           | (or **arXiv:1904.10760v1 [cs.CL]** for this version)         |
 
 
 
