@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-04-25](#2019-04-25)
+  - [1. Detecting Machine-Translated Paragraphs by Matching Similar Words](#2019-04-25-1)
+  - [2. End-to-End Spoken Language Translation](#2019-04-25-2)
 - [2019-04-23](#2019-04-23)
   - [1. Constant-Time Machine Translation with Conditional Masked Language Models](#2019-04-23-1)
   - [2. Weakly-Supervised Concept-based Adversarial Learning for Cross-lingual Word Embeddings](#2019-04-23-2)
@@ -65,6 +68,34 @@
 
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-04-25
+
+[Return to Index](#Index)
+
+<h2 id="2019-04-25-1">1. Detecting Machine-Translated Paragraphs by Matching Similar Words</h2>
+
+Title: [Detecting Machine-Translated Paragraphs by Matching Similar Words](<https://arxiv.org/abs/1904.10641>)
+
+Authors: [Hoang-Quoc Nguyen-Son](https://arxiv.org/search/cs?searchtype=author&query=Nguyen-Son%2C+H), [Tran Phuong Thao](https://arxiv.org/search/cs?searchtype=author&query=Thao%2C+T+P), [Seira Hidano](https://arxiv.org/search/cs?searchtype=author&query=Hidano%2C+S), [Shinsaku Kiyomoto](https://arxiv.org/search/cs?searchtype=author&query=Kiyomoto%2C+S)
+
+*(Submitted on 24 Apr 2019)*
+
+> Machine-translated text plays an important role in modern life by smoothing communication from various communities using different languages. However, unnatural translation may lead to misunderstanding, a detector is thus needed to avoid the unfortunate mistakes. While a previous method measured the naturalness of continuous words using a N-gram language model, another method matched noncontinuous words across sentences but this method ignores such words in an individual sentence. We have developed a method matching similar words throughout the paragraph and estimating the paragraph-level coherence, that can identify machine-translated text. Experiment evaluates on 2000 English human-generated and 2000 English machine-translated paragraphs from German showing that the coherence-based method achieves high performance (accuracy = 87.0%; equal error rate = 13.0%). It is efficiently better than previous methods (best accuracy = 72.4%; equal error rate = 29.7%). Similar experiments on Dutch and Japanese obtain 89.2% and 97.9% accuracy, respectively. The results demonstrate the persistence of the proposed method in various languages with different resource levels.
+
+| Comments: | 12 pages, CICLING 2019 (LNCS)                        |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1904.10641 [cs.CL]**                         |
+|           | (or **arXiv:1904.10641v1 [cs.CL]** for this version) |
+
+
+
+<h2 id="2019-04-25-2">2. End-to-End Spoken Language Translation</h2>
+
+
 
 
 
