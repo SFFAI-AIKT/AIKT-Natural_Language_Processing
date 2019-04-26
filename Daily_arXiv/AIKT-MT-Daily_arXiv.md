@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-04-26](#2019-04-26)
+  - [1. Assessing the Tolerance of Neural Machine Translation Systems Against Speech Recognition Errors](#2019-04-26-1)
+  - [2. Phonetically-Oriented Word Error Alignment for Speech Recognition Error Analysis in Speech Translation](#2019-04-26-2)
 - [2019-04-25](#2019-04-25)
   - [1. Detecting Machine-Translated Paragraphs by Matching Similar Words](#2019-04-25-1)
   - [2. End-to-End Spoken Language Translation](#2019-04-25-2)
@@ -68,6 +71,50 @@
 
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-04-26
+
+[Return to Index](#Index)
+
+<h2 id="2019-04-26-1">1. Assessing the Tolerance of Neural Machine Translation Systems Against Speech Recognition Errors</h2>
+
+Title: [Assessing the Tolerance of Neural Machine Translation Systems Against Speech Recognition Errors](<https://arxiv.org/abs/1904.10997>)
+
+Authors: [Nicholas Ruiz](https://arxiv.org/search/cs?searchtype=author&query=Ruiz%2C+N), [Mattia Antonino Di Gangi](https://arxiv.org/search/cs?searchtype=author&query=Di+Gangi%2C+M+A), [Nicola Bertoldi](https://arxiv.org/search/cs?searchtype=author&query=Bertoldi%2C+N), [Marcello Federico](https://arxiv.org/search/cs?searchtype=author&query=Federico%2C+M)
+
+*(Submitted on 24 Apr 2019)*
+
+> Machine translation systems are conventionally trained on textual resources that do not model phenomena that occur in spoken language. While the evaluation of neural machine translation systems on textual inputs is actively researched in the literature , little has been discovered about the complexities of translating spoken language data with neural models. We introduce and motivate interesting problems one faces when considering the translation of automatic speech recognition (ASR) outputs on neural machine translation (NMT) systems. We test the robustness of sentence encoding approaches for NMT encoder-decoder modeling, focusing on word-based over byte-pair encoding. We compare the translation of utterances containing ASR errors in state-of-the-art NMT encoder-decoder systems against a strong phrase-based machine translation baseline in order to better understand which phenomena present in ASR outputs are better represented under the NMT framework than approaches that represent translation as a linear model.
+
+| Comments: | Interspeech 2017                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| DOI:      | [10.21437/Interspeech.2017-1690](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.21437%2FInterspeech.2017-1690&v=44f77dc3) |
+| Cite as:  | **arXiv:1904.10997 [cs.CL]**                                 |
+|           | (or **arXiv:1904.10997v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-04-26-2">2. Phonetically-Oriented Word Error Alignment for Speech Recognition Error Analysis in Speech Translation</h2>
+
+Title: [Phonetically-Oriented Word Error Alignment for Speech Recognition Error Analysis in Speech Translation](<https://arxiv.org/abs/1904.11024>)
+
+Authors: [Nicholas Ruiz](https://arxiv.org/search/cs?searchtype=author&query=Ruiz%2C+N), [Marcello Federico](https://arxiv.org/search/cs?searchtype=author&query=Federico%2C+M)
+
+*(Submitted on 24 Apr 2019)*
+
+> We propose a variation to the commonly used Word Error Rate (WER) metric for speech recognition evaluation which incorporates the alignment of phonemes, in the absence of time boundary information. After computing the Levenshtein alignment on words in the reference and hypothesis transcripts, spans of adjacent errors are converted into phonemes with word and syllable boundaries and a phonetic Levenshtein alignment is performed. The aligned phonemes are recombined into aligned words that adjust the word alignment labels in each error region. We demonstrate that our Phonetically-Oriented Word Error Rate (POWER) yields similar scores to WER with the added advantages of better word alignments and the ability to capture one-to-many word alignments corresponding to homophonic errors in speech recognition hypotheses. These improved alignments allow us to better trace the impact of Levenshtein error types on downstream tasks such as speech translation.
+
+| Comments: | IEEE Workshop on Automatic Speech Recognition and Understanding, December 2015 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| DOI:      | [10.1109/ASRU.2015.7404808](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.1109%2FASRU.2015.7404808&v=82e5d4f9) |
+| Cite as:  | **arXiv:1904.11024 [cs.CL]**                                 |
+|           | (or **arXiv:1904.11024v1 [cs.CL]** for this version)         |
+
+
 
 
 
