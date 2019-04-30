@@ -2,6 +2,8 @@
 
 ### Index
 
+- [2019-04-30](#2019-04-30)
+  - [1. Towards Recognizing Phrase Translation Processes: Experiments on English-French](#2019-04-30-1)
 - [2019-04-29](#2019-04-29)
   - [1. Neural Text Generation from Rich Semantic Representations](#2019-04-29-1)
   - [2. Copy mechanism and tailored training for character-based data-to-text generation](#201-04-29-2)
@@ -76,6 +78,26 @@
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
 
 
+
+# 2019-04-30
+
+[Return to Index](#Index)
+
+<h2 id="2019-04-30-1">1. Towards Recognizing Phrase Translation Processes: Experiments on English-French</h2>
+
+Title: [Towards Recognizing Phrase Translation Processes: Experiments on English-French](<https://arxiv.org/abs/1904.12213>)
+
+Authors: [Yuming Zhai](https://arxiv.org/search/cs?searchtype=author&query=Zhai%2C+Y), [Pooyan Safari](https://arxiv.org/search/cs?searchtype=author&query=Safari%2C+P), [Gabriel Illouz](https://arxiv.org/search/cs?searchtype=author&query=Illouz%2C+G), [Alexandre Allauzen](https://arxiv.org/search/cs?searchtype=author&query=Allauzen%2C+A), [Anne Vilnat](https://arxiv.org/search/cs?searchtype=author&query=Vilnat%2C+A)
+
+*(Submitted on 27 Apr 2019)*
+
+> When translating phrases (words or group of words), human translators, consciously or not, resort to different translation processes apart from the literal translation, such as Idiom Equivalence, Generalization, Particularization, Semantic Modulation, etc. Translators and linguists (such as Vinay and Darbelnet, Newmark, etc.) have proposed several typologies to characterize the different translation processes. However, to the best of our knowledge, there has not been effort to automatically classify these fine-grained translation processes. Recently, an English-French parallel corpus of TED Talks has been manually annotated with translation process categories, along with established annotation guidelines. Based on these annotated examples, we propose an automatic classification of translation processes at subsentential level. Experimental results show that we can distinguish non-literal translation from literal translation with an accuracy of 87.09%, and 55.20% for classifying among five non-literal translation processes. This work demonstrates that it is possible to automatically classify translation processes. Even with a small amount of annotated examples, our experiments show the directions that we can follow in future work. One of our long term objectives is leveraging this automatic classification to better control paraphrase extraction from bilingual parallel corpora.
+
+| Comments: | 12 pages, preprint version accepted to the conference CICLING 2019 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **arXiv:1904.12213 [cs.CL]**                                 |
+|           | (or **arXiv:1904.12213v1 [cs.CL]** for this version)         |
 
 
 
