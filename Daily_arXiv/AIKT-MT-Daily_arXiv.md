@@ -6,7 +6,7 @@
   - [1. Towards Recognizing Phrase Translation Processes: Experiments on English-French](#2019-04-30-1)
 - [2019-04-29](#2019-04-29)
   - [1. Neural Text Generation from Rich Semantic Representations](#2019-04-29-1)
-  - [2. Copy mechanism and tailored training for character-based data-to-text generation](#201-04-29-2)
+  - [2. Copy mechanism and tailored training for character-based data-to-text generation](#2019-04-29-2)
 - [2019-04-26](#2019-04-26)
   - [1. Assessing the Tolerance of Neural Machine Translation Systems Against Speech Recognition Errors](#2019-04-26-1)
   - [2. Phonetically-Oriented Word Error Alignment for Speech Recognition Error Analysis in Speech Translation](#2019-04-26-2)
