@@ -74,7 +74,6 @@
   - [2. Multimodal Machine Translation with Embedding Prediction](#2019-04-02-2)
   - [3. Lost in Interpretation: Predicting Untranslated Terminology in Simultaneous Interpretation](#2019-04-02-3)
 
-* [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
 
