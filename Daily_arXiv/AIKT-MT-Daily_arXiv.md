@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-04-29](#2019-04-29)
+  - [1. Neural Text Generation from Rich Semantic Representations](#2019-04-29-1)
+  - [2. Copy mechanism and tailored training for character-based data-to-text generation](#201-04-29-2)
 - [2019-04-26](#2019-04-26)
   - [1. Assessing the Tolerance of Neural Machine Translation Systems Against Speech Recognition Errors](#2019-04-26-1)
   - [2. Phonetically-Oriented Word Error Alignment for Speech Recognition Error Analysis in Speech Translation](#2019-04-26-2)
@@ -71,6 +74,49 @@
 
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+
+
+# 2019-04-29
+
+[Return to Index](#Index)
+
+<h2 id="2019-04-29-1">1. 
+Neural Text Generation from Rich Semantic Representations</h2>
+
+Title: [Neural Text Generation from Rich Semantic Representations](<https://arxiv.org/abs/1904.11564>)
+
+Authors: [Valerie Hajdik](https://arxiv.org/search/cs?searchtype=author&query=Hajdik%2C+V), [Jan Buys](https://arxiv.org/search/cs?searchtype=author&query=Buys%2C+J), [Michael W. Goodman](https://arxiv.org/search/cs?searchtype=author&query=Goodman%2C+M+W), [Emily M. Bender](https://arxiv.org/search/cs?searchtype=author&query=Bender%2C+E+M)
+
+*(Submitted on 25 Apr 2019)*
+
+> We propose neural models to generate high-quality text from structured representations based on Minimal Recursion Semantics (MRS). MRS is a rich semantic representation that encodes more precise semantic detail than other representations such as Abstract Meaning Representation (AMR). We show that a sequence-to-sequence model that maps a linearization of Dependency MRS, a graph-based representation of MRS, to English text can achieve a BLEU score of 66.11 when trained on gold data. The performance can be improved further using a high-precision, broad coverage grammar-based parser to generate a large silver training corpus, achieving a final BLEU score of 77.17 on the full test set, and 83.37 on the subset of test data most closely matching the silver data domain. Our results suggest that MRS-based representations are a good choice for applications that need both structured semantics and the ability to produce natural language text as output.
+
+| Comments: | NAACL 2019                                           |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1904.11564 [cs.CL]**                         |
+|           | (or **arXiv:1904.11564v1 [cs.CL]** for this version) |
+
+
+
+<h2 id="2019-04-29-2">2. Copy mechanism and tailored training for character-based data-to-text generation</h2>
+
+Title: [Copy mechanism and tailored training for character-based data-to-text generation](<https://arxiv.org/abs/1904.11838>)
+
+Authors: [Marco Roberti](https://arxiv.org/search/cs?searchtype=author&query=Roberti%2C+M), [Giovanni Bonetta](https://arxiv.org/search/cs?searchtype=author&query=Bonetta%2C+G), [Rossella Cancelliere](https://arxiv.org/search/cs?searchtype=author&query=Cancelliere%2C+R), [Patrick Gallinari](https://arxiv.org/search/cs?searchtype=author&query=Gallinari%2C+P)
+
+*(Submitted on 26 Apr 2019)*
+
+> In the last few years, many different methods have been focusing on using deep recurrent neural networks for natural language generation. The most widely used sequence-to-sequence neural methods are word-based: as such, they need a pre-processing step called delexicalization (conversely, relexicalization) to deal with uncommon or unknown words. These forms of processing, however, give rise to models that depend on the vocabulary used and are not completely neural. In this work, we present an end-to-end sequence-to-sequence model with attention mechanism which reads and generates at a character level, no longer requiring delexicalization, tokenization, nor even lowercasing. Moreover, since characters constitute the common "building blocks" of every text, it also allows a more general approach to text generation, enabling the possibility to exploit transfer learning for training. These skills are obtained thanks to two major features: (i) the possibility to alternate between the standard generation mechanism and a copy one, which allows to directly copy input facts to produce outputs, and (ii) the use of an original training pipeline that further improves the quality of the generated texts. We also introduce a new dataset called E2E+, designed to highlight the copying capabilities of character-based models, that is a modified version of the well-known E2E dataset used in the E2E Challenge. We tested our model according to five broadly accepted metrics (including the widely used bleu), showing that it yields competitive performance with respect to both character-based and word-based approaches.
+
+| Comments: | Submitted to ECML-PKDD 2019                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Neural and Evolutionary Computing (cs.NE); Machine Learning (stat.ML) |
+| Cite as:  | **arXiv:1904.11838 [cs.LG]**                                 |
+|           | (or **arXiv:1904.11838v1 [cs.LG]** for this version)         |
 
 
 
