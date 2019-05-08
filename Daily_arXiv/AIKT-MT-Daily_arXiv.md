@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-05-08](#2019-05-08-1)
+  - [1. English-Bhojpuri SMT System: Insights from the Karaka Model](#2019-05-08-1)
+  - [2. MASS: Masked Sequence to Sequence Pre-training for Language Generation](#2019-05-08-2)
 - [2019-05-07](#2019-05-07)
   - [1. BVS Corpus: A Multilingual Parallel Corpus of Biomedical Scientific Texts](#2019-05-07-1)
   - [2. A Parallel Corpus of Theses and Dissertations Abstracts](#2019-05-07-2)
@@ -11,6 +14,45 @@
 * [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-05-08
+
+[Return to Index](#Index)
+
+<h2 id="2019-05-08-1">1. English-Bhojpuri SMT System: Insights from the Karaka Model</h2>
+
+Title: [English-Bhojpuri SMT System: Insights from the Karaka Model](https://arxiv.org/abs/1905.02239)
+
+Authors: [Atul Kr. Ojha](https://arxiv.org/search/cs?searchtype=author&query=Ojha%2C+A+K)
+
+*(Submitted on 6 May 2019)*
+
+> This thesis has been divided into six chapters namely: Introduction, Karaka Model and it impacts on Dependency Parsing, LT Resources for Bhojpuri, English-Bhojpuri SMT System: Experiment, Evaluation of EB-SMT System, and Conclusion. Chapter one introduces this PhD research by detailing the motivation of the study, the methodology used for the study and the literature review of the existing MT related work in Indian Languages. Chapter two talks of the theoretical background of Karaka and Karaka model. Along with this, it talks about previous related work. It also discusses the impacts of the Karaka model in NLP and dependency parsing. It compares Karaka dependency and Universal Dependency. It also presents a brief idea of the implementation of these models in the SMT system for English-Bhojpuri language pair.
+
+| Comments: | 211 pages and Submitted at JNU New Delhi             |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1905.02239 [cs.CL]**                         |
+|           | (or **arXiv:1905.02239v1 [cs.CL]** for this version) |
+
+
+
+<h2 id="2019-05-08-2">2. MASS: Masked Sequence to Sequence Pre-training for Language Generation</h2>
+
+Title: [MASS: Masked Sequence to Sequence Pre-training for Language Generation](https://arxiv.org/abs/1905.02450)
+
+Authors: [Kaitao Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+K), [Xu Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+X), [Tao Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+T), [Jianfeng Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+J), [Tie-Yan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T)
+
+*(Submitted on 7 May 2019)*
+
+> Pre-training and fine-tuning, e.g., BERT, have achieved great success in language understanding by transferring knowledge from rich-resource pre-training task to the low/zero-resource downstream tasks. Inspired by the success of BERT, we propose MAsked Sequence to Sequence pre-training (MASS) for the encoder-decoder based language generation tasks. MASS adopts the encoder-decoder framework to reconstruct a sentence fragment given the remaining part of the sentence: its encoder takes a sentence with randomly masked fragment (several consecutive tokens) as input, and its decoder tries to predict this masked fragment. In this way, MASS can jointly train the encoder and decoder to develop the capability of representation extraction and language modeling. By further fine-tuning on a variety of zero/low-resource language generation tasks, including neural machine translation, text summarization and conversational response generation (3 tasks and totally 8 datasets), MASS achieves significant improvements over the baselines without pre-training or with other pre-training methods. Specially, we achieve the state-of-the-art accuracy (37.5 in terms of BLEU score) on the unsupervised English-French translation, even beating the early attention-based supervised model.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1905.02450 [cs.CL]**                         |
+|           | (or **arXiv:1905.02450v1 [cs.CL]** for this version) |
 
 
 
