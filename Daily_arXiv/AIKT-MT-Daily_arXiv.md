@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-05-09](#2019-05-09)
+  - [1. Syntax-Enhanced Neural Machine Translation with Syntax-Aware Word Representations](#2019-05-09-1)
+  - [2. Unified Language Model Pre-training for Natural Language Understanding and Generation](#2019-05-09-2)
 - [2019-05-08](#2019-05-08-1)
   - [1. English-Bhojpuri SMT System: Insights from the Karaka Model](#2019-05-08-1)
   - [2. MASS: Masked Sequence to Sequence Pre-training for Language Generation](#2019-05-08-2)
@@ -14,6 +17,48 @@
 * [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-05-09
+
+[Return to Index](#Index)
+
+<h2 id="2019-05-09-1">1. Syntax-Enhanced Neural Machine Translation with Syntax-Aware Word Representations</h2>
+
+Title: [Syntax-Enhanced Neural Machine Translation with Syntax-Aware Word Representations](https://arxiv.org/abs/1905.02878)
+
+Authors: [Meishan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M), [Zhenghua Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Guohong Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+G), [Min Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M)
+
+*(Submitted on 8 May 2019)*
+
+> Syntax has been demonstrated highly effective in neural machine translation (NMT). Previous NMT models integrate syntax by representing 1-best tree outputs from a well-trained parsing system, e.g., the representative Tree-RNN and Tree-Linearization methods, which may suffer from error propagation. In this work, we propose a novel method to integrate source-side syntax implicitly for NMT. The basic idea is to use the intermediate hidden representations of a well-trained end-to-end dependency parser, which are referred to as syntax-aware word representations (SAWRs). Then, we simply concatenate such SAWRs with ordinary word embeddings to enhance basic NMT models. The method can be straightforwardly integrated into the widely-used sequence-to-sequence (Seq2Seq) NMT models. We start with a representative RNN-based Seq2Seq baseline system, and test the effectiveness of our proposed method on two benchmark datasets of the Chinese-English and English-Vietnamese translation tasks, respectively. Experimental results show that the proposed approach is able to bring significant BLEU score improvements on the two datasets compared with the baseline, 1.74 points for Chinese-English translation and 0.80 point for English-Vietnamese translation, respectively. In addition, the approach also outperforms the explicit Tree-RNN and Tree-Linearization methods.
+
+| Comments: | NAACL 2019                                           |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1905.02878 [cs.CL]**                         |
+|           | (or **arXiv:1905.02878v1 [cs.CL]** for this version) |
+
+
+
+<h2 id="2019-05-09-2">2. Unified Language Model Pre-training for Natural Language Understanding and Generation</h2>
+
+Title: [Unified Language Model Pre-training for Natural Language Understanding and Generation](https://arxiv.org/abs/1905.03197)
+
+Authors: [Li Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+L), [Nan Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+N), [Wenhui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F), [Xiaodong Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Yu Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Jianfeng Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+J), [Ming Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+M), [Hsiao-Wuen Hon](https://arxiv.org/search/cs?searchtype=author&query=Hon%2C+H)
+
+*(Submitted on 8 May 2019)*
+
+> This paper presents a new Unified pre-trained Language Model (UniLM) that can be fine-tuned for both natural language understanding and generation tasks. The model is pre-trained using three types of language modeling objectives: unidirectional (both left-to-right and right-to-left), bidirectional, and sequence-to-sequence prediction. The unified modeling is achieved by employing a shared Transformer network and utilizing specific self-attention masks to control what context the prediction conditions on. We can fine-tune UniLM as a unidirectional decoder, a bidirectional encoder, or a sequence-to-sequence model to support various downstream natural language understanding and generation tasks. 
+> UniLM compares favorably with BERT on the GLUE benchmark, and the SQuAD 2.0 and CoQA question answering tasks. Moreover, our model achieves new state-of-the-art results on three natural language generation tasks, including improving the CNN/DailyMail abstractive summarization ROUGE-L to 40.63 (2.16 absolute improvement), pushing the CoQA generative question answering F1 score to 82.5 (37.1 absolute improvement), and the SQuAD question generation BLEU-4 to 22.88 (6.50 absolute improvement).
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1905.03197 [cs.CL]**                         |
+|           | (or **arXiv:1905.03197v1 [cs.CL]** for this version) |
+
+
 
 
 
