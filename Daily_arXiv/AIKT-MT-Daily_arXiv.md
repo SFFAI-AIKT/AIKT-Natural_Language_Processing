@@ -13,6 +13,7 @@
   - [2. A Parallel Corpus of Theses and Dissertations Abstracts](#2019-05-07-2)
   - [3. A Large Parallel Corpus of Full-Text Scientific Articles](#2019-05-07-3)
   - [4. UFRGS Participation on the WMT Biomedical Translation Shared Task](#2019-05-07-4)
+  - [5. TextKD-GAN: Text Generation using KnowledgeDistillation and Generative Adversarial Networks](#2019-05-07-5)
 
 * [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
@@ -178,3 +179,21 @@ Authors: [Felipe Soares](https://arxiv.org/search/cs?searchtype=author&query=Soa
 | Cite as:  | **arXiv:1905.01855 [cs.CL]**                                 |
 |           | (or **arXiv:1905.01855v1 [cs.CL]** for this version)         |
 
+
+
+<h2 id="2019-05-07-5">5. TextKD-GAN: Text Generation using KnowledgeDistillation and Generative Adversarial Networks</h2>
+
+Title: [TextKD-GAN: Text Generation using KnowledgeDistillation and Generative Adversarial Networks](https://arxiv.org/abs/1905.01976)
+
+Authors: [Md. Akmal Haidar](https://arxiv.org/search/cs?searchtype=author&query=Haidar%2C+M+A), [Mehdi Rezagholizadeh](https://arxiv.org/search/cs?searchtype=author&query=Rezagholizadeh%2C+M)
+
+*(Submitted on 23 Apr 2019)*
+
+> Text generation is of particular interest in many NLP applications such as machine translation, language modeling, and text summarization. Generative adversarial networks (GANs) achieved a remarkable success in high quality image generation in computer vision,and recently, GANs have gained lots of interest from the NLP community as well. However, achieving similar success in NLP would be more challenging due to the discrete nature of text. In this work, we introduce a method using knowledge distillation to effectively exploit GAN setup for text generation. We demonstrate how autoencoders (AEs) can be used for providing a continuous representation of sentences, which is a smooth representation that assign non-zero probabilities to more than one word. We distill this representation to train the generator to synthesize similar smooth representations. We perform a number of experiments to validate our idea using different datasets and show that our proposed approach yields better performance in terms of the BLEU score and Jensen-Shannon distance (JSD) measure compared to traditional GAN-based text generation approaches without pre-training.
+
+| Comments:          | arXiv admin note: text overlap with [arXiv:1904.07293](https://arxiv.org/abs/1904.07293) |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| Journal reference: | 32nd Canadian Conference on Artificial Intelligence 2019     |
+| Cite as:           | **arXiv:1905.01976 [cs.CL]**                                 |
+|                    | (or **arXiv:1905.01976v1 [cs.CL]** for this version)         |
