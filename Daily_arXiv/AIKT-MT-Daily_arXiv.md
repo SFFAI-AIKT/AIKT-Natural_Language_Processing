@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-05-13](#2019-05-13)
+  - [1. Language Modeling with Deep Transformers](#2019-05-13-1)
+  - [2. Densifying Assumed-sparse Tensors: Improving Memory Efficiency and MPI Collective Performance during Tensor Accumulation for Parallelized Training of Neural Machine Translation Models](#2019-05-13-2)
 - [2019-05-09](#2019-05-09)
   - [1. Syntax-Enhanced Neural Machine Translation with Syntax-Aware Word Representations](#2019-05-09-1)
   - [2. Unified Language Model Pre-training for Natural Language Understanding and Generation](#2019-05-09-2)
@@ -18,6 +21,48 @@
 * [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-05-13
+
+[Return to Index](#Index)
+
+<h2 id="2019-05-13-1">1. Language Modeling with Deep Transformers</h2>
+
+Title: [Language Modeling with Deep Transformers](https://arxiv.org/abs/1905.04226)
+
+Authors: Language Modeling with Deep Transformers
+
+[Kazuki Irie](https://arxiv.org/search/cs?searchtype=author&query=Irie%2C+K), [Albert Zeyer](https://arxiv.org/search/cs?searchtype=author&query=Zeyer%2C+A), [Ralf Schlüter](https://arxiv.org/search/cs?searchtype=author&query=Schlüter%2C+R), [Hermann Ney](https://arxiv.org/search/cs?searchtype=author&query=Ney%2C+H)
+
+*(Submitted on 10 May 2019)*
+
+> We explore multi-layer autoregressive Transformer models in language modeling for speech recognition. We focus on two aspects. First, we revisit Transformer model configurations specifically for language modeling. We show that well configured Transformer models outperform our baseline models based on the shallow stack of LSTM recurrent neural network layers. We carry out experiments on the open-source LibriSpeech 960hr task, for both 200K vocabulary word-level and 10K byte-pair encoding subword-level language modeling. We apply our word-level models to conventional hybrid speech recognition by lattice rescoring, and the subword-level models to attention based encoder-decoder models by shallow fusion. Second, we show that deep Transformer language models do not require positional encoding. The positional encoding is an essential augmentation for the self-attention mechanism which is invariant to sequence ordering. However, in autoregressive setup, as is the case for language modeling, the amount of information increases along the position dimension, which is a positional signal by its own. The analysis of attention weights shows that deep autoregressive self-attention models can automatically make use of such positional information. We find that removing the positional encoding even slightly improves the performance of these models.
+
+| Comments: | Submitted to INTERSPEECH 2019                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1905.04226 [cs.CL]**                                 |
+|           | (or **arXiv:1905.04226v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-05-13-2">2. Densifying Assumed-sparse Tensors: Improving Memory Efficiency and MPI Collective Performance during Tensor Accumulation for Parallelized Training of Neural Machine Translation Models</h2>
+
+Title: [Densifying Assumed-sparse Tensors: Improving Memory Efficiency and MPI Collective Performance during Tensor Accumulation for Parallelized Training of Neural Machine Translation Models](https://arxiv.org/abs/1905.04035)
+
+Authors: [Derya Cavdar](https://arxiv.org/search/cs?searchtype=author&query=Cavdar%2C+D), [Valeriu Codreanu](https://arxiv.org/search/cs?searchtype=author&query=Codreanu%2C+V), [Can Karakus](https://arxiv.org/search/cs?searchtype=author&query=Karakus%2C+C), [John A. Lockman III](https://arxiv.org/search/cs?searchtype=author&query=III%2C+J+A+L), [Damian Podareanu](https://arxiv.org/search/cs?searchtype=author&query=Podareanu%2C+D), [Vikram Saletore](https://arxiv.org/search/cs?searchtype=author&query=Saletore%2C+V), [Alexander Sergeev](https://arxiv.org/search/cs?searchtype=author&query=Sergeev%2C+A), [Don D. Smith II](https://arxiv.org/search/cs?searchtype=author&query=II%2C+D+D+S), [Victor Suthichai](https://arxiv.org/search/cs?searchtype=author&query=Suthichai%2C+V), [Quy Ta](https://arxiv.org/search/cs?searchtype=author&query=Ta%2C+Q), [Srinivas Varadharajan](https://arxiv.org/search/cs?searchtype=author&query=Varadharajan%2C+S), [Lucas A. Wilson](https://arxiv.org/search/cs?searchtype=author&query=Wilson%2C+L+A), [Rengan Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+R), [Pei Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+P)
+
+*(Submitted on 10 May 2019)*
+
+> Neural machine translation - using neural networks to translate human language - is an area of active research exploring new neuron types and network topologies with the goal of dramatically improving machine translation performance. Current state-of-the-art approaches, such as the multi-head attention-based transformer, require very large translation corpuses and many epochs to produce models of reasonable quality. Recent attempts to parallelize the official TensorFlow "Transformer" model across multiple nodes have hit roadblocks due to excessive memory use and resulting out of memory errors when performing MPI collectives. This paper describes modifications made to the Horovod MPI-based distributed training framework to reduce memory usage for transformer models by converting assumed-sparse tensors to dense tensors, and subsequently replacing sparse gradient gather with dense gradient reduction. The result is a dramatic increase in scale-out capability, with CPU-only scaling tests achieving 91% weak scaling efficiency up to 1200 MPI processes (300 nodes), and up to 65% strong scaling efficiency up to 400 MPI processes (200 nodes) using the Stampede2 supercomputer.
+
+| Comments: | 18 pages, 10 figures, accepted at the 2019 International Supercomputing Conference |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Distributed, Parallel, and Cluster Computing (cs.DC) |
+| Cite as:  | **arXiv:1905.04035 [cs.LG]**                                 |
+|           | (or **arXiv:1905.04035v1 [cs.LG]** for this version)         |
 
 
 
