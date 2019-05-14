@@ -2,6 +2,8 @@
 
 ### Index
 
+- [2019-05-14](#2019-05-14)
+  - [1. Synchronous Bidirectional Neural Machine Translation](#2019-05-14-1)
 - [2019-05-13](#2019-05-13)
   - [1. Language Modeling with Deep Transformers](#2019-05-13-1)
   - [2. Densifying Assumed-sparse Tensors: Improving Memory Efficiency and MPI Collective Performance during Tensor Accumulation for Parallelized Training of Neural Machine Translation Models](#2019-05-13-2)
@@ -21,6 +23,28 @@
 * [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-05-14
+
+[Return to Index](#Index)
+
+<h2 id="2019-05-14-1">1. Synchronous Bidirectional Neural Machine Translation</h2>
+
+Title: [Synchronous Bidirectional Neural Machine Translation](https://arxiv.org/abs/1905.04847)
+
+Authors: [Long Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+L), [Jiajun Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Chengqing Zong](https://arxiv.org/search/cs?searchtype=author&query=Zong%2C+C)
+
+*(Submitted on 13 May 2019)*
+
+> Existing approaches to neural machine translation (NMT) generate the target language sequence token by token from left to right. However, this kind of unidirectional decoding framework cannot make full use of the target-side future contexts which can be produced in a right-to-left decoding direction, and thus suffers from the issue of unbalanced outputs. In this paper, we introduce a synchronous bidirectional neural machine translation (SB-NMT) that predicts its outputs using left-to-right and right-to-left decoding simultaneously and interactively, in order to leverage both of the history and future information at the same time. Specifically, we first propose a new algorithm that enables synchronous bidirectional decoding in a single model. Then, we present an interactive decoding model in which left-to-right (right-to-left) generation does not only depend on its previously generated outputs, but also relies on future contexts predicted by right-to-left (left-to-right) decoding. We extensively evaluate the proposed SB-NMT model on large-scale NIST Chinese-English, WMT14 English-German, and WMT18 Russian-English translation tasks. Experimental results demonstrate that our model achieves significant improvements over the strong Transformer model by 3.92, 1.49 and 1.04 BLEU points respectively, and obtains the state-of-the-art performance on Chinese-English and English-German translation tasks.
+
+| Comments: | Published by TACL 2019, 15 pages, 9 figures, 9 tabels        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1905.04847 [cs.CL]**                                 |
+|           | (or **arXiv:1905.04847v1 [cs.CL]** for this version)         |
 
 
 
