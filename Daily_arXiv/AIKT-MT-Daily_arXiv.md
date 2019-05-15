@@ -2,6 +2,11 @@
 
 ### Index
 
+- [2019-05-15](#2019-05-15)
+  - [1. Effective Cross-lingual Transfer of Neural Machine Translation Models without Shared Vocabularies](#2019-05-15-1)
+  - [2. Deep Residual Output Layers for Neural Language Generation](#2019-05-15-2)
+  - [3. Is Word Segmentation Necessary for Deep Learning of Chinese Representations?](#2019-05-15-3)
+  - [4. Sparse Sequence-to-Sequence Models](#2019-05-15-4)
 - [2019-05-14](#2019-05-14)
   - [1. Synchronous Bidirectional Neural Machine Translation](#2019-05-14-1)
 - [2019-05-13](#2019-05-13)
@@ -23,6 +28,84 @@
 * [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-05-15
+
+[Return to Index](#Index)
+
+<h2 id="2019-05-15-1">1. Effective Cross-lingual Transfer of Neural Machine Translation Models without Shared Vocabularies</h2>
+
+Title: [Effective Cross-lingual Transfer of Neural Machine Translation Models without Shared Vocabularies](https://arxiv.org/abs/1905.05475)
+
+Authors: [Yunsu Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+Y), [Yingbo Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+Y), [Hermann Ney](https://arxiv.org/search/cs?searchtype=author&query=Ney%2C+H)
+
+*(Submitted on 14 May 2019)*
+
+> Transfer learning or multilingual model is essential for low-resource neural machine translation (NMT), but the applicability is limited to cognate languages by sharing their vocabularies. This paper shows effective techniques to transfer a pre-trained NMT model to a new, unrelated language without shared vocabularies. We relieve the vocabulary mismatch by using cross-lingual word embedding, train a more language-agnostic encoder by injecting artificial noises, and generate synthetic data easily from the pre-training data without back-translation. Our methods do not require restructuring the vocabulary or retraining the model. We improve plain NMT transfer by up to +5.1% BLEU in five low-resource translation tasks, outperforming multilingual joint training by a large margin. We also provide extensive ablation studies on pre-trained embedding, synthetic data, vocabulary size, and parameter freezing for a better understanding of NMT transfer.
+
+| Comments: | Will appear in ACL 2019                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1905.05475 [cs.CL]**                                 |
+|           | (or **arXiv:1905.05475v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-05-15-2">2. Deep Residual Output Layers for Neural Language Generation</h2>
+
+Title: [Deep Residual Output Layers for Neural Language Generation](https://arxiv.org/abs/1905.05513)
+
+Authors: [Nikolaos Pappas](https://arxiv.org/search/cs?searchtype=author&query=Pappas%2C+N), [James Henderson](https://arxiv.org/search/cs?searchtype=author&query=Henderson%2C+J)
+
+*(Submitted on 14 May 2019)*
+
+> Many tasks, including language generation, benefit from learning the structure of the output space, particularly when the space of output labels is large and the data is sparse. State-of-the-art neural language models indirectly capture the output space structure in their classifier weights since they lack parameter sharing across output labels. Learning shared output label mappings helps, but existing methods have limited expressivity and are prone to overfitting. In this paper, we investigate the usefulness of more powerful shared mappings for output labels, and propose a deep residual output mapping with dropout between layers to better capture the structure of the output space and avoid overfitting. Evaluations on three language generation tasks show that our output label mapping can match or improve state-of-the-art recurrent and self-attention architectures, and suggest that the classifier does not necessarily need to be high-rank to better model natural language if it is better at capturing the structure of the output space.
+
+| Comments: | To appear in ICML 2019                               |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1905.05513 [cs.CL]**                         |
+|           | (or **arXiv:1905.05513v1 [cs.CL]** for this version) |
+
+
+
+<h2 id="2019-05-15-3">3. 
+Is Word Segmentation Necessary for Deep Learning of Chinese Representations
+?</h2>
+
+Title: [Is Word Segmentation Necessary for Deep Learning of Chinese Representations?](https://arxiv.org/abs/1905.05526)
+
+Authors: [Yuxian Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+Y), [Xiaoya Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Xiaofei Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+X), [Qinghong Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+Q), [Arianna Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+A), [Jiwei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J)
+
+*(Submitted on 14 May 2019)*
+
+> Segmenting a chunk of text into words is usually the first step of processing Chinese text, but its necessity has rarely been explored. In this paper, we ask the fundamental question of whether Chinese word segmentation (CWS) is necessary for deep learning-based Chinese Natural Language Processing. We benchmark neural word-based models which rely on word segmentation against neural char-based models which do not involve word segmentation in four end-to-end NLP benchmark tasks: language modeling, machine translation, sentence matching/paraphrase and text classification. Through direct comparisons between these two types of models, we find that char-based models consistently outperform word-based models. Based on these observations, we conduct comprehensive experiments to study why word-based models underperform char-based models in these deep learning-based NLP tasks. We show that it is because word-based models are more vulnerable to data sparsity and the presence of out-of-vocabulary (OOV) words, and thus more prone to overfitting. We hope this paper could encourage researchers in the community to rethink the necessity of word segmentation in deep learning-based Chinese Natural Language Processing. \footnote{Yuxian Meng and Xiaoya Li contributed equally to this paper.}
+
+| Comments: | to appear at ACL2019                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **arXiv:1905.05526 [cs.CL]**                                 |
+|           | (or **arXiv:1905.05526v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-05-15-4">4. Sparse Sequence-to-Sequence Models</h2>
+
+Title: [Sparse Sequence-to-Sequence Models](https://arxiv.org/abs/1905.05702)
+
+Authors: [Ben Peters](https://arxiv.org/search/cs?searchtype=author&query=Peters%2C+B), [Vlad Niculae](https://arxiv.org/search/cs?searchtype=author&query=Niculae%2C+V), [André F.T. Martins](https://arxiv.org/search/cs?searchtype=author&query=Martins%2C+A+F)
+
+*(Submitted on 14 May 2019)*
+
+> Sequence-to-sequence models are a powerful workhorse of NLP. Most variants employ a softmax transformation in both their attention mechanism and output layer, leading to dense alignments and strictly positive output probabilities. This density is wasteful, making models less interpretable and assigning probability mass to many implausible outputs. In this paper, we propose sparse sequence-to-sequence models, rooted in a new family of α-entmax transformations, which includes softmax and sparsemax as particular cases, and is sparse for any α>1. We provide fast algorithms to evaluate these transformations and their gradients, which scale well for large vocabulary sizes. Our models are able to produce sparse alignments and to assign nonzero probability to a short list of plausible outputs, sometimes rendering beam search exact. Experiments on morphological inflection and machine translation reveal consistent gains over dense models.
+
+| Comments: | Accepted to ACL 2019                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1905.05702 [cs.CL]**                                 |
+|           | (or **arXiv:1905.05702v1 [cs.CL]** for this version)         |
 
 
 
