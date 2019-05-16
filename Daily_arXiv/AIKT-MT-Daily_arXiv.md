@@ -2,6 +2,10 @@
 
 ### Index
 
+- [2019-05-16](#2019-05-16)
+  - [1. Curriculum Learning for Domain Adaptation in Neural Machine Translation](#2019-05-16-1)
+  - [2. When a Good Translation is Wrong in Context: Context-Aware Machine Translation Improves on Deixis, Ellipsis, and Lexical Cohesion](#2019-05-16-2)
+  - [3. What do you learn from context? Probing for sentence structure in contextualized word representations](#2019-05-16-3)
 - [2019-05-15](#2019-05-15)
   - [1. Effective Cross-lingual Transfer of Neural Machine Translation Models without Shared Vocabularies](#2019-05-15-1)
   - [2. Deep Residual Output Layers for Neural Language Generation](#2019-05-15-2)
@@ -28,6 +32,63 @@
 * [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-05-16
+
+[Return to Index](#Index)
+
+<h2 id="2019-05-16-1">1. Curriculum Learning for Domain Adaptation in Neural Machine Translation</h2>
+
+Title: [Curriculum Learning for Domain Adaptation in Neural Machine Translation](https://arxiv.org/abs/1905.05816)
+
+Authors: [Xuan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+X), [Pamela Shapiro](https://arxiv.org/search/cs?searchtype=author&query=Shapiro%2C+P), [Gaurav Kumar](https://arxiv.org/search/cs?searchtype=author&query=Kumar%2C+G), [Paul McNamee](https://arxiv.org/search/cs?searchtype=author&query=McNamee%2C+P), [Marine Carpuat](https://arxiv.org/search/cs?searchtype=author&query=Carpuat%2C+M), [Kevin Duh](https://arxiv.org/search/cs?searchtype=author&query=Duh%2C+K)
+
+*(Submitted on 14 May 2019)*
+
+> We introduce a curriculum learning approach to adapt generic neural machine translation models to a specific domain. Samples are grouped by their similarities to the domain of interest and each group is fed to the training algorithm with a particular schedule. This approach is simple to implement on top of any neural framework or architecture, and consistently outperforms both unadapted and adapted baselines in experiments with two distinct domains and two language pairs.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1905.05816 [cs.CL]**                         |
+|           | (or **arXiv:1905.05816v1 [cs.CL]** for this version) |
+
+
+
+<h2 id="2019-05-16-2">2. When a Good Translation is Wrong in Context: Context-Aware Machine Translation Improves on Deixis, Ellipsis, and Lexical Cohesion</h2>
+
+Title: [When a Good Translation is Wrong in Context: Context-Aware Machine Translation Improves on Deixis, Ellipsis, and Lexical Cohesion](https://arxiv.org/abs/1905.05979)
+
+Authors: [Elena Voita](https://arxiv.org/search/cs?searchtype=author&query=Voita%2C+E), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R), [Ivan Titov](https://arxiv.org/search/cs?searchtype=author&query=Titov%2C+I)
+
+*(Submitted on 15 May 2019)*
+
+> Though machine translation errors caused by the lack of context beyond one sentence have long been acknowledged, the development of context-aware NMT systems is hampered by several problems. Firstly, standard metrics are not sensitive to improvements in consistency in document-level translations. Secondly, previous work on context-aware NMT assumed that the sentence-aligned parallel data consisted of complete documents while in most practical scenarios such document-level data constitutes only a fraction of the available parallel data. To address the first issue, we perform a human study on an English-Russian subtitles dataset and identify deixis, ellipsis and lexical cohesion as three main sources of inconsistency. We then create test sets targeting these phenomena. To address the second shortcoming, we consider a set-up in which a much larger amount of sentence-level data is available compared to that aligned at the document level. We introduce a model that is suitable for this scenario and demonstrate major gains over a context-agnostic baseline on our new benchmarks without sacrificing performance as measured with BLEU.
+
+| Comments: | To appear at ACL 2019                                |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1905.05979 [cs.CL]**                         |
+|           | (or **arXiv:1905.05979v1 [cs.CL]** for this version) |
+
+
+
+<h2 id="2019-05-16-3">3. What do you learn from context? Probing for sentence structure in contextualized word representations</h2>
+
+Title: [What do you learn from context? Probing for sentence structure in contextualized word representations](https://arxiv.org/abs/1905.06316)
+
+Authors: [Ian Tenney](https://arxiv.org/search/cs?searchtype=author&query=Tenney%2C+I), [Patrick Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%2C+P), [Berlin Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+B), [Alex Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+A), [Adam Poliak](https://arxiv.org/search/cs?searchtype=author&query=Poliak%2C+A), [R Thomas McCoy](https://arxiv.org/search/cs?searchtype=author&query=McCoy%2C+R+T), [Najoung Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+N), [Benjamin Van Durme](https://arxiv.org/search/cs?searchtype=author&query=Van+Durme%2C+B), [Samuel R. Bowman](https://arxiv.org/search/cs?searchtype=author&query=Bowman%2C+S+R), [Dipanjan Das](https://arxiv.org/search/cs?searchtype=author&query=Das%2C+D), [Ellie Pavlick](https://arxiv.org/search/cs?searchtype=author&query=Pavlick%2C+E)
+
+*(Submitted on 15 May 2019)*
+
+> Contextualized representation models such as ELMo (Peters et al., 2018a) and BERT (Devlin et al., 2018) have recently achieved state-of-the-art results on a diverse array of downstream NLP tasks. Building on recent token-level probing work, we introduce a novel edge probing task design and construct a broad suite of sub-sentence tasks derived from the traditional structured NLP pipeline. We probe word-level contextual representations from four recent models and investigate how they encode sentence structure across a range of syntactic, semantic, local, and long-range phenomena. We find that existing models trained on language modeling and translation produce strong representations for syntactic phenomena, but only offer comparably small improvements on semantic tasks over a non-contextual baseline.
+
+| Comments: | ICLR 2019 camera-ready version, 17 pages including appendices |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **arXiv:1905.06316 [cs.CL]**                                 |
+|           | (or **arXiv:1905.06316v1 [cs.CL]** for this version)         |
 
 
 
