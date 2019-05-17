@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-05-17](#2019-05-17-1)
+  - [1. Joint Source-Target Self Attention with Locality Constraints](#2019-05-17-1)
+  - [2. Towards Interlingua Neural Machine Translation](#2019-05-17-2)
 - [2019-05-16](#2019-05-16)
   - [1. Curriculum Learning for Domain Adaptation in Neural Machine Translation](#2019-05-16-1)
   - [2. When a Good Translation is Wrong in Context: Context-Aware Machine Translation Improves on Deixis, Ellipsis, and Lexical Cohesion](#2019-05-16-2)
@@ -32,6 +35,46 @@
 * [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-05-17
+
+[Return to Index](#Index)
+
+<h2 id="2019-05-17-1">1. Joint Source-Target Self Attention with Locality Constraints</h2>
+
+Title: [Joint Source-Target Self Attention with Locality Constraints](https://arxiv.org/abs/1905.06596)
+
+Authors: [José A. R. Fonollosa](https://arxiv.org/search/cs?searchtype=author&query=Fonollosa%2C+J+A+R), [Noe Casas](https://arxiv.org/search/cs?searchtype=author&query=Casas%2C+N), [Marta R. Costa-jussà](https://arxiv.org/search/cs?searchtype=author&query=Costa-jussà%2C+M+R)
+
+*(Submitted on 16 May 2019)*
+
+> The dominant neural machine translation models are based on the encoder-decoder structure, and many of them rely on an unconstrained receptive field over source and target sequences. In this paper we study a new architecture that breaks with both conventions. Our simplified architecture consists in the decoder part of a transformer model, based on self-attention, but with locality constraints applied on the attention receptive field. As input for training, both source and target sentences are fed to the network, which is trained as a language model. At inference time, the target tokens are predicted autoregressively starting with the source sequence as previous tokens. The proposed model achieves a new state of the art of 35.7 BLEU on IWSLT'14 German-English and matches the best reported results in the literature on the WMT'14 English-German and WMT'14 English-French translation benchmarks.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1905.06596 [cs.CL]**                                 |
+|           | (or **arXiv:1905.06596v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-05-17-2">2. Towards Interlingua Neural Machine Translation</h2>
+
+Title: [Towards Interlingua Neural Machine Translation](https://arxiv.org/abs/1905.06831)
+
+Authors: [Carlos Escolano](https://arxiv.org/search/cs?searchtype=author&query=Escolano%2C+C), [Marta R. Costa-jussà](https://arxiv.org/search/cs?searchtype=author&query=Costa-jussà%2C+M+R), [José A. R. Fonollosa](https://arxiv.org/search/cs?searchtype=author&query=Fonollosa%2C+J+A+R)
+
+*(Submitted on 15 May 2019)*
+
+> A common intermediate language representation or an interlingua is the holy grail in machine translation. Thanks to the new neural machine translation approach, it seems that there are good perspectives towards this goal. In this paper, we propose a new architecture based on introducing an interlingua loss as an additional training objective. By adding and forcing this interlingua loss, we are able to train multiple encoders and decoders for each language, sharing a common intermediate representation. 
+> Preliminary translation results on the WMT Turkish/English and WMT 2019 Kazakh/English tasks show improvements over the baseline system. Additionally, since the final objective of our architecture is having compatible encoder/decoders based on a common representation, we visualize and evaluate the learned intermediate representations. What is most relevant from our study is that our architecture shows the benefits of the dreamed interlingua since it is capable of: (1) reducing the number of production systems, with respect to the number of languages, from quadratic to linear (2) incrementally adding a new language in the system without retraining languages previously there and (3) allowing for translations from the new language to all the others present in the system
+
+| Comments: | arXiv admin note: substantial text overlap with [arXiv:1810.06351](https://arxiv.org/abs/1810.06351) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **arXiv:1905.06831 [cs.CL]**                                 |
+|           | (or **arXiv:1905.06831v1 [cs.CL]** for this version)         |
 
 
 
