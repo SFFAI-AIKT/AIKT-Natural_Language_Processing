@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-05-20](#2019-05-20)
+  - [1. Adaptation of Deep Bidirectional Multilingual Transformers for Russian Language](#2019-05-20-1)
+  - [2. Learning Cross-lingual Embeddings from Twitter via Distant Supervision](#2019-05-20-2)
 - [2019-05-17](#2019-05-17-1)
   - [1. Joint Source-Target Self Attention with Locality Constraints](#2019-05-17-1)
   - [2. Towards Interlingua Neural Machine Translation](#2019-05-17-2)
@@ -35,6 +38,44 @@
 * [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-05-18
+
+[Return to Index](#Index)
+
+<h2 id="2019-05-18-1">1. Adaptation of Deep Bidirectional Multilingual Transformers for Russian Language</h2>
+
+Title: [Adaptation of Deep Bidirectional Multilingual Transformers for Russian Language](https://arxiv.org/abs/1905.07213)
+
+Authors: [Yuri Kuratov](https://arxiv.org/search/cs?searchtype=author&query=Kuratov%2C+Y), [Mikhail Arkhipov](https://arxiv.org/search/cs?searchtype=author&query=Arkhipov%2C+M)
+
+*(Submitted on 17 May 2019)*
+
+> The paper introduces methods of adaptation of multilingual masked language models for a specific language. Pre-trained bidirectional language models show state-of-the-art performance on a wide range of tasks including reading comprehension, natural language inference, and sentiment analysis. At the moment there are two alternative approaches to train such models: monolingual and multilingual. While language specific models show superior performance, multilingual models allow to perform a transfer from one language to another and solve tasks for different languages simultaneously. This work shows that transfer learning from a multilingual model to monolingual model results in significant growth of performance on such tasks as reading comprehension, paraphrase detection, and sentiment analysis. Furthermore, multilingual initialization of monolingual model substantially reduces training time. Pre-trained models for the Russian language are open sourced.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1905.07213 [cs.CL]**                         |
+|           | (or **arXiv:1905.07213v1 [cs.CL]** for this version) |
+
+
+<h2 id="2019-05-18-2">2. Learning Cross-lingual Embeddings from Twitter via Distant Supervision</h2>
+
+Title: [Learning Cross-lingual Embeddings from Twitter via Distant Supervision](https://arxiv.org/abs/1905.07358)
+
+Authors: [Jose Camacho-Collados](https://arxiv.org/search/cs?searchtype=author&query=Camacho-Collados%2C+J), [Yerai Doval](https://arxiv.org/search/cs?searchtype=author&query=Doval%2C+Y), [Eugenio Martínez-Cámara](https://arxiv.org/search/cs?searchtype=author&query=Martínez-Cámara%2C+E), [Luis Espinosa-Anke](https://arxiv.org/search/cs?searchtype=author&query=Espinosa-Anke%2C+L), [Francesco Barbieri](https://arxiv.org/search/cs?searchtype=author&query=Barbieri%2C+F), [Steven Schockaert](https://arxiv.org/search/cs?searchtype=author&query=Schockaert%2C+S)
+
+*(Submitted on 17 May 2019)*
+
+> Cross-lingual embeddings represent the meaning of words from different languages in the same vector space. Recent work has shown that it is possible to construct such representations by aligning independently learned monolingual embedding spaces, and that accurate alignments can be obtained even without external bilingual data. In this paper we explore a research direction which has been surprisingly neglected in the literature: leveraging noisy user-generated text to learn cross-lingual embeddings particularly tailored towards social media applications. While the noisiness and informal nature of the social media genre poses additional challenges to cross-lingual embedding methods, we find that it also provides key opportunities due to the abundance of code-switching and the existence of a shared vocabulary of emoji and named entities. Our contribution consists in a very simple post-processing step that exploits these phenomena to significantly improve the performance of state-of-the-art alignment methods.
+
+| Comments: | 11 pages, 5 tables, 1 figure, 1 appendix                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Social and Information Networks (cs.SI) |
+| Cite as:  | **arXiv:1905.07358 [cs.CL]**                                 |
+|           | (or **arXiv:1905.07358v1 [cs.CL]** for this version)         |
 
 
 
