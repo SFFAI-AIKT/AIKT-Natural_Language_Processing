@@ -8,7 +8,7 @@
 - [2019-05-20](#2019-05-20)
   - [1. Adaptation of Deep Bidirectional Multilingual Transformers for Russian Language](#2019-05-20-1)
   - [2. Learning Cross-lingual Embeddings from Twitter via Distant Supervision](#2019-05-20-2)
-- [2019-05-17](#2019-05-17-1)
+- [2019-05-17](#2019-05-17)
   - [1. Joint Source-Target Self Attention with Locality Constraints](#2019-05-17-1)
   - [2. Towards Interlingua Neural Machine Translation](#2019-05-17-2)
 - [2019-05-16](#2019-05-16)
