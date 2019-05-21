@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-05-21](#2019-05-21)
+  - [1. Target Conditioned Sampling: Optimizing Data Selection for Multilingual Neural Machine Translation](#2019-05-21-1)
+
 - [2019-05-20](#2019-05-20)
   - [1. Adaptation of Deep Bidirectional Multilingual Transformers for Russian Language](#2019-05-20-1)
   - [2. Learning Cross-lingual Embeddings from Twitter via Distant Supervision](#2019-05-20-2)
@@ -41,11 +44,33 @@
 
 
 
-# 2019-05-18
+# 2019-05-21
 
 [Return to Index](#Index)
 
-<h2 id="2019-05-18-1">1. Adaptation of Deep Bidirectional Multilingual Transformers for Russian Language</h2>
+<h2 id="2019-05-21-1">1. Target Conditioned Sampling: Optimizing Data Selection for Multilingual Neural Machine Translation</h2>
+
+Title: [Target Conditioned Sampling: Optimizing Data Selection for Multilingual Neural Machine Translation](https://arxiv.org/abs/1905.08212)
+
+Authors: [Xinyi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
+
+*(Submitted on 20 May 2019)*
+
+> To improve low-resource Neural Machine Translation (NMT) with multilingual corpora, training on the most related high-resource language only is often more effective than using all data available (Neubig and Hu, 2018). However, it is possible that an intelligent data selection strategy can further improve low-resource NMT with data from other auxiliary languages. In this paper, we seek to construct a sampling distribution over all multilingual data, so that it minimizes the training loss of the low-resource language. Based on this formulation, we propose an efficient algorithm, Target Conditioned Sampling (TCS), which first samples a target sentence, and then conditionally samples its source sentence. Experiments show that TCS brings significant gains of up to 2 BLEU on three of four languages we test, with minimal training overhead.
+
+| Comments: | Accepted at ACL 2019                                 |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1905.08212 [cs.CL]**                         |
+|           | (or **arXiv:1905.08212v1 [cs.CL]** for this version) |
+
+
+
+# 2019-05-20
+
+[Return to Index](#Index)
+
+<h2 id="2019-05-20-1">1. Adaptation of Deep Bidirectional Multilingual Transformers for Russian Language</h2>
 
 Title: [Adaptation of Deep Bidirectional Multilingual Transformers for Russian Language](https://arxiv.org/abs/1905.07213)
 
@@ -60,8 +85,7 @@ Authors: [Yuri Kuratov](https://arxiv.org/search/cs?searchtype=author&query=Kura
 | Cite as:  | **arXiv:1905.07213 [cs.CL]**                         |
 |           | (or **arXiv:1905.07213v1 [cs.CL]** for this version) |
 
-
-<h2 id="2019-05-18-2">2. Learning Cross-lingual Embeddings from Twitter via Distant Supervision</h2>
+<h2 id="2019-05-20-2">2. Learning Cross-lingual Embeddings from Twitter via Distant Supervision</h2>
 
 Title: [Learning Cross-lingual Embeddings from Twitter via Distant Supervision](https://arxiv.org/abs/1905.07358)
 
