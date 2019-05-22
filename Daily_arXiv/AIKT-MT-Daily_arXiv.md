@@ -2,6 +2,8 @@
 
 ### Index
 
+- [2019-05-22](#2019-05-22)
+  - [1. CNNs found to jump around more skillfully than RNNs: Compositional generalization in seq2seq convolutional networks](#2019-05-22-1)
 - [2019-05-21](#2019-05-21)
   - [1. Target Conditioned Sampling: Optimizing Data Selection for Multilingual Neural Machine Translation](#2019-05-21-1)
 
@@ -41,6 +43,29 @@
 * [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-05-22
+
+[Return to Index](#Index)
+
+<h2 id="2019-05-22-1">1. CNNs found to jump around more skillfully than RNNs: Compositional generalization in seq2seq convolutional networks</h2>
+
+Title: [CNNs found to jump around more skillfully than RNNs: Compositional generalization in seq2seq convolutional networks](https://arxiv.org/abs/1905.08527)
+Authors: [Roberto Dessì](https://arxiv.org/search/cs?searchtype=author&query=Dessì%2C+R), [Marco Baroni](https://arxiv.org/search/cs?searchtype=author&query=Baroni%2C+M)
+
+*(Submitted on 21 May 2019)*
+
+> Lake and Baroni (2018) introduced the SCAN dataset probing the ability of seq2seq models to capture compositional generalizations, such as inferring the meaning of "jump around" 0-shot from the component words. Recurrent networks (RNNs) were found to completely fail the most challenging generalization cases. We test here a convolutional network (CNN) on these tasks, reporting hugely improved performance with respect to RNNs. Despite the big improvement, the CNN has however not induced systematic rules, suggesting that the difference between compositional and non-compositional behaviour is not clear-cut.
+
+| Comments: | accepted as a short paper at ACL 2019                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1905.08527 [cs.CL]**                                 |
+|           | (or **arXiv:1905.08527v1 [cs.CL]** for this version)         |
+
+
 
 
 
