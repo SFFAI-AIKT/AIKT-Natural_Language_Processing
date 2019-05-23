@@ -2,11 +2,12 @@
 
 ### Index
 
+- [2019-05-23](#2019-05-23)
+  - [1. Corpus Augmentation by Sentence Segmentation for Low-Resource Neural Machine Translation](#2019-05-23-1)
 - [2019-05-22](#2019-05-22)
   - [1. CNNs found to jump around more skillfully than RNNs: Compositional generalization in seq2seq convolutional networks](#2019-05-22-1)
 - [2019-05-21](#2019-05-21)
   - [1. Target Conditioned Sampling: Optimizing Data Selection for Multilingual Neural Machine Translation](#2019-05-21-1)
-
 - [2019-05-20](#2019-05-20)
   - [1. Adaptation of Deep Bidirectional Multilingual Transformers for Russian Language](#2019-05-20-1)
   - [2. Learning Cross-lingual Embeddings from Twitter via Distant Supervision](#2019-05-20-2)
@@ -43,6 +44,29 @@
 * [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-05-23
+[Return to Index](#Index)
+
+<h2 id="2019-05-23-1">1. Corpus Augmentation by Sentence Segmentation for Low-Resource Neural Machine Translation</h2>
+
+Title: [Corpus Augmentation by Sentence Segmentation for Low-Resource Neural Machine Translation](https://arxiv.org/abs/1905.08945)
+
+Authors: [Jinyi Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Tadahiro Matsumoto](https://arxiv.org/search/cs?searchtype=author&query=Matsumoto%2C+T)
+
+*(Submitted on 22 May 2019)*
+
+> Neural Machine Translation (NMT) has been proven to achieve impressive results. The NMT system translation results depend strongly on the size and quality of parallel corpora. Nevertheless, for many language pairs, no rich-resource parallel corpora exist. As described in this paper, we propose a corpus augmentation method by segmenting long sentences in a corpus using back-translation and generating pseudo-parallel sentence pairs. The experiment results of the Japanese-Chinese and Chinese-Japanese translation with Japanese-Chinese scientific paper excerpt corpus (ASPEC-JC) show that the method improves translation performance.
+
+| Comments: | 4 pages. The version before Applied. Sciences                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| DOI:      | [10.3390/app9102036](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.3390%2Fapp9102036&v=8deb72f8) |
+| Cite as:  | **arXiv:1905.08945 [cs.CL]**                                 |
+|           | (or **arXiv:1905.08945v1 [cs.CL]** for this version)         |
+
 
 
 
