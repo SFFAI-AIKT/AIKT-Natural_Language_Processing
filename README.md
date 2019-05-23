@@ -4,6 +4,8 @@ This repository is a sub branch of AI Knowledge Tree, mainly focus on Natural La
 
 
 
+- [A NLP Entrance Page made by Kevin Knight's team.](https://chinesenlp.xyz/#/)
+
 - [会议论文合辑（Conference Papers）](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Conference_Papers/AIKT-NLP-Conference_Papers.md)
 
 - [表示学习（Learning Representation）](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/AIKT-Learning_Representation.md)
