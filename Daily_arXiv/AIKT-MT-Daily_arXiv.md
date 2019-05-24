@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-05-24](#2019-05-24)
+  - [1. Analyzing Multi-Head Self-Attention: Specialized Heads Do the Heavy Lifting, the Rest Can Be Pruned](#2019-05-24-1)
+  - [2. Misspelling Oblivious Word Embeddings](#2019-05-24-2)
 - [2019-05-23](#2019-05-23)
   - [1. Corpus Augmentation by Sentence Segmentation for Low-Resource Neural Machine Translation](#2019-05-23-1)
 - [2019-05-22](#2019-05-22)
@@ -44,6 +47,41 @@
 * [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-05-24
+[Return to Index](#Index)
+
+<h2 id="2019-05-24-1">1. Analyzing Multi-Head Self-Attention: Specialized Heads Do the Heavy Lifting, the Rest Can Be Pruned</h2>
+Title: [Analyzing Multi-Head Self-Attention: Specialized Heads Do the Heavy Lifting, the Rest Can Be Pruned](https://arxiv.org/abs/1905.09418)
+Authors: [Elena Voita](https://arxiv.org/search/cs?searchtype=author&query=Voita%2C+E), [David Talbot](https://arxiv.org/search/cs?searchtype=author&query=Talbot%2C+D), [Fedor Moiseev](https://arxiv.org/search/cs?searchtype=author&query=Moiseev%2C+F), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R), [Ivan Titov](https://arxiv.org/search/cs?searchtype=author&query=Titov%2C+I)
+
+*(Submitted on 23 May 2019)*
+
+> Multi-head self-attention is a key component of the Transformer, a state-of-the-art architecture for neural machine translation. In this work we evaluate the contribution made by individual attention heads in the encoder to the overall performance of the model and analyze the roles played by them. We find that the most important and confident heads play consistent and often linguistically-interpretable roles. When pruning heads using a method based on stochastic gates and a differentiable relaxation of the L0 penalty, we observe that specialized heads are last to be pruned. Our novel pruning method removes the vast majority of heads without seriously affecting performance. For example, on the English-Russian WMT dataset, pruning 38 out of 48 encoder heads results in a drop of only 0.15 BLEU.
+
+| Comments: | To appear at ACL 2019                                |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1905.09418 [cs.CL]**                         |
+|           | (or **arXiv:1905.09418v1 [cs.CL]** for this version) |
+
+
+<h2 id="2019-05-24-2">2. Misspelling Oblivious Word Embeddings</h2>
+Title: [Misspelling Oblivious Word Embeddings](https://arxiv.org/abs/1905.09755)
+
+Authors: [Bora Edizel](https://arxiv.org/search/cs?searchtype=author&query=Edizel%2C+B), [Aleksandra Piktus](https://arxiv.org/search/cs?searchtype=author&query=Piktus%2C+A), [Piotr Bojanowski](https://arxiv.org/search/cs?searchtype=author&query=Bojanowski%2C+P), [Rui Ferreira](https://arxiv.org/search/cs?searchtype=author&query=Ferreira%2C+R), [Edouard Grave](https://arxiv.org/search/cs?searchtype=author&query=Grave%2C+E), [Fabrizio Silvestri](https://arxiv.org/search/cs?searchtype=author&query=Silvestri%2C+F)
+
+*(Submitted on 23 May 2019)*
+
+> In this paper we present a method to learn word embeddings that are resilient to misspellings. Existing word embeddings have limited applicability to malformed texts, which contain a non-negligible amount of out-of-vocabulary words. We propose a method combining FastText with subwords and a supervised task of learning misspelling patterns. In our method, misspellings of each word are embedded close to their correct variants. We train these embeddings on a new dataset we are releasing publicly. Finally, we experimentally show the advantages of this approach on both intrinsic and extrinsic NLP tasks using public test sets.
+
+| Comments: | 9 Pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1905.09755 [cs.CL]**                                 |
+|           | (or **arXiv:1905.09755v1 [cs.CL]** for this version)         |
 
 
 
