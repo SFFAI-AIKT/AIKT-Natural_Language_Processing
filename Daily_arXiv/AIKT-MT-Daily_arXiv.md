@@ -2,6 +2,10 @@
 
 ### Index
 
+- [2019-05-27](#2019-05-27)
+  - [1. Training language GANs from Scratch](#2019-05-27-1)
+  - [2. An Analysis of Source-Side Grammatical Errors in NMT](#2019-05-27-2)
+  - [3. mu-Forcing: Training Variational Recurrent Autoencoders for Text Generation](#2019-05-27-3)
 - [2019-05-24](#2019-05-24)
   - [1. Analyzing Multi-Head Self-Attention: Specialized Heads Do the Heavy Lifting, the Rest Can Be Pruned](#2019-05-24-1)
   - [2. Misspelling Oblivious Word Embeddings](#2019-05-24-2)
@@ -48,6 +52,58 @@
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
 
+
+
+# 2019-05-27
+[Return to Index](#Index)
+
+<h2 id="2019-05-27-1">1. Training language GANs from Scratch</h2>
+
+Title: [Training language GANs from Scratch](https://arxiv.org/abs/1905.09922)
+
+Authors: [Cyprien de Masson d'Autume](https://arxiv.org/search/cs?searchtype=author&query=de+Masson+d'Autume%2C+C), [Mihaela Rosca](https://arxiv.org/search/cs?searchtype=author&query=Rosca%2C+M), [Jack Rae](https://arxiv.org/search/cs?searchtype=author&query=Rae%2C+J), [Shakir Mohamed](https://arxiv.org/search/cs?searchtype=author&query=Mohamed%2C+S)
+
+*(Submitted on 23 May 2019)*
+
+> Generative Adversarial Networks (GANs) enjoy great success at image generation, but have proven difficult to train in the domain of natural language. Challenges with gradient estimation, optimization instability, and mode collapse have lead practitioners to resort to maximum likelihood pre-training, followed by small amounts of adversarial fine-tuning. The benefits of GAN fine-tuning for language generation are unclear, as the resulting models produce comparable or worse samples than traditional language models. We show it is in fact possible to train a language GAN from scratch -- without maximum likelihood pre-training. We combine existing techniques such as large batch sizes, dense rewards and discriminator regularization to stabilize and improve language GANs. The resulting model, ScratchGAN, performs comparably to maximum likelihood training on EMNLP2017 News and WikiText-103 corpora according to quality and diversity metrics.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1905.09922 [cs.CL]**                                 |
+|           | (or **arXiv:1905.09922v1 [cs.CL]** for this version)         |
+
+<h2 id="2019-05-27-2">2. An Analysis of Source-Side Grammatical Errors in NMT</h2>
+
+Title: [An Analysis of Source-Side Grammatical Errors in NMT](https://arxiv.org/abs/1905.10024)
+
+Authors: [Antonios Anastasopoulos](https://arxiv.org/search/cs?searchtype=author&query=Anastasopoulos%2C+A)
+
+*(Submitted on 24 May 2019)*
+
+> The quality of Neural Machine Translation (NMT) has been shown to significantly degrade when confronted with source-side noise. We present the first large-scale study of state-of-the-art English-to-German NMT on real grammatical noise, by evaluating on several Grammar Correction corpora. We present methods for evaluating NMT robustness without true references, and we use them for extensive analysis of the effects that different grammatical errors have on the NMT output. We also introduce a technique for visualizing the divergence distribution caused by a source-side error, which allows for additional insights.
+
+| Comments: | Accepted and to be presented at BlackboxNLP 2019     |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1905.10024 [cs.CL]**                         |
+|           | (or **arXiv:1905.10024v1 [cs.CL]** for this version) |
+
+<h2 id="2019-05-27-3">3. 
+mu-Forcing: Training Variational Recurrent Autoencoders for Text Generation</h2>
+
+Title: [mu-Forcing: Training Variational Recurrent Autoencoders for Text Generation](https://arxiv.org/abs/1905.10072)
+
+Authors: [Dayiheng Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+D), [Xu Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+X), [Feng He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+F), [Yuanyuan Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Jiancheng Lv](https://arxiv.org/search/cs?searchtype=author&query=Lv%2C+J)
+
+*(Submitted on 24 May 2019)*
+
+> It has been previously observed that training Variational Recurrent Autoencoders (VRAE) for text generation suffers from serious uninformative latent variables problem. The model would collapse into a plain language model that totally ignore the latent variables and can only generate repeating and dull samples. In this paper, we explore the reason behind this issue and propose an effective regularizer based approach to address it. The proposed method directly injects extra constraints on the posteriors of latent variables into the learning process of VRAE, which can flexibly and stably control the trade-off between the KL term and the reconstruction term, making the model learn dense and meaningful latent representations. The experimental results show that the proposed method outperforms several strong baselines and can make the model learn interpretable latent variables and generate diverse meaningful sentences. Furthermore, the proposed method can perform well without using other strategies, such as KL annealing.
+
+| Comments: | To appear in the ACM Transactions on Asian and Low-Resource Language Information Processing (TALLIP) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1905.10072 [cs.CL]**                                 |
+|           | (or **arXiv:1905.10072v1 [cs.CL]** for this version)         |
 
 
 # 2019-05-24
