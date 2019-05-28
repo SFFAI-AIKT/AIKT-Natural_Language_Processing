@@ -2,6 +2,10 @@
 
 ### Index
 
+- [2019-05-28](#2019-05-28)
+  - [1. DebiasingWord Embeddings Improves Multimodal Machine Translation](#2019-05-28-1)
+  - [2. Soft Contextual Data Augmentation for Neural Machine Translation](#2019-05-28-2)
+  - [3. Levenshtein Transformer](#2019-05-28-3)
 - [2019-05-27](#2019-05-27)
   - [1. Training language GANs from Scratch](#2019-05-27-1)
   - [2. An Analysis of Source-Side Grammatical Errors in NMT](#2019-05-27-2)
@@ -51,6 +55,61 @@
 * [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-05-28
+[Return to Index](#Index)
+
+<h2 id="2019-05-28-1">1. DebiasingWord Embeddings Improves Multimodal Machine Translation</h2>
+
+Title: [DebiasingWord Embeddings Improves Multimodal Machine Translation](https://arxiv.org/abs/1905.10464)
+
+Authors: [Tosho Hirasawa](https://arxiv.org/search/cs?searchtype=author&query=Hirasawa%2C+T), [Mamoru Komachi](https://arxiv.org/search/cs?searchtype=author&query=Komachi%2C+M)
+
+*(Submitted on 24 May 2019)*
+
+> In recent years, pretrained word embeddings have proved useful for multimodal neural machine translation (NMT) models to address the shortage of available datasets. However, the integration of pretrained word embeddings has not yet been explored extensively. Further, pretrained word embeddings in high dimensional spaces have been reported to suffer from the hubness problem. Although some debiasing techniques have been proposed to address this problem for other natural language processing tasks, they have seldom been studied for multimodal NMT models. In this study, we examine various kinds of word embeddings and introduce two debiasing techniques for three multimodal NMT models and two language pairs -- English-German translation and English-French translation. With our optimal settings, the overall performance of multimodal models was improved by up to +1.93 BLEU and +2.02 METEOR for English-German translation and +1.73 BLEU and +0.95 METEOR for English-French translation.
+
+| Comments: | 10 pages; MT Summit 2019                             |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1905.10464 [cs.CL]**                         |
+|           | (or **arXiv:1905.10464v1 [cs.CL]** for this version) |
+
+<h2 id="2019-05-28-2">2. 
+Soft Contextual Data Augmentation for Neural Machine Translation</h2>
+
+Title: [Soft Contextual Data Augmentation for Neural Machine Translation](https://arxiv.org/abs/1905.10523)
+
+Authors: [Jinhua Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J), [Fei Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+F), [Lijun Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+L), [Yingce Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%2C+Y), [Tao Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+T), [Wengang Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+W), [Xueqi Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+X), [Tie-Yan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T)
+
+*(Submitted on 25 May 2019)*
+
+> While data augmentation is an important trick to boost the accuracy of deep learning methods in computer vision tasks, its study in natural language tasks is still very limited. In this paper, we present a novel data augmentation method for neural machine translation. Different from previous augmentation methods that randomly drop, swap or replace words with other words in a sentence, we softly augment a randomly chosen word in a sentence by its contextual mixture of multiple related words. More accurately, we replace the one-hot representation of a word by a distribution (provided by a language model) over the vocabulary, i.e., replacing the embedding of this word by a weighted combination of multiple semantically similar words. Since the weights of those words depend on the contextual information of the word to be replaced, the newly generated sentences capture much richer information than previous augmentation methods. Experimental results on both small scale and large scale machine translation datasets demonstrate the superiority of our method over strong baselines.
+
+| Comments: | Accepted by ACL 2019 as short paper                  |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1905.10523 [cs.CL]**                         |
+|           | (or **arXiv:1905.10523v1 [cs.CL]** for this version) |
+
+<h2 id="2019-05-28-3">3. Levenshtein Transformer</h2>
+
+Title: [Levenshtein Transformer](https://arxiv.org/abs/1905.11006)
+
+Authors: [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J), [Changhan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Jake Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+J)
+
+*(Submitted on 27 May 2019)*
+
+> Modern neural sequence generation models are built to either generate tokens step-by-step from scratch or (iteratively) modify a sequence of tokens bounded by a fixed length. In this work, we develop Levenshtein Transformer, a new partially autoregressive model devised for more flexible and amenable sequence generation. Unlike previous approaches, the atomic operations of our model are insertion and deletion. The combination of them facilitates not only generation but also sequence refinement allowing dynamic length changes. We also propose a set of new training techniques dedicated at them, effectively exploiting one as the other's learning signal thanks to their complementary nature. Experiments applying the proposed model achieve comparable performance but much-improved efficiency on both generation (e.g. machine translation, text summarization) and refinement tasks (e.g. automatic post-editing). We further confirm the flexibility of our model by showing a Levenshtein Transformer trained by machine translation can straightforwardly be used for automatic post-editing.
+
+| Comments: | 16 pages (6 pages appendix). Work in progress                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1905.11006 [cs.CL]**                                 |
+|           | (or **arXiv:1905.11006v1 [cs.CL]** for this version)         |
+
 
 
 
