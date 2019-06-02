@@ -2,6 +2,10 @@
 
 ### Index
 
+- [2019-05-31](#2019-05-31)
+  - [1. Latent Space Secrets of Denoising Text-Autoencoders](#2019-05-31-1)
+  - [2. Choosing Transfer Languages for Cross-Lingual Learning](#2019-05-31-2)
+  - [3. Unbabel's Submission to the WMT2019 APE Shared Task: BERT-based Encoder-Decoder for Automatic Post-Editing](#2019-05-31-3)
 - [2019-05-29](#2019-05-29)
   - [1. On Measuring Gender Bias in Translation of Gender-neutral Pronouns](#2019-05-29-1)
   - [2. Revisiting Low-Resource Neural Machine Translation: A Case Study](#2019-05-29-2)
@@ -59,6 +63,56 @@
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
 
+
+
+# 2019-05-31
+
+[Return to Index](#Index)
+<h2 id="2019-05-31-1">1. Latent Space Secrets of Denoising Text-Autoencoders</h2>
+
+Title: [Latent Space Secrets of Denoising Text-Autoencoders](https://arxiv.org/abs/1905.12777)
+
+Authors: [Tianxiao Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+T), [Jonas Mueller](https://arxiv.org/search/cs?searchtype=author&query=Mueller%2C+J), [Regina Barzilay](https://arxiv.org/search/cs?searchtype=author&query=Barzilay%2C+R), [Tommi Jaakkola](https://arxiv.org/search/cs?searchtype=author&query=Jaakkola%2C+T)
+
+*(Submitted on 29 May 2019)*
+
+> While neural language models have recently demonstrated impressive performance in unconditional text generation, controllable generation and manipulation of text remain challenging. Latent variable generative models provide a natural approach for control, but their application to text has proven more difficult than to images. Models such as variational autoencoders may suffer from posterior collapse or learning an irregular latent geometry. We propose to instead employ adversarial autoencoders (AAEs) and add local perturbations by randomly replacing/removing words from input sentences during training. Within the prior enforced by the adversary, structured perturbations in the data space begin to carve and organize the latent space. Theoretically, we prove that perturbations encourage similar sentences to map to similar latent representations. Experimentally, we investigate the trade-off between text-generation and autoencoder-reconstruction capabilities. Our straightforward approach significantly improves over regular AAEs as well as other autoencoders, and enables altering the tense/sentiment of sentences through simple addition of a fixed vector offset to their latent representation.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1905.12777 [cs.LG]**                                 |
+|           | (or **arXiv:1905.12777v1 [cs.LG]** for this version)         |
+
+<h2 id="2019-05-31-2">2. Choosing Transfer Languages for Cross-Lingual Learning</h2>
+
+Title: [Choosing Transfer Languages for Cross-Lingual Learning](https://arxiv.org/abs/1905.12688)
+
+Authors: [Yu-Hsiang Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Y), [Chian-Yu Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+C), [Jean Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+J), [Zirui Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Yuyan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Mengzhou Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%2C+M), [Shruti Rijhwani](https://arxiv.org/search/cs?searchtype=author&query=Rijhwani%2C+S), [Junxian He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+J), [Zhisong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Xuezhe Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+X), [Antonios Anastasopoulos](https://arxiv.org/search/cs?searchtype=author&query=Anastasopoulos%2C+A), [Patrick Littell](https://arxiv.org/search/cs?searchtype=author&query=Littell%2C+P), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
+
+*(Submitted on 29 May 2019)*
+
+> Cross-lingual transfer, where a high-resource transfer language is used to improve the accuracy of a low-resource task language, is now an invaluable tool for improving performance of natural language processing (NLP) on low-resource languages. However, given a particular task language, it is not clear which language to transfer from, and the standard strategy is to select languages based on ad hoc criteria, usually the intuition of the experimenter. Since a large number of features contribute to the success of cross-lingual transfer (including phylogenetic similarity, typological properties, lexical overlap, or size of available data), even the most enlightened experimenter rarely considers all these factors for the particular task at hand. In this paper, we consider this task of automatically selecting optimal transfer languages as a ranking problem, and build models that consider the aforementioned features to perform this prediction. In experiments on representative NLP tasks, we demonstrate that our model predicts good transfer languages much better than ad hoc baselines considering single features in isolation, and glean insights on what features are most informative for each different NLP tasks, which may inform future ad hoc selection even without use of our method. Code, data, and pre-trained models are available at [this https URL](https://github.com/neulab/langrank)
+
+| Comments: | Proceedings of ACL 2019                              |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1905.12688 [cs.CL]**                         |
+|           | (or **arXiv:1905.12688v1 [cs.CL]** for this version) |
+
+<h2 id="2019-05-31-3">3. Unbabel's Submission to the WMT2019 APE Shared Task: BERT-based Encoder-Decoder for Automatic Post-Editing</h2>
+
+Title: [Unbabel's Submission to the WMT2019 APE Shared Task: BERT-based Encoder-Decoder for Automatic Post-Editing](https://arxiv.org/abs/1905.13068)
+
+Authors: [António V. Lopes](https://arxiv.org/search/cs?searchtype=author&query=Lopes%2C+A+V), [M. Amin Farajian](https://arxiv.org/search/cs?searchtype=author&query=Farajian%2C+M+A), [Gonçalo M. Correia](https://arxiv.org/search/cs?searchtype=author&query=Correia%2C+G+M), [Jonay Trenous](https://arxiv.org/search/cs?searchtype=author&query=Trenous%2C+J), [André F. T. Martins](https://arxiv.org/search/cs?searchtype=author&query=Martins%2C+A+F+T)
+
+*(Submitted on 30 May 2019)*
+
+> This paper describes Unbabel's submission to the WMT2019 APE Shared Task for the English-German language pair. Following the recent rise of large, powerful, pre-trained models, we adapt the BERT pretrained model to perform Automatic Post-Editing in an encoder-decoder framework. Analogously to dual-encoder architectures we develop a BERT-based encoder-decoder (BED) model in which a single pretrained BERT encoder receives both the source src and machine translation tgt strings. Furthermore, we explore a conservativeness factor to constrain the APE system to perform fewer edits. As the official results show, when trained on a weighted combination of in-domain and artificial training data, our BED system with the conservativeness penalty improves significantly the translations of a strong Neural Machine Translation system by −0.78 and +1.23 in terms of TER and BLEU, respectively.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1905.13068 [cs.CL]**                         |
+|           | (or **arXiv:1905.13068v1 [cs.CL]** for this version) |
 
 
 # 2019-05-29
