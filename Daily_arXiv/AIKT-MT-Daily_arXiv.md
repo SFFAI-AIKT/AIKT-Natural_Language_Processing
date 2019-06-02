@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-05-29](#2019-05-29)
+  - [1. On Measuring Gender Bias in Translation of Gender-neutral Pronouns](#2019-05-29-1)
+  - [2. Revisiting Low-Resource Neural Machine Translation: A Case Study](#2019-05-29-2)
 - [2019-05-28](#2019-05-28)
   - [1. DebiasingWord Embeddings Improves Multimodal Machine Translation](#2019-05-28-1)
   - [2. Soft Contextual Data Augmentation for Neural Machine Translation](#2019-05-28-2)
@@ -55,6 +58,46 @@
 * [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-05-29
+
+[Return to Index](#Index)
+
+<h2 id="2019-05-29-1">1. 
+On Measuring Gender Bias in Translation of Gender-neutral Pronouns</h2>
+Title: [On Measuring Gender Bias in Translation of Gender-neutral Pronouns](https://arxiv.org/abs/1905.11684)
+
+Authors: [Won Ik Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+W+I), [Ji Won Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+J+W), [Seok Min Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+S+M), [Nam Soo Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+N+S)
+
+*(Submitted on 28 May 2019)*
+
+> Ethics regarding social bias has recently thrown striking issues in natural language processing. Especially for gender-related topics, the need for a system that reduces the model bias has grown in areas such as image captioning, content recommendation, and automated employment. However, detection and evaluation of gender bias in the machine translation systems are not yet thoroughly investigated, for the task being cross-lingual and challenging to define. In this paper, we propose a scheme for making up a test set that evaluates the gender bias in a machine translation system, with Korean, a language with gender-neutral pronouns. Three word/phrase sets are primarily constructed, each incorporating positive/negative expressions or occupations; all the terms are gender-independent or at least not biased to one side severely. Then, additional sentence lists are constructed concerning formality of the pronouns and politeness of the sentences. With the generated sentence set of size 4,236 in total, we evaluate gender bias in conventional machine translation systems utilizing the proposed measure, which is termed here as translation gender bias index (TGBI). The corpus and the code for evaluation is available on-line.
+
+| Comments: | Accepted to 1st ACL Workshop on Gender Bias for Natural Language Processing (GeBNLP 2019) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **arXiv:1905.11684 [cs.CL]**                                 |
+|           | (or **arXiv:1905.11684v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-05-29-2">2. Revisiting Low-Resource Neural Machine Translation: A Case Study</h2>
+
+Title: [Revisiting Low-Resource Neural Machine Translation: A Case Study](https://arxiv.org/abs/1905.11901)
+
+Authors: [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R), [Biao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+B)
+
+*(Submitted on 28 May 2019)*
+
+> It has been shown that the performance of neural machine translation (NMT) drops starkly in low-resource conditions, underperforming phrase-based statistical machine translation (PBSMT) and requiring large amounts of auxiliary data to achieve competitive results. In this paper, we re-assess the validity of these results, arguing that they are the result of lack of system adaptation to low-resource settings. We discuss some pitfalls to be aware of when training low-resource NMT systems, and recent techniques that have shown to be especially helpful in low-resource settings, resulting in a set of best practices for low-resource NMT. In our experiments on German--English with different amounts of IWSLT14 training data, we show that, without the use of any auxiliary monolingual or multilingual data, an optimized NMT system can outperform PBSMT with far less data than previously claimed. We also apply these techniques to a low-resource Korean-English dataset, surpassing previously reported results by 4 BLEU.
+
+| Comments: | to appear at ACL 2019                                |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1905.11901 [cs.CL]**                         |
+|           | (or **arXiv:1905.11901v1 [cs.CL]** for this version) |
 
 
 
