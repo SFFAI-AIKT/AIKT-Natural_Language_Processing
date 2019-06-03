@@ -1,4 +1,4 @@
-# Daily arXiv: Machine Translation - May, 2019
+# Daily arXiv: Machine Translation - Jun., 2019
 
 ### Index
 
