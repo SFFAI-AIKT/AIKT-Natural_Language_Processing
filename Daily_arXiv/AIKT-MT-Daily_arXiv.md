@@ -2,6 +2,14 @@
 
 ### Index
 
+- [2019-06-04](#2019-06-04)
+  - [1. Thinking Slow about Latency Evaluation for Simultaneous Machine Translation](#2019-06-04-1)
+  - [2. Domain Adaptation of Neural Machine Translation by Lexicon Induction](#2019-06-04-2)
+  - [3. Domain Adaptive Inference for Neural Machine Translation](#2019-06-04-3)
+  - [4. Fluent Translations from Disfluent Speech in End-to-End Speech Translation](#2019-06-04-4)
+  - [5. Evaluating Gender Bias in Machine Translation](#2019-06-04-5)
+  - [6. From Words to Sentences: A Progressive Learning Approach for Zero-resource Machine Translation with Visual Pivots](#2019-06-04-6)
+
 - [2019-06-03](#2019-06-03)
   - [1. DiaBLa: A Corpus of Bilingual Spontaneous Written Dialogues for Machine Translation](#2019-06-03)
 
@@ -9,6 +17,120 @@
 * [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-06-04
+
+[Return to Index](#Index)
+<h2 id="2019-06-04-1">1. Thinking Slow about Latency Evaluation for Simultaneous Machine Translation</h2>
+
+Title: [Thinking Slow about Latency Evaluation for Simultaneous Machine Translation](https://arxiv.org/abs/1906.00048)
+
+Authors: [Colin Cherry](https://arxiv.org/search/cs?searchtype=author&query=Cherry%2C+C), [George Foster](https://arxiv.org/search/cs?searchtype=author&query=Foster%2C+G)
+
+*(Submitted on 31 May 2019)*
+
+> Simultaneous machine translation attempts to translate a source sentence before it is finished being spoken, with applications to translation of spoken language for live streaming and conversation. Since simultaneous systems trade quality to reduce latency, having an effective and interpretable latency metric is crucial. We introduce a variant of the recently proposed Average Lagging (AL) metric, which we call Differentiable Average Lagging (DAL). It distinguishes itself by being differentiable and internally consistent to its underlying mathematical model.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1906.00048 [cs.CL]**                         |
+|           | (or **arXiv:1906.00048v1 [cs.CL]** for this version) |
+
+
+
+<h2 id="2019-06-04-2">2. Domain Adaptation of Neural Machine Translation by Lexicon Induction</h2>
+
+Title: [Domain Adaptation of Neural Machine Translation by Lexicon Induction](https://arxiv.org/abs/1906.00376)
+
+Authors:[Junjie Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+J), [Mengzhou Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%2C+M), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G), [Jaime Carbonell](https://arxiv.org/search/cs?searchtype=author&query=Carbonell%2C+J)
+
+*(Submitted on 2 Jun 2019)*
+
+> It has been previously noted that neural machine translation (NMT) is very sensitive to domain shift. In this paper, we argue that this is a dual effect of the highly lexicalized nature of NMT, resulting in failure for sentences with large numbers of unknown words, and lack of supervision for domain-specific words. To remedy this problem, we propose an unsupervised adaptation method which fine-tunes a pre-trained out-of-domain NMT model using a pseudo-in-domain corpus. Specifically, we perform lexicon induction to extract an in-domain lexicon, and construct a pseudo-parallel in-domain corpus by performing word-for-word back-translation of monolingual in-domain target sentences. In five domains over twenty pairwise adaptation settings and two model architectures, our method achieves consistent improvements without using any in-domain parallel sentences, improving up to 14 BLEU over unadapted models, and up to 2 BLEU over strong back-translation baselines.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | published at the 57th Annual Meeting of the Association for Computational Linguistics (ACL). July 2019 |
+| Cite as:           | **arXiv:1906.00376 [cs.CL]**                                 |
+|                    | (or **arXiv:1906.00376v1 [cs.CL]** for this version)         |
+
+ 
+
+
+
+
+
+<h2 id="2019-06-04-3">3. Domain Adaptive Inference for Neural Machine Translation</h2>
+
+Title: [Domain Adaptive Inference for Neural Machine Translation](https://arxiv.org/abs/1906.00408)
+
+Authors: [Danielle Saunders](https://arxiv.org/search/cs?searchtype=author&query=Saunders%2C+D), [Felix Stahlberg](https://arxiv.org/search/cs?searchtype=author&query=Stahlberg%2C+F), [Adria de Gispert](https://arxiv.org/search/cs?searchtype=author&query=de+Gispert%2C+A), [Bill Byrne](https://arxiv.org/search/cs?searchtype=author&query=Byrne%2C+B)
+
+*(Submitted on 2 Jun 2019)*
+
+> We investigate adaptive ensemble weighting for Neural Machine Translation, addressing the case of improving performance on a new and potentially unknown domain without sacrificing performance on the original domain. We adapt sequentially across two Spanish-English and three English-German tasks, comparing unregularized fine-tuning, L2 and Elastic Weight Consolidation. We then report a novel scheme for adaptive NMT ensemble decoding by extending Bayesian Interpolation with source information, and show strong improvements across test domains without access to the domain label.
+
+| Comments: | To appear at ACL 2019                                |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1906.00408 [cs.CL]**                         |
+|           | (or **arXiv:1906.00408v1 [cs.CL]** for this version) |
+
+
+
+<h2 id="2019-06-04-4">4. Fluent Translations from Disfluent Speech in End-to-End Speech Translation</h2>
+
+Title: [Fluent Translations from Disfluent Speech in End-to-End Speech Translation](https://arxiv.org/abs/1906.00556)
+
+Authors: [Elizabeth Salesky](https://arxiv.org/search/cs?searchtype=author&query=Salesky%2C+E), [Matthias Sperber](https://arxiv.org/search/cs?searchtype=author&query=Sperber%2C+M), [Alex Waibel](https://arxiv.org/search/cs?searchtype=author&query=Waibel%2C+A)
+
+*(Submitted on 3 Jun 2019)*
+
+> Spoken language translation applications for speech suffer due to conversational speech phenomena, particularly the presence of disfluencies. With the rise of end-to-end speech translation models, processing steps such as disfluency removal that were previously an intermediate step between speech recognition and machine translation need to be incorporated into model architectures. We use a sequence-to-sequence model to translate from noisy, disfluent speech to fluent text with disfluencies removed using the recently collected `copy-edited' references for the Fisher Spanish-English dataset. We are able to directly generate fluent translations and introduce considerations about how to evaluate success on this task. This work provides a baseline for a new task, the translation of conversational speech with joint removal of disfluencies.
+
+| Comments: | Accepted at NAACL 2019                               |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1906.00556 [cs.CL]**                         |
+|           | (or **arXiv:1906.00556v1 [cs.CL]** for this version) |
+
+
+
+<h2 id="2019-06-04-5">5. Evaluating Gender Bias in Machine Translation</h2>
+
+Title: [Evaluating Gender Bias in Machine Translation](https://arxiv.org/abs/1906.00591)
+
+Authors: [Gabriel Stanovsky](https://arxiv.org/search/cs?searchtype=author&query=Stanovsky%2C+G), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith%2C+N+A), [Luke Zettlemoyer](https://arxiv.org/search/cs?searchtype=author&query=Zettlemoyer%2C+L)
+
+*(Submitted on 3 Jun 2019)*
+
+> We present the first challenge set and evaluation protocol for the analysis of gender bias in machine translation (MT). Our approach uses two recent coreference resolution datasets composed of English sentences which cast participants into non-stereotypical gender roles (e.g., "The doctor asked the nurse to help her in the operation"). We devise an automatic gender bias evaluation method for eight target languages with grammatical gender, based on morphological analysis (e.g., the use of female inflection for the word "doctor"). Our analyses show that four popular industrial MT systems and two recent state-of-the-art academic MT models are significantly prone to gender-biased translation errors for all tested target languages. Our data and code are made publicly available.
+
+| Comments: | Accepted to ACL 2019                                 |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1906.00591 [cs.CL]**                         |
+|           | (or **arXiv:1906.00591v1 [cs.CL]** for this version) |
+
+
+
+<h2 id="2019-06-04-6">6. From Words to Sentences: A Progressive Learning Approach for Zero-resource Machine Translation with Visual Pivots</h2>
+
+Title: [From Words to Sentences: A Progressive Learning Approach for Zero-resource Machine Translation with Visual Pivots](https://arxiv.org/abs/1906.00872)
+
+Authors: [Shizhe Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+S), [Qin Jin](https://arxiv.org/search/cs?searchtype=author&query=Jin%2C+Q), [Jianlong Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+J)
+
+*(Submitted on 3 Jun 2019)*
+
+> The neural machine translation model has suffered from the lack of large-scale parallel corpora. In contrast, we humans can learn multi-lingual translations even without parallel texts by referring our languages to the external world. To mimic such human learning behavior, we employ images as pivots to enable zero-resource translation learning. However, a picture tells a thousand words, which makes multi-lingual sentences pivoted by the same image noisy as mutual translations and thus hinders the translation model learning. In this work, we propose a progressive learning approach for image-pivoted zero-resource machine translation. Since words are less diverse when grounded in the image, we first learn word-level translation with image pivots, and then progress to learn the sentence-level translation by utilizing the learned word translation to suppress noises in image-pivoted multi-lingual sentences. Experimental results on two widely used image-pivot translation datasets, IAPR-TC12 and Multi30k, show that the proposed approach significantly outperforms other state-of-the-art methods.
+
+| Comments: | Accepted by IJCAI 2019                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **arXiv:1906.00872 [cs.CL]**                                 |
+|           | (or **arXiv:1906.00872v1 [cs.CL]** for this version)         |
 
 
 
