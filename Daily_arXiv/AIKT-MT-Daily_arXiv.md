@@ -2,6 +2,11 @@
 
 ### Index
 
+- [2019-06-05](#2019-06-05)
+  - [1. Improved Zero-shot Neural Machine Translation via Ignoring Spurious Correlations](#2019-06-05-1)
+  - [2. Exploring Phoneme-Level Speech Representations for End-to-End Speech Translation](#2019-06-05-2)
+  - [3. Exploiting Sentential Context for Neural Machine Translation](#2019-06-05-3)
+  - [4. Lattice-Based Transformer Encoder for Neural Machine Translation](#2019-06-05-4)
 - [2019-06-04](#2019-06-04)
   - [1. Thinking Slow about Latency Evaluation for Simultaneous Machine Translation](#2019-06-04-1)
   - [2. Domain Adaptation of Neural Machine Translation by Lexicon Induction](#2019-06-04-2)
@@ -9,7 +14,6 @@
   - [4. Fluent Translations from Disfluent Speech in End-to-End Speech Translation](#2019-06-04-4)
   - [5. Evaluating Gender Bias in Machine Translation](#2019-06-04-5)
   - [6. From Words to Sentences: A Progressive Learning Approach for Zero-resource Machine Translation with Visual Pivots](#2019-06-04-6)
-
 - [2019-06-03](#2019-06-03)
   - [1. DiaBLa: A Corpus of Bilingual Spontaneous Written Dialogues for Machine Translation](#2019-06-03)
 
@@ -17,6 +21,71 @@
 * [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-06-05
+
+[Return to Index](#Index)
+<h2 id="2019-06-05-1">1. Improved Zero-shot Neural Machine Translation via Ignoring Spurious Correlations</h2>
+
+Title: [Improved Zero-shot Neural Machine Translation via Ignoring Spurious Correlations](https://arxiv.org/abs/1906.01181)
+Authors: [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J), [Yong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Kyunghyun Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+K), [Victor O.K. Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+V+O)
+
+*(Submitted on 4 Jun 2019)*
+
+> Zero-shot translation, translating between language pairs on which a Neural Machine Translation (NMT) system has never been trained, is an emergent property when training the system in multilingual settings. However, naive training for zero-shot NMT easily fails, and is sensitive to hyper-parameter setting. The performance typically lags far behind the more conventional pivot-based approach which translates twice using a third language as a pivot. In this work, we address the degeneracy problem due to capturing spurious correlations by quantitatively analyzing the mutual information between language IDs of the source and decoded sentences. Inspired by this analysis, we propose to use two simple but effective approaches: (1) decoder pre-training; (2) back-translation. These methods show significant improvement (4~22 BLEU points) over the vanilla zero-shot translation on three challenging multilingual datasets, and achieve similar or better results than the pivot-based approach.
+
+| Comments: | Accepted by ACL 2019                                 |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1906.01181 [cs.CL]**                         |
+|           | (or **arXiv:1906.01181v1 [cs.CL]** for this version) |
+
+<h2 id="2019-06-05-2">2. Exploring Phoneme-Level Speech Representations for End-to-End Speech Translation</h2>
+
+Title: [Exploring Phoneme-Level Speech Representations for End-to-End Speech Translation](https://arxiv.org/abs/1906.01199)
+Authors: [Elizabeth Salesky](https://arxiv.org/search/cs?searchtype=author&query=Salesky%2C+E), [Matthias Sperber](https://arxiv.org/search/cs?searchtype=author&query=Sperber%2C+M), [Alan W Black](https://arxiv.org/search/cs?searchtype=author&query=Black%2C+A+W)
+
+*(Submitted on 4 Jun 2019)*
+
+> Previous work on end-to-end translation from speech has primarily used frame-level features as speech representations, which creates longer, sparser sequences than text. We show that a naive method to create compressed phoneme-like speech representations is far more effective and efficient for translation than traditional frame-level speech features. Specifically, we generate phoneme labels for speech frames and average consecutive frames with the same label to create shorter, higher-level source sequences for translation. We see improvements of up to 5 BLEU on both our high and low resource language pairs, with a reduction in training time of 60%. Our improvements hold across multiple data sizes and two language pairs.
+
+| Comments: | Accepted to ACL 2019                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **arXiv:1906.01199 [cs.CL]**                                 |
+|           | (or **arXiv:1906.01199v1 [cs.CL]** for this version)         |
+
+<h2 id="2019-06-05-3">3. Exploiting Sentential Context for Neural Machine Translation</h2>
+
+Title: [Exploiting Sentential Context for Neural Machine Translation](https://arxiv.org/abs/1906.01268)
+Authors: [Xing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Zhaopeng Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+Z), [Longyue Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Shuming Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+S)
+
+*(Submitted on 4 Jun 2019)*
+
+> In this work, we present novel approaches to exploit sentential context for neural machine translation (NMT). Specifically, we first show that a shallow sentential context extracted from the top encoder layer only, can improve translation performance via contextualizing the encoding representations of individual words. Next, we introduce a deep sentential context, which aggregates the sentential context representations from all the internal layers of the encoder to form a more comprehensive context representation. Experimental results on the WMT14 English-to-German and English-to-French benchmarks show that our model consistently improves performance over the strong TRANSFORMER model (Vaswani et al., 2017), demonstrating the necessity and effectiveness of exploiting sentential context for NMT.
+
+| Comments: | Accepted by ACL 2019                                 |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1906.01268 [cs.CL]**                         |
+|           | (or **arXiv:1906.01268v1 [cs.CL]** for this version) |
+
+<h2 id="2019-06-05-4">4. Lattice-Based Transformer Encoder for Neural Machine Translation</h2>
+
+Title: [Lattice-Based Transformer Encoder for Neural Machine Translation](https://arxiv.org/abs/1906.01282)
+Authors: [Fengshun Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+F), [Jiangtong Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Hai Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+H), [Rui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+R), [Kehai Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+K)
+
+*(Submitted on 4 Jun 2019)*
+
+> Neural machine translation (NMT) takes deterministic sequences for source representations. However, either word-level or subword-level segmentations have multiple choices to split a source sequence with different word segmentors or different subword vocabulary sizes. We hypothesize that the diversity in segmentations may affect the NMT performance. To integrate different segmentations with the state-of-the-art NMT model, Transformer, we propose lattice-based encoders to explore effective word or subword representation in an automatic way during training. We propose two methods: 1) lattice positional encoding and 2) lattice-aware self-attention. These two methods can be used together and show complementary to each other to further improve translation performance. Experiment results show superiorities of lattice-based encoders in word-level and subword-level representations over conventional Transformer encoder.
+
+| Comments: | Accepted by ACL 2019                                 |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1906.01282 [cs.CL]**                         |
+|           | (or **arXiv:1906.01282v1 [cs.CL]** for this version) |
 
 
 
