@@ -2,6 +2,11 @@
 
 ### Index
 
+- [2019-06-06](#2019-06-06)
+  - [1. Imitation Learning for Non-Autoregressive Neural Machine Translation](#2019-06-06-1)
+  - [2. The Unreasonable Effectiveness of Transformer Language Models in Grammatical Error Correction](#2019-06-06-2)
+  - [3. Learning Deep Transformer Models for Machine Translation](#2019-06-06-3)
+  - [4. Learning Bilingual Sentence Embeddings via Autoencoding and Computing Similarities with a Multilayer Perceptron](#2019-06-06-4)
 - [2019-06-05](#2019-06-05)
   - [1. Improved Zero-shot Neural Machine Translation via Ignoring Spurious Correlations](#2019-06-05-1)
   - [2. Exploring Phoneme-Level Speech Representations for End-to-End Speech Translation](#2019-06-05-2)
@@ -22,6 +27,69 @@
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
 
+
+
+# 2019-06-06
+
+[Return to Index](#Index)
+<h2 id="2019-06-06-1">1. Imitation Learning for Non-Autoregressive Neural Machine Translation</h2>
+
+Title: [Imitation Learning for Non-Autoregressive Neural Machine Translation](https://arxiv.org/abs/1906.02041)
+Authors: [Bingzhen Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+B), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Junyang Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+J), [Xu Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+X)
+
+*(Submitted on 5 Jun 2019)*
+
+> Non-autoregressive translation models (NAT) have achieved impressive inference speedup. A potential issue of the existing NAT algorithms, however, is that the decoding is conducted in parallel, without directly considering previous context. In this paper, we propose an imitation learning framework for non-autoregressive machine translation, which still enjoys the fast translation speed but gives comparable translation performance compared to its auto-regressive counterpart. We conduct experiments on the IWSLT16, WMT14 and WMT16 datasets. Our proposed model achieves a significant speedup over the autoregressive models, while keeping the translation quality comparable to the autoregressive models. By sampling sentence length in parallel at inference time, we achieve the performance of 31.85 BLEU on WMT16 Ro→En and 30.68 BLEU on IWSLT16 En→De.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1906.02041 [cs.CL]**                         |
+|           | (or **arXiv:1906.02041v1 [cs.CL]** for this version) |
+
+<h2 id="2019-06-06-2">2. The Unreasonable Effectiveness of Transformer Language Models in Grammatical Error Correction</h2>
+
+Title: [The Unreasonable Effectiveness of Transformer Language Models in Grammatical Error Correction](https://arxiv.org/abs/1906.01733)
+Authors: [Dimitrios Alikaniotis](https://arxiv.org/search/cs?searchtype=author&query=Alikaniotis%2C+D), [Vipul Raheja](https://arxiv.org/search/cs?searchtype=author&query=Raheja%2C+V)
+
+*(Submitted on 4 Jun 2019)*
+
+> Recent work on Grammatical Error Correction (GEC) has highlighted the importance of language modeling in that it is certainly possible to achieve good performance by comparing the probabilities of the proposed edits. At the same time, advancements in language modeling have managed to generate linguistic output, which is almost indistinguishable from that of human-generated text. In this paper, we up the ante by exploring the potential of more sophisticated language models in GEC and offer some key insights on their strengths and weaknesses. We show that, in line with recent results in other NLP tasks, Transformer architectures achieve consistently high performance and provide a competitive baseline for future machine learning models.
+
+| Comments: | 7 pages, 3 tables, accepted at the 14th Workshop on Innovative Use of NLP for Building Educational Applications |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Neural and Evolutionary Computing (cs.NE) |
+| Cite as:  | **arXiv:1906.01733 [cs.CL]**                                 |
+|           | (or **arXiv:1906.01733v1 [cs.CL]** for this version)         |
+
+<h2 id="2019-06-06-3">3. Learning Deep Transformer Models for Machine Translation</h2>
+
+Title: [Learning Deep Transformer Models for Machine Translation](https://arxiv.org/abs/1906.01787)
+Authors: [Qiang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Q), [Bei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+B), [Tong Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+T), [Jingbo Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J), [Changliang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+C), [Derek F. Wong](https://arxiv.org/search/cs?searchtype=author&query=Wong%2C+D+F), [Lidia S. Chao](https://arxiv.org/search/cs?searchtype=author&query=Chao%2C+L+S)
+
+*(Submitted on 5 Jun 2019)*
+
+> Transformer is the state-of-the-art model in recent machine translation evaluations. Two strands of research are promising to improve models of this kind: the first uses wide networks (a.k.a. Transformer-Big) and has been the de facto standard for the development of the Transformer system, and the other uses deeper language representation but faces the difficulty arising from learning deep networks. Here, we continue the line of research on the latter. We claim that a truly deep Transformer model can surpass the Transformer-Big counterpart by 1) proper use of layer normalization and 2) a novel way of passing the combination of previous layers to the next. On WMT'16 English- German, NIST OpenMT'12 Chinese-English and larger WMT'18 Chinese-English tasks, our deep system (30/25-layer encoder) outperforms the shallow Transformer-Big/Base baseline (6-layer encoder) by 0.4-2.4 BLEU points. As another bonus, the deep model is 1.6X smaller in size and 3X faster in training than Transformer-Big.
+
+| Comments: | Accepted by ACL 2019                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1906.01787 [cs.CL]**                                 |
+|           | (or **arXiv:1906.01787v1 [cs.CL]** for this version)         |
+
+<h2 id="2019-06-06-4">4. Learning Bilingual Sentence Embeddings via Autoencoding and Computing Similarities with a Multilayer Perceptron</h2>
+
+Title: [Learning Bilingual Sentence Embeddings via Autoencoding and Computing Similarities with a Multilayer Perceptron](https://arxiv.org/abs/1906.01942)
+Authors: [Yunsu Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+Y), [Hendrik Rosendahl](https://arxiv.org/search/cs?searchtype=author&query=Rosendahl%2C+H), [Nick Rossenbach](https://arxiv.org/search/cs?searchtype=author&query=Rossenbach%2C+N), [Jan Rosendahl](https://arxiv.org/search/cs?searchtype=author&query=Rosendahl%2C+J), [Shahram Khadivi](https://arxiv.org/search/cs?searchtype=author&query=Khadivi%2C+S), [Hermann Ney](https://arxiv.org/search/cs?searchtype=author&query=Ney%2C+H)
+
+*(Submitted on 5 Jun 2019)*
+
+> We propose a novel model architecture and training algorithm to learn bilingual sentence embeddings from a combination of parallel and monolingual data. Our method connects autoencoding and neural machine translation to force the source and target sentence embeddings to share the same space without the help of a pivot language or an additional transformation. We train a multilayer perceptron on top of the sentence embeddings to extract good bilingual sentence pairs from nonparallel or noisy parallel data. Our approach shows promising performance on sentence alignment recovery and the WMT 2018 parallel corpus filtering tasks with only a single model.
+
+| Comments: | ACL 2019 Repl4NLP camera-ready                               |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1906.01942 [cs.CL]**                                 |
+|           | (or **arXiv:1906.01942v1 [cs.CL]** for this version)         |
 
 
 # 2019-06-05
