@@ -35,6 +35,7 @@
 <h2 id="2019-06-06-1">1. Imitation Learning for Non-Autoregressive Neural Machine Translation</h2>
 
 Title: [Imitation Learning for Non-Autoregressive Neural Machine Translation](https://arxiv.org/abs/1906.02041)
+
 Authors: [Bingzhen Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+B), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Junyang Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+J), [Xu Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+X)
 
 *(Submitted on 5 Jun 2019)*
@@ -49,6 +50,7 @@ Authors: [Bingzhen Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%
 <h2 id="2019-06-06-2">2. The Unreasonable Effectiveness of Transformer Language Models in Grammatical Error Correction</h2>
 
 Title: [The Unreasonable Effectiveness of Transformer Language Models in Grammatical Error Correction](https://arxiv.org/abs/1906.01733)
+
 Authors: [Dimitrios Alikaniotis](https://arxiv.org/search/cs?searchtype=author&query=Alikaniotis%2C+D), [Vipul Raheja](https://arxiv.org/search/cs?searchtype=author&query=Raheja%2C+V)
 
 *(Submitted on 4 Jun 2019)*
@@ -64,6 +66,7 @@ Authors: [Dimitrios Alikaniotis](https://arxiv.org/search/cs?searchtype=author&q
 <h2 id="2019-06-06-3">3. Learning Deep Transformer Models for Machine Translation</h2>
 
 Title: [Learning Deep Transformer Models for Machine Translation](https://arxiv.org/abs/1906.01787)
+
 Authors: [Qiang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Q), [Bei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+B), [Tong Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+T), [Jingbo Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J), [Changliang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+C), [Derek F. Wong](https://arxiv.org/search/cs?searchtype=author&query=Wong%2C+D+F), [Lidia S. Chao](https://arxiv.org/search/cs?searchtype=author&query=Chao%2C+L+S)
 
 *(Submitted on 5 Jun 2019)*
@@ -79,6 +82,7 @@ Authors: [Qiang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2
 <h2 id="2019-06-06-4">4. Learning Bilingual Sentence Embeddings via Autoencoding and Computing Similarities with a Multilayer Perceptron</h2>
 
 Title: [Learning Bilingual Sentence Embeddings via Autoencoding and Computing Similarities with a Multilayer Perceptron](https://arxiv.org/abs/1906.01942)
+
 Authors: [Yunsu Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+Y), [Hendrik Rosendahl](https://arxiv.org/search/cs?searchtype=author&query=Rosendahl%2C+H), [Nick Rossenbach](https://arxiv.org/search/cs?searchtype=author&query=Rossenbach%2C+N), [Jan Rosendahl](https://arxiv.org/search/cs?searchtype=author&query=Rosendahl%2C+J), [Shahram Khadivi](https://arxiv.org/search/cs?searchtype=author&query=Khadivi%2C+S), [Hermann Ney](https://arxiv.org/search/cs?searchtype=author&query=Ney%2C+H)
 
 *(Submitted on 5 Jun 2019)*
@@ -98,6 +102,7 @@ Authors: [Yunsu Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+
 <h2 id="2019-06-05-1">1. Improved Zero-shot Neural Machine Translation via Ignoring Spurious Correlations</h2>
 
 Title: [Improved Zero-shot Neural Machine Translation via Ignoring Spurious Correlations](https://arxiv.org/abs/1906.01181)
+
 Authors: [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J), [Yong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Kyunghyun Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+K), [Victor O.K. Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+V+O)
 
 *(Submitted on 4 Jun 2019)*
@@ -113,6 +118,7 @@ Authors: [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J
 <h2 id="2019-06-05-2">2. Exploring Phoneme-Level Speech Representations for End-to-End Speech Translation</h2>
 
 Title: [Exploring Phoneme-Level Speech Representations for End-to-End Speech Translation](https://arxiv.org/abs/1906.01199)
+
 Authors: [Elizabeth Salesky](https://arxiv.org/search/cs?searchtype=author&query=Salesky%2C+E), [Matthias Sperber](https://arxiv.org/search/cs?searchtype=author&query=Sperber%2C+M), [Alan W Black](https://arxiv.org/search/cs?searchtype=author&query=Black%2C+A+W)
 
 *(Submitted on 4 Jun 2019)*
@@ -128,6 +134,7 @@ Authors: [Elizabeth Salesky](https://arxiv.org/search/cs?searchtype=author&query
 <h2 id="2019-06-05-3">3. Exploiting Sentential Context for Neural Machine Translation</h2>
 
 Title: [Exploiting Sentential Context for Neural Machine Translation](https://arxiv.org/abs/1906.01268)
+
 Authors: [Xing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Zhaopeng Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+Z), [Longyue Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Shuming Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+S)
 
 *(Submitted on 4 Jun 2019)*
@@ -143,6 +150,7 @@ Authors: [Xing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C
 <h2 id="2019-06-05-4">4. Lattice-Based Transformer Encoder for Neural Machine Translation</h2>
 
 Title: [Lattice-Based Transformer Encoder for Neural Machine Translation](https://arxiv.org/abs/1906.01282)
+
 Authors: [Fengshun Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+F), [Jiangtong Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Hai Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+H), [Rui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+R), [Kehai Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+K)
 
 *(Submitted on 4 Jun 2019)*
