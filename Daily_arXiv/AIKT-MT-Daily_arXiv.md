@@ -2,6 +2,16 @@
 
 ### Index
 
+- [2019-06-14](#2019-06-14)
+  - [1. UCAM Biomedical translation at WMT19: Transfer learning multi-domain ensembles](#2019-06-14-1)
+  - [2. A Focus on Neural Machine Translation for African Languages](#2019-06-14-2)
+  - [3. Translating Translationese: A Two-Step Approach to Unsupervised Machine Translation](#2019-06-14-3)
+  - [4. Lattice Transformer for Speech Translation](#2019-06-14-4)
+  - [5. Cued@wmt19:ewc&lms](#2019-06-14-5)
+  - [6. Analyzing the Limitations of Cross-lingual Word Embedding Mappings](#2019-06-14-6)
+  - [7. Compositional generalization through meta sequence-to-sequence learning](#2019-06-14-7)
+  - [8. A Multiscale Visualization of Attention in the Transformer Model](#2019-06-14-8)
+
 - [2019-06-13](#2019-06-13)
   - [1. Continual and Multi-Task Architecture Search](#2019-06-13-1)
   - [2. Monotonic Infinite Lookback Attention for Simultaneous Machine Translation](#2019-06-13-2)
@@ -48,6 +58,129 @@
 * [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-06-14
+[Return to Index](#Index)
+<h2 id="2019-06-14-1">1. UCAM Biomedical translation at WMT19: Transfer learning multi-domain ensembles</h2>
+
+Title: [UCAM Biomedical translation at WMT19: Transfer learning multi-domain ensembles](https://arxiv.org/abs/1906.05786)
+Authors: [Danielle Saunders](https://arxiv.org/search/cs?searchtype=author&query=Saunders%2C+D), [Felix Stahlberg](https://arxiv.org/search/cs?searchtype=author&query=Stahlberg%2C+F), [Bill Byrne](https://arxiv.org/search/cs?searchtype=author&query=Byrne%2C+B)
+
+*(Submitted on 13 Jun 2019)*
+
+> The 2019 WMT Biomedical translation task involved translating Medline abstracts. We approached this using transfer learning to obtain a series of strong neural models on distinct domains, and combining them into multi-domain ensembles. We further experiment with an adaptive language-model ensemble weighting scheme. Our submission achieved the best submitted results on both directions of English-Spanish.
+
+| Comments: | To appear at WMT19                                   |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1906.05786 [cs.CL]**                         |
+|           | (or **arXiv:1906.05786v1 [cs.CL]** for this version) |
+
+<h2 id="2019-06-14-2">2. A Focus on Neural Machine Translation for African Languages</h2>
+
+Title: [A Focus on Neural Machine Translation for African Languages](https://arxiv.org/abs/1906.05685)
+Authors:[Laura Martinus](https://arxiv.org/search/cs?searchtype=author&query=Martinus%2C+L), [Jade Z. Abbott](https://arxiv.org/search/cs?searchtype=author&query=Abbott%2C+J+Z)
+
+*(Submitted on 11 Jun 2019)*
+
+> African languages are numerous, complex and low-resourced. The datasets required for machine translation are difficult to discover, and existing research is hard to reproduce. Minimal attention has been given to machine translation for African languages so there is scant research regarding the problems that arise when using machine translation techniques. To begin addressing these problems, we trained models to translate English to five of the official South African languages (Afrikaans, isiZulu, Northern Sotho, Setswana, Xitsonga), making use of modern neural machine translation techniques. The results obtained show the promise of using neural machine translation techniques for African languages. By providing reproducible publicly-available data, code and results, this research aims to provide a starting point for other researchers in African machine translation to compare to and build upon.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1906.05685 [cs.CL]**                                 |
+|           | (or **arXiv:1906.05685v1 [cs.CL]** for this version)         |
+
+<h2 id="2019-06-14-3">3. Translating Translationese: A Two-Step Approach to Unsupervised Machine Translation</h2>
+
+Title: [Translating Translationese: A Two-Step Approach to Unsupervised Machine Translation](https://arxiv.org/abs/1906.05683)
+Authors: [Nima Pourdamghani](https://arxiv.org/search/cs?searchtype=author&query=Pourdamghani%2C+N), [Nada Aldarrab](https://arxiv.org/search/cs?searchtype=author&query=Aldarrab%2C+N), [Marjan Ghazvininejad](https://arxiv.org/search/cs?searchtype=author&query=Ghazvininejad%2C+M), [Kevin Knight](https://arxiv.org/search/cs?searchtype=author&query=Knight%2C+K), [Jonathan May](https://arxiv.org/search/cs?searchtype=author&query=May%2C+J)
+
+*(Submitted on 11 Jun 2019)*
+
+> Given a rough, word-by-word gloss of a source language sentence, target language natives can uncover the latent, fully-fluent rendering of the translation. In this work we explore this intuition by breaking translation into a two step process: generating a rough gloss by means of a dictionary and then `translating' the resulting pseudo-translation, or `Translationese' into a fully fluent translation. We build our Translationese decoder once from a mish-mash of parallel data that has the target language in common and then can build dictionaries on demand using unsupervised techniques, resulting in rapidly generated unsupervised neural MT systems for many source languages. We apply this process to 14 test languages, obtaining better or comparable translation results on high-resource languages than previously published unsupervised MT studies, and obtaining good quality results for low-resource languages that have never been used in an unsupervised MT scenario.
+
+| Comments: | Accepted in ACL 2019                                 |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1906.05683 [cs.CL]**                         |
+|           | (or **arXiv:1906.05683v1 [cs.CL]** for this version) |
+
+<h2 id="2019-06-14-4">4. Lattice Transformer for Speech Translation</h2>
+
+Title: [Lattice Transformer for Speech Translation](https://arxiv.org/abs/1906.05551)
+Authors: [Pei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+P), [Boxing Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+B), [Niyu Ge](https://arxiv.org/search/cs?searchtype=author&query=Ge%2C+N), [Kai Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+K)
+
+*(Submitted on 13 Jun 2019)*
+
+> Recent advances in sequence modeling have highlighted the strengths of the transformer architecture, especially in achieving state-of-the-art machine translation results. However, depending on the up-stream systems, e.g., speech recognition, or word segmentation, the input to translation system can vary greatly. The goal of this work is to extend the attention mechanism of the transformer to naturally consume the lattice in addition to the traditional sequential input. We first propose a general lattice transformer for speech translation where the input is the output of the automatic speech recognition (ASR) which contains multiple paths and posterior scores. To leverage the extra information from the lattice structure, we develop a novel controllable lattice attention mechanism to obtain latent representations. On the LDC Spanish-English speech translation corpus, our experiments show that lattice transformer generalizes significantly better and outperforms both a transformer baseline and a lattice LSTM. Additionally, we validate our approach on the WMT 2017 Chinese-English translation task with lattice inputs from different BPE segmentations. In this task, we also observe the improvements over strong baselines.
+
+| Comments: | accepted to ACL 2019                                 |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1906.05551 [cs.CL]**                         |
+|           | (or **arXiv:1906.05551v1 [cs.CL]** for this version) |
+
+<h2 id="2019-06-14-5">5. Cued@wmt19:ewc&lms</h2>
+
+Title: [Cued@wmt19:ewc&lms](https://arxiv.org/abs/1906.05447)
+Authors: [Felix Stahlberg](https://arxiv.org/search/cs?searchtype=author&query=Stahlberg%2C+F), [Danielle Saunders](https://arxiv.org/search/cs?searchtype=author&query=Saunders%2C+D), [Adria de Gispert](https://arxiv.org/search/cs?searchtype=author&query=de+Gispert%2C+A), [Bill Byrne](https://arxiv.org/search/cs?searchtype=author&query=Byrne%2C+B)
+
+*(Submitted on 11 Jun 2019)*
+
+> Two techniques provide the fabric of the Cambridge University Engineering Department's (CUED) entry to the WMT19 evaluation campaign: elastic weight consolidation (EWC) and different forms of language modelling (LMs). We report substantial gains by fine-tuning very strong baselines on former WMT test sets using a combination of checkpoint averaging and EWC. A sentence-level Transformer LM and a document-level LM based on a modified Transformer architecture yield further gains. As in previous years, we also extract n-gram probabilities from SMT lattices which can be seen as a source-conditioned n-gram LM.
+
+| Comments: | WMT2019 system description (University of Cambridge) |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1906.05447 [cs.CL]**                         |
+|           | (or **arXiv:1906.05447v1 [cs.CL]** for this version) |
+
+<h2 id="2019-06-14-6">6. Analyzing the Limitations of Cross-lingual Word Embedding Mappings</h2>
+
+Title: [Analyzing the Limitations of Cross-lingual Word Embedding Mappings](https://arxiv.org/abs/1906.05407)
+Authors: [Aitor Ormazabal](https://arxiv.org/search/cs?searchtype=author&query=Ormazabal%2C+A), [Mikel Artetxe](https://arxiv.org/search/cs?searchtype=author&query=Artetxe%2C+M), [Gorka Labaka](https://arxiv.org/search/cs?searchtype=author&query=Labaka%2C+G), [Aitor Soroa](https://arxiv.org/search/cs?searchtype=author&query=Soroa%2C+A), [Eneko Agirre](https://arxiv.org/search/cs?searchtype=author&query=Agirre%2C+E)
+
+*(Submitted on 12 Jun 2019)*
+
+> Recent research in cross-lingual word embeddings has almost exclusively focused on offline methods, which independently train word embeddings in different languages and map them to a shared space through linear transformations. While several authors have questioned the underlying isomorphism assumption, which states that word embeddings in different languages have approximately the same structure, it is not clear whether this is an inherent limitation of mapping approaches or a more general issue when learning cross-lingual embeddings. So as to answer this question, we experiment with parallel corpora, which allows us to compare offline mapping to an extension of skip-gram that jointly learns both embedding spaces. We observe that, under these ideal conditions, joint learning yields to more isomorphic embeddings, is less sensitive to hubness, and obtains stronger results in bilingual lexicon induction. We thus conclude that current mapping methods do have strong limitations, calling for further research to jointly learn cross-lingual embeddings with a weaker cross-lingual signal.
+
+| Comments: | ACL 2019                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1906.05407 [cs.CL]**                                 |
+|           | (or **arXiv:1906.05407v1 [cs.CL]** for this version)         |
+
+<h2 id="2019-06-14-7">7. Compositional generalization through meta sequence-to-sequence learning</h2>
+
+Title: [Compositional generalization through meta sequence-to-sequence learning](https://arxiv.org/abs/1906.05381)
+Authors: [Brenden M. Lake](https://arxiv.org/search/cs?searchtype=author&query=Lake%2C+B+M)
+
+*(Submitted on 12 Jun 2019)*
+
+> People can learn a new concept and use it compositionally, understanding how to "blicket twice" after learning how to "blicket." In contrast, powerful sequence-to-sequence (seq2seq) neural networks fail such tests of compositionality, especially when composing new concepts together with existing concepts. In this paper, I show that neural networks can be trained to generalize compositionally through meta seq2seq learning. In this approach, models train on a series of seq2seq problems to acquire the compositional skills needed to solve new seq2seq problems. Meta se2seq learning solves several of the SCAN tests for compositional learning and can learn to apply rules to variables.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1906.05381 [cs.CL]**                                 |
+|           | (or **arXiv:1906.05381v1 [cs.CL]** for this version)         |
+
+<h2 id="2019-06-14-8">8. A Multiscale Visualization of Attention in the Transformer Model</h2>
+
+Title: [A Multiscale Visualization of Attention in the Transformer Model](https://arxiv.org/abs/1906.05714)
+Authors: [Jesse Vig](https://arxiv.org/search/cs?searchtype=author&query=Vig%2C+J)
+
+*(Submitted on 12 Jun 2019)*
+
+> The Transformer is a sequence model that forgoes traditional recurrent architectures in favor of a fully attention-based approach. Besides improving performance, an advantage of using attention is that it can also help to interpret a model by showing how the model assigns weight to different input elements. However, the multi-layer, multi-head attention mechanism in the Transformer model can be difficult to decipher. To make the model more accessible, we introduce an open-source tool that visualizes attention at multiple scales, each of which provides a unique perspective on the attention mechanism. We demonstrate the tool on BERT and OpenAI GPT-2 and present three example use cases: detecting model bias, locating relevant attention heads, and linking neurons to model behavior.
+
+| Comments: | To appear in ACL 2019 (System Demonstrations). arXiv admin note: substantial text overlap with [arXiv:1904.02679](https://arxiv.org/abs/1904.02679) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Human-Computer Interaction (cs.HC)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1906.05714 [cs.HC]**                                 |
+|           | (or **arXiv:1906.05714v1 [cs.HC]** for this version)         |
+
 
 
 
