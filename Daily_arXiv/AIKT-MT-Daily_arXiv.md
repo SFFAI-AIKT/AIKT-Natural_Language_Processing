@@ -2,6 +2,11 @@
 
 ### Index
 
+- [2019-06-10](#2019-06-10)
+  - [1. Word-based Domain Adaptation for Neural Machine Translation](#2019-06-10-1)
+  - [2. Shared-Private Bilingual Word Embeddings for Neural Machine Translation](#2019-06-10-2)
+  - [3. Syntactically Supervised Transformers for Faster Neural Machine Translation](#2019-06-10-3)
+
 - [2019-06-06](#2019-06-06)
   - [1. Imitation Learning for Non-Autoregressive Neural Machine Translation](#2019-06-06-1)
   - [2. The Unreasonable Effectiveness of Transformer Language Models in Grammatical Error Correction](#2019-06-06-2)
@@ -27,7 +32,53 @@
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
 
+# 2019-06-10
+[Return to Index](#Index)
+<h2 id="2019-06-10-1">1. Word-based Domain Adaptation for Neural Machine Translation</h2>
 
+Title: [Word-based Domain Adaptation for Neural Machine Translation](https://arxiv.org/abs/1906.03129)
+Authors: [Shen Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+S), [Leonard Dahlmann](https://arxiv.org/search/cs?searchtype=author&query=Dahlmann%2C+L), [Pavel Petrushkov](https://arxiv.org/search/cs?searchtype=author&query=Petrushkov%2C+P), [Sanjika Hewavitharana](https://arxiv.org/search/cs?searchtype=author&query=Hewavitharana%2C+S), [Shahram Khadivi](https://arxiv.org/search/cs?searchtype=author&query=Khadivi%2C+S)
+
+*(Submitted on 7 Jun 2019)*
+
+> In this paper, we empirically investigate applying word-level weights to adapt neural machine translation to e-commerce domains, where small e-commerce datasets and large out-of-domain datasets are available. In order to mine in-domain like words in the out-of-domain datasets, we compute word weights by using a domain-specific and a non-domain-specific language model followed by smoothing and binary quantization. The baseline model is trained on mixed in-domain and out-of-domain datasets. Experimental results on English to Chinese e-commerce domain translation show that compared to continuing training without word weights, it improves MT quality by up to 2.11% BLEU absolute and 1.59% TER. We have also trained models using fine-tuning on the in-domain data. Pre-training a model with word weights improves fine-tuning up to 1.24% BLEU absolute and 1.64% TER, respectively.
+
+| Comments:          | Published on the proceedings of the International Workshop on Spoken Language Translation (IWSLT), 2018 |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Journal reference: | Proceedings of the 15th International Workshop on Spoken Language Translation, Bruges, Belgium, October 29-30, 2018 |
+| Cite as:           | **arXiv:1906.03129 [cs.CL]**                                 |
+|                    | (or **arXiv:1906.03129v1 [cs.CL]** for this version)         |
+
+<h2 id="2019-06-10-2">2. Shared-Private Bilingual Word Embeddings for Neural Machine Translation</h2>
+
+Title: [Shared-Private Bilingual Word Embeddings for Neural Machine Translation](https://arxiv.org/abs/1906.03100)
+Authors: [Xuebo Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Derek F. Wong](https://arxiv.org/search/cs?searchtype=author&query=Wong%2C+D+F), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Lidia S. Chao](https://arxiv.org/search/cs?searchtype=author&query=Chao%2C+L+S), [Tong Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+T), [Jingbo Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J)
+
+*(Submitted on 7 Jun 2019)*
+
+> Word embedding is central to neural machine translation (NMT), which has attracted intensive research interest in recent years. In NMT, the source embedding plays the role of the entrance while the target embedding acts as the terminal. These layers occupy most of the model parameters for representation learning. Furthermore, they indirectly interface via a soft-attention mechanism, which makes them comparatively isolated. In this paper, we propose shared-private bilingual word embeddings, which give a closer relationship between the source and target embeddings, and which also reduce the number of model parameters. For similar source and target words, their embeddings tend to share a part of the features and they cooperatively learn these common representation units. Experiments on 5 language pairs belonging to 6 different language families and written in 5 different alphabets demonstrate that the proposed model provides a significant performance boost over the strong baselines with dramatically fewer model parameters.
+
+| Comments: | Accepted to ACL 2019                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **arXiv:1906.03100 [cs.CL]**                                 |
+|           | (or **arXiv:1906.03100v1 [cs.CL]** for this version)         |
+
+<h2 id="2019-06-10-3">3. Syntactically Supervised Transformers for Faster Neural Machine Translation</h2>
+
+Title: [Syntactically Supervised Transformers for Faster Neural Machine Translation](https://arxiv.org/abs/1906.02780)
+Authors: 	[Nader Akoury](https://arxiv.org/search/cs?searchtype=author&query=Akoury%2C+N), [Kalpesh Krishna](https://arxiv.org/search/cs?searchtype=author&query=Krishna%2C+K), [Mohit Iyyer](https://arxiv.org/search/cs?searchtype=author&query=Iyyer%2C+M)
+
+*(Submitted on 6 Jun 2019)*
+
+> Standard decoders for neural machine translation autoregressively generate a single target token per time step, which slows inference especially for long outputs. While architectural advances such as the Transformer fully parallelize the decoder computations at training time, inference still proceeds sequentially. Recent developments in non- and semi- autoregressive decoding produce multiple tokens per time step independently of the others, which improves inference speed but deteriorates translation quality. In this work, we propose the syntactically supervised Transformer (SynST), which first autoregressively predicts a chunked parse tree before generating all of the target tokens in one shot conditioned on the predicted parse. A series of controlled experiments demonstrates that SynST decodes sentences ~ 5x faster than the baseline autoregressive Transformer while achieving higher BLEU scores than most competing methods on En-De and En-Fr datasets.
+
+| Comments: | 9 pages, 5 figures, accepted to ACL 2019             |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1906.02780 [cs.CL]**                         |
+|           | (or **arXiv:1906.02780v1 [cs.CL]** for this version) |
 
 # 2019-06-06
 
