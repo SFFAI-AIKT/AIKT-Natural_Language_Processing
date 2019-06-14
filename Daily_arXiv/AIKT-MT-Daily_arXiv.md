@@ -2,6 +2,14 @@
 
 ### Index
 
+- [2019-06-11](#2019-06-11)
+  - [1. The University of Helsinki submissions to the WMT19 news translation task](#2019-06-11-1)
+  - [2. Generalized Data Augmentation for Low-Resource Translation](#2019-06-11-2)
+  - [3. Is Attention Interpretable?](#2019-06-11-3)
+  - [4. Making Asynchronous Stochastic Gradient Descent Work for Transformers](#2019-06-11-4)
+  - [5. Assessing incrementality in sequence-to-sequence models](#2019-06-11-5)
+  - [6. Syntax-Infused Variational Autoencoder for Text Generation](#2019-06-11-6)
+
 - [2019-06-10](#2019-06-10)
   - [1. Word-based Domain Adaptation for Neural Machine Translation](#2019-06-10-1)
   - [2. Shared-Private Bilingual Word Embeddings for Neural Machine Translation](#2019-06-10-2)
@@ -32,7 +40,104 @@
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
 
+
+
+# 2019-06-11
+[Return to Index](#Index)
+<h2 id="2019-06-11-1">1. The University of Helsinki submissions to the WMT19 news translation task</h2>
+
+Title: [The University of Helsinki submissions to the WMT19 news translation task](https://arxiv.org/abs/1906.04040)
+Authors: [Aarne Talman](https://arxiv.org/search/cs?searchtype=author&query=Talman%2C+A), [Umut Sulubacak](https://arxiv.org/search/cs?searchtype=author&query=Sulubacak%2C+U), [Raúl Vázquez](https://arxiv.org/search/cs?searchtype=author&query=Vázquez%2C+R), [Yves Scherrer](https://arxiv.org/search/cs?searchtype=author&query=Scherrer%2C+Y), [Sami Virpioja](https://arxiv.org/search/cs?searchtype=author&query=Virpioja%2C+S), [Alessandro Raganato](https://arxiv.org/search/cs?searchtype=author&query=Raganato%2C+A), [Arvi Hurskainen](https://arxiv.org/search/cs?searchtype=author&query=Hurskainen%2C+A), [Jörg Tiedemann](https://arxiv.org/search/cs?searchtype=author&query=Tiedemann%2C+J)
+
+*(Submitted on 10 Jun 2019)*
+
+> In this paper, we present the University of Helsinki submissions to the WMT 2019 shared task on news translation in three language pairs: English-German, English-Finnish and Finnish-English. This year, we focused first on cleaning and filtering the training data using multiple data-filtering approaches, resulting in much smaller and cleaner training sets. For English-German, we trained both sentence-level transformer models and compared different document-level translation approaches. For Finnish-English and English-Finnish we focused on different segmentation approaches, and we also included a rule-based system for English-Finnish.
+
+| Comments: | To appear in WMT19                                   |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1906.04040 [cs.CL]**                         |
+|           | (or **arXiv:1906.04040v1 [cs.CL]** for this version) |
+
+<h2 id="2019-06-11-2">2. Generalized Data Augmentation for Low-Resource Translation</h2>
+
+Title: [Generalized Data Augmentation for Low-Resource Translation](https://arxiv.org/abs/1906.03785)
+Authors: [Mengzhou Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%2C+M), [Xiang Kong](https://arxiv.org/search/cs?searchtype=author&query=Kong%2C+X), [Antonios Anastasopoulos](https://arxiv.org/search/cs?searchtype=author&query=Anastasopoulos%2C+A), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
+
+*(Submitted on 10 Jun 2019)*
+
+> Translation to or from low-resource languages LRLs poses challenges for machine translation in terms of both adequacy and fluency. Data augmentation utilizing large amounts of monolingual data is regarded as an effective way to alleviate these problems. In this paper, we propose a general framework for data augmentation in low-resource machine translation that not only uses target-side monolingual data, but also pivots through a related high-resource language HRL. Specifically, we experiment with a two-step pivoting method to convert high-resource data to the LRL, making use of available resources to better approximate the true data distribution of the LRL. First, we inject LRL words into HRL sentences through an induced bilingual dictionary. Second, we further edit these modified sentences using a modified unsupervised machine translation framework. Extensive experiments on four low-resource datasets show that under extreme low-resource settings, our data augmentation techniques improve translation quality by up to~1.5 to~8 BLEU points compared to supervised back-translation baselines
+
+| Comments: | Accepted to ACL 2019                                 |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1906.03785 [cs.CL]**                         |
+|           | (or **arXiv:1906.03785v1 [cs.CL]** for this version) |
+
+<h2 id="2019-06-11-3">3. Is Attention Interpretable?</h2>
+
+Title: [Is Attention Interpretable?](https://arxiv.org/abs/1906.03731)
+Authors: [Sofia Serrano](https://arxiv.org/search/cs?searchtype=author&query=Serrano%2C+S), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith%2C+N+A)
+
+*(Submitted on 9 Jun 2019)*
+
+> Attention mechanisms have recently boosted performance on a range of NLP tasks. Because attention layers explicitly weight input components' representations, it is also often assumed that attention can be used to identify information that models found important (e.g., specific contextualized word tokens). We test whether that assumption holds by manipulating attention weights in already-trained text classification models and analyzing the resulting differences in their predictions. While we observe some ways in which higher attention weights correlate with greater impact on model predictions, we also find many ways in which this does not hold, i.e., where gradient-based rankings of attention weights better predict their effects than their magnitudes. We conclude that while attention noisily predicts input components' overall importance to a model, it is by no means a fail-safe indicator.
+
+| Comments: | To appear at ACL 2019                                |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1906.03731 [cs.CL]**                         |
+|           | (or **arXiv:1906.03731v1 [cs.CL]** for this version) |
+
+<h2 id="2019-06-11-4">4. Making Asynchronous Stochastic Gradient Descent Work for Transformers</h2>
+
+Title: [Making Asynchronous Stochastic Gradient Descent Work for Transformers](https://arxiv.org/abs/1906.03496)
+Authors: [Alham Fikri Aji](https://arxiv.org/search/cs?searchtype=author&query=Aji%2C+A+F), [Kenneth Heafield](https://arxiv.org/search/cs?searchtype=author&query=Heafield%2C+K)
+
+*(Submitted on 8 Jun 2019)*
+
+> Asynchronous stochastic gradient descent (SGD) is attractive from a speed perspective because workers do not wait for synchronization. However, the Transformer model converges poorly with asynchronous SGD, resulting in substantially lower quality compared to synchronous SGD. To investigate why this is the case, we isolate differences between asynchronous and synchronous methods to investigate batch size and staleness effects. We find that summing several asynchronous updates, rather than applying them immediately, restores convergence behavior. With this hybrid method, Transformer training for neural machine translation task reaches a near-convergence level 1.36x faster in single-node multi-GPU training with no impact on model quality.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1906.03496 [cs.CL]**                                 |
+|           | (or **arXiv:1906.03496v1 [cs.CL]** for this version)         |
+
+<h2 id="2019-06-11-5">5. Assessing incrementality in sequence-to-sequence models</h2>
+
+Title: [Assessing incrementality in sequence-to-sequence models](https://arxiv.org/abs/1906.03293)
+Authors: [Dennis Ulmer](https://arxiv.org/search/cs?searchtype=author&query=Ulmer%2C+D), [Dieuwke Hupkes](https://arxiv.org/search/cs?searchtype=author&query=Hupkes%2C+D), [Elia Bruni](https://arxiv.org/search/cs?searchtype=author&query=Bruni%2C+E)
+
+*(Submitted on 7 Jun 2019)*
+
+> Since their inception, encoder-decoder models have successfully been applied to a wide array of problems in computational linguistics. The most recent successes are predominantly due to the use of different variations of attention mechanisms, but their cognitive plausibility is questionable. In particular, because past representations can be revisited at any point in time, attention-centric methods seem to lack an incentive to build up incrementally more informative representations of incoming sentences. This way of processing stands in stark contrast with the way in which humans are believed to process language: continuously and rapidly integrating new information as it is encountered. In this work, we propose three novel metrics to assess the behavior of RNNs with and without an attention mechanism and identify key differences in the way the different model types process sentences.
+
+| Comments: | Accepted at Repl4NLP, ACL                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1906.03293 [cs.CL]**                                 |
+|           | (or **arXiv:1906.03293v1 [cs.CL]** for this version)         |
+
+<h2 id="2019-06-11-6">6. Syntax-Infused Variational Autoencoder for Text Generation</h2>
+
+Title: [Syntax-Infused Variational Autoencoder for Text Generation](https://arxiv.org/abs/1906.02181)
+Authors: [Xinyuan Zhang](https://arxiv.org/search/stat?searchtype=author&query=Zhang%2C+X), [Yi Yang](https://arxiv.org/search/stat?searchtype=author&query=Yang%2C+Y), [Siyang Yuan](https://arxiv.org/search/stat?searchtype=author&query=Yuan%2C+S), [Dinghan Shen](https://arxiv.org/search/stat?searchtype=author&query=Shen%2C+D), [Lawrence Carin](https://arxiv.org/search/stat?searchtype=author&query=Carin%2C+L)
+
+*(Submitted on 5 Jun 2019)*
+
+> We present a syntax-infused variational autoencoder (SIVAE), that integrates sentences with their syntactic trees to improve the grammar of generated sentences. Distinct from existing VAE-based text generative models, SIVAE contains two separate latent spaces, for sentences and syntactic trees. The evidence lower bound objective is redesigned correspondingly, by optimizing a joint distribution that accommodates two encoders and two decoders. SIVAE works with long short-term memory architectures to simultaneously generate sentences and syntactic trees. Two versions of SIVAE are proposed: one captures the dependencies between the latent variables through a conditional prior network, and the other treats the latent variables independently such that syntactically-controlled sentence generation can be performed. Experimental results demonstrate the generative superiority of SIVAE on both reconstruction and targeted syntactic evaluations. Finally, we show that the proposed models can be used for unsupervised paraphrasing given different syntactic tree templates.
+
+| Comments: | Accepted by ACL 2019                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (stat.ML)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1906.02181 [stat.ML]**                               |
+|           | (or **arXiv:1906.02181v1 [stat.ML]** for this version)       |
+
+
+
+
 # 2019-06-10
+
 [Return to Index](#Index)
 <h2 id="2019-06-10-1">1. Word-based Domain Adaptation for Neural Machine Translation</h2>
 
