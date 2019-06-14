@@ -2,6 +2,11 @@
 
 ### Index
 
+- [2019-06-12](#2019-06-12)
+  - [1. What Does BERT Look At? An Analysis of BERT's Attention](#2019-06-12-1)
+  - [2. Parallel Scheduled Sampling](#2019-06-12-2)
+  - [3. Analyzing the Structure of Attention in a Transformer Language Model](#2019-06-12-3)
+
 - [2019-06-11](#2019-06-11)
   - [1. The University of Helsinki submissions to the WMT19 news translation task](#2019-06-11-1)
   - [2. Generalized Data Augmentation for Low-Resource Translation](#2019-06-11-2)
@@ -39,6 +44,55 @@
 * [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-06-12
+[Return to Index](#Index)
+<h2 id="2019-06-12-1">1. What Does BERT Look At? An Analysis of BERT's Attention</h2>
+Title: [What Does BERT Look At? An Analysis of BERT's Attention](https://arxiv.org/abs/1906.04341)
+Authors: [Kevin Clark](https://arxiv.org/search/cs?searchtype=author&query=Clark%2C+K), [Urvashi Khandelwal](https://arxiv.org/search/cs?searchtype=author&query=Khandelwal%2C+U), [Omer Levy](https://arxiv.org/search/cs?searchtype=author&query=Levy%2C+O), [Christopher D. Manning](https://arxiv.org/search/cs?searchtype=author&query=Manning%2C+C+D)
+
+*(Submitted on 11 Jun 2019)*
+
+> Large pre-trained neural networks such as BERT have had great recent success in NLP, motivating a growing body of research investigating what aspects of language they are able to learn from unlabeled data. Most recent analysis has focused on model outputs (e.g., language model surprisal) or internal vector representations (e.g., probing classifiers). Complementary to these works, we propose methods for analyzing the attention mechanisms of pre-trained models and apply them to BERT. BERT's attention heads exhibit patterns such as attending to delimiter tokens, specific positional offsets, or broadly attending over the whole sentence, with heads in the same layer often exhibiting similar behaviors. We further show that certain attention heads correspond well to linguistic notions of syntax and coreference. For example, we find heads that attend to the direct objects of verbs, determiners of nouns, objects of prepositions, and coreferent mentions with remarkably high accuracy. Lastly, we propose an attention-based probing classifier and use it to further demonstrate that substantial syntactic information is captured in BERT's attention.
+
+| Comments: | BlackBoxNLP 2019                                     |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1906.04341 [cs.CL]**                         |
+|           | (or **arXiv:1906.04341v1 [cs.CL]** for this version) |
+
+<h2 id="2019-06-12-2">2. Parallel Scheduled Sampling</h2>
+
+Title: [Parallel Scheduled Sampling](https://arxiv.org/abs/1906.04331)
+Authors:[Daniel Duckworth](https://arxiv.org/search/cs?searchtype=author&query=Duckworth%2C+D), [Arvind Neelakantan](https://arxiv.org/search/cs?searchtype=author&query=Neelakantan%2C+A), [Ben Goodrich](https://arxiv.org/search/cs?searchtype=author&query=Goodrich%2C+B), [Lukasz Kaiser](https://arxiv.org/search/cs?searchtype=author&query=Kaiser%2C+L), [Samy Bengio](https://arxiv.org/search/cs?searchtype=author&query=Bengio%2C+S)
+
+*(Submitted on 11 Jun 2019)*
+
+> Auto-regressive models are widely used in sequence generation problems. The output sequence is typically generated in a predetermined order, one discrete unit (pixel or word or character) at a time. The models are trained by teacher-forcing where ground-truth history is fed to the model as input, which at test time is replaced by the model prediction. Scheduled Sampling aims to mitigate this discrepancy between train and test time by randomly replacing some discrete units in the history with the model's prediction. While teacher-forced training works well with ML accelerators as the computation can be parallelized across time, Scheduled Sampling involves undesirable sequential processing. In this paper, we introduce a simple technique to parallelize Scheduled Sampling across time. We find that in most cases our technique leads to better empirical performance on summarization and dialog generation tasks compared to teacher-forced training. Further, we discuss the effects of different hyper-parameters associated with Scheduled Sampling on the model performance.
+
+| Comments: | Initial submission                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1906.04331 [cs.CL]**                                 |
+|           | (or **arXiv:1906.04331v1 [cs.CL]** for this version)         |
+
+<h2 id="2019-06-12-3">3. Analyzing the Structure of Attention in a Transformer Language Model</h2>
+
+Title: [Analyzing the Structure of Attention in a Transformer Language Model](https://arxiv.org/abs/1906.04284)
+Authors: [Jesse Vig](https://arxiv.org/search/cs?searchtype=author&query=Vig%2C+J), [Yonatan Belinkov](https://arxiv.org/search/cs?searchtype=author&query=Belinkov%2C+Y)
+
+*(Submitted on 7 Jun 2019)*
+
+> The Transformer is a fully attention-based alternative to recurrent networks that has achieved state-of-the-art results across a range of NLP tasks. In this paper, we analyze the structure of attention in a Transformer language model, the GPT-2 small pretrained model. We visualize attention for individual instances and analyze the interaction between attention and syntax over a large corpus. We find that attention targets different parts of speech at different layer depths within the model, and that attention aligns with dependency relations most strongly in the middle layers. We also find that the deepest layers of the model capture the most distant relationships. Finally, we extract exemplar sentences that reveal highly specific patterns targeted by particular attention heads.
+
+| Comments: | To appear in ACL BlackboxNLP workshop                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| Cite as:  | **arXiv:1906.04284 [cs.CL]**                                 |
+|           | (or **arXiv:1906.04284v1 [cs.CL]** for this version)         |
+
 
 
 
