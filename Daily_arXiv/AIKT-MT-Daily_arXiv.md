@@ -2,6 +2,10 @@
 
 ### Index
 
+- [2019-06-13](#2019-06-13)
+  - [1. Continual and Multi-Task Architecture Search](#2019-06-13-1)
+  - [2. Monotonic Infinite Lookback Attention for Simultaneous Machine Translation](#2019-06-13-2)
+
 - [2019-06-12](#2019-06-12)
   - [1. What Does BERT Look At? An Analysis of BERT's Attention](#2019-06-12-1)
   - [2. Parallel Scheduled Sampling](#2019-06-12-2)
@@ -44,6 +48,40 @@
 * [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-06-13
+[Return to Index](#Index)
+<h2 id="2019-06-13-1">1. Continual and Multi-Task Architecture Search</h2>
+
+Title: [Continual and Multi-Task Architecture Search](https://arxiv.org/abs/1906.05226)
+Authors: [Ramakanth Pasunuru](https://arxiv.org/search/cs?searchtype=author&query=Pasunuru%2C+R), [Mohit Bansal](https://arxiv.org/search/cs?searchtype=author&query=Bansal%2C+M)
+
+*(Submitted on 12 Jun 2019)*
+
+> Architecture search is the process of automatically learning the neural model or cell structure that best suits the given task. Recently, this approach has shown promising performance improvements (on language modeling and image classification) with reasonable training speed, using a weight sharing strategy called Efficient Neural Architecture Search (ENAS). In our work, we first introduce a novel continual architecture search (CAS) approach, so as to continually evolve the model parameters during the sequential training of several tasks, without losing performance on previously learned tasks (via block-sparsity and orthogonality constraints), thus enabling life-long learning. Next, we explore a multi-task architecture search (MAS) approach over ENAS for finding a unified, single cell structure that performs well across multiple tasks (via joint controller rewards), and hence allows more generalizable transfer of the cell structure knowledge to an unseen new task. We empirically show the effectiveness of our sequential continual learning and parallel multi-task learning based architecture search approaches on diverse sentence-pair classification tasks (GLUE) and multimodal-generation based video captioning tasks. Further, we present several ablations and analyses on the learned cell structures.
+
+| Comments: | ACL 2019 (12 pages)                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1906.05226 [cs.CL]**                                 |
+|           | (or **arXiv:1906.05226v1 [cs.CL]** for this version)         |
+
+<h2 id="2019-06-13-2">2. Monotonic Infinite Lookback Attention for Simultaneous Machine Translation</h2>
+
+Title: [Monotonic Infinite Lookback Attention for Simultaneous Machine Translation](https://arxiv.org/abs/1906.05218)
+Authors: [Naveen Arivazhagan](https://arxiv.org/search/cs?searchtype=author&query=Arivazhagan%2C+N), [Colin Cherry](https://arxiv.org/search/cs?searchtype=author&query=Cherry%2C+C), [Wolfgang Macherey](https://arxiv.org/search/cs?searchtype=author&query=Macherey%2C+W), [Chung-Cheng Chiu](https://arxiv.org/search/cs?searchtype=author&query=Chiu%2C+C), [Semih Yavuz](https://arxiv.org/search/cs?searchtype=author&query=Yavuz%2C+S), [Ruoming Pang](https://arxiv.org/search/cs?searchtype=author&query=Pang%2C+R), [Wei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+W), [Colin Raffel](https://arxiv.org/search/cs?searchtype=author&query=Raffel%2C+C)
+
+*(Submitted on 12 Jun 2019)*
+
+> Simultaneous machine translation begins to translate each source sentence before the source speaker is finished speaking, with applications to live and streaming scenarios. Simultaneous systems must carefully schedule their reading of the source sentence to balance quality against latency. We present the first simultaneous translation system to learn an adaptive schedule jointly with a neural machine translation (NMT) model that attends over all source tokens read thus far. We do so by introducing Monotonic Infinite Lookback (MILk) attention, which maintains both a hard, monotonic attention head to schedule the reading of the source sentence, and a soft attention head that extends from the monotonic head back to the beginning of the source. We show that MILk's adaptive schedule allows it to arrive at latency-quality trade-offs that are favorable to those of a recently proposed wait-k strategy for many latency values.
+
+| Comments: | Accepted for publication at ACL 2019                 |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1906.05218 [cs.CL]**                         |
+|           | (or **arXiv:1906.05218v1 [cs.CL]** for this version) |
 
 
 
