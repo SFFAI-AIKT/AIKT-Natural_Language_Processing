@@ -2,6 +2,8 @@
 
 ### Index
 
+- [2019-06-17](#2019-06-17)
+  - [1. A Simple and Effective Approach to Automatic Post-Editing with Transfer Learning](#2019-06-17-1)
 - [2019-06-14](#2019-06-14)
   - [1. UCAM Biomedical translation at WMT19: Transfer learning multi-domain ensembles](#2019-06-14-1)
   - [2. A Focus on Neural Machine Translation for African Languages](#2019-06-14-2)
@@ -11,16 +13,13 @@
   - [6. Analyzing the Limitations of Cross-lingual Word Embedding Mappings](#2019-06-14-6)
   - [7. Compositional generalization through meta sequence-to-sequence learning](#2019-06-14-7)
   - [8. A Multiscale Visualization of Attention in the Transformer Model](#2019-06-14-8)
-
 - [2019-06-13](#2019-06-13)
   - [1. Continual and Multi-Task Architecture Search](#2019-06-13-1)
   - [2. Monotonic Infinite Lookback Attention for Simultaneous Machine Translation](#2019-06-13-2)
-
 - [2019-06-12](#2019-06-12)
   - [1. What Does BERT Look At? An Analysis of BERT's Attention](#2019-06-12-1)
   - [2. Parallel Scheduled Sampling](#2019-06-12-2)
   - [3. Analyzing the Structure of Attention in a Transformer Language Model](#2019-06-12-3)
-
 - [2019-06-11](#2019-06-11)
   - [1. The University of Helsinki submissions to the WMT19 news translation task](#2019-06-11-1)
   - [2. Generalized Data Augmentation for Low-Resource Translation](#2019-06-11-2)
@@ -28,12 +27,10 @@
   - [4. Making Asynchronous Stochastic Gradient Descent Work for Transformers](#2019-06-11-4)
   - [5. Assessing incrementality in sequence-to-sequence models](#2019-06-11-5)
   - [6. Syntax-Infused Variational Autoencoder for Text Generation](#2019-06-11-6)
-
 - [2019-06-10](#2019-06-10)
   - [1. Word-based Domain Adaptation for Neural Machine Translation](#2019-06-10-1)
   - [2. Shared-Private Bilingual Word Embeddings for Neural Machine Translation](#2019-06-10-2)
   - [3. Syntactically Supervised Transformers for Faster Neural Machine Translation](#2019-06-10-3)
-
 - [2019-06-06](#2019-06-06)
   - [1. Imitation Learning for Non-Autoregressive Neural Machine Translation](#2019-06-06-1)
   - [2. The Unreasonable Effectiveness of Transformer Language Models in Grammatical Error Correction](#2019-06-06-2)
@@ -58,6 +55,24 @@
 * [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-06-17
+[Return to Index](#Index)
+<h2 id="2019-06-17-1">1. A Simple and Effective Approach to Automatic Post-Editing with Transfer Learning</h2>
+Title: [A Simple and Effective Approach to Automatic Post-Editing with Transfer Learning](https://arxiv.org/abs/1906.06253)
+Authors: [Gonçalo M. Correia](https://arxiv.org/search/cs?searchtype=author&query=Correia%2C+G+M), [André F. T. Martins](https://arxiv.org/search/cs?searchtype=author&query=Martins%2C+A+F+T)
+
+*(Submitted on 14 Jun 2019)*
+
+> Automatic post-editing (APE) seeks to automatically refine the output of a black-box machine translation (MT) system through human post-edits. APE systems are usually trained by complementing human post-edited data with large, artificial data generated through back-translations, a time-consuming process often no easier than training an MT system from scratch. In this paper, we propose an alternative where we fine-tune pre-trained BERT models on both the encoder and decoder of an APE system, exploring several parameter sharing strategies. By only training on a dataset of 23K sentences for 3 hours on a single GPU, we obtain results that are competitive with systems that were trained on 5M artificial sentences. When we add this artificial data, our method obtains state-of-the-art results.
+
+| Comments: | In proceedings of ACL 2019                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1906.06253 [cs.CL]**                                 |
+|           | (or **arXiv:1906.06253v1 [cs.CL]** for this version)         |
 
 
 
