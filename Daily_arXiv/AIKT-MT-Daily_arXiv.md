@@ -2,6 +2,11 @@
 
 ### Index
 
+- [2019-06-18](#2019-06-18)
+  - [1. Fixing Gaussian Mixture VAEs for Interpretable Text Generation](#2019-06-18-1)
+  - [2. Tagged Back-Translation](#2019-06-18-2)
+  - [3. Towards Integration of Statistical Hypothesis Tests into Deep Neural Networks](#2019-06-18-3)
+  - [4. Context is Key: Grammatical Error Detection with Contextual Word Representations](#2019-06-18-4)
 - [2019-06-17](#2019-06-17)
   - [1. A Simple and Effective Approach to Automatic Post-Editing with Transfer Learning](#2019-06-17-1)
 - [2019-06-14](#2019-06-14)
@@ -57,6 +62,71 @@
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
 
 
+
+# 2019-06-18
+[Return to Index](#Index)
+
+<h2 id="2019-06-18-1">1. 
+Fixing Gaussian Mixture VAEs for Interpretable Text Generation</h2>
+
+Title: [Fixing Gaussian Mixture VAEs for Interpretable Text Generation](https://arxiv.org/abs/1906.06719)
+Authors: [Wenxian Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+W), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Ning Miao](https://arxiv.org/search/cs?searchtype=author&query=Miao%2C+N), [Shenjian Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+S), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+*(Submitted on 16 Jun 2019)*
+
+> Variational auto-encoder (VAE) with Gaussian priors is effective in text generation. To improve the controllability and interpretability, we propose to use Gaussian mixture distribution as the prior for VAE (GMVAE), since it includes an extra discrete latent variable in addition to the continuous one. Unfortunately, training GMVAE using standard variational approximation often leads to the mode-collapse problem. We theoretically analyze the root cause --- maximizing the evidence lower bound of GMVAE implicitly aggregates the means of multiple Gaussian priors. We propose Dispersed-GMVAE (DGMVAE), an improved model for text generation. It introduces two extra terms to alleviate mode-collapse and to induce a better structured latent space. Experimental results show that DGMVAE outperforms strong baselines in several language modeling and text generation benchmarks.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1906.06719 [cs.LG]**                                 |
+|           | (or **arXiv:1906.06719v1 [cs.LG]** for this version)         |
+
+
+<h2 id="2019-06-18-2">2. Tagged Back-Translation</h2>
+
+Title: [Tagged Back-Translation](https://arxiv.org/abs/1906.06442)
+Authors: [Isaac Caswell](https://arxiv.org/search/cs?searchtype=author&query=Caswell%2C+I), [Ciprian Chelba](https://arxiv.org/search/cs?searchtype=author&query=Chelba%2C+C), [David Grangier](https://arxiv.org/search/cs?searchtype=author&query=Grangier%2C+D)
+
+*(Submitted on 15 Jun 2019)*
+
+> Recent work in Neural Machine Translation (NMT) has shown significant quality gains from noised-beam decoding during back-translation, a method to generate synthetic parallel data. We show that the main role of such synthetic noise is not to diversify the source side, as previously suggested, but simply to indicate to the model that the given source is synthetic. We propose a simpler alternative to noising techniques, consisting of tagging back-translated source sentences with an extra token. Our results on WMT outperform noised back-translation in English-Romanian and match performance on English-German, re-defining state-of-the-art in the former.
+
+| Comments: | Accepted as oral presentation in WMT 2019; 9 pages; 9 tables; 1 figure |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **arXiv:1906.06442 [cs.CL]**                                 |
+|           | (or **arXiv:1906.06442v1 [cs.CL]** for this version)         |
+
+<h2 id="2019-06-18-3">3. Towards Integration of Statistical Hypothesis Tests into Deep Neural Networks
+</h2>
+
+Title: [Towards Integration of Statistical Hypothesis Tests into Deep Neural Networks](https://arxiv.org/abs/1906.06550)
+Authors: [Ahmad Aghaebrahimian](https://arxiv.org/search/cs?searchtype=author&query=Aghaebrahimian%2C+A), [Mark Cieliebak](https://arxiv.org/search/cs?searchtype=author&query=Cieliebak%2C+M)
+
+*(Submitted on 15 Jun 2019)*
+
+> We report our ongoing work about a new deep architecture working in tandem with a statistical test procedure for jointly training texts and their label descriptions for multi-label and multi-class classification tasks. A statistical hypothesis testing method is used to extract the most informative words for each given class. These words are used as a class description for more label-aware text classification. Intuition is to help the model to concentrate on more informative words rather than more frequent ones. The model leverages the use of label descriptions in addition to the input text to enhance text classification performance. Our method is entirely data-driven, has no dependency on other sources of information than the training data, and is adaptable to different classification problems by providing appropriate training data without major hyper-parameter tuning. We trained and tested our system on several publicly available datasets, where we managed to improve the state-of-the-art on one set with a high margin, and to obtain competitive results on all other ones.
+
+| Comments: | Accepted to ACL 2019                                 |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1906.06550 [cs.CL]**                         |
+|           | (or **arXiv:1906.06550v1 [cs.CL]** for this version) |
+
+<h2 id="2019-06-18-4">4. Context is Key: Grammatical Error Detection with Contextual Word Representations
+</h2>
+
+Title: [Context is Key: Grammatical Error Detection with Contextual Word Representations](https://arxiv.org/abs/1906.06593)
+Authors: [Samuel Bell](https://arxiv.org/search/cs?searchtype=author&query=Bell%2C+S), [Helen Yannakoudakis](https://arxiv.org/search/cs?searchtype=author&query=Yannakoudakis%2C+H), [Marek Rei](https://arxiv.org/search/cs?searchtype=author&query=Rei%2C+M)
+
+*(Submitted on 15 Jun 2019)*
+
+> Grammatical error detection (GED) in non-native writing requires systems to identify a wide range of errors in text written by language learners. Error detection as a purely supervised task can be challenging, as GED datasets are limited in size and the label distributions are highly imbalanced. Contextualized word representations offer a possible solution, as they can efficiently capture compositional information in language and can be optimized on large amounts of unsupervised data. In this paper, we perform a systematic comparison of ELMo, BERT and Flair embeddings (Peters et al., 2017; Devlin et al., 2018; Akbik et al., 2018) on a range of public GED datasets, and propose an approach to effectively integrate such representations in current methods, achieving a new state of the art on GED. We further analyze the strengths and weaknesses of different contextual embeddings for the task at hand, and present detailed analyses of their impact on different types of errors.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1906.06593 [cs.CL]**                                 |
+|           | (or **arXiv:1906.06593v1 [cs.CL]** for this version)         |
 
 # 2019-06-17
 [Return to Index](#Index)
