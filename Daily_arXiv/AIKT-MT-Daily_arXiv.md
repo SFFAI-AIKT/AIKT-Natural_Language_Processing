@@ -8,6 +8,10 @@
   - [3. The Effect of Translationese in Machine Translation Test Sets](#2019-06-20-3)
   - [4. Pre-Training with Whole Word Masking for Chinese BERT](#2019-06-20-4)
   - [5. XLNet: Generalized Autoregressive Pretraining for Language Understanding](#2019-06-20-5)
+- [2019-06-19](#2019-06-19)
+  - [1. Generalizing Back-Translation in Neural Machine Translation](#2019-06-19-1)
+  - [2. Scheduled Sampling for Transformers](#2019-06-19-2)
+  - [3. Distilling Translations with Visual Awareness](#2019-06-19-3)
 - [2019-06-18](#2019-06-18)
   - [1. Fixing Gaussian Mixture VAEs for Interpretable Text Generation](#2019-06-18-1)
   - [2. Tagged Back-Translation](#2019-06-18-2)
@@ -150,11 +154,63 @@ Authors: [Zhilin Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%
 
 
 
+# 2019-06-19
+
+[Return to Index](#Index)
+
+<h2 id="2019-06-19-1">1. Generalizing Back-Translation in Neural Machine Translation</h2>
+
+Title: [Generalizing Back-Translation in Neural Machine Translation](https://arxiv.org/abs/1906.07286)
+
+Authors: [Miguel Graça](https://arxiv.org/search/cs?searchtype=author&query=Graça%2C+M), [Yunsu Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+Y), [Julian Schamper](https://arxiv.org/search/cs?searchtype=author&query=Schamper%2C+J), [Shahram Khadivi](https://arxiv.org/search/cs?searchtype=author&query=Khadivi%2C+S), [Hermann Ney](https://arxiv.org/search/cs?searchtype=author&query=Ney%2C+H)
+
+*(Submitted on 17 Jun 2019)*
+
+> Back-translation - data augmentation by translating target monolingual data - is a crucial component in modern neural machine translation (NMT). In this work, we reformulate back-translation in the scope of cross-entropy optimization of an NMT model, clarifying its underlying mathematical assumptions and approximations beyond its heuristic usage. Our formulation covers broader synthetic data generation schemes, including sampling from a target-to-source NMT model. With this formulation, we point out fundamental problems of the sampling-based approaches and propose to remedy them by (i) disabling label smoothing for the target-to-source model and (ii) sampling from a restricted search space. Our statements are investigated on the WMT 2018 German - English news translation task.
+
+| Comments: | 4th Conference on Machine Translation (WMT 2019) camera-ready |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1906.07286 [cs.CL]**                                 |
+|           | (or **arXiv:1906.07286v1 [cs.CL]** for this version)         |
+
+<h2 id="2019-06-19-2">2. Scheduled Sampling for Transformers</h2>
+
+Title: [Scheduled Sampling for Transformers](https://arxiv.org/abs/1906.07651)
+
+Authors: [Tsvetomila Mihaylova](https://arxiv.org/search/cs?searchtype=author&query=Mihaylova%2C+T), [André F. T. Martins](https://arxiv.org/search/cs?searchtype=author&query=Martins%2C+A+F+T)
+
+*(Submitted on 18 Jun 2019)*
+
+> Scheduled sampling is a technique for avoiding one of the known problems in sequence-to-sequence generation: exposure bias. It consists of feeding the model a mix of the teacher forced embeddings and the model predictions from the previous step in training time. The technique has been used for improving the model performance with recurrent neural networks (RNN). In the Transformer model, unlike the RNN, the generation of a new word attends to the full sentence generated so far, not only to the last word, and it is not straightforward to apply the scheduled sampling technique. We propose some structural changes to allow scheduled sampling to be applied to Transformer architecture, via a two-pass decoding strategy. Experiments on two language pairs achieve performance close to a teacher-forcing baseline and show that this technique is promising for further exploration.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1906.07651 [cs.CL]**                         |
+|           | (or **arXiv:1906.07651v1 [cs.CL]** for this version) |
+
+<h2 id="2019-06-19-3">3. Distilling Translations with Visual Awareness</h2>
+
+Title: [Distilling Translations with Visual Awareness](https://arxiv.org/abs/1906.07701)
+
+Authors: [Julia Ive](https://arxiv.org/search/cs?searchtype=author&query=Ive%2C+J), [Pranava Madhyastha](https://arxiv.org/search/cs?searchtype=author&query=Madhyastha%2C+P), [Lucia Specia](https://arxiv.org/search/cs?searchtype=author&query=Specia%2C+L)
+
+*(Submitted on 18 Jun 2019)*
+
+> Previous work on multimodal machine translation has shown that visual information is only needed in very specific cases, for example in the presence of ambiguous words where the textual context is not sufficient. As a consequence, models tend to learn to ignore this information. We propose a translate-and-refine approach to this problem where images are only used by a second stage decoder. This approach is trained jointly to generate a good first draft translation and to improve over this draft by (i) making better use of the target language textual context (both left and right-side contexts) and (ii) making use of visual context. This approach leads to the state of the art results. Additionally, we show that it has the ability to recover from erroneous or missing words in the source language.
+
+| Comments: | accepted to ACL 2019                                 |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1906.07701 [cs.CL]**                         |
+|           | (or **arXiv:1906.07701v1 [cs.CL]** for this version) |
+
+
 # 2019-06-18
 [Return to Index](#Index)
 
-<h2 id="2019-06-18-1">1. 
-Fixing Gaussian Mixture VAEs for Interpretable Text Generation</h2>
+<h2 id="2019-06-18-1">1. Fixing Gaussian Mixture VAEs for Interpretable Text Generation</h2>
+
 
 Title: [Fixing Gaussian Mixture VAEs for Interpretable Text Generation](https://arxiv.org/abs/1906.06719)
 Authors: [Wenxian Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+W), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Ning Miao](https://arxiv.org/search/cs?searchtype=author&query=Miao%2C+N), [Shenjian Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+S), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
