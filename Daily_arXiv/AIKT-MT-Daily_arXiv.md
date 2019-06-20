@@ -69,6 +69,87 @@
 
 
 
+# 2019-06-20
+
+[Return to Index](#Index)
+<h2 id="2019-06-20-1">1. Adaptation of Machine Translation Models with Back-translated Data using Transductive Data Selection Methods</h2>
+
+Title: [Adaptation of Machine Translation Models with Back-translated Data using Transductive Data Selection Methods](https://arxiv.org/abs/1906.07808#)
+Authors: [Alberto Poncelas](https://arxiv.org/search/cs?searchtype=author&query=Poncelas%2C+A), [Gideon Maillette de Buy Wenniger](https://arxiv.org/search/cs?searchtype=author&query=de+Buy+Wenniger%2C+G+M), [Andy Way](https://arxiv.org/search/cs?searchtype=author&query=Way%2C+A)
+
+*(Submitted on 18 Jun 2019)*
+
+> Data selection has proven its merit for improving Neural Machine Translation (NMT), when applied to authentic data. But the benefit of using synthetic data in NMT training, produced by the popular back-translation technique, raises the question if data selection could also be useful for synthetic data? 
+> In this work we use Infrequent N-gram Recovery (INR) and Feature Decay Algorithms (FDA), two transductive data selection methods to obtain subsets of sentences from synthetic data. These methods ensure that selected sentences share n-grams with the test set so the NMT model can be adapted to translate it. 
+> Performing data selection on back-translated data creates new challenges as the source-side may contain noise originated by the model used in the back-translation. Hence, finding n-grams present in the test set become more difficult. Despite that, in our work we show that adapting a model with a selection of synthetic data is an useful approach.
+
+| Comments: | Accepted in CICLing 2019                             |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1906.07808 [cs.CL]**                         |
+|           | (or **arXiv:1906.07808v1 [cs.CL]** for this version) |
+
+<h2 id="2019-06-20-2">2. Multilingual Multi-Domain Adaptation Approaches for Neural Machine Translation</h2>
+
+Title: [Multilingual Multi-Domain Adaptation Approaches for Neural Machine Translation](https://arxiv.org/abs/1906.07978)
+Authors: [Chenhui Chu](https://arxiv.org/search/cs?searchtype=author&query=Chu%2C+C), [Raj Dabre](https://arxiv.org/search/cs?searchtype=author&query=Dabre%2C+R)
+
+*(Submitted on 19 Jun 2019)*
+
+> In this paper, we propose two novel methods for domain adaptation for the attention-only neural machine translation (NMT) model, i.e., the Transformer. Our methods focus on training a single translation model for multiple domains by either learning domain specialized hidden state representations or predictor biases for each domain. We combine our methods with a previously proposed black-box method called mixed fine tuning, which is known to be highly effective for domain adaptation. In addition, we incorporate multilingualism into the domain adaptation framework. Experiments show that multilingual multi-domain adaptation can significantly improve both resource-poor in-domain and resource-rich out-of-domain translations, and the combination of our methods with mixed fine tuning achieves the best performance.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1906.07978 [cs.CL]**                         |
+|           | (or **arXiv:1906.07978v1 [cs.CL]** for this version) |
+
+<h2 id="2019-06-20-3">3. The Effect of Translationese in Machine Translation Test Sets</h2>
+
+Title: [The Effect of Translationese in Machine Translation Test Sets](https://arxiv.org/abs/1906.08069)
+Authors: [Mike Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M), [Antonio Toral](https://arxiv.org/search/cs?searchtype=author&query=Toral%2C+A)
+
+*(Submitted on 19 Jun 2019)*
+
+> The effect of translationese has been studied in the field of machine translation (MT), mostly with respect to training data. We study in depth the effect of translationese on test data, using the test sets from the last three editions of WMT's news shared task, containing 17 translation directions. We show evidence that (i) the use of translationese in test sets results in inflated human evaluation scores for MT systems; (ii) in some cases system rankings do change and (iii) the impact translationese has on a translation direction is inversely correlated to the translation quality attainable by state-of-the-art MT systems for that direction.
+
+| Comments: | 9 pages, 10 pages appendix, 3 figures, 20 tables, accepted in WMT19 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **arXiv:1906.08069 [cs.CL]**                                 |
+|           | (or **arXiv:1906.08069v1 [cs.CL]** for this version)         |
+
+<h2 id="2019-06-20-4">4. Pre-Training with Whole Word Masking for Chinese BERT</h2>
+
+Title: [Pre-Training with Whole Word Masking for Chinese BERT](https://arxiv.org/abs/1906.08101)
+Authors: [Yiming Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+Y), [Wanxiang Che](https://arxiv.org/search/cs?searchtype=author&query=Che%2C+W), [Ting Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T), [Bing Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+B), [Ziqing Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Shijin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Guoping Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+G)
+
+*(Submitted on 19 Jun 2019)*
+
+> Bidirectional Encoder Representations from Transformers (BERT) has shown marvelous improvements across various NLP tasks. Recently, an upgraded version of BERT has been released with Whole Word Masking (WWM), which mitigate the drawbacks of masking partial WordPiece tokens in pre-training BERT. In this technical report, we adapt whole word masking in Chinese text, that masking the whole word instead of masking Chinese characters, which could bring another challenge in Masked Language Model (MLM) pre-training task. The model was trained on the latest Chinese Wikipedia dump. We aim to provide easy extensibility and better performance for Chinese BERT without changing any neural architecture or even hyper-parameters. The model is verified on various NLP tasks, across sentence-level to document-level, including sentiment classification (ChnSentiCorp, Sina Weibo), named entity recognition (People Daily, MSRA-NER), natural language inference (XNLI), sentence pair matching (LCQMC, BQ Corpus), and machine reading comprehension (CMRC 2018, DRCD, CAIL RC). Experimental results on these datasets show that the whole word masking could bring another significant gain. Moreover, we also examine the effectiveness of Chinese pre-trained models: BERT, ERNIE, BERT-wwm. We release the pre-trained model (both TensorFlow and PyTorch) on GitHub: [this https URL](https://github.com/ymcui/Chinese-BERT-wwm)
+
+| Comments: | 10 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1906.08101 [cs.CL]**                                 |
+|           | (or **arXiv:1906.08101v1 [cs.CL]** for this version)         |
+
+<h2 id="2019-06-20-5">5. XLNet: Generalized Autoregressive Pretraining for Language Understanding</h2>
+
+Title: [ XLNet: Generalized Autoregressive Pretraining for Language Understanding](https://arxiv.org/abs/1906.08237)
+Authors: [Zhilin Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Zihang Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+Z), [Yiming Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Jaime Carbonell](https://arxiv.org/search/cs?searchtype=author&query=Carbonell%2C+J), [Ruslan Salakhutdinov](https://arxiv.org/search/cs?searchtype=author&query=Salakhutdinov%2C+R), [Quoc V. Le](https://arxiv.org/search/cs?searchtype=author&query=Le%2C+Q+V)
+
+*(Submitted on 19 Jun 2019)*
+
+> With the capability of modeling bidirectional contexts, denoising autoencoding based pretraining like BERT achieves better performance than pretraining approaches based on autoregressive language modeling. However, relying on corrupting the input with masks, BERT neglects dependency between the masked positions and suffers from a pretrain-finetune discrepancy. In light of these pros and cons, we propose XLNet, a generalized autoregressive pretraining method that (1) enables learning bidirectional contexts by maximizing the expected likelihood over all permutations of the factorization order and (2) overcomes the limitations of BERT thanks to its autoregressive formulation. Furthermore, XLNet integrates ideas from Transformer-XL, the state-of-the-art autoregressive model, into pretraining. Empirically, XLNet outperforms BERT on 20 tasks, often by a large margin, and achieves state-of-the-art results on 18 tasks including question answering, natural language inference, sentiment analysis, and document ranking.
+
+| Comments: | Pretrained models and code are available at [this https URL](https://github.com/zihangdai/xlnet) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1906.08237 [cs.CL]**                                 |
+|           | (or **arXiv:1906.08237v1 [cs.CL]** for this version)         |
+
+
+
 # 2019-06-18
 [Return to Index](#Index)
 
