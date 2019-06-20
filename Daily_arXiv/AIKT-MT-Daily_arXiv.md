@@ -2,6 +2,12 @@
 
 ### Index
 
+- [2019-06-20](#2019-06-20)
+  - [1. Adaptation of Machine Translation Models with Back-translated Data using Transductive Data Selection Methods](#2019-06-20-1)
+  - [2. Multilingual Multi-Domain Adaptation Approaches for Neural Machine Translation](#2019-06-20-2)
+  - [3. The Effect of Translationese in Machine Translation Test Sets](#2019-06-20-3)
+  - [4. Pre-Training with Whole Word Masking for Chinese BERT](#2019-06-20-4)
+  - [5. XLNet: Generalized Autoregressive Pretraining for Language Understanding](#2019-06-20-5)
 - [2019-06-18](#2019-06-18)
   - [1. Fixing Gaussian Mixture VAEs for Interpretable Text Generation](#2019-06-18-1)
   - [2. Tagged Back-Translation](#2019-06-18-2)
