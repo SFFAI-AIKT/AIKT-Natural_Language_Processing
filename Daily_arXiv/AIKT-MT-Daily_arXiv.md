@@ -2,6 +2,17 @@
 
 ### Index
 
+- [2019-06-24](#2019-06-24)
+  - [1. Meta-learning of textual representations](#2019-06-24-1)
+  - [2. Low-Resource Corpus Filtering using Multilingual Sentence Embeddings](#2019-06-24-2)
+  - [3. Learning Bilingual Word Embeddings Using Lexical Definitions](#2019-06-24-3)
+  - [4. Incremental Adaptation of NMT for Professional Post-editors: A User Study](#2019-06-24-4)
+  - [5. Demonstration of a Neural Machine Translation System with Online Learning for Translators](#2019-06-24-5)
+  - [6. CUNI System for the WMT19 Robustness Task](#2019-06-24-6)
+
+- [2019-06-21](#2019-06-21)
+  - [1. Robust Machine Translation with Domain Sensitive Pseudo-Sources: Baidu-OSU WMT19 MT Robustness Shared Task System Report](#2019-06-21-1)
+  - [2. Improving Zero-shot Translation with Language-Independent Constraints](#2019-06-21-2)
 - [2019-06-20](#2019-06-20)
   - [1. Adaptation of Machine Translation Models with Back-translated Data using Transductive Data Selection Methods](#2019-06-20-1)
   - [2. Multilingual Multi-Domain Adaptation Approaches for Neural Machine Translation](#2019-06-20-2)
@@ -73,11 +84,137 @@
 
 
 
+# 2019-06-24
+[Return to Index](#Index)
+<h2 id="2019-06-24-1">1. Meta-learning of textual representations</h2>
+
+Title: [Meta-learning of textual representations](https://arxiv.org/abs/1906.08934)
+Authors:[Jorge Madrid](https://arxiv.org/search/cs?searchtype=author&query=Madrid%2C+J), [Hugo Jair Escalante](https://arxiv.org/search/cs?searchtype=author&query=Escalante%2C+H+J), [Eduardo Morales](https://arxiv.org/search/cs?searchtype=author&query=Morales%2C+E)
+
+*(Submitted on 21 Jun 2019)*
+
+> Recent progress in AutoML has lead to state-of-the-art methods (e.g., AutoSKLearn) that can be readily used by non-experts to approach any supervised learning problem. Whereas these methods are quite effective, they are still limited in the sense that they work for tabular (matrix formatted) data only. This paper describes one step forward in trying to automate the design of supervised learning methods in the context of text mining. We introduce a meta learning methodology for automatically obtaining a representation for text mining tasks starting from raw text. We report experiments considering 60 different textual representations and more than 80 text mining datasets associated to a wide variety of tasks. Experimental results show the proposed methodology is a promising solution to obtain highly effective off the shell text classification pipelines.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1906.08934 [cs.LG]**                                 |
+|           | (or **arXiv:1906.08934v1 [cs.LG]** for this version)         |
+
+<h2 id="2019-06-24-2">2. Low-Resource Corpus Filtering using Multilingual Sentence Embeddings</h2>
+
+Title: [Low-Resource Corpus Filtering using Multilingual Sentence Embeddings](https://arxiv.org/abs/1906.08885)
+Authors: [Vishrav Chaudhary](https://arxiv.org/search/cs?searchtype=author&query=Chaudhary%2C+V), [Yuqing Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+Y), [Francisco Guzmán](https://arxiv.org/search/cs?searchtype=author&query=Guzmán%2C+F), [Holger Schwenk](https://arxiv.org/search/cs?searchtype=author&query=Schwenk%2C+H), [Philipp Koehn](https://arxiv.org/search/cs?searchtype=author&query=Koehn%2C+P)
+
+*(Submitted on 20 Jun 2019)*
+
+> In this paper, we describe our submission to the WMT19 low-resource parallel corpus filtering shared task. Our main approach is based on the LASER toolkit (Language-Agnostic SEntence Representations), which uses an encoder-decoder architecture trained on a parallel corpus to obtain multilingual sentence representations. We then use the representations directly to score and filter the noisy parallel sentences without additionally training a scoring function. We contrast our approach to other promising methods and show that LASER yields strong results. Finally, we produce an ensemble of different scoring methods and obtain additional gains. Our submission achieved the best overall performance for both the Nepali-English and Sinhala-English 1M tasks by a margin of 1.3 and 1.4 BLEU respectively, as compared to the second best systems. Moreover, our experiments show that this technique is promising for low and even no-resource scenarios.
+
+| Comments:          | 6 pages, WMT 2019                                    |
+| ------------------ | ---------------------------------------------------- |
+| Subjects:          | **Computation and Language (cs.CL)**                 |
+| Journal reference: | Conference on Machine Translation (WMT) 2019         |
+| Cite as:           | **arXiv:1906.08885 [cs.CL]**                         |
+|                    | (or **arXiv:1906.08885v1 [cs.CL]** for this version) |
+
+<h2 id="2019-06-24-3">3. Learning Bilingual Word Embeddings Using Lexical Definitions</h2>
+
+Title: [Learning Bilingual Word Embeddings Using Lexical Definitions](https://arxiv.org/abs/1906.08939)
+Authors: [Weijia Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+W), [Muhao Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+M), [Yingtao Tian](https://arxiv.org/search/cs?searchtype=author&query=Tian%2C+Y), [Kai-Wei Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+K)
+
+*(Submitted on 21 Jun 2019)*
+
+> Bilingual word embeddings, which representlexicons of different languages in a shared em-bedding space, are essential for supporting se-mantic and knowledge transfers in a variety ofcross-lingual NLP tasks. Existing approachesto training bilingual word embeddings requireoften require pre-defined seed lexicons that areexpensive to obtain, or parallel sentences thatcomprise coarse and noisy alignment. In con-trast, we propose BilLex that leverages pub-licly available lexical definitions for bilingualword embedding learning. Without the needof predefined seed lexicons, BilLex comprisesa novel word pairing strategy to automati-cally identify and propagate the precise fine-grained word alignment from lexical defini-tions. We evaluate BilLex in word-level andsentence-level translation tasks, which seek tofind the cross-lingual counterparts of wordsand sentences respectively.BilLex signifi-cantly outperforms previous embedding meth-ods on both tasks.
+
+| Comments: | ACL 2019 RepL4NLP                                            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1906.08939 [cs.CL]**                                 |
+|           | (or **arXiv:1906.08939v1 [cs.CL]** for this version)         |
+
+<h2 id="2019-06-24-4">4. Incremental Adaptation of NMT for Professional Post-editors: A User Study</h2>
+
+Title: [Incremental Adaptation of NMT for Professional Post-editors: A User Study](https://arxiv.org/abs/1906.08996)
+Authors: [Miguel Domingo](https://arxiv.org/search/cs?searchtype=author&query=Domingo%2C+M), [Mercedes García-Martínez](https://arxiv.org/search/cs?searchtype=author&query=García-Martínez%2C+M), [Álvaro Peris](https://arxiv.org/search/cs?searchtype=author&query=Peris%2C+Á), [Alexandre Helle](https://arxiv.org/search/cs?searchtype=author&query=Helle%2C+A), [Amando Estela](https://arxiv.org/search/cs?searchtype=author&query=Estela%2C+A), [Laurent Bié](https://arxiv.org/search/cs?searchtype=author&query=Bié%2C+L), [Francisco Casacuberta](https://arxiv.org/search/cs?searchtype=author&query=Casacuberta%2C+F), [Manuel Herranz](https://arxiv.org/search/cs?searchtype=author&query=Herranz%2C+M)
+
+*(Submitted on 21 Jun 2019)*
+
+> A common use of machine translation in the industry is providing initial translation hypotheses, which are later supervised and post-edited by a human expert. During this revision process, new bilingual data are continuously generated. Machine translation systems can benefit from these new data, incrementally updating the underlying models under an online learning paradigm. We conducted a user study on this scenario, for a neural machine translation system. The experimentation was carried out by professional translators, with a vast experience in machine translation post-editing. The results showed a reduction in the required amount of human effort needed when post-editing the outputs of the system, improvements in the translation quality and a positive perception of the adaptive system by the users.
+
+| Comments: | Accepted for publication in MT Summit 2019           |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1906.08996 [cs.CL]**                         |
+|           | (or **arXiv:1906.08996v1 [cs.CL]** for this version) |
+
+<h2 id="2019-06-24-5">5. Demonstration of a Neural Machine Translation System with Online Learning for Translators</h2>
+
+Title: [Demonstration of a Neural Machine Translation System with Online Learning for Translators](https://arxiv.org/abs/1906.09000)
+Authors: [Miguel Domingo](https://arxiv.org/search/cs?searchtype=author&query=Domingo%2C+M), [Mercedes García-Martínez](https://arxiv.org/search/cs?searchtype=author&query=García-Martínez%2C+M), [Amando Estela](https://arxiv.org/search/cs?searchtype=author&query=Estela%2C+A), [Laurent Bié](https://arxiv.org/search/cs?searchtype=author&query=Bié%2C+L), [Alexandre Helle](https://arxiv.org/search/cs?searchtype=author&query=Helle%2C+A), [Álvaro Peris](https://arxiv.org/search/cs?searchtype=author&query=Peris%2C+Á), [Francisco Casacuberta](https://arxiv.org/search/cs?searchtype=author&query=Casacuberta%2C+F), [Manuerl Herranz](https://arxiv.org/search/cs?searchtype=author&query=Herranz%2C+M)
+
+*(Submitted on 21 Jun 2019)*
+
+> We introduce a demonstration of our system, which implements online learning for neural machine translation in a production environment. These techniques allow the system to continuously learn from the corrections provided by the translators. We implemented an end-to-end platform integrating our machine translation servers to one of the most common user interfaces for professional translators: SDL Trados Studio. Our objective was to save post-editing effort as the machine is continuously learning from human choices and adapting the models to a specific domain or user style.
+
+| Comments: | Accepted for publication in ACL 2019                 |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1906.09000 [cs.CL]**                         |
+|           | (or **arXiv:1906.09000v1 [cs.CL]** for this version) |
+
+<h2 id="2019-06-24-6">6. CUNI System for the WMT19 Robustness Task</h2>
+
+Title: [CUNI System for the WMT19 Robustness Task](https://arxiv.org/abs/1906.09246)
+Authors:
+
+
+
+
+
+# 2019-06-21
+
+[Return to Index](#Index)
+
+<h2 id="2019-06-21-1">1. Robust Machine Translation with Domain Sensitive Pseudo-Sources: Baidu-OSU WMT19 MT Robustness Shared Task System Report</h2>
+Title: [Robust Machine Translation with Domain Sensitive Pseudo-Sources: Baidu-OSU WMT19 MT Robustness Shared Task System Report](https://arxiv.org/abs/1906.08393)
+
+Authors: [Renjie Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+R), [Hairong Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+H), [Mingbo Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+M), [Baigong Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+B), [Liang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+L)
+
+*(Submitted on 19 Jun 2019)*
+
+> This paper describes the machine translation system developed jointly by Baidu Research and Oregon State University for WMT 2019 Machine Translation Robustness Shared Task. Translation of social media is a very challenging problem, since its style is very different from normal parallel corpora (e.g. News) and also include various types of noises. To make it worse, the amount of social media parallel corpora is extremely limited. In this paper, we use a domain sensitive training method which leverages a large amount of parallel data from popular domains together with a little amount of parallel data from social media. Furthermore, we generate a parallel dataset with pseudo noisy source sentences which are back-translated from monolingual data using a model trained by a similar domain sensitive way. We achieve more than 10 BLEU improvement in both En-Fr and Fr-En translation compared with the baseline methods.
+
+| Comments: | accepted by WMT 2019                                 |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1906.08393 [cs.CL]**                         |
+|           | (or **arXiv:1906.08393v1 [cs.CL]** for this version) |
+
+<h2 id="2019-06-21-2">2. Improving Zero-shot Translation with Language-Independent Constraints</h2>
+Title: [Improving Zero-shot Translation with Language-Independent Constraints](https://arxiv.org/abs/1906.08584)
+
+Authors: [Ngoc-Quan Pham](https://arxiv.org/search/cs?searchtype=author&query=Pham%2C+N), [Jan Niehues](https://arxiv.org/search/cs?searchtype=author&query=Niehues%2C+J), [Thanh-Le Ha](https://arxiv.org/search/cs?searchtype=author&query=Ha%2C+T), [Alex Waibel](https://arxiv.org/search/cs?searchtype=author&query=Waibel%2C+A)
+
+*(Submitted on 20 Jun 2019)*
+
+> An important concern in training multilingual neural machine translation (NMT) is to translate between language pairs unseen during training, i.e zero-shot translation. Improving this ability kills two birds with one stone by providing an alternative to pivot translation which also allows us to better understand how the model captures information between languages. 
+> In this work, we carried out an investigation on this capability of the multilingual NMT models. First, we intentionally create an encoder architecture which is independent with respect to the source language. Such experiments shed light on the ability of NMT encoders to learn multilingual representations, in general. Based on such proof of concept, we were able to design regularization methods into the standard Transformer model, so that the whole architecture becomes more robust in zero-shot conditions. We investigated the behaviour of such models on the standard IWSLT 2017 multilingual dataset. We achieved an average improvement of 2.23 BLEU points across 12 language pairs compared to the zero-shot performance of a state-of-the-art multilingual system. Additionally, we carry out further experiments in which the effect is confirmed even for language pairs with multiple intermediate pivots.
+
+| Comments: | 10 pages version accepted in WMT 2019                |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1906.08584 [cs.CL]**                         |
+|           | (or **arXiv:1906.08584v1 [cs.CL]** for this version) |
+
+
+
+
+
+
 # 2019-06-20
 
 [Return to Index](#Index)
-<h2 id="2019-06-20-1">1. Adaptation of Machine Translation Models with Back-translated Data using Transductive Data Selection Methods</h2>
 
+<h2 id="2019-06-20-1">1. Adaptation of Machine Translation Models with Back-translated Data using Transductive Data Selection Methods</h2>
 Title: [Adaptation of Machine Translation Models with Back-translated Data using Transductive Data Selection Methods](https://arxiv.org/abs/1906.07808#)
 Authors: [Alberto Poncelas](https://arxiv.org/search/cs?searchtype=author&query=Poncelas%2C+A), [Gideon Maillette de Buy Wenniger](https://arxiv.org/search/cs?searchtype=author&query=de+Buy+Wenniger%2C+G+M), [Andy Way](https://arxiv.org/search/cs?searchtype=author&query=Way%2C+A)
 
@@ -94,7 +231,6 @@ Authors: [Alberto Poncelas](https://arxiv.org/search/cs?searchtype=author&query=
 |           | (or **arXiv:1906.07808v1 [cs.CL]** for this version) |
 
 <h2 id="2019-06-20-2">2. Multilingual Multi-Domain Adaptation Approaches for Neural Machine Translation</h2>
-
 Title: [Multilingual Multi-Domain Adaptation Approaches for Neural Machine Translation](https://arxiv.org/abs/1906.07978)
 Authors: [Chenhui Chu](https://arxiv.org/search/cs?searchtype=author&query=Chu%2C+C), [Raj Dabre](https://arxiv.org/search/cs?searchtype=author&query=Dabre%2C+R)
 
@@ -108,7 +244,6 @@ Authors: [Chenhui Chu](https://arxiv.org/search/cs?searchtype=author&query=Chu%2
 |           | (or **arXiv:1906.07978v1 [cs.CL]** for this version) |
 
 <h2 id="2019-06-20-3">3. The Effect of Translationese in Machine Translation Test Sets</h2>
-
 Title: [The Effect of Translationese in Machine Translation Test Sets](https://arxiv.org/abs/1906.08069)
 Authors: [Mike Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M), [Antonio Toral](https://arxiv.org/search/cs?searchtype=author&query=Toral%2C+A)
 
@@ -123,7 +258,6 @@ Authors: [Mike Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%
 |           | (or **arXiv:1906.08069v1 [cs.CL]** for this version)         |
 
 <h2 id="2019-06-20-4">4. Pre-Training with Whole Word Masking for Chinese BERT</h2>
-
 Title: [Pre-Training with Whole Word Masking for Chinese BERT](https://arxiv.org/abs/1906.08101)
 Authors: [Yiming Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+Y), [Wanxiang Che](https://arxiv.org/search/cs?searchtype=author&query=Che%2C+W), [Ting Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T), [Bing Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+B), [Ziqing Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Shijin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Guoping Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+G)
 
@@ -138,7 +272,6 @@ Authors: [Yiming Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C
 |           | (or **arXiv:1906.08101v1 [cs.CL]** for this version)         |
 
 <h2 id="2019-06-20-5">5. XLNet: Generalized Autoregressive Pretraining for Language Understanding</h2>
-
 Title: [ XLNet: Generalized Autoregressive Pretraining for Language Understanding](https://arxiv.org/abs/1906.08237)
 Authors: [Zhilin Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Zihang Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+Z), [Yiming Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Jaime Carbonell](https://arxiv.org/search/cs?searchtype=author&query=Carbonell%2C+J), [Ruslan Salakhutdinov](https://arxiv.org/search/cs?searchtype=author&query=Salakhutdinov%2C+R), [Quoc V. Le](https://arxiv.org/search/cs?searchtype=author&query=Le%2C+Q+V)
 
@@ -159,7 +292,6 @@ Authors: [Zhilin Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%
 [Return to Index](#Index)
 
 <h2 id="2019-06-19-1">1. Generalizing Back-Translation in Neural Machine Translation</h2>
-
 Title: [Generalizing Back-Translation in Neural Machine Translation](https://arxiv.org/abs/1906.07286)
 
 Authors: [Miguel Graça](https://arxiv.org/search/cs?searchtype=author&query=Graça%2C+M), [Yunsu Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+Y), [Julian Schamper](https://arxiv.org/search/cs?searchtype=author&query=Schamper%2C+J), [Shahram Khadivi](https://arxiv.org/search/cs?searchtype=author&query=Khadivi%2C+S), [Hermann Ney](https://arxiv.org/search/cs?searchtype=author&query=Ney%2C+H)
@@ -175,7 +307,6 @@ Authors: [Miguel Graça](https://arxiv.org/search/cs?searchtype=author&query=Gra
 |           | (or **arXiv:1906.07286v1 [cs.CL]** for this version)         |
 
 <h2 id="2019-06-19-2">2. Scheduled Sampling for Transformers</h2>
-
 Title: [Scheduled Sampling for Transformers](https://arxiv.org/abs/1906.07651)
 
 Authors: [Tsvetomila Mihaylova](https://arxiv.org/search/cs?searchtype=author&query=Mihaylova%2C+T), [André F. T. Martins](https://arxiv.org/search/cs?searchtype=author&query=Martins%2C+A+F+T)
@@ -190,7 +321,6 @@ Authors: [Tsvetomila Mihaylova](https://arxiv.org/search/cs?searchtype=author&qu
 |           | (or **arXiv:1906.07651v1 [cs.CL]** for this version) |
 
 <h2 id="2019-06-19-3">3. Distilling Translations with Visual Awareness</h2>
-
 Title: [Distilling Translations with Visual Awareness](https://arxiv.org/abs/1906.07701)
 
 Authors: [Julia Ive](https://arxiv.org/search/cs?searchtype=author&query=Ive%2C+J), [Pranava Madhyastha](https://arxiv.org/search/cs?searchtype=author&query=Madhyastha%2C+P), [Lucia Specia](https://arxiv.org/search/cs?searchtype=author&query=Specia%2C+L)
@@ -210,8 +340,6 @@ Authors: [Julia Ive](https://arxiv.org/search/cs?searchtype=author&query=Ive%2C+
 [Return to Index](#Index)
 
 <h2 id="2019-06-18-1">1. Fixing Gaussian Mixture VAEs for Interpretable Text Generation</h2>
-
-
 Title: [Fixing Gaussian Mixture VAEs for Interpretable Text Generation](https://arxiv.org/abs/1906.06719)
 Authors: [Wenxian Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+W), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Ning Miao](https://arxiv.org/search/cs?searchtype=author&query=Miao%2C+N), [Shenjian Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+S), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
 
@@ -226,7 +354,6 @@ Authors: [Wenxian Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2
 
 
 <h2 id="2019-06-18-2">2. Tagged Back-Translation</h2>
-
 Title: [Tagged Back-Translation](https://arxiv.org/abs/1906.06442)
 Authors: [Isaac Caswell](https://arxiv.org/search/cs?searchtype=author&query=Caswell%2C+I), [Ciprian Chelba](https://arxiv.org/search/cs?searchtype=author&query=Chelba%2C+C), [David Grangier](https://arxiv.org/search/cs?searchtype=author&query=Grangier%2C+D)
 
@@ -292,7 +419,6 @@ Authors: [Gonçalo M. Correia](https://arxiv.org/search/cs?searchtype=author&que
 # 2019-06-14
 [Return to Index](#Index)
 <h2 id="2019-06-14-1">1. UCAM Biomedical translation at WMT19: Transfer learning multi-domain ensembles</h2>
-
 Title: [UCAM Biomedical translation at WMT19: Transfer learning multi-domain ensembles](https://arxiv.org/abs/1906.05786)
 Authors: [Danielle Saunders](https://arxiv.org/search/cs?searchtype=author&query=Saunders%2C+D), [Felix Stahlberg](https://arxiv.org/search/cs?searchtype=author&query=Stahlberg%2C+F), [Bill Byrne](https://arxiv.org/search/cs?searchtype=author&query=Byrne%2C+B)
 
@@ -307,7 +433,6 @@ Authors: [Danielle Saunders](https://arxiv.org/search/cs?searchtype=author&query
 |           | (or **arXiv:1906.05786v1 [cs.CL]** for this version) |
 
 <h2 id="2019-06-14-2">2. A Focus on Neural Machine Translation for African Languages</h2>
-
 Title: [A Focus on Neural Machine Translation for African Languages](https://arxiv.org/abs/1906.05685)
 Authors:[Laura Martinus](https://arxiv.org/search/cs?searchtype=author&query=Martinus%2C+L), [Jade Z. Abbott](https://arxiv.org/search/cs?searchtype=author&query=Abbott%2C+J+Z)
 
@@ -321,7 +446,6 @@ Authors:[Laura Martinus](https://arxiv.org/search/cs?searchtype=author&query=Mar
 |           | (or **arXiv:1906.05685v1 [cs.CL]** for this version)         |
 
 <h2 id="2019-06-14-3">3. Translating Translationese: A Two-Step Approach to Unsupervised Machine Translation</h2>
-
 Title: [Translating Translationese: A Two-Step Approach to Unsupervised Machine Translation](https://arxiv.org/abs/1906.05683)
 Authors: [Nima Pourdamghani](https://arxiv.org/search/cs?searchtype=author&query=Pourdamghani%2C+N), [Nada Aldarrab](https://arxiv.org/search/cs?searchtype=author&query=Aldarrab%2C+N), [Marjan Ghazvininejad](https://arxiv.org/search/cs?searchtype=author&query=Ghazvininejad%2C+M), [Kevin Knight](https://arxiv.org/search/cs?searchtype=author&query=Knight%2C+K), [Jonathan May](https://arxiv.org/search/cs?searchtype=author&query=May%2C+J)
 
@@ -336,7 +460,6 @@ Authors: [Nima Pourdamghani](https://arxiv.org/search/cs?searchtype=author&query
 |           | (or **arXiv:1906.05683v1 [cs.CL]** for this version) |
 
 <h2 id="2019-06-14-4">4. Lattice Transformer for Speech Translation</h2>
-
 Title: [Lattice Transformer for Speech Translation](https://arxiv.org/abs/1906.05551)
 Authors: [Pei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+P), [Boxing Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+B), [Niyu Ge](https://arxiv.org/search/cs?searchtype=author&query=Ge%2C+N), [Kai Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+K)
 
@@ -351,7 +474,6 @@ Authors: [Pei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2
 |           | (or **arXiv:1906.05551v1 [cs.CL]** for this version) |
 
 <h2 id="2019-06-14-5">5. Cued@wmt19:ewc&lms</h2>
-
 Title: [Cued@wmt19:ewc&lms](https://arxiv.org/abs/1906.05447)
 Authors: [Felix Stahlberg](https://arxiv.org/search/cs?searchtype=author&query=Stahlberg%2C+F), [Danielle Saunders](https://arxiv.org/search/cs?searchtype=author&query=Saunders%2C+D), [Adria de Gispert](https://arxiv.org/search/cs?searchtype=author&query=de+Gispert%2C+A), [Bill Byrne](https://arxiv.org/search/cs?searchtype=author&query=Byrne%2C+B)
 
@@ -366,7 +488,6 @@ Authors: [Felix Stahlberg](https://arxiv.org/search/cs?searchtype=author&query=S
 |           | (or **arXiv:1906.05447v1 [cs.CL]** for this version) |
 
 <h2 id="2019-06-14-6">6. Analyzing the Limitations of Cross-lingual Word Embedding Mappings</h2>
-
 Title: [Analyzing the Limitations of Cross-lingual Word Embedding Mappings](https://arxiv.org/abs/1906.05407)
 Authors: [Aitor Ormazabal](https://arxiv.org/search/cs?searchtype=author&query=Ormazabal%2C+A), [Mikel Artetxe](https://arxiv.org/search/cs?searchtype=author&query=Artetxe%2C+M), [Gorka Labaka](https://arxiv.org/search/cs?searchtype=author&query=Labaka%2C+G), [Aitor Soroa](https://arxiv.org/search/cs?searchtype=author&query=Soroa%2C+A), [Eneko Agirre](https://arxiv.org/search/cs?searchtype=author&query=Agirre%2C+E)
 
@@ -381,7 +502,6 @@ Authors: [Aitor Ormazabal](https://arxiv.org/search/cs?searchtype=author&query=O
 |           | (or **arXiv:1906.05407v1 [cs.CL]** for this version)         |
 
 <h2 id="2019-06-14-7">7. Compositional generalization through meta sequence-to-sequence learning</h2>
-
 Title: [Compositional generalization through meta sequence-to-sequence learning](https://arxiv.org/abs/1906.05381)
 Authors: [Brenden M. Lake](https://arxiv.org/search/cs?searchtype=author&query=Lake%2C+B+M)
 
@@ -395,7 +515,6 @@ Authors: [Brenden M. Lake](https://arxiv.org/search/cs?searchtype=author&query=L
 |           | (or **arXiv:1906.05381v1 [cs.CL]** for this version)         |
 
 <h2 id="2019-06-14-8">8. A Multiscale Visualization of Attention in the Transformer Model</h2>
-
 Title: [A Multiscale Visualization of Attention in the Transformer Model](https://arxiv.org/abs/1906.05714)
 Authors: [Jesse Vig](https://arxiv.org/search/cs?searchtype=author&query=Vig%2C+J)
 
@@ -415,7 +534,6 @@ Authors: [Jesse Vig](https://arxiv.org/search/cs?searchtype=author&query=Vig%2C+
 # 2019-06-13
 [Return to Index](#Index)
 <h2 id="2019-06-13-1">1. Continual and Multi-Task Architecture Search</h2>
-
 Title: [Continual and Multi-Task Architecture Search](https://arxiv.org/abs/1906.05226)
 Authors: [Ramakanth Pasunuru](https://arxiv.org/search/cs?searchtype=author&query=Pasunuru%2C+R), [Mohit Bansal](https://arxiv.org/search/cs?searchtype=author&query=Bansal%2C+M)
 
@@ -430,7 +548,6 @@ Authors: [Ramakanth Pasunuru](https://arxiv.org/search/cs?searchtype=author&quer
 |           | (or **arXiv:1906.05226v1 [cs.CL]** for this version)         |
 
 <h2 id="2019-06-13-2">2. Monotonic Infinite Lookback Attention for Simultaneous Machine Translation</h2>
-
 Title: [Monotonic Infinite Lookback Attention for Simultaneous Machine Translation](https://arxiv.org/abs/1906.05218)
 Authors: [Naveen Arivazhagan](https://arxiv.org/search/cs?searchtype=author&query=Arivazhagan%2C+N), [Colin Cherry](https://arxiv.org/search/cs?searchtype=author&query=Cherry%2C+C), [Wolfgang Macherey](https://arxiv.org/search/cs?searchtype=author&query=Macherey%2C+W), [Chung-Cheng Chiu](https://arxiv.org/search/cs?searchtype=author&query=Chiu%2C+C), [Semih Yavuz](https://arxiv.org/search/cs?searchtype=author&query=Yavuz%2C+S), [Ruoming Pang](https://arxiv.org/search/cs?searchtype=author&query=Pang%2C+R), [Wei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+W), [Colin Raffel](https://arxiv.org/search/cs?searchtype=author&query=Raffel%2C+C)
 
@@ -463,7 +580,6 @@ Authors: [Kevin Clark](https://arxiv.org/search/cs?searchtype=author&query=Clark
 |           | (or **arXiv:1906.04341v1 [cs.CL]** for this version) |
 
 <h2 id="2019-06-12-2">2. Parallel Scheduled Sampling</h2>
-
 Title: [Parallel Scheduled Sampling](https://arxiv.org/abs/1906.04331)
 Authors:[Daniel Duckworth](https://arxiv.org/search/cs?searchtype=author&query=Duckworth%2C+D), [Arvind Neelakantan](https://arxiv.org/search/cs?searchtype=author&query=Neelakantan%2C+A), [Ben Goodrich](https://arxiv.org/search/cs?searchtype=author&query=Goodrich%2C+B), [Lukasz Kaiser](https://arxiv.org/search/cs?searchtype=author&query=Kaiser%2C+L), [Samy Bengio](https://arxiv.org/search/cs?searchtype=author&query=Bengio%2C+S)
 
@@ -478,7 +594,6 @@ Authors:[Daniel Duckworth](https://arxiv.org/search/cs?searchtype=author&query=D
 |           | (or **arXiv:1906.04331v1 [cs.CL]** for this version)         |
 
 <h2 id="2019-06-12-3">3. Analyzing the Structure of Attention in a Transformer Language Model</h2>
-
 Title: [Analyzing the Structure of Attention in a Transformer Language Model](https://arxiv.org/abs/1906.04284)
 Authors: [Jesse Vig](https://arxiv.org/search/cs?searchtype=author&query=Vig%2C+J), [Yonatan Belinkov](https://arxiv.org/search/cs?searchtype=author&query=Belinkov%2C+Y)
 
@@ -498,7 +613,6 @@ Authors: [Jesse Vig](https://arxiv.org/search/cs?searchtype=author&query=Vig%2C+
 # 2019-06-11
 [Return to Index](#Index)
 <h2 id="2019-06-11-1">1. The University of Helsinki submissions to the WMT19 news translation task</h2>
-
 Title: [The University of Helsinki submissions to the WMT19 news translation task](https://arxiv.org/abs/1906.04040)
 Authors: [Aarne Talman](https://arxiv.org/search/cs?searchtype=author&query=Talman%2C+A), [Umut Sulubacak](https://arxiv.org/search/cs?searchtype=author&query=Sulubacak%2C+U), [Raúl Vázquez](https://arxiv.org/search/cs?searchtype=author&query=Vázquez%2C+R), [Yves Scherrer](https://arxiv.org/search/cs?searchtype=author&query=Scherrer%2C+Y), [Sami Virpioja](https://arxiv.org/search/cs?searchtype=author&query=Virpioja%2C+S), [Alessandro Raganato](https://arxiv.org/search/cs?searchtype=author&query=Raganato%2C+A), [Arvi Hurskainen](https://arxiv.org/search/cs?searchtype=author&query=Hurskainen%2C+A), [Jörg Tiedemann](https://arxiv.org/search/cs?searchtype=author&query=Tiedemann%2C+J)
 
@@ -513,7 +627,6 @@ Authors: [Aarne Talman](https://arxiv.org/search/cs?searchtype=author&query=Talm
 |           | (or **arXiv:1906.04040v1 [cs.CL]** for this version) |
 
 <h2 id="2019-06-11-2">2. Generalized Data Augmentation for Low-Resource Translation</h2>
-
 Title: [Generalized Data Augmentation for Low-Resource Translation](https://arxiv.org/abs/1906.03785)
 Authors: [Mengzhou Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%2C+M), [Xiang Kong](https://arxiv.org/search/cs?searchtype=author&query=Kong%2C+X), [Antonios Anastasopoulos](https://arxiv.org/search/cs?searchtype=author&query=Anastasopoulos%2C+A), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
 
@@ -528,7 +641,6 @@ Authors: [Mengzhou Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%
 |           | (or **arXiv:1906.03785v1 [cs.CL]** for this version) |
 
 <h2 id="2019-06-11-3">3. Is Attention Interpretable?</h2>
-
 Title: [Is Attention Interpretable?](https://arxiv.org/abs/1906.03731)
 Authors: [Sofia Serrano](https://arxiv.org/search/cs?searchtype=author&query=Serrano%2C+S), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith%2C+N+A)
 
@@ -543,7 +655,6 @@ Authors: [Sofia Serrano](https://arxiv.org/search/cs?searchtype=author&query=Ser
 |           | (or **arXiv:1906.03731v1 [cs.CL]** for this version) |
 
 <h2 id="2019-06-11-4">4. Making Asynchronous Stochastic Gradient Descent Work for Transformers</h2>
-
 Title: [Making Asynchronous Stochastic Gradient Descent Work for Transformers](https://arxiv.org/abs/1906.03496)
 Authors: [Alham Fikri Aji](https://arxiv.org/search/cs?searchtype=author&query=Aji%2C+A+F), [Kenneth Heafield](https://arxiv.org/search/cs?searchtype=author&query=Heafield%2C+K)
 
@@ -557,7 +668,6 @@ Authors: [Alham Fikri Aji](https://arxiv.org/search/cs?searchtype=author&query=A
 |           | (or **arXiv:1906.03496v1 [cs.CL]** for this version)         |
 
 <h2 id="2019-06-11-5">5. Assessing incrementality in sequence-to-sequence models</h2>
-
 Title: [Assessing incrementality in sequence-to-sequence models](https://arxiv.org/abs/1906.03293)
 Authors: [Dennis Ulmer](https://arxiv.org/search/cs?searchtype=author&query=Ulmer%2C+D), [Dieuwke Hupkes](https://arxiv.org/search/cs?searchtype=author&query=Hupkes%2C+D), [Elia Bruni](https://arxiv.org/search/cs?searchtype=author&query=Bruni%2C+E)
 
@@ -572,7 +682,6 @@ Authors: [Dennis Ulmer](https://arxiv.org/search/cs?searchtype=author&query=Ulme
 |           | (or **arXiv:1906.03293v1 [cs.CL]** for this version)         |
 
 <h2 id="2019-06-11-6">6. Syntax-Infused Variational Autoencoder for Text Generation</h2>
-
 Title: [Syntax-Infused Variational Autoencoder for Text Generation](https://arxiv.org/abs/1906.02181)
 Authors: [Xinyuan Zhang](https://arxiv.org/search/stat?searchtype=author&query=Zhang%2C+X), [Yi Yang](https://arxiv.org/search/stat?searchtype=author&query=Yang%2C+Y), [Siyang Yuan](https://arxiv.org/search/stat?searchtype=author&query=Yuan%2C+S), [Dinghan Shen](https://arxiv.org/search/stat?searchtype=author&query=Shen%2C+D), [Lawrence Carin](https://arxiv.org/search/stat?searchtype=author&query=Carin%2C+L)
 
@@ -593,7 +702,6 @@ Authors: [Xinyuan Zhang](https://arxiv.org/search/stat?searchtype=author&query=Z
 
 [Return to Index](#Index)
 <h2 id="2019-06-10-1">1. Word-based Domain Adaptation for Neural Machine Translation</h2>
-
 Title: [Word-based Domain Adaptation for Neural Machine Translation](https://arxiv.org/abs/1906.03129)
 Authors: [Shen Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+S), [Leonard Dahlmann](https://arxiv.org/search/cs?searchtype=author&query=Dahlmann%2C+L), [Pavel Petrushkov](https://arxiv.org/search/cs?searchtype=author&query=Petrushkov%2C+P), [Sanjika Hewavitharana](https://arxiv.org/search/cs?searchtype=author&query=Hewavitharana%2C+S), [Shahram Khadivi](https://arxiv.org/search/cs?searchtype=author&query=Khadivi%2C+S)
 
@@ -609,7 +717,6 @@ Authors: [Shen Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+S
 |                    | (or **arXiv:1906.03129v1 [cs.CL]** for this version)         |
 
 <h2 id="2019-06-10-2">2. Shared-Private Bilingual Word Embeddings for Neural Machine Translation</h2>
-
 Title: [Shared-Private Bilingual Word Embeddings for Neural Machine Translation](https://arxiv.org/abs/1906.03100)
 Authors: [Xuebo Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Derek F. Wong](https://arxiv.org/search/cs?searchtype=author&query=Wong%2C+D+F), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Lidia S. Chao](https://arxiv.org/search/cs?searchtype=author&query=Chao%2C+L+S), [Tong Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+T), [Jingbo Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J)
 
@@ -624,7 +731,6 @@ Authors: [Xuebo Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+
 |           | (or **arXiv:1906.03100v1 [cs.CL]** for this version)         |
 
 <h2 id="2019-06-10-3">3. Syntactically Supervised Transformers for Faster Neural Machine Translation</h2>
-
 Title: [Syntactically Supervised Transformers for Faster Neural Machine Translation](https://arxiv.org/abs/1906.02780)
 Authors: 	[Nader Akoury](https://arxiv.org/search/cs?searchtype=author&query=Akoury%2C+N), [Kalpesh Krishna](https://arxiv.org/search/cs?searchtype=author&query=Krishna%2C+K), [Mohit Iyyer](https://arxiv.org/search/cs?searchtype=author&query=Iyyer%2C+M)
 
@@ -642,7 +748,6 @@ Authors: 	[Nader Akoury](https://arxiv.org/search/cs?searchtype=author&query=Ako
 
 [Return to Index](#Index)
 <h2 id="2019-06-06-1">1. Imitation Learning for Non-Autoregressive Neural Machine Translation</h2>
-
 Title: [Imitation Learning for Non-Autoregressive Neural Machine Translation](https://arxiv.org/abs/1906.02041)
 
 Authors: [Bingzhen Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+B), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Junyang Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+J), [Xu Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+X)
@@ -657,7 +762,6 @@ Authors: [Bingzhen Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%
 |           | (or **arXiv:1906.02041v1 [cs.CL]** for this version) |
 
 <h2 id="2019-06-06-2">2. The Unreasonable Effectiveness of Transformer Language Models in Grammatical Error Correction</h2>
-
 Title: [The Unreasonable Effectiveness of Transformer Language Models in Grammatical Error Correction](https://arxiv.org/abs/1906.01733)
 
 Authors: [Dimitrios Alikaniotis](https://arxiv.org/search/cs?searchtype=author&query=Alikaniotis%2C+D), [Vipul Raheja](https://arxiv.org/search/cs?searchtype=author&query=Raheja%2C+V)
@@ -673,7 +777,6 @@ Authors: [Dimitrios Alikaniotis](https://arxiv.org/search/cs?searchtype=author&q
 |           | (or **arXiv:1906.01733v1 [cs.CL]** for this version)         |
 
 <h2 id="2019-06-06-3">3. Learning Deep Transformer Models for Machine Translation</h2>
-
 Title: [Learning Deep Transformer Models for Machine Translation](https://arxiv.org/abs/1906.01787)
 
 Authors: [Qiang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Q), [Bei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+B), [Tong Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+T), [Jingbo Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J), [Changliang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+C), [Derek F. Wong](https://arxiv.org/search/cs?searchtype=author&query=Wong%2C+D+F), [Lidia S. Chao](https://arxiv.org/search/cs?searchtype=author&query=Chao%2C+L+S)
@@ -689,7 +792,6 @@ Authors: [Qiang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2
 |           | (or **arXiv:1906.01787v1 [cs.CL]** for this version)         |
 
 <h2 id="2019-06-06-4">4. Learning Bilingual Sentence Embeddings via Autoencoding and Computing Similarities with a Multilayer Perceptron</h2>
-
 Title: [Learning Bilingual Sentence Embeddings via Autoencoding and Computing Similarities with a Multilayer Perceptron](https://arxiv.org/abs/1906.01942)
 
 Authors: [Yunsu Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+Y), [Hendrik Rosendahl](https://arxiv.org/search/cs?searchtype=author&query=Rosendahl%2C+H), [Nick Rossenbach](https://arxiv.org/search/cs?searchtype=author&query=Rossenbach%2C+N), [Jan Rosendahl](https://arxiv.org/search/cs?searchtype=author&query=Rosendahl%2C+J), [Shahram Khadivi](https://arxiv.org/search/cs?searchtype=author&query=Khadivi%2C+S), [Hermann Ney](https://arxiv.org/search/cs?searchtype=author&query=Ney%2C+H)
@@ -709,7 +811,6 @@ Authors: [Yunsu Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+
 
 [Return to Index](#Index)
 <h2 id="2019-06-05-1">1. Improved Zero-shot Neural Machine Translation via Ignoring Spurious Correlations</h2>
-
 Title: [Improved Zero-shot Neural Machine Translation via Ignoring Spurious Correlations](https://arxiv.org/abs/1906.01181)
 
 Authors: [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J), [Yong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Kyunghyun Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+K), [Victor O.K. Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+V+O)
@@ -725,7 +826,6 @@ Authors: [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J
 |           | (or **arXiv:1906.01181v1 [cs.CL]** for this version) |
 
 <h2 id="2019-06-05-2">2. Exploring Phoneme-Level Speech Representations for End-to-End Speech Translation</h2>
-
 Title: [Exploring Phoneme-Level Speech Representations for End-to-End Speech Translation](https://arxiv.org/abs/1906.01199)
 
 Authors: [Elizabeth Salesky](https://arxiv.org/search/cs?searchtype=author&query=Salesky%2C+E), [Matthias Sperber](https://arxiv.org/search/cs?searchtype=author&query=Sperber%2C+M), [Alan W Black](https://arxiv.org/search/cs?searchtype=author&query=Black%2C+A+W)
@@ -741,7 +841,6 @@ Authors: [Elizabeth Salesky](https://arxiv.org/search/cs?searchtype=author&query
 |           | (or **arXiv:1906.01199v1 [cs.CL]** for this version)         |
 
 <h2 id="2019-06-05-3">3. Exploiting Sentential Context for Neural Machine Translation</h2>
-
 Title: [Exploiting Sentential Context for Neural Machine Translation](https://arxiv.org/abs/1906.01268)
 
 Authors: [Xing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Zhaopeng Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+Z), [Longyue Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Shuming Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+S)
@@ -757,7 +856,6 @@ Authors: [Xing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C
 |           | (or **arXiv:1906.01268v1 [cs.CL]** for this version) |
 
 <h2 id="2019-06-05-4">4. Lattice-Based Transformer Encoder for Neural Machine Translation</h2>
-
 Title: [Lattice-Based Transformer Encoder for Neural Machine Translation](https://arxiv.org/abs/1906.01282)
 
 Authors: [Fengshun Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+F), [Jiangtong Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Hai Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+H), [Rui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+R), [Kehai Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+K)
@@ -778,7 +876,6 @@ Authors: [Fengshun Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xia
 
 [Return to Index](#Index)
 <h2 id="2019-06-04-1">1. Thinking Slow about Latency Evaluation for Simultaneous Machine Translation</h2>
-
 Title: [Thinking Slow about Latency Evaluation for Simultaneous Machine Translation](https://arxiv.org/abs/1906.00048)
 
 Authors: [Colin Cherry](https://arxiv.org/search/cs?searchtype=author&query=Cherry%2C+C), [George Foster](https://arxiv.org/search/cs?searchtype=author&query=Foster%2C+G)
@@ -795,7 +892,6 @@ Authors: [Colin Cherry](https://arxiv.org/search/cs?searchtype=author&query=Cher
 
 
 <h2 id="2019-06-04-2">2. Domain Adaptation of Neural Machine Translation by Lexicon Induction</h2>
-
 Title: [Domain Adaptation of Neural Machine Translation by Lexicon Induction](https://arxiv.org/abs/1906.00376)
 
 Authors:[Junjie Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+J), [Mengzhou Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%2C+M), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G), [Jaime Carbonell](https://arxiv.org/search/cs?searchtype=author&query=Carbonell%2C+J)
@@ -817,7 +913,6 @@ Authors:[Junjie Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+J)
 
 
 <h2 id="2019-06-04-3">3. Domain Adaptive Inference for Neural Machine Translation</h2>
-
 Title: [Domain Adaptive Inference for Neural Machine Translation](https://arxiv.org/abs/1906.00408)
 
 Authors: [Danielle Saunders](https://arxiv.org/search/cs?searchtype=author&query=Saunders%2C+D), [Felix Stahlberg](https://arxiv.org/search/cs?searchtype=author&query=Stahlberg%2C+F), [Adria de Gispert](https://arxiv.org/search/cs?searchtype=author&query=de+Gispert%2C+A), [Bill Byrne](https://arxiv.org/search/cs?searchtype=author&query=Byrne%2C+B)
@@ -835,7 +930,6 @@ Authors: [Danielle Saunders](https://arxiv.org/search/cs?searchtype=author&query
 
 
 <h2 id="2019-06-04-4">4. Fluent Translations from Disfluent Speech in End-to-End Speech Translation</h2>
-
 Title: [Fluent Translations from Disfluent Speech in End-to-End Speech Translation](https://arxiv.org/abs/1906.00556)
 
 Authors: [Elizabeth Salesky](https://arxiv.org/search/cs?searchtype=author&query=Salesky%2C+E), [Matthias Sperber](https://arxiv.org/search/cs?searchtype=author&query=Sperber%2C+M), [Alex Waibel](https://arxiv.org/search/cs?searchtype=author&query=Waibel%2C+A)
@@ -853,7 +947,6 @@ Authors: [Elizabeth Salesky](https://arxiv.org/search/cs?searchtype=author&query
 
 
 <h2 id="2019-06-04-5">5. Evaluating Gender Bias in Machine Translation</h2>
-
 Title: [Evaluating Gender Bias in Machine Translation](https://arxiv.org/abs/1906.00591)
 
 Authors: [Gabriel Stanovsky](https://arxiv.org/search/cs?searchtype=author&query=Stanovsky%2C+G), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith%2C+N+A), [Luke Zettlemoyer](https://arxiv.org/search/cs?searchtype=author&query=Zettlemoyer%2C+L)
@@ -871,7 +964,6 @@ Authors: [Gabriel Stanovsky](https://arxiv.org/search/cs?searchtype=author&query
 
 
 <h2 id="2019-06-04-6">6. From Words to Sentences: A Progressive Learning Approach for Zero-resource Machine Translation with Visual Pivots</h2>
-
 Title: [From Words to Sentences: A Progressive Learning Approach for Zero-resource Machine Translation with Visual Pivots](https://arxiv.org/abs/1906.00872)
 
 Authors: [Shizhe Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+S), [Qin Jin](https://arxiv.org/search/cs?searchtype=author&query=Jin%2C+Q), [Jianlong Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+J)
@@ -892,7 +984,6 @@ Authors: [Shizhe Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%
 
 [Return to Index](#Index)
 <h2 id="2019-06-03-1">1. DiaBLa: A Corpus of Bilingual Spontaneous Written Dialogues for Machine Translation</h2>
-
 Title: [DiaBLa: A Corpus of Bilingual Spontaneous Written Dialogues for Machine Translation](https://arxiv.org/abs/1905.13354)
 
 Authors: [Rachel Bawden](https://arxiv.org/search/cs?searchtype=author&query=Bawden%2C+R), [Sophie Rosset](https://arxiv.org/search/cs?searchtype=author&query=Rosset%2C+S), [Thomas Lavergne](https://arxiv.org/search/cs?searchtype=author&query=Lavergne%2C+T), [Eric Bilinski](https://arxiv.org/search/cs?searchtype=author&query=Bilinski%2C+E)
