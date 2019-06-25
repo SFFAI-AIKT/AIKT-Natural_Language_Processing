@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-06-25](#2019-06-25)
+  - [1. ](#2019-06-25-1)
+
 - [2019-06-24](#2019-06-24)
   - [1. Meta-learning of textual representations](#2019-06-24-1)
   - [2. Low-Resource Corpus Filtering using Multilingual Sentence Embeddings](#2019-06-24-2)
@@ -84,10 +87,22 @@
 
 
 
+# 2019-06-25
+
+[Return to Index](#Index)
+
+<h2 id="2019-06-25-1">1. Meta-learning of textual representations</h2>
+
+Title: []()
+
+Authors: 
+
+
+
 # 2019-06-24
 [Return to Index](#Index)
-<h2 id="2019-06-24-1">1. Meta-learning of textual representations</h2>
 
+<h2 id="2019-06-24-1">1. Meta-learning of textual representations</h2>
 Title: [Meta-learning of textual representations](https://arxiv.org/abs/1906.08934)
 Authors:[Jorge Madrid](https://arxiv.org/search/cs?searchtype=author&query=Madrid%2C+J), [Hugo Jair Escalante](https://arxiv.org/search/cs?searchtype=author&query=Escalante%2C+H+J), [Eduardo Morales](https://arxiv.org/search/cs?searchtype=author&query=Morales%2C+E)
 
@@ -101,7 +116,6 @@ Authors:[Jorge Madrid](https://arxiv.org/search/cs?searchtype=author&query=Madri
 |           | (or **arXiv:1906.08934v1 [cs.LG]** for this version)         |
 
 <h2 id="2019-06-24-2">2. Low-Resource Corpus Filtering using Multilingual Sentence Embeddings</h2>
-
 Title: [Low-Resource Corpus Filtering using Multilingual Sentence Embeddings](https://arxiv.org/abs/1906.08885)
 Authors: [Vishrav Chaudhary](https://arxiv.org/search/cs?searchtype=author&query=Chaudhary%2C+V), [Yuqing Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+Y), [Francisco Guzmán](https://arxiv.org/search/cs?searchtype=author&query=Guzmán%2C+F), [Holger Schwenk](https://arxiv.org/search/cs?searchtype=author&query=Schwenk%2C+H), [Philipp Koehn](https://arxiv.org/search/cs?searchtype=author&query=Koehn%2C+P)
 
@@ -117,7 +131,6 @@ Authors: [Vishrav Chaudhary](https://arxiv.org/search/cs?searchtype=author&query
 |                    | (or **arXiv:1906.08885v1 [cs.CL]** for this version) |
 
 <h2 id="2019-06-24-3">3. Learning Bilingual Word Embeddings Using Lexical Definitions</h2>
-
 Title: [Learning Bilingual Word Embeddings Using Lexical Definitions](https://arxiv.org/abs/1906.08939)
 Authors: [Weijia Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+W), [Muhao Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+M), [Yingtao Tian](https://arxiv.org/search/cs?searchtype=author&query=Tian%2C+Y), [Kai-Wei Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+K)
 
@@ -132,7 +145,6 @@ Authors: [Weijia Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C
 |           | (or **arXiv:1906.08939v1 [cs.CL]** for this version)         |
 
 <h2 id="2019-06-24-4">4. Incremental Adaptation of NMT for Professional Post-editors: A User Study</h2>
-
 Title: [Incremental Adaptation of NMT for Professional Post-editors: A User Study](https://arxiv.org/abs/1906.08996)
 Authors: [Miguel Domingo](https://arxiv.org/search/cs?searchtype=author&query=Domingo%2C+M), [Mercedes García-Martínez](https://arxiv.org/search/cs?searchtype=author&query=García-Martínez%2C+M), [Álvaro Peris](https://arxiv.org/search/cs?searchtype=author&query=Peris%2C+Á), [Alexandre Helle](https://arxiv.org/search/cs?searchtype=author&query=Helle%2C+A), [Amando Estela](https://arxiv.org/search/cs?searchtype=author&query=Estela%2C+A), [Laurent Bié](https://arxiv.org/search/cs?searchtype=author&query=Bié%2C+L), [Francisco Casacuberta](https://arxiv.org/search/cs?searchtype=author&query=Casacuberta%2C+F), [Manuel Herranz](https://arxiv.org/search/cs?searchtype=author&query=Herranz%2C+M)
 
@@ -147,7 +159,6 @@ Authors: [Miguel Domingo](https://arxiv.org/search/cs?searchtype=author&query=Do
 |           | (or **arXiv:1906.08996v1 [cs.CL]** for this version) |
 
 <h2 id="2019-06-24-5">5. Demonstration of a Neural Machine Translation System with Online Learning for Translators</h2>
-
 Title: [Demonstration of a Neural Machine Translation System with Online Learning for Translators](https://arxiv.org/abs/1906.09000)
 Authors: [Miguel Domingo](https://arxiv.org/search/cs?searchtype=author&query=Domingo%2C+M), [Mercedes García-Martínez](https://arxiv.org/search/cs?searchtype=author&query=García-Martínez%2C+M), [Amando Estela](https://arxiv.org/search/cs?searchtype=author&query=Estela%2C+A), [Laurent Bié](https://arxiv.org/search/cs?searchtype=author&query=Bié%2C+L), [Alexandre Helle](https://arxiv.org/search/cs?searchtype=author&query=Helle%2C+A), [Álvaro Peris](https://arxiv.org/search/cs?searchtype=author&query=Peris%2C+Á), [Francisco Casacuberta](https://arxiv.org/search/cs?searchtype=author&query=Casacuberta%2C+F), [Manuerl Herranz](https://arxiv.org/search/cs?searchtype=author&query=Herranz%2C+M)
 
@@ -162,7 +173,6 @@ Authors: [Miguel Domingo](https://arxiv.org/search/cs?searchtype=author&query=Do
 |           | (or **arXiv:1906.09000v1 [cs.CL]** for this version) |
 
 <h2 id="2019-06-24-6">6. CUNI System for the WMT19 Robustness Task</h2>
-
 Title: [CUNI System for the WMT19 Robustness Task](https://arxiv.org/abs/1906.09246)
 Authors:
 
