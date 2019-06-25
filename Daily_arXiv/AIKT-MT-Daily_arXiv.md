@@ -3,7 +3,7 @@
 ### Index
 
 - [2019-06-25](#2019-06-25)
-  - [1. ](#2019-06-25-1)
+  - [1. test](#2019-06-25-1)
 
 - [2019-06-24](#2019-06-24)
   - [1. Meta-learning of textual representations](#2019-06-24-1)
@@ -92,7 +92,6 @@
 [Return to Index](#Index)
 
 <h2 id="2019-06-25-1">1. Meta-learning of textual representations</h2>
-
 Title: []()
 
 Authors: 
