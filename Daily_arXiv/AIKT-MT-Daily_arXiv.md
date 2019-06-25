@@ -3,8 +3,14 @@
 ### Index
 
 - [2019-06-25](#2019-06-25)
-  - [1. test!](#2019-06-25-1)
-
+  - [1. Neural Machine Translating from Natural Language to SPARQL](#2019-06-25-1)
+- [2. Retrieving Sequential Information for Non-Autoregressive Neural Machine Translation](#2019-06-25-2)
+  - [3. Variational Sequential Labelers for Semi-Supervised Learning](#2019-06-25-3)
+  - [4. Sequence Generation: From Both Sides to the Middle](#2019-06-25-4)
+  - [5. Evaluating the Supervised and Zero-shot Performance of Multi-lingual Translation Models](#2019-06-25-5)
+  - [6. A Tensorized Transformer for Language Modeling](#2019-06-25-6)
+  - [7. Translationese in Machine Translation Evaluation](#2019-06-25-7)
+  
 - [2019-06-24](#2019-06-24)
   - [1. Meta-learning of textual representations](#2019-06-24-1)
   - [2. Low-Resource Corpus Filtering using Multilingual Sentence Embeddings](#2019-06-24-2)
@@ -91,10 +97,113 @@
 
 [Return to Index](#Index)
 
-<h2 id="2019-06-25-1">1. Meta-learning of textual representations</h2>
-Title: []()
+<h2 id="2019-06-25-1">1. Neural Machine Translating from Natural Language to SPARQL</h2>
 
-Authors: 
+Title: [Neural Machine Translating from Natural Language to SPARQL](https://arxiv.org/abs/1906.09302)
+
+Authors: [Xiaoyu Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+X), [Dagmar Gromann](https://arxiv.org/search/cs?searchtype=author&query=Gromann%2C+D), [Sebastian Rudolph](https://arxiv.org/search/cs?searchtype=author&query=Rudolph%2C+S)
+
+ *(Submitted on 21 Jun 2019)*
+
+>   SPARQL is a highly powerful query language for an ever-growing number of Linked Data resources and Knowledge Graphs. Using it requires a certain familiarity with the entities in the domain to be queried as well as expertise in the language's syntax and semantics, none of which average human web users can be assumed to possess. To overcome this limitation, automatically translating natural language questions to SPARQL queries has been a vibrant field of research. However, to this date, the vast success of deep learning methods has not yet been fully propagated to this research problem. This paper contributes to filling this gap by evaluating the utilization of eight different Neural Machine Translation (NMT) models for the task of translating from natural language to the structured query language SPARQL. While highlighting the importance of high-quantity and high-quality datasets, the results show a dominance of a CNN-based architecture with a BLEU score of up to 98 and accuracy of up to 94%. 
+
+| Subjects: | Computation and Language (cs.CL)                             |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1906.09302](https://arxiv.org/abs/1906.09302) [cs.CL] |
+|           | (or                [arXiv:1906.09302v1](https://arxiv.org/abs/1906.09302v1) [cs.CL] for this version) |
+
+<h2 id="2019-06-25-2">2. Retrieving Sequential Information for Non-Autoregressive Neural Machine Translation</h2>
+
+Title: [Retrieving Sequential Information for Non-Autoregressive Neural Machine Translation](https://arxiv.org/abs/1906.09444)
+
+Authors: [Chenze Shao](https://arxiv.org/search/cs?searchtype=author&query=Shao%2C+C), [Yang Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+Y), [Jinchao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Fandong Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+F), [Xilin Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+X), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J)
+
+ *(Submitted on 22 Jun 2019)*
+
+>   Non-Autoregressive Transformer (NAT) aims to accelerate the Transformer model through discarding the autoregressive mechanism and generating target words independently, which fails to exploit the target sequential information. Over-translation and under-translation errors often occur for the above reason, especially in the long sentence translation scenario. In this paper, we propose two approaches to retrieve the target sequential information for NAT to enhance its translation ability while preserving the fast-decoding property. Firstly, we propose a sequence-level training method based on a novel reinforcement algorithm for NAT (Reinforce-NAT) to reduce the variance and stabilize the training procedure. Secondly, we propose an innovative Transformer decoder named FS-decoder to fuse the target sequential information into the top layer of the decoder. Experimental results on three translation tasks show that the Reinforce-NAT surpasses the baseline NAT system by a significant margin on BLEU without decelerating the decoding speed and the FS-decoder achieves comparable translation performance to the autoregressive Transformer with considerable speedup. 
+
+| Comments: | 12 pages, 4 figures, ACL 2019 long paper                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | Computation and Language (cs.CL); Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:1906.09444](https://arxiv.org/abs/1906.09444) [cs.CL] |
+|           | (or                [arXiv:1906.09444v1](https://arxiv.org/abs/1906.09444v1) [cs.CL] for this version) |
+
+<h2 id="2019-06-25-3">3. Variational Sequential Labelers for Semi-Supervised Learning</h2>
+
+Title: [Variational Sequential Labelers for Semi-Supervised Learning](https://arxiv.org/abs/1906.09535)
+
+Authors: [Mingda Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+M), [Qingming Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+Q), [Karen Livescu](https://arxiv.org/search/cs?searchtype=author&query=Livescu%2C+K), [Kevin Gimpel](https://arxiv.org/search/cs?searchtype=author&query=Gimpel%2C+K)
+
+  *(Submitted on 23 Jun 2019)*
+
+>   We introduce a family of multitask variational methods for semi-supervised sequence labeling. Our model family consists of a latent-variable generative model and a discriminative labeler. The generative models use latent variables to define the conditional probability of a word given its context, drawing inspiration from word prediction objectives commonly used in learning word embeddings. The labeler helps inject discriminative information into the latent space. We explore several latent variable configurations, including ones with hierarchical structure, which enables the model to account for both label-specific and word-specific information. Our models consistently outperform standard sequential baselines on 8 sequence labeling datasets, and improve further with unlabeled data. 
+
+| Comments: | Appeared in EMNLP 2018 Long                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | Computation and Language (cs.CL)                             |
+| Cite as:  | [arXiv:1906.09535](https://arxiv.org/abs/1906.09535) [cs.CL] |
+|           | (or                [arXiv:1906.09535v1](https://arxiv.org/abs/1906.09535v1) [cs.CL] for this version) |
+
+<h2 id="2019-06-25-4">4. Sequence Generation: From Both Sides to the Middle</h2>
+
+Title: [Sequence Generation: From Both Sides to the Middle](https://arxiv.org/abs/1906.09601)
+
+Authors: [Long Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+L), [Jiajun Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Chengqing Zong](https://arxiv.org/search/cs?searchtype=author&query=Zong%2C+C), [Heng Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+H)
+
+ *(Submitted on 23 Jun 2019)*
+
+>   The encoder-decoder framework has achieved promising process for many sequence generation tasks, such as neural machine translation and text summarization. Such a framework usually generates a sequence token by token from left to right, hence (1) this autoregressive decoding procedure is time-consuming when the output sentence becomes longer, and (2) it lacks the guidance of future context which is crucial to avoid under translation. To alleviate these issues, we propose a synchronous bidirectional sequence generation (SBSG) model which predicts its outputs from both sides to the middle simultaneously. In the SBSG model, we enable the left-to-right (L2R) and right-to-left (R2L) generation to help and interact with each other by leveraging interactive bidirectional attention network. Experiments on neural machine translation (En-De, Ch-En, and En-Ro) and text summarization tasks show that the proposed model significantly speeds up decoding while improving the generation quality compared to the autoregressive Transformer. 
+
+| Comments: | Accepted by IJCAI 2019                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | Computation and Language (cs.CL); Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:1906.09601](https://arxiv.org/abs/1906.09601) [cs.CL] |
+|           | (or                [arXiv:1906.09601v1](https://arxiv.org/abs/1906.09601v1) [cs.CL] for this version) |
+
+<h2 id="2019-06-25-5">5. Evaluating the Supervised and Zero-shot Performance of Multi-lingual Translation Models</h2>
+
+Title: [Evaluating the Supervised and Zero-shot Performance of Multi-lingual Translation Models](https://arxiv.org/abs/1906.09675)
+
+Authors: [Chris Hokamp](https://arxiv.org/search/cs?searchtype=author&query=Hokamp%2C+C), [John Glover](https://arxiv.org/search/cs?searchtype=author&query=Glover%2C+J), [Demian Gholipour](https://arxiv.org/search/cs?searchtype=author&query=Gholipour%2C+D)
+
+ *(Submitted on 24 Jun 2019)*
+
+>   We study several methods for full or partial sharing of the decoder parameters of multilingual NMT models. We evaluate both fully supervised and zero-shot translation performance in 110 unique translation directions using only the WMT 2019 shared task parallel datasets for training. We use additional test sets and re-purpose evaluation methods recently used for unsupervised MT in order to evaluate zero-shot translation performance for language pairs where no gold-standard parallel data is available. To our knowledge, this is the largest evaluation of multi-lingual translation yet conducted in terms of the total size of the training data we use, and in terms of the diversity of zero-shot translation pairs we evaluate. We conduct an in-depth evaluation of the translation performance of different models, highlighting the trade-offs between methods of sharing decoder parameters. We find that models which have task-specific decoder parameters outperform models where decoder parameters are fully shared across all tasks. 
+
+| Subjects: | Computation and Language (cs.CL)                             |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1906.09675](https://arxiv.org/abs/1906.09675) [cs.CL] |
+|           | (or                [arXiv:1906.09675v1](https://arxiv.org/abs/1906.09675v1) [cs.CL] for this version) |
+
+<h2 id="2019-06-25-6">6. A Tensorized Transformer for Language Modeling</h2>
+
+Title: [A Tensorized Transformer for Language Modeling](https://arxiv.org/abs/1906.09777)
+
+Authors: [Xindian Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+X), [Peng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+P), [Shuai Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+S), [Nan Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan%2C+N), [Yuexian Hou](https://arxiv.org/search/cs?searchtype=author&query=Hou%2C+Y), [Dawei Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+D), [Ming Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+M)
+
+   *(Submitted on 24 Jun 2019)*
+
+>   Latest development of neural models has connected the encoder and decoder through a self-attention mechanism. In particular, Transformer, which is solely based on self-attention, has led to breakthroughs in Natural Language Processing (NLP) tasks. However, the multi-head attention mechanism, as a key component of Transformer, limits the effective deployment of the model to a limited resource setting. In this paper, based on the ideas of tensor decomposition and parameters sharing, we propose a novel self-attention model (namely Multi-linear attention) with Block-Term Tensor Decomposition (BTD). We test and verify the proposed attention method on three language modeling tasks (i.e., PTB, WikiText-103 and One-billion) and a neural machine translation task (i.e., WMT-2016 English-German). Multi-linear attention can not only largely compress the model parameters but also obtain performance improvements, compared with a number of language modeling approaches, such as Transformer, Transformer-XL, and Transformer with tensor train decomposition. 
+
+| Comments: | Submitted to NeurIPS 2019                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | Computation and Language (cs.CL)                             |
+| Cite as:  | [arXiv:1906.09777](https://arxiv.org/abs/1906.09777) [cs.CL] |
+|           | (or                [arXiv:1906.09777v1](https://arxiv.org/abs/1906.09777v1) [cs.CL] for this version) |
+
+<h2 id="2019-06-25-7">7. Translationese in Machine Translation Evaluation</h2>
+
+Title: [Translationese in Machine Translation Evaluation](https://arxiv.org/abs/1906.09833)
+
+Authors: [Yvette Graham](https://arxiv.org/search/cs?searchtype=author&query=Graham%2C+Y), [Barry Haddow](https://arxiv.org/search/cs?searchtype=author&query=Haddow%2C+B), [Philipp Koehn](https://arxiv.org/search/cs?searchtype=author&query=Koehn%2C+P)
+
+ *(Submitted on 24 Jun 2019)*
+
+>   The term translationese has been used to describe the presence of unusual features of translated text. In this paper, we provide a detailed analysis of the adverse effects of translationese on machine translation evaluation results. Our analysis shows evidence to support differences in text originally written in a given language relative to translated text and this can potentially negatively impact the accuracy of machine translation evaluations. For this reason we recommend that reverse-created test data be omitted from future machine translation test sets. In addition, we provide a re-evaluation of a past high-profile machine translation evaluation claiming human-parity of MT, as well as analysis of the since re-evaluations of it. We find potential ways of improving the reliability of all three past evaluations. One important issue not previously considered is the statistical power of significance tests applied in past evaluations that aim to investigate human-parity of MT. Since the very aim of such evaluations is to reveal legitimate ties between human and MT systems, power analysis is of particular importance, where low power could result in claims of human parity that in fact simply correspond to Type II error. We therefore provide a detailed power analysis of tests used in such evaluations to provide an indication of a suitable minimum sample size of translations for such studies. Subsequently, since no past evaluation that aimed to investigate claims of human parity ticks all boxes in terms of accuracy and reliability, we rerun the evaluation of the systems claiming human parity. Finally, we provide a comprehensive check-list for future machine translation evaluation. 
+
+| Comments: | 17 pages, 8 figures, 9 tables                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | Computation and Language (cs.CL); Artificial Intelligence (cs.AI) |
 
 
 
