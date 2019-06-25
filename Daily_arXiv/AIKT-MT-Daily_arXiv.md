@@ -4,7 +4,7 @@
 
 - [2019-06-25](#2019-06-25)
   - [1. Neural Machine Translating from Natural Language to SPARQL](#2019-06-25-1)
-- [2. Retrieving Sequential Information for Non-Autoregressive Neural Machine Translation](#2019-06-25-2)
+  - [2. Retrieving Sequential Information for Non-Autoregressive Neural Machine Translation](#2019-06-25-2)
   - [3. Variational Sequential Labelers for Semi-Supervised Learning](#2019-06-25-3)
   - [4. Sequence Generation: From Both Sides to the Middle](#2019-06-25-4)
   - [5. Evaluating the Supervised and Zero-shot Performance of Multi-lingual Translation Models](#2019-06-25-5)
