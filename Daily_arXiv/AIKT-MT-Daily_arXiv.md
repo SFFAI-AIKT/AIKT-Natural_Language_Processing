@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-06-27](#2019-06-27)
+  - [1. Sharing Attention Weights for Fast Transformer](#2019-06-27-1)
+
 - [2019-06-26](#2019-06-26)
   - [1. Saliency-driven Word Alignment Interpretation for Neural Machine Translation](#2019-06-26-1)
   - [2. Benchmarking Neural Machine Translation for Southern African Languages](#2019-06-26-2)
@@ -97,12 +100,33 @@
 
 
 
+# 2019-06-27
+
+[Return to Index](#Index)
+
+<h2 id="2019-06-27-1">1. Sharing Attention Weights for Fast Transformer</h2>
+
+Title: [Sharing Attention Weights for Fast Transformer](https://arxiv.org/abs/1906.11024)
+
+Authors: [Tong Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+T), [Yinqiao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Jingbo Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J), [Zhengtao Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+Z), [Tongran Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T)
+
+*(Submitted on 26 Jun 2019)*
+
+> Recently, the Transformer machine translation system has shown strong results by stacking attention layers on both the source and target-language sides. But the inference of this model is slow due to the heavy use of dot-product attention in auto-regressive decoding. In this paper we speed up Transformer via a fast and lightweight attention model. More specifically, we share attention weights in adjacent layers and enable the efficient re-use of hidden states in a vertical manner. Moreover, the sharing policy can be jointly learned with the MT model. We test our approach on ten WMT and NIST OpenMT tasks. Experimental results show that it yields an average of 1.3X speed-up (with almost no decrease in BLEU) on top of a state-of-the-art implementation that has already adopted a cache for fast inference. Also, our approach obtains a 1.8X speed-up when it works with the \textsc{Aan} model. This is even 16 times faster than the baseline with no use of the attention cache.
+
+| Comments: | IJCAI 2019                                           |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1906.11024 [cs.CL]**                         |
+|           | (or **arXiv:1906.11024v1 [cs.CL]** for this version) |
+
+
+
 # 2019-06-26
 
 [Return to Index](#Index)
 
 <h2 id="2019-06-26-1">1. Saliency-driven Word Alignment Interpretation for Neural Machine Translation</h2>
-
 Title: [Saliency-driven Word Alignment Interpretation for Neural Machine Translation](https://arxiv.org/abs/1906.10282)
 
 Authors:  [Shuoyang Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+S), [Hainan Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+H), [Philipp Koehn](https://arxiv.org/search/cs?searchtype=author&query=Koehn%2C+P)
@@ -118,7 +142,6 @@ Authors:  [Shuoyang Ding](https://arxiv.org/search/cs?searchtype=author&query=Di
 |           | (or **arXiv:1906.10282v1 [cs.CL]** for this version) |
 
 <h2 id="2019-06-26-2">2. Benchmarking Neural Machine Translation for Southern African Languages</h2>
-
 Title: [Benchmarking Neural Machine Translation for Southern African Languages](https://arxiv.org/abs/1906.10511)
 
 Authors:  [Laura Martinus](https://arxiv.org/search/cs?searchtype=author&query=Martinus%2C+L), [Jade Z. Abbott](https://arxiv.org/search/cs?searchtype=author&query=Abbott%2C+J+Z)
