@@ -2,6 +2,12 @@
 
 ### Index
 
+- [2019-07-02](#2019-07-02)
+  - [1. The University of Sydney's Machine Translation System for WMT19](#2019-07-02-1)
+  - [2. Few-Shot Representation Learning for Out-Of-Vocabulary Words](#2019-07-02-2)
+  - [3. From Bilingual to Multilingual Neural Machine Translation by Incremental Training](#2019-07-02-3)
+  - [4. Post-editese: an Exacerbated Translationese](#2019-07-02-4)
+
 - [2019-07-01](#2019-07-01)
   - [1. Findings of the First Shared Task on Machine Translation Robustness](#2019-07-01-1)
   - [2. Lost in Translation: Loss and Decay of Linguistic Richness in Machine Translation](#2019-07-01-2)
@@ -12,6 +18,75 @@
 * [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-07-02
+
+[Return to Index](#Index)
+<h2 id="2019-07-02-1">1. The University of Sydney's Machine Translation System for WMT19</h2>
+
+Title: [The University of Sydney's Machine Translation System for WMT19](https://arxiv.org/abs/1907.00494)
+
+Authors:[Liang Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+L), [Dacheng Tao](https://arxiv.org/search/cs?searchtype=author&query=Tao%2C+D)
+
+*(Submitted on 30 Jun 2019)*
+
+> This paper describes the University of Sydney's submission of the WMT 2019 shared news translation task. We participated in the Finnish→English direction and got the best BLEU(33.0) score among all the participants. Our system is based on the self-attentional Transformer networks, into which we integrated the most recent effective strategies from academic research (e.g., BPE, back translation, multi-features data selection, data augmentation, greedy model ensemble, reranking, ConMBR system combination, and post-processing). Furthermore, we propose a novel augmentation method CycleTranslation and a data mixture strategy Big/Small parallel construction to entirely exploit the synthetic corpus. Extensive experiments show that adding the above techniques can make continuous improvements of the BLEU scores, and the best result outperforms the baseline (Transformer ensemble model trained with the original parallel corpus) by approximately 5.3 BLEU score, achieving the state-of-the-art performance.
+
+| Comments: | To appear in WMT2019                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1907.00494 [cs.CL]**                                 |
+|           | (or **arXiv:1907.00494v1 [cs.CL]** for this version)         |
+
+<h2 id="2019-07-02-2">2. Few-Shot Representation Learning for Out-Of-Vocabulary Words</h2>
+
+Title: [Few-Shot Representation Learning for Out-Of-Vocabulary Words](https://arxiv.org/abs/1907.00505)
+
+Authors: [Ziniu Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+Z), [Ting Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+T), [Kai-Wei Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+K), [Yizhou Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+Y)
+
+*(Submitted on 1 Jul 2019)*
+
+> Existing approaches for learning word embeddings often assume there are sufficient occurrences for each word in the corpus, such that the representation of words can be accurately estimated from their contexts. However, in real-world scenarios, out-of-vocabulary (a.k.a. OOV) words that do not appear in training corpus emerge frequently. It is challenging to learn accurate representations of these words with only a few observations. In this paper, we formulate the learning of OOV embeddings as a few-shot regression problem, and address it by training a representation function to predict the oracle embedding vector (defined as embedding trained with abundant observations) based on limited observations. Specifically, we propose a novel hierarchical attention-based architecture to serve as the neural regression function, with which the context information of a word is encoded and aggregated from K observations. Furthermore, our approach can leverage Model-Agnostic Meta-Learning (MAML) for adapting the learned model to the new corpus fast and robustly. Experiments show that the proposed approach significantly outperforms existing methods in constructing accurate embeddings for OOV words, and improves downstream tasks where these embeddings are utilized.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1907.00505 [cs.CL]**                         |
+|           | (or **arXiv:1907.00505v1 [cs.CL]** for this version) |
+
+<h2 id="2019-07-02-3">3. From Bilingual to Multilingual Neural Machine Translation by Incremental Training</h2>
+
+Title: [From Bilingual to Multilingual Neural Machine Translation by Incremental Training](https://arxiv.org/abs/1907.00735)
+
+Authors: [Carlos Escolano](https://arxiv.org/search/cs?searchtype=author&query=Escolano%2C+C), [Marta R. Costa-Jussà](https://arxiv.org/search/cs?searchtype=author&query=Costa-Jussà%2C+M+R), [José A. R. Fonollosa](https://arxiv.org/search/cs?searchtype=author&query=Fonollosa%2C+J+A+R)
+
+*(Submitted on 28 Jun 2019)*
+
+> Multilingual Neural Machine Translation approaches are based on the use of task-specific models and the addition of one more language can only be done by retraining the whole system. In this work, we propose a new training schedule that allows the system to scale to more languages without modification of the previous components based on joint training and language-independent encoder/decoder modules allowing for zero-shot translation. This work in progress shows close results to the state-of-the-art in the WMT task.
+
+| Comments: | Accepted paper at ACL 2019 Student Research Workshop. arXiv admin note: substantial text overlap with [arXiv:1905.06831](https://arxiv.org/abs/1905.06831) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **arXiv:1907.00735 [cs.CL]**                                 |
+|           | (or **arXiv:1907.00735v1 [cs.CL]** for this version)         |
+
+<h2 id="2019-07-02-4">4. Post-editese: an Exacerbated Translationese</h2>
+
+Title: [Post-editese: an Exacerbated Translationese](https://arxiv.org/abs/1907.00900)
+
+Authors: [Antonio Toral](https://arxiv.org/search/cs?searchtype=author&query=Toral%2C+A)
+
+*(Submitted on 1 Jul 2019)*
+
+> Post-editing (PE) machine translation (MT) is widely used for dissemination because it leads to higher productivity than human translation from scratch (HT). In addition, PE translations are found to be of equal or better quality than HTs. However, most such studies measure quality solely as the number of errors. We conduct a set of computational analyses in which we compare PE against HT on three different datasets that cover five translation directions with measures that address different translation universals and laws of translation: simplification, normalisation and interference. We find out that PEs are simpler and more normalised and have a higher degree of interference from the source language than HTs.
+
+| Comments: | Accepted at the 17th Machine Translation Summit      |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1907.00900 [cs.CL]**                         |
+|           | (or **arXiv:1907.00900v1 [cs.CL]** for this version) |
+
 
 
 
@@ -34,7 +109,6 @@ Authors: [Xian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X),
 |           | (or **arXiv:1906.11943v1 [cs.CL]** for this version) |
 
 <h2 id="2019-07-01-2">2. Lost in Translation: Loss and Decay of Linguistic Richness in Machine Translation</h2>
-
 Title: [Lost in Translation: Loss and Decay of Linguistic Richness in Machine Translation](https://arxiv.org/abs/1906.12068)
 
 Authors: [Eva Vanmassenhove](https://arxiv.org/search/cs?searchtype=author&query=Vanmassenhove%2C+E), [Dimitar Shterionov](https://arxiv.org/search/cs?searchtype=author&query=Shterionov%2C+D), [Andy Way](https://arxiv.org/search/cs?searchtype=author&query=Way%2C+A)
@@ -50,7 +124,6 @@ Authors: [Eva Vanmassenhove](https://arxiv.org/search/cs?searchtype=author&query
 |           | (or **arXiv:1906.12068v1 [cs.CL]** for this version)         |
 
 <h2 id="2019-07-01-3">3. Widening the Representation Bottleneck in Neural Machine Translation with Lexical Shortcuts</h2>
-
 Title: [Widening the Representation Bottleneck in Neural Machine Translation with Lexical Shortcuts](https://arxiv.org/abs/1906.12284)
 
 Authors: [Denis Emelin](https://arxiv.org/search/cs?searchtype=author&query=Emelin%2C+D), [Ivan Titov](https://arxiv.org/search/cs?searchtype=author&query=Titov%2C+I), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R)
