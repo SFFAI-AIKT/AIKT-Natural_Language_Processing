@@ -2,6 +2,10 @@
 
 ### Index
 
+- [2019-07-03](#2019-07-03)
+  - [1. A Neural Grammatical Error Correction System Built On Better Pre-training and Sequential Transfer Learning](#2019-07-03-1)
+  - [2. Improving Robustness in Real-World Neural Machine Translation Engines](#2019-07-03-2)
+
 - [2019-07-02](#2019-07-02)
   - [1. The University of Sydney's Machine Translation System for WMT19](#2019-07-02-1)
   - [2. Few-Shot Representation Learning for Out-Of-Vocabulary Words](#2019-07-02-2)
@@ -21,9 +25,45 @@
 
 
 
+# 2019-07-03
+
+[Return to Index](#Index)
+<h2 id="2019-07-03-1">1. A Neural Grammatical Error Correction System Built On Better Pre-training and Sequential Transfer Learning</h2>
+
+Title: [A Neural Grammatical Error Correction System Built On Better Pre-training and Sequential Transfer Learning](https://arxiv.org/abs/1907.01256)
+Authors:  [Yo Joong Choe](https://arxiv.org/search/cs?searchtype=author&query=Choe%2C+Y+J), [Jiyeon Ham](https://arxiv.org/search/cs?searchtype=author&query=Ham%2C+J), [Kyubyong Park](https://arxiv.org/search/cs?searchtype=author&query=Park%2C+K), [Yeoil Yoon](https://arxiv.org/search/cs?searchtype=author&query=Yoon%2C+Y)
+
+*(Submitted on 2 Jul 2019)*
+
+> Grammatical error correction can be viewed as a low-resource sequence-to-sequence task, because publicly available parallel corpora are limited. To tackle this challenge, we first generate erroneous versions of large unannotated corpora using a realistic noising function. The resulting parallel corpora are subsequently used to pre-train Transformer models. Then, by sequentially applying transfer learning, we adapt these models to the domain and style of the test set. Combined with a context-aware neural spellchecker, our system achieves competitive results in both restricted and low resource tracks in ACL 2019 BEA Shared Task. We release all of our code and materials for reproducibility.
+
+| Comments: | Accepted to ACL 2019 Workshop on Innovative Use of NLP for Building Educational Applications (BEA) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1907.01256 [cs.CL]**                                 |
+|           | (or **arXiv:1907.01256v1 [cs.CL]** for this version)         |
+
+
+<h2 id="2019-07-03-2">2. Improving Robustness in Real-World Neural Machine Translation Engines</h2>
+Title: [Improving Robustness in Real-World Neural Machine Translation Engines](https://arxiv.org/abs/1907.01279)
+Authors:  [Rohit Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+R), [Patrik Lambert](https://arxiv.org/search/cs?searchtype=author&query=Lambert%2C+P), [Raj Nath Patel](https://arxiv.org/search/cs?searchtype=author&query=Patel%2C+R+N), [John Tinsley](https://arxiv.org/search/cs?searchtype=author&query=Tinsley%2C+J)
+
+*(Submitted on 2 Jul 2019)*
+
+> As a commercial provider of machine translation, we are constantly training engines for a variety of uses, languages, and content types. In each case, there can be many variables, such as the amount of training data available, and the quality requirements of the end user. These variables can have an impact on the robustness of Neural MT engines. On the whole, Neural MT cures many ills of other MT paradigms, but at the same time, it has introduced a new set of challenges to address. In this paper, we describe some of the specific issues with practical NMT and the approaches we take to improve model robustness in real-world scenarios.
+
+| Comments: | 6 Pages, Accepted in Machine Translation Summit 2019 |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1907.01279 [cs.CL]**                         |
+|           | (or **arXiv:1907.01279v1 [cs.CL]** for this version) |
+
+
+
 # 2019-07-02
 
 [Return to Index](#Index)
+
 <h2 id="2019-07-02-1">1. The University of Sydney's Machine Translation System for WMT19</h2>
 
 Title: [The University of Sydney's Machine Translation System for WMT19](https://arxiv.org/abs/1907.00494)
@@ -41,7 +81,6 @@ Authors:[Liang Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C
 |           | (or **arXiv:1907.00494v1 [cs.CL]** for this version)         |
 
 <h2 id="2019-07-02-2">2. Few-Shot Representation Learning for Out-Of-Vocabulary Words</h2>
-
 Title: [Few-Shot Representation Learning for Out-Of-Vocabulary Words](https://arxiv.org/abs/1907.00505)
 
 Authors: [Ziniu Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+Z), [Ting Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+T), [Kai-Wei Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+K), [Yizhou Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+Y)
@@ -56,7 +95,6 @@ Authors: [Ziniu Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+Z)
 |           | (or **arXiv:1907.00505v1 [cs.CL]** for this version) |
 
 <h2 id="2019-07-02-3">3. From Bilingual to Multilingual Neural Machine Translation by Incremental Training</h2>
-
 Title: [From Bilingual to Multilingual Neural Machine Translation by Incremental Training](https://arxiv.org/abs/1907.00735)
 
 Authors: [Carlos Escolano](https://arxiv.org/search/cs?searchtype=author&query=Escolano%2C+C), [Marta R. Costa-Jussà](https://arxiv.org/search/cs?searchtype=author&query=Costa-Jussà%2C+M+R), [José A. R. Fonollosa](https://arxiv.org/search/cs?searchtype=author&query=Fonollosa%2C+J+A+R)
@@ -72,7 +110,6 @@ Authors: [Carlos Escolano](https://arxiv.org/search/cs?searchtype=author&query=E
 |           | (or **arXiv:1907.00735v1 [cs.CL]** for this version)         |
 
 <h2 id="2019-07-02-4">4. Post-editese: an Exacerbated Translationese</h2>
-
 Title: [Post-editese: an Exacerbated Translationese](https://arxiv.org/abs/1907.00900)
 
 Authors: [Antonio Toral](https://arxiv.org/search/cs?searchtype=author&query=Toral%2C+A)
