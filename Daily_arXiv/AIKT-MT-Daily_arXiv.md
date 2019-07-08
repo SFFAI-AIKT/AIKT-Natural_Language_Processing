@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-07-08](#2019-07-08)
+  - [1. Multi-lingual Intent Detection and Slot Filling in a Joint BERT-based Model](#2019-07-08-1)
+
 - [2019-07-03](#2019-07-03)
   - [1. A Neural Grammatical Error Correction System Built On Better Pre-training and Sequential Transfer Learning](#2019-07-03-1)
   - [2. Improving Robustness in Real-World Neural Machine Translation Engines](#2019-07-03-2)
@@ -25,11 +28,32 @@
 
 
 
+# 2019-07-08
+
+[Return to Index](#Index)
+
+<h2 id="2019-07-08-1">1. Multi-lingual Intent Detection and Slot Filling in a Joint BERT-based Model</h2>
+
+Title: [Multi-lingual Intent Detection and Slot Filling in a Joint BERT-based Model](https://arxiv.org/abs/1907.02884)
+
+Authors: [Giuseppe Castellucci](https://arxiv.org/search/cs?searchtype=author&query=Castellucci%2C+G), [Valentina Bellomaria](https://arxiv.org/search/cs?searchtype=author&query=Bellomaria%2C+V), [Andrea Favalli](https://arxiv.org/search/cs?searchtype=author&query=Favalli%2C+A), [Raniero Romagnoli](https://arxiv.org/search/cs?searchtype=author&query=Romagnoli%2C+R)
+
+*(Submitted on 5 Jul 2019)*
+
+> Intent Detection and Slot Filling are two pillar tasks in Spoken Natural Language Understanding. Common approaches adopt joint Deep Learning architectures in attention-based recurrent frameworks. In this work, we aim at exploiting the success of "recurrence-less" models for these tasks. We introduce Bert-Joint, i.e., a multi-lingual joint text classification and sequence labeling framework. The experimental evaluation over two well-known English benchmarks demonstrates the strong performances that can be obtained with this model, even when few annotated data is available. Moreover, we annotated a new dataset for the Italian language, and we observed similar performances without the need for changing the model.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1907.02884 [cs.CL]**                                 |
+|           | (or **arXiv:1907.02884v1 [cs.CL]** for this version)         |
+
+
+
 # 2019-07-03
 
 [Return to Index](#Index)
-<h2 id="2019-07-03-1">1. A Neural Grammatical Error Correction System Built On Better Pre-training and Sequential Transfer Learning</h2>
 
+<h2 id="2019-07-03-1">1. A Neural Grammatical Error Correction System Built On Better Pre-training and Sequential Transfer Learning</h2>
 Title: [A Neural Grammatical Error Correction System Built On Better Pre-training and Sequential Transfer Learning](https://arxiv.org/abs/1907.01256)
 Authors:  [Yo Joong Choe](https://arxiv.org/search/cs?searchtype=author&query=Choe%2C+Y+J), [Jiyeon Ham](https://arxiv.org/search/cs?searchtype=author&query=Ham%2C+J), [Kyubyong Park](https://arxiv.org/search/cs?searchtype=author&query=Park%2C+K), [Yeoil Yoon](https://arxiv.org/search/cs?searchtype=author&query=Yoon%2C+Y)
 
@@ -65,7 +89,6 @@ Authors:  [Rohit Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupt
 [Return to Index](#Index)
 
 <h2 id="2019-07-02-1">1. The University of Sydney's Machine Translation System for WMT19</h2>
-
 Title: [The University of Sydney's Machine Translation System for WMT19](https://arxiv.org/abs/1907.00494)
 
 Authors:[Liang Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+L), [Dacheng Tao](https://arxiv.org/search/cs?searchtype=author&query=Tao%2C+D)
