@@ -2,6 +2,12 @@
 
 ### Index
 
+- [2019-07-09](#2019-07-09)
+  - [1. Exploiting Out-of-Domain Parallel Data through Multilingual Transfer Learning for Low-Resource Neural Machine Translation](#2019-07-09-1)
+  - [2. Best Practices for Learning Domain-Specific Cross-Lingual Embeddings](#2019-07-09-2)
+  - [3. Evolutionary Algorithm for Sinhala to English Translation](#2019-07-09-3)
+  - [4. Correct-and-Memorize: Learning to Translate from Interactive Revisions](#2019-07-09-4)
+
 - [2019-07-08](#2019-07-08)
   - [1. Multi-lingual Intent Detection and Slot Filling in a Joint BERT-based Model](#2019-07-08-1)
 
@@ -28,12 +34,85 @@
 
 
 
+# 2019-07-09
+
+[Return to Index](#Index)
+
+<h2 id="2019-07-09-1">1. Exploiting Out-of-Domain Parallel Data through Multilingual Transfer Learning for Low-Resource Neural Machine Translation</h2>
+
+Title: [Exploiting Out-of-Domain Parallel Data through Multilingual Transfer Learning for Low-Resource Neural Machine Translation](https://arxiv.org/abs/1907.03060)
+
+Authors: [Aizhan Imankulova](https://arxiv.org/search/cs?searchtype=author&query=Imankulova%2C+A), [Raj Dabre](https://arxiv.org/search/cs?searchtype=author&query=Dabre%2C+R), [Atsushi Fujita](https://arxiv.org/search/cs?searchtype=author&query=Fujita%2C+A), [Kenji Imamura](https://arxiv.org/search/cs?searchtype=author&query=Imamura%2C+K)
+
+*(Submitted on 6 Jul 2019)*
+
+> This paper proposes a novel multilingual multistage fine-tuning approach for low-resource neural machine translation (NMT), taking a challenging Japanese--Russian pair for benchmarking. Although there are many solutions for low-resource scenarios, such as multilingual NMT and back-translation, we have empirically confirmed their limited success when restricted to in-domain data. We therefore propose to exploit out-of-domain data through transfer learning, by using it to first train a multilingual NMT model followed by multistage fine-tuning on in-domain parallel and back-translated pseudo-parallel data. Our approach, which combines domain adaptation, multilingualism, and back-translation, helps improve the translation quality by more than 3.7 BLEU points, over a strong baseline, for this extremely low-resource scenario.
+
+| Comments: | Accepted at the 17th Machine Translation Summit      |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1907.03060 [cs.CL]**                         |
+|           | (or **arXiv:1907.03060v1 [cs.CL]** for this version) |
+
+
+
+<h2 id="2019-07-09-2">2. Best Practices for Learning Domain-Specific Cross-Lingual Embeddings</h2>
+
+Title: [Best Practices for Learning Domain-Specific Cross-Lingual Embeddings](https://arxiv.org/abs/1907.03112)
+
+Authors: [Lena Shakurova](https://arxiv.org/search/cs?searchtype=author&query=Shakurova%2C+L), [Beata Nyari](https://arxiv.org/search/cs?searchtype=author&query=Nyari%2C+B), [Chao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+C), [Mihai Rotaru](https://arxiv.org/search/cs?searchtype=author&query=Rotaru%2C+M)
+
+*(Submitted on 6 Jul 2019)*
+
+> Cross-lingual embeddings aim to represent words in multiple languages in a shared vector space by capturing semantic similarities across languages. They are a crucial component for scaling tasks to multiple languages by transferring knowledge from languages with rich resources to low-resource languages. A common approach to learning cross-lingual embeddings is to train monolingual embeddings separately for each language and learn a linear projection from the monolingual spaces into a shared space, where the mapping relies on a small seed dictionary. While there are high-quality generic seed dictionaries and pre-trained cross-lingual embeddings available for many language pairs, there is little research on how they perform on specialised tasks. In this paper, we investigate the best practices for constructing the seed dictionary for a specific domain. We evaluate the embeddings on the sequence labelling task of Curriculum Vitae parsing and show that the size of a bilingual dictionary, the frequency of the dictionary words in the domain corpora and the source of data (task-specific vs generic) influence the performance. We also show that the less training data is available in the low-resource language, the more the construction of the bilingual dictionary matters, and demonstrate that some of the choices are crucial in the zero-shot transfer learning case.
+
+| Comments: | Proceedings of the 4th Workshop on Representation Learning for NLP |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **arXiv:1907.03112 [cs.CL]**                                 |
+|           | (or **arXiv:1907.03112v1 [cs.CL]** for this version)         |
+
+<h2 id="2019-07-09-3">3. Evolutionary Algorithm for Sinhala to English Translation</h2>
+
+Title: [Evolutionary Algorithm for Sinhala to English Translation](https://arxiv.org/abs/1907.03202)
+
+Authors: [J.K. Joseph](https://arxiv.org/search/cs?searchtype=author&query=Joseph%2C+J), [W.M.T. Chathurika](https://arxiv.org/search/cs?searchtype=author&query=Chathurika%2C+W), [A. Nugaliyadde](https://arxiv.org/search/cs?searchtype=author&query=Nugaliyadde%2C+A), [Y. Mallawarachchi](https://arxiv.org/search/cs?searchtype=author&query=Mallawarachchi%2C+Y)
+
+*(Submitted on 6 Jul 2019)*
+
+> Machine Translation (MT) is an area in natural language processing, which focus on translating from one language to another. Many approaches ranging from statistical methods to deep learning approaches are used in order to achieve MT. However, these methods either require a large number of data or a clear understanding about the language. Sinhala language has less digital text which could be used to train a deep neural network. Furthermore, Sinhala has complex rules therefore, it is harder to create statistical rules in order to apply statistical methods in MT. This research focuses on Sinhala to English translation using an Evolutionary Algorithm (EA). EA is used to identifying the correct meaning of Sinhala text and to translate it to English. The Sinhala text is passed to identify the meaning in order to get the correct meaning of the sentence. With the use of the EA the translation is carried out. The translated text is passed on to grammatically correct the sentence. This has shown to achieve accurate results.
+
+| Comments: | The paper was submitted to National Information Technology Conference (2019) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Neural and Evolutionary Computing (cs.NE) |
+| Cite as:  | **arXiv:1907.03202 [cs.CL]**                                 |
+|           | (or **arXiv:1907.03202v1 [cs.CL]** for this version)         |
+
+<h2 id="2019-07-09-4">4. Correct-and-Memorize: Learning to Translate from Interactive Revisions</h2>
+
+Title: [Correct-and-Memorize: Learning to Translate from Interactive Revisions](https://arxiv.org/abs/1907.03468)
+
+Authors: [Rongxiang Weng](https://arxiv.org/search/cs?searchtype=author&query=Weng%2C+R), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Shujian Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Yifan Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%2C+Y), [Jiajun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J)
+
+*(Submitted on 8 Jul 2019)*
+
+> State-of-the-art machine translation models are still not on par with human translators. Previous work takes human interactions into the neural machine translation process to obtain improved results in target languages. However, not all model-translation errors are equal -- some are critical while others are minor. In the meanwhile, the same translation mistakes occur repeatedly in a similar context. To solve both issues, we propose CAMIT, a novel method for translating in an interactive environment. Our proposed method works with critical revision instructions, therefore allows human to correct arbitrary words in model-translated sentences. In addition, CAMIT learns from and softly memorizes revision actions based on the context, alleviating the issue of repeating mistakes. Experiments in both ideal and real interactive translation settings demonstrate that our proposed \method enhances machine translation results significantly while requires fewer revision instructions from human compared to previous methods.
+
+| Comments: | Accepted at IJCAI 2019                               |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1907.03468 [cs.CL]**                         |
+|           | (or **arXiv:1907.03468v1 [cs.CL]** for this version) |
+
+
+
+
+
 # 2019-07-08
 
 [Return to Index](#Index)
 
 <h2 id="2019-07-08-1">1. Multi-lingual Intent Detection and Slot Filling in a Joint BERT-based Model</h2>
-
 Title: [Multi-lingual Intent Detection and Slot Filling in a Joint BERT-based Model](https://arxiv.org/abs/1907.02884)
 
 Authors: [Giuseppe Castellucci](https://arxiv.org/search/cs?searchtype=author&query=Castellucci%2C+G), [Valentina Bellomaria](https://arxiv.org/search/cs?searchtype=author&query=Bellomaria%2C+V), [Andrea Favalli](https://arxiv.org/search/cs?searchtype=author&query=Favalli%2C+A), [Raniero Romagnoli](https://arxiv.org/search/cs?searchtype=author&query=Romagnoli%2C+R)
