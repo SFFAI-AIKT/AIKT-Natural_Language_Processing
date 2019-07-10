@@ -2,6 +2,12 @@
 
 ### Index
 
+- [2019-07-10](#2019-07-10)
+  - [1. Learning Neural Sequence-to-Sequence Models from Weak Feedback with Bipolar Ramp Loss](#2019-07-10-1)
+  - [2. An Intrinsic Nearest Neighbor Analysis of Neural Machine Translation Architectures](#2019-07-10-2)
+  - [3. NTT's Machine Translation Systems for WMT19 Robustness Task](#2019-07-10-3)
+  - [4. Multilingual Universal Sentence Encoder for Semantic Retrieval](#2019-07-10-4)
+
 - [2019-07-09](#2019-07-09)
   - [1. Exploiting Out-of-Domain Parallel Data through Multilingual Transfer Learning for Low-Resource Neural Machine Translation](#2019-07-09-1)
   - [2. Best Practices for Learning Domain-Specific Cross-Lingual Embeddings](#2019-07-09-2)
@@ -34,12 +40,86 @@
 
 
 
+# 2019-07-10
+
+[Return to Index](#Index)
+
+<h2 id="2019-07-10-1">1. Learning Neural Sequence-to-Sequence Models from Weak Feedback with Bipolar Ramp Loss</h2>
+
+Title: [Learning Neural Sequence-to-Sequence Models from Weak Feedback with Bipolar Ramp Loss](https://arxiv.org/abs/1907.03748)
+
+Authors: [Laura Jehl](https://arxiv.org/search/cs?searchtype=author&query=Jehl%2C+L), [Carolin Lawrence](https://arxiv.org/search/cs?searchtype=author&query=Lawrence%2C+C), [Stefan Riezler](https://arxiv.org/search/cs?searchtype=author&query=Riezler%2C+S)
+
+*(Submitted on 6 Jul 2019)*
+
+> In many machine learning scenarios, supervision by gold labels is not available and consequently neural models cannot be trained directly by maximum likelihood estimation (MLE). In a weak supervision scenario, metric-augmented objectives can be employed to assign feedback to model outputs, which can be used to extract a supervision signal for training. We present several objectives for two separate weakly supervised tasks, machine translation and semantic parsing. We show that objectives should actively discourage negative outputs in addition to promoting a surrogate gold structure. This notion of bipolarity is naturally present in ramp loss objectives, which we adapt to neural models. We show that bipolar ramp loss objectives outperform other non-bipolar ramp loss objectives and minimum risk training (MRT) on both weakly supervised tasks, as well as on a supervised machine translation task. Additionally, we introduce a novel token-level ramp loss objective, which is able to outperform even the best sequence-level ramp loss on both weakly supervised tasks.
+
+| Comments: | Transactions of the Association for Computational Linguistics 2019 Vol. 7, 233-248. Presented at ACL, Florence, Italy |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| Cite as:  | **arXiv:1907.03748 [cs.CL]**                                 |
+|           | (or **arXiv:1907.03748v1 [cs.CL]** for this version)         |
+
+<h2 id="2019-07-10-2">2. An Intrinsic Nearest Neighbor Analysis of Neural Machine Translation Architectures</h2>
+
+Title: [An Intrinsic Nearest Neighbor Analysis of Neural Machine Translation Architectures](https://arxiv.org/abs/1907.03885)
+
+Authors: [Hamidreza Ghader](https://arxiv.org/search/cs?searchtype=author&query=Ghader%2C+H), [Christof Monz](https://arxiv.org/search/cs?searchtype=author&query=Monz%2C+C)
+
+*(Submitted on 8 Jul 2019)*
+
+> Earlier approaches indirectly studied the information captured by the hidden states of recurrent and non-recurrent neural machine translation models by feeding them into different classifiers. In this paper, we look at the encoder hidden states of both transformer and recurrent machine translation models from the nearest neighbors perspective. We investigate to what extent the nearest neighbors share information with the underlying word embeddings as well as related WordNet entries. Additionally, we study the underlying syntactic structure of the nearest neighbors to shed light on the role of syntactic similarities in bringing the neighbors together. We compare transformer and recurrent models in a more intrinsic way in terms of capturing lexical semantics and syntactic structures, in contrast to extrinsic approaches used by previous works. In agreement with the extrinsic evaluations in the earlier works, our experimental results show that transformers are superior in capturing lexical semantics, but not necessarily better in capturing the underlying syntax. Additionally, we show that the backward recurrent layer in a recurrent model learns more about the semantics of words, whereas the forward recurrent layer encodes more context.
+
+| Comments: | To be presented at Machine Translation Summit 2019 (MTSUMMIT XVII), Dublin, Ireland |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Neural and Evolutionary Computing (cs.NE) |
+| Cite as:  | **arXiv:1907.03885 [cs.CL]**                                 |
+|           | (or **arXiv:1907.03885v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-07-10-3">3. NTT's Machine Translation Systems for WMT19 Robustness Task</h2>
+
+Title: [NTT's Machine Translation Systems for WMT19 Robustness Task](https://arxiv.org/abs/1907.03927)
+
+Authors: [Soichiro Murakami](https://arxiv.org/search/cs?searchtype=author&query=Murakami%2C+S), [Makoto Morishita](https://arxiv.org/search/cs?searchtype=author&query=Morishita%2C+M), [Tsutomu Hirao](https://arxiv.org/search/cs?searchtype=author&query=Hirao%2C+T), [Masaaki Nagata](https://arxiv.org/search/cs?searchtype=author&query=Nagata%2C+M)
+
+*(Submitted on 9 Jul 2019)*
+
+> This paper describes NTT's submission to the WMT19 robustness task. This task mainly focuses on translating noisy text (e.g., posts on Twitter), which presents different difficulties from typical translation tasks such as news. Our submission combined techniques including utilization of a synthetic corpus, domain adaptation, and a placeholder mechanism, which significantly improved over the previous baseline. Experimental results revealed the placeholder mechanism, which temporarily replaces the non-standard tokens including emojis and emoticons with special placeholder tokens during translation, improves translation accuracy even with noisy texts.
+
+| Comments: | submitted to WMT 2019                                |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1907.03927 [cs.CL]**                         |
+|           | (or **arXiv:1907.03927v1 [cs.CL]** for this version) |
+
+
+
+<h2 id="2019-07-10-4">4. Multilingual Universal Sentence Encoder for Semantic Retrieval</h2>
+
+Title: [Multilingual Universal Sentence Encoder for Semantic Retrieval](https://arxiv.org/abs/1907.04307)
+
+Authors: [Yinfei Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Daniel Cer](https://arxiv.org/search/cs?searchtype=author&query=Cer%2C+D), [Amin Ahmad](https://arxiv.org/search/cs?searchtype=author&query=Ahmad%2C+A), [Mandy Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+M), [Jax Law](https://arxiv.org/search/cs?searchtype=author&query=Law%2C+J), [Noah Constant](https://arxiv.org/search/cs?searchtype=author&query=Constant%2C+N), [Gustavo Hernandez Abrego](https://arxiv.org/search/cs?searchtype=author&query=Abrego%2C+G+H), [Steve Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+S), [Chris Tar](https://arxiv.org/search/cs?searchtype=author&query=Tar%2C+C), [Yun-Hsuan Sung](https://arxiv.org/search/cs?searchtype=author&query=Sung%2C+Y), [Brian Strope](https://arxiv.org/search/cs?searchtype=author&query=Strope%2C+B), [Ray Kurzweil](https://arxiv.org/search/cs?searchtype=author&query=Kurzweil%2C+R)
+
+*(Submitted on 9 Jul 2019)*
+
+> We introduce two pre-trained retrieval focused multilingual sentence encoding models, respectively based on the Transformer and CNN model architectures. The models embed text from 16 languages into a single semantic space using a multi-task trained dual-encoder that learns tied representations using translation based bridge tasks (Chidambaram al., 2018). The models provide performance that is competitive with the state-of-the-art on: semantic retrieval (SR), translation pair bitext retrieval (BR) and retrieval question answering (ReQA). On English transfer learning tasks, our sentence-level embeddings approach, and in some cases exceed, the performance of monolingual, English only, sentence embedding models. Our models are made available for download on TensorFlow Hub.
+
+| Comments: | 6 pages, 6 tables, 2 listings, and 1 figure          |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1907.04307 [cs.CL]**                         |
+|           | (or **arXiv:1907.04307v1 [cs.CL]** for this version) |
+
+
+
+
 # 2019-07-09
 
 [Return to Index](#Index)
 
 <h2 id="2019-07-09-1">1. Exploiting Out-of-Domain Parallel Data through Multilingual Transfer Learning for Low-Resource Neural Machine Translation</h2>
-
 Title: [Exploiting Out-of-Domain Parallel Data through Multilingual Transfer Learning for Low-Resource Neural Machine Translation](https://arxiv.org/abs/1907.03060)
 
 Authors: [Aizhan Imankulova](https://arxiv.org/search/cs?searchtype=author&query=Imankulova%2C+A), [Raj Dabre](https://arxiv.org/search/cs?searchtype=author&query=Dabre%2C+R), [Atsushi Fujita](https://arxiv.org/search/cs?searchtype=author&query=Fujita%2C+A), [Kenji Imamura](https://arxiv.org/search/cs?searchtype=author&query=Imamura%2C+K)
@@ -57,7 +137,6 @@ Authors: [Aizhan Imankulova](https://arxiv.org/search/cs?searchtype=author&query
 
 
 <h2 id="2019-07-09-2">2. Best Practices for Learning Domain-Specific Cross-Lingual Embeddings</h2>
-
 Title: [Best Practices for Learning Domain-Specific Cross-Lingual Embeddings](https://arxiv.org/abs/1907.03112)
 
 Authors: [Lena Shakurova](https://arxiv.org/search/cs?searchtype=author&query=Shakurova%2C+L), [Beata Nyari](https://arxiv.org/search/cs?searchtype=author&query=Nyari%2C+B), [Chao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+C), [Mihai Rotaru](https://arxiv.org/search/cs?searchtype=author&query=Rotaru%2C+M)
@@ -73,7 +152,6 @@ Authors: [Lena Shakurova](https://arxiv.org/search/cs?searchtype=author&query=Sh
 |           | (or **arXiv:1907.03112v1 [cs.CL]** for this version)         |
 
 <h2 id="2019-07-09-3">3. Evolutionary Algorithm for Sinhala to English Translation</h2>
-
 Title: [Evolutionary Algorithm for Sinhala to English Translation](https://arxiv.org/abs/1907.03202)
 
 Authors: [J.K. Joseph](https://arxiv.org/search/cs?searchtype=author&query=Joseph%2C+J), [W.M.T. Chathurika](https://arxiv.org/search/cs?searchtype=author&query=Chathurika%2C+W), [A. Nugaliyadde](https://arxiv.org/search/cs?searchtype=author&query=Nugaliyadde%2C+A), [Y. Mallawarachchi](https://arxiv.org/search/cs?searchtype=author&query=Mallawarachchi%2C+Y)
@@ -89,7 +167,6 @@ Authors: [J.K. Joseph](https://arxiv.org/search/cs?searchtype=author&query=Josep
 |           | (or **arXiv:1907.03202v1 [cs.CL]** for this version)         |
 
 <h2 id="2019-07-09-4">4. Correct-and-Memorize: Learning to Translate from Interactive Revisions</h2>
-
 Title: [Correct-and-Memorize: Learning to Translate from Interactive Revisions](https://arxiv.org/abs/1907.03468)
 
 Authors: [Rongxiang Weng](https://arxiv.org/search/cs?searchtype=author&query=Weng%2C+R), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Shujian Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Yifan Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%2C+Y), [Jiajun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J)
