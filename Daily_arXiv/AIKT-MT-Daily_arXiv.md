@@ -2,6 +2,10 @@
 
 ### Index
 
+- [2019-07-11](#2019-07-11)
+  - [1.  Learning to Speak Fluently in a Foreign Language: Multilingual Speech Synthesis and Cross-Language Voice Cloning](#2019-07-11-1)
+  - [2.  Lingua Custodia at WMT'19: Attempts to Control Terminology](#2019-07-11-2)
+
 - [2019-07-10](#2019-07-10)
   - [1. Learning Neural Sequence-to-Sequence Models from Weak Feedback with Bipolar Ramp Loss](#2019-07-10-1)
   - [2. An Intrinsic Nearest Neighbor Analysis of Neural Machine Translation Architectures](#2019-07-10-2)
@@ -40,12 +44,47 @@
 
 
 
+# 2019-07-11
+
+[Return to Index](#Index)
+<h2 id="2019-07-11-1">1. Learning to Speak Fluently in a Foreign Language: Multilingual Speech Synthesis and Cross-Language Voice Cloning</h2>
+
+Title: [Learning to Speak Fluently in a Foreign Language: Multilingual Speech Synthesis and Cross-Language Voice Cloning](https://arxiv.org/abs/1907.04448)
+Authors: [Yu Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Ron J. Weiss](https://arxiv.org/search/cs?searchtype=author&query=Weiss%2C+R+J), [Heiga Zen](https://arxiv.org/search/cs?searchtype=author&query=Zen%2C+H), [Yonghui Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Y), [Zhifeng Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Z), [RJ Skerry-Ryan](https://arxiv.org/search/cs?searchtype=author&query=Skerry-Ryan%2C+R), [Ye Jia](https://arxiv.org/search/cs?searchtype=author&query=Jia%2C+Y), [Andrew Rosenberg](https://arxiv.org/search/cs?searchtype=author&query=Rosenberg%2C+A), [Bhuvana Ramabhadran](https://arxiv.org/search/cs?searchtype=author&query=Ramabhadran%2C+B)
+
+*(Submitted on 9 Jul 2019)*
+
+> We present a multispeaker, multilingual text-to-speech (TTS) synthesis model based on Tacotron that is able to produce high quality speech in multiple languages. Moreover, the model is able to transfer voices across languages, e.g. synthesize fluent Spanish speech using an English speaker's voice, without training on any bilingual or parallel examples. Such transfer works across distantly related languages, e.g. English and Mandarin. 
+> Critical to achieving this result are: 1. using a phonemic input representation to encourage sharing of model capacity across languages, and 2. incorporating an adversarial loss term to encourage the model to disentangle its representation of speaker identity (which is perfectly correlated with language in the training data) from the speech content. Further scaling up the model by training on multiple speakers of each language, and incorporating an autoencoding input to help stabilize attention during training, results in a model which can be used to consistently synthesize intelligible speech for training speakers in all languages seen during training, and in native or foreign accents.
+
+| Comments: | 5 pages, submitted to Interspeech 2019                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **arXiv:1907.04448 [cs.CL]**                                 |
+|           | (or **arXiv:1907.04448v1 [cs.CL]** for this version)         |
+
+<h2 id="2019-07-11-2">2. Lingua Custodia at WMT'19: Attempts to Control Terminology</h2>
+
+Title: [Lingua Custodia at WMT'19: Attempts to Control Terminology](https://arxiv.org/abs/1907.04618)
+Authors: [Franck Burlot](https://arxiv.org/search/cs?searchtype=author&query=Burlot%2C+F)
+
+*(Submitted on 10 Jul 2019)*
+
+> This paper describes Lingua Custodia's submission to the WMT'19 news shared task for German-to-French on the topic of the EU elections. We report experiments on the adaptation of the terminology of a machine translation system to a specific topic, aimed at providing more accurate translations of specific entities like political parties and person names, given that the shared task provided no in-domain training parallel data dealing with the restricted topic. Our primary submission to the shared task uses backtranslation generated with a type of decoding allowing the insertion of constraints in the output in order to guarantee the correct translation of specific terms that are not necessarily observed in the data.
+
+| Comments: | Proceedings of the Fourth Conference on Machine Translation (WMT), pages72-79, Association for Computational Linguistics |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **arXiv:1907.04618 [cs.CL]**                                 |
+|           | (or **arXiv:1907.04618v1 [cs.CL]** for this version)         |
+
+
+
 # 2019-07-10
 
 [Return to Index](#Index)
 
 <h2 id="2019-07-10-1">1. Learning Neural Sequence-to-Sequence Models from Weak Feedback with Bipolar Ramp Loss</h2>
-
 Title: [Learning Neural Sequence-to-Sequence Models from Weak Feedback with Bipolar Ramp Loss](https://arxiv.org/abs/1907.03748)
 
 Authors: [Laura Jehl](https://arxiv.org/search/cs?searchtype=author&query=Jehl%2C+L), [Carolin Lawrence](https://arxiv.org/search/cs?searchtype=author&query=Lawrence%2C+C), [Stefan Riezler](https://arxiv.org/search/cs?searchtype=author&query=Riezler%2C+S)
@@ -61,7 +100,6 @@ Authors: [Laura Jehl](https://arxiv.org/search/cs?searchtype=author&query=Jehl%2
 |           | (or **arXiv:1907.03748v1 [cs.CL]** for this version)         |
 
 <h2 id="2019-07-10-2">2. An Intrinsic Nearest Neighbor Analysis of Neural Machine Translation Architectures</h2>
-
 Title: [An Intrinsic Nearest Neighbor Analysis of Neural Machine Translation Architectures](https://arxiv.org/abs/1907.03885)
 
 Authors: [Hamidreza Ghader](https://arxiv.org/search/cs?searchtype=author&query=Ghader%2C+H), [Christof Monz](https://arxiv.org/search/cs?searchtype=author&query=Monz%2C+C)
@@ -79,7 +117,6 @@ Authors: [Hamidreza Ghader](https://arxiv.org/search/cs?searchtype=author&query=
 
 
 <h2 id="2019-07-10-3">3. NTT's Machine Translation Systems for WMT19 Robustness Task</h2>
-
 Title: [NTT's Machine Translation Systems for WMT19 Robustness Task](https://arxiv.org/abs/1907.03927)
 
 Authors: [Soichiro Murakami](https://arxiv.org/search/cs?searchtype=author&query=Murakami%2C+S), [Makoto Morishita](https://arxiv.org/search/cs?searchtype=author&query=Morishita%2C+M), [Tsutomu Hirao](https://arxiv.org/search/cs?searchtype=author&query=Hirao%2C+T), [Masaaki Nagata](https://arxiv.org/search/cs?searchtype=author&query=Nagata%2C+M)
@@ -97,7 +134,6 @@ Authors: [Soichiro Murakami](https://arxiv.org/search/cs?searchtype=author&query
 
 
 <h2 id="2019-07-10-4">4. Multilingual Universal Sentence Encoder for Semantic Retrieval</h2>
-
 Title: [Multilingual Universal Sentence Encoder for Semantic Retrieval](https://arxiv.org/abs/1907.04307)
 
 Authors: [Yinfei Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Daniel Cer](https://arxiv.org/search/cs?searchtype=author&query=Cer%2C+D), [Amin Ahmad](https://arxiv.org/search/cs?searchtype=author&query=Ahmad%2C+A), [Mandy Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+M), [Jax Law](https://arxiv.org/search/cs?searchtype=author&query=Law%2C+J), [Noah Constant](https://arxiv.org/search/cs?searchtype=author&query=Constant%2C+N), [Gustavo Hernandez Abrego](https://arxiv.org/search/cs?searchtype=author&query=Abrego%2C+G+H), [Steve Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+S), [Chris Tar](https://arxiv.org/search/cs?searchtype=author&query=Tar%2C+C), [Yun-Hsuan Sung](https://arxiv.org/search/cs?searchtype=author&query=Sung%2C+Y), [Brian Strope](https://arxiv.org/search/cs?searchtype=author&query=Strope%2C+B), [Ray Kurzweil](https://arxiv.org/search/cs?searchtype=author&query=Kurzweil%2C+R)
