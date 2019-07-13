@@ -2,6 +2,11 @@
 
 ### Index
 
+- [2019-07-12](#2019-07-12)
+  - [1. Massively Multilingual Neural Machine Translation in the Wild: Findings and Challenges](#2019-07-12-1)
+  - [2. Self-Regulated Interactive Sequence-to-Sequence Learning](#2019-07-12-2)
+  - [3. ](#2019-07-12-3)
+
 - [2019-07-11](#2019-07-11)
   - [1.  Learning to Speak Fluently in a Foreign Language: Multilingual Speech Synthesis and Cross-Language Voice Cloning](#2019-07-11-1)
   - [2.  Lingua Custodia at WMT'19: Attempts to Control Terminology](#2019-07-11-2)
@@ -44,11 +49,64 @@
 
 
 
+# 2019-07-12
+
+[Return to Index](#Index)
+
+<h2 id="2019-07-12-1">1. Massively Multilingual Neural Machine Translation in the Wild: Findings and Challenges</h2>
+Title: [Massively Multilingual Neural Machine Translation in the Wild: Findings and Challenges](https://arxiv.org/abs/1907.05019)
+
+Authors:[Naveen Arivazhagan](https://arxiv.org/search/cs?searchtype=author&query=Arivazhagan%2C+N), [Ankur Bapna](https://arxiv.org/search/cs?searchtype=author&query=Bapna%2C+A), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O), [Dmitry Lepikhin](https://arxiv.org/search/cs?searchtype=author&query=Lepikhin%2C+D), [Melvin Johnson](https://arxiv.org/search/cs?searchtype=author&query=Johnson%2C+M), [Maxim Krikun](https://arxiv.org/search/cs?searchtype=author&query=Krikun%2C+M), [Mia Xu Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+M+X), [Yuan Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+Y), [George Foster](https://arxiv.org/search/cs?searchtype=author&query=Foster%2C+G), [Colin Cherry](https://arxiv.org/search/cs?searchtype=author&query=Cherry%2C+C), [Wolfgang Macherey](https://arxiv.org/search/cs?searchtype=author&query=Macherey%2C+W), [Zhifeng Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Z), [Yonghui Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Y)
+
+*(Submitted on 11 Jul 2019)*
+
+> We introduce our efforts towards building a universal neural machine translation (NMT) system capable of translating between any language pair. We set a milestone towards this goal by building a single massively multilingual NMT model handling 103 languages trained on over 25 billion examples. Our system demonstrates effective transfer learning ability, significantly improving translation quality of low-resource languages, while keeping high-resource language translation quality on-par with competitive bilingual baselines. We provide in-depth analysis of various aspects of model building that are crucial to achieving quality and practicality in universal NMT. While we prototype a high-quality universal translation system, our extensive empirical analysis exposes issues that need to be further addressed, and we suggest directions for future research.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1907.05019 [cs.CL]**                                 |
+|           | (or **arXiv:1907.05019v1 [cs.CL]** for this version)         |
+
+<h2 id="2019-07-12-2">2. Self-Regulated Interactive Sequence-to-Sequence Learning</h2>
+
+Title: [Self-Regulated Interactive Sequence-to-Sequence Learning](https://arxiv.org/abs/1907.05190)
+
+Authors:[Julia Kreutzer](https://arxiv.org/search/cs?searchtype=author&query=Kreutzer%2C+J), [Stefan Riezler](https://arxiv.org/search/cs?searchtype=author&query=Riezler%2C+S)
+
+*(Submitted on 11 Jul 2019)*
+
+> Not all types of supervision signals are created equal: Different types of feedback have different costs and effects on learning. We show how self-regulation strategies that decide when to ask for which kind of feedback from a teacher (or from oneself) can be cast as a learning-to-learn problem leading to improved cost-aware sequence-to-sequence learning. In experiments on interactive neural machine translation, we find that the self-regulator discovers an ϵ-greedy strategy for the optimal cost-quality trade-off by mixing different feedback types including corrections, error markups, and self-supervision. Furthermore, we demonstrate its robustness under domain shift and identify it as a promising alternative to active learning.
+
+| Comments: | ACL 2019                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (stat.ML) |
+| Cite as:  | **arXiv:1907.05190 [cs.CL]**                                 |
+|           | (or **arXiv:1907.05190v1 [cs.CL]** for this version)         |
+
+<h2 id="2019-07-12-3">3. To Tune or Not To Tune? How About the Best of Both Worlds?</h2>
+
+Title: [To Tune or Not To Tune? How About the Best of Both Worlds?](https://arxiv.org/abs/1907.05338)
+
+Authors: [Ran Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+R), [Haibo Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+H), [Chunye Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Kailin Ji](https://arxiv.org/search/cs?searchtype=author&query=Ji%2C+K), [Jupeng Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+J)
+
+*(Submitted on 9 Jul 2019)*
+
+> The introduction of pre-trained language models has revolutionized natural language research communities. However, researchers still know relatively little regarding their theoretical and empirical properties. In this regard, Peters et al. perform several experiments which demonstrate that it is better to adapt BERT with a light-weight task-specific head, rather than building a complex one on top of the pre-trained language model, and freeze the parameters in the said language model. However, there is another option to adopt. In this paper, we propose a new adaptation method which we first train the task model with the BERT parameters frozen and then fine-tune the entire model together. Our experimental results show that our model adaptation method can achieve 4.7% accuracy improvement in semantic similarity task, 0.99% accuracy improvement in sequence labeling task and 0.72% accuracy improvement in the text classification task.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1907.05338 [cs.CL]**                                 |
+|           | (or **arXiv:1907.05338v1 [cs.CL]** for this version)         |
+
+
+
+
+
 # 2019-07-11
 
 [Return to Index](#Index)
-<h2 id="2019-07-11-1">1. Learning to Speak Fluently in a Foreign Language: Multilingual Speech Synthesis and Cross-Language Voice Cloning</h2>
 
+<h2 id="2019-07-11-1">1. Learning to Speak Fluently in a Foreign Language: Multilingual Speech Synthesis and Cross-Language Voice Cloning</h2>
 Title: [Learning to Speak Fluently in a Foreign Language: Multilingual Speech Synthesis and Cross-Language Voice Cloning](https://arxiv.org/abs/1907.04448)
 Authors: [Yu Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Ron J. Weiss](https://arxiv.org/search/cs?searchtype=author&query=Weiss%2C+R+J), [Heiga Zen](https://arxiv.org/search/cs?searchtype=author&query=Zen%2C+H), [Yonghui Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Y), [Zhifeng Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Z), [RJ Skerry-Ryan](https://arxiv.org/search/cs?searchtype=author&query=Skerry-Ryan%2C+R), [Ye Jia](https://arxiv.org/search/cs?searchtype=author&query=Jia%2C+Y), [Andrew Rosenberg](https://arxiv.org/search/cs?searchtype=author&query=Rosenberg%2C+A), [Bhuvana Ramabhadran](https://arxiv.org/search/cs?searchtype=author&query=Ramabhadran%2C+B)
 
@@ -64,7 +122,6 @@ Authors: [Yu Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C
 |           | (or **arXiv:1907.04448v1 [cs.CL]** for this version)         |
 
 <h2 id="2019-07-11-2">2. Lingua Custodia at WMT'19: Attempts to Control Terminology</h2>
-
 Title: [Lingua Custodia at WMT'19: Attempts to Control Terminology](https://arxiv.org/abs/1907.04618)
 Authors: [Franck Burlot](https://arxiv.org/search/cs?searchtype=author&query=Burlot%2C+F)
 
