@@ -5,7 +5,7 @@
 - [2019-07-12](#2019-07-12)
   - [1. Massively Multilingual Neural Machine Translation in the Wild: Findings and Challenges](#2019-07-12-1)
   - [2. Self-Regulated Interactive Sequence-to-Sequence Learning](#2019-07-12-2)
-  - [3. ](#2019-07-12-3)
+  - [3. To Tune or Not To Tune? How About the Best of Both Worlds?](#2019-07-12-3)
 
 - [2019-07-11](#2019-07-11)
   - [1.  Learning to Speak Fluently in a Foreign Language: Multilingual Speech Synthesis and Cross-Language Voice Cloning](#2019-07-11-1)
@@ -68,7 +68,6 @@ Authors:[Naveen Arivazhagan](https://arxiv.org/search/cs?searchtype=author&query
 |           | (or **arXiv:1907.05019v1 [cs.CL]** for this version)         |
 
 <h2 id="2019-07-12-2">2. Self-Regulated Interactive Sequence-to-Sequence Learning</h2>
-
 Title: [Self-Regulated Interactive Sequence-to-Sequence Learning](https://arxiv.org/abs/1907.05190)
 
 Authors:[Julia Kreutzer](https://arxiv.org/search/cs?searchtype=author&query=Kreutzer%2C+J), [Stefan Riezler](https://arxiv.org/search/cs?searchtype=author&query=Riezler%2C+S)
@@ -84,7 +83,6 @@ Authors:[Julia Kreutzer](https://arxiv.org/search/cs?searchtype=author&query=Kre
 |           | (or **arXiv:1907.05190v1 [cs.CL]** for this version)         |
 
 <h2 id="2019-07-12-3">3. To Tune or Not To Tune? How About the Best of Both Worlds?</h2>
-
 Title: [To Tune or Not To Tune? How About the Best of Both Worlds?](https://arxiv.org/abs/1907.05338)
 
 Authors: [Ran Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+R), [Haibo Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+H), [Chunye Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Kailin Ji](https://arxiv.org/search/cs?searchtype=author&query=Ji%2C+K), [Jupeng Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+J)
