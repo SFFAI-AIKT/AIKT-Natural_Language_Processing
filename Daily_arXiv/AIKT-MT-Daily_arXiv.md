@@ -2,6 +2,10 @@
 
 ### Index
 
+- [2019-07-15](#2019-07-15)
+  - [1. R-Transformer: Recurrent Neural Network Enhanced Transformer](#2019-07-15-1)
+  - [2. The University of Edinburgh's Submissions to the WMT19 News Translation Task](#2019-07-15-2)
+
 - [2019-07-12](#2019-07-12)
   - [1. Massively Multilingual Neural Machine Translation in the Wild: Findings and Challenges](#2019-07-12-1)
   - [2. Self-Regulated Interactive Sequence-to-Sequence Learning](#2019-07-12-2)
@@ -46,6 +50,45 @@
 * [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-07-15
+
+[Return to Index](#Index)
+
+<h2 id="2019-07-15-1">1. R-Transformer: Recurrent Neural Network Enhanced Transformer</h2>
+
+Title: [R-Transformer: Recurrent Neural Network Enhanced Transformer](https://arxiv.org/abs/1907.05572)
+
+Authors: [Zhiwei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Yao Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+Y), [Zitao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Jiliang Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+J)
+
+*(Submitted on 12 Jul 2019)*
+
+> Recurrent Neural Networks have long been the dominating choice for sequence modeling. However, it severely suffers from two issues: impotent in capturing very long-term dependencies and unable to parallelize the sequential computation procedure. Therefore, many non-recurrent sequence models that are built on convolution and attention operations have been proposed recently. Notably, models with multi-head attention such as Transformer have demonstrated extreme effectiveness in capturing long-term dependencies in a variety of sequence modeling tasks. Despite their success, however, these models lack necessary components to model local structures in sequences and heavily rely on position embeddings that have limited effects and require a considerable amount of design efforts. In this paper, we propose the R-Transformer which enjoys the advantages of both RNNs and the multi-head attention mechanism while avoids their respective drawbacks. The proposed model can effectively capture both local structures and global long-term dependencies in sequences without any use of position embeddings. We evaluate R-Transformer through extensive experiments with data from a wide range of domains and the empirical results show that R-Transformer outperforms the state-of-the-art methods by a large margin in most of the tasks. We have made the code publicly available at \url{[this https URL](https://github.com/DSE-MSU/R-transformer)}.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1907.05572 [cs.LG]**                                 |
+|           | (or **arXiv:1907.05572v1 [cs.LG]** for this version)         |
+
+<h2 id="2019-07-15-2">2. The University of Edinburgh's Submissions to the WMT19 News Translation Task</h2>
+
+Title: [The University of Edinburgh's Submissions to the WMT19 News Translation Task](https://arxiv.org/abs/1907.05854)
+
+Authors: [Rachel Bawden](https://arxiv.org/search/cs?searchtype=author&query=Bawden%2C+R), [Nikolay Bogoychev](https://arxiv.org/search/cs?searchtype=author&query=Bogoychev%2C+N), [Ulrich Germann](https://arxiv.org/search/cs?searchtype=author&query=Germann%2C+U), [Roman Grundkiewicz](https://arxiv.org/search/cs?searchtype=author&query=Grundkiewicz%2C+R), [Faheem Kirefu](https://arxiv.org/search/cs?searchtype=author&query=Kirefu%2C+F), [Antonio Valerio Miceli Barone](https://arxiv.org/search/cs?searchtype=author&query=Barone%2C+A+V+M), [Alexandra Birch](https://arxiv.org/search/cs?searchtype=author&query=Birch%2C+A)
+
+*(Submitted on 12 Jul 2019)*
+
+> The University of Edinburgh participated in the WMT19 Shared Task on News Translation in six language directions: English-to-Gujarati, Gujarati-to-English, English-to-Chinese, Chinese-to-English, German-to-English, and English-to-Czech. For all translation directions, we created or used back-translations of monolingual data in the target language as additional synthetic training data. For English-Gujarati, we also explored semi-supervised MT with cross-lingual language model pre-training, and translation pivoting through Hindi. For translation to and from Chinese, we investigated character-based tokenisation vs. sub-word segmentation of Chinese text. For German-to-English, we studied the impact of vast amounts of back-translated training data on translation quality, gaining a few additional insights over Edunov et al. (2018). For English-to-Czech, we compared different pre-processing and tokenisation regimes.
+
+| Comments: | To appear in the Proceedings of WMT19: Shared Task Papers |
+| --------- | --------------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                      |
+| Cite as:  | **arXiv:1907.05854 [cs.CL]**                              |
+|           | (or **arXiv:1907.05854v1 [cs.CL]** for this version)      |
+
+
 
 
 
