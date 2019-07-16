@@ -2,44 +2,42 @@
 
 ### Index
 
+- [2019-07-16](#2019-07-16)
+  - [1. Microsoft Translator at WMT 2019: Towards Large-Scale Document-Level Neural Machine Translation](#2019-07-16-1)
+  - [2. Simple Automatic Post-editing for Arabic-Japanese Machine Translation](#2019-07-16-2)
+- [3. GLOSS: Generative Latent Optimization of Sentence Representations](#2019-07-16-3)
+  - [4. Naver Labs Europe's Systems for the WMT19 Machine Translation Robustness Task](#2019-07-16-4)
+  - [5. Facebook FAIR's WMT19 News Translation Task Submission](#2019-07-16-5)
 - [2019-07-15](#2019-07-15)
   - [1. R-Transformer: Recurrent Neural Network Enhanced Transformer](#2019-07-15-1)
   - [2. The University of Edinburgh's Submissions to the WMT19 News Translation Task](#2019-07-15-2)
-
 - [2019-07-12](#2019-07-12)
   - [1. Massively Multilingual Neural Machine Translation in the Wild: Findings and Challenges](#2019-07-12-1)
   - [2. Self-Regulated Interactive Sequence-to-Sequence Learning](#2019-07-12-2)
   - [3. To Tune or Not To Tune? How About the Best of Both Worlds?](#2019-07-12-3)
-
 - [2019-07-11](#2019-07-11)
   - [1.  Learning to Speak Fluently in a Foreign Language: Multilingual Speech Synthesis and Cross-Language Voice Cloning](#2019-07-11-1)
   - [2.  Lingua Custodia at WMT'19: Attempts to Control Terminology](#2019-07-11-2)
-
 - [2019-07-10](#2019-07-10)
   - [1. Learning Neural Sequence-to-Sequence Models from Weak Feedback with Bipolar Ramp Loss](#2019-07-10-1)
   - [2. An Intrinsic Nearest Neighbor Analysis of Neural Machine Translation Architectures](#2019-07-10-2)
   - [3. NTT's Machine Translation Systems for WMT19 Robustness Task](#2019-07-10-3)
   - [4. Multilingual Universal Sentence Encoder for Semantic Retrieval](#2019-07-10-4)
-
 - [2019-07-09](#2019-07-09)
   - [1. Exploiting Out-of-Domain Parallel Data through Multilingual Transfer Learning for Low-Resource Neural Machine Translation](#2019-07-09-1)
   - [2. Best Practices for Learning Domain-Specific Cross-Lingual Embeddings](#2019-07-09-2)
   - [3. Evolutionary Algorithm for Sinhala to English Translation](#2019-07-09-3)
   - [4. Correct-and-Memorize: Learning to Translate from Interactive Revisions](#2019-07-09-4)
-
 - [2019-07-08](#2019-07-08)
   - [1. Multi-lingual Intent Detection and Slot Filling in a Joint BERT-based Model](#2019-07-08-1)
-
 - [2019-07-03](#2019-07-03)
   - [1. A Neural Grammatical Error Correction System Built On Better Pre-training and Sequential Transfer Learning](#2019-07-03-1)
   - [2. Improving Robustness in Real-World Neural Machine Translation Engines](#2019-07-03-2)
-
 - [2019-07-02](#2019-07-02)
   - [1. The University of Sydney's Machine Translation System for WMT19](#2019-07-02-1)
   - [2. Few-Shot Representation Learning for Out-Of-Vocabulary Words](#2019-07-02-2)
   - [3. From Bilingual to Multilingual Neural Machine Translation by Incremental Training](#2019-07-02-3)
   - [4. Post-editese: an Exacerbated Translationese](#2019-07-02-4)
-
 - [2019-07-01](#2019-07-01)
   - [1. Findings of the First Shared Task on Machine Translation Robustness](#2019-07-01-1)
   - [2. Lost in Translation: Loss and Decay of Linguistic Richness in Machine Translation](#2019-07-01-2)
@@ -53,12 +51,104 @@
 
 
 
+# 2019-07-16
+
+[Return to Index](#Index)
+
+<h2 id="2019-07-16-1">1. Microsoft Translator at WMT 2019: Towards Large-Scale Document-Level Neural Machine Translation</h2>
+
+Title: [Microsoft Translator at WMT 2019: Towards Large-Scale Document-Level Neural Machine Translation](https://arxiv.org/abs/1907.06170)
+
+Authors: [Marcin Junczys-Dowmunt](https://arxiv.org/search/cs?searchtype=author&query=Junczys-Dowmunt%2C+M)
+
+*(Submitted on 14 Jul 2019)*
+
+> This paper describes the Microsoft Translator submissions to the WMT19 news translation shared task for English-German. Our main focus is document-level neural machine translation with deep transformer models. We start with strong sentence-level baselines, trained on large-scale data created via data-filtering and noisy back-translation and find that back-translation seems to mainly help with translationese input. We explore fine-tuning techniques, deeper models and different ensembling strategies to counter these effects. Using document boundaries present in the authentic and synthetic parallel data, we create sequences of up to 1000 subword segments and train transformer translation models. We experiment with data augmentation techniques for the smaller authentic data with document-boundaries and for larger authentic data without boundaries. We further explore multi-task training for the incorporation of document-level source language monolingual data via the BERT-objective on the encoder and two-pass decoding for combinations of sentence-level and document-level systems. Based on preliminary human evaluation results, evaluators strongly prefer the document-level systems over our comparable sentence-level system. The document-level systems also seem to score higher than the human references in source-based direct assessment.
+
+| Comments: | WMT 2019 Shared Task submission                      |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1907.06170 [cs.CL]**                         |
+|           | (or **arXiv:1907.06170v1 [cs.CL]** for this version) |
+
+
+
+<h2 id="2019-07-16-2">2. Simple Automatic Post-editing for Arabic-Japanese Machine Translation</h2>
+
+Title: [Simple Automatic Post-editing for Arabic-Japanese Machine Translation](https://arxiv.org/abs/1907.06210)
+
+Authors: [Ella Noll](https://arxiv.org/search/cs?searchtype=author&query=Noll%2C+E), [Mai Oudah](https://arxiv.org/search/cs?searchtype=author&query=Oudah%2C+M), [Nizar Habash](https://arxiv.org/search/cs?searchtype=author&query=Habash%2C+N)
+
+*(Submitted on 14 Jul 2019)*
+
+> A common bottleneck for developing machine translation (MT) systems for some language pairs is the lack of direct parallel translation data sets, in general and in certain domains. Alternative solutions such as zero-shot models or pivoting techniques are successful in getting a strong baseline, but are often below the more supported language-pair systems. In this paper, we focus on Arabic-Japanese machine translation, a less studied language pair; and we work with a unique parallel corpus of Arabic news articles that were manually translated to Japanese. We use this parallel corpus to adapt a state-of-the-art domain/genre agnostic neural MT system via a simple automatic post-editing technique. Our results and detailed analysis suggest that this approach is quite viable for less supported language pairs in specific domains.
+
+| Comments: | Machine translation, Automatic Post editing, Arabic, Japanese |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **arXiv:1907.06210 [cs.CL]**                                 |
+|           | (or **arXiv:1907.06210v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-07-16-3">3. GLOSS: Generative Latent Optimization of Sentence Representations</h2>
+
+Title: [GLOSS: Generative Latent Optimization of Sentence Representations](https://arxiv.org/abs/1907.06385)
+
+Authors: [Sidak Pal Singh](https://arxiv.org/search/cs?searchtype=author&query=Singh%2C+S+P), [Angela Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+A), [Michael Auli](https://arxiv.org/search/cs?searchtype=author&query=Auli%2C+M)
+
+*(Submitted on 15 Jul 2019)*
+
+> We propose a method to learn unsupervised sentence representations in a non-compositional manner based on Generative Latent Optimization. Our approach does not impose any assumptions on how words are to be combined into a sentence representation. We discuss a simple Bag of Words model as well as a variant that models word positions. Both are trained to reconstruct the sentence based on a latent code and our model can be used to generate text. Experiments show large improvements over the related Paragraph Vectors. Compared to uSIF, we achieve a relative improvement of 5% when trained on the same data and our method performs competitively to Sent2vec while trained on 30 times less data.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1907.06385 [cs.CL]**                         |
+|           | (or **arXiv:1907.06385v1 [cs.CL]** for this version) |
+
+
+
+<h2 id="2019-07-16-4">4. Naver Labs Europe's Systems for the WMT19 Machine Translation Robustness Task</h2>
+
+Title: [Naver Labs Europe's Systems for the WMT19 Machine Translation Robustness Task](https://arxiv.org/abs/1907.06488)
+
+Authors: [Alexandre Bérard](https://arxiv.org/search/cs?searchtype=author&query=Bérard%2C+A), [Ioan Calapodescu](https://arxiv.org/search/cs?searchtype=author&query=Calapodescu%2C+I), [Claude Roux](https://arxiv.org/search/cs?searchtype=author&query=Roux%2C+C)
+
+*(Submitted on 15 Jul 2019)*
+
+> This paper describes the systems that we submitted to the WMT19 Machine Translation robustness task. This task aims to improve MT's robustness to noise found on social media, like informal language, spelling mistakes and other orthographic variations. The organizers provide parallel data extracted from a social media website in two language pairs: French-English and Japanese-English (in both translation directions). The goal is to obtain the best scores on unseen test sets from the same source, according to automatic metrics (BLEU) and human evaluation. We proposed one single and one ensemble system for each translation direction. Our ensemble models ranked first in all language pairs, according to BLEU evaluation. We discuss the pre-processing choices that we made, and present our solutions for robustness to noise and domain adaptation.
+
+| Comments: | WMT 2019 - Shared Task Paper                         |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1907.06488 [cs.CL]**                         |
+|           | (or **arXiv:1907.06488v1 [cs.CL]** for this version) |
+
+
+
+<h2 id="2019-07-16-5">5. Facebook FAIR's WMT19 News Translation Task Submission</h2>
+
+Title: [Facebook FAIR's WMT19 News Translation Task Submission](https://arxiv.org/abs/1907.06616)
+
+Authors: [Nathan Ng](https://arxiv.org/search/cs?searchtype=author&query=Ng%2C+N), [Kyra Yee](https://arxiv.org/search/cs?searchtype=author&query=Yee%2C+K), [Alexei Baevski](https://arxiv.org/search/cs?searchtype=author&query=Baevski%2C+A), [Myle Ott](https://arxiv.org/search/cs?searchtype=author&query=Ott%2C+M), [Michael Auli](https://arxiv.org/search/cs?searchtype=author&query=Auli%2C+M), [Sergey Edunov](https://arxiv.org/search/cs?searchtype=author&query=Edunov%2C+S)
+
+*(Submitted on 15 Jul 2019)*
+
+> This paper describes Facebook FAIR's submission to the WMT19 shared news translation task. We participate in two language pairs and four language directions, English <-> German and English <-> Russian. Following our submission from last year, our baseline systems are large BPE-based transformer models trained with the Fairseq sequence modeling toolkit which rely on sampled back-translations. This year we experiment with different bitext data filtering schemes, as well as with adding filtered back-translated data. We also ensemble and fine-tune our models on domain-specific data, then decode using noisy channel model reranking. Our submissions are ranked first in all four directions of the human evaluation campaign. On En->De, our system significantly outperforms other systems as well as human translations. This system improves upon our WMT'18 submission by 4.5 BLEU points.
+
+| Comments: | 7 pages; WMT                                         |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1907.06616 [cs.CL]**                         |
+|           | (or **arXiv:1907.06616v1 [cs.CL]** for this version) |
+
+
+
 # 2019-07-15
 
 [Return to Index](#Index)
 
 <h2 id="2019-07-15-1">1. R-Transformer: Recurrent Neural Network Enhanced Transformer</h2>
-
 Title: [R-Transformer: Recurrent Neural Network Enhanced Transformer](https://arxiv.org/abs/1907.05572)
 
 Authors: [Zhiwei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Yao Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+Y), [Zitao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Jiliang Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+J)
@@ -73,7 +163,6 @@ Authors: [Zhiwei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%
 |           | (or **arXiv:1907.05572v1 [cs.LG]** for this version)         |
 
 <h2 id="2019-07-15-2">2. The University of Edinburgh's Submissions to the WMT19 News Translation Task</h2>
-
 Title: [The University of Edinburgh's Submissions to the WMT19 News Translation Task](https://arxiv.org/abs/1907.05854)
 
 Authors: [Rachel Bawden](https://arxiv.org/search/cs?searchtype=author&query=Bawden%2C+R), [Nikolay Bogoychev](https://arxiv.org/search/cs?searchtype=author&query=Bogoychev%2C+N), [Ulrich Germann](https://arxiv.org/search/cs?searchtype=author&query=Germann%2C+U), [Roman Grundkiewicz](https://arxiv.org/search/cs?searchtype=author&query=Grundkiewicz%2C+R), [Faheem Kirefu](https://arxiv.org/search/cs?searchtype=author&query=Kirefu%2C+F), [Antonio Valerio Miceli Barone](https://arxiv.org/search/cs?searchtype=author&query=Barone%2C+A+V+M), [Alexandra Birch](https://arxiv.org/search/cs?searchtype=author&query=Birch%2C+A)
