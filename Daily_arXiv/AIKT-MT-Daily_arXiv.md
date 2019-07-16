@@ -5,7 +5,7 @@
 - [2019-07-16](#2019-07-16)
   - [1. Microsoft Translator at WMT 2019: Towards Large-Scale Document-Level Neural Machine Translation](#2019-07-16-1)
   - [2. Simple Automatic Post-editing for Arabic-Japanese Machine Translation](#2019-07-16-2)
-- [3. GLOSS: Generative Latent Optimization of Sentence Representations](#2019-07-16-3)
+  - [3. GLOSS: Generative Latent Optimization of Sentence Representations](#2019-07-16-3)
   - [4. Naver Labs Europe's Systems for the WMT19 Machine Translation Robustness Task](#2019-07-16-4)
   - [5. Facebook FAIR's WMT19 News Translation Task Submission](#2019-07-16-5)
 - [2019-07-15](#2019-07-15)
@@ -56,7 +56,6 @@
 [Return to Index](#Index)
 
 <h2 id="2019-07-16-1">1. Microsoft Translator at WMT 2019: Towards Large-Scale Document-Level Neural Machine Translation</h2>
-
 Title: [Microsoft Translator at WMT 2019: Towards Large-Scale Document-Level Neural Machine Translation](https://arxiv.org/abs/1907.06170)
 
 Authors: [Marcin Junczys-Dowmunt](https://arxiv.org/search/cs?searchtype=author&query=Junczys-Dowmunt%2C+M)
@@ -74,7 +73,6 @@ Authors: [Marcin Junczys-Dowmunt](https://arxiv.org/search/cs?searchtype=author&
 
 
 <h2 id="2019-07-16-2">2. Simple Automatic Post-editing for Arabic-Japanese Machine Translation</h2>
-
 Title: [Simple Automatic Post-editing for Arabic-Japanese Machine Translation](https://arxiv.org/abs/1907.06210)
 
 Authors: [Ella Noll](https://arxiv.org/search/cs?searchtype=author&query=Noll%2C+E), [Mai Oudah](https://arxiv.org/search/cs?searchtype=author&query=Oudah%2C+M), [Nizar Habash](https://arxiv.org/search/cs?searchtype=author&query=Habash%2C+N)
@@ -92,7 +90,6 @@ Authors: [Ella Noll](https://arxiv.org/search/cs?searchtype=author&query=Noll%2C
 
 
 <h2 id="2019-07-16-3">3. GLOSS: Generative Latent Optimization of Sentence Representations</h2>
-
 Title: [GLOSS: Generative Latent Optimization of Sentence Representations](https://arxiv.org/abs/1907.06385)
 
 Authors: [Sidak Pal Singh](https://arxiv.org/search/cs?searchtype=author&query=Singh%2C+S+P), [Angela Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+A), [Michael Auli](https://arxiv.org/search/cs?searchtype=author&query=Auli%2C+M)
@@ -109,7 +106,6 @@ Authors: [Sidak Pal Singh](https://arxiv.org/search/cs?searchtype=author&query=S
 
 
 <h2 id="2019-07-16-4">4. Naver Labs Europe's Systems for the WMT19 Machine Translation Robustness Task</h2>
-
 Title: [Naver Labs Europe's Systems for the WMT19 Machine Translation Robustness Task](https://arxiv.org/abs/1907.06488)
 
 Authors: [Alexandre Bérard](https://arxiv.org/search/cs?searchtype=author&query=Bérard%2C+A), [Ioan Calapodescu](https://arxiv.org/search/cs?searchtype=author&query=Calapodescu%2C+I), [Claude Roux](https://arxiv.org/search/cs?searchtype=author&query=Roux%2C+C)
@@ -127,7 +123,6 @@ Authors: [Alexandre Bérard](https://arxiv.org/search/cs?searchtype=author&query
 
 
 <h2 id="2019-07-16-5">5. Facebook FAIR's WMT19 News Translation Task Submission</h2>
-
 Title: [Facebook FAIR's WMT19 News Translation Task Submission](https://arxiv.org/abs/1907.06616)
 
 Authors: [Nathan Ng](https://arxiv.org/search/cs?searchtype=author&query=Ng%2C+N), [Kyra Yee](https://arxiv.org/search/cs?searchtype=author&query=Yee%2C+K), [Alexei Baevski](https://arxiv.org/search/cs?searchtype=author&query=Baevski%2C+A), [Myle Ott](https://arxiv.org/search/cs?searchtype=author&query=Ott%2C+M), [Michael Auli](https://arxiv.org/search/cs?searchtype=author&query=Auli%2C+M), [Sergey Edunov](https://arxiv.org/search/cs?searchtype=author&query=Edunov%2C+S)
