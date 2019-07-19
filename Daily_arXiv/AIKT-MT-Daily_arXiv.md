@@ -2,6 +2,8 @@
 
 ### Index
 
+- [2019-07-19](#2019-07-19)
+  - [1. Understanding Neural Machine Translation by Simplification: The Case of Encoder-free Models](#2019-07-19-1)
 - [2019-07-16](#2019-07-16)
   - [1. Microsoft Translator at WMT 2019: Towards Large-Scale Document-Level Neural Machine Translation](#2019-07-16-1)
   - [2. Simple Automatic Post-editing for Arabic-Japanese Machine Translation](#2019-07-16-2)
@@ -48,6 +50,28 @@
 * [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
 * [2019-02](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-02.md)
+
+
+
+# 2019-07-17
+
+[Return to Index](#Index)
+
+<h2 id="2019-07-17-1">1. Understanding Neural Machine Translation by Simplification: The Case of Encoder-free Models</h2>
+
+Title: [Understanding Neural Machine Translation by Simplification: The Case of Encoder-free Models](https://arxiv.org/abs/1907.08158)
+
+Authors: [Gongbo Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+G), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R), [Joakim Nivre](https://arxiv.org/search/cs?searchtype=author&query=Nivre%2C+J)
+
+*(Submitted on 18 Jul 2019)*
+
+> In this paper, we try to understand neural machine translation (NMT) via simplifying NMT architectures and training encoder-free NMT models. In an encoder-free model, the sums of word embeddings and positional embeddings represent the source. The decoder is a standard Transformer or recurrent neural network that directly attends to embeddings via attention mechanisms. Experimental results show (1) that the attention mechanism in encoder-free models acts as a strong feature extractor, (2) that the word embeddings in encoder-free models are competitive to those in conventional models, (3) that non-contextualized source representations lead to a big performance drop, and (4) that encoder-free models have different effects on alignment quality for German-English and Chinese-English.
+
+| Comments: | Accepted by RANLP 2019, camera ready version         |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1907.08158 [cs.CL]**                         |
+|           | (or **arXiv:1907.08158v1 [cs.CL]** for this version) |
 
 
 
