@@ -2,6 +2,10 @@
 
 ### Index
 
+- [2019-07-23](#2019-07-23)
+  - [1. Structure-Invariant Testing for Machine Translation](#2019-07-23-1)
+  - [2. Trends in Integration of Vision and Language Research: A Survey of Tasks, Datasets, and Methods](#2019-07-23-2)
+
 - [2019-07-19](#2019-07-19)
   - [1. Understanding Neural Machine Translation by Simplification: The Case of Encoder-free Models](#2019-07-19-1)
 - [2019-07-16](#2019-07-16)
@@ -53,12 +57,49 @@
 
 
 
+# 2019-07-23
+
+[Return to Index](#Index)
+<h2 id="2019-07-23-1">1. Structure-Invariant Testing for Machine Translation</h2>
+
+Title: [Structure-Invariant Testing for Machine Translation](https://arxiv.org/abs/1907.08710)
+Authors:[Pinjia He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+P), [Clara Meister](https://arxiv.org/search/cs?searchtype=author&query=Meister%2C+C), [Zhendong Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+Z)
+
+*(Submitted on 19 Jul 2019)*
+
+> In recent years, machine translation software has increasingly been integrated into our daily lives. People routinely use machine translation for various applications, such as describing symptoms to a foreign doctor and reading political news in a foreign language. However, due to the complexity and intractability of neural machine translation (NMT) models that power modern machine translation systems, these systems are far from being robust. They can return inferior results that lead to misunderstanding, medical misdiagnoses, or threats to personal safety. Despite its apparent importance, validating the robustness of machine translation is very difficult and has, therefore, been much under-explored. 
+> To tackle this challenge, we introduce structure-invariant testing (SIT), a novel, widely applicable metamorphic testing methodology for validating machine translation software. Our key insight is that the translation results of similar source sentences should typically exhibit a similar sentence structure. SIT is designed to leverage this insight to test any machine translation system with unlabeled sentences; it specifically targets mistranslations that are difficult-to-find using state-of-the-art translation quality metrics such as BLEU. We have realized a practical implementation of SIT by (1) substituting one word in a given sentence with semantically similar, syntactically equivalent words to generate similar sentences, and (2) using syntax parse trees (obtained via constituency/dependency parsing) to represent sentence structure. To evaluate SIT, we have used it to test Google Translate and Bing Microsoft Translator with 200 unlabeled sentences as input, which led to 56 and 61 buggy translations with 60% and 61% top-1 accuracy, respectively. The bugs are diverse, including under-translation, over-translation, incorrect modification, word/phrase mistranslation, and unclear logic.
+
+| Comments:    | 27 pages, 14 figures                                         |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Software Engineering (cs.SE)**; Computation and Language (cs.CL) |
+| ACM classes: | D.2.5; I.2.7                                                 |
+| Cite as:     | **arXiv:1907.08710 [cs.SE]**                                 |
+|              | (or **arXiv:1907.08710v1 [cs.SE]** for this version)         |
+
+
+<h2 id="2019-07-23-2">2. Trends in Integration of Vision and Language Research: A Survey of Tasks, Datasets, and Methods</h2>
+
+Title: [Trends in Integration of Vision and Language Research: A Survey of Tasks, Datasets, and Methods](https://arxiv.org/abs/1907.09358)
+Authors:[Aditya Mogadala](https://arxiv.org/search/cs?searchtype=author&query=Mogadala%2C+A), [Marimuthu Kalimuthu](https://arxiv.org/search/cs?searchtype=author&query=Kalimuthu%2C+M), [Dietrich Klakow](https://arxiv.org/search/cs?searchtype=author&query=Klakow%2C+D)
+
+*(Submitted on 22 Jul 2019)*
+
+> Integration of vision and language tasks has seen a significant growth in the recent times due to surge of interest from multi-disciplinary communities such as deep learning, computer vision, and natural language processing. In this survey, we focus on ten different vision and language integration tasks in terms of their problem formulation, methods, existing datasets, evaluation measures, and comparison of results achieved with the corresponding state-of-the-art methods. This goes beyond earlier surveys which are either task-specific or concentrate only on one type of visual content i.e., image or video. We then conclude the survey by discussing some possible future directions for integration of vision and language research.
+
+| Comments: | Submitted to Journal                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1907.09358 [cs.CV]**                                 |
+|           | (or **arXiv:1907.09358v1 [cs.CV]** for this version)         |
+
+
+
 # 2019-07-17
 
 [Return to Index](#Index)
 
 <h2 id="2019-07-17-1">1. Understanding Neural Machine Translation by Simplification: The Case of Encoder-free Models</h2>
-
 Title: [Understanding Neural Machine Translation by Simplification: The Case of Encoder-free Models](https://arxiv.org/abs/1907.08158)
 
 Authors: [Gongbo Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+G), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R), [Joakim Nivre](https://arxiv.org/search/cs?searchtype=author&query=Nivre%2C+J)
