@@ -2,10 +2,11 @@
 
 ### Index
 
+- [2019-07-24](#2019-07-24)
+  - [1. Towards Unsupervised Grammatical Error Correction using Statistical Machine Translation with Synthetic Comparable Corpus](#2019-07-24-1)
 - [2019-07-23](#2019-07-23)
   - [1. Structure-Invariant Testing for Machine Translation](#2019-07-23-1)
   - [2. Trends in Integration of Vision and Language Research: A Survey of Tasks, Datasets, and Methods](#2019-07-23-2)
-
 - [2019-07-19](#2019-07-19)
   - [1. Understanding Neural Machine Translation by Simplification: The Case of Encoder-free Models](#2019-07-19-1)
 - [2019-07-16](#2019-07-16)
@@ -57,11 +58,31 @@
 
 
 
+# 2019-07-24
+
+[Return to Index](#Index)
+
+<h2 id="2019-07-24-1">1. Towards Unsupervised Grammatical Error Correction using Statistical Machine Translation with Synthetic Comparable Corpus</h2>
+
+Title: [Towards Unsupervised Grammatical Error Correction using Statistical Machine Translation with Synthetic Comparable Corpus](https://arxiv.org/abs/1907.09724)
+
+Authors: [Satoru Katsumata](https://arxiv.org/search/cs?searchtype=author&query=Katsumata%2C+S), [Mamoru Komachi](https://arxiv.org/search/cs?searchtype=author&query=Komachi%2C+M)
+
+*(Submitted on 23 Jul 2019)*
+
+> We introduce unsupervised techniques based on phrase-based statistical machine translation for grammatical error correction (GEC) trained on a pseudo learner corpus created by Google Translation. We verified our GEC system through experiments on various GEC dataset, includi ng a low resource track of the shared task at Building Educational Applications 2019 (BEA 2019). As a result, we achieved an F_0.5 score of 28.31 points with the test data of the low resource track.
+
+| Comments: | 7 pages; extended version of BEA 2019                |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1907.09724 [cs.CL]**                         |
+|           | (or **arXiv:1907.09724v1 [cs.CL]** for this version) |
+
 # 2019-07-23
 
 [Return to Index](#Index)
-<h2 id="2019-07-23-1">1. Structure-Invariant Testing for Machine Translation</h2>
 
+<h2 id="2019-07-23-1">1. Structure-Invariant Testing for Machine Translation</h2>
 Title: [Structure-Invariant Testing for Machine Translation](https://arxiv.org/abs/1907.08710)
 Authors:[Pinjia He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+P), [Clara Meister](https://arxiv.org/search/cs?searchtype=author&query=Meister%2C+C), [Zhendong Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+Z)
 
@@ -79,7 +100,6 @@ Authors:[Pinjia He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+P)
 
 
 <h2 id="2019-07-23-2">2. Trends in Integration of Vision and Language Research: A Survey of Tasks, Datasets, and Methods</h2>
-
 Title: [Trends in Integration of Vision and Language Research: A Survey of Tasks, Datasets, and Methods](https://arxiv.org/abs/1907.09358)
 Authors:[Aditya Mogadala](https://arxiv.org/search/cs?searchtype=author&query=Mogadala%2C+A), [Marimuthu Kalimuthu](https://arxiv.org/search/cs?searchtype=author&query=Kalimuthu%2C+M), [Dietrich Klakow](https://arxiv.org/search/cs?searchtype=author&query=Klakow%2C+D)
 
