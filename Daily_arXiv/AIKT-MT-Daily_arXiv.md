@@ -2,6 +2,11 @@
 
 ### Index
 
+- [2019-07-25](#2019-07-25)
+  - [1. Green AI](#2019-07-25-1)
+  - [2. Unbabel's Participation in the WMT19 Translation Quality Estimation Shared Task](#2019-07-25-2)
+  - [3. Translator2Vec: Understanding and Representing Human Post-Editors](#2019-07-25-3)
+
 - [2019-07-24](#2019-07-24)
   - [1. Towards Unsupervised Grammatical Error Correction using Statistical Machine Translation with Synthetic Comparable Corpus](#2019-07-24-1)
 - [2019-07-23](#2019-07-23)
@@ -58,12 +63,69 @@
 
 
 
+# 2019-07-25
+
+[Return to Index](#Index)
+
+<h2 id="2019-07-25-1">1. Green AI</h2>
+
+Title: [Green AI](https://arxiv.org/abs/1907.10597)
+
+Authors： [Roy Schwartz](https://arxiv.org/search/cs?searchtype=author&query=Schwartz%2C+R), [Jesse Dodge](https://arxiv.org/search/cs?searchtype=author&query=Dodge%2C+J), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith%2C+N+A), [Oren Etzioni](https://arxiv.org/search/cs?searchtype=author&query=Etzioni%2C+O)
+
+*(Submitted on 22 Jul 2019)*
+
+> The computations required for deep learning research have been doubling every few months, resulting in an estimated 300,000x increase from 2012 to 2018 [2]. These computations have a surprisingly large carbon footprint [38]. Ironically, deep learning was inspired by the human brain, which is remarkably energy efficient. Moreover, the financial cost of the computations can make it difficult for academics, students, and researchers from emerging economies to engage in deep learning research. This position paper advocates a practical solution by making efficiency an evaluation criterion for research alongside accuracy and related measures. In addition, we propose reporting the financial cost or "price tag" of developing, training, and running models to provide baselines for the investigation of increasingly efficient methods. Our goal is to make AI both greener and more inclusive---enabling any inspired undergraduate with a laptop to write high-quality research papers. Green AI is an emerging focus at the Allen Institute for AI.
+
+| Comments: | 12 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computers and Society (cs.CY)**; Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG); Methodology (stat.ME) |
+| Cite as:  | **arXiv:1907.10597 [cs.CY]**                                 |
+|           | (or **arXiv:1907.10597v1 [cs.CY]** for this version)         |
+
+
+
+<h2 id="2019-07-25-2">2. Unbabel's Participation in the WMT19 Translation Quality Estimation Shared Task</h2>
+
+Title: [Unbabel's Participation in the WMT19 Translation Quality Estimation Shared Task](https://arxiv.org/abs/1907.10352)
+
+Authors： [Fabio Kepler](https://arxiv.org/search/cs?searchtype=author&query=Kepler%2C+F), [Jonay Trénous](https://arxiv.org/search/cs?searchtype=author&query=Trénous%2C+J), [Marcos Treviso](https://arxiv.org/search/cs?searchtype=author&query=Treviso%2C+M), [Miguel Vera](https://arxiv.org/search/cs?searchtype=author&query=Vera%2C+M), [António Góis](https://arxiv.org/search/cs?searchtype=author&query=Góis%2C+A), [M. Amin Farajian](https://arxiv.org/search/cs?searchtype=author&query=Farajian%2C+M+A), [António V. Lopes](https://arxiv.org/search/cs?searchtype=author&query=Lopes%2C+A+V), [André F. T. Martins](https://arxiv.org/search/cs?searchtype=author&query=Martins%2C+A+F+T)
+
+*(Submitted on 24 Jul 2019)*
+
+> We present the contribution of the Unbabel team to the WMT 2019 Shared Task on Quality Estimation. We participated on the word, sentence, and document-level tracks, encompassing 3 language pairs: nglish-German, English-Russian, and English-French. Our submissions build upon the recent OpenKiwi framework: we combine linear, neural, and predictor-estimator systems with new transfer learning approaches using BERT and XLM pre-trained models. We compare systems individually and propose new ensemble techniques for word and sentence-level predictions. We also propose a simple technique for converting word labels into document-level predictions. Overall, our submitted systems achieve the best results on all tracks and language pairs by a considerable margin.
+
+| Comments: | Accepted in WMT 2019                                 |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1907.10352 [cs.CL]**                         |
+|           | (or **arXiv:1907.10352v1 [cs.CL]** for this version) |
+
+
+
+<h2 id="2019-07-25-3">3. Translator2Vec: Understanding and Representing Human Post-Editors</h2>
+
+Title: [Translator2Vec: Understanding and Representing Human Post-Editors](https://arxiv.org/abs/1907.10362)
+
+Authors： [António Góis](https://arxiv.org/search/cs?searchtype=author&query=Góis%2C+A), [André F. T. Martins](https://arxiv.org/search/cs?searchtype=author&query=Martins%2C+A+F+T)
+
+*(Submitted on 24 Jul 2019)*
+
+> The combination of machines and humans for translation is effective, with many studies showing productivity gains when humans post-edit machine-translated output instead of translating from scratch. To take full advantage of this combination, we need a fine-grained understanding of how human translators work, and which post-editing styles are more effective than others. In this paper, we release and analyze a new dataset with document-level post-editing action sequences, including edit operations from keystrokes, mouse actions, and waiting times. Our dataset comprises 66,268 full document sessions post-edited by 332 humans, the largest of the kind released to date. We show that action sequences are informative enough to identify post-editors accurately, compared to baselines that only look at the initial and final text. We build on this to learn and visualize continuous representations of post-editors, and we show that these representations improve the downstream task of predicting post-editing time.
+
+| Comments: | Accepted on MT Summit 2019; dataset available here: [this https URL](https://www.github.com/Unbabel/translator2vec;) please cite as: @article{gois2019translator2vec, title={Translator2Vec: Understanding and Representing Human Post-Editors}, author={Góis, António and F. T. Martins, André}, year={2019}, publisher={European Association for Machine Translation} } |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **arXiv:1907.10362 [cs.CL]**                                 |
+|           | (or **arXiv:1907.10362v1 [cs.CL]** for this version)         |
+
+
+
 # 2019-07-24
 
 [Return to Index](#Index)
 
 <h2 id="2019-07-24-1">1. Towards Unsupervised Grammatical Error Correction using Statistical Machine Translation with Synthetic Comparable Corpus</h2>
-
 Title: [Towards Unsupervised Grammatical Error Correction using Statistical Machine Translation with Synthetic Comparable Corpus](https://arxiv.org/abs/1907.09724)
 
 Authors: [Satoru Katsumata](https://arxiv.org/search/cs?searchtype=author&query=Katsumata%2C+S), [Mamoru Komachi](https://arxiv.org/search/cs?searchtype=author&query=Komachi%2C+M)
