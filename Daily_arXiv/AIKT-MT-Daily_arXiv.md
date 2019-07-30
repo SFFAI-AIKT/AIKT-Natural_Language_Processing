@@ -2,6 +2,16 @@
 
 ### Index
 
+- [2019-07-30](#2019-07-30)
+  - [1. A Baseline Neural Machine Translation System for Indian Languages](#2019-07-30-1)
+  - [2. Joey NMT: A Minimalist NMT Toolkit for Novices](#2019-07-30-2)
+
+- [2019-07-26](#2019-07-26)
+  - [1. Semantic Web for Machine Translation: Challenges and Directions](#2019-07-26-1)
+  - [2. Bilingual Lexicon Induction through Unsupervised Machine Translation](#2019-07-26-2)
+  - [3. DropAttention: A Regularization Method for Fully-Connected Self-Attention Networks](#2019-07-26-3)
+  - [4. Cross-Lingual Transfer for Distantly Supervised and Low-resources Indonesian NER](#2019-07-26-4)
+
 - [2019-07-25](#2019-07-25)
   - [1. Green AI](#2019-07-25-1)
   - [2. Unbabel's Participation in the WMT19 Translation Quality Estimation Shared Task](#2019-07-25-2)
@@ -63,12 +73,129 @@
 
 
 
+# 2019-07-30
+
+[Return to Index](#Index)
+
+<h2 id="2019-07-30-1">1. A Baseline Neural Machine Translation System for Indian Languages</h2>
+
+Title: [A Baseline Neural Machine Translation System for Indian Languages](https://arxiv.org/abs/1907.12437)
+
+Authors: [Jerin Philip](https://arxiv.org/search/cs?searchtype=author&query=Philip%2C+J), [Vinay P. Namboodiri](https://arxiv.org/search/cs?searchtype=author&query=Namboodiri%2C+V+P), [C.V. Jawahar](https://arxiv.org/search/cs?searchtype=author&query=Jawahar%2C+C)
+
+*(Submitted on 29 Jul 2019)*
+
+> We present a simple, yet effective, Neural Machine Translation system for Indian languages. We demonstrate the feasibility for multiple language pairs, and establish a strong baseline for further research.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1907.12437 [cs.CL]**                         |
+|           | (or **arXiv:1907.12437v1 [cs.CL]** for this version) |
+
+
+
+<h2 id="2019-07-30-2">2. Joey NMT: A Minimalist NMT Toolkit for Novices</h2>
+
+Title: [Joey NMT: A Minimalist NMT Toolkit for Novices](https://arxiv.org/abs/1907.12484)
+
+Authors: [Julia Kreutzer](https://arxiv.org/search/cs?searchtype=author&query=Kreutzer%2C+J), [Joost Bastings](https://arxiv.org/search/cs?searchtype=author&query=Bastings%2C+J), [Stefan Riezler](https://arxiv.org/search/cs?searchtype=author&query=Riezler%2C+S)
+
+*(Submitted on 29 Jul 2019)*
+
+> We present Joey NMT, a minimalist neural machine translation toolkit based on PyTorch that is specifically designed for novices. Joey NMT provides many popular NMT features in a small and simple code base, so that novices can easily and quickly learn to use it and adapt it to their needs. Despite its focus on simplicity, Joey NMT supports classic architectures (RNNs, transformers), fast beam search, weight tying, and more, and achieves performance comparable to more complex toolkits on standard benchmarks. We evaluate the accessibility of our toolkit in a user study where novices with general knowledge about Pytorch and NMT and experts work through a self-contained Joey NMT tutorial, showing that novices perform almost as well as experts in a subsequent code quiz. Joey NMT is available at [this https URL](https://github.com/joeynmt/joeynmt) .
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1907.12484 [cs.CL]**                                 |
+|           | (or **arXiv:1907.12484v1 [cs.CL]** for this version)         |
+
+
+
+
+
+# 2019-07-26
+
+[Return to Index](#Index)
+
+<h2 id="2019-07-26-1">1. Semantic Web for Machine Translation: Challenges and Directions</h2>
+Title: [Semantic Web for Machine Translation: Challenges and Directions](https://arxiv.org/abs/1907.10676)
+
+Authors: [Diego Moussallem](https://arxiv.org/search/cs?searchtype=author&query=Moussallem%2C+D), [Matthias Wauer](https://arxiv.org/search/cs?searchtype=author&query=Wauer%2C+M), [Axel-Cyrille Ngonga Ngomo](https://arxiv.org/search/cs?searchtype=author&query=Ngomo%2C+A+N)
+
+*(Submitted on 23 Jul 2019)*
+
+> A large number of machine translation approaches have recently been developed to facilitate the fluid migration of content across languages. However, the literature suggests that many obstacles must still be dealt with to achieve better automatic translations. One of these obstacles is lexical and syntactic ambiguity. A promising way of overcoming this problem is using Semantic Web technologies. This article is an extended abstract of our systematic review on machine translation approaches that rely on Semantic Web technologies for improving the translation of texts. Overall, we present the challenges and opportunities in the use of Semantic Web technologies in Machine Translation. Moreover, our research suggests that while Semantic Web technologies can enhance the quality of machine translation outputs for various problems, the combination of both is still in its infancy.
+
+| Comments: | Accepted at the Journal track of International Semantic Web conference (ISWC) 2019. arXiv admin note: substantial text overlap with [arXiv:1711.09476](https://arxiv.org/abs/1711.09476) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **arXiv:1907.10676 [cs.CL]**                                 |
+|           | (or **arXiv:1907.10676v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-07-26-2">2. Bilingual Lexicon Induction through Unsupervised Machine Translation</h2>
+Title: [Bilingual Lexicon Induction through Unsupervised Machine Translation](https://arxiv.org/abs/1907.10761)
+
+Authors: [Mikel Artetxe](https://arxiv.org/search/cs?searchtype=author&query=Artetxe%2C+M), [Gorka Labaka](https://arxiv.org/search/cs?searchtype=author&query=Labaka%2C+G), [Eneko Agirre](https://arxiv.org/search/cs?searchtype=author&query=Agirre%2C+E)
+
+*(Submitted on 24 Jul 2019)*
+
+> A recent research line has obtained strong results on bilingual lexicon induction by aligning independently trained word embeddings in two languages and using the resulting cross-lingual embeddings to induce word translation pairs through nearest neighbor or related retrieval methods. In this paper, we propose an alternative approach to this problem that builds on the recent work on unsupervised machine translation. This way, instead of directly inducing a bilingual lexicon from cross-lingual embeddings, we use them to build a phrase-table, combine it with a language model, and use the resulting machine translation system to generate a synthetic parallel corpus, from which we extract the bilingual lexicon using statistical word alignment techniques. As such, our method can work with any word embedding and cross-lingual mapping technique, and it does not require any additional resource besides the monolingual corpus used to train the embeddings. When evaluated on the exact same cross-lingual embeddings, our proposed method obtains an average improvement of 6 accuracy points over nearest neighbor and 4 points over CSLS retrieval, establishing a new state-of-the-art in the standard MUSE dataset.
+
+| Comments: | ACL 2019                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1907.10761 [cs.CL]**                                 |
+|           | (or **arXiv:1907.10761v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-07-26-3">3. DropAttention: A Regularization Method for Fully-Connected Self-Attention Networks</h2>
+Title: [DropAttention: A Regularization Method for Fully-Connected Self-Attention Networks](https://arxiv.org/abs/1907.11065)
+
+Authors: [Lin Zehui](https://arxiv.org/search/cs?searchtype=author&query=Zehui%2C+L), [Pengfei Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+P), [Luyao Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+L), [Jie Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+J), [Junkun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J), [Xipeng Qiu](https://arxiv.org/search/cs?searchtype=author&query=Qiu%2C+X), [Xuanjing Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+X)
+
+*(Submitted on 25 Jul 2019)*
+
+> Variants dropout methods have been designed for the fully-connected layer, convolutional layer and recurrent layer in neural networks, and shown to be effective to avoid overfitting. As an appealing alternative to recurrent and convolutional layers, the fully-connected self-attention layer surprisingly lacks a specific dropout method. This paper explores the possibility of regularizing the attention weights in Transformers to prevent different contextualized feature vectors from co-adaption. Experiments on a wide range of tasks show that DropAttention can improve performance and reduce overfitting.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1907.11065 [cs.CL]**                         |
+|           | (or **arXiv:1907.11065v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-07-26-4">4. Cross-Lingual Transfer for Distantly Supervised and Low-resources Indonesian NER</h2>
+Title: [Cross-Lingual Transfer for Distantly Supervised and Low-resources Indonesian NER](https://arxiv.org/abs/1907.11158)
+
+Authors: [Fariz Ikhwantri](https://arxiv.org/search/cs?searchtype=author&query=Ikhwantri%2C+F)
+
+*(Submitted on 25 Jul 2019)*
+
+> Manually annotated corpora for low-resource languages are usually small in quantity (gold), or large but distantly supervised (silver). Inspired by recent progress of injecting pre-trained language model (LM) on many Natural Language Processing (NLP) task, we proposed to fine-tune pre-trained language model from high-resources languages to low-resources languages to improve the performance of both scenarios. Our empirical experiment demonstrates significant improvement when fine-tuning pre-trained language model in cross-lingual transfer scenarios for small gold corpus and competitive results in large silver compare to supervised cross-lingual transfer, which will be useful when there is no parallel annotation in the same task to begin. We compare our proposed method of cross-lingual transfer using pre-trained LM to different sources of transfer such as mono-lingual LM and Part-of-Speech tagging (POS) in the downstream task of both large silver and small gold NER dataset by exploiting character-level input of bi-directional language model task.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1907.11158 [cs.CL]**                         |
+|           | (or **arXiv:1907.11158v1 [cs.CL]** for this version) |
+
+
+
+
+
 # 2019-07-25
 
 [Return to Index](#Index)
 
 <h2 id="2019-07-25-1">1. Green AI</h2>
-
 Title: [Green AI](https://arxiv.org/abs/1907.10597)
 
 Authors： [Roy Schwartz](https://arxiv.org/search/cs?searchtype=author&query=Schwartz%2C+R), [Jesse Dodge](https://arxiv.org/search/cs?searchtype=author&query=Dodge%2C+J), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith%2C+N+A), [Oren Etzioni](https://arxiv.org/search/cs?searchtype=author&query=Etzioni%2C+O)
@@ -86,7 +213,6 @@ Authors： [Roy Schwartz](https://arxiv.org/search/cs?searchtype=author&query=Sc
 
 
 <h2 id="2019-07-25-2">2. Unbabel's Participation in the WMT19 Translation Quality Estimation Shared Task</h2>
-
 Title: [Unbabel's Participation in the WMT19 Translation Quality Estimation Shared Task](https://arxiv.org/abs/1907.10352)
 
 Authors： [Fabio Kepler](https://arxiv.org/search/cs?searchtype=author&query=Kepler%2C+F), [Jonay Trénous](https://arxiv.org/search/cs?searchtype=author&query=Trénous%2C+J), [Marcos Treviso](https://arxiv.org/search/cs?searchtype=author&query=Treviso%2C+M), [Miguel Vera](https://arxiv.org/search/cs?searchtype=author&query=Vera%2C+M), [António Góis](https://arxiv.org/search/cs?searchtype=author&query=Góis%2C+A), [M. Amin Farajian](https://arxiv.org/search/cs?searchtype=author&query=Farajian%2C+M+A), [António V. Lopes](https://arxiv.org/search/cs?searchtype=author&query=Lopes%2C+A+V), [André F. T. Martins](https://arxiv.org/search/cs?searchtype=author&query=Martins%2C+A+F+T)
@@ -104,7 +230,6 @@ Authors： [Fabio Kepler](https://arxiv.org/search/cs?searchtype=author&query=Ke
 
 
 <h2 id="2019-07-25-3">3. Translator2Vec: Understanding and Representing Human Post-Editors</h2>
-
 Title: [Translator2Vec: Understanding and Representing Human Post-Editors](https://arxiv.org/abs/1907.10362)
 
 Authors： [António Góis](https://arxiv.org/search/cs?searchtype=author&query=Góis%2C+A), [André F. T. Martins](https://arxiv.org/search/cs?searchtype=author&query=Martins%2C+A+F+T)
