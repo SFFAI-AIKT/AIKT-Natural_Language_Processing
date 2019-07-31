@@ -2,6 +2,12 @@
 
 ### Index
 
+- [2019-07-31](#2019-07-31)
+  - [1. CUNI Systems for the Unsupervised News Translation Task in WMT 2019](#2019-07-31-1)
+  - [2. Machine Translation Evaluation with BERT Regressor](#2019-07-31-2)
+  - [3. English-Czech Systems in WMT19: Document-Level Transformer](#2019-07-31-3)
+  - [4. DuTongChuan: Context-aware Translation Model for Simultaneous Interpreting](#2019-07-31-4)
+
 - [2019-07-30](#2019-07-30)
   - [1. A Baseline Neural Machine Translation System for Indian Languages](#2019-07-30-1)
   - [2. Joey NMT: A Minimalist NMT Toolkit for Novices](#2019-07-30-2)
@@ -73,12 +79,88 @@
 
 
 
+# 2019-07-31
+
+[Return to Index](#Index)
+
+<h2 id="2019-07-31-1">1. CUNI Systems for the Unsupervised News Translation Task in WMT 2019</h2>
+
+Title: [CUNI Systems for the Unsupervised News Translation Task in WMT 2019](https://arxiv.org/abs/1907.12664)
+
+Authors: [Ivana Kvapilíková](https://arxiv.org/search/cs?searchtype=author&query=Kvapilíková%2C+I), [Dominik Macháček](https://arxiv.org/search/cs?searchtype=author&query=Macháček%2C+D), [Ondřej Bojar](https://arxiv.org/search/cs?searchtype=author&query=Bojar%2C+O)
+
+*(Submitted on 29 Jul 2019)*
+
+> In this paper we describe the CUNI translation system used for the unsupervised news shared task of the ACL 2019 Fourth Conference on Machine Translation (WMT19). We follow the strategy of Artexte et al. (2018b), creating a seed phrase-based system where the phrase table is initialized from cross-lingual embedding mappings trained on monolingual data, followed by a neural machine translation system trained on synthetic parallel data. The synthetic corpus was produced from a monolingual corpus by a tuned PBMT model refined through iterative back-translation. We further focus on the handling of named entities, i.e. the part of vocabulary where the cross-lingual embedding mapping suffers most. Our system reaches a BLEU score of 15.3 on the German-Czech WMT19 shared task.
+
+| Comments: | WMT19                                                |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1907.12664 [cs.CL]**                         |
+|           | (or **arXiv:1907.12664v1 [cs.CL]** for this version) |
+
+
+
+<h2 id="2019-07-31-2">2. Machine Translation Evaluation with BERT Regressor</h2>
+
+Title: [Machine Translation Evaluation with BERT Regressor](https://arxiv.org/abs/1907.12679)
+
+Authors: [Hiroki Shimanaka](https://arxiv.org/search/cs?searchtype=author&query=Shimanaka%2C+H), [Tomoyuki Kajiwara](https://arxiv.org/search/cs?searchtype=author&query=Kajiwara%2C+T), [Mamoru Komachi](https://arxiv.org/search/cs?searchtype=author&query=Komachi%2C+M)
+
+*(Submitted on 29 Jul 2019)*
+
+> We introduce the metric using BERT (Bidirectional Encoder Representations from Transformers) (Devlin et al., 2019) for automatic machine translation evaluation. The experimental results of the WMT-2017 Metrics Shared Task dataset show that our metric achieves state-of-the-art performance in segment-level metrics task for all to-English language pairs.
+
+| Comments: | 6 pages                                              |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1907.12679 [cs.CL]**                         |
+|           | (or **arXiv:1907.12679v1 [cs.CL]** for this version) |
+
+
+
+<h2 id="2019-07-31-3">3. English-Czech Systems in WMT19: Document-Level Transformer</h2>
+
+Title: [English-Czech Systems in WMT19: Document-Level Transformer](https://arxiv.org/abs/1907.12750)
+
+Authors: [Martin Popel](https://arxiv.org/search/cs?searchtype=author&query=Popel%2C+M), [Dominik Macháček](https://arxiv.org/search/cs?searchtype=author&query=Macháček%2C+D), [Michal Auersperger](https://arxiv.org/search/cs?searchtype=author&query=Auersperger%2C+M), [Ondřej Bojar](https://arxiv.org/search/cs?searchtype=author&query=Bojar%2C+O), [Pavel Pecina](https://arxiv.org/search/cs?searchtype=author&query=Pecina%2C+P)
+
+*(Submitted on 30 Jul 2019)*
+
+> We describe our NMT systems submitted to the WMT19 shared task in English-Czech news translation. Our systems are based on the Transformer model implemented in either Tensor2Tensor (T2T) or Marian framework. 
+> We aimed at improving the adequacy and coherence of translated documents by enlarging the context of the source and target. Instead of translating each sentence independently, we split the document into possibly overlapping multi-sentence segments. In case of the T2T implementation, this "document-level"-trained system achieves a +0.6 BLEU improvement (p<0.05) relative to the same system applied on isolated sentences. To assess the potential effect document-level models might have on lexical coherence, we performed a semi-automatic analysis, which revealed only a few sentences improved in this aspect. Thus, we cannot draw any conclusions from this weak evidence.
+
+| Comments: | WMT19                                                |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1907.12750 [cs.CL]**                         |
+|           | (or **arXiv:1907.12750v1 [cs.CL]** for this version) |
+
+
+
+<h2 id="2019-07-31-4">4. DuTongChuan: Context-aware Translation Model for Simultaneous Interpreting</h2>
+
+Title: [DuTongChuan: Context-aware Translation Model for Simultaneous Interpreting](https://arxiv.org/abs/1907.12984)
+
+Authors: [Hao Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+H), [Ruiqing Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+R), [Chuanqiang Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+C), [Zhongjun He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+Z), [Hua Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+H), [Haifeng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H)
+
+*(Submitted on 30 Jul 2019)*
+
+> In this paper, we present DuTongChuan, a novel context-aware translation model for simultaneous interpreting. This model allows to constantly read streaming text from the Automatic Speech Recognition (ASR) model and simultaneously determine the boundaries of Information Units (IUs) one after another. The detected IU is then translated into a fluent translation with two simple yet effective decoding strategies: partial decoding and context-aware decoding. In practice, by controlling the granularity of IUs and the size of the context, we can get a good trade-off between latency and translation quality easily. Elaborate evaluation from human translators reveals that our system achieves promising translation quality (85.71% for Chinese-English, and 86.36% for English-Chinese), specially in the sense of surprisingly good discourse coherence. According to an End-to-End (speech-to-speech simultaneous interpreting) evaluation, this model presents impressive performance in reducing latency (to less than 3 seconds at most times). Furthermore, we successfully deploy this model in a variety of Baidu's products which have hundreds of millions of users, and we release it as a service in our AI platform.
+
+| Comments: | Description for Baidu's Simultaneous Interpreting System |
+| --------- | -------------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                     |
+| Cite as:  | **arXiv:1907.12984 [cs.CL]**                             |
+|           | (or **arXiv:1907.12984v1 [cs.CL]** for this version)     |
+
+
+
 # 2019-07-30
 
 [Return to Index](#Index)
 
 <h2 id="2019-07-30-1">1. A Baseline Neural Machine Translation System for Indian Languages</h2>
-
 Title: [A Baseline Neural Machine Translation System for Indian Languages](https://arxiv.org/abs/1907.12437)
 
 Authors: [Jerin Philip](https://arxiv.org/search/cs?searchtype=author&query=Philip%2C+J), [Vinay P. Namboodiri](https://arxiv.org/search/cs?searchtype=author&query=Namboodiri%2C+V+P), [C.V. Jawahar](https://arxiv.org/search/cs?searchtype=author&query=Jawahar%2C+C)
@@ -95,7 +177,6 @@ Authors: [Jerin Philip](https://arxiv.org/search/cs?searchtype=author&query=Phil
 
 
 <h2 id="2019-07-30-2">2. Joey NMT: A Minimalist NMT Toolkit for Novices</h2>
-
 Title: [Joey NMT: A Minimalist NMT Toolkit for Novices](https://arxiv.org/abs/1907.12484)
 
 Authors: [Julia Kreutzer](https://arxiv.org/search/cs?searchtype=author&query=Kreutzer%2C+J), [Joost Bastings](https://arxiv.org/search/cs?searchtype=author&query=Bastings%2C+J), [Stefan Riezler](https://arxiv.org/search/cs?searchtype=author&query=Riezler%2C+S)
