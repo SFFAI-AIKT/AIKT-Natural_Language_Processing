@@ -1,4 +1,4 @@
-# Daily arXiv: Machine Translation - Jul., 2019
+# Daily arXiv: Machine Translation - Aug., 2019
 
 ### Index
 
@@ -20,7 +20,6 @@
 [Return to Index](#Index)
 
 <h2 id="2019-08-02-1">1. Tree-Transformer: A Transformer-Based Method for Correction of Tree-Structured Data</h2> 
-
 Title: [Tree-Transformer: A Transformer-Based Method for Correction of Tree-Structured Data](https://arxiv.org/abs/1908.00449)
 
 Authors: [Jacob Harer](https://arxiv.org/search/cs?searchtype=author&query=Harer%2C+J), [Chris Reale](https://arxiv.org/search/cs?searchtype=author&query=Reale%2C+C), [Peter Chin](https://arxiv.org/search/cs?searchtype=author&query=Chin%2C+P)
@@ -37,7 +36,6 @@ Authors: [Jacob Harer](https://arxiv.org/search/cs?searchtype=author&query=Harer
 
 
 <h2 id="2019-08-02-2">2. Learning Joint Acoustic-Phonetic Word Embeddings</h2> 
-
 Title: [Learning Joint Acoustic-Phonetic Word Embeddings](https://arxiv.org/abs/1908.00493)
 
 Authors: [Mohamed El-Geish](https://arxiv.org/search/cs?searchtype=author&query=El-Geish%2C+M)
@@ -55,7 +53,6 @@ Authors: [Mohamed El-Geish](https://arxiv.org/search/cs?searchtype=author&query=
 
 
 <h2 id="2019-08-02-3">3. JUCBNMT at WMT2018 News Translation Task: Character Based Neural Machine Translation of Finnish to English</h2> 
-
 Title: [JUCBNMT at WMT2018 News Translation Task: Character Based Neural Machine Translation of Finnish to English](https://arxiv.org/abs/1908.00323)
 
 Authors: [Sainik Kumar Mahata](https://arxiv.org/search/cs?searchtype=author&query=Mahata%2C+S+K), [Dipankar Das](https://arxiv.org/search/cs?searchtype=author&query=Das%2C+D), [Sivaji Bandyopadhyay](https://arxiv.org/search/cs?searchtype=author&query=Bandyopadhyay%2C+S)
