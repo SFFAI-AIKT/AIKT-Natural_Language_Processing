@@ -13,7 +13,6 @@
 [Return to Index](#Index)
 
 <h2 id="20190208-1">1. Non-Autoregressive Machine Translation with Auxiliary Regularization</h2> 
-
 Title: [Non-Autoregressive Machine Translation with Auxiliary Regularization](https://arxiv.org/abs/1902.10245)
 
 Authors: [Yiren Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Fei Tian](https://arxiv.org/search/cs?searchtype=author&query=Tian%2C+F), [Di He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+D), [Tao Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+T), [ChengXiang Zhai](https://arxiv.org/search/cs?searchtype=author&query=Zhai%2C+C), [Tie-Yan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T)
@@ -33,7 +32,6 @@ Authors: [Yiren Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2
 
 
 <h2 id="20190208-2">2. Multilingual Neural Machine Translation with Knowledge Distillation</h2> 
-
 Title: [Multilingual Neural Machine Translation with Knowledge Distillation](https://arxiv.org/abs/1902.10461)
 
 Authors: [Xu Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+X), [Yi Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+Y), [Di He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+D), [Tao Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+T), [Zhou Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+Z), [Tieyan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T)
