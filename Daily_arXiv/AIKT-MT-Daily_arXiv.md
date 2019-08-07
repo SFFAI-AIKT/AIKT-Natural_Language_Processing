@@ -2,6 +2,11 @@
 
 ### Index
 
+- [2019-08-07](#2019-08-07)
+  - [1. MacNet: Transferring Knowledge from Machine Comprehension to Sequence-to-Sequence Models](#2019-08-07-1)
+  - [2. A Translate-Edit Model for Natural Language Question to SQL Query Generation on Multi-relational Healthcare Data](#2019-08-07-2)
+  - [3. Self-Knowledge Distillation in Natural Language Processing](#2019-08-07-3)
+
 - [2019-08-06](#2019-08-06)
   - [1. Invariance-based Adversarial Attack on Neural Machine Translation Systems](#2019-08-06-1)
   - [2. Performance Evaluation of Supervised Machine Learning Techniques for Efficient Detection of Emotions from Online Content](#2019-08-06-2)
@@ -24,12 +29,71 @@
 
 
 
+# 2019-08-07
+
+[Return to Index](#Index)
+
+<h2 id="2019-08-07-1">1. MacNet: Transferring Knowledge from Machine Comprehension to Sequence-to-Sequence Models</h2> 
+
+Title: [MacNet: Transferring Knowledge from Machine Comprehension to Sequence-to-Sequence Models](https://arxiv.org/abs/1908.01816)
+
+Authors: [Boyuan Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C+B), [Yazheng Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Hao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+H), [Zhou Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+Z), [Yueting Zhuang](https://arxiv.org/search/cs?searchtype=author&query=Zhuang%2C+Y), [Deng Cai](https://arxiv.org/search/cs?searchtype=author&query=Cai%2C+D), [Xiaofei He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+X)
+
+*(Submitted on 23 Jul 2019)*
+
+> Machine Comprehension (MC) is one of the core problems in natural language processing, requiring both understanding of the natural language and knowledge about the world. Rapid progress has been made since the release of several benchmark datasets, and recently the state-of-the-art models even surpass human performance on the well-known SQuAD evaluation. In this paper, we transfer knowledge learned from machine comprehension to the sequence-to-sequence tasks to deepen the understanding of the text. We propose MacNet: a novel encoder-decoder supplementary architecture to the widely used attention-based sequence-to-sequence models. Experiments on neural machine translation (NMT) and abstractive text summarization show that our proposed framework can significantly improve the performance of the baseline models, and our method for the abstractive text summarization achieves the state-of-the-art results on the Gigaword dataset.
+
+| Comments: | Accepted In NeurIPS 2018                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1908.01816 [cs.CL]**                                 |
+|           | (or **arXiv:1908.01816v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-08-07-2">2. A Translate-Edit Model for Natural Language Question to SQL Query Generation on Multi-relational Healthcare Data</h2> 
+
+Title: [A Translate-Edit Model for Natural Language Question to SQL Query Generation on Multi-relational Healthcare Data](https://arxiv.org/abs/1908.01839)
+
+Authors: [Ping Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+P), [Tian Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+T), [Chandan K. Reddy](https://arxiv.org/search/cs?searchtype=author&query=Reddy%2C+C+K)
+
+*(Submitted on 28 Jul 2019)*
+
+> Electronic health record (EHR) data contains most of the important patient health information and is typically stored in a relational database with multiple tables. One important way for doctors to make use of EHR data is to retrieve intuitive information by posing a sequence of questions against it. However, due to a large amount of information stored in it, effectively retrieving patient information from EHR data in a short time is still a challenging issue for medical experts since it requires a good understanding of a query language to get access to the database. We tackle this challenge by developing a deep learning based approach that can translate a natural language question on multi-relational EHR data into its corresponding SQL query, which is referred to as a Question-to-SQL generation task. Most of the existing methods cannot solve this problem since they primarily focus on tackling the questions related to a single table under the table-aware assumption. While in our problem, it is possible that questions asked by clinicians are related to multiple unspecified tables. In this paper, we first create a new question to query dataset designed for healthcare to perform the Question-to-SQL generation task, named MIMICSQL, based on a publicly available electronic medical database. To address the challenge of generating queries on multi-relational databases from natural language questions, we propose a TRanslate-Edit Model for Question-to-SQL query (TREQS), which adopts the sequence-to-sequence model to directly generate SQL query for a given question, and further edits it with an attentive-copying mechanism and task-specific look-up tables. Both quantitative and qualitative experimental results indicate the flexibility and efficiency of our proposed method in tackling challenges that are unique in MIMICSQL.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Information Retrieval (cs.IR); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1908.01839 [cs.CL]**                                 |
+|           | (or **arXiv:1908.01839v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-08-07-3">3. Self-Knowledge Distillation in Natural Language Processing</h2> 
+
+Title: [Self-Knowledge Distillation in Natural Language Processing](https://arxiv.org/abs/1908.01851)
+
+Authors: [Sangchul Hahn](https://arxiv.org/search/cs?searchtype=author&query=Hahn%2C+S), [Heeyoul Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi%2C+H)
+
+*(Submitted on 2 Aug 2019)*
+
+> Since deep learning became a key player in natural language processing (NLP), many deep learning models have been showing remarkable performances in a variety of NLP tasks, and in some cases, they are even outperforming humans. Such high performance can be explained by efficient knowledge representation of deep learning models. While many methods have been proposed to learn more efficient representation, knowledge distillation from pretrained deep networks suggest that we can use more information from the soft target probability to train other neural networks. In this paper, we propose a new knowledge distillation method self-knowledge distillation, based on the soft target probabilities of the training model itself, where multimode information is distilled from the word embedding space right below the softmax layer. Due to the time complexity, our method approximates the soft target probabilities. In experiments, we applied the proposed method to two different and fundamental NLP tasks: language model and neural machine translation. The experiment results show that our proposed method improves performance on the tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1908.01851 [cs.CL]**                                 |
+|           | (or **arXiv:1908.01851v1 [cs.CL]** for this version)         |
+
+
+
 # 2019-08-06
 
 [Return to Index](#Index)
 
 <h2 id="2019-08-06-1">1. Invariance-based Adversarial Attack on Neural Machine Translation Systems</h2> 
-
 Title: [Invariance-based Adversarial Attack on Neural Machine Translation Systems](https://arxiv.org/abs/1908.01165)
 
 Authors: [Akshay Chaturvedi](https://arxiv.org/search/cs?searchtype=author&query=Chaturvedi%2C+A), [Abijith KP](https://arxiv.org/search/cs?searchtype=author&query=KP%2C+A), [Utpal Garain](https://arxiv.org/search/cs?searchtype=author&query=Garain%2C+U)
@@ -47,7 +111,6 @@ Authors: [Akshay Chaturvedi](https://arxiv.org/search/cs?searchtype=author&query
 
 
 <h2 id="2019-08-06-2">2. Performance Evaluation of Supervised Machine Learning Techniques for Efficient Detection of Emotions from Online Content</h2> 
-
 Title: [Performance Evaluation of Supervised Machine Learning Techniques for Efficient Detection of Emotions from Online Content](https://arxiv.org/abs/1908.01587)
 
 Authors: [Muhammad Zubair Asghar](https://arxiv.org/search/cs?searchtype=author&query=Asghar%2C+M+Z), [Fazli Subhan](https://arxiv.org/search/cs?searchtype=author&query=Subhan%2C+F), [Muhammad Imran](https://arxiv.org/search/cs?searchtype=author&query=Imran%2C+M), [Fazal Masud Kundi](https://arxiv.org/search/cs?searchtype=author&query=Kundi%2C+F+M), [Shahboddin Shamshirband](https://arxiv.org/search/cs?searchtype=author&query=Shamshirband%2C+S), [Amir Mosavi](https://arxiv.org/search/cs?searchtype=author&query=Mosavi%2C+A), [Peter Csiba](https://arxiv.org/search/cs?searchtype=author&query=Csiba%2C+P), [Annamaria R. Varkonyi-Koczy](https://arxiv.org/search/cs?searchtype=author&query=Varkonyi-Koczy%2C+A+R)
@@ -69,7 +132,6 @@ Authors: [Muhammad Zubair Asghar](https://arxiv.org/search/cs?searchtype=author&
 
 
 <h2 id="2019-08-06-3">3. The TALP-UPC System for the WMT Similar Language Task: Statistical vs Neural Machine Translation</h2> 
-
 Title: [The TALP-UPC System for the WMT Similar Language Task: Statistical vs Neural Machine Translation](https://arxiv.org/abs/1908.01192)
 
 Authors: [Magdalena Biesialska](https://arxiv.org/search/cs?searchtype=author&query=Biesialska%2C+M), [Lluis Guardia](https://arxiv.org/search/cs?searchtype=author&query=Guardia%2C+L), [Marta R. Costa-jussà](https://arxiv.org/search/cs?searchtype=author&query=Costa-jussà%2C+M+R)
@@ -89,7 +151,6 @@ Authors: [Magdalena Biesialska](https://arxiv.org/search/cs?searchtype=author&qu
 
 
 <h2 id="2019-08-06-4">4. JUMT at WMT2019 News Translation Task: A Hybrid approach to Machine Translation for Lithuanian to English</h2> 
-
 Title: [JUMT at WMT2019 News Translation Task: A Hybrid approach to Machine Translation for Lithuanian to English](https://arxiv.org/abs/1908.01349)
 
 Authors: [Sainik Kumar Mahata](https://arxiv.org/search/cs?searchtype=author&query=Mahata%2C+S+K), [Avishek Garain](https://arxiv.org/search/cs?searchtype=author&query=Garain%2C+A), [Adityar Rayala](https://arxiv.org/search/cs?searchtype=author&query=Rayala%2C+A), [Dipankar Das](https://arxiv.org/search/cs?searchtype=author&query=Das%2C+D), [Sivaji Bandyopadhyay](https://arxiv.org/search/cs?searchtype=author&query=Bandyopadhyay%2C+S)
@@ -109,7 +170,6 @@ Authors: [Sainik Kumar Mahata](https://arxiv.org/search/cs?searchtype=author&que
 
 
 <h2 id="2019-08-06-5">5. Beyond English-only Reading Comprehension: Experiments in Zero-Shot Multilingual Transfer for Bulgarian</h2> 
-
 Title: [Beyond English-only Reading Comprehension: Experiments in Zero-Shot Multilingual Transfer for Bulgarian](https://arxiv.org/abs/1908.01519)
 
 Authors: [Momchil Hardalov](https://arxiv.org/search/cs?searchtype=author&query=Hardalov%2C+M), [Ivan Koychev](https://arxiv.org/search/cs?searchtype=author&query=Koychev%2C+I), [Preslav Nakov](https://arxiv.org/search/cs?searchtype=author&query=Nakov%2C+P)
@@ -129,7 +189,6 @@ Authors: [Momchil Hardalov](https://arxiv.org/search/cs?searchtype=author&query=
 
 
 <h2 id="2019-08-06-6">6. Predicting Actions to Help Predict Translations</h2> 
-
 Title: [Predicting Actions to Help Predict Translations](https://arxiv.org/abs/1908.01665)
 
 Authors: [Zixiu Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Z), [Julia Ive](https://arxiv.org/search/cs?searchtype=author&query=Ive%2C+J), [Josiah Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+J), [Pranava Madhyastha](https://arxiv.org/search/cs?searchtype=author&query=Madhyastha%2C+P), [Lucia Specia](https://arxiv.org/search/cs?searchtype=author&query=Specia%2C+L)
@@ -149,7 +208,6 @@ Authors: [Zixiu Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Z)
 
 
 <h2 id="2019-08-06-7">7. Thoth: Improved Rapid Serial Visual Presentation using Natural Language Processing</h2> 
-
 Title: [Thoth: Improved Rapid Serial Visual Presentation using Natural Language Processing](https://arxiv.org/abs/1908.01699)
 
 Authors: [David Awad](https://arxiv.org/search/cs?searchtype=author&query=Awad%2C+D)
