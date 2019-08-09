@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-08-09](#2019-08-09)
+  - [1. A Test Suite and Manual Evaluation of Document-Level NMT at WMT19](#2019-08-09-1)
+
 - [2019-08-07](#2019-08-07)
   - [1. MacNet: Transferring Knowledge from Machine Comprehension to Sequence-to-Sequence Models](#2019-08-07-1)
   - [2. A Translate-Edit Model for Natural Language Question to SQL Query Generation on Multi-relational Healthcare Data](#2019-08-07-2)
@@ -29,12 +32,33 @@
 
 
 
+# 2019-08-09
+
+[Return to Index](#Index)
+
+<h2 id="2019-08-09-1">1. A Test Suite and Manual Evaluation of Document-Level NMT at WMT19</h2> 
+
+Title: [A Test Suite and Manual Evaluation of Document-Level NMT at WMT19](https://arxiv.org/abs/1908.03043)
+
+Authors: [Kateřina Rysová](https://arxiv.org/search/cs?searchtype=author&query=Rysová%2C+K), [Magdaléna Rysová](https://arxiv.org/search/cs?searchtype=author&query=Rysová%2C+M), [Tomáš Musil](https://arxiv.org/search/cs?searchtype=author&query=Musil%2C+T), [Lucie Poláková](https://arxiv.org/search/cs?searchtype=author&query=Poláková%2C+L), [Ondřej Bojar](https://arxiv.org/search/cs?searchtype=author&query=Bojar%2C+O)
+
+*(Submitted on 8 Aug 2019)*
+
+> As the quality of machine translation rises and neural machine translation (NMT) is moving from sentence to document level translations, it is becoming increasingly difficult to evaluate the output of translation systems. 
+> We provide a test suite for WMT19 aimed at assessing discourse phenomena of MT systems participating in the News Translation Task. We have manually checked the outputs and identified types of translation errors that are relevant to document-level translation.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1908.03043 [cs.CL]**                         |
+|           | (or **arXiv:1908.03043v1 [cs.CL]** for this version) |
+
+
+
 # 2019-08-07
 
 [Return to Index](#Index)
 
 <h2 id="2019-08-07-1">1. MacNet: Transferring Knowledge from Machine Comprehension to Sequence-to-Sequence Models</h2> 
-
 Title: [MacNet: Transferring Knowledge from Machine Comprehension to Sequence-to-Sequence Models](https://arxiv.org/abs/1908.01816)
 
 Authors: [Boyuan Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C+B), [Yazheng Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Hao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+H), [Zhou Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+Z), [Yueting Zhuang](https://arxiv.org/search/cs?searchtype=author&query=Zhuang%2C+Y), [Deng Cai](https://arxiv.org/search/cs?searchtype=author&query=Cai%2C+D), [Xiaofei He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+X)
@@ -54,7 +78,6 @@ Authors: [Boyuan Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C
 
 
 <h2 id="2019-08-07-2">2. A Translate-Edit Model for Natural Language Question to SQL Query Generation on Multi-relational Healthcare Data</h2> 
-
 Title: [A Translate-Edit Model for Natural Language Question to SQL Query Generation on Multi-relational Healthcare Data](https://arxiv.org/abs/1908.01839)
 
 Authors: [Ping Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+P), [Tian Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+T), [Chandan K. Reddy](https://arxiv.org/search/cs?searchtype=author&query=Reddy%2C+C+K)
@@ -73,7 +96,6 @@ Authors: [Ping Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C
 
 
 <h2 id="2019-08-07-3">3. Self-Knowledge Distillation in Natural Language Processing</h2> 
-
 Title: [Self-Knowledge Distillation in Natural Language Processing](https://arxiv.org/abs/1908.01851)
 
 Authors: [Sangchul Hahn](https://arxiv.org/search/cs?searchtype=author&query=Hahn%2C+S), [Heeyoul Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi%2C+H)
