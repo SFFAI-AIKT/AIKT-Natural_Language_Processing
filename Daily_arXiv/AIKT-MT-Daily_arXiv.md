@@ -2,18 +2,17 @@
 
 ### Index
 
+- [2019-08-13](#2019-08-13)
+  - [1. On the Validity of Self-Attention as Explanation in Transformer Models](#2019-08-13-1)
 - [2019-08-12](#2019-08-12)
   - [1. Exploiting Cross-Lingual Speaker and Phonetic Diversity for Unsupervised Subword Modeling](#2019-08-12-1)
   - [2. UdS Submission for the WMT 19 Automatic Post-Editing Task](#2019-08-12-2)
-
 - [2019-08-09](#2019-08-09)
   - [1. A Test Suite and Manual Evaluation of Document-Level NMT at WMT19](#2019-08-09-1)
-
 - [2019-08-07](#2019-08-07)
   - [1. MacNet: Transferring Knowledge from Machine Comprehension to Sequence-to-Sequence Models](#2019-08-07-1)
   - [2. A Translate-Edit Model for Natural Language Question to SQL Query Generation on Multi-relational Healthcare Data](#2019-08-07-2)
   - [3. Self-Knowledge Distillation in Natural Language Processing](#2019-08-07-3)
-
 - [2019-08-06](#2019-08-06)
   - [1. Invariance-based Adversarial Attack on Neural Machine Translation Systems](#2019-08-06-1)
   - [2. Performance Evaluation of Supervised Machine Learning Techniques for Efficient Detection of Emotions from Online Content](#2019-08-06-2)
@@ -22,7 +21,6 @@
   - [5. Beyond English-only Reading Comprehension: Experiments in Zero-Shot Multilingual Transfer for Bulgarian](#2019-08-06-5)
   - [6. Predicting Actions to Help Predict Translations](#2019-08-06-6)
   - [7. Thoth: Improved Rapid Serial Visual Presentation using Natural Language Processing](#2019-08-06-7)
-
 - [2019-08-02](#2019-08-02)
   - [1. Tree-Transformer: A Transformer-Based Method for Correction of Tree-Structured Data](#2019-08-02-1)
   - [2. Learning Joint Acoustic-Phonetic Word Embeddings](#2019-08-02-2)
@@ -36,12 +34,35 @@
 
 
 
+# 2019-08-13
+
+[Return to Index](#Index)
+
+<h2 id="2019-08-13-1">1. On the Validity of Self-Attention as Explanation in Transformer Models</h2> 
+
+Title: [On the Validity of Self-Attention as Explanation in Transformer Models](https://arxiv.org/abs/1908.04211)
+
+Authors: [Gino Brunner](https://arxiv.org/search/cs?searchtype=author&query=Brunner%2C+G), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Damián Pascual](https://arxiv.org/search/cs?searchtype=author&query=Pascual%2C+D), [Oliver Richter](https://arxiv.org/search/cs?searchtype=author&query=Richter%2C+O), [Roger Wattenhofer](https://arxiv.org/search/cs?searchtype=author&query=Wattenhofer%2C+R)
+
+*(Submitted on 12 Aug 2019)*
+
+> Explainability of deep learning systems is a vital requirement for many applications. However, it is still an unsolved problem. Recent self-attention based models for natural language processing, such as the Transformer or BERT, offer hope of greater explainability by providing attention maps that can be directly inspected. Nevertheless, by just looking at the attention maps one often overlooks that the attention is not over words but over hidden embeddings, which themselves can be mixed representations of multiple embeddings. We investigate to what extent the implicit assumption made in many recent papers - that hidden embeddings at all layers still correspond to the underlying words - is justified. We quantify how much embeddings are mixed based on a gradient based attribution method and find that already after the first layer less than 50% of the embedding is attributed to the underlying word, declining thereafter to a median contribution of 7.5% in the last layer. While throughout the layers the underlying word remains as the one contributing most to the embedding, we argue that attention visualizations are misleading and should be treated with care when explaining the underlying deep learning system.
+
+| Comments:    | Preprint. Work in progress                                   |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| MSC classes: | 46-04                                                        |
+| ACM classes: | I.2.7; I.7.0                                                 |
+| Cite as:     | **arXiv:1908.04211 [cs.CL]**                                 |
+|              | (or **arXiv:1908.04211v1 [cs.CL]** for this version)         |
+
+
+
 # 2019-08-12
 
 [Return to Index](#Index)
 
 <h2 id="2019-08-12-1">1. Exploiting Cross-Lingual Speaker and Phonetic Diversity for Unsupervised Subword Modeling</h2> 
-
 Title: [Exploiting Cross-Lingual Speaker and Phonetic Diversity for Unsupervised Subword Modeling](https://arxiv.org/abs/1908.03538)
 
 Authors: [Siyuan Feng](https://arxiv.org/search/eess?searchtype=author&query=Feng%2C+S), [Tan Lee](https://arxiv.org/search/eess?searchtype=author&query=Lee%2C+T)
@@ -63,7 +84,6 @@ Authors: [Siyuan Feng](https://arxiv.org/search/eess?searchtype=author&query=Fen
 
 
 <h2 id="2019-08-12-2">2. UdS Submission for the WMT 19 Automatic Post-Editing Task</h2> 
-
 Title: [UdS Submission for the WMT 19 Automatic Post-Editing Task](https://arxiv.org/abs/1908.03402)
 
 Authors: [Hongfei Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+H), [Qiuhui Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q), [Josef van Genabith](https://arxiv.org/search/cs?searchtype=author&query=van+Genabith%2C+J)
