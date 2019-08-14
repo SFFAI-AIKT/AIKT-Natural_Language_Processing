@@ -2,6 +2,12 @@
 
 ### Index
 
+- [2019-08-14](#2019-08-14)
+  - [1. Neural Text Generation with Unlikelihood Training](#2019-08-14-1)
+  - [2. LSTM vs. GRU vs. Bidirectional RNN for script generation](#2019-08-14-2)
+  - [3. Attention is not not Explanation](#2019-08-14-3)
+  - [4. Neural Machine Translation with Noisy Lexical Constraints](#2019-08-14-4)
+
 - [2019-08-13](#2019-08-13)
   - [1. On the Validity of Self-Attention as Explanation in Transformer Models](#2019-08-13-1)
 - [2019-08-12](#2019-08-12)
@@ -34,12 +40,94 @@
 
 
 
+# 2019-08-14
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-08-14-1">1. Neural Text Generation with Unlikelihood Training</h2> 
+
+Title: [Neural Text Generation with Unlikelihood Training](https://arxiv.org/abs/1908.04319)
+
+Authors: [Sean Welleck](https://arxiv.org/search/cs?searchtype=author&query=Welleck%2C+S), [Ilia Kulikov](https://arxiv.org/search/cs?searchtype=author&query=Kulikov%2C+I), [Stephen Roller](https://arxiv.org/search/cs?searchtype=author&query=Roller%2C+S), [Emily Dinan](https://arxiv.org/search/cs?searchtype=author&query=Dinan%2C+E), [Kyunghyun Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+K), [Jason Weston](https://arxiv.org/search/cs?searchtype=author&query=Weston%2C+J)
+
+*(Submitted on 12 Aug 2019)*
+
+> Neural text generation is a key tool in natural language applications, but it is well known there are major problems at its core. In particular, standard likelihood training and decoding leads to dull and repetitive responses. While some post-hoc fixes have been proposed, in particular top-k and nucleus sampling, they do not address the fact that the token-level probabilities predicted by the model itself are poor. In this paper we show that the likelihood objective itself is at fault, resulting in a model that assigns too much probability to sequences that contain repeats and frequent words unlike the human training distribution. We propose a new objective, unlikelihood training, which forces unlikely generations to be assigned lower probability by the model. We show that both token and sequence level unlikelihood training give less repetitive, less dull text while maintaining perplexity, giving far superior generations using standard greedy or beam search. Our approach provides a strong alternative to traditional training.
+
+| Comments: | Sean Welleck and Ilia Kulikov contributed equally            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| Cite as:  | **arXiv:1908.04319 [cs.LG]**                                 |
+|           | (or **arXiv:1908.04319v1 [cs.LG]** for this version)         |
+
+
+
+
+
+<h2 id="2019-08-14-2">2. LSTM vs. GRU vs. Bidirectional RNN for script generation</h2> 
+
+Title: [LSTM vs. GRU vs. Bidirectional RNN for script generation](https://arxiv.org/abs/1908.04332)
+
+Authors: [Sanidhya Mangal](https://arxiv.org/search/cs?searchtype=author&query=Mangal%2C+S), [Poorva Joshi](https://arxiv.org/search/cs?searchtype=author&query=Joshi%2C+P), [Rahul Modak](https://arxiv.org/search/cs?searchtype=author&query=Modak%2C+R)
+
+*(Submitted on 12 Aug 2019)*
+
+> Scripts are an important part of any TV series. They narrate movements, actions and expressions of characters. In this paper, a case study is presented on how different sequence to sequence deep learning models perform in the task of generating new conversations between characters as well as new scenarios on the basis of a script (previous conversations). A comprehensive comparison between these models, namely, LSTM, GRU and Bidirectional RNN is presented. All the models are designed to learn the sequence of recurring characters from the input sequence. Each input sequence will contain, say "n" characters, and the corresponding targets will contain the same number of characters, except, they will be shifted one character to the right. In this manner, input and output sequences are generated and used to train the models. A closer analysis of explored models performance and efficiency is delineated with the help of graph plots and generated texts by taking some input string. These graphs describe both, intraneural performance and interneural model performance for each model.
+
+| Comments: | 7 pages, 7 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1908.04332 [cs.CL]**                                 |
+|           | (or **arXiv:1908.04332v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-08-14-3">3. Attention is not not Explanation</h2> 
+
+Title: [Attention is not not Explanation](https://arxiv.org/abs/1908.04626)
+
+Authors: [Sarah Wiegreffe](https://arxiv.org/search/cs?searchtype=author&query=Wiegreffe%2C+S), [Yuval Pinter](https://arxiv.org/search/cs?searchtype=author&query=Pinter%2C+Y)
+
+*(Submitted on 13 Aug 2019)*
+
+> Attention mechanisms play a central role in NLP systems, especially within recurrent neural network (RNN) models. Recently, there has been increasing interest in whether or not the intermediate representations offered by these modules may be used to explain the reasoning for a model's prediction, and consequently reach insights regarding the model's decision-making process. A recent paper claims that `Attention is not Explanation' (Jain and Wallace, 2019). We challenge many of the assumptions underlying this work, arguing that such a claim depends on one's definition of explanation, and that testing it needs to take into account all elements of the model, using a rigorous experimental design. We propose four alternative tests to determine when/whether attention can be used as explanation: a simple uniform-weights baseline; a variance calibration based on multiple random seed runs; a diagnostic framework using frozen weights from pretrained models; and an end-to-end adversarial attention training protocol. Each allows for meaningful interpretation of attention mechanisms in RNN models. We show that even when reliable adversarial distributions can be found, they don't perform well on the simple diagnostic, indicating that prior work does not disprove the usefulness of attention mechanisms for explainability.
+
+| Comments: | Accepted to EMNLP 2019; related blog post at [this https URL](https://medium.com/@yuvalpinter/attention-is-not-not-explanation-dbc25b534017) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **arXiv:1908.04626 [cs.CL]**                                 |
+|           | (or **arXiv:1908.04626v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-08-14-4">4. Neural Machine Translation with Noisy Lexical Constraints</h2> 
+
+Title: [Neural Machine Translation with Noisy Lexical Constraints](https://arxiv.org/abs/1908.04664)
+
+Authors: [Huayang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+H), [Guoping Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+G), [Lemao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+L)
+
+*(Submitted on 13 Aug 2019)*
+
+> Lexically constrained decoding for machine translation has shown to be beneficial in previous studies. Unfortunately, constraints provided by users may contain mistakes in real-world situations. It is still an open question that how to manipulate these noisy constraints in such practical scenarios. We present a novel framework that treats constraints as external memories. In this soft manner, a mistaken constraint can be corrected. Experiments demonstrate that our approach can achieve substantial BLEU gains in handling noisy constraints. These results motivate us to apply the proposed approach on a new scenario where constraints are generated without the help of users. Experiments show that our approach can indeed improve the translation quality with the automatically generated constraints.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1908.04664 [cs.CL]**                         |
+|           | (or **arXiv:1908.04664v1 [cs.CL]** for this version) |
+
+
+
 # 2019-08-13
 
 [Return to Index](#Index)
 
 <h2 id="2019-08-13-1">1. On the Validity of Self-Attention as Explanation in Transformer Models</h2> 
-
 Title: [On the Validity of Self-Attention as Explanation in Transformer Models](https://arxiv.org/abs/1908.04211)
 
 Authors: [Gino Brunner](https://arxiv.org/search/cs?searchtype=author&query=Brunner%2C+G), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Damián Pascual](https://arxiv.org/search/cs?searchtype=author&query=Pascual%2C+D), [Oliver Richter](https://arxiv.org/search/cs?searchtype=author&query=Richter%2C+O), [Roger Wattenhofer](https://arxiv.org/search/cs?searchtype=author&query=Wattenhofer%2C+R)
