@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-08-15](#2019-08-15)
+  - [1. On The Evaluation of Machine Translation Systems Trained With Back-Translation](#2019-08-15-1)
+
 - [2019-08-14](#2019-08-14)
   - [1. Neural Text Generation with Unlikelihood Training](#2019-08-14-1)
   - [2. LSTM vs. GRU vs. Bidirectional RNN for script generation](#2019-08-14-2)
@@ -40,6 +43,29 @@
 
 
 
+# 2019-08-15
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-08-15-1">1. On The Evaluation of Machine Translation Systems Trained With Back-Translation</h2> 
+
+Title: [On The Evaluation of Machine Translation Systems Trained With Back-Translation](https://arxiv.org/abs/1908.05204)
+
+Authors: [Sergey Edunov](https://arxiv.org/search/cs?searchtype=author&query=Edunov%2C+S), [Myle Ott](https://arxiv.org/search/cs?searchtype=author&query=Ott%2C+M), [Marc'Aurelio Ranzato](https://arxiv.org/search/cs?searchtype=author&query=Ranzato%2C+M), [Michael Auli](https://arxiv.org/search/cs?searchtype=author&query=Auli%2C+M)
+
+*(Submitted on 14 Aug 2019)*
+
+> Back-translation is a widely used data augmentation technique which leverages target monolingual data. However, its effectiveness has been challenged since automatic metrics such as BLEU only show significant improvements for test examples where the source itself is a translation, or translationese. This is believed to be due to translationese inputs better matching the back-translated training data. In this work, we show that this conjecture is not empirically supported and that back-translation improves translation quality of both naturally occurring text as well as translationese according to professional human translators. We provide empirical evidence to support the view that back-translation is preferred by humans because it produces more fluent outputs. BLEU cannot capture human preferences because references are translationese when source sentences are natural text. We recommend complementing BLEU with a language model score to measure fluency.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1908.05204 [cs.CL]**                         |
+|           | (or **arXiv:1908.05204v1 [cs.CL]** for this version) |
+
+
+
 # 2019-08-14
 
 [Return to Index](#Index)
@@ -47,7 +73,6 @@
 
 
 <h2 id="2019-08-14-1">1. Neural Text Generation with Unlikelihood Training</h2> 
-
 Title: [Neural Text Generation with Unlikelihood Training](https://arxiv.org/abs/1908.04319)
 
 Authors: [Sean Welleck](https://arxiv.org/search/cs?searchtype=author&query=Welleck%2C+S), [Ilia Kulikov](https://arxiv.org/search/cs?searchtype=author&query=Kulikov%2C+I), [Stephen Roller](https://arxiv.org/search/cs?searchtype=author&query=Roller%2C+S), [Emily Dinan](https://arxiv.org/search/cs?searchtype=author&query=Dinan%2C+E), [Kyunghyun Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+K), [Jason Weston](https://arxiv.org/search/cs?searchtype=author&query=Weston%2C+J)
@@ -67,7 +92,6 @@ Authors: [Sean Welleck](https://arxiv.org/search/cs?searchtype=author&query=Well
 
 
 <h2 id="2019-08-14-2">2. LSTM vs. GRU vs. Bidirectional RNN for script generation</h2> 
-
 Title: [LSTM vs. GRU vs. Bidirectional RNN for script generation](https://arxiv.org/abs/1908.04332)
 
 Authors: [Sanidhya Mangal](https://arxiv.org/search/cs?searchtype=author&query=Mangal%2C+S), [Poorva Joshi](https://arxiv.org/search/cs?searchtype=author&query=Joshi%2C+P), [Rahul Modak](https://arxiv.org/search/cs?searchtype=author&query=Modak%2C+R)
@@ -87,7 +111,6 @@ Authors: [Sanidhya Mangal](https://arxiv.org/search/cs?searchtype=author&query=M
 
 
 <h2 id="2019-08-14-3">3. Attention is not not Explanation</h2> 
-
 Title: [Attention is not not Explanation](https://arxiv.org/abs/1908.04626)
 
 Authors: [Sarah Wiegreffe](https://arxiv.org/search/cs?searchtype=author&query=Wiegreffe%2C+S), [Yuval Pinter](https://arxiv.org/search/cs?searchtype=author&query=Pinter%2C+Y)
@@ -107,7 +130,6 @@ Authors: [Sarah Wiegreffe](https://arxiv.org/search/cs?searchtype=author&query=W
 
 
 <h2 id="2019-08-14-4">4. Neural Machine Translation with Noisy Lexical Constraints</h2> 
-
 Title: [Neural Machine Translation with Noisy Lexical Constraints](https://arxiv.org/abs/1908.04664)
 
 Authors: [Huayang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+H), [Guoping Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+G), [Lemao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+L)
