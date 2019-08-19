@@ -2,15 +2,19 @@
 
 ### Index
 
+- [2019-08-19](#2019-08-19)
+  - [1. Attending to Future Tokens For Bidirectional Sequence Generation](#2019-08-19-1)
+  - [2. Towards Making the Most of BERT in Neural Machine Translation](#2019-08-19-2)
+  - [3. Transformer-based Automatic Post-Editing with a Context-Aware Encoding Approach for Multi-Source Inputs](#2019-08-19-3)
+  - [4. Simple and Effective Noisy Channel Modeling for Neural Machine Translation](#2019-08-19-4)
+  - [5. Incorporating Word and Subword Units in Unsupervised Machine Translation Using Language Model Rescoring](#2019-08-19-5)
 - [2019-08-15](#2019-08-15)
   - [1. On The Evaluation of Machine Translation Systems Trained With Back-Translation](#2019-08-15-1)
-
 - [2019-08-14](#2019-08-14)
   - [1. Neural Text Generation with Unlikelihood Training](#2019-08-14-1)
   - [2. LSTM vs. GRU vs. Bidirectional RNN for script generation](#2019-08-14-2)
   - [3. Attention is not not Explanation](#2019-08-14-3)
   - [4. Neural Machine Translation with Noisy Lexical Constraints](#2019-08-14-4)
-
 - [2019-08-13](#2019-08-13)
   - [1. On the Validity of Self-Attention as Explanation in Transformer Models](#2019-08-13-1)
 - [2019-08-12](#2019-08-12)
@@ -43,6 +47,107 @@
 
 
 
+# 2019-08-19
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-08-19-1">1. Attending to Future Tokens For Bidirectional Sequence Generation</h2> 
+
+Title: [Attending to Future Tokens For Bidirectional Sequence Generation](https://arxiv.org/abs/1908.05915)
+
+Authors: [Carolin Lawrence](https://arxiv.org/search/stat?searchtype=author&query=Lawrence%2C+C), [Bhushan Kotnis](https://arxiv.org/search/stat?searchtype=author&query=Kotnis%2C+B), [Mathias Niepert](https://arxiv.org/search/stat?searchtype=author&query=Niepert%2C+M)
+
+*(Submitted on 16 Aug 2019)*
+
+> Neural sequence generation is typically performed token-by-token and left-to-right. Whenever a token is generated only previously produced tokens are taken into consideration. In contrast, for problems such as sequence classification, bidirectional attention, which takes both past and future tokens into consideration, has been shown to perform much better. We propose to make the sequence generation process bidirectional by employing special placeholder tokens. Treated as a node in a fully connected graph, a placeholder token can take past and future tokens into consideration when generating the actual output token. We verify the effectiveness of our approach experimentally on two conversational tasks where the proposed bidirectional model outperforms competitive baselines by a large margin.
+
+| Comments: | Conference on Empirical Methods in Natural Language Processing (EMNLP), 2019, Hong Kong, China |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (stat.ML)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1908.05915 [stat.ML]**                               |
+|           | (or **arXiv:1908.05915v1 [stat.ML]** for this version)       |
+
+
+
+<h2 id="2019-08-19-2">2. Towards Making the Most of BERT in Neural Machine Translation</h2> 
+
+Title: [Towards Making the Most of BERT in Neural Machine Translation](https://arxiv.org/abs/1908.05672)
+
+Authors: [Jiacheng Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+J), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Chengqi Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+C), [Yong Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+Y), [Weinan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+W), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+*(Submitted on 15 Aug 2019)*
+
+> GPT-2 and BERT demonstrate the effectiveness of using pre-trained language models (LMs) on various natural language processing tasks. However, LM fine-tuning often suffers from catastrophic forgetting when applied to resource-rich tasks. In this work, we introduce a concerted training framework (\method) that is the key to integrate the pre-trained LMs to neural machine translation (NMT). Our proposed Cnmt consists of three techniques: a) asymptotic distillation to ensure that the NMT model can retain the previous pre-trained knowledge; \item a dynamic switching gate to avoid catastrophic forgetting of pre-trained knowledge; and b)a strategy to adjust the learning paces according to a scheduled policy. Our experiments in machine translation show \method gains of up to 3 BLEU score on the WMT14 English-German language pair which even surpasses the previous state-of-the-art pre-training aided NMT by 1.4 BLEU score. While for the large WMT14 English-French task with 40 millions of sentence-pairs, our base model still significantly improves upon the state-of-the-art Transformer big model by more than 1 BLEU score.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1908.05672 [cs.CL]**                                 |
+|           | (or **arXiv:1908.05672v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-08-19-3">3. Transformer-based Automatic Post-Editing with a Context-Aware Encoding Approach for Multi-Source Inputs</h2> 
+
+Title: [Transformer-based Automatic Post-Editing with a Context-Aware Encoding Approach for Multi-Source Inputs](https://arxiv.org/abs/1908.05679)
+
+Authors: [WonKee Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+W), [Junsu Park](https://arxiv.org/search/cs?searchtype=author&query=Park%2C+J), [Byung-Hyun Go](https://arxiv.org/search/cs?searchtype=author&query=Go%2C+B), [Jong-Hyeok Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+J)
+
+*(Submitted on 15 Aug 2019)*
+
+> Recent approaches to the Automatic Post-Editing (APE) research have shown that better results are obtained by multi-source models, which jointly encode both source (src) and machine translation output (mt) to produce post-edited sentence (pe). Along this trend, we present a new multi-source APE model based on the Transformer. To construct effective joint representations, our model internally learns to incorporate src context into mt representation. With this approach, we achieve a significant improvement over baseline systems, as well as the state-of-the-art multi-source APE model. Moreover, to demonstrate the capability of our model to incorporate src context, we show that the word alignment of the unknown MT system is successfully captured in our encoding results.
+
+| Comments: | 6 pages, 3 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1908.05679 [cs.CL]**                                 |
+|           | (or **arXiv:1908.05679v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-08-19-4">4. Simple and Effective Noisy Channel Modeling for Neural Machine Translation</h2> 
+
+Title: [Simple and Effective Noisy Channel Modeling for Neural Machine Translation](https://arxiv.org/abs/1908.05731)
+
+Authors: [Kyra Yee](https://arxiv.org/search/cs?searchtype=author&query=Yee%2C+K), [Nathan Ng](https://arxiv.org/search/cs?searchtype=author&query=Ng%2C+N), [Yann N. Dauphin](https://arxiv.org/search/cs?searchtype=author&query=Dauphin%2C+Y+N), [Michael Auli](https://arxiv.org/search/cs?searchtype=author&query=Auli%2C+M)
+
+*(Submitted on 15 Aug 2019)*
+
+> Previous work on neural noisy channel modeling relied on latent variable models that incrementally process the source and target sentence. This makes decoding decisions based on partial source prefixes even though the full source is available. We pursue an alternative approach based on standard sequence to sequence models which utilize the entire source. These models perform remarkably well as channel models, even though they have neither been trained on, nor designed to factor over incomplete target sentences. Experiments with neural language models trained on billions of words show that noisy channel models can outperform a direct model by up to 3.2 BLEU on WMT'17 German-English translation. We evaluate on four language-pairs and our channel models consistently outperform strong alternatives such right-to-left reranking models and ensembles of direct models.
+
+| Comments: | EMNLP 2019                                           |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1908.05731 [cs.CL]**                         |
+|           | (or **arXiv:1908.05731v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-08-19-5">5. Incorporating Word and Subword Units in Unsupervised Machine Translation Using Language Model Rescoring</h2> 
+
+Title: [Incorporating Word and Subword Units in Unsupervised Machine Translation Using Language Model Rescoring](https://arxiv.org/abs/1908.05925)
+
+Authors: [Zihan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Yan Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+Y), [Genta Indra Winata](https://arxiv.org/search/cs?searchtype=author&query=Winata%2C+G+I), [Pascale Fung](https://arxiv.org/search/cs?searchtype=author&query=Fung%2C+P)
+
+*(Submitted on 16 Aug 2019)*
+
+> This paper describes CAiRE's submission to the unsupervised machine translation track of the WMT'19 news shared task from German to Czech. We leverage a phrase-based statistical machine translation (PBSMT) model and a pre-trained language model to combine word-level neural machine translation (NMT) and subword-level NMT models without using any parallel data. We propose to solve the morphological richness problem of languages by training byte-pair encoding (BPE) embeddings for German and Czech separately, and they are aligned using MUSE (Conneau et al., 2018). To ensure the fluency and consistency of translations, a rescoring mechanism is proposed that reuses the pre-trained language model to select the translation candidates generated through beam search. Moreover, a series of pre-processing and post-processing approaches are applied to improve the quality of final translations.
+
+| Comments: | Accepted at WMT 2019. (The first and second authors contributed equally) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **arXiv:1908.05925 [cs.CL]**                                 |
+|           | (or **arXiv:1908.05925v1 [cs.CL]** for this version)         |
+
+
+
 # 2019-08-15
 
 [Return to Index](#Index)
@@ -50,7 +155,6 @@
 
 
 <h2 id="2019-08-15-1">1. On The Evaluation of Machine Translation Systems Trained With Back-Translation</h2> 
-
 Title: [On The Evaluation of Machine Translation Systems Trained With Back-Translation](https://arxiv.org/abs/1908.05204)
 
 Authors: [Sergey Edunov](https://arxiv.org/search/cs?searchtype=author&query=Edunov%2C+S), [Myle Ott](https://arxiv.org/search/cs?searchtype=author&query=Ott%2C+M), [Marc'Aurelio Ranzato](https://arxiv.org/search/cs?searchtype=author&query=Ranzato%2C+M), [Michael Auli](https://arxiv.org/search/cs?searchtype=author&query=Auli%2C+M)
