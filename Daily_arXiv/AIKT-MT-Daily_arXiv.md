@@ -2,6 +2,15 @@
 
 ### Index
 
+- [2019-08-20](#2019-08-20)
+  - [1. UDS--DFKI Submission to the WMT2019 Similar Language Translation Shared Task](#2019-08-20-1)
+  - [2. Improving CAT Tools in the Translation Workflow: New Approaches and Evaluation](#2019-08-20-2)
+  - [3. The Transference Architecture for Automatic Post-Editing](#2019-08-20-3)
+  - [4. Language Graph Distillation for Low-Resource Machine Translation](#2019-08-20-4)
+  - [5. Hard but Robust, Easy but Sensitive: How Encoder and Decoder Perform in Neural Machine Translation](#2019-08-20-5)
+  - [6. Recurrent Graph Syntax Encoder for Neural Machine Translation](#2019-08-20-6)
+  - [7. Bilingual Lexicon Induction with Semi-supervision in Non-Isometric Embedding Spaces](#2019-08-20-7)
+
 - [2019-08-19](#2019-08-19)
   - [1. Attending to Future Tokens For Bidirectional Sequence Generation](#2019-08-19-1)
   - [2. Towards Making the Most of BERT in Neural Machine Translation](#2019-08-19-2)
@@ -47,6 +56,146 @@
 
 
 
+# 2019-08-20
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-08-20-1">1. UDS--DFKI Submission to the WMT2019 Similar Language Translation Shared Task</h2> 
+
+Title: [UDS--DFKI Submission to the WMT2019 Similar Language Translation Shared Task](https://arxiv.org/abs/1908.06138)
+
+Authors: [Santanu Pal](https://arxiv.org/search/cs?searchtype=author&query=Pal%2C+S), [Marcos Zampieri](https://arxiv.org/search/cs?searchtype=author&query=Zampieri%2C+M), [Josef van Genabith](https://arxiv.org/search/cs?searchtype=author&query=van+Genabith%2C+J)
+
+*(Submitted on 16 Aug 2019)*
+
+> In this paper we present the UDS-DFKI system submitted to the Similar Language Translation shared task at WMT 2019. The first edition of this shared task featured data from three pairs of similar languages: Czech and Polish, Hindi and Nepali, and Portuguese and Spanish. Participants could choose to participate in any of these three tracks and submit system outputs in any translation direction. We report the results obtained by our system in translating from Czech to Polish and comment on the impact of out-of-domain test data in the performance of our system. UDS-DFKI achieved competitive performance ranking second among ten teams in Czech to Polish translation.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1908.06138 [cs.CL]**                         |
+|           | (or **arXiv:1908.06138v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-08-20-2">2. Improving CAT Tools in the Translation Workflow: New Approaches and Evaluation</h2> 
+
+Title: [Improving CAT Tools in the Translation Workflow: New Approaches and Evaluation](https://arxiv.org/abs/1908.06140)
+
+Authors: [Mihaela Vela](https://arxiv.org/search/cs?searchtype=author&query=Vela%2C+M), [Santanu Pal](https://arxiv.org/search/cs?searchtype=author&query=Pal%2C+S), [Marcos Zampieri](https://arxiv.org/search/cs?searchtype=author&query=Zampieri%2C+M), [Sudip Kumar Naskar](https://arxiv.org/search/cs?searchtype=author&query=Naskar%2C+S+K), [Josef van Genabith](https://arxiv.org/search/cs?searchtype=author&query=van+Genabith%2C+J)
+
+*(Submitted on 16 Aug 2019)*
+
+> This paper describes strategies to improve an existing web-based computer-aided translation (CAT) tool entitled CATaLog Online. CATaLog Online provides a post-editing environment with simple yet helpful project management tools. It offers translation suggestions from translation memories (TM), machine translation (MT), and automatic post-editing (APE) and records detailed logs of post-editing activities. To test the new approaches proposed in this paper, we carried out a user study on an English--German translation task using CATaLog Online. User feedback revealed that the users preferred using CATaLog Online over existing CAT tools in some respects, especially by selecting the output of the MT system and taking advantage of the color scheme for TM suggestions.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1908.06140 [cs.CL]**                         |
+|           | (or **arXiv:1908.06140v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-08-20-3">3. The Transference Architecture for Automatic Post-Editing</h2> 
+
+Title: [The Transference Architecture for Automatic Post-Editing](https://arxiv.org/abs/1908.06151)
+
+Authors: [Santanu Pal](https://arxiv.org/search/cs?searchtype=author&query=Pal%2C+S), [Hongfei Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+H), [Nico Herbig](https://arxiv.org/search/cs?searchtype=author&query=Herbig%2C+N), [Antonio Krueger](https://arxiv.org/search/cs?searchtype=author&query=Krueger%2C+A), [Josef van Genabith](https://arxiv.org/search/cs?searchtype=author&query=van+Genabith%2C+J)
+
+*(Submitted on 16 Aug 2019)*
+
+> In automatic post-editing (APE) it makes sense to condition post-editing (pe) decisions on both the source (src) and the machine translated text (mt) as input. This has led to multi-source encoder based APE approaches. A research challenge now is the search for architectures that best support the capture, preparation and provision of src and mt information and its integration with pe decisions. In this paper we present a new multi-source APE model, called transference. Unlike previous approaches, it (i) uses a transformer encoder block for src, (ii) followed by a decoder block, but without masking for self-attention on mt, which effectively acts as second encoder combining src -> mt, and (iii) feeds this representation into a final decoder block generating pe. Our model outperforms the state-of-the-art by 1 BLEU point on the WMT 2016, 2017, and 2018 English--German APE shared tasks (PBSMT and NMT). We further investigate the importance of our newly introduced second encoder and find that a too small amount of layers does hurt the performance, while reducing the number of layers of the decoder does not matter much.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1908.06151 [cs.CL]**                         |
+|           | (or **arXiv:1908.06151v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-08-20-4">4. Language Graph Distillation for Low-Resource Machine Translation</h2> 
+
+Title: [Language Graph Distillation for Low-Resource Machine Translation](https://arxiv.org/abs/1908.06258)
+
+Authors: [Tianyu He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+T), [Jiale Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J), [Xu Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+X), [Tao Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+T)
+
+*(Submitted on 17 Aug 2019)*
+
+> Neural machine translation on low-resource language is challenging due to the lack of bilingual sentence pairs. Previous works usually solve the low-resource translation problem with knowledge transfer in a multilingual setting. In this paper, we propose the concept of Language Graph and further design a novel graph distillation algorithm that boosts the accuracy of low-resource translations in the graph with forward and backward knowledge distillation. Preliminary experiments on the TED talks multilingual dataset demonstrate the effectiveness of our proposed method. Specifically, we improve the low-resource translation pair by more than 3.13 points in terms of BLEU score.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1908.06258 [cs.CL]**                         |
+|           | (or **arXiv:1908.06258v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-08-20-5">5. Hard but Robust, Easy but Sensitive: How Encoder and Decoder Perform in Neural Machine Translation</h2> 
+
+Title: [Hard but Robust, Easy but Sensitive: How Encoder and Decoder Perform in Neural Machine Translation](https://arxiv.org/abs/1908.06259)
+
+Authors: [Tianyu He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+T), [Xu Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+X), [Tao Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+T)
+
+*(Submitted on 17 Aug 2019)*
+
+> Neural machine translation (NMT) typically adopts the encoder-decoder framework. A good understanding of the characteristics and functionalities of the encoder and decoder can help to explain the pros and cons of the framework, and design better models for NMT. In this work, we conduct an empirical study on the encoder and the decoder in NMT, taking Transformer as an example. We find that 1) the decoder handles an easier task than the encoder in NMT, 2) the decoder is more sensitive to the input noise than the encoder, and 3) the preceding words/tokens in the decoder provide strong conditional information, which accounts for the two observations above. We hope those observations can shed light on the characteristics of the encoder and decoder and inspire future research on NMT.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1908.06259 [cs.CL]**                         |
+|           | (or **arXiv:1908.06259v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-08-20-6">6. Recurrent Graph Syntax Encoder for Neural Machine Translation</h2> 
+
+Title: [Recurrent Graph Syntax Encoder for Neural Machine Translation](https://arxiv.org/abs/1908.06559)
+
+Authors: [Liang Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+L), [Dacheng Tao](https://arxiv.org/search/cs?searchtype=author&query=Tao%2C+D)
+
+*(Submitted on 19 Aug 2019)*
+
+> Syntax-incorporated machine translation models have been proven successful in improving the model's reasoning and meaning preservation ability. In this paper, we propose a simple yet effective graph-structured encoder, the Recurrent Graph Syntax Encoder, dubbed \textbf{RGSE}, which enhances the ability to capture useful syntactic information. The RGSE is done over a standard encoder (recurrent or self-attention encoder), regarding recurrent network units as graph nodes and injects syntactic dependencies as edges, such that RGSE models syntactic dependencies and sequential information (\textit{i.e.}, word order) simultaneously. Our approach achieves considerable improvements over several syntax-aware NMT models in English⇒German and English⇒Czech translation tasks. And RGSE-equipped big model obtains competitive result compared with the state-of-the-art model in WMT14 En-De task. Extensive analysis further verifies that RGSE could benefit long sentence modeling, and produces better translations.
+
+| Comments: | Work in Progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1908.06559 [cs.CL]**                                 |
+|           | (or **arXiv:1908.06559v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-08-20-7">7. Bilingual Lexicon Induction with Semi-supervision in Non-Isometric Embedding Spaces</h2> 
+
+Title: [Bilingual Lexicon Induction with Semi-supervision in Non-Isometric Embedding Spaces](https://arxiv.org/abs/1908.06625)
+
+Authors: [Barun Patra](https://arxiv.org/search/cs?searchtype=author&query=Patra%2C+B), [Joel Ruben Antony Moniz](https://arxiv.org/search/cs?searchtype=author&query=Moniz%2C+J+R+A), [Sarthak Garg](https://arxiv.org/search/cs?searchtype=author&query=Garg%2C+S), [Matthew R. Gormley](https://arxiv.org/search/cs?searchtype=author&query=Gormley%2C+M+R), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
+
+*(Submitted on 19 Aug 2019)*
+
+> Recent work on bilingual lexicon induction (BLI) has frequently depended either on aligned bilingual lexicons or on distribution matching, often with an assumption about the isometry of the two spaces. We propose a technique to quantitatively estimate this assumption of the isometry between two embedding spaces and empirically show that this assumption weakens as the languages in question become increasingly etymologically distant. We then propose Bilingual Lexicon Induction with Semi-Supervision (BLISS) --- a semi-supervised approach that relaxes the isometric assumption while leveraging both limited aligned bilingual lexicons and a larger set of unaligned word embeddings, as well as a novel hubness filtering technique. Our proposed method obtains state of the art results on 15 of 18 language pairs on the MUSE dataset, and does particularly well when the embedding spaces don't appear to be isometric. In addition, we also show that adding supervision stabilizes the learning procedure, and is effective even with minimal supervision.
+
+| Comments:          | ACL 2019                                                     |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Journal reference: | Proceedings of the 57th Conference of the Association for Computational Linguistics (2019) 184-193 |
+| Cite as:           | **arXiv:1908.06625 [cs.CL]**                                 |
+|                    | (or **arXiv:1908.06625v1 [cs.CL]** for this version)         |
+
+
+
 # 2019-08-19
 
 [Return to Index](#Index)
@@ -54,7 +203,6 @@
 
 
 <h2 id="2019-08-19-1">1. Attending to Future Tokens For Bidirectional Sequence Generation</h2> 
-
 Title: [Attending to Future Tokens For Bidirectional Sequence Generation](https://arxiv.org/abs/1908.05915)
 
 Authors: [Carolin Lawrence](https://arxiv.org/search/stat?searchtype=author&query=Lawrence%2C+C), [Bhushan Kotnis](https://arxiv.org/search/stat?searchtype=author&query=Kotnis%2C+B), [Mathias Niepert](https://arxiv.org/search/stat?searchtype=author&query=Niepert%2C+M)
@@ -72,7 +220,6 @@ Authors: [Carolin Lawrence](https://arxiv.org/search/stat?searchtype=author&quer
 
 
 <h2 id="2019-08-19-2">2. Towards Making the Most of BERT in Neural Machine Translation</h2> 
-
 Title: [Towards Making the Most of BERT in Neural Machine Translation](https://arxiv.org/abs/1908.05672)
 
 Authors: [Jiacheng Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+J), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Chengqi Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+C), [Yong Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+Y), [Weinan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+W), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
@@ -91,7 +238,6 @@ Authors: [Jiacheng Yang](https://arxiv.org/search/cs?searchtype=author&query=Yan
 
 
 <h2 id="2019-08-19-3">3. Transformer-based Automatic Post-Editing with a Context-Aware Encoding Approach for Multi-Source Inputs</h2> 
-
 Title: [Transformer-based Automatic Post-Editing with a Context-Aware Encoding Approach for Multi-Source Inputs](https://arxiv.org/abs/1908.05679)
 
 Authors: [WonKee Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+W), [Junsu Park](https://arxiv.org/search/cs?searchtype=author&query=Park%2C+J), [Byung-Hyun Go](https://arxiv.org/search/cs?searchtype=author&query=Go%2C+B), [Jong-Hyeok Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+J)
@@ -111,7 +257,6 @@ Authors: [WonKee Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C
 
 
 <h2 id="2019-08-19-4">4. Simple and Effective Noisy Channel Modeling for Neural Machine Translation</h2> 
-
 Title: [Simple and Effective Noisy Channel Modeling for Neural Machine Translation](https://arxiv.org/abs/1908.05731)
 
 Authors: [Kyra Yee](https://arxiv.org/search/cs?searchtype=author&query=Yee%2C+K), [Nathan Ng](https://arxiv.org/search/cs?searchtype=author&query=Ng%2C+N), [Yann N. Dauphin](https://arxiv.org/search/cs?searchtype=author&query=Dauphin%2C+Y+N), [Michael Auli](https://arxiv.org/search/cs?searchtype=author&query=Auli%2C+M)
@@ -131,7 +276,6 @@ Authors: [Kyra Yee](https://arxiv.org/search/cs?searchtype=author&query=Yee%2C+K
 
 
 <h2 id="2019-08-19-5">5. Incorporating Word and Subword Units in Unsupervised Machine Translation Using Language Model Rescoring</h2> 
-
 Title: [Incorporating Word and Subword Units in Unsupervised Machine Translation Using Language Model Rescoring](https://arxiv.org/abs/1908.05925)
 
 Authors: [Zihan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Yan Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+Y), [Genta Indra Winata](https://arxiv.org/search/cs?searchtype=author&query=Winata%2C+G+I), [Pascale Fung](https://arxiv.org/search/cs?searchtype=author&query=Fung%2C+P)
