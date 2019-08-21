@@ -2,6 +2,11 @@
 
 ### Index
 
+- [2019-08-21](#2019-08-21)
+  - [1. Latent-Variable Non-Autoregressive Neural Machine Translation with Deterministic Inference using a Delta Posterior](#2019-08-21-1)
+  - [2. ARAML: A Stable Adversarial Training Framework for Text Generation](#2019-08-21-2)
+  - [3. LXMERT: Learning Cross-Modality Encoder Representations from Transformers](#2019-08-21-3)
+
 - [2019-08-20](#2019-08-20)
   - [1. UDS--DFKI Submission to the WMT2019 Similar Language Translation Shared Task](#2019-08-20-1)
   - [2. Improving CAT Tools in the Translation Workflow: New Approaches and Evaluation](#2019-08-20-2)
@@ -56,6 +61,66 @@
 
 
 
+# 2019-08-21
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-08-21-1">1. Latent-Variable Non-Autoregressive Neural Machine Translation with Deterministic Inference using a Delta Posterior</h2> 
+
+Title: [Latent-Variable Non-Autoregressive Neural Machine Translation with Deterministic Inference using a Delta Posterior](https://arxiv.org/abs/1908.07181)
+
+Authors: [Raphael Shu](https://arxiv.org/search/cs?searchtype=author&query=Shu%2C+R), [Jason Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+J), [Hideki Nakayama](https://arxiv.org/search/cs?searchtype=author&query=Nakayama%2C+H), [Kyunghyun Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+K)
+
+*(Submitted on 20 Aug 2019)*
+
+> Although neural machine translation models reached high translation quality, the autoregressive nature makes inference difficult to parallelize and leads to high translation latency. Inspired by recent refinement-based approaches, we propose a latent-variable non-autoregressive model with continuous latent variables and deterministic inference procedure. In contrast to existing approaches, we use a deterministic iterative inference algorithm to find a target sequence that maximizes the lowerbound to the log-probability. During inference, the length of translation automatically adapts itself. Our experiments show that the lowerbound can be greatly increased by running the inference algorithm for only one step, resulting in significantly improved translation quality. Our proposed model closes the gap between non-autoregressive and autoregressive approaches on ASPEC Ja-En dataset with 7.8x faster decoding. On WMT'14 En-De dataset, our model narrows the performance gap with autoregressive baseline down to 2.0 BLEU points with 12.5x speedup.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1908.07181 [cs.CL]**                                 |
+|           | (or **arXiv:1908.07181v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-08-21-2">2. ARAML: A Stable Adversarial Training Framework for Text Generation</h2> 
+
+Title: [ARAML: A Stable Adversarial Training Framework for Text Generation](https://arxiv.org/abs/1908.07195)
+
+Authors: [Pei Ke](https://arxiv.org/search/cs?searchtype=author&query=Ke%2C+P), [Fei Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+F), [Minlie Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+M), [Xiaoyan Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+X)
+
+*(Submitted on 20 Aug 2019)*
+
+> Most of the existing generative adversarial networks (GAN) for text generation suffer from the instability of reinforcement learning training algorithms such as policy gradient, leading to unstable performance. To tackle this problem, we propose a novel framework called Adversarial Reward Augmented Maximum Likelihood (ARAML). During adversarial training, the discriminator assigns rewards to samples which are acquired from a stationary distribution near the data rather than the generator's distribution. The generator is optimized with maximum likelihood estimation augmented by the discriminator's rewards instead of policy gradient. Experiments show that our model can outperform state-of-the-art text GANs with a more stable training process.
+
+| Comments:    | Accepted by EMNLP 2019                                       |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| MSC classes: | 68T50                                                        |
+| Cite as:     | **arXiv:1908.07195 [cs.CL]**                                 |
+|              | (or **arXiv:1908.07195v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-08-21-3">3. LXMERT: Learning Cross-Modality Encoder Representations from Transformers</h2> 
+
+Title: [LXMERT: Learning Cross-Modality Encoder Representations from Transformers](https://arxiv.org/abs/1908.07490)
+
+Authors: [Hao Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+H), [Mohit Bansal](https://arxiv.org/search/cs?searchtype=author&query=Bansal%2C+M)
+
+*(Submitted on 20 Aug 2019)*
+
+> Vision-and-language reasoning requires an understanding of visual concepts, language semantics, and, most importantly, the alignment and relationships between these two modalities. We thus propose the LXMERT (Learning Cross-Modality Encoder Representations from Transformers) framework to learn these vision-and-language connections. In LXMERT, we build a large-scale Transformer model that consists of three encoders: an object relationship encoder, a language encoder, and a cross-modality encoder. Next, to endow our model with the capability of connecting vision and language semantics, we pre-train the model with large amounts of image-and-sentence pairs, via five diverse representative pre-training tasks: masked language modeling, masked object prediction (feature regression and label classification), cross-modality matching, and image question answering. These tasks help in learning both intra-modality and cross-modality relationships. After fine-tuning from our pre-trained parameters, our model achieves the state-of-the-art results on two visual question answering datasets (i.e., VQA and GQA). We also show the generalizability of our pre-trained cross-modality model by adapting it to a challenging visual-reasoning task, NLVR2, and improve the previous best result by 22% absolute (54% to 76%). Lastly, we demonstrate detailed ablation studies to prove that both our novel model components and pre-training strategies significantly contribute to our strong results. Code and pre-trained models publicly available at: [this https URL](https://github.com/airsplay/lxmert)
+
+| Comments: | EMNLP 2019 (12 pages)                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1908.07490 [cs.CL]**                                 |
+|           | (or **arXiv:1908.07490v1 [cs.CL]** for this version)         |
+
+
+
 # 2019-08-20
 
 [Return to Index](#Index)
@@ -63,7 +128,6 @@
 
 
 <h2 id="2019-08-20-1">1. UDS--DFKI Submission to the WMT2019 Similar Language Translation Shared Task</h2> 
-
 Title: [UDS--DFKI Submission to the WMT2019 Similar Language Translation Shared Task](https://arxiv.org/abs/1908.06138)
 
 Authors: [Santanu Pal](https://arxiv.org/search/cs?searchtype=author&query=Pal%2C+S), [Marcos Zampieri](https://arxiv.org/search/cs?searchtype=author&query=Zampieri%2C+M), [Josef van Genabith](https://arxiv.org/search/cs?searchtype=author&query=van+Genabith%2C+J)
@@ -82,7 +146,6 @@ Authors: [Santanu Pal](https://arxiv.org/search/cs?searchtype=author&query=Pal%2
 
 
 <h2 id="2019-08-20-2">2. Improving CAT Tools in the Translation Workflow: New Approaches and Evaluation</h2> 
-
 Title: [Improving CAT Tools in the Translation Workflow: New Approaches and Evaluation](https://arxiv.org/abs/1908.06140)
 
 Authors: [Mihaela Vela](https://arxiv.org/search/cs?searchtype=author&query=Vela%2C+M), [Santanu Pal](https://arxiv.org/search/cs?searchtype=author&query=Pal%2C+S), [Marcos Zampieri](https://arxiv.org/search/cs?searchtype=author&query=Zampieri%2C+M), [Sudip Kumar Naskar](https://arxiv.org/search/cs?searchtype=author&query=Naskar%2C+S+K), [Josef van Genabith](https://arxiv.org/search/cs?searchtype=author&query=van+Genabith%2C+J)
@@ -101,7 +164,6 @@ Authors: [Mihaela Vela](https://arxiv.org/search/cs?searchtype=author&query=Vela
 
 
 <h2 id="2019-08-20-3">3. The Transference Architecture for Automatic Post-Editing</h2> 
-
 Title: [The Transference Architecture for Automatic Post-Editing](https://arxiv.org/abs/1908.06151)
 
 Authors: [Santanu Pal](https://arxiv.org/search/cs?searchtype=author&query=Pal%2C+S), [Hongfei Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+H), [Nico Herbig](https://arxiv.org/search/cs?searchtype=author&query=Herbig%2C+N), [Antonio Krueger](https://arxiv.org/search/cs?searchtype=author&query=Krueger%2C+A), [Josef van Genabith](https://arxiv.org/search/cs?searchtype=author&query=van+Genabith%2C+J)
@@ -120,7 +182,6 @@ Authors: [Santanu Pal](https://arxiv.org/search/cs?searchtype=author&query=Pal%2
 
 
 <h2 id="2019-08-20-4">4. Language Graph Distillation for Low-Resource Machine Translation</h2> 
-
 Title: [Language Graph Distillation for Low-Resource Machine Translation](https://arxiv.org/abs/1908.06258)
 
 Authors: [Tianyu He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+T), [Jiale Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J), [Xu Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+X), [Tao Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+T)
@@ -139,7 +200,6 @@ Authors: [Tianyu He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+T
 
 
 <h2 id="2019-08-20-5">5. Hard but Robust, Easy but Sensitive: How Encoder and Decoder Perform in Neural Machine Translation</h2> 
-
 Title: [Hard but Robust, Easy but Sensitive: How Encoder and Decoder Perform in Neural Machine Translation](https://arxiv.org/abs/1908.06259)
 
 Authors: [Tianyu He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+T), [Xu Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+X), [Tao Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+T)
@@ -158,7 +218,6 @@ Authors: [Tianyu He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+T
 
 
 <h2 id="2019-08-20-6">6. Recurrent Graph Syntax Encoder for Neural Machine Translation</h2> 
-
 Title: [Recurrent Graph Syntax Encoder for Neural Machine Translation](https://arxiv.org/abs/1908.06559)
 
 Authors: [Liang Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+L), [Dacheng Tao](https://arxiv.org/search/cs?searchtype=author&query=Tao%2C+D)
@@ -178,7 +237,6 @@ Authors: [Liang Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2
 
 
 <h2 id="2019-08-20-7">7. Bilingual Lexicon Induction with Semi-supervision in Non-Isometric Embedding Spaces</h2> 
-
 Title: [Bilingual Lexicon Induction with Semi-supervision in Non-Isometric Embedding Spaces](https://arxiv.org/abs/1908.06625)
 
 Authors: [Barun Patra](https://arxiv.org/search/cs?searchtype=author&query=Patra%2C+B), [Joel Ruben Antony Moniz](https://arxiv.org/search/cs?searchtype=author&query=Moniz%2C+J+R+A), [Sarthak Garg](https://arxiv.org/search/cs?searchtype=author&query=Garg%2C+S), [Matthew R. Gormley](https://arxiv.org/search/cs?searchtype=author&query=Gormley%2C+M+R), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
