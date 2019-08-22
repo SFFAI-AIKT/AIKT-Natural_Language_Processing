@@ -2,6 +2,13 @@
 
 ### Index
 
+- [2019-08-22](#2019-08-22)
+  - [1. Improving Neural Machine Translation with Pre-trained Representation](#2019-08-22-1)
+  - [2. On the Robustness of Unsupervised and Semi-supervised Cross-lingual Word Embedding Learning](#2019-08-22-2)
+  - [3. An Empirical Evaluation of Multi-task Learning in Deep Neural Networks for Natural Language Processing](#2019-08-22-3)
+  - [4. A novel text representation which enables image classifiers to perform text classification, applied to name disambiguation](#2019-08-22-4)
+  - [5. Evaluating Defensive Distillation For Defending Text Processing Neural Networks Against Adversarial Examples](#2019-08-22-5)
+
 - [2019-08-21](#2019-08-21)
   - [1. Latent-Variable Non-Autoregressive Neural Machine Translation with Deterministic Inference using a Delta Posterior](#2019-08-21-1)
   - [2. ARAML: A Stable Adversarial Training Framework for Text Generation](#2019-08-21-2)
@@ -61,6 +68,110 @@
 
 
 
+# 2019-08-22
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-08-22-1">1. Improving Neural Machine Translation with Pre-trained Representation</h2> 
+
+Title: [Improving Neural Machine Translation with Pre-trained Representation](https://arxiv.org/abs/1908.07688)
+
+Authors: [Rongxiang Weng](https://arxiv.org/search/cs?searchtype=author&query=Weng%2C+R), [Heng Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+H), [Shujian Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Weihua Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+W), [Jiajun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J)
+
+*(Submitted on 21 Aug 2019)*
+
+> Monolingual data has been demonstrated to be helpful in improving the translation quality of neural machine translation (NMT). The current methods stay at the usage of word-level knowledge, such as generating synthetic parallel data or extracting information from word embedding. In contrast, the power of sentence-level contextual knowledge which is more complex and diverse, playing an important role in natural language generation, has not been fully exploited. In this paper, we propose a novel structure which could leverage monolingual data to acquire sentence-level contextual representations. Then, we design a framework for integrating both source and target sentence-level representations into NMT model to improve the translation quality. Experimental results on Chinese-English, German-English machine translation tasks show that our proposed model achieves improvement over strong Transformer baselines, while experiments on English-Turkish further demonstrate the effectiveness of our approach in the low-resource scenario.
+
+| Comments: | In Progress                                          |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1908.07688 [cs.CL]**                         |
+|           | (or **arXiv:1908.07688v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-08-22-2">2. On the Robustness of Unsupervised and Semi-supervised Cross-lingual Word Embedding Learning</h2> 
+
+Title: [On the Robustness of Unsupervised and Semi-supervised Cross-lingual Word Embedding Learning](https://arxiv.org/abs/1908.07742)
+
+Authors: [Yerai Doval](https://arxiv.org/search/cs?searchtype=author&query=Doval%2C+Y), [Jose Camacho-Collados](https://arxiv.org/search/cs?searchtype=author&query=Camacho-Collados%2C+J), [Luis Espinosa-Anke](https://arxiv.org/search/cs?searchtype=author&query=Espinosa-Anke%2C+L), [Steven Schockaert](https://arxiv.org/search/cs?searchtype=author&query=Schockaert%2C+S)
+
+*(Submitted on 21 Aug 2019)*
+
+> Cross-lingual word embeddings are vector representations of words in different languages where words with similar meaning are represented by similar vectors, regardless of the language. Recent developments which construct these embeddings by aligning monolingual spaces have shown that accurate alignments can be obtained with little or no supervision. However, the focus has been on a particular controlled scenario for evaluation, and there is no strong evidence on how current state-of-the-art systems would fare with noisy text or for language pairs with major linguistic differences. In this paper we present an extensive evaluation over multiple cross-lingual embedding models, analyzing their strengths and limitations with respect to different variables such as target language, training corpora and amount of supervision. Our conclusions put in doubt the view that high-quality cross-lingual embeddings can always be learned without much supervision.
+
+| Comments: | 13 pages, 2 figures, 7 tables                        |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1908.07742 [cs.CL]**                         |
+|           | (or **arXiv:1908.07742v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-08-22-3">3. An Empirical Evaluation of Multi-task Learning in Deep Neural Networks for Natural Language Processing</h2> 
+
+Title: [An Empirical Evaluation of Multi-task Learning in Deep Neural Networks for Natural Language Processing](https://arxiv.org/abs/1908.07820)
+
+Authors: [Jianquan Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Xiaokang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Wenpeng Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+W), [Min Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+M), [Liqun Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+L)
+
+*(Submitted on 16 Aug 2019)*
+
+> Multi-Task Learning (MTL) aims at boosting the overall performance of each individual task by leveraging useful information contained in multiple related tasks. It has shown great success in natural language processing (NLP). Currently, a number of MLT architectures and learning mechanisms have been proposed for various NLP tasks. However, there is no systematic exploration and comparison of different MLT architectures and learning mechanisms for their strong performance in-depth. In this paper, we conduct a thorough examination of typical MTL methods on a broad range of representative NLP tasks. Our primary goal is to understand the merits and demerits of existing MTL methods in NLP tasks, thus devising new hybrid architectures intended to combine their strengths.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1908.07820 [cs.CL]**                                 |
+|           | (or **arXiv:1908.07820v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-08-22-4">4. A novel text representation which enables image classifiers to perform text classification, applied to name disambiguation</h2> 
+
+Title: [A novel text representation which enables image classifiers to perform text classification, applied to name disambiguation](https://arxiv.org/abs/1908.07846)
+
+Authors: [Stephen M. Petrie](https://arxiv.org/search/cs?searchtype=author&query=Petrie%2C+S+M), [T'Mir D. Julius](https://arxiv.org/search/cs?searchtype=author&query=Julius%2C+T+D)
+
+*(Submitted on 19 Aug 2019)*
+
+> Patent data are often used to study the process of innovation and research, but patent databases lack unique identifiers for individual inventors, making it difficult to study innovation processes at the individual level. Here we introduce an algorithm that performs highly accurate disambiguation of inventors (named entities) in US patent data (F1: 99.09%, precision: 99.41%, recall: 98.76%). The algorithm involves a novel method for converting text-based record data into abstract image representations, in which text from a given pairwise comparison between two inventor name records is converted into a 2D RGB (stacked) image representation. We train an image classification neural network to discriminate between such pairwise comparison images, and then use the trained network to label each pair of records as either matched (same inventor) or non-matched (different inventors). The resulting disambiguation algorithm produces highly accurate results, out-performing other inventor name disambiguation studies on US patent data. Our new text-to-image representation method could potentially be used more broadly for other NLP comparison problems, as it allows image-based processing techniques (e.g. image classification networks) to be applied to text-based comparison problems (such as disambiguation of academic publications, or data linkage problems).
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1908.07846 [cs.CL]**                                 |
+|           | (or **arXiv:1908.07846v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-08-22-5">5. Evaluating Defensive Distillation For Defending Text Processing Neural Networks Against Adversarial Examples</h2> 
+
+Title: [Evaluating Defensive Distillation For Defending Text Processing Neural Networks Against Adversarial Examples](https://arxiv.org/abs/1908.07899)
+
+Authors: [Marcus Soll](https://arxiv.org/search/cs?searchtype=author&query=Soll%2C+M), [Tobias Hinz](https://arxiv.org/search/cs?searchtype=author&query=Hinz%2C+T), [Sven Magg](https://arxiv.org/search/cs?searchtype=author&query=Magg%2C+S), [Stefan Wermter](https://arxiv.org/search/cs?searchtype=author&query=Wermter%2C+S)
+
+*(Submitted on 21 Aug 2019)*
+
+> Adversarial examples are artificially modified input samples which lead to misclassifications, while not being detectable by humans. These adversarial examples are a challenge for many tasks such as image and text classification, especially as research shows that many adversarial examples are transferable between different classifiers. In this work, we evaluate the performance of a popular defensive strategy for adversarial examples called defensive distillation, which can be successful in hardening neural networks against adversarial examples in the image domain. However, instead of applying defensive distillation to networks for image classification, we examine, for the first time, its performance on text classification tasks and also evaluate its effect on the transferability of adversarial text examples. Our results indicate that defensive distillation only has a minimal impact on text classifying neural networks and does neither help with increasing their robustness against adversarial examples nor prevent the transferability of adversarial examples between neural networks.
+
+| Comments: | Published at the International Conference on Artificial Neural Networks (ICANN) 2019 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Cryptography and Security (cs.CR); Machine Learning (cs.LG); Neural and Evolutionary Computing (cs.NE) |
+| Cite as:  | **arXiv:1908.07899 [cs.CL]**                                 |
+|           | (or **arXiv:1908.07899v1 [cs.CL]** for this version)         |
+
+
+
+
+
 # 2019-08-21
 
 [Return to Index](#Index)
@@ -68,7 +179,6 @@
 
 
 <h2 id="2019-08-21-1">1. Latent-Variable Non-Autoregressive Neural Machine Translation with Deterministic Inference using a Delta Posterior</h2> 
-
 Title: [Latent-Variable Non-Autoregressive Neural Machine Translation with Deterministic Inference using a Delta Posterior](https://arxiv.org/abs/1908.07181)
 
 Authors: [Raphael Shu](https://arxiv.org/search/cs?searchtype=author&query=Shu%2C+R), [Jason Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+J), [Hideki Nakayama](https://arxiv.org/search/cs?searchtype=author&query=Nakayama%2C+H), [Kyunghyun Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+K)
@@ -85,7 +195,6 @@ Authors: [Raphael Shu](https://arxiv.org/search/cs?searchtype=author&query=Shu%2
 
 
 <h2 id="2019-08-21-2">2. ARAML: A Stable Adversarial Training Framework for Text Generation</h2> 
-
 Title: [ARAML: A Stable Adversarial Training Framework for Text Generation](https://arxiv.org/abs/1908.07195)
 
 Authors: [Pei Ke](https://arxiv.org/search/cs?searchtype=author&query=Ke%2C+P), [Fei Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+F), [Minlie Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+M), [Xiaoyan Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+X)
@@ -104,7 +213,6 @@ Authors: [Pei Ke](https://arxiv.org/search/cs?searchtype=author&query=Ke%2C+P), 
 
 
 <h2 id="2019-08-21-3">3. LXMERT: Learning Cross-Modality Encoder Representations from Transformers</h2> 
-
 Title: [LXMERT: Learning Cross-Modality Encoder Representations from Transformers](https://arxiv.org/abs/1908.07490)
 
 Authors: [Hao Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+H), [Mohit Bansal](https://arxiv.org/search/cs?searchtype=author&query=Bansal%2C+M)
