@@ -13,7 +13,7 @@
 - [2019-08-26](#2019-08-26)
   - [1. Sign Language Recognition, Generation, and Translation: An Interdisciplinary Perspective](#2019-08-26-1)
   - [2. A Lost Croatian Cybernetic Machine Translation Program](#2019-08-26-2)
-- [3. Revealing the Dark Secrets of BERT](#2019-08-26-3)
+  - [3. Revealing the Dark Secrets of BERT](#2019-08-26-3)
   
 - [2019-08-23](#2019-08-23)
   - [1. Denoising based Sequence-to-Sequence Pre-training for Text Generation](#2019-08-23-1)
@@ -92,7 +92,6 @@
 
 
 <h2 id="2019-08-27-1">1. Well-Read Students Learn Better: The Impact of Student Initialization on Knowledge Distillation</h2> 
-
 Title: [Well-Read Students Learn Better: The Impact of Student Initialization on Knowledge Distillation](https://arxiv.org/abs/1908.08962)
 
 Authors: [Iulia Turc](https://arxiv.org/search/cs?searchtype=author&query=Turc%2C+I), [Ming-Wei Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+M), [Kenton Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+K), [Kristina Toutanova](https://arxiv.org/search/cs?searchtype=author&query=Toutanova%2C+K)
@@ -111,7 +110,6 @@ Authors: [Iulia Turc](https://arxiv.org/search/cs?searchtype=author&query=Turc%2
 
 
 <h2 id="2019-08-27-2">2. Neural data-to-text generation: A comparison between pipeline and end-to-end architectures</h2> 
-
 Title: [Neural data-to-text generation: A comparison between pipeline and end-to-end architectures](https://arxiv.org/abs/1908.09022)
 
 Authors: [Thiago Castro Ferreira](https://arxiv.org/search/cs?searchtype=author&query=Ferreira%2C+T+C), [Chris van der Lee](https://arxiv.org/search/cs?searchtype=author&query=van+der+Lee%2C+C), [Emiel van Miltenburg](https://arxiv.org/search/cs?searchtype=author&query=van+Miltenburg%2C+E), [Emiel Krahmer](https://arxiv.org/search/cs?searchtype=author&query=Krahmer%2C+E)
@@ -131,7 +129,6 @@ Authors: [Thiago Castro Ferreira](https://arxiv.org/search/cs?searchtype=author&
 
 
 <h2 id="2019-08-27-3">3. Multilingual Neural Machine Translation with Language Clustering</h2> 
-
 Title: [Multilingual Neural Machine Translation with Language Clustering](https://arxiv.org/abs/1908.09324)
 
 Authors: [Xu Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+X), [Jiale Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J), [Di He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+D), [Yingce Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%2C+Y), [Tao Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+T), [Tie-Yan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T)
@@ -151,7 +148,6 @@ Authors: [Xu Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+X),
 
 
 <h2 id="2019-08-27-4">4. Efficient Bidirectional Neural Machine Translation</h2> 
-
 Title: [Efficient Bidirectional Neural Machine Translation](https://arxiv.org/abs/1908.09329)
 
 Authors: [Xu Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+X), [Yingce Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%2C+Y), [Lijun Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+L), [Tao Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+T)
@@ -170,7 +166,6 @@ Authors: [Xu Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+X),
 
 
 <h2 id="2019-08-27-5">5. Transductive Data-Selection Algorithms for Fine-Tuning Neural Machine Translation</h2> 
-
 Title: [Transductive Data-Selection Algorithms for Fine-Tuning Neural Machine Translation](https://arxiv.org/abs/1908.09532)
 
 Authors: [Alberto Poncelas](https://arxiv.org/search/cs?searchtype=author&query=Poncelas%2C+A), [Gideon Maillette de Buy Wenniger](https://arxiv.org/search/cs?searchtype=author&query=de+Buy+Wenniger%2C+G+M), [Andy Way](https://arxiv.org/search/cs?searchtype=author&query=Way%2C+A)
@@ -192,7 +187,6 @@ Authors: [Alberto Poncelas](https://arxiv.org/search/cs?searchtype=author&query=
 
 
 <h2 id="2019-08-27-6">6. An Empirical Study of Domain Adaptation for Unsupervised Neural Machine Translation</h2> 
-
 Title: [An Empirical Study of Domain Adaptation for Unsupervised Neural Machine Translation](https://arxiv.org/abs/1908.09605)
 
 Authors: [Haipeng Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+H), [Rui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+R), [Kehai Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+K), [Masao Utiyama](https://arxiv.org/search/cs?searchtype=author&query=Utiyama%2C+M), [Eiichiro Sumita](https://arxiv.org/search/cs?searchtype=author&query=Sumita%2C+E), [Tiejun Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+T)
@@ -252,7 +246,6 @@ Authors: [Sandro Skansi](https://arxiv.org/search/cs?searchtype=author&query=Ska
 
 
 <h2 id="2019-08-26-3">3. Revealing the Dark Secrets of BERT</h2> 
-
 Title: [Revealing the Dark Secrets of BERT](https://arxiv.org/abs/1908.08593)
 
 Authors: [Olga Kovaleva](https://arxiv.org/search/cs?searchtype=author&query=Kovaleva%2C+O), [Alexey Romanov](https://arxiv.org/search/cs?searchtype=author&query=Romanov%2C+A), [Anna Rogers](https://arxiv.org/search/cs?searchtype=author&query=Rogers%2C+A), [Anna Rumshisky](https://arxiv.org/search/cs?searchtype=author&query=Rumshisky%2C+A)
