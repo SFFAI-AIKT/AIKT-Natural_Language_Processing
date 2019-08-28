@@ -2,6 +2,12 @@
 
 ### Index
 
+- [2019-08-28](#2019-08-28)
+  - [1. Reference Network for Neural Machine Translation](#2019-08-28-1)
+  - [2. On NMT Search Errors and Model Errors: Cat Got Your Tongue?](#2019-08-28-2)
+  - [3. Multi-Layer Softmaxing during Training Neural Machine Translation for Flexible Decoding with Fewer Layers](#2019-08-28-3)
+  - [4. Bridging the Gap for Tokenizer-Free Language Models](#2019-08-28-4)
+
 - [2019-08-27](#2019-08-27)
   - [1. Well-Read Students Learn Better: The Impact of Student Initialization on Knowledge Distillation](#2019-08-27-1)
   - [2. Neural data-to-text generation: A comparison between pipeline and end-to-end architectures](#2019-08-27-2)
@@ -82,6 +88,89 @@
 * [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 * [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2019-08-28
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-08-28-1">1. Reference Network for Neural Machine Translation</h2> 
+
+Title: [Reference Network for Neural Machine Translation](https://arxiv.org/abs/1908.09920)
+
+Authors: [Han Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+H), [Chenghao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+C), [Jianling Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+J)
+
+*(Submitted on 23 Aug 2019)*
+
+> Neural Machine Translation (NMT) has achieved notable success in recent years. Such a framework usually generates translations in isolation. In contrast, human translators often refer to reference data, either rephrasing the intricate sentence fragments with common terms in source language, or just accessing to the golden translation directly. In this paper, we propose a Reference Network to incorporate referring process into translation decoding of NMT. To construct a \emph{reference book}, an intuitive way is to store the detailed translation history with extra memory, which is computationally expensive. Instead, we employ Local Coordinates Coding (LCC) to obtain global context vectors containing monolingual and bilingual contextual information for NMT decoding. Experimental results on Chinese-English and English-German tasks demonstrate that our proposed model is effective in improving the translation quality with lightweight computation cost.
+
+| Comments: | 11 pages, 3 figures, accepted by ACL-2019            |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1908.09920 [cs.CL]**                         |
+|           | (or **arXiv:1908.09920v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-08-28-2">2. On NMT Search Errors and Model Errors: Cat Got Your Tongue?</h2> 
+
+Title: [On NMT Search Errors and Model Errors: Cat Got Your Tongue?](https://arxiv.org/abs/1908.10090)
+
+Authors: [Felix Stahlberg](https://arxiv.org/search/cs?searchtype=author&query=Stahlberg%2C+F), [Bill Byrne](https://arxiv.org/search/cs?searchtype=author&query=Byrne%2C+B)
+
+*(Submitted on 27 Aug 2019)*
+
+> We report on search errors and model errors in neural machine translation (NMT). We present an exact inference procedure for neural sequence models based on a combination of beam search and depth-first search. We use our exact search to find the global best model scores under a Transformer base model for the entire WMT15 English-German test set. Surprisingly, beam search fails to find these global best model scores in most cases, even with a very large beam size of 100. For more than 50% of the sentences, the model in fact assigns its global best score to the empty translation, revealing a massive failure of neural models in properly accounting for adequacy. We show by constraining search with a minimum translation length that at the root of the problem of empty translations lies an inherent bias towards shorter translations. We conclude that vanilla NMT in its current form requires just the right amount of beam search errors, which, from a modelling perspective, is a highly unsatisfactory conclusion indeed, as the model often prefers an empty translation.
+
+| Comments: | EMNLP-2019                                           |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1908.10090 [cs.CL]**                         |
+|           | (or **arXiv:1908.10090v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-08-28-3">3. Multi-Layer Softmaxing during Training Neural Machine Translation for Flexible Decoding with Fewer Layers</h2> 
+
+Title: [Multi-Layer Softmaxing during Training Neural Machine Translation for Flexible Decoding with Fewer Layers](https://arxiv.org/abs/1908.10118)
+
+Authors: [Raj Dabre](https://arxiv.org/search/cs?searchtype=author&query=Dabre%2C+R), [Atsushi Fujita](https://arxiv.org/search/cs?searchtype=author&query=Fujita%2C+A)
+
+*(Submitted on 27 Aug 2019)*
+
+> This paper proposes a novel procedure for training an encoder-decoder based deep neural network which compresses NxM models into a single model enabling us to dynamically choose the number of encoder and decoder layers for decoding. Usually, the output of the last layer of the N-layer encoder is fed to the M-layer decoder, and the output of the last decoder layer is used to compute softmax loss. Instead, our method computes a single loss consisting of NxM losses: the softmax loss for the output of each of the M decoder layers derived using the output of each of the N encoder layers. A single model trained by our method can be used for decoding with an arbitrary fewer number of encoder and decoder layers. In practical scenarios, this (a) enables faster decoding with insignificant losses in translation quality and (b) alleviates the need to train NxM models, thereby saving space. We take a case study of neural machine translation and show the advantage and give a cost-benefit analysis of our approach.
+
+| Comments: | Preliminary work. More updates coming very soon              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1908.10118 [cs.CL]**                                 |
+|           | (or **arXiv:1908.10118v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-08-28-4">4. Bridging the Gap for Tokenizer-Free Language Models</h2> 
+
+Title: [Bridging the Gap for Tokenizer-Free Language Models](https://arxiv.org/abs/1908.10322)
+
+Authors: [Dokook Choe](https://arxiv.org/search/cs?searchtype=author&query=Choe%2C+D), [Rami Al-Rfou](https://arxiv.org/search/cs?searchtype=author&query=Al-Rfou%2C+R), [Mandy Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+M), [Heeyoung Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+H), [Noah Constant](https://arxiv.org/search/cs?searchtype=author&query=Constant%2C+N)
+
+*(Submitted on 27 Aug 2019)*
+
+> Purely character-based language models (LMs) have been lagging in quality on large scale datasets, and current state-of-the-art LMs rely on word tokenization. It has been assumed that injecting the prior knowledge of a tokenizer into the model is essential to achieving competitive results. In this paper, we show that contrary to this conventional wisdom, tokenizer-free LMs with sufficient capacity can achieve competitive performance on a large scale dataset. We train a vanilla transformer network with 40 self-attention layers on the One Billion Word (lm1b) benchmark and achieve a new state of the art for tokenizer-free LMs, pushing these models to be on par with their word-based counterparts.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Information Retrieval (cs.IR); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1908.10322 [cs.CL]**                                 |
+|           | (or **arXiv:1908.10322v1 [cs.CL]** for this version)         |
 
 
 
