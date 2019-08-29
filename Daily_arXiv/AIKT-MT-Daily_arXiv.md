@@ -2,6 +2,9 @@
 
 ### Index
 
+- [2019-08-29](#2019-08-29)
+  - [1. Unsupervised Domain Adaptation for Neural Machine Translation with Domain-Aware Feature Embeddings](#2019-08-29-1)
+
 - [2019-08-28](#2019-08-28)
   - [1. Reference Network for Neural Machine Translation](#2019-08-28-1)
   - [2. On NMT Search Errors and Model Errors: Cat Got Your Tongue?](#2019-08-28-2)
@@ -91,6 +94,30 @@
 
 
 
+# 2019-08-29
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-08-29-1">1. Unsupervised Domain Adaptation for Neural Machine Translation with Domain-Aware Feature Embeddings</h2> 
+
+Title: [Unsupervised Domain Adaptation for Neural Machine Translation with Domain-Aware Feature Embeddings](https://arxiv.org/abs/1908.10430)
+
+Authors: [Zi-Yi Dou](https://arxiv.org/search/cs?searchtype=author&query=Dou%2C+Z), [Junjie Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+J), [Antonios Anastasopoulos](https://arxiv.org/search/cs?searchtype=author&query=Anastasopoulos%2C+A), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
+
+*(Submitted on 27 Aug 2019)*
+
+> The recent success of neural machine translation models relies on the availability of high quality, in-domain data. Domain adaptation is required when domain-specific data is scarce or nonexistent. Previous unsupervised domain adaptation strategies include training the model with in-domain copied monolingual or back-translated data. However, these methods use generic representations for text regardless of domain shift, which makes it infeasible for translation models to control outputs conditional on a specific domain. In this work, we propose an approach that adapts models with domain-aware feature embeddings, which are learned via an auxiliary language modeling task. Our approach allows the model to assign domain-specific representations to words and output sentences in the desired domain. Our empirical results demonstrate the effectiveness of the proposed strategy, achieving consistent improvements in multiple experimental settings. In addition, we show that combining our method with back translation can further improve the performance of the model.
+
+| Comments: | EMNLP 2019                                           |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1908.10430 [cs.CL]**                         |
+|           | (or **arXiv:1908.10430v1 [cs.CL]** for this version) |
+
+
+
 # 2019-08-28
 
 [Return to Index](#Index)
@@ -98,7 +125,6 @@
 
 
 <h2 id="2019-08-28-1">1. Reference Network for Neural Machine Translation</h2> 
-
 Title: [Reference Network for Neural Machine Translation](https://arxiv.org/abs/1908.09920)
 
 Authors: [Han Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+H), [Chenghao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+C), [Jianling Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+J)
@@ -118,7 +144,6 @@ Authors: [Han Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+H), 
 
 
 <h2 id="2019-08-28-2">2. On NMT Search Errors and Model Errors: Cat Got Your Tongue?</h2> 
-
 Title: [On NMT Search Errors and Model Errors: Cat Got Your Tongue?](https://arxiv.org/abs/1908.10090)
 
 Authors: [Felix Stahlberg](https://arxiv.org/search/cs?searchtype=author&query=Stahlberg%2C+F), [Bill Byrne](https://arxiv.org/search/cs?searchtype=author&query=Byrne%2C+B)
@@ -138,7 +163,6 @@ Authors: [Felix Stahlberg](https://arxiv.org/search/cs?searchtype=author&query=S
 
 
 <h2 id="2019-08-28-3">3. Multi-Layer Softmaxing during Training Neural Machine Translation for Flexible Decoding with Fewer Layers</h2> 
-
 Title: [Multi-Layer Softmaxing during Training Neural Machine Translation for Flexible Decoding with Fewer Layers](https://arxiv.org/abs/1908.10118)
 
 Authors: [Raj Dabre](https://arxiv.org/search/cs?searchtype=author&query=Dabre%2C+R), [Atsushi Fujita](https://arxiv.org/search/cs?searchtype=author&query=Fujita%2C+A)
@@ -158,7 +182,6 @@ Authors: [Raj Dabre](https://arxiv.org/search/cs?searchtype=author&query=Dabre%2
 
 
 <h2 id="2019-08-28-4">4. Bridging the Gap for Tokenizer-Free Language Models</h2> 
-
 Title: [Bridging the Gap for Tokenizer-Free Language Models](https://arxiv.org/abs/1908.10322)
 
 Authors: [Dokook Choe](https://arxiv.org/search/cs?searchtype=author&query=Choe%2C+D), [Rami Al-Rfou](https://arxiv.org/search/cs?searchtype=author&query=Al-Rfou%2C+R), [Mandy Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+M), [Heeyoung Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+H), [Noah Constant](https://arxiv.org/search/cs?searchtype=author&query=Constant%2C+N)
