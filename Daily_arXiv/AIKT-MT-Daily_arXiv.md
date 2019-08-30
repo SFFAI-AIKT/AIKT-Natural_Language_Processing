@@ -2,6 +2,10 @@
 
 ### Index
 
+- [2019-08-30](#2019-08-30)
+  - [1. Learning a Multitask Curriculum for Neural Machine Translation](#2019-08-30-1)
+  - [2. Regularized Context Gates on Transformer for Machine Translation](#2019-08-30-2)
+
 - [2019-08-29](#2019-08-29)
   - [1. Unsupervised Domain Adaptation for Neural Machine Translation with Domain-Aware Feature Embeddings](#2019-08-29-1)
 
@@ -94,6 +98,50 @@
 
 
 
+# 2019-08-30
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-08-30-1">1. Learning a Multitask Curriculum for Neural Machine Translation</h2> 
+
+Title: [Learning a Multitask Curriculum for Neural Machine Translation](https://arxiv.org/abs/1908.10940)
+
+Authors: [Wei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Ye Tian](https://arxiv.org/search/cs?searchtype=author&query=Tian%2C+Y), [Jiquan Ngiam](https://arxiv.org/search/cs?searchtype=author&query=Ngiam%2C+J), [Yinfei Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Isaac Caswell](https://arxiv.org/search/cs?searchtype=author&query=Caswell%2C+I), [Zarana Parekh](https://arxiv.org/search/cs?searchtype=author&query=Parekh%2C+Z)
+
+*(Submitted on 28 Aug 2019)*
+
+> Existing curriculum learning research in neural machine translation (NMT) mostly focuses on a single final task such as selecting data for a domain or for denoising, and considers in-task example selection. This paper studies the data selection problem in multitask setting. We present a method to learn a multitask curriculum on a single, diverse, potentially noisy training dataset. It computes multiple data selection scores for each training example, each score measuring how useful the example is to a certain task. It uses Bayesian optimization to learn a linear weighting of these per-instance scores, and then sorts the data to form a curriculum. We experiment with three domain translation tasks: two specific domains and the general domain, and demonstrate that the learned multitask curriculum delivers results close to individually optimized models and brings solid gains over no curriculum training, across all test sets.
+
+| Comments: | 12 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1908.10940 [cs.CL]**                                 |
+|           | (or **arXiv:1908.10940v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-08-30-2">2. Regularized Context Gates on Transformer for Machine Translation</h2> 
+
+Title: [Regularized Context Gates on Transformer for Machine Translation](https://arxiv.org/abs/1908.11020)
+
+Authors: [Xintong Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Lemao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+L), [Rui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+R), [Guoping Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+G), [Max Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+M)
+
+*(Submitted on 29 Aug 2019)*
+
+> Context gates are effective to control the contributions from the source and target contexts in the recurrent neural network (RNN) based neural machine translation (NMT). However, it is challenging to extend them into the advanced Transformer architecture, which is more complicated than RNN. This paper first provides a method to identify source and target contexts and then introduce a gate mechanism to control the source and target contributions in Transformer. In addition, to further reduce the bias problem in the gate mechanism, this paper proposes a regularization method to guide the learning of the gates with supervision automatically generated using pointwise mutual information. Extensive experiments on 4 translation datasets demonstrate that the proposed model obtains an averaged gain of 1.0 BLEU score over strong Transformer baseline.
+
+| Comments: | 7 pages, 2 figures                                   |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1908.11020 [cs.CL]**                         |
+|           | (or **arXiv:1908.11020v1 [cs.CL]** for this version) |
+
+
+
 # 2019-08-29
 
 [Return to Index](#Index)
@@ -101,7 +149,6 @@
 
 
 <h2 id="2019-08-29-1">1. Unsupervised Domain Adaptation for Neural Machine Translation with Domain-Aware Feature Embeddings</h2> 
-
 Title: [Unsupervised Domain Adaptation for Neural Machine Translation with Domain-Aware Feature Embeddings](https://arxiv.org/abs/1908.10430)
 
 Authors: [Zi-Yi Dou](https://arxiv.org/search/cs?searchtype=author&query=Dou%2C+Z), [Junjie Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+J), [Antonios Anastasopoulos](https://arxiv.org/search/cs?searchtype=author&query=Anastasopoulos%2C+A), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
