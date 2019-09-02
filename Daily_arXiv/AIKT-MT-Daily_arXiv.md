@@ -1,6 +1,6 @@
 # Daily arXiv: Machine Translation - Sep., 2019
 
-### Index
+# Index
 
 - [2019-09-02](#2019-09-02)
   - [1. Latent Part-of-Speech Sequences for Neural Machine Translation](#2019-09-02-1)
