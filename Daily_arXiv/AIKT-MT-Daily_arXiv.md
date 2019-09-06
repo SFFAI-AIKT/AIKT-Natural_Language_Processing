@@ -2,6 +2,14 @@
 
 # Index
 
+- [2019-09-06](#2019-09-06)
+  - [1. Jointly Learning to Align and Translate with Transformer Models](#2019-09-06-1)
+  - [2. Investigating Multilingual NMT Representations at Scale](#2019-09-06-2)
+  - [3. Multi-Granularity Self-Attention for Neural Machine Translation](#2019-09-06-3)
+  - [4. Source Dependency-Aware Transformer with Supervised Self-Attention](#2019-09-06-4)
+  - [5. Accelerating Transformer Decoding via a Hybrid of Self-attention and Recurrent Neural Network](#2019-09-06-1)
+  - [6. FlowSeq: Non-Autoregressive Conditional Sequence Generation with Generative Flow](#2019-09-06-6)
+
 - [2019-09-05](#2019-09-05)
   - [1. The Bottom-up Evolution of Representations in the Transformer: A Study with Machine Translation and Language Modeling Objectives](#2019-09-05-1)
   - [2. Context-Aware Monolingual Repair for Neural Machine Translation](#2019-09-05-2)
@@ -34,6 +42,129 @@
 
 
 
+# 2019-09-06
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-09-06-1">1. Jointly Learning to Align and Translate with Transformer Models</h2> 
+
+Title: [Jointly Learning to Align and Translate with Transformer Models](https://arxiv.org/abs/1909.02074)
+
+Authors: [Sarthak Garg](https://arxiv.org/search/cs?searchtype=author&query=Garg%2C+S), [Stephan Peitz](https://arxiv.org/search/cs?searchtype=author&query=Peitz%2C+S), [Udhyakumar Nallasamy](https://arxiv.org/search/cs?searchtype=author&query=Nallasamy%2C+U), [Matthias Paulik](https://arxiv.org/search/cs?searchtype=author&query=Paulik%2C+M)
+
+*(Submitted on 4 Sep 2019)*
+
+> The state of the art in machine translation (MT) is governed by neural approaches, which typically provide superior translation accuracy over statistical approaches. However, on the closely related task of word alignment, traditional statistical word alignment models often remain the go-to solution. In this paper, we present an approach to train a Transformer model to produce both accurate translations and alignments. We extract discrete alignments from the attention probabilities learnt during regular neural machine translation model training and leverage them in a multi-task framework to optimize towards translation and alignment objectives. We demonstrate that our approach produces competitive results compared to GIZA++ trained IBM alignment models without sacrificing translation accuracy and outperforms previous attempts on Transformer model based word alignment. Finally, by incorporating IBM model alignments into our multi-task training, we report significantly better alignment accuracies compared to GIZA++ on three publicly available data sets.
+
+| Comments: | 10 pages, 2 figures. To appear at EMNLP 2019         |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1909.02074 [cs.CL]**                         |
+|           | (or **arXiv:1909.02074v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-09-06-2">2. Investigating Multilingual NMT Representations at Scale</h2> 
+
+Title: [Investigating Multilingual NMT Representations at Scale](https://arxiv.org/abs/1909.02197)
+
+Authors: [Sneha Reddy Kudugunta](https://arxiv.org/search/cs?searchtype=author&query=Kudugunta%2C+S+R), [Ankur Bapna](https://arxiv.org/search/cs?searchtype=author&query=Bapna%2C+A), [Isaac Caswell](https://arxiv.org/search/cs?searchtype=author&query=Caswell%2C+I), [Naveen Arivazhagan](https://arxiv.org/search/cs?searchtype=author&query=Arivazhagan%2C+N), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O)
+
+*(Submitted on 5 Sep 2019)*
+
+> Multilingual Neural Machine Translation (NMT) models have yielded large empirical success in transfer learning settings. However, these black-box representations are poorly understood, and their mode of transfer remains elusive. In this work, we attempt to understand massively multilingual NMT representations (with 103 languages) using Singular Value Canonical Correlation Analysis (SVCCA), a representation similarity framework that allows us to compare representations across different languages, layers and models. Our analysis validates several empirical results and long-standing intuitions, and unveils new observations regarding how representations evolve in a multilingual translation model. We draw three major conclusions from our analysis, with implications on cross-lingual transfer learning: (i) Encoder representations of different languages cluster based on linguistic similarity, (ii) Representations of a source language learned by the encoder are dependent on the target language, and vice-versa, and (iii) Representations of high resource and/or linguistically similar languages are more robust when fine-tuning on an arbitrary language pair, which is critical to determining how much cross-lingual transfer can be expected in a zero or few-shot setting. We further connect our findings with existing empirical observations in multilingual NMT and transfer learning.
+
+| Comments: | Paper at EMNLP 2019                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1909.02197 [cs.CL]**                                 |
+|           | (or **arXiv:1909.02197v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-09-06-3">3. Multi-Granularity Self-Attention for Neural Machine Translation</h2> 
+
+Title: [Multi-Granularity Self-Attention for Neural Machine Translation](https://arxiv.org/abs/1909.02222)
+
+Authors: [Jie Hao](https://arxiv.org/search/cs?searchtype=author&query=Hao%2C+J), [Xing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Shuming Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+S), [Jinfeng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Zhaopeng Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+Z)
+
+*(Submitted on 5 Sep 2019)*
+
+> Current state-of-the-art neural machine translation (NMT) uses a deep multi-head self-attention network with no explicit phrase information. However, prior work on statistical machine translation has shown that extending the basic translation unit from words to phrases has produced substantial improvements, suggesting the possibility of improving NMT performance from explicit modeling of phrases. In this work, we present multi-granularity self-attention (Mg-Sa): a neural network that combines multi-head self-attention and phrase modeling. Specifically, we train several attention heads to attend to phrases in either n-gram or syntactic formalism. Moreover, we exploit interactions among phrases to enhance the strength of structure modeling - a commonly-cited weakness of self-attention. Experimental results on WMT14 English-to-German and NIST Chinese-to-English translation tasks show the proposed approach consistently improves performance. Targeted linguistic analysis reveals that Mg-Sa indeed captures useful phrase information at various levels of granularities.
+
+| Comments: | EMNLP 2019                                           |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1909.02222 [cs.CL]**                         |
+|           | (or **arXiv:1909.02222v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-09-06-4">4. Source Dependency-Aware Transformer with Supervised Self-Attention</h2> 
+
+Title: [Source Dependency-Aware Transformer with Supervised Self-Attention](https://arxiv.org/abs/1909.02273)
+
+Authors: [Chengyi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Shuangzhi Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+S), [Shujie Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+S)
+
+*(Submitted on 5 Sep 2019)*
+
+> Recently, Transformer has achieved the state-of-the-art performance on many machine translation tasks. However, without syntax knowledge explicitly considered in the encoder, incorrect context information that violates the syntax structure may be integrated into source hidden states, leading to erroneous translations. In this paper, we propose a novel method to incorporate source dependencies into the Transformer. Specifically, we adopt the source dependency tree and define two matrices to represent the dependency relations. Based on the matrices, two heads in the multi-head self-attention module are trained in a supervised manner and two extra cross entropy losses are introduced into the training objective function. Under this training objective, the model is trained to learn the source dependency relations directly. Without requiring pre-parsed input during inference, our model can generate better translations with the dependency-aware context information. Experiments on bi-directional Chinese-to-English, English-to-Japanese and English-to-German translation tasks show that our proposed method can significantly improve the Transformer baseline.
+
+| Comments: | 6 pages                                              |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1909.02273 [cs.CL]**                         |
+|           | (or **arXiv:1909.02273v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-09-06-5">5. Accelerating Transformer Decoding via a Hybrid of Self-attention and Recurrent Neural Network</h2> 
+
+Title: [Accelerating Transformer Decoding via a Hybrid of Self-attention and Recurrent Neural Network](https://arxiv.org/abs/1909.02279)
+
+Authors: [Chengyi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Shuangzhi Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+S), [Shujie Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+S)
+
+*(Submitted on 5 Sep 2019)*
+
+> Due to the highly parallelizable architecture, Transformer is faster to train than RNN-based models and popularly used in machine translation tasks. However, at inference time, each output word requires all the hidden states of the previously generated words, which limits the parallelization capability, and makes it much slower than RNN-based ones. In this paper, we systematically analyze the time cost of different components of both the Transformer and RNN-based model. Based on it, we propose a hybrid network of self-attention and RNN structures, in which, the highly parallelizable self-attention is utilized as the encoder, and the simpler RNN structure is used as the decoder. Our hybrid network can decode 4-times faster than the Transformer. In addition, with the help of knowledge distillation, our hybrid network achieves comparable translation quality to the original Transformer.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1909.02279 [cs.CL]**                         |
+|           | (or **arXiv:1909.02279v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-09-06-6">6. FlowSeq: Non-Autoregressive Conditional Sequence Generation with Generative Flow</h2> 
+
+Title: [FlowSeq: Non-Autoregressive Conditional Sequence Generation with Generative Flow](https://arxiv.org/abs/1909.02480)
+
+Authors: [Xuezhe Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+X), [Chunting Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+C), [Xian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G), [Eduard Hovy](https://arxiv.org/search/cs?searchtype=author&query=Hovy%2C+E)
+
+*(Submitted on 5 Sep 2019)*
+
+> Most sequence-to-sequence (seq2seq) models are autoregressive; they generate each token by conditioning on previously generated tokens. In contrast, non-autoregressive seq2seq models generate all tokens in one pass, which leads to increased efficiency through parallel processing on hardware such as GPUs. However, directly modeling the joint distribution of all tokens simultaneously is challenging, and even with increasingly complex model structures accuracy lags significantly behind autoregressive models. In this paper, we propose a simple, efficient, and effective model for non-autoregressive sequence generation using latent variable models. Specifically, we turn to generative flow, an elegant technique to model complex distributions using neural networks, and design several layers of flow tailored for modeling the conditional density of sequential latent variables. We evaluate this model on three neural machine translation (NMT) benchmark datasets, achieving comparable performance with state-of-the-art non-autoregressive NMT models and almost constant decoding time w.r.t the sequence length.
+
+| Comments: | Accepted by EMNLP 2019 (Long Paper)                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1909.02480 [cs.CL]**                                 |
+|           | (or **arXiv:1909.02480v1 [cs.CL]** for this version)         |
+
+
+
 # 2019-09-05
 
 [Return to Index](#Index)
@@ -41,7 +172,6 @@
 
 
 <h2 id="2019-09-05-1">1. The Bottom-up Evolution of Representations in the Transformer: A Study with Machine Translation and Language Modeling Objectives</h2> 
-
 Title: [The Bottom-up Evolution of Representations in the Transformer: A Study with Machine Translation and Language Modeling Objectives](https://arxiv.org/abs/1909.01380)
 
 Authors: [Elena Voita](https://arxiv.org/search/cs?searchtype=author&query=Voita%2C+E), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R), [Ivan Titov](https://arxiv.org/search/cs?searchtype=author&query=Titov%2C+I)
@@ -61,7 +191,6 @@ Authors: [Elena Voita](https://arxiv.org/search/cs?searchtype=author&query=Voita
 
 
 <h2 id="2019-09-05-2">2. Context-Aware Monolingual Repair for Neural Machine Translation</h2> 
-
 Title: [Context-Aware Monolingual Repair for Neural Machine Translation](https://arxiv.org/abs/1909.01383)
 
 Authors: [Elena Voita](https://arxiv.org/search/cs?searchtype=author&query=Voita%2C+E), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R), [Ivan Titov](https://arxiv.org/search/cs?searchtype=author&query=Titov%2C+I)
@@ -81,7 +210,6 @@ Authors: [Elena Voita](https://arxiv.org/search/cs?searchtype=author&query=Voita
 
 
 <h2 id="2019-09-05-3">3. Simpler and Faster Learning of Adaptive Policies for Simultaneous Translation</h2> 
-
 Title: [Simpler and Faster Learning of Adaptive Policies for Simultaneous Translation](https://arxiv.org/abs/1909.01559)
 
 Authors: [Baigong Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+B), [Renjie Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+R), [Mingbo Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+M), [Liang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+L)
@@ -101,7 +229,6 @@ Authors: [Baigong Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zhe
 
 
 <h2 id="2019-09-05-4">4. Do We Really Need Fully Unsupervised Cross-Lingual Embeddings?</h2> 
-
 Title: [Do We Really Need Fully Unsupervised Cross-Lingual Embeddings?](https://arxiv.org/abs/1909.01638)
 
 Authors: [Ivan Vulić](https://arxiv.org/search/cs?searchtype=author&query=Vulić%2C+I), [Goran Glavaš](https://arxiv.org/search/cs?searchtype=author&query=Glavaš%2C+G), [Roi Reichart](https://arxiv.org/search/cs?searchtype=author&query=Reichart%2C+R), [Anna Korhonen](https://arxiv.org/search/cs?searchtype=author&query=Korhonen%2C+A)
@@ -121,7 +248,6 @@ Authors: [Ivan Vulić](https://arxiv.org/search/cs?searchtype=author&query=Vuli�
 
 
 <h2 id="2019-09-05-5">5. SAO WMT19 Test Suite: Machine Translation of Audit Reports</h2> 
-
 Title: [SAO WMT19 Test Suite: Machine Translation of Audit Reports](https://arxiv.org/abs/1909.01701)
 
 Authors: [Tereza Vojtěchová](https://arxiv.org/search/cs?searchtype=author&query=Vojtěchová%2C+T), [Michal Novák](https://arxiv.org/search/cs?searchtype=author&query=Novák%2C+M), [Miloš Klouček](https://arxiv.org/search/cs?searchtype=author&query=Klouček%2C+M), [Ondřej Bojar](https://arxiv.org/search/cs?searchtype=author&query=Bojar%2C+O)
@@ -150,7 +276,6 @@ Authors: [Tereza Vojtěchová](https://arxiv.org/search/cs?searchtype=author&que
 
 
 <h2 id="2019-09-04-1">1. Hybrid Data-Model Parallel Training for Sequence-to-Sequence Recurrent Neural Network Machine Translation</h2> 
-
 Title: [Hybrid Data-Model Parallel Training for Sequence-to-Sequence Recurrent Neural Network Machine Translation](https://arxiv.org/abs/1909.00562)
 
 Authors: [Junya Ono](https://arxiv.org/search/cs?searchtype=author&query=Ono%2C+J), [Masao Utiyama](https://arxiv.org/search/cs?searchtype=author&query=Utiyama%2C+M), [Eiichiro Sumita](https://arxiv.org/search/cs?searchtype=author&query=Sumita%2C+E)
@@ -170,7 +295,6 @@ Authors: [Junya Ono](https://arxiv.org/search/cs?searchtype=author&query=Ono%2C+
 
 
 <h2 id="2019-09-04-2">2. Handling Syntactic Divergence in Low-resource Machine Translation</h2> 
-
 Title: [Handling Syntactic Divergence in Low-resource Machine Translation](https://arxiv.org/abs/1909.00040)
 
 Authors: [Chunting Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+C), [Xuezhe Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+X), [Junjie Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+J), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
@@ -192,7 +316,6 @@ Authors: [Chunting Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zho
 
 
 <h2 id="2019-09-04-3">3. Evaluating Pronominal Anaphora in Machine Translation: An Evaluation Measure and a Test Suite</h2> 
-
 Title: [Evaluating Pronominal Anaphora in Machine Translation: An Evaluation Measure and a Test Suite](https://arxiv.org/abs/1909.00131)
 
 Authors: [Prathyusha Jwalapuram](https://arxiv.org/search/cs?searchtype=author&query=Jwalapuram%2C+P), [Shafiq Joty](https://arxiv.org/search/cs?searchtype=author&query=Joty%2C+S), [Irina Temnikova](https://arxiv.org/search/cs?searchtype=author&query=Temnikova%2C+I), [Preslav Nakov](https://arxiv.org/search/cs?searchtype=author&query=Nakov%2C+P)
@@ -214,7 +337,6 @@ Authors: [Prathyusha Jwalapuram](https://arxiv.org/search/cs?searchtype=author&q
 
 
 <h2 id="2019-09-04-4">4. Improving Back-Translation with Uncertainty-based Confidence Estimation</h2> 
-
 Title: [Improving Back-Translation with Uncertainty-based Confidence Estimation](https://arxiv.org/abs/1909.00157)
 
 Authors: [Shuo Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Chao Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Huanbo Luan](https://arxiv.org/search/cs?searchtype=author&query=Luan%2C+H), [Maosong Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M)
@@ -236,7 +358,6 @@ Authors: [Shuo Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C
 
 
 <h2 id="2019-09-04-5">5. Explicit Cross-lingual Pre-training for Unsupervised Machine Translation</h2> 
-
 Title: [Explicit Cross-lingual Pre-training for Unsupervised Machine Translation](https://arxiv.org/abs/1909.00180)
 
 Authors: [Shuo Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+S), [Yu Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Y), [Shujie Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+S), [Ming Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+M), [Shuai Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+S)
@@ -258,7 +379,6 @@ Authors: [Shuo Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+S
 
 
 <h2 id="2019-09-04-6">6. Towards Understanding Neural Machine Translation with Word Importance</h2> 
-
 Title: [Towards Understanding Neural Machine Translation with Word Importance](https://arxiv.org/abs/1909.00326)
 
 Authors: [Shilin He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+S), [Zhaopeng Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+Z), [Xing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Longyue Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Michael R. Lyu](https://arxiv.org/search/cs?searchtype=author&query=Lyu%2C+M+R), [Shuming Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+S)
@@ -280,7 +400,6 @@ Authors: [Shilin He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+S
 
 
 <h2 id="2019-09-04-7">7. One Model to Learn Both: Zero Pronoun Prediction and Translation</h2> 
-
 Title: [One Model to Learn Both: Zero Pronoun Prediction and Translation](https://arxiv.org/abs/1909.00369)
 
 Authors: [Longyue Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Zhaopeng Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+Z), [Xing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Shuming Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+S)
@@ -302,7 +421,6 @@ Authors: [Longyue Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang
 
 
 <h2 id="2019-09-04-8">8. Evaluating the Cross-Lingual Effectiveness of Massively Multilingual Neural Machine Translation</h2> 
-
 Title: [Evaluating the Cross-Lingual Effectiveness of Massively Multilingual Neural Machine Translation](https://arxiv.org/abs/1909.00437)
 
 Authors: [Aditya Siddhant](https://arxiv.org/search/cs?searchtype=author&query=Siddhant%2C+A), [Melvin Johnson](https://arxiv.org/search/cs?searchtype=author&query=Johnson%2C+M), [Henry Tsai](https://arxiv.org/search/cs?searchtype=author&query=Tsai%2C+H), [Naveen Arivazhagan](https://arxiv.org/search/cs?searchtype=author&query=Arivazhagan%2C+N), [Jason Riesa](https://arxiv.org/search/cs?searchtype=author&query=Riesa%2C+J), [Ankur Bapna](https://arxiv.org/search/cs?searchtype=author&query=Bapna%2C+A), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O), [Karthik Raman](https://arxiv.org/search/cs?searchtype=author&query=Raman%2C+K)
@@ -323,7 +441,6 @@ Authors: [Aditya Siddhant](https://arxiv.org/search/cs?searchtype=author&query=S
 
 
 <h2 id="2019-09-04-9">9. Improving Context-aware Neural Machine Translation with Target-side Context</h2> 
-
 Title: [Improving Context-aware Neural Machine Translation with Target-side Context](https://arxiv.org/abs/1909.00531)
 
 Authors: [Hayahide Yamagishi](https://arxiv.org/search/cs?searchtype=author&query=Yamagishi%2C+H), [Mamoru Komachi](https://arxiv.org/search/cs?searchtype=author&query=Komachi%2C+M)
@@ -346,7 +463,6 @@ Authors: [Hayahide Yamagishi](https://arxiv.org/search/cs?searchtype=author&quer
 
 
 <h2 id="2019-09-04-10">10. Enhancing Context Modeling with a Query-Guided Capsule Network for Document-level Translation</h2> 
-
 Title: [Enhancing Context Modeling with a Query-Guided Capsule Network for Document-level Translation](https://arxiv.org/abs/1909.00564)
 
 Authors: [Zhengxin Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Jinchao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Fandong Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+F), [Shuhao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+S), [Yang Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+Y), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J)
@@ -368,7 +484,6 @@ Authors: [Zhengxin Yang](https://arxiv.org/search/cs?searchtype=author&query=Yan
 
 
 <h2 id="2019-09-04-11">11. Unicoder: A Universal Language Encoder by Pre-training with Multiple Cross-lingual Tasks</h2> 
-
 Title: [Unicoder: A Universal Language Encoder by Pre-training with Multiple Cross-lingual Tasks](https://arxiv.org/abs/1909.00964)
 
 Authors: [Haoyang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+H), [Yaobo Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+Y), [Nan Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan%2C+N), [Ming Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+M), [Linjun Shou](https://arxiv.org/search/cs?searchtype=author&query=Shou%2C+L), [Daxin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+D), [Ming Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+M)
@@ -390,7 +505,6 @@ Authors: [Haoyang Huang](https://arxiv.org/search/cs?searchtype=author&query=Hua
 
 
 <h2 id="2019-09-04-12">12. Multi-agent Learning for Neural Machine Translation</h2> 
-
 Title: [Multi-agent Learning for Neural Machine Translation](https://arxiv.org/abs/1909.01101)
 
 Authors: [Tianchi Bi](https://arxiv.org/search/cs?searchtype=author&query=Bi%2C+T), [Hao Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+H), [Zhongjun He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+Z), [Hua Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+H), [Haifeng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H)
@@ -412,7 +526,6 @@ Authors: [Tianchi Bi](https://arxiv.org/search/cs?searchtype=author&query=Bi%2C+
 
 
 <h2 id="2019-09-04-13">13. Bilingual is At Least Monolingual (BALM): A Novel Translation Algorithm that Encodes Monolingual Priors</h2> 
-
 Title: [Bilingual is At Least Monolingual (BALM): A Novel Translation Algorithm that Encodes Monolingual Priors](https://arxiv.org/abs/1909.01146)
 
 Authors: [Jeffrey Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+J), [Chris Callison-Burch](https://arxiv.org/search/cs?searchtype=author&query=Callison-Burch%2C+C)
