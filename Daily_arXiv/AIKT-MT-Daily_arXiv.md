@@ -2,6 +2,9 @@
 
 # Index
 
+- [2019-09-09](#2019-09-09)
+  - [1. Don't Forget the Long Tail! A Comprehensive Analysis of Morphological Generalization in Bilingual Lexicon Induction](#2019-09-09-1)
+
 - [2019-09-06](#2019-09-06)
   - [1. Jointly Learning to Align and Translate with Transformer Models](#2019-09-06-1)
   - [2. Investigating Multilingual NMT Representations at Scale](#2019-09-06-2)
@@ -42,6 +45,30 @@
 
 
 
+# 2019-09-09
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-09-09-1">1. Don't Forget the Long Tail! A Comprehensive Analysis of Morphological Generalization in Bilingual Lexicon Induction</h2> 
+
+Title: [Don't Forget the Long Tail! A Comprehensive Analysis of Morphological Generalization in Bilingual Lexicon Induction](https://arxiv.org/abs/1909.02855)
+
+Authors: [Paula Czarnowska](https://arxiv.org/search/cs?searchtype=author&query=Czarnowska%2C+P), [Sebastian Ruder](https://arxiv.org/search/cs?searchtype=author&query=Ruder%2C+S), [Edouard Grave](https://arxiv.org/search/cs?searchtype=author&query=Grave%2C+E), [Ryan Cotterell](https://arxiv.org/search/cs?searchtype=author&query=Cotterell%2C+R), [Ann Copestake](https://arxiv.org/search/cs?searchtype=author&query=Copestake%2C+A)
+
+*(Submitted on 6 Sep 2019)*
+
+> Human translators routinely have to translate rare inflections of words - due to the Zipfian distribution of words in a language. When translating from Spanish, a good translator would have no problem identifying the proper translation of a statistically rare inflection such as habláramos. Note the lexeme itself, hablar, is relatively common. In this work, we investigate whether state-of-the-art bilingual lexicon inducers are capable of learning this kind of generalization. We introduce 40 morphologically complete dictionaries in 10 languages and evaluate three of the state-of-the-art models on the task of translation of less frequent morphological forms. We demonstrate that the performance of state-of-the-art models drops considerably when evaluated on infrequent morphological inflections and then show that adding a simple morphological constraint at training time improves the performance, proving that the bilingual lexicon inducers can benefit from better encoding of morphology.
+
+| Comments: | EMNLP 2019                                           |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1909.02855 [cs.CL]**                         |
+|           | (or **arXiv:1909.02855v1 [cs.CL]** for this version) |
+
+
+
 # 2019-09-06
 
 [Return to Index](#Index)
@@ -49,7 +76,6 @@
 
 
 <h2 id="2019-09-06-1">1. Jointly Learning to Align and Translate with Transformer Models</h2> 
-
 Title: [Jointly Learning to Align and Translate with Transformer Models](https://arxiv.org/abs/1909.02074)
 
 Authors: [Sarthak Garg](https://arxiv.org/search/cs?searchtype=author&query=Garg%2C+S), [Stephan Peitz](https://arxiv.org/search/cs?searchtype=author&query=Peitz%2C+S), [Udhyakumar Nallasamy](https://arxiv.org/search/cs?searchtype=author&query=Nallasamy%2C+U), [Matthias Paulik](https://arxiv.org/search/cs?searchtype=author&query=Paulik%2C+M)
@@ -69,7 +95,6 @@ Authors: [Sarthak Garg](https://arxiv.org/search/cs?searchtype=author&query=Garg
 
 
 <h2 id="2019-09-06-2">2. Investigating Multilingual NMT Representations at Scale</h2> 
-
 Title: [Investigating Multilingual NMT Representations at Scale](https://arxiv.org/abs/1909.02197)
 
 Authors: [Sneha Reddy Kudugunta](https://arxiv.org/search/cs?searchtype=author&query=Kudugunta%2C+S+R), [Ankur Bapna](https://arxiv.org/search/cs?searchtype=author&query=Bapna%2C+A), [Isaac Caswell](https://arxiv.org/search/cs?searchtype=author&query=Caswell%2C+I), [Naveen Arivazhagan](https://arxiv.org/search/cs?searchtype=author&query=Arivazhagan%2C+N), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O)
@@ -89,7 +114,6 @@ Authors: [Sneha Reddy Kudugunta](https://arxiv.org/search/cs?searchtype=author&q
 
 
 <h2 id="2019-09-06-3">3. Multi-Granularity Self-Attention for Neural Machine Translation</h2> 
-
 Title: [Multi-Granularity Self-Attention for Neural Machine Translation](https://arxiv.org/abs/1909.02222)
 
 Authors: [Jie Hao](https://arxiv.org/search/cs?searchtype=author&query=Hao%2C+J), [Xing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Shuming Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+S), [Jinfeng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Zhaopeng Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+Z)
@@ -109,7 +133,6 @@ Authors: [Jie Hao](https://arxiv.org/search/cs?searchtype=author&query=Hao%2C+J)
 
 
 <h2 id="2019-09-06-4">4. Source Dependency-Aware Transformer with Supervised Self-Attention</h2> 
-
 Title: [Source Dependency-Aware Transformer with Supervised Self-Attention](https://arxiv.org/abs/1909.02273)
 
 Authors: [Chengyi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Shuangzhi Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+S), [Shujie Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+S)
@@ -129,7 +152,6 @@ Authors: [Chengyi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang
 
 
 <h2 id="2019-09-06-5">5. Accelerating Transformer Decoding via a Hybrid of Self-attention and Recurrent Neural Network</h2> 
-
 Title: [Accelerating Transformer Decoding via a Hybrid of Self-attention and Recurrent Neural Network](https://arxiv.org/abs/1909.02279)
 
 Authors: [Chengyi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Shuangzhi Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+S), [Shujie Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+S)
@@ -148,7 +170,6 @@ Authors: [Chengyi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang
 
 
 <h2 id="2019-09-06-6">6. FlowSeq: Non-Autoregressive Conditional Sequence Generation with Generative Flow</h2> 
-
 Title: [FlowSeq: Non-Autoregressive Conditional Sequence Generation with Generative Flow](https://arxiv.org/abs/1909.02480)
 
 Authors: [Xuezhe Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+X), [Chunting Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+C), [Xian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G), [Eduard Hovy](https://arxiv.org/search/cs?searchtype=author&query=Hovy%2C+E)
