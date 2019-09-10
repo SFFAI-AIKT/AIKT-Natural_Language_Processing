@@ -2,9 +2,13 @@
 
 # Index
 
+- [2019-09-10](#2019-09-10)
+  - [1. Improving Neural Machine Translation with Parent-Scaled Self-Attention](#2019-09-10-1)
+- [2. LAMAL: LAnguage Modeling Is All You Need for Lifelong Language Learning](#2019-09-10-2)
+  - [3. Neural Machine Translation with Byte-Level Subwords](#2019-09-10-3)
+  - [4. Combining SMT and NMT Back-Translated Data for Efficient NMT](#2019-09-10-4)
 - [2019-09-09](#2019-09-09)
   - [1. Don't Forget the Long Tail! A Comprehensive Analysis of Morphological Generalization in Bilingual Lexicon Induction](#2019-09-09-1)
-
 - [2019-09-06](#2019-09-06)
   - [1. Jointly Learning to Align and Translate with Transformer Models](#2019-09-06-1)
   - [2. Investigating Multilingual NMT Representations at Scale](#2019-09-06-2)
@@ -12,7 +16,6 @@
   - [4. Source Dependency-Aware Transformer with Supervised Self-Attention](#2019-09-06-4)
   - [5. Accelerating Transformer Decoding via a Hybrid of Self-attention and Recurrent Neural Network](#2019-09-06-1)
   - [6. FlowSeq: Non-Autoregressive Conditional Sequence Generation with Generative Flow](#2019-09-06-6)
-
 - [2019-09-05](#2019-09-05)
   - [1. The Bottom-up Evolution of Representations in the Transformer: A Study with Machine Translation and Language Modeling Objectives](#2019-09-05-1)
   - [2. Context-Aware Monolingual Repair for Neural Machine Translation](#2019-09-05-2)
@@ -45,6 +48,92 @@
 
 
 
+# 2019-09-10
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-09-10-1">1. Improving Neural Machine Translation with Parent-Scaled Self-Attention</h2> 
+
+Title: [Improving Neural Machine Translation with Parent-Scaled Self-Attention](https://arxiv.org/abs/1909.03149)
+
+Authors:[Emanuele Bugliarello](https://arxiv.org/search/cs?searchtype=author&query=Bugliarello%2C+E), [Naoaki Okazaki](https://arxiv.org/search/cs?searchtype=author&query=Okazaki%2C+N)
+
+*(Submitted on 6 Sep 2019)*
+
+> Most neural machine translation (NMT) models operate on source and target sentences, treating them as sequences of words and neglecting their syntactic structure. Recent studies have shown that embedding the syntax information of a source sentence in recurrent neural networks can improve their translation accuracy, especially for low-resource language pairs. However, state-of-the-art NMT models are based on self-attention networks (e.g., Transformer), in which it is still not clear how to best embed syntactic information. In this work, we explore different approaches to make such models syntactically aware. Moreover, we propose a novel method to incorporate syntactic information in the self-attention mechanism of the Transformer encoder by introducing attention heads that can attend to the dependency parent of each token. The proposed model is simple yet effective, requiring no additional parameter and improving the translation quality of the Transformer model especially for long sentences and low-resource scenarios. We show the efficacy of the proposed approach on NC11 English-German, WMT16 and WMT17 English-German, WMT18 English-Turkish, and WAT English-Japanese translation tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1909.03149 [cs.CL]**                         |
+|           | (or **arXiv:1909.03149v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-09-10-2">2. LAMAL: LAnguage Modeling Is All You Need for Lifelong Language Learning</h2> 
+
+Title: [LAMAL: LAnguage Modeling Is All You Need for Lifelong Language Learning](https://arxiv.org/abs/1909.03329)
+
+Authors: [Fan-Keng Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+F), [Cheng-Hao Ho](https://arxiv.org/search/cs?searchtype=author&query=Ho%2C+C), [Hung-Yi Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+H)
+
+*(Submitted on 7 Sep 2019)*
+
+> Most research on lifelong learning (LLL) applies to images or games, but not language. Here, we introduce LAMAL, a simple yet effective method for LLL based on language modeling. LAMAL replays pseudo samples of previous tasks while requiring no extra memory or model capacity. To be specific, LAMAL is a language model learning to solve the task and generate training samples at the same time. At the beginning of training a new task, the model generates some pseudo samples of previous tasks to train alongside the data of the new task. The results show that LAMAL prevents catastrophic forgetting without any sign of intransigence and can solve up to five very different language tasks sequentially with only one model. Overall, LAMAL outperforms previous methods by a considerable margin and is only 2-3\% worse than multitasking which is usually considered as the upper bound of LLL. Our source code is available at [this https URL](https://github.com/xxx).
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1909.03329 [cs.CL]**                                 |
+|           | (or **arXiv:1909.03329v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-09-10-3">3. Neural Machine Translation with Byte-Level Subwords</h2> 
+
+Title: [Neural Machine Translation with Byte-Level Subwords](https://arxiv.org/abs/1909.03341)
+
+Authors:[Changhan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Kyunghyun Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+K), [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J)
+
+*(Submitted on 7 Sep 2019)*
+
+> Almost all existing machine translation models are built on top of character-based vocabularies: characters, subwords or words. Rare characters from noisy text or character-rich languages such as Japanese and Chinese however can unnecessarily take up vocabulary slots and limit its compactness. Representing text at the level of bytes and using the 256 byte set as vocabulary is a potential solution to this issue. High computational cost has however prevented it from being widely deployed or used in practice. In this paper, we investigate byte-level subwords, specifically byte-level BPE (BBPE), which is compacter than character vocabulary and has no out-of-vocabulary tokens, but is more efficient than using pure bytes only is. We claim that contextualizing BBPE embeddings is necessary, which can be implemented by a convolutional or recurrent layer. Our experiments show that BBPE has comparable performance to BPE while its size is only 1/8 of that for BPE. In the multilingual setting, BBPE maximizes vocabulary sharing across many languages and achieves better translation quality. Moreover, we show that BBPE enables transferring models between languages with non-overlapping character sets.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1909.03341 [cs.CL]**                         |
+|           | (or **arXiv:1909.03341v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-09-10-4">4. Combining SMT and NMT Back-Translated Data for Efficient NMT</h2> 
+
+Title: [Combining SMT and NMT Back-Translated Data for Efficient NMT](https://arxiv.org/abs/1909.03750)
+
+Authors:[Alberto Poncelas](https://arxiv.org/search/cs?searchtype=author&query=Poncelas%2C+A), [Maja Popovic](https://arxiv.org/search/cs?searchtype=author&query=Popovic%2C+M), [Dimitar Shterionov](https://arxiv.org/search/cs?searchtype=author&query=Shterionov%2C+D), [Gideon Maillette de Buy Wenniger](https://arxiv.org/search/cs?searchtype=author&query=de+Buy+Wenniger%2C+G+M), [Andy Way](https://arxiv.org/search/cs?searchtype=author&query=Way%2C+A)
+
+*(Submitted on 9 Sep 2019)*
+
+> Neural Machine Translation (NMT) models achieve their best performance when large sets of parallel data are used for training. Consequently, techniques for augmenting the training set have become popular recently. One of these methods is back-translation (Sennrich et al., 2016), which consists on generating synthetic sentences by translating a set of monolingual, target-language sentences using a Machine Translation (MT) model.
+> Generally, NMT models are used for back-translation. In this work, we analyze the performance of models when the training data is extended with synthetic data using different MT approaches. In particular we investigate back-translated data generated not only by NMT but also by Statistical Machine Translation (SMT) models and combinations of both. The results reveal that the models achieve the best performances when the training set is augmented with back-translated data created by merging different MT approaches.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | Proceedings of Recent Advances in Natural Language Processing (RANLP 2019). pages 922--931 |
+| Cite as:           | **arXiv:1909.03750 [cs.CL]**                                 |
+|                    | (or **arXiv:1909.03750v1 [cs.CL]** for this version)         |
+
+
+
+
+
+
+
 # 2019-09-09
 
 [Return to Index](#Index)
@@ -52,7 +141,6 @@
 
 
 <h2 id="2019-09-09-1">1. Don't Forget the Long Tail! A Comprehensive Analysis of Morphological Generalization in Bilingual Lexicon Induction</h2> 
-
 Title: [Don't Forget the Long Tail! A Comprehensive Analysis of Morphological Generalization in Bilingual Lexicon Induction](https://arxiv.org/abs/1909.02855)
 
 Authors: [Paula Czarnowska](https://arxiv.org/search/cs?searchtype=author&query=Czarnowska%2C+P), [Sebastian Ruder](https://arxiv.org/search/cs?searchtype=author&query=Ruder%2C+S), [Edouard Grave](https://arxiv.org/search/cs?searchtype=author&query=Grave%2C+E), [Ryan Cotterell](https://arxiv.org/search/cs?searchtype=author&query=Cotterell%2C+R), [Ann Copestake](https://arxiv.org/search/cs?searchtype=author&query=Copestake%2C+A)
