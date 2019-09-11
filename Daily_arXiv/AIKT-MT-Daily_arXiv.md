@@ -4,7 +4,7 @@
 
 - [2019-09-10](#2019-09-10)
   - [1. Improving Neural Machine Translation with Parent-Scaled Self-Attention](#2019-09-10-1)
-- [2. LAMAL: LAnguage Modeling Is All You Need for Lifelong Language Learning](#2019-09-10-2)
+  - [2. LAMAL: LAnguage Modeling Is All You Need for Lifelong Language Learning](#2019-09-10-2)
   - [3. Neural Machine Translation with Byte-Level Subwords](#2019-09-10-3)
   - [4. Combining SMT and NMT Back-Translated Data for Efficient NMT](#2019-09-10-4)
 - [2019-09-09](#2019-09-09)
@@ -55,7 +55,6 @@
 
 
 <h2 id="2019-09-10-1">1. Improving Neural Machine Translation with Parent-Scaled Self-Attention</h2> 
-
 Title: [Improving Neural Machine Translation with Parent-Scaled Self-Attention](https://arxiv.org/abs/1909.03149)
 
 Authors:[Emanuele Bugliarello](https://arxiv.org/search/cs?searchtype=author&query=Bugliarello%2C+E), [Naoaki Okazaki](https://arxiv.org/search/cs?searchtype=author&query=Okazaki%2C+N)
@@ -74,7 +73,6 @@ Authors:[Emanuele Bugliarello](https://arxiv.org/search/cs?searchtype=author&que
 
 
 <h2 id="2019-09-10-2">2. LAMAL: LAnguage Modeling Is All You Need for Lifelong Language Learning</h2> 
-
 Title: [LAMAL: LAnguage Modeling Is All You Need for Lifelong Language Learning](https://arxiv.org/abs/1909.03329)
 
 Authors: [Fan-Keng Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+F), [Cheng-Hao Ho](https://arxiv.org/search/cs?searchtype=author&query=Ho%2C+C), [Hung-Yi Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+H)
@@ -93,7 +91,6 @@ Authors: [Fan-Keng Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%
 
 
 <h2 id="2019-09-10-3">3. Neural Machine Translation with Byte-Level Subwords</h2> 
-
 Title: [Neural Machine Translation with Byte-Level Subwords](https://arxiv.org/abs/1909.03341)
 
 Authors:[Changhan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Kyunghyun Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+K), [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J)
@@ -112,7 +109,6 @@ Authors:[Changhan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang
 
 
 <h2 id="2019-09-10-4">4. Combining SMT and NMT Back-Translated Data for Efficient NMT</h2> 
-
 Title: [Combining SMT and NMT Back-Translated Data for Efficient NMT](https://arxiv.org/abs/1909.03750)
 
 Authors:[Alberto Poncelas](https://arxiv.org/search/cs?searchtype=author&query=Poncelas%2C+A), [Maja Popovic](https://arxiv.org/search/cs?searchtype=author&query=Popovic%2C+M), [Dimitar Shterionov](https://arxiv.org/search/cs?searchtype=author&query=Shterionov%2C+D), [Gideon Maillette de Buy Wenniger](https://arxiv.org/search/cs?searchtype=author&query=de+Buy+Wenniger%2C+G+M), [Andy Way](https://arxiv.org/search/cs?searchtype=author&query=Way%2C+A)
