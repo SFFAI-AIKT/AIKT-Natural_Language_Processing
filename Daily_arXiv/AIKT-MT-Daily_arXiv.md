@@ -2,6 +2,14 @@
 
 # Index
 
+- [2019-09-13](#2019-09-13)
+  - [1. Entity Projection via Machine-Translation for Cross-Lingual NER](#2019-09-13-1)
+  - [2. Problems with automating translation of movie/TV show subtitles](#2019-09-13-2)
+  - [3. Speculative Beam Search for Simultaneous Translation](#2019-09-13-3)
+  - [4. VizSeq: A Visual Analysis Toolkit for Text Generation Tasks](#2019-09-13-4)
+  - [5. Neural Semantic Parsing in Low-Resource Settings with Back-Translation and Meta-Learning](#2019-09-13-5)
+  - [6. Lost in Evaluation: Misleading Benchmarks for Bilingual Dictionary Induction](#2019-09-13-6)
+
 - [2019-09-10](#2019-09-10)
   - [1. Improving Neural Machine Translation with Parent-Scaled Self-Attention](#2019-09-10-1)
   - [2. LAMAL: LAnguage Modeling Is All You Need for Lifelong Language Learning](#2019-09-10-2)
@@ -45,6 +53,216 @@
 * [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 * [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 * [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2019-09-13
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-09-13-1">1. Entity Projection via Machine-Translation for Cross-Lingual NER</h2> 
+
+Title: [Entity Projection via Machine-Translation for Cross-Lingual NER](https://arxiv.org/abs/1909.05356)
+
+Authors: [Alankar Jain](https://arxiv.org/search/cs?searchtype=author&query=Jain%2C+A), [Bhargavi Paranjape](https://arxiv.org/search/cs?searchtype=author&query=Paranjape%2C+B), [Zachary C. Lipton](https://arxiv.org/search/cs?searchtype=author&query=Lipton%2C+Z+C)
+
+*(Submitted on 31 Aug 2019)*
+
+> Although over 100 languages are supported by strong off-the-shelf machine translation systems, only a subset of them possess large annotated corpora for named entity recognition. Motivated by this fact, we leverage machine translation to improve annotation-projection approaches to cross-lingual named entity recognition. We propose a system that improves over prior entity-projection methods by: (a) leveraging machine translation systems twice: first for translating sentences and subsequently for translating entities; (b) matching entities based on orthographic and phonetic similarity; and (c) identifying matches based on distributional statistics derived from the dataset. Our approach improves upon current state-of-the-art methods for cross-lingual named entity recognition on 5 diverse languages by an average of 4.1 points. Further, our method achieves state-of-the-art F_1 scores for Armenian, outperforming even a monolingual model trained on Armenian source data.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1909.05356 [cs.CL]**                                 |
+|           | (or **arXiv:1909.05356v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-09-13-2">2. Problems with automating translation of movie/TV show subtitles</h2> 
+
+Title: [Problems with automating translation of movie/TV show subtitles](https://arxiv.org/abs/1909.05362)
+
+Authors: [Prabhakar Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+P), [Mayank Sharma](https://arxiv.org/search/cs?searchtype=author&query=Sharma%2C+M), [Kartik Pitale](https://arxiv.org/search/cs?searchtype=author&query=Pitale%2C+K), [Keshav Kumar](https://arxiv.org/search/cs?searchtype=author&query=Kumar%2C+K)
+
+*(Submitted on 4 Sep 2019)*
+
+> We present 27 problems encountered in automating the translation of movie/TV show subtitles. We categorize each problem in one of the three categories viz. problems directly related to textual translation, problems related to subtitle creation guidelines, and problems due to adaptability of machine translation (MT) engines. We also present the findings of a translation quality evaluation experiment where we share the frequency of 16 key problems. We show that the systems working at the frontiers of Natural Language Processing do not perform well for subtitles and require some post-processing solutions for redressal of these problems
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1909.05362 [cs.CL]**                                 |
+|           | (or **arXiv:1909.05362v1 [cs.CL]** for this version)         |
+
+
+
+<h2 id="2019-09-13-3">3. Speculative Beam Search for Simultaneous Translation</h2> 
+
+Title: [Speculative Beam Search for Simultaneous Translation](https://arxiv.org/abs/1909.05421)
+
+Authors: [Renjie Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+R), [Mingbo Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+M), [Baigong Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+B), [Liang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+L)
+
+*(Submitted on 12 Sep 2019)*
+
+> Beam search is universally used in full-sentence translation but its application to simultaneous translation remains non-trivial, where output words are committed on the fly. In particular, the recently proposed wait-k policy (Ma et al., 2019a) is a simple and effective method that (after an initial wait) commits one output word on receiving each input word, making beam search seemingly impossible. To address this challenge, we propose a speculative beam search algorithm that hallucinates several steps into the future in order to reach a more accurate decision, implicitly benefiting from a target language model. This makes beam search applicable for the first time to the generation of a single word in each step. Experiments over diverse language pairs show large improvements over previous work.
+
+| Comments: | accepted by EMNLP 2019                               |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1909.05421 [cs.CL]**                         |
+|           | (or **arXiv:1909.05421v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-09-13-4">4. VizSeq: A Visual Analysis Toolkit for Text Generation Tasks</h2> 
+
+Title: [VizSeq: A Visual Analysis Toolkit for Text Generation Tasks](https://arxiv.org/abs/1909.05424)
+
+Authors: [Changhan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Anirudh Jain](https://arxiv.org/search/cs?searchtype=author&query=Jain%2C+A), [Danlu Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+D), [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J)
+
+*(Submitted on 12 Sep 2019)*
+
+> Automatic evaluation of text generation tasks (e.g. machine translation, text summarization, image captioning and video description) usually relies heavily on task-specific metrics, such as BLEU and ROUGE. They, however, are abstract numbers and are not perfectly aligned with human assessment. This suggests inspecting detailed examples as a complement to identify system error patterns. In this paper, we present VizSeq, a visual analysis toolkit for instance-level and corpus-level system evaluation on a wide variety of text generation tasks. It supports multimodal sources and multiple text references, providing visualization in Jupyter notebook or a web app interface. It can be used locally or deployed onto public servers for centralized data hosting and benchmarking. It covers most common n-gram based metrics accelerated with multiprocessing, and also provides latest embedding-based metrics such as BERTScore.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1909.05424 [cs.CL]**                         |
+|           | (or **arXiv:1909.05424v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-09-13-5">5. Neural Semantic Parsing in Low-Resource Settings with Back-Translation and Meta-Learning</h2> 
+
+Title: [Neural Semantic Parsing in Low-Resource Settings with Back-Translation and Meta-Learning](https://arxiv.org/abs/1909.05438)
+
+Authors: [Yibo Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+Y), [Duyu Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+D), [Nan Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan%2C+N), [Yeyun Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+Y), [Xiaocheng Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+X), [Bing Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+B), [Daxin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+D)
+
+*(Submitted on 12 Sep 2019)*
+
+> Neural semantic parsing has achieved impressive results in recent years, yet its success relies on the availability of large amounts of supervised data. Our goal is to learn a neural semantic parser when only prior knowledge about a limited number of simple rules is available, without access to either annotated programs or execution results. Our approach is initialized by rules, and improved in a back-translation paradigm using generated question-program pairs from the semantic parser and the question generator. A phrase table with frequent mapping patterns is automatically derived, also updated as training progresses, to measure the quality of generated instances. We train the model with model-agnostic meta-learning to guarantee the accuracy and stability on examples covered by rules, and meanwhile acquire the versatility to generalize well on examples uncovered by rules. Results on three benchmark datasets with different domains and programs show that our approach incrementally improves the accuracy. On WikiSQL, our best model is comparable to the SOTA system learned from denotations.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1909.05438 [cs.CL]**                         |
+|           | (or **arXiv:1909.05438v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-09-13-6">6. Lost in Evaluation: Misleading Benchmarks for Bilingual Dictionary Induction</h2> 
+
+Title: [Lost in Evaluation: Misleading Benchmarks for Bilingual Dictionary Induction](https://arxiv.org/abs/1909.05708)
+
+Authors: [Yova Kementchedjhieva](https://arxiv.org/search/cs?searchtype=author&query=Kementchedjhieva%2C+Y), [Mareike Hartmann](https://arxiv.org/search/cs?searchtype=author&query=Hartmann%2C+M), [Anders Søgaard](https://arxiv.org/search/cs?searchtype=author&query=Søgaard%2C+A)
+
+*(Submitted on 12 Sep 2019)*
+
+> The task of bilingual dictionary induction (BDI) is commonly used for intrinsic evaluation of cross-lingual word embeddings. The largest dataset for BDI was generated automatically, so its quality is dubious. We study the composition and quality of the test sets for five diverse languages from this dataset, with concerning findings: (1) a quarter of the data consists of proper nouns, which can be hardly indicative of BDI performance, and (2) there are pervasive gaps in the gold-standard targets. These issues appear to affect the ranking between cross-lingual embedding systems on individual languages, and the overall degree to which the systems differ in performance. With proper nouns removed from the data, the margin between the top two systems included in the study grows from 3.4% to 17.2%. Manual verification of the predictions, on the other hand, reveals that gaps in the gold standard targets artificially inflate the margin between the two systems on English to Bulgarian BDI from 0.1% to 6.7%. We thus suggest that future research either avoids drawing conclusions from quantitative results on this BDI dataset, or accompanies such evaluation with rigorous error analysis.
+
+| Comments: | Accepted at EMNLP 2019                               |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1909.05708 [cs.CL]**                         |
+|           | (or **arXiv:1909.05708v1 [cs.CL]** for this version) |
+
+
+
+# 2019-09-12
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-09-12-1">1. A Quantum Search Decoder for Natural Language Processing</h2> 
+
+Title: [A Quantum Search Decoder for Natural Language Processing](https://arxiv.org/abs/1909.05023)
+
+Authors:[Johannes Bausch](https://arxiv.org/search/quant-ph?searchtype=author&query=Bausch%2C+J), [Sathyawageeswar Subramanian](https://arxiv.org/search/quant-ph?searchtype=author&query=Subramanian%2C+S), [Stephen Piddock](https://arxiv.org/search/quant-ph?searchtype=author&query=Piddock%2C+S)
+
+*(Submitted on 9 Sep 2019)*
+
+> Probabilistic language models, e.g. those based on an LSTM, often face the problem of finding a high probability prediction from a sequence of random variables over a set of words. This is commonly addressed using a form of greedy decoding such as beam search, where a limited number of highest-likelihood paths (the beam width) of the decoder are kept, and at the end the maximum-likelihood path is chosen. The resulting algorithm has linear runtime in the beam width. However, the input is not necessarily distributed such that a high-likelihood input symbol at any given time step also leads to the global optimum. Limiting the beam width can thus result in a failure to recognise long-range dependencies. In practice, only an exponentially large beam width can guarantee that the global optimum is found: for an input of length n and average parser branching ratio R, the baseline classical algorithm needs to query the input on average Rn times. In this work, we construct a quantum algorithm to find the globally optimal parse with high constant success probability. Given the input to the decoder is distributed like a power-law with exponent k>0, our algorithm yields a runtime Rnf(R,k), where f≤1/2, and f→0 exponentially quickly for growing k. This implies that our algorithm always yields a super-Grover type speedup, i.e. it is more than quadratically faster than its classical counterpart. We further modify our procedure to recover a quantum beam search variant, which enables an even stronger empirical speedup, while sacrificing accuracy. Finally, we apply this quantum beam search decoder to Mozilla's implementation of Baidu's DeepSpeech neural net, which we show to exhibit such a power law word rank frequency, underpinning the applicability of our model.
+
+| Comments:    | 36 pages, 9 figures                                          |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Quantum Physics (quant-ph)**; Computation and Language (cs.CL); Data Structures and Algorithms (cs.DS); Machine Learning (cs.LG) |
+| MSC classes: | 68T50, 68Q12, 68T05                                          |
+| Cite as:     | **arXiv:1909.05023 [quant-ph]**                              |
+|              | (or **arXiv:1909.05023v1 [quant-ph]** for this version)      |
+
+
+
+
+
+<h2 id="2019-09-12-2">2. MultiFiT: Efficient Multi-lingual Language Model Fine-tuning</h2> 
+
+Title: [MultiFiT: Efficient Multi-lingual Language Model Fine-tuning](https://arxiv.org/abs/1909.04761)
+
+Authors:[Julian Eisenschlos](https://arxiv.org/search/cs?searchtype=author&query=Eisenschlos%2C+J), [Sebastian Ruder](https://arxiv.org/search/cs?searchtype=author&query=Ruder%2C+S), [Piotr Czapla](https://arxiv.org/search/cs?searchtype=author&query=Czapla%2C+P), [Marcin Kardas](https://arxiv.org/search/cs?searchtype=author&query=Kardas%2C+M), [Sylvain Gugger](https://arxiv.org/search/cs?searchtype=author&query=Gugger%2C+S), [Jeremy Howard](https://arxiv.org/search/cs?searchtype=author&query=Howard%2C+J)
+
+*(Submitted on 10 Sep 2019)*
+
+> Pretrained language models are promising particularly for low-resource languages as they only require unlabelled data. However, training existing models requires huge amounts of compute, while pretrained cross-lingual models often underperform on low-resource languages. We propose Multi-lingual language model Fine-Tuning (MultiFiT) to enable practitioners to train and fine-tune language models efficiently in their own language. In addition, we propose a zero-shot method using an existing pretrained cross-lingual model. We evaluate our methods on two widely used cross-lingual classification datasets where they outperform models pretrained on orders of magnitude more data and compute. We release all models and code.
+
+| Comments: | Proceedings of EMNLP-IJCNLP 2019                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1909.04761 [cs.CL]**                                 |
+|           | (or **arXiv:1909.04761v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-09-12-3">3. Dynamic Fusion: Attentional Language Model for Neural Machine Translation</h2> 
+
+Title: [Dynamic Fusion: Attentional Language Model for Neural Machine Translation](https://arxiv.org/abs/1909.04879)
+
+Authors:[Michiki Kurosawa](https://arxiv.org/search/cs?searchtype=author&query=Kurosawa%2C+M), [Mamoru Komachi](https://arxiv.org/search/cs?searchtype=author&query=Komachi%2C+M)
+
+*(Submitted on 11 Sep 2019)*
+
+> Neural Machine Translation (NMT) can be used to generate fluent output. As such, language models have been investigated for incorporation with NMT. In prior investigations, two models have been used: a translation model and a language model. The translation model's predictions are weighted by the language model with a hand-crafted ratio in advance. However, these approaches fail to adopt the language model weighting with regard to the translation history. In another line of approach, language model prediction is incorporated into the translation model by jointly considering source and target information. However, this line of approach is limited because it largely ignores the adequacy of the translation output.
+> Accordingly, this work employs two mechanisms, the translation model and the language model, with an attentive architecture to the language model as an auxiliary element of the translation model. Compared with previous work in English--Japanese machine translation using a language model, the experimental results obtained with the proposed Dynamic Fusion mechanism improve BLEU and Rank-based Intuitive Bilingual Evaluation Scores (RIBES) scores. Additionally, in the analyses of the attention and predictivity of the language model, the Dynamic Fusion mechanism allows predictive language modeling that conforms to the appropriate grammatical structure.
+
+| Comments: | 13 pages; PACLING 2019                               |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1909.04879 [cs.CL]**                         |
+|           | (or **arXiv:1909.04879v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-09-12-4">4. Getting Gender Right in Neural Machine Translation</h2> 
+
+Title: [Getting Gender Right in Neural Machine Translation](https://arxiv.org/abs/1909.05088)
+
+Authors:[Eva Vanmassenhove](https://arxiv.org/search/cs?searchtype=author&query=Vanmassenhove%2C+E), [Christian Hardmeier](https://arxiv.org/search/cs?searchtype=author&query=Hardmeier%2C+C), [Andy Way](https://arxiv.org/search/cs?searchtype=author&query=Way%2C+A)
+
+*(Submitted on 11 Sep 2019)*
+
+> Speakers of different languages must attend to and encode strikingly different aspects of the world in order to use their language correctly (Sapir, 1921; Slobin, 1996). One such difference is related to the way gender is expressed in a language. Saying "I am happy" in English, does not encode any additional knowledge of the speaker that uttered the sentence. However, many other languages do have grammatical gender systems and so such knowledge would be encoded. In order to correctly translate such a sentence into, say, French, the inherent gender information needs to be retained/recovered. The same sentence would become either "Je suis heureux", for a male speaker or "Je suis heureuse" for a female one. Apart from morphological agreement, demographic factors (gender, age, etc.) also influence our use of language in terms of word choices or even on the level of syntactic constructions (Tannen, 1991; Pennebaker et al., 2003). We integrate gender information into NMT systems. Our contribution is two-fold: (1) the compilation of large datasets with speaker information for 20 language pairs, and (2) a simple set of experiments that incorporate gender information into NMT for multiple language pairs. Our experiments show that adding a gender feature to an NMT system significantly improves the translation quality for some language pairs.
+
+| Comments:          | Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing (EMNLP), October-November, 2018. Brussels, Belgium, pages 3003-3008, URL: [this https URL](https://www.aclweb.org/anthology/D18-1334), DOI: [10.18653/v1/D18-1334](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.18653%2Fv1%2FD18-1334&v=6f889533) |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| Journal reference: | Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing |
+| DOI:               | [10.18653/v1/D18-1334](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.18653%2Fv1%2FD18-1334&v=6f889533) |
+| Cite as:           | **arXiv:1909.05088 [cs.CL]**                                 |
+|                    | (or **arXiv:1909.05088v1 [cs.CL]** for this version)         |
+
+
+
+
 
 
 
