@@ -2,6 +2,11 @@
 
 # Index
 
+- [2019-09-16](#2019-09-16)
+  - [1. CTRL: A Conditional Transformer Language Model for Controllable Generation](#2019-09-16-1)
+  - [2. Sequence-to-sequence Pre-training with Data Augmentation for Sentence Rewriting](#2019-09-16-2)
+  - [3. Neural Machine Translation with 4-Bit Precision and Beyond](#2019-09-16-3)
+  - [4. A General Framework for Implicit and Explicit Debiasing of Distributional Word Vector Spaces](#2019-09-16-4)
 - [2019-09-13](#2019-09-13)
   - [1. Entity Projection via Machine-Translation for Cross-Lingual NER](#2019-09-13-1)
   - [2. Problems with automating translation of movie/TV show subtitles](#2019-09-13-2)
@@ -9,7 +14,6 @@
   - [4. VizSeq: A Visual Analysis Toolkit for Text Generation Tasks](#2019-09-13-4)
   - [5. Neural Semantic Parsing in Low-Resource Settings with Back-Translation and Meta-Learning](#2019-09-13-5)
   - [6. Lost in Evaluation: Misleading Benchmarks for Bilingual Dictionary Induction](#2019-09-13-6)
-
 - [2019-09-10](#2019-09-10)
   - [1. Improving Neural Machine Translation with Parent-Scaled Self-Attention](#2019-09-10-1)
   - [2. LAMAL: LAnguage Modeling Is All You Need for Lifelong Language Learning](#2019-09-10-2)
@@ -56,6 +60,87 @@
 
 
 
+# 2019-09-16
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-09-16-1">1. CTRL: A Conditional Transformer Language Model for Controllable Generation</h2> 
+
+Title: [CTRL: A Conditional Transformer Language Model for Controllable Generation](https://arxiv.org/abs/1909.05858)
+
+Authors: [Nitish Shirish Keskar](https://arxiv.org/search/cs?searchtype=author&query=Keskar%2C+N+S), [Bryan McCann](https://arxiv.org/search/cs?searchtype=author&query=McCann%2C+B), [Lav R. Varshney](https://arxiv.org/search/cs?searchtype=author&query=Varshney%2C+L+R), [Caiming Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+C), [Richard Socher](https://arxiv.org/search/cs?searchtype=author&query=Socher%2C+R)
+
+*(Submitted on 11 Sep 2019)*
+
+> Large-scale language models show promising text generation capabilities, but users cannot easily control particular aspects of the generated text. We release CTRL, a 1.6 billion-parameter conditional transformer language model, trained to condition on control codes that govern style, content, and task-specific behavior. Control codes were derived from structure that naturally co-occurs with raw text, preserving the advantages of unsupervised learning while providing more explicit control over text generation. These codes also allow CTRL to predict which parts of the training data are most likely given a sequence. This provides a potential method for analyzing large amounts of data via model-based source attribution. We have released multiple full-sized, pretrained versions of CTRL at [this http URL](http://github.com/salesforce/ctrl).
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1909.05858 [cs.CL]**                         |
+|           | (or **arXiv:1909.05858v1 [cs.CL]** for this version) |
+
+
+
+<h2 id="2019-09-16-2">2. Sequence-to-sequence Pre-training with Data Augmentation for Sentence Rewriting</h2> 
+
+Title: [Sequence-to-sequence Pre-training with Data Augmentation for Sentence Rewriting](https://arxiv.org/abs/1909.06002)
+
+Authors: [Yi Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Tao Ge](https://arxiv.org/search/cs?searchtype=author&query=Ge%2C+T), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F), [Ming Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+M), [Xu Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+X)
+
+*(Submitted on 13 Sep 2019)*
+
+> We study sequence-to-sequence (seq2seq) pre-training with data augmentation for sentence rewriting. Instead of training a seq2seq model with gold training data and augmented data simultaneously, we separate them to train in different phases: pre-training with the augmented data and fine-tuning with the gold data. We also introduce multiple data augmentation methods to help model pre-training for sentence rewriting. We evaluate our approach in two typical well-defined sentence rewriting tasks: Grammatical Error Correction (GEC) and Formality Style Transfer (FST). Experiments demonstrate our approach can better utilize augmented data without hurting the model's trust in gold data and further improve the model's performance with our proposed data augmentation methods.
+> Our approach substantially advances the state-of-the-art results in well-recognized sentence rewriting benchmarks over both GEC and FST. Specifically, it pushes the CoNLL-2014 benchmark's F0.5 score and JFLEG Test GLEU score to 62.61 and 63.54 in the restricted training setting, 66.77 and 65.22 respectively in the unrestricted setting, and advances GYAFC benchmark's BLEU to 74.24 (2.23 absolute improvement) in E&M domain and 77.97 (2.64 absolute improvement) in F&R domain.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1909.06002 [cs.CL]**                         |
+|           | (or **arXiv:1909.06002v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-09-16-3">3. Neural Machine Translation with 4-Bit Precision and Beyond</h2> 
+
+Title: [Neural Machine Translation with 4-Bit Precision and Beyond](https://arxiv.org/abs/1909.06091)
+
+Authors: [Alham Fikri Aji](https://arxiv.org/search/cs?searchtype=author&query=Aji%2C+A+F), [Kenneth Heafield](https://arxiv.org/search/cs?searchtype=author&query=Heafield%2C+K)
+
+*(Submitted on 13 Sep 2019)*
+
+> Neural Machine Translation (NMT) is resource intensive. We design a quantization procedure to compress fit NMT models better for devices with limited hardware capability. We use logarithmic quantization, instead of the more commonly used fixed-point quantization, based on the empirical fact that parameters distribution is not uniform. We find that biases do not take a lot of memory and show that biases can be left uncompressed to improve the overall quality without affecting the compression rate. We also propose to use an error-feedback mechanism during retraining, to preserve the compressed model as a stale gradient. We empirically show that NMT models based on Transformer or RNN architecture can be compressed up to 4-bit precision without any noticeable quality degradation. Models can be compressed up to binary precision, albeit with lower quality. RNN architecture seems to be more robust towards compression, compared to the Transformer.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1909.06091 [cs.CL]**                                 |
+|           | (or **arXiv:1909.06091v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-09-16-4">4. A General Framework for Implicit and Explicit Debiasing of Distributional Word Vector Spaces</h2> 
+
+Title: [A General Framework for Implicit and Explicit Debiasing of Distributional Word Vector Spaces](https://arxiv.org/abs/1909.06092)
+
+Authors: [Anne Lauscher](https://arxiv.org/search/cs?searchtype=author&query=Lauscher%2C+A), [Goran Glavaš](https://arxiv.org/search/cs?searchtype=author&query=Glavaš%2C+G), [Simone Paolo Ponzetto](https://arxiv.org/search/cs?searchtype=author&query=Ponzetto%2C+S+P), [Ivan Vulić](https://arxiv.org/search/cs?searchtype=author&query=Vulić%2C+I)
+
+*(Submitted on 13 Sep 2019)*
+
+> Distributional word vectors have recently been shown to encode many of the human biases, most notably gender and racial biases, and models for attenuating such biases have consequently been proposed. However, existing models and studies (1) operate on under-specified and mutually differing bias definitions, (2) are tailored for a particular bias (e.g., gender bias) and (3) have been evaluated inconsistently and non-rigorously. In this work, we introduce a general framework for debiasing word embeddings. We operationalize the definition of a bias by discerning two types of bias specification: explicit and implicit. We then propose three debiasing models that operate on explicit or implicit bias specifications, and that can be composed towards more robust debiasing. Finally, we devise a full-fledged evaluation framework in which we couple existing bias metrics with newly proposed ones. Experimental findings across three embedding methods suggest that the proposed debiasing models are robust and widely applicable: they often completely remove the bias both implicitly and explicitly, without degradation of semantic information encoded in any of the input distributional spaces. Moreover, we successfully transfer debiasing models, by means of crosslingual embedding spaces, and remove or attenuate biases in distributional word vector spaces of languages that lack readily available bias specifications.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1909.06092 [cs.CL]**                                 |
+|           | (or **arXiv:1909.06092v1 [cs.CL]** for this version)         |
+
+
+
+
+
 # 2019-09-13
 
 [Return to Index](#Index)
@@ -63,7 +148,6 @@
 
 
 <h2 id="2019-09-13-1">1. Entity Projection via Machine-Translation for Cross-Lingual NER</h2> 
-
 Title: [Entity Projection via Machine-Translation for Cross-Lingual NER](https://arxiv.org/abs/1909.05356)
 
 Authors: [Alankar Jain](https://arxiv.org/search/cs?searchtype=author&query=Jain%2C+A), [Bhargavi Paranjape](https://arxiv.org/search/cs?searchtype=author&query=Paranjape%2C+B), [Zachary C. Lipton](https://arxiv.org/search/cs?searchtype=author&query=Lipton%2C+Z+C)
@@ -82,7 +166,6 @@ Authors: [Alankar Jain](https://arxiv.org/search/cs?searchtype=author&query=Jain
 
 
 <h2 id="2019-09-13-2">2. Problems with automating translation of movie/TV show subtitles</h2> 
-
 Title: [Problems with automating translation of movie/TV show subtitles](https://arxiv.org/abs/1909.05362)
 
 Authors: [Prabhakar Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+P), [Mayank Sharma](https://arxiv.org/search/cs?searchtype=author&query=Sharma%2C+M), [Kartik Pitale](https://arxiv.org/search/cs?searchtype=author&query=Pitale%2C+K), [Keshav Kumar](https://arxiv.org/search/cs?searchtype=author&query=Kumar%2C+K)
@@ -99,7 +182,6 @@ Authors: [Prabhakar Gupta](https://arxiv.org/search/cs?searchtype=author&query=G
 
 
 <h2 id="2019-09-13-3">3. Speculative Beam Search for Simultaneous Translation</h2> 
-
 Title: [Speculative Beam Search for Simultaneous Translation](https://arxiv.org/abs/1909.05421)
 
 Authors: [Renjie Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+R), [Mingbo Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+M), [Baigong Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+B), [Liang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+L)
@@ -119,7 +201,6 @@ Authors: [Renjie Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zhen
 
 
 <h2 id="2019-09-13-4">4. VizSeq: A Visual Analysis Toolkit for Text Generation Tasks</h2> 
-
 Title: [VizSeq: A Visual Analysis Toolkit for Text Generation Tasks](https://arxiv.org/abs/1909.05424)
 
 Authors: [Changhan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Anirudh Jain](https://arxiv.org/search/cs?searchtype=author&query=Jain%2C+A), [Danlu Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+D), [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J)
@@ -138,7 +219,6 @@ Authors: [Changhan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wan
 
 
 <h2 id="2019-09-13-5">5. Neural Semantic Parsing in Low-Resource Settings with Back-Translation and Meta-Learning</h2> 
-
 Title: [Neural Semantic Parsing in Low-Resource Settings with Back-Translation and Meta-Learning](https://arxiv.org/abs/1909.05438)
 
 Authors: [Yibo Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+Y), [Duyu Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+D), [Nan Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan%2C+N), [Yeyun Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+Y), [Xiaocheng Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+X), [Bing Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+B), [Daxin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+D)
@@ -157,7 +237,6 @@ Authors: [Yibo Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+Y
 
 
 <h2 id="2019-09-13-6">6. Lost in Evaluation: Misleading Benchmarks for Bilingual Dictionary Induction</h2> 
-
 Title: [Lost in Evaluation: Misleading Benchmarks for Bilingual Dictionary Induction](https://arxiv.org/abs/1909.05708)
 
 Authors: [Yova Kementchedjhieva](https://arxiv.org/search/cs?searchtype=author&query=Kementchedjhieva%2C+Y), [Mareike Hartmann](https://arxiv.org/search/cs?searchtype=author&query=Hartmann%2C+M), [Anders Søgaard](https://arxiv.org/search/cs?searchtype=author&query=Søgaard%2C+A)
@@ -181,7 +260,6 @@ Authors: [Yova Kementchedjhieva](https://arxiv.org/search/cs?searchtype=author&q
 
 
 <h2 id="2019-09-12-1">1. A Quantum Search Decoder for Natural Language Processing</h2> 
-
 Title: [A Quantum Search Decoder for Natural Language Processing](https://arxiv.org/abs/1909.05023)
 
 Authors:[Johannes Bausch](https://arxiv.org/search/quant-ph?searchtype=author&query=Bausch%2C+J), [Sathyawageeswar Subramanian](https://arxiv.org/search/quant-ph?searchtype=author&query=Subramanian%2C+S), [Stephen Piddock](https://arxiv.org/search/quant-ph?searchtype=author&query=Piddock%2C+S)
@@ -202,7 +280,6 @@ Authors:[Johannes Bausch](https://arxiv.org/search/quant-ph?searchtype=author&qu
 
 
 <h2 id="2019-09-12-2">2. MultiFiT: Efficient Multi-lingual Language Model Fine-tuning</h2> 
-
 Title: [MultiFiT: Efficient Multi-lingual Language Model Fine-tuning](https://arxiv.org/abs/1909.04761)
 
 Authors:[Julian Eisenschlos](https://arxiv.org/search/cs?searchtype=author&query=Eisenschlos%2C+J), [Sebastian Ruder](https://arxiv.org/search/cs?searchtype=author&query=Ruder%2C+S), [Piotr Czapla](https://arxiv.org/search/cs?searchtype=author&query=Czapla%2C+P), [Marcin Kardas](https://arxiv.org/search/cs?searchtype=author&query=Kardas%2C+M), [Sylvain Gugger](https://arxiv.org/search/cs?searchtype=author&query=Gugger%2C+S), [Jeremy Howard](https://arxiv.org/search/cs?searchtype=author&query=Howard%2C+J)
@@ -222,7 +299,6 @@ Authors:[Julian Eisenschlos](https://arxiv.org/search/cs?searchtype=author&query
 
 
 <h2 id="2019-09-12-3">3. Dynamic Fusion: Attentional Language Model for Neural Machine Translation</h2> 
-
 Title: [Dynamic Fusion: Attentional Language Model for Neural Machine Translation](https://arxiv.org/abs/1909.04879)
 
 Authors:[Michiki Kurosawa](https://arxiv.org/search/cs?searchtype=author&query=Kurosawa%2C+M), [Mamoru Komachi](https://arxiv.org/search/cs?searchtype=author&query=Komachi%2C+M)
@@ -243,7 +319,6 @@ Authors:[Michiki Kurosawa](https://arxiv.org/search/cs?searchtype=author&query=K
 
 
 <h2 id="2019-09-12-4">4. Getting Gender Right in Neural Machine Translation</h2> 
-
 Title: [Getting Gender Right in Neural Machine Translation](https://arxiv.org/abs/1909.05088)
 
 Authors:[Eva Vanmassenhove](https://arxiv.org/search/cs?searchtype=author&query=Vanmassenhove%2C+E), [Christian Hardmeier](https://arxiv.org/search/cs?searchtype=author&query=Hardmeier%2C+C), [Andy Way](https://arxiv.org/search/cs?searchtype=author&query=Way%2C+A)
