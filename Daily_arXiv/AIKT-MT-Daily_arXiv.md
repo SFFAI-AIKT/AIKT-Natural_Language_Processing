@@ -2,6 +2,18 @@
 
 # Index
 
+- [2019-09-17](#2019-09-17)
+  - [1. Adaptive Scheduling for Multi-Task Learning](#2019-09-17-1)
+  - [2. Leveraging Out-of-Task Data for End-to-End Automatic Speech Translation](#2019-09-17-2)
+  - [3. A Universal Parent Model for Low-Resource Neural Machine Translation Transfer](#2019-09-17-3)
+  - [4. ALTER: Auxiliary Text Rewriting Tool for Natural Language Generation](#2019-09-17-4)
+  - [5. Tree Transformer: Integrating Tree Structures into Self-Attention](#2019-09-17-5)
+  - [6. Beyond BLEU: Training Neural Machine Translation with Semantic Similarity](#2019-09-17-6)
+  - [7. Hint-Based Training for Non-Autoregressive Machine Translation](#2019-09-17-7)
+  - [8. Natural Language Adversarial Attacks and Defenses in Word Level](#2019-09-17-8)
+  - [9. Automatically Extracting Challenge Sets for Non-local Phenomena Neural Machine Translation](#2019-09-17-9)
+  - [10. Communication-based Evaluation for Natural Language Generation](#2019-09-17-10)
+  - [11. Multilingual Neural Machine Translation for Zero-Resource Languages](#2019-09-17-11)
 - [2019-09-16](#2019-09-16)
   - [1. CTRL: A Conditional Transformer Language Model for Controllable Generation](#2019-09-16-1)
   - [2. Sequence-to-sequence Pre-training with Data Augmentation for Sentence Rewriting](#2019-09-16-2)
@@ -60,6 +72,228 @@
 
 
 
+# 2019-09-17
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-09-17-1">1. Adaptive Scheduling for Multi-Task Learning</h2> 
+
+Title: [Adaptive Scheduling for Multi-Task Learning](https://arxiv.org/abs/1909.06434)
+
+Authors:[Sébastien Jean](https://arxiv.org/search/cs?searchtype=author&query=Jean%2C+S), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O), [Melvin Johnson](https://arxiv.org/search/cs?searchtype=author&query=Johnson%2C+M)
+
+*(Submitted on 13 Sep 2019)*
+
+> To train neural machine translation models simultaneously on multiple tasks (languages), it is common to sample each task uniformly or in proportion to dataset sizes. As these methods offer little control over performance trade-offs, we explore different task scheduling approaches. We first consider existing non-adaptive techniques, then move on to adaptive schedules that over-sample tasks with poorer results compared to their respective baseline. As explicit schedules can be inefficient, especially if one task is highly over-sampled, we also consider implicit schedules, learning to scale learning rates or gradients of individual tasks instead. These techniques allow training multilingual models that perform better for low-resource language pairs (tasks with small amount of data), while minimizing negative effects on high-resource tasks.
+
+| Comments: | Continual Learning Workshop at NeurIPS 2018                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| Cite as:  | **arXiv:1909.06434 [cs.LG]**                                 |
+|           | (or **arXiv:1909.06434v1 [cs.LG]** for this version)         |
+
+
+
+
+
+<h2 id="2019-09-17-2">2. Leveraging Out-of-Task Data for End-to-End Automatic Speech Translation</h2> 
+
+Title: [Leveraging Out-of-Task Data for End-to-End Automatic Speech Translation](https://arxiv.org/abs/1909.06515)
+
+Authors:[Juan Pino](https://arxiv.org/search/cs?searchtype=author&query=Pino%2C+J), [Liezl Puzon](https://arxiv.org/search/cs?searchtype=author&query=Puzon%2C+L), [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J), [Xutai Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+X), [Arya D. McCarthy](https://arxiv.org/search/cs?searchtype=author&query=McCarthy%2C+A+D), [Deepak Gopinath](https://arxiv.org/search/cs?searchtype=author&query=Gopinath%2C+D)
+
+*(Submitted on 14 Sep 2019)*
+
+> For automatic speech translation (AST), end-to-end approaches are outperformed by cascaded models that transcribe with automatic speech recognition (ASR), then translate with machine translation (MT). A major cause of the performance gap is that, while existing AST corpora are small, massive datasets exist for both the ASR and MT subsystems. In this work, we evaluate several data augmentation and pretraining approaches for AST, comparing all on the same datasets. Simple data augmentation by translating ASR transcripts proves most effective on the English--French augmented LibriSpeech dataset, closing the performance gap from 8.2 to 1.4 BLEU, compared to a very strong cascade that could directly utilize copious ASR and MT data. The same end-to-end approach plus fine-tuning closes the gap on the English--Romanian MuST-C dataset from 6.7 to 3.7 BLEU. In addition to these results, we present practical recommendations for augmentation and pretraining approaches. Finally, we decrease the performance gap to 0.01 BLEU using a Transformer-based architecture.
+
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1909.06515 [cs.CL]**                                 |
+|           | (or **arXiv:1909.06515v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-09-17-3">3. A Universal Parent Model for Low-Resource Neural Machine Translation Transfer</h2> 
+
+Title: [A Universal Parent Model for Low-Resource Neural Machine Translation Transfer](https://arxiv.org/abs/1909.06516)
+
+Authors:[Mozhdeh Gheini](https://arxiv.org/search/cs?searchtype=author&query=Gheini%2C+M), [Jonathan May](https://arxiv.org/search/cs?searchtype=author&query=May%2C+J)
+
+*(Submitted on 14 Sep 2019)*
+
+> Transfer learning from a high-resource language pair `parent' has been proven to be an effective way to improve neural machine translation quality for low-resource language pairs `children.' However, previous approaches build a custom parent model or at least update an existing parent model's vocabulary for each child language pair they wish to train, in an effort to align parent and child vocabularies. This is not a practical solution. It is wasteful to devote the majority of training time for new language pairs to optimizing parameters on an unrelated data set. Further, this overhead reduces the utility of neural machine translation for deployment in humanitarian assistance scenarios, where extra time to deploy a new language pair can mean the difference between life and death. In this work, we present a `universal' pre-trained neural parent model with constant vocabulary that can be used as a starting point for training practically any new low-resource language to a fixed target language. We demonstrate that our approach, which leverages orthography unification and a broad-coverage approach to subword identification, generalizes well to several languages from a variety of families, and that translation systems built with our approach can be built more quickly than competing methods and with better quality as well.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1909.06516 [cs.CL]**                         |
+|           | (or **arXiv:1909.06516v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-09-17-4">4. ALTER: Auxiliary Text Rewriting Tool for Natural Language Generation</h2> 
+
+Title: [ALTER: Auxiliary Text Rewriting Tool for Natural Language Generation](https://arxiv.org/abs/1909.06564)
+
+Authors:[Qiongkai Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+Q), [Chenchen Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+C), [Lizhen Qu](https://arxiv.org/search/cs?searchtype=author&query=Qu%2C+L)
+
+*(Submitted on 14 Sep 2019)*
+
+> In this paper, we describe ALTER, an auxiliary text rewriting tool that facilitates the rewriting process for natural language generation tasks, such as paraphrasing, text simplification, fairness-aware text rewriting, and text style transfer. Our tool is characterized by two features, i) recording of word-level revision histories and ii) flexible auxiliary edit support and feedback to annotators. The text rewriting assist and traceable rewriting history are potentially beneficial to the future research of natural language generation.
+
+| Comments: | EMNLP 2019 (Demo)                                    |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1909.06564 [cs.CL]**                         |
+|           | (or **arXiv:1909.06564v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-09-17-5">5. Tree Transformer: Integrating Tree Structures into Self-Attention</h2> 
+
+Title: [Tree Transformer: Integrating Tree Structures into Self-Attention](https://arxiv.org/abs/1909.06639)
+
+Authors:[Yau-Shian Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Hung-Yi Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+H), [Yun-Nung Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y)
+
+*(Submitted on 14 Sep 2019)*
+
+> Pre-training Transformer from large-scale raw texts and fine-tuning on the desired task have achieved state-of-the-art results on diverse NLP tasks. However, it is unclear what the learned attention captures. The attention computed by attention heads seems not to match human intuitions about hierarchical structures. This paper proposes Tree Transformer, which adds an extra constraint to attention heads of the bidirectional Transformer encoder in order to encourage the attention heads to follow tree structures. The tree structures can be automatically induced from raw texts by our proposed ``Constituent Attention'' module, which is simply implemented by self-attention between two adjacent words. With the same training procedure identical to BERT, the experiments demonstrate the effectiveness of Tree Transformer in terms of inducing tree structures, better language modeling, and further learning more explainable attention scores.
+
+| Comments: | accepted by EMNLP 2019                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1909.06639 [cs.CL]**                                 |
+|           | (or **arXiv:1909.06639v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-09-17-6">6. Beyond BLEU: Training Neural Machine Translation with Semantic Similarity</h2> 
+
+Title: [Beyond BLEU: Training Neural Machine Translation with Semantic Similarity](https://arxiv.org/abs/1909.06694)
+
+Authors:[John Wieting](https://arxiv.org/search/cs?searchtype=author&query=Wieting%2C+J), [Taylor Berg-Kirkpatrick](https://arxiv.org/search/cs?searchtype=author&query=Berg-Kirkpatrick%2C+T), [Kevin Gimpel](https://arxiv.org/search/cs?searchtype=author&query=Gimpel%2C+K), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
+
+*(Submitted on 14 Sep 2019)*
+
+> While most neural machine translation (NMT) systems are still trained using maximum likelihood estimation, recent work has demonstrated that optimizing systems to directly improve evaluation metrics such as BLEU can substantially improve final translation accuracy. However, training with BLEU has some limitations: it doesn't assign partial credit, it has a limited range of output values, and it can penalize semantically correct hypotheses if they differ lexically from the reference. In this paper, we introduce an alternative reward function for optimizing NMT systems that is based on recent work in semantic similarity. We evaluate on four disparate languages translated to English, and find that training with our proposed metric results in better translations as evaluated by BLEU, semantic similarity, and human evaluation, and also that the optimization procedure converges faster. Analysis suggests that this is because the proposed metric is more conducive to optimization, assigning partial credit and providing more diversity in scores than BLEU.
+
+| Comments: | Published as a long paper at ACL 2019                |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1909.06694 [cs.CL]**                         |
+|           | (or **arXiv:1909.06694v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-09-17-7">7. Hint-Based Training for Non-Autoregressive Machine Translation</h2> 
+
+Title: [Hint-Based Training for Non-Autoregressive Machine Translation](https://arxiv.org/abs/1909.06708)
+
+Authors:[Zhuohan Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Zi Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Z), [Di He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+D), [Fei Tian](https://arxiv.org/search/cs?searchtype=author&query=Tian%2C+F), [Tao Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+T), [Liwei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Tie-Yan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T)
+
+*(Submitted on 15 Sep 2019)*
+
+> Due to the unparallelizable nature of the autoregressive factorization, AutoRegressive Translation (ART) models have to generate tokens sequentially during decoding and thus suffer from high inference latency. Non-AutoRegressive Translation (NART) models were proposed to reduce the inference time, but could only achieve inferior translation accuracy. In this paper, we proposed a novel approach to leveraging the hints from hidden states and word alignments to help the training of NART models. The results achieve significant improvement over previous NART models for the WMT14 En-De and De-En datasets and are even comparable to a strong LSTM-based ART baseline but one order of magnitude faster in inference.
+
+| Comments: | EMNLP-IJCNLP 2019                                            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| Cite as:  | **arXiv:1909.06708 [cs.CL]**                                 |
+|           | (or **arXiv:1909.06708v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-09-17-8">8. Natural Language Adversarial Attacks and Defenses in Word Level</h2> 
+
+Title: [Natural Language Adversarial Attacks and Defenses in Word Level](https://arxiv.org/abs/1909.06723)
+
+Authors:[Xiaosen Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Hao Jin](https://arxiv.org/search/cs?searchtype=author&query=Jin%2C+H), [Kun He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+K)
+
+*(Submitted on 15 Sep 2019)*
+
+> Up until recent two years, inspired by the big amount of research about adversarial example in the field of computer vision, there has been a growing interest in adversarial attacks for Natural Language Processing (NLP). What followed was a very few works of adversarial defense for NLP. However, there exists no defense method against the successful synonyms substitution based attacks that aim to satisfy all the lexical, grammatical, semantic constraints and thus are hard to perceived by humans. To fill this gap, we postulate the generalization of the model leads to the existence of adversarial examples, and propose an adversarial defense method called Synonyms Encoding Method (SEM), which inserts an encoder before the input layer of the model and then trains the model to eliminate adversarial perturbations. Extensive experiments demonstrate that SEM can efficiently defend current best synonym substitution based adversarial attacks with almost no decay on the accuracy for benign examples. Besides, to better evaluate SEM, we also propose a strong attack method called Improved Genetic Algorithm (IGA) that adopts the genetic metaheuristic against synonyms substitution based attacks. Compared with existing genetic based adversarial attack, the proposed IGA can achieve higher attack success rate at the same time maintain the transferability of adversarial examples.
+
+| Comments: | 13 pages, 3 figures, 4 tables                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1909.06723 [cs.CL]**                                 |
+|           | (or **arXiv:1909.06723v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-09-17-9">9. Automatically Extracting Challenge Sets for Non-local Phenomena Neural Machine Translation</h2> 
+
+Title: [Automatically Extracting Challenge Sets for Non-local Phenomena Neural Machine Translation](https://arxiv.org/abs/1909.06814)
+
+Authors:[Leshem Choshen](https://arxiv.org/search/cs?searchtype=author&query=Choshen%2C+L), [Omri Abend](https://arxiv.org/search/cs?searchtype=author&query=Abend%2C+O)
+
+*(Submitted on 15 Sep 2019)*
+
+> We show that the state-of-the-art Transformer MT model is not biased towards monotonic reordering (unlike previous recurrent neural network models), but that nevertheless, long-distance dependencies remain a challenge for the model. Since most dependencies are short-distance, common evaluation metrics will be little influenced by how well systems perform on them. We, therefore, propose an automatic approach for extracting challenge sets replete with long-distance dependencies, and argue that evaluation using this methodology provides a complementary perspective on system performance. To support our claim, we compile challenge sets for English-German and German-English, which are much larger than any previously released challenge set for MT. The extracted sets are large enough to allow reliable automatic evaluation, which makes the proposed approach a scalable and practical solution for evaluating MT performance on the long-tail of syntactic phenomena.
+
+| Comments: | Accepted for CoNLL                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1909.06814 [cs.CL]**                                 |
+|           | (or **arXiv:1909.06814v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-09-17-10">10. Communication-based Evaluation for Natural Language Generation</h2> 
+
+Title: [Communication-based Evaluation for Natural Language Generation](https://arxiv.org/abs/1909.07290)
+
+Authors:[Benjamin Newman](https://arxiv.org/search/cs?searchtype=author&query=Newman%2C+B), [Reuben Cohn-Gordon](https://arxiv.org/search/cs?searchtype=author&query=Cohn-Gordon%2C+R), [Christopher Potts](https://arxiv.org/search/cs?searchtype=author&query=Potts%2C+C)
+
+*(Submitted on 16 Sep 2019)*
+
+> Natural language generation (NLG) systems are commonly evaluated using n-gram overlap measures (e.g. BLEU, ROUGE). These measures do not directly capture semantics or speaker intentions, and so they often turn out to be misaligned with our true goals for NLG. In this work, we argue instead for communication-based evaluations: assuming the purpose of an NLG system is to convey information to a reader/listener, we can directly evaluate its effectiveness at this task using the Rational Speech Acts model of pragmatic language use. We illustrate with a color reference dataset that contains descriptions in pre-defined quality categories, showing that our method better aligns with these quality categories than do any of the prominent n-gram overlap methods.
+
+| Comments: | 10 pages, 1 figure, SCiL                             |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1909.07290 [cs.CL]**                         |
+|           | (or **arXiv:1909.07290v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-09-17-11">11. Multilingual Neural Machine Translation for Zero-Resource Languages</h2> 
+
+Title: [Multilingual Neural Machine Translation for Zero-Resource Languages](https://arxiv.org/abs/1909.07342)
+
+Authors:[Surafel M. Lakew](https://arxiv.org/search/cs?searchtype=author&query=Lakew%2C+S+M), [Marcello Federico](https://arxiv.org/search/cs?searchtype=author&query=Federico%2C+M), [Matteo Negri](https://arxiv.org/search/cs?searchtype=author&query=Negri%2C+M), [Marco Turchi](https://arxiv.org/search/cs?searchtype=author&query=Turchi%2C+M)
+
+*(Submitted on 16 Sep 2019)*
+
+> In recent years, Neural Machine Translation (NMT) has been shown to be more effective than phrase-based statistical methods, thus quickly becoming the state of the art in machine translation (MT). However, NMT systems are limited in translating low-resourced languages, due to the significant amount of parallel data that is required to learn useful mappings between languages. In this work, we show how the so-called multilingual NMT can help to tackle the challenges associated with low-resourced language translation. The underlying principle of multilingual NMT is to force the creation of hidden representations of words in a shared semantic space across multiple languages, thus enabling a positive parameter transfer across languages. Along this direction, we present multilingual translation experiments with three languages (English, Italian, Romanian) covering six translation directions, utilizing both recurrent neural networks and transformer (or self-attentive) neural networks. We then focus on the zero-shot translation problem, that is how to leverage multi-lingual data in order to learn translation directions that are not covered by the available training material. To this aim, we introduce our recently proposed iterative self-training method, which incrementally improves a multilingual NMT on a zero-shot direction by just relying on monolingual data. Our results on TED talks data show that multilingual NMT outperforms conventional bilingual NMT, that the transformer NMT outperforms recurrent NMT, and that zero-shot NMT outperforms conventional pivoting methods and even matches the performance of a fully-trained bilingual system.
+
+| Comments: | 15 pages, Published on Italian Journal of Computational Linguistics (IJCoL) -- Multilingual Neural Machine Translation for Low-Resource Languages, June 2018 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **arXiv:1909.07342 [cs.CL]**                                 |
+|           | (or **arXiv:1909.07342v1 [cs.CL]** for this version)         |
+
+
+
 # 2019-09-16
 
 [Return to Index](#Index)
@@ -67,7 +301,6 @@
 
 
 <h2 id="2019-09-16-1">1. CTRL: A Conditional Transformer Language Model for Controllable Generation</h2> 
-
 Title: [CTRL: A Conditional Transformer Language Model for Controllable Generation](https://arxiv.org/abs/1909.05858)
 
 Authors: [Nitish Shirish Keskar](https://arxiv.org/search/cs?searchtype=author&query=Keskar%2C+N+S), [Bryan McCann](https://arxiv.org/search/cs?searchtype=author&query=McCann%2C+B), [Lav R. Varshney](https://arxiv.org/search/cs?searchtype=author&query=Varshney%2C+L+R), [Caiming Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+C), [Richard Socher](https://arxiv.org/search/cs?searchtype=author&query=Socher%2C+R)
@@ -84,7 +317,6 @@ Authors: [Nitish Shirish Keskar](https://arxiv.org/search/cs?searchtype=author&q
 
 
 <h2 id="2019-09-16-2">2. Sequence-to-sequence Pre-training with Data Augmentation for Sentence Rewriting</h2> 
-
 Title: [Sequence-to-sequence Pre-training with Data Augmentation for Sentence Rewriting](https://arxiv.org/abs/1909.06002)
 
 Authors: [Yi Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Tao Ge](https://arxiv.org/search/cs?searchtype=author&query=Ge%2C+T), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F), [Ming Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+M), [Xu Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+X)
@@ -104,7 +336,6 @@ Authors: [Yi Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C
 
 
 <h2 id="2019-09-16-3">3. Neural Machine Translation with 4-Bit Precision and Beyond</h2> 
-
 Title: [Neural Machine Translation with 4-Bit Precision and Beyond](https://arxiv.org/abs/1909.06091)
 
 Authors: [Alham Fikri Aji](https://arxiv.org/search/cs?searchtype=author&query=Aji%2C+A+F), [Kenneth Heafield](https://arxiv.org/search/cs?searchtype=author&query=Heafield%2C+K)
@@ -123,7 +354,6 @@ Authors: [Alham Fikri Aji](https://arxiv.org/search/cs?searchtype=author&query=A
 
 
 <h2 id="2019-09-16-4">4. A General Framework for Implicit and Explicit Debiasing of Distributional Word Vector Spaces</h2> 
-
 Title: [A General Framework for Implicit and Explicit Debiasing of Distributional Word Vector Spaces](https://arxiv.org/abs/1909.06092)
 
 Authors: [Anne Lauscher](https://arxiv.org/search/cs?searchtype=author&query=Lauscher%2C+A), [Goran Glavaš](https://arxiv.org/search/cs?searchtype=author&query=Glavaš%2C+G), [Simone Paolo Ponzetto](https://arxiv.org/search/cs?searchtype=author&query=Ponzetto%2C+S+P), [Ivan Vulić](https://arxiv.org/search/cs?searchtype=author&query=Vulić%2C+I)
