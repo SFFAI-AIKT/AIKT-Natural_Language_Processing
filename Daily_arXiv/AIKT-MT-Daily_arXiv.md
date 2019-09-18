@@ -2,6 +2,10 @@
 
 # Index
 
+- [2019-09-18](#2019-09-18)
+  - [1. Bridging the Gap between Pre-Training and Fine-Tuning for End-to-End Speech Translation](#2019-09-18-1)
+  - [2. Pointer-based Fusion of Bilingual Lexicons into Neural Machine Translation](#2019-09-18-2)
+  - [3. Learning to Deceive with Attention-Based Explanations](#2019-09-18-3)
 - [2019-09-17](#2019-09-17)
   - [1. Adaptive Scheduling for Multi-Task Learning](#2019-09-17-1)
   - [2. Leveraging Out-of-Task Data for End-to-End Automatic Speech Translation](#2019-09-17-2)
@@ -72,6 +76,69 @@
 
 
 
+# 2019-09-18
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-09-18-1">1. Bridging the Gap between Pre-Training and Fine-Tuning for End-to-End Speech Translation</h2> 
+
+Title: [Bridging the Gap between Pre-Training and Fine-Tuning for End-to-End Speech Translation](https://arxiv.org/abs/1909.07575)
+
+Authors: [Chengyi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Yu Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Y), [Shujie Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+S), [Zhenglu Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Ming Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+M)
+
+*(Submitted on 17 Sep 2019)*
+
+> End-to-end speech translation, a hot topic in recent years, aims to translate a segment of audio into a specific language with an end-to-end model. Conventional approaches employ multi-task learning and pre-training methods for this task, but they suffer from the huge gap between pre-training and fine-tuning. To address these issues, we propose a Tandem Connectionist Encoding Network (TCEN) which bridges the gap by reusing all subnets in fine-tuning, keeping the roles of subnets consistent, and pre-training the attention module. Furthermore, we propose two simple but effective methods to guarantee the speech encoder outputs and the MT encoder inputs are consistent in terms of semantic representation and sequence length. Experimental results show that our model outperforms baselines 2.2 BLEU on a large benchmark dataset.
+
+| Comments: | submitted to AAAI2020                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Audio and Speech Processing (eess.AS) |
+| Cite as:  | **arXiv:1909.07575 [cs.CL]**                                 |
+|           | (or **arXiv:1909.07575v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-09-18-2">2. Pointer-based Fusion of Bilingual Lexicons into Neural Machine Translation</h2> 
+
+Title: [Pointer-based Fusion of Bilingual Lexicons into Neural Machine Translation](https://arxiv.org/abs/1909.07907)
+
+Authors: [Jetic Gū](https://arxiv.org/search/cs?searchtype=author&query=Gū%2C+J), [Hassan S. Shavarani](https://arxiv.org/search/cs?searchtype=author&query=Shavarani%2C+H+S), [Anoop Sarkar](https://arxiv.org/search/cs?searchtype=author&query=Sarkar%2C+A)
+
+*(Submitted on 17 Sep 2019)*
+
+> Neural machine translation (NMT) systems require large amounts of high quality in-domain parallel corpora for training. State-of-the-art NMT systems still face challenges related to out-of-vocabulary words and dealing with low-resource language pairs. In this paper, we propose and compare several models for fusion of bilingual lexicons with an end-to-end trained sequence-to-sequence model for machine translation. The result is a fusion model with two information sources for the decoder: a neural conditional language model and a bilingual lexicon. This fusion model learns how to combine both sources of information in order to produce higher quality translation output. Our experiments show that our proposed models work well in relatively low-resource scenarios, and also effectively reduce the parameter size and training cost for NMT without sacrificing performance.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1909.07907 [cs.CL]**                         |
+|           | (or **arXiv:1909.07907v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-09-18-3">3. Learning to Deceive with Attention-Based Explanations</h2> 
+
+Title: [Learning to Deceive with Attention-Based Explanations](https://arxiv.org/abs/1909.07913)
+
+Authors: [Danish Pruthi](https://arxiv.org/search/cs?searchtype=author&query=Pruthi%2C+D), [Mansi Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+M), [Bhuwan Dhingra](https://arxiv.org/search/cs?searchtype=author&query=Dhingra%2C+B), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G), [Zachary C. Lipton](https://arxiv.org/search/cs?searchtype=author&query=Lipton%2C+Z+C)
+
+*(Submitted on 17 Sep 2019)*
+
+> Attention mechanisms are ubiquitous components in neural architectures applied in natural language processing. In addition to yielding gains in predictive accuracy, researchers often claim that attention weights confer interpretability, purportedly useful both for providing insights to practitioners and for explaining why a model makes its decisions to stakeholders. We call the latter use of attention mechanisms into question, demonstrating a simple method for training models to produce deceptive attention masks, diminishing the total weight assigned to designated impermissible tokens, even as the models are shown to nevertheless rely on these features to drive predictions. Across multiple models and datasets, our approach manipulates attention weights while paying surprisingly little cost in accuracy. Although our results do not rule out potential insights due to organically-trained attention, they cast doubt on attention's reliability as a tool for auditing algorithms, as in the context of fairness and accountability.
+
+| Comments: | Preprint. Ongoing work                               |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1909.07913 [cs.CL]**                         |
+|           | (or **arXiv:1909.07913v1 [cs.CL]** for this version) |
+
+
+
 # 2019-09-17
 
 [Return to Index](#Index)
@@ -79,7 +146,6 @@
 
 
 <h2 id="2019-09-17-1">1. Adaptive Scheduling for Multi-Task Learning</h2> 
-
 Title: [Adaptive Scheduling for Multi-Task Learning](https://arxiv.org/abs/1909.06434)
 
 Authors:[Sébastien Jean](https://arxiv.org/search/cs?searchtype=author&query=Jean%2C+S), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O), [Melvin Johnson](https://arxiv.org/search/cs?searchtype=author&query=Johnson%2C+M)
@@ -99,7 +165,6 @@ Authors:[Sébastien Jean](https://arxiv.org/search/cs?searchtype=author&query=Je
 
 
 <h2 id="2019-09-17-2">2. Leveraging Out-of-Task Data for End-to-End Automatic Speech Translation</h2> 
-
 Title: [Leveraging Out-of-Task Data for End-to-End Automatic Speech Translation](https://arxiv.org/abs/1909.06515)
 
 Authors:[Juan Pino](https://arxiv.org/search/cs?searchtype=author&query=Pino%2C+J), [Liezl Puzon](https://arxiv.org/search/cs?searchtype=author&query=Puzon%2C+L), [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J), [Xutai Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+X), [Arya D. McCarthy](https://arxiv.org/search/cs?searchtype=author&query=McCarthy%2C+A+D), [Deepak Gopinath](https://arxiv.org/search/cs?searchtype=author&query=Gopinath%2C+D)
@@ -118,7 +183,6 @@ Authors:[Juan Pino](https://arxiv.org/search/cs?searchtype=author&query=Pino%2C+
 
 
 <h2 id="2019-09-17-3">3. A Universal Parent Model for Low-Resource Neural Machine Translation Transfer</h2> 
-
 Title: [A Universal Parent Model for Low-Resource Neural Machine Translation Transfer](https://arxiv.org/abs/1909.06516)
 
 Authors:[Mozhdeh Gheini](https://arxiv.org/search/cs?searchtype=author&query=Gheini%2C+M), [Jonathan May](https://arxiv.org/search/cs?searchtype=author&query=May%2C+J)
@@ -137,7 +201,6 @@ Authors:[Mozhdeh Gheini](https://arxiv.org/search/cs?searchtype=author&query=Ghe
 
 
 <h2 id="2019-09-17-4">4. ALTER: Auxiliary Text Rewriting Tool for Natural Language Generation</h2> 
-
 Title: [ALTER: Auxiliary Text Rewriting Tool for Natural Language Generation](https://arxiv.org/abs/1909.06564)
 
 Authors:[Qiongkai Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+Q), [Chenchen Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+C), [Lizhen Qu](https://arxiv.org/search/cs?searchtype=author&query=Qu%2C+L)
@@ -157,7 +220,6 @@ Authors:[Qiongkai Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+
 
 
 <h2 id="2019-09-17-5">5. Tree Transformer: Integrating Tree Structures into Self-Attention</h2> 
-
 Title: [Tree Transformer: Integrating Tree Structures into Self-Attention](https://arxiv.org/abs/1909.06639)
 
 Authors:[Yau-Shian Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Hung-Yi Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+H), [Yun-Nung Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y)
@@ -177,7 +239,6 @@ Authors:[Yau-Shian Wang](https://arxiv.org/search/cs?searchtype=author&query=Wan
 
 
 <h2 id="2019-09-17-6">6. Beyond BLEU: Training Neural Machine Translation with Semantic Similarity</h2> 
-
 Title: [Beyond BLEU: Training Neural Machine Translation with Semantic Similarity](https://arxiv.org/abs/1909.06694)
 
 Authors:[John Wieting](https://arxiv.org/search/cs?searchtype=author&query=Wieting%2C+J), [Taylor Berg-Kirkpatrick](https://arxiv.org/search/cs?searchtype=author&query=Berg-Kirkpatrick%2C+T), [Kevin Gimpel](https://arxiv.org/search/cs?searchtype=author&query=Gimpel%2C+K), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
@@ -197,7 +258,6 @@ Authors:[John Wieting](https://arxiv.org/search/cs?searchtype=author&query=Wieti
 
 
 <h2 id="2019-09-17-7">7. Hint-Based Training for Non-Autoregressive Machine Translation</h2> 
-
 Title: [Hint-Based Training for Non-Autoregressive Machine Translation](https://arxiv.org/abs/1909.06708)
 
 Authors:[Zhuohan Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Zi Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Z), [Di He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+D), [Fei Tian](https://arxiv.org/search/cs?searchtype=author&query=Tian%2C+F), [Tao Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+T), [Liwei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Tie-Yan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T)
@@ -217,7 +277,6 @@ Authors:[Zhuohan Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z
 
 
 <h2 id="2019-09-17-8">8. Natural Language Adversarial Attacks and Defenses in Word Level</h2> 
-
 Title: [Natural Language Adversarial Attacks and Defenses in Word Level](https://arxiv.org/abs/1909.06723)
 
 Authors:[Xiaosen Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Hao Jin](https://arxiv.org/search/cs?searchtype=author&query=Jin%2C+H), [Kun He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+K)
@@ -237,7 +296,6 @@ Authors:[Xiaosen Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%
 
 
 <h2 id="2019-09-17-9">9. Automatically Extracting Challenge Sets for Non-local Phenomena Neural Machine Translation</h2> 
-
 Title: [Automatically Extracting Challenge Sets for Non-local Phenomena Neural Machine Translation](https://arxiv.org/abs/1909.06814)
 
 Authors:[Leshem Choshen](https://arxiv.org/search/cs?searchtype=author&query=Choshen%2C+L), [Omri Abend](https://arxiv.org/search/cs?searchtype=author&query=Abend%2C+O)
@@ -257,7 +315,6 @@ Authors:[Leshem Choshen](https://arxiv.org/search/cs?searchtype=author&query=Cho
 
 
 <h2 id="2019-09-17-10">10. Communication-based Evaluation for Natural Language Generation</h2> 
-
 Title: [Communication-based Evaluation for Natural Language Generation](https://arxiv.org/abs/1909.07290)
 
 Authors:[Benjamin Newman](https://arxiv.org/search/cs?searchtype=author&query=Newman%2C+B), [Reuben Cohn-Gordon](https://arxiv.org/search/cs?searchtype=author&query=Cohn-Gordon%2C+R), [Christopher Potts](https://arxiv.org/search/cs?searchtype=author&query=Potts%2C+C)
@@ -277,7 +334,6 @@ Authors:[Benjamin Newman](https://arxiv.org/search/cs?searchtype=author&query=Ne
 
 
 <h2 id="2019-09-17-11">11. Multilingual Neural Machine Translation for Zero-Resource Languages</h2> 
-
 Title: [Multilingual Neural Machine Translation for Zero-Resource Languages](https://arxiv.org/abs/1909.07342)
 
 Authors:[Surafel M. Lakew](https://arxiv.org/search/cs?searchtype=author&query=Lakew%2C+S+M), [Marcello Federico](https://arxiv.org/search/cs?searchtype=author&query=Federico%2C+M), [Matteo Negri](https://arxiv.org/search/cs?searchtype=author&query=Negri%2C+M), [Marco Turchi](https://arxiv.org/search/cs?searchtype=author&query=Turchi%2C+M)
