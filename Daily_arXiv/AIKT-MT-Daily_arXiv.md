@@ -2,6 +2,12 @@
 
 # Index
 
+- [2019-09-19](#2019-09-19)
+  - [1. Relaxed Softmax for learning from Positive and Unlabeled data](#2019-09-19-1)
+  - [2. Memory-Augmented Neural Networks for Machine Translation](#2019-09-19-2)
+  - [3. Subword ELMo](#2019-09-19-3)
+  - [4. Simple, Scalable Adaptation for Neural Machine Translation](#2019-09-19-4)
+  - [5. Fine-Tuning Language Models from Human Preferences](#2019-09-19-5)
 - [2019-09-18](#2019-09-18)
   - [1. Bridging the Gap between Pre-Training and Fine-Tuning for End-to-End Speech Translation](#2019-09-18-1)
   - [2. Pointer-based Fusion of Bilingual Lexicons into Neural Machine Translation](#2019-09-18-2)
@@ -76,6 +82,113 @@
 
 
 
+# 2019-09-19
+
+[Return to Index](#Index)
+
+
+
+
+
+<h2 id="2019-09-19-1">1. Relaxed Softmax for learning from Positive and Unlabeled data</h2> 
+
+Title: [Relaxed Softmax for learning from Positive and Unlabeled data](https://arxiv.org/abs/1909.08079)
+
+Authors: [Ugo Tanielian](https://arxiv.org/search/stat?searchtype=author&query=Tanielian%2C+U), [Flavian Vasile](https://arxiv.org/search/stat?searchtype=author&query=Vasile%2C+F)
+
+*(Submitted on 17 Sep 2019)*
+
+> In recent years, the softmax model and its fast approximations have become the de-facto loss functions for deep neural networks when dealing with multi-class prediction. This loss has been extended to language modeling and recommendation, two fields that fall into the framework of learning from Positive and Unlabeled data. In this paper, we stress the different drawbacks of the current family of softmax losses and sampling schemes when applied in a Positive and Unlabeled learning setup. We propose both a Relaxed Softmax loss (RS) and a new negative sampling scheme based on Boltzmann formulation. We show that the new training objective is better suited for the tasks of density estimation, item similarity and next-event prediction by driving uplifts in performance on textual and recommendation datasets against classical softmax.
+
+| Comments:          | 9 pages, 5 figures, 2 tables, published at RecSys 2019       |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Machine Learning (stat.ML)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Journal reference: | RecSys 2019 Proceedings of the 13th ACM Conference on Recommender Systems |
+| DOI:               | [10.1145/3298689.3347034](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.1145%2F3298689.3347034&v=e3db5db6) |
+| Cite as:           | **arXiv:1909.08079 [stat.ML]**                               |
+|                    | (or **arXiv:1909.08079v1 [stat.ML]** for this version)       |
+
+
+
+
+
+<h2 id="2019-09-19-2">2. Memory-Augmented Neural Networks for Machine Translation</h2> 
+
+Title: [Memory-Augmented Neural Networks for Machine Translation](https://arxiv.org/abs/1909.08314)
+
+Authors: [Mark Collier](https://arxiv.org/search/cs?searchtype=author&query=Collier%2C+M), [Joeran Beel](https://arxiv.org/search/cs?searchtype=author&query=Beel%2C+J)
+
+*(Submitted on 18 Sep 2019)*
+
+> Memory-augmented neural networks (MANNs) have been shown to outperform other recurrent neural network architectures on a series of artificial sequence learning tasks, yet they have had limited application to real-world tasks. We evaluate direct application of Neural Turing Machines (NTM) and Differentiable Neural Computers (DNC) to machine translation. We further propose and evaluate two models which extend the attentional encoder-decoder with capabilities inspired by memory augmented neural networks. We evaluate our proposed models on IWSLT Vietnamese to English and ACL Romanian to English datasets. Our proposed models and the memory augmented neural networks perform similarly to the attentional encoder-decoder on the Vietnamese to English translation task while have a 0.3-1.9 lower BLEU score for the Romanian to English task. Interestingly, our analysis shows that despite being equipped with additional flexibility and being randomly initialized memory augmented neural networks learn an algorithm for machine translation almost identical to the attentional encoder-decoder.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1909.08314 [cs.LG]**                                 |
+|           | (or **arXiv:1909.08314v1 [cs.LG]** for this version)         |
+
+
+
+
+
+<h2 id="2019-09-19-3">3. Subword ELMo</h2> 
+
+Title: [Subword ELMo](https://arxiv.org/abs/1909.08357)
+
+Authors: [Jiangtong Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Hai Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+H), [Zuchao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Wei Bi](https://arxiv.org/search/cs?searchtype=author&query=Bi%2C+W), [Xiaojiang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X)
+
+*(Submitted on 18 Sep 2019)*
+
+> Embedding from Language Models (ELMo) has shown to be effective for improving many natural language processing (NLP) tasks, and ELMo takes character information to compose word representation to train language models.However, the character is an insufficient and unnatural linguistic unit for word representation.Thus we introduce Embedding from Subword-aware Language Models (ESuLMo) which learns word representation from subwords using unsupervised segmentation over words.We show that ESuLMo can enhance four benchmark NLP tasks more effectively than ELMo, including syntactic dependency parsing, semantic role labeling, implicit discourse relation recognition and textual entailment, which brings a meaningful improvement over ELMo.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1909.08357 [cs.CL]**                         |
+|           | (or **arXiv:1909.08357v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-09-19-4">4. Simple, Scalable Adaptation for Neural Machine Translation</h2> 
+
+Title: [Simple, Scalable Adaptation for Neural Machine Translation](https://arxiv.org/abs/1909.08478)
+
+Authors: [Ankur Bapna](https://arxiv.org/search/cs?searchtype=author&query=Bapna%2C+A), [Naveen Arivazhagan](https://arxiv.org/search/cs?searchtype=author&query=Arivazhagan%2C+N), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O)
+
+*(Submitted on 18 Sep 2019)*
+
+> Fine-tuning pre-trained Neural Machine Translation (NMT) models is the dominant approach for adapting to new languages and domains. However, fine-tuning requires adapting and maintaining a separate model for each target task. We propose a simple yet efficient approach for adaptation in NMT. Our proposed approach consists of injecting tiny task specific adapter layers into a pre-trained model. These lightweight adapters, with just a small fraction of the original model size, adapt the model to multiple individual tasks simultaneously. We evaluate our approach on two tasks: (i) Domain Adaptation and (ii) Massively Multilingual NMT. Experiments on domain adaptation demonstrate that our proposed approach is on par with full fine-tuning on various domains, dataset sizes and model capacities. On a massively multilingual dataset of 103 languages, our adaptation approach bridges the gap between individual bilingual models and one massively multilingual model for most language pairs, paving the way towards universal machine translation.
+
+| Comments: | EMNLP 2019                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1909.08478 [cs.CL]**                                 |
+|           | (or **arXiv:1909.08478v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-09-19-5">5. Fine-Tuning Language Models from Human Preferences</h2> 
+
+Title: [Fine-Tuning Language Models from Human Preferences](https://arxiv.org/abs/1909.08593)
+
+Authors: [Daniel M. Ziegler](https://arxiv.org/search/cs?searchtype=author&query=Ziegler%2C+D+M), [Nisan Stiennon](https://arxiv.org/search/cs?searchtype=author&query=Stiennon%2C+N), [Jeffrey Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+J), [Tom B. Brown](https://arxiv.org/search/cs?searchtype=author&query=Brown%2C+T+B), [Alec Radford](https://arxiv.org/search/cs?searchtype=author&query=Radford%2C+A), [Dario Amodei](https://arxiv.org/search/cs?searchtype=author&query=Amodei%2C+D), [Paul Christiano](https://arxiv.org/search/cs?searchtype=author&query=Christiano%2C+P), [Geoffrey Irving](https://arxiv.org/search/cs?searchtype=author&query=Irving%2C+G)
+
+*(Submitted on 18 Sep 2019)*
+
+> Reward learning enables the application of reinforcement learning (RL) to tasks where reward is defined by human judgment, building a model of reward by asking humans questions. Most work on reward learning has used simulated environments, but complex information about values is often expressed in natural language, and we believe reward learning for language is a key to making RL practical and safe for real-world tasks. In this paper, we build on advances in generative pretraining of language models to apply reward learning to four natural language tasks: continuing text with positive sentiment or physically descriptive language, and summarization tasks on the TL;DR and CNN/Daily Mail datasets. For stylistic continuation we achieve good results with only 5,000 comparisons evaluated by humans. For summarization, models trained with 60,000 comparisons copy whole sentences from the input but skip irrelevant preamble; this leads to reasonable ROUGE scores and very good performance according to our human labelers, but may be exploiting the fact that labelers rely on simple heuristics.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1909.08593 [cs.CL]**                                 |
+|           | (or **arXiv:1909.08593v1 [cs.CL]** for this version)         |
+
+
+
+
+
 # 2019-09-18
 
 [Return to Index](#Index)
@@ -83,7 +196,6 @@
 
 
 <h2 id="2019-09-18-1">1. Bridging the Gap between Pre-Training and Fine-Tuning for End-to-End Speech Translation</h2> 
-
 Title: [Bridging the Gap between Pre-Training and Fine-Tuning for End-to-End Speech Translation](https://arxiv.org/abs/1909.07575)
 
 Authors: [Chengyi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Yu Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Y), [Shujie Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+S), [Zhenglu Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Ming Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+M)
@@ -103,7 +215,6 @@ Authors: [Chengyi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang
 
 
 <h2 id="2019-09-18-2">2. Pointer-based Fusion of Bilingual Lexicons into Neural Machine Translation</h2> 
-
 Title: [Pointer-based Fusion of Bilingual Lexicons into Neural Machine Translation](https://arxiv.org/abs/1909.07907)
 
 Authors: [Jetic Gū](https://arxiv.org/search/cs?searchtype=author&query=Gū%2C+J), [Hassan S. Shavarani](https://arxiv.org/search/cs?searchtype=author&query=Shavarani%2C+H+S), [Anoop Sarkar](https://arxiv.org/search/cs?searchtype=author&query=Sarkar%2C+A)
@@ -122,7 +233,6 @@ Authors: [Jetic Gū](https://arxiv.org/search/cs?searchtype=author&query=Gū%2C+
 
 
 <h2 id="2019-09-18-3">3. Learning to Deceive with Attention-Based Explanations</h2> 
-
 Title: [Learning to Deceive with Attention-Based Explanations](https://arxiv.org/abs/1909.07913)
 
 Authors: [Danish Pruthi](https://arxiv.org/search/cs?searchtype=author&query=Pruthi%2C+D), [Mansi Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+M), [Bhuwan Dhingra](https://arxiv.org/search/cs?searchtype=author&query=Dhingra%2C+B), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G), [Zachary C. Lipton](https://arxiv.org/search/cs?searchtype=author&query=Lipton%2C+Z+C)
