@@ -2,6 +2,12 @@
 
 # Index
 
+- [2019-09-20](#2019-09-20)
+  - [1. Do We Need Neural Models to Explain Human Judgments of Acceptability?](#2019-09-20-1)
+  - [2. Cross-Lingual Contextual Word Embeddings Mapping With Multi-Sense Words In Mind](#2019-09-20-2)
+  - [3. Low-Resource Parsing with Crosslingual Contextualized Representations](#2019-09-20-3)
+  - [4. Improving Generalization by Incorporating Coverage in Natural Language Inference](#2019-09-20-4)
+  - [5. CogniVal: A Framework for Cognitive Word Embedding Evaluation](#2019-09-20-5)
 - [2019-09-19](#2019-09-19)
   - [1. Relaxed Softmax for learning from Positive and Unlabeled data](#2019-09-19-1)
   - [2. Memory-Augmented Neural Networks for Machine Translation](#2019-09-19-2)
@@ -82,6 +88,111 @@
 
 
 
+# 2019-09-20
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-09-20-1">1. Do We Need Neural Models to Explain Human Judgments of Acceptability?</h2> 
+
+Title: [Do We Need Neural Models to Explain Human Judgments of Acceptability?](https://arxiv.org/abs/1909.08663)
+
+Authors: [Wang Jing](https://arxiv.org/search/cs?searchtype=author&query=Jing%2C+W) (Beijing Normal University), [M. A. Kelly](https://arxiv.org/search/cs?searchtype=author&query=Kelly%2C+M+A) (The Pennsylvania State University), [David Reitter](https://arxiv.org/search/cs?searchtype=author&query=Reitter%2C+D) (Google Research)
+
+*(Submitted on 18 Sep 2019)*
+
+> Native speakers can judge whether a sentence is an acceptable instance of their language. Acceptability provides a means of evaluating whether computational language models are processing language in a human-like manner. We test the ability of computational language models, simple language features, and word embeddings to predict native English speakers judgments of acceptability on English-language essays written by non-native speakers. We find that much of the sentence acceptability variance can be captured by a combination of features including misspellings, word order, and word similarity (Pearson's r = 0.494). While predictive neural models fit acceptability judgments well (r = 0.527), we find that a 4-gram model with statistical smoothing is just as good (r = 0.528). Thanks to incorporating a count of misspellings, our 4-gram model surpasses both the previous unsupervised state-of-the art (Lau et al., 2015; r = 0.472), and the average non-expert native speaker (r = 0.46). Our results demonstrate that acceptability is well captured by n-gram statistics and simple language features.
+
+| Comments: | 10 pages (8 pages + 2 pages of references), 1 figure, 7 tables |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1909.08663 [cs.CL]**                                 |
+|           | (or **arXiv:1909.08663v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-09-20-2">2. Cross-Lingual Contextual Word Embeddings Mapping With Multi-Sense Words In Mind</h2> 
+
+Title: [Cross-Lingual Contextual Word Embeddings Mapping With Multi-Sense Words In Mind](https://arxiv.org/abs/1909.08681)
+
+Authors: [Zheng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Ruiqing Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+R), [Jun Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J), [Pierre Zweigenbaum](https://arxiv.org/search/cs?searchtype=author&query=Zweigenbaum%2C+P)
+
+*(Submitted on 18 Sep 2019)*
+
+> Recent work in cross-lingual contextual word embedding learning cannot handle multi-sense words well. In this work, we explore the characteristics of contextual word embeddings and show the link between contextual word embeddings and word senses. We propose two improving solutions by considering contextual multi-sense word embeddings as noise (removal) and by generating cluster level average anchor embeddings for contextual multi-sense word embeddings (replacement). Experiments show that our solutions can improve the supervised contextual word embeddings alignment for multi-sense words in a microscopic perspective without hurting the macroscopic performance on the bilingual lexicon induction task. For unsupervised alignment, our methods significantly improve the performance on the bilingual lexicon induction task for more than 10 points.
+
+| Comments: | 12 pages                                             |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1909.08681 [cs.CL]**                         |
+|           | (or **arXiv:1909.08681v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-09-20-3">3. Low-Resource Parsing with Crosslingual Contextualized Representations</h2> 
+
+Title: [Low-Resource Parsing with Crosslingual Contextualized Representations](https://arxiv.org/abs/1909.08744)
+
+Authors: [Phoebe Mulcaire](https://arxiv.org/search/cs?searchtype=author&query=Mulcaire%2C+P), [Jungo Kasai](https://arxiv.org/search/cs?searchtype=author&query=Kasai%2C+J), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith%2C+N+A)
+
+*(Submitted on 19 Sep 2019)*
+
+> Despite advances in dependency parsing, languages with small treebanks still present challenges. We assess recent approaches to multilingual contextual word representations (CWRs), and compare them for crosslingual transfer from a language with a large treebank to a language with a small or nonexistent treebank, by sharing parameters between languages in the parser itself. We experiment with a diverse selection of languages in both simulated and truly low-resource scenarios, and show that multilingual CWRs greatly facilitate low-resource dependency parsing even without crosslingual supervision such as dictionaries or parallel text. Furthermore, we examine the non-contextual part of the learned language models (which we call a "decontextual probe") to demonstrate that polyglot language models better encode crosslingual lexical correspondence compared to aligned monolingual language models. This analysis provides further evidence that polyglot training is an effective approach to crosslingual transfer.
+
+| Comments: | CoNLL 2019                                           |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1909.08744 [cs.CL]**                         |
+|           | (or **arXiv:1909.08744v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-09-20-4">4. Improving Generalization by Incorporating Coverage in Natural Language Inference</h2> 
+
+Title: [Improving Generalization by Incorporating Coverage in Natural Language Inference](https://arxiv.org/abs/1909.08940)
+
+Authors: [Nafise Sadat Moosavi](https://arxiv.org/search/cs?searchtype=author&query=Moosavi%2C+N+S), [Prasetya Ajie Utama](https://arxiv.org/search/cs?searchtype=author&query=Utama%2C+P+A), [Andreas Rücklé](https://arxiv.org/search/cs?searchtype=author&query=Rücklé%2C+A), [Iryna Gurevych](https://arxiv.org/search/cs?searchtype=author&query=Gurevych%2C+I)
+
+*(Submitted on 19 Sep 2019)*
+
+> The task of natural language inference (NLI) is to identify the relation between the given premise and hypothesis. While recent NLI models achieve very high performance on individual datasets, they fail to generalize across similar datasets. This indicates that they are solving NLI datasets instead of the task itself. In order to improve generalization, we propose to extend the input representations with an abstract view of the relation between the hypothesis and the premise, i.e., how well the individual words, or word n-grams, of the hypothesis are covered by the premise. Our experiments show that the use of this information considerably improves generalization across different NLI datasets without requiring any external knowledge or additional data. Finally, we show that using the coverage information is not only beneficial for improving the performance across different datasets of the same task. The resulting generalization improves the performance across datasets that belong to similar but not the same tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1909.08940 [cs.CL]**                         |
+|           | (or **arXiv:1909.08940v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-09-20-5">5. CogniVal: A Framework for Cognitive Word Embedding Evaluation</h2> 
+
+Title: [CogniVal: A Framework for Cognitive Word Embedding Evaluation](https://arxiv.org/abs/1909.09001)
+
+Authors: [Nora Hollenstein](https://arxiv.org/search/cs?searchtype=author&query=Hollenstein%2C+N), [Antonio de la Torre](https://arxiv.org/search/cs?searchtype=author&query=de+la+Torre%2C+A), [Nicolas Langer](https://arxiv.org/search/cs?searchtype=author&query=Langer%2C+N), [Ce Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+C)
+
+*(Submitted on 19 Sep 2019)*
+
+> An interesting method of evaluating word representations is by how much they reflect the semantic representations in the human brain. However, most, if not all, previous works only focus on small datasets and a single modality. In this paper, we present the first multi-modal framework for evaluating English word representations based on cognitive lexical semantics. Six types of word embeddings are evaluated by fitting them to 15 datasets of eye-tracking, EEG and fMRI signals recorded during language processing. To achieve a global score over all evaluation hypotheses, we apply statistical significance testing accounting for the multiple comparisons problem. This framework is easily extensible and available to include other intrinsic and extrinsic evaluation methods. We find strong correlations in the results between cognitive datasets, across recording modalities and to their performance on extrinsic NLP tasks.
+
+| Comments: | accepted at CoNLL 2019                               |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1909.09001 [cs.CL]**                         |
+|           | (or **arXiv:1909.09001v1 [cs.CL]** for this version) |
+
+
+
+
+
 # 2019-09-19
 
 [Return to Index](#Index)
@@ -91,7 +202,6 @@
 
 
 <h2 id="2019-09-19-1">1. Relaxed Softmax for learning from Positive and Unlabeled data</h2> 
-
 Title: [Relaxed Softmax for learning from Positive and Unlabeled data](https://arxiv.org/abs/1909.08079)
 
 Authors: [Ugo Tanielian](https://arxiv.org/search/stat?searchtype=author&query=Tanielian%2C+U), [Flavian Vasile](https://arxiv.org/search/stat?searchtype=author&query=Vasile%2C+F)
@@ -113,7 +223,6 @@ Authors: [Ugo Tanielian](https://arxiv.org/search/stat?searchtype=author&query=T
 
 
 <h2 id="2019-09-19-2">2. Memory-Augmented Neural Networks for Machine Translation</h2> 
-
 Title: [Memory-Augmented Neural Networks for Machine Translation](https://arxiv.org/abs/1909.08314)
 
 Authors: [Mark Collier](https://arxiv.org/search/cs?searchtype=author&query=Collier%2C+M), [Joeran Beel](https://arxiv.org/search/cs?searchtype=author&query=Beel%2C+J)
@@ -132,7 +241,6 @@ Authors: [Mark Collier](https://arxiv.org/search/cs?searchtype=author&query=Coll
 
 
 <h2 id="2019-09-19-3">3. Subword ELMo</h2> 
-
 Title: [Subword ELMo](https://arxiv.org/abs/1909.08357)
 
 Authors: [Jiangtong Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Hai Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+H), [Zuchao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Wei Bi](https://arxiv.org/search/cs?searchtype=author&query=Bi%2C+W), [Xiaojiang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X)
@@ -151,7 +259,6 @@ Authors: [Jiangtong Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2
 
 
 <h2 id="2019-09-19-4">4. Simple, Scalable Adaptation for Neural Machine Translation</h2> 
-
 Title: [Simple, Scalable Adaptation for Neural Machine Translation](https://arxiv.org/abs/1909.08478)
 
 Authors: [Ankur Bapna](https://arxiv.org/search/cs?searchtype=author&query=Bapna%2C+A), [Naveen Arivazhagan](https://arxiv.org/search/cs?searchtype=author&query=Arivazhagan%2C+N), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O)
@@ -171,7 +278,6 @@ Authors: [Ankur Bapna](https://arxiv.org/search/cs?searchtype=author&query=Bapna
 
 
 <h2 id="2019-09-19-5">5. Fine-Tuning Language Models from Human Preferences</h2> 
-
 Title: [Fine-Tuning Language Models from Human Preferences](https://arxiv.org/abs/1909.08593)
 
 Authors: [Daniel M. Ziegler](https://arxiv.org/search/cs?searchtype=author&query=Ziegler%2C+D+M), [Nisan Stiennon](https://arxiv.org/search/cs?searchtype=author&query=Stiennon%2C+N), [Jeffrey Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+J), [Tom B. Brown](https://arxiv.org/search/cs?searchtype=author&query=Brown%2C+T+B), [Alec Radford](https://arxiv.org/search/cs?searchtype=author&query=Radford%2C+A), [Dario Amodei](https://arxiv.org/search/cs?searchtype=author&query=Amodei%2C+D), [Paul Christiano](https://arxiv.org/search/cs?searchtype=author&query=Christiano%2C+P), [Geoffrey Irving](https://arxiv.org/search/cs?searchtype=author&query=Irving%2C+G)
