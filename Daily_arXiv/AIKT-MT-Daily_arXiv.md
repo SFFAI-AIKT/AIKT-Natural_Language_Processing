@@ -2,6 +2,15 @@
 
 # Index
 
+- [2019-09-23](#2019-09-23)
+  - [1. SANVis: Visual Analytics for Understanding Self-Attention Networks](#2019-09-23-1)
+  - [2. Improved Variational Neural Machine Translation by Promoting Mutual Information](#2019-09-23-2)
+  - [3. AllenNLP Interpret: A Framework for Explaining Predictions of NLP Models](#2019-09-23-3)
+  - [4. Towards Neural Language Evaluators](#2019-09-23-4)
+  - [5. A simple discriminative training method for machine translation with large-scale features](#2019-09-23-5)
+  - [6. Controllable Length Control Neural Encoder-Decoder via Reinforcement Learning](#2019-09-23-6)
+  - [7. Pivot-based Transfer Learning for Neural Machine Translation between Non-English Languages](#2019-09-23-7)
+  - [8. Zero-shot Reading Comprehension by Cross-lingual Transfer Learning with Multi-lingual Language Representation Model](#2019-09-23-8)
 - [2019-09-20](#2019-09-20)
   - [1. Do We Need Neural Models to Explain Human Judgments of Acceptability?](#2019-09-20-1)
   - [2. Cross-Lingual Contextual Word Embeddings Mapping With Multi-Sense Words In Mind](#2019-09-20-2)
@@ -88,6 +97,169 @@
 
 
 
+# 2019-09-23
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-09-23-1">1. SANVis: Visual Analytics for Understanding Self-Attention Networks</h2> 
+
+Title: [SANVis: Visual Analytics for Understanding Self-Attention Networks](https://arxiv.org/abs/1909.09595)
+
+Authors: [Cheonbok Park](https://arxiv.org/search/cs?searchtype=author&query=Park%2C+C), [Inyoup Na](https://arxiv.org/search/cs?searchtype=author&query=Na%2C+I), [Yongjang Jo](https://arxiv.org/search/cs?searchtype=author&query=Jo%2C+Y), [Sungbok Shin](https://arxiv.org/search/cs?searchtype=author&query=Shin%2C+S), [Jaehyo Yoo](https://arxiv.org/search/cs?searchtype=author&query=Yoo%2C+J), [Bum Chul Kwon](https://arxiv.org/search/cs?searchtype=author&query=Kwon%2C+B+C), [Jian Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+J), [Hyungjong Noh](https://arxiv.org/search/cs?searchtype=author&query=Noh%2C+H), [Yeonsoo Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+Y), [Jaegul Choo](https://arxiv.org/search/cs?searchtype=author&query=Choo%2C+J)
+
+*(Submitted on 13 Sep 2019)*
+
+> Attention networks, a deep neural network architecture inspired by humans' attention mechanism, have seen significant success in image captioning, machine translation, and many other applications. Recently, they have been further evolved into an advanced approach called multi-head self-attention networks, which can encode a set of input vectors, e.g., word vectors in a sentence, into another set of vectors. Such encoding aims at simultaneously capturing diverse syntactic and semantic features within a set, each of which corresponds to a particular attention head, forming altogether multi-head attention. Meanwhile, the increased model complexity prevents users from easily understanding and manipulating the inner workings of models. To tackle the challenges, we present a visual analytics system called SANVis, which helps users understand the behaviors and the characteristics of multi-head self-attention networks. Using a state-of-the-art self-attention model called Transformer, we demonstrate usage scenarios of SANVis in machine translation tasks. Our system is available at [this http URL](http://short.sanvis.org/)
+
+| Comments: | VAST Short - IEEE VIS 2019                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Neural and Evolutionary Computing (cs.NE) |
+| Cite as:  | **arXiv:1909.09595 [cs.CL]**                                 |
+|           | (or **arXiv:1909.09595v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-09-23-2">2. Improved Variational Neural Machine Translation by Promoting Mutual Information</h2> 
+
+Title: [Improved Variational Neural Machine Translation by Promoting Mutual Information](https://arxiv.org/abs/1909.09237)
+
+Authors: [Arya D. McCarthy](https://arxiv.org/search/cs?searchtype=author&query=McCarthy%2C+A+D), [Xian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J), [Ning Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+N)
+
+*(Submitted on 19 Sep 2019)*
+
+> Posterior collapse plagues VAEs for text, especially for conditional text generation with strong autoregressive decoders. In this work, we address this problem in variational neural machine translation by explicitly promoting mutual information between the latent variables and the data. Our model extends the conditional variational autoencoder (CVAE) with two new ingredients: first, we propose a modified evidence lower bound (ELBO) objective which explicitly promotes mutual information; second, we regularize the probabilities of the decoder by mixing an auxiliary factorized distribution which is directly predicted by the latent variables. We present empirical results on the Transformer architecture and show the proposed model effectively addressed posterior collapse: latent variables are no longer ignored in the presence of powerful decoder. As a result, the proposed model yields improved translation quality while demonstrating superior performance in terms of data efficiency and robustness.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1909.09237 [cs.CL]**                         |
+|           | (or **arXiv:1909.09237v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-09-23-3">3. AllenNLP Interpret: A Framework for Explaining Predictions of NLP Models</h2> 
+
+Title: [AllenNLP Interpret: A Framework for Explaining Predictions of NLP Models](https://arxiv.org/abs/1909.09251)
+
+Authors: [Eric Wallace](https://arxiv.org/search/cs?searchtype=author&query=Wallace%2C+E), [Jens Tuyls](https://arxiv.org/search/cs?searchtype=author&query=Tuyls%2C+J), [Junlin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+J), [Sanjay Subramanian](https://arxiv.org/search/cs?searchtype=author&query=Subramanian%2C+S), [Matt Gardner](https://arxiv.org/search/cs?searchtype=author&query=Gardner%2C+M), [Sameer Singh](https://arxiv.org/search/cs?searchtype=author&query=Singh%2C+S)
+
+*(Submitted on 19 Sep 2019)*
+
+> Neural NLP models are increasingly accurate but are imperfect and opaque---they break in counterintuitive ways and leave end users puzzled at their behavior. Model interpretation methods ameliorate this opacity by providing explanations for specific model predictions. Unfortunately, existing interpretation codebases make it difficult to apply these methods to new models and tasks, which hinders adoption for practitioners and burdens interpretability researchers. We introduce AllenNLP Interpret, a flexible framework for interpreting NLP models. The toolkit provides interpretation primitives (e.g., input gradients) for any AllenNLP model and task, a suite of built-in interpretation methods, and a library of front-end visualization components. We demonstrate the toolkit's flexibility and utility by implementing live demos for five interpretation methods (e.g., saliency maps and adversarial attacks) on a variety of models and tasks (e.g., masked language modeling using BERT and reading comprehension using BiDAF). These demos, alongside our code and tutorials, are available at [this https URL](https://allennlp.org/interpret) .
+
+| Comments: | EMNLP 2019 Demo                                              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1909.09251 [cs.CL]**                                 |
+|           | (or **arXiv:1909.09251v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-09-23-4">4. Towards Neural Language Evaluators</h2> 
+
+Title: [Towards Neural Language Evaluators](https://arxiv.org/abs/1909.09268)
+
+Authors: [Hassan Kané](https://arxiv.org/search/cs?searchtype=author&query=Kané%2C+H), [Yusuf Kocyigit](https://arxiv.org/search/cs?searchtype=author&query=Kocyigit%2C+Y), [Pelkins Ajanoh](https://arxiv.org/search/cs?searchtype=author&query=Ajanoh%2C+P), [Ali Abdalla](https://arxiv.org/search/cs?searchtype=author&query=Abdalla%2C+A), [Mohamed Coulibali](https://arxiv.org/search/cs?searchtype=author&query=Coulibali%2C+M)
+
+*(Submitted on 20 Sep 2019)*
+
+> We review three limitations of BLEU and ROUGE -- the most popular metrics used to assess reference summaries against hypothesis summaries, come up with criteria for what a good metric should behave like and propose concrete ways to use recent Transformers-based Language Models to assess reference summaries against hypothesis summaries.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1909.09268 [cs.CL]**                                 |
+|           | (or **arXiv:1909.09268v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-09-23-5">5. A simple discriminative training method for machine translation with large-scale features</h2> 
+
+Title: [A simple discriminative training method for machine translation with large-scale features](https://arxiv.org/abs/1909.09491)
+
+Authors: [Tian Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%2C+T), [Shaodan Zhai](https://arxiv.org/search/cs?searchtype=author&query=Zhai%2C+S), [Shaojun Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S)
+
+*(Submitted on 15 Sep 2019)*
+
+> Margin infused relaxed algorithms (MIRAs) dominate model tuning in statistical machine translation in the case of large scale features, but also they are famous for the complexity in implementation. We introduce a new method, which regards an N-best list as a permutation and minimizes the Plackett-Luce loss of ground-truth permutations. Experiments with large-scale features demonstrate that, the new method is more robust than MERT; though it is only matchable with MIRAs, it has a comparatively advantage, easier to implement.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1909.09491 [cs.CL]**                         |
+|           | (or **arXiv:1909.09491v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-09-23-6">6. Controllable Length Control Neural Encoder-Decoder via Reinforcement Learning</h2> 
+
+Title: [Controllable Length Control Neural Encoder-Decoder via Reinforcement Learning](https://arxiv.org/abs/1909.09492)
+
+Authors: [Junyi Bian](https://arxiv.org/search/cs?searchtype=author&query=Bian%2C+J), [Baojun Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+B), [Ke Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+K), [Zhaohui Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+Z), [Hong Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+H), [Yonghe Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y)
+
+*(Submitted on 17 Sep 2019)*
+
+> Controlling output length in neural language generation is valuable in many scenarios, especially for the tasks that have length constraints. A model with stronger length control capacity can produce sentences with more specific length, however, it usually sacrifices semantic accuracy of the generated sentences. Here, we denote a concept of Controllable Length Control (CLC) for the trade-off between length control capacity and semantic accuracy of the language generation model. More specifically, CLC is to alter length control capacity of the model so as to generate sentence with corresponding quality. This is meaningful in real applications when length control capacity and outputs quality are requested with different priorities, or to overcome unstability of length control during model training. In this paper, we propose two reinforcement learning (RL) methods to adjust the trade-off between length control capacity and semantic accuracy of length control models. Results show that our RL methods improve scores across a wide range of target lengths and achieve the goal of CLC. Additionally, two models LenMC and LenLInit modified on previous length-control models are proposed to obtain better performance in summarization task while still maintain the ability to control length.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1909.09492 [cs.CL]**                         |
+|           | (or **arXiv:1909.09492v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-09-23-7">7. Pivot-based Transfer Learning for Neural Machine Translation between Non-English Languages</h2> 
+
+Title: [Pivot-based Transfer Learning for Neural Machine Translation between Non-English Languages](https://arxiv.org/abs/1909.09524)
+
+Authors: [Yunsu Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+Y), [Petre Petrov](https://arxiv.org/search/cs?searchtype=author&query=Petrov%2C+P), [Pavel Petrushkov](https://arxiv.org/search/cs?searchtype=author&query=Petrushkov%2C+P), [Shahram Khadivi](https://arxiv.org/search/cs?searchtype=author&query=Khadivi%2C+S), [Hermann Ney](https://arxiv.org/search/cs?searchtype=author&query=Ney%2C+H)
+
+*(Submitted on 20 Sep 2019)*
+
+> We present effective pre-training strategies for neural machine translation (NMT) using parallel corpora involving a pivot language, i.e., source-pivot and pivot-target, leading to a significant improvement in source-target translation. We propose three methods to increase the relation among source, pivot, and target languages in the pre-training: 1) step-wise training of a single model for different language pairs, 2) additional adapter component to smoothly connect pre-trained encoder and decoder, and 3) cross-lingual encoder training via autoencoding of the pivot language. Our methods greatly outperform multilingual models up to +2.6% BLEU in WMT 2019 French-German and German-Czech tasks. We show that our improvements are valid also in zero-shot/zero-resource scenarios.
+
+| Comments: | EMNLP 2019 camera-ready                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1909.09524 [cs.CL]**                                 |
+|           | (or **arXiv:1909.09524v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-09-23-8">8. Zero-shot Reading Comprehension by Cross-lingual Transfer Learning with Multi-lingual Language Representation Model</h2> 
+
+Title: [Zero-shot Reading Comprehension by Cross-lingual Transfer Learning with Multi-lingual Language Representation Model](https://arxiv.org/abs/1909.09587)
+
+Authors: [Tsung-yuan Hsu](https://arxiv.org/search/cs?searchtype=author&query=Hsu%2C+T), [Chi-liang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+C), [Hung-yi Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+H)
+
+*(Submitted on 15 Sep 2019)*
+
+> Because it is not feasible to collect training data for every language, there is a growing interest in cross-lingual transfer learning. In this paper, we systematically explore zero-shot cross-lingual transfer learning on reading comprehension tasks with a language representation model pre-trained on multi-lingual corpus. The experimental results show that with pre-trained language representation zero-shot learning is feasible, and translating the source data into the target language is not necessary and even degrades the performance. We further explore what does the model learn in zero-shot setting.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1909.09587 [cs.CL]**                                 |
+|           | (or **arXiv:1909.09587v1 [cs.CL]** for this version)         |
+
+
+
+
+
+
+
 # 2019-09-20
 
 [Return to Index](#Index)
@@ -95,7 +267,6 @@
 
 
 <h2 id="2019-09-20-1">1. Do We Need Neural Models to Explain Human Judgments of Acceptability?</h2> 
-
 Title: [Do We Need Neural Models to Explain Human Judgments of Acceptability?](https://arxiv.org/abs/1909.08663)
 
 Authors: [Wang Jing](https://arxiv.org/search/cs?searchtype=author&query=Jing%2C+W) (Beijing Normal University), [M. A. Kelly](https://arxiv.org/search/cs?searchtype=author&query=Kelly%2C+M+A) (The Pennsylvania State University), [David Reitter](https://arxiv.org/search/cs?searchtype=author&query=Reitter%2C+D) (Google Research)
@@ -115,7 +286,6 @@ Authors: [Wang Jing](https://arxiv.org/search/cs?searchtype=author&query=Jing%2C
 
 
 <h2 id="2019-09-20-2">2. Cross-Lingual Contextual Word Embeddings Mapping With Multi-Sense Words In Mind</h2> 
-
 Title: [Cross-Lingual Contextual Word Embeddings Mapping With Multi-Sense Words In Mind](https://arxiv.org/abs/1909.08681)
 
 Authors: [Zheng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Ruiqing Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+R), [Jun Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J), [Pierre Zweigenbaum](https://arxiv.org/search/cs?searchtype=author&query=Zweigenbaum%2C+P)
@@ -135,7 +305,6 @@ Authors: [Zheng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang
 
 
 <h2 id="2019-09-20-3">3. Low-Resource Parsing with Crosslingual Contextualized Representations</h2> 
-
 Title: [Low-Resource Parsing with Crosslingual Contextualized Representations](https://arxiv.org/abs/1909.08744)
 
 Authors: [Phoebe Mulcaire](https://arxiv.org/search/cs?searchtype=author&query=Mulcaire%2C+P), [Jungo Kasai](https://arxiv.org/search/cs?searchtype=author&query=Kasai%2C+J), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith%2C+N+A)
@@ -155,7 +324,6 @@ Authors: [Phoebe Mulcaire](https://arxiv.org/search/cs?searchtype=author&query=M
 
 
 <h2 id="2019-09-20-4">4. Improving Generalization by Incorporating Coverage in Natural Language Inference</h2> 
-
 Title: [Improving Generalization by Incorporating Coverage in Natural Language Inference](https://arxiv.org/abs/1909.08940)
 
 Authors: [Nafise Sadat Moosavi](https://arxiv.org/search/cs?searchtype=author&query=Moosavi%2C+N+S), [Prasetya Ajie Utama](https://arxiv.org/search/cs?searchtype=author&query=Utama%2C+P+A), [Andreas Rücklé](https://arxiv.org/search/cs?searchtype=author&query=Rücklé%2C+A), [Iryna Gurevych](https://arxiv.org/search/cs?searchtype=author&query=Gurevych%2C+I)
@@ -174,7 +342,6 @@ Authors: [Nafise Sadat Moosavi](https://arxiv.org/search/cs?searchtype=author&qu
 
 
 <h2 id="2019-09-20-5">5. CogniVal: A Framework for Cognitive Word Embedding Evaluation</h2> 
-
 Title: [CogniVal: A Framework for Cognitive Word Embedding Evaluation](https://arxiv.org/abs/1909.09001)
 
 Authors: [Nora Hollenstein](https://arxiv.org/search/cs?searchtype=author&query=Hollenstein%2C+N), [Antonio de la Torre](https://arxiv.org/search/cs?searchtype=author&query=de+la+Torre%2C+A), [Nicolas Langer](https://arxiv.org/search/cs?searchtype=author&query=Langer%2C+N), [Ce Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+C)
