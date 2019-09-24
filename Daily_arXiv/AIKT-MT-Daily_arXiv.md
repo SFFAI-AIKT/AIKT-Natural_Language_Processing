@@ -2,6 +2,13 @@
 
 # Index
 
+- [2019-09-24](#2019-09-24)
+  - [1. Self-attention based end-to-end Hindi-English Neural Machine Translation](#2019-09-24-1)
+  - [2. Using Chinese Glyphs for Named Entity Recognition](#2019-09-24-2)
+  - [3. Inducing Constituency Trees through Neural Machine Translation](#2019-09-24-3)
+  - [4. Algorithms for certain classes of Tamil Spelling correction](#2019-09-24-4)
+  - [5. TinyBERT: Distilling BERT for Natural Language Understanding](#2019-09-24-5)
+  - [6. Cross-Lingual Natural Language Generation via Pre-Training](#2019-09-24-6)
 - [2019-09-23](#2019-09-23)
   - [1. SANVis: Visual Analytics for Understanding Self-Attention Networks](#2019-09-23-1)
   - [2. Improved Variational Neural Machine Translation by Promoting Mutual Information](#2019-09-23-2)
@@ -97,6 +104,129 @@
 
 
 
+# 2019-09-24
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-09-24-1">1. Self-attention based end-to-end Hindi-English Neural Machine Translation</h2> 
+
+Title: [Self-attention based end-to-end Hindi-English Neural Machine Translation](https://arxiv.org/abs/1909.09779)
+
+Authors: [Siddhant Srivastava](https://arxiv.org/search/cs?searchtype=author&query=Srivastava%2C+S), [Ritu Tiwari](https://arxiv.org/search/cs?searchtype=author&query=Tiwari%2C+R)
+
+*(Submitted on 21 Sep 2019)*
+
+> Machine Translation (MT) is a zone of concentrate in Natural Language processing which manages the programmed interpretation of human language, starting with one language then onto the next by the PC. Having a rich research history spreading over about three decades, Machine interpretation is a standout amongst the most looked for after region of research in the computational linguistics network. As a piece of this current ace's proposal, the fundamental center examines the Deep-learning based strategies that have gained critical ground as of late and turning into the de facto strategy in MT. We would like to point out the recent advances that have been put forward in the field of Neural Translation models, different domains under which NMT has replaced conventional SMT models and would also like to mention future avenues in the field. Consequently, we propose an end-to-end self-attention transformer network for Neural Machine Translation, trained on Hindi-English parallel corpus and compare the model's efficiency with other state of art models like encoder-decoder and attention-based encoder-decoder neural models on the basis of BLEU. We conclude this paper with a comparative analysis of the three proposed models.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1909.09779 [cs.CL]**                         |
+|           | (or **arXiv:1909.09779v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-09-24-2">2. Using Chinese Glyphs for Named Entity Recognition</h2> 
+
+Title: [Using Chinese Glyphs for Named Entity Recognition](https://arxiv.org/abs/1909.09922)
+
+Authors: [Arijit Sehanobish](https://arxiv.org/search/cs?searchtype=author&query=Sehanobish%2C+A), [Chan Hee Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+C+H)
+
+*(Submitted on 22 Sep 2019)*
+
+> Most Named Entity Recognition (NER) systems use additional features like part-of-speech (POS) tags, shallow parsing, gazetteers, etc. Such kind of information requires external knowledge like unlabeled texts and trained taggers. Adding these features to NER systems have been shown to have a positive impact. However, sometimes creating gazetteers or taggers can take a lot of time and may require extensive data cleaning. In this paper for Chinese NER systems, we do not use these traditional features but we use lexicographic features of Chinese characters. Chinese characters are composed of graphical components called radicals and these components often have some semantic indicators. We propose CNN based models that incorporate this semantic information and use them for NER. Our models show an improvement over the baseline BERT-BiLSTM-CRF model. We set a new baseline score for Chinese OntoNotes v5.0 and show an improvement of +.64 F1 score. We present a state-of-the-art F1 score on Weibo dataset of 71.81 and show a competitive improvement of +0.72 over baseline on ResumeNER dataset.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Information Retrieval (cs.IR); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1909.09922 [cs.CL]**                                 |
+|           | (or **arXiv:1909.09922v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-09-24-3">3. Inducing Constituency Trees through Neural Machine Translation</h2> 
+
+Title: [Inducing Constituency Trees through Neural Machine Translation](https://arxiv.org/abs/1909.10056)
+
+Authors: [Phu Mon Htut](https://arxiv.org/search/cs?searchtype=author&query=Htut%2C+P+M), [Kyunghyun Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+K), [Samuel R. Bowman](https://arxiv.org/search/cs?searchtype=author&query=Bowman%2C+S+R)
+
+*(Submitted on 22 Sep 2019)*
+
+> Latent tree learning(LTL) methods learn to parse sentences using only indirect supervision from a downstream task. Recent advances in latent tree learning have made it possible to recover moderately high quality tree structures by training with language modeling or auto-encoding objectives. In this work, we explore the hypothesis that decoding in machine translation, as a conditional language modeling task, will produce better tree structures since it offers a similar training signal as language modeling, but with more semantic signal. We adapt two existing latent-tree language models--PRPN andON-LSTM--for use in translation. We find that they indeed recover trees that are better in F1 score than those seen in language modeling on WSJ test set, while maintaining strong translation quality. We observe that translation is a better objective than language modeling for inducing trees, marking the first success at latent tree learning using a machine translation objective. Additionally, our findings suggest that, although translation provides better signal for inducing trees than language modeling, translation models can perform well without exploiting the latent tree structure.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1909.10056 [cs.CL]**                         |
+|           | (or **arXiv:1909.10056v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-09-24-4">4. Algorithms for certain classes of Tamil Spelling correction</h2> 
+
+Title: [Algorithms for certain classes of Tamil Spelling correction](https://arxiv.org/abs/1909.10063)
+
+Authors: [Muthiah Annamalai](https://arxiv.org/search/cs?searchtype=author&query=Annamalai%2C+M), [T. Shrinivasan](https://arxiv.org/search/cs?searchtype=author&query=Shrinivasan%2C+T)
+
+*(Submitted on 22 Sep 2019)*
+
+> Tamil language has an agglutinative, diglossic, alpha-syllabary structure which provides a significant combinatorial explosion of morphological forms all of which are effectively used in Tamil prose, poetry from antiquity to the modern age in an unbroken chain of continuity. However, for the language understanding, spelling correction purposes some of these present challenges as out-of-dictionary words. In this paper the authors propose algorithmic techniques to handle specific problems of conjoined-words (out-of-dictionary) (transliteration)[thendRalkattRu] = [thendRal]+[kattRu] when parts are alone present in word-list in efficient way. Morphological structure of Tamil makes it necessary to depend on synthesis-analysis approach and dictionary lists will never be sufficient to truly capture the language. In this paper we have attempted to make a summary of various known algorithms for specific classes of Tamil spelling errors. We believe this collection of suggestions to improve future spelling checkers. We also note do not cover many important techniques like affix removal and other such techniques of key importance in rule-based spell checkers.
+
+| Comments: | 10 pages, 2 figures, Tamil Internet Conference - 2019, at Anna University, Chennai, India (INFITT) [Sep, 2019] |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **arXiv:1909.10063 [cs.CL]**                                 |
+|           | (or **arXiv:1909.10063v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-09-24-5">5. TinyBERT: Distilling BERT for Natural Language Understanding</h2> 
+
+Title: [TinyBERT: Distilling BERT for Natural Language Understanding](https://arxiv.org/abs/1909.10351)
+
+Authors: [Xiaoqi Jiao](https://arxiv.org/search/cs?searchtype=author&query=Jiao%2C+X), [Yichun Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+Y), [Lifeng Shang](https://arxiv.org/search/cs?searchtype=author&query=Shang%2C+L), [Xin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+X), [Xiao Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+X), [Linlin Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Fang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+F), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q)
+
+*(Submitted on 23 Sep 2019)*
+
+> Language model pre-training, such as BERT, has significantly improved the performances of many natural language processing tasks. However, pre-trained language models are usually computationally expensive and memory intensive, so it is difficult to effectively execute them on some resource-restricted devices. To accelerate inference and reduce model size while maintaining accuracy, we firstly propose a novel transformer distillation method that is a specially designed knowledge distillation (KD) method for transformer-based models. By leveraging this new KD method, the plenty of knowledge encoded in a large teacher BERT can be well transferred to a small student TinyBERT. Moreover, we introduce a new two-stage learning framework for TinyBERT, which performs transformer distillation at both the pre-training and task-specific learning stages. This framework ensures that TinyBERT can capture both the general-domain and task-specific knowledge of the teacher BERT. TinyBERT is empirically effective and achieves comparable results with BERT in GLUE datasets, while being 7.5x smaller and 9.4x faster on inference. TinyBERT is also significantly better than state-of-the-art baselines, even with only about 28% parameters and 31% inference time of baselines.
+
+| Comments: | 13 pages, 2 figures, 9 tables                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1909.10351 [cs.CL]**                                 |
+|           | (or **arXiv:1909.10351v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-09-24-6">6. Cross-Lingual Natural Language Generation via Pre-Training</h2> 
+
+Title: [Cross-Lingual Natural Language Generation via Pre-Training](https://arxiv.org/abs/1909.10481)
+
+Authors: [Zewen Chi](https://arxiv.org/search/cs?searchtype=author&query=Chi%2C+Z), [Li Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+L), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F), [Wenhui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Xian-Ling Mao](https://arxiv.org/search/cs?searchtype=author&query=Mao%2C+X), [Heyan Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+H)
+
+*(Submitted on 23 Sep 2019)*
+
+> In this work we focus on transferring supervision signals of natural language generation (NLG) tasks between multiple languages. We propose to pretrain the encoder and decoder of a sequence-to-sequence model under both monolingual and cross-lingual settings. The pre-training objective encourages the model to represent different languages in the shared space, so that we can conduct zero-shot cross-lingual transfer. After the pre-training procedure, we use monolingual data to fine-tune the pre-trained model on downstream NLG tasks. Then the sequence-to-sequence model trained in a single language can be directly evaluated beyond that language (i.e., accepting multi-lingual input and producing multi-lingual output). Experimental results on question generation and abstractive summarization show that our model outperforms the machine-translation-based pipeline methods for zero-shot cross-lingual generation. Moreover, cross-lingual transfer improves NLG performance of low-resource languages by leveraging rich-resource language data.
+
+| Comments: | 10 pages                                             |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1909.10481 [cs.CL]**                         |
+|           | (or **arXiv:1909.10481v1 [cs.CL]** for this version) |
+
+
+
+
+
 # 2019-09-23
 
 [Return to Index](#Index)
@@ -104,7 +234,6 @@
 
 
 <h2 id="2019-09-23-1">1. SANVis: Visual Analytics for Understanding Self-Attention Networks</h2> 
-
 Title: [SANVis: Visual Analytics for Understanding Self-Attention Networks](https://arxiv.org/abs/1909.09595)
 
 Authors: [Cheonbok Park](https://arxiv.org/search/cs?searchtype=author&query=Park%2C+C), [Inyoup Na](https://arxiv.org/search/cs?searchtype=author&query=Na%2C+I), [Yongjang Jo](https://arxiv.org/search/cs?searchtype=author&query=Jo%2C+Y), [Sungbok Shin](https://arxiv.org/search/cs?searchtype=author&query=Shin%2C+S), [Jaehyo Yoo](https://arxiv.org/search/cs?searchtype=author&query=Yoo%2C+J), [Bum Chul Kwon](https://arxiv.org/search/cs?searchtype=author&query=Kwon%2C+B+C), [Jian Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+J), [Hyungjong Noh](https://arxiv.org/search/cs?searchtype=author&query=Noh%2C+H), [Yeonsoo Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+Y), [Jaegul Choo](https://arxiv.org/search/cs?searchtype=author&query=Choo%2C+J)
@@ -124,7 +253,6 @@ Authors: [Cheonbok Park](https://arxiv.org/search/cs?searchtype=author&query=Par
 
 
 <h2 id="2019-09-23-2">2. Improved Variational Neural Machine Translation by Promoting Mutual Information</h2> 
-
 Title: [Improved Variational Neural Machine Translation by Promoting Mutual Information](https://arxiv.org/abs/1909.09237)
 
 Authors: [Arya D. McCarthy](https://arxiv.org/search/cs?searchtype=author&query=McCarthy%2C+A+D), [Xian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J), [Ning Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+N)
@@ -143,7 +271,6 @@ Authors: [Arya D. McCarthy](https://arxiv.org/search/cs?searchtype=author&query=
 
 
 <h2 id="2019-09-23-3">3. AllenNLP Interpret: A Framework for Explaining Predictions of NLP Models</h2> 
-
 Title: [AllenNLP Interpret: A Framework for Explaining Predictions of NLP Models](https://arxiv.org/abs/1909.09251)
 
 Authors: [Eric Wallace](https://arxiv.org/search/cs?searchtype=author&query=Wallace%2C+E), [Jens Tuyls](https://arxiv.org/search/cs?searchtype=author&query=Tuyls%2C+J), [Junlin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+J), [Sanjay Subramanian](https://arxiv.org/search/cs?searchtype=author&query=Subramanian%2C+S), [Matt Gardner](https://arxiv.org/search/cs?searchtype=author&query=Gardner%2C+M), [Sameer Singh](https://arxiv.org/search/cs?searchtype=author&query=Singh%2C+S)
@@ -163,7 +290,6 @@ Authors: [Eric Wallace](https://arxiv.org/search/cs?searchtype=author&query=Wall
 
 
 <h2 id="2019-09-23-4">4. Towards Neural Language Evaluators</h2> 
-
 Title: [Towards Neural Language Evaluators](https://arxiv.org/abs/1909.09268)
 
 Authors: [Hassan Kané](https://arxiv.org/search/cs?searchtype=author&query=Kané%2C+H), [Yusuf Kocyigit](https://arxiv.org/search/cs?searchtype=author&query=Kocyigit%2C+Y), [Pelkins Ajanoh](https://arxiv.org/search/cs?searchtype=author&query=Ajanoh%2C+P), [Ali Abdalla](https://arxiv.org/search/cs?searchtype=author&query=Abdalla%2C+A), [Mohamed Coulibali](https://arxiv.org/search/cs?searchtype=author&query=Coulibali%2C+M)
@@ -182,7 +308,6 @@ Authors: [Hassan Kané](https://arxiv.org/search/cs?searchtype=author&query=Kan�
 
 
 <h2 id="2019-09-23-5">5. A simple discriminative training method for machine translation with large-scale features</h2> 
-
 Title: [A simple discriminative training method for machine translation with large-scale features](https://arxiv.org/abs/1909.09491)
 
 Authors: [Tian Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%2C+T), [Shaodan Zhai](https://arxiv.org/search/cs?searchtype=author&query=Zhai%2C+S), [Shaojun Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S)
@@ -201,7 +326,6 @@ Authors: [Tian Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%2C+T
 
 
 <h2 id="2019-09-23-6">6. Controllable Length Control Neural Encoder-Decoder via Reinforcement Learning</h2> 
-
 Title: [Controllable Length Control Neural Encoder-Decoder via Reinforcement Learning](https://arxiv.org/abs/1909.09492)
 
 Authors: [Junyi Bian](https://arxiv.org/search/cs?searchtype=author&query=Bian%2C+J), [Baojun Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+B), [Ke Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+K), [Zhaohui Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+Z), [Hong Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+H), [Yonghe Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y)
@@ -220,7 +344,6 @@ Authors: [Junyi Bian](https://arxiv.org/search/cs?searchtype=author&query=Bian%2
 
 
 <h2 id="2019-09-23-7">7. Pivot-based Transfer Learning for Neural Machine Translation between Non-English Languages</h2> 
-
 Title: [Pivot-based Transfer Learning for Neural Machine Translation between Non-English Languages](https://arxiv.org/abs/1909.09524)
 
 Authors: [Yunsu Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+Y), [Petre Petrov](https://arxiv.org/search/cs?searchtype=author&query=Petrov%2C+P), [Pavel Petrushkov](https://arxiv.org/search/cs?searchtype=author&query=Petrushkov%2C+P), [Shahram Khadivi](https://arxiv.org/search/cs?searchtype=author&query=Khadivi%2C+S), [Hermann Ney](https://arxiv.org/search/cs?searchtype=author&query=Ney%2C+H)
@@ -240,7 +363,6 @@ Authors: [Yunsu Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+
 
 
 <h2 id="2019-09-23-8">8. Zero-shot Reading Comprehension by Cross-lingual Transfer Learning with Multi-lingual Language Representation Model</h2> 
-
 Title: [Zero-shot Reading Comprehension by Cross-lingual Transfer Learning with Multi-lingual Language Representation Model](https://arxiv.org/abs/1909.09587)
 
 Authors: [Tsung-yuan Hsu](https://arxiv.org/search/cs?searchtype=author&query=Hsu%2C+T), [Chi-liang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+C), [Hung-yi Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+H)
