@@ -2,6 +2,9 @@
 
 # Index
 
+- [2019-09-26](#2019-09-26)
+  - [1. Attention Interpretability Across NLP Tasks](#2019-09-26-1)
+  - [2. Breaking the Data Barrier: Towards Robust Speech Translation via Adversarial Stability Training](#2019-09-26-2)
 - [2019-09-25](#2019-09-25)
   - [1. Data Ordering Patterns for Neural Machine Translation: An Empirical Study](#2019-09-25-1)
   - [2. Learning ASR-Robust Contextualized Embeddings for Spoken Language Understanding](#2019-09-25-2)
@@ -110,6 +113,52 @@
 
 
 
+# 2019-09-26
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-09-26-1">1. Attention Interpretability Across NLP Tasks</h2> 
+
+Title: [Attention Interpretability Across NLP Tasks](https://arxiv.org/abs/1909.11218)
+
+Authors: [Shikhar Vashishth](https://arxiv.org/search/cs?searchtype=author&query=Vashishth%2C+S), [Shyam Upadhyay](https://arxiv.org/search/cs?searchtype=author&query=Upadhyay%2C+S), [Gaurav Singh Tomar](https://arxiv.org/search/cs?searchtype=author&query=Tomar%2C+G+S), [Manaal Faruqui](https://arxiv.org/search/cs?searchtype=author&query=Faruqui%2C+M)
+
+*(Submitted on 24 Sep 2019)*
+
+> The attention layer in a neural network model provides insights into the model's reasoning behind its prediction, which are usually criticized for being opaque. Recently, seemingly contradictory viewpoints have emerged about the interpretability of attention weights (Jain & Wallace, 2019; Vig & Belinkov, 2019). Amid such confusion arises the need to understand attention mechanism more systematically. In this work, we attempt to fill this gap by giving a comprehensive explanation which justifies both kinds of observations (i.e., when is attention interpretable and when it is not). Through a series of experiments on diverse NLP tasks, we validate our observations and reinforce our claim of interpretability of attention through manual evaluation.
+
+| Subjects:      | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| -------------- | ------------------------------------------------------------ |
+| Report number: | 2019                                                         |
+| Cite as:       | **arXiv:1909.11218 [cs.CL]**                                 |
+|                | (or **arXiv:1909.11218v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-09-26-2">2. Breaking the Data Barrier: Towards Robust Speech Translation via Adversarial Stability Training</h2> 
+
+Title: [Breaking the Data Barrier: Towards Robust Speech Translation via Adversarial Stability Training](https://arxiv.org/abs/1909.11430)
+
+Authors: [Qiao Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+Q), [Meiyuan Fang](https://arxiv.org/search/cs?searchtype=author&query=Fang%2C+M), [Yaqian Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+Y), [Jin Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+J), [Yitao Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan%2C+Y)
+
+*(Submitted on 25 Sep 2019)*
+
+> In a pipeline speech translation system, automatic speech recognition (ASR) system will transmit errors in recognition to the downstream machine translation (MT) system. A standard machine translation system is usually trained on parallel corpus composed of clean text and will perform poorly on text with recognition noise, a gap well known in speech translation community. In this paper, we propose a training architecture which aims at making a neural machine translation model more robust against speech recognition errors. Our approach addresses the encoder and the decoder simultaneously using adversarial learning and data augmentation, respectively. Experimental results on IWSLT2018 speech translation task show that our approach can bridge the gap between the ASR output and the MT input, outperforms the baseline by up to 2.83 BLEU on noisy ASR output, while maintaining close performance on clean text.
+
+| Comments: | 7 pages, 5 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Audio and Speech Processing (eess.AS) |
+| Cite as:  | **arXiv:1909.11430 [cs.CL]**                                 |
+|           | (or **arXiv:1909.11430v1 [cs.CL]** for this version)         |
+
+
+
+
+
 # 2019-09-25
 
 [Return to Index](#Index)
@@ -117,7 +166,6 @@
 
 
 <h2 id="2019-09-25-1">1. Data Ordering Patterns for Neural Machine Translation: An Empirical Study</h2> 
-
 Title: [Data Ordering Patterns for Neural Machine Translation: An Empirical Study](https://arxiv.org/abs/1909.10642)
 
 Authors: [Siddhant Garg](https://arxiv.org/search/cs?searchtype=author&query=Garg%2C+S)
@@ -137,7 +185,6 @@ Authors: [Siddhant Garg](https://arxiv.org/search/cs?searchtype=author&query=Gar
 
 
 <h2 id="2019-09-25-2">2. Learning ASR-Robust Contextualized Embeddings for Spoken Language Understanding</h2> 
-
 Title: [Learning ASR-Robust Contextualized Embeddings for Spoken Language Understanding](https://arxiv.org/abs/1909.10861)
 
 Authors: [Chao-Wei Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+C), [Yun-Nung Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y)
@@ -156,7 +203,6 @@ Authors: [Chao-Wei Huang](https://arxiv.org/search/cs?searchtype=author&query=Hu
 
 
 <h2 id="2019-09-25-3">3. Code-switching Language Modeling With Bilingual Word Embeddings: A Case Study for Egyptian Arabic-English</h2> 
-
 Title: [Code-switching Language Modeling With Bilingual Word Embeddings: A Case Study for Egyptian Arabic-English](https://arxiv.org/abs/1909.10892)
 
 Authors: [Injy Hamed](https://arxiv.org/search/cs?searchtype=author&query=Hamed%2C+I), [Moritz Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+M), [Mohamed Elmahdy](https://arxiv.org/search/cs?searchtype=author&query=Elmahdy%2C+M), [Slim Abdennadher](https://arxiv.org/search/cs?searchtype=author&query=Abdennadher%2C+S), [Ngoc Thang Vu](https://arxiv.org/search/cs?searchtype=author&query=Vu%2C+N+T)
@@ -177,7 +223,6 @@ Authors: [Injy Hamed](https://arxiv.org/search/cs?searchtype=author&query=Hamed%
 
 
 <h2 id="2019-09-25-4">4. Transfer Learning across Languages from Someone Else's NMT Model</h2> 
-
 Title: [Transfer Learning across Languages from Someone Else's NMT Model](https://arxiv.org/abs/1909.10955)
 
 Authors: [Tom Kocmi](https://arxiv.org/search/cs?searchtype=author&query=Kocmi%2C+T), [Ondřej Bojar](https://arxiv.org/search/cs?searchtype=author&query=Bojar%2C+O)
@@ -196,7 +241,6 @@ Authors: [Tom Kocmi](https://arxiv.org/search/cs?searchtype=author&query=Kocmi%2
 
 
 <h2 id="2019-09-25-5">5. Paying Attention to Function Words</h2> 
-
 Title: [Paying Attention to Function Words](https://arxiv.org/abs/1909.11060)
 
 Authors: [Shane Steinert-Threlkeld](https://arxiv.org/search/cs?searchtype=author&query=Steinert-Threlkeld%2C+S)
