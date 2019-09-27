@@ -2,6 +2,10 @@
 
 # Index
 
+- [2019-09-27](#2019-09-27)
+  - [1. Attention Forcing for Sequence-to-sequence Model Training](#2019-09-27-1)
+  - [2. Large-scale Pretraining for Neural Machine Translation with Tens of Billions of Sentence Pairs](#2019-09-27-2)
+  - [3. Selecting Artificially-Generated Sentences for Fine-Tuning Neural Machine Translation](#2019-09-27-3)
 - [2019-09-26](#2019-09-26)
   - [1. Attention Interpretability Across NLP Tasks](#2019-09-26-1)
   - [2. Breaking the Data Barrier: Towards Robust Speech Translation via Adversarial Stability Training](#2019-09-26-2)
@@ -113,6 +117,71 @@
 
 
 
+# 2019-09-27
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-09-27-1">1. Attention Forcing for Sequence-to-sequence Model Training</h2> 
+
+Title: [Attention Forcing for Sequence-to-sequence Model Training](https://arxiv.org/abs/1909.12289)
+
+Authors: [Qingyun Dou](https://arxiv.org/search/cs?searchtype=author&query=Dou%2C+Q), [Yiting Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+Y), [Joshua Efiong](https://arxiv.org/search/cs?searchtype=author&query=Efiong%2C+J), [Mark J. F. Gales](https://arxiv.org/search/cs?searchtype=author&query=Gales%2C+M+J+F)
+
+*(Submitted on 26 Sep 2019)*
+
+> Auto-regressive sequence-to-sequence models with attention mechanism have achieved state-of-the-art performance in many tasks such as machine translation and speech synthesis. These models can be difficult to train. The standard approach, teacher forcing, guides a model with reference output history during training. The problem is that the model is unlikely to recover from its mistakes during inference, where the reference output is replaced by generated output. Several approaches deal with this problem, largely by guiding the model with generated output history. To make training stable, these approaches often require a heuristic schedule or an auxiliary classifier. This paper introduces attention forcing, which guides the model with generated output history and reference attention. This approach can train the model to recover from its mistakes, in a stable fashion, without the need for a schedule or a classifier. In addition, it allows the model to generate output sequences aligned with the references, which can be important for cascaded systems like many speech synthesis systems. Experiments on speech synthesis show that attention forcing yields significant performance gain. Experiments on machine translation show that for tasks where various re-orderings of the output are valid, guiding the model with generated output history is challenging, while guiding the model with reference attention is beneficial.
+
+| Comments:    | 11 pages, 4 figures, conference                              |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Audio and Speech Processing (eess.AS); Machine Learning (stat.ML) |
+| ACM classes: | I.2                                                          |
+| Cite as:     | **arXiv:1909.12289 [cs.LG]**                                 |
+|              | (or **arXiv:1909.12289v1 [cs.LG]** for this version)         |
+
+
+
+<h2 id="2019-09-27-2">2. Large-scale Pretraining for Neural Machine Translation with Tens of Billions of Sentence Pairs</h2> 
+
+Title: [Large-scale Pretraining for Neural Machine Translation with Tens of Billions of Sentence Pairs](https://arxiv.org/abs/1909.11861)
+
+Authors: [Yuxian Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+Y), [Xiangyuan Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+X), [Zijun Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+Z), [Xiaoya Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Arianna Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+A), [Fei Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+F), [Jiwei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J)
+
+*(Submitted on 26 Sep 2019)*
+
+> In this paper, we investigate the problem of training neural machine translation (NMT) systems with a dataset of more than 40 billion bilingual sentence pairs, which is larger than the largest dataset to date by orders of magnitude. Unprecedented challenges emerge in this situation compared to previous NMT work, including severe noise in the data and prohibitively long training time. We propose practical solutions to handle these issues and demonstrate that large-scale pretraining significantly improves NMT performance. We are able to push the BLEU score of WMT17 Chinese-English dataset to 32.3, with a significant performance boost of +3.2 over existing state-of-the-art results.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1909.11861 [cs.CL]**                         |
+|           | (or **arXiv:1909.11861v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-09-27-3">3. Selecting Artificially-Generated Sentences for Fine-Tuning Neural Machine Translation</h2> 
+
+Title: [Selecting Artificially-Generated Sentences for Fine-Tuning Neural Machine Translation](https://arxiv.org/abs/1909.12016)
+
+Authors: [Alberto Poncelas](https://arxiv.org/search/cs?searchtype=author&query=Poncelas%2C+A), [Andy Way](https://arxiv.org/search/cs?searchtype=author&query=Way%2C+A)
+
+*(Submitted on 26 Sep 2019)*
+
+> Neural Machine Translation (NMT) models tend to achieve best performance when larger sets of parallel sentences are provided for training. For this reason, augmenting the training set with artificially-generated sentence pairs can boost performance.
+> Nonetheless, the performance can also be improved with a small number of sentences if they are in the same domain as the test set. Accordingly, we want to explore the use of artificially-generated sentences along with data-selection algorithms to improve German-to-English NMT models trained solely with authentic data.
+> In this work, we show how artificially-generated sentences can be more beneficial than authentic pairs, and demonstrate their advantages when used in combination with data-selection algorithms.
+
+| Comments:          | Proceedings of the 12th International Conference on Natural Language Generation (INLG 2019) |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| Journal reference: | Proceedings of the 12th International Conference on Natural Language Generation (INLG 2019) |
+| Cite as:           | **arXiv:1909.12016 [cs.CL]**                                 |
+|                    | (or **arXiv:1909.12016v1 [cs.CL]** for this version)         |
+
+
+
 # 2019-09-26
 
 [Return to Index](#Index)
@@ -120,7 +189,6 @@
 
 
 <h2 id="2019-09-26-1">1. Attention Interpretability Across NLP Tasks</h2> 
-
 Title: [Attention Interpretability Across NLP Tasks](https://arxiv.org/abs/1909.11218)
 
 Authors: [Shikhar Vashishth](https://arxiv.org/search/cs?searchtype=author&query=Vashishth%2C+S), [Shyam Upadhyay](https://arxiv.org/search/cs?searchtype=author&query=Upadhyay%2C+S), [Gaurav Singh Tomar](https://arxiv.org/search/cs?searchtype=author&query=Tomar%2C+G+S), [Manaal Faruqui](https://arxiv.org/search/cs?searchtype=author&query=Faruqui%2C+M)
@@ -140,7 +208,6 @@ Authors: [Shikhar Vashishth](https://arxiv.org/search/cs?searchtype=author&query
 
 
 <h2 id="2019-09-26-2">2. Breaking the Data Barrier: Towards Robust Speech Translation via Adversarial Stability Training</h2> 
-
 Title: [Breaking the Data Barrier: Towards Robust Speech Translation via Adversarial Stability Training](https://arxiv.org/abs/1909.11430)
 
 Authors: [Qiao Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+Q), [Meiyuan Fang](https://arxiv.org/search/cs?searchtype=author&query=Fang%2C+M), [Yaqian Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+Y), [Jin Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+J), [Yitao Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan%2C+Y)
