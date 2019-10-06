@@ -1,10 +1,23 @@
-# Daily arXiv: Machine Translation - Sep., 2019
+# Daily arXiv: Machine Translation - Oct., 2019
 
 # Index
 
-- [2019-09-30](#2019-09-30)
-  - [1. On the use of BERT for Neural Machine Translation](#2019-09-30-1)
-  - [2. Improving Pre-Trained Multilingual Models with Vocabulary Expansion](#2019-09-30-2)
+- [2019-10-02](#2019-10-02)
+  - [1. Interrogating the Explanatory Power of Attention in Neural Machine Translation](#2019-10-02-1)
+  - [2. Improved Word Sense Disambiguation Using Pre-Trained Contextualized Word Representations](#2019-10-02-2)
+  - [3. Multilingual End-to-End Speech Translation](#2019-10-02-3)
+  - [4. When and Why is Document-level Context Useful in Neural Machine Translation?](#2019-10-02-4)
+  - [5. Grammatical Error Correction in Low-Resource Scenarios](#2019-10-02-5)
+  - [6. Application of Low-resource Machine Translation Techniques to Russian-Tatar Language Pair](#2019-10-02-6)
+  - [7. A Survey of Methods to Leverage Monolingual Data in Low-resource Neural Machine Translation](#2019-10-02-7)
+  - [8. Machine Translation for Machines: the Sentiment Classification Use Case](#2019-10-02-8)
+  - [9. Putting Machine Translation in Context with the Noisy Channel Model](#2019-10-02-9)
+- [2019-10-01](#2019-10-01)
+  - [1. Revisiting Self-Training for Neural Sequence Generation](2019-10-01-1)
+  - [2. The Source-Target Domain Mismatch Problem in Machine Translation](2019-10-01-2)
+  - [3. Controllable Data Synthesis Method for Grammatical Error Correction](2019-10-01-3)
+  - [4. Regressing Word and Sentence Embeddings for Regularization of Neural Machine Translation](2019-10-01-4)
+  - [5. Simple and Effective Paraphrastic Similarity from Parallel Translations](2019-10-01-5)
 - [2019-09](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-09.md)
 - [2019-08](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-08.md)
 - [2019-07](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-07.md)
@@ -15,45 +28,286 @@
 
 
 
-# 2019-09-30
+# 2019-10-02
 
 [Return to Index](#Index)
 
 
 
-<h2 id="2019-09-30-1">1. On the use of BERT for Neural Machine Translation</h2> 
-Title: [On the use of BERT for Neural Machine Translation](https://arxiv.org/abs/1909.12744)
+<h2 id="2019-10-02-1">1. Interrogating the Explanatory Power of Attention in Neural Machine Translation</h2>
 
-Authors:[Stéphane Clinchant](https://arxiv.org/search/cs?searchtype=author&query=Clinchant%2C+S), [Kweon Woo Jung](https://arxiv.org/search/cs?searchtype=author&query=Jung%2C+K+W), [Vassilina Nikoulina](https://arxiv.org/search/cs?searchtype=author&query=Nikoulina%2C+V)
+Title: [Interrogating the Explanatory Power of Attention in Neural Machine Translation](https://arxiv.org/abs/1910.00139)
 
-*(Submitted on 27 Sep 2019)*
+Authors: [Pooya Moradi](https://arxiv.org/search/cs?searchtype=author&query=Moradi%2C+P), [Nishant Kambhatla](https://arxiv.org/search/cs?searchtype=author&query=Kambhatla%2C+N), [Anoop Sarkar](https://arxiv.org/search/cs?searchtype=author&query=Sarkar%2C+A)
 
-> Exploiting large pretrained models for various NMT tasks have gained a lot of visibility recently. In this work we study how BERT pretrained models could be exploited for supervised Neural Machine Translation. We compare various ways to integrate pretrained BERT model with NMT model and study the impact of the monolingual data used for BERT training on the final translation quality. We use WMT-14 English-German, IWSLT15 English-German and IWSLT14 English-Russian datasets for these experiments. In addition to standard task test set evaluation, we perform evaluation on out-of-domain test sets and noise injected test sets, in order to assess how BERT pretrained representations affect model robustness.
+*(Submitted on 30 Sep 2019)*
 
-| Comments: | 10 pages                                                     |
+> Attention models have become a crucial component in neural machine translation (NMT). They are often implicitly or explicitly used to justify the model's decision in generating a specific token but it has not yet been rigorously established to what extent attention is a reliable source of information in NMT. To evaluate the explanatory power of attention for NMT, we examine the possibility of yielding the same prediction but with counterfactual attention models that modify crucial aspects of the trained attention model. Using these counterfactual attention mechanisms we assess the extent to which they still preserve the generation of function and content words in the translation process. Compared to a state of the art attention model, our counterfactual attention models produce 68% of function words and 21% of content words in our German-English dataset. Our experiments demonstrate that attention models by themselves cannot reliably explain the decisions made by a NMT model.
+
+| Comments: | Accepted at the 3rd Workshop on Neural Generation and Translation (WNGT 2019) held at EMNLP-IJCNLP 2019 (Camera ready) |
 | --------- | ------------------------------------------------------------ |
-| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
-| Cite as:  | **arXiv:1909.12744 [cs.CL]**                                 |
-|           | (or **arXiv:1909.12744v1 [cs.CL]** for this version)         |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **arXiv:1910.00139 [cs.CL]**                                 |
+|           | (or **arXiv:1910.00139v1 [cs.CL]** for this version)         |
 
 
 
 
 
-<h2 id="2019-09-30-2">2. Improving Pre-Trained Multilingual Models with Vocabulary Expansion</h2> 
-Title: [Improving Pre-Trained Multilingual Models with Vocabulary Expansion](https://arxiv.org/abs/1909.12440)
+<h2 id="2019-10-02-2">2. Improved Word Sense Disambiguation Using Pre-Trained Contextualized Word Representations</h2>
 
-Authors:[Hai Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H), [Dian Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+D), [Kai Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+K), [Janshu Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J), [Dong Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+D)
+Title: [Improved Word Sense Disambiguation Using Pre-Trained Contextualized Word Representations](https://arxiv.org/abs/1910.00194)
 
-*(Submitted on 26 Sep 2019)*
+Authors: [Christian Hadiwinoto](https://arxiv.org/search/cs?searchtype=author&query=Hadiwinoto%2C+C), [Hwee Tou Ng](https://arxiv.org/search/cs?searchtype=author&query=Ng%2C+H+T), [Wee Chung Gan](https://arxiv.org/search/cs?searchtype=author&query=Gan%2C+W+C)
 
-> Recently, pre-trained language models have achieved remarkable success in a broad range of natural language processing tasks. However, in multilingual setting, it is extremely resource-consuming to pre-train a deep language model over large-scale corpora for each language. Instead of exhaustively pre-training monolingual language models independently, an alternative solution is to pre-train a powerful multilingual deep language model over large-scale corpora in hundreds of languages. However, the vocabulary size for each language in such a model is relatively small, especially for low-resource languages. This limitation inevitably hinders the performance of these multilingual models on tasks such as sequence labeling, wherein in-depth token-level or sentence-level understanding is essential.
-> In this paper, inspired by previous methods designed for monolingual settings, we investigate two approaches (i.e., joint mapping and mixture mapping) based on a pre-trained multilingual model BERT for addressing the out-of-vocabulary (OOV) problem on a variety of tasks, including part-of-speech tagging, named entity recognition, machine translation quality estimation, and machine reading comprehension. Experimental results show that using mixture mapping is more promising. To the best of our knowledge, this is the first work that attempts to address and discuss the OOV issue in multilingual settings.
+*(Submitted on 1 Oct 2019)*
 
-| Comments: | CONLL 2019 final version                             |
+> Contextualized word representations are able to give different representations for the same word in different contexts, and they have been shown to be effective in downstream natural language processing tasks, such as question answering, named entity recognition, and sentiment analysis. However, evaluation on word sense disambiguation (WSD) in prior work shows that using contextualized word representations does not outperform the state-of-the-art approach that makes use of non-contextualized word embeddings. In this paper, we explore different strategies of integrating pre-trained contextualized word representations and our best strategy achieves accuracies exceeding the best prior published accuracies by significant margins on multiple benchmark WSD datasets.
+
+| Comments: | 10 pages, 2 figures, EMNLP 2019                      |
 | --------- | ---------------------------------------------------- |
 | Subjects: | **Computation and Language (cs.CL)**                 |
-| Cite as:  | **arXiv:1909.12440 [cs.CL]**                         |
-|           | (or **arXiv:1909.12440v1 [cs.CL]** for this version) |
+| Cite as:  | **arXiv:1910.00194 [cs.CL]**                         |
+|           | (or **arXiv:1910.00194v1 [cs.CL]** for this version) |
 
+
+
+
+
+<h2 id="2019-10-02-3">3. Multilingual End-to-End Speech Translation</h2>
+
+Title: [Multilingual End-to-End Speech Translation](https://arxiv.org/abs/1910.00254)
+
+Authors: [Hirofumi Inaguma](https://arxiv.org/search/cs?searchtype=author&query=Inaguma%2C+H), [Kevin Duh](https://arxiv.org/search/cs?searchtype=author&query=Duh%2C+K), [Tatsuya Kawahara](https://arxiv.org/search/cs?searchtype=author&query=Kawahara%2C+T), [Shinji Watanabe](https://arxiv.org/search/cs?searchtype=author&query=Watanabe%2C+S)
+
+*(Submitted on 1 Oct 2019)*
+
+> In this paper, we propose a simple yet effective framework for multilingual end-to-end speech translation (ST), in which speech utterances in source languages are directly translated to the desired target languages with a universal sequence-to-sequence architecture. While multilingual models have shown to be useful for automatic speech recognition (ASR) and machine translation (MT), this is the first time they are applied to the end-to-end ST problem. We show the effectiveness of multilingual end-to-end ST in two scenarios: one-to-many and many-to-many translations with publicly available data. We experimentally confirm that multilingual end-to-end ST models significantly outperform bilingual ones in both scenarios. The generalization of multilingual training is also evaluated in a transfer learning scenario to a very low-resource language pair. All of our codes and the database are publicly available to encourage further research in this emergent multilingual ST topic.
+
+| Comments: | Accepted to ASRU 2019                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Audio and Speech Processing (eess.AS) |
+| Cite as:  | **arXiv:1910.00254 [cs.CL]**                                 |
+|           | (or **arXiv:1910.00254v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-10-02-4">4. When and Why is Document-level Context Useful in Neural Machine Translation?</h2>
+
+Title: [When and Why is Document-level Context Useful in Neural Machine Translation?](https://arxiv.org/abs/1910.00294)
+
+Authors: [Yunsu Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+Y), [Duc Thanh Tran](https://arxiv.org/search/cs?searchtype=author&query=Tran%2C+D+T), [Hermann Ney](https://arxiv.org/search/cs?searchtype=author&query=Ney%2C+H)
+
+*(Submitted on 1 Oct 2019)*
+
+> Document-level context has received lots of attention for compensating neural machine translation (NMT) of isolated sentences. However, recent advances in document-level NMT focus on sophisticated integration of the context, explaining its improvement with only a few selected examples or targeted test sets. We extensively quantify the causes of improvements by a document-level model in general test sets, clarifying the limit of the usefulness of document-level context in NMT. We show that most of the improvements are not interpretable as utilizing the context. We also show that a minimal encoding is sufficient for the context modeling and very long context is not helpful for NMT.
+
+| Comments: | DiscoMT 2019 camera-ready                            |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1910.00294 [cs.CL]**                         |
+|           | (or **arXiv:1910.00294v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-02-5">5. Grammatical Error Correction in Low-Resource Scenarios</h2>
+
+Title: [Grammatical Error Correction in Low-Resource Scenarios](https://arxiv.org/abs/1910.00353)
+
+Authors: [Jakub Náplava](https://arxiv.org/search/cs?searchtype=author&query=Náplava%2C+J), [Milan Straka](https://arxiv.org/search/cs?searchtype=author&query=Straka%2C+M)
+
+*(Submitted on 1 Oct 2019 ([v1](https://arxiv.org/abs/1910.00353v1)), last revised 2 Oct 2019 (this version, v2))*
+
+> Grammatical error correction in English is a long studied problem with many existing systems and datasets. However, there has been only a limited research on error correction of other languages. In this paper, we present a new dataset AKCES-GEC on grammatical error correction for Czech. We then make experiments on Czech, German and Russian and show that when utilizing synthetic parallel corpus, Transformer neural machine translation model can reach new state-of-the-art results on these datasets. AKCES-GEC is published under CC BY-NC-SA 4.0 license at [this https URL](https://hdl.handle.net/11234/1-3057) and the source code of the GEC model is available at [this https URL](https://github.com/ufal/low-resource-gec-wnut2019).
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1910.00353 [cs.CL]**                         |
+|           | (or **arXiv:1910.00353v2 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-02-6">6. Application of Low-resource Machine Translation Techniques to Russian-Tatar Language Pair</h2>
+
+Title: [Application of Low-resource Machine Translation Techniques to Russian-Tatar Language Pair](https://arxiv.org/abs/1910.00368)
+
+Authors: [Aidar Valeev](https://arxiv.org/search/cs?searchtype=author&query=Valeev%2C+A), [Ilshat Gibadullin](https://arxiv.org/search/cs?searchtype=author&query=Gibadullin%2C+I), [Albina Khusainova](https://arxiv.org/search/cs?searchtype=author&query=Khusainova%2C+A), [Adil Khan](https://arxiv.org/search/cs?searchtype=author&query=Khan%2C+A)
+
+*(Submitted on 1 Oct 2019)*
+
+> Neural machine translation is the current state-of-the-art in machine translation. Although it is successful in a resource-rich setting, its applicability for low-resource language pairs is still debatable. In this paper, we explore the effect of different techniques to improve machine translation quality when a parallel corpus is as small as 324 000 sentences, taking as an example previously unexplored Russian-Tatar language pair. We apply such techniques as transfer learning and semi-supervised learning to the base Transformer model, and empirically show that the resulting models improve Russian to Tatar and Tatar to Russian translation quality by +2.57 and +3.66 BLEU, respectively.
+
+| Comments: | Presented on ICATHS'19                               |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1910.00368 [cs.CL]**                         |
+|           | (or **arXiv:1910.00368v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-02-7">7. A Survey of Methods to Leverage Monolingual Data in Low-resource Neural Machine Translation</h2>
+
+Title: [A Survey of Methods to Leverage Monolingual Data in Low-resource Neural Machine Translation](https://arxiv.org/abs/1910.00373)
+
+Authors: [Ilshat Gibadullin](https://arxiv.org/search/cs?searchtype=author&query=Gibadullin%2C+I), [Aidar Valeev](https://arxiv.org/search/cs?searchtype=author&query=Valeev%2C+A), [Albina Khusainova](https://arxiv.org/search/cs?searchtype=author&query=Khusainova%2C+A), [Adil Khan](https://arxiv.org/search/cs?searchtype=author&query=Khan%2C+A)
+
+*(Submitted on 1 Oct 2019)*
+
+> Neural machine translation has become the state-of-the-art for language pairs with large parallel corpora. However, the quality of machine translation for low-resource languages leaves much to be desired. There are several approaches to mitigate this problem, such as transfer learning, semi-supervised and unsupervised learning techniques. In this paper, we review the existing methods, where the main idea is to exploit the power of monolingual data, which, compared to parallel, is usually easier to obtain and significantly greater in amount.
+
+| Comments: | Presented in ICATHS'19                               |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1910.00373 [cs.CL]**                         |
+|           | (or **arXiv:1910.00373v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-02-8">8. Machine Translation for Machines: the Sentiment Classification Use Case</h2>
+
+Title: [Machine Translation for Machines: the Sentiment Classification Use Case](https://arxiv.org/abs/1910.00478)
+
+Authors: [Amirhossein Tebbifakhr](https://arxiv.org/search/cs?searchtype=author&query=Tebbifakhr%2C+A), [Luisa Bentivogli](https://arxiv.org/search/cs?searchtype=author&query=Bentivogli%2C+L), [Matteo Negri](https://arxiv.org/search/cs?searchtype=author&query=Negri%2C+M), [Marco Turchi](https://arxiv.org/search/cs?searchtype=author&query=Turchi%2C+M)
+
+*(Submitted on 1 Oct 2019)*
+
+> We propose a neural machine translation (NMT) approach that, instead of pursuing adequacy and fluency ("human-oriented" quality criteria), aims to generate translations that are best suited as input to a natural language processing component designed for a specific downstream task (a "machine-oriented" criterion). Towards this objective, we present a reinforcement learning technique based on a new candidate sampling strategy, which exploits the results obtained on the downstream task as weak feedback. Experiments in sentiment classification of Twitter data in German and Italian show that feeding an English classifier with machine-oriented translations significantly improves its performance. Classification results outperform those obtained with translations produced by general-purpose NMT models as well as by an approach based on reinforcement learning. Moreover, our results on both languages approximate the classification accuracy computed on gold standard English tweets.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1910.00478 [cs.CL]**                         |
+|           | (or **arXiv:1910.00478v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-02-9">9. Putting Machine Translation in Context with the Noisy Channel Model</h2>
+
+Title: [Putting Machine Translation in Context with the Noisy Channel Model](https://arxiv.org/abs/1910.00553)
+
+Authors: [Lei Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+L), [Laurent Sartran](https://arxiv.org/search/cs?searchtype=author&query=Sartran%2C+L), [Wojciech Stokowiec](https://arxiv.org/search/cs?searchtype=author&query=Stokowiec%2C+W), [Wang Ling](https://arxiv.org/search/cs?searchtype=author&query=Ling%2C+W), [Lingpeng Kong](https://arxiv.org/search/cs?searchtype=author&query=Kong%2C+L), [Phil Blunsom](https://arxiv.org/search/cs?searchtype=author&query=Blunsom%2C+P), [Chris Dyer](https://arxiv.org/search/cs?searchtype=author&query=Dyer%2C+C)
+
+*(Submitted on 1 Oct 2019)*
+
+> We show that Bayes' rule provides a compelling mechanism for controlling unconditional document language models, using the long-standing challenge of effectively leveraging document context in machine translation. In our formulation, we estimate the probability of a candidate translation as the product of the unconditional probability of the candidate output document and the ``reverse translation probability'' of translating the candidate output back into the input source language document---the so-called ``noisy channel'' decomposition. A particular advantage of our model is that it requires only parallel sentences to train, rather than parallel documents, which are not always available. Using a new beam search reranking approximation to solve the decoding problem, we find that document language models outperform language models that assume independence between sentences, and that using either a document or sentence language model outperforms comparable models that directly estimate the translation probability. We obtain the best-published results on the NIST Chinese--English translation task, a standard task for evaluating document translation. Our model also outperforms the benchmark Transformer model by approximately 2.5 BLEU on the WMT19 Chinese--English translation task.
+
+| Comments: | 14 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1910.00553 [cs.CL]**                                 |
+|           | (or **arXiv:1910.00553v1 [cs.CL]** for this version)         |
+
+
+
+
+
+# 2019-10-01
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-10-01-1">1. Revisiting Self-Training for Neural Sequence Generation</h2> 
+
+Title: [Revisiting Self-Training for Neural Sequence Generation](https://arxiv.org/abs/1909.13788)
+
+Authors:[Junxian He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+J), [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J), [Jiajun Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+J), [Marc'Aurelio Ranzato](https://arxiv.org/search/cs?searchtype=author&query=Ranzato%2C+M)
+
+*(Submitted on 30 Sep 2019)*
+
+> Self-training is one of the earliest and simplest semi-supervised methods. The key idea is to augment the original labeled dataset with unlabeled data paired with the model's prediction (i.e. pseudo-parallel data). While self-training has been extensively studied on classification problems, in complex sequence generation tasks (e.g. machine translation) it is still unclear how self-training works due to the compositionality of the target space. In this work, we first empirically show that self-training is able to decently improve the supervised baseline on neural sequence generation tasks. Through careful examination of the performance gains, we find that the perturbation on the hidden states (i.e. dropout) is critical for self-training to benefit from the pseudo-parallel data, which acts as a regularizer and forces the model to yield close predictions for similar unlabeled inputs. Such effect helps the model correct some incorrect predictions on unlabeled data. To further encourage this mechanism, we propose to inject noise to the input space, resulting in a "noisy" version of self-training. Empirical study on standard machine translation and text summarization benchmarks shows that noisy self-training is able to effectively utilize unlabeled data and improve the performance of the supervised baseline by a large margin.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1909.13788 [cs.LG]**                                 |
+|           | (or **arXiv:1909.13788v1 [cs.LG]** for this version)         |
+
+
+
+
+
+<h2 id="2019-10-01-2">2. The Source-Target Domain Mismatch Problem in Machine Translation</h2> 
+
+Title: [The Source-Target Domain Mismatch Problem in Machine Translation](https://arxiv.org/abs/1909.13151)
+
+Authors:[Jiajun Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+J), [Peng-Jen Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+P), [Matt Le](https://arxiv.org/search/cs?searchtype=author&query=Le%2C+M), [Junxian He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+J), [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J), [Myle Ott](https://arxiv.org/search/cs?searchtype=author&query=Ott%2C+M), [Michael Auli](https://arxiv.org/search/cs?searchtype=author&query=Auli%2C+M), [Marc'Aurelio Ranzato](https://arxiv.org/search/cs?searchtype=author&query=Ranzato%2C+M)
+
+*(Submitted on 28 Sep 2019)*
+
+> While we live in an increasingly interconnected world, different places still exhibit strikingly different cultures and many events we experience in our every day life pertain only to the specific place we live in. As a result, people often talk about different things in different parts of the world. In this work we study the effect of local context in machine translation and postulate that particularly in low resource settings this causes the domains of the source and target language to greatly mismatch, as the two languages are often spoken in further apart regions of the world with more distinctive cultural traits and unrelated local events. In this work we first propose a controlled setting to carefully analyze the source-target domain mismatch, and its dependence on the amount of parallel and monolingual data. Second, we test both a model trained with back-translation and one trained with self-training. The latter leverages in-domain source monolingual data but uses potentially incorrect target references. We found that these two approaches are often complementary to each other. For instance, on a low-resource Nepali-English dataset the combined approach improves upon the baseline using just parallel data by 2.5 BLEU points, and by 0.6 BLEU point when compared to back-translation.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1909.13151 [cs.CL]**                         |
+|           | (or **arXiv:1909.13151v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-01-3">3. Controllable Data Synthesis Method for Grammatical Error Correction</h2> 
+
+Title: [Controllable Data Synthesis Method for Grammatical Error Correction](https://arxiv.org/abs/1909.13302)
+
+Authors:[Chencheng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Liner Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+L), [Yun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Yongping Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+Y), [Erhong Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+E)
+
+*(Submitted on 29 Sep 2019 ([v1](https://arxiv.org/abs/1909.13302v1)), last revised 2 Oct 2019 (this version, v2))*
+
+> Due to the lack of parallel data in current Grammatical Error Correction (GEC) task, models based on Sequence to Sequence framework cannot be adequately trained to obtain higher performance. We propose two data synthesis methods which can control the error rate and the ratio of error types on synthetic data. The first approach is to corrupt each word in the monolingual corpus with a fixed probability, including replacement, insertion and deletion. Another approach is to train error generation models and further filtering the decoding results of the models. The experiments on different synthetic data show that the error rate is 40% and the ratio of error types is the same can improve the model performance better. Finally, we synthesize about 100 million data and achieve comparable performance as the state of the art, which uses twice as much data as we use.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1909.13302 [cs.CL]**                         |
+|           | (or **arXiv:1909.13302v2 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-01-4">4. Regressing Word and Sentence Embeddings for Regularization of Neural Machine Translation</h2> 
+
+Title: [Regressing Word and Sentence Embeddings for Regularization of Neural Machine Translation](https://arxiv.org/abs/1909.13466)
+
+Authors: [Inigo Jauregi Unanue](https://arxiv.org/search/cs?searchtype=author&query=Unanue%2C+I+J), [Ehsan Zare Borzeshi](https://arxiv.org/search/cs?searchtype=author&query=Borzeshi%2C+E+Z), [Massimo Piccardi](https://arxiv.org/search/cs?searchtype=author&query=Piccardi%2C+M)
+
+*(Submitted on 30 Sep 2019)*
+
+> In recent years, neural machine translation (NMT) has become the dominant approach in automated translation. However, like many other deep learning approaches, NMT suffers from overfitting when the amount of training data is limited. This is a serious issue for low-resource language pairs and many specialized translation domains that are inherently limited in the amount of available supervised data. For this reason, in this paper we propose regressing word (ReWE) and sentence (ReSE) embeddings at training time as a way to regularize NMT models and improve their generalization. During training, our models are trained to jointly predict categorical (words in the vocabulary) and continuous (word and sentence embeddings) outputs. An extensive set of experiments over four language pairs of variable training set size has showed that ReWE and ReSE can outperform strong state-of-the-art baseline models, with an improvement that is larger for smaller training sets (e.g., up to +5:15 BLEU points in Basque-English translation). Visualizations of the decoder's output space show that the proposed regularizers improve the clustering of unique words, facilitating correct predictions. In a final experiment on unsupervised NMT, we show that ReWE and ReSE are also able to improve the quality of machine translation when no parallel data are available.
+
+| Comments: | \c{opyright} 2019 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses, in any current or future media, including reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or redistribution to servers or lists, or reuse of any copyrighted component of this work in other works |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **arXiv:1909.13466 [cs.CL]**                                 |
+|           | (or **arXiv:1909.13466v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-10-01-5">5. Simple and Effective Paraphrastic Similarity from Parallel Translations</h2> 
+
+Title: [Simple and Effective Paraphrastic Similarity from Parallel Translations](https://arxiv.org/abs/1909.13872)
+
+Authors: [John Wieting](https://arxiv.org/search/cs?searchtype=author&query=Wieting%2C+J), [Kevin Gimpel](https://arxiv.org/search/cs?searchtype=author&query=Gimpel%2C+K), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G), [Taylor Berg-Kirkpatrick](https://arxiv.org/search/cs?searchtype=author&query=Berg-Kirkpatrick%2C+T)
+
+*(Submitted on 30 Sep 2019)*
+
+> We present a model and methodology for learning paraphrastic sentence embeddings directly from bitext, removing the time-consuming intermediate step of creating paraphrase corpora. Further, we show that the resulting model can be applied to cross-lingual tasks where it both outperforms and is orders of magnitude faster than more complex state-of-the-art baselines.
+
+| Comments: | Published as a short paper at ACL 2019               |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1909.13872 [cs.CL]**                         |
+|           | (or **arXiv:1909.13872v1 [cs.CL]** for this version) |
 
