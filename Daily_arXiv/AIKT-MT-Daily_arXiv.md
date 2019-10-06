@@ -2,6 +2,12 @@
 
 # Index
 
+- [2019-10-04](#2019-10-04)
+  - [1. Cracking the Contextual Commonsense Code: Understanding Commonsense Reasoning Aptitude of Deep Contextual Representations](#2019-10-04-1)
+  - [2. Linking artificial and human neural representations of language](#2019-10-04-2)
+- [2019-10-03](#2019-10-03)
+  - [1. Speech-to-speech Translation between Untranscribed Unknown Languages](2019-10-03-1)
+  - [2. DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter](2019-10-03-2)
 - [2019-10-02](#2019-10-02)
   - [1. Interrogating the Explanatory Power of Attention in Neural Machine Translation](#2019-10-02-1)
   - [2. Improved Word Sense Disambiguation Using Pre-Trained Contextualized Word Representations](#2019-10-02-2)
@@ -28,6 +34,97 @@
 
 
 
+# 2019-10-04
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-10-04-1">1. Cracking the Contextual Commonsense Code: Understanding Commonsense Reasoning Aptitude of Deep Contextual Representations</h2>
+
+Title: [Cracking the Contextual Commonsense Code: Understanding Commonsense Reasoning Aptitude of Deep Contextual Representations](https://arxiv.org/abs/1910.01157)
+
+Authors: [Jeff Da](https://arxiv.org/search/cs?searchtype=author&query=Da%2C+J), [Jungo Kusai](https://arxiv.org/search/cs?searchtype=author&query=Kusai%2C+J)
+
+*(Submitted on 2 Oct 2019)*
+
+> Pretrained deep contextual representations have advanced the state-of-the-art on various commonsense NLP tasks, but we lack a concrete understanding of the capability of these models. Thus, we investigate and challenge several aspects of BERT's commonsense representation abilities. First, we probe BERT's ability to classify various object attributes, demonstrating that BERT shows a strong ability in encoding various commonsense features in its embedding space, but is still deficient in many areas. Next, we show that, by augmenting BERT's pretraining data with additional data related to the deficient attributes, we are able to improve performance on a downstream commonsense reasoning task while using a minimal amount of data. Finally, we develop a method of fine-tuning knowledge graphs embeddings alongside BERT and show the continued importance of explicit knowledge graphs.
+
+| Comments: | Accepted to EMNLP Commonsense (COIN)                 |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1910.01157 [cs.CL]**                         |
+|           | (or **arXiv:1910.01157v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-04-2">2. Linking artificial and human neural representations of language</h2>
+
+Title: [Linking artificial and human neural representations of language](https://arxiv.org/abs/1910.01244)
+
+Authors: [Jon Gauthier](https://arxiv.org/search/cs?searchtype=author&query=Gauthier%2C+J), [Roger Levy](https://arxiv.org/search/cs?searchtype=author&query=Levy%2C+R)
+
+*(Submitted on 2 Oct 2019)*
+
+> What information from an act of sentence understanding is robustly represented in the human brain? We investigate this question by comparing sentence encoding models on a brain decoding task, where the sentence that an experimental participant has seen must be predicted from the fMRI signal evoked by the sentence. We take a pre-trained BERT architecture as a baseline sentence encoding model and fine-tune it on a variety of natural language understanding (NLU) tasks, asking which lead to improvements in brain-decoding performance.
+> We find that none of the sentence encoding tasks tested yield significant increases in brain decoding performance. Through further task ablations and representational analyses, we find that tasks which produce syntax-light representations yield significant improvements in brain decoding performance. Our results constrain the space of NLU models that could best account for human neural representations of language, but also suggest limits on the possibility of decoding fine-grained syntactic information from fMRI human neuroimaging.
+
+| Comments: | EMNLP 2019                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Neurons and Cognition (q-bio.NC) |
+| Cite as:  | **arXiv:1910.01244 [cs.CL]**                                 |
+|           | (or **arXiv:1910.01244v1 [cs.CL]** for this version)         |
+
+
+
+
+
+# 2019-10-03
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-10-03-1">1. Speech-to-speech Translation between Untranscribed Unknown Languages</h2>
+
+Title: [Speech-to-speech Translation between Untranscribed Unknown Languages](https://arxiv.org/abs/1910.00795)
+
+Authors: [Andros Tjandra](https://arxiv.org/search/cs?searchtype=author&query=Tjandra%2C+A), [Sakriani Sakti](https://arxiv.org/search/cs?searchtype=author&query=Sakti%2C+S), [Satoshi Nakamura](https://arxiv.org/search/cs?searchtype=author&query=Nakamura%2C+S)
+
+*(Submitted on 2 Oct 2019)*
+
+> In this paper, we explore a method for training speech-to-speech translation tasks without any transcription or linguistic supervision. Our proposed method consists of two steps: First, we train and generate discrete representation with unsupervised term discovery with a discrete quantized autoencoder. Second, we train a sequence-to-sequence model that directly maps the source language speech to the target language's discrete representation. Our proposed method can directly generate target speech without any auxiliary or pre-training steps with a source or target transcription. To the best of our knowledge, this is the first work that performed pure speech-to-speech translation between untranscribed unknown languages.
+
+| Comments: | Accepted in IEEE ASRU 2019. Web-page for more samples & details: [this https URL](https://sp2code-translation-v1.netlify.com/) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **arXiv:1910.00795 [cs.CL]**                                 |
+|           | (or **arXiv:1910.00795v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-10-03-2">2. DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter</h2>
+
+Title: [DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter](https://arxiv.org/abs/1910.01108)
+
+Authors: [Victor Sanh](https://arxiv.org/search/cs?searchtype=author&query=Sanh%2C+V), [Lysandre Debut](https://arxiv.org/search/cs?searchtype=author&query=Debut%2C+L), [Julien Chaumond](https://arxiv.org/search/cs?searchtype=author&query=Chaumond%2C+J), [Thomas Wolf](https://arxiv.org/search/cs?searchtype=author&query=Wolf%2C+T)
+
+*(Submitted on 2 Oct 2019)*
+
+> As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language Processing (NLP), operating these large models in on-the-edge and/or under constrained computational training or inference budgets remain challenging. In this work, we propose a method to pre-train a smaller general-purpose language representation model, called DistilBERT, which can then be fine-tuned with good performances on a wide range of tasks like its larger counterparts. While most prior work investigated the use of distillation for building task-specific models, we leverage knowledge distillation during the pre-training phase and show that it is possible to reduce the size of a BERT model by 40%, while retaining 97% of its language understanding capabilities and being 60% faster. To leverage the inductive biases learned by larger models during pre-training, we introduce a triple loss combining language modeling, distillation and cosine-distance losses. Our smaller, faster and lighter model is cheaper to pre-train and we demonstrate its capabilities for on-device computations in a proof-of-concept experiment and a comparative on-device study.
+
+| Comments: | 5 pages, 1 figure, 4 tables. Accepted at the 5th Workshop on Energy Efficient Machine Learning and Cognitive Computing - NeurIPS 2019 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **arXiv:1910.01108 [cs.CL]**                                 |
+|           | (or **arXiv:1910.01108v1 [cs.CL]** for this version)         |
+
+
+
 # 2019-10-02
 
 [Return to Index](#Index)
@@ -35,7 +132,6 @@
 
 
 <h2 id="2019-10-02-1">1. Interrogating the Explanatory Power of Attention in Neural Machine Translation</h2>
-
 Title: [Interrogating the Explanatory Power of Attention in Neural Machine Translation](https://arxiv.org/abs/1910.00139)
 
 Authors: [Pooya Moradi](https://arxiv.org/search/cs?searchtype=author&query=Moradi%2C+P), [Nishant Kambhatla](https://arxiv.org/search/cs?searchtype=author&query=Kambhatla%2C+N), [Anoop Sarkar](https://arxiv.org/search/cs?searchtype=author&query=Sarkar%2C+A)
@@ -55,7 +151,6 @@ Authors: [Pooya Moradi](https://arxiv.org/search/cs?searchtype=author&query=Mora
 
 
 <h2 id="2019-10-02-2">2. Improved Word Sense Disambiguation Using Pre-Trained Contextualized Word Representations</h2>
-
 Title: [Improved Word Sense Disambiguation Using Pre-Trained Contextualized Word Representations](https://arxiv.org/abs/1910.00194)
 
 Authors: [Christian Hadiwinoto](https://arxiv.org/search/cs?searchtype=author&query=Hadiwinoto%2C+C), [Hwee Tou Ng](https://arxiv.org/search/cs?searchtype=author&query=Ng%2C+H+T), [Wee Chung Gan](https://arxiv.org/search/cs?searchtype=author&query=Gan%2C+W+C)
@@ -75,7 +170,6 @@ Authors: [Christian Hadiwinoto](https://arxiv.org/search/cs?searchtype=author&qu
 
 
 <h2 id="2019-10-02-3">3. Multilingual End-to-End Speech Translation</h2>
-
 Title: [Multilingual End-to-End Speech Translation](https://arxiv.org/abs/1910.00254)
 
 Authors: [Hirofumi Inaguma](https://arxiv.org/search/cs?searchtype=author&query=Inaguma%2C+H), [Kevin Duh](https://arxiv.org/search/cs?searchtype=author&query=Duh%2C+K), [Tatsuya Kawahara](https://arxiv.org/search/cs?searchtype=author&query=Kawahara%2C+T), [Shinji Watanabe](https://arxiv.org/search/cs?searchtype=author&query=Watanabe%2C+S)
@@ -95,7 +189,6 @@ Authors: [Hirofumi Inaguma](https://arxiv.org/search/cs?searchtype=author&query=
 
 
 <h2 id="2019-10-02-4">4. When and Why is Document-level Context Useful in Neural Machine Translation?</h2>
-
 Title: [When and Why is Document-level Context Useful in Neural Machine Translation?](https://arxiv.org/abs/1910.00294)
 
 Authors: [Yunsu Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+Y), [Duc Thanh Tran](https://arxiv.org/search/cs?searchtype=author&query=Tran%2C+D+T), [Hermann Ney](https://arxiv.org/search/cs?searchtype=author&query=Ney%2C+H)
@@ -115,7 +208,6 @@ Authors: [Yunsu Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+
 
 
 <h2 id="2019-10-02-5">5. Grammatical Error Correction in Low-Resource Scenarios</h2>
-
 Title: [Grammatical Error Correction in Low-Resource Scenarios](https://arxiv.org/abs/1910.00353)
 
 Authors: [Jakub Náplava](https://arxiv.org/search/cs?searchtype=author&query=Náplava%2C+J), [Milan Straka](https://arxiv.org/search/cs?searchtype=author&query=Straka%2C+M)
@@ -134,7 +226,6 @@ Authors: [Jakub Náplava](https://arxiv.org/search/cs?searchtype=author&query=N�
 
 
 <h2 id="2019-10-02-6">6. Application of Low-resource Machine Translation Techniques to Russian-Tatar Language Pair</h2>
-
 Title: [Application of Low-resource Machine Translation Techniques to Russian-Tatar Language Pair](https://arxiv.org/abs/1910.00368)
 
 Authors: [Aidar Valeev](https://arxiv.org/search/cs?searchtype=author&query=Valeev%2C+A), [Ilshat Gibadullin](https://arxiv.org/search/cs?searchtype=author&query=Gibadullin%2C+I), [Albina Khusainova](https://arxiv.org/search/cs?searchtype=author&query=Khusainova%2C+A), [Adil Khan](https://arxiv.org/search/cs?searchtype=author&query=Khan%2C+A)
@@ -154,7 +245,6 @@ Authors: [Aidar Valeev](https://arxiv.org/search/cs?searchtype=author&query=Vale
 
 
 <h2 id="2019-10-02-7">7. A Survey of Methods to Leverage Monolingual Data in Low-resource Neural Machine Translation</h2>
-
 Title: [A Survey of Methods to Leverage Monolingual Data in Low-resource Neural Machine Translation](https://arxiv.org/abs/1910.00373)
 
 Authors: [Ilshat Gibadullin](https://arxiv.org/search/cs?searchtype=author&query=Gibadullin%2C+I), [Aidar Valeev](https://arxiv.org/search/cs?searchtype=author&query=Valeev%2C+A), [Albina Khusainova](https://arxiv.org/search/cs?searchtype=author&query=Khusainova%2C+A), [Adil Khan](https://arxiv.org/search/cs?searchtype=author&query=Khan%2C+A)
@@ -174,7 +264,6 @@ Authors: [Ilshat Gibadullin](https://arxiv.org/search/cs?searchtype=author&query
 
 
 <h2 id="2019-10-02-8">8. Machine Translation for Machines: the Sentiment Classification Use Case</h2>
-
 Title: [Machine Translation for Machines: the Sentiment Classification Use Case](https://arxiv.org/abs/1910.00478)
 
 Authors: [Amirhossein Tebbifakhr](https://arxiv.org/search/cs?searchtype=author&query=Tebbifakhr%2C+A), [Luisa Bentivogli](https://arxiv.org/search/cs?searchtype=author&query=Bentivogli%2C+L), [Matteo Negri](https://arxiv.org/search/cs?searchtype=author&query=Negri%2C+M), [Marco Turchi](https://arxiv.org/search/cs?searchtype=author&query=Turchi%2C+M)
@@ -193,7 +282,6 @@ Authors: [Amirhossein Tebbifakhr](https://arxiv.org/search/cs?searchtype=author&
 
 
 <h2 id="2019-10-02-9">9. Putting Machine Translation in Context with the Noisy Channel Model</h2>
-
 Title: [Putting Machine Translation in Context with the Noisy Channel Model](https://arxiv.org/abs/1910.00553)
 
 Authors: [Lei Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+L), [Laurent Sartran](https://arxiv.org/search/cs?searchtype=author&query=Sartran%2C+L), [Wojciech Stokowiec](https://arxiv.org/search/cs?searchtype=author&query=Stokowiec%2C+W), [Wang Ling](https://arxiv.org/search/cs?searchtype=author&query=Ling%2C+W), [Lingpeng Kong](https://arxiv.org/search/cs?searchtype=author&query=Kong%2C+L), [Phil Blunsom](https://arxiv.org/search/cs?searchtype=author&query=Blunsom%2C+P), [Chris Dyer](https://arxiv.org/search/cs?searchtype=author&query=Dyer%2C+C)
@@ -219,7 +307,6 @@ Authors: [Lei Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+L), 
 
 
 <h2 id="2019-10-01-1">1. Revisiting Self-Training for Neural Sequence Generation</h2> 
-
 Title: [Revisiting Self-Training for Neural Sequence Generation](https://arxiv.org/abs/1909.13788)
 
 Authors:[Junxian He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+J), [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J), [Jiajun Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+J), [Marc'Aurelio Ranzato](https://arxiv.org/search/cs?searchtype=author&query=Ranzato%2C+M)
@@ -238,7 +325,6 @@ Authors:[Junxian He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+J
 
 
 <h2 id="2019-10-01-2">2. The Source-Target Domain Mismatch Problem in Machine Translation</h2> 
-
 Title: [The Source-Target Domain Mismatch Problem in Machine Translation](https://arxiv.org/abs/1909.13151)
 
 Authors:[Jiajun Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+J), [Peng-Jen Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+P), [Matt Le](https://arxiv.org/search/cs?searchtype=author&query=Le%2C+M), [Junxian He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+J), [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J), [Myle Ott](https://arxiv.org/search/cs?searchtype=author&query=Ott%2C+M), [Michael Auli](https://arxiv.org/search/cs?searchtype=author&query=Auli%2C+M), [Marc'Aurelio Ranzato](https://arxiv.org/search/cs?searchtype=author&query=Ranzato%2C+M)
@@ -257,7 +343,6 @@ Authors:[Jiajun Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2
 
 
 <h2 id="2019-10-01-3">3. Controllable Data Synthesis Method for Grammatical Error Correction</h2> 
-
 Title: [Controllable Data Synthesis Method for Grammatical Error Correction](https://arxiv.org/abs/1909.13302)
 
 Authors:[Chencheng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Liner Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+L), [Yun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Yongping Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+Y), [Erhong Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+E)
@@ -276,7 +361,6 @@ Authors:[Chencheng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wan
 
 
 <h2 id="2019-10-01-4">4. Regressing Word and Sentence Embeddings for Regularization of Neural Machine Translation</h2> 
-
 Title: [Regressing Word and Sentence Embeddings for Regularization of Neural Machine Translation](https://arxiv.org/abs/1909.13466)
 
 Authors: [Inigo Jauregi Unanue](https://arxiv.org/search/cs?searchtype=author&query=Unanue%2C+I+J), [Ehsan Zare Borzeshi](https://arxiv.org/search/cs?searchtype=author&query=Borzeshi%2C+E+Z), [Massimo Piccardi](https://arxiv.org/search/cs?searchtype=author&query=Piccardi%2C+M)
@@ -296,7 +380,6 @@ Authors: [Inigo Jauregi Unanue](https://arxiv.org/search/cs?searchtype=author&qu
 
 
 <h2 id="2019-10-01-5">5. Simple and Effective Paraphrastic Similarity from Parallel Translations</h2> 
-
 Title: [Simple and Effective Paraphrastic Similarity from Parallel Translations](https://arxiv.org/abs/1909.13872)
 
 Authors: [John Wieting](https://arxiv.org/search/cs?searchtype=author&query=Wieting%2C+J), [Kevin Gimpel](https://arxiv.org/search/cs?searchtype=author&query=Gimpel%2C+K), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G), [Taylor Berg-Kirkpatrick](https://arxiv.org/search/cs?searchtype=author&query=Berg-Kirkpatrick%2C+T)
