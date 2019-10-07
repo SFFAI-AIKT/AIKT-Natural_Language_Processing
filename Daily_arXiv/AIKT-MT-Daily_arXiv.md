@@ -2,6 +2,10 @@
 
 # Index
 
+- [2019-10-07](#2019-10-07)
+  - [1. Distilling Transformers into Simple Neural Networks with Unlabeled Transfer Data](#2019-10-07-1)
+  - [2. Modeling Confidence in Sequence-to-Sequence Models](#2019-10-07-2)
+  - [3. Can I Trust the Explainer? Verifying Post-hoc Explanatory Methods](#2019-10-07-3)
 - [2019-10-04](#2019-10-04)
   - [1. Cracking the Contextual Commonsense Code: Understanding Commonsense Reasoning Aptitude of Deep Contextual Representations](#2019-10-04-1)
   - [2. Linking artificial and human neural representations of language](#2019-10-04-2)
@@ -34,6 +38,72 @@
 
 
 
+# 2019-10-07
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-10-07-1">1. Distilling Transformers into Simple Neural Networks with Unlabeled Transfer Data</h2>
+
+Title: [Distilling Transformers into Simple Neural Networks with Unlabeled Transfer Data](https://arxiv.org/abs/1910.01769)
+
+Authors: [Subhabrata Mukherjee](https://arxiv.org/search/cs?searchtype=author&query=Mukherjee%2C+S), [Ahmed Hassan Awadallah](https://arxiv.org/search/cs?searchtype=author&query=Awadallah%2C+A+H)
+
+*(Submitted on 4 Oct 2019)*
+
+> Recent advances in pre-training huge models on large amounts of text through self supervision have obtained state-of-the-art results in various natural language processing tasks. However, these huge and expensive models are difficult to use in practise for downstream tasks. Some recent efforts use knowledge distillation to compress these models. However, we see a gap between the performance of the smaller student models as compared to that of the large teacher. In this work, we leverage large amounts of in-domain unlabeled transfer data in addition to a limited amount of labeled training instances to bridge this gap. We show that simple RNN based student models even with hard distillation can perform at par with the huge teachers given the transfer set. The student performance can be further improved with soft distillation and leveraging teacher intermediate representations. We show that our student models can compress the huge teacher by up to 26x while still matching or even marginally exceeding the teacher performance in low-resource settings with small amount of labeled data.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1910.01769 [cs.CL]**                                 |
+|           | (or **arXiv:1910.01769v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-10-07-2">2. Modeling Confidence in Sequence-to-Sequence Models</h2>
+
+Title: [Modeling Confidence in Sequence-to-Sequence Models](https://arxiv.org/abs/1910.01859)
+
+Authors: [Jan Niehues](https://arxiv.org/search/cs?searchtype=author&query=Niehues%2C+J), [Ngoc-Quan Pham](https://arxiv.org/search/cs?searchtype=author&query=Pham%2C+N)
+
+*(Submitted on 4 Oct 2019)*
+
+> Recently, significant improvements have been achieved in various natural language processing tasks using neural sequence-to-sequence models. While aiming for the best generation quality is important, ultimately it is also necessary to develop models that can assess the quality of their output.
+> In this work, we propose to use the similarity between training and test conditions as a measure for models' confidence. We investigate methods solely using the similarity as well as methods combining it with the posterior probability. While traditionally only target tokens are annotated with confidence measures, we also investigate methods to annotate source tokens with confidence. By learning an internal alignment model, we can significantly improve confidence projection over using state-of-the-art external alignment tools. We evaluate the proposed methods on downstream confidence estimation for machine translation (MT). We show improvements on segment-level confidence estimation as well as on confidence estimation for source tokens. In addition, we show that the same methods can also be applied to other tasks using sequence-to-sequence models. On the automatic speech recognition (ASR) task, we are able to find 60% of the errors by looking at 20% of the data.
+
+| Comments: | 8 pages; INLG 2019                                   |
+| --------- | ---------------------------------------------------- |
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| Cite as:  | **arXiv:1910.01859 [cs.CL]**                         |
+|           | (or **arXiv:1910.01859v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-07-3">3. Can I Trust the Explainer? Verifying Post-hoc Explanatory Methods</h2>
+
+Title: [Can I Trust the Explainer? Verifying Post-hoc Explanatory Methods](https://arxiv.org/abs/1910.02065)
+
+Authors: [Camburu Oana-Maria](https://arxiv.org/search/cs?searchtype=author&query=Oana-Maria%2C+C), [Giunchiglia Eleonora](https://arxiv.org/search/cs?searchtype=author&query=Eleonora%2C+G), [Foerster Jakob](https://arxiv.org/search/cs?searchtype=author&query=Jakob%2C+F), [Lukasiewicz Thomas](https://arxiv.org/search/cs?searchtype=author&query=Thomas%2C+L), [Blunsom Phil](https://arxiv.org/search/cs?searchtype=author&query=Phil%2C+B)
+
+*(Submitted on 4 Oct 2019)*
+
+> For AI systems to garner widespread public acceptance, we must develop methods capable of explaining the decisions of black-box models such as neural networks. In this work, we identify two issues of current explanatory methods. First, we show that two prevalent perspectives on explanations---feature-additivity and feature-selection---lead to fundamentally different instance-wise explanations. In the literature, explainers from different perspectives are currently being directly compared, despite their distinct explanation goals. The second issue is that current post-hoc explainers have only been thoroughly validated on simple models, such as linear regression, and, when applied to real-world neural networks, explainers are commonly evaluated under the assumption that the learned models behave reasonably. However, neural networks often rely on unreasonable correlations, even when producing correct decisions. We introduce a verification framework for explanatory methods under the feature-selection perspective. Our framework is based on a non-trivial neural network architecture trained on a real-world task, and for which we are able to provide guarantees on its inner workings. We validate the efficacy of our evaluation by showing the failure modes of current explainers. We aim for this framework to provide a publicly available, off-the-shelf evaluation when the feature-selection perspective on explanations is needed.
+
+| Comments: | NeurIPS 2019 Workshop on Safety and Robustness in Decision Making, Vancouver, Canada |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1910.02065 [cs.CL]**                                 |
+|           | (or **arXiv:1910.02065v1 [cs.CL]** for this version)         |
+
+
+
+
+
 # 2019-10-04
 
 [Return to Index](#Index)
@@ -41,7 +111,6 @@
 
 
 <h2 id="2019-10-04-1">1. Cracking the Contextual Commonsense Code: Understanding Commonsense Reasoning Aptitude of Deep Contextual Representations</h2>
-
 Title: [Cracking the Contextual Commonsense Code: Understanding Commonsense Reasoning Aptitude of Deep Contextual Representations](https://arxiv.org/abs/1910.01157)
 
 Authors: [Jeff Da](https://arxiv.org/search/cs?searchtype=author&query=Da%2C+J), [Jungo Kusai](https://arxiv.org/search/cs?searchtype=author&query=Kusai%2C+J)
@@ -61,7 +130,6 @@ Authors: [Jeff Da](https://arxiv.org/search/cs?searchtype=author&query=Da%2C+J),
 
 
 <h2 id="2019-10-04-2">2. Linking artificial and human neural representations of language</h2>
-
 Title: [Linking artificial and human neural representations of language](https://arxiv.org/abs/1910.01244)
 
 Authors: [Jon Gauthier](https://arxiv.org/search/cs?searchtype=author&query=Gauthier%2C+J), [Roger Levy](https://arxiv.org/search/cs?searchtype=author&query=Levy%2C+R)
@@ -88,7 +156,6 @@ Authors: [Jon Gauthier](https://arxiv.org/search/cs?searchtype=author&query=Gaut
 
 
 <h2 id="2019-10-03-1">1. Speech-to-speech Translation between Untranscribed Unknown Languages</h2>
-
 Title: [Speech-to-speech Translation between Untranscribed Unknown Languages](https://arxiv.org/abs/1910.00795)
 
 Authors: [Andros Tjandra](https://arxiv.org/search/cs?searchtype=author&query=Tjandra%2C+A), [Sakriani Sakti](https://arxiv.org/search/cs?searchtype=author&query=Sakti%2C+S), [Satoshi Nakamura](https://arxiv.org/search/cs?searchtype=author&query=Nakamura%2C+S)
@@ -108,7 +175,6 @@ Authors: [Andros Tjandra](https://arxiv.org/search/cs?searchtype=author&query=Tj
 
 
 <h2 id="2019-10-03-2">2. DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter</h2>
-
 Title: [DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter](https://arxiv.org/abs/1910.01108)
 
 Authors: [Victor Sanh](https://arxiv.org/search/cs?searchtype=author&query=Sanh%2C+V), [Lysandre Debut](https://arxiv.org/search/cs?searchtype=author&query=Debut%2C+L), [Julien Chaumond](https://arxiv.org/search/cs?searchtype=author&query=Chaumond%2C+J), [Thomas Wolf](https://arxiv.org/search/cs?searchtype=author&query=Wolf%2C+T)
