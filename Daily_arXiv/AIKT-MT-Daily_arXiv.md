@@ -2,6 +2,11 @@
 
 # Index
 
+- [2019-10-08](#2019-10-08)
+  - [1. How Transformer Revitalizes Character-based Neural Machine Translation: An Investigation on Japanese-Vietnamese Translation Systems](#2019-10-08-1)
+  - [2. Domain Differential Adaptation for Neural Machine Translation](#2019-10-08-2)
+  - [3. On Leveraging the Visual Modality for Neural Machine Translation](#2019-10-08-3)
+  - [4. Adversarial reconstruction for Multi-modal Machine Translation](#2019-10-08-4)
 - [2019-10-07](#2019-10-07)
   - [1. Distilling Transformers into Simple Neural Networks with Unlabeled Transfer Data](#2019-10-07-1)
   - [2. Modeling Confidence in Sequence-to-Sequence Models](#2019-10-07-2)
@@ -38,6 +43,92 @@
 
 
 
+# 2019-10-08
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-10-08-1">1. How Transformer Revitalizes Character-based Neural Machine Translation: An Investigation on Japanese-Vietnamese Translation Systems</h2>
+
+Title: [How Transformer Revitalizes Character-based Neural Machine Translation: An Investigation on Japanese-Vietnamese Translation Systems](https://arxiv.org/abs/1910.02238)
+
+Authors:[Thi-Vinh Ngo](https://arxiv.org/search/cs?searchtype=author&query=Ngo%2C+T), [Thanh-Le Ha](https://arxiv.org/search/cs?searchtype=author&query=Ha%2C+T), [Phuong-Thai Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+P), [Le-Minh Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+L)
+
+*(Submitted on 5 Oct 2019)*
+
+> While translating between Chinese-centric languages, many works have discovered clear advantages of using characters as the translation unit. Unfortunately, traditional recurrent neural machine translation systems hinder the practical usage of those character-based systems due to their architectural limitations. They are unfavorable in handling extremely long sequences as well as highly restricted in parallelizing the computations. In this paper, we demonstrate that the new transformer architecture can perform character-based translation better than the recurrent one. We conduct experiments on a low-resource language pair: Japanese-Vietnamese. Our models considerably outperform the state-of-the-art systems which employ word-based recurrent architectures.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1910.02238 [cs.CL]**                         |
+|           | (or **arXiv:1910.02238v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-08-2">2. Domain Differential Adaptation for Neural Machine Translation</h2>
+
+Title: [Domain Differential Adaptation for Neural Machine Translation](https://arxiv.org/abs/1910.02555)
+
+Authors: [Zi-Yi Dou](https://arxiv.org/search/cs?searchtype=author&query=Dou%2C+Z), [Xinyi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Junjie Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+J), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
+
+*(Submitted on 7 Oct 2019)*
+
+> Neural networks are known to be data hungry and domain sensitive, but it is nearly impossible to obtain large quantities of labeled data for every domain we are interested in. This necessitates the use of domain adaptation strategies. One common strategy encourages generalization by aligning the global distribution statistics between source and target domains, but one drawback is that the statistics of different domains or tasks are inherently divergent, and smoothing over these differences can lead to sub-optimal performance. In this paper, we propose the framework of {\it Domain Differential Adaptation (DDA)}, where instead of smoothing over these differences we embrace them, directly modeling the difference between domains using models in a related task. We then use these learned domain differentials to adapt models for the target task accordingly. Experimental results on domain adaptation for neural machine translation demonstrate the effectiveness of this strategy, achieving consistent improvements over other alternative adaptation strategies in multiple experimental settings.
+
+| Comments: | Workshop on Neural Generation and Translation (WNGT) at EMNLP 2019 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **arXiv:1910.02555 [cs.CL]**                                 |
+|           | (or **arXiv:1910.02555v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-10-08-3">3. On Leveraging the Visual Modality for Neural Machine Translation</h2>
+
+Title: [On Leveraging the Visual Modality for Neural Machine Translation](https://arxiv.org/abs/1910.02754)
+
+Authors:[Vikas Raunak](https://arxiv.org/search/cs?searchtype=author&query=Raunak%2C+V), [Sang Keun Choe](https://arxiv.org/search/cs?searchtype=author&query=Choe%2C+S+K), [Quanyang Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+Q), [Yi Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+Y), [Florian Metze](https://arxiv.org/search/cs?searchtype=author&query=Metze%2C+F)
+
+*(Submitted on 7 Oct 2019)*
+
+> Leveraging the visual modality effectively for Neural Machine Translation (NMT) remains an open problem in computational linguistics. Recently, Caglayan et al. posit that the observed gains are limited mainly due to the very simple, short, repetitive sentences of the Multi30k dataset (the only multimodal MT dataset available at the time), which renders the source text sufficient for context. In this work, we further investigate this hypothesis on a new large scale multimodal Machine Translation (MMT) dataset, How2, which has 1.57 times longer mean sentence length than Multi30k and no repetition. We propose and evaluate three novel fusion techniques, each of which is designed to ensure the utilization of visual context at different stages of the Sequence-to-Sequence transduction pipeline, even under full linguistic context. However, we still obtain only marginal gains under full linguistic context and posit that visual embeddings extracted from deep vision models (ResNet for Multi30k, ResNext for How2) do not lend themselves to increasing the discriminativeness between the vocabulary elements at token level prediction in NMT. We demonstrate this qualitatively by analyzing attention distribution and quantitatively through Principal Component Analysis, arriving at the conclusion that it is the quality of the visual embeddings rather than the length of sentences, which need to be improved in existing MMT datasets.
+
+| Comments: | Accepted to INLG 2019                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1910.02754 [cs.CL]**                                 |
+|           | (or **arXiv:1910.02754v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-10-08-4">4. Adversarial reconstruction for Multi-modal Machine Translation</h2>
+
+Title: [Adversarial reconstruction for Multi-modal Machine Translation](https://arxiv.org/abs/1910.02766)
+
+Authors:[Jean-Benoit Delbrouck](https://arxiv.org/search/cs?searchtype=author&query=Delbrouck%2C+J), [Stéphane Dupont](https://arxiv.org/search/cs?searchtype=author&query=Dupont%2C+S)
+
+*(Submitted on 7 Oct 2019)*
+
+> Even with the growing interest in problems at the intersection of Computer Vision and Natural Language, grounding (i.e. identifying) the components of a structured description in an image still remains a challenging task. This contribution aims to propose a model which learns grounding by reconstructing the visual features for the Multi-modal translation task. Previous works have partially investigated standard approaches such as regression methods to approximate the reconstruction of a visual input. In this paper, we propose a different and novel approach which learns grounding by adversarial feedback. To do so, we modulate our network following the recent promising adversarial architectures and evaluate how the adversarial response from a visual reconstruction as an auxiliary task helps the model in its learning. We report the highest scores in term of BLEU and METEOR metrics on the different datasets.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1910.02766 [cs.CL]**                         |
+|           | (or **arXiv:1910.02766v1 [cs.CL]** for this version) |
+
+
+
+
+
+
+
 # 2019-10-07
 
 [Return to Index](#Index)
@@ -45,7 +136,6 @@
 
 
 <h2 id="2019-10-07-1">1. Distilling Transformers into Simple Neural Networks with Unlabeled Transfer Data</h2>
-
 Title: [Distilling Transformers into Simple Neural Networks with Unlabeled Transfer Data](https://arxiv.org/abs/1910.01769)
 
 Authors: [Subhabrata Mukherjee](https://arxiv.org/search/cs?searchtype=author&query=Mukherjee%2C+S), [Ahmed Hassan Awadallah](https://arxiv.org/search/cs?searchtype=author&query=Awadallah%2C+A+H)
@@ -64,7 +154,6 @@ Authors: [Subhabrata Mukherjee](https://arxiv.org/search/cs?searchtype=author&qu
 
 
 <h2 id="2019-10-07-2">2. Modeling Confidence in Sequence-to-Sequence Models</h2>
-
 Title: [Modeling Confidence in Sequence-to-Sequence Models](https://arxiv.org/abs/1910.01859)
 
 Authors: [Jan Niehues](https://arxiv.org/search/cs?searchtype=author&query=Niehues%2C+J), [Ngoc-Quan Pham](https://arxiv.org/search/cs?searchtype=author&query=Pham%2C+N)
@@ -85,7 +174,6 @@ Authors: [Jan Niehues](https://arxiv.org/search/cs?searchtype=author&query=Niehu
 
 
 <h2 id="2019-10-07-3">3. Can I Trust the Explainer? Verifying Post-hoc Explanatory Methods</h2>
-
 Title: [Can I Trust the Explainer? Verifying Post-hoc Explanatory Methods](https://arxiv.org/abs/1910.02065)
 
 Authors: [Camburu Oana-Maria](https://arxiv.org/search/cs?searchtype=author&query=Oana-Maria%2C+C), [Giunchiglia Eleonora](https://arxiv.org/search/cs?searchtype=author&query=Eleonora%2C+G), [Foerster Jakob](https://arxiv.org/search/cs?searchtype=author&query=Jakob%2C+F), [Lukasiewicz Thomas](https://arxiv.org/search/cs?searchtype=author&query=Thomas%2C+L), [Blunsom Phil](https://arxiv.org/search/cs?searchtype=author&query=Phil%2C+B)
