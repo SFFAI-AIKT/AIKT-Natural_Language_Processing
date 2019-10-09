@@ -2,6 +2,13 @@
 
 # Index
 
+- [2019-10-09](#2019-10-09)
+  - [1. Improving Neural Machine Translation Robustness via Data Augmentation: Beyond Back Translation](#2019-10-09-1)
+  - [2. Make Up Your Mind! Adversarial Generation of Inconsistent Natural Language Explanations](#2019-10-09-2)
+  - [3. One-To-Many Multilingual End-to-end Speech Translation](#2019-10-09-3)
+  - [4. An Interactive Machine Translation Framework for Modernizing Historical Documents](#2019-10-09-4)
+  - [5. Overcoming the Rare Word Problem for Low-Resource Language Pairs in Neural Machine Translation](#2019-10-09-5)
+  - [6. Controlled Text Generation for Data Augmentation in Intelligent Artificial Agents](#2019-10-09-6)
 - [2019-10-08](#2019-10-08)
   - [1. How Transformer Revitalizes Character-based Neural Machine Translation: An Investigation on Japanese-Vietnamese Translation Systems](#2019-10-08-1)
   - [2. Domain Differential Adaptation for Neural Machine Translation](#2019-10-08-2)
@@ -43,6 +50,127 @@
 
 
 
+# 2019-10-09
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-10-09-1">1. Improving Neural Machine Translation Robustness via Data Augmentation: Beyond Back Translation</h2>
+
+Title: [Improving Neural Machine Translation Robustness via Data Augmentation: Beyond Back Translation](https://arxiv.org/abs/1910.03009)
+
+Authors: [Zhenhao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Lucia Specia](https://arxiv.org/search/cs?searchtype=author&query=Specia%2C+L)
+
+*(Submitted on 7 Oct 2019)*
+
+> Neural Machine Translation (NMT) models have been proved strong when translating clean texts, but they are very sensitive to noise in the input. Improving NMT models robustness can be seen as a form of "domain'' adaption to noise. The recently created Machine Translation on Noisy Text task corpus provides noisy-clean parallel data for a few language pairs, but this data is very limited in size and diversity. The state-of-the-art approaches are heavily dependent on large volumes of back-translated data. This paper has two main contributions: Firstly, we propose new data augmentation methods to extend limited noisy data and further improve NMT robustness to noise while keeping the models small. Secondly, we explore the effect of utilizing noise from external data in the form of speech transcripts and show that it could help robustness.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1910.03009 [cs.CL]**                         |
+|           | (or **arXiv:1910.03009v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-09-2">2. Make Up Your Mind! Adversarial Generation of Inconsistent Natural Language Explanations</h2>
+
+Title: [Make Up Your Mind! Adversarial Generation of Inconsistent Natural Language Explanations](https://arxiv.org/abs/1910.03065)
+
+Authors: [Camburu Oana-Maria](https://arxiv.org/search/cs?searchtype=author&query=Oana-Maria%2C+C), [Shillingford Brendan](https://arxiv.org/search/cs?searchtype=author&query=Brendan%2C+S), [Minervini Pasquale](https://arxiv.org/search/cs?searchtype=author&query=Pasquale%2C+M), [Lukasiewicz Thomas](https://arxiv.org/search/cs?searchtype=author&query=Thomas%2C+L), [Blunsom Phil](https://arxiv.org/search/cs?searchtype=author&query=Phil%2C+B)
+
+*(Submitted on 7 Oct 2019)*
+
+> To increase trust in artificial intelligence systems, a growing amount of works are enhancing these systems with the capability of producing natural language explanations that support their predictions. In this work, we show that such appealing frameworks are nonetheless prone to generating inconsistent explanations, such as "A dog is an animal" and "A dog is not an animal", which are likely to decrease users' trust in these systems. To detect such inconsistencies, we introduce a simple but effective adversarial framework for generating a complete target sequence, a scenario that has not been addressed so far. Finally, we apply our framework to a state-of-the-art neural model that provides natural language explanations on SNLI, and we show that this model is capable of generating a significant amount of inconsistencies.
+
+| Subjects:          | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | NeurIPS 2019 Workshop on Safety and Robustness in Decision Making, Vancouver, Canada |
+| Cite as:           | **arXiv:1910.03065 [cs.CL]**                                 |
+|                    | (or **arXiv:1910.03065v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-10-09-3">3. One-To-Many Multilingual End-to-end Speech Translation</h2>
+
+Title: [One-To-Many Multilingual End-to-end Speech Translation](https://arxiv.org/abs/1910.03320)
+
+Authors: [Mattia Antonino Di Gangi](https://arxiv.org/search/cs?searchtype=author&query=Di+Gangi%2C+M+A), [Matteo Negri](https://arxiv.org/search/cs?searchtype=author&query=Negri%2C+M), [Marco Turchi](https://arxiv.org/search/cs?searchtype=author&query=Turchi%2C+M)
+
+*(Submitted on 8 Oct 2019)*
+
+> Nowadays, training end-to-end neural models for spoken language translation (SLT) still has to confront with extreme data scarcity conditions. The existing SLT parallel corpora are indeed orders of magnitude smaller than those available for the closely related tasks of automatic speech recognition (ASR) and machine translation (MT), which usually comprise tens of millions of instances. To cope with data paucity, in this paper we explore the effectiveness of transfer learning in end-to-end SLT by presenting a multilingual approach to the task. Multilingual solutions are widely studied in MT and usually rely on ``\textit{target forcing}'', in which multilingual parallel data are combined to train a single model by prepending to the input sequences a language token that specifies the target language. However, when tested in speech translation, our experiments show that MT-like \textit{target forcing}, used as is, is not effective in discriminating among the target languages. Thus, we propose a variant that uses target-language embeddings to shift the input representations in different portions of the space according to the language, so to better support the production of output in the desired target language. Our experiments on end-to-end SLT from English into six languages show important improvements when translating into similar languages, especially when these are supported by scarce data. Further improvements are obtained when using English ASR data as an additional language (up to *[Math Processing Error]* BLEU points).
+
+| Comments: | 8 pages, one figure, version accepted at ASRU 2019           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Audio and Speech Processing (eess.AS) |
+| Cite as:  | **arXiv:1910.03320 [cs.CL]**                                 |
+|           | (or **arXiv:1910.03320v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-10-09-4">4. An Interactive Machine Translation Framework for Modernizing Historical Documents</h2>
+
+Title: [An Interactive Machine Translation Framework for Modernizing Historical Documents](https://arxiv.org/abs/1910.03355)
+
+Authors: [Miguel Domingo](https://arxiv.org/search/cs?searchtype=author&query=Domingo%2C+M), [Francisco Casacuberta](https://arxiv.org/search/cs?searchtype=author&query=Casacuberta%2C+F)
+
+*(Submitted on 8 Oct 2019)*
+
+> Due to the nature of human language, historical documents are hard to comprehend by contemporary people. This limits their accessibility to scholars specialized in the time period in which the documents were written. Modernization aims at breaking this language barrier by generating a new version of a historical document, written in the modern version of the document's original language. However, while it is able to increase the document's comprehension, modernization is still far from producing an error-free version. In this work, we propose a collaborative framework in which a scholar can work together with the machine to generate the new version. We tested our approach on a simulated environment, achieving significant reductions of the human effort needed to produce the modernized version of the document.
+
+| Subjects: | **Computation and Language (cs.CL)**                 |
+| --------- | ---------------------------------------------------- |
+| Cite as:  | **arXiv:1910.03355 [cs.CL]**                         |
+|           | (or **arXiv:1910.03355v1 [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-09-5">5. Overcoming the Rare Word Problem for Low-Resource Language Pairs in Neural Machine Translation</h2>
+
+Title: [Overcoming the Rare Word Problem for Low-Resource Language Pairs in Neural Machine Translation](https://arxiv.org/abs/1910.03467)
+
+Authors: [Thi-Vinh Ngo](https://arxiv.org/search/cs?searchtype=author&query=Ngo%2C+T), [Thanh-Le Ha](https://arxiv.org/search/cs?searchtype=author&query=Ha%2C+T), [Phuong-Thai Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+P), [Le-Minh Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+L)
+
+*(Submitted on 7 Oct 2019)*
+
+> Among the six challenges of neural machine translation (NMT) coined by (Koehn and Knowles, 2017), rare-word problem is considered the most severe one, especially in translation of low-resource languages. In this paper, we propose three solutions to address the rare words in neural machine translation systems. First, we enhance source context to predict the target words by connecting directly the source embeddings to the output of the attention component in NMT. Second, we propose an algorithm to learn morphology of unknown words for English in supervised way in order to minimize the adverse effect of rare-word problem. Finally, we exploit synonymous relation from the WordNet to overcome out-of-vocabulary (OOV) problem of NMT. We evaluate our approaches on two low-resource language pairs: English-Vietnamese and Japanese-Vietnamese. In our experiments, we have achieved significant improvements of up to roughly +1.0 BLEU points in both language pairs.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1910.03467 [cs.CL]**                                 |
+|           | (or **arXiv:1910.03467v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-10-09-6">6. Controlled Text Generation for Data Augmentation in Intelligent Artificial Agents</h2>
+
+Title: [Controlled Text Generation for Data Augmentation in Intelligent Artificial Agents](https://arxiv.org/abs/1910.03487)
+
+Authors: [Nikolaos Malandrakis](https://arxiv.org/search/cs?searchtype=author&query=Malandrakis%2C+N), [Minmin Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+M), [Anuj Goyal](https://arxiv.org/search/cs?searchtype=author&query=Goyal%2C+A), [Shuyang Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+S), [Abhishek Sethi](https://arxiv.org/search/cs?searchtype=author&query=Sethi%2C+A), [Angeliki Metallinou](https://arxiv.org/search/cs?searchtype=author&query=Metallinou%2C+A)
+
+*(Submitted on 4 Oct 2019)*
+
+> Data availability is a bottleneck during early stages of development of new capabilities for intelligent artificial agents. We investigate the use of text generation techniques to augment the training data of a popular commercial artificial agent across categories of functionality, with the goal of faster development of new functionality. We explore a variety of encoder-decoder generative models for synthetic training data generation and propose using conditional variational auto-encoders. Our approach requires only direct optimization, works well with limited data and significantly outperforms the previous controlled text generation techniques. Further, the generated data are used as additional training samples in an extrinsic intent classification task, leading to improved performance by up to 5\% absolute f-score in low-resource cases, validating the usefulness of our approach.
+
+| Comments: | EMNLP WNGT workshop                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| Cite as:  | **arXiv:1910.03487 [cs.CL]**                                 |
+|           | (or **arXiv:1910.03487v1 [cs.CL]** for this version)         |
+
+
+
 # 2019-10-08
 
 [Return to Index](#Index)
@@ -50,7 +178,6 @@
 
 
 <h2 id="2019-10-08-1">1. How Transformer Revitalizes Character-based Neural Machine Translation: An Investigation on Japanese-Vietnamese Translation Systems</h2>
-
 Title: [How Transformer Revitalizes Character-based Neural Machine Translation: An Investigation on Japanese-Vietnamese Translation Systems](https://arxiv.org/abs/1910.02238)
 
 Authors:[Thi-Vinh Ngo](https://arxiv.org/search/cs?searchtype=author&query=Ngo%2C+T), [Thanh-Le Ha](https://arxiv.org/search/cs?searchtype=author&query=Ha%2C+T), [Phuong-Thai Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+P), [Le-Minh Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+L)
@@ -69,7 +196,6 @@ Authors:[Thi-Vinh Ngo](https://arxiv.org/search/cs?searchtype=author&query=Ngo%2
 
 
 <h2 id="2019-10-08-2">2. Domain Differential Adaptation for Neural Machine Translation</h2>
-
 Title: [Domain Differential Adaptation for Neural Machine Translation](https://arxiv.org/abs/1910.02555)
 
 Authors: [Zi-Yi Dou](https://arxiv.org/search/cs?searchtype=author&query=Dou%2C+Z), [Xinyi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Junjie Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+J), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
@@ -89,7 +215,6 @@ Authors: [Zi-Yi Dou](https://arxiv.org/search/cs?searchtype=author&query=Dou%2C+
 
 
 <h2 id="2019-10-08-3">3. On Leveraging the Visual Modality for Neural Machine Translation</h2>
-
 Title: [On Leveraging the Visual Modality for Neural Machine Translation](https://arxiv.org/abs/1910.02754)
 
 Authors:[Vikas Raunak](https://arxiv.org/search/cs?searchtype=author&query=Raunak%2C+V), [Sang Keun Choe](https://arxiv.org/search/cs?searchtype=author&query=Choe%2C+S+K), [Quanyang Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+Q), [Yi Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+Y), [Florian Metze](https://arxiv.org/search/cs?searchtype=author&query=Metze%2C+F)
@@ -109,7 +234,6 @@ Authors:[Vikas Raunak](https://arxiv.org/search/cs?searchtype=author&query=Rauna
 
 
 <h2 id="2019-10-08-4">4. Adversarial reconstruction for Multi-modal Machine Translation</h2>
-
 Title: [Adversarial reconstruction for Multi-modal Machine Translation](https://arxiv.org/abs/1910.02766)
 
 Authors:[Jean-Benoit Delbrouck](https://arxiv.org/search/cs?searchtype=author&query=Delbrouck%2C+J), [Stéphane Dupont](https://arxiv.org/search/cs?searchtype=author&query=Dupont%2C+S)
