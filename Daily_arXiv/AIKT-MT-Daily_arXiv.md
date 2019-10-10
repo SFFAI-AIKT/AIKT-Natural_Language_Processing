@@ -2,6 +2,8 @@
 
 # Index
 
+- [2019-10-10](#2019-10-10)
+  - [1. Novel Applications of Factored Neural Machine Translation](#2019-10-10-1)
 - [2019-10-09](#2019-10-09)
   - [1. Improving Neural Machine Translation Robustness via Data Augmentation: Beyond Back Translation](#2019-10-09-1)
   - [2. Make Up Your Mind! Adversarial Generation of Inconsistent Natural Language Explanations](#2019-10-09-2)
@@ -50,6 +52,27 @@
 
 
 
+# 2019-10-10
+
+[Return to Index](#Index)
+
+<h2 id="2019-10-10-1">1. Novel Applications of Factored Neural Machine Translation</h2>
+
+Title: [Novel Applications of Factored Neural Machine Translation](https://arxiv.org/abs/1910.03912)
+
+Authors: [Patrick Wilken](https://arxiv.org/search/cs?searchtype=author&query=Wilken%2C+P), [Evgeny Matusov](https://arxiv.org/search/cs?searchtype=author&query=Matusov%2C+E)
+
+*(Submitted on 9 Oct 2019)*
+
+> In this work, we explore the usefulness of target factors in neural machine translation (NMT) beyond their original purpose of predicting word lemmas and their inflections, as proposed by Garcìa-Martìnez et al., 2016. For this, we introduce three novel applications of the factored output architecture: In the first one, we use a factor to explicitly predict the word case separately from the target word itself. This allows for information to be shared between different casing variants of a word. In a second task, we use a factor to predict when two consecutive subwords have to be joined, eliminating the need for target subword joining markers. The third task is the prediction of special tokens of the operation sequence NMT model (OSNMT) of Stahlberg et al., 2018. Automatic evaluation on English-to-German and English-to-Turkish tasks showed that integration of such auxiliary prediction tasks into NMT is at least as good as the standard NMT approach. For the OSNMT, we observed a significant improvement in BLEU over the baseline OSNMT implementation due to a reduced output sequence length that resulted from the introduction of the target factors.
+
+| Subjects: | **Computation and Language (cs.CL)**; Neural and Evolutionary Computing (cs.NE) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **arXiv:1910.03912 [cs.CL]**                                 |
+|           | (or **arXiv:1910.03912v1 [cs.CL]** for this version)         |
+
+
+
 # 2019-10-09
 
 [Return to Index](#Index)
@@ -57,7 +80,6 @@
 
 
 <h2 id="2019-10-09-1">1. Improving Neural Machine Translation Robustness via Data Augmentation: Beyond Back Translation</h2>
-
 Title: [Improving Neural Machine Translation Robustness via Data Augmentation: Beyond Back Translation](https://arxiv.org/abs/1910.03009)
 
 Authors: [Zhenhao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Lucia Specia](https://arxiv.org/search/cs?searchtype=author&query=Specia%2C+L)
@@ -76,7 +98,6 @@ Authors: [Zhenhao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+
 
 
 <h2 id="2019-10-09-2">2. Make Up Your Mind! Adversarial Generation of Inconsistent Natural Language Explanations</h2>
-
 Title: [Make Up Your Mind! Adversarial Generation of Inconsistent Natural Language Explanations](https://arxiv.org/abs/1910.03065)
 
 Authors: [Camburu Oana-Maria](https://arxiv.org/search/cs?searchtype=author&query=Oana-Maria%2C+C), [Shillingford Brendan](https://arxiv.org/search/cs?searchtype=author&query=Brendan%2C+S), [Minervini Pasquale](https://arxiv.org/search/cs?searchtype=author&query=Pasquale%2C+M), [Lukasiewicz Thomas](https://arxiv.org/search/cs?searchtype=author&query=Thomas%2C+L), [Blunsom Phil](https://arxiv.org/search/cs?searchtype=author&query=Phil%2C+B)
@@ -96,7 +117,6 @@ Authors: [Camburu Oana-Maria](https://arxiv.org/search/cs?searchtype=author&quer
 
 
 <h2 id="2019-10-09-3">3. One-To-Many Multilingual End-to-end Speech Translation</h2>
-
 Title: [One-To-Many Multilingual End-to-end Speech Translation](https://arxiv.org/abs/1910.03320)
 
 Authors: [Mattia Antonino Di Gangi](https://arxiv.org/search/cs?searchtype=author&query=Di+Gangi%2C+M+A), [Matteo Negri](https://arxiv.org/search/cs?searchtype=author&query=Negri%2C+M), [Marco Turchi](https://arxiv.org/search/cs?searchtype=author&query=Turchi%2C+M)
@@ -116,7 +136,6 @@ Authors: [Mattia Antonino Di Gangi](https://arxiv.org/search/cs?searchtype=autho
 
 
 <h2 id="2019-10-09-4">4. An Interactive Machine Translation Framework for Modernizing Historical Documents</h2>
-
 Title: [An Interactive Machine Translation Framework for Modernizing Historical Documents](https://arxiv.org/abs/1910.03355)
 
 Authors: [Miguel Domingo](https://arxiv.org/search/cs?searchtype=author&query=Domingo%2C+M), [Francisco Casacuberta](https://arxiv.org/search/cs?searchtype=author&query=Casacuberta%2C+F)
@@ -135,7 +154,6 @@ Authors: [Miguel Domingo](https://arxiv.org/search/cs?searchtype=author&query=Do
 
 
 <h2 id="2019-10-09-5">5. Overcoming the Rare Word Problem for Low-Resource Language Pairs in Neural Machine Translation</h2>
-
 Title: [Overcoming the Rare Word Problem for Low-Resource Language Pairs in Neural Machine Translation](https://arxiv.org/abs/1910.03467)
 
 Authors: [Thi-Vinh Ngo](https://arxiv.org/search/cs?searchtype=author&query=Ngo%2C+T), [Thanh-Le Ha](https://arxiv.org/search/cs?searchtype=author&query=Ha%2C+T), [Phuong-Thai Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+P), [Le-Minh Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+L)
@@ -154,7 +172,6 @@ Authors: [Thi-Vinh Ngo](https://arxiv.org/search/cs?searchtype=author&query=Ngo%
 
 
 <h2 id="2019-10-09-6">6. Controlled Text Generation for Data Augmentation in Intelligent Artificial Agents</h2>
-
 Title: [Controlled Text Generation for Data Augmentation in Intelligent Artificial Agents](https://arxiv.org/abs/1910.03487)
 
 Authors: [Nikolaos Malandrakis](https://arxiv.org/search/cs?searchtype=author&query=Malandrakis%2C+N), [Minmin Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+M), [Anuj Goyal](https://arxiv.org/search/cs?searchtype=author&query=Goyal%2C+A), [Shuyang Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+S), [Abhishek Sethi](https://arxiv.org/search/cs?searchtype=author&query=Sethi%2C+A), [Angeliki Metallinou](https://arxiv.org/search/cs?searchtype=author&query=Metallinou%2C+A)
