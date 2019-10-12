@@ -2,6 +2,9 @@
 
 # Index
 
+- [2019-10-11](#2019-10-11)
+  - [1. Cross-lingual Alignment vs Joint Training: A Comparative Study and A Simple Unified Framework](#2019-10-11-1)
+  - [2. Automatic Quality Estimation for Natural Language Generation: Ranting (Jointly Rating and Ranking)](#2019-10-11-2)
 - [2019-10-10](#2019-10-10)
   - [1. Novel Applications of Factored Neural Machine Translation](#2019-10-10-1)
 - [2019-10-09](#2019-10-09)
@@ -52,12 +55,59 @@
 
 
 
+# 2019-10-11
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-10-11-1">1. Novel Applications of Factored Neural Machine Translation</h2>
+
+Title: [Cross-lingual Alignment vs Joint Training: A Comparative Study and A Simple Unified Framework](https://arxiv.org/abs/1910.04708)
+
+Authors: [Zirui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Jiateng Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie%2C+J), [Ruochen Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+R), [Yiming Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G), [Jaime Carbonell](https://arxiv.org/search/cs?searchtype=author&query=Carbonell%2C+J)
+
+*(Submitted on 10 Oct 2019)*
+
+> Learning multilingual representations of text has proven a successful method for many cross-lingual transfer learning tasks. There are two main paradigms for learning such representations: (1) alignment, which maps different independently trained monolingual representations into a shared space, and (2) joint training, which directly learns unified multilingual representations using monolingual and cross-lingual objectives jointly. In this paper, we first conduct direct comparisons of representations learned using both of these methods across diverse cross-lingual tasks. Our empirical results reveal a set of pros and cons for both methods, and show that the relative performance of alignment versus joint training is task-dependent. Stemming from this analysis, we propose a simple and novel framework that combines these two previously mutually-exclusive approaches. Extensive experiments on various tasks demonstrate that our proposed framework alleviates limitations of both approaches, and outperforms existing methods on the MUSE bilingual lexicon induction (BLI) benchmark. We further show that our proposed framework can generalize to contextualized representations and achieves state-of-the-art results on the CoNLL cross-lingual NER benchmark.
+
+| Comments: | First two authors contributted equally. Source code is available at [this https URL](https://github.com/thespectrewithin/joint-align) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **arXiv:1910.04708 [cs.CL]**                                 |
+|           | (or **arXiv:1910.04708v1 [cs.CL]** for this version)         |
+
+
+
+
+
+<h2 id="2019-10-11-2">2. Automatic Quality Estimation for Natural Language Generation: Ranting (Jointly Rating and Ranking)</h2>
+
+Title: [Automatic Quality Estimation for Natural Language Generation: Ranting (Jointly Rating and Ranking)](https://arxiv.org/abs/1910.04731)
+
+Authors: [Ondřej Dušek](https://arxiv.org/search/cs?searchtype=author&query=Dušek%2C+O), [Karin Sevegnani](https://arxiv.org/search/cs?searchtype=author&query=Sevegnani%2C+K), [Ioannis Konstas](https://arxiv.org/search/cs?searchtype=author&query=Konstas%2C+I), [Verena Rieser](https://arxiv.org/search/cs?searchtype=author&query=Rieser%2C+V)
+
+*(Submitted on 10 Oct 2019)*
+
+> We present a recurrent neural network based system for automatic quality estimation of natural language generation (NLG) outputs, which jointly learns to assign numerical ratings to individual outputs and to provide pairwise rankings of two different outputs. The latter is trained using pairwise hinge loss over scores from two copies of the rating network.
+> We use learning to rank and synthetic data to improve the quality of ratings assigned by our system: we synthesise training pairs of distorted system outputs and train the system to rank the less distorted one higher. This leads to a 12% increase in correlation with human ratings over the previous benchmark. We also establish the state of the art on the dataset of relative rankings from the E2E NLG Challenge (Dušek et al., 2019), where synthetic data lead to a 4% accuracy increase over the base model.
+
+| Comments:    | Accepted as a short paper at INLG 2019               |
+| ------------ | ---------------------------------------------------- |
+| Subjects:    | **Computation and Language (cs.CL)**                 |
+| ACM classes: | I.2.7                                                |
+| Cite as:     | **arXiv:1910.04731 [cs.CL]**                         |
+|              | (or **arXiv:1910.04731v1 [cs.CL]** for this version) |
+
+
+
+
+
 # 2019-10-10
 
 [Return to Index](#Index)
 
 <h2 id="2019-10-10-1">1. Novel Applications of Factored Neural Machine Translation</h2>
-
 Title: [Novel Applications of Factored Neural Machine Translation](https://arxiv.org/abs/1910.03912)
 
 Authors: [Patrick Wilken](https://arxiv.org/search/cs?searchtype=author&query=Wilken%2C+P), [Evgeny Matusov](https://arxiv.org/search/cs?searchtype=author&query=Matusov%2C+E)
