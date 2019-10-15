@@ -2,6 +2,11 @@
 
 # Index
 
+- [2019-10-15](#2019-10-15)
+  - [1. From the Paft to the Fiiture: a Fully Automatic NMT and Word Embeddings Method for OCR Post-Correction](#2019-10-15-1)
+  - [2. Transformers without Tears: Improving the Normalization of Self-Attention](#2019-10-15-2)
+  - [3. Estimating post-editing effort: a study on human judgements, task-based and reference-based metrics of MT quality](#2019-10-15-3)
+  - [4. Updating Pre-trained Word Vectors and Text Classifiers using Monolingual Alignment](#2019-10-15-4)
 - [2019-10-14](#2019-10-14)
   - [1. How Does Language Influence Documentation Workflow? Unsupervised Word Discovery Using Translations in Multiple Languages](#2019-10-14-1)
 - [2019-10-11](#2019-10-11)
@@ -64,7 +69,6 @@
 
 
 <h2 id="2019-10-15-1">1. From the Paft to the Fiiture: a Fully Automatic NMT and Word Embeddings Method for OCR Post-Correction</h2>
-
 Title: [From the Paft to the Fiiture: a Fully Automatic NMT and Word Embeddings Method for OCR Post-Correction]( https://arxiv.org/abs/1910.05535 )
 
 Authors: [Mika Hämäläinen](https://arxiv.org/search/cs?searchtype=author&query=Hämäläinen%2C+M), [Simon Hengchen](https://arxiv.org/search/cs?searchtype=author&query=Hengchen%2C+S)
@@ -84,7 +88,6 @@ Authors: [Mika Hämäläinen](https://arxiv.org/search/cs?searchtype=author&quer
 
 
 <h2 id="2019-10-15-2">2. Transformers without Tears: Improving the Normalization of Self-Attention</h2>
-
 Title: [Transformers without Tears: Improving the Normalization of Self-Attention]( https://arxiv.org/abs/1910.05895 )
 
 Authors: [Toan Q. Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+T+Q), [Julian Salazar](https://arxiv.org/search/cs?searchtype=author&query=Salazar%2C+J)
@@ -104,7 +107,6 @@ Authors: [Toan Q. Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Ng
 
 
 <h2 id="2019-10-15-3">3. Estimating post-editing effort: a study on human judgements, task-based and reference-based metrics of MT quality</h2>
-
 Title: [Estimating post-editing effort: a study on human judgements, task-based and reference-based metrics of MT quality]( https://arxiv.org/abs/1910.06204 )
 
 Authors: [Carolina Scarton](https://arxiv.org/search/cs?searchtype=author&query=Scarton%2C+C), [Mikel L. Forcada](https://arxiv.org/search/cs?searchtype=author&query=Forcada%2C+M+L), [Miquel Esplà-Gomis](https://arxiv.org/search/cs?searchtype=author&query=Esplà-Gomis%2C+M), [Lucia Specia](https://arxiv.org/search/cs?searchtype=author&query=Specia%2C+L)
@@ -124,7 +126,6 @@ Authors: [Carolina Scarton](https://arxiv.org/search/cs?searchtype=author&query=
 
 
 <h2 id="2019-10-15-4">4. Updating Pre-trained Word Vectors and Text Classifiers using Monolingual Alignment</h2>
-
 Title: [Updating Pre-trained Word Vectors and Text Classifiers using Monolingual Alignment]( https://arxiv.org/abs/1910.06241 )
 
 Authors: [Piotr Bojanowski](https://arxiv.org/search/cs?searchtype=author&query=Bojanowski%2C+P), [Onur Celebi](https://arxiv.org/search/cs?searchtype=author&query=Celebi%2C+O), [Tomas Mikolov](https://arxiv.org/search/cs?searchtype=author&query=Mikolov%2C+T), [Edouard Grave](https://arxiv.org/search/cs?searchtype=author&query=Grave%2C+E), [Armand Joulin](https://arxiv.org/search/cs?searchtype=author&query=Joulin%2C+A)
@@ -147,7 +148,6 @@ Authors: [Piotr Bojanowski](https://arxiv.org/search/cs?searchtype=author&query=
 [Return to Index](#Index)
 
 <h2 id="2019-10-14-1">1. How Does Language Influence Documentation Workflow? Unsupervised Word Discovery Using Translations in Multiple Languages</h2>
-
 Title: [How Does Language Influence Documentation Workflow? Unsupervised Word Discovery Using Translations in Multiple Languages]( https://arxiv.org/abs/1910.05154 )
 
 Authors: [Marcely Zanon Boito](https://arxiv.org/search/cs?searchtype=author&query=Boito%2C+M+Z), [Aline Villavicencio](https://arxiv.org/search/cs?searchtype=author&query=Villavicencio%2C+A), [Laurent Besacier](https://arxiv.org/search/cs?searchtype=author&query=Besacier%2C+L)
