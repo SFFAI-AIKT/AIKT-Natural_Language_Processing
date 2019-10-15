@@ -2,6 +2,8 @@
 
 # Index
 
+- [2019-10-14](#2019-10-14)
+  - [1. How Does Language Influence Documentation Workflow? Unsupervised Word Discovery Using Translations in Multiple Languages](#2019-10-14-1)
 - [2019-10-11](#2019-10-11)
   - [1. Cross-lingual Alignment vs Joint Training: A Comparative Study and A Simple Unified Framework](#2019-10-11-1)
   - [2. Automatic Quality Estimation for Natural Language Generation: Ranting (Jointly Rating and Ranking)](#2019-10-11-2)
@@ -55,6 +57,115 @@
 
 
 
+# 2019-10-15
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-10-15-1">1. From the Paft to the Fiiture: a Fully Automatic NMT and Word Embeddings Method for OCR Post-Correction</h2>
+
+Title: [From the Paft to the Fiiture: a Fully Automatic NMT and Word Embeddings Method for OCR Post-Correction]( https://arxiv.org/abs/1910.05535 )
+
+Authors: [Mika Hämäläinen](https://arxiv.org/search/cs?searchtype=author&query=Hämäläinen%2C+M), [Simon Hengchen](https://arxiv.org/search/cs?searchtype=author&query=Hengchen%2C+S)
+
+*(Submitted on 12 Oct 2019)*
+
+> A great deal of historical corpora suffer from errors introduced by the OCR (optical character recognition) methods used in the digitization process. Correcting these errors manually is a time-consuming process and a great part of the automatic approaches have been relying on rules or supervised machine learning. We present a fully automatic unsupervised way of extracting parallel data for training a character-based sequence-to-sequence NMT (neural machine translation) model to conduct OCR error correction.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | Proceedings of Recent Advances in Natural Language Processing. Angelova, G., Mitkov, R., Nikolova, I. & Temnikova, I. (eds.). Shoumen: INCOMA, p. 432-437 6 p (2019) |
+| Cite as:           | **[arXiv:1910.05535](https://arxiv.org/abs/1910.05535) [cs.CL]** |
+|                    | (or **[arXiv:1910.05535v1](https://arxiv.org/abs/1910.05535v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-15-2">2. Transformers without Tears: Improving the Normalization of Self-Attention</h2>
+
+Title: [Transformers without Tears: Improving the Normalization of Self-Attention]( https://arxiv.org/abs/1910.05895 )
+
+Authors: [Toan Q. Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+T+Q), [Julian Salazar](https://arxiv.org/search/cs?searchtype=author&query=Salazar%2C+J)
+
+*(Submitted on 14 Oct 2019)*
+
+> We evaluate three simple, normalization-centric changes to improve Transformer training. First, we show that pre-norm residual connections (PreNorm) and smaller initializations enable warmup-free, validation-based training with large learning rates. Second, we propose ℓ2 normalization with a single scale parameter (ScaleNorm) for faster training and better performance. Finally, we reaffirm the effectiveness of normalizing word embeddings to a fixed length (FixNorm). On five low-resource translation pairs from TED Talks-based corpora, these changes always converge, giving an average +1.1 BLEU over state-of-the-art bilingual baselines and a new 32.8 BLEU on IWSLT'15 English-Vietnamese. We observe sharper performance curves, more consistent gradient norms, and a linear relationship between activation scaling and decoder depth. Surprisingly, in the high-resource setting (WMT'14 English-German), ScaleNorm and FixNorm remain competitive but PreNorm degrades performance.
+
+| Comments: | Accepted to IWSLT'19                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| Cite as:  | **[arXiv:1910.05895](https://arxiv.org/abs/1910.05895) [cs.CL]** |
+|           | (or **[arXiv:1910.05895v1](https://arxiv.org/abs/1910.05895v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-15-3">3. Estimating post-editing effort: a study on human judgements, task-based and reference-based metrics of MT quality</h2>
+
+Title: [Estimating post-editing effort: a study on human judgements, task-based and reference-based metrics of MT quality]( https://arxiv.org/abs/1910.06204 )
+
+Authors: [Carolina Scarton](https://arxiv.org/search/cs?searchtype=author&query=Scarton%2C+C), [Mikel L. Forcada](https://arxiv.org/search/cs?searchtype=author&query=Forcada%2C+M+L), [Miquel Esplà-Gomis](https://arxiv.org/search/cs?searchtype=author&query=Esplà-Gomis%2C+M), [Lucia Specia](https://arxiv.org/search/cs?searchtype=author&query=Specia%2C+L)
+
+*(Submitted on 14 Oct 2019)*
+
+> Devising metrics to assess translation quality has always been at the core of machine translation (MT) research. Traditional automatic reference-based metrics, such as BLEU, have shown correlations with human judgements of adequacy and fluency and have been paramount for the advancement of MT system development. Crowd-sourcing has popularised and enabled the scalability of metrics based on human judgements, such as subjective direct assessments (DA) of adequacy, that are believed to be more reliable than reference-based automatic metrics. Finally, task-based measurements, such as post-editing time, are expected to provide a more detailed evaluation of the usefulness of translations for a specific task. Therefore, while DA averages adequacy judgements to obtain an appraisal of (perceived) quality independently of the task, and reference-based automatic metrics try to objectively estimate quality also in a task-independent way, task-based metrics are measurements obtained either during or after performing a specific task. In this paper we argue that, although expensive, task-based measurements are the most reliable when estimating MT quality in a specific task; in our case, this task is post-editing. To that end, we report experiments on a dataset with newly-collected post-editing indicators and show their usefulness when estimating post-editing effort. Our results show that task-based metrics comparing machine-translated and post-edited versions are the best at tracking post-editing effort, as expected. These metrics are followed by DA, and then by metrics comparing the machine-translated version and independent references. We suggest that MT practitioners should be aware of these differences and acknowledge their implications when deciding how to evaluate MT for post-editing purposes.
+
+| Comments: | IWSLT 2019, Hong Kong, November 2 and 3, 2019                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:1910.06204](https://arxiv.org/abs/1910.06204) [cs.CL]** |
+|           | (or **[arXiv:1910.06204v1](https://arxiv.org/abs/1910.06204v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-15-4">4. Updating Pre-trained Word Vectors and Text Classifiers using Monolingual Alignment</h2>
+
+Title: [Updating Pre-trained Word Vectors and Text Classifiers using Monolingual Alignment]( https://arxiv.org/abs/1910.06241 )
+
+Authors: [Piotr Bojanowski](https://arxiv.org/search/cs?searchtype=author&query=Bojanowski%2C+P), [Onur Celebi](https://arxiv.org/search/cs?searchtype=author&query=Celebi%2C+O), [Tomas Mikolov](https://arxiv.org/search/cs?searchtype=author&query=Mikolov%2C+T), [Edouard Grave](https://arxiv.org/search/cs?searchtype=author&query=Grave%2C+E), [Armand Joulin](https://arxiv.org/search/cs?searchtype=author&query=Joulin%2C+A)
+
+*(Submitted on 14 Oct 2019)*
+
+> In this paper, we focus on the problem of adapting word vector-based models to new textual data. Given a model pre-trained on large reference data, how can we adapt it to a smaller piece of data with a slightly different language distribution? We frame the adaptation problem as a monolingual word vector alignment problem, and simply average models after alignment. We align vectors using the RCSLS criterion. Our formulation results in a simple and efficient algorithm that allows adapting general-purpose models to changing word distributions. In our evaluation, we consider applications to word embedding and text classification models. We show that the proposed approach yields good performance in all setups and outperforms a baseline consisting in fine-tuning the model on new data.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:1910.06241](https://arxiv.org/abs/1910.06241) [cs.CL]** |
+|           | (or **[arXiv:1910.06241v1](https://arxiv.org/abs/1910.06241v1) [cs.CL]** for this version) |
+
+
+
+
+
+# 2019-10-14
+
+[Return to Index](#Index)
+
+<h2 id="2019-10-14-1">1. How Does Language Influence Documentation Workflow? Unsupervised Word Discovery Using Translations in Multiple Languages</h2>
+
+Title: [How Does Language Influence Documentation Workflow? Unsupervised Word Discovery Using Translations in Multiple Languages]( https://arxiv.org/abs/1910.05154 )
+
+Authors: [Marcely Zanon Boito](https://arxiv.org/search/cs?searchtype=author&query=Boito%2C+M+Z), [Aline Villavicencio](https://arxiv.org/search/cs?searchtype=author&query=Villavicencio%2C+A), [Laurent Besacier](https://arxiv.org/search/cs?searchtype=author&query=Besacier%2C+L)
+
+*(Submitted on 11 Oct 2019)*
+
+> For language documentation initiatives, transcription is an expensive resource: one minute of audio is estimated to take one hour and a half on average of a linguist's work (Austin and Sallabank, 2013). Recently, collecting aligned translations in well-resourced languages became a popular solution for ensuring posterior interpretability of the recordings (Adda et al. 2016). In this paper we investigate language-related impact in automatic approaches for computational language documentation. We translate the bilingual Mboshi-French parallel corpus (Godard et al. 2017) into four other languages, and we perform bilingual-rooted unsupervised word discovery. Our results hint towards an impact of the well-resourced language in the quality of the output. However, by combining the information learned by different bilingual models, we are only able to marginally increase the quality of the segmentation.
+
+| Comments: | 4 pages, workshop LIFT 2019                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:1910.05154](https://arxiv.org/abs/1910.05154) [cs.CL]** |
+|           | (or **[arXiv:1910.05154v1](https://arxiv.org/abs/1910.05154v1) [cs.CL]** for this version) |
+
+
+
+
+
 # 2019-10-11
 
 [Return to Index](#Index)
@@ -62,7 +173,6 @@
 
 
 <h2 id="2019-10-11-1">1. Novel Applications of Factored Neural Machine Translation</h2>
-
 Title: [Cross-lingual Alignment vs Joint Training: A Comparative Study and A Simple Unified Framework](https://arxiv.org/abs/1910.04708)
 
 Authors: [Zirui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Jiateng Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie%2C+J), [Ruochen Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+R), [Yiming Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G), [Jaime Carbonell](https://arxiv.org/search/cs?searchtype=author&query=Carbonell%2C+J)
@@ -82,7 +192,6 @@ Authors: [Zirui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2
 
 
 <h2 id="2019-10-11-2">2. Automatic Quality Estimation for Natural Language Generation: Ranting (Jointly Rating and Ranking)</h2>
-
 Title: [Automatic Quality Estimation for Natural Language Generation: Ranting (Jointly Rating and Ranking)](https://arxiv.org/abs/1910.04731)
 
 Authors: [Ondřej Dušek](https://arxiv.org/search/cs?searchtype=author&query=Dušek%2C+O), [Karin Sevegnani](https://arxiv.org/search/cs?searchtype=author&query=Sevegnani%2C+K), [Ioannis Konstas](https://arxiv.org/search/cs?searchtype=author&query=Konstas%2C+I), [Verena Rieser](https://arxiv.org/search/cs?searchtype=author&query=Rieser%2C+V)
