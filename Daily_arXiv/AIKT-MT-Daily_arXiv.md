@@ -2,6 +2,13 @@
 
 # Index
 
+- [2019-10-16](#2019-10-16)
+  - [1. In-training Matrix Factorization for Parameter-frugal Neural Machine Translation](#2019-10-16-1)
+  - [2. Mapping Supervised Bilingual Word Embeddings from English to low-resource languages](#2019-10-16-2)
+  - [3. Detecting Machine-Translated Text using Back Translation](#2019-10-16-3)
+  - [4. Auto-Sizing the Transformer Network: Improving Speed, Efficiency, and Performance for Low-Resource Machine Translation](#2019-10-16-4)
+  - [5. On the Importance of Word Boundaries in Character-level Neural Machine Translation](#2019-10-16-5)
+  - [6. Facebook AI's WAT19 Myanmar-English Translation Task Submission](#2019-10-16-6)
 - [2019-10-15](#2019-10-15)
   - [1. From the Paft to the Fiiture: a Fully Automatic NMT and Word Embeddings Method for OCR Post-Correction](#2019-10-15-1)
   - [2. Transformers without Tears: Improving the Normalization of Self-Attention](#2019-10-15-2)
@@ -59,6 +66,131 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2019-10-16
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-10-16-1">1. In-training Matrix Factorization for Parameter-frugal Neural Machine Translation</h2>
+
+Title: [In-training Matrix Factorization for Parameter-frugal Neural Machine Translation]( https://arxiv.org/abs/1910.06393 )
+
+Authors: [Zachary Kaden](https://arxiv.org/search/cs?searchtype=author&query=Kaden%2C+Z), [Teven Le Scao](https://arxiv.org/search/cs?searchtype=author&query=Scao%2C+T+L), [Raphael Olivier](https://arxiv.org/search/cs?searchtype=author&query=Olivier%2C+R)
+
+*(Submitted on 27 Sep 2019)*
+
+> In this paper, we propose the use of in-training matrix factorization to reduce the model size for neural machine translation. Using in-training matrix factorization, parameter matrices may be decomposed into the products of smaller matrices, which can compress large machine translation architectures by vastly reducing the number of learnable parameters. We apply in-training matrix factorization to different layers of standard neural architectures and show that in-training factorization is capable of reducing nearly 50% of learnable parameters without any associated loss in BLEU score. Further, we find that in-training matrix factorization is especially powerful on embedding layers, providing a simple and effective method to curtail the number of parameters with minimal impact on model performance, and, at times, an increase in performance.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:1910.06393](https://arxiv.org/abs/1910.06393) [cs.CL]** |
+|           | (or **[arXiv:1910.06393v1](https://arxiv.org/abs/1910.06393v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-16-2">2. Mapping Supervised Bilingual Word Embeddings from English to low-resource languages</h2>
+
+Title: [Mapping Supervised Bilingual Word Embeddings from English to low-resource languages]( https://arxiv.org/abs/1910.06411 )
+
+Authors: [Sourav Dutta](https://arxiv.org/search/cs?searchtype=author&query=Dutta%2C+S) (1) ((1) Saarland University)
+
+*(Submitted on 14 Oct 2019)*
+
+> It is very challenging to work with low-resource languages due to the inadequate availability of data. Using a dictionary to map independently trained word embeddings into a shared vector space has proved to be very useful in learning bilingual embeddings in the past. Here we have tried to map individual embeddings of words in English and their corresponding translated words in low-resource languages like Estonian, Slovenian, Slovakian, and Hungarian. We have used a supervised learning approach. We report accuracy scores through various retrieval strategies which show that it is possible to approach challenging tasks in Natural Language Processing like machine translation for such languages, provided that we have at least some amount of proper bilingual data. We also conclude that we can follow an unsupervised learning path on monolingual text data as that is more suitable for low-resource languages.
+
+| Comments: | 7 pages, 4 tables                                            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:1910.06411](https://arxiv.org/abs/1910.06411) [cs.CL]** |
+|           | (or **[arXiv:1910.06411v1](https://arxiv.org/abs/1910.06411v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-16-3">3. Detecting Machine-Translated Text using Back Translation</h2>
+
+Title: [Detecting Machine-Translated Text using Back Translation]( https://arxiv.org/abs/1910.06558 )
+
+Authors: [Hoang-Quoc Nguyen-Son](https://arxiv.org/search/cs?searchtype=author&query=Nguyen-Son%2C+H), [Tran Phuong Thao](https://arxiv.org/search/cs?searchtype=author&query=Thao%2C+T+P), [Seira Hidano](https://arxiv.org/search/cs?searchtype=author&query=Hidano%2C+S), [Shinsaku Kiyomoto](https://arxiv.org/search/cs?searchtype=author&query=Kiyomoto%2C+S)
+
+*(Submitted on 15 Oct 2019)*
+
+> Machine-translated text plays a crucial role in the communication of people using different languages. However, adversaries can use such text for malicious purposes such as plagiarism and fake review. The existing methods detected a machine-translated text only using the text's intrinsic content, but they are unsuitable for classifying the machine-translated and human-written texts with the same meanings. We have proposed a method to extract features used to distinguish machine/human text based on the similarity between the intrinsic text and its back-translation. The evaluation of detecting translated sentences with French shows that our method achieves 75.0% of both accuracy and F-score. It outperforms the existing methods whose the best accuracy is 62.8% and the F-score is 62.7%. The proposed method even detects more efficiently the back-translated text with 83.4% of accuracy, which is higher than 66.7% of the best previous accuracy. We also achieve similar results not only with F-score but also with similar experiments related to Japanese. Moreover, we prove that our detector can recognize both machine-translated and machine-back-translated texts without the language information which is used to generate these machine texts. It demonstrates the persistence of our method in various applications in both low- and rich-resource languages.
+
+| Comments: | INLG 2019, 9 pages                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:1910.06558](https://arxiv.org/abs/1910.06558) [cs.CL]** |
+|           | (or **[arXiv:1910.06558v1](https://arxiv.org/abs/1910.06558v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-16-4">4. Auto-Sizing the Transformer Network: Improving Speed, Efficiency, and Performance for Low-Resource Machine Translation</h2>
+
+Title: [Auto-Sizing the Transformer Network: Improving Speed, Efficiency, and Performance for Low-Resource Machine Translation]( https://arxiv.org/abs/1910.06717 )
+
+Authors: [Kenton Murray](https://arxiv.org/search/cs?searchtype=author&query=Murray%2C+K), [Jeffery Kinnison](https://arxiv.org/search/cs?searchtype=author&query=Kinnison%2C+J), [Toan Q. Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+T+Q), [Walter Scheirer](https://arxiv.org/search/cs?searchtype=author&query=Scheirer%2C+W), [David Chiang](https://arxiv.org/search/cs?searchtype=author&query=Chiang%2C+D)
+
+*(Submitted on 1 Oct 2019)*
+
+> Neural sequence-to-sequence models, particularly the Transformer, are the state of the art in machine translation. Yet these neural networks are very sensitive to architecture and hyperparameter settings. Optimizing these settings by grid or random search is computationally expensive because it requires many training runs. In this paper, we incorporate architecture search into a single training run through auto-sizing, which uses regularization to delete neurons in a network over the course of training. On very low-resource language pairs, we show that auto-sizing can improve BLEU scores by up to 3.9 points while removing one-third of the parameters from the model.
+
+| Comments: | The 3rd Workshop on Neural Generation and Translation (WNGT 2019) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| Cite as:  | **[arXiv:1910.06717](https://arxiv.org/abs/1910.06717) [cs.CL]** |
+|           | (or **[arXiv:1910.06717v1](https://arxiv.org/abs/1910.06717v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-16-5">5. On the Importance of Word Boundaries in Character-level Neural Machine Translation</h2>
+
+Title: [On the Importance of Word Boundaries in Character-level Neural Machine Translation]( https://arxiv.org/abs/1910.06753 )
+
+Authors: [Duygu Ataman](https://arxiv.org/search/cs?searchtype=author&query=Ataman%2C+D), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O), [Mattia A. Di Gangi](https://arxiv.org/search/cs?searchtype=author&query=Di+Gangi%2C+M+A), [Marcello Federico](https://arxiv.org/search/cs?searchtype=author&query=Federico%2C+M), [Alexandra Birch](https://arxiv.org/search/cs?searchtype=author&query=Birch%2C+A)
+
+*(Submitted on 15 Oct 2019)*
+
+> Neural Machine Translation (NMT) models generally perform translation using a fixed-size lexical vocabulary, which is an important bottleneck on their generalization capability and overall translation quality. The standard approach to overcome this limitation is to segment words into subword units, typically using some external tools with arbitrary heuristics, resulting in vocabulary units not optimized for the translation task. Recent studies have shown that the same approach can be extended to perform NMT directly at the level of characters, which can deliver translation accuracy on-par with subword-based models, on the other hand, this requires relatively deeper networks. In this paper, we propose a more computationally-efficient solution for character-level NMT which implements a hierarchical decoding architecture where translations are subsequently generated at the level of words and characters. We evaluate different methods for open-vocabulary NMT in the machine translation task from English into five languages with distinct morphological typology, and show that the hierarchical decoding model can reach higher translation accuracy than the subword-level NMT model using significantly fewer parameters, while demonstrating better capacity in learning longer-distance contextual and grammatical dependencies than the standard character-level NMT model.
+
+| Comments: | To appear at the 3rd Workshop on Neural Generation and Translation (WNGT 2019) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:1910.06753](https://arxiv.org/abs/1910.06753) [cs.CL]** |
+|           | (or **[arXiv:1910.06753v1](https://arxiv.org/abs/1910.06753v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-16-6">6. Facebook AI's WAT19 Myanmar-English Translation Task Submission</h2>
+
+Title: [Facebook AI's WAT19 Myanmar-English Translation Task Submission]( https://arxiv.org/abs/1910.06848 )
+
+Authors: [Peng-Jen Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+P), [Jiajun Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+J), [Matt Le](https://arxiv.org/search/cs?searchtype=author&query=Le%2C+M), [Vishrav Chaudhary](https://arxiv.org/search/cs?searchtype=author&query=Chaudhary%2C+V), [Ahmed El-Kishky](https://arxiv.org/search/cs?searchtype=author&query=El-Kishky%2C+A), [Guillaume Wenzek](https://arxiv.org/search/cs?searchtype=author&query=Wenzek%2C+G), [Myle Ott](https://arxiv.org/search/cs?searchtype=author&query=Ott%2C+M), [Marc'Aurelio Ranzato](https://arxiv.org/search/cs?searchtype=author&query=Ranzato%2C+M)
+
+*(Submitted on 15 Oct 2019)*
+
+> This paper describes Facebook AI's submission to the WAT 2019 Myanmar-English translation task. Our baseline systems are BPE-based transformer models. We explore methods to leverage monolingual data to improve generalization, including self-training, back-translation and their combination. We further improve results by using noisy channel re-ranking and ensembling. We demonstrate that these techniques can significantly improve not only a system trained with additional monolingual data, but even the baseline system trained exclusively on the provided small parallel dataset. Our system ranks first in both directions according to human evaluation and BLEU, with a gain of over 8 BLEU points above the second best system.
+
+| Comments: | The 6th Workshop on Asian Translation                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:1910.06848](https://arxiv.org/abs/1910.06848) [cs.CL]** |
+|           | (or **[arXiv:1910.06848v1](https://arxiv.org/abs/1910.06848v1) [cs.CL]** for this version) |
+
+
 
 
 
