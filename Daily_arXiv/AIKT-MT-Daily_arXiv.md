@@ -2,6 +2,13 @@
 
 # Index
 
+- [2019-10-17](#2019-10-17)
+  - [1. Root Mean Square Layer Normalization](#2019-10-17-1)
+  - [2. Mix-review: Alleviate Forgetting in the Pretrain-Finetune Framework for Neural Language Generation Models](#2019-10-17-2)
+  - [3. Meemi: Finding the Middle Ground in Cross-lingual Word Embeddings](#2019-10-17-3)
+  - [4. Fine-grained evaluation of German-English Machine Translation based on a Test Suite](#2019-10-17-4)
+  - [5. Fine-grained evaluation of Quality Estimation for Machine translation based on a linguistically-motivated Test Suite](#2019-10-17-5)
+  - [6. Using Whole Document Context in Neural Machine Translation](#2019-10-17-6)
 - [2019-10-16](#2019-10-16)
   - [1. In-training Matrix Factorization for Parameter-frugal Neural Machine Translation](#2019-10-16-1)
   - [2. Mapping Supervised Bilingual Word Embeddings from English to low-resource languages](#2019-10-16-2)
@@ -69,6 +76,131 @@
 
 
 
+# 2019-10-17
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-10-17-1">1. Root Mean Square Layer Normalization</h2>
+
+Title: [Root Mean Square Layer Normalization]( https://arxiv.org/abs/1910.07467 )
+
+Authors: [Biao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+B), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R)
+
+*(Submitted on 16 Oct 2019)*
+
+> Layer normalization (LayerNorm) has been successfully applied to various deep neural networks to help stabilize training and boost model convergence because of its capability in handling re-centering and re-scaling of both inputs and weight matrix. However, the computational overhead introduced by LayerNorm makes these improvements expensive and significantly slows the underlying network, e.g. RNN in particular. In this paper, we hypothesize that re-centering invariance in LayerNorm is dispensable and propose root mean square layer normalization, or RMSNorm. RMSNorm regularizes the summed inputs to a neuron in one layer according to root mean square (RMS), giving the model re-scaling invariance property and implicit learning rate adaptation ability. RMSNorm is computationally simpler and thus more efficient than LayerNorm. We also present partial RMSNorm, or pRMSNorm where the RMS is estimated from p% of the summed inputs without breaking the above properties. Extensive experiments on several tasks using diverse network architectures show that RMSNorm achieves comparable performance against LayerNorm but reduces the running time by 7%~64% on different models. Source code is available at [this https URL](https://github.com/bzhangGo/rmsnorm).
+
+| Comments: | NeurIPS 2019                                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| Cite as:  | **[arXiv:1910.07467](https://arxiv.org/abs/1910.07467) [cs.LG]** |
+|           | (or **[arXiv:1910.07467v1](https://arxiv.org/abs/1910.07467v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-17-2">2. Mix-review: Alleviate Forgetting in the Pretrain-Finetune Framework for Neural Language Generation Models</h2>
+
+Title: [Mix-review: Alleviate Forgetting in the Pretrain-Finetune Framework for Neural Language Generation Models]( https://arxiv.org/abs/1910.07117 )
+
+Authors: [Tianxing He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+T), [Jun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J), [Kyunghyun Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+K), [Myle Ott](https://arxiv.org/search/cs?searchtype=author&query=Ott%2C+M), [Bing Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+B), [James Glass](https://arxiv.org/search/cs?searchtype=author&query=Glass%2C+J), [Fuchun Peng](https://arxiv.org/search/cs?searchtype=author&query=Peng%2C+F)
+
+*(Submitted on 16 Oct 2019)*
+
+> In this work, we study how the large-scale pretrain-finetune framework changes the behavior of a neural language generator. We focus on the transformer encoder-decoder model for the open-domain dialogue response generation task. We find that after standard fine-tuning, the model forgets important language generation skills acquired during large-scale pre-training. We demonstrate the forgetting phenomenon through a detailed behavior analysis from the perspectives of context sensitivity and knowledge transfer. Adopting the concept of data mixing, we propose an intuitive fine-tuning strategy named "mix-review". We find that mix-review effectively regularize the fine-tuning process, and the forgetting problem is largely alleviated. Finally, we discuss interesting behavior of the resulting dialogue model and its implications.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:1910.07117](https://arxiv.org/abs/1910.07117) [cs.CL]** |
+|           | (or **[arXiv:1910.07117v1](https://arxiv.org/abs/1910.07117v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-17-3">3. Meemi: Finding the Middle Ground in Cross-lingual Word Embeddings</h2>
+
+Title: [Meemi: Finding the Middle Ground in Cross-lingual Word Embeddings]( https://arxiv.org/abs/1910.07221 )
+
+Authors: [Yerai Doval](https://arxiv.org/search/cs?searchtype=author&query=Doval%2C+Y), [Jose Camacho-Collados](https://arxiv.org/search/cs?searchtype=author&query=Camacho-Collados%2C+J), [Luis Espinosa-Anke](https://arxiv.org/search/cs?searchtype=author&query=Espinosa-Anke%2C+L), [Steven Schockaert](https://arxiv.org/search/cs?searchtype=author&query=Schockaert%2C+S)
+
+*(Submitted on 16 Oct 2019)*
+
+> Word embeddings have become a standard resource in the toolset of any Natural Language Processing practitioner. While monolingual word embeddings encode information about words in the context of a particular language, cross-lingual embeddings define a multilingual space where word embeddings from two or more languages are integrated together. Current state-of-the-art approaches learn these embeddings by aligning two disjoint monolingual vector spaces through an orthogonal transformation which preserves the structure of the monolingual counterparts. In this work, we propose to apply an additional transformation after this initial alignment step, which aims to bring the vector representations of a given word and its translations closer to their average. Since this additional transformation is non-orthogonal, it also affects the structure of the monolingual spaces. We show that our approach both improves the integration of the monolingual spaces as well as the quality of the monolingual spaces themselves. Furthermore, because our transformation can be applied to an arbitrary number of languages, we are able to effectively obtain a truly multilingual space. The resulting (monolingual and multilingual) spaces show consistent gains over the current state-of-the-art in standard intrinsic tasks, namely dictionary induction and word similarity, as well as in extrinsic tasks such as cross-lingual hypernym discovery and cross-lingual natural language inference.
+
+| Comments:    | 32 pages, 2 figures, 7 tables. Preprint submitted to Journal of Information Processing and Management |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**                         |
+| MSC classes: | 68T50                                                        |
+| Cite as:     | **[arXiv:1910.07221](https://arxiv.org/abs/1910.07221) [cs.CL]** |
+|              | (or **[arXiv:1910.07221v1](https://arxiv.org/abs/1910.07221v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-17-4">4. Fine-grained evaluation of German-English Machine Translation based on a Test Suite</h2>
+
+Title: [Fine-grained evaluation of German-English Machine Translation based on a Test Suite]( https://arxiv.org/abs/1910.07460 )
+
+Authors: [Vivien Macketanz](https://arxiv.org/search/cs?searchtype=author&query=Macketanz%2C+V), [Eleftherios Avramidis](https://arxiv.org/search/cs?searchtype=author&query=Avramidis%2C+E), [Aljoscha Burchardt](https://arxiv.org/search/cs?searchtype=author&query=Burchardt%2C+A), [Hans Uszkoreit](https://arxiv.org/search/cs?searchtype=author&query=Uszkoreit%2C+H)
+
+*(Submitted on 16 Oct 2019)*
+
+> We present an analysis of 16 state-of-the-art MT systems on German-English based on a linguistically-motivated test suite. The test suite has been devised manually by a team of language professionals in order to cover a broad variety of linguistic phenomena that MT often fails to translate properly. It contains 5,000 test sentences covering 106 linguistic phenomena in 14 categories, with an increased focus on verb tenses, aspects and moods. The MT outputs are evaluated in a semi-automatic way through regular expressions that focus only on the part of the sentence that is relevant to each phenomenon. Through our analysis, we are able to compare systems based on their performance on these categories. Additionally, we reveal strengths and weaknesses of particular systems and we identify grammatical phenomena where the overall performance of MT is relatively low.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | Proceedings of the Third Conference on Machine Translation (WMT-2018) |
+| DOI:               | [10.18653/v1/W18-6436](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.18653%2Fv1%2FW18-6436&v=5a63db80) |
+| Cite as:           | **[arXiv:1910.07460](https://arxiv.org/abs/1910.07460) [cs.CL]** |
+|                    | (or **[arXiv:1910.07460v1](https://arxiv.org/abs/1910.07460v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-17-5">5. Fine-grained evaluation of Quality Estimation for Machine translation based on a linguistically-motivated Test Suite</h2>
+
+Title: [Fine-grained evaluation of Quality Estimation for Machine translation based on a linguistically-motivated Test Suite]( https://arxiv.org/abs/1910.07468 )
+
+Authors: [Avramidis Eleftherios](https://arxiv.org/search/cs?searchtype=author&query=Eleftherios%2C+A), [Vivien Macketanz](https://arxiv.org/search/cs?searchtype=author&query=Macketanz%2C+V), [Arle Lommel](https://arxiv.org/search/cs?searchtype=author&query=Lommel%2C+A), [Hans Uszkoreit](https://arxiv.org/search/cs?searchtype=author&query=Uszkoreit%2C+H)
+
+*(Submitted on 16 Oct 2019)*
+
+> We present an alternative method of evaluating Quality Estimation systems, which is based on a linguistically-motivated Test Suite. We create a test-set consisting of 14 linguistic error categories and we gather for each of them a set of samples with both correct and erroneous translations. Then, we measure the performance of 5 Quality Estimation systems by checking their ability to distinguish between the correct and the erroneous translations. The detailed results are much more informative about the ability of each system. The fact that different Quality Estimation systems perform differently at various phenomena confirms the usefulness of the Test Suite.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | Proceedings of the First Workshop on Translation Quality Estimation and Automatic Post-Editing (QEAPE-2018) |
+| Cite as:           | **[arXiv:1910.07468](https://arxiv.org/abs/1910.07468) [cs.CL]** |
+|                    | (or **[arXiv:1910.07468v1](https://arxiv.org/abs/1910.07468v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-17-6">6. Using Whole Document Context in Neural Machine Translation</h2>
+
+Title: [Using Whole Document Context in Neural Machine Translation]( https://arxiv.org/abs/1910.07481 )
+
+Authors: [Valentin Macé](https://arxiv.org/search/cs?searchtype=author&query=Macé%2C+V), [Christophe Servan](https://arxiv.org/search/cs?searchtype=author&query=Servan%2C+C)
+
+*(Submitted on 16 Oct 2019)*
+
+> In Machine Translation, considering the document as a whole can help to resolve ambiguities and inconsistencies. In this paper, we propose a simple yet promising approach to add contextual information in Neural Machine Translation. We present a method to add source context that capture the whole document with accurate boundaries, taking every word into account. We provide this additional information to a Transformer model and study the impact of our method on three language pairs. The proposed approach obtains promising results in the English-German, English-French and French-English document-level translation tasks. We observe interesting cross-sentential behaviors where the model learns to use document-level information to improve translation coherence.
+
+| Comments: | Accepted paper to IWSLT2019                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:1910.07481](https://arxiv.org/abs/1910.07481) [cs.CL]** |
+|           | (or **[arXiv:1910.07481v1](https://arxiv.org/abs/1910.07481v1) [cs.CL]** for this version) |
+
+
+
 # 2019-10-16
 
 [Return to Index](#Index)
@@ -76,7 +208,6 @@
 
 
 <h2 id="2019-10-16-1">1. In-training Matrix Factorization for Parameter-frugal Neural Machine Translation</h2>
-
 Title: [In-training Matrix Factorization for Parameter-frugal Neural Machine Translation]( https://arxiv.org/abs/1910.06393 )
 
 Authors: [Zachary Kaden](https://arxiv.org/search/cs?searchtype=author&query=Kaden%2C+Z), [Teven Le Scao](https://arxiv.org/search/cs?searchtype=author&query=Scao%2C+T+L), [Raphael Olivier](https://arxiv.org/search/cs?searchtype=author&query=Olivier%2C+R)
@@ -95,7 +226,6 @@ Authors: [Zachary Kaden](https://arxiv.org/search/cs?searchtype=author&query=Kad
 
 
 <h2 id="2019-10-16-2">2. Mapping Supervised Bilingual Word Embeddings from English to low-resource languages</h2>
-
 Title: [Mapping Supervised Bilingual Word Embeddings from English to low-resource languages]( https://arxiv.org/abs/1910.06411 )
 
 Authors: [Sourav Dutta](https://arxiv.org/search/cs?searchtype=author&query=Dutta%2C+S) (1) ((1) Saarland University)
@@ -115,7 +245,6 @@ Authors: [Sourav Dutta](https://arxiv.org/search/cs?searchtype=author&query=Dutt
 
 
 <h2 id="2019-10-16-3">3. Detecting Machine-Translated Text using Back Translation</h2>
-
 Title: [Detecting Machine-Translated Text using Back Translation]( https://arxiv.org/abs/1910.06558 )
 
 Authors: [Hoang-Quoc Nguyen-Son](https://arxiv.org/search/cs?searchtype=author&query=Nguyen-Son%2C+H), [Tran Phuong Thao](https://arxiv.org/search/cs?searchtype=author&query=Thao%2C+T+P), [Seira Hidano](https://arxiv.org/search/cs?searchtype=author&query=Hidano%2C+S), [Shinsaku Kiyomoto](https://arxiv.org/search/cs?searchtype=author&query=Kiyomoto%2C+S)
@@ -135,7 +264,6 @@ Authors: [Hoang-Quoc Nguyen-Son](https://arxiv.org/search/cs?searchtype=author&q
 
 
 <h2 id="2019-10-16-4">4. Auto-Sizing the Transformer Network: Improving Speed, Efficiency, and Performance for Low-Resource Machine Translation</h2>
-
 Title: [Auto-Sizing the Transformer Network: Improving Speed, Efficiency, and Performance for Low-Resource Machine Translation]( https://arxiv.org/abs/1910.06717 )
 
 Authors: [Kenton Murray](https://arxiv.org/search/cs?searchtype=author&query=Murray%2C+K), [Jeffery Kinnison](https://arxiv.org/search/cs?searchtype=author&query=Kinnison%2C+J), [Toan Q. Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+T+Q), [Walter Scheirer](https://arxiv.org/search/cs?searchtype=author&query=Scheirer%2C+W), [David Chiang](https://arxiv.org/search/cs?searchtype=author&query=Chiang%2C+D)
@@ -155,7 +283,6 @@ Authors: [Kenton Murray](https://arxiv.org/search/cs?searchtype=author&query=Mur
 
 
 <h2 id="2019-10-16-5">5. On the Importance of Word Boundaries in Character-level Neural Machine Translation</h2>
-
 Title: [On the Importance of Word Boundaries in Character-level Neural Machine Translation]( https://arxiv.org/abs/1910.06753 )
 
 Authors: [Duygu Ataman](https://arxiv.org/search/cs?searchtype=author&query=Ataman%2C+D), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O), [Mattia A. Di Gangi](https://arxiv.org/search/cs?searchtype=author&query=Di+Gangi%2C+M+A), [Marcello Federico](https://arxiv.org/search/cs?searchtype=author&query=Federico%2C+M), [Alexandra Birch](https://arxiv.org/search/cs?searchtype=author&query=Birch%2C+A)
@@ -175,7 +302,6 @@ Authors: [Duygu Ataman](https://arxiv.org/search/cs?searchtype=author&query=Atam
 
 
 <h2 id="2019-10-16-6">6. Facebook AI's WAT19 Myanmar-English Translation Task Submission</h2>
-
 Title: [Facebook AI's WAT19 Myanmar-English Translation Task Submission]( https://arxiv.org/abs/1910.06848 )
 
 Authors: [Peng-Jen Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+P), [Jiajun Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+J), [Matt Le](https://arxiv.org/search/cs?searchtype=author&query=Le%2C+M), [Vishrav Chaudhary](https://arxiv.org/search/cs?searchtype=author&query=Chaudhary%2C+V), [Ahmed El-Kishky](https://arxiv.org/search/cs?searchtype=author&query=El-Kishky%2C+A), [Guillaume Wenzek](https://arxiv.org/search/cs?searchtype=author&query=Wenzek%2C+G), [Myle Ott](https://arxiv.org/search/cs?searchtype=author&query=Ott%2C+M), [Marc'Aurelio Ranzato](https://arxiv.org/search/cs?searchtype=author&query=Ranzato%2C+M)
