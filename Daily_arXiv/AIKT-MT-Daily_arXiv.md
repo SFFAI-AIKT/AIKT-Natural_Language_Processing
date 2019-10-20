@@ -2,6 +2,8 @@
 
 # Index
 
+- [2019-10-18](#2019-10-18)
+  - [1. LibriVoxDeEn: A Corpus for German-to-English Speech Translation and Speech Recognition](#2019-10-18-1)
 - [2019-10-17](#2019-10-17)
   - [1. Root Mean Square Layer Normalization](#2019-10-17-1)
   - [2. Mix-review: Alleviate Forgetting in the Pretrain-Finetune Framework for Neural Language Generation Models](#2019-10-17-2)
@@ -76,6 +78,30 @@
 
 
 
+# 2019-10-18
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-10-18-1">1. LibriVoxDeEn: A Corpus for German-to-English Speech Translation and Speech Recognition</h2>
+
+Title: [LibriVoxDeEn: A Corpus for German-to-English Speech Translation and Speech Recognition]( https://arxiv.org/abs/1910.07924 )
+
+Authors: [Benjamin Beilharz](https://arxiv.org/search/cs?searchtype=author&query=Beilharz%2C+B), [Xin Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+X), [Sariya Karimova](https://arxiv.org/search/cs?searchtype=author&query=Karimova%2C+S), [Stefan Riezler](https://arxiv.org/search/cs?searchtype=author&query=Riezler%2C+S)
+
+*(Submitted on 17 Oct 2019)*
+
+> We present a corpus of sentence-aligned triples of German audio, German text, and English translation, based on German audio books. The corpus consists of over 100 hours of audio material and over 50k parallel sentences. The audio data is read speech and thus low in disfluencies. The quality of audio and sentence alignments has been checked by a manual evaluation, showing that speech alignment quality is in general very high. The sentence alignment quality is comparable to well-used parallel translation data and can be adjusted by cutoffs on the automatic alignment score. To our knowledge, this corpus is to date the largest resource for end-to-end speech translation for German.
+
+| Comments: | LREC 2020 submission                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:1910.07924](https://arxiv.org/abs/1910.07924) [cs.CL]** |
+|           | (or **[arXiv:1910.07924v1](https://arxiv.org/abs/1910.07924v1) [cs.CL]** for this version) |
+
+
+
 # 2019-10-17
 
 [Return to Index](#Index)
@@ -83,7 +109,6 @@
 
 
 <h2 id="2019-10-17-1">1. Root Mean Square Layer Normalization</h2>
-
 Title: [Root Mean Square Layer Normalization]( https://arxiv.org/abs/1910.07467 )
 
 Authors: [Biao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+B), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R)
@@ -103,7 +128,6 @@ Authors: [Biao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%
 
 
 <h2 id="2019-10-17-2">2. Mix-review: Alleviate Forgetting in the Pretrain-Finetune Framework for Neural Language Generation Models</h2>
-
 Title: [Mix-review: Alleviate Forgetting in the Pretrain-Finetune Framework for Neural Language Generation Models]( https://arxiv.org/abs/1910.07117 )
 
 Authors: [Tianxing He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+T), [Jun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J), [Kyunghyun Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+K), [Myle Ott](https://arxiv.org/search/cs?searchtype=author&query=Ott%2C+M), [Bing Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+B), [James Glass](https://arxiv.org/search/cs?searchtype=author&query=Glass%2C+J), [Fuchun Peng](https://arxiv.org/search/cs?searchtype=author&query=Peng%2C+F)
@@ -122,7 +146,6 @@ Authors: [Tianxing He](https://arxiv.org/search/cs?searchtype=author&query=He%2C
 
 
 <h2 id="2019-10-17-3">3. Meemi: Finding the Middle Ground in Cross-lingual Word Embeddings</h2>
-
 Title: [Meemi: Finding the Middle Ground in Cross-lingual Word Embeddings]( https://arxiv.org/abs/1910.07221 )
 
 Authors: [Yerai Doval](https://arxiv.org/search/cs?searchtype=author&query=Doval%2C+Y), [Jose Camacho-Collados](https://arxiv.org/search/cs?searchtype=author&query=Camacho-Collados%2C+J), [Luis Espinosa-Anke](https://arxiv.org/search/cs?searchtype=author&query=Espinosa-Anke%2C+L), [Steven Schockaert](https://arxiv.org/search/cs?searchtype=author&query=Schockaert%2C+S)
@@ -143,7 +166,6 @@ Authors: [Yerai Doval](https://arxiv.org/search/cs?searchtype=author&query=Doval
 
 
 <h2 id="2019-10-17-4">4. Fine-grained evaluation of German-English Machine Translation based on a Test Suite</h2>
-
 Title: [Fine-grained evaluation of German-English Machine Translation based on a Test Suite]( https://arxiv.org/abs/1910.07460 )
 
 Authors: [Vivien Macketanz](https://arxiv.org/search/cs?searchtype=author&query=Macketanz%2C+V), [Eleftherios Avramidis](https://arxiv.org/search/cs?searchtype=author&query=Avramidis%2C+E), [Aljoscha Burchardt](https://arxiv.org/search/cs?searchtype=author&query=Burchardt%2C+A), [Hans Uszkoreit](https://arxiv.org/search/cs?searchtype=author&query=Uszkoreit%2C+H)
@@ -164,7 +186,6 @@ Authors: [Vivien Macketanz](https://arxiv.org/search/cs?searchtype=author&query=
 
 
 <h2 id="2019-10-17-5">5. Fine-grained evaluation of Quality Estimation for Machine translation based on a linguistically-motivated Test Suite</h2>
-
 Title: [Fine-grained evaluation of Quality Estimation for Machine translation based on a linguistically-motivated Test Suite]( https://arxiv.org/abs/1910.07468 )
 
 Authors: [Avramidis Eleftherios](https://arxiv.org/search/cs?searchtype=author&query=Eleftherios%2C+A), [Vivien Macketanz](https://arxiv.org/search/cs?searchtype=author&query=Macketanz%2C+V), [Arle Lommel](https://arxiv.org/search/cs?searchtype=author&query=Lommel%2C+A), [Hans Uszkoreit](https://arxiv.org/search/cs?searchtype=author&query=Uszkoreit%2C+H)
@@ -184,7 +205,6 @@ Authors: [Avramidis Eleftherios](https://arxiv.org/search/cs?searchtype=author&q
 
 
 <h2 id="2019-10-17-6">6. Using Whole Document Context in Neural Machine Translation</h2>
-
 Title: [Using Whole Document Context in Neural Machine Translation]( https://arxiv.org/abs/1910.07481 )
 
 Authors: [Valentin Macé](https://arxiv.org/search/cs?searchtype=author&query=Macé%2C+V), [Christophe Servan](https://arxiv.org/search/cs?searchtype=author&query=Servan%2C+C)
