@@ -2,6 +2,8 @@
 
 # Index
 
+- [2019-10-21](#2019-10-21)
+  - [1. Controlling Utterance Length in NMT-based Word Segmentation with Attention](#2019-10-21-1)
 - [2019-10-18](#2019-10-18)
   - [1. LibriVoxDeEn: A Corpus for German-to-English Speech Translation and Speech Recognition](#2019-10-18-1)
 - [2019-10-17](#2019-10-17)
@@ -78,6 +80,30 @@
 
 
 
+# 2019-10-21
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-10-21-1">1. Controlling Utterance Length in NMT-based Word Segmentation with Attention</h2>
+
+Title: [Controlling Utterance Length in NMT-based Word Segmentation with Attention]( https://arxiv.org/abs/1910.08418 )
+
+Authors: [Pierre Godard](https://arxiv.org/search/cs?searchtype=author&query=Godard%2C+P), [Laurent Besacier](https://arxiv.org/search/cs?searchtype=author&query=Besacier%2C+L), [Francois Yvon](https://arxiv.org/search/cs?searchtype=author&query=Yvon%2C+F)
+
+*(Submitted on 18 Oct 2019)*
+
+> One of the basic tasks of computational language documentation (CLD) is to identify word boundaries in an unsegmented phonemic stream. While several unsupervised monolingual word segmentation algorithms exist in the literature, they are challenged in real-world CLD settings by the small amount of available data. A possible remedy is to take advantage of glosses or translation in a foreign, well-resourced, language, which often exist for such data. In this paper, we explore and compare ways to exploit neural machine translation models to perform unsupervised boundary detection with bilingual information, notably introducing a new loss function for jointly learning alignment and segmentation. We experiment with an actual under-resourced language, Mboshi, and show that these techniques can effectively control the output segmentation length.
+
+| Comments: | Accepted to IWSLT 2019 (Hong-Kong)                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:1910.08418](https://arxiv.org/abs/1910.08418) [cs.CL]** |
+|           | (or **[arXiv:1910.08418v1](https://arxiv.org/abs/1910.08418v1) [cs.CL]** for this version) |
+
+
+
 # 2019-10-18
 
 [Return to Index](#Index)
@@ -85,7 +111,6 @@
 
 
 <h2 id="2019-10-18-1">1. LibriVoxDeEn: A Corpus for German-to-English Speech Translation and Speech Recognition</h2>
-
 Title: [LibriVoxDeEn: A Corpus for German-to-English Speech Translation and Speech Recognition]( https://arxiv.org/abs/1910.07924 )
 
 Authors: [Benjamin Beilharz](https://arxiv.org/search/cs?searchtype=author&query=Beilharz%2C+B), [Xin Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+X), [Sariya Karimova](https://arxiv.org/search/cs?searchtype=author&query=Karimova%2C+S), [Stefan Riezler](https://arxiv.org/search/cs?searchtype=author&query=Riezler%2C+S)
