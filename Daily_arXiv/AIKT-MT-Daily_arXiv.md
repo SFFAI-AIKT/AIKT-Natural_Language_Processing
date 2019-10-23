@@ -2,6 +2,8 @@
 
 # Index
 
+- [2019-10-22](#2019-10-22)
+  - [1. Automatic Post-Editing for Machine Translation](#2019-10-22-1)
 - [2019-10-21](#2019-10-21)
   - [1. Controlling Utterance Length in NMT-based Word Segmentation with Attention](#2019-10-21-1)
 - [2019-10-18](#2019-10-18)
@@ -80,6 +82,30 @@
 
 
 
+# 2019-10-22
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-10-22-1">1. Automatic Post-Editing for Machine Translation</h2>
+
+Title: [Automatic Post-Editing for Machine Translation]( https://arxiv.org/abs/1910.08592 )
+
+Authors： [Rajen Chatterjee](https://arxiv.org/search/cs?searchtype=author&query=Chatterjee%2C+R)
+
+*(Submitted on 18 Oct 2019)*
+
+> Automatic Post-Editing (APE) aims to correct systematic errors in a machine translated text. This is primarily useful when the machine translation (MT) system is not accessible for improvement, leaving APE as a viable option to improve translation quality as a downstream task - which is the focus of this thesis. This field has received less attention compared to MT due to several reasons, which include: the limited availability of data to perform a sound research, contrasting views reported by different researchers about the effectiveness of APE, and limited attention from the industry to use APE in current production pipelines. In this thesis, we perform a thorough investigation of APE as a downstream task in order to: i) understand its potential to improve translation quality; ii) advance the core technology - starting from classical methods to recent deep-learning based solutions; iii) cope with limited and sparse data; iv) better leverage multiple input sources; v) mitigate the task-specific problem of over-correction; vi) enhance neural decoding to leverage external knowledge; and vii) establish an online learning framework to handle data diversity in real-time. All the above contributions are discussed across several chapters, and most of them are evaluated in the APE shared task organized each year at the Conference on Machine Translation. Our efforts in improving the technology resulted in the best system at the 2017 APE shared task, and our work on online learning received a distinguished paper award at the Italian Conference on Computational Linguistics. Overall, outcomes and findings of our work have boost interest among researchers and attracted industries to examine this technology to solve real-word problems.
+
+| Comments: | PhD dissertation on Automatic Post-Editing for Machine Translation (this work has been done between 2014 and 2017) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:1910.08592](https://arxiv.org/abs/1910.08592) [cs.CL]** |
+|           | (or **[arXiv:1910.08592v1](https://arxiv.org/abs/1910.08592v1) [cs.CL]** for this version) |
+
+
+
 # 2019-10-21
 
 [Return to Index](#Index)
@@ -87,7 +113,6 @@
 
 
 <h2 id="2019-10-21-1">1. Controlling Utterance Length in NMT-based Word Segmentation with Attention</h2>
-
 Title: [Controlling Utterance Length in NMT-based Word Segmentation with Attention]( https://arxiv.org/abs/1910.08418 )
 
 Authors: [Pierre Godard](https://arxiv.org/search/cs?searchtype=author&query=Godard%2C+P), [Laurent Besacier](https://arxiv.org/search/cs?searchtype=author&query=Besacier%2C+L), [Francois Yvon](https://arxiv.org/search/cs?searchtype=author&query=Yvon%2C+F)
