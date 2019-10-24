@@ -9,7 +9,7 @@
   - [4. Fully Quantized Transformer for Improved Translation](#2019-10-24-4)
   - [5. Instance-Based Model Adaptation For Direct Speech Translation](#2019-10-24-5)
 - [2019-10-23](#2019-10-23)
-  - []()
+  - [1. Depth-Adaptive Transformer]( #2019-10-23-1 )
 - [2019-10-22](#2019-10-22)
   - [1. Automatic Post-Editing for Machine Translation](#2019-10-22-1)
 - [2019-10-21](#2019-10-21)
@@ -97,7 +97,6 @@
 
 
 <h2 id="2019-10-24-1">1. Robust Neural Machine Translation for Clean and Noisy Speech Transcripts</h2>
-
 Title: [Robust Neural Machine Translation for Clean and Noisy Speech Transcripts]( https://arxiv.org/abs/1910.10238 )
 
 Authors: [Mattia Antonino Di Gangi](https://arxiv.org/search/cs?searchtype=author&query=Di+Gangi%2C+M+A), [Robert Enyedi](https://arxiv.org/search/cs?searchtype=author&query=Enyedi%2C+R), [Alessandra Brusadin](https://arxiv.org/search/cs?searchtype=author&query=Brusadin%2C+A), [Marcello Federico](https://arxiv.org/search/cs?searchtype=author&query=Federico%2C+M)
@@ -117,7 +116,6 @@ Authors: [Mattia Antonino Di Gangi](https://arxiv.org/search/cs?searchtype=autho
 
 
 <h2 id="2019-10-24-2">2. Controlling the Output Length of Neural Machine Translation</h2>
-
 Title: [Controlling the Output Length of Neural Machine Translation]( https://arxiv.org/abs/1910.10408 )
 
 Authors: [Surafel Melaku Lakew](https://arxiv.org/search/cs?searchtype=author&query=Lakew%2C+S+M), [Mattia Di Gangi](https://arxiv.org/search/cs?searchtype=author&query=Di+Gangi%2C+M), [Marcello Federico](https://arxiv.org/search/cs?searchtype=author&query=Federico%2C+M)
@@ -137,7 +135,6 @@ Authors: [Surafel Melaku Lakew](https://arxiv.org/search/cs?searchtype=author&qu
 
 
 <h2 id="2019-10-24-3">3. XL-Editor: Post-editing Sentences with XLNet</h2>
-
 Title: [XL-Editor: Post-editing Sentences with XLNet]( https://arxiv.org/abs/1910.10479 )
 
 Authors: [Yong-Siang Shih](https://arxiv.org/search/cs?searchtype=author&query=Shih%2C+Y), [Wei-Cheng Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+W), [Yiming Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y)
@@ -157,7 +154,6 @@ Authors: [Yong-Siang Shih](https://arxiv.org/search/cs?searchtype=author&query=S
 
 
 <h2 id="2019-10-24-4">4. Fully Quantized Transformer for Improved Translation</h2>
-
 Title: [Fully Quantized Transformer for Improved Translation]( https://arxiv.org/abs/1910.10485 )
 
 Authors: [Gabriele Prato](https://arxiv.org/search/cs?searchtype=author&query=Prato%2C+G), [Ella Charlaix](https://arxiv.org/search/cs?searchtype=author&query=Charlaix%2C+E), [Mehdi Rezagholizadeh](https://arxiv.org/search/cs?searchtype=author&query=Rezagholizadeh%2C+M)
@@ -176,7 +172,6 @@ Authors: [Gabriele Prato](https://arxiv.org/search/cs?searchtype=author&query=Pr
 
 
 <h2 id="2019-10-24-5">5. Instance-Based Model Adaptation For Direct Speech Translation</h2>
-
 Title: [Instance-Based Model Adaptation For Direct Speech Translation]( https://arxiv.org/abs/1910.10663 )
 
 Authors: [Mattia Antonino Di Gangi](https://arxiv.org/search/cs?searchtype=author&query=Di+Gangi%2C+M+A), [Viet-Nhat Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+V), [Matteo Negri](https://arxiv.org/search/cs?searchtype=author&query=Negri%2C+M), [Marco Turchi](https://arxiv.org/search/cs?searchtype=author&query=Turchi%2C+M)
@@ -190,6 +185,31 @@ Authors: [Mattia Antonino Di Gangi](https://arxiv.org/search/cs?searchtype=autho
 | Subjects: | **Computation and Language (cs.CL)**; Audio and Speech Processing (eess.AS) |
 | Cite as:  | **[arXiv:1910.10663](https://arxiv.org/abs/1910.10663) [cs.CL]** |
 |           | (or **[arXiv:1910.10663v1](https://arxiv.org/abs/1910.10663v1) [cs.CL]** for this version) |
+
+
+
+
+
+# 2019-10-23
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-10-23-1">1. Depth-Adaptive Transformer</h2>
+
+Title: [Depth-Adaptive Transformer]( https://arxiv.org/abs/1910.10073 )
+
+Authors: [Maha Elbayad](https://arxiv.org/search/cs?searchtype=author&query=Elbayad%2C+M), [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J), [Edouard Grave](https://arxiv.org/search/cs?searchtype=author&query=Grave%2C+E), [Michael Auli](https://arxiv.org/search/cs?searchtype=author&query=Auli%2C+M)
+
+*(Submitted on 22 Oct 2019)*
+
+> State of the art sequence-to-sequence models perform a fixed number of computations for each input sequence regardless of whether it is easy or hard to process. In this paper, we train Transformer models which can make output predictions at different stages of the network and we investigate different ways to predict how much computation is required for a particular sequence. Unlike dynamic computation in Universal Transformers, which applies the same set of layers iteratively, we apply different layers at every step to adjust both the amount of computation as well as the model capacity. Experiments on machine translation benchmarks show that this approach can match the accuracy of a baseline Transformer while using only half the number of decoder layers.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:1910.10073](https://arxiv.org/abs/1910.10073) [cs.CL]** |
+|           | (or **[arXiv:1910.10073v1](https://arxiv.org/abs/1910.10073v1) [cs.CL]** for this version) |
 
 
 
