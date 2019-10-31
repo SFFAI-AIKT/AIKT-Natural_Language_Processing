@@ -2,6 +2,13 @@
 
 # Index
 
+- [2019-10-31](#2019-10-31)
+  - [1. A Latent Morphology Model for Open-Vocabulary Neural Machine Translation](#2019-10-31-1)
+  - [2. Adapting Multilingual Neural Machine Translation to Unseen Languages](#2019-10-31-2)
+  - [3. Ordered Memory](#2019-10-31-3)
+  - [4. BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension](#2019-10-31-4)
+  - [5. An Augmented Transformer Architecture for Natural Language Generation Tasks](#2019-10-31-5)
+  - [6. ON-TRAC Consortium End-to-End Speech Translation Systems for the IWSLT 2019 Shared Task](#2019-10-31-6)
 - [2019-10-30](#2019-10-30)
   - [1. Transformer-based Cascaded Multimodal Speech Translation](#2019-10-30-1)
   - [2. BPE-Dropout: Simple and Effective Subword Regularization](#2019-10-30-2)
@@ -109,6 +116,135 @@
 
 
 
+
+
+# 2019-10-31
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-10-31-1">1. A Latent Morphology Model for Open-Vocabulary Neural Machine Translation</h2>
+
+Title: [A Latent Morphology Model for Open-Vocabulary Neural Machine Translation]( https://arxiv.org/abs/1910.13890 )
+
+Authors: [Duygu Ataman](https://arxiv.org/search/cs?searchtype=author&query=Ataman%2C+D), [Wilker Aziz](https://arxiv.org/search/cs?searchtype=author&query=Aziz%2C+W), [Alexandra Birch](https://arxiv.org/search/cs?searchtype=author&query=Birch%2C+A)
+
+*(Submitted on 30 Oct 2019)*
+
+> Translation into morphologically-rich languages challenges neural machine translation (NMT) models with extremely sparse vocabularies where atomic treatment of surface forms is unrealistic. This problem is typically addressed by either pre-processing words into subword units or performing translation directly at the level of characters. The former is based on word segmentation algorithms optimized using corpus-level statistics with no regard to the translation task. The latter learns directly from translation data but requires rather deep architectures. In this paper, we propose to translate words by modeling word formation through a hierarchical latent variable model which mimics the process of morphological inflection. Our model generates words one character at a time by composing two latent representations: a continuous one, aimed at capturing the lexical semantics, and a set of (approximately) discrete features, aimed at capturing the morphosyntactic function, which are shared among different surface forms. Our model achieves better accuracy in translation into three morphologically-rich languages than conventional open-vocabulary NMT methods, while also demonstrating a better generalization capacity under low to mid-resource settings.
+
+| Comments: | Submitted to ICLR 2020                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:1910.13890](https://arxiv.org/abs/1910.13890) [cs.CL]** |
+|           | (or **[arXiv:1910.13890v1](https://arxiv.org/abs/1910.13890v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-31-2">2. Adapting Multilingual Neural Machine Translation to Unseen Languages</h2>
+
+Title: [Adapting Multilingual Neural Machine Translation to Unseen Languages]( https://arxiv.org/abs/1910.13998 )
+
+Authors: [Surafel M. Lakew](https://arxiv.org/search/cs?searchtype=author&query=Lakew%2C+S+M), [Alina Karakanta](https://arxiv.org/search/cs?searchtype=author&query=Karakanta%2C+A), [Marcello Federico](https://arxiv.org/search/cs?searchtype=author&query=Federico%2C+M), [Matteo Negri](https://arxiv.org/search/cs?searchtype=author&query=Negri%2C+M), [Marco Turchi](https://arxiv.org/search/cs?searchtype=author&query=Turchi%2C+M)
+
+*(Submitted on 30 Oct 2019)*
+
+> Multilingual Neural Machine Translation (MNMT) for low-resource languages (LRL) can be enhanced by the presence of related high-resource languages (HRL), but the relatedness of HRL usually relies on predefined linguistic assumptions about language similarity. Recently, adapting MNMT to a LRL has shown to greatly improve performance. In this work, we explore the problem of adapting an MNMT model to an unseen LRL using data selection and model adaptation. In order to improve NMT for LRL, we employ perplexity to select HRL data that are most similar to the LRL on the basis of language distance. We extensively explore data selection in popular multilingual NMT settings, namely in (zero-shot) translation, and in adaptation from a multilingual pre-trained model, for both directions (LRL-en). We further show that dynamic adaptation of the model's vocabulary results in a more favourable segmentation for the LRL in comparison with direct adaptation. Experiments show reductions in training time and significant performance gains over LRL baselines, even with zero LRL data (+13.0 BLEU), up to +17.0 BLEU for pre-trained multilingual model dynamic adaptation with related data selection. Our method outperforms current approaches, such as massively multilingual models and data augmentation, on four LRL.
+
+| Comments: | Accepted at the 16th International Workshop on Spoken Language Translation (IWSLT), November, 2019 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:1910.13998](https://arxiv.org/abs/1910.13998) [cs.CL]** |
+|           | (or **[arXiv:1910.13998v1](https://arxiv.org/abs/1910.13998v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-31-3">3. Ordered Memory</h2>
+
+Title: [Ordered Memory]( https://arxiv.org/abs/1910.13466 )
+
+Authors: [Yikang Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+Y), [Shawn Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+S), [Seyedarian Hosseini](https://arxiv.org/search/cs?searchtype=author&query=Hosseini%2C+S), [Zhouhan Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Z), [Alessandro Sordoni](https://arxiv.org/search/cs?searchtype=author&query=Sordoni%2C+A), [Aaron Courville](https://arxiv.org/search/cs?searchtype=author&query=Courville%2C+A)
+
+*(Submitted on 29 Oct 2019)*
+
+> Stack-augmented recurrent neural networks (RNNs) have been of interest to the deep learning community for some time. However, the difficulty of training memory models remains a problem obstructing the widespread use of such models. In this paper, we propose the Ordered Memory architecture. Inspired by Ordered Neurons (Shen et al., 2018), we introduce a new attention-based mechanism and use its cumulative probability to control the writing and erasing operation of the memory. We also introduce a new Gated Recursive Cell to compose lower-level representations into higher-level representation. We demonstrate that our model achieves strong performance on the logical inference task (Bowman et al., 2015)and the ListOps (Nangia and Bowman, 2018) task. We can also interpret the model to retrieve the induced tree structure, and find that these induced structures align with the ground truth. Finally, we evaluate our model on the Stanford SentimentTreebank tasks (Socher et al., 2013), and find that it performs comparatively with the state-of-the-art methods in the literature.
+
+| Comments: | Published in NeurIPS 2019                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:1910.13466](https://arxiv.org/abs/1910.13466) [cs.LG]** |
+|           | (or **[arXiv:1910.13466v1](https://arxiv.org/abs/1910.13466v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-31-4">4. BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension</h2>
+
+Title: [BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension]( https://arxiv.org/abs/1910.13461 )
+
+Authors: [Mike Lewis](https://arxiv.org/search/cs?searchtype=author&query=Lewis%2C+M), [Yinhan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Naman Goyal](https://arxiv.org/search/cs?searchtype=author&query=Goyal%2C+N), [Marjan Ghazvininejad](https://arxiv.org/search/cs?searchtype=author&query=Ghazvininejad%2C+M), [Abdelrahman Mohamed](https://arxiv.org/search/cs?searchtype=author&query=Mohamed%2C+A), [Omer Levy](https://arxiv.org/search/cs?searchtype=author&query=Levy%2C+O), [Ves Stoyanov](https://arxiv.org/search/cs?searchtype=author&query=Stoyanov%2C+V), [Luke Zettlemoyer](https://arxiv.org/search/cs?searchtype=author&query=Zettlemoyer%2C+L)
+
+*(Submitted on 29 Oct 2019)*
+
+> We present BART, a denoising autoencoder for pretraining sequence-to-sequence models. BART is trained by (1) corrupting text with an arbitrary noising function, and (2) learning a model to reconstruct the original text. It uses a standard Tranformer-based neural machine translation architecture which, despite its simplicity, can be seen as generalizing BERT (due to the bidirectional encoder), GPT (with the left-to-right decoder), and many other more recent pretraining schemes. We evaluate a number of noising approaches, finding the best performance by both randomly shuffling the order of the original sentences and using a novel in-filling scheme, where spans of text are replaced with a single mask token. BART is particularly effective when fine tuned for text generation but also works well for comprehension tasks. It matches the performance of RoBERTa with comparable training resources on GLUE and SQuAD, achieves new state-of-the-art results on a range of abstractive dialogue, question answering, and summarization tasks, with gains of up to 6 ROUGE. BART also provides a 1.1 BLEU increase over a back-translation system for machine translation, with only target language pretraining. We also report ablation experiments that replicate other pretraining schemes within the BART framework, to better measure which factors most influence end-task performance.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:1910.13461](https://arxiv.org/abs/1910.13461) [cs.CL]** |
+|           | (or **[arXiv:1910.13461v1](https://arxiv.org/abs/1910.13461v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-31-5">5. An Augmented Transformer Architecture for Natural Language Generation Tasks</h2>
+
+Title: [An Augmented Transformer Architecture for Natural Language Generation Tasks]( https://arxiv.org/abs/1910.13634 )
+
+Authors: [Hailiang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+H), [Adele Y.C. Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+A+Y), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Du Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+D), [Zhibin Lei](https://arxiv.org/search/cs?searchtype=author&query=Lei%2C+Z), [Wenye Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+W)
+
+*(Submitted on 30 Oct 2019)*
+
+> The Transformer based neural networks have been showing significant advantages on most evaluations of various natural language processing and other sequence-to-sequence tasks due to its inherent architecture based superiorities. Although the main architecture of the Transformer has been continuously being explored, little attention was paid to the positional encoding module. In this paper, we enhance the sinusoidal positional encoding algorithm by maximizing the variances between encoded consecutive positions to obtain additional promotion. Furthermore, we propose an augmented Transformer architecture encoded with additional linguistic knowledge, such as the Part-of-Speech (POS) tagging, to boost the performance on some natural language generation tasks, e.g., the automatic translation and summarization tasks. Experiments show that the proposed architecture attains constantly superior results compared to the vanilla Transformer.
+
+| Comments: | This paper will be appeared in the conference workshop ICDM MLCS 2019 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:1910.13634](https://arxiv.org/abs/1910.13634) [cs.CL]** |
+|           | (or **[arXiv:1910.13634v1](https://arxiv.org/abs/1910.13634v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2019-10-31-6">6. ON-TRAC Consortium End-to-End Speech Translation Systems for the IWSLT 2019 Shared Task</h2>
+
+Title: [ON-TRAC Consortium End-to-End Speech Translation Systems for the IWSLT 2019 Shared Task]( https://arxiv.org/abs/1910.13689 )
+
+Authors: [Ha Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+H), [Natalia Tomashenko](https://arxiv.org/search/cs?searchtype=author&query=Tomashenko%2C+N), [Marcely Zanon Boito](https://arxiv.org/search/cs?searchtype=author&query=Boito%2C+M+Z), [Antoine Caubriere](https://arxiv.org/search/cs?searchtype=author&query=Caubriere%2C+A), [Fethi Bougares](https://arxiv.org/search/cs?searchtype=author&query=Bougares%2C+F), [Mickael Rouvier](https://arxiv.org/search/cs?searchtype=author&query=Rouvier%2C+M), [Laurent Besacier](https://arxiv.org/search/cs?searchtype=author&query=Besacier%2C+L), [Yannick Esteve](https://arxiv.org/search/cs?searchtype=author&query=Esteve%2C+Y)
+
+*(Submitted on 30 Oct 2019)*
+
+> This paper describes the ON-TRAC Consortium translation systems developed for the end-to-end model task of IWSLT Evaluation 2019 for the English-to-Portuguese language pair. ON-TRAC Consortium is composed of researchers from three French academic laboratories: LIA (Avignon Université), LIG (Université Grenoble Alpes), and LIUM (Le Mans Université). A single end-to-end model built as a neural encoder-decoder architecture with attention mechanism was used for two primary submissions corresponding to the two EN-PT evaluations sets: (1) TED (MuST-C) and (2) How2. In this paper, we notably investigate impact of pooling heterogeneous corpora for training, impact of target tokenization (characters or BPEs), impact of speech input segmentation and we also compare our best end-to-end model (BLEU of 26.91 on MuST-C and 43.82 on How2 validation sets) to a pipeline (ASR+MT) approach.
+
+| Comments: | IWSLT 2019 - First two authors contributed equally to this work |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:1910.13689](https://arxiv.org/abs/1910.13689) [cs.CL]** |
+|           | (or **[arXiv:1910.13689v1](https://arxiv.org/abs/1910.13689v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
 # 2019-10-30
 
 [Return to Index](#Index)
@@ -116,7 +252,6 @@
 
 
 <h2 id="2019-10-30-1">1. Transformer-based Cascaded Multimodal Speech Translation</h2>
-
 Title: [Transformer-based Cascaded Multimodal Speech Translation]( https://arxiv.org/abs/1910.13215 )
 
 Authors: [Zixiu Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Z), [Ozan Caglayan](https://arxiv.org/search/cs?searchtype=author&query=Caglayan%2C+O), [Julia Ive](https://arxiv.org/search/cs?searchtype=author&query=Ive%2C+J), [Josiah Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+J), [Lucia Specia](https://arxiv.org/search/cs?searchtype=author&query=Specia%2C+L)
@@ -135,7 +270,6 @@ Authors: [Zixiu Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Z)
 
 
 <h2 id="2019-10-30-2">2. BPE-Dropout: Simple and Effective Subword Regularization</h2>
-
 Title: [BPE-Dropout: Simple and Effective Subword Regularization]( https://arxiv.org/abs/1910.13267 )
 
 Authors: [Ivan Provilkov](https://arxiv.org/search/cs?searchtype=author&query=Provilkov%2C+I), [Dmitrii Emelianenko](https://arxiv.org/search/cs?searchtype=author&query=Emelianenko%2C+D), [Elena Voita](https://arxiv.org/search/cs?searchtype=author&query=Voita%2C+E)
@@ -154,7 +288,6 @@ Authors: [Ivan Provilkov](https://arxiv.org/search/cs?searchtype=author&query=Pr
 
 
 <h2 id="2019-10-30-3">3. Findings of the Third Workshop on Neural Generation and Translation</h2>
-
 Title: [Findings of the Third Workshop on Neural Generation and Translation]( https://arxiv.org/abs/1910.13299 )
 
 Authors: [Hiroaki Hayashi](https://arxiv.org/search/cs?searchtype=author&query=Hayashi%2C+H) (1), [Yusuke Oda](https://arxiv.org/search/cs?searchtype=author&query=Oda%2C+Y) (2), [Alexandra Birch](https://arxiv.org/search/cs?searchtype=author&query=Birch%2C+A) (3), [Ioannis Konstas](https://arxiv.org/search/cs?searchtype=author&query=Konstas%2C+I) (4), [Andrew Finch](https://arxiv.org/search/cs?searchtype=author&query=Finch%2C+A) (5), [Minh-Thang Luong](https://arxiv.org/search/cs?searchtype=author&query=Luong%2C+M) (2), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G) (1), [Katsuhito Sudoh](https://arxiv.org/search/cs?searchtype=author&query=Sudoh%2C+K) (6) ((1) Carnegie Mellon University, (2) Google Brain, (3) University of Edinburgh, (4) Heriot-Watt University, (5) Apple, (6) Nara Institute of Science and Technology)
@@ -174,7 +307,6 @@ Authors: [Hiroaki Hayashi](https://arxiv.org/search/cs?searchtype=author&query=H
 
 
 <h2 id="2019-10-30-4">4. An Empirical Study of Generation Order for Machine Translation</h2>
-
 Title: [An Empirical Study of Generation Order for Machine Translation]( https://arxiv.org/abs/1910.13437 )
 
 Authors: [William Chan](https://arxiv.org/search/cs?searchtype=author&query=Chan%2C+W), [Mitchell Stern](https://arxiv.org/search/cs?searchtype=author&query=Stern%2C+M), [Jamie Kiros](https://arxiv.org/search/cs?searchtype=author&query=Kiros%2C+J), [Jakob Uszkoreit](https://arxiv.org/search/cs?searchtype=author&query=Uszkoreit%2C+J)
@@ -197,7 +329,6 @@ Authors: [William Chan](https://arxiv.org/search/cs?searchtype=author&query=Chan
 
 
 <h2 id="2019-10-29-1">1. Multitask Learning For Different Subword Segmentations In Neural Machine Translation</h2>
-
 Title: [Multitask Learning For Different Subword Segmentations In Neural Machine Translation]( https://arxiv.org/abs/1910.12368 )
 
 Authors: [Tejas Srinivasan](https://arxiv.org/search/cs?searchtype=author&query=Srinivasan%2C+T), [Ramon Sanabria](https://arxiv.org/search/cs?searchtype=author&query=Sanabria%2C+R), [Florian Metze](https://arxiv.org/search/cs?searchtype=author&query=Metze%2C+F)
@@ -221,7 +352,6 @@ Authors: [Tejas Srinivasan](https://arxiv.org/search/cs?searchtype=author&query=
 
 
 <h2 id="2019-10-28-1">1. DENS: A Dataset for Multi-class Emotion Analysis</h2>
-
 Title: [DENS: A Dataset for Multi-class Emotion Analysis]( https://arxiv.org/abs/1910.11769 )
 
 Authors: [Chen Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+C), [Muhammad Osama](https://arxiv.org/search/cs?searchtype=author&query=Osama%2C+M), [Anderson de Andrade](https://arxiv.org/search/cs?searchtype=author&query=de+Andrade%2C+A)
@@ -241,7 +371,6 @@ Authors: [Chen Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+C
 
 
 <h2 id="2019-10-28-2">2. On the Cross-lingual Transferability of Monolingual Representations</h2>
-
 Title: [On the Cross-lingual Transferability of Monolingual Representations]( https://arxiv.org/abs/1910.11856 )
 
 Authors: [Mikel Artetxe](https://arxiv.org/search/cs?searchtype=author&query=Artetxe%2C+M), [Sebastian Ruder](https://arxiv.org/search/cs?searchtype=author&query=Ruder%2C+S), [Dani Yogatama](https://arxiv.org/search/cs?searchtype=author&query=Yogatama%2C+D)
@@ -260,7 +389,6 @@ Authors: [Mikel Artetxe](https://arxiv.org/search/cs?searchtype=author&query=Art
 
 
 <h2 id="2019-10-28-3">3. Analyzing ASR pretraining for low-resource speech-to-text translation</h2>
-
 Title: [Analyzing ASR pretraining for low-resource speech-to-text translation]( https://arxiv.org/abs/1910.10762 )
 
 Authors: [Mihaela C. Stoian](https://arxiv.org/search/cs?searchtype=author&query=Stoian%2C+M+C), [Sameer Bansal](https://arxiv.org/search/cs?searchtype=author&query=Bansal%2C+S), [Sharon Goldwater](https://arxiv.org/search/cs?searchtype=author&query=Goldwater%2C+S)
@@ -279,7 +407,6 @@ Authors: [Mihaela C. Stoian](https://arxiv.org/search/cs?searchtype=author&query
 
 
 <h2 id="2019-10-28-4">4. Pun-GAN: Generative Adversarial Network for Pun Generation</h2>
-
 Title: [Pun-GAN: Generative Adversarial Network for Pun Generation]( https://arxiv.org/abs/1910.10950 )
 
 Authors: [Fuli Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+F), [Shunyao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+S), [Pengcheng Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+P), [Lei li](https://arxiv.org/search/cs?searchtype=author&query=li%2C+L), [Baobao Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+B), [Zhifang Sui](https://arxiv.org/search/cs?searchtype=author&query=Sui%2C+Z), [Xu Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+X)
@@ -299,7 +426,6 @@ Authors: [Fuli Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+F
 
 
 <h2 id="2019-10-28-5">5. Wasserstein distances for evaluating cross-lingual embeddings</h2>
-
 Title: [Wasserstein distances for evaluating cross-lingual embeddings]( https://arxiv.org/abs/1910.11005 )
 
 Authors: [Georgios Balikas](https://arxiv.org/search/cs?searchtype=author&query=Balikas%2C+G), [Ioannis Partalas](https://arxiv.org/search/cs?searchtype=author&query=Partalas%2C+I)
@@ -318,7 +444,6 @@ Authors: [Georgios Balikas](https://arxiv.org/search/cs?searchtype=author&query=
 
 
 <h2 id="2019-10-28-6">6. Promoting the Knowledge of Source Syntax in Transformer NMT Is Not Needed</h2>
-
 Title: [Promoting the Knowledge of Source Syntax in Transformer NMT Is Not Needed]( https://arxiv.org/abs/1910.11218 )
 
 Authors: [Thuong-Hai Pham](https://arxiv.org/search/cs?searchtype=author&query=Pham%2C+T), [Dominik Macháček](https://arxiv.org/search/cs?searchtype=author&query=Macháček%2C+D), [Ondřej Bojar](https://arxiv.org/search/cs?searchtype=author&query=Bojar%2C+O)
@@ -344,7 +469,6 @@ Authors: [Thuong-Hai Pham](https://arxiv.org/search/cs?searchtype=author&query=P
 
 
 <h2 id="2019-10-25-1">1. A context sensitive real-time Spell Checker with language adaptability</h2>
-
 Title: [A context sensitive real-time Spell Checker with language adaptability]( https://arxiv.org/abs/1910.11242 )
 
 Authors: [Prabhakar Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+P)
@@ -364,7 +488,6 @@ Authors: [Prabhakar Gupta](https://arxiv.org/search/cs?searchtype=author&query=G
 
 
 <h2 id="2019-10-25-2">2. Fast Structured Decoding for Sequence Models</h2>
-
 Title: [Fast Structured Decoding for Sequence Models]( https://arxiv.org/abs/1910.11555 )
 
 Authors: [Zhiqing Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+Z), [Zhuohan Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Haoqing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H), [Zi Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Z), [Di He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+D), [Zhi-Hong Deng](https://arxiv.org/search/cs?searchtype=author&query=Deng%2C+Z)
@@ -384,7 +507,6 @@ Authors: [Zhiqing Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2
 
 
 <h2 id="2019-10-25-3">3. Machine Translation from Natural Language to Code using Long-Short Term Memory</h2>
-
 Title: [Machine Translation from Natural Language to Code using Long-Short Term Memory]( https://arxiv.org/abs/1910.11471 )
 
 Authors: [K.M. Tahsin Hassan Rahit](https://arxiv.org/search/cs?searchtype=author&query=Rahit%2C+K+T+H), [Rashidul Hasan Nabil](https://arxiv.org/search/cs?searchtype=author&query=Nabil%2C+R+H), [Md Hasibul Huq](https://arxiv.org/search/cs?searchtype=author&query=Huq%2C+M+H)
@@ -407,7 +529,6 @@ Authors: [K.M. Tahsin Hassan Rahit](https://arxiv.org/search/cs?searchtype=autho
 
 
 <h2 id="2019-10-25-4">4. The SIGMORPHON 2019 Shared Task: Morphological Analysis in Context and Cross-Lingual Transfer for Inflection</h2>
-
 Title: [The SIGMORPHON 2019 Shared Task: Morphological Analysis in Context and Cross-Lingual Transfer for Inflection]( https://arxiv.org/abs/1910.11493 )
 
 Authors: [Arya D. McCarthy](https://arxiv.org/search/cs?searchtype=author&query=McCarthy%2C+A+D), [Ekaterina Vylomova](https://arxiv.org/search/cs?searchtype=author&query=Vylomova%2C+E), [Shijie Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+S), [Chaitanya Malaviya](https://arxiv.org/search/cs?searchtype=author&query=Malaviya%2C+C), [Lawrence Wolf-Sonkin](https://arxiv.org/search/cs?searchtype=author&query=Wolf-Sonkin%2C+L), [Garrett Nicolai](https://arxiv.org/search/cs?searchtype=author&query=Nicolai%2C+G), [Christo Kirov](https://arxiv.org/search/cs?searchtype=author&query=Kirov%2C+C), [Miikka Silfverberg](https://arxiv.org/search/cs?searchtype=author&query=Silfverberg%2C+M), [Sebastian J. Mielke](https://arxiv.org/search/cs?searchtype=author&query=Mielke%2C+S+J), [Jeffrey Heinz](https://arxiv.org/search/cs?searchtype=author&query=Heinz%2C+J), [Ryan Cotterell](https://arxiv.org/search/cs?searchtype=author&query=Cotterell%2C+R), [Mans Hulden](https://arxiv.org/search/cs?searchtype=author&query=Hulden%2C+M)
