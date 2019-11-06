@@ -2,6 +2,13 @@
 
 # Index
 
+- [2019-11-06](#2019-11-06)
+  - [1. Training Neural Machine Translation (NMT) Models using Tensor Train Decomposition on TensorFlow (T3F)](#2019-11-06-1)
+  - [2. Emerging Cross-lingual Structure in Pretrained Language Models](#2019-11-06-2)
+  - [3. On Compositionality in Neural Machine Translation](#2019-11-06-3)
+  - [4. Improving Bidirectional Decoding with Dynamic Target Semantics in Neural Machine Translation](#2019-11-06-4)
+  - [5. Adversarial Language Games for Advanced Natural Language Intelligence](#2019-11-06-5)
+  - [6. Data Diversification: An Elegant Strategy For Neural Machine Translation](#2019-11-06-6)
 - [2019-11-05](#2019-11-05)
   - [1. Attributed Sequence Embedding](#2019-11-05-1)
   - [2. Machine Translation Evaluation using Bi-directional Entailment](#2019-11-05-2)
@@ -30,6 +37,128 @@
 
 
 
+# 2019-11-06
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-11-06-1">1. Training Neural Machine Translation (NMT) Models using Tensor Train Decomposition on TensorFlow (T3F)</h2>
+
+Title: [Training Neural Machine Translation (NMT) Models using Tensor Train Decomposition on TensorFlow (T3F)]( https://arxiv.org/abs/1911.01933 )
+
+Authors: [Amelia Drew](https://arxiv.org/search/cs?searchtype=author&query=Drew%2C+A), [Alexander Heinecke](https://arxiv.org/search/cs?searchtype=author&query=Heinecke%2C+A)
+
+*(Submitted on 5 Nov 2019)*
+
+> We implement a Tensor Train layer in the TensorFlow Neural Machine Translation (NMT) model using the t3f library. We perform training runs on the IWSLT English-Vietnamese '15 and WMT German-English '16 datasets with learning rates ∈{0.0004,0.0008,0.0012}, maximum ranks ∈{2,4,8,16} and a range of core dimensions. We compare against a target BLEU test score of 24.0, obtained by our benchmark run. For the IWSLT English-Vietnamese training, we obtain BLEU test/dev scores of 24.0/21.9 and 24.2/21.9 using core dimensions (2,2,256)×(2,2,512) with learning rate 0.0012 and rank distributions (1,4,4,1) and (1,4,16,1) respectively. These runs use 113\% and 397\% of the flops of the benchmark run respectively. We find that, of the parameters surveyed, a higher learning rate and more `rectangular' core dimensions generally produce higher BLEU scores. For the WMT German-English dataset, we obtain BLEU scores of 24.0/23.8 using core dimensions (4,4,128)×(4,4,256) with learning rate 0.0012 and rank distribution (1,2,2,1). We discuss the potential for future optimization and application of Tensor Train decomposition to other NMT models.
+
+| Comments: | 10 pages, 2 tables                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| Cite as:  | [arXiv:1911.01933](https://arxiv.org/abs/1911.01933) [cs.LG] |
+|           | (or [arXiv:1911.01933v1](https://arxiv.org/abs/1911.01933v1) [cs.LG] for this version) |
+
+
+
+
+
+<h2 id="2019-11-06-2">2. Emerging Cross-lingual Structure in Pretrained Language Models</h2>
+
+Title: [Emerging Cross-lingual Structure in Pretrained Language Models]( https://arxiv.org/abs/1911.01464 )
+
+Authors: [Shijie Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+S), [Alexis Conneau](https://arxiv.org/search/cs?searchtype=author&query=Conneau%2C+A), [Haoran Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+H), [Luke Zettlemoyer](https://arxiv.org/search/cs?searchtype=author&query=Zettlemoyer%2C+L), [Veselin Stoyanov](https://arxiv.org/search/cs?searchtype=author&query=Stoyanov%2C+V)
+
+*(Submitted on 4 Nov 2019)*
+
+> We study the problem of multilingual masked language modeling, i.e. the training of a single model on concatenated text from multiple languages, and present a detailed study of several factors that influence why these models are so effective for cross-lingual transfer. We show, contrary to what was previously hypothesized, that transfer is possible even when there is no shared vocabulary across the monolingual corpora and also when the text comes from very different domains. The only requirement is that there are some shared parameters in the top layers of the multi-lingual encoder. To better understand this result, we also show that representations from independently trained models in different languages can be aligned post-hoc quite effectively, strongly suggesting that, much like for non-contextual word embeddings, there are universal latent symmetries in the learned embedding spaces. For multilingual masked language modeling, these symmetries seem to be automatically discovered and aligned during the joint training process.
+
+| Comments: | 10 pages, 6 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1911.01464](https://arxiv.org/abs/1911.01464) [cs.CL] |
+|           | (or [arXiv:1911.01464v1](https://arxiv.org/abs/1911.01464v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-06-3">3. On Compositionality in Neural Machine Translation</h2>
+
+Title: [On Compositionality in Neural Machine Translation]( https://arxiv.org/abs/1911.01497 )
+
+Authors: [Vikas Raunak](https://arxiv.org/search/cs?searchtype=author&query=Raunak%2C+V), [Vaibhav Kumar](https://arxiv.org/search/cs?searchtype=author&query=Kumar%2C+V), [Florian Metze](https://arxiv.org/search/cs?searchtype=author&query=Metze%2C+F), [Jaimie Callan](https://arxiv.org/search/cs?searchtype=author&query=Callan%2C+J)
+
+*(Submitted on 4 Nov 2019)*
+
+> We investigate two specific manifestations of compositionality in Neural Machine Translation (NMT) : (1) Productivity - the ability of the model to extend its predictions beyond the observed length in training data and (2) Systematicity - the ability of the model to systematically recombine known parts and rules. We evaluate a standard Sequence to Sequence model on tests designed to assess these two properties in NMT. We quantitatively demonstrate that inadequate temporal processing, in the form of poor encoder representations is a bottleneck for both Productivity and Systematicity. We propose a simple pre-training mechanism which alleviates model performance on the two properties and leads to a significant improvement in BLEU scores.
+
+| Comments: | Accepted at Context and Compositionality Workshop, NeurIPS 2019 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:1911.01497](https://arxiv.org/abs/1911.01497) [cs.CL] |
+|           | (or [arXiv:1911.01497v1](https://arxiv.org/abs/1911.01497v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-06-4">4. Improving Bidirectional Decoding with Dynamic Target Semantics in Neural Machine Translation</h2>
+
+Title: [Improving Bidirectional Decoding with Dynamic Target Semantics in Neural Machine Translation]( https://arxiv.org/abs/1911.01597 )
+
+Authors: [Yong Shan](https://arxiv.org/search/cs?searchtype=author&query=Shan%2C+Y), [Yang Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+Y), [Jinchao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Fandong Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+F), [Wen Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+W)
+
+*(Submitted on 5 Nov 2019)*
+
+> Generally, Neural Machine Translation models generate target words in a left-to-right (L2R) manner and fail to exploit any future (right) semantics information, which usually produces an unbalanced translation. Recent works attempt to utilize the right-to-left (R2L) decoder in bidirectional decoding to alleviate this problem. In this paper, we propose a novel \textbf{D}ynamic \textbf{I}nteraction \textbf{M}odule (\textbf{DIM}) to dynamically exploit target semantics from R2L translation for enhancing the L2R translation quality. Different from other bidirectional decoding approaches, DIM firstly extracts helpful target information through addressing and reading operations, then updates target semantics for tracking the interactive history. Additionally, we further introduce an \textbf{agreement regularization} term into the training objective to narrow the gap between L2R and R2L translations. Experimental results on NIST Chinese⇒English and WMT'16 English⇒Romanian translation tasks show that our system achieves significant improvements over baseline systems, which also reaches comparable results compared to the state-of-the-art Transformer model with much fewer parameters of it.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.01597](https://arxiv.org/abs/1911.01597) [cs.CL] |
+|           | (or [arXiv:1911.01597v1](https://arxiv.org/abs/1911.01597v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-06-5">5. Adversarial Language Games for Advanced Natural Language Intelligence</h2>
+
+Title: [Adversarial Language Games for Advanced Natural Language Intelligence]( https://arxiv.org/abs/1911.01622 )
+
+Authors: [Yuan Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+Y), [Haoxi Zhong](https://arxiv.org/search/cs?searchtype=author&query=Zhong%2C+H), [Zhengyan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Xu Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+X), [Xiaozhi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Chaojun Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+C), [Guoyang Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+G), [Zhiyuan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Maosong Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M)
+
+*(Submitted on 5 Nov 2019)*
+
+> While adversarial games have been well studied in various board games and electronic sports games, etc., such adversarial games remain a nearly blank field in natural language processing. As natural language is inherently an interactive game, we propose a challenging pragmatics game called Adversarial Taboo, in which an attacker and a defender compete with each other through sequential natural language interactions. The attacker is tasked with inducing the defender to speak a target word invisible to the defender, while the defender is tasked with detecting the target word before being induced by the attacker. In Adversarial Taboo, a successful attacker must hide its intention and subtly induce the defender, while a competitive defender must be cautious with its utterances and infer the intention of the attacker. To instantiate the game, we create a game environment and a competition platform. Sufficient pilot experiments and empirical studies on several baseline attack and defense strategies show promising and interesting results. Based on the analysis on the game and experiments, we discuss multiple promising directions for future research.
+
+| Comments: | Work in progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1911.01622](https://arxiv.org/abs/1911.01622) [cs.CL] |
+|           | (or [arXiv:1911.01622v1](https://arxiv.org/abs/1911.01622v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-06-6">6. Data Diversification: An Elegant Strategy For Neural Machine Translation</h2>
+
+Title: [Data Diversification: An Elegant Strategy For Neural Machine Translation]( https://arxiv.org/abs/1911.01986 )
+
+Authors: [Xuan-Phi Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+X), [Shafiq Joty](https://arxiv.org/search/cs?searchtype=author&query=Joty%2C+S), [Wu Kui](https://arxiv.org/search/cs?searchtype=author&query=Kui%2C+W), [Ai Ti Aw](https://arxiv.org/search/cs?searchtype=author&query=Aw%2C+A+T)
+
+*(Submitted on 5 Nov 2019)*
+
+> A common approach to improve neural machine translation is to invent new architectures. However, the research process of designing and refining such new models is often exhausting. Another approach is to resort to huge extra monolingual data to conduct semi-supervised training, like back-translation. But extra monolingual data is not always available, especially for low resource languages. In this paper, we propose to diversify the available training data by using multiple forward and backward peer models to augment the original training dataset. Our method does not require extra data like back-translation, nor additional computations and parameters like using pretrained models. Our data diversification method achieves state-of-the-art BLEU score of 30.7 in the WMT'14 English-German task. It also consistently and substantially improves translation quality in 8 other translation tasks: 4 IWSLT tasks (English-German and English-French) and 4 low-resource translation tasks (English-Nepali and English-Sinhala).
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.01986](https://arxiv.org/abs/1911.01986) [cs.CL] |
+|           | (or [arXiv:1911.01986v1](https://arxiv.org/abs/1911.01986v1) [cs.CL] for this version) |
+
+
+
 # 2019-11-05
 
 [Return to Index](#Index)
@@ -37,7 +166,6 @@
 
 
 <h2 id="2019-11-05-1">1. Attributed Sequence Embedding</h2>
-
 Title: [Attributed Sequence Embedding]( https://arxiv.org/abs/1911.00949 )
 
 Authors: [Zhongfang Zhuang](https://arxiv.org/search/cs?searchtype=author&query=Zhuang%2C+Z), [Xiangnan Kong](https://arxiv.org/search/cs?searchtype=author&query=Kong%2C+X), [Elke Rundensteiner](https://arxiv.org/search/cs?searchtype=author&query=Rundensteiner%2C+E), [Jihane Zouaoui](https://arxiv.org/search/cs?searchtype=author&query=Zouaoui%2C+J), [Aditya Arora](https://arxiv.org/search/cs?searchtype=author&query=Arora%2C+A)
@@ -57,7 +185,6 @@ Authors: [Zhongfang Zhuang](https://arxiv.org/search/cs?searchtype=author&query=
 
 
 <h2 id="2019-11-05-2">2. Machine Translation Evaluation using Bi-directional Entailment</h2>
-
 Title: [Machine Translation Evaluation using Bi-directional Entailment]( https://arxiv.org/abs/1911.00681 )
 
 Authors: [Rakesh Khobragade](https://arxiv.org/search/cs?searchtype=author&query=Khobragade%2C+R), [Heaven Patel](https://arxiv.org/search/cs?searchtype=author&query=Patel%2C+H), [Anand Namdev](https://arxiv.org/search/cs?searchtype=author&query=Namdev%2C+A), [Anish Mishra](https://arxiv.org/search/cs?searchtype=author&query=Mishra%2C+A), [Pushpak Bhattacharyya](https://arxiv.org/search/cs?searchtype=author&query=Bhattacharyya%2C+P)
@@ -76,7 +203,6 @@ Authors: [Rakesh Khobragade](https://arxiv.org/search/cs?searchtype=author&query
 
 
 <h2 id="2019-11-05-3">3. Controlling Text Complexity in Neural Machine Translation</h2>
-
 Title: [Controlling Text Complexity in Neural Machine Translation]( https://arxiv.org/abs/1911.00835 )
 
 Authors: [Sweta Agrawal](https://arxiv.org/search/cs?searchtype=author&query=Agrawal%2C+S), [Marine Carpuat](https://arxiv.org/search/cs?searchtype=author&query=Carpuat%2C+M)
@@ -96,7 +222,6 @@ Authors: [Sweta Agrawal](https://arxiv.org/search/cs?searchtype=author&query=Agr
 
 
 <h2 id="2019-11-05-4">4. Machine Translation in Pronunciation Space</h2>
-
 Title: [Machine Translation in Pronunciation Space]( https://arxiv.org/abs/1911.00932 )
 
 Authors: [Hairong Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+H), [Mingbo Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+M), [Liang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+L)
@@ -115,7 +240,6 @@ Authors: [Hairong Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2
 
 
 <h2 id="2019-11-05-5">5. Analysing Coreference in Transformer Outputs</h2>
-
 Title: [Analysing Coreference in Transformer Outputs]( https://arxiv.org/abs/1911.01188 )
 
 Authors: [Ekaterina Lapshinova-Koltunski](https://arxiv.org/search/cs?searchtype=author&query=Lapshinova-Koltunski%2C+E), [Cristina España-Bonet](https://arxiv.org/search/cs?searchtype=author&query=España-Bonet%2C+C), [Josef van Genabith](https://arxiv.org/search/cs?searchtype=author&query=van+Genabith%2C+J)
@@ -136,7 +260,6 @@ Authors: [Ekaterina Lapshinova-Koltunski](https://arxiv.org/search/cs?searchtype
 
 
 <h2 id="2019-11-05-6">6. Ordering Matters: Word Ordering Aware Unsupervised NMT</h2>
-
 Title: [Ordering Matters: Word Ordering Aware Unsupervised NMT]( https://arxiv.org/abs/1911.01212 )
 
 Authors: [Tamali Banerjee](https://arxiv.org/search/cs?searchtype=author&query=Banerjee%2C+T), [Rudra Murthy V](https://arxiv.org/search/cs?searchtype=author&query=V%2C+R+M), [Pushpak Bhattacharyya](https://arxiv.org/search/cs?searchtype=author&query=Bhattacharyya%2C+P)
