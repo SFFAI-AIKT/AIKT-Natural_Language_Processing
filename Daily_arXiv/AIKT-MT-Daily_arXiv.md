@@ -2,6 +2,10 @@
 
 # Index
 
+- [2019-11-07](#2019-11-07)
+  - [1. Fast Transformer Decoding: One Write-Head is All You Need](#2019-11-07-1)
+  - [2. Unsupervised Cross-lingual Representation Learning at Scale](#2019-11-07-2)
+  - [3. Guiding Non-Autoregressive Neural Machine Translation Decoding with Reordering Information](#2019-11-07-3)
 - [2019-11-06](#2019-11-06)
   - [1. Training Neural Machine Translation (NMT) Models using Tensor Train Decomposition on TensorFlow (T3F)](#2019-11-06-1)
   - [2. Emerging Cross-lingual Structure in Pretrained Language Models](#2019-11-06-2)
@@ -37,6 +41,69 @@
 
 
 
+# 2019-11-07
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-11-07-1">1. Fast Transformer Decoding: One Write-Head is All You Need</h2>
+
+Title: [Fast Transformer Decoding: One Write-Head is All You Need]( https://arxiv.org/abs/1911.02150 )
+
+Authors:[Noam Shazeer](https://arxiv.org/search/cs?searchtype=author&query=Shazeer%2C+N)
+
+*(Submitted on 6 Nov 2019)*
+
+> Multi-head attention layers, as used in the Transformer neural sequence model, are a powerful alternative to RNNs for moving information across and between sequences. While training these layers is generally fast and simple, due to parallelizability across the length of the sequence, incremental inference (where such paralleization is impossible) is often slow, due to the memory-bandwidth cost of repeatedly loading the large "keys" and "values" tensors. We propose a variant called multi-query attention, where the keys and values are shared across all of the different attention "heads", greatly reducing the size of these tensors and hence the memory bandwidth requirements of incremental decoding. We verify experimentally that the resulting models can indeed be much faster to decode, and incur only minor quality degradation from the baseline.
+
+| Subjects: | **Neural and Evolutionary Computing (cs.NE)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.02150](https://arxiv.org/abs/1911.02150) [cs.NE] |
+|           | (or [arXiv:1911.02150v1](https://arxiv.org/abs/1911.02150v1) [cs.NE] for this version) |
+
+
+
+<h2 id="2019-11-07-2">2. Unsupervised Cross-lingual Representation Learning at Scale</h2>
+
+Title: [Unsupervised Cross-lingual Representation Learning at Scale]( https://arxiv.org/abs/1911.02116 )
+
+Authors:[Alexis Conneau](https://arxiv.org/search/cs?searchtype=author&query=Conneau%2C+A), [Kartikay Khandelwal](https://arxiv.org/search/cs?searchtype=author&query=Khandelwal%2C+K), [Naman Goyal](https://arxiv.org/search/cs?searchtype=author&query=Goyal%2C+N), [Vishrav Chaudhary](https://arxiv.org/search/cs?searchtype=author&query=Chaudhary%2C+V), [Guillaume Wenzek](https://arxiv.org/search/cs?searchtype=author&query=Wenzek%2C+G), [Francisco Guzmán](https://arxiv.org/search/cs?searchtype=author&query=Guzmán%2C+F), [Edouard Grave](https://arxiv.org/search/cs?searchtype=author&query=Grave%2C+E), [Myle Ott](https://arxiv.org/search/cs?searchtype=author&query=Ott%2C+M), [Luke Zettlemoyer](https://arxiv.org/search/cs?searchtype=author&query=Zettlemoyer%2C+L), [Veselin Stoyanov](https://arxiv.org/search/cs?searchtype=author&query=Stoyanov%2C+V)
+
+*(Submitted on 5 Nov 2019)*
+
+> This paper shows that pretraining multilingual language models at scale leads to significant performance gains for a wide range of cross-lingual transfer tasks. We train a Transformer-based masked language model on one hundred languages, using more than two terabytes of filtered CommonCrawl data. Our model, dubbed XLM-R, significantly outperforms multilingual BERT (mBERT) on a variety of cross-lingual benchmarks, including +13.8% average accuracy on XNLI, +12.3% average F1 score on MLQA, and +2.1% average F1 score on NER. XLM-R performs particularly well on low-resource languages, improving 11.8% in XNLI accuracy for Swahili and 9.2% for Urdu over the previous XLM model. We also present a detailed empirical evaluation of the key factors that are required to achieve these gains, including the trade-offs between (1) positive transfer and capacity dilution and (2) the performance of high and low resource languages at scale. Finally, we show, for the first time, the possibility of multilingual modeling without sacrificing per-language performance; XLM-Ris very competitive with strong monolingual models on the GLUE and XNLI benchmarks. We will make XLM-R code, data, and models publicly available.
+
+| Comments: | 12 pages, 7 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1911.02116](https://arxiv.org/abs/1911.02116) [cs.CL] |
+|           | (or [arXiv:1911.02116v1](https://arxiv.org/abs/1911.02116v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-07-3">3. Guiding Non-Autoregressive Neural Machine Translation Decoding with Reordering Information</h2>
+
+Title: [Guiding Non-Autoregressive Neural Machine Translation Decoding with Reordering Information]( https://arxiv.org/abs/1911.02215 )
+
+Authors:[Qiu Ran](https://arxiv.org/search/cs?searchtype=author&query=Ran%2C+Q), [Yankai Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Y), [Peng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+P), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J)
+
+*(Submitted on 6 Nov 2019)*
+
+> Non-autoregressive neural machine translation (NAT) generates each target word in parallel and has achieved promising inference acceleration. However, existing NAT models still have a big gap in translation quality compared to autoregressive neural machine translation models due to the enormous decoding space. To address this problem, we propose a novel NAT framework named ReorderNAT which explicitly models the reordering information in the decoding procedure. We further introduce deterministic and non-deterministic decoding strategies that utilize reordering information to narrow the decoding search space in our proposed ReorderNAT. Experimental results on various widely-used datasets show that our proposed model achieves better performance compared to existing NAT models, and even achieves comparable translation quality as autoregressive translation models with a significant speedup.
+
+| Comments: | 12 pages, 5 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1911.02215](https://arxiv.org/abs/1911.02215) [cs.CL] |
+|           | (or [arXiv:1911.02215v1](https://arxiv.org/abs/1911.02215v1) [cs.CL] for this version) |
+
+
+
+
+
 # 2019-11-06
 
 [Return to Index](#Index)
@@ -44,7 +111,6 @@
 
 
 <h2 id="2019-11-06-1">1. Training Neural Machine Translation (NMT) Models using Tensor Train Decomposition on TensorFlow (T3F)</h2>
-
 Title: [Training Neural Machine Translation (NMT) Models using Tensor Train Decomposition on TensorFlow (T3F)]( https://arxiv.org/abs/1911.01933 )
 
 Authors: [Amelia Drew](https://arxiv.org/search/cs?searchtype=author&query=Drew%2C+A), [Alexander Heinecke](https://arxiv.org/search/cs?searchtype=author&query=Heinecke%2C+A)
@@ -64,7 +130,6 @@ Authors: [Amelia Drew](https://arxiv.org/search/cs?searchtype=author&query=Drew%
 
 
 <h2 id="2019-11-06-2">2. Emerging Cross-lingual Structure in Pretrained Language Models</h2>
-
 Title: [Emerging Cross-lingual Structure in Pretrained Language Models]( https://arxiv.org/abs/1911.01464 )
 
 Authors: [Shijie Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+S), [Alexis Conneau](https://arxiv.org/search/cs?searchtype=author&query=Conneau%2C+A), [Haoran Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+H), [Luke Zettlemoyer](https://arxiv.org/search/cs?searchtype=author&query=Zettlemoyer%2C+L), [Veselin Stoyanov](https://arxiv.org/search/cs?searchtype=author&query=Stoyanov%2C+V)
@@ -84,7 +149,6 @@ Authors: [Shijie Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+S
 
 
 <h2 id="2019-11-06-3">3. On Compositionality in Neural Machine Translation</h2>
-
 Title: [On Compositionality in Neural Machine Translation]( https://arxiv.org/abs/1911.01497 )
 
 Authors: [Vikas Raunak](https://arxiv.org/search/cs?searchtype=author&query=Raunak%2C+V), [Vaibhav Kumar](https://arxiv.org/search/cs?searchtype=author&query=Kumar%2C+V), [Florian Metze](https://arxiv.org/search/cs?searchtype=author&query=Metze%2C+F), [Jaimie Callan](https://arxiv.org/search/cs?searchtype=author&query=Callan%2C+J)
@@ -104,7 +168,6 @@ Authors: [Vikas Raunak](https://arxiv.org/search/cs?searchtype=author&query=Raun
 
 
 <h2 id="2019-11-06-4">4. Improving Bidirectional Decoding with Dynamic Target Semantics in Neural Machine Translation</h2>
-
 Title: [Improving Bidirectional Decoding with Dynamic Target Semantics in Neural Machine Translation]( https://arxiv.org/abs/1911.01597 )
 
 Authors: [Yong Shan](https://arxiv.org/search/cs?searchtype=author&query=Shan%2C+Y), [Yang Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+Y), [Jinchao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Fandong Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+F), [Wen Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+W)
@@ -123,7 +186,6 @@ Authors: [Yong Shan](https://arxiv.org/search/cs?searchtype=author&query=Shan%2C
 
 
 <h2 id="2019-11-06-5">5. Adversarial Language Games for Advanced Natural Language Intelligence</h2>
-
 Title: [Adversarial Language Games for Advanced Natural Language Intelligence]( https://arxiv.org/abs/1911.01622 )
 
 Authors: [Yuan Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+Y), [Haoxi Zhong](https://arxiv.org/search/cs?searchtype=author&query=Zhong%2C+H), [Zhengyan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Xu Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+X), [Xiaozhi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Chaojun Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+C), [Guoyang Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+G), [Zhiyuan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Maosong Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M)
@@ -143,7 +205,6 @@ Authors: [Yuan Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+Y
 
 
 <h2 id="2019-11-06-6">6. Data Diversification: An Elegant Strategy For Neural Machine Translation</h2>
-
 Title: [Data Diversification: An Elegant Strategy For Neural Machine Translation]( https://arxiv.org/abs/1911.01986 )
 
 Authors: [Xuan-Phi Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+X), [Shafiq Joty](https://arxiv.org/search/cs?searchtype=author&query=Joty%2C+S), [Wu Kui](https://arxiv.org/search/cs?searchtype=author&query=Kui%2C+W), [Ai Ti Aw](https://arxiv.org/search/cs?searchtype=author&query=Aw%2C+A+T)
