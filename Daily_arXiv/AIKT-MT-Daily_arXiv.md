@@ -2,6 +2,21 @@
 
 # Index
 
+- [2019-11-11](#2019-11-11)
+  - [1. Multi-Domain Neural Machine Translation with Word-Level Adaptive Layer-wise Domain Mixing](#2019-11-11-1)
+  - [2. Low-Resource Machine Translation using Interlinear Glosses](#2019-11-11-2)
+  - [3. Understanding Knowledge Distillation in Non-autoregressive Machine Translation](#2019-11-11-3)
+  - [4. SubCharacter Chinese-English Neural Machine Translation with Wubi encoding](#2019-11-11-4)
+  - [5. Improving Grammatical Error Correction with Machine Translation Pairs](#2019-11-11-5)
+  - [6. The LIG system for the English-Czech Text Translation Task of IWSLT 2019](#2019-11-11-6)
+  - [7. Should All Cross-Lingual Embeddings Speak English?](#2019-11-11-7)
+  - [8. Interactive Refinement of Cross-Lingual Word Embeddings](#2019-11-11-8)
+  - [9. Domain Robustness in Neural Machine Translation](#2019-11-11-9)
+  - [10. Pretrained Language Models for Document-Level Neural Machine Translation](#2019-11-11-10)
+  - [11. How to Do Simultaneous Translation Better with Consecutive Neural Machine Translation?](#2019-11-11-11)
+  - [12. Europarl-ST: A Multilingual Corpus For Speech Translation Of Parliamentary Debates](#2019-11-11-12)
+  - [13. Why Deep Transformers are Difficult to Converge? From Computation Order to Lipschitz Restricted Parameter Initialization](#2019-11-11-13)
+  - [14. Domain, Translationese and Noise in Synthetic Data for Neural Machine Translation](#2019-11-11-4)
 - [2019-11-07](#2019-11-07)
   - [1. Fast Transformer Decoding: One Write-Head is All You Need](#2019-11-07-1)
   - [2. Unsupervised Cross-lingual Representation Learning at Scale](#2019-11-07-2)
@@ -41,6 +56,289 @@
 
 
 
+# 2019-11-11
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-11-11-1">1. Multi-Domain Neural Machine Translation with Word-Level Adaptive Layer-wise Domain Mixing</h2>
+
+Title: [Multi-Domain Neural Machine Translation with Word-Level Adaptive Layer-wise Domain Mixing]( https://arxiv.org/abs/1911.02692 )
+
+Authors:[Haoming Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+H), [Chen Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+C), [Chong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Tuo Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+T)
+
+*(Submitted on 7 Nov 2019)*
+
+> Many multi-domain neural machine translation (NMT) models achieve knowledge transfer by enforcing one encoder to learn shared embedding across domains. However, this design lacks adaptation to individual domains. To overcome this limitation, we propose a novel multi-domain NMT model using individual modules for each domain, on which we apply word-level, adaptive and layer-wise domain mixing. We first observe that words in a sentence are often related to multiple domains. Hence, we assume each word has a domain proportion, which indicates its domain preference. Then word representations are obtained by mixing their embedding in individual domains based on their domain proportions. We show this can be achieved by carefully designing multi-head dot-product attention modules for different domains, and eventually taking weighted averages of their parameters by word-level layer-wise domain proportions. Through this, we can achieve effective domain knowledge sharing, and capture fine-grained domain-specific knowledge as well. Our experiments show that our proposed model outperforms existing ones in several NMT tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.02692](https://arxiv.org/abs/1911.02692) [cs.CL] |
+|           | (or [arXiv:1911.02692v1](https://arxiv.org/abs/1911.02692v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-11-2">2. Low-Resource Machine Translation using Interlinear Glosses</h2>
+
+Title: [Low-Resource Machine Translation using Interlinear Glosses]( https://arxiv.org/abs/1911.02709 )
+
+Authors:[Zhong Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+Z), [Lori Levin](https://arxiv.org/search/cs?searchtype=author&query=Levin%2C+L), [David R. Mortensen](https://arxiv.org/search/cs?searchtype=author&query=Mortensen%2C+D+R), [Alex Waibel](https://arxiv.org/search/cs?searchtype=author&query=Waibel%2C+A)
+
+*(Submitted on 7 Nov 2019)*
+
+> Neural Machine Translation (NMT) does not handle low-resource translation well because NMT is data-hungry and low-resource languages, by their nature, have limited parallel data. Many low-resource languages are morphologically rich, which complicates matters further by increasing data sparsity. However, a good linguist is capable of building a morphological analyzer in far fewer hours than it would take to collect and translate the amount of parallel data needed for conventional NMT. We combine the benefits of both NMT and linguistic information in our work. We use morphological analyzer to automatically generate interlinear glosses with dictionary or parallel data, and translate the source text to interlinear gloss as an interlingua representation, and finally translate into the target text using NMT trained on the ODIN dataset that includes a large collection of interlinear glosses and their corresponding target translations. Our result for translating from the interlinear gloss to the target text using the entire ODIN dataset achieves a BLEU score of 35.07. And our qualitative results show positive findings in a low-resource scenario of Turkish-English translation using 865 lines of training data. Our translation system yield better results than training NMT directly from the source language to the target language in a constrained-data setting, and is helpful to produce translation with sufficiently good content and fluency when data is scarce.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.02709](https://arxiv.org/abs/1911.02709) [cs.CL] |
+|           | (or [arXiv:1911.02709v1](https://arxiv.org/abs/1911.02709v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-11-3">3. Understanding Knowledge Distillation in Non-autoregressive Machine Translation</h2>
+
+Title: [Understanding Knowledge Distillation in Non-autoregressive Machine Translation]( https://arxiv.org/abs/1911.02727 )
+
+Authors:[Chunting Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+C), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G), [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J)
+
+*(Submitted on 7 Nov 2019)*
+
+> Non-autoregressive machine translation (NAT) systems predict a sequence of output tokens in parallel, achieving substantial improvements in generation speed compared to autoregressive models. Existing NAT models usually rely on the technique of knowledge distillation, which creates the training data from a pretrained autoregressive model for better performance. Knowledge distillation is empirically useful, leading to large gains in accuracy for NAT models, but the reason for this success has, as of yet, been unclear. In this paper, we first design systematic experiments to investigate why knowledge distillation is crucial to NAT training. We find that knowledge distillation can reduce the complexity of data sets and help NAT to model the variations in the output data. Furthermore, a strong correlation is observed between the capacity of an NAT model and the optimal complexity of the distilled data for the best translation quality. Based on these findings, we further propose several approaches that can alter the complexity of data sets to improve the performance of NAT models. We achieve the state-of-the-art performance for the NAT-based models, and close the gap with the autoregressive baseline on WMT14 En-De benchmark.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.02727](https://arxiv.org/abs/1911.02727) [cs.CL] |
+|           | (or [arXiv:1911.02727v1](https://arxiv.org/abs/1911.02727v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-11-4">4. SubCharacter Chinese-English Neural Machine Translation with Wubi encoding</h2>
+
+Title: [SubCharacter Chinese-English Neural Machine Translation with Wubi encoding]( https://arxiv.org/abs/1911.02737 )
+
+Authors:[Wei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+W), [Feifei Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+F), [Xiaodong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Zhenshuang Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+Z), [Zhen Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Z)
+
+*(Submitted on 7 Nov 2019)*
+
+> Neural machine translation (NMT) is one of the best methods for understanding the differences in semantic rules between two languages. Especially for Indo-European languages, subword-level models have achieved impressive results. However, when the translation task involves Chinese, semantic granularity remains at the word and character level, so there is still need more fine-grained translation model of Chinese. In this paper, we introduce a simple and effective method for Chinese translation at the sub-character level. Our approach uses the Wubi method to translate Chinese into English; byte-pair encoding (BPE) is then applied. Our method for Chinese-English translation eliminates the need for a complicated word segmentation algorithm during preprocessing. Furthermore, our method allows for sub-character-level neural translation based on recurrent neural network (RNN) architecture, without preprocessing. The empirical results show that for Chinese-English translation tasks, our sub-character-level model has a comparable BLEU score to the subword model, despite having a much smaller vocabulary. Additionally, the small vocabulary is highly advantageous for NMT model compression.
+
+| Comments: | 10 pages, 3 figures, 7 tables                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1911.02737](https://arxiv.org/abs/1911.02737) [cs.CL] |
+|           | (or [arXiv:1911.02737v1](https://arxiv.org/abs/1911.02737v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-11-5">5. Improving Grammatical Error Correction with Machine Translation Pairs</h2>
+
+Title: [Improving Grammatical Error Correction with Machine Translation Pairs]( https://arxiv.org/abs/1911.02825 )
+
+Authors:[Wangchunshu Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+W), [Tao Ge](https://arxiv.org/search/cs?searchtype=author&query=Ge%2C+T), [Chang Mu](https://arxiv.org/search/cs?searchtype=author&query=Mu%2C+C), [Ke Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+K), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F), [Ming Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+M)
+
+*(Submitted on 7 Nov 2019)*
+
+> We propose a novel data synthesis method to generate diverse error-corrected sentence pairs for improving grammatical error correction, which is based on a pair of machine translation models of different qualities (i.e., poor and good). The poor translation model resembles the ESL (English as a second language) learner and tends to generate translations of low quality in terms of fluency and grammatical correctness, while the good translation model generally generates fluent and grammatically correct translations. We build the poor and good translation model with phrase-based statistical machine translation model with decreased language model weight and neural machine translation model respectively. By taking the pair of their translations of the same sentences in a bridge language as error-corrected sentence pairs, we can construct unlimited pseudo parallel data. Our approach is capable of generating diverse fluency-improving patterns without being limited by the pre-defined rule set and the seed error-corrected data. Experimental results demonstrate the effectiveness of our approach and show that it can be combined with other synthetic data sources to yield further improvements.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.02825](https://arxiv.org/abs/1911.02825) [cs.CL] |
+|           | (or [arXiv:1911.02825v1](https://arxiv.org/abs/1911.02825v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-11-6">6. The LIG system for the English-Czech Text Translation Task of IWSLT 2019</h2>
+
+Title: [The LIG system for the English-Czech Text Translation Task of IWSLT 2019]( https://arxiv.org/abs/1911.02898 )
+
+Authors:[Loïc Vial](https://arxiv.org/search/cs?searchtype=author&query=Vial%2C+L), [Benjamin Lecouteux](https://arxiv.org/search/cs?searchtype=author&query=Lecouteux%2C+B), [Didier Schwab](https://arxiv.org/search/cs?searchtype=author&query=Schwab%2C+D), [Hang Le](https://arxiv.org/search/cs?searchtype=author&query=Le%2C+H), [Laurent Besacier](https://arxiv.org/search/cs?searchtype=author&query=Besacier%2C+L)
+
+*(Submitted on 7 Nov 2019)*
+
+> In this paper, we present our submission for the English to Czech Text Translation Task of IWSLT 2019. Our system aims to study how pre-trained language models, used as input embeddings, can improve a specialized machine translation system trained on few data. Therefore, we implemented a Transformer-based encoder-decoder neural system which is able to use the output of a pre-trained language model as input embeddings, and we compared its performance under three configurations: 1) without any pre-trained language model (constrained), 2) using a language model trained on the monolingual parts of the allowed English-Czech data (constrained), and 3) using a language model trained on a large quantity of external monolingual data (unconstrained). We used BERT as external pre-trained language model (configuration 3), and BERT architecture for training our own language model (configuration 2). Regarding the training data, we trained our MT system on a small quantity of parallel text: one set only consists of the provided MuST-C corpus, and the other set consists of the MuST-C corpus and the News Commentary corpus from WMT. We observed that using the external pre-trained BERT improves the scores of our system by +0.8 to +1.5 of BLEU on our development set, and +0.97 to +1.94 of BLEU on the test set. However, using our own language model trained only on the allowed parallel data seems to improve the machine translation performances only when the system is trained on the smallest dataset.
+
+| Comments: | IWSLT 2019                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1911.02898](https://arxiv.org/abs/1911.02898) [cs.CL] |
+|           | (or [arXiv:1911.02898v1](https://arxiv.org/abs/1911.02898v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-11-7">7. Should All Cross-Lingual Embeddings Speak English?</h2>
+
+Title: [Should All Cross-Lingual Embeddings Speak English?]( https://arxiv.org/abs/1911.03058 )
+
+Authors:[Antonios Anastasopoulos](https://arxiv.org/search/cs?searchtype=author&query=Anastasopoulos%2C+A), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
+
+*(Submitted on 8 Nov 2019)*
+
+> Most of recent work in cross-lingual word embeddings is severely Anglocentric. The vast majority of lexicon induction evaluation dictionaries are between English and another language, and the English embedding space is selected by default as the hub when learning in a multilingual setting. With this work, however, we challenge these practices. First, we show that the choice of hub language can significantly impact downstream lexicon induction performance. Second, we both expand the current evaluation dictionary collection to include all language pairs using triangulation, and also create new dictionaries for under-represented languages. Evaluating established methods over all these language pairs sheds light into their suitability and presents new challenges for the field. Finally, in our analysis we identify general guidelines for strong cross-lingual embeddings baselines, based on more than just Anglocentric experiments.
+
+| Comments: | pre-print                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1911.03058](https://arxiv.org/abs/1911.03058) [cs.CL] |
+|           | (or [arXiv:1911.03058v1](https://arxiv.org/abs/1911.03058v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-11-8">8. Interactive Refinement of Cross-Lingual Word Embeddings</h2>
+
+Title: [Interactive Refinement of Cross-Lingual Word Embeddings]( https://arxiv.org/abs/1911.03070 )
+
+Authors:[Michelle Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+M), [Mozhi Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M), [Benjamin Van Durme](https://arxiv.org/search/cs?searchtype=author&query=Van+Durme%2C+B), [Leah Findlater](https://arxiv.org/search/cs?searchtype=author&query=Findlater%2C+L), [Jordan Boyd-Graber](https://arxiv.org/search/cs?searchtype=author&query=Boyd-Graber%2C+J)
+
+*(Submitted on 8 Nov 2019)*
+
+> Cross-lingual word embeddings transfer knowledge between languages: models trained for a high-resource language can be used in a low-resource language. These embeddings are usually trained on general-purpose corpora but used for a domain-specific task. We introduce CLIME, an interactive system that allows a user to quickly adapt cross-lingual word embeddings for a given classification problem. First, words in the vocabulary are ranked by their salience to the downstream task. Then, salient keywords are displayed on an interface. Users mark the similarity between each keyword and its nearest neighbors in the embedding space. Finally, CLIME updates the embeddings using the annotations. We experiment clime on a cross-lingual text classification benchmark for four low-resource languages: Ilocano, Sinhalese, Tigrinya, and Uyghur. Embeddings refined by CLIME capture more nuanced word semantics and have higher test accuracy than the original embeddings. CLIME also improves test accuracy faster than an active learning baseline, and a simple combination of CLIME with active learning has the highest test accuracy.
+
+| Comments: | First two authors contribute equally                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:1911.03070](https://arxiv.org/abs/1911.03070) [cs.CL] |
+|           | (or [arXiv:1911.03070v1](https://arxiv.org/abs/1911.03070v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-11-9">9. Domain Robustness in Neural Machine Translation</h2>
+
+Title: [Domain Robustness in Neural Machine Translation]( https://arxiv.org/abs/1911.03109 )
+
+Authors:[Mathias Müller](https://arxiv.org/search/cs?searchtype=author&query=Müller%2C+M), [Annette Rios](https://arxiv.org/search/cs?searchtype=author&query=Rios%2C+A), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R)
+
+*(Submitted on 8 Nov 2019)*
+
+> Translating text that diverges from the training domain is a key challenge for neural machine translation (NMT). Domain robustness - the generalization of models to unseen test domains - is low compared to statistical machine translation. In this paper, we investigate the performance of NMT on out-of-domain test sets, and ways to improve it.
+> We observe that hallucination (translations that are fluent but unrelated to the source) is common in out-of-domain settings, and we empirically compare methods that improve adequacy (reconstruction), out-of-domain translation (subword regularization), or robustness against adversarial examples (defensive distillation), as well as noisy channel models.
+> In experiments on German to English OPUS data, and German to Romansh, a low-resource scenario, we find that several methods improve domain robustness, reconstruction standing out as a method that not only improves automatic scores, but also shows improvements in a manual assessments of adequacy, albeit at some loss in fluency. However, out-of-domain performance is still relatively low and domain robustness remains an open problem.
+
+| Comments: | V1                                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1911.03109](https://arxiv.org/abs/1911.03109) [cs.CL] |
+|           | (or [arXiv:1911.03109v1](https://arxiv.org/abs/1911.03109v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-11-10">10. Pretrained Language Models for Document-Level Neural Machine Translation</h2>
+
+Title: [Pretrained Language Models for Document-Level Neural Machine Translation]( https://arxiv.org/abs/1911.03110 )
+
+Authors:[Liangyou Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Xin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+X), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q)
+
+*(Submitted on 8 Nov 2019)*
+
+> Previous work on document-level NMT usually focuses on limited contexts because of degraded performance on larger contexts. In this paper, we investigate on using large contexts with three main contributions: (1) Different from previous work which pertrained models on large-scale sentence-level parallel corpora, we use pretrained language models, specifically BERT, which are trained on monolingual documents; (2) We propose context manipulation methods to control the influence of large contexts, which lead to comparable results on systems using small and large contexts; (3) We introduce a multi-task training for regularization to avoid models overfitting our training corpora, which further improves our systems together with a deeper encoder. Experiments are conducted on the widely used IWSLT data sets with three language pairs, i.e., Chinese--English, French--English and Spanish--English. Results show that our systems are significantly better than three previously reported document-level systems.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.03110](https://arxiv.org/abs/1911.03110) [cs.CL] |
+|           | (or [arXiv:1911.03110v1](https://arxiv.org/abs/1911.03110v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-11-11">11. How to Do Simultaneous Translation Better with Consecutive Neural Machine Translation?</h2>
+
+Title: [How to Do Simultaneous Translation Better with Consecutive Neural Machine Translation?]( https://arxiv.org/abs/1911.03154 )
+
+Authors:[Yun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Liangyou Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Xin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+X), [Xiao Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+X), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q)
+
+*(Submitted on 8 Nov 2019)*
+
+> Despite the success of neural machine translation (NMT), simultaneous neural machine translation (SNMT), the task of translating in real time before a full sentence has been observed, remains challenging due to the syntactic structure difference and simultaneity requirements. In this paper, we propose a general framework to improve simultaneous translation with a pretrained consecutive neural machine translation (CNMT) model. Our framework contains two parts: prefix translation that utilizes a pretrained CNMT model to better translate source prefixes and a stopping criterion that determines when to stop the prefix translation. Experiments on three translation corpora and two language pairs show the efficacy of the proposed framework on balancing the quality and latency in simultaneous translation.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.03154](https://arxiv.org/abs/1911.03154) [cs.CL] |
+|           | (or [arXiv:1911.03154v1](https://arxiv.org/abs/1911.03154v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-11-12">12. Europarl-ST: A Multilingual Corpus For Speech Translation Of Parliamentary Debates</h2>
+
+Title: [Europarl-ST: A Multilingual Corpus For Speech Translation Of Parliamentary Debates]( https://arxiv.org/abs/1911.03167 )
+
+Authors:[Javier Iranzo-Sánchez](https://arxiv.org/search/cs?searchtype=author&query=Iranzo-Sánchez%2C+J), [Joan Albert Silvestre-Cerdà](https://arxiv.org/search/cs?searchtype=author&query=Silvestre-Cerdà%2C+J+A), [Javier Jorge](https://arxiv.org/search/cs?searchtype=author&query=Jorge%2C+J), [Nahuel Roselló](https://arxiv.org/search/cs?searchtype=author&query=Roselló%2C+N), [Adrià Giménez](https://arxiv.org/search/cs?searchtype=author&query=Giménez%2C+A), [Albert Sanchis](https://arxiv.org/search/cs?searchtype=author&query=Sanchis%2C+A), [Jorge Civera](https://arxiv.org/search/cs?searchtype=author&query=Civera%2C+J), [Alfons Juan](https://arxiv.org/search/cs?searchtype=author&query=Juan%2C+A)
+
+*(Submitted on 8 Nov 2019)*
+
+> Current research into spoken language translation (SLT) is often hampered by the lack of specific data resources for this task, as currently available SLT datasets are restricted to a limited set of language pairs. In this paper we present Europarl-ST, a novel multilingual SLT corpus containing paired audio-text samples for SLT from and into 6 European languages, for a total of 30 different translation directions. This corpus has been compiled using the debates held in the European Parliament in the period between 2008 and 2012. This paper describes the corpus creation process and presents a series of automatic speech recognition, machine translation and spoken language translation experiments that highlight the potential of this new resource. The corpus is released under a Creative Commons license and is freely accessible and downloadable.
+
+| Comments: | Submitted to ICASSP2020                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | [arXiv:1911.03167](https://arxiv.org/abs/1911.03167) [cs.CL] |
+|           | (or [arXiv:1911.03167v1](https://arxiv.org/abs/1911.03167v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-11-13">13. Why Deep Transformers are Difficult to Converge? From Computation Order to Lipschitz Restricted Parameter Initialization</h2>
+
+Title: [Why Deep Transformers are Difficult to Converge? From Computation Order to Lipschitz Restricted Parameter Initialization]( https://arxiv.org/abs/1911.03179 )
+
+Authors:[Hongfei Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+H), [Qiuhui Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q), [Josef van Genabith](https://arxiv.org/search/cs?searchtype=author&query=van+Genabith%2C+J), [Jingyi Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J)
+
+*(Submitted on 8 Nov 2019)*
+
+> The Transformer translation model employs residual connection and layer normalization to ease the optimization difficulties caused by its multi-layer encoder/decoder structure. While several previous works show that even with residual connection and layer normalization, deep Transformers still have difficulty in training, and particularly a Transformer model with more than 12 encoder/decoder layers fails to converge. In this paper, we first empirically demonstrate that a simple modification made in the official implementation which changes the computation order of residual connection and layer normalization can effectively ease the optimization of deep Transformers. In addition, we deeply compare the subtle difference in computation order, and propose a parameter initialization method which simply puts Lipschitz restriction on the initialization of Transformers but can effectively ensure their convergence. We empirically show that with proper parameter initialization, deep Transformers with the original computation order can converge, which is quite in contrast to all previous works, and obtain significant improvements with up to 24 layers. Our proposed approach additionally enables to benefit from deep decoders compared to previous works which focus on deep encoders.
+
+| Comments: | A similar work (Improving Deep Transformer with Depth-Scaled Initialization and Merged Attention) is accepted by EMNLP 2019, but there are differences between in analysis and approaches |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Audio and Speech Processing (eess.AS) |
+| Cite as:  | [arXiv:1911.03179](https://arxiv.org/abs/1911.03179) [cs.CL] |
+|           | (or [arXiv:1911.03179v1](https://arxiv.org/abs/1911.03179v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-11-14">14. Domain, Translationese and Noise in Synthetic Data for Neural Machine Translation</h2>
+
+Title: [Domain, Translationese and Noise in Synthetic Data for Neural Machine Translation]( https://arxiv.org/abs/1911.03362 )
+
+Authors:[Nikolay Bogoychev](https://arxiv.org/search/cs?searchtype=author&query=Bogoychev%2C+N), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R)
+
+*(Submitted on 6 Nov 2019)*
+
+> The quality of neural machine translation can be improved by leveraging additional monolingual resources to create synthetic training data. Source-side monolingual data can be (forward-)translated into the target language for self-training; target-side monolingual data can be back-translated. It has been widely reported that back-translation delivers superior results, but could this be due to artefacts in the test sets? We perform a case study using French-English news translation task and separate test sets based on their original languages. We show that forward translation delivers superior gains in terms of BLEU on sentences that were originally in the source language, complementing previous studies which show large improvements with back-translation on sentences that were originally in the target language. To better understand when and why forward and back-translation are effective, we study the role of domains, translationese, and noise. While translationese effects are well known to influence MT evaluation, we also find evidence that news data from different languages shows subtle domain differences, which is another explanation for varying performance on different portions of the test set. We perform additional low-resource experiments which demonstrate that forward translation is more sensitive to the quality of the initial translation system than back-translation, and tends to perform worse in low-resource settings.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.03362](https://arxiv.org/abs/1911.03362) [cs.CL] |
+|           | (or [arXiv:1911.03362v1](https://arxiv.org/abs/1911.03362v1) [cs.CL] for this version) |
+
+
+
+
+
+
+
 # 2019-11-07
 
 [Return to Index](#Index)
@@ -48,7 +346,6 @@
 
 
 <h2 id="2019-11-07-1">1. Fast Transformer Decoding: One Write-Head is All You Need</h2>
-
 Title: [Fast Transformer Decoding: One Write-Head is All You Need]( https://arxiv.org/abs/1911.02150 )
 
 Authors:[Noam Shazeer](https://arxiv.org/search/cs?searchtype=author&query=Shazeer%2C+N)
@@ -65,7 +362,6 @@ Authors:[Noam Shazeer](https://arxiv.org/search/cs?searchtype=author&query=Shaze
 
 
 <h2 id="2019-11-07-2">2. Unsupervised Cross-lingual Representation Learning at Scale</h2>
-
 Title: [Unsupervised Cross-lingual Representation Learning at Scale]( https://arxiv.org/abs/1911.02116 )
 
 Authors:[Alexis Conneau](https://arxiv.org/search/cs?searchtype=author&query=Conneau%2C+A), [Kartikay Khandelwal](https://arxiv.org/search/cs?searchtype=author&query=Khandelwal%2C+K), [Naman Goyal](https://arxiv.org/search/cs?searchtype=author&query=Goyal%2C+N), [Vishrav Chaudhary](https://arxiv.org/search/cs?searchtype=author&query=Chaudhary%2C+V), [Guillaume Wenzek](https://arxiv.org/search/cs?searchtype=author&query=Wenzek%2C+G), [Francisco Guzmán](https://arxiv.org/search/cs?searchtype=author&query=Guzmán%2C+F), [Edouard Grave](https://arxiv.org/search/cs?searchtype=author&query=Grave%2C+E), [Myle Ott](https://arxiv.org/search/cs?searchtype=author&query=Ott%2C+M), [Luke Zettlemoyer](https://arxiv.org/search/cs?searchtype=author&query=Zettlemoyer%2C+L), [Veselin Stoyanov](https://arxiv.org/search/cs?searchtype=author&query=Stoyanov%2C+V)
@@ -85,7 +381,6 @@ Authors:[Alexis Conneau](https://arxiv.org/search/cs?searchtype=author&query=Con
 
 
 <h2 id="2019-11-07-3">3. Guiding Non-Autoregressive Neural Machine Translation Decoding with Reordering Information</h2>
-
 Title: [Guiding Non-Autoregressive Neural Machine Translation Decoding with Reordering Information]( https://arxiv.org/abs/1911.02215 )
 
 Authors:[Qiu Ran](https://arxiv.org/search/cs?searchtype=author&query=Ran%2C+Q), [Yankai Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Y), [Peng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+P), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J)
