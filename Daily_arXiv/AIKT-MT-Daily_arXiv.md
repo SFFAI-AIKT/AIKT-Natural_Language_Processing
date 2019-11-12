@@ -2,6 +2,20 @@
 
 # Index
 
+- [2019-11-12](#2019-11-12)
+  - [1. Neural Arabic Text Diacritization: State of the Art Results and a Novel Approach for Machine Translation](#2019-11-12-1)
+  - [2. Learning to Copy for Automatic Post-Editing](#2019-11-12-2)
+  - [3. A Reinforced Generation of Adversarial Samples for Neural Machine Translation](#2019-11-12-3)
+  - [4. Code-Mixed to Monolingual Translation Framework](#2019-11-12-4)
+  - [5. Enforcing Encoder-Decoder Modularity in Sequence-to-Sequence Models](#2019-11-12-5)
+  - [6. Translationese as a Language in "Multilingual" NMT](#2019-11-12-6)
+  - [7. Rethinking Self-Attention: An Interpretable Self-Attentive Encoder-Decoder Parser](#2019-11-12-7)
+  - [8. Semantic Noise Matters for Neural Natural Language Generation](#2019-11-12-8)
+  - [9. Language Model-Driven Unsupervised Neural Machine Translation](#2019-11-12-9)
+  - [10. BP-Transformer: Modelling Long-Range Context via Binary Partitioning](#2019-11-12-10)
+  - [11. Zero-shot Cross-lingual Dialogue Systems with Transferable Latent Variables](#2019-11-12-11)
+  - [12. Data Efficient Direct Speech-to-Text Translation with Modality Agnostic Meta-Learning](#2019-11-12-12)
+  - [13. Diversity by Phonetics and its Application in Neural Machine Translation](#2019-11-12-13)
 - [2019-11-11](#2019-11-11)
   - [1. Multi-Domain Neural Machine Translation with Word-Level Adaptive Layer-wise Domain Mixing](#2019-11-11-1)
   - [2. Low-Resource Machine Translation using Interlinear Glosses](#2019-11-11-2)
@@ -56,6 +70,272 @@
 
 
 
+# 2019-11-12
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-11-12-1">1. Neural Arabic Text Diacritization: State of the Art Results and a Novel Approach for Machine Translation</h2>
+
+Title: [Neural Arabic Text Diacritization: State of the Art Results and a Novel Approach for Machine Translation]( https://arxiv.org/abs/1911.03531 )
+
+Authors: [Ali Fadel](https://arxiv.org/search/cs?searchtype=author&query=Fadel%2C+A), [Ibraheem Tuffaha](https://arxiv.org/search/cs?searchtype=author&query=Tuffaha%2C+I), [Bara' Al-Jawarneh](https://arxiv.org/search/cs?searchtype=author&query=Al-Jawarneh%2C+B), [Mahmoud Al-Ayyoub](https://arxiv.org/search/cs?searchtype=author&query=Al-Ayyoub%2C+M)
+
+*(Submitted on 8 Nov 2019)*
+
+> In this work, we present several deep learning models for the automatic diacritization of Arabic text. Our models are built using two main approaches, viz. Feed-Forward Neural Network (FFNN) and Recurrent Neural Network (RNN), with several enhancements such as 100-hot encoding, embeddings, Conditional Random Field (CRF) and Block-Normalized Gradient (BNG). The models are tested on the only freely available benchmark dataset and the results show that our models are either better or on par with other models, which require language-dependent post-processing steps, unlike ours. Moreover, we show that diacritics in Arabic can be used to enhance the models of NLP tasks such as Machine Translation (MT) by proposing the Translation over Diacritization (ToD) approach.
+
+| Comments: | 18 pages, 17 figures, 14 tables                              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| DOI:      | [10.18653/v1/D19-5229](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.18653%2Fv1%2FD19-5229&v=0855f1dd) |
+| Cite as:  | [arXiv:1911.03531](https://arxiv.org/abs/1911.03531) [cs.CL] |
+|           | (or [arXiv:1911.03531v1](https://arxiv.org/abs/1911.03531v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-12-2">2. Learning to Copy for Automatic Post-Editing</h2>
+
+Title: [Learning to Copy for Automatic Post-Editing]( https://arxiv.org/abs/1911.03627 )
+
+Authors: [Xuancheng Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+X), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Huanbo Luan](https://arxiv.org/search/cs?searchtype=author&query=Luan%2C+H), [Jingfang Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+J), [Maosong Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M)
+
+*(Submitted on 9 Nov 2019)*
+
+> Automatic post-editing (APE), which aims to correct errors in the output of machine translation systems in a post-processing step, is an important task in natural language processing. While recent work has achieved considerable performance gains by using neural networks, how to model the copying mechanism for APE remains a challenge. In this work, we propose a new method for modeling copying for APE. To better identify translation errors, our method learns the representations of source sentences and system outputs in an interactive way. These representations are used to explicitly indicate which words in the system outputs should be copied, which is useful to help CopyNet (Gu et al., 2016) better generate post-edited translations. Experiments on the datasets of the WMT 2016-2017 APE shared tasks show that our approach outperforms all best published results.
+
+| Comments: | EMNLP 2019                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1911.03627](https://arxiv.org/abs/1911.03627) [cs.CL] |
+|           | (or [arXiv:1911.03627v1](https://arxiv.org/abs/1911.03627v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-12-3">3. A Reinforced Generation of Adversarial Samples for Neural Machine Translation</h2>
+
+Title: [A Reinforced Generation of Adversarial Samples for Neural Machine Translation]( https://arxiv.org/abs/1911.03677 )
+
+Authors: [Wei Zou](https://arxiv.org/search/cs?searchtype=author&query=Zou%2C+W), [Shujian Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Jun Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie%2C+J), [Xinyu Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+X), [Jiajun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J)
+
+*(Submitted on 9 Nov 2019)*
+
+> Neural machine translation systems tend to fail on less de-cent inputs despite its great efficacy, which may greatly harm the credibility of these systems. Fathoming how and when neural-based systems fail in such cases is critical for industrial maintenance. Instead of collecting and analyzing bad cases using limited handcrafted error features, here we investigate this issue by generating adversarial samples via a new paradigm based on reinforcement learning. Our paradigm could expose pitfalls for a given performance metric, e.g.BLEU, and could target any given neural machine translation architecture. We conduct experiments of adversarial attacks on two mainstream neural machine translation architectures, RNN-search and Transformer. The results show that our method efficiently produces stable attacks with meaning-preserving adversarial samples. We also present a qualitative and quantitative analysis for the preference pattern of the attack, showing its capability of pitfall exposure.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.03677](https://arxiv.org/abs/1911.03677) [cs.CL] |
+|           | (or [arXiv:1911.03677v1](https://arxiv.org/abs/1911.03677v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-12-4">4. Code-Mixed to Monolingual Translation Framework</h2>
+
+Title: [Code-Mixed to Monolingual Translation Framework]( https://arxiv.org/abs/1911.03772 )
+
+Authors: [Sainik Kumar Mahata](https://arxiv.org/search/cs?searchtype=author&query=Mahata%2C+S+K), [Soumil Mandal](https://arxiv.org/search/cs?searchtype=author&query=Mandal%2C+S), [Dipankar Das](https://arxiv.org/search/cs?searchtype=author&query=Das%2C+D), [Sivaji Bandyopadhyay](https://arxiv.org/search/cs?searchtype=author&query=Bandyopadhyay%2C+S)
+
+*(Submitted on 9 Nov 2019)*
+
+> The use of multilingualism in the new generation is widespread in the form of code-mixed data on social media, and therefore a robust translation system is required for catering to the monolingual users, as well as for easier comprehension by language processing models. In this work, we present a translation framework that uses a translation-transliteration strategy for translating code-mixed data into their equivalent monolingual instances. For converting the output to a more fluent form, it is reordered using a target language model. The most important advantage of the proposed framework is that it does not require a code-mixed to monolingual parallel corpus at any point. On testing the framework, it achieved BLEU and TER scores of 16.47 and 55.45, respectively. Since the proposed framework deals with various sub-modules, we dive deeper into the importance of each of them, analyze the errors and finally, discuss some improvement strategies.
+
+| Comments: | 6 pages, 3 figures, 2 tables                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1911.03772](https://arxiv.org/abs/1911.03772) [cs.CL] |
+|           | (or [arXiv:1911.03772v1](https://arxiv.org/abs/1911.03772v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-12-5">5. Enforcing Encoder-Decoder Modularity in Sequence-to-Sequence Models</h2>
+
+Title: [Enforcing Encoder-Decoder Modularity in Sequence-to-Sequence Models]( https://arxiv.org/abs/1911.03782 )
+
+Authors: [Siddharth Dalmia](https://arxiv.org/search/cs?searchtype=author&query=Dalmia%2C+S), [Abdelrahman Mohamed](https://arxiv.org/search/cs?searchtype=author&query=Mohamed%2C+A), [Mike Lewis](https://arxiv.org/search/cs?searchtype=author&query=Lewis%2C+M), [Florian Metze](https://arxiv.org/search/cs?searchtype=author&query=Metze%2C+F), [Luke Zettlemoyer](https://arxiv.org/search/cs?searchtype=author&query=Zettlemoyer%2C+L)
+
+*(Submitted on 9 Nov 2019)*
+
+> Inspired by modular software design principles of independence, interchangeability, and clarity of interface, we introduce a method for enforcing encoder-decoder modularity in seq2seq models without sacrificing the overall model quality or its full differentiability. We discretize the encoder output units into a predefined interpretable vocabulary space using the Connectionist Temporal Classification (CTC) loss. Our modular systems achieve near SOTA performance on the 300h Switchboard benchmark, with WER of 8.3% and 17.6% on the SWB and CH subsets, using seq2seq models with encoder and decoder modules which are independent and interchangeable.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.03782](https://arxiv.org/abs/1911.03782) [cs.CL] |
+|           | (or [arXiv:1911.03782v1](https://arxiv.org/abs/1911.03782v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-12-6">6. Translationese as a Language in "Multilingual" NMT</h2>
+
+Title: [Translationese as a Language in "Multilingual" NMT]( https://arxiv.org/abs/1911.03823 )
+
+Authors: [Parker Riley](https://arxiv.org/search/cs?searchtype=author&query=Riley%2C+P), [Isaac Caswell](https://arxiv.org/search/cs?searchtype=author&query=Caswell%2C+I), [Markus Freitag](https://arxiv.org/search/cs?searchtype=author&query=Freitag%2C+M), [David Grangier](https://arxiv.org/search/cs?searchtype=author&query=Grangier%2C+D)
+
+*(Submitted on 10 Nov 2019)*
+
+> Machine translation has an undesirable propensity to produce "translationese" artifacts, which can lead to higher BLEU scores while being liked less by human raters. Motivated by this, we model translationese and original (i.e. natural) text as separate languages in a multilingual model, and pose the question: can we perform zero-shot translation between original source text and original target text? There is no data with original source and original target, so we train sentence-level classifiers to distinguish translationese from original target text, and use this classifier to tag the training data for an NMT model. Using this technique we bias the model to produce more natural outputs at test time, yielding gains in human evaluation scores on both accuracy and fluency. Additionally, we demonstrate that it is possible to bias the model to produce translationese and game the BLEU score, increasing it while decreasing human-rated quality. We analyze these models using metrics to measure the degree of translationese in the output, and present an analysis of the capriciousness of heuristically-based train-data tagging.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.03823](https://arxiv.org/abs/1911.03823) [cs.CL] |
+|           | (or [arXiv:1911.03823v1](https://arxiv.org/abs/1911.03823v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-12-7">7. Rethinking Self-Attention: An Interpretable Self-Attentive Encoder-Decoder Parser</h2>
+
+Title: [Rethinking Self-Attention: An Interpretable Self-Attentive Encoder-Decoder Parser]( https://arxiv.org/abs/1911.03875 )
+
+Authors: [Khalil Mrini](https://arxiv.org/search/cs?searchtype=author&query=Mrini%2C+K), [Franck Dernoncourt](https://arxiv.org/search/cs?searchtype=author&query=Dernoncourt%2C+F), [Trung Bui](https://arxiv.org/search/cs?searchtype=author&query=Bui%2C+T), [Walter Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+W), [Ndapa Nakashole](https://arxiv.org/search/cs?searchtype=author&query=Nakashole%2C+N)
+
+*(Submitted on 10 Nov 2019)*
+
+> Attention mechanisms have improved the performance of NLP tasks while providing for appearance of model interpretability. Self-attention is currently widely used in NLP models, however it is difficult to interpret due to the numerous attention distributions. We hypothesize that model representations can benefit from label-specific information, while facilitating interpretation of predictions. We introduce the Label Attention Layer: a new form of self-attention where attention heads represent labels. We validate our hypothesis by running experiments in constituency and dependency parsing and show our new model obtains new state-of-the-art results for both tasks on the English Penn Treebank. Our neural parser obtains 96.34 F1 score for constituency parsing, and 97.33 UAS and 96.29 LAS for dependency parsing. Additionally, our model requires fewer layers, therefore, fewer parameters compared to existing work.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.03875](https://arxiv.org/abs/1911.03875) [cs.CL] |
+|           | (or [arXiv:1911.03875v1](https://arxiv.org/abs/1911.03875v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-12-8">8. Semantic Noise Matters for Neural Natural Language Generation</h2>
+
+Title: [Semantic Noise Matters for Neural Natural Language Generation]( https://arxiv.org/abs/1911.03905 )
+
+Authors: [Ondřej Dušek](https://arxiv.org/search/cs?searchtype=author&query=Dušek%2C+O), [David M. Howcroft](https://arxiv.org/search/cs?searchtype=author&query=Howcroft%2C+D+M), [Verena Rieser](https://arxiv.org/search/cs?searchtype=author&query=Rieser%2C+V)
+
+*(Submitted on 10 Nov 2019)*
+
+> Neural natural language generation (NNLG) systems are known for their pathological outputs, i.e. generating text which is unrelated to the input specification. In this paper, we show the impact of semantic noise on state-of-the-art NNLG models which implement different semantic control mechanisms. We find that cleaned data can improve semantic correctness by up to 97%, while maintaining fluency. We also find that the most common error is omitting information, rather than hallucination.
+
+| Comments:    | In Proceedings of INLG 2019, Tokyo, Japan                    |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**                         |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | [arXiv:1911.03905](https://arxiv.org/abs/1911.03905) [cs.CL] |
+|              | (or [arXiv:1911.03905v1](https://arxiv.org/abs/1911.03905v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-12-9">9. Language Model-Driven Unsupervised Neural Machine Translation</h2>
+
+Title: [Language Model-Driven Unsupervised Neural Machine Translation]( https://arxiv.org/abs/1911.03937 )
+
+Authors: [Wei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+W), [Youyuan Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Y), [Ruoran Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+R), [Xiaodong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Zhenshuang Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+Z), [Zhen Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Z)
+
+*(Submitted on 10 Nov 2019)*
+
+> Unsupervised neural machine translation(NMT) is associated with noise and errors in synthetic data when executing vanilla back-translations. Here, we explicitly exploits language model(LM) to drive construction of an unsupervised NMT system. This features two steps. First, we initialize NMT models using synthetic data generated via temporary statistical machine translation(SMT). Second, unlike vanilla back-translation, we formulate a weight function, that scores synthetic data at each step of subsequent iterative training; this allows unsupervised training to an improved outcome. We present the detailed mathematical construction of our method. Experimental WMT2014 English-French, and WMT2016 English-German and English-Russian translation tasks revealed that our method outperforms the best prior systems by more than 3 BLEU points.
+
+| Comments: | 11 pages, 3 figures, 7 tables                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1911.03937](https://arxiv.org/abs/1911.03937) [cs.CL] |
+|           | (or [arXiv:1911.03937v1](https://arxiv.org/abs/1911.03937v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-12-10">10. BP-Transformer: Modelling Long-Range Context via Binary Partitioning</h2>
+
+Title: [BP-Transformer: Modelling Long-Range Context via Binary Partitioning]( https://arxiv.org/abs/1911.04070 )
+
+Authors: [Zihao Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+Z), [Qipeng Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+Q), [Quan Gan](https://arxiv.org/search/cs?searchtype=author&query=Gan%2C+Q), [Xipeng Qiu](https://arxiv.org/search/cs?searchtype=author&query=Qiu%2C+X), [Zheng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z)
+
+*(Submitted on 11 Nov 2019)*
+
+> The Transformer model is widely successful on many natural language processing tasks. However, the quadratic complexity of self-attention limit its application on long text. In this paper, adopting a fine-to-coarse attention mechanism on multi-scale spans via binary partitioning (BP), we propose BP-Transformer (BPT for short). BPT yields O(k⋅nlog(n/k)) connections where k is a hyperparameter to control the density of attention. BPT has a good balance between computation complexity and model capacity. A series of experiments on text classification, machine translation and language modeling shows BPT has a superior performance for long text than previous self-attention models. Our code, hyperparameters and CUDA kernels for sparse attention are available in PyTorch.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.04070](https://arxiv.org/abs/1911.04070) [cs.CL] |
+|           | (or [arXiv:1911.04070v1](https://arxiv.org/abs/1911.04070v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-12-11">11. Zero-shot Cross-lingual Dialogue Systems with Transferable Latent Variables</h2>
+
+Title: [Zero-shot Cross-lingual Dialogue Systems with Transferable Latent Variables]( https://arxiv.org/abs/1911.04081 )
+
+Authors: [Zihan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Jamin Shin](https://arxiv.org/search/cs?searchtype=author&query=Shin%2C+J), [Yan Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+Y), [Genta Indra Winata](https://arxiv.org/search/cs?searchtype=author&query=Winata%2C+G+I), [Peng Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+P), [Andrea Madotto](https://arxiv.org/search/cs?searchtype=author&query=Madotto%2C+A), [Pascale Fung](https://arxiv.org/search/cs?searchtype=author&query=Fung%2C+P)
+
+*(Submitted on 11 Nov 2019)*
+
+> Despite the surging demands for multilingual task-oriented dialog systems (e.g., Alexa, Google Home), there has been less research done in multilingual or cross-lingual scenarios. Hence, we propose a zero-shot adaptation of task-oriented dialogue system to low-resource languages. To tackle this challenge, we first use a set of very few parallel word pairs to refine the aligned cross-lingual word-level representations. We then employ a latent variable model to cope with the variance of similar sentences across different languages, which is induced by imperfect cross-lingual alignments and inherent differences in languages. Finally, the experimental results show that even though we utilize much less external resources, our model achieves better adaptation performance for natural language understanding task (i.e., the intent detection and slot filling) compared to the current state-of-the-art model in the zero-shot scenario.
+
+| Comments: | Accepted in EMNLP 2019                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:1911.04081](https://arxiv.org/abs/1911.04081) [cs.CL] |
+|           | (or [arXiv:1911.04081v1](https://arxiv.org/abs/1911.04081v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-12-12">12. Data Efficient Direct Speech-to-Text Translation with Modality Agnostic Meta-Learning</h2>
+
+Title: [Data Efficient Direct Speech-to-Text Translation with Modality Agnostic Meta-Learning]()
+
+Authors: [Sathish Indurthi](https://arxiv.org/search/cs?searchtype=author&query=Indurthi%2C+S), [Houjeung Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+H), [Nikhil Kumar Lakumarapu](https://arxiv.org/search/cs?searchtype=author&query=Lakumarapu%2C+N+K), [Beomseok Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+B), [Insoo Chung](https://arxiv.org/search/cs?searchtype=author&query=Chung%2C+I), [Sangha Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+S), [Chanwoo Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+C)
+
+*(Submitted on 11 Nov 2019)*
+
+> End-to-end Speech Translation (ST) models have several advantages such as lower latency, smaller model size, and less error compounding over conventional pipelines that combine Automatic Speech Recognition (ASR) and text Machine Translation (MT) models. However, collecting large amounts of parallel data for ST task is more difficult compared to the ASR and MT tasks. Previous studies have proposed the use of transfer learning approaches to overcome the above difficulty. These approaches benefit from weakly supervised training data, such as ASR speech-to-transcript or MT text-to-text translation pairs. However, the parameters in these models are updated independently of each task, which may lead to sub-optimal solutions. In this work, we adopt a meta-learning algorithm to train a modality agnostic multi-task model that transfers knowledge from source tasks=ASR+MT to target task=ST where ST task severely lacks data. In the meta-learning phase, the parameters of the model are exposed to vast amounts of speech transcripts (e.g., English ASR) and text translations (e.g., English-German MT). During this phase, parameters are updated in such a way to understand speech, text representations, the relation between them, as well as act as a good initialization point for the target ST task. We evaluate the proposed meta-learning approach for ST tasks on English-German (En-De) and English-French (En-Fr) language pairs from the Multilingual Speech Translation Corpus (MuST-C). Our method outperforms the previous transfer learning approaches and sets new state-of-the-art results for En-De and En-Fr ST tasks by obtaining 9.18, and 11.76 BLEU point improvements, respectively.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.04283](https://arxiv.org/abs/1911.04283) [cs.CL] |
+|           | (or [arXiv:1911.04283v1](https://arxiv.org/abs/1911.04283v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-12-13">13. Diversity by Phonetics and its Application in Neural Machine Translation</h2>
+
+Title: [Diversity by Phonetics and its Application in Neural Machine Translation]( https://arxiv.org/abs/1911.04292 )
+
+Authors: [Abdul Rafae Khan](https://arxiv.org/search/cs?searchtype=author&query=Khan%2C+A+R), [Jia Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+J)
+
+*(Submitted on 11 Nov 2019)*
+
+> We introduce a powerful approach for Neural Machine Translation (NMT), whereby, during training and testing, together with the input we provide its phonetic encoding and the variants of such an encoding. This way we obtain very significant improvements up to 4 BLEU points over the state-of-the-art large-scale system. The phonetic encoding is the first part of our contribution, with a second being a theory that aims to understand the reason for this improvement. Our hypothesis states that the phonetic encoding helps NMT because it encodes a procedure to emphasize the difference between semantically diverse sentences. We conduct an empirical geometric validation of our hypothesis in support of which we obtain overwhelming evidence. Subsequently, as our third contribution and based on our theory, we develop artificial mechanisms that leverage during learning the hypothesized (and verified) effect phonetics. We achieve significant and consistent improvements overall language pairs and datasets: French-English, German-English, and Chinese-English in medium task IWSLT'17 and French-English in large task WMT'18 Bio, with up to 4 BLEU points over the state-of-the-art. Moreover, our approaches are more robust than baselines when evaluated on unknown out-of-domain test sets with up to a 5 BLEU point increase.
+
+| Comments: | In [this http URL](http://openreview.net/) (28 May 2019)     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | [arXiv:1911.04292](https://arxiv.org/abs/1911.04292) [cs.CL] |
+|           | (or [arXiv:1911.04292v1](https://arxiv.org/abs/1911.04292v1) [cs.CL] for this version) |
+
+
+
+
+
+
+
+
+
 # 2019-11-11
 
 [Return to Index](#Index)
@@ -63,7 +343,6 @@
 
 
 <h2 id="2019-11-11-1">1. Multi-Domain Neural Machine Translation with Word-Level Adaptive Layer-wise Domain Mixing</h2>
-
 Title: [Multi-Domain Neural Machine Translation with Word-Level Adaptive Layer-wise Domain Mixing]( https://arxiv.org/abs/1911.02692 )
 
 Authors:[Haoming Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+H), [Chen Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+C), [Chong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Tuo Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+T)
@@ -82,7 +361,6 @@ Authors:[Haoming Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jian
 
 
 <h2 id="2019-11-11-2">2. Low-Resource Machine Translation using Interlinear Glosses</h2>
-
 Title: [Low-Resource Machine Translation using Interlinear Glosses]( https://arxiv.org/abs/1911.02709 )
 
 Authors:[Zhong Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+Z), [Lori Levin](https://arxiv.org/search/cs?searchtype=author&query=Levin%2C+L), [David R. Mortensen](https://arxiv.org/search/cs?searchtype=author&query=Mortensen%2C+D+R), [Alex Waibel](https://arxiv.org/search/cs?searchtype=author&query=Waibel%2C+A)
@@ -101,7 +379,6 @@ Authors:[Zhong Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C
 
 
 <h2 id="2019-11-11-3">3. Understanding Knowledge Distillation in Non-autoregressive Machine Translation</h2>
-
 Title: [Understanding Knowledge Distillation in Non-autoregressive Machine Translation]( https://arxiv.org/abs/1911.02727 )
 
 Authors:[Chunting Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+C), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G), [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J)
@@ -120,7 +397,6 @@ Authors:[Chunting Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou
 
 
 <h2 id="2019-11-11-4">4. SubCharacter Chinese-English Neural Machine Translation with Wubi encoding</h2>
-
 Title: [SubCharacter Chinese-English Neural Machine Translation with Wubi encoding]( https://arxiv.org/abs/1911.02737 )
 
 Authors:[Wei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+W), [Feifei Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+F), [Xiaodong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Zhenshuang Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+Z), [Zhen Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Z)
@@ -140,7 +416,6 @@ Authors:[Wei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C
 
 
 <h2 id="2019-11-11-5">5. Improving Grammatical Error Correction with Machine Translation Pairs</h2>
-
 Title: [Improving Grammatical Error Correction with Machine Translation Pairs]( https://arxiv.org/abs/1911.02825 )
 
 Authors:[Wangchunshu Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+W), [Tao Ge](https://arxiv.org/search/cs?searchtype=author&query=Ge%2C+T), [Chang Mu](https://arxiv.org/search/cs?searchtype=author&query=Mu%2C+C), [Ke Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+K), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F), [Ming Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+M)
@@ -159,7 +434,6 @@ Authors:[Wangchunshu Zhou](https://arxiv.org/search/cs?searchtype=author&query=Z
 
 
 <h2 id="2019-11-11-6">6. The LIG system for the English-Czech Text Translation Task of IWSLT 2019</h2>
-
 Title: [The LIG system for the English-Czech Text Translation Task of IWSLT 2019]( https://arxiv.org/abs/1911.02898 )
 
 Authors:[Loïc Vial](https://arxiv.org/search/cs?searchtype=author&query=Vial%2C+L), [Benjamin Lecouteux](https://arxiv.org/search/cs?searchtype=author&query=Lecouteux%2C+B), [Didier Schwab](https://arxiv.org/search/cs?searchtype=author&query=Schwab%2C+D), [Hang Le](https://arxiv.org/search/cs?searchtype=author&query=Le%2C+H), [Laurent Besacier](https://arxiv.org/search/cs?searchtype=author&query=Besacier%2C+L)
@@ -179,7 +453,6 @@ Authors:[Loïc Vial](https://arxiv.org/search/cs?searchtype=author&query=Vial%2C
 
 
 <h2 id="2019-11-11-7">7. Should All Cross-Lingual Embeddings Speak English?</h2>
-
 Title: [Should All Cross-Lingual Embeddings Speak English?]( https://arxiv.org/abs/1911.03058 )
 
 Authors:[Antonios Anastasopoulos](https://arxiv.org/search/cs?searchtype=author&query=Anastasopoulos%2C+A), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
@@ -199,7 +472,6 @@ Authors:[Antonios Anastasopoulos](https://arxiv.org/search/cs?searchtype=author&
 
 
 <h2 id="2019-11-11-8">8. Interactive Refinement of Cross-Lingual Word Embeddings</h2>
-
 Title: [Interactive Refinement of Cross-Lingual Word Embeddings]( https://arxiv.org/abs/1911.03070 )
 
 Authors:[Michelle Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+M), [Mozhi Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M), [Benjamin Van Durme](https://arxiv.org/search/cs?searchtype=author&query=Van+Durme%2C+B), [Leah Findlater](https://arxiv.org/search/cs?searchtype=author&query=Findlater%2C+L), [Jordan Boyd-Graber](https://arxiv.org/search/cs?searchtype=author&query=Boyd-Graber%2C+J)
@@ -219,7 +491,6 @@ Authors:[Michelle Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan
 
 
 <h2 id="2019-11-11-9">9. Domain Robustness in Neural Machine Translation</h2>
-
 Title: [Domain Robustness in Neural Machine Translation]( https://arxiv.org/abs/1911.03109 )
 
 Authors:[Mathias Müller](https://arxiv.org/search/cs?searchtype=author&query=Müller%2C+M), [Annette Rios](https://arxiv.org/search/cs?searchtype=author&query=Rios%2C+A), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R)
@@ -241,7 +512,6 @@ Authors:[Mathias Müller](https://arxiv.org/search/cs?searchtype=author&query=M�
 
 
 <h2 id="2019-11-11-10">10. Pretrained Language Models for Document-Level Neural Machine Translation</h2>
-
 Title: [Pretrained Language Models for Document-Level Neural Machine Translation]( https://arxiv.org/abs/1911.03110 )
 
 Authors:[Liangyou Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Xin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+X), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q)
@@ -260,7 +530,6 @@ Authors:[Liangyou Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+
 
 
 <h2 id="2019-11-11-11">11. How to Do Simultaneous Translation Better with Consecutive Neural Machine Translation?</h2>
-
 Title: [How to Do Simultaneous Translation Better with Consecutive Neural Machine Translation?]( https://arxiv.org/abs/1911.03154 )
 
 Authors:[Yun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Liangyou Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Xin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+X), [Xiao Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+X), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q)
@@ -279,7 +548,6 @@ Authors:[Yun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y
 
 
 <h2 id="2019-11-11-12">12. Europarl-ST: A Multilingual Corpus For Speech Translation Of Parliamentary Debates</h2>
-
 Title: [Europarl-ST: A Multilingual Corpus For Speech Translation Of Parliamentary Debates]( https://arxiv.org/abs/1911.03167 )
 
 Authors:[Javier Iranzo-Sánchez](https://arxiv.org/search/cs?searchtype=author&query=Iranzo-Sánchez%2C+J), [Joan Albert Silvestre-Cerdà](https://arxiv.org/search/cs?searchtype=author&query=Silvestre-Cerdà%2C+J+A), [Javier Jorge](https://arxiv.org/search/cs?searchtype=author&query=Jorge%2C+J), [Nahuel Roselló](https://arxiv.org/search/cs?searchtype=author&query=Roselló%2C+N), [Adrià Giménez](https://arxiv.org/search/cs?searchtype=author&query=Giménez%2C+A), [Albert Sanchis](https://arxiv.org/search/cs?searchtype=author&query=Sanchis%2C+A), [Jorge Civera](https://arxiv.org/search/cs?searchtype=author&query=Civera%2C+J), [Alfons Juan](https://arxiv.org/search/cs?searchtype=author&query=Juan%2C+A)
@@ -299,7 +567,6 @@ Authors:[Javier Iranzo-Sánchez](https://arxiv.org/search/cs?searchtype=author&q
 
 
 <h2 id="2019-11-11-13">13. Why Deep Transformers are Difficult to Converge? From Computation Order to Lipschitz Restricted Parameter Initialization</h2>
-
 Title: [Why Deep Transformers are Difficult to Converge? From Computation Order to Lipschitz Restricted Parameter Initialization]( https://arxiv.org/abs/1911.03179 )
 
 Authors:[Hongfei Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+H), [Qiuhui Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q), [Josef van Genabith](https://arxiv.org/search/cs?searchtype=author&query=van+Genabith%2C+J), [Jingyi Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J)
@@ -319,7 +586,6 @@ Authors:[Hongfei Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+H
 
 
 <h2 id="2019-11-11-14">14. Domain, Translationese and Noise in Synthetic Data for Neural Machine Translation</h2>
-
 Title: [Domain, Translationese and Noise in Synthetic Data for Neural Machine Translation]( https://arxiv.org/abs/1911.03362 )
 
 Authors:[Nikolay Bogoychev](https://arxiv.org/search/cs?searchtype=author&query=Bogoychev%2C+N), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R)
