@@ -2,6 +2,9 @@
 
 # Index
 
+- [2019-11-13](#2019-11-13)
+  - [1. How to Evaluate Word Representations of Informal Domain](#2019-11-13-1)
+  - [2. Character-based NMT with Transformer](#2019-11-13-2)
 - [2019-11-12](#2019-11-12)
   - [1. Neural Arabic Text Diacritization: State of the Art Results and a Novel Approach for Machine Translation](#2019-11-12-1)
   - [2. Learning to Copy for Automatic Post-Editing](#2019-11-12-2)
@@ -70,6 +73,54 @@
 
 
 
+# 2019-11-13
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-11-13-1">1. How to Evaluate Word Representations of Informal Domain</h2>
+
+Title: [How to Evaluate Word Representations of Informal Domain]( https://arxiv.org/abs/1911.04669 )
+
+Authors: [Yekun Chai](https://arxiv.org/search/cs?searchtype=author&query=Chai%2C+Y), [Naomi Saphra](https://arxiv.org/search/cs?searchtype=author&query=Saphra%2C+N), [Adam Lopez](https://arxiv.org/search/cs?searchtype=author&query=Lopez%2C+A)
+
+*(Submitted on 12 Nov 2019)*
+
+> Diverse word representations have surged in most state-of-the-art natural language processing (NLP) applications. Nevertheless, how to efficiently evaluate such word embeddings in the informal domain such as Twitter or forums, remains an ongoing challenge due to the lack of sufficient evaluation dataset. We derived a large list of variant spelling pairs from UrbanDictionary with the automatic approaches of weakly-supervised pattern-based bootstrapping and self-training linear-chain conditional random field (CRF). With these extracted relation pairs we promote the odds of eliding the text normalization procedure of traditional NLP pipelines and directly adopting representations of non-standard words in the informal domain. Our code is available.
+
+| Subjects: | **Computation and Language (cs.CL)**; Information Retrieval (cs.IR); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.04669](https://arxiv.org/abs/1911.04669) [cs.CL] |
+|           | (or [arXiv:1911.04669v1](https://arxiv.org/abs/1911.04669v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-13-2">2. Character-based NMT with Transformer</h2>
+
+Title: [Character-based NMT with Transformer]( https://arxiv.org/abs/1911.04997 )
+
+Authors: [Rohit Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+R), [Laurent Besacier](https://arxiv.org/search/cs?searchtype=author&query=Besacier%2C+L), [Marc Dymetman](https://arxiv.org/search/cs?searchtype=author&query=Dymetman%2C+M), [Matthias Gallé](https://arxiv.org/search/cs?searchtype=author&query=Gallé%2C+M)
+
+*(Submitted on 12 Nov 2019)*
+
+> Character-based translation has several appealing advantages, but its performance is in general worse than a carefully tuned BPE baseline. In this paper we study the impact of character-based input and output with the Transformer architecture. In particular, our experiments on EN-DE show that character-based Transformer models are more robust than their BPE counterpart, both when translating noisy text, and when translating text from a different domain. To obtain comparable BLEU scores in clean, in-domain data and close the gap with BPE-based models we use known techniques to train deeper Transformer models.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.04997](https://arxiv.org/abs/1911.04997) [cs.CL] |
+|           | (or [arXiv:1911.04997v1](https://arxiv.org/abs/1911.04997v1) [cs.CL] for this version) |
+
+
+
+
+
+
+
+
+
 # 2019-11-12
 
 [Return to Index](#Index)
@@ -77,7 +128,6 @@
 
 
 <h2 id="2019-11-12-1">1. Neural Arabic Text Diacritization: State of the Art Results and a Novel Approach for Machine Translation</h2>
-
 Title: [Neural Arabic Text Diacritization: State of the Art Results and a Novel Approach for Machine Translation]( https://arxiv.org/abs/1911.03531 )
 
 Authors: [Ali Fadel](https://arxiv.org/search/cs?searchtype=author&query=Fadel%2C+A), [Ibraheem Tuffaha](https://arxiv.org/search/cs?searchtype=author&query=Tuffaha%2C+I), [Bara' Al-Jawarneh](https://arxiv.org/search/cs?searchtype=author&query=Al-Jawarneh%2C+B), [Mahmoud Al-Ayyoub](https://arxiv.org/search/cs?searchtype=author&query=Al-Ayyoub%2C+M)
@@ -98,7 +148,6 @@ Authors: [Ali Fadel](https://arxiv.org/search/cs?searchtype=author&query=Fadel%2
 
 
 <h2 id="2019-11-12-2">2. Learning to Copy for Automatic Post-Editing</h2>
-
 Title: [Learning to Copy for Automatic Post-Editing]( https://arxiv.org/abs/1911.03627 )
 
 Authors: [Xuancheng Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+X), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Huanbo Luan](https://arxiv.org/search/cs?searchtype=author&query=Luan%2C+H), [Jingfang Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+J), [Maosong Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M)
@@ -118,7 +167,6 @@ Authors: [Xuancheng Huang](https://arxiv.org/search/cs?searchtype=author&query=H
 
 
 <h2 id="2019-11-12-3">3. A Reinforced Generation of Adversarial Samples for Neural Machine Translation</h2>
-
 Title: [A Reinforced Generation of Adversarial Samples for Neural Machine Translation]( https://arxiv.org/abs/1911.03677 )
 
 Authors: [Wei Zou](https://arxiv.org/search/cs?searchtype=author&query=Zou%2C+W), [Shujian Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Jun Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie%2C+J), [Xinyu Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+X), [Jiajun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J)
@@ -137,7 +185,6 @@ Authors: [Wei Zou](https://arxiv.org/search/cs?searchtype=author&query=Zou%2C+W)
 
 
 <h2 id="2019-11-12-4">4. Code-Mixed to Monolingual Translation Framework</h2>
-
 Title: [Code-Mixed to Monolingual Translation Framework]( https://arxiv.org/abs/1911.03772 )
 
 Authors: [Sainik Kumar Mahata](https://arxiv.org/search/cs?searchtype=author&query=Mahata%2C+S+K), [Soumil Mandal](https://arxiv.org/search/cs?searchtype=author&query=Mandal%2C+S), [Dipankar Das](https://arxiv.org/search/cs?searchtype=author&query=Das%2C+D), [Sivaji Bandyopadhyay](https://arxiv.org/search/cs?searchtype=author&query=Bandyopadhyay%2C+S)
@@ -157,7 +204,6 @@ Authors: [Sainik Kumar Mahata](https://arxiv.org/search/cs?searchtype=author&que
 
 
 <h2 id="2019-11-12-5">5. Enforcing Encoder-Decoder Modularity in Sequence-to-Sequence Models</h2>
-
 Title: [Enforcing Encoder-Decoder Modularity in Sequence-to-Sequence Models]( https://arxiv.org/abs/1911.03782 )
 
 Authors: [Siddharth Dalmia](https://arxiv.org/search/cs?searchtype=author&query=Dalmia%2C+S), [Abdelrahman Mohamed](https://arxiv.org/search/cs?searchtype=author&query=Mohamed%2C+A), [Mike Lewis](https://arxiv.org/search/cs?searchtype=author&query=Lewis%2C+M), [Florian Metze](https://arxiv.org/search/cs?searchtype=author&query=Metze%2C+F), [Luke Zettlemoyer](https://arxiv.org/search/cs?searchtype=author&query=Zettlemoyer%2C+L)
@@ -176,7 +222,6 @@ Authors: [Siddharth Dalmia](https://arxiv.org/search/cs?searchtype=author&query=
 
 
 <h2 id="2019-11-12-6">6. Translationese as a Language in "Multilingual" NMT</h2>
-
 Title: [Translationese as a Language in "Multilingual" NMT]( https://arxiv.org/abs/1911.03823 )
 
 Authors: [Parker Riley](https://arxiv.org/search/cs?searchtype=author&query=Riley%2C+P), [Isaac Caswell](https://arxiv.org/search/cs?searchtype=author&query=Caswell%2C+I), [Markus Freitag](https://arxiv.org/search/cs?searchtype=author&query=Freitag%2C+M), [David Grangier](https://arxiv.org/search/cs?searchtype=author&query=Grangier%2C+D)
@@ -195,7 +240,6 @@ Authors: [Parker Riley](https://arxiv.org/search/cs?searchtype=author&query=Rile
 
 
 <h2 id="2019-11-12-7">7. Rethinking Self-Attention: An Interpretable Self-Attentive Encoder-Decoder Parser</h2>
-
 Title: [Rethinking Self-Attention: An Interpretable Self-Attentive Encoder-Decoder Parser]( https://arxiv.org/abs/1911.03875 )
 
 Authors: [Khalil Mrini](https://arxiv.org/search/cs?searchtype=author&query=Mrini%2C+K), [Franck Dernoncourt](https://arxiv.org/search/cs?searchtype=author&query=Dernoncourt%2C+F), [Trung Bui](https://arxiv.org/search/cs?searchtype=author&query=Bui%2C+T), [Walter Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+W), [Ndapa Nakashole](https://arxiv.org/search/cs?searchtype=author&query=Nakashole%2C+N)
@@ -214,7 +258,6 @@ Authors: [Khalil Mrini](https://arxiv.org/search/cs?searchtype=author&query=Mrin
 
 
 <h2 id="2019-11-12-8">8. Semantic Noise Matters for Neural Natural Language Generation</h2>
-
 Title: [Semantic Noise Matters for Neural Natural Language Generation]( https://arxiv.org/abs/1911.03905 )
 
 Authors: [Ondřej Dušek](https://arxiv.org/search/cs?searchtype=author&query=Dušek%2C+O), [David M. Howcroft](https://arxiv.org/search/cs?searchtype=author&query=Howcroft%2C+D+M), [Verena Rieser](https://arxiv.org/search/cs?searchtype=author&query=Rieser%2C+V)
@@ -235,7 +278,6 @@ Authors: [Ondřej Dušek](https://arxiv.org/search/cs?searchtype=author&query=Du
 
 
 <h2 id="2019-11-12-9">9. Language Model-Driven Unsupervised Neural Machine Translation</h2>
-
 Title: [Language Model-Driven Unsupervised Neural Machine Translation]( https://arxiv.org/abs/1911.03937 )
 
 Authors: [Wei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+W), [Youyuan Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Y), [Ruoran Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+R), [Xiaodong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Zhenshuang Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+Z), [Zhen Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Z)
@@ -255,7 +297,6 @@ Authors: [Wei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2
 
 
 <h2 id="2019-11-12-10">10. BP-Transformer: Modelling Long-Range Context via Binary Partitioning</h2>
-
 Title: [BP-Transformer: Modelling Long-Range Context via Binary Partitioning]( https://arxiv.org/abs/1911.04070 )
 
 Authors: [Zihao Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+Z), [Qipeng Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+Q), [Quan Gan](https://arxiv.org/search/cs?searchtype=author&query=Gan%2C+Q), [Xipeng Qiu](https://arxiv.org/search/cs?searchtype=author&query=Qiu%2C+X), [Zheng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z)
@@ -274,7 +315,6 @@ Authors: [Zihao Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+Z)
 
 
 <h2 id="2019-11-12-11">11. Zero-shot Cross-lingual Dialogue Systems with Transferable Latent Variables</h2>
-
 Title: [Zero-shot Cross-lingual Dialogue Systems with Transferable Latent Variables]( https://arxiv.org/abs/1911.04081 )
 
 Authors: [Zihan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Jamin Shin](https://arxiv.org/search/cs?searchtype=author&query=Shin%2C+J), [Yan Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+Y), [Genta Indra Winata](https://arxiv.org/search/cs?searchtype=author&query=Winata%2C+G+I), [Peng Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+P), [Andrea Madotto](https://arxiv.org/search/cs?searchtype=author&query=Madotto%2C+A), [Pascale Fung](https://arxiv.org/search/cs?searchtype=author&query=Fung%2C+P)
@@ -294,7 +334,6 @@ Authors: [Zihan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+
 
 
 <h2 id="2019-11-12-12">12. Data Efficient Direct Speech-to-Text Translation with Modality Agnostic Meta-Learning</h2>
-
 Title: [Data Efficient Direct Speech-to-Text Translation with Modality Agnostic Meta-Learning]()
 
 Authors: [Sathish Indurthi](https://arxiv.org/search/cs?searchtype=author&query=Indurthi%2C+S), [Houjeung Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+H), [Nikhil Kumar Lakumarapu](https://arxiv.org/search/cs?searchtype=author&query=Lakumarapu%2C+N+K), [Beomseok Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+B), [Insoo Chung](https://arxiv.org/search/cs?searchtype=author&query=Chung%2C+I), [Sangha Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+S), [Chanwoo Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+C)
@@ -313,7 +352,6 @@ Authors: [Sathish Indurthi](https://arxiv.org/search/cs?searchtype=author&query=
 
 
 <h2 id="2019-11-12-13">13. Diversity by Phonetics and its Application in Neural Machine Translation</h2>
-
 Title: [Diversity by Phonetics and its Application in Neural Machine Translation]( https://arxiv.org/abs/1911.04292 )
 
 Authors: [Abdul Rafae Khan](https://arxiv.org/search/cs?searchtype=author&query=Khan%2C+A+R), [Jia Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+J)
