@@ -2,6 +2,12 @@
 
 # Index
 
+- [2019-11-15](#2019-11-15)
+  - [1. A Massive Collection of Cross-Lingual Web-Document Pairs](#2019-11-15-1)
+  - [2. RNN-Test: Adversarial Testing Framework for Recurrent Neural Network Systems](#2019-11-15-2)
+  - [3. Syntax-Infused Transformer and BERT models for Machine Translation and Natural Language Understanding](#2019-11-15-3)
+  - [4. Unsupervised Pre-training for Natural Language Generation: A Literature Review](#2019-11-15-4)
+  - [5. Microsoft Research Asia's Systems for WMT19](#2019-11-15-5)
 - [2019-11-13](#2019-11-13)
   - [1. How to Evaluate Word Representations of Informal Domain](#2019-11-13-1)
   - [2. Character-based NMT with Transformer](#2019-11-13-2)
@@ -73,6 +79,107 @@
 
 
 
+# 2019-11-15
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-11-15-1">1. A Massive Collection of Cross-Lingual Web-Document Pairs</h2>
+
+Title: [A Massive Collection of Cross-Lingual Web-Document Pairs]( https://arxiv.org/abs/1911.06154 )
+
+Authors: [Ahmed El-Kishky](https://arxiv.org/search/cs?searchtype=author&query=El-Kishky%2C+A), [Vishrav Chaudhary](https://arxiv.org/search/cs?searchtype=author&query=Chaudhary%2C+V), [Francisco Guzman](https://arxiv.org/search/cs?searchtype=author&query=Guzman%2C+F), [Philipp Koehn](https://arxiv.org/search/cs?searchtype=author&query=Koehn%2C+P)
+
+*(Submitted on 10 Nov 2019)*
+
+> Cross-lingual document alignment aims to identify pairs of documents in two distinct languages that are of comparable content or translations of each other. Small-scale efforts have been made to collect aligned document level data on a limited set of language-pairs such as English-German or on limited comparable collections such as Wikipedia. In this paper, we mine twelve snapshots of the Common Crawl corpus and identify web document pairs that are translations of each other. We release a new web dataset consisting of 54 million URL pairs from Common Crawl covering documents in 92 languages paired with English. We evaluate the quality of the dataset by measuring the quality of machine translations from models that have been trained on mined parallel sentence pairs from this aligned corpora and introduce a simple yet effective baseline for identifying these aligned documents. The objective of this dataset and paper is to foster new research in cross-lingual NLP across a variety of low, mid, and high-resource languages.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.06154](https://arxiv.org/abs/1911.06154) [cs.CL] |
+|           | (or [arXiv:1911.06154v1](https://arxiv.org/abs/1911.06154v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-15-2">2. RNN-Test: Adversarial Testing Framework for Recurrent Neural Network Systems</h2>
+
+Title: [RNN-Test: Adversarial Testing Framework for Recurrent Neural Network Systems]( https://arxiv.org/abs/1911.06155 )
+
+Authors: [Jianmin Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+J), [Yue Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+Y), [Xueying Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+X), [Yu Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+Y), [Jiaguang Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+J)
+
+*(Submitted on 11 Nov 2019)*
+
+> While huge efforts have been investigated in the adversarial testing of convolutional neural networks (CNN), the testing for recurrent neural networks (RNN) is still limited to the classification context and leave threats for vast sequential application domains. In this work, we propose a generic adversarial testing framework RNN-Test. First, based on the distinctive structure of RNNs, we define three novel coverage metrics to measure the testing completeness and guide the generation of adversarial inputs. Second, we propose the state inconsistency orientation to generate the perturbations by maximizing the inconsistency of the hidden states of RNN cells. Finally, we combine orientations with coverage guidance to produce minute perturbations. Given the RNN model and the sequential inputs, RNN-Test will modify one character or one word out of the whole inputs based on the perturbations obtained, so as to lead the RNN to produce wrong outputs. For evaluation, we apply RNN-Test on two models of common RNN structure - the PTB language model and the spell checker model. RNN-Test efficiently reduces the performance of the PTB language model by increasing its test perplexity by 58.11%, and finds numbers of incorrect behaviors of the spell checker model with the success rate of 73.44% on average. With our customization, RNN-Test using the redefined neuron coverage as guidance could achieve 35.71% higher perplexity than original strategy of DeepXplore.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.06155](https://arxiv.org/abs/1911.06155) [cs.CL] |
+|           | (or [arXiv:1911.06155v1](https://arxiv.org/abs/1911.06155v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-15-3">3. Syntax-Infused Transformer and BERT models for Machine Translation and Natural Language Understanding</h2>
+
+Title: [Syntax-Infused Transformer and BERT models for Machine Translation and Natural Language Understanding]( https://arxiv.org/abs/1911.06156 )
+
+Authors: [Dhanasekar Sundararaman](https://arxiv.org/search/cs?searchtype=author&query=Sundararaman%2C+D), [Vivek Subramanian](https://arxiv.org/search/cs?searchtype=author&query=Subramanian%2C+V), [Guoyin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+G), [Shijing Si](https://arxiv.org/search/cs?searchtype=author&query=Si%2C+S), [Dinghan Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+D), [Dong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+D), [Lawrence Carin](https://arxiv.org/search/cs?searchtype=author&query=Carin%2C+L)
+
+*(Submitted on 10 Nov 2019)*
+
+> Attention-based models have shown significant improvement over traditional algorithms in several NLP tasks. The Transformer, for instance, is an illustrative example that generates abstract representations of tokens inputted to an encoder based on their relationships to all tokens in a sequence. Recent studies have shown that although such models are capable of learning syntactic features purely by seeing examples, explicitly feeding this information to deep learning models can significantly enhance their performance. Leveraging syntactic information like part of speech (POS) may be particularly beneficial in limited training data settings for complex models such as the Transformer. We show that the syntax-infused Transformer with multiple features achieves an improvement of 0.7 BLEU when trained on the full WMT 14 English to German translation dataset and a maximum improvement of 1.99 BLEU points when trained on a fraction of the dataset. In addition, we find that the incorporation of syntax into BERT fine-tuning outperforms baseline on a number of downstream tasks from the GLUE benchmark.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.06156](https://arxiv.org/abs/1911.06156) [cs.CL] |
+|           | (or [arXiv:1911.06156v1](https://arxiv.org/abs/1911.06156v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-15-4">4. Unsupervised Pre-training for Natural Language Generation: A Literature Review</h2>
+
+Title: [Unsupervised Pre-training for Natural Language Generation: A Literature Review]( https://arxiv.org/abs/1911.06171 )
+
+Authors: [Yuanxin Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Zheng Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Z)
+
+*(Submitted on 13 Nov 2019)*
+
+> Recently, unsupervised pre-training is gaining increasing popularity in the realm of computational linguistics, thanks to its surprising success in advancing natural language understanding (NLU) and the potential to effectively exploit large-scale unlabelled corpus. However, regardless of the success in NLU, the power of unsupervised pre-training is only partially excavated when it comes to natural language generation (NLG). The major obstacle stems from an idiosyncratic nature of NLG: Texts are usually generated based on certain context, which may vary with the target applications. As a result, it is intractable to design a universal architecture for pre-training as in NLU scenarios. Moreover, retaining the knowledge learned from pre-training when learning on the target task is also a non-trivial problem. This review summarizes the recent efforts to enhance NLG systems with unsupervised pre-training, with a special focus on the methods to catalyse the integration of pre-trained models into downstream tasks. They are classified into architecture-based methods and strategy-based methods, based on their way of handling the above obstacle. Discussions are also provided to give further insights into the relationship between these two lines of work, some informative empirical phenomenons, as well as some possible directions where future work can be devoted to.
+
+| Comments: | 10 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1911.06171](https://arxiv.org/abs/1911.06171) [cs.CL] |
+|           | (or [arXiv:1911.06171v1](https://arxiv.org/abs/1911.06171v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-15-5">5. Microsoft Research Asia's Systems for WMT19</h2>
+
+Title: [Microsoft Research Asia's Systems for WMT19]( https://arxiv.org/abs/1911.06191 )
+
+Authors: [Yingce Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%2C+Y), [Xu Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+X), [Fei Tian](https://arxiv.org/search/cs?searchtype=author&query=Tian%2C+F), [Fei Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+F), [Weicong Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+W), [Yang Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+Y), [Linyuan Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+L), [Yichong Leng](https://arxiv.org/search/cs?searchtype=author&query=Leng%2C+Y), [Renqian Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+R), [Yiren Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Lijun Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+L), [Jinhua Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J), [Tao Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+T), [Tie-Yan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T)
+
+*(Submitted on 7 Nov 2019)*
+
+> We Microsoft Research Asia made submissions to 11 language directions in the WMT19 news translation tasks. We won the first place for 8 of the 11 directions and the second place for the other three. Our basic systems are built on Transformer, back translation and knowledge distillation. We integrate several of our rececent techniques to enhance the baseline systems: multi-agent dual learning (MADL), masked sequence-to-sequence pre-training (MASS), neural architecture optimization (NAO), and soft contextual data augmentation (SCA).
+
+| Comments: | Accepted to "Fourth Conference on Machine Translation (WMT19)" |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| Cite as:  | [arXiv:1911.06191](https://arxiv.org/abs/1911.06191) [cs.CL] |
+|           | (or [arXiv:1911.06191v1](https://arxiv.org/abs/1911.06191v1) [cs.CL] for this version) |
+
+
+
 # 2019-11-13
 
 [Return to Index](#Index)
@@ -80,7 +187,6 @@
 
 
 <h2 id="2019-11-13-1">1. How to Evaluate Word Representations of Informal Domain</h2>
-
 Title: [How to Evaluate Word Representations of Informal Domain]( https://arxiv.org/abs/1911.04669 )
 
 Authors: [Yekun Chai](https://arxiv.org/search/cs?searchtype=author&query=Chai%2C+Y), [Naomi Saphra](https://arxiv.org/search/cs?searchtype=author&query=Saphra%2C+N), [Adam Lopez](https://arxiv.org/search/cs?searchtype=author&query=Lopez%2C+A)
@@ -99,7 +205,6 @@ Authors: [Yekun Chai](https://arxiv.org/search/cs?searchtype=author&query=Chai%2
 
 
 <h2 id="2019-11-13-2">2. Character-based NMT with Transformer</h2>
-
 Title: [Character-based NMT with Transformer]( https://arxiv.org/abs/1911.04997 )
 
 Authors: [Rohit Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+R), [Laurent Besacier](https://arxiv.org/search/cs?searchtype=author&query=Besacier%2C+L), [Marc Dymetman](https://arxiv.org/search/cs?searchtype=author&query=Dymetman%2C+M), [Matthias Gallé](https://arxiv.org/search/cs?searchtype=author&query=Gallé%2C+M)
