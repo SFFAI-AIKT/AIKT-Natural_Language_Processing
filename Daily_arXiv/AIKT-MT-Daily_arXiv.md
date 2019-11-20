@@ -2,6 +2,8 @@
 
 # Index
 
+- [2019-11-20](#2019-11-20)
+  - [1. A Hybrid Morpheme-Word Representation for Machine Translation of Morphologically Rich Languages](#2019-11-20-1)
 - [2019-11-15](#2019-11-15)
   - [1. A Massive Collection of Cross-Lingual Web-Document Pairs](#2019-11-15-1)
   - [2. RNN-Test: Adversarial Testing Framework for Recurrent Neural Network Systems](#2019-11-15-2)
@@ -79,6 +81,34 @@
 
 
 
+# 2019-11-20
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-11-20-1">1. A Hybrid Morpheme-Word Representation for Machine Translation of Morphologically Rich Languages</h2>
+
+Title: [A Hybrid Morpheme-Word Representation for Machine Translation of Morphologically Rich Languages]( https://arxiv.org/abs/1911.08117 )
+
+Authors: [Minh-Thang Luong](https://arxiv.org/search/cs?searchtype=author&query=Luong%2C+M), [Preslav Nakov](https://arxiv.org/search/cs?searchtype=author&query=Nakov%2C+P), [Min-Yen Kan](https://arxiv.org/search/cs?searchtype=author&query=Kan%2C+M)
+
+*(Submitted on 19 Nov 2019)*
+
+> We propose a language-independent approach for improving statistical machine translation for morphologically rich languages using a hybrid morpheme-word representation where the basic unit of translation is the morpheme, but word boundaries are respected at all stages of the translation process. Our model extends the classic phrase-based model by means of (1) word boundary-aware morpheme-level phrase extraction, (2) minimum error-rate training for a morpheme-level translation model using word-level BLEU, and (3) joint scoring with morpheme- and word-level language models. Further improvements are achieved by combining our model with the classic one. The evaluation on English to Finnish using Europarl (714K sentence pairs; 15.5M English words) shows statistically significant improvements over the classic model based on BLEU and human judgments.
+
+| Subjects:          | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| ------------------ | ------------------------------------------------------------ |
+| MSC classes:       | 68T50                                                        |
+| ACM classes:       | I.2.7                                                        |
+| Journal reference: | EMNLP-2010                                                   |
+| Cite as:           | [arXiv:1911.08117](https://arxiv.org/abs/1911.08117) [cs.CL] |
+|                    | (or [arXiv:1911.08117v1](https://arxiv.org/abs/1911.08117v1) [cs.CL] for this version) |
+
+
+
+
+
 # 2019-11-15
 
 [Return to Index](#Index)
@@ -86,7 +116,6 @@
 
 
 <h2 id="2019-11-15-1">1. A Massive Collection of Cross-Lingual Web-Document Pairs</h2>
-
 Title: [A Massive Collection of Cross-Lingual Web-Document Pairs]( https://arxiv.org/abs/1911.06154 )
 
 Authors: [Ahmed El-Kishky](https://arxiv.org/search/cs?searchtype=author&query=El-Kishky%2C+A), [Vishrav Chaudhary](https://arxiv.org/search/cs?searchtype=author&query=Chaudhary%2C+V), [Francisco Guzman](https://arxiv.org/search/cs?searchtype=author&query=Guzman%2C+F), [Philipp Koehn](https://arxiv.org/search/cs?searchtype=author&query=Koehn%2C+P)
@@ -105,7 +134,6 @@ Authors: [Ahmed El-Kishky](https://arxiv.org/search/cs?searchtype=author&query=E
 
 
 <h2 id="2019-11-15-2">2. RNN-Test: Adversarial Testing Framework for Recurrent Neural Network Systems</h2>
-
 Title: [RNN-Test: Adversarial Testing Framework for Recurrent Neural Network Systems]( https://arxiv.org/abs/1911.06155 )
 
 Authors: [Jianmin Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+J), [Yue Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+Y), [Xueying Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+X), [Yu Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+Y), [Jiaguang Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+J)
@@ -124,7 +152,6 @@ Authors: [Jianmin Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2
 
 
 <h2 id="2019-11-15-3">3. Syntax-Infused Transformer and BERT models for Machine Translation and Natural Language Understanding</h2>
-
 Title: [Syntax-Infused Transformer and BERT models for Machine Translation and Natural Language Understanding]( https://arxiv.org/abs/1911.06156 )
 
 Authors: [Dhanasekar Sundararaman](https://arxiv.org/search/cs?searchtype=author&query=Sundararaman%2C+D), [Vivek Subramanian](https://arxiv.org/search/cs?searchtype=author&query=Subramanian%2C+V), [Guoyin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+G), [Shijing Si](https://arxiv.org/search/cs?searchtype=author&query=Si%2C+S), [Dinghan Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+D), [Dong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+D), [Lawrence Carin](https://arxiv.org/search/cs?searchtype=author&query=Carin%2C+L)
@@ -143,7 +170,6 @@ Authors: [Dhanasekar Sundararaman](https://arxiv.org/search/cs?searchtype=author
 
 
 <h2 id="2019-11-15-4">4. Unsupervised Pre-training for Natural Language Generation: A Literature Review</h2>
-
 Title: [Unsupervised Pre-training for Natural Language Generation: A Literature Review]( https://arxiv.org/abs/1911.06171 )
 
 Authors: [Yuanxin Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Zheng Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Z)
@@ -163,7 +189,6 @@ Authors: [Yuanxin Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2
 
 
 <h2 id="2019-11-15-5">5. Microsoft Research Asia's Systems for WMT19</h2>
-
 Title: [Microsoft Research Asia's Systems for WMT19]( https://arxiv.org/abs/1911.06191 )
 
 Authors: [Yingce Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%2C+Y), [Xu Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+X), [Fei Tian](https://arxiv.org/search/cs?searchtype=author&query=Tian%2C+F), [Fei Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+F), [Weicong Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+W), [Yang Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+Y), [Linyuan Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+L), [Yichong Leng](https://arxiv.org/search/cs?searchtype=author&query=Leng%2C+Y), [Renqian Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+R), [Yiren Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Lijun Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+L), [Jinhua Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J), [Tao Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+T), [Tie-Yan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T)
