@@ -2,6 +2,11 @@
 
 # Index
 
+- [2019-11-21](#2019-11-21)
+  - [1. Controlling Neural Machine Translation Formality with Synthetic Supervision](2019-11-21-1)
+  - [2. Natural Language Generation Challenges for Explainable AI](2019-11-21-2)
+  - [3. A Comparative Study on End-to-end Speech to Text Translation](2019-11-21-3)
+  - [4. On Using SpecAugment for End-to-End Speech Translation](2019-11-21-4)
 - [2019-11-20](#2019-11-20)
   - [1. A Hybrid Morpheme-Word Representation for Machine Translation of Morphologically Rich Languages](#2019-11-20-1)
 - [2019-11-15](#2019-11-15)
@@ -81,6 +86,92 @@
 
 
 
+# 2019-11-21
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-11-21-1">1. Controlling Neural Machine Translation Formality with Synthetic Supervision</h2>
+
+Title: [Controlling Neural Machine Translation Formality with Synthetic Supervision]( https://arxiv.org/abs/1911.08706 )
+
+Authors: [Xing Niu](https://arxiv.org/search/cs?searchtype=author&query=Niu%2C+X), [Marine Carpuat](https://arxiv.org/search/cs?searchtype=author&query=Carpuat%2C+M)
+
+*(Submitted on 20 Nov 2019)*
+
+> This work aims to produce translations that convey source language content at a formality level that is appropriate for a particular audience. Framing this problem as a neural sequence-to-sequence task ideally requires training triplets consisting of a bilingual sentence pair labeled with target language formality. However, in practice, available training examples are limited to English sentence pairs of different styles, and bilingual parallel sentences of unknown formality. We introduce a novel training scheme for multi-task models that automatically generates synthetic training triplets by inferring the missing element on the fly, thus enabling end-to-end training. Comprehensive automatic and human assessments show that our best model outperforms existing models by producing translations that better match desired formality levels while preserving the source meaning.
+
+| Comments: | Accepted at AAAI 2020                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1911.08706](https://arxiv.org/abs/1911.08706) [cs.CL] |
+|           | (or [arXiv:1911.08706v1](https://arxiv.org/abs/1911.08706v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-21-2">2. Natural Language Generation Challenges for Explainable AI</h2>
+
+Title: [Natural Language Generation Challenges for Explainable AI]( https://arxiv.org/abs/1911.08794 )
+
+Authors: [Ehud Reiter](https://arxiv.org/search/cs?searchtype=author&query=Reiter%2C+E)
+
+*(Submitted on 20 Nov 2019)*
+
+> Good quality explanations of artificial intelligence (XAI) reasoning must be written (and evaluated) for an explanatory purpose, targeted towards their readers, have a good narrative and causal structure, and highlight where uncertainty and data quality affect the AI output. I discuss these challenges from a Natural Language Generation (NLG) perspective, and highlight four specific NLG for XAI research challenges.
+
+| Comments: | Presented at the NL4XAI workshop ([this https URL](https://sites.google.com/view/nl4xai2019/)) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1911.08794](https://arxiv.org/abs/1911.08794) [cs.CL] |
+|           | (or [arXiv:1911.08794v1](https://arxiv.org/abs/1911.08794v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-21-3">3. A Comparative Study on End-to-end Speech to Text Translation</h2>
+
+Title: [A Comparative Study on End-to-end Speech to Text Translation]( https://arxiv.org/abs/1911.08870 )
+
+Authors: [Parnia Bahar](https://arxiv.org/search/cs?searchtype=author&query=Bahar%2C+P), [Tobias Bieschke](https://arxiv.org/search/cs?searchtype=author&query=Bieschke%2C+T), [Hermann Ney](https://arxiv.org/search/cs?searchtype=author&query=Ney%2C+H)
+
+*(Submitted on 20 Nov 2019)*
+
+> Recent advances in deep learning show that end-to-end speech to text translation model is a promising approach to direct the speech translation field. In this work, we provide an overview of different end-to-end architectures, as well as the usage of an auxiliary connectionist temporal classification (CTC) loss for better convergence. We also investigate on pre-training variants such as initializing different components of a model using pre-trained models, and their impact on the final performance, which gives boosts up to 4% in BLEU and 5% in TER. Our experiments are performed on 270h IWSLT TED-talks En->De, and 100h LibriSpeech Audiobooks En->Fr. We also show improvements over the current end-to-end state-of-the-art systems on both tasks.
+
+| Comments: | 8 pages, IEEE Automatic Speech Recognition and Understanding Workshop (ASRU), Sentosa, Singapore, December 2019 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Audio and Speech Processing (eess.AS) |
+| Cite as:  | [arXiv:1911.08870](https://arxiv.org/abs/1911.08870) [cs.CL] |
+|           | (or [arXiv:1911.08870v1](https://arxiv.org/abs/1911.08870v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-21-4">4. On Using SpecAugment for End-to-End Speech Translation</h2>
+
+Title: [On Using SpecAugment for End-to-End Speech Translation]( https://arxiv.org/abs/1911.08876 )
+
+Authors: [Parnia Bahar](https://arxiv.org/search/cs?searchtype=author&query=Bahar%2C+P), [Albert Zeyer](https://arxiv.org/search/cs?searchtype=author&query=Zeyer%2C+A), [Ralf Schlüter](https://arxiv.org/search/cs?searchtype=author&query=Schlüter%2C+R), [Hermann Ney](https://arxiv.org/search/cs?searchtype=author&query=Ney%2C+H)
+
+*(Submitted on 20 Nov 2019)*
+
+> This work investigates a simple data augmentation technique, SpecAugment, for end-to-end speech translation. SpecAugment is a low-cost implementation method applied directly to the audio input features and it consists of masking blocks of frequency channels, and/or time steps. We apply SpecAugment on end-to-end speech translation tasks and achieve up to +2.2\% \BLEU on LibriSpeech Audiobooks En->Fr and +1.2% on IWSLT TED-talks En->De by alleviating overfitting to some extent. We also examine the effectiveness of the method in a variety of data scenarios and show that the method also leads to significant improvements in various data conditions irrespective of the amount of training data.
+
+| Comments: | 8 pages, International Workshop on Spoken Language Translation (IWSLT), Hong Kong, China, November 2019 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Audio and Speech Processing (eess.AS) |
+| Cite as:  | [arXiv:1911.08876](https://arxiv.org/abs/1911.08876) [cs.CL] |
+|           | (or [arXiv:1911.08876v1](https://arxiv.org/abs/1911.08876v1) [cs.CL] for this version) |
+
+
+
+
+
 # 2019-11-20
 
 [Return to Index](#Index)
@@ -88,7 +179,6 @@
 
 
 <h2 id="2019-11-20-1">1. A Hybrid Morpheme-Word Representation for Machine Translation of Morphologically Rich Languages</h2>
-
 Title: [A Hybrid Morpheme-Word Representation for Machine Translation of Morphologically Rich Languages]( https://arxiv.org/abs/1911.08117 )
 
 Authors: [Minh-Thang Luong](https://arxiv.org/search/cs?searchtype=author&query=Luong%2C+M), [Preslav Nakov](https://arxiv.org/search/cs?searchtype=author&query=Nakov%2C+P), [Min-Yen Kan](https://arxiv.org/search/cs?searchtype=author&query=Kan%2C+M)
