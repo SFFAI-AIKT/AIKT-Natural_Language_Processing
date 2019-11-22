@@ -2,6 +2,10 @@
 
 # Index
 
+- [2019-11-22](#2019-11-22)
+  - [1. Minimizing the Bag-of-Ngrams Difference for Non-Autoregressive Neural Machine Translation](#2019-11-22-1)
+  - [2. Generating Diverse Translation by Manipulating Multi-Head Attention](#2019-11-22-2)
+  - [3. MUSE: Parallel Multi-Scale Attention for Sequence to Sequence Learning](#2019-11-22-3)
 - [2019-11-21](#2019-11-21)
   - [1. Controlling Neural Machine Translation Formality with Synthetic Supervision](2019-11-21-1)
   - [2. Natural Language Generation Challenges for Explainable AI](2019-11-21-2)
@@ -86,6 +90,81 @@
 
 
 
+# 2019-11-22
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-11-22-1">1. Minimizing the Bag-of-Ngrams Difference for Non-Autoregressive Neural Machine Translation</h2>
+
+Title: [Minimizing the Bag-of-Ngrams Difference for Non-Autoregressive Neural Machine Translation]( https://arxiv.org/abs/1911.09320 )
+
+Authors: [Chenze Shao](https://arxiv.org/search/cs?searchtype=author&query=Shao%2C+C), [Jinchao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Yang Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+Y), [Fandong Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+F), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J)
+
+*(Submitted on 21 Nov 2019)*
+
+> Non-Autoregressive Neural Machine Translation (NAT) achieves significant decoding speedup through generating target words independently and simultaneously. However, in the context of non-autoregressive translation, the word-level cross-entropy loss cannot model the target-side sequential dependency properly, leading to its weak correlation with the translation quality. As a result, NAT tends to generate influent translations with over-translation and under-translation errors. In this paper, we propose to train NAT to minimize the Bag-of-Ngrams (BoN) difference between the model output and the reference sentence. The bag-of-ngrams training objective is differentiable and can be efficiently calculated, which encourages NAT to capture the target-side sequential dependency and correlates well with the translation quality. We validate our approach on three translation tasks and show that our approach largely outperforms the NAT baseline by about 5.0 BLEU scores on WMT14 En↔De and about 2.5 BLEU scores on WMT16 En↔Ro.
+
+| Comments:    | AAAI 2020                                                    |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | [arXiv:1911.09320](https://arxiv.org/abs/1911.09320) [cs.CL] |
+|              | (or [arXiv:1911.09320v1](https://arxiv.org/abs/1911.09320v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-22-2">2. Generating Diverse Translation by Manipulating Multi-Head Attention</h2>
+
+Title: [Generating Diverse Translation by Manipulating Multi-Head Attention]( https://arxiv.org/abs/1911.09333 )
+
+Authors: [Zewei Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+Z), [Shujian Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Hao-Ran Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+H), [Xin-yu Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+X), [Jiajun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J)
+
+*(Submitted on 21 Nov 2019)*
+
+> Transformer model has been widely used on machine translation tasks and obtained state-of-the-art results. In this paper, we report an interesting phenomenon in its encoder-decoder multi-head attention: different attention heads of the final decoder layer align to different word translation candidates. We empirically verify this discovery and propose a method to generate diverse translations by manipulating heads. Furthermore, we make use of these diverse translations with the back-translation technique for better data augmentation. Experiment results show that our method generates diverse translations without severe drop in translation quality. Experiments also show that back-translation with these diverse translations could bring significant improvement on performance on translation tasks. An auxiliary experiment of conversation response generation task proves the effect of diversity as well.
+
+| Comments: | Accepted by AAAI 2020                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1911.09333](https://arxiv.org/abs/1911.09333) [cs.CL] |
+|           | (or [arXiv:1911.09333v1](https://arxiv.org/abs/1911.09333v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-22-3">3. MUSE: Parallel Multi-Scale Attention for Sequence to Sequence Learning</h2>
+
+Title: [MUSE: Parallel Multi-Scale Attention for Sequence to Sequence Learning]( https://arxiv.org/abs/1911.09483 )
+
+Authors: [Guangxiang Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+G), [Xu Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+X), [Jingjing Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+J), [Zhiyuan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Liangchen Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+L)
+
+*(Submitted on 17 Nov 2019)*
+
+> In sequence to sequence learning, the self-attention mechanism proves to be highly effective, and achieves significant improvements in many tasks. However, the self-attention mechanism is not without its own flaws. Although self-attention can model extremely long dependencies, the attention in deep layers tends to overconcentrate on a single token, leading to insufficient use of local information and difficultly in representing long sequences. In this work, we explore parallel multi-scale representation learning on sequence data, striving to capture both long-range and short-range language structures. To this end, we propose the Parallel MUlti-Scale attEntion (MUSE) and MUSE-simple. MUSE-simple contains the basic idea of parallel multi-scale sequence representation learning, and it encodes the sequence in parallel, in terms of different scales with the help from self-attention, and pointwise transformation. MUSE builds on MUSE-simple and explores combining convolution and self-attention for learning sequence representations from more different scales. We focus on machine translation and the proposed approach achieves substantial performance improvements over Transformer, especially on long sequences. More importantly, we find that although conceptually simple, its success in practice requires intricate considerations, and the multi-scale attention must build on unified semantic space. Under common setting, the proposed model achieves substantial performance and outperforms all previous models on three main machine translation tasks. In addition, MUSE has potential for accelerating inference due to its parallelism. Code will be available at [this https URL](https://github.com/lancopku/MUSE)
+
+| Comments: | Achieve state-of-the-art BLEU scores on WMT14 En-De, En-Fr, and IWSLT De-En |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:1911.09483](https://arxiv.org/abs/1911.09483) [cs.CL] |
+|           | (or [arXiv:1911.09483v1](https://arxiv.org/abs/1911.09483v1) [cs.CL] for this version) |
+
+
+
+
+
+
+
+
+
+
+
+
+
 # 2019-11-21
 
 [Return to Index](#Index)
@@ -93,7 +172,6 @@
 
 
 <h2 id="2019-11-21-1">1. Controlling Neural Machine Translation Formality with Synthetic Supervision</h2>
-
 Title: [Controlling Neural Machine Translation Formality with Synthetic Supervision]( https://arxiv.org/abs/1911.08706 )
 
 Authors: [Xing Niu](https://arxiv.org/search/cs?searchtype=author&query=Niu%2C+X), [Marine Carpuat](https://arxiv.org/search/cs?searchtype=author&query=Carpuat%2C+M)
@@ -113,7 +191,6 @@ Authors: [Xing Niu](https://arxiv.org/search/cs?searchtype=author&query=Niu%2C+X
 
 
 <h2 id="2019-11-21-2">2. Natural Language Generation Challenges for Explainable AI</h2>
-
 Title: [Natural Language Generation Challenges for Explainable AI]( https://arxiv.org/abs/1911.08794 )
 
 Authors: [Ehud Reiter](https://arxiv.org/search/cs?searchtype=author&query=Reiter%2C+E)
@@ -133,7 +210,6 @@ Authors: [Ehud Reiter](https://arxiv.org/search/cs?searchtype=author&query=Reite
 
 
 <h2 id="2019-11-21-3">3. A Comparative Study on End-to-end Speech to Text Translation</h2>
-
 Title: [A Comparative Study on End-to-end Speech to Text Translation]( https://arxiv.org/abs/1911.08870 )
 
 Authors: [Parnia Bahar](https://arxiv.org/search/cs?searchtype=author&query=Bahar%2C+P), [Tobias Bieschke](https://arxiv.org/search/cs?searchtype=author&query=Bieschke%2C+T), [Hermann Ney](https://arxiv.org/search/cs?searchtype=author&query=Ney%2C+H)
@@ -153,7 +229,6 @@ Authors: [Parnia Bahar](https://arxiv.org/search/cs?searchtype=author&query=Baha
 
 
 <h2 id="2019-11-21-4">4. On Using SpecAugment for End-to-End Speech Translation</h2>
-
 Title: [On Using SpecAugment for End-to-End Speech Translation]( https://arxiv.org/abs/1911.08876 )
 
 Authors: [Parnia Bahar](https://arxiv.org/search/cs?searchtype=author&query=Bahar%2C+P), [Albert Zeyer](https://arxiv.org/search/cs?searchtype=author&query=Zeyer%2C+A), [Ralf Schlüter](https://arxiv.org/search/cs?searchtype=author&query=Schlüter%2C+R), [Hermann Ney](https://arxiv.org/search/cs?searchtype=author&query=Ney%2C+H)
