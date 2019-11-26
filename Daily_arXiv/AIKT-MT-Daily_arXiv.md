@@ -2,6 +2,20 @@
 
 # Index
 
+- [2019-11-26](#2019-11-26)
+  - [1. Who did They Respond to? Conversation Structure Modeling using Masked Hierarchical Transformer](#2019-11-26-1)
+  - [2. JParaCrawl: A Large Scale Web-Based English-Japanese Parallel Corpus](#2019-11-26-2)
+  - [3. Non-autoregressive Transformer by Position Learning](#2019-11-26-3)
+  - [4. Learning to Reuse Translations: Guiding Neural Machine Translation with Examples](#2019-11-26-4)
+  - [5. Chinese Spelling Error Detection Using a Fusion Lattice LSTM](#2019-11-26-5)
+  - [6. Outbound Translation User Interface Ptakopet: A Pilot Study](#2019-11-26-6)
+  - [7. Towards robust word embeddings for noisy texts](#2019-11-26-7)
+  - [8. Korean-to-Chinese Machine Translation using Chinese Character as Pivot Clue](#2019-11-26-8)
+
+- [2019-11-25](#2019-11-25)
+  - [1. Factorized Multimodal Transformer for Multimodal Sequential Learning](#2019-11-25-1)
+  - [2. Neuron Interaction Based Representation Composition for Neural Machine Translation](#2019-11-25-2)
+  - [3. Go From the General to the Particular: Multi-Domain Translation with Domain Transformation Networks](#2019-11-25-3)
 - [2019-11-22](#2019-11-22)
   - [1. Minimizing the Bag-of-Ngrams Difference for Non-Autoregressive Neural Machine Translation](#2019-11-22-1)
   - [2. Generating Diverse Translation by Manipulating Multi-Head Attention](#2019-11-22-2)
@@ -90,6 +104,241 @@
 
 
 
+# 2019-11-26
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-11-26-1">1. Who did They Respond to? Conversation Structure Modeling using Masked Hierarchical Transformer</h2>
+
+Title:[Who did They Respond to? Conversation Structure Modeling using Masked Hierarchical Transformer]( https://arxiv.org/abs/1911.10666 )
+
+Authors: [Henghui Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+H), [Feng Nan](https://arxiv.org/search/cs?searchtype=author&query=Nan%2C+F), [Zhiguo Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Ramesh Nallapati](https://arxiv.org/search/cs?searchtype=author&query=Nallapati%2C+R), [Bing Xiang](https://arxiv.org/search/cs?searchtype=author&query=Xiang%2C+B)
+
+*(Submitted on 25 Nov 2019)*
+
+> Conversation structure is useful for both understanding the nature of conversation dynamics and for providing features for many downstream applications such as summarization of conversations. In this work, we define the problem of conversation structure modeling as identifying the parent utterance(s) to which each utterance in the conversation responds to. Previous work usually took a pair of utterances to decide whether one utterance is the parent of the other. We believe the entire ancestral history is a very important information source to make accurate prediction. Therefore, we design a novel masking mechanism to guide the ancestor flow, and leverage the transformer model to aggregate all ancestors to predict parent utterances. Our experiments are performed on the Reddit dataset (Zhang, Culbertson, and Paritosh 2017) and the Ubuntu IRC dataset (Kummerfeld et al. 2019). In addition, we also report experiments on a new larger corpus from the Reddit platform and release this dataset. We show that the proposed model, that takes into account the ancestral history of the conversation, significantly outperforms several strong baselines including the BERT model on all datasets
+
+| Comments: | AAAI 2020                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1911.10666](https://arxiv.org/abs/1911.10666) [cs.CL] |
+|           | (or [arXiv:1911.10666v1](https://arxiv.org/abs/1911.10666v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-26-2">2. JParaCrawl: A Large Scale Web-Based English-Japanese Parallel Corpus</h2>
+
+Title:[JParaCrawl: A Large Scale Web-Based English-Japanese Parallel Corpus]( https://arxiv.org/abs/1911.10668 )
+
+Authors: [Makoto Morishita](https://arxiv.org/search/cs?searchtype=author&query=Morishita%2C+M), [Jun Suzuki](https://arxiv.org/search/cs?searchtype=author&query=Suzuki%2C+J), [Masaaki Nagata](https://arxiv.org/search/cs?searchtype=author&query=Nagata%2C+M)
+
+*(Submitted on 25 Nov 2019)*
+
+> Recent machine translation algorithms mainly rely on parallel corpora. However, since the availability of parallel corpora remains limited, only some resource-rich language pairs can benefit from them. In this paper, we constructed a parallel corpus for English-Japanese, where the amount of publicly available parallel corpora is still limited. We constructed a parallel corpus by broadly crawling the web and automatically aligning parallel sentences. Our collected corpus, called JParaCrawl, amassed over 8.7 million sentence pairs. We show how it includes broader domains, and the NMT model trained with it works as a good pre-trained model for fine-tuning specific domains. The pre-training and fine-tuning approaches surpassed or achieved comparable performance to the model training from the initial state and largely reduced the training cost. Additionally, we trained the model with an in-domain dataset and JParaCrawl to show how we achieved the best performance with them. JParaCrawl and the pre-trained models are freely available online for research purposes.
+
+| Comments: | [this http URL](http://www.kecl.ntt.co.jp/icl/lirg/jparacrawl/) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1911.10668](https://arxiv.org/abs/1911.10668) [cs.CL] |
+|           | (or [arXiv:1911.10668v1](https://arxiv.org/abs/1911.10668v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-26-3">3. Non-autoregressive Transformer by Position Learning</h2>
+
+Title:[Non-autoregressive Transformer by Position Learning]( https://arxiv.org/abs/1911.10677 )
+
+Authors: [Yu Bao](https://arxiv.org/search/cs?searchtype=author&query=Bao%2C+Y), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Jiangtao Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+J), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Shujian Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Jiajun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J), [Lei LI](https://arxiv.org/search/cs?searchtype=author&query=LI%2C+L)
+
+*(Submitted on 25 Nov 2019)*
+
+> Non-autoregressive models are promising on various text generation tasks. Previous work hardly considers to explicitly model the positions of generated words. However, position modeling is an essential problem in non-autoregressive text generation. In this study, we propose PNAT, which incorporates positions as a latent variable into the text generative process. Experimental results show that PNAT achieves top results on machine translation and paraphrase generation tasks, outperforming several strong baselines.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.10677](https://arxiv.org/abs/1911.10677) [cs.CL] |
+|           | (or [arXiv:1911.10677v1](https://arxiv.org/abs/1911.10677v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-26-4">4. Learning to Reuse Translations: Guiding Neural Machine Translation with Examples</h2>
+
+Title:[Learning to Reuse Translations: Guiding Neural Machine Translation with Examples]( https://arxiv.org/abs/1911.10732 )
+
+Authors: [Qian Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+Q), [Shaohui Kuang](https://arxiv.org/search/cs?searchtype=author&query=Kuang%2C+S), [Deyi Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+D)
+
+*(Submitted on 25 Nov 2019)*
+
+> In this paper, we study the problem of enabling neural machine translation (NMT) to reuse previous translations from similar examples in target prediction. Distinguishing reusable translations from noisy segments and learning to reuse them in NMT are non-trivial. To solve these challenges, we propose an Example-Guided NMT (EGNMT) framework with two models: (1) a noise-masked encoder model that masks out noisy words according to word alignments and encodes the noise-masked sentences with an additional example encoder and (2) an auxiliary decoder model that predicts reusable words via an auxiliary decoder sharing parameters with the primary decoder. We define and implement the two models with the state-of-the-art Transformer. Experiments show that the noise-masked encoder model allows NMT to learn useful information from examples with low fuzzy match scores (FMS) while the auxiliary decoder model is good for high-FMS examples. More experiments on Chinese-English, English-German and English-Spanish translation demonstrate that the combination of the two EGNMT models can achieve improvements of up to +9 BLEU points over the baseline system and +7 BLEU points over a two-encoder Transformer.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.10732](https://arxiv.org/abs/1911.10732) [cs.CL] |
+|           | (or [arXiv:1911.10732v1](https://arxiv.org/abs/1911.10732v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-26-5">5. Chinese Spelling Error Detection Using a Fusion Lattice LSTM</h2>
+
+Title:[Chinese Spelling Error Detection Using a Fusion Lattice LSTM]( https://arxiv.org/abs/1911.10750 )
+
+Authors: [Hao Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H), [Bing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+B), [Jianyong Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan%2C+J), [Jiajun Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J)
+
+*(Submitted on 25 Nov 2019)*
+
+> Spelling error detection serves as a crucial preprocessing in many natural language processing applications. Due to the characteristics of Chinese Language, Chinese spelling error detection is more challenging than error detection in English. Existing methods are mainly under a pipeline framework, which artificially divides error detection process into two steps. Thus, these methods bring error propagation and cannot always work well due to the complexity of the language environment. Besides existing methods only adopt character or word information, and ignore the positive effect of fusing character, word, pinyin1 information together. We propose an LF-LSTM-CRF model, which is an extension of the LSTMCRF with word lattices and character-pinyin-fusion inputs. Our model takes advantage of the end-to-end framework to detect errors as a whole process, and dynamically integrates character, word and pinyin information. Experiments on the SIGHAN data show that our LF-LSTM-CRF outperforms existing methods with similar external resources consistently, and confirm the feasibility of adopting the end-to-end framework and the availability of integrating of character, word and pinyin information.
+
+| Comments: | 8 pages,5 figures                                            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1911.10750](https://arxiv.org/abs/1911.10750) [cs.CL] |
+|           | (or [arXiv:1911.10750v1](https://arxiv.org/abs/1911.10750v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-26-6">6. Outbound Translation User Interface Ptakopet: A Pilot Study</h2>
+
+Title:[Outbound Translation User Interface Ptakopet: A Pilot Study]( https://arxiv.org/abs/1911.10835 )
+
+Authors: [Vilém Zouhar](https://arxiv.org/search/cs?searchtype=author&query=Zouhar%2C+V), [Ondřej Bojar](https://arxiv.org/search/cs?searchtype=author&query=Bojar%2C+O)
+
+*(Submitted on 25 Nov 2019)*
+
+> It is not uncommon for Internet users to have to produce text in a foreign language they have very little knowledge of and are unable to verify the translation quality. We call the task "outbound translation" and explore it by introducing an open-source modular system Ptakopět. Its main purpose is to inspect human interaction with MT systems enhanced with additional subsystems, such as backward translation and quality estimation. We follow up with an experiment on (Czech) human annotators tasked to produce questions in a language they do not speak (German), with the help of Ptakopět. We focus on three real-world use cases (communication with IT support, describing administrative issues and asking encyclopedic questions) from which we gain insight into different strategies users take when faced with outbound translation tasks. Round trip translation is known to be unreliable for evaluating MT systems but our experimental evaluation documents that it works very well for users, at least on MT systems of mid-range quality.
+
+| Subjects:    | **Computation and Language (cs.CL)**; Human-Computer Interaction (cs.HC) |
+| ------------ | ------------------------------------------------------------ |
+| MSC classes: | I.2.7, H.5.2                                                 |
+| ACM classes: | I.2.7; H.5.2                                                 |
+| Cite as:     | [arXiv:1911.10835](https://arxiv.org/abs/1911.10835) [cs.CL] |
+|              | (or [arXiv:1911.10835v1](https://arxiv.org/abs/1911.10835v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-26-7">7. Towards robust word embeddings for noisy texts</h2>
+
+Title:[Towards robust word embeddings for noisy texts]( https://arxiv.org/abs/1911.10876 )
+
+Authors: [Yerai Doval](https://arxiv.org/search/cs?searchtype=author&query=Doval%2C+Y), [Jesús Vilares](https://arxiv.org/search/cs?searchtype=author&query=Vilares%2C+J), [Carlos Gómez-Rodríguez](https://arxiv.org/search/cs?searchtype=author&query=Gómez-Rodríguez%2C+C)
+
+*(Submitted on 25 Nov 2019)*
+
+> Research on word embeddings has mainly focused on improving their performance on standard corpora, disregarding the difficulties posed by noisy texts in the form of tweets and other types of non-standard writing from social media. In this work, we propose a simple extension to the skipgram model in which we introduce the concept of bridge-words, which are artificial words added to the model to strengthen the similarity between standard words and their noisy variants. Our new embeddings outperform the state of the art on noisy texts on a wide range of evaluation tasks, both intrinsic and extrinsic, while retaining a good performance on standard texts. To the best of our knowledge, this is the first explicit approach at dealing with this type of noisy texts at the word embedding level that goes beyond the support for out-of-vocabulary words.
+
+| Comments: | 11 pages, 1 figure, 4 tables                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1911.10876](https://arxiv.org/abs/1911.10876) [cs.CL] |
+|           | (or [arXiv:1911.10876v1](https://arxiv.org/abs/1911.10876v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-26-8">8. Korean-to-Chinese Machine Translation using Chinese Character as Pivot Clue</h2>
+
+Title:[Korean-to-Chinese Machine Translation using Chinese Character as Pivot Clue]( https://arxiv.org/abs/1911.11008 )
+
+Authors: [Jeonghyeok Park](https://arxiv.org/search/cs?searchtype=author&query=Park%2C+J), [Hai Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+H)
+
+*(Submitted on 25 Nov 2019)*
+
+> Korean-Chinese is a low resource language pair, but Korean and Chinese have a lot in common in terms of vocabulary. Sino-Korean words, which can be converted into corresponding Chinese characters, account for more than fifty of the entire Korean vocabulary. Motivated by this, we propose a simple linguistically motivated solution to improve the performance of the Korean-to-Chinese neural machine translation model by using their common vocabulary. We adopt Chinese characters as a translation pivot by converting Sino-Korean words in Korean sentences to Chinese characters and then train the machine translation model with the converted Korean sentences as source sentences. The experimental results on Korean-to-Chinese translation demonstrate that the models with the proposed method improve translation quality up to 1.5 BLEU points in comparison to the baseline models.
+
+| Comments:          | 9 pages                                                      |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| Journal reference: | 33rd Pacific Asia Conference on Language, Information and Computation (PACLIC 33), pages 558-566, Hakodate, Japan, September 13-15, 2019 |
+| Cite as:           | [arXiv:1911.11008](https://arxiv.org/abs/1911.11008) [cs.CL] |
+|                    | (or [arXiv:1911.11008v1](https://arxiv.org/abs/1911.11008v1) [cs.CL] for this version) |
+
+
+
+
+
+
+
+# 2019-11-25
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-11-25-1">1. Factorized Multimodal Transformer for Multimodal Sequential Learning</h2>
+
+Title: [Factorized Multimodal Transformer for Multimodal Sequential Learning]( https://arxiv.org/abs/1911.09826 )
+
+Authors: [Amir Zadeh](https://arxiv.org/search/cs?searchtype=author&query=Zadeh%2C+A), [Chengfeng Mao](https://arxiv.org/search/cs?searchtype=author&query=Mao%2C+C), [Kelly Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+K), [Yiwei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Paul Pu Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+P+P), [Soujanya Poria](https://arxiv.org/search/cs?searchtype=author&query=Poria%2C+S), [Louis-Philippe Morency](https://arxiv.org/search/cs?searchtype=author&query=Morency%2C+L)
+
+*(Submitted on 22 Nov 2019)*
+
+> The complex world around us is inherently multimodal and sequential (continuous). Information is scattered across different modalities and requires multiple continuous sensors to be captured. As machine learning leaps towards better generalization to real world, multimodal sequential learning becomes a fundamental research area. Arguably, modeling arbitrarily distributed spatio-temporal dynamics within and across modalities is the biggest challenge in this research area. In this paper, we present a new transformer model, called the Factorized Multimodal Transformer (FMT) for multimodal sequential learning. FMT inherently models the intramodal and intermodal (involving two or more modalities) dynamics within its multimodal input in a factorized manner. The proposed factorization allows for increasing the number of self-attentions to better model the multimodal phenomena at hand; without encountering difficulties during training (e.g. overfitting) even on relatively low-resource setups. All the attention mechanisms within FMT have a full time-domain receptive field which allows them to asynchronously capture long-range multimodal dynamics. In our experiments we focus on datasets that contain the three commonly studied modalities of language, vision and acoustic. We perform a wide range of experiments, spanning across 3 well-studied datasets and 21 distinct labels. FMT shows superior performance over previously proposed models, setting new state of the art in the studied datasets.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.09826](https://arxiv.org/abs/1911.09826) [cs.LG] |
+|           | (or [arXiv:1911.09826v1](https://arxiv.org/abs/1911.09826v1) [cs.LG] for this version) |
+
+
+
+
+
+<h2 id="2019-11-25-2">2. Neuron Interaction Based Representation Composition for Neural Machine Translation</h2>
+
+Title: [Neuron Interaction Based Representation Composition for Neural Machine Translation]( https://arxiv.org/abs/1911.09877 )
+
+Authors: [Jian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Xing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Baosong Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+B), [Shuming Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+S), [Michael R. Lyu](https://arxiv.org/search/cs?searchtype=author&query=Lyu%2C+M+R), [Zhaopeng Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+Z)
+
+*(Submitted on 22 Nov 2019)*
+
+> Recent NLP studies reveal that substantial linguistic information can be attributed to single neurons, i.e., individual dimensions of the representation vectors. We hypothesize that modeling strong interactions among neurons helps to better capture complex information by composing the linguistic properties embedded in individual neurons. Starting from this intuition, we propose a novel approach to compose representations learned by different components in neural machine translation (e.g., multi-layer networks or multi-head attention), based on modeling strong interactions among neurons in the representation vectors. Specifically, we leverage bilinear pooling to model pairwise multiplicative interactions among individual neurons, and a low-rank approximation to make the model computationally feasible. We further propose extended bilinear pooling to incorporate first-order representations. Experiments on WMT14 English-German and English-French translation tasks show that our model consistently improves performances over the SOTA Transformer baseline. Further analyses demonstrate that our approach indeed captures more syntactic and semantic information as expected.
+
+| Comments: | AAAI 2020                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:1911.09877](https://arxiv.org/abs/1911.09877) [cs.CL] |
+|           | (or [arXiv:1911.09877v1](https://arxiv.org/abs/1911.09877v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-25-3">3. Go From the General to the Particular: Multi-Domain Translation with Domain Transformation Networks</h2>
+
+Title: [Go From the General to the Particular: Multi-Domain Translation with Domain Transformation Networks]( https://arxiv.org/abs/1911.09912 )
+
+Authors: [Yong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Longyue Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Shuming Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+S), [Victor O.K. Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+V+O), [Zhaopeng Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+Z)
+
+*(Submitted on 22 Nov 2019)*
+
+> The key challenge of multi-domain translation lies in simultaneously encoding both the general knowledge shared across domains and the particular knowledge distinctive to each domain in a unified model. Previous work shows that the standard neural machine translation (NMT) model, trained on mixed-domain data, generally captures the general knowledge, but misses the domain-specific knowledge. In response to this problem, we augment NMT model with additional domain transformation networks to transform the general representations to domain-specific representations, which are subsequently fed to the NMT decoder. To guarantee the knowledge transformation, we also propose two complementary supervision signals by leveraging the power of knowledge distillation and adversarial learning. Experimental results on several language pairs, covering both balanced and unbalanced multi-domain translation, demonstrate the effectiveness and universality of the proposed approach. Encouragingly, the proposed unified model achieves comparable results with the fine-tuning approach that requires multiple models to preserve the particular knowledge. Further analyses reveal that the domain transformation networks successfully capture the domain-specific knowledge as expected.
+
+| Comments: | AAAI 2020                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1911.09912](https://arxiv.org/abs/1911.09912) [cs.CL] |
+|           | (or [arXiv:1911.09912v1](https://arxiv.org/abs/1911.09912v1) [cs.CL] for this version) |
+
+
+
+
+
+
+
 # 2019-11-22
 
 [Return to Index](#Index)
@@ -97,7 +346,6 @@
 
 
 <h2 id="2019-11-22-1">1. Minimizing the Bag-of-Ngrams Difference for Non-Autoregressive Neural Machine Translation</h2>
-
 Title: [Minimizing the Bag-of-Ngrams Difference for Non-Autoregressive Neural Machine Translation]( https://arxiv.org/abs/1911.09320 )
 
 Authors: [Chenze Shao](https://arxiv.org/search/cs?searchtype=author&query=Shao%2C+C), [Jinchao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Yang Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+Y), [Fandong Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+F), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J)
@@ -118,7 +366,6 @@ Authors: [Chenze Shao](https://arxiv.org/search/cs?searchtype=author&query=Shao%
 
 
 <h2 id="2019-11-22-2">2. Generating Diverse Translation by Manipulating Multi-Head Attention</h2>
-
 Title: [Generating Diverse Translation by Manipulating Multi-Head Attention]( https://arxiv.org/abs/1911.09333 )
 
 Authors: [Zewei Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+Z), [Shujian Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Hao-Ran Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+H), [Xin-yu Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+X), [Jiajun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J)
@@ -138,7 +385,6 @@ Authors: [Zewei Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+
 
 
 <h2 id="2019-11-22-3">3. MUSE: Parallel Multi-Scale Attention for Sequence to Sequence Learning</h2>
-
 Title: [MUSE: Parallel Multi-Scale Attention for Sequence to Sequence Learning]( https://arxiv.org/abs/1911.09483 )
 
 Authors: [Guangxiang Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+G), [Xu Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+X), [Jingjing Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+J), [Zhiyuan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Liangchen Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+L)
