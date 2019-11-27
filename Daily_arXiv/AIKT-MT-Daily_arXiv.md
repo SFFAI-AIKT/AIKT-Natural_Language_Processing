@@ -2,6 +2,8 @@
 
 # Index
 
+- [2019-11-27](#2019-11-27)
+  - [1. Neural Machine Translation with Explicit Phrase Alignment](#2019-11-27-1)
 - [2019-11-26](#2019-11-26)
   - [1. Who did They Respond to? Conversation Structure Modeling using Masked Hierarchical Transformer](#2019-11-26-1)
   - [2. JParaCrawl: A Large Scale Web-Based English-Japanese Parallel Corpus](#2019-11-26-2)
@@ -11,7 +13,6 @@
   - [6. Outbound Translation User Interface Ptakopet: A Pilot Study](#2019-11-26-6)
   - [7. Towards robust word embeddings for noisy texts](#2019-11-26-7)
   - [8. Korean-to-Chinese Machine Translation using Chinese Character as Pivot Clue](#2019-11-26-8)
-
 - [2019-11-25](#2019-11-25)
   - [1. Factorized Multimodal Transformer for Multimodal Sequential Learning](#2019-11-25-1)
   - [2. Neuron Interaction Based Representation Composition for Neural Machine Translation](#2019-11-25-2)
@@ -104,6 +105,33 @@
 
 
 
+# 2019-11-27
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-11-27-1">1. Neural Machine Translation with Explicit Phrase Alignment</h2>
+
+Title: [Neural Machine Translation with Explicit Phrase Alignment]( https://arxiv.org/abs/1911.11520 )
+
+Authors: [Jiacheng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Huanbo Luan](https://arxiv.org/search/cs?searchtype=author&query=Luan%2C+H), [Maosong Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M), [FeiFei Zhai](https://arxiv.org/search/cs?searchtype=author&query=Zhai%2C+F), [Jingfang Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+J), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y)
+
+*(Submitted on 26 Nov 2019)*
+
+> While neural machine translation (NMT) has achieved state-of-the-art translation performance, it is unable to capture the alignment between the input and output during the translation process. The lack of alignment in NMT models leads to three problems: it is hard to (1) interpret the translation process, (2) impose lexical constraints, and (3) impose structural constraints. To alleviate these problems, we propose to introduce explicit phrase alignment into the translation process of arbitrary NMT models. The key idea is to build a search space similar to that of phrase-based statistical machine translation for NMT where phrase alignment is readily available. We design a new decoding algorithm that can easily impose lexical and structural constraints. Experiments show that our approach makes the translation process of NMT more interpretable without sacrificing translation quality. In addition, our approach achieves significant improvements in lexically and structurally constrained translation tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.11520](https://arxiv.org/abs/1911.11520) [cs.CL] |
+|           | (or [arXiv:1911.11520v1](https://arxiv.org/abs/1911.11520v1) [cs.CL] for this version) |
+
+
+
+
+
+
+
 # 2019-11-26
 
 [Return to Index](#Index)
@@ -111,7 +139,6 @@
 
 
 <h2 id="2019-11-26-1">1. Who did They Respond to? Conversation Structure Modeling using Masked Hierarchical Transformer</h2>
-
 Title:[Who did They Respond to? Conversation Structure Modeling using Masked Hierarchical Transformer]( https://arxiv.org/abs/1911.10666 )
 
 Authors: [Henghui Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+H), [Feng Nan](https://arxiv.org/search/cs?searchtype=author&query=Nan%2C+F), [Zhiguo Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Ramesh Nallapati](https://arxiv.org/search/cs?searchtype=author&query=Nallapati%2C+R), [Bing Xiang](https://arxiv.org/search/cs?searchtype=author&query=Xiang%2C+B)
@@ -131,7 +158,6 @@ Authors: [Henghui Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2
 
 
 <h2 id="2019-11-26-2">2. JParaCrawl: A Large Scale Web-Based English-Japanese Parallel Corpus</h2>
-
 Title:[JParaCrawl: A Large Scale Web-Based English-Japanese Parallel Corpus]( https://arxiv.org/abs/1911.10668 )
 
 Authors: [Makoto Morishita](https://arxiv.org/search/cs?searchtype=author&query=Morishita%2C+M), [Jun Suzuki](https://arxiv.org/search/cs?searchtype=author&query=Suzuki%2C+J), [Masaaki Nagata](https://arxiv.org/search/cs?searchtype=author&query=Nagata%2C+M)
@@ -151,7 +177,6 @@ Authors: [Makoto Morishita](https://arxiv.org/search/cs?searchtype=author&query=
 
 
 <h2 id="2019-11-26-3">3. Non-autoregressive Transformer by Position Learning</h2>
-
 Title:[Non-autoregressive Transformer by Position Learning]( https://arxiv.org/abs/1911.10677 )
 
 Authors: [Yu Bao](https://arxiv.org/search/cs?searchtype=author&query=Bao%2C+Y), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Jiangtao Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+J), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Shujian Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Jiajun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J), [Lei LI](https://arxiv.org/search/cs?searchtype=author&query=LI%2C+L)
@@ -170,7 +195,6 @@ Authors: [Yu Bao](https://arxiv.org/search/cs?searchtype=author&query=Bao%2C+Y),
 
 
 <h2 id="2019-11-26-4">4. Learning to Reuse Translations: Guiding Neural Machine Translation with Examples</h2>
-
 Title:[Learning to Reuse Translations: Guiding Neural Machine Translation with Examples]( https://arxiv.org/abs/1911.10732 )
 
 Authors: [Qian Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+Q), [Shaohui Kuang](https://arxiv.org/search/cs?searchtype=author&query=Kuang%2C+S), [Deyi Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+D)
@@ -189,7 +213,6 @@ Authors: [Qian Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+Q
 
 
 <h2 id="2019-11-26-5">5. Chinese Spelling Error Detection Using a Fusion Lattice LSTM</h2>
-
 Title:[Chinese Spelling Error Detection Using a Fusion Lattice LSTM]( https://arxiv.org/abs/1911.10750 )
 
 Authors: [Hao Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H), [Bing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+B), [Jianyong Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan%2C+J), [Jiajun Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J)
@@ -209,7 +232,6 @@ Authors: [Hao Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+
 
 
 <h2 id="2019-11-26-6">6. Outbound Translation User Interface Ptakopet: A Pilot Study</h2>
-
 Title:[Outbound Translation User Interface Ptakopet: A Pilot Study]( https://arxiv.org/abs/1911.10835 )
 
 Authors: [Vilém Zouhar](https://arxiv.org/search/cs?searchtype=author&query=Zouhar%2C+V), [Ondřej Bojar](https://arxiv.org/search/cs?searchtype=author&query=Bojar%2C+O)
@@ -230,7 +252,6 @@ Authors: [Vilém Zouhar](https://arxiv.org/search/cs?searchtype=author&query=Zou
 
 
 <h2 id="2019-11-26-7">7. Towards robust word embeddings for noisy texts</h2>
-
 Title:[Towards robust word embeddings for noisy texts]( https://arxiv.org/abs/1911.10876 )
 
 Authors: [Yerai Doval](https://arxiv.org/search/cs?searchtype=author&query=Doval%2C+Y), [Jesús Vilares](https://arxiv.org/search/cs?searchtype=author&query=Vilares%2C+J), [Carlos Gómez-Rodríguez](https://arxiv.org/search/cs?searchtype=author&query=Gómez-Rodríguez%2C+C)
@@ -250,7 +271,6 @@ Authors: [Yerai Doval](https://arxiv.org/search/cs?searchtype=author&query=Doval
 
 
 <h2 id="2019-11-26-8">8. Korean-to-Chinese Machine Translation using Chinese Character as Pivot Clue</h2>
-
 Title:[Korean-to-Chinese Machine Translation using Chinese Character as Pivot Clue]( https://arxiv.org/abs/1911.11008 )
 
 Authors: [Jeonghyeok Park](https://arxiv.org/search/cs?searchtype=author&query=Park%2C+J), [Hai Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+H)
@@ -279,7 +299,6 @@ Authors: [Jeonghyeok Park](https://arxiv.org/search/cs?searchtype=author&query=P
 
 
 <h2 id="2019-11-25-1">1. Factorized Multimodal Transformer for Multimodal Sequential Learning</h2>
-
 Title: [Factorized Multimodal Transformer for Multimodal Sequential Learning]( https://arxiv.org/abs/1911.09826 )
 
 Authors: [Amir Zadeh](https://arxiv.org/search/cs?searchtype=author&query=Zadeh%2C+A), [Chengfeng Mao](https://arxiv.org/search/cs?searchtype=author&query=Mao%2C+C), [Kelly Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+K), [Yiwei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Paul Pu Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+P+P), [Soujanya Poria](https://arxiv.org/search/cs?searchtype=author&query=Poria%2C+S), [Louis-Philippe Morency](https://arxiv.org/search/cs?searchtype=author&query=Morency%2C+L)
@@ -298,7 +317,6 @@ Authors: [Amir Zadeh](https://arxiv.org/search/cs?searchtype=author&query=Zadeh%
 
 
 <h2 id="2019-11-25-2">2. Neuron Interaction Based Representation Composition for Neural Machine Translation</h2>
-
 Title: [Neuron Interaction Based Representation Composition for Neural Machine Translation]( https://arxiv.org/abs/1911.09877 )
 
 Authors: [Jian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Xing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Baosong Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+B), [Shuming Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+S), [Michael R. Lyu](https://arxiv.org/search/cs?searchtype=author&query=Lyu%2C+M+R), [Zhaopeng Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+Z)
@@ -318,7 +336,6 @@ Authors: [Jian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J),
 
 
 <h2 id="2019-11-25-3">3. Go From the General to the Particular: Multi-Domain Translation with Domain Transformation Networks</h2>
-
 Title: [Go From the General to the Particular: Multi-Domain Translation with Domain Transformation Networks]( https://arxiv.org/abs/1911.09912 )
 
 Authors: [Yong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Longyue Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Shuming Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+S), [Victor O.K. Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+V+O), [Zhaopeng Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+Z)
