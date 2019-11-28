@@ -2,6 +2,11 @@
 
 # Index
 
+- [2019-11-28](#2019-11-28)
+  - [1. Simultaneous Neural Machine Translation using Connectionist Temporal Classification](#2019-11-28-1)
+  - [2. word2word: A Collection of Bilingual Lexicons for 3,564 Language Pairs](#2019-11-28-2)
+  - [3. Jejueo Datasets for Machine Translation and Speech Synthesis](#2019-11-28-3)
+  - [4. Findings of the 2016 WMT Shared Task on Cross-lingual Pronoun Prediction](#2019-11-28-4)
 - [2019-11-27](#2019-11-27)
   - [1. Neural Machine Translation with Explicit Phrase Alignment](#2019-11-27-1)
 - [2019-11-26](#2019-11-26)
@@ -105,6 +110,94 @@
 
 
 
+# 2019-11-28
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-11-28-1">1. Simultaneous Neural Machine Translation using Connectionist Temporal Classification</h2>
+
+Title: [Simultaneous Neural Machine Translation using Connectionist Temporal Classification]( https://arxiv.org/abs/1911.11933 )
+
+Authors:[Katsuki Chousa](https://arxiv.org/search/cs?searchtype=author&query=Chousa%2C+K), [Katsuhito Sudoh](https://arxiv.org/search/cs?searchtype=author&query=Sudoh%2C+K), [Satoshi Nakamura](https://arxiv.org/search/cs?searchtype=author&query=Nakamura%2C+S)
+
+*(Submitted on 27 Nov 2019)*
+
+> Simultaneous machine translation is a variant of machine translation that starts the translation process before the end of an input. This task faces a trade-off between translation accuracy and latency. We have to determine when we start the translation for observed inputs so far, to achieve good practical performance. In this work, we propose a neural machine translation method to determine this timing in an adaptive manner. The proposed method introduces a special token '<wait>', which is generated when the translation model chooses to read the next input token instead of generating an output token. It also introduces an objective function to handle the ambiguity in wait timings that can be optimized using an algorithm called Connectionist Temporal Classification (CTC). The use of CTC enables the optimization to consider all possible output sequences including '<wait>' that are equivalent to the reference translations and to choose the best one adaptively. We apply the proposed method into simultaneous translation from English to Japanese and investigate its performance and remaining problems.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.11933](https://arxiv.org/abs/1911.11933) [cs.CL] |
+|           | (or [arXiv:1911.11933v1](https://arxiv.org/abs/1911.11933v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-28-2">2. word2word: A Collection of Bilingual Lexicons for 3,564 Language Pairs</h2>
+
+Title: [word2word: A Collection of Bilingual Lexicons for 3,564 Language Pairs]( https://arxiv.org/abs/1911.12019 )
+
+Authors:[Yo Joong Choe](https://arxiv.org/search/cs?searchtype=author&query=Choe%2C+Y+J), [Kyubyong Park](https://arxiv.org/search/cs?searchtype=author&query=Park%2C+K), [Dongwoo Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+D)
+
+*(Submitted on 27 Nov 2019)*
+
+> We present word2word, a publicly available dataset and an open-source Python package for cross-lingual word translations extracted from sentence-level parallel corpora. Our dataset provides top-k word translations in 3,564 (directed) language pairs across 62 languages in OpenSubtitles2018 (Lison et al., 2018). To obtain this dataset, we use a count-based bilingual lexicon extraction model based on the observation that not only source and target words but also source words themselves can be highly correlated. We illustrate that the resulting bilingual lexicons have high coverage and attain competitive translation quality for several language pairs. We wrap our dataset and model in an easy-to-use Python library, which supports downloading and retrieving top-k word translations in any of the supported language pairs as well as computing top-k word translations for custom parallel corpora.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.12019](https://arxiv.org/abs/1911.12019) [cs.CL] |
+|           | (or [arXiv:1911.12019v1](https://arxiv.org/abs/1911.12019v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-28-3">3. Jejueo Datasets for Machine Translation and Speech Synthesis</h2>
+
+Title: [Jejueo Datasets for Machine Translation and Speech Synthesis]( https://arxiv.org/abs/1911.12071 )
+
+Authors:[Kyubyong Park](https://arxiv.org/search/cs?searchtype=author&query=Park%2C+K), [Yo Joong Choe](https://arxiv.org/search/cs?searchtype=author&query=Choe%2C+Y+J), [Jiyeon Ham](https://arxiv.org/search/cs?searchtype=author&query=Ham%2C+J)
+
+*(Submitted on 27 Nov 2019)*
+
+> Jejueo was classified as critically endangered by UNESCO in 2010. Although diverse efforts to revitalize it have been made, there have been few computational approaches. Motivated by this, we construct two new Jejueo datasets: Jejueo Interview Transcripts (JIT) and Jejueo Single Speaker Speech (JSS). The JIT dataset is a parallel corpus containing 170k+ Jejueo-Korean sentences, and the JSS dataset consists of 10k high-quality audio files recorded by a native Jejueo speaker and a transcript file. Subsequently, we build neural systems of machine translation and speech synthesis using them. All resources are publicly available via our GitHub repository. We hope that these datasets will attract interest of both language and machine learning communities.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1911.12071](https://arxiv.org/abs/1911.12071) [cs.CL] |
+|           | (or [arXiv:1911.12071v1](https://arxiv.org/abs/1911.12071v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-11-28-4">4. Findings of the 2016 WMT Shared Task on Cross-lingual Pronoun Prediction</h2>
+
+Title: [Findings of the 2016 WMT Shared Task on Cross-lingual Pronoun Prediction]( https://arxiv.org/abs/1911.12091 )
+
+Authors:[Liane Guillou](https://arxiv.org/search/cs?searchtype=author&query=Guillou%2C+L), [Christian Hardmeier](https://arxiv.org/search/cs?searchtype=author&query=Hardmeier%2C+C), [Preslav Nakov](https://arxiv.org/search/cs?searchtype=author&query=Nakov%2C+P), [Sara Stymne](https://arxiv.org/search/cs?searchtype=author&query=Stymne%2C+S), [Jörg Tiedemann](https://arxiv.org/search/cs?searchtype=author&query=Tiedemann%2C+J), [Yannick Versley](https://arxiv.org/search/cs?searchtype=author&query=Versley%2C+Y), [Mauro Cettolo](https://arxiv.org/search/cs?searchtype=author&query=Cettolo%2C+M), [Bonnie Webber](https://arxiv.org/search/cs?searchtype=author&query=Webber%2C+B), [Andrei Popescu-Belis](https://arxiv.org/search/cs?searchtype=author&query=Popescu-Belis%2C+A)
+
+*(Submitted on 27 Nov 2019)*
+
+> We describe the design, the evaluation setup, and the results of the 2016 WMT shared task on cross-lingual pronoun prediction. This is a classification task in which participants are asked to provide predictions on what pronoun class label should replace a placeholder value in the target-language text, provided in lemmatised and PoS-tagged form. We provided four subtasks, for the English-French and English-German language pairs, in both directions. Eleven teams participated in the shared task; nine for the English-French subtask, five for French-English, nine for English-German, and six for German-English. Most of the submissions outperformed two strong language-model based baseline systems, with systems using deep recurrent neural networks outperforming those using other architectures for most language pairs.
+
+| Comments:          | cross-lingual pronoun prediction, WMT, shared task, English, German, French |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Information Retrieval (cs.IR) |
+| MSC classes:       | 68T50                                                        |
+| ACM classes:       | I.2.7                                                        |
+| Journal reference: | WMT-2016                                                     |
+| Cite as:           | [arXiv:1911.12091](https://arxiv.org/abs/1911.12091) [cs.CL] |
+|                    | (or [arXiv:1911.12091v1](https://arxiv.org/abs/1911.12091v1) [cs.CL] for this version) |
+
+
+
+
+
+
+
 # 2019-11-27
 
 [Return to Index](#Index)
@@ -112,7 +205,6 @@
 
 
 <h2 id="2019-11-27-1">1. Neural Machine Translation with Explicit Phrase Alignment</h2>
-
 Title: [Neural Machine Translation with Explicit Phrase Alignment]( https://arxiv.org/abs/1911.11520 )
 
 Authors: [Jiacheng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Huanbo Luan](https://arxiv.org/search/cs?searchtype=author&query=Luan%2C+H), [Maosong Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M), [FeiFei Zhai](https://arxiv.org/search/cs?searchtype=author&query=Zhai%2C+F), [Jingfang Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+J), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y)
