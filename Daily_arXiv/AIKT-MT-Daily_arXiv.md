@@ -2,6 +2,8 @@
 
 # Index
 
+- [2019-12-04](#2019-12-04)
+  - [1. Cross-lingual Pre-training Based Transfer for Zero-shot Neural Machine Translation](#2019-12-04-1)
 - [2019-12-03](#2019-12-03)
   - [1. Not All Attention Is Needed: Gated Attention Network for Sequence Data](#2019-12-03-1)
   - [2. Modeling Fluency and Faithfulness for Diverse Neural Machine Translation](#2019-12-03-2)
@@ -23,6 +25,32 @@
 
 
 
+# 2019-12-04
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-12-04-1">1. Cross-lingual Pre-training Based Transfer for Zero-shot Neural Machine Translation</h2>
+
+Title: [Cross-lingual Pre-training Based Transfer for Zero-shot Neural Machine Translation](https://arxiv.org/abs/1912.01214)
+
+Authors: [Baijun Ji](https://arxiv.org/search/cs?searchtype=author&query=Ji%2C+B), [Zhirui Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Xiangyu Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan%2C+X), [Min Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M), [Boxing Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+B), [Weihua Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+W)
+
+*(Submitted on 3 Dec 2019)*
+
+> Transfer learning between different language pairs has shown its effectiveness for Neural Machine Translation (NMT) in low-resource scenario. However, existing transfer methods involving a common target language are far from success in the extreme scenario of zero-shot translation, due to the language space mismatch problem between transferor (the parent model) and transferee (the child model) on the source side. To address this challenge, we propose an effective transfer learning approach based on cross-lingual pre-training. Our key idea is to make all source languages share the same feature space and thus enable a smooth transition for zero-shot translation. To this end, we introduce one monolingual pre-training method and two bilingual pre-training methods to obtain a universal encoder for different languages. Once the universal encoder is constructed, the parent model built on such encoder is trained with large-scale annotated data and then directly applied in zero-shot translation scenario. Experiments on two public datasets show that our approach significantly outperforms strong pivot-based baseline and various multilingual NMT approaches.
+
+| Comments: | Accepted as a conference paper at AAAI 2020 (oral presentation) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1912.01214](https://arxiv.org/abs/1912.01214) [cs.CL] |
+|           | (or [arXiv:1912.01214v1](https://arxiv.org/abs/1912.01214v1) [cs.CL] for this version) |
+
+
+
+
+
 # 2019-12-03
 
 [Return to Index](#Index)
@@ -30,7 +58,6 @@
 
 
 <h2 id="2019-12-03-1">1. Not All Attention Is Needed: Gated Attention Network for Sequence Data</h2>
-
 Title: [Not All Attention Is Needed: Gated Attention Network for Sequence Data](https://arxiv.org/abs/1912.00349)
 
 Authors: [Lanqing Xue](https://arxiv.org/search/cs?searchtype=author&query=Xue%2C+L), [Xiaopeng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Nevin L. Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+N+L)
@@ -49,7 +76,6 @@ Authors: [Lanqing Xue](https://arxiv.org/search/cs?searchtype=author&query=Xue%2
 
 
 <h2 id="2019-12-03-2">2. Modeling Fluency and Faithfulness for Diverse Neural Machine Translation</h2>
-
 Title: [Modeling Fluency and Faithfulness for Diverse Neural Machine Translation](https://arxiv.org/abs/1912.00178)
 
 Authors: [Yang Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+Y), [Wanying Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie%2C+W), [Shuhao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+S), [Chenze Shao](https://arxiv.org/search/cs?searchtype=author&query=Shao%2C+C), [Wen Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+W), [Zhengxin Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Dong Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+D)
@@ -66,7 +92,6 @@ Authors: [Yang Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C
 
 
 <h2 id="2019-12-03-3">3. Merging External Bilingual Pairs into Neural Machine Translation</h2>
-
 Title: [Merging External Bilingual Pairs into Neural Machine Translation](https://arxiv.org/abs/1912.00567)
 
 Authors: [Tao Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+T), [Shaohui Kuang](https://arxiv.org/search/cs?searchtype=author&query=Kuang%2C+S), [Deyi Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+D), [António Branco](https://arxiv.org/search/cs?searchtype=author&query=Branco%2C+A)
