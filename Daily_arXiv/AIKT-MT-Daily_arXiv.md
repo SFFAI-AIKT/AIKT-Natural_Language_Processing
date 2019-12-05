@@ -2,6 +2,11 @@
 
 # Index
 
+- [2019-12-05](#2019-12-05)
+  - [1. Neural Machine Translation: A Review](#2019-12-05-1)
+  - [2. A Robust Self-Learning Method for Fully Unsupervised Cross-Lingual Mappings of Word Embeddings: Making the Method Robustly Reproducible as Well](#2019-12-05-2)
+  - [3. Acquiring Knowledge from Pre-trained Model to Neural Machine Translation](#2019-12-05-3)
+
 - [2019-12-04](#2019-12-04)
   - [1. Cross-lingual Pre-training Based Transfer for Zero-shot Neural Machine Translation](#2019-12-04-1)
 - [2019-12-03](#2019-12-03)
@@ -25,6 +30,72 @@
 
 
 
+# 2019-12-05
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-12-05-1">1. Neural Machine Translation: A Review</h2>
+
+Title: [Neural Machine Translation: A Review](https://arxiv.org/abs/1912.02047)
+
+Authors: [Felix Stahlberg](https://arxiv.org/search/cs?searchtype=author&query=Stahlberg%2C+F)
+
+*(Submitted on 4 Dec 2019)*
+
+> The field of machine translation (MT), the automatic translation of written text from one natural language into another, has experienced a major paradigm shift in recent years. Statistical MT, which mainly relies on various count-based models and which used to dominate MT research for decades, has largely been superseded by neural machine translation (NMT), which tackles translation with a single neural network. In this work we will trace back the origins of modern NMT architectures to word and sentence embeddings and earlier examples of the encoder-decoder network family. We will conclude with a survey of recent trends in the field.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1912.02047](https://arxiv.org/abs/1912.02047) [cs.CL] |
+|           | (or [arXiv:1912.02047v1](https://arxiv.org/abs/1912.02047v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-12-05-2">2. A Robust Self-Learning Method for Fully Unsupervised Cross-Lingual Mappings of Word Embeddings: Making the Method Robustly Reproducible as Well</h2>
+
+Title: [A Robust Self-Learning Method for Fully Unsupervised Cross-Lingual Mappings of Word Embeddings: Making the Method Robustly Reproducible as Well](https://arxiv.org/abs/1912.01706)
+
+Authors: [Nicolas Garneau](https://arxiv.org/search/cs?searchtype=author&query=Garneau%2C+N), [Mathieu Godbout](https://arxiv.org/search/cs?searchtype=author&query=Godbout%2C+M), [David Beauchemin](https://arxiv.org/search/cs?searchtype=author&query=Beauchemin%2C+D), [Audrey Durand](https://arxiv.org/search/cs?searchtype=author&query=Durand%2C+A), [Luc Lamontagne](https://arxiv.org/search/cs?searchtype=author&query=Lamontagne%2C+L)
+
+*(Submitted on 3 Dec 2019)*
+
+> In this paper, we reproduce the experiments of Artetxe et al. (2018b) regarding the robust self-learning method for fully unsupervised cross-lingual mappings of word embeddings. We show that the reproduction of their method is indeed feasible with some minor assumptions. We further investigate the robustness of their model by introducing four new languages that are less similar to English than the ones proposed by the original paper. In order to assess the stability of their model, we also conduct a grid search over sensible hyperparameters. We then propose key recommendations applicable to any research project in order to deliver fully reproducible research.
+
+| Comments: | Submitted to REPROLANG@LREC2020                              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| Cite as:  | [arXiv:1912.01706](https://arxiv.org/abs/1912.01706) [cs.LG] |
+|           | (or [arXiv:1912.01706v1](https://arxiv.org/abs/1912.01706v1) [cs.LG] for this version) |
+
+
+
+
+
+<h2 id="2019-12-05-3">3. Acquiring Knowledge from Pre-trained Model to Neural Machine Translation</h2>
+
+Title: [Acquiring Knowledge from Pre-trained Model to Neural Machine Translation](https://arxiv.org/abs/1912.01774)
+
+Authors: [Rongxiang Weng](https://arxiv.org/search/cs?searchtype=author&query=Weng%2C+R), [Heng Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+H), [Shujian Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Shanbo Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+S), [Weihua Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+W)
+
+*(Submitted on 4 Dec 2019)*
+
+> Pre-training and fine-tuning have achieved great success in the natural language process field. The standard paradigm of exploiting them includes two steps: first, pre-training a model, e.g. BERT, with a large scale unlabeled monolingual data. Then, fine-tuning the pre-trained model with labeled data from downstream tasks. However, in neural machine translation (NMT), we address the problem that the training objective of the bilingual task is far different from the monolingual pre-trained model. This gap leads that only using fine-tuning in NMT can not fully utilize prior language knowledge. In this paper, we propose an APT framework for acquiring knowledge from the pre-trained model to NMT. The proposed approach includes two modules: 1). a dynamic fusion mechanism to fuse task-specific features adapted from general knowledge into NMT network, 2). a knowledge distillation paradigm to learn language knowledge continuously during the NMT training process. The proposed approach could integrate suitable knowledge from pre-trained models to improve the NMT. Experimental results on WMT English to German, German to English and Chinese to English machine translation tasks show that our model outperforms strong baselines and the fine-tuning counterparts.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1912.01774](https://arxiv.org/abs/1912.01774) [cs.CL] |
+|           | (or [arXiv:1912.01774v1](https://arxiv.org/abs/1912.01774v1) [cs.CL] for this version) |
+
+
+
+
+
+
+
 # 2019-12-04
 
 [Return to Index](#Index)
@@ -32,7 +103,6 @@
 
 
 <h2 id="2019-12-04-1">1. Cross-lingual Pre-training Based Transfer for Zero-shot Neural Machine Translation</h2>
-
 Title: [Cross-lingual Pre-training Based Transfer for Zero-shot Neural Machine Translation](https://arxiv.org/abs/1912.01214)
 
 Authors: [Baijun Ji](https://arxiv.org/search/cs?searchtype=author&query=Ji%2C+B), [Zhirui Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Xiangyu Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan%2C+X), [Min Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M), [Boxing Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+B), [Weihua Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+W)
