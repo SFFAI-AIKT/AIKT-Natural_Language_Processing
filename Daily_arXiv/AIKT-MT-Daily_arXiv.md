@@ -2,11 +2,12 @@
 
 # Index
 
+- [2019-12-06](#2019-12-06)
+  - [1. Exploration of Neural Machine Translation in Autoformalization of Mathematics in Mizar](#2019-12-06-1)
 - [2019-12-05](#2019-12-05)
   - [1. Neural Machine Translation: A Review](#2019-12-05-1)
   - [2. A Robust Self-Learning Method for Fully Unsupervised Cross-Lingual Mappings of Word Embeddings: Making the Method Robustly Reproducible as Well](#2019-12-05-2)
   - [3. Acquiring Knowledge from Pre-trained Model to Neural Machine Translation](#2019-12-05-3)
-
 - [2019-12-04](#2019-12-04)
   - [1. Cross-lingual Pre-training Based Transfer for Zero-shot Neural Machine Translation](#2019-12-04-1)
 - [2019-12-03](#2019-12-03)
@@ -30,6 +31,32 @@
 
 
 
+# 2019-12-06
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-12-06-1">1. Exploration of Neural Machine Translation in Autoformalization of Mathematics in Mizar</h2>
+
+Title: [Exploration of Neural Machine Translation in Autoformalization of Mathematics in Mizar](https://arxiv.org/abs/1912.02636)
+
+Authors: [Qingxiang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Q), [Chad Brown](https://arxiv.org/search/cs?searchtype=author&query=Brown%2C+C), [Cezary Kaliszyk](https://arxiv.org/search/cs?searchtype=author&query=Kaliszyk%2C+C), [Josef Urban](https://arxiv.org/search/cs?searchtype=author&query=Urban%2C+J)
+
+*(Submitted on 5 Dec 2019)*
+
+> In this paper we share several experiments trying to automatically translate informal mathematics into formal mathematics. In our context informal mathematics refers to human-written mathematical sentences in the LaTeX format; and formal mathematics refers to statements in the Mizar language. We conducted our experiments against three established neural network-based machine translation models that are known to deliver competitive results on translating between natural languages. To train these models we also prepared four informal-to-formal datasets. We compare and analyze our results according to whether the model is supervised or unsupervised. In order to augment the data available for auto-formalization and improve the results, we develop a custom type-elaboration mechanism and integrate it in the supervised translation.
+
+| Comments: | Submitted to POPL/CPP'2020                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Logic in Computer Science (cs.LO)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:1912.02636](https://arxiv.org/abs/1912.02636) [cs.LO] |
+|           | (or [arXiv:1912.02636v1](https://arxiv.org/abs/1912.02636v1) [cs.LO] for this version) |
+
+
+
+
+
 # 2019-12-05
 
 [Return to Index](#Index)
@@ -37,7 +64,6 @@
 
 
 <h2 id="2019-12-05-1">1. Neural Machine Translation: A Review</h2>
-
 Title: [Neural Machine Translation: A Review](https://arxiv.org/abs/1912.02047)
 
 Authors: [Felix Stahlberg](https://arxiv.org/search/cs?searchtype=author&query=Stahlberg%2C+F)
@@ -56,7 +82,6 @@ Authors: [Felix Stahlberg](https://arxiv.org/search/cs?searchtype=author&query=S
 
 
 <h2 id="2019-12-05-2">2. A Robust Self-Learning Method for Fully Unsupervised Cross-Lingual Mappings of Word Embeddings: Making the Method Robustly Reproducible as Well</h2>
-
 Title: [A Robust Self-Learning Method for Fully Unsupervised Cross-Lingual Mappings of Word Embeddings: Making the Method Robustly Reproducible as Well](https://arxiv.org/abs/1912.01706)
 
 Authors: [Nicolas Garneau](https://arxiv.org/search/cs?searchtype=author&query=Garneau%2C+N), [Mathieu Godbout](https://arxiv.org/search/cs?searchtype=author&query=Godbout%2C+M), [David Beauchemin](https://arxiv.org/search/cs?searchtype=author&query=Beauchemin%2C+D), [Audrey Durand](https://arxiv.org/search/cs?searchtype=author&query=Durand%2C+A), [Luc Lamontagne](https://arxiv.org/search/cs?searchtype=author&query=Lamontagne%2C+L)
@@ -76,7 +101,6 @@ Authors: [Nicolas Garneau](https://arxiv.org/search/cs?searchtype=author&query=G
 
 
 <h2 id="2019-12-05-3">3. Acquiring Knowledge from Pre-trained Model to Neural Machine Translation</h2>
-
 Title: [Acquiring Knowledge from Pre-trained Model to Neural Machine Translation](https://arxiv.org/abs/1912.01774)
 
 Authors: [Rongxiang Weng](https://arxiv.org/search/cs?searchtype=author&query=Weng%2C+R), [Heng Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+H), [Shujian Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Shanbo Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+S), [Weihua Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+W)
