@@ -2,6 +2,14 @@
 
 # Index
 
+- [2019-12-10](#2019-12-10)
+  - [1. Bidirectional Scene Text Recognition with a Single Decoder](#2019-12-10-1)
+  - [2. Explaining Sequence-Level Knowledge Distillation as Data-Augmentation for Neural Machine Translation](#2019-12-10-2)
+  - [3. Re-Translation Strategies For Long Form, Simultaneous, Spoken Language Translation](#2019-12-10-3)
+  - [4. PidginUNMT: Unsupervised Neural Machine Translation from West African Pidgin to English](#2019-12-10-4)
+- [2019-12-09](#2019-12-09)
+  - [1. Machine Translation Evaluation Meets Community Question Answering](#2019-12-09-1)
+  - [2. Pairwise Neural Machine Translation Evaluation](#2019-12-09-2)
 - [2019-12-06](#2019-12-06)
   - [1. Exploration of Neural Machine Translation in Autoformalization of Mathematics in Mizar](#2019-12-06-1)
 - [2019-12-05](#2019-12-05)
@@ -31,6 +39,146 @@
 
 
 
+# 2019-12-10
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-12-10-1">1. Bidirectional Scene Text Recognition with a Single Decoder</h2>
+
+Title: [Bidirectional Scene Text Recognition with a Single Decoder](https://arxiv.org/abs/1912.03656)
+
+Authors: [Maurits Bleeker](https://arxiv.org/search/cs?searchtype=author&query=Bleeker%2C+M), [Maarten de Rijke](https://arxiv.org/search/cs?searchtype=author&query=de+Rijke%2C+M)
+
+*(Submitted on 8 Dec 2019)*
+
+> Scene Text Recognition (STR) is the problem of recognizing the correct word or character sequence in a cropped word image. To obtain more robust output sequences, the notion of bidirectional STR has been introduced. So far, bidirectional STRs have been implemented by using two separate decoders; one for left-to-right decoding and one for right-to-left. Having two separate decoders for almost the same task with the same output space is undesirable from a computational and optimization point of view. We introduce the bidirectional Scene Text Transformer (Bi-STET), a novel bidirectional STR method with a single decoder for bidirectional text decoding. With its single decoder, Bi-STET outperforms methods that apply bidirectional decoding by using two separate decoders while also being more efficient than those methods, Furthermore, we achieve or beat state-of-the-art (SOTA) methods on all STR benchmarks with Bi-STET. Finally, we provide analyses and insights into the performance of Bi-STET.
+
+| Comments: | 8 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:1912.03656](https://arxiv.org/abs/1912.03656) [cs.CV] |
+|           | (or [arXiv:1912.03656v1](https://arxiv.org/abs/1912.03656v1) [cs.CV] for this version) |
+
+
+
+
+
+<h2 id="2019-12-10-2">2. Explaining Sequence-Level Knowledge Distillation as Data-Augmentation for Neural Machine Translation</h2>
+
+Title: [Explaining Sequence-Level Knowledge Distillation as Data-Augmentation for Neural Machine Translation](https://arxiv.org/abs/1912.03334)
+
+Authors: [Mitchell A. Gordon](https://arxiv.org/search/cs?searchtype=author&query=Gordon%2C+M+A), [Kevin Duh](https://arxiv.org/search/cs?searchtype=author&query=Duh%2C+K)
+
+*(Submitted on 6 Dec 2019)*
+
+> Sequence-level knowledge distillation (SLKD) is a model compression technique that leverages large, accurate teacher models to train smaller, under-parameterized student models. Why does pre-processing MT data with SLKD help us train smaller models? We test the common hypothesis that SLKD addresses a capacity deficiency in students by "simplifying" noisy data points and find it unlikely in our case. Models trained on concatenations of original and "simplified" datasets generalize just as well as baseline SLKD. We then propose an alternative hypothesis under the lens of data augmentation and regularization. We try various augmentation strategies and observe that dropout regularization can become unnecessary. Our methods achieve BLEU gains of 0.7-1.2 on TED Talks.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1912.03334](https://arxiv.org/abs/1912.03334) [cs.CL] |
+|           | (or [arXiv:1912.03334v1](https://arxiv.org/abs/1912.03334v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-12-10-3">3. Re-Translation Strategies For Long Form, Simultaneous, Spoken Language Translation</h2>
+
+Title: [Re-Translation Strategies For Long Form, Simultaneous, Spoken Language Translation](https://arxiv.org/abs/1912.03393)
+
+Authors: [Naveen Arivazhagan](https://arxiv.org/search/cs?searchtype=author&query=Arivazhagan%2C+N), [Colin Cherry](https://arxiv.org/search/cs?searchtype=author&query=Cherry%2C+C), [Te I](https://arxiv.org/search/cs?searchtype=author&query=I%2C+T), [Wolfgang Macherey](https://arxiv.org/search/cs?searchtype=author&query=Macherey%2C+W), [Pallavi Baljekar](https://arxiv.org/search/cs?searchtype=author&query=Baljekar%2C+P), [George Foster](https://arxiv.org/search/cs?searchtype=author&query=Foster%2C+G)
+
+*(Submitted on 6 Dec 2019)*
+
+> We investigate the problem of simultaneous machine translation of long-form speech content. We target a continuous speech-to-text scenario, generating translated captions for a live audio feed, such as a lecture or play-by-play commentary. As this scenario allows for revisions to our incremental translations, we adopt a re-translation approach to simultaneous translation, where the source is repeatedly translated from scratch as it grows. This approach naturally exhibits very low latency and high final quality, but at the cost of incremental instability as the output is continuously refined. We experiment with a pipeline of industry-grade speech recognition and translation tools, augmented with simple inference heuristics to improve stability. We use TED Talks as a source of multilingual test data, developing our techniques on English-to-German spoken language translation. Our minimalist approach to simultaneous translation allows us to easily scale our final evaluation to six more target languages, dramatically improving incremental stability for all of them.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1912.03393](https://arxiv.org/abs/1912.03393) [cs.CL] |
+|           | (or [arXiv:1912.03393v1](https://arxiv.org/abs/1912.03393v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-12-10-4">4. PidginUNMT: Unsupervised Neural Machine Translation from West African Pidgin to English</h2>
+
+Title: [PidginUNMT: Unsupervised Neural Machine Translation from West African Pidgin to English](https://arxiv.org/abs/1912.03444)
+
+Authors: [Kelechi Ogueji](https://arxiv.org/search/cs?searchtype=author&query=Ogueji%2C+K), [Orevaoghene Ahia](https://arxiv.org/search/cs?searchtype=author&query=Ahia%2C+O)
+
+*(Submitted on 7 Dec 2019)*
+
+> Over 800 languages are spoken across West Africa. Despite the obvious diversity among people who speak these languages, one language significantly unifies them all - West African Pidgin English. There are at least 80 million speakers of West African Pidgin English. However, there is no known natural language processing (NLP) work on this language. In this work, we perform the first NLP work on the most popular variant of the language, providing three major contributions. First, the provision of a Pidgin corpus of over 56000 sentences, which is the largest we know of. Secondly, the training of the first ever cross-lingual embedding between Pidgin and English. This aligned embedding will be helpful in the performance of various downstream tasks between English and Pidgin. Thirdly, the training of an Unsupervised Neural Machine Translation model between Pidgin and English which achieves BLEU scores of 7.93 from Pidgin to English, and 5.18 from English to Pidgin. In all, this work greatly reduces the barrier of entry for future NLP works on West African Pidgin English.
+
+| Comments: | Presented at NeurIPS 2019 Workshop on Machine Learning for the Developing World |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:1912.03444](https://arxiv.org/abs/1912.03444) [cs.CL] |
+|           | (or [arXiv:1912.03444v1](https://arxiv.org/abs/1912.03444v1) [cs.CL] for this version) |
+
+
+
+
+
+# 2019-12-09
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-12-09-1">1. Machine Translation Evaluation Meets Community Question Answering</h2>
+
+Title: [Machine Translation Evaluation Meets Community Question Answering](https://arxiv.org/abs/1912.02998)
+
+Authors: [Francisco Guzmán](https://arxiv.org/search/cs?searchtype=author&query=Guzmán%2C+F), [Lluís Màrquez](https://arxiv.org/search/cs?searchtype=author&query=Màrquez%2C+L), [Preslav Nakov](https://arxiv.org/search/cs?searchtype=author&query=Nakov%2C+P)
+
+*(Submitted on 6 Dec 2019)*
+
+> We explore the applicability of machine translation evaluation (MTE) methods to a very different problem: answer ranking in community Question Answering. In particular, we adopt a pairwise neural network (NN) architecture, which incorporates MTE features, as well as rich syntactic and semantic embeddings, and which efficiently models complex non-linear interactions. The evaluation results show state-of-the-art performance, with sizeable contribution from both the MTE features and from the pairwise NN architecture.
+
+| Comments:          | community question answering, machine translation evaluation, pairwise ranking, learning to rank |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**; Information Retrieval (cs.IR); Machine Learning (cs.LG) |
+| MSC classes:       | 68T50                                                        |
+| ACM classes:       | I.2.7                                                        |
+| Journal reference: | Annual meeting of the Association for Computational Linguistics (ACL-2016) |
+| Cite as:           | [arXiv:1912.02998](https://arxiv.org/abs/1912.02998) [cs.CL] |
+|                    | (or [arXiv:1912.02998v1](https://arxiv.org/abs/1912.02998v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-12-09-2">2. Pairwise Neural Machine Translation Evaluation</h2>
+
+Title: [Pairwise Neural Machine Translation Evaluation](https://arxiv.org/abs/1912.03135)
+
+Authors: [Francisco Guzman](https://arxiv.org/search/cs?searchtype=author&query=Guzman%2C+F), [Shafiq Joty](https://arxiv.org/search/cs?searchtype=author&query=Joty%2C+S), [Lluis Marquez](https://arxiv.org/search/cs?searchtype=author&query=Marquez%2C+L), [Preslav Nakov](https://arxiv.org/search/cs?searchtype=author&query=Nakov%2C+P)
+
+*(Submitted on 5 Dec 2019)*
+
+> We present a novel framework for machine translation evaluation using neural networks in a pairwise setting, where the goal is to select the better translation from a pair of hypotheses, given the reference translation. In this framework, lexical, syntactic and semantic information from the reference and the two hypotheses is compacted into relatively small distributed vector representations, and fed into a multi-layer neural network that models the interaction between each of the hypotheses and the reference, as well as between the two hypotheses. These compact representations are in turn based on word and sentence embeddings, which are learned using neural networks. The framework is flexible, allows for efficient learning and classification, and yields correlation with humans that rivals the state of the art.
+
+| Comments:          | machine translation evaluation, machine translation, pairwise ranking, learning to rank. arXiv admin note: substantial text overlap with [arXiv:1710.02095](https://arxiv.org/abs/1710.02095) |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**; Information Retrieval (cs.IR); Machine Learning (cs.LG) |
+| MSC classes:       | 68T50                                                        |
+| ACM classes:       | I.2.7                                                        |
+| Journal reference: | Conference of the Association for Computational Linguistics (ACL'2015) |
+| Cite as:           | [arXiv:1912.03135](https://arxiv.org/abs/1912.03135) [cs.CL] |
+|                    | (or [arXiv:1912.03135v1](https://arxiv.org/abs/1912.03135v1) [cs.CL] for this version) |
+
+
+
+
+
+
+
+
+
 # 2019-12-06
 
 [Return to Index](#Index)
@@ -38,7 +186,6 @@
 
 
 <h2 id="2019-12-06-1">1. Exploration of Neural Machine Translation in Autoformalization of Mathematics in Mizar</h2>
-
 Title: [Exploration of Neural Machine Translation in Autoformalization of Mathematics in Mizar](https://arxiv.org/abs/1912.02636)
 
 Authors: [Qingxiang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Q), [Chad Brown](https://arxiv.org/search/cs?searchtype=author&query=Brown%2C+C), [Cezary Kaliszyk](https://arxiv.org/search/cs?searchtype=author&query=Kaliszyk%2C+C), [Josef Urban](https://arxiv.org/search/cs?searchtype=author&query=Urban%2C+J)
