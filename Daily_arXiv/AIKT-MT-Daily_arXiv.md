@@ -2,6 +2,9 @@
 
 # Index
 
+- [2019-12-11](#2019-12-11)
+  - [1. Cross-Language Aphasia Detection using Optimal Transport Domain Adaptation](#2019-12-11-1)
+  - [2. GeBioToolkit: Automatic Extraction of Gender-Balanced Multilingual Corpus of Wikipedia Biographies](#2019-12-11-2)
 - [2019-12-10](#2019-12-10)
   - [1. Bidirectional Scene Text Recognition with a Single Decoder](#2019-12-10-1)
   - [2. Explaining Sequence-Level Knowledge Distillation as Data-Augmentation for Neural Machine Translation](#2019-12-10-2)
@@ -39,6 +42,53 @@
 
 
 
+# 2019-12-11
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-12-11-1">1. Cross-Language Aphasia Detection using Optimal Transport Domain Adaptation</h2>
+
+Title: [Cross-Language Aphasia Detection using Optimal Transport Domain Adaptation](https://arxiv.org/abs/1912.04370)
+
+Authors: [Aparna Balagopalan](https://arxiv.org/search/eess?searchtype=author&query=Balagopalan%2C+A), [Jekaterina Novikova](https://arxiv.org/search/eess?searchtype=author&query=Novikova%2C+J), [Matthew B. A. McDermott](https://arxiv.org/search/eess?searchtype=author&query=McDermott%2C+M+B+A), [Bret Nestor](https://arxiv.org/search/eess?searchtype=author&query=Nestor%2C+B), [Tristan Naumann](https://arxiv.org/search/eess?searchtype=author&query=Naumann%2C+T), [Marzyeh Ghassemi](https://arxiv.org/search/eess?searchtype=author&query=Ghassemi%2C+M)
+
+*(Submitted on 4 Dec 2019)*
+
+> Multi-language speech datasets are scarce and often have small sample sizes in the medical domain. Robust transfer of linguistic features across languages could improve rates of early diagnosis and therapy for speakers of low-resource languages when detecting health conditions from speech. We utilize out-of-domain, unpaired, single-speaker, healthy speech data for training multiple Optimal Transport (OT) domain adaptation systems. We learn mappings from other languages to English and detect aphasia from linguistic characteristics of speech, and show that OT domain adaptation improves aphasia detection over unilingual baselines for French (6% increased F1) and Mandarin (5% increased F1). Further, we show that adding aphasic data to the domain adaptation system significantly increases performance for both French and Mandarin, increasing the F1 scores further (10% and 8% increase in F1 scores for French and Mandarin, respectively, over unilingual baselines).
+
+| Comments: | Accepted to ML4H at NeurIPS 2019                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Machine Learning (cs.LG); Sound (cs.SD); Machine Learning (stat.ML) |
+| Cite as:  | [arXiv:1912.04370](https://arxiv.org/abs/1912.04370) [eess.AS] |
+|           | (or [arXiv:1912.04370v1](https://arxiv.org/abs/1912.04370v1) [eess.AS] for this version) |
+
+
+
+
+
+<h2 id="2019-12-11-2">2. GeBioToolkit: Automatic Extraction of Gender-Balanced Multilingual Corpus of Wikipedia Biographies</h2>
+
+Title: [GeBioToolkit: Automatic Extraction of Gender-Balanced Multilingual Corpus of Wikipedia Biographies](https://arxiv.org/abs/1912.04778)
+
+Authors: [Marta R. Costa-jussà](https://arxiv.org/search/cs?searchtype=author&query=Costa-jussà%2C+M+R), [Pau Li Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+P+L), [Cristina España-Bonet](https://arxiv.org/search/cs?searchtype=author&query=España-Bonet%2C+C)
+
+*(Submitted on 10 Dec 2019)*
+
+> We introduce GeBioToolkit, a tool for extracting multilingual parallel corpora at sentence level, with document and gender information from Wikipedia biographies. Despite thegender inequalitiespresent in Wikipedia, the toolkit has been designed to extract corpus balanced in gender. While our toolkit is customizable to any number of languages (and different domains), in this work we present a corpus of 2,000 sentences in English, Spanish and Catalan, which has been post-edited by native speakers to become a high-quality dataset for machinetranslation evaluation. While GeBioCorpus aims at being one of the first non-synthetic gender-balanced test datasets, GeBioToolkit aims at paving the path to standardize procedures to produce gender-balanced datasets
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1912.04778](https://arxiv.org/abs/1912.04778) [cs.CL] |
+|           | (or [arXiv:1912.04778v1](https://arxiv.org/abs/1912.04778v1) [cs.CL] for this version) |
+
+
+
+
+
+
+
 # 2019-12-10
 
 [Return to Index](#Index)
@@ -46,7 +96,6 @@
 
 
 <h2 id="2019-12-10-1">1. Bidirectional Scene Text Recognition with a Single Decoder</h2>
-
 Title: [Bidirectional Scene Text Recognition with a Single Decoder](https://arxiv.org/abs/1912.03656)
 
 Authors: [Maurits Bleeker](https://arxiv.org/search/cs?searchtype=author&query=Bleeker%2C+M), [Maarten de Rijke](https://arxiv.org/search/cs?searchtype=author&query=de+Rijke%2C+M)
@@ -66,7 +115,6 @@ Authors: [Maurits Bleeker](https://arxiv.org/search/cs?searchtype=author&query=B
 
 
 <h2 id="2019-12-10-2">2. Explaining Sequence-Level Knowledge Distillation as Data-Augmentation for Neural Machine Translation</h2>
-
 Title: [Explaining Sequence-Level Knowledge Distillation as Data-Augmentation for Neural Machine Translation](https://arxiv.org/abs/1912.03334)
 
 Authors: [Mitchell A. Gordon](https://arxiv.org/search/cs?searchtype=author&query=Gordon%2C+M+A), [Kevin Duh](https://arxiv.org/search/cs?searchtype=author&query=Duh%2C+K)
@@ -85,7 +133,6 @@ Authors: [Mitchell A. Gordon](https://arxiv.org/search/cs?searchtype=author&quer
 
 
 <h2 id="2019-12-10-3">3. Re-Translation Strategies For Long Form, Simultaneous, Spoken Language Translation</h2>
-
 Title: [Re-Translation Strategies For Long Form, Simultaneous, Spoken Language Translation](https://arxiv.org/abs/1912.03393)
 
 Authors: [Naveen Arivazhagan](https://arxiv.org/search/cs?searchtype=author&query=Arivazhagan%2C+N), [Colin Cherry](https://arxiv.org/search/cs?searchtype=author&query=Cherry%2C+C), [Te I](https://arxiv.org/search/cs?searchtype=author&query=I%2C+T), [Wolfgang Macherey](https://arxiv.org/search/cs?searchtype=author&query=Macherey%2C+W), [Pallavi Baljekar](https://arxiv.org/search/cs?searchtype=author&query=Baljekar%2C+P), [George Foster](https://arxiv.org/search/cs?searchtype=author&query=Foster%2C+G)
@@ -104,7 +151,6 @@ Authors: [Naveen Arivazhagan](https://arxiv.org/search/cs?searchtype=author&quer
 
 
 <h2 id="2019-12-10-4">4. PidginUNMT: Unsupervised Neural Machine Translation from West African Pidgin to English</h2>
-
 Title: [PidginUNMT: Unsupervised Neural Machine Translation from West African Pidgin to English](https://arxiv.org/abs/1912.03444)
 
 Authors: [Kelechi Ogueji](https://arxiv.org/search/cs?searchtype=author&query=Ogueji%2C+K), [Orevaoghene Ahia](https://arxiv.org/search/cs?searchtype=author&query=Ahia%2C+O)
@@ -130,7 +176,6 @@ Authors: [Kelechi Ogueji](https://arxiv.org/search/cs?searchtype=author&query=Og
 
 
 <h2 id="2019-12-09-1">1. Machine Translation Evaluation Meets Community Question Answering</h2>
-
 Title: [Machine Translation Evaluation Meets Community Question Answering](https://arxiv.org/abs/1912.02998)
 
 Authors: [Francisco Guzmán](https://arxiv.org/search/cs?searchtype=author&query=Guzmán%2C+F), [Lluís Màrquez](https://arxiv.org/search/cs?searchtype=author&query=Màrquez%2C+L), [Preslav Nakov](https://arxiv.org/search/cs?searchtype=author&query=Nakov%2C+P)
@@ -153,7 +198,6 @@ Authors: [Francisco Guzmán](https://arxiv.org/search/cs?searchtype=author&query
 
 
 <h2 id="2019-12-09-2">2. Pairwise Neural Machine Translation Evaluation</h2>
-
 Title: [Pairwise Neural Machine Translation Evaluation](https://arxiv.org/abs/1912.03135)
 
 Authors: [Francisco Guzman](https://arxiv.org/search/cs?searchtype=author&query=Guzman%2C+F), [Shafiq Joty](https://arxiv.org/search/cs?searchtype=author&query=Joty%2C+S), [Lluis Marquez](https://arxiv.org/search/cs?searchtype=author&query=Marquez%2C+L), [Preslav Nakov](https://arxiv.org/search/cs?searchtype=author&query=Nakov%2C+P)
