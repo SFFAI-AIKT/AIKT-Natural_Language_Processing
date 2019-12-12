@@ -2,6 +2,11 @@
 
 # Index
 
+- [2019-12-12](#2019-12-12)
+  - [1. Lifelong learning for text retrieval and recognition in historical handwritten document collections](#2019-12-12-1)
+  - [2. Unsupervised Neural Dialect Translation with Commonality and Diversity Modeling](#2019-12-12-2)
+  - [3. Automatic Spanish Translation of the SQuAD Dataset for Multilingual Question Answering](#2019-12-12-3)
+  - [4. MetaMT,a MetaLearning Method Leveraging Multiple Domain Data for Low Resource Machine Translation](#2019-12-12-4)
 - [2019-12-11](#2019-12-11)
   - [1. Cross-Language Aphasia Detection using Optimal Transport Domain Adaptation](#2019-12-11-1)
   - [2. GeBioToolkit: Automatic Extraction of Gender-Balanced Multilingual Corpus of Wikipedia Biographies](#2019-12-11-2)
@@ -42,6 +47,91 @@
 
 
 
+# 2019-12-12
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-12-12-1">1. Lifelong learning for text retrieval and recognition in historical handwritten document collections</h2>
+
+Title: [Lifelong learning for text retrieval and recognition in historical handwritten document collections](https://arxiv.org/abs/1912.05156)
+
+Authors: [Lambert Schomaker](https://arxiv.org/search/cs?searchtype=author&query=Schomaker%2C+L)
+
+*(Submitted on 11 Dec 2019)*
+
+> This chapter provides an overview of the problems that need to be dealt with when constructing a lifelong-learning retrieval, recognition and indexing engine for large historical document collections in multiple scripts and languages, the Monk system. This application is highly variable over time, since the continuous labeling by end users changes the concept of what a 'ground truth' constitutes. Although current advances in deep learning provide a huge potential in this application domain, the scale of the problem, i.e., more than 520 hugely diverse books, documents and manuscripts precludes the current meticulous and painstaking human effort which is required in designing and developing successful deep-learning systems. The ball-park principle is introduced, which describes the evolution from the sparsely-labeled stage that can only be addressed by traditional methods or nearest-neighbor methods on embedded vectors of pre-trained neural networks, up to the other end of the spectrum where massive labeling allows reliable training of deep-learning methods. Contents: Introduction, Expectation management, Deep learning, The ball-park principle, Technical realization, Work flow, Quality and quantity of material, Industrialization and scalability, Human effort, Algorithms, Object of recognition, Processing pipeline, Performance,Compositionality, Conclusion.
+
+| Comments: | To appear as chapter in book: Handwritten Historical Document Analysis, Recognition, and Retrieval -- State of the Art and Future Trends, in the book series: Series in Machine Perception and Artificial Intelligence World Scientific, ISSN (print): 1793-0839 Original version deposited at Zenodo: [this https URL](https://zenodo.org/record/2346885#.XfCfsq5ytpg) on December 17, 2018 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:1912.05156](https://arxiv.org/abs/1912.05156) [cs.CV] |
+|           | (or [arXiv:1912.05156v1](https://arxiv.org/abs/1912.05156v1) [cs.CV] for this version) |
+
+
+
+
+
+<h2 id="2019-12-12-2">2. Unsupervised Neural Dialect Translation with Commonality and Diversity Modeling</h2>
+
+Title: [Unsupervised Neural Dialect Translation with Commonality and Diversity Modeling](https://arxiv.org/abs/1912.05134)
+
+Authors: [Yu Wan](https://arxiv.org/search/cs?searchtype=author&query=Wan%2C+Y), [Baosong Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+B), [Derek F. Wong](https://arxiv.org/search/cs?searchtype=author&query=Wong%2C+D+F), [Lidia S. Chao](https://arxiv.org/search/cs?searchtype=author&query=Chao%2C+L+S), [Haihua Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+H), [Ben C.H. Ao](https://arxiv.org/search/cs?searchtype=author&query=Ao%2C+B+C)
+
+*(Submitted on 11 Dec 2019)*
+
+> As a special machine translation task, dialect translation has two main characteristics: 1) lack of parallel training corpus; and 2) possessing similar grammar between two sides of the translation. In this paper, we investigate how to exploit the commonality and diversity between dialects thus to build unsupervised translation models merely accessing to monolingual data. Specifically, we leverage pivot-private embedding, layer coordination, as well as parameter sharing to sufficiently model commonality and diversity among source and target, ranging from lexical, through syntactic, to semantic levels. In order to examine the effectiveness of the proposed models, we collect 20 million monolingual corpus for each of Mandarin and Cantonese, which are official language and the most widely used dialect in China. Experimental results reveal that our methods outperform rule-based simplified and traditional Chinese conversion and conventional unsupervised translation models over 12 BLEU scores.
+
+| Comments: | AAAI 2020                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1912.05134](https://arxiv.org/abs/1912.05134) [cs.CL] |
+|           | (or [arXiv:1912.05134v1](https://arxiv.org/abs/1912.05134v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-12-12-3">3. Automatic Spanish Translation of the SQuAD Dataset for Multilingual Question Answering</h2>
+
+Title: [Automatic Spanish Translation of the SQuAD Dataset for Multilingual Question Answering](https://arxiv.org/abs/1912.05200)
+
+Authors: [Casimiro Pio Carrino](https://arxiv.org/search/cs?searchtype=author&query=Carrino%2C+C+P), [Marta Ruiz Costa-jussà](https://arxiv.org/search/cs?searchtype=author&query=Costa-jussà%2C+M+R), [José Adrián Rodríguez Fonollosa](https://arxiv.org/search/cs?searchtype=author&query=Fonollosa%2C+J+A+R)
+
+*(Submitted on 11 Dec 2019)*
+
+> Recently, multilingual question answering became a crucial research topic, and it is receiving increased interest in the NLP community. However, the unavailability of large-scale datasets makes it challenging to train multilingual QA systems with performance comparable to the English ones. In this work, we develop the Translate Align Retrieve (TAR) method to automatically translate the Stanford Question Answering Dataset (SQuAD) v1.1 to Spanish. We then used this dataset to train Spanish QA systems by fine-tuning a Multilingual-BERT model. Finally, we evaluated our QA models with the recently proposed MLQA and XQuAD benchmarks for cross-lingual Extractive QA. Experimental results show that our models outperform the previous Multilingual-BERT baselines achieving the new state-of-the-art value of 68.1 F1 points on the Spanish MLQA corpus and 77.6 F1 and 61.8 Exact Match points on the Spanish XQuAD corpus. The resulting, synthetically generated SQuAD-es v1.1 corpora, with almost 100% of data contained in the original English version, to the best of our knowledge, is the first large-scale QA training resource for Spanish.
+
+| Comments: | Submitted to LREC 2020                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1912.05200](https://arxiv.org/abs/1912.05200) [cs.CL] |
+|           | (or [arXiv:1912.05200v1](https://arxiv.org/abs/1912.05200v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-12-12-4">4. MetaMT,a MetaLearning Method Leveraging Multiple Domain Data for Low Resource Machine Translation</h2>
+
+Title: [MetaMT,a MetaLearning Method Leveraging Multiple Domain Data for Low Resource Machine Translation](https://arxiv.org/abs/1912.05467)
+
+Authors: [Rumeng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+R), [Xun Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Hong Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+H)
+
+*(Submitted on 11 Dec 2019)*
+
+> Manipulating training data leads to robust neural models for MT.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1912.05467](https://arxiv.org/abs/1912.05467) [cs.CL] |
+|           | (or [arXiv:1912.05467v1](https://arxiv.org/abs/1912.05467v1) [cs.CL] for this version) |
+
+
+
+
+
 # 2019-12-11
 
 [Return to Index](#Index)
@@ -49,7 +139,6 @@
 
 
 <h2 id="2019-12-11-1">1. Cross-Language Aphasia Detection using Optimal Transport Domain Adaptation</h2>
-
 Title: [Cross-Language Aphasia Detection using Optimal Transport Domain Adaptation](https://arxiv.org/abs/1912.04370)
 
 Authors: [Aparna Balagopalan](https://arxiv.org/search/eess?searchtype=author&query=Balagopalan%2C+A), [Jekaterina Novikova](https://arxiv.org/search/eess?searchtype=author&query=Novikova%2C+J), [Matthew B. A. McDermott](https://arxiv.org/search/eess?searchtype=author&query=McDermott%2C+M+B+A), [Bret Nestor](https://arxiv.org/search/eess?searchtype=author&query=Nestor%2C+B), [Tristan Naumann](https://arxiv.org/search/eess?searchtype=author&query=Naumann%2C+T), [Marzyeh Ghassemi](https://arxiv.org/search/eess?searchtype=author&query=Ghassemi%2C+M)
@@ -69,7 +158,6 @@ Authors: [Aparna Balagopalan](https://arxiv.org/search/eess?searchtype=author&qu
 
 
 <h2 id="2019-12-11-2">2. GeBioToolkit: Automatic Extraction of Gender-Balanced Multilingual Corpus of Wikipedia Biographies</h2>
-
 Title: [GeBioToolkit: Automatic Extraction of Gender-Balanced Multilingual Corpus of Wikipedia Biographies](https://arxiv.org/abs/1912.04778)
 
 Authors: [Marta R. Costa-jussà](https://arxiv.org/search/cs?searchtype=author&query=Costa-jussà%2C+M+R), [Pau Li Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+P+L), [Cristina España-Bonet](https://arxiv.org/search/cs?searchtype=author&query=España-Bonet%2C+C)
