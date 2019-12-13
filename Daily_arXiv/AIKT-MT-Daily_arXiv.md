@@ -2,6 +2,8 @@
 
 # Index
 
+- [2019-12-13](#2019-12-13)
+  - [1. Improving Interpretability of Word Embeddings by Generating Definition and Usage](#2019-12-13-1)
 - [2019-12-12](#2019-12-12)
   - [1. Lifelong learning for text retrieval and recognition in historical handwritten document collections](#2019-12-12-1)
   - [2. Unsupervised Neural Dialect Translation with Commonality and Diversity Modeling](#2019-12-12-2)
@@ -47,6 +49,29 @@
 
 
 
+# 2019-12-13
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-12-13-1">1. Improving Interpretability of Word Embeddings by Generating Definition and Usage</h2>
+
+Title: [Improving Interpretability of Word Embeddings by Generating Definition and Usage](https://arxiv.org/abs/1912.05898)
+
+Authors: [Haitong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H), [Yongping Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+Y), [Jiaxin Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+J), [Qingxiao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Q)
+
+*(Submitted on 12 Dec 2019)*
+
+> Word Embeddings, which encode semantic and syntactic features, have achieved success in many natural language processing tasks recently. However, the lexical semantics captured by these embeddings are difficult to interpret due to the dense vector representations. In order to improve the interpretability of word vectors, we explore definition modeling task and propose a novel framework (Semantics-Generator) to generate more reasonable and understandable context-dependent definitions. Moreover, we introduce usage modeling and study whether it is possible to utilize distributed representations to generate example sentences of words. These ways of semantics generation are a more direct and explicit expression of embedding's semantics. Two multi-task learning methods are used to combine usage modeling and definition modeling. To verify our approach, we construct Oxford-2019 dataset, where each entry contains word, context, example sentence and corresponding definition. Experimental results show that Semantics-Generator achieves the state-of-the-art result in definition modeling and the multi-task learning methods are helpful for two tasks to improve the performance.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1912.05898](https://arxiv.org/abs/1912.05898) [cs.CL] |
+|           | (or [arXiv:1912.05898v1](https://arxiv.org/abs/1912.05898v1) [cs.CL] for this version) |
+
+
+
 # 2019-12-12
 
 [Return to Index](#Index)
@@ -54,7 +79,6 @@
 
 
 <h2 id="2019-12-12-1">1. Lifelong learning for text retrieval and recognition in historical handwritten document collections</h2>
-
 Title: [Lifelong learning for text retrieval and recognition in historical handwritten document collections](https://arxiv.org/abs/1912.05156)
 
 Authors: [Lambert Schomaker](https://arxiv.org/search/cs?searchtype=author&query=Schomaker%2C+L)
@@ -74,7 +98,6 @@ Authors: [Lambert Schomaker](https://arxiv.org/search/cs?searchtype=author&query
 
 
 <h2 id="2019-12-12-2">2. Unsupervised Neural Dialect Translation with Commonality and Diversity Modeling</h2>
-
 Title: [Unsupervised Neural Dialect Translation with Commonality and Diversity Modeling](https://arxiv.org/abs/1912.05134)
 
 Authors: [Yu Wan](https://arxiv.org/search/cs?searchtype=author&query=Wan%2C+Y), [Baosong Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+B), [Derek F. Wong](https://arxiv.org/search/cs?searchtype=author&query=Wong%2C+D+F), [Lidia S. Chao](https://arxiv.org/search/cs?searchtype=author&query=Chao%2C+L+S), [Haihua Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+H), [Ben C.H. Ao](https://arxiv.org/search/cs?searchtype=author&query=Ao%2C+B+C)
@@ -94,7 +117,6 @@ Authors: [Yu Wan](https://arxiv.org/search/cs?searchtype=author&query=Wan%2C+Y),
 
 
 <h2 id="2019-12-12-3">3. Automatic Spanish Translation of the SQuAD Dataset for Multilingual Question Answering</h2>
-
 Title: [Automatic Spanish Translation of the SQuAD Dataset for Multilingual Question Answering](https://arxiv.org/abs/1912.05200)
 
 Authors: [Casimiro Pio Carrino](https://arxiv.org/search/cs?searchtype=author&query=Carrino%2C+C+P), [Marta Ruiz Costa-jussà](https://arxiv.org/search/cs?searchtype=author&query=Costa-jussà%2C+M+R), [José Adrián Rodríguez Fonollosa](https://arxiv.org/search/cs?searchtype=author&query=Fonollosa%2C+J+A+R)
@@ -114,7 +136,6 @@ Authors: [Casimiro Pio Carrino](https://arxiv.org/search/cs?searchtype=author&qu
 
 
 <h2 id="2019-12-12-4">4. MetaMT,a MetaLearning Method Leveraging Multiple Domain Data for Low Resource Machine Translation</h2>
-
 Title: [MetaMT,a MetaLearning Method Leveraging Multiple Domain Data for Low Resource Machine Translation](https://arxiv.org/abs/1912.05467)
 
 Authors: [Rumeng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+R), [Xun Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Hong Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+H)
