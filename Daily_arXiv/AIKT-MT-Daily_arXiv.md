@@ -2,6 +2,8 @@
 
 # Index
 
+- [2019-12-16](#2019-12-16)
+  - [1. Document Sub-structure in Neural Machine Translation](#2019-12-16-1)
 - [2019-12-13](#2019-12-13)
   - [1. Improving Interpretability of Word Embeddings by Generating Definition and Usage](#2019-12-13-1)
 - [2019-12-12](#2019-12-12)
@@ -49,6 +51,29 @@
 
 
 
+# 2019-12-16
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-12-16-1">1. Document Sub-structure in Neural Machine Translation</h2>
+
+Title: [Document Sub-structure in Neural Machine Translation](https://arxiv.org/abs/1912.06598)
+
+Author: [Radina Dobreva](https://arxiv.org/search/cs?searchtype=author&query=Dobreva%2C+R), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J), [Rachel Bawden](https://arxiv.org/search/cs?searchtype=author&query=Bawden%2C+R)
+
+*(Submitted on 13 Dec 2019)*
+
+> Current approaches to machine translation (MT) either translate sentences in isolation, disregarding the context they appear in, or model context on the level of the full document, without a notion of any internal structure the document may have. In this work we consider the fact that documents are rarely homogeneous blocks of text, but rather consist of parts covering different topics. Some documents, e.g. biographies and encyclopedia entries have highly predictable, regular structures in which sections are characterised by different topics. We draw inspiration from Louis and Webber (2014) who use this information to improve MT and transfer their proposal into the framework of neural MT. We compare two different methods of including information about the topic of the section within which each sentence is found: one using side constraints and the other using a cache-based model. We create and release the data on which we run our experiments -- parallel corpora for three language pairs (Chinese-English, French-English, Bulgarian-English) from Wikipedia biographies, preserving the boundaries of sections within the articles.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1912.06598](https://arxiv.org/abs/1912.06598) [cs.CL] |
+|           | (or [arXiv:1912.06598v1](https://arxiv.org/abs/1912.06598v1) [cs.CL] for this version) |
+
+
+
 # 2019-12-13
 
 [Return to Index](#Index)
@@ -56,7 +81,6 @@
 
 
 <h2 id="2019-12-13-1">1. Improving Interpretability of Word Embeddings by Generating Definition and Usage</h2>
-
 Title: [Improving Interpretability of Word Embeddings by Generating Definition and Usage](https://arxiv.org/abs/1912.05898)
 
 Authors: [Haitong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H), [Yongping Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+Y), [Jiaxin Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+J), [Qingxiao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Q)
