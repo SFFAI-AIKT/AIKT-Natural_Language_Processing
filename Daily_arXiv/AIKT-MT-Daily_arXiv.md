@@ -2,6 +2,11 @@
 
 # Index
 
+- [2019-12-18](#2019-12-18)
+  - [1. Cross-Lingual Ability of Multilingual BERT: An Empirical Study](#2019-12-18)
+- [2019-12-17](#2019-12-17)
+  - [1. Iterative Dual Domain Adaptation for Neural Machine Translation](#2019-12-17-1)
+  - [2. Synchronous Speech Recognition and Speech-to-Text Translation with Interactive Decoding](#2019-12-17-2)
 - [2019-12-16](#2019-12-16)
   - [1. Document Sub-structure in Neural Machine Translation](#2019-12-16-1)
 - [2019-12-13](#2019-12-13)
@@ -51,6 +56,79 @@
 
 
 
+# 2019-12-18
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-12-18-1">1. Cross-Lingual Ability of Multilingual BERT: An Empirical Study</h2>
+
+Title: [Cross-Lingual Ability of Multilingual BERT: An Empirical Study](https://arxiv.org/abs/1912.07840)
+
+Authors: [Karthikeyan K](https://arxiv.org/search/cs?searchtype=author&query=K%2C+K), [Zihan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Stephen Mayhew](https://arxiv.org/search/cs?searchtype=author&query=Mayhew%2C+S), [Dan Roth](https://arxiv.org/search/cs?searchtype=author&query=Roth%2C+D)
+
+*(Submitted on 17 Dec 2019)*
+
+> Recent work has exhibited the surprising cross-lingual abilities of multilingual BERT (M-BERT) -- surprising since it is trained without any cross-lingual objective and with no aligned data. In this work, we provide a comprehensive study of the contribution of different components in M-BERT to its cross-lingual ability. We study the impact of linguistic properties of the languages, the architecture of the model, and the learning objectives. The experimental study is done in the context of three typologically different languages -- Spanish, Hindi, and Russian -- and using two conceptually different NLP tasks, textual entailment and named entity recognition. Among our key conclusions is the fact that the lexical overlap between languages plays a negligible role in the cross-lingual success, while the depth of the network is an integral part of it.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1912.07840](https://arxiv.org/abs/1912.07840) [cs.CL] |
+|           | (or [arXiv:1912.07840v1](https://arxiv.org/abs/1912.07840v1) [cs.CL] for this version) |
+
+
+
+
+
+# 2019-12-17
+
+[Return to Index](#Index)
+
+
+
+
+
+<h2 id="2019-12-17-1">1. Iterative Dual Domain Adaptation for Neural Machine Translation</h2>
+
+Title: [Iterative Dual Domain Adaptation for Neural Machine Translation](https://arxiv.org/abs/1912.07239)
+
+Authors: [Jiali Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+J), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Jinsong Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+J), [Yubin Ge](https://arxiv.org/search/cs?searchtype=author&query=Ge%2C+Y), [Yaojie Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+Y), [Yongjing Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+Y), [Jiebo Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+J)
+
+*(Submitted on 16 Dec 2019)*
+
+> Previous studies on the domain adaptation for neural machine translation (NMT) mainly focus on the one-pass transferring out-of-domain translation knowledge to in-domain NMT model. In this paper, we argue that such a strategy fails to fully extract the domain-shared translation knowledge, and repeatedly utilizing corpora of different domains can lead to better distillation of domain-shared translation knowledge. To this end, we propose an iterative dual domain adaptation framework for NMT. Specifically, we first pre-train in-domain and out-of-domain NMT models using their own training corpora respectively, and then iteratively perform bidirectional translation knowledge transfer (from in-domain to out-of-domain and then vice versa) based on knowledge distillation until the in-domain NMT model convergences. Furthermore, we extend the proposed framework to the scenario of multiple out-of-domain training corpora, where the above-mentioned transfer is performed sequentially between the in-domain and each out-of-domain NMT models in the ascending order of their domain similarities. Empirical results on Chinese-English and English-German translation tasks demonstrate the effectiveness of our framework.
+
+| Comments: | EMNLP2019                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1912.07239](https://arxiv.org/abs/1912.07239) [cs.CL] |
+|           | (or [arXiv:1912.07239v1](https://arxiv.org/abs/1912.07239v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-12-17-2">2. Synchronous Speech Recognition and Speech-to-Text Translation with Interactive Decoding</h2>
+
+Title: [Synchronous Speech Recognition and Speech-to-Text Translation with Interactive Decoding](https://arxiv.org/abs/1912.07240)
+
+Authors: [Yuchen Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Jiajun Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Hao Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+H), [Long Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+L), [Zhongjun He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+Z), [Hua Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+H), [Haifeng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H), [Chengqing Zong](https://arxiv.org/search/cs?searchtype=author&query=Zong%2C+C)
+
+*(Submitted on 16 Dec 2019)*
+
+> Speech-to-text translation (ST), which translates source language speech into target language text, has attracted intensive attention in recent years. Compared to the traditional pipeline system, the end-to-end ST model has potential benefits of lower latency, smaller model size, and less error propagation. However, it is notoriously difficult to implement such a model without transcriptions as intermediate. Existing works generally apply multi-task learning to improve translation quality by jointly training end-to-end ST along with automatic speech recognition (ASR). However, different tasks in this method cannot utilize information from each other, which limits the improvement. Other works propose a two-stage model where the second model can use the hidden state from the first one, but its cascade manner greatly affects the efficiency of training and inference process. In this paper, we propose a novel interactive attention mechanism which enables ASR and ST to perform synchronously and interactively in a single model. Specifically, the generation of transcriptions and translations not only relies on its previous outputs but also the outputs predicted in the other task. Experiments on TED speech translation corpora have shown that our proposed model can outperform strong baselines on the quality of speech translation and achieve better speech recognition performances as well.
+
+| Comments: | Accepted by AAAI 2020                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:1912.07240](https://arxiv.org/abs/1912.07240) [cs.CL] |
+|           | (or [arXiv:1912.07240v1](https://arxiv.org/abs/1912.07240v1) [cs.CL] for this version) |
+
+
+
+
+
 # 2019-12-16
 
 [Return to Index](#Index)
@@ -58,7 +136,6 @@
 
 
 <h2 id="2019-12-16-1">1. Document Sub-structure in Neural Machine Translation</h2>
-
 Title: [Document Sub-structure in Neural Machine Translation](https://arxiv.org/abs/1912.06598)
 
 Author: [Radina Dobreva](https://arxiv.org/search/cs?searchtype=author&query=Dobreva%2C+R), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J), [Rachel Bawden](https://arxiv.org/search/cs?searchtype=author&query=Bawden%2C+R)
