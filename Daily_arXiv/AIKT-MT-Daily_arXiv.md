@@ -2,6 +2,9 @@
 
 # Index
 
+- [2019-12-19](#2019-12-19)
+  - [1. MALA: Cross-Domain Dialogue Generation with Action Learning](#2019-12-19-1)
+  - [2. A Survey on Document-level Machine Translation: Methods and Evaluation](#2019-12-19-2)
 - [2019-12-18](#2019-12-18)
   - [1. Cross-Lingual Ability of Multilingual BERT: An Empirical Study](#2019-12-18)
 - [2019-12-17](#2019-12-17)
@@ -56,6 +59,50 @@
 
 
 
+# 2019-12-19
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-12-19-1">1. MALA: Cross-Domain Dialogue Generation with Action Learning</h2>
+
+Title:  [MALA: Cross-Domain Dialogue Generation with Action Learning](https://arxiv.org/abs/1912.08442)
+
+Authors: [Xinting Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+X), [Jianzhong Qi](https://arxiv.org/search/cs?searchtype=author&query=Qi%2C+J), [Yu Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+Y), [Rui Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+R)
+
+*(Submitted on 18 Dec 2019)*
+
+> Response generation for task-oriented dialogues involves two basic components: dialogue planning and surface realization. These two components, however, have a discrepancy in their objectives, i.e., task completion and language quality. To deal with such discrepancy, conditioned response generation has been introduced where the generation process is factorized into action decision and language generation via explicit action representations. To obtain action representations, recent studies learn latent actions in an unsupervised manner based on the utterance lexical similarity. Such an action learning approach is prone to diversities of language surfaces, which may impinge task completion and language quality. To address this issue, we propose multi-stage adaptive latent action learning (MALA) that learns semantic latent actions by distinguishing the effects of utterances on dialogue progress. We model the utterance effect using the transition of dialogue states caused by the utterance and develop a semantic similarity measurement that estimates whether utterances have similar effects. For learning semantic actions on domains without dialogue states, MsALA extends the semantic similarity measurement across domains progressively, i.e., from aligning shared actions to learning domain-specific actions. Experiments using multi-domain datasets, SMD and MultiWOZ, show that our proposed model achieves consistent improvements over the baselines models in terms of both task completion and language quality.
+
+| Comments: | 9 pages, 3 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:1912.08442](https://arxiv.org/abs/1912.08442) [cs.CL] |
+|           | (or [arXiv:1912.08442v1](https://arxiv.org/abs/1912.08442v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-12-19-2">2. A Survey on Document-level Machine Translation: Methods and Evaluation</h2>
+
+Title:  [A Survey on Document-level Machine Translation: Methods and Evaluation](https://arxiv.org/abs/1912.08494)
+
+Authors: [Sameen Maruf](https://arxiv.org/search/cs?searchtype=author&query=Maruf%2C+S), [Fahimeh Saleh](https://arxiv.org/search/cs?searchtype=author&query=Saleh%2C+F), [Gholamreza Haffari](https://arxiv.org/search/cs?searchtype=author&query=Haffari%2C+G)
+
+*(Submitted on 18 Dec 2019)*
+
+> Machine translation (MT) is an important task in natural language processing (NLP) as it automates the translation process and reduces the reliance on human translators. With the advent of neural networks, the translation quality surpasses that of the translations obtained using statistical techniques. Up until three years ago, all neural translation models translated sentences independently, without incorporating any extra-sentential information. The aim of this paper is to highlight the major works that have been undertaken in the space of document-level machine translation before and after the neural revolution so that researchers can recognise where we started from and which direction we are heading in. When talking about the literature in statistical machine translation (SMT), we focus on works which have tried to improve the translation of specific discourse phenomena, while in neural machine translation (NMT), we focus on works which use the wider context explicitly. In addition to this, we also cover the evaluation strategies that have been introduced to account for the improvements in this domain.
+
+| Comments: | This article is under-review at an international journal. This arXiv version has been made available to solicit feedback |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1912.08494](https://arxiv.org/abs/1912.08494) [cs.CL] |
+|           | (or [arXiv:1912.08494v1](https://arxiv.org/abs/1912.08494v1) [cs.CL] for this version) |
+
+
+
 # 2019-12-18
 
 [Return to Index](#Index)
@@ -63,7 +110,6 @@
 
 
 <h2 id="2019-12-18-1">1. Cross-Lingual Ability of Multilingual BERT: An Empirical Study</h2>
-
 Title: [Cross-Lingual Ability of Multilingual BERT: An Empirical Study](https://arxiv.org/abs/1912.07840)
 
 Authors: [Karthikeyan K](https://arxiv.org/search/cs?searchtype=author&query=K%2C+K), [Zihan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Stephen Mayhew](https://arxiv.org/search/cs?searchtype=author&query=Mayhew%2C+S), [Dan Roth](https://arxiv.org/search/cs?searchtype=author&query=Roth%2C+D)
@@ -90,7 +136,6 @@ Authors: [Karthikeyan K](https://arxiv.org/search/cs?searchtype=author&query=K%2
 
 
 <h2 id="2019-12-17-1">1. Iterative Dual Domain Adaptation for Neural Machine Translation</h2>
-
 Title: [Iterative Dual Domain Adaptation for Neural Machine Translation](https://arxiv.org/abs/1912.07239)
 
 Authors: [Jiali Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+J), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Jinsong Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+J), [Yubin Ge](https://arxiv.org/search/cs?searchtype=author&query=Ge%2C+Y), [Yaojie Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+Y), [Yongjing Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+Y), [Jiebo Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+J)
@@ -110,7 +155,6 @@ Authors: [Jiali Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2
 
 
 <h2 id="2019-12-17-2">2. Synchronous Speech Recognition and Speech-to-Text Translation with Interactive Decoding</h2>
-
 Title: [Synchronous Speech Recognition and Speech-to-Text Translation with Interactive Decoding](https://arxiv.org/abs/1912.07240)
 
 Authors: [Yuchen Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Jiajun Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Hao Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+H), [Long Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+L), [Zhongjun He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+Z), [Hua Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+H), [Haifeng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H), [Chengqing Zong](https://arxiv.org/search/cs?searchtype=author&query=Zong%2C+C)
