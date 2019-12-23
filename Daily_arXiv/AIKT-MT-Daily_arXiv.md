@@ -2,6 +2,8 @@
 
 # Index
 
+- [2019-12-23](#2019-12-23)
+  - [1. Hierarchical Character Embeddings: Learning Phonological and Semantic Representations in Languages of Logographic Origin using Recursive Neural Networks](#2019-12-23-1)
 - [2019-12-19](#2019-12-19)
   - [1. MALA: Cross-Domain Dialogue Generation with Action Learning](#2019-12-19-1)
   - [2. A Survey on Document-level Machine Translation: Methods and Evaluation](#2019-12-19-2)
@@ -59,6 +61,33 @@
 
 
 
+# 2019-12-23
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-12-23-1">1. Hierarchical Character Embeddings: Learning Phonological and Semantic Representations in Languages of Logographic Origin using Recursive Neural Networks</h2>
+
+Title: [Hierarchical Character Embeddings: Learning Phonological and Semantic Representations in Languages of Logographic Origin using Recursive Neural Networks](https://arxiv.org/abs/1912.09913)
+
+Authors: [Minh Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+M), [Gia H. Ngo](https://arxiv.org/search/cs?searchtype=author&query=Ngo%2C+G+H), [Nancy F. Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+N+F)
+
+*(Submitted on 20 Dec 2019)*
+
+> Logographs (Chinese characters) have recursive structures (i.e. hierarchies of sub-units in logographs) that contain phonological and semantic information, as developmental psychology literature suggests that native speakers leverage on the structures to learn how to read. Exploiting these structures could potentially lead to better embeddings that can benefit many downstream tasks. We propose building hierarchical logograph (character) embeddings from logograph recursive structures using treeLSTM, a recursive neural network. Using recursive neural network imposes a prior on the mapping from logographs to embeddings since the network must read in the sub-units in logographs according to the order specified by the recursive structures. Based on human behavior in language learning and reading, we hypothesize that modeling logographs' structures using recursive neural network should be beneficial. To verify this claim, we consider two tasks (1) predicting logographs' Cantonese pronunciation from logographic structures and (2) language modeling. Empirical results show that the proposed hierarchical embeddings outperform baseline approaches. Diagnostic analysis suggests that hierarchical embeddings constructed using treeLSTM is less sensitive to distractors, thus is more robust, especially on complex logographs.
+
+| Comments: | Accepted by IEEE Transactions on Audio, Speech and Language Processing. Copyright 2019 IEEE |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| DOI:      | [10.1109/TASLP.2019.2955246](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.1109%2FTASLP.2019.2955246&v=0584ccbf) |
+| Cite as:  | [arXiv:1912.09913](https://arxiv.org/abs/1912.09913) [cs.CL] |
+|           | (or [arXiv:1912.09913v1](https://arxiv.org/abs/1912.09913v1) [cs.CL] for this version) |
+
+
+
+
+
 # 2019-12-19
 
 [Return to Index](#Index)
@@ -66,7 +95,6 @@
 
 
 <h2 id="2019-12-19-1">1. MALA: Cross-Domain Dialogue Generation with Action Learning</h2>
-
 Title:  [MALA: Cross-Domain Dialogue Generation with Action Learning](https://arxiv.org/abs/1912.08442)
 
 Authors: [Xinting Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+X), [Jianzhong Qi](https://arxiv.org/search/cs?searchtype=author&query=Qi%2C+J), [Yu Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+Y), [Rui Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+R)
@@ -86,7 +114,6 @@ Authors: [Xinting Huang](https://arxiv.org/search/cs?searchtype=author&query=Hua
 
 
 <h2 id="2019-12-19-2">2. A Survey on Document-level Machine Translation: Methods and Evaluation</h2>
-
 Title:  [A Survey on Document-level Machine Translation: Methods and Evaluation](https://arxiv.org/abs/1912.08494)
 
 Authors: [Sameen Maruf](https://arxiv.org/search/cs?searchtype=author&query=Maruf%2C+S), [Fahimeh Saleh](https://arxiv.org/search/cs?searchtype=author&query=Saleh%2C+F), [Gholamreza Haffari](https://arxiv.org/search/cs?searchtype=author&query=Haffari%2C+G)
