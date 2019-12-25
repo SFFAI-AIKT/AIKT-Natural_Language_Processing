@@ -2,6 +2,12 @@
 
 # Index
 
+- [2019-12-24](#2019-12-24)
+  - [1. Machine Translation with Cross-lingual Word Embeddings](#2019-12-24-1)
+  - [2. Two Way Adversarial Unsupervised Word Translation](#2019-12-24-2)
+  - [3. A Comparison of Architectures and Pretraining Methods for Contextualized Multilingual Word Embeddings](#2019-12-24-3)
+  - [4. Tag-less Back-Translation](#2019-12-24-4)
+  - [5. Siamese Networks for Large-Scale Author Identification](#2019-12-24-5)
 - [2019-12-23](#2019-12-23)
   - [1. Hierarchical Character Embeddings: Learning Phonological and Semantic Representations in Languages of Logographic Origin using Recursive Neural Networks](#2019-12-23-1)
 - [2019-12-19](#2019-12-19)
@@ -61,6 +67,112 @@
 
 
 
+# 2019-12-24
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-12-24-1">1. Machine Translation with Cross-lingual Word Embeddings</h2>
+
+Title: [Machine Translation with Cross-lingual Word Embeddings](https://arxiv.org/abs/1912.10167)
+
+Authors: [Marco Berlot](https://arxiv.org/search/cs?searchtype=author&query=Berlot%2C+M), [Evan Kaplan](https://arxiv.org/search/cs?searchtype=author&query=Kaplan%2C+E)
+
+*(Submitted on 10 Dec 2019)*
+
+> Learning word embeddings using distributional information is a task that has been studied by many researchers, and a lot of studies are reported in the literature. On the contrary, less studies were done for the case of multiple languages. The idea is to focus on a single representation for a pair of languages such that semantically similar words are closer to one another in the induced representation irrespective of the language. In this way, when data are missing for a particular language, classifiers from another language can be used.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1912.10167](https://arxiv.org/abs/1912.10167) [cs.CL] |
+|           | (or [arXiv:1912.10167v1](https://arxiv.org/abs/1912.10167v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-12-24-2">2. Two Way Adversarial Unsupervised Word Translation</h2>
+
+Title: [Two Way Adversarial Unsupervised Word Translation](https://arxiv.org/abs/1912.10168)
+
+Authors: [Blaine Cole](https://arxiv.org/search/cs?searchtype=author&query=Cole%2C+B)
+
+*(Submitted on 12 Dec 2019)*
+
+> Word translation is a problem in machine translation that seeks to build models that recover word level correspondence between languages. Recent approaches to this problem have shown that word translation models can learned with very small seeding dictionaries, and even without any starting supervision. In this paper we propose a method to jointly find translations between a pair of languages. Not only does our method learn translations in both directions but it improves accuracy of those translations over past methods.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1912.10168](https://arxiv.org/abs/1912.10168) [cs.CL] |
+|           | (or [arXiv:1912.10168v1](https://arxiv.org/abs/1912.10168v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-12-24-3">3. A Comparison of Architectures and Pretraining Methods for Contextualized Multilingual Word Embeddings</h2>
+
+Title: [A Comparison of Architectures and Pretraining Methods for Contextualized Multilingual Word Embeddings](https://arxiv.org/abs/1912.10169)
+
+Authors: [Niels van der Heijden](https://arxiv.org/search/cs?searchtype=author&query=van+der+Heijden%2C+N), [Samira Abnar](https://arxiv.org/search/cs?searchtype=author&query=Abnar%2C+S), [Ekaterina Shutova](https://arxiv.org/search/cs?searchtype=author&query=Shutova%2C+E)
+
+*(Submitted on 15 Dec 2019)*
+
+> The lack of annotated data in many languages is a well-known challenge within the field of multilingual natural language processing (NLP). Therefore, many recent studies focus on zero-shot transfer learning and joint training across languages to overcome data scarcity for low-resource languages. In this work we (i) perform a comprehensive comparison of state-ofthe-art multilingual word and sentence encoders on the tasks of named entity recognition (NER) and part of speech (POS) tagging; and (ii) propose a new method for creating multilingual contextualized word embeddings, compare it to multiple baselines and show that it performs at or above state-of-theart level in zero-shot transfer settings. Finally, we show that our method allows for better knowledge sharing across languages in a joint training setting.
+
+| Comments: | 7 pages, 6 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1912.10169](https://arxiv.org/abs/1912.10169) [cs.CL] |
+|           | (or [arXiv:1912.10169v1](https://arxiv.org/abs/1912.10169v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-12-24-4">4. Tag-less Back-Translation</h2>
+
+Title: [Tag-less Back-Translation](https://arxiv.org/abs/1912.10514)
+
+Authors: [Idris Abdulmumin](https://arxiv.org/search/cs?searchtype=author&query=Abdulmumin%2C+I), [Bashir Shehu Galadanci](https://arxiv.org/search/cs?searchtype=author&query=Galadanci%2C+B+S), [Aliyu Garba](https://arxiv.org/search/cs?searchtype=author&query=Garba%2C+A)
+
+*(Submitted on 22 Dec 2019)*
+
+> An effective method to generate a large number of parallel sentences for training improved neural machine translation (NMT) systems is the use of back-translations of the target-side monolingual data. Tagging, or using gates, has been used to enable translation models to distinguish between synthetic and natural data. This improves standard back-translation and also enables the use of iterative back-translation on language pairs that underperformed using standard back-translation. This work presents a simplified approach of differentiating between the two data using pretraining and finetuning. The approach - tag-less back-translation - trains the model on the synthetic data and finetunes it on the natural data. Preliminary experiments have shown the approach to continuously outperform the tagging approach on low resource English-Vietnamese neural machine translation. While the need for tagging (noising) the dataset has been removed, the approach outperformed the tagged back-translation approach by an average of 0.4 BLEU.
+
+| Comments: | Submitted to 2020 International Conference on Computer and Information Sciences, 5 pages, 2 figures |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:1912.10514](https://arxiv.org/abs/1912.10514) [cs.CL] |
+|           | (or [arXiv:1912.10514v1](https://arxiv.org/abs/1912.10514v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-12-24-5">5. Siamese Networks for Large-Scale Author Identification</h2>
+
+Title: [Siamese Networks for Large-Scale Author Identification](https://arxiv.org/abs/1912.10616)
+
+Authors: [Chakaveh Saedi](https://arxiv.org/search/cs?searchtype=author&query=Saedi%2C+C), [Mark Dras](https://arxiv.org/search/cs?searchtype=author&query=Dras%2C+M)
+
+*(Submitted on 23 Dec 2019)*
+
+> Authorship attribution is the process of identifying the author of a text. Classification-based approaches work well for small numbers of candidate authors, but only similarity-based methods are applicable for larger numbers of authors or for authors beyond the training set. While deep learning methods have been applied to classification-based approaches, current similarity-based methods only embody static notions of similarity. Siamese networks have been used to develop learned notions of similarity in one-shot image tasks, and also for tasks of semantic relatedness in NLP. We examine their application to the stylistic task of authorship attribution, and show that they can substantially outperform both classification- and existing similarity-based approaches on datasets with large numbers of authors.
+
+| Comments: | 15 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1912.10616](https://arxiv.org/abs/1912.10616) [cs.CL] |
+|           | (or [arXiv:1912.10616v1](https://arxiv.org/abs/1912.10616v1) [cs.CL] for this version) |
+
+
+
+
+
+
+
 # 2019-12-23
 
 [Return to Index](#Index)
@@ -68,7 +180,6 @@
 
 
 <h2 id="2019-12-23-1">1. Hierarchical Character Embeddings: Learning Phonological and Semantic Representations in Languages of Logographic Origin using Recursive Neural Networks</h2>
-
 Title: [Hierarchical Character Embeddings: Learning Phonological and Semantic Representations in Languages of Logographic Origin using Recursive Neural Networks](https://arxiv.org/abs/1912.09913)
 
 Authors: [Minh Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+M), [Gia H. Ngo](https://arxiv.org/search/cs?searchtype=author&query=Ngo%2C+G+H), [Nancy F. Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+N+F)
