@@ -2,6 +2,11 @@
 
 # Index
 
+- [2019-12-30](#2019-12-30)
+  - [1. A Study of Multilingual Neural Machine Translation](#2019-12-30-1)
+  - [2. Coursera Corpus Mining and Multistage Fine-Tuning for Improving Lectures Translation](#2019-12-30-2)
+  - [3. Explicit Sentence Compression for Neural Machine Translation](#2019-12-30-3)
+  - [4. Visual Agreement Regularized Training for Multi-Modal Machine Translation](#2019-12-30-4)
 - [2019-12-24](#2019-12-24)
   - [1. Machine Translation with Cross-lingual Word Embeddings](#2019-12-24-1)
   - [2. Two Way Adversarial Unsupervised Word Translation](#2019-12-24-2)
@@ -67,6 +72,95 @@
 
 
 
+# 2019-12-30
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2019-12-30-1">1. A Study of Multilingual Neural Machine Translation</h2>
+
+Title: [A Study of Multilingual Neural Machine Translation](https://arxiv.org/abs/1912.11625)
+
+Authors: [Xu Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+X), [Yichong Leng](https://arxiv.org/search/cs?searchtype=author&query=Leng%2C+Y), [Jiale Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J), [Yi Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+Y), [Tao Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+T), [Tie-Yan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T)
+
+*(Submitted on 25 Dec 2019)*
+
+> Multilingual neural machine translation (NMT) has recently been investigated from different aspects (e.g., pivot translation, zero-shot translation, fine-tuning, or training from scratch) and in different settings (e.g., rich resource and low resource, one-to-many, and many-to-one translation). This paper concentrates on a deep understanding of multilingual NMT and conducts a comprehensive study on a multilingual dataset with more than 20 languages. Our results show that (1) low-resource language pairs benefit much from multilingual training, while rich-resource language pairs may get hurt under limited model capacity and training with similar languages benefits more than dissimilar languages; (2) fine-tuning performs better than training from scratch in the one-to-many setting while training from scratch performs better in the many-to-one setting; (3) the bottom layers of the encoder and top layers of the decoder capture more language-specific information, and just fine-tuning these parts can achieve good accuracy for low-resource language pairs; (4) direct translation is better than pivot translation when the source language is similar to the target language (e.g., in the same language branch), even when the size of direct training data is much smaller; (5) given a fixed training data budget, it is better to introduce more languages into multilingual training for zero-shot translation.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:1912.11625](https://arxiv.org/abs/1912.11625) [cs.CL] |
+|           | (or [arXiv:1912.11625v1](https://arxiv.org/abs/1912.11625v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-12-30-2">2. Coursera Corpus Mining and Multistage Fine-Tuning for Improving Lectures Translation</h2>
+
+Title: [Coursera Corpus Mining and Multistage Fine-Tuning for Improving Lectures Translation](https://arxiv.org/abs/1912.11739)
+
+Authors: [Haiyue Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+H), [Raj Dabre](https://arxiv.org/search/cs?searchtype=author&query=Dabre%2C+R), [Atsushi Fujita](https://arxiv.org/search/cs?searchtype=author&query=Fujita%2C+A), [Sadao Kurohashi](https://arxiv.org/search/cs?searchtype=author&query=Kurohashi%2C+S)
+
+*(Submitted on 26 Dec 2019)*
+
+> Lectures translation is a case of spoken language translation and there is a lack of publicly available parallel corpora for this purpose. To address this, we examine a language independent framework for parallel corpus mining which is a quick and effective way to mine a parallel corpus from publicly available lectures at Coursera. Our approach determines sentence alignments, relying on machine translation and cosine similarity over continuous-space sentence representations. We also show how to use the resulting corpora in a multistage fine-tuning based domain adaptation for high-quality lectures translation. For Japanese--English lectures translation, we extracted parallel data of approximately 40,000 lines and created development and test sets through manual filtering for benchmarking translation performance. We demonstrate that the mined corpus greatly enhances the quality of translation when used in conjunction with out-of-domain parallel corpora via multistage training. This paper also suggests some guidelines to gather and clean corpora, mine parallel sentences, address noise in the mined data, and create high-quality evaluation splits. For the sake of reproducibility, we will release our code for parallel data creation.
+
+| Comments: | 10 pages, 1 figure, 9 tables, under review by LREC2020       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:1912.11739](https://arxiv.org/abs/1912.11739) [cs.CL] |
+|           | (or [arXiv:1912.11739v1](https://arxiv.org/abs/1912.11739v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-12-30-3">3. Explicit Sentence Compression for Neural Machine Translation</h2>
+
+Title: [Explicit Sentence Compression for Neural Machine Translation](https://arxiv.org/abs/1912.11980)
+
+Authors: [Zuchao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Rui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+R), [Kehai Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+K), [Masao Utiyama](https://arxiv.org/search/cs?searchtype=author&query=Utiyama%2C+M), [Eiichiro Sumita](https://arxiv.org/search/cs?searchtype=author&query=Sumita%2C+E), [Zhuosheng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Hai Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+H)
+
+*(Submitted on 27 Dec 2019)*
+
+> State-of-the-art Transformer-based neural machine translation (NMT) systems still follow a standard encoder-decoder framework, in which source sentence representation can be well done by an encoder with self-attention mechanism. Though Transformer-based encoder may effectively capture general information in its resulting source sentence representation, the backbone information, which stands for the gist of a sentence, is not specifically focused on. In this paper, we propose an explicit sentence compression method to enhance the source sentence representation for NMT. In practice, an explicit sentence compression goal used to learn the backbone information in a sentence. We propose three ways, including backbone source-side fusion, target-side fusion, and both-side fusion, to integrate the compressed sentence into NMT. Our empirical tests on the WMT English-to-French and English-to-German translation tasks show that the proposed sentence compression method significantly improves the translation performances over strong baselines.
+
+| Comments: | Working in progress, part of this work is accepted in AAAI-2020 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:1912.11980](https://arxiv.org/abs/1912.11980) [cs.CL] |
+|           | (or [arXiv:1912.11980v1](https://arxiv.org/abs/1912.11980v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2019-12-30-4">4. Visual Agreement Regularized Training for Multi-Modal Machine Translation</h2>
+
+Title: [Visual Agreement Regularized Training for Multi-Modal Machine Translation](https://arxiv.org/abs/1912.12014)
+
+Authors: [Pengcheng Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+P), [Boxing Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+B), [Pei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+P), [Xu Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+X)
+
+*(Submitted on 27 Dec 2019)*
+
+> Multi-modal machine translation aims at translating the source sentence into a different language in the presence of the paired image. Previous work suggests that additional visual information only provides dispensable help to translation, which is needed in several very special cases such as translating ambiguous words. To make better use of visual information, this work presents visual agreement regularized training. The proposed approach jointly trains the source-to-target and target-to-source translation models and encourages them to share the same focus on the visual information when generating semantically equivalent visual words (e.g. "ball" in English and "ballon" in French). Besides, a simple yet effective multi-head co-attention model is also introduced to capture interactions between visual and textual features. The results show that our approaches can outperform competitive baselines by a large margin on the Multi30k dataset. Further analysis demonstrates that the proposed regularized training can effectively improve the agreement of attention on the image, leading to better use of visual information.
+
+| Comments: | Accepted by AAAI 2020                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | [arXiv:1912.12014](https://arxiv.org/abs/1912.12014) [cs.CL] |
+|           | (or [arXiv:1912.12014v1](https://arxiv.org/abs/1912.12014v1) [cs.CL] for this version) |
+
+
+
+
+
+
+
+
+
 # 2019-12-24
 
 [Return to Index](#Index)
@@ -74,7 +168,6 @@
 
 
 <h2 id="2019-12-24-1">1. Machine Translation with Cross-lingual Word Embeddings</h2>
-
 Title: [Machine Translation with Cross-lingual Word Embeddings](https://arxiv.org/abs/1912.10167)
 
 Authors: [Marco Berlot](https://arxiv.org/search/cs?searchtype=author&query=Berlot%2C+M), [Evan Kaplan](https://arxiv.org/search/cs?searchtype=author&query=Kaplan%2C+E)
@@ -93,7 +186,6 @@ Authors: [Marco Berlot](https://arxiv.org/search/cs?searchtype=author&query=Berl
 
 
 <h2 id="2019-12-24-2">2. Two Way Adversarial Unsupervised Word Translation</h2>
-
 Title: [Two Way Adversarial Unsupervised Word Translation](https://arxiv.org/abs/1912.10168)
 
 Authors: [Blaine Cole](https://arxiv.org/search/cs?searchtype=author&query=Cole%2C+B)
@@ -112,7 +204,6 @@ Authors: [Blaine Cole](https://arxiv.org/search/cs?searchtype=author&query=Cole%
 
 
 <h2 id="2019-12-24-3">3. A Comparison of Architectures and Pretraining Methods for Contextualized Multilingual Word Embeddings</h2>
-
 Title: [A Comparison of Architectures and Pretraining Methods for Contextualized Multilingual Word Embeddings](https://arxiv.org/abs/1912.10169)
 
 Authors: [Niels van der Heijden](https://arxiv.org/search/cs?searchtype=author&query=van+der+Heijden%2C+N), [Samira Abnar](https://arxiv.org/search/cs?searchtype=author&query=Abnar%2C+S), [Ekaterina Shutova](https://arxiv.org/search/cs?searchtype=author&query=Shutova%2C+E)
@@ -132,7 +223,6 @@ Authors: [Niels van der Heijden](https://arxiv.org/search/cs?searchtype=author&q
 
 
 <h2 id="2019-12-24-4">4. Tag-less Back-Translation</h2>
-
 Title: [Tag-less Back-Translation](https://arxiv.org/abs/1912.10514)
 
 Authors: [Idris Abdulmumin](https://arxiv.org/search/cs?searchtype=author&query=Abdulmumin%2C+I), [Bashir Shehu Galadanci](https://arxiv.org/search/cs?searchtype=author&query=Galadanci%2C+B+S), [Aliyu Garba](https://arxiv.org/search/cs?searchtype=author&query=Garba%2C+A)
@@ -152,7 +242,6 @@ Authors: [Idris Abdulmumin](https://arxiv.org/search/cs?searchtype=author&query=
 
 
 <h2 id="2019-12-24-5">5. Siamese Networks for Large-Scale Author Identification</h2>
-
 Title: [Siamese Networks for Large-Scale Author Identification](https://arxiv.org/abs/1912.10616)
 
 Authors: [Chakaveh Saedi](https://arxiv.org/search/cs?searchtype=author&query=Saedi%2C+C), [Mark Dras](https://arxiv.org/search/cs?searchtype=author&query=Dras%2C+M)
