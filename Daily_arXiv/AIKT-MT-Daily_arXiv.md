@@ -7,7 +7,7 @@
   - [2. Teaching a New Dog Old Tricks: Resurrecting Multilingual Retrieval Using Zero-shot Learning](#2020-01-01-2)
   - [3. Robust Cross-lingual Embeddings from Parallel Sentences](#2020-01-01-3)
   - [4. "Hinglish" Language -- Modeling a Messy Code-Mixed Language](#2020-01-01-4)
-- [5. Amharic-Arabic Neural Machine Translation](#2020-01-01-5)
+  - [5. Amharic-Arabic Neural Machine Translation](#2020-01-01-5)
   - [6. LayoutLM: Pre-training of Text and Layout for Document Image Understanding](#2020-01-01-6)
 - [2019-12](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-12.md)
 - [2019-11](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-11.md)
@@ -29,7 +29,6 @@
 
 
 <h2 id="2020-01-01-1">1. TextScanner: Reading Characters in Order for Robust Scene Text Recognition</h2>
-
 Title: [TextScanner: Reading Characters in Order for Robust Scene Text Recognition](https://arxiv.org/abs/1912.12422)
 
 Authors: [Zhaoyi Wan](https://arxiv.org/search/cs?searchtype=author&query=Wan%2C+Z), [Mingling He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+M), [Haoran Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+H), [Xiang Bai](https://arxiv.org/search/cs?searchtype=author&query=Bai%2C+X), [Cong Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+C)
@@ -49,7 +48,6 @@ Authors: [Zhaoyi Wan](https://arxiv.org/search/cs?searchtype=author&query=Wan%2C
 
 
 <h2 id="2020-01-01-2">2. Teaching a New Dog Old Tricks: Resurrecting Multilingual Retrieval Using Zero-shot Learning</h2>
-
 Title: [Teaching a New Dog Old Tricks: Resurrecting Multilingual Retrieval Using Zero-shot Learning](https://arxiv.org/abs/1912.13080)
 
 Authors: [Sean MacAvaney](https://arxiv.org/search/cs?searchtype=author&query=MacAvaney%2C+S), [Luca Soldaini](https://arxiv.org/search/cs?searchtype=author&query=Soldaini%2C+L), [Nazli Goharian](https://arxiv.org/search/cs?searchtype=author&query=Goharian%2C+N)
@@ -69,7 +67,6 @@ Authors: [Sean MacAvaney](https://arxiv.org/search/cs?searchtype=author&query=Ma
 
 
 <h2 id="2020-01-01-3">3. Robust Cross-lingual Embeddings from Parallel Sentences</h2>
-
 Title: [Robust Cross-lingual Embeddings from Parallel Sentences](https://arxiv.org/abs/1912.12481)
 
 Authors: [Ali Sabet](https://arxiv.org/search/cs?searchtype=author&query=Sabet%2C+A), [Prakhar Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+P), [Jean-Baptiste Cordonnier](https://arxiv.org/search/cs?searchtype=author&query=Cordonnier%2C+J), [Robert West](https://arxiv.org/search/cs?searchtype=author&query=West%2C+R), [Martin Jaggi](https://arxiv.org/search/cs?searchtype=author&query=Jaggi%2C+M)
@@ -88,7 +85,6 @@ Authors: [Ali Sabet](https://arxiv.org/search/cs?searchtype=author&query=Sabet%2
 
 
 <h2 id="2020-01-01-4">4. "Hinglish" Language -- Modeling a Messy Code-Mixed Language</h2>
-
 Title: ["Hinglish" Language -- Modeling a Messy Code-Mixed Language](https://arxiv.org/abs/1912.13109)
 
 Authors: [Vivek Kumar Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+V+K)
@@ -107,7 +103,6 @@ Authors: [Vivek Kumar Gupta](https://arxiv.org/search/cs?searchtype=author&query
 
 
 <h2 id="2020-01-01-5">5. Amharic-Arabic Neural Machine Translation</h2>
-
 Title: [Amharic-Arabic Neural Machine Translation](https://arxiv.org/abs/1912.13161)
 
 Authors: [Ibrahim Gashaw](https://arxiv.org/search/cs?searchtype=author&query=Gashaw%2C+I), [H L Shashirekha](https://arxiv.org/search/cs?searchtype=author&query=Shashirekha%2C+H+L)
@@ -127,7 +122,6 @@ Authors: [Ibrahim Gashaw](https://arxiv.org/search/cs?searchtype=author&query=Ga
 
 
 <h2 id="2020-01-01-6">6. LayoutLM: Pre-training of Text and Layout for Document Image Understanding</h2>
-
 Title: [LayoutLM: Pre-training of Text and Layout for Document Image Understanding](https://arxiv.org/abs/1912.13318)
 
 Authors: [Yiheng Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+Y), [Minghao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+M), [Lei Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+L), [Shaohan Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F), [Ming Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+M)
