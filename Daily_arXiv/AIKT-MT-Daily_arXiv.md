@@ -2,6 +2,8 @@
 
 # Index
 
+- [2020-01-03](#2020-01-03)
+  - [1. A Voice Interactive Multilingual Student Support System using IBM Watson](#2020-01-03-1)
 - [2020-01-01](2020-01-01)
   - [1. TextScanner: Reading Characters in Order for Robust Scene Text Recognition](#2020-01-01-1)
   - [2. Teaching a New Dog Old Tricks: Resurrecting Multilingual Retrieval Using Zero-shot Learning](#2020-01-01-2)
@@ -19,6 +21,33 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+
+
+# 2020-01-03
+
+[Return to Index](#Index)
+
+
+
+
+<h2 id="2020-01-03-1">1. A Voice Interactive Multilingual Student Support System using IBM Watson</h2>
+
+Title: [A Voice Interactive Multilingual Student Support System using IBM Watson](https://arxiv.org/abs/2001.00471)
+
+Authors: [Kennedy Ralston](https://arxiv.org/search/cs?searchtype=author&query=Ralston%2C+K), [Yuhao Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Haruna Isah](https://arxiv.org/search/cs?searchtype=author&query=Isah%2C+H), [Farhana Zulkernine](https://arxiv.org/search/cs?searchtype=author&query=Zulkernine%2C+F)
+
+(Submitted on 20 Dec 2019)
+
+> Systems powered by artificial intelligence are being developed to be more user-friendly by communicating with users in a progressively human-like conversational way. Chatbots, also known as dialogue systems, interactive conversational agents, or virtual agents are an example of such systems used in a wide variety of applications ranging from customer support in the business domain to companionship in the healthcare sector. It is becoming increasingly important to develop chatbots that can best respond to the personalized needs of their users so that they can be as helpful to the user as possible in a real human way. This paper investigates and compares three popular existing chatbots API offerings and then propose and develop a voice interactive and multilingual chatbot that can effectively respond to users mood, tone, and language using IBM Watson Assistant, Tone Analyzer, and Language Translator. The chatbot was evaluated using a use case that was targeted at responding to users needs regarding exam stress based on university students survey data generated using Google Forms. The results of measuring the chatbot effectiveness at analyzing responses regarding exam stress indicate that the chatbot responding appropriately to the user queries regarding how they are feeling about exams 76.5%. The chatbot could also be adapted for use in other application areas such as student info-centers, government kiosks, and mental health support systems.
+
+| Comments: | 6 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Human-Computer Interaction (cs.HC)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Information Retrieval (cs.IR) |
+| Cite as:  | [arXiv:2001.00471](https://arxiv.org/abs/2001.00471) [cs.HC] |
+|           | (or [arXiv:2001.00471v1](https://arxiv.org/abs/2001.00471v1) [cs.HC] for this version) |
 
 
 
