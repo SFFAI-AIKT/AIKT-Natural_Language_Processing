@@ -2,6 +2,8 @@
 
 # Index
 
+- [2020-01-06](#2020-01-06)
+  - [1. Learning Accurate Integer Transformer Machine-Translation Models](#2020-01-06-1)
 - [2020-01-03](#2020-01-03)
   - [1. A Voice Interactive Multilingual Student Support System using IBM Watson](#2020-01-03-1)
 - [2020-01-01](2020-01-01)
@@ -24,6 +26,29 @@
 
 
 
+# 2020-01-06
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-01-06-1">1. Learning Accurate Integer Transformer Machine-Translation Models</h2>
+
+Title: [Learning Accurate Integer Transformer Machine-Translation Models](https://arxiv.org/abs/2001.00926)
+
+Authors: [Ephrem Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+E)
+
+*(Submitted on 3 Jan 2020)*
+
+> We describe a method for training accurate Transformer machine-translation models to run inference using 8-bit integer (INT8) hardware matrix multipliers, as opposed to the more costly single-precision floating-point (FP32) hardware. Unlike previous work, which converted only 85 Transformer matrix multiplications to INT8, leaving 48 out of 133 of them in FP32 because of unacceptable accuracy loss, we convert them all to INT8 without compromising accuracy. Tested on the newstest2014 English-to-German translation task, our INT8 Transformer Base and Transformer Big models yield BLEU scores that are 99.3% to 100% relative to those of the corresponding FP32 models. Our approach converts all matrix-multiplication tensors from an existing FP32 model into INT8 tensors by automatically making range-precision trade-offs during training. To demonstrate the robustness of this approach, we also include results from INT6 Transformer models.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2001.00926](https://arxiv.org/abs/2001.00926) [cs.LG] |
+|           | (or [arXiv:2001.00926v1](https://arxiv.org/abs/2001.00926v1) [cs.LG] for this version) |
+
+
+
 
 
 # 2020-01-03
@@ -34,7 +59,6 @@
 
 
 <h2 id="2020-01-03-1">1. A Voice Interactive Multilingual Student Support System using IBM Watson</h2>
-
 Title: [A Voice Interactive Multilingual Student Support System using IBM Watson](https://arxiv.org/abs/2001.00471)
 
 Authors: [Kennedy Ralston](https://arxiv.org/search/cs?searchtype=author&query=Ralston%2C+K), [Yuhao Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Haruna Isah](https://arxiv.org/search/cs?searchtype=author&query=Isah%2C+H), [Farhana Zulkernine](https://arxiv.org/search/cs?searchtype=author&query=Zulkernine%2C+F)
