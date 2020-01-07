@@ -2,6 +2,10 @@
 
 # Index
 
+- [2020-01-07](#2020-01-07)
+  - [1. A Comprehensive Survey of Multilingual Neural Machine Translation](#2020-01-07-1)
+  - [2. Morphological Word Segmentation on Agglutinative Languages for Neural Machine Translation](#2020-01-07-2)
+  - [3. Exploring Benefits of Transfer Learning in Neural Machine Translation](#2020-01-07-3)
 - [2020-01-06](#2020-01-06)
   - [1. Learning Accurate Integer Transformer Machine-Translation Models](#2020-01-06-1)
 - [2020-01-03](#2020-01-03)
@@ -26,6 +30,71 @@
 
 
 
+# 2020-01-07
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-01-07-1">1. A Comprehensive Survey of Multilingual Neural Machine Translation</h2>
+
+Title: [A Comprehensive Survey of Multilingual Neural Machine Translation](https://arxiv.org/abs/2001.01115)
+
+Authors: [Raj Dabre](https://arxiv.org/search/cs?searchtype=author&query=Dabre%2C+R), [Chenhui Chu](https://arxiv.org/search/cs?searchtype=author&query=Chu%2C+C), [Anoop Kunchukuttan](https://arxiv.org/search/cs?searchtype=author&query=Kunchukuttan%2C+A)
+
+*(Submitted on 4 Jan 2020)*
+
+> We present a survey on multilingual neural machine translation (MNMT), which has gained a lot of traction in the recent years. MNMT has been useful in improving translation quality as a result of translation knowledge transfer (transfer learning). MNMT is more promising and interesting than its statistical machine translation counterpart because end-to-end modeling and distributed representations open new avenues for research on machine translation. Many approaches have been proposed in order to exploit multilingual parallel corpora for improving translation quality. However, the lack of a comprehensive survey makes it difficult to determine which approaches are promising and hence deserve further exploration. In this paper, we present an in-depth survey of existing literature on MNMT. We first categorize various approaches based on their central use-case and then further categorize them based on resource scenarios, underlying modeling principles, core-issues and challenges. Wherever possible we address the strengths and weaknesses of several techniques by comparing them with each other. We also discuss the future directions that MNMT research might take. This paper is aimed towards both, beginners and experts in NMT. We hope this paper will serve as a starting point as well as a source of new ideas for researchers and engineers interested in MNMT.
+
+| Comments: | This is an extended version of our survey paper on multilingual NMT. The previous version [[arXiv:1905.05395](https://arxiv.org/abs/1905.05395)] is rather condensed and is useful for speed-reading whereas this version is more beginner friendly. Under review at the computing surveys journal. We have intentionally decided to maintain both short and long versions of our survey paper for different reader groups |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:2001.01115](https://arxiv.org/abs/2001.01115) [cs.CL] |
+|           | (or [arXiv:2001.01115v1](https://arxiv.org/abs/2001.01115v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-01-07-2">2. Morphological Word Segmentation on Agglutinative Languages for Neural Machine Translation</h2>
+
+Title: [Morphological Word Segmentation on Agglutinative Languages for Neural Machine Translation](https://arxiv.org/abs/2001.01589)
+
+Authors: [Yirong Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C+Y), [Xiao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Yating Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Rui Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+R)
+
+*(Submitted on 2 Jan 2020)*
+
+> Neural machine translation (NMT) has achieved impressive performance on machine translation task in recent years. However, in consideration of efficiency, a limited-size vocabulary that only contains the top-N highest frequency words are employed for model training, which leads to many rare and unknown words. It is rather difficult when translating from the low-resource and morphologically-rich agglutinative languages, which have complex morphology and large vocabulary. In this paper, we propose a morphological word segmentation method on the source-side for NMT that incorporates morphology knowledge to preserve the linguistic and semantic information in the word structure while reducing the vocabulary size at training time. It can be utilized as a preprocessing tool to segment the words in agglutinative languages for other natural language processing (NLP) tasks. Experimental results show that our morphologically motivated word segmentation method is better suitable for the NMT model, which achieves significant improvements on Turkish-English and Uyghur-Chinese machine translation tasks on account of reducing data sparseness and language complexity.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2001.01589](https://arxiv.org/abs/2001.01589) [cs.CL] |
+|           | (or [arXiv:2001.01589v1](https://arxiv.org/abs/2001.01589v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-01-07-3">3. Exploring Benefits of Transfer Learning in Neural Machine Translation</h2>
+
+Title: [Exploring Benefits of Transfer Learning in Neural Machine Translation](https://arxiv.org/abs/2001.01622)
+
+Authors: [Tom Kocmi](https://arxiv.org/search/cs?searchtype=author&query=Kocmi%2C+T)
+
+*(Submitted on 6 Jan 2020)*
+
+> Neural machine translation is known to require large numbers of parallel training sentences, which generally prevent it from excelling on low-resource language pairs. This thesis explores the use of cross-lingual transfer learning on neural networks as a way of solving the problem with the lack of resources. We propose several transfer learning approaches to reuse a model pretrained on a high-resource language pair. We pay particular attention to the simplicity of the techniques. We study two scenarios: (a) when we reuse the high-resource model without any prior modifications to its training process and (b) when we can prepare the first-stage high-resource model for transfer learning in advance. For the former scenario, we present a proof-of-concept method by reusing a model trained by other researchers. In the latter scenario, we present a method which reaches even larger improvements in translation performance. Apart from proposed techniques, we focus on an in-depth analysis of transfer learning techniques and try to shed some light on transfer learning improvements. We show how our techniques address specific problems of low-resource languages and are suitable even in high-resource transfer learning. We evaluate the potential drawbacks and behavior by studying transfer learning in various situations, for example, under artificially damaged training corpora, or with fixed various model parts.
+
+| Comments: | Defended PhD thesis                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Neural and Evolutionary Computing (cs.NE) |
+| Cite as:  | [arXiv:2001.01622](https://arxiv.org/abs/2001.01622) [cs.CL] |
+|           | (or [arXiv:2001.01622v1](https://arxiv.org/abs/2001.01622v1) [cs.CL] for this version) |
+
+
+
+
+
 # 2020-01-06
 
 [Return to Index](#Index)
@@ -33,7 +102,6 @@
 
 
 <h2 id="2020-01-06-1">1. Learning Accurate Integer Transformer Machine-Translation Models</h2>
-
 Title: [Learning Accurate Integer Transformer Machine-Translation Models](https://arxiv.org/abs/2001.00926)
 
 Authors: [Ephrem Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+E)
