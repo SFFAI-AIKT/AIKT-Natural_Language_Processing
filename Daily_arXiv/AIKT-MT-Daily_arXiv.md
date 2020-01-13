@@ -2,6 +2,9 @@
 
 # Index
 
+- [2020-01-13](#2020-01-13)
+  - [1. Learning to Multi-Task Learn for Better Neural Machine Translation](#2020-01-13-1)
+  - [2. Towards Minimal Supervision BERT-based Grammar Error Correction](#2020-01-13-2)
 - [2020-01-07](#2020-01-07)
   - [1. A Comprehensive Survey of Multilingual Neural Machine Translation](#2020-01-07-1)
   - [2. Morphological Word Segmentation on Agglutinative Languages for Neural Machine Translation](#2020-01-07-2)
@@ -30,6 +33,54 @@
 
 
 
+# 2020-01-13
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-01-13-1">1. Learning to Multi-Task Learn for Better Neural Machine Translation</h2>
+
+Title: [Learning to Multi-Task Learn for Better Neural Machine Translation](https://arxiv.org/abs/2001.03294)
+
+Authors: [Poorya Zaremoodi](https://arxiv.org/search/cs?searchtype=author&query=Zaremoodi%2C+P), [Gholamreza Haffari](https://arxiv.org/search/cs?searchtype=author&query=Haffari%2C+G)
+
+*(Submitted on 10 Jan 2020)*
+
+> Scarcity of parallel sentence pairs is a major challenge for training high quality neural machine translation (NMT) models in bilingually low-resource scenarios, as NMT is data-hungry. Multi-task learning is an elegant approach to inject linguistic-related inductive biases into NMT, using auxiliary syntactic and semantic tasks, to improve generalisation. The challenge, however, is to devise effective training schedules, prescribing when to make use of the auxiliary tasks during the training process to fill the knowledge gaps of the main translation task, a setting referred to as biased-MTL. Current approaches for the training schedule are based on hand-engineering heuristics, whose effectiveness vary in different MTL settings. We propose a novel framework for learning the training schedule, ie learning to multi-task learn, for the MTL setting of interest. We formulate the training schedule as a Markov decision process which paves the way to employ policy learning methods to learn the scheduling policy. We effectively and efficiently learn the training schedule policy within the imitation learning framework using an oracle policy algorithm that dynamically sets the importance weights of auxiliary tasks based on their contributions to the generalisability of the main NMT task. Experiments on low-resource NMT settings show the resulting automatically learned training schedulers are competitive with the best heuristics, and lead to up to +1.1 BLEU score improvements.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2001.03294](https://arxiv.org/abs/2001.03294) [cs.CL] |
+|           | (or [arXiv:2001.03294v1](https://arxiv.org/abs/2001.03294v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-01-13-2">2. Towards Minimal Supervision BERT-based Grammar Error Correction</h2>
+
+Title: [Towards Minimal Supervision BERT-based Grammar Error Correction](https://arxiv.org/abs/2001.03521)
+
+Authors: [Yiyuan Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Antonios Anastasopoulos](https://arxiv.org/search/cs?searchtype=author&query=Anastasopoulos%2C+A), [Alan W Black](https://arxiv.org/search/cs?searchtype=author&query=Black%2C+A+W)
+
+*(Submitted on 10 Jan 2020)*
+
+> Current grammatical error correction (GEC) models typically consider the task as sequence generation, which requires large amounts of annotated data and limit the applications in data-limited settings. We try to incorporate contextual information from pre-trained language model to leverage annotation and benefit multilingual scenarios. Results show strong potential of Bidirectional Encoder Representations from Transformers (BERT) in grammatical error correction task.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2001.03521](https://arxiv.org/abs/2001.03521) [cs.CL] |
+|           | (or [arXiv:2001.03521v1](https://arxiv.org/abs/2001.03521v1) [cs.CL] for this version) |
+
+
+
+
+
+
+
+
+
 # 2020-01-07
 
 [Return to Index](#Index)
@@ -37,7 +88,6 @@
 
 
 <h2 id="2020-01-07-1">1. A Comprehensive Survey of Multilingual Neural Machine Translation</h2>
-
 Title: [A Comprehensive Survey of Multilingual Neural Machine Translation](https://arxiv.org/abs/2001.01115)
 
 Authors: [Raj Dabre](https://arxiv.org/search/cs?searchtype=author&query=Dabre%2C+R), [Chenhui Chu](https://arxiv.org/search/cs?searchtype=author&query=Chu%2C+C), [Anoop Kunchukuttan](https://arxiv.org/search/cs?searchtype=author&query=Kunchukuttan%2C+A)
@@ -57,7 +107,6 @@ Authors: [Raj Dabre](https://arxiv.org/search/cs?searchtype=author&query=Dabre%2
 
 
 <h2 id="2020-01-07-2">2. Morphological Word Segmentation on Agglutinative Languages for Neural Machine Translation</h2>
-
 Title: [Morphological Word Segmentation on Agglutinative Languages for Neural Machine Translation](https://arxiv.org/abs/2001.01589)
 
 Authors: [Yirong Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C+Y), [Xiao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Yating Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Rui Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+R)
@@ -76,7 +125,6 @@ Authors: [Yirong Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C
 
 
 <h2 id="2020-01-07-3">3. Exploring Benefits of Transfer Learning in Neural Machine Translation</h2>
-
 Title: [Exploring Benefits of Transfer Learning in Neural Machine Translation](https://arxiv.org/abs/2001.01622)
 
 Authors: [Tom Kocmi](https://arxiv.org/search/cs?searchtype=author&query=Kocmi%2C+T)
