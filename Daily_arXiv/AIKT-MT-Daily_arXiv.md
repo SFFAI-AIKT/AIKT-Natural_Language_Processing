@@ -2,6 +2,10 @@
 
 # Index
 
+- [2020-01-14](#2020-01-14)
+  - [1. Improving Dysarthric Speech Intelligibility Using Cycle-consistent Adversarial Training](#2020-01-14-1)
+  - [2. Reformer: The Efficient Transformer](#2020-01-14-2)
+  - [3. PatentTransformer-2: Controlling Patent Text Generation by Structural Metadata](#2020-01-14-3)
 - [2020-01-13](#2020-01-13)
   - [1. Learning to Multi-Task Learn for Better Neural Machine Translation](#2020-01-13-1)
   - [2. Towards Minimal Supervision BERT-based Grammar Error Correction](#2020-01-13-2)
@@ -33,6 +37,72 @@
 
 
 
+# 2020-01-14
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-01-14-1">1. Improving Dysarthric Speech Intelligibility Using Cycle-consistent Adversarial Training</h2>
+
+Title: [Improving Dysarthric Speech Intelligibility Using Cycle-consistent Adversarial Training](https://arxiv.org/abs/2001.04260)
+
+Authors: [Seung Hee Yang](https://arxiv.org/search/eess?searchtype=author&query=Yang%2C+S+H), [Minhwa Chung](https://arxiv.org/search/eess?searchtype=author&query=Chung%2C+M)
+
+*(Submitted on 10 Jan 2020)*
+
+> Dysarthria is a motor speech impairment affecting millions of people. Dysarthric speech can be far less intelligible than those of non-dysarthric speakers, causing significant communication difficulties. The goal of our work is to develop a model for dysarthric to healthy speech conversion using Cycle-consistent GAN. Using 18,700 dysarthric and 8,610 healthy control Korean utterances that were recorded for the purpose of automatic recognition of voice keyboard in a previous study, the generator is trained to transform dysarthric to healthy speech in the spectral domain, which is then converted back to speech. Objective evaluation using automatic speech recognition of the generated utterance on a held-out test set shows that the recognition performance is improved compared with the original dysarthic speech after performing adversarial training, as the absolute WER has been lowered by 33.4%. It demonstrates that the proposed GAN-based conversion method is useful for improving dysarthric speech intelligibility.
+
+| Comments: | To be Published on the 24th February in BIOSIGNALS 2020. arXiv admin note: text overlap with [arXiv:1904.09407](https://arxiv.org/abs/1904.09407) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Sound (cs.SD) |
+| Cite as:  | [arXiv:2001.04260](https://arxiv.org/abs/2001.04260) [eess.AS] |
+|           | (or [arXiv:2001.04260v1](https://arxiv.org/abs/2001.04260v1) [eess.AS] for this version) |
+
+
+
+
+
+<h2 id="2020-01-14-2">2. Reformer: The Efficient Transformer</h2>
+
+Title: [Reformer: The Efficient Transformer](https://arxiv.org/abs/2001.04451)
+
+Authors: [Nikita Kitaev](https://arxiv.org/search/cs?searchtype=author&query=Kitaev%2C+N), [Łukasz Kaiser](https://arxiv.org/search/cs?searchtype=author&query=Kaiser%2C+Ł), [Anselm Levskaya](https://arxiv.org/search/cs?searchtype=author&query=Levskaya%2C+A)
+
+*(Submitted on 13 Jan 2020)*
+
+> Large Transformer models routinely achieve state-of-the-art results on a number of tasks but training these models can be prohibitively costly, especially on long sequences. We introduce two techniques to improve the efficiency of Transformers. For one, we replace dot-product attention by one that uses locality-sensitive hashing, changing its complexity from O(L2) to O(LlogL), where L is the length of the sequence. Furthermore, we use reversible residual layers instead of the standard residuals, which allows storing activations only once in the training process instead of N times, where N is the number of layers. The resulting model, the Reformer, performs on par with Transformer models while being much more memory-efficient and much faster on long sequences.
+
+| Comments: | ICLR 2020                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| Cite as:  | [arXiv:2001.04451](https://arxiv.org/abs/2001.04451) [cs.LG] |
+|           | (or [arXiv:2001.04451v1](https://arxiv.org/abs/2001.04451v1) [cs.LG] for this version) |
+
+
+
+
+
+<h2 id="2020-01-14-3">3. PatentTransformer-2: Controlling Patent Text Generation by Structural Metadata</h2>
+
+Title: [PatentTransformer-2: Controlling Patent Text Generation by Structural Metadata](https://arxiv.org/abs/2001.03708)
+
+Authors: [Jieh-Sheng Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+J), [Jieh Hsiang](https://arxiv.org/search/cs?searchtype=author&query=Hsiang%2C+J)
+
+*(Submitted on 11 Jan 2020)*
+
+> PatentTransformer is our codename for patent text generation based on Transformer-based models. Our goal is "Augmented Inventing." In this second version, we leverage more of the structural metadata in patents. The structural metadata includes patent title, abstract, and dependent claim, in addition to independent claim previously. Metadata controls what kind of patent text for the model to generate. Also, we leverage the relation between metadata to build a text-to-text generation flow, for example, from a few words to a title, the title to an abstract, the abstract to an independent claim, and the independent claim to multiple dependent claims. The text flow can go backward because the relation is trained bidirectionally. We release our GPT-2 models trained from scratch and our code for inference so that readers can verify and generate patent text on their own. As for generation quality, we measure it by both ROUGE and Google Universal Sentence Encoder.
+
+| Comments: | demo paper                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2001.03708](https://arxiv.org/abs/2001.03708) [cs.CL] |
+|           | (or [arXiv:2001.03708v1](https://arxiv.org/abs/2001.03708v1) [cs.CL] for this version) |
+
+
+
+
+
 # 2020-01-13
 
 [Return to Index](#Index)
@@ -40,7 +110,6 @@
 
 
 <h2 id="2020-01-13-1">1. Learning to Multi-Task Learn for Better Neural Machine Translation</h2>
-
 Title: [Learning to Multi-Task Learn for Better Neural Machine Translation](https://arxiv.org/abs/2001.03294)
 
 Authors: [Poorya Zaremoodi](https://arxiv.org/search/cs?searchtype=author&query=Zaremoodi%2C+P), [Gholamreza Haffari](https://arxiv.org/search/cs?searchtype=author&query=Haffari%2C+G)
@@ -59,7 +128,6 @@ Authors: [Poorya Zaremoodi](https://arxiv.org/search/cs?searchtype=author&query=
 
 
 <h2 id="2020-01-13-2">2. Towards Minimal Supervision BERT-based Grammar Error Correction</h2>
-
 Title: [Towards Minimal Supervision BERT-based Grammar Error Correction](https://arxiv.org/abs/2001.03521)
 
 Authors: [Yiyuan Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Antonios Anastasopoulos](https://arxiv.org/search/cs?searchtype=author&query=Anastasopoulos%2C+A), [Alan W Black](https://arxiv.org/search/cs?searchtype=author&query=Black%2C+A+W)
