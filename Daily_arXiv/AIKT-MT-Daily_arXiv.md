@@ -2,6 +2,11 @@
 
 # Index
 
+- [2020-01-15](#2020-01-15)
+  - [1. Faster Transformer Decoding: N-gram Masked Self-Attention](#2020-01-15-1)
+  - [2. Faster Transformer Decoding: N-gram Masked Self-Attention](#2020-01-15-2)
+  - [3. Bi-Decoder Augmented Network for Neural Machine Translation](#2020-01-15-3)
+
 - [2020-01-14](#2020-01-14)
   - [1. Improving Dysarthric Speech Intelligibility Using Cycle-consistent Adversarial Training](#2020-01-14-1)
   - [2. Reformer: The Efficient Transformer](#2020-01-14-2)
@@ -37,6 +42,69 @@
 
 
 
+# 2020-01-15
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-01-15-1">1. Faster Transformer Decoding: N-gram Masked Self-Attention</h2>
+
+Title: [Faster Transformer Decoding: N-gram Masked Self-Attention](https://arxiv.org/abs/2001.04589)
+
+Authors: [Ciprian Chelba](https://arxiv.org/search/cs?searchtype=author&query=Chelba%2C+C), [Mia Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+M), [Ankur Bapna](https://arxiv.org/search/cs?searchtype=author&query=Bapna%2C+A), [Noam Shazeer](https://arxiv.org/search/cs?searchtype=author&query=Shazeer%2C+N)
+
+*(Submitted on 14 Jan 2020)*
+
+> Motivated by the fact that most of the information relevant to the prediction of target tokens is drawn from the source sentence S=s1,…,sS, we propose truncating the target-side window used for computing self-attention by making an N-gram assumption. Experiments on WMT EnDe and EnFr data sets show that the N-gram masked self-attention model loses very little in BLEU score for N values in the range 4,…,8, depending on the task.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2001.04589](https://arxiv.org/abs/2001.04589) [cs.LG] |
+|           | (or [arXiv:2001.04589v1](https://arxiv.org/abs/2001.04589v1) [cs.LG] for this version) |
+
+
+
+
+
+<h2 id="2020-01-15-2">2. Improved Robust ASR for Social Robots in Public Spaces</h2>
+
+Title: [Improved Robust ASR for Social Robots in Public Spaces](https://arxiv.org/abs/2001.04619)
+
+Authors: [Charles Jankowski](https://arxiv.org/search/eess?searchtype=author&query=Jankowski%2C+C), [Vishwas Mruthyunjaya](https://arxiv.org/search/eess?searchtype=author&query=Mruthyunjaya%2C+V), [Ruixi Lin](https://arxiv.org/search/eess?searchtype=author&query=Lin%2C+R)
+
+*(Submitted on 14 Jan 2020)*
+
+> Social robots deployed in public spaces present a challenging task for ASR because of a variety of factors, including noise SNR of 20 to 5 dB. Existing ASR models perform well for higher SNRs in this range, but degrade considerably with more noise. This work explores methods for providing improved ASR performance in such conditions. We use the AiShell-1 Chinese speech corpus and the Kaldi ASR toolkit for evaluations. We were able to exceed state-of-the-art ASR performance with SNR lower than 20 dB, demonstrating the feasibility of achieving relatively high performing ASR with open-source toolkits and hundreds of hours of training data, which is commonly available.
+
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Sound (cs.SD) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2001.04619](https://arxiv.org/abs/2001.04619) [eess.AS] |
+|           | (or [arXiv:2001.04619v1](https://arxiv.org/abs/2001.04619v1) [eess.AS] for this version) |
+
+
+
+
+
+<h2 id="2020-01-15-3">3. Bi-Decoder Augmented Network for Neural Machine Translation</h2>
+
+Title: [Bi-Decoder Augmented Network for Neural Machine Translation](https://arxiv.org/abs/2001.04586)
+
+Authors: [Boyuan Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C+B), [Yazheng Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Zhou Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+Z), [Yueting Zhuang](https://arxiv.org/search/cs?searchtype=author&query=Zhuang%2C+Y), [Deng Cai](https://arxiv.org/search/cs?searchtype=author&query=Cai%2C+D)
+
+*(Submitted on 14 Jan 2020)*
+
+> Neural Machine Translation (NMT) has become a popular technology in recent years, and the encoder-decoder framework is the mainstream among all the methods. It's obvious that the quality of the semantic representations from encoding is very crucial and can significantly affect the performance of the model. However, existing unidirectional source-to-target architectures may hardly produce a language-independent representation of the text because they rely heavily on the specific relations of the given language pairs. To alleviate this problem, in this paper, we propose a novel Bi-Decoder Augmented Network (BiDAN) for the neural machine translation task. Besides the original decoder which generates the target language sequence, we add an auxiliary decoder to generate back the source language sequence at the training time. Since each decoder transforms the representations of the input text into its corresponding language, jointly training with two target ends can make the shared encoder has the potential to produce a language-independent semantic space. We conduct extensive experiments on several NMT benchmark datasets and the results demonstrate the effectiveness of our proposed approach.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2001.04586](https://arxiv.org/abs/2001.04586) [cs.CL] |
+|           | (or [arXiv:2001.04586v1](https://arxiv.org/abs/2001.04586v1) [cs.CL] for this version) |
+
+
+
+
+
 # 2020-01-14
 
 [Return to Index](#Index)
@@ -44,7 +112,6 @@
 
 
 <h2 id="2020-01-14-1">1. Improving Dysarthric Speech Intelligibility Using Cycle-consistent Adversarial Training</h2>
-
 Title: [Improving Dysarthric Speech Intelligibility Using Cycle-consistent Adversarial Training](https://arxiv.org/abs/2001.04260)
 
 Authors: [Seung Hee Yang](https://arxiv.org/search/eess?searchtype=author&query=Yang%2C+S+H), [Minhwa Chung](https://arxiv.org/search/eess?searchtype=author&query=Chung%2C+M)
@@ -64,7 +131,6 @@ Authors: [Seung Hee Yang](https://arxiv.org/search/eess?searchtype=author&query=
 
 
 <h2 id="2020-01-14-2">2. Reformer: The Efficient Transformer</h2>
-
 Title: [Reformer: The Efficient Transformer](https://arxiv.org/abs/2001.04451)
 
 Authors: [Nikita Kitaev](https://arxiv.org/search/cs?searchtype=author&query=Kitaev%2C+N), [Łukasz Kaiser](https://arxiv.org/search/cs?searchtype=author&query=Kaiser%2C+Ł), [Anselm Levskaya](https://arxiv.org/search/cs?searchtype=author&query=Levskaya%2C+A)
@@ -84,7 +150,6 @@ Authors: [Nikita Kitaev](https://arxiv.org/search/cs?searchtype=author&query=Kit
 
 
 <h2 id="2020-01-14-3">3. PatentTransformer-2: Controlling Patent Text Generation by Structural Metadata</h2>
-
 Title: [PatentTransformer-2: Controlling Patent Text Generation by Structural Metadata](https://arxiv.org/abs/2001.03708)
 
 Authors: [Jieh-Sheng Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+J), [Jieh Hsiang](https://arxiv.org/search/cs?searchtype=author&query=Hsiang%2C+J)
