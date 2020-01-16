@@ -2,11 +2,13 @@
 
 # Index
 
+- [2020-01-16](#2020-01-16)
+  - [1. Parallel Machine Translation with Disentangled Context Transformer](#2020-01-16-1)
+  - [2. Urdu-English Machine Transliteration using Neural Networks](#2020-01-16-2)
 - [2020-01-15](#2020-01-15)
   - [1. Faster Transformer Decoding: N-gram Masked Self-Attention](#2020-01-15-1)
   - [2. Faster Transformer Decoding: N-gram Masked Self-Attention](#2020-01-15-2)
   - [3. Bi-Decoder Augmented Network for Neural Machine Translation](#2020-01-15-3)
-
 - [2020-01-14](#2020-01-14)
   - [1. Improving Dysarthric Speech Intelligibility Using Cycle-consistent Adversarial Training](#2020-01-14-1)
   - [2. Reformer: The Efficient Transformer](#2020-01-14-2)
@@ -42,6 +44,48 @@
 
 
 
+# 2020-01-16
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-01-16-1">1. Parallel Machine Translation with Disentangled Context Transformer</h2>
+
+Title: [Parallel Machine Translation with Disentangled Context Transformer](https://arxiv.org/abs/2001.05136)
+
+Authors: [Jungo Kasai](https://arxiv.org/search/cs?searchtype=author&query=Kasai%2C+J), [James Cross](https://arxiv.org/search/cs?searchtype=author&query=Cross%2C+J), [Marjan Ghazvininejad](https://arxiv.org/search/cs?searchtype=author&query=Ghazvininejad%2C+M), [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J)
+
+*(Submitted on 15 Jan 2020)*
+
+> State-of-the-art neural machine translation models generate a translation from left to right and every step is conditioned on the previously generated tokens. The sequential nature of this generation process causes fundamental latency in inference since we cannot generate multiple tokens in each sentence in parallel. We propose an attention-masking based model, called Disentangled Context (DisCo) transformer, that simultaneously generates all tokens given different contexts. The DisCo transformer is trained to predict every output token given an arbitrary subset of the other reference tokens. We also develop the parallel easy-first inference algorithm, which iteratively refines every token in parallel and reduces the number of required iterations. Our extensive experiments on 7 directions with varying data sizes demonstrate that our model achieves competitive, if not better, performance compared to the state of the art in non-autoregressive machine translation while significantly reducing decoding time on average.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2001.05136](https://arxiv.org/abs/2001.05136) [cs.CL] |
+|           | (or [arXiv:2001.05136v1](https://arxiv.org/abs/2001.05136v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-01-16-2">2. Urdu-English Machine Transliteration using Neural Networks</h2>
+
+Title: [Urdu-English Machine Transliteration using Neural Networks](https://arxiv.org/abs/2001.05296)
+
+Authors: [Usman Mohy ud Din](https://arxiv.org/search/cs?searchtype=author&query=Din%2C+U+M+u)
+
+*(Submitted on 12 Jan 2020)*
+
+> Machine translation has gained much attention in recent years. It is a sub-field of computational linguistic which focus on translating text from one language to other language. Among different translation techniques, neural network currently leading the domain with its capabilities of providing a single large neural network with attention mechanism, sequence-to-sequence and long-short term modelling. Despite significant progress in domain of machine translation, translation of out-of-vocabulary words(OOV) which include technical terms, named-entities, foreign words are still a challenge for current state-of-art translation systems, and this situation becomes even worse while translating between low resource languages or languages having different structures. Due to morphological richness of a language, a word may have different meninges in different context. In such scenarios, translation of word is not only enough in order provide the correct/quality translation. Transliteration is a way to consider the context of word/sentence during translation. For low resource language like Urdu, it is very difficult to have/find parallel corpus for transliteration which is large enough to train the system. In this work, we presented transliteration technique based on Expectation Maximization (EM) which is un-supervised and language independent. Systems learns the pattern and out-of-vocabulary (OOV) words from parallel corpus and there is no need to train it on transliteration corpus explicitly. This approach is tested on three models of statistical machine translation (SMT) which include phrasebased, hierarchical phrase-based and factor based models and two models of neural machine translation which include LSTM and transformer model.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2001.05296](https://arxiv.org/abs/2001.05296) [cs.CL] |
+|           | (or [arXiv:2001.05296v1](https://arxiv.org/abs/2001.05296v1) [cs.CL] for this version) |
+
+
+
 # 2020-01-15
 
 [Return to Index](#Index)
@@ -49,7 +93,6 @@
 
 
 <h2 id="2020-01-15-1">1. Faster Transformer Decoding: N-gram Masked Self-Attention</h2>
-
 Title: [Faster Transformer Decoding: N-gram Masked Self-Attention](https://arxiv.org/abs/2001.04589)
 
 Authors: [Ciprian Chelba](https://arxiv.org/search/cs?searchtype=author&query=Chelba%2C+C), [Mia Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+M), [Ankur Bapna](https://arxiv.org/search/cs?searchtype=author&query=Bapna%2C+A), [Noam Shazeer](https://arxiv.org/search/cs?searchtype=author&query=Shazeer%2C+N)
@@ -68,7 +111,6 @@ Authors: [Ciprian Chelba](https://arxiv.org/search/cs?searchtype=author&query=Ch
 
 
 <h2 id="2020-01-15-2">2. Improved Robust ASR for Social Robots in Public Spaces</h2>
-
 Title: [Improved Robust ASR for Social Robots in Public Spaces](https://arxiv.org/abs/2001.04619)
 
 Authors: [Charles Jankowski](https://arxiv.org/search/eess?searchtype=author&query=Jankowski%2C+C), [Vishwas Mruthyunjaya](https://arxiv.org/search/eess?searchtype=author&query=Mruthyunjaya%2C+V), [Ruixi Lin](https://arxiv.org/search/eess?searchtype=author&query=Lin%2C+R)
@@ -87,7 +129,6 @@ Authors: [Charles Jankowski](https://arxiv.org/search/eess?searchtype=author&que
 
 
 <h2 id="2020-01-15-3">3. Bi-Decoder Augmented Network for Neural Machine Translation</h2>
-
 Title: [Bi-Decoder Augmented Network for Neural Machine Translation](https://arxiv.org/abs/2001.04586)
 
 Authors: [Boyuan Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C+B), [Yazheng Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Zhou Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+Z), [Yueting Zhuang](https://arxiv.org/search/cs?searchtype=author&query=Zhuang%2C+Y), [Deng Cai](https://arxiv.org/search/cs?searchtype=author&query=Cai%2C+D)
