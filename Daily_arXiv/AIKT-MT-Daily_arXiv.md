@@ -2,6 +2,8 @@
 
 # Index
 
+- [2020-01-17](#2020-01-17)
+  - [1. Insertion-Deletion Transformer](#2020-01-17-1)
 - [2020-01-16](#2020-01-16)
   - [1. Parallel Machine Translation with Disentangled Context Transformer](#2020-01-16-1)
   - [2. Urdu-English Machine Transliteration using Neural Networks](#2020-01-16-2)
@@ -44,6 +46,32 @@
 
 
 
+# 2020-01-17
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-01-17-1">1. Insertion-Deletion Transformer</h2>
+
+Title: [Insertion-Deletion Transformer](https://arxiv.org/abs/2001.05540)
+
+Authors: [Laura Ruis](https://arxiv.org/search/cs?searchtype=author&query=Ruis%2C+L), [Mitchell Stern](https://arxiv.org/search/cs?searchtype=author&query=Stern%2C+M), [Julia Proskurnia](https://arxiv.org/search/cs?searchtype=author&query=Proskurnia%2C+J), [William Chan](https://arxiv.org/search/cs?searchtype=author&query=Chan%2C+W)
+
+*(Submitted on 15 Jan 2020)*
+
+> We propose the Insertion-Deletion Transformer, a novel transformer-based neural architecture and training method for sequence generation. The model consists of two phases that are executed iteratively, 1) an insertion phase and 2) a deletion phase. The insertion phase parameterizes a distribution of insertions on the current output hypothesis, while the deletion phase parameterizes a distribution of deletions over the current output hypothesis. The training method is a principled and simple algorithm, where the deletion model obtains its signal directly on-policy from the insertion model output. We demonstrate the effectiveness of our Insertion-Deletion Transformer on synthetic translation tasks, obtaining significant BLEU score improvement over an insertion-only model.
+
+| Comments: | Accepted as an Extended Abstract at the Workshop of Neural Generation and Translation (WNGT 2019) at EMNLP 2019 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| Cite as:  | [arXiv:2001.05540](https://arxiv.org/abs/2001.05540) [cs.LG] |
+|           | (or [arXiv:2001.05540v1](https://arxiv.org/abs/2001.05540v1) [cs.LG] for this version) |
+
+
+
+
+
 # 2020-01-16
 
 [Return to Index](#Index)
@@ -51,7 +79,6 @@
 
 
 <h2 id="2020-01-16-1">1. Parallel Machine Translation with Disentangled Context Transformer</h2>
-
 Title: [Parallel Machine Translation with Disentangled Context Transformer](https://arxiv.org/abs/2001.05136)
 
 Authors: [Jungo Kasai](https://arxiv.org/search/cs?searchtype=author&query=Kasai%2C+J), [James Cross](https://arxiv.org/search/cs?searchtype=author&query=Cross%2C+J), [Marjan Ghazvininejad](https://arxiv.org/search/cs?searchtype=author&query=Ghazvininejad%2C+M), [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J)
@@ -70,7 +97,6 @@ Authors: [Jungo Kasai](https://arxiv.org/search/cs?searchtype=author&query=Kasai
 
 
 <h2 id="2020-01-16-2">2. Urdu-English Machine Transliteration using Neural Networks</h2>
-
 Title: [Urdu-English Machine Transliteration using Neural Networks](https://arxiv.org/abs/2001.05296)
 
 Authors: [Usman Mohy ud Din](https://arxiv.org/search/cs?searchtype=author&query=Din%2C+U+M+u)
