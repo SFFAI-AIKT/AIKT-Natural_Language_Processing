@@ -2,6 +2,8 @@
 
 # Index
 
+- [2020-01-20](#2020-01-20)
+  - [1. RobBERT: a Dutch RoBERTa-based Language Model](#2020-01-20-1)
 - [2020-01-17](#2020-01-17)
   - [1. Insertion-Deletion Transformer](#2020-01-17-1)
 - [2020-01-16](#2020-01-16)
@@ -46,6 +48,30 @@
 
 
 
+# 2020-01-20
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-01-20-1">1. RobBERT: a Dutch RoBERTa-based Language Model</h2>
+
+Title: [RobBERT: a Dutch RoBERTa-based Language Model](https://arxiv.org/abs/2001.06286)
+
+Authors: [Pieter Delobelle](https://arxiv.org/search/cs?searchtype=author&query=Delobelle%2C+P), [Thomas Winters](https://arxiv.org/search/cs?searchtype=author&query=Winters%2C+T), [Bettina Berendt](https://arxiv.org/search/cs?searchtype=author&query=Berendt%2C+B)
+
+(Submitted on 17 Jan 2020)
+
+> Pre-trained language models have been dominating the field of natural language processing in recent years, and have led to significant performance gains for various complex natural language tasks. One of the most prominent pre-trained language models is BERT (Bi-directional Encoders for Transformers), which was released as an English as well as a multilingual version. Although multilingual BERT performs well on many tasks, recent studies showed that BERT models trained on a single language significantly outperform the multilingual results. Training a Dutch BERT model thus has a lot of potential for a wide range of Dutch NLP tasks. While previous approaches have used earlier implementations of BERT to train their Dutch BERT, we used RoBERTa, a robustly optimized BERT approach, to train a Dutch language model called RobBERT. We show that RobBERT improves state of the art results in Dutch-specific language tasks, and also outperforms other existing Dutch BERT-based models in sentiment analysis. These results indicate that RobBERT is a powerful pre-trained model for fine-tuning for a large variety of Dutch language tasks. We publicly release this pre-trained model in hope of supporting further downstream Dutch NLP applications.
+
+| Comments: | 7 pages, 2 tables                                            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:2001.06286](https://arxiv.org/abs/2001.06286) [cs.CL] |
+|           | (or [arXiv:2001.06286v1](https://arxiv.org/abs/2001.06286v1) [cs.CL] for this version) |
+
+
+
 # 2020-01-17
 
 [Return to Index](#Index)
@@ -53,7 +79,6 @@
 
 
 <h2 id="2020-01-17-1">1. Insertion-Deletion Transformer</h2>
-
 Title: [Insertion-Deletion Transformer](https://arxiv.org/abs/2001.05540)
 
 Authors: [Laura Ruis](https://arxiv.org/search/cs?searchtype=author&query=Ruis%2C+L), [Mitchell Stern](https://arxiv.org/search/cs?searchtype=author&query=Stern%2C+M), [Julia Proskurnia](https://arxiv.org/search/cs?searchtype=author&query=Proskurnia%2C+J), [William Chan](https://arxiv.org/search/cs?searchtype=author&query=Chan%2C+W)
