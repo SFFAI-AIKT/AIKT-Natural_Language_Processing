@@ -2,6 +2,15 @@
 
 # Index
 
+- [2020-01-27](#2020-01-27)
+  - [1. Exploration Based Language Learning for Text-Based Games](#2020-01-27-1)
+- [2020-01-24](#2020-01-24)
+  - [1. Pre-training via Leveraging Assisting Languages and Data Selection for Neural Machine Translation](#2020-01-24-1)
+  - [2. Coordinated Reasoning for Cross-Lingual Knowledge Graph Alignment](#2020-01-24-2)
+- [2020-01-23](#2020-01-23)
+  - [1. Elephant in the Room: An Evaluation Framework for Assessing Adversarial Examples in NLP](#2020-01-23-1)
+  - [2. Unsupervised Domain Adaptation for Neural Machine Translation with Iterative Back Translation](#2020-01-23-2)
+  - [3. Multilingual Denoising Pre-training for Neural Machine Translation](#2020-01-23-3)
 - [2020-01-20](#2020-01-20)
   - [1. RobBERT: a Dutch RoBERTa-based Language Model](#2020-01-20-1)
 - [2020-01-17](#2020-01-17)
@@ -45,6 +54,139 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-01-27
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-01-27-1">1. Exploration Based Language Learning for Text-Based Games</h2>
+
+Title: [Exploration Based Language Learning for Text-Based Games](https://arxiv.org/abs/2001.08868)
+
+Authors: [Andrea Madotto](https://arxiv.org/search/cs?searchtype=author&query=Madotto%2C+A), [Mahdi Namazifar](https://arxiv.org/search/cs?searchtype=author&query=Namazifar%2C+M), [Joost Huizinga](https://arxiv.org/search/cs?searchtype=author&query=Huizinga%2C+J), [Piero Molino](https://arxiv.org/search/cs?searchtype=author&query=Molino%2C+P), [Adrien Ecoffet](https://arxiv.org/search/cs?searchtype=author&query=Ecoffet%2C+A), [Huaixiu Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+H), [Alexandros Papangelis](https://arxiv.org/search/cs?searchtype=author&query=Papangelis%2C+A), [Dian Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+D), [Chandra Khatri](https://arxiv.org/search/cs?searchtype=author&query=Khatri%2C+C), [Gokhan Tur](https://arxiv.org/search/cs?searchtype=author&query=Tur%2C+G)
+
+*(Submitted on 24 Jan 2020)*
+
+> This work presents an exploration and imitation-learning-based agent capable of state-of-the-art performance in playing text-based computer games. Text-based computer games describe their world to the player through natural language and expect the player to interact with the game using text. These games are of interest as they can be seen as a testbed for language understanding, problem-solving, and language generation by artificial agents. Moreover, they provide a learning environment in which these skills can be acquired through interactions with an environment rather than using fixed corpora. One aspect that makes these games particularly challenging for learning agents is the combinatorially large action space. Existing methods for solving text-based games are limited to games that are either very simple or have an action space restricted to a predetermined set of admissible actions. In this work, we propose to use the exploration approach of Go-Explore for solving text-based games. More specifically, in an initial exploration phase, we first extract trajectories with high rewards, after which we train a policy to solve the game by imitating these trajectories. Our experiments show that this approach outperforms existing solutions in solving text-based games, and it is more sample efficient in terms of the number of interactions with the environment. Moreover, we show that the learned policy can generalize better than existing solutions to unseen games without using any restriction on the action space.
+
+| Comments: | Under Review                                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | [arXiv:2001.08868](https://arxiv.org/abs/2001.08868) [cs.CL] |
+|           | (or [arXiv:2001.08868v1](https://arxiv.org/abs/2001.08868v1) [cs.CL] for this version) |
+
+
+
+
+
+# 2020-01-24
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-01-24-1">1. Pre-training via Leveraging Assisting Languages and Data Selection for Neural Machine Translation</h2>
+
+Title: [Pre-training via Leveraging Assisting Languages and Data Selection for Neural Machine Translation](https://arxiv.org/abs/2001.08353)
+
+Authors: [Haiyue Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+H), [Raj Dabre](https://arxiv.org/search/cs?searchtype=author&query=Dabre%2C+R), [Zhuoyuan Mao](https://arxiv.org/search/cs?searchtype=author&query=Mao%2C+Z), [Fei Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+F), [Sadao Kurohashi](https://arxiv.org/search/cs?searchtype=author&query=Kurohashi%2C+S), [Eiichiro Sumita](https://arxiv.org/search/cs?searchtype=author&query=Sumita%2C+E)
+
+*(Submitted on 23 Jan 2020)*
+
+> Sequence-to-sequence (S2S) pre-training using large monolingual data is known to improve performance for various S2S NLP tasks in low-resource settings. However, large monolingual corpora might not always be available for the languages of interest (LOI). To this end, we propose to exploit monolingual corpora of other languages to complement the scarcity of monolingual corpora for the LOI. A case study of low-resource Japanese-English neural machine translation (NMT) reveals that leveraging large Chinese and French monolingual corpora can help overcome the shortage of Japanese and English monolingual corpora, respectively, for S2S pre-training. We further show how to utilize script mapping (Chinese to Japanese) to increase the similarity between the two monolingual corpora leading to further improvements in translation quality. Additionally, we propose simple data-selection techniques to be used prior to pre-training that significantly impact the quality of S2S pre-training. An empirical comparison of our proposed methods reveals that leveraging assisting language monolingual corpora, data selection and script mapping are extremely important for NMT pre-training in low-resource scenarios.
+
+| Comments: | Work in progress. Submitted to a conference                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:2001.08353](https://arxiv.org/abs/2001.08353) [cs.CL] |
+|           | (or [arXiv:2001.08353v1](https://arxiv.org/abs/2001.08353v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-01-24-2">2. Coordinated Reasoning for Cross-Lingual Knowledge Graph Alignment</h2>
+
+Title: [Coordinated Reasoning for Cross-Lingual Knowledge Graph Alignment](https://arxiv.org/abs/2001.08728)
+
+Authors: [Kun Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+K), [Linfeng Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+L), [Yansong Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+Y), [Yan Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+Y), [Dong Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+D)
+
+*(Submitted on 23 Jan 2020)*
+
+> Existing entity alignment methods mainly vary on the choices of encoding the knowledge graph, but they typically use the same decoding method, which independently chooses the local optimal match for each source entity. This decoding method may not only cause the "many-to-one" problem but also neglect the coordinated nature of this task, that is, each alignment decision may highly correlate to the other decisions. In this paper, we introduce two coordinated reasoning methods, i.e., the Easy-to-Hard decoding strategy and joint entity alignment algorithm. Specifically, the Easy-to-Hard strategy first retrieves the model-confident alignments from the predicted results and then incorporates them as additional knowledge to resolve the remaining model-uncertain alignments. To achieve this, we further propose an enhanced alignment model that is built on the current state-of-the-art baseline. In addition, to address the many-to-one problem, we propose to jointly predict entity alignments so that the one-to-one constraint can be naturally incorporated into the alignment prediction. Experimental results show that our model achieves the state-of-the-art performance and our reasoning methods can also significantly improve existing baselines.
+
+| Comments: | in AAAI 2020                                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2001.08728](https://arxiv.org/abs/2001.08728) [cs.CL] |
+|           | (or [arXiv:2001.08728v1](https://arxiv.org/abs/2001.08728v1) [cs.CL] for this version) |
+
+
+
+
+
+# 2020-01-23
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-01-23-1">1. Elephant in the Room: An Evaluation Framework for Assessing Adversarial Examples in NLP</h2>
+
+Title: [Elephant in the Room: An Evaluation Framework for Assessing Adversarial Examples in NLP](https://arxiv.org/abs/2001.07820)
+
+Authors: [Ying Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+Y), [Xu Zhong](https://arxiv.org/search/cs?searchtype=author&query=Zhong%2C+X), [Antonio Jose Jimeno Yepes](https://arxiv.org/search/cs?searchtype=author&query=Yepes%2C+A+J+J), [Jey Han Lau](https://arxiv.org/search/cs?searchtype=author&query=Lau%2C+J+H)
+
+*(Submitted on 22 Jan 2020)*
+
+> An adversarial example is an input transformed by small perturbations that machine learning models consistently misclassify. While there are a number of methods proposed to generate adversarial examples for text data, it is not trivial to assess the quality of these adversarial examples, as minor perturbations (such as changing a word in a sentence) can lead to a significant shift in their meaning, readability and classification label. In this paper, we propose an evaluation framework to assess the quality of adversarial examples based on the aforementioned properties. We experiment with five benchmark attacking methods and an alternative approach based on an auto-encoder, and found that these methods generate adversarial examples with poor readability and content preservation. We also learned that there are multiple factors that can influence the attacking performance, such as the the length of text examples and the input domain.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2001.07820](https://arxiv.org/abs/2001.07820) [cs.CL] |
+|           | (or [arXiv:2001.07820v1](https://arxiv.org/abs/2001.07820v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-01-23-2">2. Unsupervised Domain Adaptation for Neural Machine Translation with Iterative Back Translation</h2>
+
+Title: [Unsupervised Domain Adaptation for Neural Machine Translation with Iterative Back Translation](https://arxiv.org/abs/2001.08140)
+
+Authors: [Di Jin](https://arxiv.org/search/cs?searchtype=author&query=Jin%2C+D), [Zhijing Jin](https://arxiv.org/search/cs?searchtype=author&query=Jin%2C+Z), [Joey Tianyi Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J+T), [Peter Szolovits](https://arxiv.org/search/cs?searchtype=author&query=Szolovits%2C+P)
+
+*(Submitted on 22 Jan 2020)*
+
+> State-of-the-art neural machine translation (NMT) systems are data-hungry and perform poorly on domains with little supervised data. As data collection is expensive and infeasible in many cases, unsupervised domain adaptation methods are needed. We apply an Iterative Back Translation (IBT) training scheme on in-domain monolingual data, which repeatedly uses a Transformer-based NMT model to create in-domain pseudo-parallel sentence pairs in one translation direction on the fly and then use them to train the model in the other direction. Evaluated on three domains of German-to-English translation task with no supervised data, this simple technique alone (without any out-of-domain parallel data) can already surpass all previous domain adaptation methods---up to +9.48 BLEU over the strongest previous method, and up to +27.77 BLEU over the unadapted baseline. Moreover, given available supervised out-of-domain data on German-to-English and Romanian-to-English language pairs, we can further enhance the performance and obtain up to +19.31 BLEU improvement over the strongest baseline, and +47.69 BLEU increment against the unadapted model.
+
+| Comments: | Submitted to IJCAI 2020                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:2001.08140](https://arxiv.org/abs/2001.08140) [cs.CL] |
+|           | (or [arXiv:2001.08140v1](https://arxiv.org/abs/2001.08140v1) [cs.CL] for this version) |
+
+
+
+<h2 id="2020-01-23-3">3. Multilingual Denoising Pre-training for Neural Machine Translation</h2>
+
+Title: [Multilingual Denoising Pre-training for Neural Machine Translation](https://arxiv.org/abs/2001.08210)
+
+Authors: [Yinhan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J), [Naman Goyal](https://arxiv.org/search/cs?searchtype=author&query=Goyal%2C+N), [Xian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Sergey Edunov](https://arxiv.org/search/cs?searchtype=author&query=Edunov%2C+S), [Marjan Ghazvininejad](https://arxiv.org/search/cs?searchtype=author&query=Ghazvininejad%2C+M), [Mike Lewis](https://arxiv.org/search/cs?searchtype=author&query=Lewis%2C+M), [Luke Zettlemoyer](https://arxiv.org/search/cs?searchtype=author&query=Zettlemoyer%2C+L)
+
+*(Submitted on 22 Jan 2020 ([v1](https://arxiv.org/abs/2001.08210v1)), last revised 23 Jan 2020 (this version, v2))*
+
+> This paper demonstrates that multilingual denoising pre-training produces significant performance gains across a wide variety of machine translation (MT) tasks. We present mBART -- a sequence-to-sequence denoising auto-encoder pre-trained on large-scale monolingual corpora in many languages using the BART objective. mBART is one of the first methods for pre-training a complete sequence-to-sequence model by denoising full texts in multiple languages, while previous approaches have focused only on the encoder, decoder, or reconstructing parts of the text. Pre-training a complete model allows it to be directly fine tuned for supervised (both sentence-level and document-level) and unsupervised machine translation, with no task-specific modifications. We demonstrate that adding mBART initialization produces performance gains in all but the highest-resource settings, including up to 12 BLEU points for low resource MT and over 5 BLEU points for many document-level and unsupervised models. We also show it also enables new types of transfer to language pairs with no bi-text or that were not in the pre-training corpus, and present extensive analysis of which factors contribute the most to effective pre-training.
+
+| Comments: | Work in progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2001.08210](https://arxiv.org/abs/2001.08210) [cs.CL] |
+|           | (or [arXiv:2001.08210v2](https://arxiv.org/abs/2001.08210v2) [cs.CL] for this version) |
 
 
 
