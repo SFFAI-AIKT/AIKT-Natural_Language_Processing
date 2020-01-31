@@ -2,6 +2,10 @@
 
 # Index
 
+- [2020-01-31](#2020-01-30)
+  - [1. Learning Robust and Multilingual Speech Representations](#2020-01-31-1)
+  - [2. Iterative Batch Back-Translation for Neural Machine Translation: A Conceptual Model](#2020-01-31-2)
+  - [3. Parameter Space Factorization for Zero-Shot Learning across Tasks and Languages](#2020-01-31-3)
 - [2020-01-27](#2020-01-27)
   - [1. Exploration Based Language Learning for Text-Based Games](#2020-01-27-1)
 - [2020-01-24](#2020-01-24)
@@ -54,6 +58,69 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-01-31
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-01-31-1">1. Learning Robust and Multilingual Speech Representations
+</h2>
+
+Title: [Learning Robust and Multilingual Speech Representations](https://arxiv.org/abs/2001.11128)
+
+Authors: [Kazuya Kawakami](https://arxiv.org/search/cs?searchtype=author&query=Kawakami%2C+K), [Luyu Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Chris Dyer](https://arxiv.org/search/cs?searchtype=author&query=Dyer%2C+C), [Phil Blunsom](https://arxiv.org/search/cs?searchtype=author&query=Blunsom%2C+P), [Aaron van den Oord](https://arxiv.org/search/cs?searchtype=author&query=van+den+Oord%2C+A)
+
+*(Submitted on 29 Jan 2020)*
+
+> Unsupervised speech representation learning has shown remarkable success at finding representations that correlate with phonetic structures and improve downstream speech recognition performance. However, most research has been focused on evaluating the representations in terms of their ability to improve the performance of speech recognition systems on read English (e.g. Wall Street Journal and LibriSpeech). This evaluation methodology overlooks two important desiderata that speech representations should have: robustness to domain shifts and transferability to other languages. In this paper we learn representations from up to 8000 hours of diverse and noisy speech data and evaluate the representations by looking at their robustness to domain shifts and their ability to improve recognition performance in many languages. We find that our representations confer significant robustness advantages to the resulting recognition systems: we see significant improvements in out-of-domain transfer relative to baseline feature sets and the features likewise provide improvements in 25 phonetically diverse languages including tonal languages and low-resource languages.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2001.11128](https://arxiv.org/abs/2001.11128) [cs.CL] |
+|           | (or [arXiv:2001.11128v1](https://arxiv.org/abs/2001.11128v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-01-31-2">2. Iterative Batch Back-Translation for Neural Machine Translation: A Conceptual Model</h2>
+
+Title: [Iterative Batch Back-Translation for Neural Machine Translation: A Conceptual Model]()
+
+Authors: [Idris Abdulmumin](https://arxiv.org/search/cs?searchtype=author&query=Abdulmumin%2C+I), [Bashir Shehu Galadanci](https://arxiv.org/search/cs?searchtype=author&query=Galadanci%2C+B+S), [Abubakar Isa](https://arxiv.org/search/cs?searchtype=author&query=Isa%2C+A)
+
+*(Submitted on 26 Nov 2019)*
+
+> An effective method to generate a large number of parallel sentences for training improved neural machine translation (NMT) systems is the use of back-translations of the target-side monolingual data. Recently, iterative back-translation has been shown to outperform standard back-translation albeit on some language pairs. This work proposes the iterative batch back-translation that is aimed at enhancing the standard iterative back-translation and enabling the efficient utilization of more monolingual data. After each iteration, improved back-translations of new sentences are added to the parallel data that will be used to train the final forward model. The work presents a conceptual model of the proposed approach.
+
+| Comments: | arXiv admin note: substantial text overlap with [arXiv:1912.10514](https://arxiv.org/abs/1912.10514) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2001.11327](https://arxiv.org/abs/2001.11327) [cs.CL] |
+|           | (or [arXiv:2001.11327v1](https://arxiv.org/abs/2001.11327v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-01-31-3">3. Parameter Space Factorization for Zero-Shot Learning across Tasks and Languages</h2>
+
+Title: [Parameter Space Factorization for Zero-Shot Learning across Tasks and Languages](https://arxiv.org/abs/2001.11453)
+
+Authors: [Edoardo M. Ponti](https://arxiv.org/search/cs?searchtype=author&query=Ponti%2C+E+M), [Ivan Vulić](https://arxiv.org/search/cs?searchtype=author&query=Vulić%2C+I), [Ryan Cotterell](https://arxiv.org/search/cs?searchtype=author&query=Cotterell%2C+R), [Marinela Parovic](https://arxiv.org/search/cs?searchtype=author&query=Parovic%2C+M), [Roi Reichart](https://arxiv.org/search/cs?searchtype=author&query=Reichart%2C+R), [Anna Korhonen](https://arxiv.org/search/cs?searchtype=author&query=Korhonen%2C+A)
+
+*(Submitted on 30 Jan 2020)*
+
+> Most combinations of NLP tasks and language varieties lack in-domain examples for supervised training because of the paucity of annotated data. How can neural models make sample-efficient generalizations from task-language combinations with available data to low-resource ones? In this work, we propose a Bayesian generative model for the space of neural parameters. We assume that this space can be factorized into latent variables for each language and each task. We infer the posteriors over such latent variables based on data from seen task-language combinations through variational inference. This enables zero-shot classification on unseen combinations at prediction time. For instance, given training data for named entity recognition (NER) in Vietnamese and for part-of-speech (POS) tagging in Wolof, our model can perform accurate predictions for NER in Wolof. In particular, we experiment with a typologically diverse sample of 33 languages from 4 continents and 11 families, and show that our model yields comparable or better results than state-of-the-art, zero-shot cross-lingual transfer methods; it increases performance by 4.49 points for POS tagging and 7.73 points for NER on average compared to the strongest baseline.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2001.11453](https://arxiv.org/abs/2001.11453) [cs.CL] |
+|           | (or [arXiv:2001.11453v1](https://arxiv.org/abs/2001.11453v1) [cs.CL] for this version) |
 
 
 
