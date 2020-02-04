@@ -3,6 +3,14 @@
 # Index
 
 
+- [2020-02-04](#2020-02-04)
+
+  - [1. Unsupervised Bilingual Lexicon Induction Across Writing Systems](#2020-02-04-1)
+  - [2. Citation Text Generation](#2020-02-04-2)
+  - [3. Unsupervised Multilingual Alignment using Wasserstein Barycenter](#2020-02-04-3)
+  - [4. Joint Contextual Modeling for ASR Correction and Language Understanding](#2020-02-04-4)
+  - [5. FastWordBug: A Fast Method To Generate Adversarial Text Against NLP Applications](#2020-02-04-5)
+  - [6. Massively Multilingual Document Alignment with Cross-lingual Sentence-Mover's Distance](#2020-02-04-6)
 - [2020-02-03](#2020-02-03)
 
   - [1. Self-Adversarial Learning with Comparative Discrimination for Text Generation](#2020-02-03-1)
@@ -21,7 +29,124 @@
 
 
 
-NULL
+# 2020-02-04
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-02-04-1">1. Unsupervised Bilingual Lexicon Induction Across Writing Systems</h2>
+
+Title: [Unsupervised Bilingual Lexicon Induction Across Writing Systems](https://arxiv.org/abs/2002.00037)
+
+Authors: [Parker Riley](https://arxiv.org/search/cs?searchtype=author&query=Riley%2C+P), [Daniel Gildea](https://arxiv.org/search/cs?searchtype=author&query=Gildea%2C+D)
+
+*(Submitted on 31 Jan 2020)*
+
+> Recent embedding-based methods in unsupervised bilingual lexicon induction have shown good results, but generally have not leveraged orthographic (spelling) information, which can be helpful for pairs of related languages. This work augments a state-of-the-art method with orthographic features, and extends prior work in this space by proposing methods that can learn and utilize orthographic correspondences even between languages with different scripts. We demonstrate this by experimenting on three language pairs with different scripts and varying degrees of lexical similarity.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2002.00037](https://arxiv.org/abs/2002.00037) [cs.CL] |
+|           | (or [arXiv:2002.00037v1](https://arxiv.org/abs/2002.00037v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-02-04-2">2. Citation Text Generation</h2>
+
+Title: [Citation Text Generation](https://arxiv.org/abs/2002.00317)
+
+Authors: [Kelvin Luu](https://arxiv.org/search/cs?searchtype=author&query=Luu%2C+K), [Rik Koncel-Kedziorski](https://arxiv.org/search/cs?searchtype=author&query=Koncel-Kedziorski%2C+R), [Kyle Lo](https://arxiv.org/search/cs?searchtype=author&query=Lo%2C+K), [Isabel Cachola](https://arxiv.org/search/cs?searchtype=author&query=Cachola%2C+I), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith%2C+N+A)
+
+*(Submitted on 2 Feb 2020)*
+
+> We introduce the task of citation text generation: given a pair of scientific documents, explain their relationship in natural language text in the manner of a citation from one text to the other. This task encourages systems to learn rich relationships between scientific texts and to express them concretely in natural language. Models for citation text generation will require robust document understanding including the capacity to quickly adapt to new vocabulary and to reason about document content. We believe this challenging direction of research will benefit high-impact applications such as automatic literature review or scientific writing assistance systems. In this paper we establish the task of citation text generation with a standard evaluation corpus and explore several baseline models.
+
+| Comments: | 10 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2002.00317](https://arxiv.org/abs/2002.00317) [cs.CL] |
+|           | (or [arXiv:2002.00317v1](https://arxiv.org/abs/2002.00317v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-02-04-3">3. Unsupervised Multilingual Alignment using Wasserstein Barycenter</h2>
+
+Title: [Unsupervised Multilingual Alignment using Wasserstein Barycenter](https://arxiv.org/abs/2002.00743)
+
+Authors: [Xin Lian](https://arxiv.org/search/cs?searchtype=author&query=Lian%2C+X), [Kshitij Jain](https://arxiv.org/search/cs?searchtype=author&query=Jain%2C+K), [Jakub Truszkowski](https://arxiv.org/search/cs?searchtype=author&query=Truszkowski%2C+J), [Pascal Poupart](https://arxiv.org/search/cs?searchtype=author&query=Poupart%2C+P), [Yaoliang Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+Y)
+
+*(Submitted on 28 Jan 2020)*
+
+> We study unsupervised multilingual alignment, the problem of finding word-to-word translations between multiple languages without using any parallel data. One popular strategy is to reduce multilingual alignment to the much simplified bilingual setting, by picking one of the input languages as the pivot language that we transit through. However, it is well-known that transiting through a poorly chosen pivot language (such as English) may severely degrade the translation quality, since the assumed transitive relations among all pairs of languages may not be enforced in the training process. Instead of going through a rather arbitrarily chosen pivot language, we propose to use the Wasserstein barycenter as a more informative ''mean'' language: it encapsulates information from all languages and minimizes all pairwise transportation costs. We evaluate our method on standard benchmarks and demonstrate state-of-the-art performances.
+
+| Comments: | Work in progress; comments welcome!                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| Cite as:  | [arXiv:2002.00743](https://arxiv.org/abs/2002.00743) [cs.CL] |
+|           | (or [arXiv:2002.00743v1](https://arxiv.org/abs/2002.00743v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-02-04-4">4. Joint Contextual Modeling for ASR Correction and Language Understanding</h2>
+
+Title: [Joint Contextual Modeling for ASR Correction and Language Understanding](https://arxiv.org/abs/2002.00750)
+
+Authors: [Yue Weng](https://arxiv.org/search/cs?searchtype=author&query=Weng%2C+Y), [Sai Sumanth Miryala](https://arxiv.org/search/cs?searchtype=author&query=Miryala%2C+S+S), [Chandra Khatri](https://arxiv.org/search/cs?searchtype=author&query=Khatri%2C+C), [Runze Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+R), [Huaixiu Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+H), [Piero Molino](https://arxiv.org/search/cs?searchtype=author&query=Molino%2C+P), [Mahdi Namazifar](https://arxiv.org/search/cs?searchtype=author&query=Namazifar%2C+M), [Alexandros Papangelis](https://arxiv.org/search/cs?searchtype=author&query=Papangelis%2C+A), [Hugh Williams](https://arxiv.org/search/cs?searchtype=author&query=Williams%2C+H), [Franziska Bell](https://arxiv.org/search/cs?searchtype=author&query=Bell%2C+F), [Gokhan Tur](https://arxiv.org/search/cs?searchtype=author&query=Tur%2C+G)
+
+*(Submitted on 28 Jan 2020)*
+
+> The quality of automatic speech recognition (ASR) is critical to Dialogue Systems as ASR errors propagate to and directly impact downstream tasks such as language understanding (LU). In this paper, we propose multi-task neural approaches to perform contextual language correction on ASR outputs jointly with LU to improve the performance of both tasks simultaneously. To measure the effectiveness of this approach we used a public benchmark, the 2nd Dialogue State Tracking (DSTC2) corpus. As a baseline approach, we trained task-specific Statistical Language Models (SLM) and fine-tuned state-of-the-art Generalized Pre-training (GPT) Language Model to re-rank the n-best ASR hypotheses, followed by a model to identify the dialog act and slots. i) We further trained ranker models using GPT and Hierarchical CNN-RNN models with discriminatory losses to detect the best output given n-best hypotheses. We extended these ranker models to first select the best ASR output and then identify the dialogue act and slots in an end to end fashion. ii) We also proposed a novel joint ASR error correction and LU model, a word confusion pointer network (WCN-Ptr) with multi-head self-attention on top, which consumes the word confusions populated from the n-best. We show that the error rates of off the shelf ASR and following LU systems can be reduced significantly by 14% relative with joint models trained using small amounts of in-domain data.
+
+| Comments: | Accepted at IEEE ICASSP 2020                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | [arXiv:2002.00750](https://arxiv.org/abs/2002.00750) [cs.CL] |
+|           | (or [arXiv:2002.00750v1](https://arxiv.org/abs/2002.00750v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-02-04-5">5. FastWordBug: A Fast Method To Generate Adversarial Text Against NLP Applications</h2>
+
+Title: [FastWordBug: A Fast Method To Generate Adversarial Text Against NLP Applications](https://arxiv.org/abs/2002.00760)
+
+Authors: [Dou Goodman](https://arxiv.org/search/cs?searchtype=author&query=Goodman%2C+D), [Lv Zhonghou](https://arxiv.org/search/cs?searchtype=author&query=Zhonghou%2C+L), [Wang minghua](https://arxiv.org/search/cs?searchtype=author&query=minghua%2C+W)
+
+*(Submitted on 31 Jan 2020)*
+
+> In this paper, we present a novel algorithm, FastWordBug, to efficiently generate small text perturbations in a black-box setting that forces a sentiment analysis or text classification mode to make an incorrect prediction. By combining the part of speech attributes of words, we propose a scoring method that can quickly identify important words that affect text classification. We evaluate FastWordBug on three real-world text datasets and two state-of-the-art machine learning models under black-box setting. The results show that our method can significantly reduce the accuracy of the model, and at the same time, we can call the model as little as possible, with the highest attack efficiency. We also attack two popular real-world cloud services of NLP, and the results show that our method works as well.
+
+| Subjects: | **Computation and Language (cs.CL)**; Cryptography and Security (cs.CR) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2002.00760](https://arxiv.org/abs/2002.00760) [cs.CL] |
+|           | (or [arXiv:2002.00760v1](https://arxiv.org/abs/2002.00760v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-02-04-6">6. Massively Multilingual Document Alignment with Cross-lingual Sentence-Mover's Distance</h2>
+
+Title: [Massively Multilingual Document Alignment with Cross-lingual Sentence-Mover's Distance](https://arxiv.org/abs/2002.00761)
+
+Authors: [Ahmed El-Kishky](https://arxiv.org/search/cs?searchtype=author&query=El-Kishky%2C+A), [Francisco Guzmán](https://arxiv.org/search/cs?searchtype=author&query=Guzmán%2C+F)
+
+*(Submitted on 31 Jan 2020)*
+
+> Cross-lingual document alignment aims to identify pairs of documents in two distinct languages that are of comparable content or translations of each other. Such aligned data can be used for a variety of NLP tasks from training cross-lingual representations to mining parallel bitexts for machine translation training. In this paper we develop an unsupervised scoring function that leverages cross-lingual sentence embeddings to compute the semantic distance between documents in different languages. These semantic distances are then used to guide a document alignment algorithm to properly pair cross-lingual web documents across a variety of low, mid, and high-resource language pairs. Recognizing that our proposed scoring function and other state of the art methods are computationally intractable for long web documents, we utilize a more tractable greedy algorithm that performs comparably. We experimentally demonstrate that our distance metric performs better alignment than current baselines outperforming them by 7% on high-resource language pairs, 15% on mid-resource language pairs, and 22% on low-resource language pairs
+
+| Subjects: | **Computation and Language (cs.CL)**; Information Retrieval (cs.IR); Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2002.00761](https://arxiv.org/abs/2002.00761) [cs.CL] |
+|           | (or [arXiv:2002.00761v1](https://arxiv.org/abs/2002.00761v1) [cs.CL] for this version) |
 
 
 
