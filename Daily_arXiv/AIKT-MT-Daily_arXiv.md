@@ -3,6 +3,13 @@
 # Index
 
 
+- [2020-02-06](#2020-02-06)
+
+  - [1. Multilingual acoustic word embedding models for processing zero-resource languages](#2020-02-06-1)
+  - [2. Irony Detection in a Multilingual Context](#2020-02-06-2)
+- [2020-02-05](#2020-02-05)
+
+  - [1. CoVoST: A Diverse Multilingual Speech-To-Text Translation Corpus](#2020-02-05-1)
 - [2020-02-04](#2020-02-04)
 
   - [1. Unsupervised Bilingual Lexicon Induction Across Writing Systems](#2020-02-04-1)
@@ -26,6 +33,73 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-02-06
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-02-06-1">1. Multilingual acoustic word embedding models for processing zero-resource languages</h2>
+
+Title: [Multilingual acoustic word embedding models for processing zero-resource languages](https://arxiv.org/abs/2002.02109)
+
+Authors: [Herman Kamper](https://arxiv.org/search/cs?searchtype=author&query=Kamper%2C+H), [Yevgen Matusevych](https://arxiv.org/search/cs?searchtype=author&query=Matusevych%2C+Y), [Sharon Goldwater](https://arxiv.org/search/cs?searchtype=author&query=Goldwater%2C+S)
+
+*(Submitted on 6 Feb 2020)*
+
+> Acoustic word embeddings are fixed-dimensional representations of variable-length speech segments. In settings where unlabelled speech is the only available resource, such embeddings can be used in "zero-resource" speech search, indexing and discovery systems. Here we propose to train a single supervised embedding model on labelled data from multiple well-resourced languages and then apply it to unseen zero-resource languages. For this transfer learning approach, we consider two multilingual recurrent neural network models: a discriminative classifier trained on the joint vocabularies of all training languages, and a correspondence autoencoder trained to reconstruct word pairs. We test these using a word discrimination task on six target zero-resource languages. When trained on seven well-resourced languages, both models perform similarly and outperform unsupervised models trained on the zero-resource languages. With just a single training language, the second model works better, but performance depends more on the particular training--testing language pair.
+
+| Comments: | 5 pages, 4 figures, 1 table; accepted to ICASSP 2020. arXiv admin note: text overlap with [arXiv:1811.00403](https://arxiv.org/abs/1811.00403) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Audio and Speech Processing (eess.AS) |
+| Cite as:  | [arXiv:2002.02109](https://arxiv.org/abs/2002.02109) [cs.CL] |
+|           | (or [arXiv:2002.02109v1](https://arxiv.org/abs/2002.02109v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-02-06-2">2. Irony Detection in a Multilingual Context</h2>
+
+Title: [Irony Detection in a Multilingual Context](https://arxiv.org/abs/2002.02427)
+
+Authors: [Bilal Ghanem](https://arxiv.org/search/cs?searchtype=author&query=Ghanem%2C+B), [Jihen Karoui](https://arxiv.org/search/cs?searchtype=author&query=Karoui%2C+J), [Farah Benamara](https://arxiv.org/search/cs?searchtype=author&query=Benamara%2C+F), [Paolo Rosso](https://arxiv.org/search/cs?searchtype=author&query=Rosso%2C+P), [Véronique Moriceau](https://arxiv.org/search/cs?searchtype=author&query=Moriceau%2C+V)
+
+*(Submitted on 6 Feb 2020)*
+
+> This paper proposes the first multilingual (French, English and Arabic) and multicultural (Indo-European languages vs. less culturally close languages) irony detection system. We employ both feature-based models and neural architectures using monolingual word representation. We compare the performance of these systems with state-of-the-art systems to identify their capabilities. We show that these monolingual models trained separately on different languages using multilingual word representation or text-based features can open the door to irony detection in languages that lack of annotated data for irony.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2002.02427](https://arxiv.org/abs/2002.02427) [cs.CL] |
+|           | (or [arXiv:2002.02427v1](https://arxiv.org/abs/2002.02427v1) [cs.CL] for this version) |
+
+
+
+# 2020-02-05
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-02-05-1">1. CoVoST: A Diverse Multilingual Speech-To-Text Translation Corpus</h2>
+
+Title: [CoVoST: A Diverse Multilingual Speech-To-Text Translation Corpus](https://arxiv.org/abs/2002.01320)
+
+Authors: [Changhan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Juan Pino](https://arxiv.org/search/cs?searchtype=author&query=Pino%2C+J), [Anne Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+A), [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J)
+
+*(Submitted on 4 Feb 2020)*
+
+> Spoken language translation has recently witnessed a resurgence in popularity, thanks to the development of end-to-end models and the creation of new corpora, such as Augmented LibriSpeech and MuST-C. Existing datasets involve language pairs with English as a source language, involve very specific domains or are low resource. We introduce CoVoST, a multilingual speech-to-text translation corpus from 11 languages into English, diversified with over 11,000 speakers and over 60 accents. We describe the dataset creation methodology and provide empirical evidence of the quality of the data. We also provide initial benchmarks, including, to our knowledge, the first end-to-end many-to-one multilingual models for spoken language translation. CoVoST is released under CC0 license and free to use. We also provide additional evaluation data derived from Tatoeba under CC licenses.
+
+| Comments: | Submitted to LREC 2020                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2002.01320](https://arxiv.org/abs/2002.01320) [cs.CL] |
+|           | (or [arXiv:2002.01320v1](https://arxiv.org/abs/2002.01320v1) [cs.CL] for this version) |
 
 
 
