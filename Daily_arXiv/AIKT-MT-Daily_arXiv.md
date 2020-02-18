@@ -2,10 +2,26 @@
 
 # Index
 
+- [2020-02-17](#2020-02-17)
+  - [1. Transformers as Soft Reasoners over Language](#2020-02-17-1)
+  - [2. Transformer on a Diet](#2020-02-17-2)
+- [2020-02-13](#2020-02-13)
+  - [1. Superbloom: Bloom filter meets Transformer](#2020-02-13-1)
+  - [2. On Layer Normalization in the Transformer Architecture](#2020-02-13-2)
+- [2020-02-12](#2020-02-12)
+  - [1. Learning Coupled Policies for Simultaneous Machine Translation](#2020-02-12-1)
+- [2020-02-11](#2020-02-11)
+  - [1. Blank Language Models](#2020-02-11-1)
+  - [2. LAVA NAT: A Non-Autoregressive Translation Model with Look-Around Decoding and Vocabulary Attention](#2020-02-11-2)
+  - [3. Multilingual Alignment of Contextual Word Representations](#2020-02-11-3)
 
+
+- [2020-02-10](#2020-02-10)
+
+  - [1. Neural Machine Translation System of Indic Languages -- An Attention based Approach](#2020-02-10-1)
+  - [2. A Multilingual View of Unsupervised Machine Translation](#2020-02-10-2)
 - [2020-02-06](#2020-02-06)
-
-  - [1. Multilingual acoustic word embedding models for processing zero-resource languages](#2020-02-06-1)
+- [1. Multilingual acoustic word embedding models for processing zero-resource languages](#2020-02-06-1)
   - [2. Irony Detection in a Multilingual Context](#2020-02-06-2)
 - [2020-02-05](#2020-02-05)
 
@@ -33,6 +49,231 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-02-17
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-02-17-1">1. Transformers as Soft Reasoners over Language</h2>
+
+Title: [Transformers as Soft Reasoners over Language](https://arxiv.org/abs/2002.05867)
+
+Authors: [Peter Clark](https://arxiv.org/search/cs?searchtype=author&query=Clark%2C+P), [Oyvind Tafjord](https://arxiv.org/search/cs?searchtype=author&query=Tafjord%2C+O), [Kyle Richardson](https://arxiv.org/search/cs?searchtype=author&query=Richardson%2C+K)
+
+*(Submitted on 14 Feb 2020)*
+
+> AI has long pursued the goal of having systems reason over *explicitly provided* knowledge, but building suitable representations has proved challenging. Here we explore whether transformers can similarly learn to reason (or emulate reasoning), but using rules expressed in language, thus bypassing a formal representation. We provide the first demonstration that this is possible, and characterize the extent of this capability. To do this, we use a collection of synthetic datasets that test increasing levels of reasoning complexity (number of rules, presence of negation, and depth of chaining). We find transformers appear to learn rule-based reasoning with high (99%) accuracy on these datasets, and in a way that generalizes to test data requiring substantially deeper chaining than in the training data (95%+ scores). We also demonstrate that the models transfer well to two hand-authored rulebases, and to rulebases paraphrased into more natural language. These findings are significant as it suggests a new role for transformers, namely as a limited "soft theorem prover" operating over explicit theories in language. This in turn suggests new possibilities for explainability, correctability, and counterfactual reasoning in question-answering. All datasets and a live demo are available at [this http URL](http://rule-reasoning.apps.allenai.org/)
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2002.05867](https://arxiv.org/abs/2002.05867) [cs.CL] |
+|           | (or [arXiv:2002.05867v1](https://arxiv.org/abs/2002.05867v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-02-17-2">2. Transformer on a Diet</h2>
+
+Title: [Transformer on a Diet](https://arxiv.org/abs/2002.06170)
+
+Authors: [Chenguang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Zihao Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+Z), [Aston Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+A), [Zheng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Alexander J. Smola](https://arxiv.org/search/cs?searchtype=author&query=Smola%2C+A+J)
+
+*(Submitted on 14 Feb 2020)*
+
+> Transformer has been widely used thanks to its ability to capture sequence information in an efficient way. However, recent developments, such as BERT and GPT-2, deliver only heavy architectures with a focus on effectiveness. In this paper, we explore three carefully-designed light Transformer architectures to figure out whether the Transformer with less computations could produce competitive results. Experimental results on language model benchmark datasets hint that such trade-off is promising, and the light Transformer reduces 70% parameters at best, while obtains competitive perplexity compared to standard Transformer. The source code is publicly available.
+
+| Comments: | 6 pages, 2 tables, 1 figure                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:2002.06170](https://arxiv.org/abs/2002.06170) [cs.CL] |
+|           | (or [arXiv:2002.06170v1](https://arxiv.org/abs/2002.06170v1) [cs.CL] for this version) |
+
+
+
+
+
+# 2020-02-13
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-02-13-1">1. Superbloom: Bloom filter meets Transformer</h2>
+
+Title: [Superbloom: Bloom filter meets Transformer](https://arxiv.org/abs/2002.04723)
+
+Authors: [John Anderson](https://arxiv.org/search/cs?searchtype=author&query=Anderson%2C+J), [Qingqing Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Q), [Walid Krichene](https://arxiv.org/search/cs?searchtype=author&query=Krichene%2C+W), [Steffen Rendle](https://arxiv.org/search/cs?searchtype=author&query=Rendle%2C+S), [Li Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+L)
+
+*(Submitted on 11 Feb 2020)*
+
+> We extend the idea of word pieces in natural language models to machine learning tasks on opaque ids. This is achieved by applying hash functions to map each id to multiple hash tokens in a much smaller space, similarly to a Bloom filter. We show that by applying a multi-layer Transformer to these Bloom filter digests, we are able to obtain models with high accuracy. They outperform models of a similar size without hashing and, to a large degree, models of a much larger size trained using sampled softmax with the same computational budget. Our key observation is that it is important to use a multi-layer Transformer for Bloom filter digests to remove ambiguity in the hashed input. We believe this provides an alternative method to solving problems with large vocabulary size.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2002.04723](https://arxiv.org/abs/2002.04723) [cs.LG] |
+|           | (or [arXiv:2002.04723v1](https://arxiv.org/abs/2002.04723v1) [cs.LG] for this version) |
+
+
+
+
+
+<h2 id="2020-02-13-2">2. On Layer Normalization in the Transformer Architecture</h2>
+
+Title: [On Layer Normalization in the Transformer Architecture](https://arxiv.org/abs/2002.04745)
+
+Authors:[Ruibin Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+R), [Yunchang Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Di He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+D), [Kai Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+K), [Shuxin Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+S), [Chen Xing](https://arxiv.org/search/cs?searchtype=author&query=Xing%2C+C), [Huishuai Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H), [Yanyan Lan](https://arxiv.org/search/cs?searchtype=author&query=Lan%2C+Y), [Liwei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Tie-Yan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T)
+
+*(Submitted on 12 Feb 2020)*
+
+> The Transformer is widely used in natural language processing tasks. To train a Transformer however, one usually needs a carefully designed learning rate warm-up stage, which is shown to be crucial to the final performance but will slow down the optimization and bring more hyper-parameter tunings. In this paper, we first study theoretically why the learning rate warm-up stage is essential and show that the location of layer normalization matters. Specifically, we prove with mean field theory that at initialization, for the original-designed Post-LN Transformer, which places the layer normalization between the residual blocks, the expected gradients of the parameters near the output layer are large. Therefore, using a large learning rate on those gradients makes the training unstable. The warm-up stage is practically helpful for avoiding this problem. On the other hand, our theory also shows that if the layer normalization is put inside the residual blocks (recently proposed as Pre-LN Transformer), the gradients are well-behaved at initialization. This motivates us to remove the warm-up stage for the training of Pre-LN Transformers. We show in our experiments that Pre-LN Transformers without the warm-up stage can reach comparable results with baselines while requiring significantly less training time and hyper-parameter tuning on a wide range of applications.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2002.04745](https://arxiv.org/abs/2002.04745) [cs.LG] |
+|           | (or [arXiv:2002.04745v1](https://arxiv.org/abs/2002.04745v1) [cs.LG] for this version) |
+
+
+
+# 2020-02-12
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-02-12-1">1. Learning Coupled Policies for Simultaneous Machine Translation</h2>
+
+Title: [Learning Coupled Policies for Simultaneous Machine Translation](https://arxiv.org/abs/2002.04306)
+
+Authors: [Philip Arthur](https://arxiv.org/search/cs?searchtype=author&query=Arthur%2C+P), [Trevor Cohn](https://arxiv.org/search/cs?searchtype=author&query=Cohn%2C+T), [Gholamreza Haffari](https://arxiv.org/search/cs?searchtype=author&query=Haffari%2C+G)
+
+*(Submitted on 11 Feb 2020)*
+
+> Abstract: In simultaneous machine translation, the system needs to incrementally generate the output translation before the input sentence ends. This is a coupled decision process consisting of a programmer and interpreter. The programmer's policy decides about when to WRITE the next output or READ the next input, and the interpreter's policy decides what word to write. We present an imitation learning (IL) approach to efficiently learn effective coupled programmer-interpreter policies. To enable IL, we present an algorithmic oracle to produce oracle READ/WRITE actions for training bilingual sentence-pairs using the notion of word alignments. We attribute the effectiveness of the learned coupled policies to (i) scheduled sampling addressing the coupled exposure bias, and (ii) quality of oracle actions capturing enough information from the partial input before writing the output. Experiments show our method outperforms strong baselines in terms of translation quality and delay, when translating from German/Arabic/Czech/Bulgarian/Romanian to English.
+
+| Comments: | 7 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | Computation and Language (cs.CL); Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:2002.04306](https://arxiv.org/abs/2002.04306) [cs.CL] |
+|           | (or [arXiv:2002.04306v1](https://arxiv.org/abs/2002.04306v1) [cs.CL] for this version) |
+
+
+
+
+
+# 2020-02-11
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-02-11-1">1. Blank Language Models</h2>
+
+Title: [Blank Language Models](https://arxiv.org/abs/2002.03079)
+
+Authors: [Tianxiao Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+T), [Victor Quach](https://arxiv.org/search/cs?searchtype=author&query=Quach%2C+V), [Regina Barzilay](https://arxiv.org/search/cs?searchtype=author&query=Barzilay%2C+R), [Tommi Jaakkola](https://arxiv.org/search/cs?searchtype=author&query=Jaakkola%2C+T)
+
+*(Submitted on 8 Feb 2020)*
+
+> We propose Blank Language Model (BLM), a model that generates sequences by dynamically creating and filling in blanks. Unlike previous masked language models or the Insertion Transformer, BLM uses blanks to control which part of the sequence to expand. This fine-grained control of generation is ideal for a variety of text editing and rewriting tasks. The model can start from a single blank or partially completed text with blanks at specified locations. It iteratively determines which word to place in a blank and whether to insert new blanks, and stops generating when no blanks are left to fill. BLM can be efficiently trained using a lower bound of the marginal data likelihood, and achieves perplexity comparable to traditional left-to-right language models on the Penn Treebank and WikiText datasets. On the task of filling missing text snippets, BLM significantly outperforms all other baselines in terms of both accuracy and fluency. Experiments on style transfer and damaged ancient text restoration demonstrate the potential of this framework for a wide range of applications.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2002.03079](https://arxiv.org/abs/2002.03079) [cs.CL] |
+|           | (or [arXiv:2002.03079v1](https://arxiv.org/abs/2002.03079v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-02-11-2">2. LAVA NAT: A Non-Autoregressive Translation Model with Look-Around Decoding and Vocabulary Attention</h2>
+
+Title: [LAVA NAT: A Non-Autoregressive Translation Model with Look-Around Decoding and Vocabulary Attention](https://arxiv.org/abs/2002.03084)
+
+Authors: [Xiaoya Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Yuxian Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+Y), [Arianna Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+A), [Fei Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+F), [Jiwei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J)
+
+*(Submitted on 8 Feb 2020)*
+
+> Non-autoregressive translation (NAT) models generate multiple tokens in one forward pass and is highly efficient at inference stage compared with autoregressive translation (AT) methods. However, NAT models often suffer from the multimodality problem, i.e., generating duplicated tokens or missing tokens. In this paper, we propose two novel methods to address this issue, the Look-Around (LA) strategy and the Vocabulary Attention (VA) mechanism. The Look-Around strategy predicts the neighbor tokens in order to predict the current token, and the Vocabulary Attention models long-term token dependencies inside the decoder by attending the whole vocabulary for each position to acquire knowledge of which token is about to generate. %We also propose a dynamic bidirectional decoding approach to accelerate the inference process of the LAVA model while preserving the high-quality of the generated output. Our proposed model uses significantly less time during inference compared with autoregressive models and most other NAT models. Our experiments on four benchmarks (WMT14 En*[Math Processing Error]*De, WMT14 De*[Math Processing Error]*En, WMT16 Ro*[Math Processing Error]*En and IWSLT14 De*[Math Processing Error]*En) show that the proposed model achieves competitive performance compared with the state-of-the-art non-autoregressive and autoregressive models while significantly reducing the time cost in inference phase.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2002.03084](https://arxiv.org/abs/2002.03084) [cs.CL] |
+|           | (or [arXiv:2002.03084v1](https://arxiv.org/abs/2002.03084v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-02-11-3">3. Multilingual Alignment of Contextual Word Representations</h2>
+
+Title: [Multilingual Alignment of Contextual Word Representations](https://arxiv.org/abs/2002.03518)
+
+Authors: [Steven Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+S), [Nikita Kitaev](https://arxiv.org/search/cs?searchtype=author&query=Kitaev%2C+N), [Dan Klein](https://arxiv.org/search/cs?searchtype=author&query=Klein%2C+D)
+
+*(Submitted on 10 Feb 2020)*
+
+> We propose procedures for evaluating and strengthening contextual embedding alignment and show that they are useful in analyzing and improving multilingual BERT. In particular, after our proposed alignment procedure, BERT exhibits significantly improved zero-shot performance on XNLI compared to the base model, remarkably matching pseudo-fully-supervised translate-train models for Bulgarian and Greek. Further, to measure the degree of alignment, we introduce a contextual version of word retrieval and show that it correlates well with downstream zero-shot transfer. Using this word retrieval task, we also analyze BERT and find that it exhibits systematic deficiencies, e.g. worse alignment for open-class parts-of-speech and word pairs written in different scripts, that are corrected by the alignment procedure. These results support contextual alignment as a useful concept for understanding large multilingual pre-trained models.
+
+| Comments: | ICLR 2020                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:2002.03518](https://arxiv.org/abs/2002.03518) [cs.CL] |
+|           | (or [arXiv:2002.03518v1](https://arxiv.org/abs/2002.03518v1) [cs.CL] for this version) |
+
+
+
+# 2020-02-10
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-02-10-1">1. Neural Machine Translation System of Indic Languages -- An Attention based Approach</h2>
+
+Title: [Neural Machine Translation System of Indic Languages -- An Attention based Approach]()
+
+Authors: [Parth Shah](https://arxiv.org/search/cs?searchtype=author&query=Shah%2C+P), [Vishvajit Bakrola](https://arxiv.org/search/cs?searchtype=author&query=Bakrola%2C+V)
+
+*(Submitted on 2 Feb 2020)*
+
+> Neural machine translation (NMT) is a recent and effective technique which led to remarkable improvements in comparison of conventional machine translation techniques. Proposed neural machine translation model developed for the Gujarati language contains encoder-decoder with attention mechanism. In India, almost all the languages are originated from their ancestral language - Sanskrit. They are having inevitable similarities including lexical and named entity similarity. Translating into Indic languages is always be a challenging task. In this paper, we have presented the neural machine translation system (NMT) that can efficiently translate Indic languages like Hindi and Gujarati that together covers more than 58.49 percentage of total speakers in the country. We have compared the performance of our NMT model with automatic evaluation matrices such as BLEU, perplexity and TER matrix. The comparison of our network with Google translate is also presented where it outperformed with a margin of 6 BLEU score on English-Gujarati translation.
+
+| Subjects:          | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | 2019 Second International Conference on Advanced Computational and Communication Paradigms (ICACCP), Gangtok, India, 2019, pp. 1-5 |
+| DOI:               | [10.1109/ICACCP.2019.8882969](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.1109%2FICACCP.2019.8882969&v=a230a5bc) |
+| Cite as:           | [arXiv:2002.02758](https://arxiv.org/abs/2002.02758) [cs.CL] |
+|                    | (or [arXiv:2002.02758v1](https://arxiv.org/abs/2002.02758v1) [cs.CL] for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-02-10-2">2. A Multilingual View of Unsupervised Machine Translation</h2>
+
+Title: [A Multilingual View of Unsupervised Machine Translation](https://arxiv.org/abs/2002.02955)
+
+Authors: [Xavier Garcia](https://arxiv.org/search/cs?searchtype=author&query=Garcia%2C+X), [Pierre Foret](https://arxiv.org/search/cs?searchtype=author&query=Foret%2C+P), [Thibault Sellam](https://arxiv.org/search/cs?searchtype=author&query=Sellam%2C+T), [Ankur P. Parikh](https://arxiv.org/search/cs?searchtype=author&query=Parikh%2C+A+P)
+
+*(Submitted on 7 Feb 2020)*
+
+> We present a probabilistic framework for multilingual neural machine translation that encompasses supervised and unsupervised setups, focusing on unsupervised translation. In addition to studying the vanilla case where there is only monolingual data available, we propose a novel setup where one language in the (source, target) pair is not associated with any parallel data, but there may exist auxiliary parallel data that contains the other. This auxiliary data can naturally be utilized in our probabilistic framework via a novel cross-translation loss term. Empirically, we show that our approach results in higher BLEU scores over state-of-the-art unsupervised models on the WMT'14 English-French, WMT'16 English-German, and WMT'16 English-Romanian datasets in most directions. In particular, we obtain a +1.65 BLEU advantage over the best-performing unsupervised model in the Romanian-English direction.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2002.02955](https://arxiv.org/abs/2002.02955) [cs.CL] |
+|           | (or [arXiv:2002.02955v1](https://arxiv.org/abs/2002.02955v1) [cs.CL] for this version) |
+
+
+
+
 
 
 
