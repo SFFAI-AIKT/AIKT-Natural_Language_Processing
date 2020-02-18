@@ -2,6 +2,11 @@
 
 # Index
 
+- [2020-02-18](#2020-02-18)
+  - [1. Supervised Phrase-boundary Embeddings](#2020-02-18-1)
+  - [2. Neural Machine Translation with Joint Representation](#2020-02-18-2)
+  - [3. Multi-layer Representation Fusion for Neural Machine Translation](#2020-02-18-3)
+  - [4. Incorporating BERT into Neural Machine Translation](#2020-02-18-4)
 - [2020-02-17](#2020-02-17)
   - [1. Transformers as Soft Reasoners over Language](#2020-02-17-1)
   - [2. Transformer on a Diet](#2020-02-17-2)
@@ -49,6 +54,90 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-02-18
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-02-18-1">1. Supervised Phrase-boundary Embeddings</h2>
+
+Title: [Supervised Phrase-boundary Embeddings](https://arxiv.org/abs/2002.06450)
+
+Authors: [Manni Singh](https://arxiv.org/search/cs?searchtype=author&query=Singh%2C+M), [David Weston](https://arxiv.org/search/cs?searchtype=author&query=Weston%2C+D), [Mark Levene](https://arxiv.org/search/cs?searchtype=author&query=Levene%2C+M)
+
+*(Submitted on 15 Feb 2020)*
+
+> We propose a new word embedding model, called SPhrase, that incorporates supervised phrase information. Our method modifies traditional word embeddings by ensuring that all target words in a phrase have exactly the same context. We demonstrate that including this information within a context window produces superior embeddings for both intrinsic evaluation tasks and downstream extrinsic tasks.
+
+| Comments: | 12 pages, 3 figures, 4 tables                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Artificial Intelligence (cs.AI)**; Computation and Language (cs.CL) |
+| Cite as:  | [arXiv:2002.06450](https://arxiv.org/abs/2002.06450) [cs.AI] |
+|           | (or [arXiv:2002.06450v1](https://arxiv.org/abs/2002.06450v1) [cs.AI] for this version) |
+
+
+
+
+
+<h2 id="2020-02-18-2">2. Neural Machine Translation with Joint Representation</h2>
+
+Title: [Neural Machine Translation with Joint Representation](https://arxiv.org/abs/2002.06546)
+
+Authors: [YanYang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Qiang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Q), [Tong Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+T), [Tongran Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T), [Jingbo Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J)
+
+*(Submitted on 16 Feb 2020)*
+
+> Though early successes of Statistical Machine Translation (SMT) systems are attributed in part to the explicit modelling of the interaction between any two source and target units, e.g., alignment, the recent Neural Machine Translation (NMT) systems resort to the attention which partially encodes the interaction for efficiency. In this paper, we employ Joint Representation that fully accounts for each possible interaction. We sidestep the inefficiency issue by refining representations with the proposed efficient attention operation. The resulting Reformer models offer a new Sequence-to- Sequence modelling paradigm besides the Encoder-Decoder framework and outperform the Transformer baseline in either the small scale IWSLT14 German-English, English-German and IWSLT15 Vietnamese-English or the large scale NIST12 Chinese-English translation tasks by about 1 BLEU point.We also propose a systematic model scaling approach, allowing the Reformer model to beat the state-of-the-art Transformer in IWSLT14 German-English and NIST12 Chinese-English with about 50% fewer parameters. The code is publicly available at [this https URL](https://github.com/lyy1994/reformer).
+
+| Comments: | AAAI 2020                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2002.06546](https://arxiv.org/abs/2002.06546) [cs.CL] |
+|           | (or [arXiv:2002.06546v1](https://arxiv.org/abs/2002.06546v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-02-18-3">3. Multi-layer Representation Fusion for Neural Machine Translation</h2>
+
+Title: [Multi-layer Representation Fusion for Neural Machine Translation](https://arxiv.org/abs/2002.06714)
+
+Authors: [Qiang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Q), [Fuxue Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+F), [Tong Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+T), [Yanyang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Yinqiao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Jingbo Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J)
+
+*(Submitted on 16 Feb 2020)*
+
+> Neural machine translation systems require a number of stacked layers for deep models. But the prediction depends on the sentence representation of the top-most layer with no access to low-level representations. This makes it more difficult to train the model and poses a risk of information loss to prediction. In this paper, we propose a multi-layer representation fusion (MLRF) approach to fusing stacked layers. In particular, we design three fusion functions to learn a better representation from the stack. Experimental results show that our approach yields improvements of 0.92 and 0.56 BLEU points over the strong Transformer baseline on IWSLT German-English and NIST Chinese-English MT tasks respectively. The result is new state-of-the-art in German-English translation.
+
+| Comments: | COLING 2018                                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2002.06714](https://arxiv.org/abs/2002.06714) [cs.CL] |
+|           | (or [arXiv:2002.06714v1](https://arxiv.org/abs/2002.06714v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-02-18-4">4. Incorporating BERT into Neural Machine Translation</h2>
+
+Title: [Incorporating BERT into Neural Machine Translation](https://arxiv.org/abs/2002.06823)
+
+Authors: [Jinhua Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J), [Yingce Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%2C+Y), [Lijun Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+L), [Di He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+D), [Tao Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+T), [Wengang Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+W), [Houqiang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+H), [Tie-Yan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T)
+
+*(Submitted on 17 Feb 2020)*
+
+> The recently proposed BERT has shown great power on a variety of natural language understanding tasks, such as text classification, reading comprehension, etc. However, how to effectively apply BERT to neural machine translation (NMT) lacks enough exploration. While BERT is more commonly used as fine-tuning instead of contextual embedding for downstream language understanding tasks, in NMT, our preliminary exploration of using BERT as contextual embedding is better than using for fine-tuning. This motivates us to think how to better leverage BERT for NMT along this direction. We propose a new algorithm named BERT-fused model, in which we first use BERT to extract representations for an input sequence, and then the representations are fused with each layer of the encoder and decoder of the NMT model through attention mechanisms. We conduct experiments on supervised (including sentence-level and document-level translations), semi-supervised and unsupervised machine translation, and achieve state-of-the-art results on seven benchmark datasets. Our code is available at \url{[this https URL](https://github.com/bert-nmt/bert-nmt)}.
+
+| Comments: | Accepted to ICLR-2020                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2002.06823](https://arxiv.org/abs/2002.06823) [cs.CL] |
+|           | (or [arXiv:2002.06823v1](https://arxiv.org/abs/2002.06823v1) [cs.CL] for this version) |
 
 
 
