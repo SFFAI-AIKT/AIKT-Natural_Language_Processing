@@ -2,6 +2,9 @@
 
 # Index
 
+- [2020-02-19](#2020-02-19)
+  - [1. From English To Foreign Languages: Transferring Pre-trained Language Models](#2020-02-19-1)
+  - [2. A Survey of Deep Learning Techniques for Neural Machine Translation](#2020-02-19-2)
 - [2020-02-18](#2020-02-18)
   - [1. Supervised Phrase-boundary Embeddings](#2020-02-18-1)
   - [2. Neural Machine Translation with Joint Representation](#2020-02-18-2)
@@ -54,6 +57,48 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-02-19
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-02-19-1">1. From English To Foreign Languages: Transferring Pre-trained Language Models</h2>
+
+Title: [From English To Foreign Languages: Transferring Pre-trained Language Models]()
+
+Authors: [Ke Tran](https://arxiv.org/search/cs?searchtype=author&query=Tran%2C+K)
+
+*(Submitted on 18 Feb 2020)*
+
+> Pre-trained models have demonstrated their effectiveness in many downstream natural language processing (NLP) tasks. The availability of multilingual pre-trained models enables zero-shot transfer of NLP tasks from high resource languages to low resource ones. However, recent research in improving pre-trained models focuses heavily on English. While it is possible to train the latest neural architectures for other languages from scratch, it is undesirable due to the required amount of compute. In this work, we tackle the problem of transferring an existing pre-trained model from English to other languages under a limited computational budget. With a single GPU, our approach can obtain a foreign BERT base model within a day and a foreign BERT large within two days. Furthermore, evaluating our models on six languages, we demonstrate that our models are better than multilingual BERT on two zero-shot tasks: natural language inference and dependency parsing.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2002.07306](https://arxiv.org/abs/2002.07306) [cs.CL] |
+|           | (or [arXiv:2002.07306v1](https://arxiv.org/abs/2002.07306v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-02-19-2">2. A Survey of Deep Learning Techniques for Neural Machine Translation</h2>
+
+Title: [A Survey of Deep Learning Techniques for Neural Machine Translation](https://arxiv.org/abs/2002.07526)
+
+Authors: [Shuoheng Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+S), [Yuxin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Xiaowen Chu](https://arxiv.org/search/cs?searchtype=author&query=Chu%2C+X)
+
+*(Submitted on 18 Feb 2020)*
+
+> In recent years, natural language processing (NLP) has got great development with deep learning techniques. In the sub-field of machine translation, a new approach named Neural Machine Translation (NMT) has emerged and got massive attention from both academia and industry. However, with a significant number of researches proposed in the past several years, there is little work in investigating the development process of this new technology trend. This literature survey traces back the origin and principal development timeline of NMT, investigates the important branches, categorizes different research orientations, and discusses some future research trends in this field.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2002.07526](https://arxiv.org/abs/2002.07526) [cs.CL] |
+|           | (or [arXiv:2002.07526v1](https://arxiv.org/abs/2002.07526v1) [cs.CL] for this version) |
 
 
 
