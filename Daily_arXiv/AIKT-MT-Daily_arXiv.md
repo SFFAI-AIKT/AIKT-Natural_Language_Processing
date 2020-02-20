@@ -2,6 +2,9 @@
 
 # Index
 
+- [2020-02-20](#2020-02-20)
+  - [1. The Microsoft Toolkit of Multi-Task Deep Neural Networks for Natural Language Understanding](#2020-02-20-1)
+  - [2. Toward Making the Most of Context in Neural Machine Translation](#2020-02-20-2)
 - [2020-02-19](#2020-02-19)
   - [1. From English To Foreign Languages: Transferring Pre-trained Language Models](#2020-02-19-1)
   - [2. A Survey of Deep Learning Techniques for Neural Machine Translation](#2020-02-19-2)
@@ -57,6 +60,52 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-02-20
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-02-20-1">1. The Microsoft Toolkit of Multi-Task Deep Neural Networks for Natural Language Understanding</h2>
+
+Title: [The Microsoft Toolkit of Multi-Task Deep Neural Networks for Natural Language Understanding]()
+
+Authors: [Xiaodong Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Yu Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Jianshu Ji](https://arxiv.org/search/cs?searchtype=author&query=Ji%2C+J), [Hao Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+H), [Xueyun Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+X), [Emmanuel Awa](https://arxiv.org/search/cs?searchtype=author&query=Awa%2C+E), [Pengcheng He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+P), [Weizhu Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+W), [Hoifung Poon](https://arxiv.org/search/cs?searchtype=author&query=Poon%2C+H), [Guihong Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+G), [Jianfeng Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+J)
+
+*(Submitted on 19 Feb 2020)*
+
+> We present MT-DNN, an open-source natural language understanding (NLU) toolkit that makes it easy for researchers and developers to train customized deep learning models. Built upon PyTorch and Transformers, MT-DNN is designed to facilitate rapid customization for a broad spectrum of NLU tasks, using a variety of objectives (classification, regression, structured prediction) and text encoders (e.g., RNNs, BERT, RoBERTa, UniLM). A unique feature of MT-DNN is its built-in support for robust and transferable learning using the adversarial multi-task learning paradigm. To enable efficient production deployment, MT-DNN supports multi-task knowledge distillation, which can substantially compress a deep neural model without significant performance drop. We demonstrate the effectiveness of MT-DNN on a wide range of NLU applications across general and biomedical domains. The software and pre-trained models will be publicly available at [this https URL](https://github.com/namisan/mt-dnn).
+
+| Comments: | 9 pages, 3 figures and 3 tables                              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2002.07972](https://arxiv.org/abs/2002.07972) [cs.CL] |
+|           | (or [arXiv:2002.07972v1](https://arxiv.org/abs/2002.07972v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-02-20-2">2. Toward Making the Most of Context in Neural Machine Translation</h2>
+
+Title: [Toward Making the Most of Context in Neural Machine Translation](https://arxiv.org/abs/2002.07982)
+
+Authors: [Zaixiang Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+Z), [Xiang Yue](https://arxiv.org/search/cs?searchtype=author&query=Yue%2C+X), [Shujian Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Jiajun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J), [Alexandra Birch](https://arxiv.org/search/cs?searchtype=author&query=Birch%2C+A)
+
+*(Submitted on 19 Feb 2020)*
+
+> Document-level machine translation manages to outperform sentence level models by a small margin, but have failed to be widely adopted. We argue that previous research did not make a clear use of the global context, and propose a new document-level NMT framework that deliberately models the local context of each sentence with the awareness of the global context of the document in both source and target languages. We specifically design the model to be able to deal with documents containing any number of sentences, including single sentences. This unified approach allows our model to be trained elegantly on standard datasets without needing to train on sentence and document level data separately. Experimental results demonstrate that our model outperforms Transformer baselines and previous document-level NMT models with substantial margins of up to 2.1 BLEU on state-of-the-art baselines. We also provide analyses which show the benefit of context far beyond the neighboring two or three sentences, which previous studies have typically incorporated.
+
+| Comments: | Submitted to a conference                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2002.07982](https://arxiv.org/abs/2002.07982) [cs.CL] |
+|           | (or [arXiv:2002.07982v1](https://arxiv.org/abs/2002.07982v1) [cs.CL] for this version) |
+
+
 
 
 
