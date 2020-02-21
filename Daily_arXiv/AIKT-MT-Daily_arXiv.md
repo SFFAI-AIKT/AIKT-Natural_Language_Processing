@@ -2,6 +2,10 @@
 
 # Index
 
+- [2020-02-21](#2020-02-21)
+  - [1. Balancing Cost and Benefit with Tied-Multi Transformers](#2020-02-21-1)
+  - [2. Contextual Lensing of Universal Sentence Representations](#2020-02-21-2)
+  - [3. Compositional Neural Machine Translation by Removing the Lexicon from Syntax](#2020-02-21-3)
 - [2020-02-20](#2020-02-20)
   - [1. The Microsoft Toolkit of Multi-Task Deep Neural Networks for Natural Language Understanding](#2020-02-20-1)
   - [2. Toward Making the Most of Context in Neural Machine Translation](#2020-02-20-2)
@@ -60,6 +64,72 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-02-21
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-02-21-1">1. Balancing Cost and Benefit with Tied-Multi Transformers</h2>
+
+Title: [Balancing Cost and Benefit with Tied-Multi Transformers](https://arxiv.org/abs/2002.08614)
+
+Authors:  [Raj Dabre](https://arxiv.org/search/cs?searchtype=author&query=Dabre%2C+R), [Raphael Rubino](https://arxiv.org/search/cs?searchtype=author&query=Rubino%2C+R), [Atsushi Fujita](https://arxiv.org/search/cs?searchtype=author&query=Fujita%2C+A)
+
+*(Submitted on 20 Feb 2020)*
+
+> We propose and evaluate a novel procedure for training multiple Transformers with tied parameters which compresses multiple models into one enabling the dynamic choice of the number of encoder and decoder layers during decoding. In sequence-to-sequence modeling, typically, the output of the last layer of the N-layer encoder is fed to the M-layer decoder, and the output of the last decoder layer is used to compute loss. Instead, our method computes a single loss consisting of NxM losses, where each loss is computed from the output of one of the M decoder layers connected to one of the N encoder layers. Such a model subsumes NxM models with different number of encoder and decoder layers, and can be used for decoding with fewer than the maximum number of encoder and decoder layers. We then propose a mechanism to choose a priori the number of encoder and decoder layers for faster decoding, and also explore recurrent stacking of layers and knowledge distillation for model compression. We present a cost-benefit analysis of applying the proposed approaches for neural machine translation and show that they reduce decoding costs while preserving translation quality.
+
+| Comments: | Extended version of our previous manuscript available at [arXiv:1908.10118](https://arxiv.org/abs/1908.10118) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:2002.08614](https://arxiv.org/abs/2002.08614) [cs.CL] |
+|           | (or [arXiv:2002.08614v1](https://arxiv.org/abs/2002.08614v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-02-21-2">2. Contextual Lensing of Universal Sentence Representations</h2>
+
+Title: [Contextual Lensing of Universal Sentence Representations](https://arxiv.org/abs/2002.08866)
+
+Authors:  [Jamie Kiros](https://arxiv.org/search/cs?searchtype=author&query=Kiros%2C+J)
+
+*(Submitted on 20 Feb 2020)*
+
+> What makes a universal sentence encoder universal? The notion of a generic encoder of text appears to be at odds with the inherent contextualization and non-permanence of language use in a dynamic world. However, mapping sentences into generic fixed-length vectors for downstream similarity and retrieval tasks has been fruitful, particularly for multilingual applications. How do we manage this dilemma? In this work we propose Contextual Lensing, a methodology for inducing context-oriented universal sentence vectors. We break the construction of universal sentence vectors into a core, variable length, sentence matrix representation equipped with an adaptable `lens' from which fixed-length vectors can be induced as a function of the lens context. We show that it is possible to focus notions of language similarity into a small number of lens parameters given a core universal matrix representation. For example, we demonstrate the ability to encode translation similarity of sentences across several languages into a single weight matrix, even when the core encoder has not seen parallel data.
+
+| Comments: | 10 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:2002.08866](https://arxiv.org/abs/2002.08866) [cs.CL] |
+|           | (or [arXiv:2002.08866v1](https://arxiv.org/abs/2002.08866v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-02-21-3">3. Compositional Neural Machine Translation by Removing the Lexicon from Syntax</h2>
+
+Title: [Compositional Neural Machine Translation by Removing the Lexicon from Syntax](https://arxiv.org/abs/2002.08899)
+
+Authors:  [Tristan Thrush](https://arxiv.org/search/cs?searchtype=author&query=Thrush%2C+T)
+
+*(Submitted on 6 Feb 2020)*
+
+> The meaning of a natural language utterance is largely determined from its syntax and words. Additionally, there is evidence that humans process an utterance by separating knowledge about the lexicon from syntax knowledge. Theories from semantics and neuroscience claim that complete word meanings are not encoded in the representation of syntax. In this paper, we propose neural units that can enforce this constraint over an LSTM encoder and decoder. We demonstrate that our model achieves competitive performance across a variety of domains including semantic parsing, syntactic parsing, and English to Mandarin Chinese translation. In these cases, our model outperforms the standard LSTM encoder and decoder architecture on many or all of our metrics. To demonstrate that our model achieves the desired separation between the lexicon and syntax, we analyze its weights and explore its behavior when different neural modules are damaged. When damaged, we find that the model displays the knowledge distortions that aphasics are evidenced to have.
+
+| Comments: | natural language processing; adversarial neural networks; machine translation; aphasia; neural attention |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2002.08899](https://arxiv.org/abs/2002.08899) [cs.CL] |
+|           | (or [arXiv:2002.08899v1](https://arxiv.org/abs/2002.08899v1) [cs.CL] for this version) |
+
+
 
 
 
