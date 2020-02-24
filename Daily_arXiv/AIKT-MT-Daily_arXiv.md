@@ -2,6 +2,11 @@
 
 # Index
 
+- [2020-02-24](#2020-02-24)
+  - [1. Language as a Cognitive Tool to Imagine Goals in Curiosity-Driven Exploration](#2020-02-24-1)
+  - [2. Accessing Higher-level Representations in Sequential Transformers with Feedback Memory](#2020-02-24-2)
+  - [3. Refinement of Unsupervised Cross-Lingual Word Embeddings](#2020-02-24-3)
+  - [4. Is Aligning Embedding Spaces a Challenging Task? An Analysis of the Existing Methods](#2020-02-24-4)
 - [2020-02-21](#2020-02-21)
   - [1. Balancing Cost and Benefit with Tied-Multi Transformers](#2020-02-21-1)
   - [2. Contextual Lensing of Universal Sentence Representations](#2020-02-21-2)
@@ -64,6 +69,90 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-02-24
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-02-24-1">1. Language as a Cognitive Tool to Imagine Goals in Curiosity-Driven Exploration</h2>
+
+Title: [Language as a Cognitive Tool to Imagine Goals in Curiosity-Driven Exploration](https://arxiv.org/abs/2002.09253)
+
+Authors: [Cédric Colas](https://arxiv.org/search/cs?searchtype=author&query=Colas%2C+C), [Tristan Karch](https://arxiv.org/search/cs?searchtype=author&query=Karch%2C+T), [Nicolas Lair](https://arxiv.org/search/cs?searchtype=author&query=Lair%2C+N), [Jean-Michel Dussoux](https://arxiv.org/search/cs?searchtype=author&query=Dussoux%2C+J), [Clément Moulin-Frier](https://arxiv.org/search/cs?searchtype=author&query=Moulin-Frier%2C+C), [Peter Ford Dominey](https://arxiv.org/search/cs?searchtype=author&query=Dominey%2C+P+F), [Pierre-Yves Oudeyer](https://arxiv.org/search/cs?searchtype=author&query=Oudeyer%2C+P)
+
+*(Submitted on 21 Feb 2020)*
+
+> Autonomous reinforcement learning agents must be intrinsically motivated to explore their environment, discover potential goals, represent them and learn how to achieve them. As children do the same, they benefit from exposure to language, using it to formulate goals and imagine new ones as they learn their meaning. In our proposed learning architecture (IMAGINE), the agent freely explores its environment and turns natural language descriptions of interesting interactions from a social partner into potential goals. IMAGINE learns to represent goals by jointly learning a language model and a goal-conditioned reward function. Just like humans, our agent uses language compositionality to generate new goals by composing known ones. Leveraging modular model architectures based on Deep Sets and gated-attention mechanisms, IMAGINE autonomously builds a repertoire of behaviors and shows good zero-shot generalization properties for various types of generalization. When imagining its own goals, the agent leverages zero-shot generalization of the reward function to further train on imagined goals and refine its behavior. We present experiments in a simulated domain where the agent interacts with procedurally generated scenes containing objects of various types and colors, discovers goals, imagines others and learns to achieve them.
+
+| Comments: | Contains main article and supplementaries                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Artificial Intelligence (cs.AI)**; Computation and Language (cs.CL) |
+| Cite as:  | [arXiv:2002.09253](https://arxiv.org/abs/2002.09253) [cs.AI] |
+|           | (or [arXiv:2002.09253v1](https://arxiv.org/abs/2002.09253v1) [cs.AI] for this version) |
+
+
+
+
+
+<h2 id="2020-02-24-2">2. Accessing Higher-level Representations in Sequential Transformers with Feedback Memory</h2>
+
+Title: [Accessing Higher-level Representations in Sequential Transformers with Feedback Memory](https://arxiv.org/abs/2002.09402)
+
+Authors: [Angela Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+A), [Thibaut Lavril](https://arxiv.org/search/cs?searchtype=author&query=Lavril%2C+T), [Edouard Grave](https://arxiv.org/search/cs?searchtype=author&query=Grave%2C+E), [Armand Joulin](https://arxiv.org/search/cs?searchtype=author&query=Joulin%2C+A), [Sainbayar Sukhbaatar](https://arxiv.org/search/cs?searchtype=author&query=Sukhbaatar%2C+S)
+
+*(Submitted on 21 Feb 2020)*
+
+> Transformers are feedforward networks that can process input tokens in parallel. While this parallelization makes them computationally efficient, it restricts the model from fully exploiting the sequential nature of the input - the representation at a given layer can only access representations from lower layers, rather than the higher level representations already built in previous time steps. In this work, we propose the Feedback Transformer architecture that exposes all previous representations to all future representations, meaning the lowest representation of the current timestep is formed from the highest-level abstract representation of the past. We demonstrate on a variety of benchmarks in language modeling, neural machine translation, summarization, and reinforcement learning that the increased representation capacity can improve over Transformer baselines.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2002.09402](https://arxiv.org/abs/2002.09402) [cs.LG] |
+|           | (or [arXiv:2002.09402v1](https://arxiv.org/abs/2002.09402v1) [cs.LG] for this version) |
+
+
+
+
+
+<h2 id="2020-02-24-3">3. Refinement of Unsupervised Cross-Lingual Word Embeddings</h2>
+
+Title: [Refinement of Unsupervised Cross-Lingual Word Embeddings](https://arxiv.org/abs/2002.09213)
+
+Authors: [Magdalena Biesialska](https://arxiv.org/search/cs?searchtype=author&query=Biesialska%2C+M), [Marta R. Costa-jussà](https://arxiv.org/search/cs?searchtype=author&query=Costa-jussà%2C+M+R)
+
+*(Submitted on 21 Feb 2020)*
+
+> Cross-lingual word embeddings aim to bridge the gap between high-resource and low-resource languages by allowing to learn multilingual word representations even without using any direct bilingual signal. The lion's share of the methods are projection-based approaches that map pre-trained embeddings into a shared latent space. These methods are mostly based on the orthogonal transformation, which assumes language vector spaces to be isomorphic. However, this criterion does not necessarily hold, especially for morphologically-rich languages. In this paper, we propose a self-supervised method to refine the alignment of unsupervised bilingual word embeddings. The proposed model moves vectors of words and their corresponding translations closer to each other as well as enforces length- and center-invariance, thus allowing to better align cross-lingual embeddings. The experimental results demonstrate the effectiveness of our approach, as in most cases it outperforms state-of-the-art methods in a bilingual lexicon induction task.
+
+| Comments: | Accepted at the 24th European Conference on Artificial Intelligence (ECAI 2020) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:2002.09213](https://arxiv.org/abs/2002.09213) [cs.CL] |
+|           | (or [arXiv:2002.09213v1](https://arxiv.org/abs/2002.09213v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-02-24-4">4. Is Aligning Embedding Spaces a Challenging Task? An Analysis of the Existing Methods</h2>
+
+Title: [Is Aligning Embedding Spaces a Challenging Task? An Analysis of the Existing Methods](https://arxiv.org/abs/2002.09247)
+
+Authors: [Russa Biswas](https://arxiv.org/search/cs?searchtype=author&query=Biswas%2C+R), [Mehwish Alam](https://arxiv.org/search/cs?searchtype=author&query=Alam%2C+M), [Harald Sack](https://arxiv.org/search/cs?searchtype=author&query=Sack%2C+H)
+
+*(Submitted on 21 Feb 2020)*
+
+> Representation Learning of words and Knowledge Graphs (KG) into low dimensional vector spaces along with its applications to many real-world scenarios have recently gained momentum. In order to make use of multiple KG embeddings for knowledge-driven applications such as question answering, named entity disambiguation, knowledge graph completion, etc., alignment of different KG embedding spaces is necessary. In addition to multilinguality and domain-specific information, different KGs pose the problem of structural differences making the alignment of the KG embeddings more challenging. This paper provides a theoretical analysis and comparison of the state-of-the-art alignment methods between two embedding spaces representing entity-entity and entity-word. This paper also aims at assessing the capability and short-comings of the existing alignment methods on the pretext of different applications.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2002.09247](https://arxiv.org/abs/2002.09247) [cs.CL] |
+|           | (or [arXiv:2002.09247v1](https://arxiv.org/abs/2002.09247v1) [cs.CL] for this version) |
+
+
 
 
 
