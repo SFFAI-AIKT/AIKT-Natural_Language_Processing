@@ -2,6 +2,13 @@
 
 # Index
 
+- [2020-02-25](#2020-02-25)
+  - [1. Modelling Latent Skills for Multitask Language Generation](#2020-02-25-1)
+  - [2. Machine Translation System Selection from Bandit Feedback](#2020-02-25-2)
+  - [3. GRET: Global Representation Enhanced Transformer](#2020-02-25-3)
+  - [4. Fixed Encoder Self-Attention Patterns in Transformer-Based Machine Translation](#2020-02-25-4)
+  - [5. Word Embeddings Inherently Recover the Conceptual Organization of the Human Mind](#2020-02-25-5)
+  - [6. Improving BERT Fine-Tuning via Self-Ensemble and Self-Distillation](#2020-02-25-6)
 - [2020-02-24](#2020-02-24)
   - [1. Language as a Cognitive Tool to Imagine Goals in Curiosity-Driven Exploration](#2020-02-24-1)
   - [2. Accessing Higher-level Representations in Sequential Transformers with Feedback Memory](#2020-02-24-2)
@@ -69,6 +76,131 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-02-25
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-02-25-1">1. Modelling Latent Skills for Multitask Language Generation</h2>
+
+Title: [Modelling Latent Skills for Multitask Language Generation](https://arxiv.org/abs/2002.09543)
+
+Authors:  [Kris Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+K), [Dani Yogatama](https://arxiv.org/search/cs?searchtype=author&query=Yogatama%2C+D)
+
+*(Submitted on 21 Feb 2020)*
+
+> We present a generative model for multitask conditional language generation. Our guiding hypothesis is that a shared set of latent skills underlies many disparate language generation tasks, and that explicitly modelling these skills in a task embedding space can help with both positive transfer across tasks and with efficient adaptation to new tasks. We instantiate this task embedding space as a latent variable in a latent variable sequence-to-sequence model. We evaluate this hypothesis by curating a series of monolingual text-to-text language generation datasets - covering a broad range of tasks and domains - and comparing the performance of models both in the multitask and few-shot regimes. We show that our latent task variable model outperforms other sequence-to-sequence baselines on average across tasks in the multitask setting. In the few-shot learning setting on an unseen test dataset (i.e., a new task), we demonstrate that model adaptation based on inference in the latent task space is more robust than standard fine-tuning based parameter adaptation and performs comparably in terms of overall performance. Finally, we examine the latent task representations learnt by our model and show that they cluster tasks in a natural way.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2002.09543](https://arxiv.org/abs/2002.09543) [cs.CL] |
+|           | (or [arXiv:2002.09543v1](https://arxiv.org/abs/2002.09543v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-02-25-2">2. Machine Translation System Selection from Bandit Feedback</h2>
+
+Title: [Machine Translation System Selection from Bandit Feedback](https://arxiv.org/abs/2002.09646)
+
+Authors:  [Jason Naradowsky](https://arxiv.org/search/cs?searchtype=author&query=Naradowsky%2C+J), [Xuan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+X), [Kevin Duh](https://arxiv.org/search/cs?searchtype=author&query=Duh%2C+K)
+
+*(Submitted on 22 Feb 2020)*
+
+> Adapting machine translation systems in the real world is a difficult problem. In contrast to offline training, users cannot provide the type of fine-grained feedback typically used for improving the system. Moreover, users have different translation needs, and even a single user's needs may change over time.
+> In this work we take a different approach, treating the problem of adapting as one of selection. Instead of adapting a single system, we train many translation systems using different architectures and data partitions. Using bandit learning techniques on simulated user feedback, we learn a policy to choose which system to use for a particular translation task. We show that our approach can (1) quickly adapt to address domain changes in translation tasks, (2) outperform the single best system in mixed-domain translation tasks, and (3) make effective instance-specific decisions when using contextual bandit strategies.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2002.09646](https://arxiv.org/abs/2002.09646) [cs.CL] |
+|           | (or [arXiv:2002.09646v1](https://arxiv.org/abs/2002.09646v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-02-25-3">3. GRET: Global Representation Enhanced Transformer</h2>
+
+Title: [GRET: Global Representation Enhanced Transformer](https://arxiv.org/abs/2002.10101)
+
+Authors:  [Rongxiang Weng](https://arxiv.org/search/cs?searchtype=author&query=Weng%2C+R), [Haoran Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+H), [Shujian Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Heng Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+H), [Lidong Bing](https://arxiv.org/search/cs?searchtype=author&query=Bing%2C+L), [Weihua Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+W), [Jiajun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J)
+
+*(Submitted on 24 Feb 2020)*
+
+> Transformer, based on the encoder-decoder framework, has achieved state-of-the-art performance on several natural language generation tasks. The encoder maps the words in the input sentence into a sequence of hidden states, which are then fed into the decoder to generate the output sentence. These hidden states usually correspond to the input words and focus on capturing local information. However, the global (sentence level) information is seldom explored, leaving room for the improvement of generation quality. In this paper, we propose a novel global representation enhanced Transformer (GRET) to explicitly model global representation in the Transformer network. Specifically, in the proposed model, an external state is generated for the global representation from the encoder. The global representation is then fused into the decoder during the decoding process to improve generation quality. We conduct experiments in two text generation tasks: machine translation and text summarization. Experimental results on four WMT machine translation tasks and LCSTS text summarization task demonstrate the effectiveness of the proposed approach on natural language generation.
+
+| Comments: | Accepted by AAAI 2020                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2002.10101](https://arxiv.org/abs/2002.10101) [cs.CL] |
+|           | (or [arXiv:2002.10101v1](https://arxiv.org/abs/2002.10101v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-02-25-4">4. Fixed Encoder Self-Attention Patterns in Transformer-Based Machine Translation</h2>
+
+Title: [Fixed Encoder Self-Attention Patterns in Transformer-Based Machine Translation](https://arxiv.org/abs/2002.10260)
+
+Authors:  [Alessandro Raganato](https://arxiv.org/search/cs?searchtype=author&query=Raganato%2C+A), [Yves Scherrer](https://arxiv.org/search/cs?searchtype=author&query=Scherrer%2C+Y), [Jörg Tiedemann](https://arxiv.org/search/cs?searchtype=author&query=Tiedemann%2C+J)
+
+*(Submitted on 24 Feb 2020)*
+
+> Transformer-based models have brought a radical change to neural machine translation. A key feature of the Transformer architecture is the so-called multi-head attention mechanism, which allows the model to focus simultaneously on different parts of the input. However, recent works have shown that attention heads learn simple positional patterns which are often redundant. In this paper, we propose to replace all but one attention head of each encoder layer with fixed -- non-learnable -- attentive patterns that are solely based on position and do not require any external knowledge. Our experiments show that fixing the attention heads on the encoder side of the Transformer at training time does not impact the translation quality and even increases BLEU scores by up to 3 points in low-resource scenarios.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2002.10260](https://arxiv.org/abs/2002.10260) [cs.CL] |
+|           | (or [arXiv:2002.10260v1](https://arxiv.org/abs/2002.10260v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-02-25-5">5. Word Embeddings Inherently Recover the Conceptual Organization of the Human Mind</h2>
+
+Title: [Word Embeddings Inherently Recover the Conceptual Organization of the Human Mind](https://arxiv.org/abs/2002.10284)
+
+Authors:  [Victor Swift](https://arxiv.org/search/cs?searchtype=author&query=Swift%2C+V)
+
+*(Submitted on 6 Feb 2020)*
+
+> Machine learning is a means to uncover deep patterns from rich sources of data. Here, we find that machine learning can recover the conceptual organization of the human mind when applied to the natural language use of millions of people. Utilizing text from billions of webpages, we recover most of the concepts contained in English, Dutch, and Japanese, as represented in large scale Word Association networks. Our results justify machine learning as a means to probe the human mind, at a depth and scale that has been unattainable using self-report and observational methods. Beyond direct psychological applications, our methods may prove useful for projects concerned with defining, assessing, relating, or uncovering concepts in any scientific field.
+
+| Comments: | 12 pages, 4 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Neurons and Cognition (q-bio.NC) |
+| Cite as:  | [arXiv:2002.10284](https://arxiv.org/abs/2002.10284) [cs.CL] |
+|           | (or [arXiv:2002.10284v1](https://arxiv.org/abs/2002.10284v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-02-25-6">6. Improving BERT Fine-Tuning via Self-Ensemble and Self-Distillation
+</h2>
+
+Title: [Improving BERT Fine-Tuning via Self-Ensemble and Self-Distillation](https://arxiv.org/abs/2002.10345)
+
+Authors:  [Yige Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+Y), [Xipeng Qiu](https://arxiv.org/search/cs?searchtype=author&query=Qiu%2C+X), [Ligao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+L), [Xuanjing Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+X)
+
+*(Submitted on 24 Feb 2020)*
+
+> Fine-tuning pre-trained language models like BERT has become an effective way in NLP and yields state-of-the-art results on many downstream tasks. Recent studies on adapting BERT to new tasks mainly focus on modifying the model structure, re-designing the pre-train tasks, and leveraging external data and knowledge. The fine-tuning strategy itself has yet to be fully explored. In this paper, we improve the fine-tuning of BERT with two effective mechanisms: self-ensemble and self-distillation. The experiments on text classification and natural language inference tasks show our proposed methods can significantly improve the adaption of BERT without any external data or knowledge.
+
+| Comments: | 7 pages, 6 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:2002.10345](https://arxiv.org/abs/2002.10345) [cs.CL] |
+|           | (or [arXiv:2002.10345v1](https://arxiv.org/abs/2002.10345v1) [cs.CL] for this version) |
+
+
 
 
 
