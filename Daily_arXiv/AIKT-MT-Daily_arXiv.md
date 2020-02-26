@@ -2,6 +2,9 @@
 
 # Index
 
+- [2020-02-26](#2020-02-26)
+  - [1. MuST-Cinema: a Speech-to-Subtitles corpus](#2020-02-26-1)
+  - [2. Language-Independent Tokenisation Rivals Language-Specific Tokenisation for Word Similarity Prediction](#2020-02-26-2)
 - [2020-02-25](#2020-02-25)
   - [1. Modelling Latent Skills for Multitask Language Generation](#2020-02-25-1)
   - [2. Machine Translation System Selection from Bandit Feedback](#2020-02-25-2)
@@ -76,6 +79,56 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+
+
+# 2020-02-26
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-02-26-1">1. MuST-Cinema: a Speech-to-Subtitles corpus</h2>
+
+Title: [MuST-Cinema: a Speech-to-Subtitles corpus](https://arxiv.org/abs/2002.10829)
+
+Authors: [Alina Karakanta](https://arxiv.org/search/cs?searchtype=author&query=Karakanta%2C+A), [Matteo Negri](https://arxiv.org/search/cs?searchtype=author&query=Negri%2C+M), [Marco Turchi](https://arxiv.org/search/cs?searchtype=author&query=Turchi%2C+M)
+
+*(Submitted on 25 Feb 2020)*
+
+> Growing needs in localising audiovisual content in multiple languages through subtitles call for the development of automatic solutions for human subtitling. Neural Machine Translation (NMT) can contribute to the automatisation of subtitling, facilitating the work of human subtitlers and reducing turn-around times and related costs. NMT requires high-quality, large, task-specific training data. The existing subtitling corpora, however, are missing both alignments to the source language audio and important information about subtitle breaks. This poses a significant limitation for developing efficient automatic approaches for subtitling, since the length and form of a subtitle directly depends on the duration of the utterance. In this work, we present MuST-Cinema, a multilingual speech translation corpus built from TED subtitles. The corpus is comprised of (audio, transcription, translation) triplets. Subtitle breaks are preserved by inserting special symbols. We show that the corpus can be used to build models that efficiently segment sentences into subtitles and propose a method for annotating existing subtitling corpora with subtitle breaks, conforming to the constraint of length.
+
+| Comments: | Accepted at LREC 2020                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2002.10829](https://arxiv.org/abs/2002.10829) [cs.CL] |
+|           | (or [arXiv:2002.10829v1](https://arxiv.org/abs/2002.10829v1) [cs.CL] for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-02-26-2">2. Language-Independent Tokenisation Rivals Language-Specific Tokenisation for Word Similarity Prediction</h2>
+
+Title: [Language-Independent Tokenisation Rivals Language-Specific Tokenisation for Word Similarity Prediction](https://arxiv.org/abs/2002.11004)
+
+Authors: [Danushka Bollegala](https://arxiv.org/search/cs?searchtype=author&query=Bollegala%2C+D), [Ryuichi Kiryo](https://arxiv.org/search/cs?searchtype=author&query=Kiryo%2C+R), [Kosuke Tsujino](https://arxiv.org/search/cs?searchtype=author&query=Tsujino%2C+K), [Haruki Yukawa](https://arxiv.org/search/cs?searchtype=author&query=Yukawa%2C+H)
+
+*(Submitted on 25 Feb 2020)*
+
+> Language-independent tokenisation (LIT) methods that do not require labelled language resources or lexicons have recently gained popularity because of their applicability in resource-poor languages. Moreover, they compactly represent a language using a fixed size vocabulary and can efficiently handle unseen or rare words. On the other hand, language-specific tokenisation (LST) methods have a long and established history, and are developed using carefully created lexicons and training resources. Unlike subtokens produced by LIT methods, LST methods produce valid morphological subwords. Despite the contrasting trade-offs between LIT vs. LST methods, their performance on downstream NLP tasks remain unclear. In this paper, we empirically compare the two approaches using semantic similarity measurement as an evaluation task across a diverse set of languages. Our experimental results covering eight languages show that LST consistently outperforms LIT when the vocabulary size is large, but LIT can produce comparable or better results than LST in many languages with comparatively smaller (i.e. less than 100K words) vocabulary sizes, encouraging the use of LIT when language-specific resources are unavailable, incomplete or a smaller model is required. Moreover, we find that smoothed inverse frequency (SIF) to be an accurate method to create word embeddings from subword embeddings for multilingual semantic similarity prediction tasks. Further analysis of the nearest neighbours of tokens show that semantically and syntactically related tokens are closely embedded in subword embedding spaces
+
+| Comments: | To appear in the 12th Language Resources and Evaluation (LREC 2020) Conference |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:2002.11004](https://arxiv.org/abs/2002.11004) [cs.CL] |
+|           | (or [arXiv:2002.11004v1](https://arxiv.org/abs/2002.11004v1) [cs.CL] for this version) |
+
+
 
 
 
