@@ -2,6 +2,8 @@
 
 # Index
 
+- [2020-02-27](#2020-02-27)
+  - [1. Marathi To English Neural Machine Translation With Near Perfect Corpus And Transformers](#2020-02-27-1)
 - [2020-02-26](#2020-02-26)
   - [1. MuST-Cinema: a Speech-to-Subtitles corpus](#2020-02-26-1)
   - [2. Language-Independent Tokenisation Rivals Language-Specific Tokenisation for Word Similarity Prediction](#2020-02-26-2)
@@ -79,6 +81,34 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+
+
+# 2020-02-27
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-02-27-1">1. Marathi To English Neural Machine Translation With Near Perfect Corpus And Transformers</h2>
+
+Title: [Marathi To English Neural Machine Translation With Near Perfect Corpus And Transformers](https://arxiv.org/abs/2002.11643)
+
+Authors: [Swapnil Ashok Jadhav](https://arxiv.org/search/cs?searchtype=author&query=Jadhav%2C+S+A)
+
+*(Submitted on 26 Feb 2020)*
+
+> There have been very few attempts to benchmark performances of state-of-the-art algorithms for Neural Machine Translation task on Indian Languages. Google, Bing, Facebook and Yandex are some of the very few companies which have built translation systems for few of the Indian Languages. Among them, translation results from Google are supposed to be better, based on general inspection. Bing-Translator do not even support Marathi language which has around 95 million speakers and ranks 15th in the world in terms of combined primary and secondary speakers. In this exercise, we trained and compared variety of Neural Machine Marathi to English Translators trained with BERT-tokenizer by huggingface and various Transformer based architectures using Facebook's Fairseq platform with limited but almost correct parallel corpus to achieve better BLEU scores than Google on Tatoeba and Wikimedia open datasets.
+
+| Comments: | 5 pages, 5 tables. This report is based on applied research work done at Dailyhunt |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2002.11643](https://arxiv.org/abs/2002.11643) [cs.CL] |
+|           | (or [arXiv:2002.11643v1](https://arxiv.org/abs/2002.11643v1) [cs.CL] for this version) |
+
+
 
 
 
