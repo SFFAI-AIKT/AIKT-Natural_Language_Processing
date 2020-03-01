@@ -1,4 +1,4 @@
-# Daily arXiv: Machine Translation - Jan., 2020
+# Daily arXiv: Machine Translation - Feb., 2020
 
 # Index
 
