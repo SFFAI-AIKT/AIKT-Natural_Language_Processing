@@ -2,6 +2,9 @@
 
 # Index
 
+- [2020-03-04](#2020-03-04)
+  - [1. Understanding the Prediction Mechanism of Sentiments by XAI Visualization](#2020-03-04-1)
+  - [2. XGPT: Cross-modal Generative Pre-Training for Image Captioning](#2020-03-04-2)
 - [2020-03-02](#2020-03-02)
   - [1. Robust Unsupervised Neural Machine Translation with Adversarial Training](#2020-03-02-1)
   - [2. Modeling Future Cost for Neural Machine Translation](#2020-03-02-2)
@@ -19,6 +22,49 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-03-04
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-03-04-1">1. Understanding the Prediction Mechanism of Sentiments by XAI Visualization</h2>
+
+Title: [Understanding the Prediction Mechanism of Sentiments by XAI Visualization](https://arxiv.org/abs/2003.01425)
+
+Authors: [Chaehan So](https://arxiv.org/search/cs?searchtype=author&query=So%2C+C)
+
+*(Submitted on 3 Mar 2020)*
+
+> People often rely on online reviews to make purchase decisions. The present work aimed to gain an understanding of a machine learning model's prediction mechanism by visualizing the effect of sentiments extracted from online hotel reviews with explainable AI (XAI) methodology. Study 1 used the extracted sentiments as features to predict the review ratings by five machine learning algorithms (knn, CART decision trees, support vector machines, random forests, gradient boosting machines) and identified random forests as best algorithm. Study 2 analyzed the random forests model by feature importance and revealed the sentiments joy, disgust, positive and negative as the most predictive features. Furthermore, the visualization of additive variable attributions and their prediction distribution showed correct prediction in direction and effect size for the 5-star rating but partially wrong direction and insufficient effect size for the 1-star rating. These prediction details were corroborated by a what-if analysis for the four top features. In conclusion, the prediction mechanism of a machine learning model can be uncovered by visualization of particular observations. Comparing instances of contrasting ground truth values can draw a differential picture of the prediction mechanism and inform decisions for model improvement.
+
+| Comments: | This is the author's prefinal version be published in conference proceedings: 4th International Conference on Natural Language Processing and Information Retrieval, Sejong, South Korea, 26-28 June, 2020, ACM |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Human-Computer Interaction (cs.HC)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:2003.01425](https://arxiv.org/abs/2003.01425) [cs.HC] |
+|           | (or [arXiv:2003.01425v1](https://arxiv.org/abs/2003.01425v1) [cs.HC] for this version) |
+
+
+
+<h2 id="2020-03-04-2">2. XGPT: Cross-modal Generative Pre-Training for Image Captioning</h2>
+
+Title: [XGPT: Cross-modal Generative Pre-Training for Image Captioning](https://arxiv.org/abs/2003.01473)
+
+Authors: [Qiaolin Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%2C+Q), [Haoyang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+H), [Nan Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan%2C+N), [Dongdong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+D), [Lei Ji](https://arxiv.org/search/cs?searchtype=author&query=Ji%2C+L), [Zhifang Sui](https://arxiv.org/search/cs?searchtype=author&query=Sui%2C+Z), [Edward Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+E), [Taroon Bharti](https://arxiv.org/search/cs?searchtype=author&query=Bharti%2C+T), [Ming Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+M)
+
+*(Submitted on 3 Mar 2020)*
+
+> While many BERT-based cross-modal pre-trained models produce excellent results on downstream understanding tasks like image-text retrieval and VQA, they cannot be applied to generation tasks directly. In this paper, we propose XGPT, a new method of Cross-modal Generative Pre-Training for Image Captioning that is designed to pre-train text-to-image caption generators through three novel generation tasks, including Image-conditioned Masked Language Modeling (IMLM), Image-conditioned Denoising Autoencoding (IDA), and Text-conditioned Image Feature Generation (TIFG). As a result, the pre-trained XGPT can be fine-tuned without any task-specific architecture modifications to create state-of-the-art models for image captioning. Experiments show that XGPT obtains new state-of-the-art results on the benchmark datasets, including COCO Captions and Flickr30k Captions. We also use XGPT to generate new image captions as data augmentation for the image retrieval task and achieve significant improvement on all recall metrics.
+
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2003.01473](https://arxiv.org/abs/2003.01473) [cs.CL] |
+|           | (or [arXiv:2003.01473v1](https://arxiv.org/abs/2003.01473v1) [cs.CL] for this version) |
+
+
 
 
 
