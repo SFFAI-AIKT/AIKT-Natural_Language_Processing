@@ -2,6 +2,8 @@
 
 # Index
 
+- [2020-03-05](#2020-03-05)
+  - [1. Evaluating Low-Resource Machine Translation between Chinese and Vietnamese with Back-Translation](#2020-03-05-1)
 - [2020-03-04](#2020-03-04)
   - [1. Understanding the Prediction Mechanism of Sentiments by XAI Visualization](#2020-03-04-1)
   - [2. XGPT: Cross-modal Generative Pre-Training for Image Captioning](#2020-03-04-2)
@@ -22,6 +24,32 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-03-05
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-03-05-1">1. Evaluating Low-Resource Machine Translation between Chinese and Vietnamese with Back-Translation</h2>
+
+Title: [Evaluating Low-Resource Machine Translation between Chinese and Vietnamese with Back-Translation](https://arxiv.org/abs/2003.02197)
+
+Authors: [Hongzheng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+H), [Heyan Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+H)
+
+*(Submitted on 4 Mar 2020)*
+
+> Back translation (BT) has been widely used and become one of standard techniques for data augmentation in Neural Machine Translation (NMT), BT has proven to be helpful for improving the performance of translation effectively, especially for low-resource scenarios. While most works related to BT mainly focus on European languages, few of them study languages in other areas around the world. In this paper, we investigate the impacts of BT on Asia language translations between the extremely low-resource Chinese and Vietnamese language pair. We evaluate and compare the effects of different sizes of synthetic data on both NMT and Statistical Machine Translation (SMT) models for Chinese to Vietnamese and Vietnamese to Chinese, with character-based and word-based settings. Some conclusions from previous works are partially confirmed and we also draw some other interesting findings and conclusions, which are beneficial to understand BT further.
+
+| Comments: | 10 pages, 5 tables and 4 figures                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2003.02197](https://arxiv.org/abs/2003.02197) [cs.CL] |
+|           | (or [arXiv:2003.02197v1](https://arxiv.org/abs/2003.02197v1) [cs.CL] for this version) |
+
+
 
 
 
