@@ -2,6 +2,11 @@
 
 # Index
 
+- [2020-03-06](#2020-03-06)
+  - [1. Phase transitions in a decentralized graph-based approach to human language](#2020-03-06-1)
+  - [2. BERT as a Teacher: Contextual Embeddings for Sequence-Level Reward](#2020-03-06-2)
+  - [3. Zero-Shot Cross-Lingual Transfer with Meta Learning](#2020-03-06-3)
+  - [4. An Empirical Accuracy Law for Sequential Machine Translation: the Case of Google Translate](#2020-03-06-4)
 - [2020-03-05](#2020-03-05)
   - [1. Evaluating Low-Resource Machine Translation between Chinese and Vietnamese with Back-Translation](#2020-03-05-1)
 - [2020-03-04](#2020-03-04)
@@ -24,6 +29,89 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-03-06
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-03-06-1">1. Phase transitions in a decentralized graph-based approach to human language</h2>
+
+Title: [Phase transitions in a decentralized graph-based approach to human language](https://arxiv.org/abs/2003.02639)
+
+Authors: [Javier Vera](https://arxiv.org/search/physics?searchtype=author&query=Vera%2C+J), [Felipe Urbina](https://arxiv.org/search/physics?searchtype=author&query=Urbina%2C+F), [Wenceslao Palma](https://arxiv.org/search/physics?searchtype=author&query=Palma%2C+W)
+
+*(Submitted on 4 Mar 2020)*
+
+> Zipf's law establishes a scaling behavior for word-frequencies in large text corpora. The appearance of Zipfian properties in human language has been previously explained as an optimization problem for the interests of speakers and hearers. On the other hand, human-like vocabularies can be viewed as bipartite graphs. The aim here is double: within a bipartite-graph approach to human vocabularies, to propose a decentralized language game model for the formation of Zipfian properties. To do this, we define a language game, in which a population of artificial agents is involved in idealized linguistic interactions. Numerical simulations show the appearance of a phase transition from an initially disordered state to three possible phases for language formation. Our results suggest that Zipfian properties in language seem to arise partly from decentralized linguistic interactions between agents endowed with bipartite word-meaning mappings.
+
+| Subjects: | **Physics and Society (physics.soc-ph)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2003.02639](https://arxiv.org/abs/2003.02639) [physics.soc-ph] |
+|           | (or [arXiv:2003.02639v1](https://arxiv.org/abs/2003.02639v1) [physics.soc-ph] for this version) |
+
+
+
+
+
+<h2 id="2020-03-06-2">2. BERT as a Teacher: Contextual Embeddings for Sequence-Level Reward</h2>
+
+Title: [BERT as a Teacher: Contextual Embeddings for Sequence-Level Reward](https://arxiv.org/abs/2003.02738)
+
+Authors: [Florian Schmidt](https://arxiv.org/search/cs?searchtype=author&query=Schmidt%2C+F), [Thomas Hofmann](https://arxiv.org/search/cs?searchtype=author&query=Hofmann%2C+T)
+
+*(Submitted on 5 Mar 2020)*
+
+> Measuring the quality of a generated sequence against a set of references is a central problem in many learning frameworks, be it to compute a score, to assign a reward, or to perform discrimination. Despite great advances in model architectures, metrics that scale independently of the number of references are still based on n-gram estimates. We show that the underlying operations, counting words and comparing counts, can be lifted to embedding words and comparing embeddings. An in-depth analysis of BERT embeddings shows empirically that contextual embeddings can be employed to capture the required dependencies while maintaining the necessary scalability through appropriate pruning and smoothing techniques. We cast unconditional generation as a reinforcement learning problem and show that our reward function indeed provides a more effective learning signal than n-gram reward in this challenging setting.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2003.02738](https://arxiv.org/abs/2003.02738) [cs.LG] |
+|           | (or [arXiv:2003.02738v1](https://arxiv.org/abs/2003.02738v1) [cs.LG] for this version) |
+
+
+
+
+
+<h2 id="2020-03-06-3">3. Zero-Shot Cross-Lingual Transfer with Meta Learning</h2>
+
+Title: [Zero-Shot Cross-Lingual Transfer with Meta Learning](https://arxiv.org/abs/2003.02739)
+
+Authors: [Farhad Nooralahzadeh](https://arxiv.org/search/cs?searchtype=author&query=Nooralahzadeh%2C+F), [Giannis Bekoulis](https://arxiv.org/search/cs?searchtype=author&query=Bekoulis%2C+G), [Johannes Bjerva](https://arxiv.org/search/cs?searchtype=author&query=Bjerva%2C+J), [Isabelle Augenstein](https://arxiv.org/search/cs?searchtype=author&query=Augenstein%2C+I)
+
+*(Submitted on 5 Mar 2020)*
+
+> Learning what to share between tasks has been a topic of high importance recently, as strategic sharing of knowledge has been shown to improve the performance of downstream tasks. The same applies to sharing between languages, and is especially important when considering the fact that most languages in the world suffer from being under-resourced. In this paper, we consider the setting of training models on multiple different languages at the same time, when little or no data is available for languages other than English. We show that this challenging setup can be approached using meta-learning, where, in addition to training a source language model, another model learns to select which training instances are the most beneficial. We experiment using standard supervised, zero-shot cross-lingual, as well as few-shot cross-lingual settings for different natural language understanding tasks (natural language inference, question answering). Our extensive experimental setup demonstrates the consistent effectiveness of meta-learning, on a total 16 languages. We improve upon state-of-the-art on zero-shot and few-shot NLI and QA tasks on the XNLI and X-WikiRe datasets, respectively. We further conduct a comprehensive analysis which indicates that correlation of typological features between languages can further explain when parameter sharing learned via meta learning is beneficial.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2003.02739](https://arxiv.org/abs/2003.02739) [cs.CL] |
+|           | (or [arXiv:2003.02739v1](https://arxiv.org/abs/2003.02739v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-03-06-4">4. An Empirical Accuracy Law for Sequential Machine Translation: the Case of Google Translate</h2>
+
+Title: [An Empirical Accuracy Law for Sequential Machine Translation: the Case of Google Translate](https://arxiv.org/abs/2003.02817)
+
+Authors: [Lucas Nunes Sequeira](https://arxiv.org/search/cs?searchtype=author&query=Sequeira%2C+L+N), [Bruno Moreschi](https://arxiv.org/search/cs?searchtype=author&query=Moreschi%2C+B), [Fabio Gagliardi Cozman](https://arxiv.org/search/cs?searchtype=author&query=Cozman%2C+F+G), [Bernardo Fontes](https://arxiv.org/search/cs?searchtype=author&query=Fontes%2C+B)
+
+*(Submitted on 5 Mar 2020)*
+
+> We have established, through empirical testing, a law that relates the number of translating hops to translation accuracy in sequential machine translation in Google Translate. Both accuracy and size decrease with the number of hops; the former displays a decrease closely following a power law. Such a law allows one to predict the behavior of translation chains that may be built as society increasingly depends on automated devices.
+
+| Comments: | 11 pages, 8 figures (mostly graphs), a few mathematical functions and samples of the experiment |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| Cite as:  | [arXiv:2003.02817](https://arxiv.org/abs/2003.02817) [cs.CL] |
+|           | (or [arXiv:2003.02817v1](https://arxiv.org/abs/2003.02817v1) [cs.CL] for this version) |
+
+
 
 
 
