@@ -13,6 +13,8 @@ This repository is a sub branch of AI Knowledge Tree, mainly focus on Natural La
   - 句表示学习（Sentence Representation）
   - 篇章表示学习（Document/Discourse Representation）
 - [机器翻译（Machine Translation）](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/AIKT-Machine_Translation.md)
+  -  [A Survey of Deep Learning Techniques for Neural Machine Translation](https://arxiv.org/abs/2002.07526)
+  - [A Survey on Document-level Machine Translation- Methods and Evaluation](https://arxiv.org/abs/1912.08494)
   - [arXiv每日论文更新（Daily arXiv）](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv.md)
   - [论文推荐（Paper Recommendation）](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/AIKT-Machine_Translation.md)
 - [对话系统（Dialogue System）](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/AIKT-Dialogue_System.md)

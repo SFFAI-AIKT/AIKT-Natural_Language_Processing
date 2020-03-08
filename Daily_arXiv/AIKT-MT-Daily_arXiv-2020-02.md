@@ -598,7 +598,7 @@ Authors: [Zaixiang Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zh
 
 <h2 id="2020-02-19-1">1. From English To Foreign Languages: Transferring Pre-trained Language Models</h2>
 
-Title: [From English To Foreign Languages: Transferring Pre-trained Language Models]()
+Title: [From English To Foreign Languages: Transferring Pre-trained Language Models](https://arxiv.org/abs/2002.07306)
 
 Authors: [Ke Tran](https://arxiv.org/search/cs?searchtype=author&query=Tran%2C+K)
 
