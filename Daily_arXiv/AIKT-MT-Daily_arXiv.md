@@ -3,9 +3,9 @@
 # Index
 
 - [2020-03-09](#2020-03-09)
-  - [1. Title:Distill, Adapt, Distill: Training Small, In-Domain Models for Neural Machine Translation](#2020-03-09-1)
-  - [2. Title:What the [MASK]? Making Sense of Language-Specific BERT Models](#2020-03-09-2)
-  - [3. Title:Distributional semantic modeling: a revised technique to train term/word vector space models applying the ontology-related approach](#2020-03-09-3)
+  - [1. Distill, Adapt, Distill: Training Small, In-Domain Models for Neural Machine Translation](#2020-03-09-1)
+  - [2. What the [MASK]? Making Sense of Language-Specific BERT Models](#2020-03-09-2)
+  - [3. Distributional semantic modeling: a revised technique to train term/word vector space models applying the ontology-related approach](#2020-03-09-3)
 - [2020-03-06](#2020-03-06)
   - [1. Phase transitions in a decentralized graph-based approach to human language](#2020-03-06-1)
   - [2. BERT as a Teacher: Contextual Embeddings for Sequence-Level Reward](#2020-03-06-2)
@@ -42,9 +42,9 @@
 
 
 
-<h2 id="2020-03-09-1">1. Title:Distill, Adapt, Distill: Training Small, In-Domain Models for Neural Machine Translation</h2>
+<h2 id="2020-03-09-1">1. Distill, Adapt, Distill: Training Small, In-Domain Models for Neural Machine Translation</h2>
 
-Title: [Title:Distill, Adapt, Distill: Training Small, In-Domain Models for Neural Machine Translation](https://arxiv.org/abs/2003.02877)
+Title: [Distill, Adapt, Distill: Training Small, In-Domain Models for Neural Machine Translation](https://arxiv.org/abs/2003.02877)
 
 Authors:[Mitchell A. Gordon](https://arxiv.org/search/cs?searchtype=author&query=Gordon%2C+M+A), [Kevin Duh](https://arxiv.org/search/cs?searchtype=author&query=Duh%2C+K)
 
@@ -59,9 +59,9 @@ Authors:[Mitchell A. Gordon](https://arxiv.org/search/cs?searchtype=author&query
 
 
 
-<h2 id="2020-03-09-2">2. Title:What the [MASK]? Making Sense of Language-Specific BERT Models</h2>
+<h2 id="2020-03-09-2">2. What the [MASK]? Making Sense of Language-Specific BERT Models</h2>
 
-Title: [Title:What the [MASK]? Making Sense of Language-Specific BERT Models](https://arxiv.org/abs/2003.02912)
+Title: [What the [MASK]? Making Sense of Language-Specific BERT Models](https://arxiv.org/abs/2003.02912)
 
 Authors: Authors:[Debora Nozza](https://arxiv.org/search/cs?searchtype=author&query=Nozza%2C+D), [Federico Bianchi](https://arxiv.org/search/cs?searchtype=author&query=Bianchi%2C+F), [Dirk Hovy](https://arxiv.org/search/cs?searchtype=author&query=Hovy%2C+D)
 
@@ -76,9 +76,9 @@ Authors: Authors:[Debora Nozza](https://arxiv.org/search/cs?searchtype=author&qu
 
 
 
-<h2 id="2020-03-09-3">3. Title:Distributional semantic modeling: a revised technique to train term/word vector space models applying the ontology-related approach</h2>
+<h2 id="2020-03-09-3">3. Distributional semantic modeling: a revised technique to train term/word vector space models applying the ontology-related approach</h2>
 
-Title: [Title:Distributional semantic modeling: a revised technique to train term/word vector space models applying the ontology-related approach](https://arxiv.org/abs/2003.03350)
+Title: [Distributional semantic modeling: a revised technique to train term/word vector space models applying the ontology-related approach](https://arxiv.org/abs/2003.03350)
 
 Authors: Authors:[Oleksandr Palagin](https://arxiv.org/search/cs?searchtype=author&query=Palagin%2C+O), [Vitalii Velychko](https://arxiv.org/search/cs?searchtype=author&query=Velychko%2C+V), [Kyrylo Malakhov](https://arxiv.org/search/cs?searchtype=author&query=Malakhov%2C+K), [Oleksandr Shchurov](https://arxiv.org/search/cs?searchtype=author&query=Shchurov%2C+O)
 
