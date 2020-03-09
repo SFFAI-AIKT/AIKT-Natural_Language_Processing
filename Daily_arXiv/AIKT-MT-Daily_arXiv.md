@@ -2,6 +2,10 @@
 
 # Index
 
+- [2020-03-09](#2020-03-09)
+  - [1. Title:Distill, Adapt, Distill: Training Small, In-Domain Models for Neural Machine Translation](#2020-03-09-1)
+  - [2. Title:What the [MASK]? Making Sense of Language-Specific BERT Models](#2020-03-09-2)
+  - [3. Title:Distributional semantic modeling: a revised technique to train term/word vector space models applying the ontology-related approach](#2020-03-09-3)
 - [2020-03-06](#2020-03-06)
   - [1. Phase transitions in a decentralized graph-based approach to human language](#2020-03-06-1)
   - [2. BERT as a Teacher: Contextual Embeddings for Sequence-Level Reward](#2020-03-06-2)
@@ -29,6 +33,66 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-03-09
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-03-09-1">1. Title:Distill, Adapt, Distill: Training Small, In-Domain Models for Neural Machine Translation</h2>
+
+Title: [Title:Distill, Adapt, Distill: Training Small, In-Domain Models for Neural Machine Translation](https://arxiv.org/abs/2003.02877)
+
+Authors:[Mitchell A. Gordon](https://arxiv.org/search/cs?searchtype=author&query=Gordon%2C+M+A), [Kevin Duh](https://arxiv.org/search/cs?searchtype=author&query=Duh%2C+K)
+
+*(Submitted on 5 Mar 2020)*
+
+> Abstract: We explore best practices for training small, memory efficient machine translation models with sequence-level knowledge distillation in the domain adaptation setting. While both domain adaptation and knowledge distillation are widely-used, their interaction remains little understood. Our large-scale empirical results in machine translation (on three language pairs with three domains each) suggest distilling twice for best performance: once using general-domain data and again using in-domain data with an adapted teacher.
+
+| Subjects: | Computation and Language (cs.CL)                             |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2003.02877](https://arxiv.org/abs/2003.02877) [cs.CL] |
+|           | (or [arXiv:2003.02877v1](https://arxiv.org/abs/2003.02877v1) [cs.CL] for this version) |
+
+
+
+<h2 id="2020-03-09-2">2. Title:What the [MASK]? Making Sense of Language-Specific BERT Models</h2>
+
+Title: [Title:What the [MASK]? Making Sense of Language-Specific BERT Models](https://arxiv.org/abs/2003.02912)
+
+Authors: Authors:[Debora Nozza](https://arxiv.org/search/cs?searchtype=author&query=Nozza%2C+D), [Federico Bianchi](https://arxiv.org/search/cs?searchtype=author&query=Bianchi%2C+F), [Dirk Hovy](https://arxiv.org/search/cs?searchtype=author&query=Hovy%2C+D)
+
+*(Submitted on 5 Mar 2020)*
+
+> Abstract: Recently, Natural Language Processing (NLP) has witnessed an impressive progress in many areas, due to the advent of novel, pretrained contextual representation models. In particular, Devlin et al. (2019) proposed a model, called BERT (Bidirectional Encoder Representations from Transformers), which enables researchers to obtain state-of-the art performance on numerous NLP tasks by fine-tuning the representations on their data set and task, without the need for developing and training highly-specific architectures. The authors also released multilingual BERT (mBERT), a model trained on a corpus of 104 languages, which can serve as a universal language model. This model obtained impressive results on a zero-shot cross-lingual natural inference task. Driven by the potential of BERT models, the NLP community has started to investigate and generate an abundant number of BERT models that are trained on a particular language, and tested on a specific data domain and task. This allows us to evaluate the true potential of mBERT as a universal language model, by comparing it to the performance of these more specific models. This paper presents the current state of the art in language-specific BERT models, providing an overall picture with respect to different dimensions (i.e. architectures, data domains, and tasks). Our aim is to provide an immediate and straightforward overview of the commonalities and differences between Language-Specific (language-specific) BERT models and mBERT. We also provide an interactive and constantly updated website that can be used to explore the information we have collected, at [this https URL](https://bertlang.unibocconi.it/).
+
+| Subjects: | Computation and Language (cs.CL)                             |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2003.02912](https://arxiv.org/abs/2003.02912) [cs.CL] |
+|           | (or [arXiv:2003.02912v1](https://arxiv.org/abs/2003.02912v1) [cs.CL] for this version) |
+
+
+
+<h2 id="2020-03-09-3">3. Title:Distributional semantic modeling: a revised technique to train term/word vector space models applying the ontology-related approach</h2>
+
+Title: [Title:Distributional semantic modeling: a revised technique to train term/word vector space models applying the ontology-related approach](https://arxiv.org/abs/2003.03350)
+
+Authors: Authors:[Oleksandr Palagin](https://arxiv.org/search/cs?searchtype=author&query=Palagin%2C+O), [Vitalii Velychko](https://arxiv.org/search/cs?searchtype=author&query=Velychko%2C+V), [Kyrylo Malakhov](https://arxiv.org/search/cs?searchtype=author&query=Malakhov%2C+K), [Oleksandr Shchurov](https://arxiv.org/search/cs?searchtype=author&query=Shchurov%2C+O)
+
+*(Submitted on 6 Mar 2020)*
+
+> Abstract: We design a new technique for the distributional semantic modeling with a neural network-based approach to learn distributed term representations (or term embeddings) - term vector space models as a result, inspired by the recent ontology-related approach (using different types of contextual knowledge such as syntactic knowledge, terminological knowledge, semantic knowledge, etc.) to the identification of terms (term extraction) and relations between them (relation extraction) called semantic pre-processing technology - SPT. Our method relies on automatic term extraction from the natural language texts and subsequent formation of the problem-oriented or application-oriented (also deeply annotated) text corpora where the fundamental entity is the term (includes non-compositional and compositional terms). This gives us an opportunity to changeover from distributed word representations (or word embeddings) to distributed term representations (or term embeddings). This transition will allow to generate more accurate semantic maps of different subject domains (also, of relations between input terms - it is useful to explore clusters and oppositions, or to test your hypotheses about them). The semantic map can be represented as a graph using Vec2graph - a Python library for visualizing word embeddings (term embeddings in our case) as dynamic and interactive graphs. The Vec2graph library coupled with term embeddings will not only improve accuracy in solving standard NLP tasks, but also update the conventional concept of automated ontology development. The main practical result of our work is the development kit (set of toolkits represented as web service APIs and web application), which provides all necessary routines for the basic linguistic pre-processing and the semantic pre-processing of the natural language texts in Ukrainian for future training of term vector space models.
+
+| Comments: | In English, 9 pages, 2 figures. Not published yet. Prepared for special issue (UkrPROG 2020 conference) of the scientific journal "Problems in programming" (Founder: National Academy of Sciences of Ukraine, Institute of Software Systems of NAS Ukraine) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | Computation and Language (cs.CL); Artificial Intelligence (cs.AI) |
+| Cite as:  | [arXiv:2003.03350](https://arxiv.org/abs/2003.03350) [cs.CL] |
+|           | (or [arXiv:2003.03350v1](https://arxiv.org/abs/2003.03350v1) [cs.CL] for this version) |
+
+
 
 
 
