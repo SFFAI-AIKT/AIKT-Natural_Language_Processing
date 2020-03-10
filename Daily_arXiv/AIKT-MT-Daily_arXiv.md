@@ -2,6 +2,9 @@
 
 # Index
 
+- [2020-03-10](#2020-03-10)
+  - [1. Discovering linguistic (ir)regularities in word embeddings through max-margin separating hyperplanes](#2020-03-10-1)
+
 - [2020-03-09](#2020-03-09)
   - [1. Distill, Adapt, Distill: Training Small, In-Domain Models for Neural Machine Translation](#2020-03-09-1)
   - [2. What the [MASK]? Making Sense of Language-Specific BERT Models](#2020-03-09-2)
@@ -33,6 +36,30 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-03-10
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-03-10-1">1. Discovering linguistic (ir)regularities in word embeddings through max-margin separating hyperplanes</h2>
+
+Title: [Discovering linguistic (ir)regularities in word embeddings through max-margin separating hyperplanes](https://arxiv.org/abs/2003.03654)
+
+Authors: [Noel Kennedy](https://arxiv.org/search/cs?searchtype=author&query=Kennedy%2C+N), [Imogen Schofield](https://arxiv.org/search/cs?searchtype=author&query=Schofield%2C+I), [Dave C. Brodbelt](https://arxiv.org/search/cs?searchtype=author&query=Brodbelt%2C+D+C), [David B. Church](https://arxiv.org/search/cs?searchtype=author&query=Church%2C+D+B), [Dan G. O'Neill](https://arxiv.org/search/cs?searchtype=author&query=O'Neill%2C+D+G)
+
+*(Submitted on 7 Mar 2020)*
+
+> We experiment with new methods for learning how related words are positioned relative to each other in word embedding spaces. Previous approaches learned constant vector offsets: vectors that point from source tokens to target tokens with an assumption that these offsets were parallel to each other. We show that the offsets between related tokens are closer to orthogonal than parallel, and that they have low cosine similarities. We proceed by making a different assumption; target tokens are linearly separable from source and un-labeled tokens. We show that a max-margin hyperplane can separate target tokens and that vectors orthogonal to this hyperplane represent the relationship between source and targets. We find that this representation of the relationship obtains the best results in dis-covering linguistic regularities. We experiment with vector space models trained by a variety of algorithms (Word2vec: CBOW/skip-gram, fastText, or GloVe), and various word context choices such as linear word-order, syntax dependency grammars, and with and without knowledge of word position. These experiments show that our model, SVMCos, is robust to a range of experimental choices when training word embeddings.
+
+| Comments: | 10 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2003.03654](https://arxiv.org/abs/2003.03654) [cs.CL] |
+|           | (or [arXiv:2003.03654v1](https://arxiv.org/abs/2003.03654v1) [cs.CL] for this version) |
 
 
 
