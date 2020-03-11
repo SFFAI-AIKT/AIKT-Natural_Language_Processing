@@ -2,6 +2,8 @@
 
 # Index
 
+- [2020-03-11](#2020-03-11)
+  - [1. Combining Pretrained High-Resource Embeddings and Subword Representations for Low-Resource Languages](#2020-03-11-1)
 - [2020-03-10](#2020-03-10)
   - [1. Discovering linguistic (ir)regularities in word embeddings through max-margin separating hyperplanes](#2020-03-10-1)
 
@@ -36,6 +38,34 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-03-11
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-03-11-1">1. Combining Pretrained High-Resource Embeddings and Subword Representations for Low-Resource Languages</h2>
+
+Title: [Combining Pretrained High-Resource Embeddings and Subword Representations for Low-Resource Languages](https://arxiv.org/abs/2003.04419)
+
+Authors: [Machel Reid](https://arxiv.org/search/cs?searchtype=author&query=Reid%2C+M), [Edison Marrese-Taylor](https://arxiv.org/search/cs?searchtype=author&query=Marrese-Taylor%2C+E), [Yutaka Matsuo](https://arxiv.org/search/cs?searchtype=author&query=Matsuo%2C+Y)
+
+*(Submitted on 9 Mar 2020)*
+
+> The contrast between the need for large amounts of data for current Natural Language Processing (NLP) techniques, and the lack thereof, is accentuated in the case of African languages, most of which are considered low-resource. To help circumvent this issue, we explore techniques exploiting the qualities of morphologically rich languages (MRLs), while leveraging pretrained word vectors in well-resourced languages. In our exploration, we show that a meta-embedding approach combining both pretrained and morphologically-informed word embeddings performs best in the downstream task of Xhosa-English translation.
+
+| Comments: | To appear at ICLR (International Conference of Learning Representations) 2020 Africa NLP Workshop |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:2003.04419](https://arxiv.org/abs/2003.04419) [cs.CL] |
+|           | (or [arXiv:2003.04419v1](https://arxiv.org/abs/2003.04419v1) [cs.CL] for this version) |
+
+
+
+
 
 
 
