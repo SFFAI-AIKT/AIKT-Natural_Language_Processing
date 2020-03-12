@@ -2,6 +2,9 @@
 
 # Index
 
+- [2020-03-12](#2020-03-12)
+  - [1. Visual Grounding in Video for Unsupervised Word Translation](2020-03-12-1)
+  - [2. Transformer++](2020-03-12-2)
 - [2020-03-11](#2020-03-11)
   - [1. Combining Pretrained High-Resource Embeddings and Subword Representations for Low-Resource Languages](#2020-03-11-1)
 - [2020-03-10](#2020-03-10)
@@ -38,6 +41,43 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-03-12
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-03-12-1">1. Visual Grounding in Video for Unsupervised Word Translation</h2>
+
+Title: [Visual Grounding in Video for Unsupervised Word Translation](https://arxiv.org/abs/2003.05078)
+
+Authors: [Gunnar A. Sigurdsson](https://arxiv.org/search/cs?searchtype=author&query=Sigurdsson%2C+G+A), [Jean-Baptiste Alayrac](https://arxiv.org/search/cs?searchtype=author&query=Alayrac%2C+J), [Aida Nematzadeh](https://arxiv.org/search/cs?searchtype=author&query=Nematzadeh%2C+A), [Lucas Smaira](https://arxiv.org/search/cs?searchtype=author&query=Smaira%2C+L), [Mateusz Malinowski](https://arxiv.org/search/cs?searchtype=author&query=Malinowski%2C+M), [João Carreira](https://arxiv.org/search/cs?searchtype=author&query=Carreira%2C+J), [Phil Blunsom](https://arxiv.org/search/cs?searchtype=author&query=Blunsom%2C+P), [Andrew Zisserman](https://arxiv.org/search/cs?searchtype=author&query=Zisserman%2C+A)
+
+*(Submitted on 11 Mar 2020)*
+
+> There are thousands of actively spoken languages on Earth, but a single visual world. Grounding in this visual world has the potential to bridge the gap between all these languages. Our goal is to use visual grounding to improve unsupervised word mapping between languages. The key idea is to establish a common visual representation between two languages by learning embeddings from unpaired instructional videos narrated in the native language. Given this shared embedding we demonstrate that (i) we can map words between the languages, particularly the 'visual' words; (ii) that the shared embedding provides a good initialization for existing unsupervised text-based word translation techniques, forming the basis for our proposed hybrid visual-text mapping algorithm, MUVE; and (iii) our approach achieves superior performance by addressing the shortcomings of text-based methods -- it is more robust, handles datasets with less commonality, and is applicable to low-resource languages. We apply these methods to translate words from English to French, Korean, and Japanese -- all without any parallel corpora and simply by watching many videos of people speaking while doing things.
+
+
+
+
+
+<h2 id="2020-03-12-2">2. Transformer++</h2>
+
+Title: [Transformer++](https://arxiv.org/abs/2003.04974)
+
+Authors: [Prakhar Thapak](https://arxiv.org/search/cs?searchtype=author&query=Thapak%2C+P), [Prodip Hore](https://arxiv.org/search/cs?searchtype=author&query=Hore%2C+P)
+
+*(Submitted on 2 Mar 2020)*
+
+> Recent advancements in attention mechanisms have replaced recurrent neural networks and its variants for machine translation tasks. Transformer using attention mechanism solely achieved state-of-the-art results in sequence modeling. Neural machine translation based on the attention mechanism is parallelizable and addresses the problem of handling long-range dependencies among words in sentences more effectively than recurrent neural networks. One of the key concepts in attention is to learn three matrices, query, key, and value, where global dependencies among words are learned through linearly projecting word embeddings through these matrices. Multiple query, key, value matrices can be learned simultaneously focusing on a different subspace of the embedded dimension, which is called multi-head in Transformer. We argue that certain dependencies among words could be learned better through an intermediate context than directly modeling word-word dependencies. This could happen due to the nature of certain dependencies or lack of patterns that lend them difficult to be modeled globally using multi-head self-attention. In this work, we propose a new way of learning dependencies through a context in multi-head using convolution. This new form of multi-head attention along with the traditional form achieves better results than Transformer on the WMT 2014 English-to-German and English-to-French translation tasks. We also introduce a framework to learn POS tagging and NER information during the training of encoder which further improves results achieving a new state-of-the-art of 32.1 BLEU, better than existing best by 1.4 BLEU, on the WMT 2014 English-to-German and 44.6 BLEU, better than existing best by 1.1 BLEU, on the WMT 2014 English-to-French translation tasks. We call this Transformer++.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2003.04974](https://arxiv.org/abs/2003.04974) [cs.CL] |
+|           | (or [arXiv:2003.04974v1](https://arxiv.org/abs/2003.04974v1) [cs.CL] for this version) |
 
 
 
