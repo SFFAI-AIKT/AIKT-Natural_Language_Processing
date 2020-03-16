@@ -2,6 +2,8 @@
 
 # Index
 
+- [2020-03-16](#2020-03-16)
+  - [1. Sentence Level Human Translation Quality Estimation with Attention-based Neural Networks](#2020-03-16-1)
 - [2020-03-12](#2020-03-12)
   - [1. Visual Grounding in Video for Unsupervised Word Translation](2020-03-12-1)
   - [2. Transformer++](2020-03-12-2)
@@ -9,7 +11,6 @@
   - [1. Combining Pretrained High-Resource Embeddings and Subword Representations for Low-Resource Languages](#2020-03-11-1)
 - [2020-03-10](#2020-03-10)
   - [1. Discovering linguistic (ir)regularities in word embeddings through max-margin separating hyperplanes](#2020-03-10-1)
-
 - [2020-03-09](#2020-03-09)
   - [1. Distill, Adapt, Distill: Training Small, In-Domain Models for Neural Machine Translation](#2020-03-09-1)
   - [2. What the [MASK]? Making Sense of Language-Specific BERT Models](#2020-03-09-2)
@@ -41,6 +42,31 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-03-16
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-03-16-1">1. Sentence Level Human Translation Quality Estimation with Attention-based Neural Networks</h2>
+
+Title: [Sentence Level Human Translation Quality Estimation with Attention-based Neural Networks](https://arxiv.org/abs/2003.06381)
+
+Authors: [Yu Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+Y), [Serge Sharoff](https://arxiv.org/search/cs?searchtype=author&query=Sharoff%2C+S)
+
+*(Submitted on 13 Mar 2020)*
+
+> This paper explores the use of Deep Learning methods for automatic estimation of quality of human translations. Automatic estimation can provide useful feedback for translation teaching, examination and quality control. Conventional methods for solving this task rely on manually engineered features and external knowledge. This paper presents an end-to-end neural model without feature engineering, incorporating a cross attention mechanism to detect which parts in sentence pairs are most relevant for assessing quality. Another contribution concerns of prediction of fine-grained scores for measuring different aspects of translation quality. Empirical results on a large human annotated dataset show that the neural model outperforms feature-based methods significantly. The dataset and the tools are available.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2003.06381](https://arxiv.org/abs/2003.06381) [cs.CL] |
+|           | (or [arXiv:2003.06381v1](https://arxiv.org/abs/2003.06381v1) [cs.CL] for this version) |
+
+
 
 
 
