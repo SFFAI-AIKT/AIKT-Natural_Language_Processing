@@ -2,6 +2,10 @@
 
 # Index
 
+- [2020-03-17](#2020-03-17)
+  - [1. A Survey on Contextual Embeddings](#2020-03-17-1)
+  - [2. Synonymous Generalization in Sequence-to-Sequence Recurrent Networks](#2020-03-17-2)
+  - [3. Stanza: A Python Natural Language Processing Toolkit for Many Human Languages](#2020-03-17-3)
 - [2020-03-16](#2020-03-16)
   - [1. Sentence Level Human Translation Quality Estimation with Attention-based Neural Networks](#2020-03-16-1)
 - [2020-03-12](#2020-03-12)
@@ -42,6 +46,74 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-03-17
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-03-17-1">1. A Survey on Contextual Embeddings</h2>
+
+Title: [A Survey on Contextual Embeddings](https://arxiv.org/abs/2003.07278)
+
+Authors: [Qi Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q), [Matt J. Kusner](https://arxiv.org/search/cs?searchtype=author&query=Kusner%2C+M+J), [Phil Blunsom](https://arxiv.org/search/cs?searchtype=author&query=Blunsom%2C+P)
+
+*(Submitted on 16 Mar 2020)*
+
+> Contextual embeddings, such as ELMo and BERT, move beyond global word representations like Word2Vec and achieve ground-breaking performance on a wide range of natural language processing tasks. Contextual embeddings assign each word a representation based on its context, thereby capturing uses of words across varied contexts and encoding knowledge that transfers across languages. In this survey, we review existing contextual embedding models, cross-lingual polyglot pre-training, the application of contextual embeddings in downstream tasks, model compression, and model analyses.
+
+| Comments: | 13 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Artificial Intelligence (cs.AI)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:2003.07278](https://arxiv.org/abs/2003.07278) [cs.AI] |
+|           | (or [arXiv:2003.07278v1](https://arxiv.org/abs/2003.07278v1) [cs.AI] for this version) |
+
+
+
+
+
+<h2 id="2020-03-17-2">2. Synonymous Generalization in Sequence-to-Sequence Recurrent Networks</h2>
+
+Title: [Synonymous Generalization in Sequence-to-Sequence Recurrent Networks](https://arxiv.org/abs/2003.06658)
+
+Authors: [Ning Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+N)
+
+*(Submitted on 14 Mar 2020)*
+
+> When learning a language, people can quickly expand their understanding of the unknown content by using compositional skills, such as from two words "go" and "fast" to a new phrase "go fast." In recent work of Lake and Baroni (2017), modern Sequence-to-Sequence(se12seq) Recurrent Neural Networks (RNNs) can make powerful zero-shot generalizations in specifically controlled experiments. However, there is a missing regarding the property of such strong generalization and its precise requirements. This paper explores this positive result in detail and defines this pattern as the synonymous generalization, an ability to recognize an unknown sequence by decomposing the difference between it and a known sequence as corresponding existing synonyms. To better investigate it, I introduce a new environment called Colorful Extended Cleanup World (CECW), which consists of complex commands paired with logical expressions. While demonstrating that sequential RNNs can perform synonymous generalizations on foreign commands, I conclude their prerequisites for success. I also propose a data augmentation method, which is successfully verified on the Geoquery (GEO) dataset, as a novel application of synonymous generalization for real cases.
+
+| Comments: | 7 pages, 1 figure, 3 tables                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:2003.06658](https://arxiv.org/abs/2003.06658) [cs.CL] |
+|           | (or [arXiv:2003.06658v1](https://arxiv.org/abs/2003.06658v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-03-17-3">3. Stanza: A Python Natural Language Processing Toolkit for Many Human Languages</h2>
+
+Title: [Stanza: A Python Natural Language Processing Toolkit for Many Human Languages](https://arxiv.org/abs/2003.07082)
+
+Authors: [Peng Qi](https://arxiv.org/search/cs?searchtype=author&query=Qi%2C+P), [Yuhao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Yuhui Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Jason Bolton](https://arxiv.org/search/cs?searchtype=author&query=Bolton%2C+J), [Christopher D. Manning](https://arxiv.org/search/cs?searchtype=author&query=Manning%2C+C+D)
+
+*(Submitted on 16 Mar 2020)*
+
+> We introduce Stanza, an open-source Python natural language processing toolkit supporting 66 human languages. Compared to existing widely used toolkits, Stanza features a language-agnostic fully neural pipeline for text analysis, including tokenization, multi-word token expansion, lemmatization, part-of-speech and morphological feature tagging, dependency parsing, and named entity recognition. We have trained Stanza on a total of 112 datasets, including the Universal Dependencies treebanks and other multilingual corpora, and show that the same neural architecture generalizes well and achieves competitive performance on all languages tested. Additionally, Stanza includes a native Python interface to the widely used Java Stanford CoreNLP software, which further extends its functionalities to cover other tasks such as coreference resolution and relation extraction. Source code, documentation, and pretrained models for 66 languages are available at [this https URL](https://stanfordnlp.github.io/stanza).
+
+| Comments: | First two authors contribute equally. Website: [this https URL](https://stanfordnlp.github.io/stanza) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2003.07082](https://arxiv.org/abs/2003.07082) [cs.CL] |
+|           | (or [arXiv:2003.07082v1](https://arxiv.org/abs/2003.07082v1) [cs.CL] for this version) |
+
+
+
+
 
 
 
