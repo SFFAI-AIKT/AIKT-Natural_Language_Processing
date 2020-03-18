@@ -2,6 +2,8 @@
 
 # Index
 
+- [2020-03-18](#2020-03-18)
+  - [1. Rethinking Batch Normalization in Transformers](#2020-03-18-1)
 - [2020-03-17](#2020-03-17)
   - [1. A Survey on Contextual Embeddings](#2020-03-17-1)
   - [2. Synonymous Generalization in Sequence-to-Sequence Recurrent Networks](#2020-03-17-2)
@@ -46,6 +48,33 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-03-18
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-03-18-1">1. Rethinking Batch Normalization in Transformers</h2>
+
+Title: [Rethinking Batch Normalization in Transformers](https://arxiv.org/abs/2003.07845)
+
+Authors: [Sheng Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+S), [Zhewei Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+Z), [Amir Gholami](https://arxiv.org/search/cs?searchtype=author&query=Gholami%2C+A), [Michael Mahoney](https://arxiv.org/search/cs?searchtype=author&query=Mahoney%2C+M), [Kurt Keutzer](https://arxiv.org/search/cs?searchtype=author&query=Keutzer%2C+K)
+
+*(Submitted on 17 Mar 2020)*
+
+> The standard normalization method for neural network (NN) models used in Natural Language Processing (NLP) is layer normalization (LN). This is different than batch normalization (BN), which is widely-adopted in Computer Vision. The preferred use of LN in NLP is principally due to the empirical observation that a (naive/vanilla) use of BN leads to significant performance degradation for NLP tasks; however, a thorough understanding of the underlying reasons for this is not always evident. In this paper, we perform a systematic study of NLP transformer models to understand why BN has a poor performance, as compared to LN. We find that the statistics of NLP data across the batch dimension exhibit large fluctuations throughout training. This results in instability, if BN is naively implemented. To address this, we propose Power Normalization (PN), a novel normalization scheme that resolves this issue by (i) relaxing zero-mean normalization in BN, (ii) incorporating a running quadratic mean instead of per batch statistics to stabilize fluctuations, and (iii) using an approximate backpropagation for incorporating the running statistics in the forward pass. We show theoretically, under mild assumptions, that PN leads to a smaller Lipschitz constant for the loss, compared with BN. Furthermore, we prove that the approximate backpropagation scheme leads to bounded gradients. We extensively test PN for transformers on a range of NLP tasks, and we show that it significantly outperforms both LN and BN. In particular, PN outperforms LN by 0.4/0.6 BLEU on IWSLT14/WMT14 and 5.6/3.0 PPL on PTB/WikiText-103.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2003.07845](https://arxiv.org/abs/2003.07845) [cs.CL] |
+|           | (or [arXiv:2003.07845v1](https://arxiv.org/abs/2003.07845v1) [cs.CL] for this version) |
+
+
+
+
 
 
 
