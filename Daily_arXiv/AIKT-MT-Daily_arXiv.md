@@ -2,6 +2,9 @@
 
 # Index
 
+- [2020-03-19](#2020-03-19)
+  - [1. Calibration of Pre-trained Transformers](#2020-03-19-1)
+  - [2. Pre-trained Models for Natural Language Processing: A Survey](#2020-03-19-2)
 - [2020-03-18](#2020-03-18)
   - [1. Rethinking Batch Normalization in Transformers](#2020-03-18-1)
 - [2020-03-17](#2020-03-17)
@@ -48,6 +51,57 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-03-19
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-03-19-1">1. Calibration of Pre-trained Transformers</h2>
+
+Title: [Calibration of Pre-trained Transformers](https://arxiv.org/abs/2003.07892)
+
+Authors: [Shrey Desai](https://arxiv.org/search/cs?searchtype=author&query=Desai%2C+S), [Greg Durrett](https://arxiv.org/search/cs?searchtype=author&query=Durrett%2C+G)
+
+*(Submitted on 17 Mar 2020)*
+
+> Pre-trained Transformers are now ubiquitous in natural language processing, but despite their high end-task performance, little is known empirically about whether they are calibrated. Specifically, do these models' posterior probabilities provide an accurate empirical measure of how likely the model is to be correct on a given example? We focus on BERT and RoBERTa in this work, and analyze their calibration across three tasks: natural language inference, paraphrase detection, and commonsense reasoning. For each task, we consider in-domain as well as challenging out-of-domain settings, where models face more examples they should be uncertain about. We show that: (1) when used out-of-the-box, pre-trained models are calibrated in-domain, and compared to baselines, their calibration error out-of-domain can be as much as 3.5x lower; (2) temperature scaling is effective at further reducing calibration error in-domain, and using label smoothing to deliberately increase empirical uncertainty helps calibrate posteriors out-of-domain.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2003.07892](https://arxiv.org/abs/2003.07892) [cs.CL] |
+|           | (or [arXiv:2003.07892v1](https://arxiv.org/abs/2003.07892v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-03-19-2">2. Pre-trained Models for Natural Language Processing: A Survey</h2>
+
+Title: [Pre-trained Models for Natural Language Processing: A Survey](https://arxiv.org/abs/2003.08271)
+
+Authors: [Xipeng Qiu](https://arxiv.org/search/cs?searchtype=author&query=Qiu%2C+X), [Tianxiang Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+T), [Yige Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+Y), [Yunfan Shao](https://arxiv.org/search/cs?searchtype=author&query=Shao%2C+Y), [Ning Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+N), [Xuanjing Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+X)
+
+*(Submitted on 18 Mar 2020)*
+
+> Recently, the emergence of pre-trained models (PTMs) has brought natural language processing (NLP) to a new era. In this survey, we provide a comprehensive review of PTMs for NLP. We first briefly introduce language representation learning and its research progress. Then we systematically categorize existing PTMs based on a taxonomy with four perspectives. Next, we describe how to adapt the knowledge of PTMs to the downstream tasks. Finally, we outline some potential directions of PTMs for future research. This survey is purposed to be a hands-on guide for understanding, using, and developing PTMs for various NLP tasks.
+
+| Comments: | Invited Review of Science China Technological Sciences       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:2003.08271](https://arxiv.org/abs/2003.08271) [cs.CL] |
+|           | (or [arXiv:2003.08271v1](https://arxiv.org/abs/2003.08271v1) [cs.CL] for this version) |
+
+
+
+
+
+
+
+
 
 
 
