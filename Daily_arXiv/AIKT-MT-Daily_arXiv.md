@@ -2,6 +2,8 @@
 
 # Index
 
+- [2020-03-20](#2020-03-20)
+  - [1. Utilizing Language Relatedness to improve Machine Translation: A Case Study on Languages of the Indian Subcontinent](#2020-03-20-1)
 - [2020-03-19](#2020-03-19)
   - [1. Calibration of Pre-trained Transformers](#2020-03-19-1)
   - [2. Pre-trained Models for Natural Language Processing: A Survey](#2020-03-19-2)
@@ -51,6 +53,32 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-03-20
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-03-20-1">1. Utilizing Language Relatedness to improve Machine Translation: A Case Study on Languages of the Indian Subcontinent</h2>
+
+Title: [Utilizing Language Relatedness to improve Machine Translation: A Case Study on Languages of the Indian Subcontinent](https://arxiv.org/abs/2003.08925)
+
+Authors: [Anoop Kunchukuttan](https://arxiv.org/search/cs?searchtype=author&query=Kunchukuttan%2C+A), [Pushpak Bhattacharyya](https://arxiv.org/search/cs?searchtype=author&query=Bhattacharyya%2C+P)
+
+*(Submitted on 19 Mar 2020)*
+
+> In this work, we present an extensive study of statistical machine translation involving languages of the Indian subcontinent. These languages are related by genetic and contact relationships. We describe the similarities between Indic languages arising from these relationships. We explore how lexical and orthographic similarity among these languages can be utilized to improve translation quality between Indic languages when limited parallel corpora is available. We also explore how the structural correspondence between Indic languages can be utilized to re-use linguistic resources for English to Indic language translation. Our observations span 90 language pairs from 9 Indic languages and English. To the best of our knowledge, this is the first large-scale study specifically devoted to utilizing language relatedness to improve translation between related languages.
+
+| Comments: | This work was done in 2017-2018 as part of the first author's thesis |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2003.08925](https://arxiv.org/abs/2003.08925) [cs.CL] |
+|           | (or [arXiv:2003.08925v1](https://arxiv.org/abs/2003.08925v1) [cs.CL] for this version) |
+
+
 
 
 
