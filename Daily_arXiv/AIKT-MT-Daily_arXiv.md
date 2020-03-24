@@ -2,6 +2,9 @@
 
 # Index
 
+- [2020-03-24](#2020-03-24)
+  - [1. Analyzing Word Translation of Transformer Layers](#2020-03-24-1)
+  - [2. Generating Natural Language Adversarial Examples on a Large Scale with Generative Models](#2020-03-24-2)
 - [2020-03-20](#2020-03-20)
   - [1. Utilizing Language Relatedness to improve Machine Translation: A Case Study on Languages of the Indian Subcontinent](#2020-03-20-1)
 - [2020-03-19](#2020-03-19)
@@ -53,6 +56,50 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-03-24
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-03-24-1">1. Analyzing Word Translation of Transformer Layers</h2>
+
+Title: [Analyzing Word Translation of Transformer Layers](https://arxiv.org/abs/2003.09586)
+
+Authors: [Hongfei Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+H), [Josef van Genabith](https://arxiv.org/search/cs?searchtype=author&query=van+Genabith%2C+J), [Deyi Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+D), [Qiuhui Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q)
+
+*(Submitted on 21 Mar 2020)*
+
+> The Transformer translation model is popular for its effective parallelization and performance. Though a wide range of analysis about the Transformer has been conducted recently, the role of each Transformer layer in translation has not been studied to our knowledge. In this paper, we propose approaches to analyze the translation performed in encoder / decoder layers of the Transformer. Our approaches in general project the representations of an analyzed layer to the pre-trained classifier and measure the word translation accuracy. For the analysis of encoder layers, our approach additionally learns a weight vector to merge multiple attention matrices into one and transform the source encoding to the target side with the merged alignment matrix to align source tokens with target translations while bridging different input - output lengths. While analyzing decoder layers, we additionally study the effects of the source context and the decoding history in word prediction through bypassing the corresponding self-attention or cross-attention sub-layers. Our analysis reveals that the translation starts at the very beginning of the "encoding" (specifically at the source word embedding layer), and shows how translation evolves during the forward computation of layers. Based on observations gained in our analysis, we propose that increasing encoder depth while removing the same number of decoder layers can simply but significantly boost the decoding speed. Furthermore, simply inserting a linear projection layer before the decoder classifier which shares the weight matrix with the embedding layer can effectively provide small but consistent and significant improvements in our experiments on the WMT 14 English-German, English-French and WMT 15 Czech-English translation tasks (+0.42, +0.37 and +0.47 respectively).
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2003.09586](https://arxiv.org/abs/2003.09586) [cs.CL] |
+|           | (or [arXiv:2003.09586v1](https://arxiv.org/abs/2003.09586v1) [cs.CL] for this version) |
+
+
+
+<h2 id="2020-03-24-2">2. Generating Natural Language Adversarial Examples on a Large Scale with Generative Models</h2>
+
+Title: [Generating Natural Language Adversarial Examples on a Large Scale with Generative Models](https://arxiv.org/abs/2003.10388)
+
+Authors: [Yankun Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+Y), [Jianbin Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+J), [Siliang Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+S), [Jun Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J), [Shuang Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+S), [Yuan Qi](https://arxiv.org/search/cs?searchtype=author&query=Qi%2C+Y), [Xiang Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+X)
+
+*(Submitted on 10 Mar 2020)*
+
+> Today text classification models have been widely used. However, these classifiers are found to be easily fooled by adversarial examples. Fortunately, standard attacking methods generate adversarial texts in a pair-wise way, that is, an adversarial text can only be created from a real-world text by replacing a few words. In many applications, these texts are limited in numbers, therefore their corresponding adversarial examples are often not diverse enough and sometimes hard to read, thus can be easily detected by humans and cannot create chaos at a large scale. In this paper, we propose an end to end solution to efficiently generate adversarial texts from scratch using generative models, which are not restricted to perturbing the given texts. We call it unrestricted adversarial text generation. Specifically, we train a conditional variational autoencoder (VAE) with an additional adversarial loss to guide the generation of adversarial examples. Moreover, to improve the validity of adversarial texts, we utilize discrimators and the training framework of generative adversarial networks (GANs) to make adversarial texts consistent with real data. Experimental results on sentiment analysis demonstrate the scalability and efficiency of our method. It can attack text classification models with a higher success rate than existing methods, and provide acceptable quality for humans in the meantime.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2003.10388](https://arxiv.org/abs/2003.10388) [cs.CL] |
+|           | (or [arXiv:2003.10388v1](https://arxiv.org/abs/2003.10388v1) [cs.CL] for this version) |
+
+
+
+
 
 
 
