@@ -2,6 +2,9 @@
 
 # Index
 
+- [2020-03-25](#2020-03-25)
+  - [1. Towards Neural Machine Translation for Edoid Languages](#2020-03-25-1)
+  - [2. Cross-Lingual Adaptation Using Universal Dependencies](#2020-03-25-2)
 - [2020-03-24](#2020-03-24)
   - [1. Analyzing Word Translation of Transformer Layers](#2020-03-24-1)
   - [2. Generating Natural Language Adversarial Examples on a Large Scale with Generative Models](#2020-03-24-2)
@@ -56,6 +59,51 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-03-25
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-03-25-1">1. Towards Neural Machine Translation for Edoid Languages</h2>
+
+Title: [Towards Neural Machine Translation for Edoid Languages](https://arxiv.org/abs/2003.10704)
+
+Authors: [Iroro Orife](https://arxiv.org/search/cs?searchtype=author&query=Orife%2C+I)
+
+*(Submitted on 24 Mar 2020)*
+
+> Many Nigerian languages have relinquished their previous prestige and purpose in modern society to English and Nigerian Pidgin. For the millions of L1 speakers of indigenous languages, there are inequalities that manifest themselves as unequal access to information, communications, health care, security as well as attenuated participation in political and civic life. To minimize exclusion and promote socio-linguistic and economic empowerment, this work explores the feasibility of Neural Machine Translation (NMT) for the Edoid language family of Southern Nigeria. Using the new JW300 public dataset, we trained and evaluated baseline translation models for four widely spoken languages in this group: Èdó, Ésán, Urhobo and Isoko. Trained models, code and datasets have been open-sourced to advance future research efforts on Edoid language technology.
+
+| Comments: | Accepted to ICLR 2020 AfricaNLP workshop                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2003.10704](https://arxiv.org/abs/2003.10704) [cs.CL] |
+|           | (or [arXiv:2003.10704v1](https://arxiv.org/abs/2003.10704v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-03-25-2">2. Cross-Lingual Adaptation Using Universal Dependencies</h2>
+
+Title: [Cross-Lingual Adaptation Using Universal Dependencies](https://arxiv.org/abs/2003.10816)
+
+Authors: [Nasrin Taghizadeh](https://arxiv.org/search/cs?searchtype=author&query=Taghizadeh%2C+N), [Heshaam Faili](https://arxiv.org/search/cs?searchtype=author&query=Faili%2C+H)
+
+*(Submitted on 24 Mar 2020)*
+
+> We describe a cross-lingual adaptation method based on syntactic parse trees obtained from the Universal Dependencies (UD), which are consistent across languages, to develop classifiers in low-resource languages. The idea of UD parsing is to capture similarities as well as idiosyncrasies among typologically different languages. In this paper, we show that models trained using UD parse trees for complex NLP tasks can characterize very different languages. We study two tasks of paraphrase identification and semantic relation extraction as case studies. Based on UD parse trees, we develop several models using tree kernels and show that these models trained on the English dataset can correctly classify data of other languages e.g. French, Farsi, and Arabic. The proposed approach opens up avenues for exploiting UD parsing in solving similar cross-lingual tasks, which is very useful for languages that no labeled data is available for them.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2003.10816](https://arxiv.org/abs/2003.10816) [cs.CL] |
+|           | (or [arXiv:2003.10816v1](https://arxiv.org/abs/2003.10816v1) [cs.CL] for this version) |
+
+
 
 
 
