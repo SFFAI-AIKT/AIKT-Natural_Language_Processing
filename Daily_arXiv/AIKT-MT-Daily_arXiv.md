@@ -2,6 +2,12 @@
 
 # Index
 
+- [2020-03-26](#2020-03-26)
+  - [1. XTREME: A Massively Multilingual Multi-task Benchmark for Evaluating Cross-lingual Generalization](#2020-03-26-1)
+  - [2. Joint Multiclass Debiasing of Word Embeddings](#2020-03-26-2)
+  - [3. Tigrinya Neural Machine Translation with Transfer Learning for Humanitarian Response](#2020-03-26-3)
+  - [4. Masakhane -- Machine Translation For Africa](#2020-03-26-4)
+  - [5. Meta-CoTGAN: A Meta Cooperative Training Paradigm for Improving Adversarial Text Generation](#2020-03-26-5)
 - [2020-03-25](#2020-03-25)
   - [1. Towards Neural Machine Translation for Edoid Languages](#2020-03-25-1)
   - [2. Cross-Lingual Adaptation Using Universal Dependencies](#2020-03-25-2)
@@ -59,6 +65,112 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-03-26
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-03-26-1">1. XTREME: A Massively Multilingual Multi-task Benchmark for Evaluating Cross-lingual Generalization</h2>
+
+Title: [XTREME: A Massively Multilingual Multi-task Benchmark for Evaluating Cross-lingual Generalization](https://arxiv.org/abs/2003.11080)
+
+Authors: [Junjie Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+J), [Sebastian Ruder](https://arxiv.org/search/cs?searchtype=author&query=Ruder%2C+S), [Aditya Siddhant](https://arxiv.org/search/cs?searchtype=author&query=Siddhant%2C+A), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O), [Melvin Johnson](https://arxiv.org/search/cs?searchtype=author&query=Johnson%2C+M)
+
+*(Submitted on 24 Mar 2020)*
+
+> Much recent progress in applications of machine learning models to NLP has been driven by benchmarks that evaluate models across a wide variety of tasks. However, these broad-coverage benchmarks have been mostly limited to English, and despite an increasing interest in multilingual models, a benchmark that enables the comprehensive evaluation of such methods on a diverse range of languages and tasks is still missing. To this end, we introduce the Cross-lingual TRansfer Evaluation of Multilingual Encoders XTREME benchmark, a multi-task benchmark for evaluating the cross-lingual generalization capabilities of multilingual representations across 40 languages and 9 tasks. We demonstrate that while models tested on English reach human performance on many tasks, there is still a sizable gap in the performance of cross-lingually transferred models, particularly on syntactic and sentence retrieval tasks. There is also a wide spread of results across languages. We release the benchmark to encourage research on cross-lingual learning methods that transfer linguistic knowledge across a diverse and representative set of languages and tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2003.11080](https://arxiv.org/abs/2003.11080) [cs.CL] |
+|           | (or [arXiv:2003.11080v1](https://arxiv.org/abs/2003.11080v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-03-26-2">2. Joint Multiclass Debiasing of Word Embeddings</h2>
+
+Title: [Joint Multiclass Debiasing of Word Embeddings](https://arxiv.org/abs/2003.11520)
+
+Authors: [Radomir Popović](https://arxiv.org/search/cs?searchtype=author&query=Popović%2C+R), [Florian Lemmerich](https://arxiv.org/search/cs?searchtype=author&query=Lemmerich%2C+F), [Markus Strohmaier](https://arxiv.org/search/cs?searchtype=author&query=Strohmaier%2C+M)
+
+*(Submitted on 9 Mar 2020)*
+
+> Bias in Word Embeddings has been a subject of recent interest, along with efforts for its reduction. Current approaches show promising progress towards debiasing single bias dimensions such as gender or race. In this paper, we present a joint multiclass debiasing approach that is capable of debiasing multiple bias dimensions simultaneously. In that direction, we present two approaches, HardWEAT and SoftWEAT, that aim to reduce biases by minimizing the scores of the Word Embeddings Association Test (WEAT). We demonstrate the viability of our methods by debiasing Word Embeddings on three classes of biases (religion, gender and race) in three different publicly available word embeddings and show that our concepts can both reduce or even completely eliminate bias, while maintaining meaningful relationships between vectors in word embeddings. Our work strengthens the foundation for more unbiased neural representations of textual data.
+
+| Comments: | 10 pages, 2 figures. To appear in the Proceedings of the 25th International Symposium on Intelligent Systems (ISMIS 2020), May 2020, Graz, Austria. Online appendix available at: [this https URL](https://git.io/JvL10) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| Cite as:  | [arXiv:2003.11520](https://arxiv.org/abs/2003.11520) [cs.CL] |
+|           | (or [arXiv:2003.11520v1](https://arxiv.org/abs/2003.11520v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-03-26-3">3. Tigrinya Neural Machine Translation with Transfer Learning for Humanitarian Response</h2>
+
+Title: [Tigrinya Neural Machine Translation with Transfer Learning for Humanitarian Response](https://arxiv.org/abs/2003.11523)
+
+Authors: [Alp Öktem](https://arxiv.org/search/cs?searchtype=author&query=Öktem%2C+A), [Mirko Plitt](https://arxiv.org/search/cs?searchtype=author&query=Plitt%2C+M), [Grace Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+G)
+
+*(Submitted on 9 Mar 2020)*
+
+> We report our experiments in building a domain-specific Tigrinya-to-English neural machine translation system. We use transfer learning from other Ge'ez script languages and report an improvement of 1.3 BLEU points over a classic neural baseline. We publish our development pipeline as an open-source library and also provide a demonstration application.
+
+| Comments: | Pre-print accepted to Africa NLP workshop organized within Eighth International Conference on Learning Representations (ICLR 2020) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2003.11523](https://arxiv.org/abs/2003.11523) [cs.CL] |
+|           | (or [arXiv:2003.11523v1](https://arxiv.org/abs/2003.11523v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-03-26-4">4. Masakhane -- Machine Translation For Africa</h2>
+
+Title: [Masakhane -- Machine Translation For Africa](https://arxiv.org/abs/2003.11529)
+
+Authors: [Iroro Orife](https://arxiv.org/search/cs?searchtype=author&query=Orife%2C+I), [Julia Kreutzer](https://arxiv.org/search/cs?searchtype=author&query=Kreutzer%2C+J), [Blessing Sibanda](https://arxiv.org/search/cs?searchtype=author&query=Sibanda%2C+B), [Daniel Whitenack](https://arxiv.org/search/cs?searchtype=author&query=Whitenack%2C+D), [Kathleen Siminyu](https://arxiv.org/search/cs?searchtype=author&query=Siminyu%2C+K), [Laura Martinus](https://arxiv.org/search/cs?searchtype=author&query=Martinus%2C+L), [Jamiil Toure Ali](https://arxiv.org/search/cs?searchtype=author&query=Ali%2C+J+T), [Jade Abbott](https://arxiv.org/search/cs?searchtype=author&query=Abbott%2C+J), [Vukosi Marivate](https://arxiv.org/search/cs?searchtype=author&query=Marivate%2C+V), [Salomon Kabongo](https://arxiv.org/search/cs?searchtype=author&query=Kabongo%2C+S), [Musie Meressa](https://arxiv.org/search/cs?searchtype=author&query=Meressa%2C+M), [Espoir Murhabazi](https://arxiv.org/search/cs?searchtype=author&query=Murhabazi%2C+E), [Orevaoghene Ahia](https://arxiv.org/search/cs?searchtype=author&query=Ahia%2C+O), [Elan van Biljon](https://arxiv.org/search/cs?searchtype=author&query=van+Biljon%2C+E), [Arshath Ramkilowan](https://arxiv.org/search/cs?searchtype=author&query=Ramkilowan%2C+A), [Adewale Akinfaderin](https://arxiv.org/search/cs?searchtype=author&query=Akinfaderin%2C+A), [Alp Öktem](https://arxiv.org/search/cs?searchtype=author&query=Öktem%2C+A), [Wole Akin](https://arxiv.org/search/cs?searchtype=author&query=Akin%2C+W), [Ghollah Kioko](https://arxiv.org/search/cs?searchtype=author&query=Kioko%2C+G), [Kevin Degila](https://arxiv.org/search/cs?searchtype=author&query=Degila%2C+K), [Herman Kamper](https://arxiv.org/search/cs?searchtype=author&query=Kamper%2C+H), [Bonaventure Dossou](https://arxiv.org/search/cs?searchtype=author&query=Dossou%2C+B), [Chris Emezue](https://arxiv.org/search/cs?searchtype=author&query=Emezue%2C+C), [Kelechi Ogueji](https://arxiv.org/search/cs?searchtype=author&query=Ogueji%2C+K), [Abdallah Bashir](https://arxiv.org/search/cs?searchtype=author&query=Bashir%2C+A)
+
+*(Submitted on 13 Mar 2020)*
+
+> Africa has over 2000 languages. Despite this, African languages account for a small portion of available resources and publications in Natural Language Processing (NLP). This is due to multiple factors, including: a lack of focus from government and funding, discoverability, a lack of community, sheer language complexity, difficulty in reproducing papers and no benchmarks to compare techniques. To begin to address the identified problems, MASAKHANE, an open-source, continent-wide, distributed, online research effort for machine translation for African languages, was founded. In this paper, we discuss our methodology for building the community and spurring research from the African continent, as well as outline the success of the community in terms of addressing the identified problems affecting African NLP.
+
+| Comments: | Accepted for the AfricaNLP Workshop, ICLR 2020               |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2003.11529](https://arxiv.org/abs/2003.11529) [cs.CL] |
+|           | (or [arXiv:2003.11529v1](https://arxiv.org/abs/2003.11529v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-03-26-5">5. Meta-CoTGAN: A Meta Cooperative Training Paradigm for Improving Adversarial Text Generation</h2>
+
+Title: [Meta-CoTGAN: A Meta Cooperative Training Paradigm for Improving Adversarial Text Generation](https://arxiv.org/abs/2003.11530)
+
+Authors: [Haiyan Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+H), [Dingcheng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+D), [Xu Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Ping Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+P)
+
+*(Submitted on 12 Mar 2020)*
+
+> Training generative models that can generate high-quality text with sufficient diversity is an important open problem for Natural Language Generation (NLG) community. Recently, generative adversarial models have been applied extensively on text generation tasks, where the adversarially trained generators alleviate the exposure bias experienced by conventional maximum likelihood approaches and result in promising generation quality. However, due to the notorious defect of mode collapse for adversarial training, the adversarially trained generators face a quality-diversity trade-off, i.e., the generator models tend to sacrifice generation diversity severely for increasing generation quality. In this paper, we propose a novel approach which aims to improve the performance of adversarial text generation via efficiently decelerating mode collapse of the adversarial training. To this end, we introduce a cooperative training paradigm, where a language model is cooperatively trained with the generator and we utilize the language model to efficiently shape the data distribution of the generator against mode collapse. Moreover, instead of engaging the cooperative update for the generator in a principled way, we formulate a meta learning mechanism, where the cooperative update to the generator serves as a high level meta task, with an intuition of ensuring the parameters of the generator after the adversarial update would stay resistant against mode collapse. In the experiment, we demonstrate our proposed approach can efficiently slow down the pace of mode collapse for the adversarial text generators. Overall, our proposed method is able to outperform the baseline approaches with significant margins in terms of both generation quality and diversity in the testified domains.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2003.11530](https://arxiv.org/abs/2003.11530) [cs.CL] |
+|           | (or [arXiv:2003.11530v1](https://arxiv.org/abs/2003.11530v1) [cs.CL] for this version) |
+
+
+
+
 
 
 
