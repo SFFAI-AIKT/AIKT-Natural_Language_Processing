@@ -2,6 +2,8 @@
 
 # Index
 
+- [2020-03-27](#2020-03-27)
+  - [1. Word2Vec: Optimal Hyper-Parameters and Their Impact on NLP Downstream Tasks](#2020-03-27-1)
 - [2020-03-26](#2020-03-26)
   - [1. XTREME: A Massively Multilingual Multi-task Benchmark for Evaluating Cross-lingual Generalization](#2020-03-26-1)
   - [2. Joint Multiclass Debiasing of Word Embeddings](#2020-03-26-2)
@@ -65,6 +67,32 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-03-27
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-03-27-1">1. Word2Vec: Optimal Hyper-Parameters and Their Impact on NLP Downstream Tasks</h2>
+
+Title: [Word2Vec: Optimal Hyper-Parameters and Their Impact on NLP Downstream Tasks](https://arxiv.org/abs/2003.11645)
+
+Authors: [Tosin P. Adewumi](https://arxiv.org/search/cs?searchtype=author&query=Adewumi%2C+T+P), [Foteini Liwicki](https://arxiv.org/search/cs?searchtype=author&query=Liwicki%2C+F), [Marcus Liwicki](https://arxiv.org/search/cs?searchtype=author&query=Liwicki%2C+M)
+
+*(Submitted on 23 Mar 2020)*
+
+> Word2Vec is a prominent tool for Natural Language Processing (NLP) tasks. Similar inspiration is found in distributed embeddings for state-of-the-art (sota) deep neural networks. However, wrong combination of hyper-parameters can produce poor quality vectors. The objective of this work is to show optimal combination of hyper-parameters exists and evaluate various combinations. We compare them with the original model released by Mikolov. Both intrinsic and extrinsic (downstream) evaluations, including Named Entity Recognition (NER) and Sentiment Analysis (SA) were carried out. The downstream tasks reveal that the best model is task-specific, high analogy scores don't necessarily correlate positively with F1 scores and the same applies for more data. Increasing vector dimension size after a point leads to poor quality or performance. If ethical considerations to save time, energy and the environment are made, then reasonably smaller corpora may do just as well or even better in some cases. Besides, using a small corpus, we obtain better human-assigned WordSim scores, corresponding Spearman correlation and better downstream (NER & SA) performance compared to Mikolov's model, trained on 100 billion word corpus.
+
+| Comments: | 12 pages, 7 figures, 6 tables                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| Cite as:  | [arXiv:2003.11645](https://arxiv.org/abs/2003.11645) [cs.CL] |
+|           | (or [arXiv:2003.11645v1](https://arxiv.org/abs/2003.11645v1) [cs.CL] for this version) |
+
+
 
 
 
