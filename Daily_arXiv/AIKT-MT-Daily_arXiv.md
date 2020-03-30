@@ -2,6 +2,8 @@
 
 # Index
 
+- [2020-03-30](#2020-03-20)
+  - [1. FFR V1.0: Fon-French Neural Machine Translation](#2020-03-30-1)
 - [2020-03-27](#2020-03-27)
   - [1. Word2Vec: Optimal Hyper-Parameters and Their Impact on NLP Downstream Tasks](#2020-03-27-1)
 - [2020-03-26](#2020-03-26)
@@ -67,6 +69,34 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-03-30
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-03-30-1">1. FFR V1.0: Fon-French Neural Machine Translation</h2>
+
+Title: [FFR V1.0: Fon-French Neural Machine Translation](https://arxiv.org/abs/2003.12111)
+
+Authors: [Bonaventure F. P. Dossou](https://arxiv.org/search/cs?searchtype=author&query=Dossou%2C+B+F+P), [Chris C. Emezue](https://arxiv.org/search/cs?searchtype=author&query=Emezue%2C+C+C)
+
+*(Submitted on 26 Mar 2020)*
+
+> Africa has the highest linguistic diversity in the world. On account of the importance of language to communication, and the importance of reliable, powerful and accurate machine translation models in modern inter-cultural communication, there have been (and still are) efforts to create state-of-the-art translation models for the many African languages. However, the low-resources, diacritical and tonal complexities of African languages are major issues facing African NLP today. The FFR is a major step towards creating a robust translation model from Fon, a very low-resource and tonal language, to French, for research and public use. In this paper, we describe our pilot project: the creation of a large growing corpora for Fon-to-French translations and our FFR v1.0 model, trained on this dataset. The dataset and model are made publicly available.
+
+| Comments: | Accepted for the AfricaNLP Workshop, ICLR 2020               |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2003.12111](https://arxiv.org/abs/2003.12111) [cs.CL] |
+|           | (or [arXiv:2003.12111v1](https://arxiv.org/abs/2003.12111v1) [cs.CL] for this version) |
+
+
+
+
 
 
 
