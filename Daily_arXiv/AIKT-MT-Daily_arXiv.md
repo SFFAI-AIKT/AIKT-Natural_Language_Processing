@@ -2,6 +2,9 @@
 
 # Index
 
+- [2020-04-02](#2020-04-02)
+  - [1. Assessing Human Translations from French to Bambara for Machine Learning: a Pilot Study](#2020-04-02-1)
+  - [2. Sign Language Translation with Transformers](#2020-04-02-2)
 - [2020-04-01](#2020-04-01)
   - [1. The European Language Technology Landscape in 2020: Language-Centric and Human-Centric AI for Cross-Cultural Communication in Multilingual Europe](#2020-04-01-1)
   - [2. MULTEXT-East](#2020-04-01-2)
@@ -22,6 +25,58 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-04-02
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-04-02-1">1. Assessing Human Translations from French to Bambara for Machine Learning: a Pilot Study</h2>
+
+Title: [Assessing Human Translations from French to Bambara for Machine Learning: a Pilot Study](https://arxiv.org/abs/2004.00068)
+
+Authors: [Michael Leventhal](https://arxiv.org/search/cs?searchtype=author&query=Leventhal%2C+M), [Allahsera Tapo](https://arxiv.org/search/cs?searchtype=author&query=Tapo%2C+A), [Sarah Luger](https://arxiv.org/search/cs?searchtype=author&query=Luger%2C+S), [Marcos Zampieri](https://arxiv.org/search/cs?searchtype=author&query=Zampieri%2C+M), [Christopher M. Homan](https://arxiv.org/search/cs?searchtype=author&query=Homan%2C+C+M)
+
+*(Submitted on 31 Mar 2020)*
+
+> We present novel methods for assessing the quality of human-translated aligned texts for learning machine translation models of under-resourced languages. Malian university students translated French texts, producing either written or oral translations to Bambara. Our results suggest that similar quality can be obtained from either written or spoken translations for certain kinds of texts. They also suggest specific instructions that human translators should be given in order to improve the quality of their work.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2004.00068](https://arxiv.org/abs/2004.00068) [cs.CL] |
+|           | (or [arXiv:2004.00068v1](https://arxiv.org/abs/2004.00068v1) [cs.CL] for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-04-02-2">2. Sign Language Translation with Transformers</h2>
+
+Title: [Sign Language Translation with Transformers](https://arxiv.org/abs/2004.00588)
+
+Authors: [Kayo Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+K)
+
+*(Submitted on 1 Apr 2020)*
+
+> Sign Language Translation (SLT) first uses a Sign Language Recognition (SLR) system to extract sign language glosses from videos. Then, a translation system generates spoken language translations from the sign language glosses. Though SLT has gathered interest recently, little study has been performed on the translation system. This paper focuses on the translation system and improves performance by utilizing Transformer networks. We report a wide range of experimental results for various Transformer setups and introduce the use of Spatial-Temporal Multi-Cue (STMC) networks in an end-to-end SLT system with Transformer.
+> We perform experiments on RWTH-PHOENIX-Weather 2014T, a challenging SLT benchmark dataset of German sign language, and ASLG-PC12, a dataset involving American Sign Language (ASL) recently used in gloss-to-text translation. Our methodology improves on the current state-of-the-art by over 5 and 7 points respectively in BLEU-4 score on ground truth glosses and by using an STMC network to predict glosses of the RWTH-PHOENIX-Weather 2014T dataset. On the ASLG-PC12 corpus, we report an improvement of over 16 points in BLEU-4. Our findings also demonstrate that end-to-end translation on predicted glosses provides even better performance than translation on ground truth glosses. This shows potential for further improvement in SLT by either jointly training the SLR and translation systems or by revising the gloss annotation system.
+
+| Comments: | 14 pages, 6 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV); Human-Computer Interaction (cs.HC); Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:2004.00588](https://arxiv.org/abs/2004.00588) [cs.CL] |
+|           | (or [arXiv:2004.00588v1](https://arxiv.org/abs/2004.00588v1) [cs.CL] for this version) |
+
+
+
+
+
+
 
 
 
