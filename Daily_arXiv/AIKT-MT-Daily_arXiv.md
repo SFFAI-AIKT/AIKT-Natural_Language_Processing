@@ -2,6 +2,11 @@
 
 # Index
 
+- [2020-04-15](#2020-04-15)
+  - [1.Code Completion using Neural Attention and Byte Pair Encoding ](#2020-04-15-1)
+  - [2. Speech Translation and the End-to-End Promise: Taking Stock of Where We Are](#2020-04-15-2)
+  - [3. What's so special about BERT's layers? A closer look at the NLP pipeline in monolingual and multilingual models](#2020-04-15-3)
+  - [4. Multilingual Machine Translation: Closing the Gap between Shared and Language-specific Encoder-Decoders](#2020-04-15-4)
 - [2020-04-14](#2020-04-14)
   - [1. On the Language Neutrality of Pre-trained Multilingual Representations](#2020-04-14-1)
   - [2. Joint translation and unit conversion for end-to-end localization](#2020-04-14-2)
@@ -73,6 +78,94 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-04-15
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-04-15-1">1. Code Completion using Neural Attention and Byte Pair Encoding</h2>
+
+Title: [Code Completion using Neural Attention and Byte Pair Encoding](https://arxiv.org/abs/2004.06343)
+
+Authors: [Youri Arkesteijn](https://arxiv.org/search/cs?searchtype=author&query=Arkesteijn%2C+Y), [Nikhil Saldanha](https://arxiv.org/search/cs?searchtype=author&query=Saldanha%2C+N), [Bastijn Kostense](https://arxiv.org/search/cs?searchtype=author&query=Kostense%2C+B)
+
+*(Submitted on 14 Apr 2020)*
+
+> In this paper, we aim to do code completion based on implementing a Neural Network from Li et. al.. Our contribution is that we use an encoding that is in-between character and word encoding called Byte Pair Encoding (BPE). We use this on the source code files treating them as natural text without first going through the abstract syntax tree (AST). We have implemented two models: an attention-enhanced LSTM and a pointer network, where the pointer network was originally introduced to solve out of vocabulary problems. We are interested to see if BPE can replace the need for the pointer network for code completion.
+
+| Comments: | 4 pages, 4 figures, 1 table                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Software Engineering (cs.SE) |
+| Cite as:  | [arXiv:2004.06343](https://arxiv.org/abs/2004.06343) [cs.CL] |
+|           | (or [arXiv:2004.06343v1](https://arxiv.org/abs/2004.06343v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-04-15-2">2. Speech Translation and the End-to-End Promise: Taking Stock of Where We Are</h2>
+
+Title: [Speech Translation and the End-to-End Promise: Taking Stock of Where We Are](https://arxiv.org/abs/2004.06358)
+
+Authors: [Matthias Sperber](https://arxiv.org/search/cs?searchtype=author&query=Sperber%2C+M), [Matthias Paulik](https://arxiv.org/search/cs?searchtype=author&query=Paulik%2C+M)
+
+*(Submitted on 14 Apr 2020)*
+
+> Over its three decade history, speech translation has experienced several shifts in its primary research themes; moving from loosely coupled cascades of speech recognition and machine translation, to exploring questions of tight coupling, and finally to end-to-end models that have recently attracted much attention. This paper provides a brief survey of these developments, along with a discussion of the main challenges of traditional approaches which stem from committing to intermediate representations from the speech recognizer, and from training cascaded models separately towards different objectives.
+> Recent end-to-end modeling techniques promise a principled way of overcoming these issues by allowing joint training of all model components and removing the need for explicit intermediate representations. However, a closer look reveals that many end-to-end models fall short of solving these issues, due to compromises made to address data scarcity. This paper provides a unifying categorization and nomenclature that covers both traditional and recent approaches and that may help researchers by highlighting both trade-offs and open research questions.
+
+| Comments: | ACL 2020 theme track                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2004.06358](https://arxiv.org/abs/2004.06358) [cs.CL] |
+|           | (or [arXiv:2004.06358v1](https://arxiv.org/abs/2004.06358v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-04-15-3">3. What's so special about BERT's layers? A closer look at the NLP pipeline in monolingual and multilingual models</h2>
+
+Title: [What's so special about BERT's layers? A closer look at the NLP pipeline in monolingual and multilingual models](https://arxiv.org/abs/2004.06499)
+
+Authors: [Wietse de Vries](https://arxiv.org/search/cs?searchtype=author&query=de+Vries%2C+W), [Andreas van Cranenburgh](https://arxiv.org/search/cs?searchtype=author&query=van+Cranenburgh%2C+A), [Malvina Nissim](https://arxiv.org/search/cs?searchtype=author&query=Nissim%2C+M)
+
+*(Submitted on 14 Apr 2020)*
+
+> Experiments with transfer learning on pre-trained language models such as BERT have shown that the layers of these models resemble the classical NLP pipeline, with progressively more complex tasks being concentrated in later layers of the network. We investigate to what extent these results also hold for a language other than English. For this we probe a Dutch BERT-based model and the multilingual BERT model for Dutch NLP tasks. In addition, by considering the task of part-of-speech tagging in more detail, we show that also within a given task, information is spread over different parts of the network and the pipeline might not be as neat as it seems. Each layer has different specialisations and it is therefore useful to combine information from different layers for best results, instead of selecting a single layer based on the best overall performance.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2004.06499](https://arxiv.org/abs/2004.06499) [cs.CL] |
+|           | (or [arXiv:2004.06499v1](https://arxiv.org/abs/2004.06499v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-04-15-4">4. Multilingual Machine Translation: Closing the Gap between Shared and Language-specific Encoder-Decoders</h2>
+
+Title: [Multilingual Machine Translation: Closing the Gap between Shared and Language-specific Encoder-Decoders](https://arxiv.org/abs/2004.06575)
+
+Authors: [Carlos Escolano](https://arxiv.org/search/cs?searchtype=author&query=Escolano%2C+C), [Marta R. Costa-jussà](https://arxiv.org/search/cs?searchtype=author&query=Costa-jussà%2C+M+R), [José A. R. Fonollosa](https://arxiv.org/search/cs?searchtype=author&query=Fonollosa%2C+J+A+R), [Mikel Artetxe](https://arxiv.org/search/cs?searchtype=author&query=Artetxe%2C+M)
+
+*(Submitted on 14 Apr 2020)*
+
+> State-of-the-art multilingual machine translation relies on a universal encoder-decoder, which requires retraining the entire system to add new languages. In this paper, we propose an alternative approach that is based on language-specific encoder-decoders, and can thus be more easily extended to new languages by learning their corresponding modules. So as to encourage a common interlingua representation, we simultaneously train the N initial languages. Our experiments show that the proposed approach outperforms the universal encoder-decoder by 3.28 BLEU points on average, and when adding new languages, without the need to retrain the rest of the modules. All in all, our work closes the gap between shared and language-specific encoder-decoders, advancing toward modular multilingual machine translation systems that can be flexibly extended in lifelong learning settings.
+
+| Subjects:    | **Computation and Language (cs.CL)**                         |
+| ------------ | ------------------------------------------------------------ |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | [arXiv:2004.06575](https://arxiv.org/abs/2004.06575) [cs.CL] |
+|              | (or [arXiv:2004.06575v1](https://arxiv.org/abs/2004.06575v1) [cs.CL] for this version) |
+
+
+
+
 
 
 
