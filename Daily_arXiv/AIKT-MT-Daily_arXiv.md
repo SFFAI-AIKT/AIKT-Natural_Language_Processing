@@ -2,6 +2,17 @@
 
 # Index
 
+- [2020-04-17](#2020-04-17)
+  - [1. Building a Multi-domain Neural Machine Translation Model using Knowledge Distillation](#2020-04-17-1)
+  - [2. Non-Autoregressive Machine Translation with Latent Alignments](#2020-04-17-2)
+  - [3. Do sequence-to-sequence VAEs learn global features of sentences?](#2020-04-17-3)
+  - [4. Cross-lingual Contextualized Topic Models with Zero-shot Learning](#2020-04-17-4)
+- [2020-04-16](#2020-04-16)
+  - [1. A hybrid classical-quantum workflow for natural language processing](#2020-04-16-1)
+  - [2. lamBERT: Language and Action Learning Using Multimodal BERT](#2020-04-16-2)
+  - [3. Balancing Training for Multilingual Neural Machine Translation](#2020-04-16-3)
+  - [4. PALM: Pre-training an Autoencoding&Autoregressive Language Model for Context-conditioned Generation](#2020-04-16-4)
+  - [5. Document-level Representation Learning using Citation-informed Transformers](#2020-04-16-5)
 - [2020-04-15](#2020-04-15)
   - [1.Code Completion using Neural Attention and Byte Pair Encoding ](#2020-04-15-1)
   - [2. Speech Translation and the End-to-End Promise: Taking Stock of Where We Are](#2020-04-15-2)
@@ -78,6 +89,183 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-04-17
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-04-17-1">1. Building a Multi-domain Neural Machine Translation Model using Knowledge Distillation</h2>
+
+Title: [Building a Multi-domain Neural Machine Translation Model using Knowledge Distillation](https://arxiv.org/abs/2004.07324)
+
+Authors: [Idriss Mghabbar](https://arxiv.org/search/cs?searchtype=author&query=Mghabbar%2C+I), [Pirashanth Ratnamogan](https://arxiv.org/search/cs?searchtype=author&query=Ratnamogan%2C+P)
+
+> Lack of specialized data makes building a multi-domain neural machine translation tool challenging. Although emerging literature dealing with low resource languages starts to show promising results, most state-of-the-art models used millions of sentences. Today, the majority of multi-domain adaptation techniques are based on complex and sophisticated architectures that are not adapted for real-world applications. So far, no scalable method is performing better than the simple yet effective mixed-finetuning, i.e finetuning a generic model with a mix of all specialized data and generic data. In this paper, we propose a new training pipeline where knowledge distillation and multiple specialized teachers allow us to efficiently finetune a model without adding new costs at inference time. Our experiments demonstrated that our training pipeline allows improving the performance of multi-domain translation over finetuning in configurations with 2, 3, and 4 domains by up to 2 points in BLEU.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | 24th European Conference on Artificial Intelligence (ECAI), 2020 |
+| Cite as:           | **[arXiv:2004.07324](https://arxiv.org/abs/2004.07324) [cs.CL]** |
+|                    | (or **[arXiv:2004.07324v1](https://arxiv.org/abs/2004.07324v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-17-2">2. Non-Autoregressive Machine Translation with Latent Alignments</h2>
+
+Title: [Non-Autoregressive Machine Translation with Latent Alignments](https://arxiv.org/abs/2004.07437)
+
+Authors: [Chitwan Saharia](https://arxiv.org/search/cs?searchtype=author&query=Saharia%2C+C), [William Chan](https://arxiv.org/search/cs?searchtype=author&query=Chan%2C+W), [Saurabh Saxena](https://arxiv.org/search/cs?searchtype=author&query=Saxena%2C+S), [Mohammad Norouzi](https://arxiv.org/search/cs?searchtype=author&query=Norouzi%2C+M)
+
+> This paper investigates two latent alignment models for non-autoregressive machine translation, namely CTC and Imputer. CTC generates outputs in a single step, makes strong conditional independence assumptions about output variables, and marginalizes out latent alignments using dynamic programming. Imputer generates outputs in a constant number of steps, and approximately marginalizes out possible generation orders and latent alignments for training. These models are simpler than existing non-autoregressive methods, since they do not require output length prediction as a pre-process. In addition, our architecture is simpler than typical encoder-decoder architectures, since input-output cross attention is not used. On the competitive WMT'14 En→De task, our CTC model achieves 25.7 BLEU with a single generation step, while Imputer achieves 27.5 BLEU with 2 generation steps, and 28.0 BLEU with 4 generation steps. This compares favourably to the baseline autoregressive Transformer with 27.8 BLEU.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2004.07437](https://arxiv.org/abs/2004.07437) [cs.CL]** |
+|           | (or **[arXiv:2004.07437v1](https://arxiv.org/abs/2004.07437v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-17-3">3. Do sequence-to-sequence VAEs learn global features of sentences?</h2>
+
+Title: [Do sequence-to-sequence VAEs learn global features of sentences?](https://arxiv.org/abs/2004.07683)
+
+Authors: [Tom Bosc](https://arxiv.org/search/cs?searchtype=author&query=Bosc%2C+T), [Pascal Vincent](https://arxiv.org/search/cs?searchtype=author&query=Vincent%2C+P)
+
+> A longstanding goal in NLP is to compute global sentence representations. Such representations would be useful for sample-efficient semi-supervised learning and controllable text generation. To learn to represent global and local information separately, Bowman & al. (2016) proposed to train a sequence-to-sequence model with the variational auto-encoder (VAE) objective. What precisely is encoded in these latent variables expected to capture global features? We measure which words benefit most from the latent information by decomposing the reconstruction loss per position in the sentence. Using this method, we see that VAEs are prone to memorizing the first words and the sentence length, drastically limiting their usefulness. To alleviate this, we propose variants based on bag-of-words assumptions and language model pretraining. These variants learn latents that are more global: they are more predictive of topic or sentiment labels, and their reconstructions are more faithful to the labels of the original documents.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2004.07683](https://arxiv.org/abs/2004.07683) [cs.CL]** |
+|           | (or **[arXiv:2004.07683v1](https://arxiv.org/abs/2004.07683v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-17-4">4. Cross-lingual Contextualized Topic Models with Zero-shot Learning</h2>
+
+Title: [Cross-lingual Contextualized Topic Models with Zero-shot Learning](https://arxiv.org/abs/2004.07737)
+
+Authors: [Federico Bianchi](https://arxiv.org/search/cs?searchtype=author&query=Bianchi%2C+F), [Silvia Terragni](https://arxiv.org/search/cs?searchtype=author&query=Terragni%2C+S), [Dirk Hovy](https://arxiv.org/search/cs?searchtype=author&query=Hovy%2C+D), [Debora Nozza](https://arxiv.org/search/cs?searchtype=author&query=Nozza%2C+D), [Elisabetta Fersini](https://arxiv.org/search/cs?searchtype=author&query=Fersini%2C+E)
+
+> Many data sets in a domain (reviews, forums, news, etc.) exist in parallel languages. They all cover the same content, but the linguistic differences make it impossible to use traditional, bag-of-word-based topic models. Models have to be either single-language or suffer from a huge, but extremely sparse vocabulary. Both issues can be addressed by transfer learning. In this paper, we introduce a zero-shot cross-lingual topic model, i.e., our model learns topics on one language (here, English), and predicts them for documents in other languages. By using the text of the same document in different languages, we can evaluate the quality of the predictions. Our results show that topics are coherent and stable across languages, which suggests exciting future research directions.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2004.07737](https://arxiv.org/abs/2004.07737) [cs.CL]** |
+|           | (or **[arXiv:2004.07737v1](https://arxiv.org/abs/2004.07737v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+# 2020-04-16
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-04-16-1">1. A hybrid classical-quantum workflow for natural language processing</h2>
+
+Title: [A hybrid classical-quantum workflow for natural language processing](https://arxiv.org/abs/2004.06800)
+
+Authors: [Lee J. O'Riordan](https://arxiv.org/search/quant-ph?searchtype=author&query=O'Riordan%2C+L+J), [Myles Doyle](https://arxiv.org/search/quant-ph?searchtype=author&query=Doyle%2C+M), [Fabio Baruffa](https://arxiv.org/search/quant-ph?searchtype=author&query=Baruffa%2C+F), [Venkatesh Kannan](https://arxiv.org/search/quant-ph?searchtype=author&query=Kannan%2C+V)
+
+> Natural language processing (NLP) problems are ubiquitous in classical computing, where they often require significant computational resources to infer sentence meanings. With the appearance of quantum computing hardware and simulators, it is worth developing methods to examine such problems on these platforms. In this manuscript we demonstrate the use of quantum computing models to perform NLP tasks, where we represent corpus meanings, and perform comparisons between sentences of a given structure. We develop a hybrid workflow for representing small and large scale corpus data sets to be encoded, processed, and decoded using a quantum circuit model. In addition, we provide our results showing the efficacy of the method, and release our developed toolkit as an open software suite.
+
+| Comments: | For associated code, see [this https URL](https://github.com/ICHEC/QNLP) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Quantum Physics (quant-ph)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2004.06800](https://arxiv.org/abs/2004.06800) [quant-ph]** |
+|           | (or **[arXiv:2004.06800v1](https://arxiv.org/abs/2004.06800v1) [quant-ph]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-16-2">2. lamBERT: Language and Action Learning Using Multimodal BERT</h2>
+
+Title: [lamBERT: Language and Action Learning Using Multimodal BERT](https://arxiv.org/abs/2004.07093)
+
+Authors: [Kazuki Miyazawa](https://arxiv.org/search/cs?searchtype=author&query=Miyazawa%2C+K), [Tatsuya Aoki](https://arxiv.org/search/cs?searchtype=author&query=Aoki%2C+T), [Takato Horii](https://arxiv.org/search/cs?searchtype=author&query=Horii%2C+T), [Takayuki Nagai](https://arxiv.org/search/cs?searchtype=author&query=Nagai%2C+T)
+
+> Recently, the bidirectional encoder representations from transformers (BERT) model has attracted much attention in the field of natural language processing, owing to its high performance in language understanding-related tasks. The BERT model learns language representation that can be adapted to various tasks via pre-training using a large corpus in an unsupervised manner. This study proposes the language and action learning using multimodal BERT (lamBERT) model that enables the learning of language and actions by 1) extending the BERT model to multimodal representation and 2) integrating it with reinforcement learning. To verify the proposed model, an experiment is conducted in a grid environment that requires language understanding for the agent to act properly. As a result, the lamBERT model obtained higher rewards in multitask settings and transfer settings when compared to other models, such as the convolutional neural network-based model and the lamBERT model without pre-training.
+
+| Comments: | 8 pages, 9 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| Cite as:  | **[arXiv:2004.07093](https://arxiv.org/abs/2004.07093) [cs.LG]** |
+|           | (or **[arXiv:2004.07093v1](https://arxiv.org/abs/2004.07093v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-16-3">3. Balancing Training for Multilingual Neural Machine Translation</h2>
+
+Title: [Balancing Training for Multilingual Neural Machine Translation](https://arxiv.org/abs/2004.06748)
+
+Authors: [Xinyi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Yulia Tsvetkov](https://arxiv.org/search/cs?searchtype=author&query=Tsvetkov%2C+Y), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
+
+> When training multilingual machine translation (MT) models that can translate to/from multiple languages, we are faced with imbalanced training sets: some languages have much more training data than others. Standard practice is to up-sample less resourced languages to increase representation, and the degree of up-sampling has a large effect on the overall performance. In this paper, we propose a method that instead automatically learns how to weight training data through a data scorer that is optimized to maximize performance on all test languages. Experiments on two sets of languages under both one-to-many and many-to-one MT settings show our method not only consistently outperforms heuristic baselines in terms of average performance, but also offers flexible control over the performance of which languages are optimized.
+
+| Comments: | Accepted at ACL 2020                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2004.06748](https://arxiv.org/abs/2004.06748) [cs.CL]** |
+|           | (or **[arXiv:2004.06748v2](https://arxiv.org/abs/2004.06748v2) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-16-4">4. PALM: Pre-training an Autoencoding&Autoregressive Language Model for Context-conditioned Generation</h2>
+
+Title: [PALM: Pre-training an Autoencoding&Autoregressive Language Model for Context-conditioned Generation](https://arxiv.org/abs/2004.07159)
+
+Authors: [Bin Bi](https://arxiv.org/search/cs?searchtype=author&query=Bi%2C+B), [Chenliang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+C), [Chen Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+C), [Ming Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+M), [Wei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W)
+
+> Self-supervised pre-training has emerged as a powerful technique for natural language understanding and generation, such as BERT, MASS and BART. The existing pre-training techniques employ autoencoding and/or autoregressive objectives to train Transformer-based models by recovering original word tokens from corrupted text with some masked tokens. In this work, we present PALM which pre-trains an autoencoding and autoregressive language model on a large unlabeled corpus especially for downstream generation conditioned on context, such as generative question answering and conversational response generation. PALM minimizes the mismatch introduced by the existing denoising scheme between pre-training and fine-tuning where generation is more than reconstructing original text. With a novel pre-training scheme, PALM achieves new state-of-the-art results on a variety of language generation benchmarks covering generative question answering (Rank 1 on the official MARCO leaderboard), abstractive summarization on Gigaword and conversational response generation on Cornell Movie Dialogues.
+
+| Comments: | arXiv admin note: text overlap with [arXiv:1910.10683](https://arxiv.org/abs/1910.10683), [arXiv:1910.13461](https://arxiv.org/abs/1910.13461) by other authors |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2004.07159](https://arxiv.org/abs/2004.07159) [cs.CL]** |
+|           | (or **[arXiv:2004.07159v1](https://arxiv.org/abs/2004.07159v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-16-5">5. Document-level Representation Learning using Citation-informed Transformers</h2>
+
+Title: [Document-level Representation Learning using Citation-informed Transformers](https://arxiv.org/abs/2004.07180)
+
+Authors: [Arman Cohan](https://arxiv.org/search/cs?searchtype=author&query=Cohan%2C+A), [Sergey Feldman](https://arxiv.org/search/cs?searchtype=author&query=Feldman%2C+S), [Iz Beltagy](https://arxiv.org/search/cs?searchtype=author&query=Beltagy%2C+I), [Doug Downey](https://arxiv.org/search/cs?searchtype=author&query=Downey%2C+D), [Daniel S. Weld](https://arxiv.org/search/cs?searchtype=author&query=Weld%2C+D+S)
+
+> Representation learning is a critical ingredient for natural language processing systems. Recent Transformer language models like BERT learn powerful textual representations, but these models are targeted towards token- and sentence-level training objectives and do not leverage information on inter-document relatedness, which limits their document-level representation power. For applications on scientific documents, such as classification and recommendation, the embeddings power strong performance on end tasks. We propose SPECTER, a new method to generate document-level embedding of scientific documents based on pretraining a Transformer language model on a powerful signal of document-level relatedness: the citation graph. Unlike existing pretrained language models, SPECTER can be easily applied to downstream applications without task-specific fine-tuning. Additionally, to encourage further research on document-level models, we introduce SciDocs, a new evaluation benchmark consisting of seven document-level tasks ranging from citation prediction, to document classification and recommendation. We show that SPECTER outperforms a variety of competitive baselines on the benchmark.
+
+| Comments: | ACL 2020                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2004.07180](https://arxiv.org/abs/2004.07180) [cs.CL]** |
+|           | (or **[arXiv:2004.07180v1](https://arxiv.org/abs/2004.07180v1) [cs.CL]** for this version) |
+
+
+
+
+
+
 
 
 
