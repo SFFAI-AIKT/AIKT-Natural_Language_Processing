@@ -2,6 +2,11 @@
 
 # Index
 
+- [2020-04-20](#2020-04-20)
+  - [1. Geometry-aware Domain Adaptation for Unsupervised Alignment of Word Embeddings](#2020-04-20-1)
+  - [2. Understanding the Difficulty of Training Transformers](#2020-04-20-2)
+  - [3. Enriching the Transformer with Linguistic and Semantic Factors for Low-Resource Machine Translation](#2020-04-20-3)
+  - [4. Batch Clustering for Multilingual News Streaming](#2020-04-20-4)
 - [2020-04-17](#2020-04-17)
   - [1. Building a Multi-domain Neural Machine Translation Model using Knowledge Distillation](#2020-04-17-1)
   - [2. Non-Autoregressive Machine Translation with Latent Alignments](#2020-04-17-2)
@@ -89,6 +94,88 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+
+
+# 2020-04-20
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-04-20-1">1. Geometry-aware Domain Adaptation for Unsupervised Alignment of Word Embeddings</h2>
+
+Title: [Geometry-aware Domain Adaptation for Unsupervised Alignment of Word Embeddings](https://arxiv.org/abs/2004.08243)
+
+Authors: [Pratik Jawanpuria](https://arxiv.org/search/cs?searchtype=author&query=Jawanpuria%2C+P), [Mayank Meghwanshi](https://arxiv.org/search/cs?searchtype=author&query=Meghwanshi%2C+M), [Bamdev Mishra](https://arxiv.org/search/cs?searchtype=author&query=Mishra%2C+B)
+
+> We propose a novel manifold based geometric approach for learning unsupervised alignment of word embeddings between the source and the target languages. Our approach formulates the alignment learning problem as a domain adaptation problem over the manifold of doubly stochastic matrices. This viewpoint arises from the aim to align the second order information of the two language spaces. The rich geometry of the doubly stochastic manifold allows to employ efficient Riemannian conjugate gradient algorithm for the proposed formulation. Empirically, the proposed approach outperforms state-of-the-art optimal transport based approach on the bilingual lexicon induction task across several language pairs. The performance improvement is more significant for distant language pairs.
+
+| Comments: | Accepted as a short paper in ACL 2020                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| Cite as:  | **[arXiv:2004.08243](https://arxiv.org/abs/2004.08243) [cs.LG]** |
+|           | (or **[arXiv:2004.08243v1](https://arxiv.org/abs/2004.08243v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-20-2">2. Understanding the Difficulty of Training Transformers</h2>
+
+Title: [Understanding the Difficulty of Training Transformers](https://arxiv.org/abs/2004.08249)
+
+Authors: [Liyuan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+L), [Xiaodong Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Jianfeng Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+J), [Weizhu Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+W), [Jiawei Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+J)
+
+> Transformers have been proved effective for many deep learning tasks. Training transformers, however, requires non-trivial efforts regarding carefully designing learning rate schedulers and cutting-edge optimizers (the standard SGD fails to train Transformers effectively). In this paper, we study Transformer training from both theoretical and empirical perspectives. Our analysis reveals that unbalanced gradients are not the root cause of the instability of training. Instead, we identify an amplification effect that substantially influences training. Specifically, we observe that for each layer in a multi-layer Transformer model, heavy dependency on its residual branch makes training unstable since it amplifies small parameter perturbations (e.g., parameter updates) and result in significant disturbances in the model output, yet a light dependency limits the potential of model training and can lead to an inferior trained model. Inspired by our analysis, we propose Admin (**A****d**aptive **m**odel **i****n**itialization) to stabilize the training in the early stage and unleash its full potential in the late stage. Extensive experiments show that Admin is more stable, converges faster, and leads to better performance.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2004.08249](https://arxiv.org/abs/2004.08249) [cs.LG]** |
+|           | (or **[arXiv:2004.08249v1](https://arxiv.org/abs/2004.08249v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-20-3">3. Enriching the Transformer with Linguistic and Semantic Factors for Low-Resource Machine Translation</h2>
+
+Title: [Enriching the Transformer with Linguistic and Semantic Factors for Low-Resource Machine Translation](https://arxiv.org/abs/2004.08053)
+
+Authors: [Jordi Armengol-Estapé](https://arxiv.org/search/cs?searchtype=author&query=Armengol-Estapé%2C+J), [Marta R. Costa-jussà](https://arxiv.org/search/cs?searchtype=author&query=Costa-jussà%2C+M+R), [Carlos Escolano](https://arxiv.org/search/cs?searchtype=author&query=Escolano%2C+C)
+
+> Introducing factors, that is to say, word features such as linguistic information referring to the source tokens, is known to improve the results of neural machine translation systems in certain settings, typically in recurrent architectures. This study proposes enhancing the current state-of-the-art neural machine translation architecture, the Transformer, so that it allows to introduce external knowledge. In particular, our proposed modification, the Factored Transformer, uses factors, either linguistic or semantic, that insert additional knowledge into the machine translation system. Apart from using different kinds of features, we study the effect of different architectural configurations. Specifically, we analyze the performance of combining words and features at the embedding level or at the encoder level, and we experiment with two different combination strategies. With the best-found configuration, we show improvements of 0.8 BLEU over the baseline Transformer in the IWSLT German-to-English task. Moreover, we experiment with the more challenging FLoRes English-to-Nepali benchmark, which includes both extremely low-resourced and very distant languages, and obtain an improvement of 1.2 BLEU. These improvements are achieved with linguistic and not with semantic information.
+
+| Subjects:    | **Computation and Language (cs.CL)**                         |
+| ------------ | ------------------------------------------------------------ |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2004.08053](https://arxiv.org/abs/2004.08053) [cs.CL]** |
+|              | (or **[arXiv:2004.08053v1](https://arxiv.org/abs/2004.08053v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-20-4">4. Batch Clustering for Multilingual News Streaming</h2>
+
+Title: [Batch Clustering for Multilingual News Streaming](https://arxiv.org/abs/2004.08123)
+
+Authors: [Mathis Linger](https://arxiv.org/search/cs?searchtype=author&query=Linger%2C+M), [Mhamed Hajaiej](https://arxiv.org/search/cs?searchtype=author&query=Hajaiej%2C+M)
+
+> Nowadays, digital news articles are widely available, published by various editors and often written in different languages. This large volume of diverse and unorganized information makes human reading very difficult or almost impossible. This leads to a need for algorithms able to arrange high amount of multilingual news into stories. To this purpose, we extend previous works on Topic Detection and Tracking, and propose a new system inspired from newsLens. We process articles per batch, looking for monolingual local topics which are then linked across time and languages. Here, we introduce a novel "replaying" strategy to link monolingual local topics into stories. Besides, we propose new fine tuned multilingual embedding using SBERT to create crosslingual stories. Our system gives monolingual state-of-the-art results on dataset of Spanish and German news and crosslingual state-of-the-art results on English, Spanish and German news.
+
+| Comments:          | 7 pages, 2 figures                                           |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**; Information Retrieval (cs.IR) |
+| Journal reference: | Proceedings of Text2Story - Third Workshop on Narrative Extraction From Texts co-located with 42nd European Conference on Information Retrieval (ECIR 2020) Lisbon, Portugal, April 14th, 2020 |
+| Cite as:           | **[arXiv:2004.08123](https://arxiv.org/abs/2004.08123) [cs.CL]** |
+|                    | (or **[arXiv:2004.08123v1](https://arxiv.org/abs/2004.08123v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
