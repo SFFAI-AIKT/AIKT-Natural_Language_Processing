@@ -2,6 +2,12 @@
 
 # Index
 
+- [2020-04-21](#2020-04-21)
+  - [1. The Cost of Training NLP Models: A Concise Overview](#2020-04-21-1)
+  - [2. Adversarial Training for Large Neural Language Models](#2020-04-21-2)
+  - [3. A Study of Cross-Lingual Ability and Language-specific Information in Multilingual BERT](#2020-04-21-3)
+  - [4. MPNet: Masked and Permuted Pre-training for Language Understanding](#2020-04-21-4)
+  - [5. PHINC: A Parallel Hinglish Social Media Code-Mixed Corpus for Machine Translation](#2020-04-21-5)
 - [2020-04-20](#2020-04-20)
   - [1. Geometry-aware Domain Adaptation for Unsupervised Alignment of Word Embeddings](#2020-04-20-1)
   - [2. Understanding the Difficulty of Training Transformers](#2020-04-20-2)
@@ -94,6 +100,98 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-04-21
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-04-21-1">1. The Cost of Training NLP Models: A Concise Overview</h2>
+
+Title: [The Cost of Training NLP Models: A Concise Overview](https://arxiv.org/abs/2004.08900)
+
+Authors: [Or Sharir](https://arxiv.org/search/cs?searchtype=author&query=Sharir%2C+O), [Barak Peleg](https://arxiv.org/search/cs?searchtype=author&query=Peleg%2C+B), [Yoav Shoham](https://arxiv.org/search/cs?searchtype=author&query=Shoham%2C+Y)
+
+> We review the cost of training large-scale language models, and the drivers of these costs. The intended audience includes engineers and scientists budgeting their model-training experiments, as well as non-practitioners trying to make sense of the economics of modern-day Natural Language Processing (NLP).
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Neural and Evolutionary Computing (cs.NE) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2004.08900](https://arxiv.org/abs/2004.08900) [cs.CL]** |
+|           | (or **[arXiv:2004.08900v1](https://arxiv.org/abs/2004.08900v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-21-2">2. Adversarial Training for Large Neural Language Models</h2>
+
+Title: [Adversarial Training for Large Neural Language Models](https://arxiv.org/abs/2004.08994)
+
+Authors: [Xiaodong Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Hao Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+H), [Pengcheng He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+P), [Weizhu Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+W), [Yu Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Hoifung Poon](https://arxiv.org/search/cs?searchtype=author&query=Poon%2C+H), [Jianfeng Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+J)
+
+> Generalization and robustness are both key desiderata for designing machine learning methods. Adversarial training can enhance robustness, but past work often finds it hurts generalization. In natural language processing (NLP), pre-training large neural language models such as BERT have demonstrated impressive gain in generalization for a variety of tasks, with further improvement from adversarial fine-tuning. However, these models are still vulnerable to adversarial attacks. In this paper, we show that adversarial pre-training can improve both generalization and robustness. We propose a general algorithm ALUM (Adversarial training for large neural LangUage Models), which regularizes the training objective by applying perturbations in the embedding space that maximizes the adversarial loss. We present the first comprehensive study of adversarial training in all stages, including pre-training from scratch, continual pre-training on a well-trained model, and task-specific fine-tuning. ALUM obtains substantial gains over BERT on a wide range of NLP tasks, in both regular and adversarial scenarios. Even for models that have been well trained on extremely large text corpora, such as RoBERTa, ALUM can still produce significant gains from continual pre-training, whereas conventional non-adversarial methods can not. ALUM can be further combined with task-specific fine-tuning to attain additional gains. The ALUM code and pre-trained models will be made publicly available at [this https URL](https://github.com/namisan/mt-dnn).
+
+| Comments: | 13 pages, 9 tables, 2 figures                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2004.08994](https://arxiv.org/abs/2004.08994) [cs.CL]** |
+|           | (or **[arXiv:2004.08994v1](https://arxiv.org/abs/2004.08994v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-21-3">3. A Study of Cross-Lingual Ability and Language-specific Information in Multilingual BERT</h2>
+
+Title: [A Study of Cross-Lingual Ability and Language-specific Information in Multilingual BERT](https://arxiv.org/abs/2004.09205)
+
+Authors: [Chi-Liang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+C), [Tsung-Yuan Hsu](https://arxiv.org/search/cs?searchtype=author&query=Hsu%2C+T), [Yung-Sung Chuang](https://arxiv.org/search/cs?searchtype=author&query=Chuang%2C+Y), [Hung-Yi Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+H)
+
+> Recently, multilingual BERT works remarkably well on cross-lingual transfer tasks, superior to static non-contextualized word embeddings. In this work, we provide an in-depth experimental study to supplement the existing literature of cross-lingual ability. We compare the cross-lingual ability of non-contextualized and contextualized representation model with the same data. We found that datasize and context window size are crucial factors to the transferability. We also observe the language-specific information in multilingual BERT. By manipulating the latent representations, we can control the output languages of multilingual BERT, and achieve unsupervised token translation. We further show that based on the observation, there is a computationally cheap but effective approach to improve the cross-lingual ability of multilingual BERT.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2004.09205](https://arxiv.org/abs/2004.09205) [cs.CL]** |
+|           | (or **[arXiv:2004.09205v1](https://arxiv.org/abs/2004.09205v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-21-4">4. MPNet: Masked and Permuted Pre-training for Language Understanding</h2>
+
+Title: [MPNet: Masked and Permuted Pre-training for Language Understanding](https://arxiv.org/abs/2004.09297)
+
+Authors: [Kaitao Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+K), [Xu Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+X), [Tao Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+T), [Jianfeng Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+J), [Tie-Yan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T)
+
+> BERT adopts masked language modeling (MLM) for pre-training and is one of the most successful pre-training models. Since BERT neglects dependency among predicted tokens, XLNet introduces permuted language modeling (PLM) for pre-training to address this problem. We argue that XLNet does not leverage the full position information of a sentence and thus suffers from position discrepancy between pre-training and fine-tuning. In this paper, we propose MPNet, a novel pre-training method that inherits the advantages of BERT and XLNet and avoids their limitations. MPNet leverages the dependency among predicted tokens through permuted language modeling (vs. MLM in BERT), and takes auxiliary position information as input to make the model see a full sentence and thus reducing the position discrepancy (vs. PLM in XLNet). We pre-train MPNet on a large-scale dataset (over 160GB text corpora) and fine-tune on a variety of down-streaming tasks (GLUE, SQuAD, etc). Experimental results show that MPNet outperforms MLM and PLM by a large margin, and achieves better results on these tasks compared with previous state-of-the-art pre-trained methods (e.g., BERT, XLNet, RoBERTa) under the same model setting. We release the code and pre-trained model in GitHub\footnote{\url{[this https URL](https://github.com/microsoft/MPNet)}}.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2004.09297](https://arxiv.org/abs/2004.09297) [cs.CL]** |
+|           | (or **[arXiv:2004.09297v1](https://arxiv.org/abs/2004.09297v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-21-5">5. PHINC: A Parallel Hinglish Social Media Code-Mixed Corpus for Machine Translation</h2>
+
+Title: [PHINC: A Parallel Hinglish Social Media Code-Mixed Corpus for Machine Translation](https://arxiv.org/abs/2004.09447)
+
+Authors: [Vivek Srivastava](https://arxiv.org/search/cs?searchtype=author&query=Srivastava%2C+V), [Mayank Singh](https://arxiv.org/search/cs?searchtype=author&query=Singh%2C+M)
+
+> Code-mixing is the phenomenon of using more than one language in a sentence. It is a very frequently observed pattern of communication on social media platforms. Flexibility to use multiple languages in one text message might help to communicate efficiently with the target audience. But, it adds to the challenge of processing and understanding natural language to a much larger extent. This paper presents a parallel corpus of the 13,738 code-mixed English-Hindi sentences and their corresponding translation in English. The translations of sentences are done manually by the annotators. We are releasing the parallel corpus to facilitate future research opportunities in code-mixed machine translation. The annotated corpus is available at [this https URL](https://doi.org/10.5281/zenodo.3605597).
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2004.09447](https://arxiv.org/abs/2004.09447) [cs.CL]** |
+|           | (or **[arXiv:2004.09447v1](https://arxiv.org/abs/2004.09447v1) [cs.CL]** for this version) |
+
+
 
 
 
