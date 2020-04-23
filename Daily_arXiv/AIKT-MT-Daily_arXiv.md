@@ -2,6 +2,19 @@
 
 # Index
 
+- [2020-04-23](#2020-04-23)
+  - [1. CORD-19: The Covid-19 Open Research Dataset](#2020-04-23-1)
+  - [2. ESPnet-ST: All-in-One Speech Translation Toolkit](#2020-04-23-2)
+  - [3. Testing Machine Translation via Referential Transparency](#2020-04-23-3)
+  - [4. A Study of Non-autoregressive Model for Sequence Generation](#2020-04-23-4)
+  - [5. When and Why is Unsupervised Neural Machine Translation Useless?](#2020-04-23-5)
+- [2020-04-22](#2020-04-22)
+  - [1. Making Monolingual Sentence Embeddings Multilingual using Knowledge Distillation](#2020-04-22-1)
+  - [2. Contextual Neural Machine Translation Improves Translation of Cataphoric Pronouns](#2020-04-22-2)
+  - [3. Curriculum Pre-training for End-to-End Speech Translation](#2020-04-22-3)
+  - [4. Attention Module is Not Only a Weight: Analyzing Transformers with Vector Norms](#2020-04-22-4)
+  - [5. Knowledge Distillation for Multilingual Unsupervised Neural Machine Translation](#2020-04-22-5)
+  - [6. Energy-Based Models for Text](#2020-04-22-6)
 - [2020-04-21](#2020-04-21)
   - [1. The Cost of Training NLP Models: A Concise Overview](#2020-04-21-1)
   - [2. Adversarial Training for Large Neural Language Models](#2020-04-21-2)
@@ -100,6 +113,219 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+
+
+# 2020-04-23
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-04-23-1">1. CORD-19: The Covid-19 Open Research Dataset</h2>
+
+Title: [CORD-19: The Covid-19 Open Research Dataset](https://arxiv.org/abs/2004.10706)
+
+Authors: [Lucy Lu Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L+L), [Kyle Lo](https://arxiv.org/search/cs?searchtype=author&query=Lo%2C+K), [Yoganand Chandrasekhar](https://arxiv.org/search/cs?searchtype=author&query=Chandrasekhar%2C+Y), [Russell Reas](https://arxiv.org/search/cs?searchtype=author&query=Reas%2C+R), [Jiangjiang Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+J), [Darrin Eide](https://arxiv.org/search/cs?searchtype=author&query=Eide%2C+D), [Kathryn Funk](https://arxiv.org/search/cs?searchtype=author&query=Funk%2C+K), [Rodney Kinney](https://arxiv.org/search/cs?searchtype=author&query=Kinney%2C+R), [Ziyang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [William Merrill](https://arxiv.org/search/cs?searchtype=author&query=Merrill%2C+W), [Paul Mooney](https://arxiv.org/search/cs?searchtype=author&query=Mooney%2C+P), [Dewey Murdick](https://arxiv.org/search/cs?searchtype=author&query=Murdick%2C+D), [Devvret Rishi](https://arxiv.org/search/cs?searchtype=author&query=Rishi%2C+D), [Jerry Sheehan](https://arxiv.org/search/cs?searchtype=author&query=Sheehan%2C+J), [Zhihong Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+Z), [Brandon Stilson](https://arxiv.org/search/cs?searchtype=author&query=Stilson%2C+B), [Alex D. Wade](https://arxiv.org/search/cs?searchtype=author&query=Wade%2C+A+D), [Kuansan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+K), [Chris Wilhelm](https://arxiv.org/search/cs?searchtype=author&query=Wilhelm%2C+C), [Boya Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie%2C+B), [Douglas Raymond](https://arxiv.org/search/cs?searchtype=author&query=Raymond%2C+D), [Daniel S. Weld](https://arxiv.org/search/cs?searchtype=author&query=Weld%2C+D+S), [Oren Etzioni](https://arxiv.org/search/cs?searchtype=author&query=Etzioni%2C+O), [Sebastian Kohlmeier](https://arxiv.org/search/cs?searchtype=author&query=Kohlmeier%2C+S)
+
+> The Covid-19 Open Research Dataset (CORD-19) is a growing resource of scientific papers on Covid-19 and related historical coronavirus research. CORD-19 is designed to facilitate the development of text mining and information retrieval systems over its rich collection of metadata and structured full text papers. Since its release, CORD-19 has been downloaded over 75K times and has served as the basis of many Covid-19 text mining and discovery systems. In this article, we describe the mechanics of dataset construction, highlighting challenges and key design decisions, provide an overview of how CORD-19 has been used, and preview tools and upcoming shared tasks built around the dataset. We hope this resource will continue to bring together the computing community, biomedical experts, and policy makers in the search for effective treatments and management policies for Covid-19.
+
+| Comments: | 10 pages, 3 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Digital Libraries (cs.DL)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2004.10706](https://arxiv.org/abs/2004.10706) [cs.DL]** |
+|           | (or **[arXiv:2004.10706v1](https://arxiv.org/abs/2004.10706v1) [cs.DL]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-23-2">2. ESPnet-ST: All-in-One Speech Translation Toolkit</h2>
+
+Title: [ESPnet-ST: All-in-One Speech Translation Toolkit](https://arxiv.org/abs/2004.10234)
+
+Authors: [Hirofumi Inaguma](https://arxiv.org/search/cs?searchtype=author&query=Inaguma%2C+H), [Shun Kiyono](https://arxiv.org/search/cs?searchtype=author&query=Kiyono%2C+S), [Kevin Duh](https://arxiv.org/search/cs?searchtype=author&query=Duh%2C+K), [Shigeki Karita](https://arxiv.org/search/cs?searchtype=author&query=Karita%2C+S), [Nelson Enrique Yalta Soplin](https://arxiv.org/search/cs?searchtype=author&query=Soplin%2C+N+E+Y), [Tomoki Hayashi](https://arxiv.org/search/cs?searchtype=author&query=Hayashi%2C+T), [Shinji Watanabe](https://arxiv.org/search/cs?searchtype=author&query=Watanabe%2C+S)
+
+> We present ESPnet-ST, which is designed for the quick development of speech-to-speech translation systems in a single framework. ESPnet-ST is a new project inside end-to-end speech processing toolkit, ESPnet, which integrates or newly implements automatic speech recognition, machine translation, and text-to-speech functions for speech translation. We provide all-in-one recipes including data pre-processing, feature extraction, training, and decoding pipelines for a wide range of benchmark datasets. Our reproducible results can match or even outperform the current state-of-the-art performances; these pre-trained models are downloadable. The toolkit is publicly available at [this https URL](https://github.com/espnet/espnet).
+
+| Comments: | Accepted at ACL 2020 System Demonstration                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2004.10234](https://arxiv.org/abs/2004.10234) [cs.CL]** |
+|           | (or **[arXiv:2004.10234v1](https://arxiv.org/abs/2004.10234v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-23-3">3. Testing Machine Translation via Referential Transparency</h2>
+
+Title: [Testing Machine Translation via Referential Transparency](https://arxiv.org/abs/2004.10361)
+
+Authors: [Pinjia He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+P), [Clara Meister](https://arxiv.org/search/cs?searchtype=author&query=Meister%2C+C), [Zhendong Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+Z)
+
+> Machine translation software has seen rapid progress in recent years due to the advancement of deep neural networks. People routinely use machine translation software in their daily lives, such as ordering food in a foreign restaurant, receiving medical diagnosis and treatment from foreign doctors, and reading international political news online. However, due to the complexity and intractability of the underlying neural networks, modern machine translation software is still far from robust. To address this problem, we introduce referentially transparent inputs (RTIs), a simple, widely applicable methodology for validating machine translation software. A referentially transparent input is a piece of text that should have invariant translation when used in different contexts. Our practical implementation, Purity, detects when this invariance property is broken by a translation. To evaluate RTI, we use Purity to test Google Translate and Bing Microsoft Translator with 200 unlabeled sentences, which led to 123 and 142 erroneous translations with high precision (79.3\% and 78.3\%). The translation errors are diverse, including under-translation, over-translation, word/phrase mistranslation, incorrect modification, and unclear logic. These translation errors could lead to misunderstanding, financial loss, threats to personal safety and health, and political conflicts.
+
+| Subjects: | **Computation and Language (cs.CL)**; Software Engineering (cs.SE) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2004.10361](https://arxiv.org/abs/2004.10361) [cs.CL]** |
+|           | (or **[arXiv:2004.10361v1](https://arxiv.org/abs/2004.10361v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-23-4">4. A Study of Non-autoregressive Model for Sequence Generation</h2>
+
+Title: [A Study of Non-autoregressive Model for Sequence Generation](https://arxiv.org/abs/2004.10454)
+
+Authors: [Yi Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+Y), [Jinglin Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J), [Xu Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+X), [Sheng Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+S), [Zhou Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+Z), [Tie-Yan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T)
+
+> Non-autoregressive (NAR) models generate all the tokens of a sequence in parallel, resulting in faster generation speed compared to their autoregressive (AR) counterparts but at the cost of lower accuracy. Different techniques including knowledge distillation and source-target alignment have been proposed to bridge the gap between AR and NAR models in various tasks such as neural machine translation (NMT), automatic speech recognition (ASR), and text to speech (TTS). With the help of those techniques, NAR models can catch up with the accuracy of AR models in some tasks but not in some others. In this work, we conduct a study to understand the difficulty of NAR sequence generation and try to answer: (1) Why NAR models can catch up with AR models in some tasks but not all? (2) Why techniques like knowledge distillation and source-target alignment can help NAR models. Since the main difference between AR and NAR models is that NAR models do not use dependency among target tokens while AR models do, intuitively the difficulty of NAR sequence generation heavily depends on the strongness of dependency among target tokens. To quantify such dependency, we propose an analysis model called CoMMA to characterize the difficulty of different NAR sequence generation tasks. We have several interesting findings: 1) Among the NMT, ASR and TTS tasks, ASR has the most target-token dependency while TTS has the least. 2) Knowledge distillation reduces the target-token dependency in target sequence and thus improves the accuracy of NAR models. 3) Source-target alignment constraint encourages dependency of a target token on source tokens and thus eases the training of NAR models.
+
+| Comments: | Accepted by ACL 2020                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2004.10454](https://arxiv.org/abs/2004.10454) [cs.CL]** |
+|           | (or **[arXiv:2004.10454v1](https://arxiv.org/abs/2004.10454v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-23-5">5. When and Why is Unsupervised Neural Machine Translation Useless?</h2>
+
+Title: [When and Why is Unsupervised Neural Machine Translation Useless?](https://arxiv.org/abs/2004.10581)
+
+Authors: [Yunsu Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+Y), [Miguel Graça](https://arxiv.org/search/cs?searchtype=author&query=Graça%2C+M), [Hermann Ney](https://arxiv.org/search/cs?searchtype=author&query=Ney%2C+H)
+
+> This paper studies the practicality of the current state-of-the-art unsupervised methods in neural machine translation (NMT). In ten translation tasks with various data settings, we analyze the conditions under which the unsupervised methods fail to produce reasonable translations. We show that their performance is severely affected by linguistic dissimilarity and domain mismatch between source and target monolingual data. Such conditions are common for low-resource language pairs, where unsupervised learning works poorly. In all of our experiments, supervised and semi-supervised baselines with 50k-sentence bilingual data outperform the best unsupervised results. Our analyses pinpoint the limits of the current unsupervised NMT and also suggest immediate research directions.
+
+| Comments: | Will appear at EAMT 2020; Extended version of EAMT camera-ready (including appendix) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2004.10581](https://arxiv.org/abs/2004.10581) [cs.CL]** |
+|           | (or **[arXiv:2004.10581v1](https://arxiv.org/abs/2004.10581v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+# 2020-04-22
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-04-22-1">1. Making Monolingual Sentence Embeddings Multilingual using Knowledge Distillation</h2>
+
+Title: [Making Monolingual Sentence Embeddings Multilingual using Knowledge Distillation](https://arxiv.org/abs/2004.09813)
+
+Authors: [Nils Reimers](https://arxiv.org/search/cs?searchtype=author&query=Reimers%2C+N), [Iryna Gurevych](https://arxiv.org/search/cs?searchtype=author&query=Gurevych%2C+I)
+
+> We present an easy and efficient method to extend existing sentence embedding models to new languages. This allows to create multilingual versions from previously monolingual models. The training is based on the idea that a translated sentence should be mapped to the same location in the vector space as the original sentence. We use the original (monolingual) model to generate sentence embeddings for the source language and then train a new system on translated sentences to mimic the original model. Compared to other methods for training multilingual sentence embeddings, this approach has several advantages: It is easy to extend existing models with relatively few samples to new languages, it is easier to ensure desired properties for the vector space, and the hardware requirements for training is lower. We demonstrate the effectiveness of our approach for 10 languages from various language families. Code to extend sentence embeddings models to more than 400 languages is publicly available.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2004.09813](https://arxiv.org/abs/2004.09813) [cs.CL]** |
+|           | (or **[arXiv:2004.09813v1](https://arxiv.org/abs/2004.09813v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-22-2">2. Contextual Neural Machine Translation Improves Translation of Cataphoric Pronouns</h2>
+
+Title: [Contextual Neural Machine Translation Improves Translation of Cataphoric Pronouns](https://arxiv.org/abs/2004.09894)
+
+Authors: [KayYen Wong](https://arxiv.org/search/cs?searchtype=author&query=Wong%2C+K), [Sameen Maruf](https://arxiv.org/search/cs?searchtype=author&query=Maruf%2C+S), [Gholamreza Haffari](https://arxiv.org/search/cs?searchtype=author&query=Haffari%2C+G)
+
+> The advent of context-aware NMT has resulted in promising improvements in the overall translation quality and specifically in the translation of discourse phenomena such as pronouns. Previous works have mainly focused on the use of past sentences as context with a focus on anaphora translation. In this work, we investigate the effect of future sentences as context by comparing the performance of a contextual NMT model trained with the future context to the one trained with the past context. Our experiments and evaluation, using generic and pronoun-focused automatic metrics, show that the use of future context not only achieves significant improvements over the context-agnostic Transformer, but also demonstrates comparable and in some cases improved performance over its counterpart trained on past context. We also perform an evaluation on a targeted cataphora test suite and report significant gains over the context-agnostic Transformer in terms of BLEU.
+
+| Comments: | Accepted to ACL 2020                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2004.09894](https://arxiv.org/abs/2004.09894) [cs.CL]** |
+|           | (or **[arXiv:2004.09894v1](https://arxiv.org/abs/2004.09894v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-22-3">3. Curriculum Pre-training for End-to-End Speech Translation</h2>
+
+Title: [Curriculum Pre-training for End-to-End Speech Translation](https://arxiv.org/abs/2004.10093)
+
+Authors: [Chengyi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Yu Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Y), [Shujie Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+S), [Ming Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+M), [Zhenglu Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z)
+
+> End-to-end speech translation poses a heavy burden on the encoder, because it has to transcribe, understand, and learn cross-lingual semantics simultaneously. To obtain a powerful encoder, traditional methods pre-train it on ASR data to capture speech features. However, we argue that pre-training the encoder only through simple speech recognition is not enough and high-level linguistic knowledge should be considered. Inspired by this, we propose a curriculum pre-training method that includes an elementary course for transcription learning and two advanced courses for understanding the utterance and mapping words in two languages. The difficulty of these courses is gradually increasing. Experiments show that our curriculum pre-training method leads to significant improvements on En-De and En-Fr speech translation benchmarks.
+
+| Comments: | accepted by ACL2020                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2004.10093](https://arxiv.org/abs/2004.10093) [cs.CL]** |
+|           | (or **[arXiv:2004.10093v1](https://arxiv.org/abs/2004.10093v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-22-4">4. Attention Module is Not Only a Weight: Analyzing Transformers with Vector Norms</h2>
+
+Title: [Attention Module is Not Only a Weight: Analyzing Transformers with Vector Norms](https://arxiv.org/abs/2004.10102)
+
+Authors: [Goro Kobayashi](https://arxiv.org/search/cs?searchtype=author&query=Kobayashi%2C+G), [Tatsuki Kuribayashi](https://arxiv.org/search/cs?searchtype=author&query=Kuribayashi%2C+T), [Sho Yokoi](https://arxiv.org/search/cs?searchtype=author&query=Yokoi%2C+S), [Kentaro Inui](https://arxiv.org/search/cs?searchtype=author&query=Inui%2C+K)
+
+> Because attention modules are core components of Transformer-based models that have recently achieved considerable success in natural language processing, the community has a great deal of interest in why attention modules are successful and what kind of linguistic information they capture. In particular, previous studies have mainly analyzed attention weights to see how much information the attention modules gather from each input to produce an output. In this study, we point out that attention weights alone are only one of the two factors determining the output of self-attention modules, and we propose to incorporate the other factor as well, namely, the transformed input vectors into the analysis. That is, we measure the norm of the weighted vectors as the contribution of each input to an output. Our analysis of self-attention modules in BERT and the Transformer-based neural machine translation system shows that the attention modules behave very intuitively, contrary to previous findings. That is, our analysis reveals that (1) BERT's attention modules do not pay so much attention to special tokens, and (2) Transformer's attention modules capture word alignment quite well.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2004.10102](https://arxiv.org/abs/2004.10102) [cs.CL]** |
+|           | (or **[arXiv:2004.10102v1](https://arxiv.org/abs/2004.10102v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-22-5">5. Knowledge Distillation for Multilingual Unsupervised Neural Machine Translation</h2>
+
+Title: [Knowledge Distillation for Multilingual Unsupervised Neural Machine Translation](https://arxiv.org/abs/2004.10171)
+
+Authors: [Haipeng Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+H), [Rui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+R), [Kehai Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+K), [Masao Utiyama](https://arxiv.org/search/cs?searchtype=author&query=Utiyama%2C+M), [Eiichiro Sumita](https://arxiv.org/search/cs?searchtype=author&query=Sumita%2C+E), [Tiejun Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+T)
+
+> Unsupervised neural machine translation (UNMT) has recently achieved remarkable results for several language pairs. However, it can only translate between a single language pair and cannot produce translation results for multiple language pairs at the same time. That is, research on multilingual UNMT has been limited. In this paper, we empirically introduce a simple method to translate between thirteen languages using a single encoder and a single decoder, making use of multilingual data to improve UNMT for all language pairs. On the basis of the empirical findings, we propose two knowledge distillation methods to further enhance multilingual UNMT performance. Our experiments on a dataset with English translated to and from twelve other languages (including three language families and six language branches) show remarkable results, surpassing strong unsupervised individual baselines while achieving promising performance between non-English language pairs in zero-shot translation scenarios and alleviating poor performance in low-resource language pairs.
+
+| Comments: | Accepted to ACL 2020                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2004.10171](https://arxiv.org/abs/2004.10171) [cs.CL]** |
+|           | (or **[arXiv:2004.10171v1](https://arxiv.org/abs/2004.10171v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-22-6">6. Energy-Based Models for Text</h2>
+
+Title: [Energy-Based Models for Text](https://arxiv.org/abs/2004.10188)
+
+Authors: [Anton Bakhtin](https://arxiv.org/search/cs?searchtype=author&query=Bakhtin%2C+A), [Yuntian Deng](https://arxiv.org/search/cs?searchtype=author&query=Deng%2C+Y), [Sam Gross](https://arxiv.org/search/cs?searchtype=author&query=Gross%2C+S), [Myle Ott](https://arxiv.org/search/cs?searchtype=author&query=Ott%2C+M), [Marc'Aurelio Ranzato](https://arxiv.org/search/cs?searchtype=author&query=Ranzato%2C+M), [Arthur Szlam](https://arxiv.org/search/cs?searchtype=author&query=Szlam%2C+A)
+
+> Current large-scale auto-regressive language models display impressive fluency and can generate convincing text. In this work we start by asking the question: Can the generations of these models be reliably distinguished from real text by statistical discriminators? We find experimentally that the answer is affirmative when we have access to the training data for the model, and guardedly affirmative even if we do not. This suggests that the auto-regressive models can be improved by incorporating the (globally normalized) discriminators into the generative process. We give a formalism for this using the Energy-Based Model framework, and show that it indeed improves the results of the generative models, measured both in terms of perplexity and in terms of human evaluation.
+
+| Comments: | long journal version                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| Cite as:  | **[arXiv:2004.10188](https://arxiv.org/abs/2004.10188) [cs.CL]** |
+|           | (or **[arXiv:2004.10188v1](https://arxiv.org/abs/2004.10188v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
