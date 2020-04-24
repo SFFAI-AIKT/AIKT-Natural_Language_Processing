@@ -2,6 +2,11 @@
 
 # Index
 
+- [2020-04-24](#2020-04-24)
+  - [1. Revisiting the Context Window for Cross-lingual Word Embeddings](#2020-04-24-1)
+  - [2. Don't Stop Pretraining: Adapt Language Models to Domains and Tasks](#2020-04-24-2)
+  - [3. Self-Attention Attribution: Interpreting Information Interactions Inside Transformer](#2020-04-24-3)
+  - [4. Correct Me If You Can: Learning from Error Corrections and Markings](#2020-04-24-4)
 - [2020-04-23](#2020-04-23)
   - [1. CORD-19: The Covid-19 Open Research Dataset](#2020-04-23-1)
   - [2. ESPnet-ST: All-in-One Speech Translation Toolkit](#2020-04-23-2)
@@ -113,6 +118,84 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+
+
+# 2020-04-24
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-04-24-1">1. Revisiting the Context Window for Cross-lingual Word Embeddings</h2>
+
+Title: [Revisiting the Context Window for Cross-lingual Word Embeddings](https://arxiv.org/abs/2004.10813)
+
+Authors: [Ryokan Ri](https://arxiv.org/search/cs?searchtype=author&query=Ri%2C+R), [Yoshimasa Tsuruoka](https://arxiv.org/search/cs?searchtype=author&query=Tsuruoka%2C+Y)
+
+> Existing approaches to mapping-based cross-lingual word embeddings are based on the assumption that the source and target embedding spaces are structurally similar. The structures of embedding spaces largely depend on the co-occurrence statistics of each word, which the choice of context window determines. Despite this obvious connection between the context window and mapping-based cross-lingual embeddings, their relationship has been underexplored in prior work. In this work, we provide a thorough evaluation, in various languages, domains, and tasks, of bilingual embeddings trained with different context windows. The highlight of our findings is that increasing the size of both the source and target window sizes improves the performance of bilingual lexicon induction, especially the performance on frequent nouns.
+
+| Comments: | ACL2020                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2004.10813](https://arxiv.org/abs/2004.10813) [cs.CL]** |
+|           | (or **[arXiv:2004.10813v1](https://arxiv.org/abs/2004.10813v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-24-2">2. Don't Stop Pretraining: Adapt Language Models to Domains and Tasks</h2>
+
+Title: [Don't Stop Pretraining: Adapt Language Models to Domains and Tasks](https://arxiv.org/abs/2004.10964)
+
+Authors: [Suchin Gururangan](https://arxiv.org/search/cs?searchtype=author&query=Gururangan%2C+S), [Ana Marasović](https://arxiv.org/search/cs?searchtype=author&query=Marasović%2C+A), [Swabha Swayamdipta](https://arxiv.org/search/cs?searchtype=author&query=Swayamdipta%2C+S), [Kyle Lo](https://arxiv.org/search/cs?searchtype=author&query=Lo%2C+K), [Iz Beltagy](https://arxiv.org/search/cs?searchtype=author&query=Beltagy%2C+I), [Doug Downey](https://arxiv.org/search/cs?searchtype=author&query=Downey%2C+D), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith%2C+N+A)
+
+> Language models pretrained on text from a wide variety of sources form the foundation of today's NLP. In light of the success of these broad-coverage models, we investigate whether it is still helpful to tailor a pretrained model to the domain of a target task. We present a study across four domains (biomedical and computer science publications, news, and reviews) and eight classification tasks, showing that a second phase of pretraining in-domain (domain-adaptive pretraining) leads to performance gains, under both high- and low-resource settings. Moreover, adapting to the task's unlabeled data (task-adaptive pretraining) improves performance even after domain-adaptive pretraining. Finally, we show that adapting to a task corpus augmented using simple data selection strategies is an effective alternative, especially when resources for domain-adaptive pretraining might be unavailable. Overall, we consistently find that multi-phase adaptive pretraining offers large gains in task performance.
+
+| Comments: | ACL 2020                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2004.10964](https://arxiv.org/abs/2004.10964) [cs.CL]** |
+|           | (or **[arXiv:2004.10964v1](https://arxiv.org/abs/2004.10964v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-24-3">3. Self-Attention Attribution: Interpreting Information Interactions Inside Transformer</h2>
+
+Title: [Self-Attention Attribution: Interpreting Information Interactions Inside Transformer](https://arxiv.org/abs/2004.11207)
+
+Authors: [Yaru Hao](https://arxiv.org/search/cs?searchtype=author&query=Hao%2C+Y), [Li Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+L), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F), [Ke Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+K)
+
+> The great success of Transformer-based models benefits from the powerful multi-head self-attention mechanism, which learns token dependencies and encodes contextual information from the input. Prior work strives to attribute model decisions to individual input features with different saliency measures, but they fail to explain how these input features interact with each other to reach predictions. In this paper, we propose a self-attention attribution algorithm to interpret the information interactions inside Transformer. We take BERT as an example to conduct extensive studies. Firstly, we extract the most salient dependencies in each layer to construct an attribution graph, which reveals the hierarchical interactions inside Transformer. Furthermore, we apply self-attention attribution to identify the important attention heads, while others can be pruned with only marginal performance degradation. Finally, we show that the attribution results can be used as adversarial patterns to implement non-targeted attacks towards BERT.
+
+| Comments: | 11 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2004.11207](https://arxiv.org/abs/2004.11207) [cs.CL]** |
+|           | (or **[arXiv:2004.11207v1](https://arxiv.org/abs/2004.11207v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-24-4">4. Correct Me If You Can: Learning from Error Corrections and Markings</h2>
+
+Title: [Correct Me If You Can: Learning from Error Corrections and Markings](https://arxiv.org/abs/2004.11222)
+
+Authors: [Julia Kreutzer](https://arxiv.org/search/cs?searchtype=author&query=Kreutzer%2C+J), [Nathaniel Berger](https://arxiv.org/search/cs?searchtype=author&query=Berger%2C+N), [Stefan Riezler](https://arxiv.org/search/cs?searchtype=author&query=Riezler%2C+S)
+
+> Sequence-to-sequence learning involves a trade-off between signal strength and annotation cost of training data. For example, machine translation data range from costly expert-generated translations that enable supervised learning, to weak quality-judgment feedback that facilitate reinforcement learning. We present the first user study on annotation cost and machine learnability for the less popular annotation mode of error markings. We show that error markings for translations of TED talks from English to German allow precise credit assignment while requiring significantly less human effort than correcting/post-editing, and that error-marked data can be used successfully to fine-tune neural machine translation models.
+
+| Comments: | To appear at EAMT 2020 (Research Track)                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2004.11222](https://arxiv.org/abs/2004.11222) [cs.CL]** |
+|           | (or **[arXiv:2004.11222v1](https://arxiv.org/abs/2004.11222v1) [cs.CL]** for this version) |
 
 
 
