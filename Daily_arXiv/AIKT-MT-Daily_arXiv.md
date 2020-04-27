@@ -1,7 +1,14 @@
-# Daily arXiv: Machine Translation - Mar., 2020
+# Daily arXiv: Machine Translation - Apr., 2020
 
 # Index
 
+- [2020-04-27](#2020-4-27)
+  - [1. Transliteration of Judeo-Arabic Texts into Arabic Script Using Recurrent Neural Networks](#2020-04-27-1)
+  - [2. A Tool for Facilitating OCR Postediting in Historical Documents](#2020-04-27-2)
+  - [3. Multiple Segmentations of Thai Sentences for Neural Machine Translation](#2020-04-27-3)
+  - [4. On Sparsifying Encoder Outputs in Sequence-to-Sequence Models](#2020-04-27-4)
+  - [5. Improving Massively Multilingual Neural Machine Translation and Zero-Shot Translation](#2020-04-27-5)
+  - [6. Lite Transformer with Long-Short Range Attention](#2020-04-27-6)
 - [2020-04-24](#2020-04-24)
   - [1. Revisiting the Context Window for Cross-lingual Word Embeddings](#2020-04-24-1)
   - [2. Don't Stop Pretraining: Adapt Language Models to Domains and Tasks](#2020-04-24-2)
@@ -118,6 +125,106 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-04-27
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-04-27-1">1. Transliteration of Judeo-Arabic Texts into Arabic Script Using Recurrent Neural Networks</h2>
+
+Title: [Transliteration of Judeo-Arabic Texts into Arabic Script Using Recurrent Neural Networks](https://arxiv.org/abs/2004.11405)
+
+Authors: [Nachum Dershowitz](https://arxiv.org/search/cs?searchtype=author&query=Dershowitz%2C+N), [Ori Terner](https://arxiv.org/search/cs?searchtype=author&query=Terner%2C+O)
+
+> Many of the great Jewish works of the Middle Ages were written in Judeo-Arabic, a Jewish branch of the Arabic language family that incorporates the Hebrew script as its writing system. In this work we are trying to train a model that will automatically transliterate Judeo-Arabic into Arabic script; thus we aspire to enable Arabic readers to access those writings. We adopt a recurrent neural network (RNN) approach to the problem, applying connectionist temporal classification loss to deal with unequal input/output lengths. This choice obligates adjustments, termed doubling, in the training data to avoid input sequences that are shorter than their corresponding outputs. We also utilize a pretraining stage with a different loss function to help the network converge. Furthermore, since only a single source of parallel text was available for training, we examine the possibility of generating data synthetically from other Arabic original text from the time in question, leveraging the fact that, though the convention for mapping applied by the Judeo-Arabic author has a one-to-many relation from Judeo-Arabic to Arabic, its reverse (from Arabic to Judeo-Arabic) is a proper function. By this we attempt to train a model that has the capability to memorize words in the output language, and that also utilizes the context for distinguishing ambiguities in the transliteration. We examine this ability by testing on shuffled data that lacks context. We obtain an improvement over the baseline results (9.5% error), achieving 2% error with our system. On the shuffled test data, the error rises to 2.5%.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2004.11405](https://arxiv.org/abs/2004.11405) [cs.CL]** |
+|           | (or **[arXiv:2004.11405v1](https://arxiv.org/abs/2004.11405v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2020-04-27-2">2. A Tool for Facilitating OCR Postediting in Historical Documents</h2>
+
+Title: [A Tool for Facilitating OCR Postediting in Historical Documents](https://arxiv.org/abs/2004.11471)
+
+Authors: [Alberto Poncelas](https://arxiv.org/search/cs?searchtype=author&query=Poncelas%2C+A), [Mohammad Aboomar](https://arxiv.org/search/cs?searchtype=author&query=Aboomar%2C+M), [Jan Buts](https://arxiv.org/search/cs?searchtype=author&query=Buts%2C+J), [James Hadley](https://arxiv.org/search/cs?searchtype=author&query=Hadley%2C+J), [Andy Way](https://arxiv.org/search/cs?searchtype=author&query=Way%2C+A)
+
+> Optical character recognition (OCR) for historical documents is a complex procedure subject to a unique set of material issues, including inconsistencies in typefaces and low quality scanning. Consequently, even the most sophisticated OCR engines produce errors. This paper reports on a tool built for postediting the output of Tesseract, more specifically for correcting common errors in digitized historical documents. The proposed tool suggests alternatives for word forms not found in a specified vocabulary. The assumed error is replaced by a presumably correct alternative in the post-edition based on the scores of a Language Model (LM). The tool is tested on a chapter of the book An Essay Towards Regulating the Trade and Employing the Poor of this Kingdom (Cary ,1719). As demonstrated below, the tool is successful in correcting a number of common errors. If sometimes unreliable, it is also transparent and subject to human intervention.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | Workshop on Language Technologies for Historical and Ancient Languages, LT4HALA (2020) |
+| Cite as:           | **[arXiv:2004.11471](https://arxiv.org/abs/2004.11471) [cs.CL]** |
+|                    | (or **[arXiv:2004.11471v1](https://arxiv.org/abs/2004.11471v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2020-04-27-3">3. Multiple Segmentations of Thai Sentences for Neural Machine Translation</h2>
+
+Title: [Multiple Segmentations of Thai Sentences for Neural Machine Translation](https://arxiv.org/abs/2004.11472)
+
+Authors: [Alberto Poncelas](https://arxiv.org/search/cs?searchtype=author&query=Poncelas%2C+A), [Wichaya Pidchamook](https://arxiv.org/search/cs?searchtype=author&query=Pidchamook%2C+W), [Chao-Hong Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+C), [James Hadley](https://arxiv.org/search/cs?searchtype=author&query=Hadley%2C+J), [Andy Way](https://arxiv.org/search/cs?searchtype=author&query=Way%2C+A)
+
+> Thai is a low-resource language, so it is often the case that data is not available in sufficient quantities to train an Neural Machine Translation (NMT) model which perform to a high level of quality. In addition, the Thai script does not use white spaces to delimit the boundaries between words, which adds more complexity when building sequence to sequence models. In this work, we explore how to augment a set of English--Thai parallel data by replicating sentence-pairs with different word segmentation methods on Thai, as training data for NMT model training. Using different merge operations of Byte Pair Encoding, different segmentations of Thai sentences can be obtained. The experiments show that combining these datasets, performance is improved for NMT models trained with a dataset that has been split using a supervised splitting tool.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | Spoken Language Technologies for Under-resourced languages and CCURL Collaboration and Computing for Under-Resourced Languages Workshop, SLTU-CCURL (2020) |
+| Cite as:           | **[arXiv:2004.11472](https://arxiv.org/abs/2004.11472) [cs.CL]** |
+|                    | (or **[arXiv:2004.11472v1](https://arxiv.org/abs/2004.11472v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2020-04-27-4">4. On Sparsifying Encoder Outputs in Sequence-to-Sequence Models</h2>
+
+Title: [On Sparsifying Encoder Outputs in Sequence-to-Sequence Models](https://arxiv.org/abs/2004.11854)
+
+Authors: [Biao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+B), [Ivan Titov](https://arxiv.org/search/cs?searchtype=author&query=Titov%2C+I), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R)
+
+> Sequence-to-sequence models usually transfer all encoder outputs to the decoder for generation. In this work, by contrast, we hypothesize that these encoder outputs can be compressed to shorten the sequence delivered for decoding. We take Transformer as the testbed and introduce a layer of stochastic gates in-between the encoder and the decoder. The gates are regularized using the expected value of the sparsity-inducing L0penalty, resulting in completely masking-out a subset of encoder outputs. In other words, via joint training, the L0DROP layer forces Transformer to route information through a subset of its encoder states. We investigate the effects of this sparsification on two machine translation and two summarization tasks. Experiments show that, depending on the task, around 40-70% of source encodings can be pruned without significantly compromising quality. The decrease of the output length endows L0DROP with the potential of improving decoding efficiency, where it yields a speedup of up to 1.65x on document summarization tasks against the standard Transformer. We analyze the L0DROP behaviour and observe that it exhibits systematic preferences for pruning certain word types, e.g., function words and punctuation get pruned most. Inspired by these observations, we explore the feasibility of specifying rule-based patterns that mask out encoder outputs based on information such as part-of-speech tags, word frequency and word position.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2004.11854](https://arxiv.org/abs/2004.11854) [cs.CL]** |
+|           | (or **[arXiv:2004.11854v1](https://arxiv.org/abs/2004.11854v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2020-04-27-5">5. Improving Massively Multilingual Neural Machine Translation and Zero-Shot Translation</h2>
+
+Title: [Improving Massively Multilingual Neural Machine Translation and Zero-Shot Translation](https://arxiv.org/abs/2004.11867)
+
+Authors: [Biao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+B), [Philip Williams](https://arxiv.org/search/cs?searchtype=author&query=Williams%2C+P), [Ivan Titov](https://arxiv.org/search/cs?searchtype=author&query=Titov%2C+I), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R)
+
+> Massively multilingual models for neural machine translation (NMT) are theoretically attractive, but often underperform bilingual models and deliver poor zero-shot translations. In this paper, we explore ways to improve them. We argue that multilingual NMT requires stronger modeling capacity to support language pairs with varying typological characteristics, and overcome this bottleneck via language-specific components and deepening NMT architectures. We identify the off-target translation issue (i.e. translating into a wrong target language) as the major source of the inferior zero-shot performance, and propose random online backtranslation to enforce the translation of unseen training language pairs. Experiments on OPUS-100 (a novel multilingual dataset with 100 languages) show that our approach substantially narrows the performance gap with bilingual models in both one-to-many and many-to-many settings, and improves zero-shot performance by ~10 BLEU, approaching conventional pivot-based methods.
+
+| Comments: | ACL2020                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2004.11867](https://arxiv.org/abs/2004.11867) [cs.CL]** |
+|           | (or **[arXiv:2004.11867v1](https://arxiv.org/abs/2004.11867v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2020-04-27-6">6. Lite Transformer with Long-Short Range Attention</h2>
+
+Title: [Lite Transformer with Long-Short Range Attention](https://arxiv.org/abs/2004.11886)
+
+Authors: [Zhanghao Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Z), [Zhijian Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Ji Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+J), [Yujun Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Y), [Song Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+S)
+
+> Transformer has become ubiquitous in natural language processing (e.g., machine translation, question answering); however, it requires enormous amount of computations to achieve high performance, which makes it not suitable for mobile applications that are tightly constrained by the hardware resources and battery. In this paper, we present an efficient mobile NLP architecture, Lite Transformer to facilitate deploying mobile NLP applications on edge devices. The key primitive is the Long-Short Range Attention (LSRA), where one group of heads specializes in the local context modeling (by convolution) while another group specializes in the long-distance relationship modeling (by attention). Such specialization brings consistent improvement over the vanilla transformer on three well-established language tasks: machine translation, abstractive summarization, and language modeling. Under constrained resources (500M/100M MACs), Lite Transformer outperforms transformer on WMT'14 English-French by 1.2/1.7 BLEU, respectively. Lite Transformer reduces the computation of transformer base model by 2.5x with 0.3 BLEU score degradation. Combining with pruning and quantization, we further compressed the model size of Lite Transformer by 18.2x. For language modeling, Lite Transformer achieves 1.8 lower perplexity than the transformer at around 500M MACs. Notably, Lite Transformer outperforms the AutoML-based Evolved Transformer by 0.5 higher BLEU for the mobile NLP setting without the costly architecture search that requires more than 250 GPU years. Code has been made available at [this https URL](https://github.com/mit-han-lab/lite-transformer).
+
+| Comments: | ICLR 2020. The first two authors contributed equally to this work |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2004.11886](https://arxiv.org/abs/2004.11886) [cs.CL]** |
+|           | (or **[arXiv:2004.11886v1](https://arxiv.org/abs/2004.11886v1) [cs.CL]** for this version) |
 
 
 
