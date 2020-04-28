@@ -2,6 +2,16 @@
 
 # Index
 
+- [2020-04-28](#2020-4-28)
+  - [1. Jointly Trained Transformers models for Spoken Language Translation](#2020-04-28-1)
+  - [2. A Batch Normalized Inference Network Keeps the KL Vanishing Away](#2020-04-28-2)
+  - [3. ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT](#2020-04-28-3)
+  - [4. All Word Embeddings from One Embedding](#2020-04-28-4)
+  - [5. Neural Machine Translation with Monte-Carlo Tree Search](#2020-04-28-5)
+  - [6. Lexically Constrained Neural Machine Translation with Levenshtein Transformer](#2020-04-28-6)
+  - [7. LightPAFF: A Two-Stage Distillation Framework for Pre-training and Fine-tuning](#2020-04-28-7)
+  - [8. Intelligent Translation Memory Matching and Retrieval with Sentence Encoders](#2020-04-28-8)
+  - [9. DeeBERT: Dynamic Early Exiting for Accelerating BERT Inference](#2020-04-28-9)
 - [2020-04-27](#2020-4-27)
   - [1. Transliteration of Judeo-Arabic Texts into Arabic Script Using Recurrent Neural Networks](#2020-04-27-1)
   - [2. A Tool for Facilitating OCR Postediting in Historical Documents](#2020-04-27-2)
@@ -125,6 +135,174 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-04-28
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-04-28-1">1. Jointly Trained Transformers models for Spoken Language Translation</h2>
+
+Title: [Jointly Trained Transformers models for Spoken Language Translation](https://arxiv.org/abs/2004.12111)
+
+Authors:[Hari Krishna Vydana](https://arxiv.org/search/cs?searchtype=author&query=Vydana%2C+H+K), [Martin Karafi'at](https://arxiv.org/search/cs?searchtype=author&query=Karafi'at%2C+M), [Katerina Zmolikova](https://arxiv.org/search/cs?searchtype=author&query=Zmolikova%2C+K), [Luk'as Burget](https://arxiv.org/search/cs?searchtype=author&query=Burget%2C+L), [Honza Cernocky](https://arxiv.org/search/cs?searchtype=author&query=Cernocky%2C+H)
+
+> Conventional spoken language translation (SLT) systems are pipeline based systems, where we have an Automatic Speech Recognition (ASR) system to convert the modality of source from speech to text and a Machine Translation (MT) systems to translate source text to text in target language. Recent progress in the sequence-sequence architectures have reduced the performance gap between the pipeline based SLT systems (cascaded ASR-MT) and End-to-End approaches. Though End-to-End and cascaded ASR-MT systems are reaching to the comparable levels of performances, we can see a large performance gap using the ASR hypothesis and oracle text w.r.t MT models. This performance gap indicates that the MT systems are prone to large performance degradation due to noisy ASR hypothesis as opposed to oracle text transcript. In this work this degradation in the performance is reduced by creating an end to-end differentiable pipeline between the ASR and MT systems. In this work, we train SLT systems with ASR objective as an auxiliary loss and both the networks are connected through the neural hidden representations. This train ing would have an End-to-End differentiable path w.r.t to the final objective function as well as utilize the ASR objective for better performance of the SLT systems. This architecture has improved from BLEU from 36.8 to 44.5. Due to the Multi-task training the model also generates the ASR hypothesis which are used by a pre-trained MT model. Combining the proposed systems with the MT model has increased the BLEU score by 1. All the experiments are reported on English-Portuguese speech translation task using How2 corpus. The final BLEU score is on-par with the best speech translation system on How2 dataset with no additional training data and language model and much less parameters.
+
+| Comments:    | 7-pages,3 figures                                            |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Sound (cs.SD)**; Computation and Language (cs.CL); Audio and Speech Processing (eess.AS) |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2004.12111](https://arxiv.org/abs/2004.12111) [cs.SD]** |
+|              | (or **[arXiv:2004.12111v1](https://arxiv.org/abs/2004.12111v1) [cs.SD]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-28-2">2. A Batch Normalized Inference Network Keeps the KL Vanishing Away</h2>
+
+Title: [A Batch Normalized Inference Network Keeps the KL Vanishing Away](https://arxiv.org/abs/2004.12585)
+
+Authors:[Qile Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+Q), [Wei Bi](https://arxiv.org/search/cs?searchtype=author&query=Bi%2C+W), [Xiaojiang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Xiyao Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+X), [Xiaolin Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Dapeng Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+D)
+
+> Variational Autoencoder (VAE) is widely used as a generative model to approximate a model's posterior on latent variables by combining the amortized variational inference and deep neural networks. However, when paired with strong autoregressive decoders, VAE often converges to a degenerated local optimum known as "posterior collapse". Previous approaches consider the Kullback Leibler divergence (KL) individual for each datapoint. We propose to let the KL follow a distribution across the whole dataset, and analyze that it is sufficient to prevent posterior collapse by keeping the expectation of the KL's distribution positive. Then we propose Batch Normalized-VAE (BN-VAE), a simple but effective approach to set a lower bound of the expectation by regularizing the distribution of the approximate posterior's parameters. Without introducing any new model component or modifying the objective, our approach can avoid the posterior collapse effectively and efficiently. We further show that the proposed BN-VAE can be extended to conditional VAE (CVAE). Empirically, our approach surpasses strong autoregressive baselines on language modeling, text classification and dialogue generation, and rivals more complex approaches while keeping almost the same training time as VAE.
+
+| Comments: | camera-ready for ACL 2020                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2004.12585](https://arxiv.org/abs/2004.12585) [cs.LG]** |
+|           | (or **[arXiv:2004.12585v1](https://arxiv.org/abs/2004.12585v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-28-3">3. ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT</h2>
+
+Title: [ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT](https://arxiv.org/abs/2004.12832)
+
+Authors:[Omar Khattab](https://arxiv.org/search/cs?searchtype=author&query=Khattab%2C+O), [Matei Zaharia](https://arxiv.org/search/cs?searchtype=author&query=Zaharia%2C+M)
+
+> Recent progress in Natural Language Understanding (NLU) is driving fast-paced advances in Information Retrieval (IR), largely owed to fine-tuning deep language models (LMs) for document ranking. While remarkably effective, the ranking models based on these LMs increase computational cost by orders of magnitude over prior approaches, particularly as they must feed each query-document pair through a massive neural network to compute a single relevance score. To tackle this, we present ColBERT, a novel ranking model that adapts deep LMs (in particular, BERT) for efficient retrieval. ColBERT introduces a late interaction architecture that independently encodes the query and the document using BERT and then employs a cheap yet powerful interaction step that models their fine-grained similarity. By delaying and yet retaining this fine-granular interaction, ColBERT can leverage the expressiveness of deep LMs while simultaneously gaining the ability to pre-compute document representations offline, considerably speeding up query processing. Beyond reducing the cost of re-ranking the documents retrieved by a traditional model, ColBERT's pruning-friendly interaction mechanism enables leveraging vector-similarity indexes for end-to-end retrieval directly from a large document collection. We extensively evaluate ColBERT using two recent passage search datasets. Results show that ColBERT's effectiveness is competitive with existing BERT-based models (and outperforms every non-BERT baseline), while executing two orders-of-magnitude faster and requiring four orders-of-magnitude fewer FLOPs per query.
+
+| Comments: | Accepted at SIGIR 2020                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Information Retrieval (cs.IR)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2004.12832](https://arxiv.org/abs/2004.12832) [cs.IR]** |
+|           | (or **[arXiv:2004.12832v1](https://arxiv.org/abs/2004.12832v1) [cs.IR]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-28-4">4. All Word Embeddings from One Embedding</h2>
+
+Title: [All Word Embeddings from One Embedding](https://arxiv.org/abs/2004.12073)
+
+Authors:[Sho Takase](https://arxiv.org/search/cs?searchtype=author&query=Takase%2C+S), [Sosuke Kobayashi](https://arxiv.org/search/cs?searchtype=author&query=Kobayashi%2C+S)
+
+> In neural network-based models for natural language processing (NLP), the largest part of the parameters often consists of word embeddings. Conventional models prepare a large embedding matrix whose size depends on the vocabulary size. Therefore, storing these models in memory and disk storage is costly. In this study, to reduce the total number of parameters, the embeddings for all words are represented by transforming a shared embedding. The proposed method, ALONE (all word embeddings from one), constructs the embedding of a word by modifying the shared embedding with a filter vector, which is word-specific but non-trainable. Then, we input the constructed embedding into a feed-forward neural network to increase its expressiveness. Naively, the filter vectors occupy the same memory size as the conventional embedding matrix, which depends on the vocabulary size. To solve this issue, we also introduce a memory-efficient filter construction approach. We indicate our ALONE can be used as word representation sufficiently through an experiment on the reconstruction of pre-trained word embeddings. In addition, we also conduct experiments on NLP application tasks: machine translation and summarization. We combined ALONE with the current state-of-the-art encoder-decoder model, the Transformer, and achieved comparable scores on WMT 2014 English-to-German translation and DUC 2004 very short summarization with less parameters.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2004.12073](https://arxiv.org/abs/2004.12073) [cs.CL]** |
+|           | (or **[arXiv:2004.12073v1](https://arxiv.org/abs/2004.12073v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-28-5">5. Neural Machine Translation with Monte-Carlo Tree Search</h2>
+
+Title: [Neural Machine Translation with Monte-Carlo Tree Search](https://arxiv.org/abs/2004.12527)
+
+Authors:[Jerrod Parker](https://arxiv.org/search/cs?searchtype=author&query=Parker%2C+J), [Jerry Zikun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J+Z)
+
+> Recent algorithms in machine translation have included a value network to assist the policy network when deciding which word to output at each step of the translation. The addition of a value network helps the algorithm perform better on evaluation metrics like the BLEU score. After training the policy and value networks in a supervised setting, the policy and value networks can be jointly improved through common actor-critic methods. The main idea of our project is to instead leverage Monte-Carlo Tree Search (MCTS) to search for good output words with guidance from a combined policy and value network architecture in a similar fashion as AlphaZero. This network serves both as a local and a global look-ahead reference that uses the result of the search to improve itself. Experiments using the IWLST14 German to English translation dataset show that our method outperforms the actor-critic methods used in recent machine translation papers.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2004.12527](https://arxiv.org/abs/2004.12527) [cs.CL]** |
+|           | (or **[arXiv:2004.12527v1](https://arxiv.org/abs/2004.12527v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-28-6">6. Lexically Constrained Neural Machine Translation with Levenshtein Transformer</h2>
+
+Title: [Lexically Constrained Neural Machine Translation with Levenshtein Transformer](https://arxiv.org/abs/2004.12681)
+
+Authors:[Raymond Hendy Susanto](https://arxiv.org/search/cs?searchtype=author&query=Susanto%2C+R+H), [Shamil Chollampatt](https://arxiv.org/search/cs?searchtype=author&query=Chollampatt%2C+S), [Liling Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+L)
+
+> This paper proposes a simple and effective algorithm for incorporating lexical constraints in neural machine translation. Previous work either required re-training existing models with the lexical constraints or incorporating them during beam search decoding with significantly higher computational overheads. Leveraging the flexibility and speed of a recently proposed Levenshtein Transformer model (Gu et al., 2019), our method injects terminology constraints at inference time without any impact on decoding speed. Our method does not require any modification to the training procedure and can be easily applied at runtime with custom dictionaries. Experiments on English-German WMT datasets show that our approach improves an unconstrained baseline and previous approaches.
+
+| Comments: | 8 pages, In Proceedings of ACL 2020                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2004.12681](https://arxiv.org/abs/2004.12681) [cs.CL]** |
+|           | (or **[arXiv:2004.12681v1](https://arxiv.org/abs/2004.12681v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-28-7">7. LightPAFF: A Two-Stage Distillation Framework for Pre-training and Fine-tuning</h2>
+
+Title: [LightPAFF: A Two-Stage Distillation Framework for Pre-training and Fine-tuning](https://arxiv.org/abs/2004.12817)
+
+Authors:[Kaitao Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+K), [Hao Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+H), [Xu Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+X), [Tao Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+T), [Jianfeng Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+J), [Hongzhi Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+H), [Tie-Yan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T)
+
+> While pre-training and fine-tuning, e.g., BERT~\citep{devlin2018bert}, GPT-2~\citep{radford2019language}, have achieved great success in language understanding and generation tasks, the pre-trained models are usually too big for online deployment in terms of both memory cost and inference speed, which hinders them from practical online usage. In this paper, we propose LightPAFF, a Lightweight Pre-training And Fine-tuning Framework that leverages two-stage knowledge distillation to transfer knowledge from a big teacher model to a lightweight student model in both pre-training and fine-tuning stages. In this way the lightweight model can achieve similar accuracy as the big teacher model, but with much fewer parameters and thus faster online inference speed. LightPAFF can support different pre-training methods (such as BERT, GPT-2 and MASS~\citep{song2019mass}) and be applied to many downstream tasks. Experiments on three language understanding tasks, three language modeling tasks and three sequence to sequence generation tasks demonstrate that while achieving similar accuracy with the big BERT, GPT-2 and MASS models, LightPAFF reduces the model size by nearly 5x and improves online inference speed by 5x-7x.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2004.12817](https://arxiv.org/abs/2004.12817) [cs.CL]** |
+|           | (or **[arXiv:2004.12817v1](https://arxiv.org/abs/2004.12817v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-28-8">8. Intelligent Translation Memory Matching and Retrieval with Sentence Encoders</h2>
+
+Title: [Intelligent Translation Memory Matching and Retrieval with Sentence Encoders](https://arxiv.org/abs/2004.12894)
+
+Authors:[Tharindu Ranasinghe](https://arxiv.org/search/cs?searchtype=author&query=Ranasinghe%2C+T), [Constantin Orasan](https://arxiv.org/search/cs?searchtype=author&query=Orasan%2C+C), [Ruslan Mitkov](https://arxiv.org/search/cs?searchtype=author&query=Mitkov%2C+R)
+
+> Matching and retrieving previously translated segments from a Translation Memory is the key functionality in Translation Memories systems. However this matching and retrieving process is still limited to algorithms based on edit distance which we have identified as a major drawback in Translation Memories systems. In this paper we introduce sentence encoders to improve the matching and retrieving process in Translation Memories systems - an effective and efficient solution to replace edit distance based algorithms.
+
+| Comments: | Accepted to EAMT 2020                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2004.12894](https://arxiv.org/abs/2004.12894) [cs.CL]** |
+|           | (or **[arXiv:2004.12894v1](https://arxiv.org/abs/2004.12894v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-04-28-9">9. DeeBERT: Dynamic Early Exiting for Accelerating BERT Inference</h2>
+
+Title: [DeeBERT: Dynamic Early Exiting for Accelerating BERT Inference](https://arxiv.org/abs/2004.12993)
+
+Authors:[Ji Xin](https://arxiv.org/search/cs?searchtype=author&query=Xin%2C+J), [Raphael Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+R), [Jaejun Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+J), [Yaoliang Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+Y), [Jimmy Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+J)
+
+> Large-scale pre-trained language models such as BERT have brought significant improvements to NLP applications. However, they are also notorious for being slow in inference, which makes them difficult to deploy in real-time applications. We propose a simple but effective method, DeeBERT, to accelerate BERT inference. Our approach allows samples to exit earlier without passing through the entire model. Experiments show that DeeBERT is able to save up to ~40% inference time with minimal degradation in model quality. Further analyses show different behaviors in the BERT transformer layers and also reveal their redundancy. Our work provides new ideas to efficiently apply deep transformer-based models to downstream tasks. Code is available at [this https URL](https://github.com/castorini/DeeBERT).
+
+| Comments: | Accepted at ACL 2020                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2004.12993](https://arxiv.org/abs/2004.12993) [cs.CL]** |
+|           | (or **[arXiv:2004.12993v1](https://arxiv.org/abs/2004.12993v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
