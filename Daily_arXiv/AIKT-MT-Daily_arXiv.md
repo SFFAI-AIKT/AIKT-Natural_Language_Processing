@@ -11,12 +11,12 @@
   - [6. Character-Level Translation with Self-attention](2020-05-01-6)
   - [7. Vocabulary Adaptation for Distant Domain Adaptation in Neural Machine Translation](2020-05-01-7)
   - [8. Accurate Word Alignment Induction from Neural Machine Translation](2020-05-01-8)
-  - [9. ](2020-05-01-9)
-  - [10. ](2020-05-01-10)
+  - [9. Recipes for Adapting Pre-trained Monolingual and Multilingual Models to Machine Translation](2020-05-01-9)
+  - [10. Bridging linguistic typology and multilingual machine translation with multi-view language representations](2020-05-01-10)
   - [11. Addressing Zero-Resource Domains Using Document-Level Context in Neural Machine Translation](2020-05-01-11)
   - [12. Language Model Prior for Low-Resource Neural Machine Translation](2020-05-01-12)
   - [13. A Call for More Rigor in Unsupervised Cross-lingual Learning](2020-05-01-13)
-  - [14. ](2020-05-01-14)
+  - [14. Use of Machine Translation to Obtain Labeled Datasets for Resource-Constrained Languages](2020-05-01-14)
   - [15. Investigating Transferability in Pretrained Language Models](2020-05-01-15)
   - [16. Explicit Representation of the Translation Space: Automatic Paraphrasing for Machine Translation Evaluation](2020-05-01-16)
   - [17. On the Evaluation of Contextual Embeddings for Zero-Shot Cross-Lingual Transfer Learning](2020-05-01-17)
@@ -168,19 +168,34 @@ Authors: [Yun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+
 
 
 
-<h2 id="2020-05-01-9">9. Neural Machine Translation for Low-Resourced Indian Languages</h2>
+<h2 id="2020-05-01-9">9. Recipes for Adapting Pre-trained Monolingual and Multilingual Models to Machine Translation</h2>
 
-Title: [](https://arxiv.org/abs/2004.14911)
+Title: [Recipes for Adapting Pre-trained Monolingual and Multilingual Models to Machine Translation](https://arxiv.org/abs/2004.14911)
 
-Authors: 
+Authors: [Asa Cooper Stickland](https://arxiv.org/search/cs?searchtype=author&query=Stickland%2C+A+C), [Xian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Marjan Ghazvininejad](https://arxiv.org/search/cs?searchtype=author&query=Ghazvininejad%2C+M)
+
+> There has been recent success in pre-training on monolingual data and fine-tuning on Machine Translation (MT), but it remains unclear how to best leverage a pre-trained model for a given MT task. This paper investigates the benefits and drawbacks of freezing parameters, and adding new ones, when fine-tuning a pre-trained model on MT. We focus on 1) Fine-tuning a model trained only on English monolingual data, BART. 2) Fine-tuning a model trained on monolingual data from 25 languages, mBART. For BART we get the best performance by freezing most of the model parameters, and adding extra positional embeddings. For mBART we match the performance of naive fine-tuning for most language pairs, and outperform it for Nepali to English (0.5 BLEU) and Czech to English (0.6 BLEU), all with a lower memory cost at training time. When constraining ourselves to an out-of-domain training set for Vietnamese to English we outperform the fine-tuning baseline by 0.9 BLEU.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2004.14911](https://arxiv.org/abs/2004.14911) [cs.CL]** |
+|           | (or **[arXiv:2004.14911v1](https://arxiv.org/abs/2004.14911v1) [cs.CL]** for this version) |
 
 
 
-<h2 id="2020-05-01-10">10. Neural Machine Translation for Low-Resourced Indian Languages</h2>
+<h2 id="2020-05-01-10">10. Bridging linguistic typology and multilingual machine translation with multi-view language representations</h2>
 
-Title: [](https://arxiv.org/abs/2004.14923)
+Title: [Bridging linguistic typology and multilingual machine translation with multi-view language representations](https://arxiv.org/abs/2004.14923)
 
-Authors: 
+Authors: [Arturo Oncevay](https://arxiv.org/search/cs?searchtype=author&query=Oncevay%2C+A), [Barry Haddow](https://arxiv.org/search/cs?searchtype=author&query=Haddow%2C+B), [Alexandra Birch](https://arxiv.org/search/cs?searchtype=author&query=Birch%2C+A)
+
+> Sparse language vectors from linguistic typology databases and learned embeddings from tasks like multilingual machine translation have been investigated in isolation, without analysing how they could benefit from each other's language characterisation. We propose to fuse both views using singular vector canonical correlation analysis and study what kind of information is induced from each source. By inferring typological features and language phylogenies, we observe that our representations embed typology and strengthen correlations with language relationships. We then take advantage of our multi-view language vector space for multilingual machine translation, where we achieve competitive overall translation accuracy in tasks that require information about language similarities, such as language clustering and ranking candidates for multilingual transfer. With our method, we can easily project and assess new languages without expensive retraining of massive multilingual or ranking models, which are major disadvantages of related approaches.
+
+| Comments: | 15 pages, 6 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2004.14923](https://arxiv.org/abs/2004.14923) [cs.CL]** |
+|           | (or **[arXiv:2004.14923v1](https://arxiv.org/abs/2004.14923v1) [cs.CL]** for this version) |
 
 
 
@@ -230,11 +245,18 @@ Authors: [Mikel Artetxe](https://arxiv.org/search/cs?searchtype=author&query=Art
 
 
 
-<h2 id="2020-05-01-14">14. Neural Machine Translation for Low-Resourced Indian Languages</h2>
+<h2 id="2020-05-01-14">14. Use of Machine Translation to Obtain Labeled Datasets for Resource-Constrained Languages</h2>
 
-Title: [](https://arxiv.org/abs/2004.14963)
+Title: [Use of Machine Translation to Obtain Labeled Datasets for Resource-Constrained Languages](https://arxiv.org/abs/2004.14963)
 
-Authors: 
+Authors: [Emrah Budur](https://arxiv.org/search/cs?searchtype=author&query=Budur%2C+E), [Rıza Özçelik](https://arxiv.org/search/cs?searchtype=author&query=Özçelik%2C+R), [Tunga Güngör](https://arxiv.org/search/cs?searchtype=author&query=Güngör%2C+T), [Christopher Potts](https://arxiv.org/search/cs?searchtype=author&query=Potts%2C+C)
+
+> The large annotated datasets in NLP are overwhelmingly in English. This is an obstacle to progress for other languages. Unfortunately, obtaining new annotated resources for each task in each language would be prohibitively expensive. At the same time, commercial machine translation systems are now robust. Can we leverage these systems to translate English-language datasets automatically? In this paper, we offer a positive response to this for natural language inference (NLI) in Turkish. We translated two large English NLI datasets into Turkish and had a team of experts validate their quality. As examples of the new issues that these datasets help us address, we assess the value of Turkish-specific embeddings and the importance of morphological parsing for developing robust Turkish NLI models.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2004.14963](https://arxiv.org/abs/2004.14963) [cs.CL]** |
+|           | (or **[arXiv:2004.14963v1](https://arxiv.org/abs/2004.14963v1) [cs.CL]** for this version) |
 
 
 
