@@ -2,6 +2,28 @@
 
 # Index
 
+- [2020-05-05](#2020-05-05)
+  - [1. Quantifying Attention Flow in Transformers](#2020-05-05-1)
+  - [2. Does Visual Self-Supervision Improve Learning of Speech Representations?](#2020-05-05-2)
+  - [3. Evaluating Robustness to Input Perturbations for Neural Machine Translation](#2020-05-05-3)
+  - [4. From Zero to Hero: On the Limitations of Zero-Shot Cross-Lingual Transfer with Multilingual Transformers](#2020-05-05-4)
+  - [5. Opportunistic Decoding with Timely Correction for Simultaneous Translation](#2020-05-05-5)
+  - [6. Synthesizer: Rethinking Self-Attention in Transformer Models](#2020-05-05-6)
+  - [7. ENGINE: Energy-Based Inference Networks for Non-Autoregressive Machine Translation](#2020-05-05-7)
+  - [8. Improving Non-autoregressive Neural Machine Translation with Monolingual Data](#2020-05-05-8)
+  - [9. On the Inference Calibration of Neural Machine Translation](#2020-05-05-9)
+  - [10. Encoder-Decoder Models Can Benefit from Pre-trained Masked Language Models in Grammatical Error Correction](#2020-05-05-10)
+  - [11. Correcting the Autocorrect: Context-Aware Typographical Error Correction via Training Data Augmentation](#2020-05-05-11)
+  - [12. On the Limitations of Cross-lingual Encoders as Exposed by Reference-Free Machine Translation Evaluation](#2020-05-05-12)
+  - [13. Using Context in Neural Machine Translation Training Objectives](#2020-05-05-13)
+  - [14. Evaluating Explanation Methods for Neural Machine Translation](#2020-05-05-14)
+- [2020-05-04](2020-05-04)
+  - [1. MAD-X: An Adapter-based Framework for Multi-task Cross-lingual Transfer](#2020-05-04-1)
+  - [2. Facilitating Access to Multilingual COVID-19 Information via Neural Machine Translation](#2020-05-04-2)
+  - [3. Selecting Backtranslated Data from Multiple Sources for Improved Neural Machine Translation](#2020-05-04-3)
+  - [4. Identifying Necessary Elements for BERT's Multilinguality](#2020-05-04-4)
+  - [5. Defense of Word-level Adversarial Attacks via Random Substitution Encoding](#2020-05-04-5)
+  - [6. Why Overfitting Isn't Always Bad: Retrofitting Cross-Lingual Word Embeddings to Dictionaries](#2020-05-04-6)
 - [2020-05-01](#2020-05-01)
   - [1. Simulated Multiple Reference Training Improves Low-Resource Machine Translation](2020-05-01-1)
   - [2. Automatic Machine Translation Evaluation in Many Languages via Zero-Shot Paraphrasing](2020-05-01-2)
@@ -39,7 +61,378 @@
 
 
 
-# 2020-05-10
+# 2020-05-05
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-05-05-1">1. Quantifying Attention Flow in Transformers</h2>
+
+Title: [Quantifying Attention Flow in Transformers](https://arxiv.org/abs/2005.00928)
+
+Authors: [Samira Abnar](https://arxiv.org/search/cs?searchtype=author&query=Abnar%2C+S), [Willem Zuidema](https://arxiv.org/search/cs?searchtype=author&query=Zuidema%2C+W)
+
+> In the Transformer model, "self-attention" combines information from attended embeddings into the representation of the focal embedding in the next layer. Thus, across layers of the Transformer, information originating from different tokens gets increasingly mixed. This makes attention weights unreliable as explanations probes. In this paper, we consider the problem of quantifying this flow of information through self-attention. We propose two methods for approximating the attention to input tokens given attention weights, attention rollout and attention flow, as post hoc methods when we use attention weights as the relative relevance of the input tokens. We show that these methods give complementary views on the flow of information, and compared to raw attention, both yield higher correlations with importance scores of input tokens obtained using an ablation method and input gradients.
+
+| Subjects: | **Machine Learning (cs.LG)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2005.00928](https://arxiv.org/abs/2005.00928) [cs.LG]** |
+|           | (or **[arXiv:2005.00928v1](https://arxiv.org/abs/2005.00928v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-05-2">2. Does Visual Self-Supervision Improve Learning of Speech Representations?</h2>
+
+Title: [Does Visual Self-Supervision Improve Learning of Speech Representations?](https://arxiv.org/abs/2005.01400)
+
+Authors: [Abhinav Shukla](https://arxiv.org/search/eess?searchtype=author&query=Shukla%2C+A), [Stavros Petridis](https://arxiv.org/search/eess?searchtype=author&query=Petridis%2C+S), [Maja Pantic](https://arxiv.org/search/eess?searchtype=author&query=Pantic%2C+M)
+
+> Self-supervised learning has attracted plenty of recent research interest. However, most works are typically unimodal and there has been limited work that studies the interaction between audio and visual modalities for self-supervised learning. This work (1) investigates visual self-supervision via face reconstruction to guide the learning of audio representations; (2) proposes two audio-only self-supervision approaches for speech representation learning; (3) shows that a multi-task combination of the proposed visual and audio self-supervision is beneficial for learning richer features that are more robust in noisy conditions; (4) shows that self-supervised pretraining leads to a superior weight initialization, which is especially useful to prevent overfitting and lead to faster model convergence on smaller sized datasets. We evaluate our audio representations for emotion and speech recognition, achieving state of the art performance for both problems. Our results demonstrate the potential of visual self-supervision for audio feature learning and suggest that joint visual and audio self-supervision leads to more informative speech representations.
+
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2005.01400](https://arxiv.org/abs/2005.01400) [eess.AS]** |
+|           | (or **[arXiv:2005.01400v1](https://arxiv.org/abs/2005.01400v1) [eess.AS]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-05-3">3. Evaluating Robustness to Input Perturbations for Neural Machine Translation</h2>
+
+Title: [Evaluating Robustness to Input Perturbations for Neural Machine Translation](https://arxiv.org/abs/2005.00580)
+
+Authors: [Xing Niu](https://arxiv.org/search/cs?searchtype=author&query=Niu%2C+X), [Prashant Mathur](https://arxiv.org/search/cs?searchtype=author&query=Mathur%2C+P), [Georgiana Dinu](https://arxiv.org/search/cs?searchtype=author&query=Dinu%2C+G), [Yaser Al-Onaizan](https://arxiv.org/search/cs?searchtype=author&query=Al-Onaizan%2C+Y)
+
+> Neural Machine Translation (NMT) models are sensitive to small perturbations in the input. Robustness to such perturbations is typically measured using translation quality metrics such as BLEU on the noisy input. This paper proposes additional metrics which measure the relative degradation and changes in translation when small perturbations are added to the input. We focus on a class of models employing subword regularization to address robustness and perform extensive evaluations of these models using the robustness measures proposed. Results show that our proposed metrics reveal a clear trend of improved robustness to perturbations when subword regularization methods are used.
+
+| Comments: | Accepted at ACL 2020                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2005.00580](https://arxiv.org/abs/2005.00580) [cs.CL]** |
+|           | (or **[arXiv:2005.00580v1](https://arxiv.org/abs/2005.00580v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-05-4">4. From Zero to Hero: On the Limitations of Zero-Shot Cross-Lingual Transfer with Multilingual Transformers</h2>
+
+Title: [From Zero to Hero: On the Limitations of Zero-Shot Cross-Lingual Transfer with Multilingual Transformers](https://arxiv.org/abs/2005.00633)
+
+Authors: [Anne Lauscher](https://arxiv.org/search/cs?searchtype=author&query=Lauscher%2C+A), [Vinit Ravishankar](https://arxiv.org/search/cs?searchtype=author&query=Ravishankar%2C+V), [Ivan Vulić](https://arxiv.org/search/cs?searchtype=author&query=Vulić%2C+I), [Goran Glavaš](https://arxiv.org/search/cs?searchtype=author&query=Glavaš%2C+G)
+
+> Massively multilingual transformers pretrained with language modeling objectives (e.g., mBERT, XLM-R) have become a de facto default transfer paradigm for zero-shot cross-lingual transfer in NLP, offering unmatched transfer performance. Current downstream evaluations, however, verify their efficacy predominantly in transfer settings involving languages with sufficient amounts of pretraining data, and with lexically and typologically close languages. In this work, we analyze their limitations and show that cross-lingual transfer via massively multilingual transformers, much like transfer via cross-lingual word embeddings, is substantially less effective in resource-lean scenarios and for distant languages. Our experiments, encompassing three lower-level tasks (POS tagging, dependency parsing, NER), as well as two high-level semantic tasks (NLI, QA), empirically correlate transfer performance with linguistic similarity between the source and target languages, but also with the size of pretraining corpora of target languages. We also demonstrate a surprising effectiveness of inexpensive few-shot transfer (i.e., fine-tuning on a few target-language instances after fine-tuning in the source) across the board. This suggests that additional research efforts should be invested to reach beyond the limiting zero-shot conditions.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2005.00633](https://arxiv.org/abs/2005.00633) [cs.CL]** |
+|           | (or **[arXiv:2005.00633v1](https://arxiv.org/abs/2005.00633v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-05-5">5. Opportunistic Decoding with Timely Correction for Simultaneous Translation</h2>
+
+Title: [Opportunistic Decoding with Timely Correction for Simultaneous Translation](https://arxiv.org/abs/2005.00675)
+
+Authors: [Renjie Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+R), [Mingbo Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+M), [Baigong Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+B), [Kaibo Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+K), [Liang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+L)
+
+> Simultaneous translation has many important application scenarios and attracts much attention from both academia and industry recently. Most existing frameworks, however, have difficulties in balancing between the translation quality and latency, i.e., the decoding policy is usually either too aggressive or too conservative. We propose an opportunistic decoding technique with timely correction ability, which always (over-)generates a certain mount of extra words at each step to keep the audience on track with the latest information. At the same time, it also corrects, in a timely fashion, the mistakes in the former overgenerated words when observing more source context to ensure high translation quality. Experiments show our technique achieves substantial reduction in latency and up to +3.1 increase in BLEU, with revision rate under 8% in Chinese-to-English and English-to-Chinese translation.
+
+| Comments: | accepted by ACL 2020                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2005.00675](https://arxiv.org/abs/2005.00675) [cs.CL]** |
+|           | (or **[arXiv:2005.00675v1](https://arxiv.org/abs/2005.00675v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-05-6">6. Synthesizer: Rethinking Self-Attention in Transformer Models</h2>
+
+Title: [Synthesizer: Rethinking Self-Attention in Transformer Models](https://arxiv.org/abs/2005.00743)
+
+Authors: [Yi Tay](https://arxiv.org/search/cs?searchtype=author&query=Tay%2C+Y), [Dara Bahri](https://arxiv.org/search/cs?searchtype=author&query=Bahri%2C+D), [Donald Metzler](https://arxiv.org/search/cs?searchtype=author&query=Metzler%2C+D), [Da-Cheng Juan](https://arxiv.org/search/cs?searchtype=author&query=Juan%2C+D), [Zhe Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+Z), [Che Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+C)
+
+> The dot product self-attention is known to be central and indispensable to state-of-the-art Transformer models. But is it really required? This paper investigates the true importance and contribution of the dot product-based self-attention mechanism on the performance of Transformer models. Via extensive experiments, we find that (1) random alignment matrices surprisingly perform quite competitively and (2) learning attention weights from token-token (query-key) interactions is not that important after all. To this end, we propose \textsc{Synthesizer}, a model that learns synthetic attention weights without token-token interactions. Our experimental results show that \textsc{Synthesizer} is competitive against vanilla Transformer models across a range of tasks, including MT (EnDe, EnFr), language modeling (LM1B), abstractive summarization (CNN/Dailymail), dialogue generation (PersonaChat) and Multi-task language understanding (GLUE, SuperGLUE).
+
+| Subjects: | **Computation and Language (cs.CL)**; Information Retrieval (cs.IR); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2005.00743](https://arxiv.org/abs/2005.00743) [cs.CL]** |
+|           | (or **[arXiv:2005.00743v1](https://arxiv.org/abs/2005.00743v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-05-7">7. ENGINE: Energy-Based Inference Networks for Non-Autoregressive Machine Translation</h2>
+
+Title: [ENGINE: Energy-Based Inference Networks for Non-Autoregressive Machine Translation](https://arxiv.org/abs/2005.00850)
+
+Authors: [Lifu Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+L), [Richard Yuanzhe Pang](https://arxiv.org/search/cs?searchtype=author&query=Pang%2C+R+Y), [Sam Wiseman](https://arxiv.org/search/cs?searchtype=author&query=Wiseman%2C+S), [Kevin Gimpel](https://arxiv.org/search/cs?searchtype=author&query=Gimpel%2C+K)
+
+> We propose to train a non-autoregressive machine translation model to minimize the energy defined by a pretrained autoregressive model. In particular, we view our non-autoregressive translation system as an inference network (Tu and Gimpel, 2018) trained to minimize the autoregressive teacher energy. This contrasts with the popular approach of training a non-autoregressive model on a distilled corpus consisting of the beam-searched outputs of such a teacher model. Our approach, which we call ENGINE (ENerGy-based Inference NEtworks), achieves state-of-the-art non-autoregressive results on the IWSLT 2014 DE-EN and WMT 2016 RO-EN datasets, approaching the performance of autoregressive models.
+
+| Comments: | ACL2020                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2005.00850](https://arxiv.org/abs/2005.00850) [cs.CL]** |
+|           | (or **[arXiv:2005.00850v1](https://arxiv.org/abs/2005.00850v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-05-8">8. Improving Non-autoregressive Neural Machine Translation with Monolingual Data</h2>
+
+Title: [Improving Non-autoregressive Neural Machine Translation with Monolingual Data](https://arxiv.org/abs/2005.00932)
+
+Authors: [Jiawei Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J), [Phillip Keung](https://arxiv.org/search/cs?searchtype=author&query=Keung%2C+P)
+
+> Non-autoregressive (NAR) neural machine translation is usually done via knowledge distillation from an autoregressive (AR) model. Under this framework, we leverage large monolingual corpora to improve the NAR model's performance, with the goal of transferring the AR model's generalization ability while preventing overfitting. On top of a strong NAR baseline, our experimental results on the WMT14 En-De and WMT16 En-Ro news translation tasks confirm that monolingual data augmentation consistently improves the performance of the NAR model to approach the teacher AR model's performance, yields comparable or better results than the best non-iterative NAR methods in the literature and helps reduce overfitting in the training process.
+
+| Comments: | To appear in ACL 2020                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2005.00932](https://arxiv.org/abs/2005.00932) [cs.CL]** |
+|           | (or **[arXiv:2005.00932v1](https://arxiv.org/abs/2005.00932v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-05-9">9. On the Inference Calibration of Neural Machine Translation</h2>
+
+Title: [On the Inference Calibration of Neural Machine Translation]()
+
+Authors: [Shuo Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Zhaopeng Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+Z), [Shuming Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+S), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y)
+
+> Confidence calibration, which aims to make model predictions equal to the true correctness measures, is important for neural machine translation (NMT) because it is able to offer useful indicators of translation errors in the generated output. While prior studies have shown that NMT models trained with label smoothing are well-calibrated on the ground-truth training data, we find that miscalibration still remains a severe challenge for NMT during inference due to the discrepancy between training and inference. By carefully designing experiments on three language pairs, our work provides in-depth analyses of the correlation between calibration and translation performance as well as linguistic properties of miscalibration and reports a number of interesting findings that might help humans better analyze, understand and improve NMT models. Based on these observations, we further propose a new graduated label smoothing method that can improve both inference calibration and translation performance.
+
+| Comments: | Accepted by ACL2020                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2005.00963](https://arxiv.org/abs/2005.00963) [cs.CL]** |
+|           | (or **[arXiv:2005.00963v1](https://arxiv.org/abs/2005.00963v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-05-10">10. Encoder-Decoder Models Can Benefit from Pre-trained Masked Language Models in Grammatical Error Correction</h2>
+
+Title: [Encoder-Decoder Models Can Benefit from Pre-trained Masked Language Models in Grammatical Error Correction](https://arxiv.org/abs/2005.00987)
+
+Authors: [Masahiro Kaneko](https://arxiv.org/search/cs?searchtype=author&query=Kaneko%2C+M), [Masato Mita](https://arxiv.org/search/cs?searchtype=author&query=Mita%2C+M), [Shun Kiyono](https://arxiv.org/search/cs?searchtype=author&query=Kiyono%2C+S), [Jun Suzuki](https://arxiv.org/search/cs?searchtype=author&query=Suzuki%2C+J), [Kentaro Inui](https://arxiv.org/search/cs?searchtype=author&query=Inui%2C+K)
+
+> This paper investigates how to effectively incorporate a pre-trained masked language model (MLM), such as BERT, into an encoder-decoder (EncDec) model for grammatical error correction (GEC). The answer to this question is not as straightforward as one might expect because the previous common methods for incorporating a MLM into an EncDec model have potential drawbacks when applied to GEC. For example, the distribution of the inputs to a GEC model can be considerably different (erroneous, clumsy, etc.) from that of the corpora used for pre-training MLMs; however, this issue is not addressed in the previous methods. Our experiments show that our proposed method, where we first fine-tune a MLM with a given GEC corpus and then use the output of the fine-tuned MLM as additional features in the GEC model, maximizes the benefit of the MLM. The best-performing model achieves state-of-the-art performances on the BEA-2019 and CoNLL-2014 benchmarks. Our code is publicly available at: [this https URL](https://github.com/kanekomasahiro/bert-gec).
+
+| Comments:          | Accepted as a short paper to the 58th Annual Conference of the Association for Computational Linguistics (ACL-2020) |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| Journal reference: | Association for Computational Linguistics (ACL-2020)         |
+| Cite as:           | **[arXiv:2005.00987](https://arxiv.org/abs/2005.00987) [cs.CL]** |
+|                    | (or **[arXiv:2005.00987v1](https://arxiv.org/abs/2005.00987v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-05-11">11. Correcting the Autocorrect: Context-Aware Typographical Error Correction via Training Data Augmentation</h2>
+
+Title: [Correcting the Autocorrect: Context-Aware Typographical Error Correction via Training Data Augmentation](https://arxiv.org/abs/2005.01158)
+
+Authors: [Kshitij Shah](https://arxiv.org/search/cs?searchtype=author&query=Shah%2C+K), [Gerard de Melo](https://arxiv.org/search/cs?searchtype=author&query=de+Melo%2C+G)
+
+> In this paper, we explore the artificial generation of typographical errors based on real-world statistics. We first draw on a small set of annotated data to compute spelling error statistics. These are then invoked to introduce errors into substantially larger corpora. The generation methodology allows us to generate particularly challenging errors that require context-aware error detection. We use it to create a set of English language error detection and correction datasets. Finally, we examine the effectiveness of machine learning models for detecting and correcting errors based on this data. The datasets are available at [this http URL](http://typo.nlproc.org/)
+
+| Comments: | Accepted for publication at LREC 2020                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Information Retrieval (cs.IR); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2005.01158](https://arxiv.org/abs/2005.01158) [cs.CL]** |
+|           | (or **[arXiv:2005.01158v1](https://arxiv.org/abs/2005.01158v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-05-12">12. On the Limitations of Cross-lingual Encoders as Exposed by Reference-Free Machine Translation Evaluation</h2>
+
+Title: [On the Limitations of Cross-lingual Encoders as Exposed by Reference-Free Machine Translation Evaluation](https://arxiv.org/abs/2005.01196)
+
+Authors: [Wei Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+W), [Goran Glavaš](https://arxiv.org/search/cs?searchtype=author&query=Glavaš%2C+G), [Maxime Peyrard](https://arxiv.org/search/cs?searchtype=author&query=Peyrard%2C+M), [Yang Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+Y), [Robert West](https://arxiv.org/search/cs?searchtype=author&query=West%2C+R), [Steffen Eger](https://arxiv.org/search/cs?searchtype=author&query=Eger%2C+S)
+
+> Evaluation of cross-lingual encoders is usually performed either via zero-shot cross-lingual transfer in supervised downstream tasks or via unsupervised cross-lingual textual similarity. In this paper, we concern ourselves with reference-free machine translation (MT) evaluation where we directly compare source texts to (sometimes low-quality) system translations, which represents a natural adversarial setup for multilingual encoders. Reference-free evaluation holds the promise of web-scale comparison of MT systems. We systematically investigate a range of metrics based on state-of-the-art cross-lingual semantic representations obtained with pretrained M-BERT and LASER. We find that they perform poorly as semantic encoders for reference-free MT evaluation and identify their two key limitations, namely, (a) a semantic mismatch between representations of mutual translations and, more prominently, (b) the inability to punish "translationese", i.e., low-quality literal translations. We propose two partial remedies: (1) post-hoc re-alignment of the vector spaces and (2) coupling of semantic-similarity based metrics with target-side language modeling. In segment-level MT evaluation, our best metric surpasses the reference-based BLEU by 5.7 correlation points.
+
+| Comments: | ACL2020 Camera Ready                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2005.01196](https://arxiv.org/abs/2005.01196) [cs.CL]** |
+|           | (or **[arXiv:2005.01196v1](https://arxiv.org/abs/2005.01196v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-05-13">13. Using Context in Neural Machine Translation Training Objectives</h2>
+
+Title: [Using Context in Neural Machine Translation Training Objectives](https://arxiv.org/abs/2005.01483)
+
+Authors: [Danielle Saunders](https://arxiv.org/search/cs?searchtype=author&query=Saunders%2C+D), [Felix Stahlberg](https://arxiv.org/search/cs?searchtype=author&query=Stahlberg%2C+F), [Bill Byrne](https://arxiv.org/search/cs?searchtype=author&query=Byrne%2C+B)
+
+> We present Neural Machine Translation (NMT) training using document-level metrics with batch-level documents. Previous sequence-objective approaches to NMT training focus exclusively on sentence-level metrics like sentence BLEU which do not correspond to the desired evaluation metric, typically document BLEU. Meanwhile research into document-level NMT training focuses on data or model architecture rather than training procedure. We find that each of these lines of research has a clear space in it for the other, and propose merging them with a scheme that allows a document-level evaluation metric to be used in the NMT training objective.
+> We first sample pseudo-documents from sentence samples. We then approximate the expected document BLEU gradient with Monte Carlo sampling for use as a cost function in Minimum Risk Training (MRT). This two-level sampling procedure gives NMT performance gains over sequence MRT and maximum-likelihood training. We demonstrate that training is more robust for document-level metrics than with sequence metrics. We further demonstrate improvements on NMT with TER and Grammatical Error Correction (GEC) using GLEU, both metrics used at the document level for evaluations.
+
+| Comments: | ACL 2020                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2005.01483](https://arxiv.org/abs/2005.01483) [cs.CL]** |
+|           | (or **[arXiv:2005.01483v1](https://arxiv.org/abs/2005.01483v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-05-14">14. Evaluating Explanation Methods for Neural Machine Translation</h2>
+
+Title: [Evaluating Explanation Methods for Neural Machine Translation](https://arxiv.org/abs/2005.01672)
+
+Authors: [Jierui Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Lemao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+L), [Huayang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+H), [Guanlin Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+G), [Guoping Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+G), [Shuming Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+S)
+
+> Recently many efforts have been devoted to interpreting the black-box NMT models, but little progress has been made on metrics to evaluate explanation methods. Word Alignment Error Rate can be used as such a metric that matches human understanding, however, it can not measure explanation methods on those target words that are not aligned to any source word. This paper thereby makes an initial attempt to evaluate explanation methods from an alternative viewpoint. To this end, it proposes a principled metric based on fidelity in regard to the predictive behavior of the NMT model. As the exact computation for this metric is intractable, we employ an efficient approach as its approximation. On six standard translation tasks, we quantitatively evaluate several explanation methods in terms of the proposed metric and we reveal some valuable findings for these explanation methods in our experiments.
+
+| Comments: | Accepted to ACL 2020, 9 pages                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2005.01672](https://arxiv.org/abs/2005.01672) [cs.CL]** |
+|           | (or **[arXiv:2005.01672v1](https://arxiv.org/abs/2005.01672v1) [cs.CL]** for this version) |
+
+
+
+
+
+# 2020-05-04
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-05-04-1">1. MAD-X: An Adapter-based Framework for Multi-task Cross-lingual Transfer</h2>
+
+Title: [MAD-X: An Adapter-based Framework for Multi-task Cross-lingual Transfer](https://arxiv.org/abs/2005.00052)
+
+Authors: [Jonas Pfeiffer](https://arxiv.org/search/cs?searchtype=author&query=Pfeiffer%2C+J), [Ivan Vulić](https://arxiv.org/search/cs?searchtype=author&query=Vulić%2C+I), [Iryna Gurevych](https://arxiv.org/search/cs?searchtype=author&query=Gurevych%2C+I), [Sebastian Ruder](https://arxiv.org/search/cs?searchtype=author&query=Ruder%2C+S)
+
+> The main goal behind state-of-the-art pretrained multilingual models such as multilingual BERT and XLM-R is enabling and bootstrapping NLP applications in low-resource languages through zero-shot or few-shot cross-lingual transfer. However, due to limited model capacity, their transfer performance is the weakest exactly on such low-resource languages and languages unseen during pretraining. We propose MAD-X, an adapter-based framework that enables high portability and parameter-efficient transfer to arbitrary tasks and languages by learning modular language and task representations. In addition, we introduce a novel invertible adapter architecture and a strong baseline method for adapting a pretrained multilingual model to a new language. MAD-X outperforms the state of the art in cross-lingual transfer across a representative set of typologically diverse languages on named entity recognition and achieves competitive results on question answering.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2005.00052](https://arxiv.org/abs/2005.00052) [cs.CL]** |
+|           | (or **[arXiv:2005.00052v1](https://arxiv.org/abs/2005.00052v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-04-2">2. Facilitating Access to Multilingual COVID-19 Information via Neural Machine Translation</h2>
+
+Title: [Facilitating Access to Multilingual COVID-19 Information via Neural Machine Translation](https://arxiv.org/abs/2005.00283)
+
+Authors: [Andy Way](https://arxiv.org/search/cs?searchtype=author&query=Way%2C+A), [Rejwanul Haque](https://arxiv.org/search/cs?searchtype=author&query=Haque%2C+R), [Guodong Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie%2C+G), [Federico Gaspari](https://arxiv.org/search/cs?searchtype=author&query=Gaspari%2C+F), [Maja Popovic](https://arxiv.org/search/cs?searchtype=author&query=Popovic%2C+M), [Alberto Poncelas](https://arxiv.org/search/cs?searchtype=author&query=Poncelas%2C+A)
+
+> Every day, more people are becoming infected and dying from exposure to COVID-19. Some countries in Europe like Spain, France, the UK and Italy have suffered particularly badly from the virus. Others such as Germany appear to have coped extremely well. Both health professionals and the general public are keen to receive up-to-date information on the effects of the virus, as well as treatments that have proven to be effective. In cases where language is a barrier to access of pertinent information, machine translation (MT) may help people assimilate information published in different languages. Our MT systems trained on COVID-19 data are freely available for anyone to use to help translate information published in German, French, Italian, Spanish into English, as well as the reverse direction.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2005.00283](https://arxiv.org/abs/2005.00283) [cs.CL]** |
+|           | (or **[arXiv:2005.00283v1](https://arxiv.org/abs/2005.00283v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-04-3">3. Selecting Backtranslated Data from Multiple Sources for Improved Neural Machine Translation</h2>
+
+Title: [Selecting Backtranslated Data from Multiple Sources for Improved Neural Machine Translation](https://arxiv.org/abs/2005.00308)
+
+Authors: [Xabier Soto](https://arxiv.org/search/cs?searchtype=author&query=Soto%2C+X), [Dimitar Shterionov](https://arxiv.org/search/cs?searchtype=author&query=Shterionov%2C+D), [Alberto Poncelas](https://arxiv.org/search/cs?searchtype=author&query=Poncelas%2C+A), [Andy Way](https://arxiv.org/search/cs?searchtype=author&query=Way%2C+A)
+
+> Machine translation (MT) has benefited from using synthetic training data originating from translating monolingual corpora, a technique known as backtranslation. Combining backtranslated data from different sources has led to better results than when using such data in isolation. In this work we analyse the impact that data translated with rule-based, phrase-based statistical and neural MT systems has on new MT systems. We use a real-world low-resource use-case (Basque-to-Spanish in the clinical domain) as well as a high-resource language pair (German-to-English) to test different scenarios with backtranslation and employ data selection to optimise the synthetic corpora. We exploit different data selection strategies in order to reduce the amount of data used, while at the same time maintaining high-quality MT systems. We further tune the data selection method by taking into account the quality of the MT systems used for backtranslation and lexical diversity of the resulting corpora. Our experiments show that incorporating backtranslated data from different sources can be beneficial, and that availing of data selection can yield improved performance.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics, ACL (2020) |
+| Cite as:           | **[arXiv:2005.00308](https://arxiv.org/abs/2005.00308) [cs.CL]** |
+|                    | (or **[arXiv:2005.00308v1](https://arxiv.org/abs/2005.00308v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-04-4">4. Identifying Necessary Elements for BERT's Multilinguality</h2>
+
+Title: [Identifying Necessary Elements for BERT's Multilinguality](https://arxiv.org/abs/2005.00396)
+
+Authors: [Philipp Dufter](https://arxiv.org/search/cs?searchtype=author&query=Dufter%2C+P), [Hinrich Schütze](https://arxiv.org/search/cs?searchtype=author&query=Schütze%2C+H)
+
+> It has been shown that multilingual BERT (mBERT) yields high quality multilingual representations and enables effective zero-shot transfer. This is suprising given that mBERT does not use any kind of crosslingual signal during training. While recent literature has studied this effect, the exact reason for mBERT's multilinguality is still unknown. We aim to identify architectural properties of BERT as well as linguistic properties of languages that are necessary for BERT to become multilingual. To allow for fast experimentation we propose an efficient setup with small BERT models and synthetic as well as natural data. Overall, we identify six elements that are potentially necessary for BERT to be multilingual. Architectural factors that contribute to multilinguality are underparameterization, shared special tokens (e.g., "[CLS]"), shared position embeddings and replacing masked tokens with random tokens. Factors related to training data that are beneficial for multilinguality are similar word order and comparability of corpora.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2005.00396](https://arxiv.org/abs/2005.00396) [cs.CL]** |
+|           | (or **[arXiv:2005.00396v1](https://arxiv.org/abs/2005.00396v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-04-5">5. Defense of Word-level Adversarial Attacks via Random Substitution Encoding</h2>
+
+Title: [Defense of Word-level Adversarial Attacks via Random Substitution Encoding](https://arxiv.org/abs/2005.00446)
+
+Authors: [Zhaoyang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Hongtao Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H)
+
+> The adversarial attacks against deep neural networks on computer version tasks has spawned many new technologies that help protect models avoiding false prediction. Recently, word-level adversarial attacks on deep models of Natural Language Processing (NLP) tasks have also demonstrated strong power, e.g., fooling a sentiment classification neural network to make wrong decision. Unfortunately, few previous literatures have discussed the defense of such word-level synonym substitution based attacks since they are hard to be perceived and detected. In this paper, we shed light on this problem and propose a novel defense framework called Random Substitution Encoding (RSE), which introduces a random substitution encoder into the training process of original neural networks. Extensive experiments on text classification tasks demonstrate the effectiveness of our framework on defense of word-level adversarial attacks, under various base and attack models.
+
+| Comments: | 12 pages, 2 figures, 4 tables                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2005.00446](https://arxiv.org/abs/2005.00446) [cs.CL]** |
+|           | (or **[arXiv:2005.00446v1](https://arxiv.org/abs/2005.00446v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-04-6">6. Why Overfitting Isn't Always Bad: Retrofitting Cross-Lingual Word Embeddings to Dictionaries</h2>
+
+Title: [Why Overfitting Isn't Always Bad: Retrofitting Cross-Lingual Word Embeddings to Dictionaries](https://arxiv.org/abs/2005.00524)
+
+Authors: [Mozhi Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M), [Yoshinari Fujinuma](https://arxiv.org/search/cs?searchtype=author&query=Fujinuma%2C+Y), [Michael J. Paul](https://arxiv.org/search/cs?searchtype=author&query=Paul%2C+M+J), [Jordan Boyd-Graber](https://arxiv.org/search/cs?searchtype=author&query=Boyd-Graber%2C+J)
+
+> Cross-lingual word embeddings (CLWE) are often evaluated on bilingual lexicon induction (BLI). Recent CLWE methods use linear projections, which underfit the training dictionary, to generalize on BLI. However, underfitting can hinder generalization to other downstream tasks that rely on words from the training dictionary. We address this limitation by retrofitting CLWE to the training dictionary, which pulls training translation pairs closer in the embedding space and overfits the training dictionary. This simple post-processing step often improves accuracy on two downstream tasks, despite lowering BLI test accuracy. We also retrofit to both the training dictionary and a synthetic dictionary induced from CLWE, which sometimes generalizes even better on downstream tasks. Our results confirm the importance of fully exploiting training dictionary in downstream tasks and explains why BLI is a flawed CLWE evaluation.
+
+| Comments: | ACL 2020                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2005.00524](https://arxiv.org/abs/2005.00524) [cs.CL]** |
+|           | (or **[arXiv:2005.00524v1](https://arxiv.org/abs/2005.00524v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+
+
+# 2020-05-01
 
 [Return to Index](#Index)
 
