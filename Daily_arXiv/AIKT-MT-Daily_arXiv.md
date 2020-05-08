@@ -2,6 +2,19 @@
 
 # Index
 
+- [2020-05-08](#2020-05-08)
+  - [1. Unsupervised Multimodal Neural Machine Translation with Pseudo Visual Pivoting](#2020-05-08-1)
+  - [2. JASS: Japanese-specific Sequence to Sequence Pre-training for Neural Machine Translation](#2020-05-08-2)
+  - [3. Does Multi-Encoder Help? A Case Study on Context-Aware Neural Machine Translation](#2020-05-08-3)
+  - [4. Practical Perspectives on Quality Estimation for Machine Translation](#2020-05-08-4)
+  - [5. On Exposure Bias, Hallucination and Domain Shift in Neural Machine Translation](#2020-05-08-5)
+- [2020-05-07](#2020-05-07)
+  - [1. Exploring Controllable Text Generation Techniques](#2020-05-07-1)
+  - [2. Understanding Scanned Receipts](#2020-05-07-2)
+- [2020-05-06](#2020-05-06)
+  - [1. IsoBN: Fine-Tuning BERT with Isotropic Batch Normalization](#2020-05-06-1)
+  - [2. Digraph of Senegal s local languages: issues, challenges and prospects of their transliteration](#2020-05-06-2)
+  - [3. It's Easier to Translate out of English than into it: Measuring Neural Translation Difficulty by Cross-Mutual Information](#2020-05-06-3)
 - [2020-05-05](#2020-05-05)
   - [1. Quantifying Attention Flow in Transformers](#2020-05-05-1)
   - [2. Does Visual Self-Supervision Improve Learning of Speech Representations?](#2020-05-05-2)
@@ -58,6 +71,198 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-05-08
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-05-08-1">1. Unsupervised Multimodal Neural Machine Translation with Pseudo Visual Pivoting</h2>
+
+Title: [Unsupervised Multimodal Neural Machine Translation with Pseudo Visual Pivoting](https://arxiv.org/abs/2005.03119)
+
+Authors: [Po-Yao Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+P), [Junjie Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+J), [Xiaojun Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+X), [Alexander Hauptmann](https://arxiv.org/search/cs?searchtype=author&query=Hauptmann%2C+A)
+
+> Unsupervised machine translation (MT) has recently achieved impressive results with monolingual corpora only. However, it is still challenging to associate source-target sentences in the latent space. As people speak different languages biologically share similar visual systems, the potential of achieving better alignment through visual content is promising yet under-explored in unsupervised multimodal MT (MMT). In this paper, we investigate how to utilize visual content for disambiguation and promoting latent space alignment in unsupervised MMT. Our model employs multimodal back-translation and features pseudo visual pivoting in which we learn a shared multilingual visual-semantic embedding space and incorporate visually-pivoted captioning as additional weak supervision. The experimental results on the widely used Multi30K dataset show that the proposed model significantly improves over the state-of-the-art methods and generalizes well when the images are not available at the testing time.
+
+| Comments: | Accepted by ACL 2020                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2005.03119](https://arxiv.org/abs/2005.03119) [cs.CL]** |
+|           | (or **[arXiv:2005.03119v1](https://arxiv.org/abs/2005.03119v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-08-2">2. JASS: Japanese-specific Sequence to Sequence Pre-training for Neural Machine Translation</h2>
+
+Title: [JASS: Japanese-specific Sequence to Sequence Pre-training for Neural Machine Translation](https://arxiv.org/abs/2005.03361)
+
+Authors: [Zhuoyuan Mao](https://arxiv.org/search/cs?searchtype=author&query=Mao%2C+Z), [Fabien Cromieres](https://arxiv.org/search/cs?searchtype=author&query=Cromieres%2C+F), [Raj Dabre](https://arxiv.org/search/cs?searchtype=author&query=Dabre%2C+R), [Haiyue Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+H), [Sadao Kurohashi](https://arxiv.org/search/cs?searchtype=author&query=Kurohashi%2C+S)
+
+> Neural machine translation (NMT) needs large parallel corpora for state-of-the-art translation quality. Low-resource NMT is typically addressed by transfer learning which leverages large monolingual or parallel corpora for pre-training. Monolingual pre-training approaches such as MASS (MAsked Sequence to Sequence) are extremely effective in boosting NMT quality for languages with small parallel corpora. However, they do not account for linguistic information obtained using syntactic analyzers which is known to be invaluable for several Natural Language Processing (NLP) tasks. To this end, we propose JASS, Japanese-specific Sequence to Sequence, as a novel pre-training alternative to MASS for NMT involving Japanese as the source or target language. JASS is joint BMASS (Bunsetsu MASS) and BRSS (Bunsetsu Reordering Sequence to Sequence) pre-training which focuses on Japanese linguistic units called bunsetsus. In our experiments on ASPEC Japanese--English and News Commentary Japanese--Russian translation we show that JASS can give results that are competitive with if not better than those given by MASS. Furthermore, we show for the first time that joint MASS and JASS pre-training gives results that significantly surpass the individual methods indicating their complementary nature. We will release our code, pre-trained models and bunsetsu annotated data as resources for researchers to use in their own NLP tasks.
+
+| Comments: | LREC 2020                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2005.03361](https://arxiv.org/abs/2005.03361) [cs.CL]** |
+|           | (or **[arXiv:2005.03361v1](https://arxiv.org/abs/2005.03361v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-08-3">3. Does Multi-Encoder Help? A Case Study on Context-Aware Neural Machine Translation</h2>
+
+Title: [Does Multi-Encoder Help? A Case Study on Context-Aware Neural Machine Translation](https://arxiv.org/abs/2005.03393)
+
+Authors: [Bei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+B), [Hui Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+H), [Ziyang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Yufan Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+Y), [Tong Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+T), [Jingbo Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J), [Tongran Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T), [Changliang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+C)
+
+> In encoder-decoder neural models, multiple encoders are in general used to represent the contextual information in addition to the individual sentence. In this paper, we investigate multi-encoder approaches in documentlevel neural machine translation (NMT). Surprisingly, we find that the context encoder does not only encode the surrounding sentences but also behaves as a noise generator. This makes us rethink the real benefits of multi-encoder in context-aware translation - some of the improvements come from robust training. We compare several methods that introduce noise and/or well-tuned dropout setup into the training of these encoders. Experimental results show that noisy training plays an important role in multi-encoder-based NMT, especially when the training data is small. Also, we establish a new state-of-the-art on IWSLT Fr-En task by careful use of noise generation and dropout methods.
+
+| Comments: | 5 pages, 2 figures, 5 tables, accpeted by ACL2020            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2005.03393](https://arxiv.org/abs/2005.03393) [cs.CL]** |
+|           | (or **[arXiv:2005.03393v1](https://arxiv.org/abs/2005.03393v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-08-4">4. Practical Perspectives on Quality Estimation for Machine Translation</h2>
+
+Title: [Practical Perspectives on Quality Estimation for Machine Translation](https://arxiv.org/abs/2005.03519)
+
+Authors: [Junpei Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J), [Ciprian Chelba](https://arxiv.org/search/cs?searchtype=author&query=Chelba%2C+C), [Yuezhang](https://arxiv.org/search/cs?searchtype=author&query=Yuezhang) (Music)Li
+
+> Sentence level quality estimation (QE) for machine translation (MT) attempts to predict the translation edit rate (TER) cost of post-editing work required to correct MT output. We describe our view on sentence-level QE as dictated by several practical setups encountered in the industry. We find consumers of MT output---whether human or algorithmic ones---to be primarily interested in a binary quality metric: is the translated sentence adequate as-is or does it need post-editing? Motivated by this we propose a quality classification (QC) view on sentence-level QE whereby we focus on maximizing recall at precision above a given threshold. We demonstrate that, while classical QE regression models fare poorly on this task, they can be re-purposed by replacing the output regression layer with a binary classification one, achieving 50-60\% recall at 90\% precision. For a high-quality MT system producing 75-80\% correct translations, this promises a significant reduction in post-editing work indeed.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2005.03519](https://arxiv.org/abs/2005.03519) [cs.CL]** |
+|           | (or **[arXiv:2005.03519v1](https://arxiv.org/abs/2005.03519v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-08-5">5. On Exposure Bias, Hallucination and Domain Shift in Neural Machine Translation</h2>
+
+Title: [On Exposure Bias, Hallucination and Domain Shift in Neural Machine Translation](https://arxiv.org/abs/2005.03642)
+
+Authors: [Chaojun Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R)
+
+> The standard training algorithm in neural machine translation (NMT) suffers from exposure bias, and alternative algorithms have been proposed to mitigate this. However, the practical impact of exposure bias is under debate. In this paper, we link exposure bias to another well-known problem in NMT, namely the tendency to generate hallucinations under domain shift. In experiments on three datasets with multiple test domains, we show that exposure bias is partially to blame for hallucinations, and that training with Minimum Risk Training, which avoids exposure bias, can mitigate this. Our analysis explains why exposure bias is more problematic under domain shift, and also links exposure bias to the beam search problem, i.e. performance deterioration with increasing beam size. Our results provide a new justification for methods that reduce exposure bias: even if they do not increase performance on in-domain test sets, they can increase model robustness to domain shift.
+
+| Comments: | ACL 2020                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2005.03642](https://arxiv.org/abs/2005.03642) [cs.CL]** |
+|           | (or **[arXiv:2005.03642v1](https://arxiv.org/abs/2005.03642v1) [cs.CL]** for this version) |
+
+
+
+
+
+# 2020-05-07
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-05-07-1">1. Exploring Controllable Text Generation Techniques</h2>
+
+Title: [Exploring Controllable Text Generation Techniques](https://arxiv.org/abs/2005.01822)
+
+Authors: [Shrimai Prabhumoye](https://arxiv.org/search/cs?searchtype=author&query=Prabhumoye%2C+S), [Alan W Black](https://arxiv.org/search/cs?searchtype=author&query=Black%2C+A+W), [Ruslan Salakhutdinov](https://arxiv.org/search/cs?searchtype=author&query=Salakhutdinov%2C+R)
+
+> Neural controllable text generation is an important area gaining attention due to its plethora of applications. In this work, we provide a new schema of the pipeline of the generation process by classifying it into five modules. We present an overview of the various techniques used to modulate each of these five modules to provide with control of attributes in the generation process. We also provide an analysis on the advantages and disadvantages of these techniques and open paths to develop new architectures based on the combination of the modules described in this paper.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2005.01822](https://arxiv.org/abs/2005.01822) [cs.CL]** |
+|           | (or **[arXiv:2005.01822v1](https://arxiv.org/abs/2005.01822v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-07-2">2. Understanding Scanned Receipts</h2>
+
+Title: [Understanding Scanned Receipts](https://arxiv.org/abs/2005.01828)
+
+Authors: [Eric Melz](https://arxiv.org/search/cs?searchtype=author&query=Melz%2C+E)
+
+> Tasking machines with understanding receipts can have important applications such as enabling detailed analytics on purchases, enforcing expense policies, and inferring patterns of purchase behavior on large collections of receipts. In this paper, we focus on the task of Named Entity Linking (NEL) of scanned receipt line items; specifically, the task entails associating shorthand text from OCR'd receipts with a knowledge base (KB) of grocery products. For example, the scanned item "STO BABY SPINACH" should be linked to the catalog item labeled "Simple Truth Organic Baby Spinach". Experiments that employ a variety of Information Retrieval techniques in combination with statistical phrase detection shows promise for effective understanding of scanned receipt data.
+
+| Comments:    | 8 pages, 3 figures, no conference submission                 |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**                         |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2005.01828](https://arxiv.org/abs/2005.01828) [cs.CL]** |
+|              | (or **[arXiv:2005.01828v1](https://arxiv.org/abs/2005.01828v1) [cs.CL]** for this version) |
+
+
+
+
+
+# 2020-05-06
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-05-06-1">1. IsoBN: Fine-Tuning BERT with Isotropic Batch Normalization</h2>
+
+Title: [IsoBN: Fine-Tuning BERT with Isotropic Batch Normalization](https://arxiv.org/abs/2005.02178)
+
+Authors: [Wenxuan Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+W), [Bill Yuchen Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+B+Y), [Xiang Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+X)
+
+> Fine-tuning pre-trained language models (PTLMs), such as BERT and its better variant RoBERTa, has been a common practice for advancing performance in natural language understanding (NLU) tasks. Recent advance in representation learning shows that isotropic (i.e., unit-variance and uncorrelated) embeddings can significantly improve performance on downstream tasks with faster convergence and better generalization. The isotropy of the pre-trained embeddings in PTLMs, however, is relatively under-explored. In this paper, we analyze the isotropy of the pre-trained [CLS] embeddings of PTLMs with straightforward visualization, and point out two major issues: high variance in their standard deviation, and high correlation between different dimensions. We also propose a new network regularization method, isotropic batch normalization (IsoBN) to address the issues, towards learning more isotropic representations in fine-tuning. This simple yet effective fine-tuning method yields about 1.0 absolute increment on the average of seven benchmark NLU tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2005.02178](https://arxiv.org/abs/2005.02178) [cs.CL]** |
+|           | (or **[arXiv:2005.02178v1](https://arxiv.org/abs/2005.02178v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2020-05-06-2">2. Digraph of Senegal s local languages: issues, challenges and prospects of their transliteration</h2>
+
+Title: [Digraph of Senegal s local languages: issues, challenges and prospects of their transliteration](https://arxiv.org/abs/2005.02325)
+
+Authors: [Elhadji Mamadou Nguer](https://arxiv.org/search/cs?searchtype=author&query=Nguer%2C+E+M), [Diop Sokhna Bao](https://arxiv.org/search/cs?searchtype=author&query=Bao%2C+D+S), [Yacoub Ahmed Fall](https://arxiv.org/search/cs?searchtype=author&query=Fall%2C+Y+A), [Mouhamadou Khoule](https://arxiv.org/search/cs?searchtype=author&query=Khoule%2C+M)
+
+> The local languages in Senegal, like those of West African countries in general, are written based on two alphabets: supplemented Arabic alphabet (called Ajami) and Latin alphabet. Each writing has its own applications. Ajami writing is generally used by people educated in Koranic schools for communication, business, literature (religious texts, poetry, etc.), traditional religious medicine, etc. Writing with Latin characters is used for localization of ICT (Web, dictionaries, Windows and Google tools translated in Wolof, etc.), the translation of legal texts (commercial code and constitution translated in Wolof) and religious ones (Quran and Bible in Wolof), book edition, etc. To facilitate both populations general access to knowledge, it is useful to set up transliteration tools between these two scriptures. This work falls within the framework of the implementation of project for a collaborative online dictionary Wolof (Nguer E. M., Khoule M, Thiam M. N., Mbaye B. T., Thiare O., Cisse M. T., Mangeot M. 2014), which will involve people using Ajami writing. Our goal will consist, on the one hand in raising the issues related to the transliteration and the challenges that this will raise, and on the other one, presenting the perspectives.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | LTC 2015                                                     |
+| Cite as:           | **[arXiv:2005.02325](https://arxiv.org/abs/2005.02325) [cs.CL]** |
+|                    | (or **[arXiv:2005.02325v1](https://arxiv.org/abs/2005.02325v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2020-05-06-3">3. It's Easier to Translate out of English than into it: Measuring Neural Translation Difficulty by Cross-Mutual Information</h2>
+
+Title: [It's Easier to Translate out of English than into it: Measuring Neural Translation Difficulty by Cross-Mutual Information](https://arxiv.org/abs/2005.02354)
+
+Authors: [Emanuele Bugliarello](https://arxiv.org/search/cs?searchtype=author&query=Bugliarello%2C+E), [Sabrina J. Mielke](https://arxiv.org/search/cs?searchtype=author&query=Mielke%2C+S+J), [Antonios Anastasopoulos](https://arxiv.org/search/cs?searchtype=author&query=Anastasopoulos%2C+A), [Ryan Cotterell](https://arxiv.org/search/cs?searchtype=author&query=Cotterell%2C+R), [Naoaki Okazaki](https://arxiv.org/search/cs?searchtype=author&query=Okazaki%2C+N)
+
+> The performance of neural machine translation systems is commonly evaluated in terms of BLEU. However, due to its reliance on target language properties and generation, the BLEU metric does not allow an assessment of which translation directions are more difficult to model. In this paper, we propose cross-mutual information (XMI): an asymmetric information-theoretic metric of machine translation difficulty that exploits the probabilistic nature of most neural machine translation models. XMI allows us to better evaluate the difficulty of translating text into the target language while controlling for the difficulty of the target-side generation component independent of the translation task. We then present the first systematic and controlled study of cross-lingual translation difficulties using modern neural translation systems. Code for replicating our experiments is available online at [this https URL](https://github.com/e-bug/nmt-difficulty).
+
+| Comments: | Accepted at ACL 2020                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2005.02354](https://arxiv.org/abs/2005.02354) [cs.CL]** |
+|           | (or **[arXiv:2005.02354v1](https://arxiv.org/abs/2005.02354v1) [cs.CL]** for this version) |
+
+
 
 
 
