@@ -2,6 +2,13 @@
 
 # Index
 
+- [2020-05-12](#2020-05-12)
+  - [1. Finding Universal Grammatical Relations in Multilingual BERT](2020-05-12-1)
+  - [2. Leveraging Monolingual Data with Self-Supervision for Multilingual Neural Machine Translation](2020-05-12-2)
+  - [3. Multidirectional Associative Optimization of Function-Specific Word Representations](2020-05-12-3)
+- [2020-05-11](#2020-05-11)
+  - [1. Learning to Detect Unacceptable Machine Translations for Downstream Tasks](2020-05-11-1)
+  - [2. Distilling Knowledge from Pre-trained Language Models via Text Smoothing](2020-05-11-2)
 - [2020-05-08](#2020-05-08)
   - [1. Unsupervised Multimodal Neural Machine Translation with Pseudo Visual Pivoting](#2020-05-08-1)
   - [2. JASS: Japanese-specific Sequence to Sequence Pre-training for Neural Machine Translation](#2020-05-08-2)
@@ -71,6 +78,106 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-05-12
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-05-12-1">1. Finding Universal Grammatical Relations in Multilingual BERT</h2>
+
+Title: [Finding Universal Grammatical Relations in Multilingual BERT](https://arxiv.org/abs/2005.04511)
+
+Authors: [Ethan A. Chi](https://arxiv.org/search/cs?searchtype=author&query=Chi%2C+E+A), [John Hewitt](https://arxiv.org/search/cs?searchtype=author&query=Hewitt%2C+J), [Christopher D. Manning](https://arxiv.org/search/cs?searchtype=author&query=Manning%2C+C+D)
+
+> Recent work has found evidence that Multilingual BERT (mBERT), a transformer-based multilingual masked language model, is capable of zero-shot cross-lingual transfer, suggesting that some aspects of its representations are shared cross-lingually. To better understand this overlap, we extend recent work on finding syntactic trees in neural networks' internal representations to the multilingual setting. We show that subspaces of mBERT representations recover syntactic tree distances in languages other than English, and that these subspaces are approximately shared across languages. Motivated by these results, we present an unsupervised analysis method that provides evidence mBERT learns representations of syntactic dependency labels, in the form of clusters which largely agree with the Universal Dependencies taxonomy. This evidence suggests that even without explicit supervision, multilingual masked language models learn certain linguistic universals.
+
+| Comments:    | To appear in ACL 2020                                        |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2005.04511](https://arxiv.org/abs/2005.04511) [cs.CL]** |
+|              | (or **[arXiv:2005.04511v1](https://arxiv.org/abs/2005.04511v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-12-2">2. Leveraging Monolingual Data with Self-Supervision for Multilingual Neural Machine Translation</h2>
+
+Title: [Leveraging Monolingual Data with Self-Supervision for Multilingual Neural Machine Translation](https://arxiv.org/abs/2005.04816)
+
+Authors: [Aditya Siddhant](https://arxiv.org/search/cs?searchtype=author&query=Siddhant%2C+A), [Ankur Bapna](https://arxiv.org/search/cs?searchtype=author&query=Bapna%2C+A), [Yuan Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+Y), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O), [Mia Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+M), [Sneha Kudugunta](https://arxiv.org/search/cs?searchtype=author&query=Kudugunta%2C+S), [Naveen Arivazhagan](https://arxiv.org/search/cs?searchtype=author&query=Arivazhagan%2C+N), [Yonghui Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Y)
+
+> Over the last few years two promising research directions in low-resource neural machine translation (NMT) have emerged. The first focuses on utilizing high-resource languages to improve the quality of low-resource languages via multilingual NMT. The second direction employs monolingual data with self-supervision to pre-train translation models, followed by fine-tuning on small amounts of supervised data. In this work, we join these two lines of research and demonstrate the efficacy of monolingual data with self-supervision in multilingual NMT. We offer three major results: (i) Using monolingual data significantly boosts the translation quality of low-resource languages in multilingual models. (ii) Self-supervision improves zero-shot translation quality in multilingual models. (iii) Leveraging monolingual data with self-supervision provides a viable path towards adding new languages to multilingual models, getting up to 33 BLEU on ro-en translation without any parallel data or back-translation.
+
+| Subjects:          | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | ACL 2020                                                     |
+| Cite as:           | **[arXiv:2005.04816](https://arxiv.org/abs/2005.04816) [cs.CL]** |
+|                    | (or **[arXiv:2005.04816v1](https://arxiv.org/abs/2005.04816v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-12-3">3. Multidirectional Associative Optimization of Function-Specific Word Representations</h2>
+
+Title: [Multidirectional Associative Optimization of Function-Specific Word Representations](https://arxiv.org/abs/2005.05264)
+
+Authors: [Daniela Gerz](https://arxiv.org/search/cs?searchtype=author&query=Gerz%2C+D), [Ivan Vulić](https://arxiv.org/search/cs?searchtype=author&query=Vulić%2C+I), [Marek Rei](https://arxiv.org/search/cs?searchtype=author&query=Rei%2C+M), [Roi Reichart](https://arxiv.org/search/cs?searchtype=author&query=Reichart%2C+R), [Anna Korhonen](https://arxiv.org/search/cs?searchtype=author&query=Korhonen%2C+A)
+
+> We present a neural framework for learning associations between interrelated groups of words such as the ones found in Subject-Verb-Object (SVO) structures. Our model induces a joint function-specific word vector space, where vectors of e.g. plausible SVO compositions lie close together. The model retains information about word group membership even in the joint space, and can thereby effectively be applied to a number of tasks reasoning over the SVO structure. We show the robustness and versatility of the proposed framework by reporting state-of-the-art results on the tasks of estimating selectional preference and event similarity. The results indicate that the combinations of representations learned with our task-independent model outperform task-specific architectures from prior work, while reducing the number of parameters by up to 95%.
+
+| Comments: | ACL 2020 (Long paper)                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2005.05264](https://arxiv.org/abs/2005.05264) [cs.CL]** |
+|           | (or **[arXiv:2005.05264v1](https://arxiv.org/abs/2005.05264v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+# 2020-05-11
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-05-11-1">1. Learning to Detect Unacceptable Machine Translations for Downstream Tasks</h2>
+
+Title: [Learning to Detect Unacceptable Machine Translations for Downstream Tasks](https://arxiv.org/abs/2005.03925)
+
+Authors: [Meng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M), [Xin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+X), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q)
+
+> The field of machine translation has progressed tremendously in recent years. Even though the translation quality has improved significantly, current systems are still unable to produce uniformly acceptable machine translations for the variety of possible use cases. In this work, we put machine translation in a cross-lingual pipeline and introduce downstream tasks to define task-specific acceptability of machine translations. This allows us to leverage parallel data to automatically generate acceptability annotations on a large scale, which in turn help to learn acceptability detectors for the downstream tasks. We conduct experiments to demonstrate the effectiveness of our framework for a range of downstream tasks and translation models.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2005.03925](https://arxiv.org/abs/2005.03925) [cs.CL]** |
+|           | (or **[arXiv:2005.03925v1](https://arxiv.org/abs/2005.03925v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2020-05-11-2">2. Distilling Knowledge from Pre-trained Language Models via Text Smoothing</h2>
+
+Title: [Distilling Knowledge from Pre-trained Language Models via Text Smoothing](https://arxiv.org/abs/2005.03848)
+
+Authors: [Xing Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+X), [Yibing Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Xiangyang Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+X), [Dianhai Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+D)
+
+> This paper studies compressing pre-trained language models, like BERT (Devlin et al.,2019), via teacher-student knowledge distillation. Previous works usually force the student model to strictly mimic the smoothed labels predicted by the teacher BERT. As an alternative, we propose a new method for BERT distillation, i.e., asking the teacher to generate smoothed word ids, rather than labels, for teaching the student model in knowledge distillation. We call this kind of methodTextSmoothing. Practically, we use the softmax prediction of the Masked Language Model(MLM) in BERT to generate word distributions for given texts and smooth those input texts using that predicted soft word ids. We assume that both the smoothed labels and the smoothed texts can implicitly augment the input corpus, while text smoothing is intuitively more efficient since it can generate more instances in one neural network forward step.Experimental results on GLUE and SQuAD demonstrate that our solution can achieve competitive results compared with existing BERT distillation methods.
+
+| Comments: | 5 pages, 2 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2005.03848](https://arxiv.org/abs/2005.03848) [cs.CL]** |
+|           | (or **[arXiv:2005.03848v1](https://arxiv.org/abs/2005.03848v1) [cs.CL]** for this version) |
 
 
 
