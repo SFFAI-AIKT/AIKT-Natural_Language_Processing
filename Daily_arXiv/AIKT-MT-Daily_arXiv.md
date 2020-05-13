@@ -2,6 +2,14 @@
 
 # Index
 
+- [2020-05-13](#2020-05-13)
+  - [1. Schema-Guided Natural Language Generation](#2020-05-13-1)
+  - [2. A Framework for Hierarchical Multilingual Machine Translation](#2020-05-13-2)
+  - [3. DiscreTalk: Text-to-Speech as a Machine Translation Problem](#2020-05-13-3)
+  - [4. Simultaneous paraphrasing and translation by fine-tuning Transformer models](#2020-05-13-4)
+  - [5. On the Robustness of Language Encoders against Grammatical Errors](#2020-05-13-5)
+  - [6. Reassessing Claims of Human Parity and Super-Human Performance in Machine Translation at WMT 2019](#2020-05-13-6)
+  - [7. TextAttack: A Framework for Adversarial Attacks in Natural Language Processing](#2020-05-13-7)
 - [2020-05-12](#2020-05-12)
   - [1. Finding Universal Grammatical Relations in Multilingual BERT](2020-05-12-1)
   - [2. Leveraging Monolingual Data with Self-Supervision for Multilingual Neural Machine Translation](2020-05-12-2)
@@ -78,6 +86,150 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-05-13
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-05-13-1">1. Schema-Guided Natural Language Generation</h2>
+
+Title: [Schema-Guided Natural Language Generation](https://arxiv.org/abs/2005.05480)
+
+Authors: [Yuheng Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+Y), [Shereen Oraby](https://arxiv.org/search/cs?searchtype=author&query=Oraby%2C+S), [Vittorio Perera](https://arxiv.org/search/cs?searchtype=author&query=Perera%2C+V), [Minmin Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+M), [Anjali Narayan-Chen](https://arxiv.org/search/cs?searchtype=author&query=Narayan-Chen%2C+A), [Tagyoung Chung](https://arxiv.org/search/cs?searchtype=author&query=Chung%2C+T), [Anu Venkatesh](https://arxiv.org/search/cs?searchtype=author&query=Venkatesh%2C+A), [Dilek Hakkani-Tur](https://arxiv.org/search/cs?searchtype=author&query=Hakkani-Tur%2C+D)
+
+> Neural network based approaches to natural language generation (NLG) have gained popularity in recent years. The goal of the task is to generate a natural language string to realize an input meaning representation, hence large datasets of paired utterances and their meaning representations are used for training the network. However, dataset creation for language generation is an arduous task, and popular datasets designed for training these generators mostly consist of simple meaning representations composed of slot and value tokens to be realized. These simple meaning representations do not include any contextual information that may be helpful for training an NLG system to generalize, such as domain information and descriptions of slots and values. In this paper, we present the novel task of Schema-Guided Natural Language Generation, in which we repurpose an existing dataset for another task: dialog state tracking. Dialog state tracking data includes a large and rich schema spanning multiple different attributes, including information about the domain, user intent, and slot descriptions. We train different state-of-the-art models for neural natural language generation on this data and show that inclusion of the rich schema allows our models to produce higher quality outputs both in terms of semantics and diversity. We also conduct experiments comparing model performance on seen versus unseen domains. Finally, we present human evaluation results and analysis demonstrating high ratings for overall output quality.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2005.05480](https://arxiv.org/abs/2005.05480) [cs.CL]** |
+|           | (or **[arXiv:2005.05480v1](https://arxiv.org/abs/2005.05480v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-13-2">2. A Framework for Hierarchical Multilingual Machine Translation</h2>
+
+Title: [A Framework for Hierarchical Multilingual Machine Translation](https://arxiv.org/abs/2005.05507)
+
+Authors: [Ion Madrazo Azpiazu](https://arxiv.org/search/cs?searchtype=author&query=Azpiazu%2C+I+M), [Maria Soledad Pera](https://arxiv.org/search/cs?searchtype=author&query=Pera%2C+M+S)
+
+> Multilingual machine translation has recently been in vogue given its potential for improving machine translation performance for low-resource languages via transfer learning. Empirical examinations demonstrating the success of existing multilingual machine translation strategies, however, are limited to experiments in specific language groups. In this paper, we present a hierarchical framework for building multilingual machine translation strategies that takes advantage of a typological language family tree for enabling transfer among similar languages while avoiding the negative effects that result from incorporating languages that are too different to each other. Exhaustive experimentation on a dataset with 41 languages demonstrates the validity of the proposed framework, especially when it comes to improving the performance of low-resource languages via the use of typologically related families for which richer sets of resources are available.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2005.05507](https://arxiv.org/abs/2005.05507) [cs.CL]** |
+|           | (or **[arXiv:2005.05507v1](https://arxiv.org/abs/2005.05507v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-05-13-3">3. DiscreTalk: Text-to-Speech as a Machine Translation Problem</h2>
+
+Title: [DiscreTalk: Text-to-Speech as a Machine Translation Problem](https://arxiv.org/abs/2005.05525)
+
+Authors: [Tomoki Hayashi](https://arxiv.org/search/cs?searchtype=author&query=Hayashi%2C+T), [Shinji Watanabe](https://arxiv.org/search/cs?searchtype=author&query=Watanabe%2C+S)
+
+> This paper proposes a new end-to-end text-to-speech (E2E-TTS) model based on neural machine translation (NMT). The proposed model consists of two components; a non-autoregressive vector quantized variational autoencoder (VQ-VAE) model and an autoregressive Transformer-NMT model. The VQ-VAE model learns a mapping function from a speech waveform into a sequence of discrete symbols, and then the Transformer-NMT model is trained to estimate this discrete symbol sequence from a given input text. Since the VQ-VAE model can learn such a mapping in a fully-data-driven manner, we do not need to consider hyperparameters of the feature extraction required in the conventional E2E-TTS models. Thanks to the use of discrete symbols, we can use various techniques developed in NMT and automatic speech recognition (ASR) such as beam search, subword units, and fusions with a language model. Furthermore, we can avoid an over smoothing problem of predicted features, which is one of the common issues in TTS. The experimental evaluation with the JSUT corpus shows that the proposed method outperforms the conventional Transformer-TTS model with a non-autoregressive neural vocoder in naturalness, achieving the performance comparable to the reconstruction of the VQ-VAE model.
+
+| Comments: | Submitted to INTERSPEECH 2020. The demo is available on [this https URL](https://kan-bayashi.github.io/DiscreTalk/) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2005.05525](https://arxiv.org/abs/2005.05525) [cs.CL]** |
+|           | (or **[arXiv:2005.05525v1](https://arxiv.org/abs/2005.05525v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-05-13-4">4. Simultaneous paraphrasing and translation by fine-tuning Transformer models</h2>
+
+Title: [Simultaneous paraphrasing and translation by fine-tuning Transformer models](https://arxiv.org/abs/2005.05570)
+
+Authors: [Rakesh Chada](https://arxiv.org/search/cs?searchtype=author&query=Chada%2C+R)
+
+> This paper describes the third place submission to the shared task on simultaneous translation and paraphrasing for language education at the 4th workshop on Neural Generation and Translation (WNGT) for ACL 2020. The final system leverages pre-trained translation models and uses a Transformer architecture combined with an oversampling strategy to achieve a competitive performance. This system significantly outperforms the baseline on Hungarian (27% absolute improvement in Weighted Macro F1 score) and Portuguese (33% absolute improvement) languages.
+
+| Comments: | Accepted to ACL 2020 4th workshop on Neural Generation and Translation |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2005.05570](https://arxiv.org/abs/2005.05570) [cs.CL]** |
+|           | (or **[arXiv:2005.05570v1](https://arxiv.org/abs/2005.05570v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-05-13-5">5. On the Robustness of Language Encoders against Grammatical Errors</h2>
+
+Title: [On the Robustness of Language Encoders against Grammatical Errors](https://arxiv.org/abs/2005.05683)
+
+Authors: [Fan Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+F), [Quanyu Long](https://arxiv.org/search/cs?searchtype=author&query=Long%2C+Q), [Tao Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+T), [Kai-Wei Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+K)
+
+> We conduct a thorough study to diagnose the behaviors of pre-trained language encoders (ELMo, BERT, and RoBERTa) when confronted with natural grammatical errors. Specifically, we collect real grammatical errors from non-native speakers and conduct adversarial attacks to simulate these errors on clean text data. We use this approach to facilitate debugging models on downstream applications. Results confirm that the performance of all tested models is affected but the degree of impact varies. To interpret model behaviors, we further design a linguistic acceptability task to reveal their abilities in identifying ungrammatical sentences and the position of errors. We find that fixed contextual encoders with a simple classifier trained on the prediction of sentence correctness are able to locate error positions. We also design a cloze test for BERT and discover that BERT captures the interaction between errors and specific tokens in context. Our results shed light on understanding the robustness and behaviors of language encoders against grammatical errors.
+
+| Comments: | ACL 2020                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2005.05683](https://arxiv.org/abs/2005.05683) [cs.CL]** |
+|           | (or **[arXiv:2005.05683v1](https://arxiv.org/abs/2005.05683v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-05-13-6">6. Reassessing Claims of Human Parity and Super-Human Performance in Machine Translation at WMT 2019</h2>
+
+Title: [Reassessing Claims of Human Parity and Super-Human Performance in Machine Translation at WMT 2019](https://arxiv.org/abs/2005.05738)
+
+Authors: [Antonio Toral](https://arxiv.org/search/cs?searchtype=author&query=Toral%2C+A)
+
+> We reassess the claims of human parity and super-human performance made at the news shared task of WMT 2019 for three translation directions: English-to-German, English-to-Russian and German-to-English. First we identify three potential issues in the human evaluation of that shared task: (i) the limited amount of intersentential context available, (ii) the limited translation proficiency of the evaluators and (iii) the use of a reference translation. We then conduct a modified evaluation taking these issues into account. Our results indicate that all the claims of human parity and super-human performance made at WMT 2019 should be refuted, except the claim of human parity for English-to-German. Based on our findings, we put forward a set of recommendations and open questions for future assessments of human parity in machine translation.
+
+| Comments: | Accepted at the 22nd Annual Conference of the European Association for Machine Translation (EAMT 2020) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2005.05738](https://arxiv.org/abs/2005.05738) [cs.CL]** |
+|           | (or **[arXiv:2005.05738v1](https://arxiv.org/abs/2005.05738v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-05-13-7">7. TextAttack: A Framework for Adversarial Attacks in Natural Language Processing</h2>
+
+Title: [TextAttack: A Framework for Adversarial Attacks in Natural Language Processing](https://arxiv.org/abs/2005.05909)
+
+Authors: [John X. Morris](https://arxiv.org/search/cs?searchtype=author&query=Morris%2C+J+X), [Eli Lifland](https://arxiv.org/search/cs?searchtype=author&query=Lifland%2C+E), [Jin Yong Yoo](https://arxiv.org/search/cs?searchtype=author&query=Yoo%2C+J+Y), [Yanjun Qi](https://arxiv.org/search/cs?searchtype=author&query=Qi%2C+Y)
+
+> TextAttack is a library for running adversarial attacks against natural language processing (NLP) models. TextAttack builds attacks from four components: a search method, goal function, transformation, and a set of constraints. Researchers can use these components to easily assemble new attacks. Individual components can be isolated and compared for easier ablation studies. TextAttack currently supports attacks on models trained for text classification and entailment across a variety of datasets. Additionally, TextAttack's modular design makes it easily extensible to new NLP tasks, models, and attack strategies. TextAttack code and tutorials are available at [this https URL](https://github.com/QData/TextAttack)}{[this https URL](https://github.com/QData/TextAttack).
+
+| Comments: | 6 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2005.05909](https://arxiv.org/abs/2005.05909) [cs.CL]** |
+|           | (or **[arXiv:2005.05909v1](https://arxiv.org/abs/2005.05909v1) [cs.CL]** for this version) |
+
+
+
+
+
+
 
 
 
