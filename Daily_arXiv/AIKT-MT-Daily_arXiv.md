@@ -2,6 +2,14 @@
 
 # Index
 
+- [2020-05-14](#2020-05-14)
+  - [1. A Comprehensive Survey of Grammar Error Correction](#2020-05-14-1)
+  - [2. Dynamic Programming Encoding for Subword Segmentation in Neural Machine Translation](#2020-05-14-2)
+  - [3. Neural Machine Translation for South Africa's Official Languages](#2020-05-14-3)
+  - [4. schuBERT: Optimizing Elements of BERT](#2020-05-14-4)
+  - [5. 4chan & 8chan embeddings](#2020-05-14-5)
+- [2020-05-14](#2020-05-14)
+  - [1. Parallel Corpus Filtering via Pre-trained Language Models](#2020-05-14-1)
 - [2020-05-13](#2020-05-13)
   - [1. Schema-Guided Natural Language Generation](#2020-05-13-1)
   - [2. A Framework for Hierarchical Multilingual Machine Translation](#2020-05-13-2)
@@ -86,6 +94,130 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-05-15
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-05-15-1">1. A Comprehensive Survey of Grammar Error Correction</h2>
+
+Title: [A Comprehensive Survey of Grammar Error Correction](https://arxiv.org/abs/2005.06600)
+
+Authors: [Yu Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Yuelin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Jie Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J), [Zhuo Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z)
+
+> Grammar error correction (GEC) is an important application aspect of natural language processing techniques. The past decade has witnessed significant progress achieved in GEC for the sake of increasing popularity of machine learning and deep learning, especially in late 2010s when near human-level GEC systems are available. However, there is no prior work focusing on the whole recapitulation of the progress. We present the first survey in GEC for a comprehensive retrospect of the literature in this area. We first give the introduction of five public datasets, data annotation schema, two important shared tasks and four standard evaluation metrics. More importantly, we discuss four kinds of basic approaches, including statistical machine translation based approach, neural machine translation based approach, classification based approach and language model based approach, six commonly applied performance boosting techniques for GEC systems and two data augmentation methods. Since GEC is typically viewed as a sister task of machine translation, many GEC systems are based on neural machine translation (NMT) approaches, where the neural sequence-to-sequence model is applied. Similarly, some performance boosting techniques are adapted from machine translation and are successfully combined with GEC systems for enhancement on the final performance. Furthermore, we conduct an analysis in level of basic approaches, performance boosting techniques and integrated GEC systems based on their experiment results respectively for more clear patterns and conclusions. Finally, we discuss five prospective directions for future GEC researches.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2005.06600](https://arxiv.org/abs/2005.06600) [cs.CL]** |
+|           | (or **[arXiv:2005.06600v1](https://arxiv.org/abs/2005.06600v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-15-2">2. Dynamic Programming Encoding for Subword Segmentation in Neural Machine Translation</h2>
+
+Title: [Dynamic Programming Encoding for Subword Segmentation in Neural Machine Translation](https://arxiv.org/abs/2005.06606)
+
+Authors: [Xuanli He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+X), [Gholamreza Haffari](https://arxiv.org/search/cs?searchtype=author&query=Haffari%2C+G), [Mohammad Norouzi](https://arxiv.org/search/cs?searchtype=author&query=Norouzi%2C+M)
+
+> This paper introduces Dynamic Programming Encoding (DPE), a new segmentation algorithm for tokenizing sentences into subword units. We view the subword segmentation of output sentences as a latent variable that should be marginalized out for learning and inference. A mixed character-subword transformer is proposed, which enables exact log marginal likelihood estimation and exact MAP inference to find target segmentations with maximum posterior probability. DPE uses a lightweight mixed character-subword transformer as a means of pre-processing parallel data to segment output sentences using dynamic programming. Empirical results on machine translation suggest that DPE is effective for segmenting output sentences and can be combined with BPE dropout for stochastic segmentation of source sentences. DPE achieves an average improvement of 0.9 BLEU over BPE (Sennrich et al., 2016) and an average improvement of 0.55 BLEU over BPE dropout (Provilkov et al., 2019) on several WMT datasets including English <=> (German, Romanian, Estonian, Finnish, Hungarian).
+
+| Comments: | accepted to ACL2020                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2005.06606](https://arxiv.org/abs/2005.06606) [cs.CL]** |
+|           | (or **[arXiv:2005.06606v1](https://arxiv.org/abs/2005.06606v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-15-3">3. Neural Machine Translation for South Africa's Official Languages</h2>
+
+Title: [Neural Machine Translation for South Africa's Official Languages](https://arxiv.org/abs/2005.06609)
+
+Authors: [Laura Martinus](https://arxiv.org/search/cs?searchtype=author&query=Martinus%2C+L), [Jason Webster](https://arxiv.org/search/cs?searchtype=author&query=Webster%2C+J), [Joanne Moonsamy](https://arxiv.org/search/cs?searchtype=author&query=Moonsamy%2C+J), [Moses Shaba Jnr](https://arxiv.org/search/cs?searchtype=author&query=Jnr%2C+M+S), [Ridha Moosa](https://arxiv.org/search/cs?searchtype=author&query=Moosa%2C+R), [Robert Fairon](https://arxiv.org/search/cs?searchtype=author&query=Fairon%2C+R)
+
+> Recent advances in neural machine translation (NMT) have led to state-of-the-art results for many European-based translation tasks. However, despite these advances, there is has been little focus in applying these methods to African languages. In this paper, we seek to address this gap by creating an NMT benchmark BLEU score between English and the ten remaining official languages in South Africa.
+
+| Comments: | workshop paper at AfricaNLP, ICLR 2020                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2005.06609](https://arxiv.org/abs/2005.06609) [cs.CL]** |
+|           | (or **[arXiv:2005.06609v1](https://arxiv.org/abs/2005.06609v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-15-4">4. schuBERT: Optimizing Elements of BERT</h2>
+
+Title: [schuBERT: Optimizing Elements of BERT](https://arxiv.org/abs/2005.06628)
+
+Authors: [Ashish Khetan](https://arxiv.org/search/cs?searchtype=author&query=Khetan%2C+A), [Zohar Karnin](https://arxiv.org/search/cs?searchtype=author&query=Karnin%2C+Z)
+
+> Transformers \citep{vaswani2017attention} have gradually become a key component for many state-of-the-art natural language representation models. A recent Transformer based model- BERT \citep{devlin2018bert} achieved state-of-the-art results on various natural language processing tasks, including GLUE, SQuAD v1.1, and SQuAD v2.0. This model however is computationally prohibitive and has a huge number of parameters. In this work we revisit the architecture choices of BERT in efforts to obtain a lighter model. We focus on reducing the number of parameters yet our methods can be applied towards other objectives such FLOPs or latency. We show that much efficient light BERT models can be obtained by reducing algorithmically chosen correct architecture design dimensions rather than reducing the number of Transformer encoder layers. In particular, our schuBERT gives *[Math Processing Error]* higher average accuracy on GLUE and SQuAD datasets as compared to BERT with three encoder layers while having the same number of parameters.
+
+| Comments: | 11 pages, 6 figures, Accepted for publication in ACL 2020 as a long paper |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2005.06628](https://arxiv.org/abs/2005.06628) [cs.CL]** |
+|           | (or **[arXiv:2005.06628v1](https://arxiv.org/abs/2005.06628v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-15-5">5. 4chan & 8chan embeddings</h2>
+
+Title: [4chan & 8chan embeddings](https://arxiv.org/abs/2005.06946)
+
+Authors: [Pierre Voué](https://arxiv.org/search/cs?searchtype=author&query=Voué%2C+P), [Tom De Smedt](https://arxiv.org/search/cs?searchtype=author&query=De+Smedt%2C+T), [Guy De Pauw](https://arxiv.org/search/cs?searchtype=author&query=De+Pauw%2C+G)
+
+> We have collected over 30M messages from the publicly available /pol/ message boards on 4chan and 8chan, and compiled them into a model of toxic language use. The trained word embeddings (0.4GB) are released for free and may be useful for further study on toxic discourse or to boost hate speech detection systems: [this https URL](https://textgain.com/8chan).
+
+| Comments:          | 4 pages                                                      |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| Journal reference: | Textgain Technical Reports 1 (2020)                          |
+| Cite as:           | **[arXiv:2005.06946](https://arxiv.org/abs/2005.06946) [cs.CL]** |
+|                    | (or **[arXiv:2005.06946v1](https://arxiv.org/abs/2005.06946v1) [cs.CL]** for this version) |
+
+
+
+# 2020-05-14
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-05-14-1">1. Parallel Corpus Filtering via Pre-trained Language Models</h2>
+
+Title: [Parallel Corpus Filtering via Pre-trained Language Models](https://arxiv.org/abs/2005.06166)
+
+Authors: [Boliang Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+B), [Ajay Nagesh](https://arxiv.org/search/cs?searchtype=author&query=Nagesh%2C+A), [Kevin Knight](https://arxiv.org/search/cs?searchtype=author&query=Knight%2C+K)
+
+> Web-crawled data provides a good source of parallel corpora for training machine translation models. It is automatically obtained, but extremely noisy, and recent work shows that neural machine translation systems are more sensitive to noise than traditional statistical machine translation methods. In this paper, we propose a novel approach to filter out noisy sentence pairs from web-crawled corpora via pre-trained language models. We measure sentence parallelism by leveraging the multilingual capability of BERT and use the Generative Pre-training (GPT) language model as a domain filter to balance data domains. We evaluate the proposed method on the WMT 2018 Parallel Corpus Filtering shared task, and on our own web-crawled Japanese-Chinese parallel corpus. Our method significantly outperforms baselines and achieves a new state-of-the-art. In an unsupervised setting, our method achieves comparable performance to the top-1 supervised method. We also evaluate on a web-crawled Japanese-Chinese parallel corpus that we make publicly available.
+
+| Comments: | ACL 2020                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2005.06166](https://arxiv.org/abs/2005.06166) [cs.CL]** |
+|           | (or **[arXiv:2005.06166v1](https://arxiv.org/abs/2005.06166v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+
 
 
 
