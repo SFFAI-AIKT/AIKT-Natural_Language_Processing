@@ -2,6 +2,13 @@
 
 # Index
 
+- [2020-05-19](#2020-05-19)
+  - [1. Cross-Lingual Word Embeddings for Turkic Languages](#2020-05-19-1)
+  - [2. Efficient Wait-k Models for Simultaneous Machine Translation](#2020-05-19-2)
+  - [3. Grammatical gender associations outweigh topical gender bias in crosslinguistic word embeddings](#2020-05-19-3)
+  - [4. Layer-Wise Cross-View Decoding for Sequence-to-Sequence Learning](#2020-05-19-4)
+  - [5. RPD: A Distance Function Between Word Embeddings](#2020-05-19-5)
+  - [6. Encodings of Source Syntax: Similarities in NMT Representations Across Target Languages](#2020-05-19-6)
 - [2020-05-14](#2020-05-14)
   - [1. A Comprehensive Survey of Grammar Error Correction](#2020-05-14-1)
   - [2. Dynamic Programming Encoding for Subword Segmentation in Neural Machine Translation](#2020-05-14-2)
@@ -94,6 +101,122 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-05-19
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-05-19-1">1. Cross-Lingual Word Embeddings for Turkic Languages</h2>
+
+Title: [Cross-Lingual Word Embeddings for Turkic Languages](https://arxiv.org/abs/2005.08340)
+
+Authors: [Elmurod Kuriyozov](https://arxiv.org/search/cs?searchtype=author&query=Kuriyozov%2C+E), [Yerai Doval](https://arxiv.org/search/cs?searchtype=author&query=Doval%2C+Y), [Carlos Gómez-Rodríguez](https://arxiv.org/search/cs?searchtype=author&query=Gómez-Rodríguez%2C+C)
+
+> There has been an increasing interest in learning cross-lingual word embeddings to transfer knowledge obtained from a resource-rich language, such as English, to lower-resource languages for which annotated data is scarce, such as Turkish, Russian, and many others. In this paper, we present the first viability study of established techniques to align monolingual embedding spaces for Turkish, Uzbek, Azeri, Kazakh and Kyrgyz, members of the Turkic family which is heavily affected by the low-resource constraint. Those techniques are known to require little explicit supervision, mainly in the form of bilingual dictionaries, hence being easily adaptable to different domains, including low-resource ones. We obtain new bilingual dictionaries and new word embeddings for these languages and show the steps for obtaining cross-lingual word embeddings using state-of-the-art techniques. Then, we evaluate the results using the bilingual dictionary induction task. Our experiments confirm that the obtained bilingual dictionaries outperform previously-available ones, and that word embeddings from a low-resource language can benefit from resource-rich closely-related languages when they are aligned together. Furthermore, evaluation on an extrinsic task (Sentiment analysis on Uzbek) proves that monolingual word embeddings can, although slightly, benefit from cross-lingual alignments.
+
+| Comments:          | Final version, published in the proceedings of LREC 2020     |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| MSC classes:       | 68T50, 91F20                                                 |
+| ACM classes:       | I.2.7                                                        |
+| Journal reference: | Proceedings of The 12th Language Resources and Evaluation Conference, Marseille, France, 2020, pp. 4047-4055 |
+| Cite as:           | **[arXiv:2005.08340](https://arxiv.org/abs/2005.08340) [cs.CL]** |
+|                    | (or **[arXiv:2005.08340v1](https://arxiv.org/abs/2005.08340v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-19-2">2. Efficient Wait-k Models for Simultaneous Machine Translation</h2>
+
+Title: [Efficient Wait-k Models for Simultaneous Machine Translation](https://arxiv.org/abs/2005.08595)
+
+Authors: [Maha Elbayad](https://arxiv.org/search/cs?searchtype=author&query=Elbayad%2C+M), [Laurent Besacier](https://arxiv.org/search/cs?searchtype=author&query=Besacier%2C+L), [Jakob Verbeek](https://arxiv.org/search/cs?searchtype=author&query=Verbeek%2C+J)
+
+> Simultaneous machine translation consists in starting output generation before the entire input sequence is available. Wait-k decoders offer a simple but efficient approach for this problem. They first read k source tokens, after which they alternate between producing a target token and reading another source token. We investigate the behavior of wait-k decoding in low resource settings for spoken corpora using IWSLT datasets. We improve training of these models using unidirectional encoders, and training across multiple values of k. Experiments with Transformer and 2D-convolutional architectures show that our wait-k models generalize well across a wide range of latency levels. We also show that the 2D-convolution architecture is competitive with Transformers for simultaneous translation of spoken language.
+
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2005.08595](https://arxiv.org/abs/2005.08595) [cs.CL]** |
+|           | (or **[arXiv:2005.08595v1](https://arxiv.org/abs/2005.08595v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-19-3">3. Grammatical gender associations outweigh topical gender bias in crosslinguistic word embeddings</h2>
+
+Title: [Grammatical gender associations outweigh topical gender bias in crosslinguistic word embeddings](https://arxiv.org/abs/2005.08864)
+
+Authors: [Katherine McCurdy](https://arxiv.org/search/cs?searchtype=author&query=McCurdy%2C+K), [Oguz Serbetci](https://arxiv.org/search/cs?searchtype=author&query=Serbetci%2C+O)
+
+> Recent research has demonstrated that vector space models of semantics can reflect undesirable biases in human culture. Our investigation of crosslinguistic word embeddings reveals that topical gender bias interacts with, and is surpassed in magnitude by, the effect of grammatical gender associations, and both may be attenuated by corpus lemmatization. This finding has implications for downstream applications such as machine translation.
+
+| Comments: | Extended abstract presented at the WiNLP workshop, ACL 2017  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2005.08864](https://arxiv.org/abs/2005.08864) [cs.CL]** |
+|           | (or **[arXiv:2005.08864v1](https://arxiv.org/abs/2005.08864v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-19-4">4. Layer-Wise Cross-View Decoding for Sequence-to-Sequence Learning</h2>
+
+Title: [Layer-Wise Cross-View Decoding for Sequence-to-Sequence Learning](https://arxiv.org/abs/2005.08081)
+
+Authors: [Fenglin Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+F), [Xuancheng Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+X), [Guangxiang Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+G), [Xu Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+X)
+
+> In sequence-to-sequence learning, the attention mechanism has been a great success in bridging the information between the encoder and the decoder. However, it is often overlooked that the decoder only has a single view of the source sequences, that is, the representations generated by the last encoder layer, which is supposed to be a global view of source sequences. Such implementation hinders the decoder from concrete, fine-grained, local source information. In this work, we explore to reuse the representations from different encoder layers for layer-wise cross-view decoding, that is, different views of the source sequences are presented to different decoder layers. We investigate multiple, representative strategies for cross-view coding, of which the granularity consistent attention (GCA) strategy proves the most efficient and effective in the experiments on neural machine translation task. Especially, GCA surpasses the previous state-of-the-art architecture on three machine translation datasets.
+
+| Comments: | Achieve state-of-the-art BLEU scores on WMT14 EN-DE, EN-FR, and IWSLT DE-EN datasets |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2005.08081](https://arxiv.org/abs/2005.08081) [cs.CL]** |
+|           | (or **[arXiv:2005.08081v1](https://arxiv.org/abs/2005.08081v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-19-5">5. RPD: A Distance Function Between Word Embeddings</h2>
+
+Title: [RPD: A Distance Function Between Word Embeddings](https://arxiv.org/abs/2005.08113)
+
+Authors: [Xuhui Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+X), [Zaixiang Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+Z), [Shujian Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S)
+
+> It is well-understood that different algorithms, training processes, and corpora produce different word embeddings. However, less is known about the relation between different embedding spaces, i.e. how far different sets of embeddings deviate from each other. In this paper, we propose a novel metric called Relative pairwise inner Product Distance (RPD) to quantify the distance between different sets of word embeddings. This metric has a unified scale for comparing different sets of word embeddings. Based on the properties of RPD, we study the relations of word embeddings of different algorithms systematically and investigate the influence of different training processes and corpora. The results shed light on the poorly understood word embeddings and justify RPD as a measure of the distance of embedding spaces.
+
+| Comments: | ACL Student Research Workshop 2020                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2005.08113](https://arxiv.org/abs/2005.08113) [cs.CL]** |
+|           | (or **[arXiv:2005.08113v1](https://arxiv.org/abs/2005.08113v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-19-6">6. Encodings of Source Syntax: Similarities in NMT Representations Across Target Languages</h2>
+
+Title: [Encodings of Source Syntax: Similarities in NMT Representations Across Target Languages](https://arxiv.org/abs/2005.08177)
+
+Authors: [Tyler A. Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+T+A), [Anna N. Rafferty](https://arxiv.org/search/cs?searchtype=author&query=Rafferty%2C+A+N)
+
+> We train neural machine translation (NMT) models from English to six target languages, using NMT encoder representations to predict ancestor constituent labels of source language words. We find that NMT encoders learn similar source syntax regardless of NMT target language, relying on explicit morphosyntactic cues to extract syntactic features from source sentences. Furthermore, the NMT encoders outperform RNNs trained directly on several of the constituent label prediction tasks, suggesting that NMT encoder representations can be used effectively for natural language tasks involving syntax. However, both the NMT encoders and the directly-trained RNNs learn substantially different syntactic information from a probabilistic context-free grammar (PCFG) parser. Despite lower overall accuracy scores, the PCFG often performs well on sentences for which the RNN-based models perform poorly, suggesting that RNN architectures are constrained in the types of syntax they can learn.
+
+| Comments: | To appear at the 5th Workshop on Representation Learning for NLP |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2005.08177](https://arxiv.org/abs/2005.08177) [cs.CL]** |
+|           | (or **[arXiv:2005.08177v1](https://arxiv.org/abs/2005.08177v1) [cs.CL]** for this version) |
+
+
 
 
 
