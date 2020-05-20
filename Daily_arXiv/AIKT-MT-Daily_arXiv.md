@@ -2,6 +2,11 @@
 
 # Index
 
+- [2020-05-20](#2020-05-20)
+  - [1. Are All Languages Created Equal in Multilingual BERT?](#2020-05-20-1)
+  - [2. (Re)construing Meaning in NLP](#2020-05-20-2)
+  - [3. Contextual Embeddings: When Are They Worth It?](#2020-05-20-3)
+  - [4. A Recipe for Creating Multimodal Aligned Datasets for Sequential Tasks](#2020-05-20-4)
 - [2020-05-19](#2020-05-19)
   - [1. Cross-Lingual Word Embeddings for Turkic Languages](#2020-05-19-1)
   - [2. Efficient Wait-k Models for Simultaneous Machine Translation](#2020-05-19-2)
@@ -101,6 +106,83 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-05-20
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-05-20-1">1. Are All Languages Created Equal in Multilingual BERT?</h2>
+
+Title: [Are All Languages Created Equal in Multilingual BERT?](https://arxiv.org/abs/2005.09093)
+
+Authors: [Shijie Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+S), [Mark Dredze](https://arxiv.org/search/cs?searchtype=author&query=Dredze%2C+M)
+
+> Multilingual BERT (mBERT) trained on 104 languages has shown surprisingly good cross-lingual performance on several NLP tasks, even without explicit cross-lingual signals. However, these evaluations have focused on cross-lingual transfer with high-resource languages, covering only a third of the languages covered by mBERT. We explore how mBERT performs on a much wider set of languages, focusing on the quality of representation for low-resource languages, measured by within-language performance. We consider three tasks: Named Entity Recognition (99 languages), Part-of-speech Tagging, and Dependency Parsing (54 languages each). mBERT does better than or comparable to baselines on high resource languages but does much worse for low resource languages. Furthermore, monolingual BERT models for these languages do even worse. Paired with similar languages, the performance gap between monolingual BERT and mBERT can be narrowed. We find that better models for low resource languages require more efficient pretraining techniques or more data.
+
+| Comments: | Repl4NLP Workshop 2020                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2005.09093](https://arxiv.org/abs/2005.09093) [cs.CL]** |
+|           | (or **[arXiv:2005.09093v1](https://arxiv.org/abs/2005.09093v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-20-2">2. (Re)construing Meaning in NLP</h2>
+
+Title: [(Re)construing Meaning in NLP](https://arxiv.org/abs/2005.09099)
+
+Authors: [Sean Trott](https://arxiv.org/search/cs?searchtype=author&query=Trott%2C+S), [Tiago Timponi Torrent](https://arxiv.org/search/cs?searchtype=author&query=Torrent%2C+T+T), [Nancy Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+N), [Nathan Schneider](https://arxiv.org/search/cs?searchtype=author&query=Schneider%2C+N)
+
+> Human speakers have an extensive toolkit of ways to express themselves. In this paper, we engage with an idea largely absent from discussions of meaning in natural language understanding--namely, that the way something is expressed reflects different ways of conceptualizing or construing the information being conveyed. We first define this phenomenon more precisely, drawing on considerable prior work in theoretical cognitive semantics and psycholinguistics. We then survey some dimensions of construed meaning and show how insights from construal could inform theoretical and practical work in NLP.
+
+| Comments: | ACL 2020 camera-ready                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2005.09099](https://arxiv.org/abs/2005.09099) [cs.CL]** |
+|           | (or **[arXiv:2005.09099v1](https://arxiv.org/abs/2005.09099v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-20-3">3. Contextual Embeddings: When Are They Worth It?</h2>
+
+Title: [Contextual Embeddings: When Are They Worth It?](https://arxiv.org/abs/2005.09117)
+
+Authors: [Simran Arora](https://arxiv.org/search/cs?searchtype=author&query=Arora%2C+S), [Avner May](https://arxiv.org/search/cs?searchtype=author&query=May%2C+A), [Jian Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Christopher Ré](https://arxiv.org/search/cs?searchtype=author&query=Ré%2C+C)
+
+> We study the settings for which deep contextual embeddings (e.g., BERT) give large improvements in performance relative to classic pretrained embeddings (e.g., GloVe), and an even simpler baseline---random word embeddings---focusing on the impact of the training set size and the linguistic properties of the task. Surprisingly, we find that both of these simpler baselines can match contextual embeddings on industry-scale data, and often perform within 5 to 10% accuracy (absolute) on benchmark tasks. Furthermore, we identify properties of data for which contextual embeddings give particularly large gains: language containing complex structure, ambiguous word usage, and words unseen in training.
+
+| Comments: | ACL 2020                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2005.09117](https://arxiv.org/abs/2005.09117) [cs.CL]** |
+|           | (or **[arXiv:2005.09117v1](https://arxiv.org/abs/2005.09117v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-20-4">4. A Recipe for Creating Multimodal Aligned Datasets for Sequential Tasks</h2>
+
+Title: [A Recipe for Creating Multimodal Aligned Datasets for Sequential Tasks](https://arxiv.org/abs/2005.09606)
+
+Authors: [Angela S. Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+A+S), [Sudha Rao](https://arxiv.org/search/cs?searchtype=author&query=Rao%2C+S), [Asli Celikyilmaz](https://arxiv.org/search/cs?searchtype=author&query=Celikyilmaz%2C+A), [Elnaz Nouri](https://arxiv.org/search/cs?searchtype=author&query=Nouri%2C+E), [Chris Brockett](https://arxiv.org/search/cs?searchtype=author&query=Brockett%2C+C), [Debadeepta Dey](https://arxiv.org/search/cs?searchtype=author&query=Dey%2C+D), [Bill Dolan](https://arxiv.org/search/cs?searchtype=author&query=Dolan%2C+B)
+
+> Many high-level procedural tasks can be decomposed into sequences of instructions that vary in their order and choice of tools. In the cooking domain, the web offers many partially-overlapping text and video recipes (i.e. procedures) that describe how to make the same dish (i.e. high-level task). Aligning instructions for the same dish across different sources can yield descriptive visual explanations that are far richer semantically than conventional textual instructions, providing commonsense insight into how real-world procedures are structured. Learning to align these different instruction sets is challenging because: a) different recipes vary in their order of instructions and use of ingredients; and b) video instructions can be noisy and tend to contain far more information than text instructions. To address these challenges, we first use an unsupervised alignment algorithm that learns pairwise alignments between instructions of different recipes for the same dish. We then use a graph algorithm to derive a joint alignment between multiple text and multiple video recipes for the same dish. We release the Microsoft Research Multimodal Aligned Recipe Corpus containing 150K pairwise alignments between recipes across 4,262 dishes with rich commonsense information.
+
+| Comments:          | This paper has been accepted to be published at ACL 2020     |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| Journal reference: | Association of Computational Linguistics 2020                |
+| Cite as:           | **[arXiv:2005.09606](https://arxiv.org/abs/2005.09606) [cs.CL]** |
+|                    | (or **[arXiv:2005.09606v1](https://arxiv.org/abs/2005.09606v1) [cs.CL]** for this version) |
 
 
 
