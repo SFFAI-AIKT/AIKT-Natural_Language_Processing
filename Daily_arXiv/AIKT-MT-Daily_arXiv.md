@@ -2,6 +2,10 @@
 
 # Index
 
+- [2020-05-21](#2020-05-21)
+  - [1. Relative Positional Encoding for Speech Recognition and Direct Translation](#2020-05-21-1)
+  - [2. Enhancing Word Embeddings with Knowledge Extracted from Lexical Resources](#2020-05-21-2)
+  - [3. Applying the Transformer to Character-level Transduction](#2020-05-21-3)
 - [2020-05-20](#2020-05-20)
   - [1. Are All Languages Created Equal in Multilingual BERT?](#2020-05-20-1)
   - [2. (Re)construing Meaning in NLP](#2020-05-20-2)
@@ -106,6 +110,65 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-05-21
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-05-21-1">1. Relative Positional Encoding for Speech Recognition and Direct Translation</h2>
+
+Title: [Relative Positional Encoding for Speech Recognition and Direct Translation](https://arxiv.org/abs/2005.09940)
+
+Authors: Transformer models are powerful sequence-to-sequence architectures that are capable of directly mapping speech inputs to transcriptions or translations. However, the mechanism for modeling positions in this model was tailored for text modeling, and thus is less ideal for acoustic inputs. In this work, we adapt the relative position encoding scheme to the Speech Transformer, where the key addition is relative distance between input states in the self-attention network. As a result, the network can better adapt to the variable distributions present in speech data. Our experiments show that our resulting model achieves the best recognition result on the Switchboard benchmark in the non-augmentation condition, and the best published result in the MuST-C speech translation benchmark. We also show that this model is able to better utilize synthetic data than the Transformer, and adapts better to variable sentence segmentation quality for speech translation.
+
+| Comments: | Submitted to Interspeech 2020                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Sound (cs.SD) |
+| Cite as:  | **[arXiv:2005.09940](https://arxiv.org/abs/2005.09940) [eess.AS]** |
+|           | (or **[arXiv:2005.09940v1](https://arxiv.org/abs/2005.09940v1) [eess.AS]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-21-2">2. Enhancing Word Embeddings with Knowledge Extracted from Lexical Resources</h2>
+
+Title: [Enhancing Word Embeddings with Knowledge Extracted from Lexical Resources](https://arxiv.org/abs/2005.10048)
+
+Authors: [Magdalena Biesialska](https://arxiv.org/search/cs?searchtype=author&query=Biesialska%2C+M), [Bardia Rafieian](https://arxiv.org/search/cs?searchtype=author&query=Rafieian%2C+B), [Marta R. Costa-jussà](https://arxiv.org/search/cs?searchtype=author&query=Costa-jussà%2C+M+R)
+
+> In this work, we present an effective method for semantic specialization of word vector representations. To this end, we use traditional word embeddings and apply specialization methods to better capture semantic relations between words. In our approach, we leverage external knowledge from rich lexical resources such as BabelNet. We also show that our proposed post-specialization method based on an adversarial neural network with the Wasserstein distance allows to gain improvements over state-of-the-art methods on two tasks: word similarity and dialog state tracking.
+
+| Comments: | Accepted to ACL 2020 SRW                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2005.10048](https://arxiv.org/abs/2005.10048) [cs.CL]** |
+|           | (or **[arXiv:2005.10048v1](https://arxiv.org/abs/2005.10048v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-05-21-3">3. Applying the Transformer to Character-level Transduction</h2>
+
+Title: [Applying the Transformer to Character-level Transduction](https://arxiv.org/abs/2005.10213)
+
+Authors: [Shijie Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+S), [Ryan Cotterell](https://arxiv.org/search/cs?searchtype=author&query=Cotterell%2C+R), [Mans Hulden](https://arxiv.org/search/cs?searchtype=author&query=Hulden%2C+M)
+
+> The transformer has been shown to outperform recurrent neural network-based sequence-to-sequence models in various word-level NLP tasks. The model offers other benefits as well: It trains faster and has fewer parameters. Yet for character-level transduction tasks, e.g. morphological inflection generation and historical text normalization, few shows success on outperforming recurrent models with the transformer. In an empirical study, we uncover that, in contrast to recurrent sequence-to-sequence models, the batch size plays a crucial role in the performance of the transformer on character-level tasks, and we show that with a large enough batch size, the transformer does indeed outperform recurrent models. We also introduce a simple technique to handle feature-guided character-level transduction that further improves performance. With these insights, we achieve state-of-the-art performance on morphological inflection and historical text normalization. We also show that the transformer outperforms a strong baseline on two other character-level transduction tasks: grapheme-to-phoneme conversion and transliteration. Code is available at [this https URL](https://github.com/shijie-wu/neural-transducer).
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2005.10213](https://arxiv.org/abs/2005.10213) [cs.CL]** |
+|           | (or **[arXiv:2005.10213v1](https://arxiv.org/abs/2005.10213v1) [cs.CL]** for this version) |
+
+
 
 
 
