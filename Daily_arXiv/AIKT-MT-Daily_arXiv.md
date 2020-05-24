@@ -2,6 +2,11 @@
 
 # Index
 
+- [2020-05-22](#2020-05-22)
+  - [1. Is MAP Decoding All You Need? The Inadequacy of the Mode in Neural Machine Translation](#2020-05-22-1)
+  - [2. MultiMWE: Building a Multi-lingual Multi-Word Expression (MWE) Parallel Corpora](#2020-05-22-2)
+  - [3. Unsupervised Quality Estimation for Neural Machine Translation](#2020-05-22-3)
+  - [4. Worse WER, but Better BLEU? Leveraging Word Embedding as Intermediate in Multitask End-to-End Speech Translation](#2020-05-22-4)
 - [2020-05-21](#2020-05-21)
   - [1. Relative Positional Encoding for Speech Recognition and Direct Translation](#2020-05-21-1)
   - [2. Enhancing Word Embeddings with Knowledge Extracted from Lexical Resources](#2020-05-21-2)
@@ -110,6 +115,85 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-05-22
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-05-22-1">1. Is MAP Decoding All You Need? The Inadequacy of the Mode in Neural Machine Translation</h2>
+
+Title: [Is MAP Decoding All You Need? The Inadequacy of the Mode in Neural Machine Translation](https://arxiv.org/abs/2005.10283)
+
+Authors: [Bryan Eikema](https://arxiv.org/search/cs?searchtype=author&query=Eikema%2C+B), [Wilker Aziz](https://arxiv.org/search/cs?searchtype=author&query=Aziz%2C+W)
+
+> Recent studies have revealed a number of pathologies of neural machine translation (NMT) systems. Hypotheses explaining these mostly suggest that there is something fundamentally wrong with NMT as a model or its training algorithm, maximum likelihood estimation (MLE). Most of this evidence was gathered using maximum a posteriori (MAP) decoding, a decision rule aimed at identifying the highest-scoring translation, i.e. the mode, under the model distribution. We argue that the evidence corroborates the inadequacy of MAP decoding more than casts doubt on the model and its training algorithm. In this work, we criticise NMT models probabilistically showing that stochastic samples following the model's own generative story do reproduce various statistics of the training data well, but that it is beam search that strays from such statistics. We show that some of the known pathologies of NMT are due to MAP decoding and not to NMT's statistical assumptions nor MLE. In particular, we show that the most likely translations under the model accumulate so little probability mass that the mode can be considered essentially arbitrary. We therefore advocate for the use of decision rules that take into account statistics gathered from the model distribution holistically. As a proof of concept we show that a straightforward implementation of minimum Bayes risk decoding gives good results outperforming beam search using as little as 30 samples, confirming that MLE-trained NMT models do capture important aspects of translation well in expectation.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2005.10283](https://arxiv.org/abs/2005.10283) [cs.CL]** |
+|           | (or **[arXiv:2005.10283v1](https://arxiv.org/abs/2005.10283v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-22-2">2. MultiMWE: Building a Multi-lingual Multi-Word Expression (MWE) Parallel Corpora</h2>
+
+Title: [MultiMWE: Building a Multi-lingual Multi-Word Expression (MWE) Parallel Corpora](https://arxiv.org/abs/2005.10583)
+
+Authors: [Lifeng Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+L), [Gareth J.F. Jones](https://arxiv.org/search/cs?searchtype=author&query=Jones%2C+G+J), [Alan F. Smeaton](https://arxiv.org/search/cs?searchtype=author&query=Smeaton%2C+A+F)
+
+> Multi-word expressions (MWEs) are a hot topic in research in natural language processing (NLP), including topics such as MWE detection, MWE decomposition, and research investigating the exploitation of MWEs in other NLP fields such as Machine Translation. However, the availability of bilingual or multi-lingual MWE corpora is very limited. The only bilingual MWE corpora that we are aware of is from the PARSEME (PARSing and Multi-word Expressions) EU Project. This is a small collection of only 871 pairs of English-German MWEs. In this paper, we present multi-lingual and bilingual MWE corpora that we have extracted from root parallel corpora. Our collections are 3,159,226 and 143,042 bilingual MWE pairs for German-English and Chinese-English respectively after filtering. We examine the quality of these extracted bilingual MWEs in MT experiments. Our initial experiments applying MWEs in MT show improved translation performances on MWE terms in qualitative analysis and better general evaluation scores in quantitative analysis, on both German-English and Chinese-English language pairs. We follow a standard experimental pipeline to create our MultiMWE corpora which are available online. Researchers can use this free corpus for their own models or use them in a knowledge base as model features.
+
+| Comments: | Accepted to LREC2020                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2005.10583](https://arxiv.org/abs/2005.10583) [cs.CL]** |
+|           | (or **[arXiv:2005.10583v1](https://arxiv.org/abs/2005.10583v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-22-3">3. Unsupervised Quality Estimation for Neural Machine Translation</h2>
+
+Title: [Unsupervised Quality Estimation for Neural Machine Translation](https://arxiv.org/abs/2005.10608)
+
+Authors: [Marina Fomicheva](https://arxiv.org/search/cs?searchtype=author&query=Fomicheva%2C+M), [Shuo Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+S), [Lisa Yankovskaya](https://arxiv.org/search/cs?searchtype=author&query=Yankovskaya%2C+L), [Frédéric Blain](https://arxiv.org/search/cs?searchtype=author&query=Blain%2C+F), [Francisco Guzmán](https://arxiv.org/search/cs?searchtype=author&query=Guzmán%2C+F), [Mark Fishel](https://arxiv.org/search/cs?searchtype=author&query=Fishel%2C+M), [Nikolaos Aletras](https://arxiv.org/search/cs?searchtype=author&query=Aletras%2C+N), [Vishrav Chaudhary](https://arxiv.org/search/cs?searchtype=author&query=Chaudhary%2C+V), [Lucia Specia](https://arxiv.org/search/cs?searchtype=author&query=Specia%2C+L)
+
+> Quality Estimation (QE) is an important component in making Machine Translation (MT) useful in real-world applications, as it is aimed to inform the user on the quality of the MT output at test time. Existing approaches require large amounts of expert annotated data, computation and time for training. As an alternative, we devise an unsupervised approach to QE where no training or access to additional resources besides the MT system itself is required. Different from most of the current work that treats the MT system as a black box, we explore useful information that can be extracted from the MT system as a by-product of translation. By employing methods for uncertainty quantification, we achieve very good correlation with human judgments of quality, rivalling state-of-the-art supervised QE models. To evaluate our approach we collect the first dataset that enables work on both black-box and glass-box approaches to QE.
+
+| Comments: | Accepted for publication in TACL                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2005.10608](https://arxiv.org/abs/2005.10608) [cs.CL]** |
+|           | (or **[arXiv:2005.10608v1](https://arxiv.org/abs/2005.10608v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-22-4">4. Worse WER, but Better BLEU? Leveraging Word Embedding as Intermediate in Multitask End-to-End Speech Translation</h2>
+
+Title: [Worse WER, but Better BLEU? Leveraging Word Embedding as Intermediate in Multitask End-to-End Speech Translation](https://arxiv.org/abs/2005.10678)
+
+Authors: [Shun-Po Chuang](https://arxiv.org/search/cs?searchtype=author&query=Chuang%2C+S), [Tzu-Wei Sung](https://arxiv.org/search/cs?searchtype=author&query=Sung%2C+T), [Alexander H. Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+A+H), [Hung-yi Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+H)
+
+> Speech translation (ST) aims to learn transformations from speech in the source language to the text in the target language. Previous works show that multitask learning improves the ST performance, in which the recognition decoder generates the text of the source language, and the translation decoder obtains the final translations based on the output of the recognition decoder. Because whether the output of the recognition decoder has the correct semantics is more critical than its accuracy, we propose to improve the multitask ST model by utilizing word embedding as the intermediate.
+
+| Comments: | Accepted by ACL 2020                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2005.10678](https://arxiv.org/abs/2005.10678) [cs.CL]** |
+|           | (or **[arXiv:2005.10678v1](https://arxiv.org/abs/2005.10678v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
