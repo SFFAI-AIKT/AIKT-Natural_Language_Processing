@@ -2,6 +2,9 @@
 
 # Index
 
+- [2020-05-25](#2020-05-25)
+  - [1. Simplify-then-Translate: Automatic Preprocessing for Black-Box Machine Translation](#2020-05-25-1)
+  - [2. Character-level Transformer-based Neural Machine Translation](#2020-05-25-2)
 - [2020-05-22](#2020-05-22)
   - [1. Is MAP Decoding All You Need? The Inadequacy of the Mode in Neural Machine Translation](#2020-05-22-1)
   - [2. MultiMWE: Building a Multi-lingual Multi-Word Expression (MWE) Parallel Corpora](#2020-05-22-2)
@@ -115,6 +118,50 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-05-25
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-05-25-1">1. Simplify-then-Translate: Automatic Preprocessing for Black-Box Machine Translation</h2>
+
+Title: [Simplify-then-Translate: Automatic Preprocessing for Black-Box Machine Translation](https://arxiv.org/abs/2005.11197)
+
+Authors: [Sneha Mehta](https://arxiv.org/search/cs?searchtype=author&query=Mehta%2C+S), [Bahareh Azarnoush](https://arxiv.org/search/cs?searchtype=author&query=Azarnoush%2C+B), [Boris Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+B), [Avneesh Saluja](https://arxiv.org/search/cs?searchtype=author&query=Saluja%2C+A), [Vinith Misra](https://arxiv.org/search/cs?searchtype=author&query=Misra%2C+V), [Ballav Bihani](https://arxiv.org/search/cs?searchtype=author&query=Bihani%2C+B), [Ritwik Kumar](https://arxiv.org/search/cs?searchtype=author&query=Kumar%2C+R)
+
+> Black-box machine translation systems have proven incredibly useful for a variety of applications yet by design are hard to adapt, tune to a specific domain, or build on top of. In this work, we introduce a method to improve such systems via automatic pre-processing (APP) using sentence simplification. We first propose a method to automatically generate a large in-domain paraphrase corpus through back-translation with a black-box MT system, which is used to train a paraphrase model that "simplifies" the original sentence to be more conducive for translation. The model is used to preprocess source sentences of multiple low-resource language pairs. We show that this preprocessing leads to better translation performance as compared to non-preprocessed source sentences. We further perform side-by-side human evaluation to verify that translations of the simplified sentences are better than the original ones. Finally, we provide some guidance on recommended language pairs for generating the simplification model corpora by investigating the relationship between ease of translation of a language pair (as measured by BLEU) and quality of the resulting simplification model from back-translations of this language pair (as measured by SARI), and tie this into the downstream task of low-resource translation.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2005.11197](https://arxiv.org/abs/2005.11197) [cs.CL]** |
+|           | (or **[arXiv:2005.11197v1](https://arxiv.org/abs/2005.11197v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-25-2">2. Character-level Transformer-based Neural Machine Translation</h2>
+
+Title: [Character-level Transformer-based Neural Machine Translation](https://arxiv.org/abs/2005.11239)
+
+Authors: [Nikolay Banar](https://arxiv.org/search/cs?searchtype=author&query=Banar%2C+N), [Walter Daelemans](https://arxiv.org/search/cs?searchtype=author&query=Daelemans%2C+W), [Mike Kestemont](https://arxiv.org/search/cs?searchtype=author&query=Kestemont%2C+M)
+
+> Neural machine translation (NMT) is nowadays commonly applied at the subword level, using byte-pair encoding. A promising alternative approach focuses on character-level translation, which simplifies processing pipelines in NMT considerably. This approach, however, must consider relatively longer sequences, rendering the training process prohibitively expensive. In this paper, we discuss a novel, Transformer-based approach, that we compare, both in speed and in quality to the Transformer at subword and character levels, as well as previously developed character-level models. We evaluate our models on 4 language pairs from WMT'15: DE-EN, CS-EN, FI-EN and RU-EN. The proposed novel architecture can be trained on a single GPU and is 34% percent faster than the character-level Transformer; still, the obtained results are at least on par with it. In addition, our proposed model outperforms the subword-level model in FI-EN and shows close results in CS-EN. To stimulate further research in this area and close the gap with subword-level NMT, we make all our code and models publicly available.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2005.11239](https://arxiv.org/abs/2005.11239) [cs.CL]** |
+|           | (or **[arXiv:2005.11239v1](https://arxiv.org/abs/2005.11239v1) [cs.CL]** for this version) |
+
+
+
+
+
+
 
 
 
