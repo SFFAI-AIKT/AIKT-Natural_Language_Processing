@@ -2,6 +2,9 @@
 
 # Index
 
+- [2020-05-26](#2020-05-26)
+  - [1. Stronger Baselines for Grammatical Error Correction Using Pretrained Encoder-Decoder Model](#2020-05-26-1)
+  - [2. ON-TRAC Consortium for End-to-End and Simultaneous Speech Translation Challenge Tasks at IWSLT 2020](#2020-05-26-2)
 - [2020-05-25](#2020-05-25)
   - [1. Simplify-then-Translate: Automatic Preprocessing for Black-Box Machine Translation](#2020-05-25-1)
   - [2. Character-level Transformer-based Neural Machine Translation](#2020-05-25-2)
@@ -118,6 +121,44 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-05-26
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-05-26-1">1. Stronger Baselines for Grammatical Error Correction Using Pretrained Encoder-Decoder Model</h2>
+
+Title: [Stronger Baselines for Grammatical Error Correction Using Pretrained Encoder-Decoder Model](https://arxiv.org/abs/2005.11849)
+
+Authors: [Satoru Katsumata](https://arxiv.org/search/cs?searchtype=author&query=Katsumata%2C+S), [Mamoru Komachi](https://arxiv.org/search/cs?searchtype=author&query=Komachi%2C+M)
+
+> Grammatical error correction (GEC) literature has reported on the effectiveness of pretraining a Seq2Seq model with a large amount of pseudo data. In this study, we explored two generic pretrained encoder-decoder (Enc-Dec) models, including BART, which reported the state-of-the-art (SOTA) results for several Seq2Seq tasks other than GEC. We found that monolingual and multilingual BART models achieve high performance in GEC, including a competitive result compared with the current SOTA result in English GEC. Our implementations will be publicly available at GitHub.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2005.11849](https://arxiv.org/abs/2005.11849) [cs.CL]** |
+|           | (or **[arXiv:2005.11849v1](https://arxiv.org/abs/2005.11849v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2020-05-26-2">2. ON-TRAC Consortium for End-to-End and Simultaneous Speech Translation Challenge Tasks at IWSLT 2020</h2>
+
+Title: [ON-TRAC Consortium for End-to-End and Simultaneous Speech Translation Challenge Tasks at IWSLT 2020](https://arxiv.org/abs/2005.11861)
+
+Authors: [Maha Elbayad](https://arxiv.org/search/cs?searchtype=author&query=Elbayad%2C+M), [Ha Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+H), [Fethi Bougares](https://arxiv.org/search/cs?searchtype=author&query=Bougares%2C+F), [Natalia Tomashenko](https://arxiv.org/search/cs?searchtype=author&query=Tomashenko%2C+N), [Antoine Caubrière](https://arxiv.org/search/cs?searchtype=author&query=Caubrière%2C+A), [Benjamin Lecouteux](https://arxiv.org/search/cs?searchtype=author&query=Lecouteux%2C+B), [Yannick Estève](https://arxiv.org/search/cs?searchtype=author&query=Estève%2C+Y), [Laurent Besacier](https://arxiv.org/search/cs?searchtype=author&query=Besacier%2C+L)
+
+> This paper describes the ON-TRAC Consortium translation systems developed for two challenge tracks featured in the Evaluation Campaign of IWSLT 2020, offline speech translation and simultaneous speech translation. ON-TRAC Consortium is composed of researchers from three French academic laboratories: LIA (Avignon Université), LIG (Université Grenoble Alpes), and LIUM (Le Mans Université). Attention-based encoder-decoder models, trained end-to-end, were used for our submissions to the offline speech translation track. Our contributions focused on data augmentation and ensembling of multiple models. In the simultaneous speech translation track, we build on Transformer-based wait-k models for the text-to-text subtask. For speech-to-text simultaneous translation, we attach a wait-k MT system to a hybrid ASR system. We propose an algorithm to control the latency of the ASR+MT cascade and achieve a good latency-quality trade-off on both subtasks.
+
+| Subjects: | **Computation and Language (cs.CL)**; Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2005.11861](https://arxiv.org/abs/2005.11861) [cs.CL]** |
+|           | (or **[arXiv:2005.11861v1](https://arxiv.org/abs/2005.11861v1) [cs.CL]** for this version) |
+
+
 
 
 
