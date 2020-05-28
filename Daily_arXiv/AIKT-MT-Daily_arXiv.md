@@ -2,6 +2,13 @@
 
 # Index
 
+- [2020-05-28](#2020-05-28)
+  - [1. A Study of Neural Matching Models for Cross-lingual IR](#2020-05-28-1)
+  - [2. English Intermediate-Task Training Improves Zero-Shot Cross-Lingual Transfer Too](#2020-05-28-2)
+  - [3. MT-Adapted Datasheets for Datasets: Template and Repository](#2020-05-28-3)
+- [2020-05-27](#2020-05-27)
+  - [1. The Unreasonable Volatility of Neural Machine Translation Models](#2020-05-27-1)
+  - [2. GECToR -- Grammatical Error Correction: Tag, Not Rewrite](#2020-05-27-2)
 - [2020-05-26](#2020-05-26)
   - [1. Stronger Baselines for Grammatical Error Correction Using Pretrained Encoder-Decoder Model](#2020-05-26-1)
   - [2. ON-TRAC Consortium for End-to-End and Simultaneous Speech Translation Challenge Tasks at IWSLT 2020](#2020-05-26-2)
@@ -121,6 +128,118 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-05-28
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-05-28-1">1. A Study of Neural Matching Models for Cross-lingual IR</h2>
+
+Title: [A Study of Neural Matching Models for Cross-lingual IR](https://arxiv.org/abs/2005.12994)
+
+Authors: [Puxuan Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+P), [James Allan](https://arxiv.org/search/cs?searchtype=author&query=Allan%2C+J)
+
+[Download PDF](https://arxiv.org/pdf/2005.12994)
+
+> Abstract: In this study, we investigate interaction-based neural matching models for ad-hoc cross-lingual information retrieval (CLIR) using cross-lingual word embeddings (CLWEs). With experiments conducted on the CLEF collection over four language pairs, we evaluate and provide insight into different neural model architectures, different ways to represent query-document interactions and word-pair similarity distributions in CLIR. This study paves the way for learning an end-to-end CLIR system using CLWEs.
+
+| Comments: | 4 pages, 1 figure, accepted at SIGIR'20                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | Information Retrieval (cs.IR); Computation and Language (cs.CL) |
+| DOI:      | [10.1145/3397271.3401322](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.1145%2F3397271.3401322&v=da4ea6bd) |
+| Cite as:  | [arXiv:2005.12994](https://arxiv.org/abs/2005.12994) [cs.IR] |
+|           | (or [arXiv:2005.12994v1](https://arxiv.org/abs/2005.12994v1) [cs.IR] for this version) |
+
+
+
+
+
+<h2 id="2020-05-28-2">2. English Intermediate-Task Training Improves Zero-Shot Cross-Lingual Transfer Too</h2>
+
+Title: [English Intermediate-Task Training Improves Zero-Shot Cross-Lingual Transfer Too](https://arxiv.org/abs/2005.13013)
+
+Authors: [Jason Phang](https://arxiv.org/search/cs?searchtype=author&query=Phang%2C+J), [Phu Mon Htut](https://arxiv.org/search/cs?searchtype=author&query=Htut%2C+P+M), [Yada Pruksachatkun](https://arxiv.org/search/cs?searchtype=author&query=Pruksachatkun%2C+Y), [Haokun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+H), [Clara Vania](https://arxiv.org/search/cs?searchtype=author&query=Vania%2C+C), [Katharina Kann](https://arxiv.org/search/cs?searchtype=author&query=Kann%2C+K), [Iacer Calixto](https://arxiv.org/search/cs?searchtype=author&query=Calixto%2C+I), [Samuel R. Bowman](https://arxiv.org/search/cs?searchtype=author&query=Bowman%2C+S+R)
+
+[Download PDF](https://arxiv.org/pdf/2005.13013)
+
+> Abstract: Intermediate-task training has been shown to substantially improve pretrained model performance on many language understanding tasks, at least in monolingual English settings. Here, we investigate whether English intermediate-task training is still helpful on non-English target tasks in a zero-shot cross-lingual setting. Using a set of 7 intermediate language understanding tasks, we evaluate intermediate-task transfer in a zero-shot cross-lingual setting on 9 target tasks from the XTREME benchmark. Intermediate-task training yields large improvements on the BUCC and Tatoeba tasks that use model representations directly without training, and moderate improvements on question-answering target tasks. Using SQuAD for intermediate training achieves the best results across target tasks, with an average improvement of 8.4 points on development sets. Selecting the best intermediate task model for each target task, we obtain a 6.1 point improvement over XLM-R Large on the XTREME benchmark, setting a new state of the art. Finally, we show that neither multi-task intermediate-task training nor continuing multilingual MLM during intermediate-task training offer significant improvements.
+
+| Subjects: | Computation and Language (cs.CL)                             |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2005.13013](https://arxiv.org/abs/2005.13013) [cs.CL] |
+|           | (or [arXiv:2005.13013v1](https://arxiv.org/abs/2005.13013v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-05-28-3">3. MT-Adapted Datasheets for Datasets: Template and Repository</h2>
+
+Title: [MT-Adapted Datasheets for Datasets: Template and Repository](https://arxiv.org/abs/2005.13156)
+
+Authors: [Marta R. Costa-jussà](https://arxiv.org/search/cs?searchtype=author&query=Costa-jussà%2C+M+R), [Roger Creus](https://arxiv.org/search/cs?searchtype=author&query=Creus%2C+R), [Oriol Domingo](https://arxiv.org/search/cs?searchtype=author&query=Domingo%2C+O), [Albert Domínguez](https://arxiv.org/search/cs?searchtype=author&query=Domínguez%2C+A), [Miquel Escobar](https://arxiv.org/search/cs?searchtype=author&query=Escobar%2C+M), [Cayetana López](https://arxiv.org/search/cs?searchtype=author&query=López%2C+C), [Marina Garcia](https://arxiv.org/search/cs?searchtype=author&query=Garcia%2C+M), [Margarita Geleta](https://arxiv.org/search/cs?searchtype=author&query=Geleta%2C+M)
+
+[Download PDF](https://arxiv.org/pdf/2005.13156)
+
+> Abstract: In this report we are taking the standardized model proposed by Gebru et al. (2018) for documenting the popular machine translation datasets of the EuroParl (Koehn, 2005) and News-Commentary (Barrault et al., 2019). Within this documentation process, we have adapted the original datasheet to the particular case of data consumers within the Machine Translation area. We are also proposing a repository for collecting the adapted datasheets in this research area
+
+| Subjects:    | Computation and Language (cs.CL)                             |
+| ------------ | ------------------------------------------------------------ |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | [arXiv:2005.13156](https://arxiv.org/abs/2005.13156) [cs.CL] |
+|              | (or [arXiv:2005.13156v1](https://arxiv.org/abs/2005.13156v1) [cs.CL] for this version) |
+
+
+
+
+
+
+
+# 2020-05-27
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-05-27-1">1. The Unreasonable Volatility of Neural Machine Translation Models</h2>
+
+Title: [The Unreasonable Volatility of Neural Machine Translation Models](https://arxiv.org/abs/2005.12398)
+
+Authors: [Marzieh Fadaee](https://arxiv.org/search/cs?searchtype=author&query=Fadaee%2C+M), [Christof Monz](https://arxiv.org/search/cs?searchtype=author&query=Monz%2C+C)
+
+> Recent works have shown that Neural Machine Translation (NMT) models achieve impressive performance, however, questions about understanding the behavior of these models remain unanswered. We investigate the unexpected volatility of NMT models where the input is semantically and syntactically correct. We discover that with trivial modifications of source sentences, we can identify cases where \textit{unexpected changes} happen in the translation and in the worst case lead to mistranslations. This volatile behavior of translating extremely similar sentences in surprisingly different ways highlights the underlying generalization problem of current NMT models. We find that both RNN and Transformer models display volatile behavior in 26% and 19% of sentence variations, respectively.
+
+| Comments: | Accepted to Neural Generation and Translation Workshop (WNGT) at ACL 2020 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2005.12398](https://arxiv.org/abs/2005.12398) [cs.CL]** |
+|           | (or **[arXiv:2005.12398v1](https://arxiv.org/abs/2005.12398v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-27-2">2. GECToR -- Grammatical Error Correction: Tag, Not Rewrite</h2>
+
+Title: [GECToR -- Grammatical Error Correction: Tag, Not Rewrite](https://arxiv.org/abs/2005.12592)
+
+Authors: [Kostiantyn Omelianchuk](https://arxiv.org/search/cs?searchtype=author&query=Omelianchuk%2C+K), [Vitaliy Atrasevych](https://arxiv.org/search/cs?searchtype=author&query=Atrasevych%2C+V), [Artem Chernodub](https://arxiv.org/search/cs?searchtype=author&query=Chernodub%2C+A), [Oleksandr Skurzhanskyi](https://arxiv.org/search/cs?searchtype=author&query=Skurzhanskyi%2C+O)
+
+> In this paper, we present a simple and efficient GEC sequence tagger using a Transformer encoder. Our system is pre-trained on synthetic data and then fine-tuned in two stages: first on errorful corpora, and second on a combination of errorful and error-free parallel corpora. We design custom token-level transformations to map input tokens to target corrections. Our best single-model/ensemble GEC tagger achieves an F0.5 of 65.3/66.5 on CoNLL-2014 (test) and F0.5 of 72.4/73.6 on BEA-2019 (test). Its inference speed is up to 10 times as fast as a Transformer-based seq2seq GEC system. The code and trained models are publicly available.
+
+| Comments: | Accepted for publication in BEA workshop (15th Workshop on Innovative Use of NLP for Building Educational Applications; co-located with ACL) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2005.12592](https://arxiv.org/abs/2005.12592) [cs.CL]** |
+|           | (or **[arXiv:2005.12592v1](https://arxiv.org/abs/2005.12592v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
