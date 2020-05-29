@@ -2,6 +2,11 @@
 
 # Index
 
+- [2020-05-29](#2020-05-29)
+  - [1. Phone Features Improve Speech Translation](#2020-05-29-1)
+  - [2. Variational Neural Machine Translation with Normalizing Flows](#2020-05-29-2)
+  - [3. Language (Technology) is Power: A Critical Survey of "Bias" in NLP](#2020-05-29-3)
+  - [4. Adversarial Attacks and Defense on Textual Data: A Review](#2020-05-29-4)
 - [2020-05-28](#2020-05-28)
   - [1. A Study of Neural Matching Models for Cross-lingual IR](#2020-05-28-1)
   - [2. English Intermediate-Task Training Improves Zero-Shot Cross-Lingual Transfer Too](#2020-05-28-2)
@@ -128,6 +133,86 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-05-29
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-05-29-1">1. Phone Features Improve Speech Translation</h2>
+
+Title: [Phone Features Improve Speech Translation](https://arxiv.org/abs/2005.13681)
+
+Authors: [Elizabeth Salesky](https://arxiv.org/search/cs?searchtype=author&query=Salesky%2C+E), [Alan W Black](https://arxiv.org/search/cs?searchtype=author&query=Black%2C+A+W)
+
+> End-to-end models for speech translation (ST) more tightly couple speech recognition (ASR) and machine translation (MT) than a traditional cascade of separate ASR and MT models, with simpler model architectures and the potential for reduced error propagation. Their performance is often assumed to be superior, though in many conditions this is not yet the case. We compare cascaded and end-to-end models across high, medium, and low-resource conditions, and show that cascades remain stronger baselines. Further, we introduce two methods to incorporate phone features into ST models. We show that these features improve both architectures, closing the gap between end-to-end models and cascades, and outperforming previous academic work -- by up to 9 BLEU on our low-resource setting.
+
+| Comments: | Accepted to ACL2020                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2005.13681](https://arxiv.org/abs/2005.13681) [cs.CL]** |
+|           | (or **[arXiv:2005.13681v1](https://arxiv.org/abs/2005.13681v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-29-2">2. Variational Neural Machine Translation with Normalizing Flows</h2>
+
+Title: [Variational Neural Machine Translation with Normalizing Flows](https://arxiv.org/abs/2005.13978)
+
+Authors: [Hendra Setiawan](https://arxiv.org/search/cs?searchtype=author&query=Setiawan%2C+H), [Matthias Sperber](https://arxiv.org/search/cs?searchtype=author&query=Sperber%2C+M), [Udhay Nallasamy](https://arxiv.org/search/cs?searchtype=author&query=Nallasamy%2C+U), [Matthias Paulik](https://arxiv.org/search/cs?searchtype=author&query=Paulik%2C+M)
+
+> Variational Neural Machine Translation (VNMT) is an attractive framework for modeling the generation of target translations, conditioned not only on the source sentence but also on some latent random variables. The latent variable modeling may introduce useful statistical dependencies that can improve translation accuracy. Unfortunately, learning informative latent variables is non-trivial, as the latent space can be prohibitively large, and the latent codes are prone to be ignored by many translation models at training time. Previous works impose strong assumptions on the distribution of the latent code and limit the choice of the NMT architecture. In this paper, we propose to apply the VNMT framework to the state-of-the-art Transformer and introduce a more flexible approximate posterior based on normalizing flows. We demonstrate the efficacy of our proposal under both in-domain and out-of-domain conditions, significantly outperforming strong baselines.
+
+| Comments: | To appear in 2020 Association for Computational Linguistics (ACL) as a short paper |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2005.13978](https://arxiv.org/abs/2005.13978) [cs.CL]** |
+|           | (or **[arXiv:2005.13978v1](https://arxiv.org/abs/2005.13978v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-29-3">3. Language (Technology) is Power: A Critical Survey of "Bias" in NLP</h2>
+
+Title: [Language (Technology) is Power: A Critical Survey of "Bias" in NLP](https://arxiv.org/abs/2005.14050)
+
+Authors: [Su Lin Blodgett](https://arxiv.org/search/cs?searchtype=author&query=Blodgett%2C+S+L), [Solon Barocas](https://arxiv.org/search/cs?searchtype=author&query=Barocas%2C+S), [Hal Daumé III](https://arxiv.org/search/cs?searchtype=author&query=III%2C+H+D), [Hanna Wallach](https://arxiv.org/search/cs?searchtype=author&query=Wallach%2C+H)
+
+> We survey 146 papers analyzing "bias" in NLP systems, finding that their motivations are often vague, inconsistent, and lacking in normative reasoning, despite the fact that analyzing "bias" is an inherently normative process. We further find that these papers' proposed quantitative techniques for measuring or mitigating "bias" are poorly matched to their motivations and do not engage with the relevant literature outside of NLP. Based on these findings, we describe the beginnings of a path forward by proposing three recommendations that should guide work analyzing "bias" in NLP systems. These recommendations rest on a greater recognition of the relationships between language and social hierarchies, encouraging researchers and practitioners to articulate their conceptualizations of "bias"---i.e., what kinds of system behaviors are harmful, in what ways, to whom, and why, as well as the normative reasoning underlying these statements---and to center work around the lived experiences of members of communities affected by NLP systems, while interrogating and reimagining the power relations between technologists and such communities.
+
+| Subjects: | **Computation and Language (cs.CL)**; Computers and Society (cs.CY) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2005.14050](https://arxiv.org/abs/2005.14050) [cs.CL]** |
+|           | (or **[arXiv:2005.14050v1](https://arxiv.org/abs/2005.14050v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-05-29-4">4. Adversarial Attacks and Defense on Textual Data: A Review</h2>
+
+Title: [Adversarial Attacks and Defense on Textual Data: A Review](https://arxiv.org/abs/2005.14108)
+
+Authors: [Aminul Huq](https://arxiv.org/search/cs?searchtype=author&query=Huq%2C+A), [Mst. Tasnim Pervin](https://arxiv.org/search/cs?searchtype=author&query=Pervin%2C+M+T)
+
+> Deep leaning models have been used widely for various purposes in recent years in object recognition, self-driving cars, face recognition, speech recognition, sentiment analysis and many others. However, in recent years it has been shown that these models possess weakness to noises which forces the model to misclassify. This issue has been studied profoundly in image and audio domain. Very little has been studied on this issue with respect to textual data. Even less survey on this topic has been performed to understand different types of attacks and defense techniques. In this manuscript we accumulated and analyzed different attacking techniques, various defense models on how to overcome this issue in order to provide a more comprehensive idea. Later we point out some of the interesting findings of all papers and challenges that need to be overcome in order to move forward in this field.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2005.14108](https://arxiv.org/abs/2005.14108) [cs.CL]** |
+|           | (or **[arXiv:2005.14108v1](https://arxiv.org/abs/2005.14108v1) [cs.CL]** for this version) |
+
+
+
+
+
+
 
 
 
