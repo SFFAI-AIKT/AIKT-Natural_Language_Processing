@@ -14,7 +14,8 @@
   - [7. Is 42 the Answer to Everything in Subtitling-oriented Speech Translation?](#2020-06-02-7)
   - [8. Cascaded Text Generation with Markov Transformers](#2020-06-02-8)
 - [2020-06-01](#2020-06-01)
-- [1. Massive Choice, Ample Tasks (MaChAmp):A Toolkit for Multi-task Learning in NLP](#2020-06-01-1)
+
+  - [1. Massive Choice, Ample Tasks (MaChAmp):A Toolkit for Multi-task Learning in NLP](#2020-06-01-1)
 - [2020-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2020-05.md)
 - [2020-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2020-04.md)
 - [2020-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2020-03.md)
