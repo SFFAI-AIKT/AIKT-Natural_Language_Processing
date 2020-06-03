@@ -3,9 +3,12 @@
 # Index
 
 
-- [2020-06-02](#2020-06-02)
+- [2020-06-03](#2020-06-03)
 
-  - [1. A Comparative Study of Lexical Substitution Approaches based on Neural Language Models](#2020-06-02-1)
+  - [1. WikiBERT models: deep transfer learning for many languages](#2020-06-03-1)
+  - [2. Training Multilingual Machine Translation by Alternately Freezing Language-Specific Encoders-Decoders](#2020-06-03-2)
+- [2020-06-02](#2020-06-02)
+- [1. A Comparative Study of Lexical Substitution Approaches based on Neural Language Models](#2020-06-02-1)
   - [2. Dynamic Masking for Improved Stability in Spoken Language Translation](#2020-06-02-2)
   - [3. Data Augmentation for Learning Bilingual Word Embeddings with Unsupervised Machine Translation](#2020-06-02-3)
   - [4. Neural Unsupervised Domain Adaptation in NLP---A Survey](#2020-06-02-4)
@@ -31,6 +34,49 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+
+
+# 2020-06-03
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-06-03-1">1. WikiBERT models: deep transfer learning for many languages</h2>
+
+Title: [WikiBERT models: deep transfer learning for many languages](https://arxiv.org/abs/2006.01538)
+
+Authors: [Sampo Pyysalo](https://arxiv.org/search/cs?searchtype=author&query=Pyysalo%2C+S), [Jenna Kanerva](https://arxiv.org/search/cs?searchtype=author&query=Kanerva%2C+J), [Antti Virtanen](https://arxiv.org/search/cs?searchtype=author&query=Virtanen%2C+A), [Filip Ginter](https://arxiv.org/search/cs?searchtype=author&query=Ginter%2C+F)
+
+> Deep neural language models such as BERT have enabled substantial recent advances in many natural language processing tasks. Due to the effort and computational cost involved in their pre-training, language-specific models are typically introduced only for a small number of high-resource languages such as English. While multilingual models covering large numbers of languages are available, recent work suggests monolingual training can produce better models, and our understanding of the tradeoffs between mono- and multilingual training is incomplete. In this paper, we introduce a simple, fully automated pipeline for creating language-specific BERT models from Wikipedia data and introduce 42 new such models, most for languages up to now lacking dedicated deep neural language models. We assess the merits of these models using the state-of-the-art UDify parser on Universal Dependencies data, contrasting performance with results using the multilingual BERT model. We find that UDify using WikiBERT models outperforms the parser using mBERT on average, with the language-specific models showing substantially improved performance for some languages, yet limited improvement or a decrease in performance for others. We also present preliminary results as first steps toward an understanding of the conditions under which language-specific models are most beneficial. All of the methods and models introduced in this work are available under open licenses from [this https URL](https://github.com/turkunlp/wikibert).
+
+| Comments: | 7 pages, 1 figure                                            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2006.01538](https://arxiv.org/abs/2006.01538) [cs.CL]** |
+|           | (or **[arXiv:2006.01538v1](https://arxiv.org/abs/2006.01538v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-03-2">2. Training Multilingual Machine Translation by Alternately Freezing Language-Specific Encoders-Decoders</h2>
+
+Title: [Training Multilingual Machine Translation by Alternately Freezing Language-Specific Encoders-Decoders](https://arxiv.org/abs/2006.01594)
+
+Authors: [Carlos Escolano](https://arxiv.org/search/cs?searchtype=author&query=Escolano%2C+C), [Marta R. Costa-jussà](https://arxiv.org/search/cs?searchtype=author&query=Costa-jussà%2C+M+R), [José A. R. Fonollosa](https://arxiv.org/search/cs?searchtype=author&query=Fonollosa%2C+J+A+R), [Mikel Artetxe](https://arxiv.org/search/cs?searchtype=author&query=Artetxe%2C+M)
+
+> We propose a modular architecture of language-specific encoder-decoders that constitutes a multilingual machine translation system that can be incrementally extended to new languages without the need for retraining the existing system when adding new languages. Differently from previous works, we simultaneously train N languages in all translation directions by alternately freezing encoder or decoder modules, which indirectly forces the system to train in a common intermediate representation for all languages. Experimental results from multilingual machine translation show that we can successfully train this modular architecture improving on the initial languages while falling slightly behind when adding new languages or doing zero-shot translation. Additional comparison of the quality of sentence representation in the task of natural language inference shows that the alternately freezing training is also beneficial in this direction.
+
+| Comments:    | arXiv admin note: text overlap with [arXiv:2004.06575](https://arxiv.org/abs/2004.06575) |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**                         |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2006.01594](https://arxiv.org/abs/2006.01594) [cs.CL]** |
+|              | (or **[arXiv:2006.01594v1](https://arxiv.org/abs/2006.01594v1) [cs.CL]** for this version) |
 
 
 
