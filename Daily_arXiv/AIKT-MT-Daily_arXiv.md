@@ -3,6 +3,12 @@
 # Index
 
 
+- [2020-06-04](#2020-06-04)
+
+  - [1. The Typology of Polysemy: A Multilingual Distributional Framework](#2020-06-01-1)
+  - [2. Norm-Based Curriculum Learning for Neural Machine Translation](#2020-06-01-2)
+  - [3. Multi-Agent Cross-Translated Diversification for Unsupervised Machine Translation](#2020-06-01-3)
+  - [4. Improved acoustic word embeddings for zero-resource languages using multilingual transfer](#2020-06-01-4)
 - [2020-06-03](#2020-06-03)
 
   - [1. WikiBERT models: deep transfer learning for many languages](#2020-06-03-1)
@@ -34,6 +40,83 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-06-04
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-06-04-1">1. The Typology of Polysemy: A Multilingual Distributional Framework</h2>
+
+Title: [The Typology of Polysemy: A Multilingual Distributional Framework](https://arxiv.org/abs/2006.01966)
+
+Authors: [Ella Rabinovich](https://arxiv.org/search/cs?searchtype=author&query=Rabinovich%2C+E), [Yang Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+Y), [Suzanne Stevenson](https://arxiv.org/search/cs?searchtype=author&query=Stevenson%2C+S)
+
+> Lexical semantic typology has identified important cross-linguistic generalizations about the variation and commonalities in polysemy patterns---how languages package up meanings into words. Recent computational research has enabled investigation of lexical semantics at a much larger scale, but little work has explored lexical typology across semantic domains, nor the factors that influence cross-linguistic similarities. We present a novel computational framework that quantifies semantic affinity, the cross-linguistic similarity of lexical semantics for a concept. Our approach defines a common multilingual semantic space that enables a direct comparison of the lexical expression of concepts across languages. We validate our framework against empirical findings on lexical semantic typology at both the concept and domain levels. Our results reveal an intricate interaction between semantic domains and extra-linguistic factors, beyond language phylogeny, that co-shape the typology of polysemy across languages.
+
+| Comments: | CogSci 2020 (Annual Meeting of the Cognitive Science Society) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2006.01966](https://arxiv.org/abs/2006.01966) [cs.CL]** |
+|           | (or **[arXiv:2006.01966v1](https://arxiv.org/abs/2006.01966v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-04-2">2. Norm-Based Curriculum Learning for Neural Machine Translation</h2>
+
+Title: [Norm-Based Curriculum Learning for Neural Machine Translation](https://arxiv.org/abs/2006.02014)
+
+Authors: [Xuebo Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Houtim Lai](https://arxiv.org/search/cs?searchtype=author&query=Lai%2C+H), [Derek F. Wong](https://arxiv.org/search/cs?searchtype=author&query=Wong%2C+D+F), [Lidia S. Chao](https://arxiv.org/search/cs?searchtype=author&query=Chao%2C+L+S)
+
+> A neural machine translation (NMT) system is expensive to train, especially with high-resource settings. As the NMT architectures become deeper and wider, this issue gets worse and worse. In this paper, we aim to improve the efficiency of training an NMT by introducing a novel norm-based curriculum learning method. We use the norm (aka length or module) of a word embedding as a measure of 1) the difficulty of the sentence, 2) the competence of the model, and 3) the weight of the sentence. The norm-based sentence difficulty takes the advantages of both linguistically motivated and model-based sentence difficulties. It is easy to determine and contains learning-dependent features. The norm-based model competence makes NMT learn the curriculum in a fully automated way, while the norm-based sentence weight further enhances the learning of the vector representation of the NMT. Experimental results for the WMT'14 English-German and WMT'17 Chinese-English translation tasks demonstrate that the proposed method outperforms strong baselines in terms of BLEU score (+1.17/+1.56) and training speedup (2.22x/3.33x).
+
+| Comments: | Accepted to ACL 2020                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2006.02014](https://arxiv.org/abs/2006.02014) [cs.CL]** |
+|           | (or **[arXiv:2006.02014v1](https://arxiv.org/abs/2006.02014v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-04-3">3. Multi-Agent Cross-Translated Diversification for Unsupervised Machine Translation</h2>
+
+Title: [Multi-Agent Cross-Translated Diversification for Unsupervised Machine Translation](https://arxiv.org/abs/2006.02163)
+
+Authors: [Xuan-Phi Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+X), [Shafiq Joty](https://arxiv.org/search/cs?searchtype=author&query=Joty%2C+S), [Wu Kui](https://arxiv.org/search/cs?searchtype=author&query=Kui%2C+W), [Ai Ti Aw](https://arxiv.org/search/cs?searchtype=author&query=Aw%2C+A+T)
+
+> Recent unsupervised machine translation (UMT) systems usually employ three main principles: initialization, language modeling and iterative back-translation, though they may apply these principles differently. This work introduces another component to this framework: Multi-Agent Cross-translated Diversification (MACD). The method trains multiple UMT agents and then translates monolingual data back and forth using non-duplicative agents to acquire synthetic parallel data for supervised MT. MACD is applicable to all previous UMT approaches. In our experiments, the technique boosts the performance for some commonly used UMT methods by 1.5-2.0 BLEU. In particular, in WMT'14 English-French, WMT'16 German-English and English-Romanian, MACD outperforms cross-lingual masked language model pretraining by 2.3, 2.2 and 1.6 BLEU, respectively. It also yields 1.5-3.3 BLEU improvements in IWSLT English-French and English-German translation tasks. Through extensive experimental analyses, we show that MACD is effective because it embraces data diversity while other similar variants do not.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2006.02163](https://arxiv.org/abs/2006.02163) [cs.CL]** |
+|           | (or **[arXiv:2006.02163v1](https://arxiv.org/abs/2006.02163v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-04-4">4. Improved acoustic word embeddings for zero-resource languages using multilingual transfer</h2>
+
+Title: [Improved acoustic word embeddings for zero-resource languages using multilingual transfer](https://arxiv.org/abs/2006.02295)
+
+Authors: [Herman Kamper](https://arxiv.org/search/cs?searchtype=author&query=Kamper%2C+H), [Yevgen Matusevych](https://arxiv.org/search/cs?searchtype=author&query=Matusevych%2C+Y), [Sharon Goldwater](https://arxiv.org/search/cs?searchtype=author&query=Goldwater%2C+S)
+
+> Acoustic word embeddings are fixed-dimensional representations of variable-length speech segments. Such embeddings can form the basis for speech search, indexing and discovery systems when conventional speech recognition is not possible. In zero-resource settings where unlabelled speech is the only available resource, we need a method that gives robust embeddings on an arbitrary language. Here we explore multilingual transfer: we train a single supervised embedding model on labelled data from multiple well-resourced languages and then apply it to unseen zero-resource languages. We consider three multilingual recurrent neural network (RNN) models: a classifier trained on the joint vocabularies of all training languages; a Siamese RNN trained to discriminate between same and different words from multiple languages; and a correspondence autoencoder (CAE) RNN trained to reconstruct word pairs. In a word discrimination task on six target languages, all of these models outperform state-of-the-art unsupervised models trained on the zero-resource languages themselves, giving relative improvements of more than 30% in average precision. When using only a few training languages, the multilingual CAE performs better, but with more training languages the other multilingual models perform similarly. Using more training languages is generally beneficial, but improvements are marginal on some languages. We present probing experiments which show that the CAE encodes more phonetic, word duration, language identity and speaker information than the other multilingual models.
+
+| Comments: | 11 pages, 7 figures, 8 tables. arXiv admin note: text overlap with [arXiv:2002.02109](https://arxiv.org/abs/2002.02109) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2006.02295](https://arxiv.org/abs/2006.02295) [cs.CL]** |
+|           | (or **[arXiv:2006.02295v1](https://arxiv.org/abs/2006.02295v1) [cs.CL]** for this version) |
+
+
 
 
 
