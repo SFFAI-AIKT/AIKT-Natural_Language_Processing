@@ -3,6 +3,14 @@
 # Index
 
 
+- [2020-06-05](#2020-06-05)
+
+  - [1. CSTNet: Contrastive Speech Translation Network for Self-Supervised Speech Representation Learning](#2020-06-05-1)
+  - [2. Self-Training for End-to-End Speech Translation](#2020-06-05-2)
+  - [3. M3P: Learning Universal Representations via Multitask Multilingual Multimodal Pre-training](#2020-06-05-3)
+  - [4. Using Self-Training to Improve Back-Translation in Low Resource Neural Machine Translation](#2020-06-05-4)
+  - [5. Personalizing Grammatical Error Correction: Adaptation to Proficiency Level and L1](#2020-06-05-5)
+  - [6. End-to-End Speech-Translation with Knowledge Distillation: FBK@IWSLT2020](#2020-06-05-6)
 - [2020-06-04](#2020-06-04)
 
   - [1. The Typology of Polysemy: A Multilingual Distributional Framework](#2020-06-01-1)
@@ -40,6 +48,125 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-06-05
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-06-05-1">1. CSTNet: Contrastive Speech Translation Network for Self-Supervised Speech Representation Learning</h2>
+
+Title: [CSTNet: Contrastive Speech Translation Network for Self-Supervised Speech Representation Learning](https://arxiv.org/abs/2006.02814)
+
+Authors: [Sameer Khurana](https://arxiv.org/search/eess?searchtype=author&query=Khurana%2C+S), [Antoine Laurent](https://arxiv.org/search/eess?searchtype=author&query=Laurent%2C+A), [James Glass](https://arxiv.org/search/eess?searchtype=author&query=Glass%2C+J)
+
+> More than half of the 7,000 languages in the world are in imminent danger of going extinct. Traditional methods of documenting language proceed by collecting audio data followed by manual annotation by trained linguists at different levels of granularity. This time consuming and painstaking process could benefit from machine learning. Many endangered languages do not have any orthographic form but usually have speakers that are bi-lingual and trained in a high resource language. It is relatively easy to obtain textual translations corresponding to speech. In this work, we provide a multimodal machine learning framework for speech representation learning by exploiting the correlations between the two modalities namely speech and its corresponding text translation. Here, we construct a convolutional neural network audio encoder capable of extracting linguistic representations from speech. The audio encoder is trained to perform a speech-translation retrieval task in a contrastive learning framework. By evaluating the learned representations on a phone recognition task, we demonstrate that linguistic representations emerge in the audio encoder's internal representations as a by-product of learning to perform the retrieval task.
+
+| Comments: | submitted to INTERSPEECH                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Machine Learning (cs.LG); Sound (cs.SD) |
+| Cite as:  | **[arXiv:2006.02814](https://arxiv.org/abs/2006.02814) [eess.AS]** |
+|           | (or **[arXiv:2006.02814v1](https://arxiv.org/abs/2006.02814v1) [eess.AS]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-05-2">2. Self-Training for End-to-End Speech Translation</h2>
+
+Title: [Self-Training for End-to-End Speech Translation](https://arxiv.org/abs/2006.02490)
+
+Authors: [Juan Pino](https://arxiv.org/search/cs?searchtype=author&query=Pino%2C+J), [Qiantong Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+Q), [Xutai Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+X), [Mohammad Javad Dousti](https://arxiv.org/search/cs?searchtype=author&query=Dousti%2C+M+J), [Yun Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+Y)
+
+> One of the main challenges for end-to-end speech translation is data scarcity. We leverage pseudo-labels generated from unlabeled audio by a cascade and an end-to-end speech translation model. This provides 8.3 and 5.7 BLEU gains over a strong semi-supervised baseline on the MuST-C English-French and English-German datasets, reaching state-of-the art performance. The effect of the quality of the pseudo-labels is investigated. Our approach is shown to be more effective than simply pre-training the encoder on the speech recognition task. Finally, we demonstrate the effectiveness of self-training by directly generating pseudo-labels with an end-to-end model instead of a cascade model.
+
+| Comments: | Submitted to INTERSPEECH 2020                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2006.02490](https://arxiv.org/abs/2006.02490) [cs.CL]** |
+|           | (or **[arXiv:2006.02490v1](https://arxiv.org/abs/2006.02490v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-05-3">3. M3P: Learning Universal Representations via Multitask Multilingual Multimodal Pre-training</h2>
+
+Title: [M3P: Learning Universal Representations via Multitask Multilingual Multimodal Pre-training](https://arxiv.org/abs/2006.02635)
+
+Authors: [Haoyang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+H), [Lin Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+L), [Di Qi](https://arxiv.org/search/cs?searchtype=author&query=Qi%2C+D), [Nan Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan%2C+N), [Edward Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+E), [Taroon Bharti](https://arxiv.org/search/cs?searchtype=author&query=Bharti%2C+T), [Lei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+L), [Lijuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Jianfeng Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+J), [Bei Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+B), [Jianlong Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+J), [Dongdong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+D), [Xin Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Ming Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+M)
+
+> This paper presents a Multitask Multilingual Multimodal Pre-trained model (M3P) that combines multilingual-monomodal pre-training and monolingual-multimodal pre-training into a unified framework via multitask learning and weight sharing. The model learns universal representations that can map objects that occurred in different modalities or expressed in different languages to vectors in a common semantic space. To verify the generalization capability of M3P, we fine-tune the pre-trained model for different types of downstream tasks: multilingual image-text retrieval, multilingual image captioning, multimodal machine translation, multilingual natural language inference and multilingual text generation. Evaluation shows that M3P can (i) achieve comparable results on multilingual tasks and English multimodal tasks, compared to the state-of-the-art models pre-trained for these two types of tasks separately, and (ii) obtain new state-of-the-art results on non-English multimodal tasks in the zero-shot or few-shot setting. We also build a new Multilingual Image-Language Dataset (MILD) by collecting large amounts of (text-query, image, context) triplets in 8 languages from the logs of a commercial search engine
+
+| Comments: | 10 pages,2 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2006.02635](https://arxiv.org/abs/2006.02635) [cs.CL]** |
+|           | (or **[arXiv:2006.02635v1](https://arxiv.org/abs/2006.02635v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-05-4">4. Using Self-Training to Improve Back-Translation in Low Resource Neural Machine Translation</h2>
+
+Title: [Using Self-Training to Improve Back-Translation in Low Resource Neural Machine Translation](https://arxiv.org/abs/2006.02876)
+
+Authors: [Idris Abdulmumin](https://arxiv.org/search/cs?searchtype=author&query=Abdulmumin%2C+I), [Bashir Shehu Galadanci](https://arxiv.org/search/cs?searchtype=author&query=Galadanci%2C+B+S), [Abubakar Isa](https://arxiv.org/search/cs?searchtype=author&query=Isa%2C+A)
+
+> Improving neural machine translation (NMT) models using the back-translations of the monolingual target data (synthetic parallel data) is currently the state-of-the-art approach for training improved translation systems. The quality of the backward system - which is trained on the available parallel data and used for the back-translation - has been shown in many studies to affect the performance of the final NMT model. In low resource conditions, the available parallel data is usually not enough to train a backward model that can produce the qualitative synthetic data needed to train a standard translation model. This work proposes a self-training strategy where the output of the backward model is used to improve the model itself through the forward translation technique. The technique was shown to improve baseline low resource IWSLT'14 English-German and IWSLT'15 English-Vietnamese backward translation models by 11.06 and 1.5 BLEUs respectively. The synthetic data generated by the improved English-German backward model was used to train a forward model which out-performed another forward model trained using standard back-translation by 2.7 BLEU.
+
+| Comments: | 8 pages, 5 figures, 4 tables                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2006.02876](https://arxiv.org/abs/2006.02876) [cs.CL]** |
+|           | (or **[arXiv:2006.02876v1](https://arxiv.org/abs/2006.02876v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-05-5">5. Personalizing Grammatical Error Correction: Adaptation to Proficiency Level and L1</h2>
+
+Title: [Personalizing Grammatical Error Correction: Adaptation to Proficiency Level and L1](https://arxiv.org/abs/2006.02964)
+
+Authors: [Maria Nadejde](https://arxiv.org/search/cs?searchtype=author&query=Nadejde%2C+M), [Joel Tetreault](https://arxiv.org/search/cs?searchtype=author&query=Tetreault%2C+J)
+
+> Grammar error correction (GEC) systems have become ubiquitous in a variety of software applications, and have started to approach human-level performance for some datasets. However, very little is known about how to efficiently personalize these systems to the user's characteristics, such as their proficiency level and first language, or to emerging domains of text. We present the first results on adapting a general-purpose neural GEC system to both the proficiency level and the first language of a writer, using only a few thousand annotated sentences. Our study is the broadest of its kind, covering five proficiency levels and twelve different languages, and comparing three different adaptation scenarios: adapting to the proficiency level only, to the first language only, or to both aspects simultaneously. We show that tailoring to both scenarios achieves the largest performance improvement (3.6 F0.5) relative to a strong baseline.
+
+| Comments:          | Proceedings of the 2019 EMNLP Workshop W-NUT: The 5th Workshop on Noisy User-generated Text |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| Journal reference: | Proceedings of the 2019 EMNLP Workshop W-NUT: The 5th Workshop on Noisy User-generated Text, pages 27-33, Hong Kong, Nov 4, 2019 |
+| Cite as:           | **[arXiv:2006.02964](https://arxiv.org/abs/2006.02964) [cs.CL]** |
+|                    | (or **[arXiv:2006.02964v1](https://arxiv.org/abs/2006.02964v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-05-6">6. End-to-End Speech-Translation with Knowledge Distillation: FBK@IWSLT2020</h2>
+
+Title: [End-to-End Speech-Translation with Knowledge Distillation: FBK@IWSLT2020](https://arxiv.org/abs/2006.02965)
+
+Authors: [Marco Gaido](https://arxiv.org/search/cs?searchtype=author&query=Gaido%2C+M), [Mattia Antonino Di Gangi](https://arxiv.org/search/cs?searchtype=author&query=Di+Gangi%2C+M+A), [Matteo Negri](https://arxiv.org/search/cs?searchtype=author&query=Negri%2C+M), [Marco Turchi](https://arxiv.org/search/cs?searchtype=author&query=Turchi%2C+M)
+
+> This paper describes FBK's participation in the IWSLT 2020 offline speech translation (ST) task. The task evaluates systems' ability to translate English TED talks audio into German texts. The test talks are provided in two versions: one contains the data already segmented with automatic tools and the other is the raw data without any segmentation. Participants can decide whether to work on custom segmentation or not. We used the provided segmentation. Our system is an end-to-end model based on an adaptation of the Transformer for speech data. Its training process is the main focus of this paper and it is based on: i) transfer learning (ASR pretraining and knowledge distillation), ii) data augmentation (SpecAugment, time stretch and synthetic data), iii) combining synthetic and real data marked as different domains, and iv) multi-task learning using the CTC loss. Finally, after the training with word-level knowledge distillation is complete, our ST models are fine-tuned using label smoothed cross entropy. Our best model scored 29 BLEU on the MuST-C En-De test set, which is an excellent result compared to recent papers, and 23.7 BLEU on the same data segmented with VAD, showing the need for researching solutions addressing this specific data condition.
+
+| Comments: | Accepted at IWSLT2020                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2006.02965](https://arxiv.org/abs/2006.02965) [cs.CL]** |
+|           | (or **[arXiv:2006.02965v1](https://arxiv.org/abs/2006.02965v1) [cs.CL]** for this version) |
+
+
+
+
+
+
 
 
 
