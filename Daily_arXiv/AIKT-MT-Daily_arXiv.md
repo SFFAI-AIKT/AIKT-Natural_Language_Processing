@@ -3,9 +3,14 @@
 # Index
 
 
-- [2020-06-05](#2020-06-05)
+- [2020-06-08](#2020-06-08)
 
-  - [1. CSTNet: Contrastive Speech Translation Network for Self-Supervised Speech Representation Learning](#2020-06-05-1)
+  - [1. Funnel-Transformer: Filtering out Sequential Redundancy for Efficient Language Processing](#2020-06-08-1)
+  - [2. GMAT: Global Memory Augmentation for Transformers](#2020-06-08-2)
+  - [3. ELITR Non-Native Speech Translation at IWSLT 2020](#2020-06-08-3)
+  - [4. Unsupervised Translation of Programming Languages](#2020-06-08-4)
+- [2020-06-05](#2020-06-05)
+- [1. CSTNet: Contrastive Speech Translation Network for Self-Supervised Speech Representation Learning](#2020-06-05-1)
   - [2. Self-Training for End-to-End Speech Translation](#2020-06-05-2)
   - [3. M3P: Learning Universal Representations via Multitask Multilingual Multimodal Pre-training](#2020-06-05-3)
   - [4. Using Self-Training to Improve Back-Translation in Low Resource Neural Machine Translation](#2020-06-05-4)
@@ -48,6 +53,85 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+
+
+# 2020-06-08
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-06-08-1">1. Funnel-Transformer: Filtering out Sequential Redundancy for Efficient Language Processing</h2>
+
+Title: [Funnel-Transformer: Filtering out Sequential Redundancy for Efficient Language Processing](https://arxiv.org/abs/2006.03236)
+
+Authors: [Zihang Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+Z), [Guokun Lai](https://arxiv.org/search/cs?searchtype=author&query=Lai%2C+G), [Yiming Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Quoc V. Le](https://arxiv.org/search/cs?searchtype=author&query=Le%2C+Q+V)
+
+> With the success of language pretraining, it is highly desirable to develop more efficient architectures of good scalability that can exploit the abundant unlabeled data at a lower cost. To improve the efficiency, we examine the much-overlooked redundancy in maintaining a full-length token-level presentation, especially for tasks that only require a single-vector presentation of the sequence. With this intuition, we propose Funnel-Transformer which gradually compresses the sequence of hidden states to a shorter one and hence reduces the computation cost. More importantly, by re-investing the saved FLOPs from length reduction in constructing a deeper or wider model, we further improve the model capacity. In addition, to perform token-level predictions as required by common pretraining objectives, Funnel-Transformer is able to recover a deep representation for each token from the reduced hidden sequence via a decoder. Empirically, with comparable or fewer FLOPs, Funnel-Transformer outperforms the standard Transformer on a wide variety of sequence-level prediction tasks, including text classification, language understanding, and reading comprehension. The code and pretrained checkpoints are available at [this https URL](https://github.com/laiguokun/Funnel-Transformer).
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2006.03236](https://arxiv.org/abs/2006.03236) [cs.LG]** |
+|           | (or **[arXiv:2006.03236v1](https://arxiv.org/abs/2006.03236v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-08-2">2. GMAT: Global Memory Augmentation for Transformers</h2>
+
+Title: [GMAT: Global Memory Augmentation for Transformers](https://arxiv.org/abs/2006.03274)
+
+Authors:[Ankit Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+A), [Jonathan Berant](https://arxiv.org/search/cs?searchtype=author&query=Berant%2C+J)
+
+> Transformer-based models have become ubiquitous in natural language processing thanks to their large capacity, innate parallelism and high performance. The contextualizing component of a Transformer block is the pairwise dot-product attention that has a large Ω(L2) memory requirement for length L sequences, limiting its ability to process long documents. This has been the subject of substantial interest recently, where multiple approximations were proposed to reduce the quadratic memory requirement using sparse attention matrices. In this work, we propose to augment sparse Transformer blocks with a dense attention-based global memory of length M (≪L) which provides an aggregate global view of the entire input sequence to each position. Our augmentation has a manageable O(M⋅(L+M)) memory overhead, and can be seamlessly integrated with prior sparse solutions. Moreover, global memory can also be used for sequence compression, by representing a long input sequence with the memory representations only. We empirically show that our method leads to substantial improvement on a range of tasks, including (a) synthetic tasks that require global reasoning, (b) masked language modeling, and (c) reading comprehension.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2006.03274](https://arxiv.org/abs/2006.03274) [cs.LG]** |
+|           | (or **[arXiv:2006.03274v1](https://arxiv.org/abs/2006.03274v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-08-3">3. ELITR Non-Native Speech Translation at IWSLT 2020</h2>
+
+Title: [ELITR Non-Native Speech Translation at IWSLT 2020](https://arxiv.org/abs/2006.03331)
+
+Authors: [Dominik Macháček](https://arxiv.org/search/cs?searchtype=author&query=Macháček%2C+D), [Jonáš Kratochvíl](https://arxiv.org/search/cs?searchtype=author&query=Kratochvíl%2C+J), [Sangeet Sagar](https://arxiv.org/search/cs?searchtype=author&query=Sagar%2C+S), [Matúš Žilinec](https://arxiv.org/search/cs?searchtype=author&query=Žilinec%2C+M), [Ondřej Bojar](https://arxiv.org/search/cs?searchtype=author&query=Bojar%2C+O), [Thai-Son Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+T), [Felix Schneider](https://arxiv.org/search/cs?searchtype=author&query=Schneider%2C+F), [Philip Williams](https://arxiv.org/search/cs?searchtype=author&query=Williams%2C+P), [Yuekun Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+Y)
+
+> This paper is an ELITR system submission for the non-native speech translation task at IWSLT 2020. We describe systems for offline ASR, real-time ASR, and our cascaded approach to offline SLT and real-time SLT. We select our primary candidates from a pool of pre-existing systems, develop a new end-to-end general ASR system, and a hybrid ASR trained on non-native speech. The provided small validation set prevents us from carrying out a complex validation, but we submit all the unselected candidates for contrastive evaluation on the test set.
+
+| Comments: | IWSLT 2020                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2006.03331](https://arxiv.org/abs/2006.03331) [cs.CL]** |
+|           | (or **[arXiv:2006.03331v1](https://arxiv.org/abs/2006.03331v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-08-4">4. Unsupervised Translation of Programming Languages</h2>
+
+Title: [Unsupervised Translation of Programming Languages](https://arxiv.org/abs/2006.03511)
+
+Authors: [Marie-Anne Lachaux](https://arxiv.org/search/cs?searchtype=author&query=Lachaux%2C+M), [Baptiste Roziere](https://arxiv.org/search/cs?searchtype=author&query=Roziere%2C+B), [Lowik Chanussot](https://arxiv.org/search/cs?searchtype=author&query=Chanussot%2C+L), [Guillaume Lample](https://arxiv.org/search/cs?searchtype=author&query=Lample%2C+G)
+
+> A transcompiler, also known as source-to-source translator, is a system that converts source code from a high-level programming language (such as C++ or Python) to another. Transcompilers are primarily used for interoperability, and to port codebases written in an obsolete or deprecated language (e.g. COBOL, Python 2) to a modern one. They typically rely on handcrafted rewrite rules, applied to the source code abstract syntax tree. Unfortunately, the resulting translations often lack readability, fail to respect the target language conventions, and require manual modifications in order to work properly. The overall translation process is timeconsuming and requires expertise in both the source and target languages, making code-translation projects expensive. Although neural models significantly outperform their rule-based counterparts in the context of natural language translation, their applications to transcompilation have been limited due to the scarcity of parallel data in this domain. In this paper, we propose to leverage recent approaches in unsupervised machine translation to train a fully unsupervised neural transcompiler. We train our model on source code from open source GitHub projects, and show that it can translate functions between C++, Java, and Python with high accuracy. Our method relies exclusively on monolingual source code, requires no expertise in the source or target languages, and can easily be generalized to other programming languages. We also build and release a test set composed of 852 parallel functions, along with unit tests to check the correctness of translations. We show that our model outperforms rule-based commercial baselines by a significant margin.
+
+| Subjects: | **Computation and Language (cs.CL)**; Programming Languages (cs.PL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2006.03511](https://arxiv.org/abs/2006.03511) [cs.CL]** |
+|           | (or **[arXiv:2006.03511v1](https://arxiv.org/abs/2006.03511v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
