@@ -3,6 +3,13 @@
 # Index
 
 
+- [2020-06-09](#2020-06-09)
+
+  - [1. Growing Together: Modeling Human Language Learning With n-Best Multi-Checkpoint Machine Translation](#2020-06-09-1)
+  - [2. Modeling Discourse Structure for Document-level Neural Machine Translation](#2020-06-09-2)
+  - [3. What's the Difference Between Professional Human and Machine Translation? A Blind Multi-language Study on Domain-specific MT](#2020-06-09-3)
+  - [4. Filtered Inner Product Projection for Multilingual Embedding Alignment](#2020-06-09-4)
+  - [5. DeBERTa: Decoding-enhanced BERT with Disentangled Attention](#2020-06-09-5)
 - [2020-06-08](#2020-06-08)
 
   - [1. Funnel-Transformer: Filtering out Sequential Redundancy for Efficient Language Processing](#2020-06-08-1)
@@ -53,6 +60,107 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-06-09
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-06-09-1">1. Growing Together: Modeling Human Language Learning With n-Best Multi-Checkpoint Machine Translation</h2>
+
+Title: [Growing Together: Modeling Human Language Learning With n-Best Multi-Checkpoint Machine Translation](https://arxiv.org/abs/2006.04050)
+
+Authors: [El Moatez Billah Nagoudi](https://arxiv.org/search/cs?searchtype=author&query=Nagoudi%2C+E+M+B), [Muhammad Abdul-Mageed](https://arxiv.org/search/cs?searchtype=author&query=Abdul-Mageed%2C+M), [Hasan Cavusoglu](https://arxiv.org/search/cs?searchtype=author&query=Cavusoglu%2C+H)
+
+> We describe our submission to the 2020 Duolingo Shared Task on Simultaneous Translation And Paraphrase for Language Education (STAPLE) (Mayhew et al., 2020). We view MT models at various training stages (i.e., checkpoints) as human learners at different levels. Hence, we employ an ensemble of multi-checkpoints from the same model to generate translation sequences with various levels of fluency. From each checkpoint, for our best model, we sample n-Best sequences (n=10) with a beam width =100. We achieve 37.57 macro F1 with a 6 checkpoint model ensemble on the official English to Portuguese shared task test data, outperforming a baseline Amazon translation system of 21.30 macro F1 and ultimately demonstrating the utility of our intuitive method.
+
+| Comments: | Accepted to the 4th Workshop on Neural Generation and Translation (Duolingo Shared Task on Simultaneous Translation And Paraphrase for Language Education Mayhew et al., 2020) collocated with ACL 2020 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| Cite as:  | **[arXiv:2006.04050](https://arxiv.org/abs/2006.04050) [cs.CL]** |
+|           | (or **[arXiv:2006.04050v1](https://arxiv.org/abs/2006.04050v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-09-2">2. Modeling Discourse Structure for Document-level Neural Machine Translation</h2>
+
+Title: [Modeling Discourse Structure for Document-level Neural Machine Translation](https://arxiv.org/abs/2006.04721)
+
+Authors: [Junxuan Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J), [Xiang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Jiarui Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Chulun Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+C), [Jianwei Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+J), [Bin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+B), [Jinsong Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+J)
+
+> Recently, document-level neural machine translation (NMT) has become a hot topic in the community of machine translation. Despite its success, most of existing studies ignored the discourse structure information of the input document to be translated, which has shown effective in other tasks. In this paper, we propose to improve document-level NMT with the aid of discourse structure information. Our encoder is based on a hierarchical attention network (HAN). Specifically, we first parse the input document to obtain its discourse structure. Then, we introduce a Transformer-based path encoder to embed the discourse structure information of each word. Finally, we combine the discourse structure information with the word embedding before it is fed into the encoder. Experimental results on the English-to-German dataset show that our model can significantly outperform both Transformer and Transformer+HAN.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2006.04721](https://arxiv.org/abs/2006.04721) [cs.CL]** |
+|           | (or **[arXiv:2006.04721v1](https://arxiv.org/abs/2006.04721v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-09-3">3. What's the Difference Between Professional Human and Machine Translation? A Blind Multi-language Study on Domain-specific MT</h2>
+
+Title: [What's the Difference Between Professional Human and Machine Translation? A Blind Multi-language Study on Domain-specific MT](https://arxiv.org/abs/2006.04781)
+
+Authors: [Lukas Fischer](https://arxiv.org/search/cs?searchtype=author&query=Fischer%2C+L), [Samuel Läubli](https://arxiv.org/search/cs?searchtype=author&query=Läubli%2C+S)
+
+> Machine translation (MT) has been shown to produce a number of errors that require human post-editing, but the extent to which professional human translation (HT) contains such errors has not yet been compared to MT. We compile pre-translated documents in which MT and HT are interleaved, and ask professional translators to flag errors and post-edit these documents in a blind evaluation. We find that the post-editing effort for MT segments is only higher in two out of three language pairs, and that the number of segments with wrong terminology, omissions, and typographical problems is similar in HT.
+
+| Comments: | EAMT 2020 (Research Track)                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2006.04781](https://arxiv.org/abs/2006.04781) [cs.CL]** |
+|           | (or **[arXiv:2006.04781v1](https://arxiv.org/abs/2006.04781v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-09-4">4. Filtered Inner Product Projection for Multilingual Embedding Alignment</h2>
+
+Title: [Filtered Inner Product Projection for Multilingual Embedding Alignment](https://arxiv.org/abs/2006.03652)
+
+Authors: [Vin Sachidananda](https://arxiv.org/search/cs?searchtype=author&query=Sachidananda%2C+V), [Ziyi Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Chenguang Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+C)
+
+> Due to widespread interest in machine translation and transfer learning, there are numerous algorithms for mapping multiple embeddings to a shared representation space. Recently, these algorithms have been studied in the setting of bilingual dictionary induction where one seeks to align the embeddings of a source and a target language such that translated word pairs lie close to one another in a common representation space. In this paper, we propose a method, Filtered Inner Product Projection (FIPP), for mapping embeddings to a common representation space and evaluate FIPP in the context of bilingual dictionary induction. As semantic shifts are pervasive across languages and domains, FIPP first identifies the common geometric structure in both embeddings and then, only on the common structure, aligns the Gram matrices of these embeddings. Unlike previous approaches, FIPP is applicable even when the source and target embeddings are of differing dimensionalities. We show that our approach outperforms existing methods on the MUSE dataset for various language pairs. Furthermore, FIPP provides computational benefits both in ease of implementation and scalability.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2006.03652](https://arxiv.org/abs/2006.03652) [cs.CL]** |
+|           | (or **[arXiv:2006.03652v1](https://arxiv.org/abs/2006.03652v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-09-5">5. DeBERTa: Decoding-enhanced BERT with Disentangled Attention</h2>
+
+Title: [DeBERTa: Decoding-enhanced BERT with Disentangled Attention](https://arxiv.org/abs/2006.03654)
+
+Authors: [Pengcheng He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+P), [Xiaodong Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Jianfeng Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+J), [Weizhu Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+W)
+
+> Recent progress in pre-trained neural language models has significantly improved the performance of many natural language processing (NLP) tasks. In this paper we propose a new model architecture DeBERTa (Decoding-enhanced BERT with disentangled attention) that improves the BERT and RoBERTa models using two novel techniques. The first is the disentangled attention mechanism, where each word is represented using two vectors that encode its content and position, respectively, and the attention weights among words are computed using disentangled matrices on their contents and relative positions. Second, an enhanced mask decoder is used to replace the output softmax layer to predict the masked tokens for model pretraining. We show that these two techniques significantly improve the efficiency of model pre-training and performance of downstream tasks. Compared to RoBERTa-Large, a DeBERTa model trained on half of the training data performs consistently better on a wide range of NLP tasks, achieving improvements on MNLI by +0.9% (90.2% vs. 91.1%), on SQuAD v2.0 by +2.3% (88.4% vs. 90.7%) and RACE by +3.6% (83.2% vs. 86.8%). The DeBERTa code and pre-trained models will be made publicly available at [this https URL](https://github.com/microsoft/DeBERTa).
+
+| Comments:    | 17 pages,4 figures, 8 tables                                 |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| ACM classes: | I.2; I.7                                                     |
+| Cite as:     | **[arXiv:2006.03654](https://arxiv.org/abs/2006.03654) [cs.CL]** |
+|              | (or **[arXiv:2006.03654v1](https://arxiv.org/abs/2006.03654v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+
 
 
 
