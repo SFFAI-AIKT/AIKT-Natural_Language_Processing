@@ -3,9 +3,19 @@
 # Index
 
 
-- [2020-06-09](#2020-06-09)
+- [2020-06-11](#2020-06-11)
 
-  - [1. Growing Together: Modeling Human Language Learning With n-Best Multi-Checkpoint Machine Translation](#2020-06-09-1)
+  - [1. Improving Cross-Lingual Transfer Learning for End-to-End Speech Recognition with Speech Translation](#2020-06-11-1)
+  - [2. Universal Vector Neural Machine Translation With Effective Attention](#2020-06-11-2)
+  - [3. HausaMT v1.0: Towards English-Hausa Neural Machine Translation](#2020-06-11-3)
+  - [4. Learning to Recover from Multi-Modality Errors for Non-Autoregressive Neural Machine Translation](#2020-06-11-4)
+  - [5. Unsupervised Paraphrase Generation using Pre-trained Language Models](#2020-06-11-5)
+  - [6. Data Augmentation for Training Dialog Models Robust to Speech Recognition Errors](#2020-06-11-6)
+  - [7. Position Masking for Language Models](#2020-06-11-7)
+  - [8. Gender in Danger? Evaluating Speech Translation Technology on the MuST-SHE Corpus](#2020-06-11-8)
+  - [9. Revisiting Few-sample BERT Fine-tuning](#2020-06-11-9)
+- [2020-06-09](#2020-06-09)
+- [1. Growing Together: Modeling Human Language Learning With n-Best Multi-Checkpoint Machine Translation](#2020-06-09-1)
   - [2. Modeling Discourse Structure for Document-level Neural Machine Translation](#2020-06-09-2)
   - [3. What's the Difference Between Professional Human and Machine Translation? A Blind Multi-language Study on Domain-specific MT](#2020-06-09-3)
   - [4. Filtered Inner Product Projection for Multilingual Embedding Alignment](#2020-06-09-4)
@@ -60,6 +70,178 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-06-11
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-06-11-1">1. Improving Cross-Lingual Transfer Learning for End-to-End Speech Recognition with Speech Translation</h2>
+
+Title: [Improving Cross-Lingual Transfer Learning for End-to-End Speech Recognition with Speech Translation](https://arxiv.org/abs/2006.05474)
+
+Authors: [Changhan Wang](https://arxiv.org/search/eess?searchtype=author&query=Wang%2C+C), [Juan Pino](https://arxiv.org/search/eess?searchtype=author&query=Pino%2C+J), [Jiatao Gu](https://arxiv.org/search/eess?searchtype=author&query=Gu%2C+J)
+
+> Transfer learning from high-resource languages is known to be an efficient way to improve end-to-end automatic speech recognition (ASR) for low-resource languages. Pre-trained or jointly trained encoder-decoder models, however, do not share the language modeling (decoder) for the same language, which is likely to be inefficient for distant target languages. We introduce speech-to-text translation (ST) as an auxiliary task to incorporate additional knowledge of the target language and enable transferring from that target language. Specifically, we first translate high-resource ASR transcripts into a target low-resource language, with which a ST model is trained. Both ST and target ASR share the same attention-based encoder-decoder architecture and vocabulary. The former task then provides a fully pre-trained model for the latter, bringing up to 24.6% word error rate (WER) reduction to the baseline (direct transfer from high-resource ASR). We show that training ST with human translations is not necessary. ST trained with machine translation (MT) pseudo-labels brings consistent gains. It can even outperform those using human labels when transferred to target ASR by leveraging only 500K MT examples. Even with pseudo-labels from low-resource MT (200K examples), ST-enhanced transfer brings up to 8.9% WER reduction to direct transfer.
+
+| Comments: | Submitted to INTERSPEECH 2020                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Sound (cs.SD) |
+| Cite as:  | **[arXiv:2006.05474](https://arxiv.org/abs/2006.05474) [eess.AS]** |
+|           | (or **[arXiv:2006.05474v1](https://arxiv.org/abs/2006.05474v1) [eess.AS]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-11-2">2. Universal Vector Neural Machine Translation With Effective Attention</h2>
+
+Title: [Universal Vector Neural Machine Translation With Effective Attention](https://arxiv.org/abs/2006.05003)
+
+Authors: [Satish Mylapore](https://arxiv.org/search/cs?searchtype=author&query=Mylapore%2C+S), [Ryan Quincy Paul](https://arxiv.org/search/cs?searchtype=author&query=Paul%2C+R+Q), [Joshua Yi](https://arxiv.org/search/cs?searchtype=author&query=Yi%2C+J), [Robert D. Slater](https://arxiv.org/search/cs?searchtype=author&query=Slater%2C+R+D)
+
+> Neural Machine Translation (NMT) leverages one or more trained neural networks for the translation of phrases. Sutskever introduced a sequence to sequence based encoder-decoder model which became the standard for NMT based systems. Attention mechanisms were later introduced to address the issues with the translation of long sentences and improving overall accuracy. In this paper, we propose a singular model for Neural Machine Translation based on encoder-decoder models. Most translation models are trained as one model for one translation. We introduce a neutral/universal model representation that can be used to predict more than one language depending on the source and a provided target. Secondly, we introduce an attention model by adding an overall learning vector to the multiplicative model. With these two changes, by using the novel universal model the number of models needed for multiple language translation applications are reduced.
+
+| Comments:          | 15pages, 3 figures                                           |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| Journal reference: | SMU Data Science Review: Vol. 3 : No. 1 , Article 10. Available at: https://scholar.smu.edu/datasciencereview/vol3/iss1/10 Year March 2020 |
+| Cite as:           | **[arXiv:2006.05003](https://arxiv.org/abs/2006.05003) [cs.CL]** |
+|                    | (or **[arXiv:2006.05003v1](https://arxiv.org/abs/2006.05003v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-11-3">3. HausaMT v1.0: Towards English-Hausa Neural Machine Translation</h2>
+
+Title: [HausaMT v1.0: Towards English-Hausa Neural Machine Translation](https://arxiv.org/abs/2006.05014)
+
+Authors: [Adewale Akinfaderin](https://arxiv.org/search/cs?searchtype=author&query=Akinfaderin%2C+A)
+
+> Neural Machine Translation (NMT) for low-resource languages suffers from low performance because of the lack of large amounts of parallel data and language diversity. To contribute to ameliorating this problem, we built a baseline model for English-Hausa machine translation, which is considered a task for low-resource language. The Hausa language is the second largest Afro-Asiatic language in the world after Arabic and it is the third largest language for trading across a larger swath of West Africa countries, after English and French. In this paper, we curated different datasets containing Hausa-English parallel corpus for our translation. We trained baseline models and evaluated the performance of our models using the Recurrent and Transformer encoder-decoder architecture with two tokenization approaches: standard word-level tokenization and Byte Pair Encoding (BPE) subword tokenization.
+
+| Comments: | Accepted at 4th Widening NLP Workshop, Annual Meeting of the Association for Computational Linguistics, ACL 2020 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2006.05014](https://arxiv.org/abs/2006.05014) [cs.CL]** |
+|           | (or **[arXiv:2006.05014v1](https://arxiv.org/abs/2006.05014v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-11-4">4. Learning to Recover from Multi-Modality Errors for Non-Autoregressive Neural Machine Translation</h2>
+
+Title: [Learning to Recover from Multi-Modality Errors for Non-Autoregressive Neural Machine Translation](https://arxiv.org/abs/2006.05165)
+
+Authors: [Qiu Ran](https://arxiv.org/search/cs?searchtype=author&query=Ran%2C+Q), [Yankai Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Y), [Peng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+P), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J)
+
+> Non-autoregressive neural machine translation (NAT) predicts the entire target sequence simultaneously and significantly accelerates inference process. However, NAT discards the dependency information in a sentence, and thus inevitably suffers from the multi-modality problem: the target tokens may be provided by different possible translations, often causing token repetitions or missing. To alleviate this problem, we propose a novel semi-autoregressive model RecoverSAT in this work, which generates a translation as a sequence of segments. The segments are generated simultaneously while each segment is predicted token-by-token. By dynamically determining segment length and deleting repetitive segments, RecoverSAT is capable of recovering from repetitive and missing token errors. Experimental results on three widely-used benchmark datasets show that our proposed model achieves more than 4× speedup while maintaining comparable performance compared with the corresponding autoregressive model.
+
+| Comments: | This work has been accepted for publication at ACL2020       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2006.05165](https://arxiv.org/abs/2006.05165) [cs.CL]** |
+|           | (or **[arXiv:2006.05165v1](https://arxiv.org/abs/2006.05165v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-11-5">5. Unsupervised Paraphrase Generation using Pre-trained Language Models</h2>
+
+Title: [Unsupervised Paraphrase Generation using Pre-trained Language Models](https://arxiv.org/abs/2006.05477)
+
+Authors: [Chaitra Hegde](https://arxiv.org/search/cs?searchtype=author&query=Hegde%2C+C), [Shrikumar Patil](https://arxiv.org/search/cs?searchtype=author&query=Patil%2C+S)
+
+> Large scale Pre-trained Language Models have proven to be very powerful approach in various Natural language tasks. OpenAI's GPT-2 \cite{radford2019language} is notable for its capability to generate fluent, well formulated, grammatically consistent text and for phrase completions. In this paper we leverage this generation capability of GPT-2 to generate paraphrases without any supervision from labelled data. We examine how the results compare with other supervised and unsupervised approaches and the effect of using paraphrases for data augmentation on downstream tasks such as classification. Our experiments show that paraphrases generated with our model are of good quality, are diverse and improves the downstream task performance when used for data augmentation.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2006.05477](https://arxiv.org/abs/2006.05477) [cs.CL]** |
+|           | (or **[arXiv:2006.05477v1](https://arxiv.org/abs/2006.05477v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-11-6">6. Data Augmentation for Training Dialog Models Robust to Speech Recognition Errors</h2>
+
+Title: [Data Augmentation for Training Dialog Models Robust to Speech Recognition Errors](https://arxiv.org/abs/2006.05635)
+
+Authors: [Longshaokan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Maryam Fazel-Zarandi](https://arxiv.org/search/cs?searchtype=author&query=Fazel-Zarandi%2C+M), [Aditya Tiwari](https://arxiv.org/search/cs?searchtype=author&query=Tiwari%2C+A), [Spyros Matsoukas](https://arxiv.org/search/cs?searchtype=author&query=Matsoukas%2C+S), [Lazaros Polymenakos](https://arxiv.org/search/cs?searchtype=author&query=Polymenakos%2C+L)
+
+> Speech-based virtual assistants, such as Amazon Alexa, Google assistant, and Apple Siri, typically convert users' audio signals to text data through automatic speech recognition (ASR) and feed the text to downstream dialog models for natural language understanding and response generation. The ASR output is error-prone; however, the downstream dialog models are often trained on error-free text data, making them sensitive to ASR errors during inference time. To bridge the gap and make dialog models more robust to ASR errors, we leverage an ASR error simulator to inject noise into the error-free text data, and subsequently train the dialog models with the augmented data. Compared to other approaches for handling ASR errors, such as using ASR lattice or end-to-end methods, our data augmentation approach does not require any modification to the ASR or downstream dialog models; our approach also does not introduce any additional latency during inference time. We perform extensive experiments on benchmark data and show that our approach improves the performance of downstream dialog models in the presence of ASR errors, and it is particularly effective in the low-resource situations where there are constraints on model size or the training data is scarce.
+
+| Comments: | To be presented at 2nd Workshop on NLP for ConvAI, ACL 2020  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2006.05635](https://arxiv.org/abs/2006.05635) [cs.CL]** |
+|           | (or **[arXiv:2006.05635v1](https://arxiv.org/abs/2006.05635v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-11-7">7. Position Masking for Language Models</h2>
+
+Title: [Position Masking for Language Models](https://arxiv.org/abs/2006.05676)
+
+Authors: [Andy Wagner](https://arxiv.org/search/cs?searchtype=author&query=Wagner%2C+A), [Tiyasa Mitra](https://arxiv.org/search/cs?searchtype=author&query=Mitra%2C+T), [Mrinal Iyer](https://arxiv.org/search/cs?searchtype=author&query=Iyer%2C+M), [Godfrey Da Costa](https://arxiv.org/search/cs?searchtype=author&query=Da+Costa%2C+G), [Marc Tremblay](https://arxiv.org/search/cs?searchtype=author&query=Tremblay%2C+M)
+
+> Masked language modeling (MLM) pre-training models such as BERT corrupt the input by replacing some tokens with [MASK] and then train a model to reconstruct the original tokens. This is an effective technique which has led to good results on all NLP benchmarks. We propose to expand upon this idea by masking the positions of some tokens along with the masked input token ids. We follow the same standard approach as BERT masking a percentage of the tokens positions and then predicting their original values using an additional fully connected classifier stage. This approach has shown good performance gains (.3\% improvement) for the SQUAD additional improvement in convergence times. For the Graphcore IPU the convergence of BERT Base with position masking requires only 50\% of the tokens from the original BERT paper.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2006.05676](https://arxiv.org/abs/2006.05676) [cs.CL]** |
+|           | (or **[arXiv:2006.05676v1](https://arxiv.org/abs/2006.05676v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-11-8">8. Gender in Danger? Evaluating Speech Translation Technology on the MuST-SHE Corpus</h2>
+
+Title: [Gender in Danger? Evaluating Speech Translation Technology on the MuST-SHE Corpus](https://arxiv.org/abs/2006.05754)
+
+Authors: [Luisa Bentivogli](https://arxiv.org/search/cs?searchtype=author&query=Bentivogli%2C+L), [Beatrice Savoldi](https://arxiv.org/search/cs?searchtype=author&query=Savoldi%2C+B), [Matteo Negri](https://arxiv.org/search/cs?searchtype=author&query=Negri%2C+M), [Mattia Antonino Di Gangi](https://arxiv.org/search/cs?searchtype=author&query=Di+Gangi%2C+M+A), [Roldano Cattoni](https://arxiv.org/search/cs?searchtype=author&query=Cattoni%2C+R), [Marco Turchi](https://arxiv.org/search/cs?searchtype=author&query=Turchi%2C+M)
+
+> Translating from languages without productive grammatical gender like English into gender-marked languages is a well-known difficulty for machines. This difficulty is also due to the fact that the training data on which models are built typically reflect the asymmetries of natural languages, gender bias included. Exclusively fed with textual data, machine translation is intrinsically constrained by the fact that the input sentence does not always contain clues about the gender identity of the referred human entities. But what happens with speech translation, where the input is an audio signal? Can audio provide additional information to reduce gender bias? We present the first thorough investigation of gender bias in speech translation, contributing with: i) the release of a benchmark useful for future studies, and ii) the comparison of different technologies (cascade and end-to-end) on two language directions (English-Italian/French).
+
+| Comments: | 9 pages of content, accepted at ACL 2020                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2006.05754](https://arxiv.org/abs/2006.05754) [cs.CL]** |
+|           | (or **[arXiv:2006.05754v1](https://arxiv.org/abs/2006.05754v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-11-9">9. Revisiting Few-sample BERT Fine-tuning</h2>
+
+Title: [Revisiting Few-sample BERT Fine-tuning](https://arxiv.org/abs/2006.05987)
+
+Authors: [Tianyi Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+T), [Felix Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+F), [Arzoo Katiyar](https://arxiv.org/search/cs?searchtype=author&query=Katiyar%2C+A), [Kilian Q. Weinberger](https://arxiv.org/search/cs?searchtype=author&query=Weinberger%2C+K+Q), [Yoav Artzi](https://arxiv.org/search/cs?searchtype=author&query=Artzi%2C+Y)
+
+> We study the problem of few-sample fine-tuning of BERT contextual representations, and identify three sub-optimal choices in current, broadly adopted practices. First, we observe that the omission of the gradient bias correction in the \bertadam optimizer results in fine-tuning instability. We also find that parts of the BERT network provide a detrimental starting point for fine-tuning, and simply re-initializing these layers speeds up learning and improves performance. Finally, we study the effect of training time, and observe that commonly used recipes often do not allocate sufficient time for training. In light of these findings, we re-visit recently proposed methods to improve few-sample fine-tuning with BERT and re-evaluate their effectiveness. Generally, we observe a decrease in their relative impact when modifying the fine-tuning process based on our findings.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2006.05987](https://arxiv.org/abs/2006.05987) [cs.CL]** |
+|           | (or **[arXiv:2006.05987v1](https://arxiv.org/abs/2006.05987v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+
 
 
 
