@@ -3,6 +3,29 @@
 # Index
 
 
+- [2020-06-17](#2020-06-17)
+
+  - [1. AVLnet: Learning Audio-Visual Language Representations from Instructional Videos](#2020-06-17-1)
+  - [2. Scalable Cross Lingual Pivots to Model Pronoun Gender for Translation](#2020-06-17-2)
+  - [3. PERL: Pivot-based Domain Adaptation for Pre-trained Deep Contextualized Embedding Models](#2020-06-17-3)
+  - [4. FFR v1.1: Fon-French Neural Machine Translation](#2020-06-17-4)
+- [2020-06-16](#2020-06-16)
+
+  - [1. UWSpeech: Speech to Speech Translation for Unwritten Languages](#2020-06-16-1)
+  - [2. Regularized Forward-Backward Decoder for Attention Models](#2020-06-16-2)
+  - [3. FinEst BERT and CroSloEngual BERT: less is more in multilingual models](#2020-06-16-3)
+  - [4. Fine-grained Human Evaluation of Transformer and Recurrent Approaches to Neural Machine Translation for English-to-Chinese](#2020-06-16-4)
+  - [5. An Augmented Translation Technique for low Resource language pair: Sanskrit to Hindi translation](#2020-06-16-5)
+  - [6. Wat zei je? Detecting Out-of-Distribution Translations with Variational Transformers](#2020-06-16-6)
+- [2020-06-15](#2020-06-15)
+
+  - [1. NAS-Bench-NLP: Neural Architecture Search Benchmark for Natural Language Processing](#2020-06-15-1)
+  - [2. Sparse and Continuous Attention Mechanisms](#2020-06-15-2)
+  - [3. Low-resource Languages: A Review of Past Work and Future Challenges](#2020-06-15-3)
+- [2020-06-12](#2020-06-12)
+
+  - [1. Tangled up in BLEU: Reevaluating the Evaluation of Automatic Machine Translation Evaluation Metrics](#2020-06-12-1)
+  - [2. CoSDA-ML: Multi-Lingual Code-Switching Data Augmentation for Zero-Shot Cross-Lingual NLP](#2020-06-12-2)
 - [2020-06-11](#2020-06-11)
 
   - [1. Improving Cross-Lingual Transfer Learning for End-to-End Speech Recognition with Speech Translation](#2020-06-11-1)
@@ -70,6 +93,302 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-06-17
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-06-17-1">1. AVLnet: Learning Audio-Visual Language Representations from Instructional Videos</h2>
+
+Title: [AVLnet: Learning Audio-Visual Language Representations from Instructional Videos](https://arxiv.org/abs/2006.09199)
+
+Authors: [Andrew Rouditchenko](https://arxiv.org/search/cs?searchtype=author&query=Rouditchenko%2C+A), [Angie Boggust](https://arxiv.org/search/cs?searchtype=author&query=Boggust%2C+A), [David Harwath](https://arxiv.org/search/cs?searchtype=author&query=Harwath%2C+D), [Dhiraj Joshi](https://arxiv.org/search/cs?searchtype=author&query=Joshi%2C+D), [Samuel Thomas](https://arxiv.org/search/cs?searchtype=author&query=Thomas%2C+S), [Kartik Audhkhasi](https://arxiv.org/search/cs?searchtype=author&query=Audhkhasi%2C+K), [Rogerio Feris](https://arxiv.org/search/cs?searchtype=author&query=Feris%2C+R), [Brian Kingsbury](https://arxiv.org/search/cs?searchtype=author&query=Kingsbury%2C+B), [Michael Picheny](https://arxiv.org/search/cs?searchtype=author&query=Picheny%2C+M), [Antonio Torralba](https://arxiv.org/search/cs?searchtype=author&query=Torralba%2C+A), [James Glass](https://arxiv.org/search/cs?searchtype=author&query=Glass%2C+J)
+
+> Current methods for learning visually grounded language from videos often rely on time-consuming and expensive data collection, such as human annotated textual summaries or machine generated automatic speech recognition transcripts. In this work, we introduce Audio-Video Language Network (AVLnet), a self-supervised network that learns a shared audio-visual embedding space directly from raw video inputs. We circumvent the need for annotation and instead learn audio-visual language representations directly from randomly segmented video clips and their raw audio waveforms. We train AVLnet on publicly available instructional videos and evaluate our model on video clip and language retrieval tasks on three video datasets. Our proposed model outperforms several state-of-the-art text-video baselines by up to 11.8% in a video clip retrieval task, despite operating on the raw audio instead of manually annotated text captions. Further, we show AVLnet is capable of integrating textual information, increasing its modularity and improving performance by up to 20.3% on the video clip retrieval task. Finally, we perform analysis of AVLnet's learned representations, showing our model has learned to relate visual objects with salient words and natural sounds.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Multimedia (cs.MM); Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2006.09199](https://arxiv.org/abs/2006.09199) [cs.CV]** |
+|           | (or **[arXiv:2006.09199v1](https://arxiv.org/abs/2006.09199v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-17-2">2. Scalable Cross Lingual Pivots to Model Pronoun Gender for Translation</h2>
+
+Title: [Scalable Cross Lingual Pivots to Model Pronoun Gender for Translation](https://arxiv.org/abs/2006.08881)
+
+Authors: [Kellie Webster](https://arxiv.org/search/cs?searchtype=author&query=Webster%2C+K), [Emily Pitler](https://arxiv.org/search/cs?searchtype=author&query=Pitler%2C+E)
+
+> Machine translation systems with inadequate document understanding can make errors when translating dropped or neutral pronouns into languages with gendered pronouns (e.g., English). Predicting the underlying gender of these pronouns is difficult since it is not marked textually and must instead be inferred from coreferent mentions in the context. We propose a novel cross-lingual pivoting technique for automatically producing high-quality gender labels, and show that this data can be used to fine-tune a BERT classifier with 92% F1 for Spanish dropped feminine pronouns, compared with 30-51% for neural machine translation models and 54-71% for a non-fine-tuned BERT model. We augment a neural machine translation model with labels from our classifier to improve pronoun translation, while still having parallelizable translation models that translate a sentence at a time.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2006.08881](https://arxiv.org/abs/2006.08881) [cs.CL]** |
+|           | (or **[arXiv:2006.08881v1](https://arxiv.org/abs/2006.08881v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-17-3">3. PERL: Pivot-based Domain Adaptation for Pre-trained Deep Contextualized Embedding Models</h2>
+
+Title: [PERL: Pivot-based Domain Adaptation for Pre-trained Deep Contextualized Embedding Models](https://arxiv.org/abs/2006.09075)
+
+Authors: [Eyal Ben-David](https://arxiv.org/search/cs?searchtype=author&query=Ben-David%2C+E), [Carmel Rabinovitz](https://arxiv.org/search/cs?searchtype=author&query=Rabinovitz%2C+C), [Roi Reichart](https://arxiv.org/search/cs?searchtype=author&query=Reichart%2C+R)
+
+> Pivot-based neural representation models have lead to significant progress in domain adaptation for NLP. However, previous works that follow this approach utilize only labeled data from the source domain and unlabeled data from the source and target domains, but neglect to incorporate massive unlabeled corpora that are not necessarily drawn from these domains. To alleviate this, we propose PERL: A representation learning model that extends contextualized word embedding models such as BERT with pivot-based fine-tuning. PERL outperforms strong baselines across 22 sentiment classification domain adaptation setups, improves in-domain model performance, yields effective reduced-size models and increases model stability.
+
+| Comments: | Accepted to TACL in June 2020                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2006.09075](https://arxiv.org/abs/2006.09075) [cs.CL]** |
+|           | (or **[arXiv:2006.09075v1](https://arxiv.org/abs/2006.09075v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-17-4">4. FFR v1.1: Fon-French Neural Machine Translation</h2>
+
+Title: [FFR v1.1: Fon-French Neural Machine Translation](https://arxiv.org/abs/2006.09217)
+
+Authors: [Bonaventure F. P. Dossou](https://arxiv.org/search/cs?searchtype=author&query=Dossou%2C+B+F+P), [Chris C. Emezue](https://arxiv.org/search/cs?searchtype=author&query=Emezue%2C+C+C)
+
+> All over the world and especially in Africa, researchers are putting efforts into building Neural Machine Translation (NMT) systems to help tackle the language barriers in Africa, a continent of over 2000 different languages. However, the low-resourceness, diacritical, and tonal complexities of African languages are major issues being faced. The FFR project is a major step towards creating a robust translation model from Fon, a very low-resource and tonal language, to French, for research and public use. In this paper, we introduce FFR Dataset, a corpus of Fon-to-French translations, describe the diacritical encoding process, and introduce our FFR v1.1 model, trained on the dataset. The dataset and model are made publicly available at [this https URL](https://github.com/) bonaventuredossou/ffr-v1, to promote collaboration and reproducibility.
+
+| Comments: | Accepted for publication at the Widening Natural Language Processing (WiNLP) Workshop, The 58th Annual Meeting of the Association for Computational Linguistics, 2020 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2006.09217](https://arxiv.org/abs/2006.09217) [cs.CL]** |
+|           | (or **[arXiv:2006.09217v1](https://arxiv.org/abs/2006.09217v1) [cs.CL]** for this version) |
+
+
+
+
+
+# 2020-06-16
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-06-16-1">1. UWSpeech: Speech to Speech Translation for Unwritten Languages</h2>
+
+Title: [UWSpeech: Speech to Speech Translation for Unwritten Languages](https://arxiv.org/abs/2006.07926)
+
+Authors: [Chen Zhang](https://arxiv.org/search/eess?searchtype=author&query=Zhang%2C+C), [Xu Tan](https://arxiv.org/search/eess?searchtype=author&query=Tan%2C+X), [Yi Ren](https://arxiv.org/search/eess?searchtype=author&query=Ren%2C+Y), [Tao Qin](https://arxiv.org/search/eess?searchtype=author&query=Qin%2C+T), [Kejun Zhang](https://arxiv.org/search/eess?searchtype=author&query=Zhang%2C+K), [Tie-Yan Liu](https://arxiv.org/search/eess?searchtype=author&query=Liu%2C+T)
+
+> Existing speech to speech translation systems heavily rely on the text of target language: they usually translate source language either to target text and then synthesize target speech from text, or directly to target speech with target text for auxiliary training. However, those methods cannot be applied to unwritten target languages, which have no written text or phoneme available. In this paper, we develop a translation system for unwritten languages, named as UWSpeech, which converts target unwritten speech into discrete tokens with a converter, and then translates source-language speech into target discrete tokens with a translator, and finally synthesizes target speech from target discrete tokens with an inverter. We propose a method called XL-VAE, which enhances vector quantized variational autoencoder (VQ-VAE) with cross-lingual (XL) speech recognition, to train the converter and inverter of UWSpeech jointly. Experiments on Fisher Spanish-English conversation translation dataset show that UWSpeech outperforms direct translation and VQ-VAE baseline by about 16 and 10 BLEU points respectively, which demonstrate the advantages and potentials of UWSpeech.
+
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2006.07926](https://arxiv.org/abs/2006.07926) [eess.AS]** |
+|           | (or **[arXiv:2006.07926v1](https://arxiv.org/abs/2006.07926v1) [eess.AS]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-16-2">2. Regularized Forward-Backward Decoder for Attention Models</h2>
+
+Title: [Regularized Forward-Backward Decoder for Attention Models](https://arxiv.org/abs/2006.08506)
+
+Authors: [Tobias Watzel](https://arxiv.org/search/eess?searchtype=author&query=Watzel%2C+T), [Ludwig Kürzinger](https://arxiv.org/search/eess?searchtype=author&query=Kürzinger%2C+L), [Lujun Li](https://arxiv.org/search/eess?searchtype=author&query=Li%2C+L), [Gerhard Rigoll](https://arxiv.org/search/eess?searchtype=author&query=Rigoll%2C+G)
+
+> Nowadays, attention models are one of the popular candidates for speech recognition. So far, many studies mainly focus on the encoder structure or the attention module to enhance the performance of these models. However, mostly ignore the decoder. In this paper, we propose a novel regularization technique incorporating a second decoder during the training phase. This decoder is optimized on time-reversed target labels beforehand and supports the standard decoder during training by adding knowledge from future context. Since it is only added during training, we are not changing the basic structure of the network or adding complexity during decoding. We evaluate our approach on the smaller TEDLIUMv2 and the larger LibriSpeech dataset, achieving consistent improvements on both of them.
+
+| Comments: | Under review for Interspeech 2020                            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2006.08506](https://arxiv.org/abs/2006.08506) [eess.AS]** |
+|           | (or **[arXiv:2006.08506v1](https://arxiv.org/abs/2006.08506v1) [eess.AS]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-16-3">3. FinEst BERT and CroSloEngual BERT: less is more in multilingual models</h2>
+
+Title: [FinEst BERT and CroSloEngual BERT: less is more in multilingual models](https://arxiv.org/abs/2006.07890)
+
+Authors: [Matej Ulčar](https://arxiv.org/search/cs?searchtype=author&query=Ulčar%2C+M), [Marko Robnik-Šikonja](https://arxiv.org/search/cs?searchtype=author&query=Robnik-Šikonja%2C+M)
+
+> Large pretrained masked language models have become state-of-the-art solutions for many NLP problems. The research has been mostly focused on English language, though. While massively multilingual models exist, studies have shown that monolingual models produce much better results. We train two trilingual BERT-like models, one for Finnish, Estonian, and English, the other for Croatian, Slovenian, and English. We evaluate their performance on several downstream tasks, NER, POS-tagging, and dependency parsing, using the multilingual BERT and XLM-R as baselines. The newly created FinEst BERT and CroSloEngual BERT improve the results on all tasks in most monolingual and cross-lingual situations
+
+| Comments: | 10 pages, accepted at TSD 2020 conference                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2006.07890](https://arxiv.org/abs/2006.07890) [cs.CL]** |
+|           | (or **[arXiv:2006.07890v1](https://arxiv.org/abs/2006.07890v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-16-4">4. Fine-grained Human Evaluation of Transformer and Recurrent Approaches to Neural Machine Translation for English-to-Chinese</h2>
+
+Title: [Fine-grained Human Evaluation of Transformer and Recurrent Approaches to Neural Machine Translation for English-to-Chinese](https://arxiv.org/abs/2006.08297)
+
+Authors: [Yuying Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+Y), [Antonio Toral](https://arxiv.org/search/cs?searchtype=author&query=Toral%2C+A)
+
+> This research presents a fine-grained human evaluation to compare the Transformer and recurrent approaches to neural machine translation (MT), on the translation direction English-to-Chinese. To this end, we develop an error taxonomy compliant with the Multidimensional Quality Metrics (MQM) framework that is customised to the relevant phenomena of this translation direction. We then conduct an error annotation using this customised error taxonomy on the output of state-of-the-art recurrent- and Transformer-based MT systems on a subset of WMT2019's news test set. The resulting annotation shows that, compared to the best recurrent system, the best Transformer system results in a 31% reduction of the total number of errors and it produced significantly less errors in 10 out of 22 error categories. We also note that two of the systems evaluated do not produce any error for a category that was relevant for this translation direction prior to the advent of NMT systems: Chinese classifiers.
+
+| Comments: | Accepted at the 22nd Annual Conference of the European Association for Machine Translation (EAMT 2020) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2006.08297](https://arxiv.org/abs/2006.08297) [cs.CL]** |
+|           | (or **[arXiv:2006.08297v1](https://arxiv.org/abs/2006.08297v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-16-5">5. 
+An Augmented Translation Technique for low Resource language pair: Sanskrit to Hindi translation</h2>
+
+Title: [An Augmented Translation Technique for low Resource language pair: Sanskrit to Hindi translation](https://arxiv.org/abs/2006.08332)
+
+Authors: [Rashi Kumar](https://arxiv.org/search/cs?searchtype=author&query=Kumar%2C+R), [Piyush Jha](https://arxiv.org/search/cs?searchtype=author&query=Jha%2C+P), [Vineet Sahula](https://arxiv.org/search/cs?searchtype=author&query=Sahula%2C+V)
+
+> Neural Machine Translation (NMT) is an ongoing technique for Machine Translation (MT) using enormous artificial neural network. It has exhibited promising outcomes and has shown incredible potential in solving challenging machine translation exercises. One such exercise is the best approach to furnish great MT to language sets with a little preparing information. In this work, Zero Shot Translation (ZST) is inspected for a low resource language pair. By working on high resource language pairs for which benchmarks are available, namely Spanish to Portuguese, and training on data sets (Spanish-English and English-Portuguese) we prepare a state of proof for ZST system that gives appropriate results on the available data. Subsequently the same architecture is tested for Sanskrit to Hindi translation for which data is sparse, by training the model on English-Hindi and Sanskrit-English language pairs. In order to prepare and decipher with ZST system, we broaden the preparation and interpretation pipelines of NMT seq2seq model in tensorflow, incorporating ZST features. Dimensionality reduction of word embedding is performed to reduce the memory usage for data storage and to achieve a faster training and translation cycles. In this work existing helpful technology has been utilized in an imaginative manner to execute our NLP issue of Sanskrit to Hindi translation. A Sanskrit-Hindi parallel corpus of 300 is constructed for testing. The data required for the construction of parallel corpus has been taken from the telecasted news, published on Department of Public Information, state government of Madhya Pradesh, India website.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| ACM classes:       | I.2.7                                                        |
+| Journal reference: | Proceedings of the 2019 2nd International Conference on Algorithms, Computing and Artificial Intelligence, December 2019, pp 377 to 383 |
+| DOI:               | [10.1145/3377713.3377774](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.1145%2F3377713.3377774&v=b5e67b3e) |
+| Cite as:           | **[arXiv:2006.08332](https://arxiv.org/abs/2006.08332) [cs.CL]** |
+|                    | (or **[arXiv:2006.08332v1](https://arxiv.org/abs/2006.08332v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-16-6">6. Wat zei je? Detecting Out-of-Distribution Translations with Variational Transformers</h2>
+
+Title: [Wat zei je? Detecting Out-of-Distribution Translations with Variational Transformers](https://arxiv.org/abs/2006.08344)
+
+Authors: [Tim Z. Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+T+Z), [Aidan N. Gomez](https://arxiv.org/search/cs?searchtype=author&query=Gomez%2C+A+N), [Yarin Gal](https://arxiv.org/search/cs?searchtype=author&query=Gal%2C+Y)
+
+> We detect out-of-training-distribution sentences in Neural Machine Translation using the Bayesian Deep Learning equivalent of Transformer models. For this we develop a new measure of uncertainty designed specifically for long sequences of discrete random variables -- i.e. words in the output sentence. Our new measure of uncertainty solves a major intractability in the naive application of existing approaches on long sentences. We use our new measure on a Transformer model trained with dropout approximate inference. On the task of German-English translation using WMT13 and Europarl, we show that with dropout uncertainty our measure is able to identify when Dutch source sentences, sentences which use the same word types as German, are given to the model instead of German.
+
+| Comments: | 19 pages, 9 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| Cite as:  | **[arXiv:2006.08344](https://arxiv.org/abs/2006.08344) [cs.CL]** |
+|           | (or **[arXiv:2006.08344v1](https://arxiv.org/abs/2006.08344v1) [cs.CL]** for this version) |
+
+
+
+
+
+# 2020-06-15
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-06-15-1">1. NAS-Bench-NLP: Neural Architecture Search Benchmark for Natural Language Processing</h2>
+
+Title: [NAS-Bench-NLP: Neural Architecture Search Benchmark for Natural Language Processing](https://arxiv.org/abs/2006.07116)
+
+Authors: [Nikita Klyuchnikov](https://arxiv.org/search/cs?searchtype=author&query=Klyuchnikov%2C+N), [Ilya Trofimov](https://arxiv.org/search/cs?searchtype=author&query=Trofimov%2C+I), [Ekaterina Artemova](https://arxiv.org/search/cs?searchtype=author&query=Artemova%2C+E), [Mikhail Salnikov](https://arxiv.org/search/cs?searchtype=author&query=Salnikov%2C+M), [Maxim Fedorov](https://arxiv.org/search/cs?searchtype=author&query=Fedorov%2C+M), [Evgeny Burnaev](https://arxiv.org/search/cs?searchtype=author&query=Burnaev%2C+E)
+
+> Neural Architecture Search (NAS) is a promising and rapidly evolving research area. Training a large number of neural networks requires an exceptional amount of computational power, which makes NAS unreachable for those researchers who have limited or no access to high-performance clusters and supercomputers. A few benchmarks with precomputed neural architectures performances have been recently introduced to overcome this problem and ensure more reproducible experiments. However, these benchmarks are only for the computer vision domain and, thus, are built from the image datasets and convolution-derived architectures. In this work, we step outside the computer vision domain by leveraging the language modeling task, which is the core of natural language processing (NLP). Our main contribution is as follows: we have provided search space of recurrent neural networks on the text datasets and trained 14k architectures within it; we have conducted both intrinsic and extrinsic evaluation of the trained models using datasets for semantic relatedness and language understanding evaluation; finally, we have tested several NAS algorithms to demonstrate how the precomputed results can be utilized. We believe that our results have high potential of usage for both NAS and NLP communities.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2006.07116](https://arxiv.org/abs/2006.07116) [cs.LG]** |
+|           | (or **[arXiv:2006.07116v1](https://arxiv.org/abs/2006.07116v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-15-2">2. Sparse and Continuous Attention Mechanisms</h2>
+
+Title: [Sparse and Continuous Attention Mechanisms](https://arxiv.org/abs/2006.07214)
+
+Authors: [André F. T. Martins](https://arxiv.org/search/cs?searchtype=author&query=Martins%2C+A+F+T), [Marcos Treviso](https://arxiv.org/search/cs?searchtype=author&query=Treviso%2C+M), [António Farinhas](https://arxiv.org/search/cs?searchtype=author&query=Farinhas%2C+A), [Vlad Niculae](https://arxiv.org/search/cs?searchtype=author&query=Niculae%2C+V), [Mário A. T. Figueiredo](https://arxiv.org/search/cs?searchtype=author&query=Figueiredo%2C+M+A+T), [Pedro M. Q. Aguiar](https://arxiv.org/search/cs?searchtype=author&query=Aguiar%2C+P+M+Q)
+
+> Exponential families are widely used in machine learning; they include many distributions in continuous and discrete domains (e.g., Gaussian, Dirichlet, Poisson, and categorical distributions via the softmax transformation). Distributions in each of these families have fixed support. In contrast, for finite domains, there has been recent work on sparse alternatives to softmax (e.g. sparsemax and alpha-entmax), which have varying support, being able to assign zero probability to irrelevant categories. This paper expands that work in two directions: first, we extend alpha-entmax to continuous domains, revealing a link with Tsallis statistics and deformed exponential families. Second, we introduce continuous-domain attention mechanisms, deriving efficient gradient backpropagation algorithms for alpha in {1,2}. Experiments on attention-based text classification, machine translation, and visual question answering illustrate the use of continuous attention in 1D and 2D, showing that it allows attending to time intervals and compact regions.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2006.07214](https://arxiv.org/abs/2006.07214) [cs.LG]** |
+|           | (or **[arXiv:2006.07214v1](https://arxiv.org/abs/2006.07214v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-15-3">3. Low-resource Languages: A Review of Past Work and Future Challenges</h2>
+
+Title: [Low-resource Languages: A Review of Past Work and Future Challenges]()
+
+Authors: [Alexandre Magueresse](https://arxiv.org/search/cs?searchtype=author&query=Magueresse%2C+A), [Vincent Carles](https://arxiv.org/search/cs?searchtype=author&query=Carles%2C+V), [Evan Heetderks](https://arxiv.org/search/cs?searchtype=author&query=Heetderks%2C+E)
+
+> A current problem in NLP is massaging and processing low-resource languages which lack useful training attributes such as supervised data, number of native speakers or experts, etc. This review paper concisely summarizes previous groundbreaking achievements made towards resolving this problem, and analyzes potential improvements in the context of the overall future research direction.
+
+| Subjects:    | **Computation and Language (cs.CL)**                         |
+| ------------ | ------------------------------------------------------------ |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2006.07264](https://arxiv.org/abs/2006.07264) [cs.CL]** |
+|              | (or **[arXiv:2006.07264v1](https://arxiv.org/abs/2006.07264v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+# 2020-06-12
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-06-12-1">1. Tangled up in BLEU: Reevaluating the Evaluation of Automatic Machine Translation Evaluation Metrics</h2>
+
+Title: [Tangled up in BLEU: Reevaluating the Evaluation of Automatic Machine Translation Evaluation Metrics](https://arxiv.org/abs/2006.06264)
+
+Authors: [Nitika Mathur](https://arxiv.org/search/cs?searchtype=author&query=Mathur%2C+N), [Timothy Baldwin](https://arxiv.org/search/cs?searchtype=author&query=Baldwin%2C+T), [Trevor Cohn](https://arxiv.org/search/cs?searchtype=author&query=Cohn%2C+T)
+
+> Automatic metrics are fundamental for the development and evaluation of machine translation systems. Judging whether, and to what extent, automatic metrics concur with the gold standard of human evaluation is not a straightforward problem. We show that current methods for judging metrics are highly sensitive to the translations used for assessment, particularly the presence of outliers, which often leads to falsely confident conclusions about a metric's efficacy. Finally, we turn to pairwise system ranking, developing a method for thresholding performance improvement under an automatic metric against human judgements, which allows quantification of type I versus type II errors incurred, i.e., insignificant human differences in system quality that are accepted, and significant human differences that are rejected. Together, these findings suggest improvements to the protocols for metric evaluation and system performance evaluation in machine translation.
+
+| Comments: | Accepted at ACL 2020                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2006.06264](https://arxiv.org/abs/2006.06264) [cs.CL]** |
+|           | (or **[arXiv:2006.06264v2](https://arxiv.org/abs/2006.06264v2) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-06-12-2">2. CoSDA-ML: Multi-Lingual Code-Switching Data Augmentation for Zero-Shot Cross-Lingual NLP</h2>
+
+Title: [CoSDA-ML: Multi-Lingual Code-Switching Data Augmentation for Zero-Shot Cross-Lingual NLP](https://arxiv.org/abs/2006.06402)
+
+Authors: [Libo Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+L), [Minheng Ni](https://arxiv.org/search/cs?searchtype=author&query=Ni%2C+M), [Yue Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Wanxiang Che](https://arxiv.org/search/cs?searchtype=author&query=Che%2C+W)
+
+> Multi-lingual contextualized embeddings, such as multilingual-BERT (mBERT), have shown success in a variety of zero-shot cross-lingual tasks. However, these models are limited by having inconsistent contextualized representations of subwords across different languages. Existing work addresses this issue by bilingual projection and fine-tuning technique. We propose a data augmentation framework to generate multi-lingual code-switching data to fine-tune mBERT, which encourages model to align representations from source and multiple target languages once by mixing their context information. Compared with the existing work, our method does not rely on bilingual sentences for training, and requires only one training process for multiple target languages. Experimental results on five tasks with 19 languages show that our method leads to significantly improved performances for all the tasks compared with mBERT.
+
+| Comments: | Accepted at IJCAI2020. SOLE copyright holder is IJCAI (international Joint Conferences on Artificial Intelligence), all rights reserved. [this http URL](http://static.ijcai.org/2020-accepted_papers.html) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2006.06402](https://arxiv.org/abs/2006.06402) [cs.CL]** |
+|           | (or **[arXiv:2006.06402v1](https://arxiv.org/abs/2006.06402v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
