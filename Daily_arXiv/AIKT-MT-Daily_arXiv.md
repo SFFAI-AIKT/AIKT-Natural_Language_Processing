@@ -3,6 +3,9 @@
 # Index
 
 
+- [2020-07-15](#2020-07-15)
+
+  - [1. Modeling Voting for System Combination in Machine Translation](#2020-07-15-1)
 - [2020-07-14](#2020-07-14)
 
   - [1. TERA: Self-Supervised Learning of Transformer Encoder Representation for Speech](#2020-07-14-1)
@@ -45,6 +48,33 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-07-15
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-07-15-1">1. Modeling Voting for System Combination in Machine Translation</h2>
+
+Title: [Modeling Voting for System Combination in Machine Translation](https://arxiv.org/abs/2007.06943)
+
+Authors: [Xuancheng Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+X), [Jiacheng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Zhixing Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+Z), [Derek F. Wong](https://arxiv.org/search/cs?searchtype=author&query=Wong%2C+D+F), [Huanbo Luan](https://arxiv.org/search/cs?searchtype=author&query=Luan%2C+H), [Jingfang Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+J), [Maosong Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y)
+
+> System combination is an important technique for combining the hypotheses of different machine translation systems to improve translation performance. Although early statistical approaches to system combination have been proven effective in analyzing the consensus between hypotheses, they suffer from the error propagation problem due to the use of pipelines. While this problem has been alleviated by end-to-end training of multi-source sequence-to-sequence models recently, these neural models do not explicitly analyze the relations between hypotheses and fail to capture their agreement because the attention to a word in a hypothesis is calculated independently, ignoring the fact that the word might occur in multiple hypotheses. In this work, we propose an approach to modeling voting for system combination in machine translation. The basic idea is to enable words in hypotheses from different systems to vote on words that are representative and should get involved in the generation process. This can be done by quantifying the influence of each voter and its preference for each candidate. Our approach combines the advantages of statistical and neural methods since it can not only analyze the relations between hypotheses but also allow for end-to-end training. Experiments show that our approach is capable of better taking advantage of the consensus between hypotheses and achieves significant improvements over state-of-the-art baselines on Chinese-English and English-German machine translation tasks.
+
+| Comments: | Accepted by main track of IJCAI2020;SOLE copyright holder is IJCAI (international Joint Conferences on Artificial Intelligence), all rights reserved. [this https URL](https://www.ijcai.org/Proceedings/2020/511) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| DOI:      | [10.24963/ijcai.2020/511](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.24963%2Fijcai.2020%2F511&v=3ced08f2) |
+| Cite as:  | **[arXiv:2007.06943](https://arxiv.org/abs/2007.06943) [cs.CL]** |
+|           | (or **[arXiv:2007.06943v1](https://arxiv.org/abs/2007.06943v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
