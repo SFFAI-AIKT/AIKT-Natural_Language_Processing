@@ -3,6 +3,14 @@
 # Index
 
 
+- [2020-07-16](#2020-07-16)
+
+  - [1. Deep learning models for representing out-of-vocabulary words](#2020-07-16-1)
+  - [2. A Multilingual Parallel Corpora Collection Effort for Indian Languages](#2020-07-16-2)
+  - [3. Dual Past and Future for Neural Machine Translation](#2020-07-16-3)
+  - [4. Multimodal Word Sense Disambiguation in Creative Practice](#2020-07-16-4)
+  - [5. AdapterHub: A Framework for Adapting Transformers](#2020-07-16-5)
+  - [6. InfoXLM: An Information-Theoretic Framework for Cross-Lingual Language Model Pre-Training](#2020-07-16-6)
 - [2020-07-15](#2020-07-15)
 
   - [1. Modeling Voting for System Combination in Machine Translation](#2020-07-15-1)
@@ -48,6 +56,118 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-07-16
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-07-16-1">1. Deep learning models for representing out-of-vocabulary words</h2>
+
+Title: [Deep learning models for representing out-of-vocabulary words](https://arxiv.org/abs/2007.07318)
+
+Authors: [Johannes V. Lochter](https://arxiv.org/search/cs?searchtype=author&query=Lochter%2C+J+V), [Renato M. Silva](https://arxiv.org/search/cs?searchtype=author&query=Silva%2C+R+M), [Tiago A. Almeida](https://arxiv.org/search/cs?searchtype=author&query=Almeida%2C+T+A)
+
+> Communication has become increasingly dynamic with the popularization of social networks and applications that allow people to express themselves and communicate instantly. In this scenario, distributed representation models have their quality impacted by new words that appear frequently or that are derived from spelling errors. These words that are unknown by the models, known as out-of-vocabulary (OOV) words, need to be properly handled to not degrade the quality of the natural language processing (NLP) applications, which depend on the appropriate vector representation of the texts. To better understand this problem and finding the best techniques to handle OOV words, in this study, we present a comprehensive performance evaluation of deep learning models for representing OOV words. We performed an intrinsic evaluation using a benchmark dataset and an extrinsic evaluation using different NLP tasks: text categorization, named entity recognition, and part-of-speech tagging. The results indicated that the best technique for handling OOV words can be different for each task. But, in general, deep learning models that infer the embedding based on the context and the morphological structure of the OOV word obtained promising results.
+
+| Comments: | Preprint of the paper accepted to presentation at the 9th Brazilian Conference on Intelligent Systems (BRACIS 2020) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2007.07318](https://arxiv.org/abs/2007.07318) [cs.CL]** |
+|           | (or **[arXiv:2007.07318v1](https://arxiv.org/abs/2007.07318v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-07-16-2">2. A Multilingual Parallel Corpora Collection Effort for Indian Languages</h2>
+
+Title: [A Multilingual Parallel Corpora Collection Effort for Indian Languages](https://arxiv.org/abs/2007.07691)
+
+Authors: [Shashank Siripragada](https://arxiv.org/search/cs?searchtype=author&query=Siripragada%2C+S), [Jerin Philip](https://arxiv.org/search/cs?searchtype=author&query=Philip%2C+J), [Vinay P. Namboodiri](https://arxiv.org/search/cs?searchtype=author&query=Namboodiri%2C+V+P), [C V Jawahar](https://arxiv.org/search/cs?searchtype=author&query=Jawahar%2C+C+V)
+
+> We present sentence aligned parallel corpora across 10 Indian Languages - Hindi, Telugu, Tamil, Malayalam, Gujarati, Urdu, Bengali, Oriya, Marathi, Punjabi, and English - many of which are categorized as low resource. The corpora are compiled from online sources which have content shared across languages. The corpora presented significantly extends present resources that are either not large enough or are restricted to a specific domain (such as health). We also provide a separate test corpus compiled from an independent online source that can be independently used for validating the performance in 10 Indian languages. Alongside, we report on the methods of constructing such corpora using tools enabled by recent advances in machine translation and cross-lingual retrieval using deep neural network based methods.
+
+| Comments: | 9 pages. Accepted in LREC 2020                               |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2007.07691](https://arxiv.org/abs/2007.07691) [cs.CL]** |
+|           | (or **[arXiv:2007.07691v1](https://arxiv.org/abs/2007.07691v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-07-16-3">3. Dual Past and Future for Neural Machine Translation</h2>
+
+Title: [Dual Past and Future for Neural Machine Translation](https://arxiv.org/abs/2007.07728)
+
+Authors: [Jianhao Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+J), [Fandong Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+F), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J)
+
+> Though remarkable successes have been achieved by Neural Machine Translation (NMT) in recent years, it still suffers from the inadequate-translation problem. Previous studies show that explicitly modeling the Past and Future contents of the source sentence is beneficial for translation performance. However, it is not clear whether the commonly used heuristic objective is good enough to guide the Past and Future. In this paper, we present a novel dual framework that leverages both source-to-target and target-to-source NMT models to provide a more direct and accurate supervision signal for the Past and Future modules. Experimental results demonstrate that our proposed method significantly improves the adequacy of NMT predictions and surpasses previous methods in two well-studied translation tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2007.07728](https://arxiv.org/abs/2007.07728) [cs.CL]** |
+|           | (or **[arXiv:2007.07728v1](https://arxiv.org/abs/2007.07728v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-07-16-4">4. Multimodal Word Sense Disambiguation in Creative Practice</h2>
+
+Title: [Multimodal Word Sense Disambiguation in Creative Practice](https://arxiv.org/abs/2007.07758)
+
+Authors: [Manuel Ladron de Guevara](https://arxiv.org/search/cs?searchtype=author&query=de+Guevara%2C+M+L), [Christopher George](https://arxiv.org/search/cs?searchtype=author&query=George%2C+C), [Akshat Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+A), [Daragh Byrne](https://arxiv.org/search/cs?searchtype=author&query=Byrne%2C+D), [Ramesh Krishnamurti](https://arxiv.org/search/cs?searchtype=author&query=Krishnamurti%2C+R)
+
+> Language is ambiguous; many terms and expressions can convey the same idea. This is especially true in creative practice, where ideas and design intents are highly subjective. We present a dataset, Ambiguous Descriptions of Art Images (ADARI), of contemporary workpieces, which aims to provide a foundational resource for subjective image description and multimodal word disambiguation in the context of creative practice. The dataset contains a total of 240k images labeled with 260k descriptive sentences. It is additionally organized into sub-domains of architecture, art, design, fashion, furniture, product design and technology. In subjective image description, labels are not deterministic: for example, the ambiguous label dynamic might correspond to hundreds of different images. To understand this complexity, we analyze the ambiguity and relevance of text with respect to images using the state-of-the-art pre-trained BERT model for sentence classification. We provide a baseline for multi-label classification tasks and demonstrate the potential of multimodal approaches for understanding ambiguity in design intentions. We hope that ADARI dataset and baselines constitute a first step towards subjective label classification.
+
+| Comments: | 9 pages, 5 figures, 2 tables                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2007.07758](https://arxiv.org/abs/2007.07758) [cs.CL]** |
+|           | (or **[arXiv:2007.07758v1](https://arxiv.org/abs/2007.07758v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-07-16-5">5. AdapterHub: A Framework for Adapting Transformers</h2>
+
+Title: [AdapterHub: A Framework for Adapting Transformers](https://arxiv.org/abs/2007.07779)
+
+Authors: [Jonas Pfeiffer](https://arxiv.org/search/cs?searchtype=author&query=Pfeiffer%2C+J), [Andreas Rücklé](https://arxiv.org/search/cs?searchtype=author&query=Rücklé%2C+A), [Clifton Poth](https://arxiv.org/search/cs?searchtype=author&query=Poth%2C+C), [Aishwarya Kamath](https://arxiv.org/search/cs?searchtype=author&query=Kamath%2C+A), [Ivan Vulić](https://arxiv.org/search/cs?searchtype=author&query=Vulić%2C+I), [Sebastian Ruder](https://arxiv.org/search/cs?searchtype=author&query=Ruder%2C+S), [Kyunghyun Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+K), [Iryna Gurevych](https://arxiv.org/search/cs?searchtype=author&query=Gurevych%2C+I)
+
+> The current modus operandi in NLP involves downloading and fine-tuning pre-trained models consisting of millions or billions of parameters. Storing and sharing such large trained models is expensive, slow, and time-consuming, which impedes progress towards more general and versatile NLP methods that learn from and for many tasks. Adapters -- small learnt bottleneck layers inserted within each layer of a pre-trained model -- ameliorate this issue by avoiding full fine-tuning of the entire model. However, sharing and integrating adapter layers is not straightforward. We propose AdapterHub, a framework that allows dynamic "stitching-in" of pre-trained adapters for different tasks and languages. The framework, built on top of the popular HuggingFace Transformers library, enables extremely easy and quick adaptations of state-of-the-art pre-trained models (e.g., BERT, RoBERTa, XLM-R) across tasks and languages. Downloading, sharing, and training adapters is as seamless as possible using minimal changes to the training scripts and a specialized infrastructure. Our framework enables scalable and easy access to sharing of task-specific models, particularly in low-resource scenarios. AdapterHub includes all recent adapter architectures and can be found at [this https URL](https://adapterhub.ml/).
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2007.07779](https://arxiv.org/abs/2007.07779) [cs.CL]** |
+|           | (or **[arXiv:2007.07779v1](https://arxiv.org/abs/2007.07779v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-07-16-6">6. InfoXLM: An Information-Theoretic Framework for Cross-Lingual Language Model Pre-Training</h2>
+
+Title: [InfoXLM: An Information-Theoretic Framework for Cross-Lingual Language Model Pre-Training](https://arxiv.org/abs/2007.07834)
+
+Authors: [Zewen Chi](https://arxiv.org/search/cs?searchtype=author&query=Chi%2C+Z), [Li Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+L), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F), [Nan Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+N), [Saksham Singhal](https://arxiv.org/search/cs?searchtype=author&query=Singhal%2C+S), [Wenhui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Xia Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+X), [Xian-Ling Mao](https://arxiv.org/search/cs?searchtype=author&query=Mao%2C+X), [Heyan Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+H), [Ming Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+M)
+
+> In this work, we formulate cross-lingual language model pre-training as maximizing mutual information between multilingual-multi-granularity texts. The unified view helps us to better understand the existing methods for learning cross-lingual representations. More importantly, the information-theoretic framework inspires us to propose a pre-training task based on contrastive learning. Given a bilingual sentence pair, we regard them as two views of the same meaning, and encourage their encoded representations to be more similar than the negative examples. By leveraging both monolingual and parallel corpora, we jointly train the pretext tasks to improve the cross-lingual transferability of pre-trained models. Experimental results on several benchmarks show that our approach achieves considerably better performance. The code and pre-trained models are available at [this http URL](http://aka.ms/infoxlm).
+
+| Comments: | 11 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2007.07834](https://arxiv.org/abs/2007.07834) [cs.CL]** |
+|           | (or **[arXiv:2007.07834v1](https://arxiv.org/abs/2007.07834v1) [cs.CL]** for this version) |
+
+
 
 
 
