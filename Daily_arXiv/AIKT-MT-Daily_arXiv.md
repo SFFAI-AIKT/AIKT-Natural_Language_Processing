@@ -3,6 +3,18 @@
 # Index
 
 
+- [2020-07-20](#2020-07-20)
+
+  - [1. Unsupervised Text Generation by Learning from Search](#2020-07-20-1)
+  - [2. A Novel Graph-based Multi-modal Fusion Encoder for Neural Machine Translation](#2020-07-20-2)
+  - [3. Task-Level Curriculum Learning for Non-Autoregressive Neural Machine Translation](#2020-07-20-3)
+  - [4. Compositional Generalization in Semantic Parsing: Pre-training vs. Specialized Architectures](#2020-07-20-4)
+  - [5. Constructing a Family Tree of Ten Indo-European Languages with Delexicalized Cross-linguistic Transfer Patterns](#2020-07-20-5)
+  - [6. Neural Architecture Search for Speech Recognition](#2020-07-20-6)
+- [2020-07-17](#2020-07-17)
+- [1. Translate Reverberated Speech to Anechoic Ones: Speech Dereverberation with BERT](#2020-07-17-1)
+  - [2. Towards Debiasing Sentence Representations](#2020-07-17-2)
+  - [3. Investigating Pretrained Language Models for Graph-to-Text Generation](#2020-07-17-3)
 - [2020-07-16](#2020-07-16)
 
   - [1. Deep learning models for representing out-of-vocabulary words](#2020-07-16-1)
@@ -56,6 +68,183 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-07-20
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-07-20-1">1. Unsupervised Text Generation by Learning from Search</h2>
+
+Title: [Unsupervised Text Generation by Learning from Search](https://arxiv.org/abs/2007.08557)
+
+Authors: [Jingjing Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Zichao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Lili Mou](https://arxiv.org/search/cs?searchtype=author&query=Mou%2C+L), [Xin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+X), [Michael R. Lyu](https://arxiv.org/search/cs?searchtype=author&query=Lyu%2C+M+R), [Irwin King](https://arxiv.org/search/cs?searchtype=author&query=King%2C+I)
+
+> In this work, we present TGLS, a novel framework to unsupervised Text Generation by Learning from Search. We start by applying a strong search algorithm (in particular, simulated annealing) towards a heuristically defined objective that (roughly) estimates the quality of sentences. Then, a conditional generative model learns from the search results, and meanwhile smooth out the noise of search. The alternation between search and learning can be repeated for performance bootstrapping. We demonstrate the effectiveness of TGLS on two real-world natural language generation tasks, paraphrase generation and text formalization. Our model significantly outperforms unsupervised baseline methods in both tasks. Especially, it achieves comparable performance with the state-of-the-art supervised methods in paraphrase generation.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Information Retrieval (cs.IR); Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2007.08557](https://arxiv.org/abs/2007.08557) [cs.CL]** |
+|           | (or **[arXiv:2007.08557v1](https://arxiv.org/abs/2007.08557v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-07-20-2">2. A Novel Graph-based Multi-modal Fusion Encoder for Neural Machine Translation</h2>
+
+Title: [A Novel Graph-based Multi-modal Fusion Encoder for Neural Machine Translation](https://arxiv.org/abs/2007.08742)
+
+Authors: [Yongjing Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+Y), [Fandong Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+F), [Jinsong Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+J), [Chulun Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+C), [Zhengyuan Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J), [Jiebo Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+J)
+
+> Multi-modal neural machine translation (NMT) aims to translate source sentences into a target language paired with images. However, dominant multi-modal NMT models do not fully exploit fine-grained semantic correspondences between semantic units of different modalities, which have potential to refine multi-modal representation learning. To deal with this issue, in this paper, we propose a novel graph-based multi-modal fusion encoder for NMT. Specifically, we first represent the input sentence and image using a unified multi-modal graph, which captures various semantic relationships between multi-modal semantic units (words and visual objects). We then stack multiple graph-based multi-modal fusion layers that iteratively perform semantic interactions to learn node representations. Finally, these representations provide an attention-based context vector for the decoder. We evaluate our proposed encoder on the Multi30K datasets. Experimental results and in-depth analysis show the superiority of our multi-modal NMT model.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2007.08742](https://arxiv.org/abs/2007.08742) [cs.CL]** |
+|           | (or **[arXiv:2007.08742v1](https://arxiv.org/abs/2007.08742v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-07-20-3">3. Task-Level Curriculum Learning for Non-Autoregressive Neural Machine Translation</h2>
+
+Title: [Task-Level Curriculum Learning for Non-Autoregressive Neural Machine Translation](https://arxiv.org/abs/2007.08772)
+
+Authors:[Jinglin Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J), [Yi Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+Y), [Xu Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+X), [Chen Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+C), [Tao Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+T), [Zhou Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+Z), [Tie-Yan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T)
+
+> Non-autoregressive translation (NAT) achieves faster inference speed but at the cost of worse accuracy compared with autoregressive translation (AT). Since AT and NAT can share model structure and AT is an easier task than NAT due to the explicit dependency on previous target-side tokens, a natural idea is to gradually shift the model training from the easier AT task to the harder NAT task. To smooth the shift from AT training to NAT training, in this paper, we introduce semi-autoregressive translation (SAT) as intermediate tasks. SAT contains a hyperparameter k, and each k value defines a SAT task with different degrees of parallelism. Specially, SAT covers AT and NAT as its special cases: it reduces to AT when k = 1 and to NAT when k = N (N is the length of target sentence). We design curriculum schedules to gradually shift k from 1 to N, with different pacing functions and number of tasks trained at the same time. We called our method as task-level curriculum learning for NAT (TCL-NAT). Experiments on IWSLT14 De-En, IWSLT16 En-De, WMT14 En-De and De-En datasets show that TCL-NAT achieves significant accuracy improvements over previous NAT baselines and reduces the performance gap between NAT and AT models to 1-2 BLEU points, demonstrating the effectiveness of our proposed method.
+
+| Comments: | Accepted at IJCAI 2020 Main Track. Sole copyright holder is IJCAI |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2007.08772](https://arxiv.org/abs/2007.08772) [cs.CL]** |
+|           | (or **[arXiv:2007.08772v1](https://arxiv.org/abs/2007.08772v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-07-20-4">4. Compositional Generalization in Semantic Parsing: Pre-training vs. Specialized Architectures</h2>
+
+Title: [Compositional Generalization in Semantic Parsing: Pre-training vs. Specialized Architectures](https://arxiv.org/abs/2007.08970)
+
+Authors: [Daniel Furrer](https://arxiv.org/search/cs?searchtype=author&query=Furrer%2C+D), [Marc van Zee](https://arxiv.org/search/cs?searchtype=author&query=van+Zee%2C+M), [Nathan Scales](https://arxiv.org/search/cs?searchtype=author&query=Scales%2C+N), [Nathanael Schärli](https://arxiv.org/search/cs?searchtype=author&query=Schärli%2C+N)
+
+> While mainstream machine learning methods are known to have limited ability to compositionally generalize, new architectures and techniques continue to be proposed to address this limitation. We investigate state-of-the-art techniques and architectures in order to assess their effectiveness in improving compositional generalization in semantic parsing tasks based on the SCAN and CFQ datasets. We show that masked language model (MLM) pre-training rivals SCAN-inspired architectures on primitive holdout splits. On a more complex compositional task, we show that pre-training leads to significant improvements in performance vs. comparable non-pre-trained models, whereas architectures proposed to encourage compositional generalization on SCAN or in the area of algorithm learning fail to lead to significant improvements. We establish a new state of the art on the CFQ compositional generalization benchmark using MLM pre-training together with an intermediate representation.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2007.08970](https://arxiv.org/abs/2007.08970) [cs.CL]** |
+|           | (or **[arXiv:2007.08970v1](https://arxiv.org/abs/2007.08970v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-07-20-5">5. Constructing a Family Tree of Ten Indo-European Languages with Delexicalized Cross-linguistic Transfer Patterns</h2>
+
+Title: [Constructing a Family Tree of Ten Indo-European Languages with Delexicalized Cross-linguistic Transfer Patterns](https://arxiv.org/abs/2007.09076)
+
+Authors: [Yuanyuan Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+Y), [Weiwei Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+W), [Xiaojun Wan](https://arxiv.org/search/cs?searchtype=author&query=Wan%2C+X)
+
+> It is reasonable to hypothesize that the divergence patterns formulated by historical linguists and typologists reflect constraints on human languages, and are thus consistent with Second Language Acquisition (SLA) in a certain way. In this paper, we validate this hypothesis on ten Indo-European languages. We formalize the delexicalized transfer as interpretable tree-to-string and tree-to-tree patterns which can be automatically induced from web data by applying neural syntactic parsing and grammar induction technologies. This allows us to quantitatively probe cross-linguistic transfer and extend inquiries of SLA. We extend existing works which utilize mixed features and support the agreement between delexicalized cross-linguistic transfer and the phylogenetic structure resulting from the historical-comparative paradigm.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2007.09076](https://arxiv.org/abs/2007.09076) [cs.CL]** |
+|           | (or **[arXiv:2007.09076v1](https://arxiv.org/abs/2007.09076v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-07-20-6">6. Neural Architecture Search for Speech Recognition</h2>
+
+Title: [Neural Architecture Search for Speech Recognition](https://arxiv.org/abs/2007.08818)
+
+Authors: [Shoukang Hu](https://arxiv.org/search/eess?searchtype=author&query=Hu%2C+S), [Xurong Xie](https://arxiv.org/search/eess?searchtype=author&query=Xie%2C+X), [Shansong Liu](https://arxiv.org/search/eess?searchtype=author&query=Liu%2C+S), [Mengzhe Geng](https://arxiv.org/search/eess?searchtype=author&query=Geng%2C+M), [Xunying Liu](https://arxiv.org/search/eess?searchtype=author&query=Liu%2C+X), [Helen Meng](https://arxiv.org/search/eess?searchtype=author&query=Meng%2C+H)
+
+> Deep neural networks (DNNs) based automatic speech recognition (ASR) systems are often designed using expert knowledge and empirical evaluation. In this paper, a range of neural architecture search (NAS) techniques are used to automatically learn two hyper-parameters that heavily affect the performance and model complexity of state-of-the-art factored time delay neural network (TDNN-F) acoustic models: i) the left and right splicing context offsets; and ii) the dimensionality of the bottleneck linear projection at each hidden layer. These include the standard DARTS method fully integrating the estimation of architecture weights and TDNN parameters in lattice-free MMI (LF-MMI) training; Gumbel-Softmax DARTS that reduces the confusion between candidate architectures; Pipelined DARTS that circumvents the overfitting of architecture weights using held-out data; and Penalized DARTS that further incorporates resource constraints to adjust the trade-off between performance and system complexity. Parameter sharing among candidate architectures was also used to facilitate efficient search over up to 728 different TDNN systems. Experiments conducted on a 300-hour Switchboard conversational telephone speech recognition task suggest the NAS auto-configured TDNN-F systems consistently outperform the baseline LF-MMI trained TDNN-F systems using manual expert configurations. Absolute word error rate reductions up to 1.0% and relative model size reduction of 28% were obtained.
+
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Machine Learning (cs.LG); Sound (cs.SD) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2007.08818](https://arxiv.org/abs/2007.08818) [eess.AS]** |
+|           | (or **[arXiv:2007.08818v1](https://arxiv.org/abs/2007.08818v1) [eess.AS]** for this version) |
+
+
+
+
+
+# 2020-07-17
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-07-17-1">1. Translate Reverberated Speech to Anechoic Ones: Speech Dereverberation with BERT</h2>
+
+Title: [Translate Reverberated Speech to Anechoic Ones: Speech Dereverberation with BERT](https://arxiv.org/abs/2007.08052)
+
+Authors: [Yang Jiao](https://arxiv.org/search/eess?searchtype=author&query=Jiao%2C+Y)
+
+> Single channel speech dereverberation is considered in this work. Inspired by the recent success of Bidirectional Encoder Representations from Transformers (BERT) model in the domain of Natural Language Processing (NLP), we investigate its applicability as backbone sequence model to enhance reverberated speech signal. We present a variation of the basic BERT model: a pre-sequence network, which extracts local spectral-temporal information and/or provides order information, before the backbone sequence model. In addition, we use pre-trained neural vocoder for implicit phase reconstruction. To evaluate our method, we used the data from the 3rd CHiME challenge, and compare our results with other methods. Experiments show that the proposed method outperforms traditional method WPE, and achieve comparable performance with state-of-the-art BLSTM-based sequence models.
+
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Machine Learning (cs.LG); Sound (cs.SD) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2007.08052](https://arxiv.org/abs/2007.08052) [eess.AS]** |
+|           | (or **[arXiv:2007.08052v1](https://arxiv.org/abs/2007.08052v1) [eess.AS]** for this version) |
+
+
+
+
+
+<h2 id="2020-07-17-2">2. Towards Debiasing Sentence Representations</h2>
+
+Title: [Towards Debiasing Sentence Representations](https://arxiv.org/abs/2007.08100)
+
+Authors: [Paul Pu Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+P+P), [Irene Mengze Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+I+M), [Emily Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+E), [Yao Chong Lim](https://arxiv.org/search/cs?searchtype=author&query=Lim%2C+Y+C), [Ruslan Salakhutdinov](https://arxiv.org/search/cs?searchtype=author&query=Salakhutdinov%2C+R), [Louis-Philippe Morency](https://arxiv.org/search/cs?searchtype=author&query=Morency%2C+L)
+
+> As natural language processing methods are increasingly deployed in real-world scenarios such as healthcare, legal systems, and social science, it becomes necessary to recognize the role they potentially play in shaping social biases and stereotypes. Previous work has revealed the presence of social biases in widely used word embeddings involving gender, race, religion, and other social constructs. While some methods were proposed to debias these word-level embeddings, there is a need to perform debiasing at the sentence-level given the recent shift towards new contextualized sentence representations such as ELMo and BERT. In this paper, we investigate the presence of social biases in sentence-level representations and propose a new method, Sent-Debias, to reduce these biases. We show that Sent-Debias is effective in removing biases, and at the same time, preserves performance on sentence-level downstream tasks such as sentiment analysis, linguistic acceptability, and natural language understanding. We hope that our work will inspire future research on characterizing and removing social biases from widely adopted sentence representations for fairer NLP.
+
+| Comments: | ACL 2020, code available at [this https URL](https://github.com/pliang279/sent_debias) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2007.08100](https://arxiv.org/abs/2007.08100) [cs.CL]** |
+|           | (or **[arXiv:2007.08100v1](https://arxiv.org/abs/2007.08100v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-07-17-3">3. Investigating Pretrained Language Models for Graph-to-Text Generation</h2>
+
+Title: [Investigating Pretrained Language Models for Graph-to-Text Generation](https://arxiv.org/abs/2007.08426)
+
+Authors: [Leonardo F. R. Ribeiro](https://arxiv.org/search/cs?searchtype=author&query=Ribeiro%2C+L+F+R), [Martin Schmitt](https://arxiv.org/search/cs?searchtype=author&query=Schmitt%2C+M), [Hinrich Schütze](https://arxiv.org/search/cs?searchtype=author&query=Schütze%2C+H), [Iryna Gurevych](https://arxiv.org/search/cs?searchtype=author&query=Gurevych%2C+I)
+
+> Graph-to-text generation, a subtask of data-to-text generation, aims to generate fluent texts from graph-based data. Many graph-to-text models have shown strong performance in this task employing specialized graph encoders. However, recent approaches employ large pretrained language models (PLMs) achieving state-of-the-art results in data-to-text generation. In this paper, we aim to investigate the impact of large PLMs in graph-to-text generation. We present a study across three graph domains: meaning representations, Wikipedia knowledge graphs (KGs) and scientific KGs. Our analysis shows that PLMs such as BART and T5 achieve state-of-the-art results in graph-to-text benchmarks without explicitly encoding the graph structure. We also demonstrate that task-adaptive pretraining strategies are beneficial to the target task, improving even further the state of the art in two benchmarks for graph-to-text generation. In a final analysis, we investigate possible reasons for the PLMs' success on graph-to-text tasks. We find evidence that their knowledge about the world gives them a big advantage, especially when generating texts from KGs.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2007.08426](https://arxiv.org/abs/2007.08426) [cs.CL]** |
+|           | (or **[arXiv:2007.08426v1](https://arxiv.org/abs/2007.08426v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
