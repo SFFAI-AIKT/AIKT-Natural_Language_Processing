@@ -3,6 +3,18 @@
 # Index
 
 
+- [2020-07-22](#2020-07-22)
+
+  - [1. Neural Machine Translation with Error Correction](#2020-07-22-1)
+- [2020-07-21](#2020-07-21)
+
+  - [1. WordCraft: An Environment for Benchmarking Commonsense Agents](#2020-07-21-1)
+  - [2. On a Novel Application of Wasserstein-Procrustes for Unsupervised Cross-Lingual Learning](#2020-07-21-2)
+  - [3. Meta-learning for Few-shot Natural Language Processing: A Survey](#2020-07-21-3)
+  - [4. One-Shot Learning for Language Modelling](#2020-07-21-4)
+  - [5. Mono vs Multilingual Transformer-based Models: a Comparison across Several Language Tasks](#2020-07-21-5)
+  - [6. Morphological Skip-Gram: Using morphological knowledge to improve word representation](#2020-07-21-6)
+  - [7. CoVoST 2: A Massively Multilingual Speech-to-Text Translation Corpus](#2020-07-21-7)
 - [2020-07-20](#2020-07-20)
 
   - [1. Unsupervised Text Generation by Learning from Search](#2020-07-20-1)
@@ -68,6 +80,158 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-07-22
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-07-22-1">1. Neural Machine Translation with Error Correction</h2>
+
+Title: [Neural Machine Translation with Error Correction](https://arxiv.org/abs/2007.10681)
+
+Authors: [Kaitao Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+K), [Xu Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+X), [Jianfeng Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+J)
+
+> Neural machine translation (NMT) generates the next target token given as input the previous ground truth target tokens during training while the previous generated target tokens during inference, which causes discrepancy between training and inference as well as error propagation, and affects the translation accuracy. In this paper, we introduce an error correction mechanism into NMT, which corrects the error information in the previous generated tokens to better predict the next token. Specifically, we introduce two-stream self-attention from XLNet into NMT decoder, where the query stream is used to predict the next token, and meanwhile the content stream is used to correct the error information from the previous predicted tokens. We leverage scheduled sampling to simulate the prediction errors during training. Experiments on three IWSLT translation datasets and two WMT translation datasets demonstrate that our method achieves improvements over Transformer baseline and scheduled sampling. Further experimental analyses also verify the effectiveness of our proposed error correction mechanism to improve the translation quality.
+
+| Comments: | Accepted by IJCAI 2020                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2007.10681](https://arxiv.org/abs/2007.10681) [cs.CL]** |
+|           | (or **[arXiv:2007.10681v1](https://arxiv.org/abs/2007.10681v1) [cs.CL]** for this version) |
+
+
+
+
+
+# 2020-07-21
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-07-21-1">1. WordCraft: An Environment for Benchmarking Commonsense Agents</h2>
+
+Title: [WordCraft: An Environment for Benchmarking Commonsense Agents](https://arxiv.org/abs/2007.09185)
+
+Authors: [Minqi Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+M), [Jelena Luketina](https://arxiv.org/search/cs?searchtype=author&query=Luketina%2C+J), [Nantas Nardelli](https://arxiv.org/search/cs?searchtype=author&query=Nardelli%2C+N), [Pasquale Minervini](https://arxiv.org/search/cs?searchtype=author&query=Minervini%2C+P), [Philip H. S. Torr](https://arxiv.org/search/cs?searchtype=author&query=Torr%2C+P+H+S), [Shimon Whiteson](https://arxiv.org/search/cs?searchtype=author&query=Whiteson%2C+S), [Tim Rocktäschel](https://arxiv.org/search/cs?searchtype=author&query=Rocktäschel%2C+T)
+
+> The ability to quickly solve a wide range of real-world tasks requires a commonsense understanding of the world. Yet, how to best extract such knowledge from natural language corpora and integrate it with reinforcement learning (RL) agents remains an open challenge. This is partly due to the lack of lightweight simulation environments that sufficiently reflect the semantics of the real world and provide knowledge sources grounded with respect to observations in an RL environment. To better enable research on agents making use of commonsense knowledge, we propose WordCraft, an RL environment based on Little Alchemy 2. This lightweight environment is fast to run and built upon entities and relations inspired by real-world semantics. We evaluate several representation learning methods on this new benchmark and propose a new method for integrating knowledge graphs with an RL agent.
+
+| Subjects: | **Artificial Intelligence (cs.AI)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2007.09185](https://arxiv.org/abs/2007.09185) [cs.AI]** |
+|           | (or **[arXiv:2007.09185v1](https://arxiv.org/abs/2007.09185v1) [cs.AI]** for this version) |
+
+
+
+
+
+<h2 id="2020-07-21-2">2. On a Novel Application of Wasserstein-Procrustes for Unsupervised Cross-Lingual Learning</h2>
+
+Title: [On a Novel Application of Wasserstein-Procrustes for Unsupervised Cross-Lingual Learning](https://arxiv.org/abs/2007.09456)
+
+Authors: [Guillem Ramírez](https://arxiv.org/search/cs?searchtype=author&query=Ramírez%2C+G), [Rumen Dangovski](https://arxiv.org/search/cs?searchtype=author&query=Dangovski%2C+R), [Preslav Nakov](https://arxiv.org/search/cs?searchtype=author&query=Nakov%2C+P), [Marin Soljačić](https://arxiv.org/search/cs?searchtype=author&query=Soljačić%2C+M)
+
+> The emergence of unsupervised word embeddings, pre-trained on very large monolingual text corpora, is at the core of the ongoing neural revolution in Natural Language Processing (NLP). Initially introduced for English, such pre-trained word embeddings quickly emerged for a number of other languages. Subsequently, there have been a number of attempts to align the embedding spaces across languages, which could enable a number of cross-language NLP applications. Performing the alignment using unsupervised cross-lingual learning (UCL) is especially attractive as it requires little data and often rivals supervised and semi-supervised approaches. Here, we analyze popular methods for UCL and we find that often their objectives are, intrinsically, versions of the Wasserstein-Procrustes problem. Hence, we devise an approach to solve Wasserstein-Procrustes in a direct way, which can be used to refine and to improve popular UCL methods such as iterative closest point (ICP), multilingual unsupervised and supervised embeddings (MUSE) and supervised Procrustes methods. Our evaluation experiments on standard datasets show sizable improvements over these approaches. We believe that our rethinking of the Wasserstein-Procrustes problem could enable further research, thus helping to develop better algorithms for aligning word embeddings across languages. Our code and instructions to reproduce the experiments are available at [this https URL](https://github.com/guillemram97/wp-hungarian).
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2007.09456](https://arxiv.org/abs/2007.09456) [cs.CL]** |
+|           | (or **[arXiv:2007.09456v1](https://arxiv.org/abs/2007.09456v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-07-21-3">3. Meta-learning for Few-shot Natural Language Processing: A Survey</h2>
+
+Title: [Meta-learning for Few-shot Natural Language Processing: A Survey](https://arxiv.org/abs/2007.09604)
+
+Authors: [Wenpeng Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+W)
+
+> Few-shot natural language processing (NLP) refers to NLP tasks that are accompanied with merely a handful of labeled examples. This is a real-world challenge that an AI system must learn to handle. Usually we rely on collecting more auxiliary information or developing a more efficient learning algorithm. However, the general gradient-based optimization in high capacity models, if training from scratch, requires many parameter-updating steps over a large number of labeled examples to perform well (Snell et al., 2017).
+> If the target task itself cannot provide more information, how about collecting more tasks equipped with rich annotations to help the model learning? The goal of meta-learning is to train a model on a variety of tasks with rich annotations, such that it can solve a new task using only a few labeled samples. The key idea is to train the model's initial parameters such that the model has maximal performance on a new task after the parameters have been updated through zero or a couple of gradient steps.
+> There are already some surveys for meta-learning, such as (Vilalta and Drissi, 2002; Vanschoren, 2018; Hospedales et al., 2020). Nevertheless, this paper focuses on NLP domain, especially few-shot applications. We try to provide clearer definitions, progress summary and some common datasets of applying meta-learning to few-shot NLP.
+
+| Comments: | no submission intent                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2007.09604](https://arxiv.org/abs/2007.09604) [cs.CL]** |
+|           | (or **[arXiv:2007.09604v1](https://arxiv.org/abs/2007.09604v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-07-21-4">4. One-Shot Learning for Language Modelling</h2>
+
+Title: [One-Shot Learning for Language Modelling](https://arxiv.org/abs/2007.09679)
+
+Authors: [Talip Ucar](https://arxiv.org/search/cs?searchtype=author&query=Ucar%2C+T), [Adrian Gonzalez-Martin](https://arxiv.org/search/cs?searchtype=author&query=Gonzalez-Martin%2C+A), [Matthew Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+M), [Adrian Daniel Szwarc](https://arxiv.org/search/cs?searchtype=author&query=Szwarc%2C+A+D)
+
+> Humans can infer a great deal about the meaning of a word, using the syntax and semantics of surrounding words even if it is their first time reading or hearing it. We can also generalise the learned concept of the word to new tasks. Despite great progress in achieving human-level performance in certain tasks (Silver et al., 2016), learning from one or few examples remains a key challenge in machine learning, and has not thoroughly been explored in Natural Language Processing (NLP).
+> In this work we tackle the problem of oneshot learning for an NLP task by employing ideas from recent developments in machine learning: embeddings, attention mechanisms (softmax) and similarity measures (cosine, Euclidean, Poincare, and Minkowski). We adapt the framework suggested in matching networks (Vinyals et al., 2016), and explore the effectiveness of the aforementioned methods in one, two and three-shot learning problems on the task of predicting missing word explored in (Vinyals et al., 2016) by using the WikiText-2 dataset. Our work contributes in two ways: Our first contribution is that we explore the effectiveness of different distance metrics on k-shot learning, and show that there is no single best distance metric for k-shot learning, which challenges common belief. We found that the performance of a distance metric depends on the number of shots used during training. The second contribution of our work is that we establish a benchmark for one, two, and three-shot learning on a language task with a publicly available dataset that can be used to benchmark against in future research.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2007.09679](https://arxiv.org/abs/2007.09679) [cs.CL]** |
+|           | (or **[arXiv:2007.09679v1](https://arxiv.org/abs/2007.09679v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-07-21-5">5. Mono vs Multilingual Transformer-based Models: a Comparison across Several Language Tasks</h2>
+
+Title: [Mono vs Multilingual Transformer-based Models: a Comparison across Several Language Tasks](https://arxiv.org/abs/2007.09757)
+
+Authors: [Diego de Vargas Feijo](https://arxiv.org/search/cs?searchtype=author&query=de+Vargas+Feijo%2C+D), [Viviane Pereira Moreira](https://arxiv.org/search/cs?searchtype=author&query=Moreira%2C+V+P)
+
+> BERT (Bidirectional Encoder Representations from Transformers) and ALBERT (A Lite BERT) are methods for pre-training language models which can later be fine-tuned for a variety of Natural Language Understanding tasks. These methods have been applied to a number of such tasks (mostly in English), achieving results that outperform the state-of-the-art. In this paper, our contribution is twofold. First, we make available our trained BERT and Albert model for Portuguese. Second, we compare our monolingual and the standard multilingual models using experiments in semantic textual similarity, recognizing textual entailment, textual category classification, sentiment analysis, offensive comment detection, and fake news detection, to assess the effectiveness of the generated language representations. The results suggest that both monolingual and multilingual models are able to achieve state-of-the-art and the advantage of training a single language model, if any, is small.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2007.09757](https://arxiv.org/abs/2007.09757) [cs.CL]** |
+|           | (or **[arXiv:2007.09757v1](https://arxiv.org/abs/2007.09757v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-07-21-6">6. Morphological Skip-Gram: Using morphological knowledge to improve word representation</h2>
+
+Title: [Morphological Skip-Gram: Using morphological knowledge to improve word representation](https://arxiv.org/abs/2007.10055)
+
+Authors: [Flávio Santos](https://arxiv.org/search/cs?searchtype=author&query=Santos%2C+F), [Hendrik Macedo](https://arxiv.org/search/cs?searchtype=author&query=Macedo%2C+H), [Thiago Bispo](https://arxiv.org/search/cs?searchtype=author&query=Bispo%2C+T), [Cleber Zanchetting](https://arxiv.org/search/cs?searchtype=author&query=Zanchetting%2C+C)
+
+> Natural language processing models have attracted much interest in the deep learning community. This branch of study is composed of some applications such as machine translation, sentiment analysis, named entity recognition, question and answer, and others. Word embeddings are continuous word representations, they are an essential module for those applications and are generally used as input word representation to the deep learning models. Word2Vec and GloVe are two popular methods to learn word embeddings. They achieve good word representations, however, they learn representations with limited information because they ignore the morphological information of the words and consider only one representation vector for each word. This approach implies that Word2Vec and GloVe are unaware of the word inner structure. To mitigate this problem, the FastText model represents each word as a bag of characters n-grams. Hence, each n-gram has a continuous vector representation, and the final word representation is the sum of its characters n-grams vectors. Nevertheless, the use of all n-grams character of a word is a poor approach since some n-grams have no semantic relation with their words and increase the amount of potentially useless information. This approach also increases the training phase time. In this work, we propose a new method for training word embeddings, and its goal is to replace the FastText bag of character n-grams for a bag of word morphemes through the morphological analysis of the word. Thus, words with similar context and morphemes are represented by vectors close to each other. To evaluate our new approach, we performed intrinsic evaluations considering 15 different tasks, and the results show a competitive performance compared to FastText.
+
+| Comments: | 11 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2007.10055](https://arxiv.org/abs/2007.10055) [cs.CL]** |
+|           | (or **[arXiv:2007.10055v1](https://arxiv.org/abs/2007.10055v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-07-21-7">7. CoVoST 2: A Massively Multilingual Speech-to-Text Translation Corpus</h2>
+
+Title: [CoVoST 2: A Massively Multilingual Speech-to-Text Translation Corpus](https://arxiv.org/abs/2007.10310)
+
+Authors: [Changhan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Anne Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+A), [Juan Pino](https://arxiv.org/search/cs?searchtype=author&query=Pino%2C+J)
+
+> Speech translation has recently become an increasingly popular topic of research, partly due to the development of benchmark datasets. Nevertheless, current datasets cover a limited number of languages. With the aim to foster research in massive multilingual speech translation and speech translation for low resource language pairs, we release CoVoST 2, a large-scale multilingual speech translation corpus covering translations from 21 languages into English and from English into 15 languages. This represents the largest open dataset available to date from total volume and language coverage perspective. Data sanity checks provide evidence about the quality of the data, which is released under CC0 license. We also provide extensive speech recognition, bilingual and multilingual machine translation and speech translation baselines.
+
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2007.10310](https://arxiv.org/abs/2007.10310) [cs.CL]** |
+|           | (or **[arXiv:2007.10310v1](https://arxiv.org/abs/2007.10310v1) [cs.CL]** for this version) |
 
 
 
