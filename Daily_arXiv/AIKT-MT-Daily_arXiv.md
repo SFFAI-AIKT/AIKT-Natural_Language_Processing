@@ -3,6 +3,9 @@
 # Index
 
 
+- [2020-07-23](#2020-07-23)
+
+  - [1. Exploratory Search with Sentence Embeddings](#2020-07-23-1)
 - [2020-07-22](#2020-07-22)
 
   - [1. Neural Machine Translation with Error Correction](#2020-07-22-1)
@@ -80,6 +83,31 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-07-23
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-07-23-1">1. Exploratory Search with Sentence Embeddings</h2>
+
+Title: [Exploratory Search with Sentence Embeddings](https://arxiv.org/abs/2007.11198)
+
+Authors:[Austin Silveria](https://arxiv.org/search/cs?searchtype=author&query=Silveria%2C+A)
+
+> Exploratory search aims to guide users through a corpus rather than pinpointing exact information. We propose an exploratory search system based on hierarchical clusters and document summaries using sentence embeddings. With sentence embeddings, we represent documents as the mean of their embedded sentences, extract summaries containing sentences close to this document representation and extract keyphrases close to the document representation. To evaluate our search system, we scrape our personal search history over the past year and report our experience with the system. We then discuss motivating use cases of an exploratory search system of this nature and conclude with possible directions of future work.
+
+| Subjects: | **Computation and Language (cs.CL)**; Information Retrieval (cs.IR) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2007.11198](https://arxiv.org/abs/2007.11198) [cs.CL]** |
+|           | (or **[arXiv:2007.11198v1](https://arxiv.org/abs/2007.11198v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
