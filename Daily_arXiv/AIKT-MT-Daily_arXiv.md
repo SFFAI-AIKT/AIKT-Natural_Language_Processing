@@ -3,6 +3,9 @@
 # Index
 
 
+- [2020-07-24](#2020-07-24)
+
+  - [1. Effects of Language Relatedness for Cross-lingual Transfer Learning in Character-Based Language Models](#2020-07-24-1)
 - [2020-07-23](#2020-07-23)
 
   - [1. Exploratory Search with Sentence Embeddings](#2020-07-23-1)
@@ -83,6 +86,31 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-07-24
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-07-24-1">1. Effects of Language Relatedness for Cross-lingual Transfer Learning in Character-Based Language Models</h2>
+
+Title: [Effects of Language Relatedness for Cross-lingual Transfer Learning in Character-Based Language Models](https://arxiv.org/abs/2007.11648)
+
+Authors: [Mittul Singh](https://arxiv.org/search/cs?searchtype=author&query=Singh%2C+M), [Peter Smit](https://arxiv.org/search/cs?searchtype=author&query=Smit%2C+P), [Sami Virpioja](https://arxiv.org/search/cs?searchtype=author&query=Virpioja%2C+S), [Mikko Kurimo](https://arxiv.org/search/cs?searchtype=author&query=Kurimo%2C+M)
+
+> Character-based Neural Network Language Models (NNLM) have the advantage of smaller vocabulary and thus faster training times in comparison to NNLMs based on multi-character units. However, in low-resource scenarios, both the character and multi-character NNLMs suffer from data sparsity. In such scenarios, cross-lingual transfer has improved multi-character NNLM performance by allowing information transfer from a source to the target language. In the same vein, we propose to use cross-lingual transfer for character NNLMs applied to low-resource Automatic Speech Recognition (ASR). However, applying cross-lingual transfer to character NNLMs is not as straightforward. We observe that relatedness of the source language plays an important role in cross-lingual pretraining of character NNLMs. We evaluate this aspect on ASR tasks for two target languages: Finnish (with English and Estonian as source) and Swedish (with Danish, Norwegian, and English as source). Prior work has observed no difference between using the related or unrelated language for multi-character NNLMs. We, however, show that for character-based NNLMs, only pretraining with a related language improves the ASR performance, and using an unrelated language may deteriorate it. We also observe that the benefits are larger when there is much lesser target data than source data.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2007.11648](https://arxiv.org/abs/2007.11648) [cs.CL]** |
+|           | (or **[arXiv:2007.11648v1](https://arxiv.org/abs/2007.11648v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
