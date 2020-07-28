@@ -3,9 +3,12 @@
 # Index
 
 
-- [2020-07-24](#2020-07-24)
+- [2020-07-28](#2020-07-28)
 
-  - [1. Effects of Language Relatedness for Cross-lingual Transfer Learning in Character-Based Language Models](#2020-07-24-1)
+  - [1. Unsupervised Subword Modeling Using Autoregressive Pretraining and Cross-Lingual Phone-Aware Modeling](#2020-07-28-1)
+  - [2. Consistent Transcription and Translation of Speech](#2020-07-28-2)
+- [2020-07-24](#2020-07-24)
+- [1. Effects of Language Relatedness for Cross-lingual Transfer Learning in Character-Based Language Models](#2020-07-24-1)
 - [2020-07-23](#2020-07-23)
 
   - [1. Exploratory Search with Sentence Embeddings](#2020-07-23-1)
@@ -86,6 +89,49 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-07-28
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-07-28-1">1. Unsupervised Subword Modeling Using Autoregressive Pretraining and Cross-Lingual Phone-Aware Modeling</h2>
+
+Title: [Unsupervised Subword Modeling Using Autoregressive Pretraining and Cross-Lingual Phone-Aware Modeling](https://arxiv.org/abs/2007.13002)
+
+Authors: [Siyuan Feng](https://arxiv.org/search/eess?searchtype=author&query=Feng%2C+S), [Odette Scharenborg](https://arxiv.org/search/eess?searchtype=author&query=Scharenborg%2C+O)
+
+> This study addresses unsupervised subword modeling, i.e., learning feature representations that can distinguish subword units of a language. The proposed approach adopts a two-stage bottleneck feature (BNF) learning framework, consisting of autoregressive predictive coding (APC) as a front-end and a DNN-BNF model as a back-end. APC pretrained features are set as input features to a DNN-BNF model. A language-mismatched ASR system is used to provide cross-lingual phone labels for DNN-BNF model training. Finally, BNFs are extracted as the subword-discriminative feature representation. A second aim of this work is to investigate the robustness of our approach's effectiveness to different amounts of training data. The results on Libri-light and the ZeroSpeech 2017 databases show that APC is effective in front-end feature pretraining. Our whole system outperforms the state of the art on both databases. Cross-lingual phone labels for English data by a Dutch ASR outperform those by a Mandarin ASR, possibly linked to the larger similarity of Dutch compared to Mandarin with English. Our system is less sensitive to training data amount when the training data is over 50 hours. APC pretraining leads to a reduction of needed training material from over 5,000 hours to around 200 hours with little performance degradation.
+
+| Comments: | 5 pages, 3 figures. Accepted for publication in INTERSPEECH 2020, Shanghai, China |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Sound (cs.SD) |
+| Cite as:  | **[arXiv:2007.13002](https://arxiv.org/abs/2007.13002) [eess.AS]** |
+|           | (or **[arXiv:2007.13002v1](https://arxiv.org/abs/2007.13002v1) [eess.AS]** for this version) |
+
+
+
+<h2 id="2020-07-28-2">2. Consistent Transcription and Translation of Speech</h2>
+
+Title: [Consistent Transcription and Translation of Speech](https://arxiv.org/abs/2007.12741)
+
+Authors: [Matthias Sperber](https://arxiv.org/search/cs?searchtype=author&query=Sperber%2C+M), [Hendra Setiawan](https://arxiv.org/search/cs?searchtype=author&query=Setiawan%2C+H), [Christian Gollan](https://arxiv.org/search/cs?searchtype=author&query=Gollan%2C+C), [Udhyakumar Nallasamy](https://arxiv.org/search/cs?searchtype=author&query=Nallasamy%2C+U), [Matthias Paulik](https://arxiv.org/search/cs?searchtype=author&query=Paulik%2C+M)
+
+> The conventional paradigm in speech translation starts with a speech recognition step to generate transcripts, followed by a translation step with the automatic transcripts as input. To address various shortcomings of this paradigm, recent work explores end-to-end trainable direct models that translate without transcribing. However, transcripts can be an indispensable output in practical applications, which often display transcripts alongside the translations to users.
+> We make this common requirement explicit and explore the task of jointly transcribing and translating speech. While high accuracy of transcript and translation are crucial, even highly accurate systems can suffer from inconsistencies between both outputs that degrade the user experience. We introduce a methodology to evaluate consistency and compare several modeling approaches, including the traditional cascaded approach and end-to-end models. We find that direct models are poorly suited to the joint transcription/translation task, but that end-to-end models that feature a coupled inference procedure are able to achieve strong consistency. We further introduce simple techniques for directly optimizing for consistency, and analyze the resulting trade-offs between consistency, transcription accuracy, and translation accuracy.
+
+| Comments: | Accepted at TACL (pre-MIT Press publication version)         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2007.12741](https://arxiv.org/abs/2007.12741) [cs.CL]** |
+|           | (or **[arXiv:2007.12741v1](https://arxiv.org/abs/2007.12741v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
