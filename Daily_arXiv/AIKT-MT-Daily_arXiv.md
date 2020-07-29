@@ -3,6 +3,11 @@
 # Index
 
 
+- [2020-07-29](#2020-07-29)
+
+  - [1. Big Bird: Transformers for Longer Sequences](#2020-07-29-1)
+  - [2. Preparation of Sentiment tagged Parallel Corpus and Testing its effect on Machine Translation](#2020-07-29-2)
+  - [3. Word embedding and neural network on grammatical gender -- A case study of Swedish](#2020-07-29-3)
 - [2020-07-28](#2020-07-28)
 
   - [1. Unsupervised Subword Modeling Using Autoregressive Pretraining and Cross-Lingual Phone-Aware Modeling](#2020-07-28-1)
@@ -89,6 +94,62 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-07-29
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-07-29-1">1. Big Bird: Transformers for Longer Sequences</h2>
+
+Title: [Big Bird: Transformers for Longer Sequences](https://arxiv.org/abs/2007.14062)
+
+Authors: [Manzil Zaheer](https://arxiv.org/search/cs?searchtype=author&query=Zaheer%2C+M), [Guru Guruganesh](https://arxiv.org/search/cs?searchtype=author&query=Guruganesh%2C+G), [Avinava Dubey](https://arxiv.org/search/cs?searchtype=author&query=Dubey%2C+A), [Joshua Ainslie](https://arxiv.org/search/cs?searchtype=author&query=Ainslie%2C+J), [Chris Alberti](https://arxiv.org/search/cs?searchtype=author&query=Alberti%2C+C), [Santiago Ontanon](https://arxiv.org/search/cs?searchtype=author&query=Ontanon%2C+S), [Philip Pham](https://arxiv.org/search/cs?searchtype=author&query=Pham%2C+P), [Anirudh Ravula](https://arxiv.org/search/cs?searchtype=author&query=Ravula%2C+A), [Qifan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Q), [Li Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+L), [Amr Ahmed](https://arxiv.org/search/cs?searchtype=author&query=Ahmed%2C+A)
+
+> Transformers-based models, such as BERT, have been one of the most successful deep learning models for NLP. Unfortunately, one of their core limitations is the quadratic dependency (mainly in terms of memory) on the sequence length due to their full attention mechanism. To remedy this, we propose, BigBird, a sparse attention mechanism that reduces this quadratic dependency to linear. We show that BigBird is a universal approximator of sequence functions and is Turing complete, thereby preserving these properties of the quadratic, full attention model. Along the way, our theoretical analysis reveals some of the benefits of having O(1) global tokens (such as CLS), that attend to the entire sequence as part of the sparse attention mechanism. The proposed sparse attention can handle sequences of length up to 8x of what was previously possible using similar hardware. As a consequence of the capability to handle longer context, BigBird drastically improves performance on various NLP tasks such as question answering and summarization. We also propose novel applications to genomics data.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2007.14062](https://arxiv.org/abs/2007.14062) [cs.LG]** |
+|           | (or **[arXiv:2007.14062v1](https://arxiv.org/abs/2007.14062v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2020-07-29-2">2. Preparation of Sentiment tagged Parallel Corpus and Testing its effect on Machine Translation</h2>
+
+Title: [Preparation of Sentiment tagged Parallel Corpus and Testing its effect on Machine Translation](https://arxiv.org/abs/2007.14074)
+
+Authors: [Sainik Kumar Mahata](https://arxiv.org/search/cs?searchtype=author&query=Mahata%2C+S+K), [Amrita Chandra](https://arxiv.org/search/cs?searchtype=author&query=Chandra%2C+A), [Dipankar Das](https://arxiv.org/search/cs?searchtype=author&query=Das%2C+D), [Sivaji Bandyopadhyay](https://arxiv.org/search/cs?searchtype=author&query=Bandyopadhyay%2C+S)
+
+> In the current work, we explore the enrichment in the machine translation output when the training parallel corpus is augmented with the introduction of sentiment analysis. The paper discusses the preparation of the same sentiment tagged English-Bengali parallel corpus. The preparation of raw parallel corpus, sentiment analysis of the sentences and the training of a Character Based Neural Machine Translation model using the same has been discussed extensively in this paper. The output of the translation model has been compared with a base-line translation model using automated metrics such as BLEU and TER as well as manually.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2007.14074](https://arxiv.org/abs/2007.14074) [cs.CL]** |
+|           | (or **[arXiv:2007.14074v1](https://arxiv.org/abs/2007.14074v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-07-29-3">3. Word embedding and neural network on grammatical gender -- A case study of Swedish</h2>
+
+Title: [Word embedding and neural network on grammatical gender -- A case study of Swedish](https://arxiv.org/abs/2007.14222)
+
+Authors: [Marc Allassonnière-Tang](https://arxiv.org/search/cs?searchtype=author&query=Allassonnière-Tang%2C+M), [Ali Basirat](https://arxiv.org/search/cs?searchtype=author&query=Basirat%2C+A)
+
+> We analyze the information provided by the word embeddings about the grammatical gender in Swedish. We wish that this paper may serve as one of the bridges to connect the methods of computational linguistics and general linguistics. Taking nominal classification in Swedish as a case study, we first show how the information about grammatical gender in language can be captured by word embedding models and artificial neural networks. Then, we match our results with previous linguistic hypotheses on assignment and usage of grammatical gender in Swedish and analyze the errors made by the computational model from a linguistic perspective.
+
+| Comments: | The paper was submitted to Nordic Journal of Linguistics in 2017 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2007.14222](https://arxiv.org/abs/2007.14222) [cs.CL]** |
+|           | (or **[arXiv:2007.14222v1](https://arxiv.org/abs/2007.14222v1) [cs.CL]** for this version) |
 
 
 
