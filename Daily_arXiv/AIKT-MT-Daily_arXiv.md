@@ -3,9 +3,12 @@
 # Index
 
 
-- [2020-07-29](#2020-07-29)
+- [2020-07-30](#2020-07-30)
 
-  - [1. Big Bird: Transformers for Longer Sequences](#2020-07-29-1)
+  - [1. Presentation and Analysis of a Multimodal Dataset for Grounded LanguageLearning](#2020-07-30-1)
+  - [2. Mirostat: A Perplexity-Controlled Neural Text Decoding Algorithm](#2020-07-30-2)
+- [2020-07-29](#2020-07-29)
+- [1. Big Bird: Transformers for Longer Sequences](#2020-07-29-1)
   - [2. Preparation of Sentiment tagged Parallel Corpus and Testing its effect on Machine Translation](#2020-07-29-2)
   - [3. Word embedding and neural network on grammatical gender -- A case study of Swedish](#2020-07-29-3)
 - [2020-07-28](#2020-07-28)
@@ -94,6 +97,46 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-07-30
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-07-30-1">1. Presentation and Analysis of a Multimodal Dataset for Grounded LanguageLearning</h2>
+
+Title: [Presentation and Analysis of a Multimodal Dataset for Grounded LanguageLearning](https://arxiv.org/abs/2007.14987)
+
+Authors: [Patrick Jenkins](https://arxiv.org/search/cs?searchtype=author&query=Jenkins%2C+P), [Rishabh Sachdeva](https://arxiv.org/search/cs?searchtype=author&query=Sachdeva%2C+R), [Gaoussou Youssouf Kebe](https://arxiv.org/search/cs?searchtype=author&query=Kebe%2C+G+Y), [Padraig Higgins](https://arxiv.org/search/cs?searchtype=author&query=Higgins%2C+P), [Kasra Darvish](https://arxiv.org/search/cs?searchtype=author&query=Darvish%2C+K), [Edward Raff](https://arxiv.org/search/cs?searchtype=author&query=Raff%2C+E), [Don Engel](https://arxiv.org/search/cs?searchtype=author&query=Engel%2C+D), [John Winder](https://arxiv.org/search/cs?searchtype=author&query=Winder%2C+J), [Francisco Ferraro](https://arxiv.org/search/cs?searchtype=author&query=Ferraro%2C+F), [Cynthia Matuszek](https://arxiv.org/search/cs?searchtype=author&query=Matuszek%2C+C)
+
+> Grounded language acquisition -- learning how language-based interactions refer to the world around them -- is amajor area of research in robotics, NLP, and HCI. In practice the data used for learning consists almost entirely of textual descriptions, which tend to be cleaner, clearer, and more grammatical than actual human interactions. In this work, we present the Grounded Language Dataset (GoLD), a multimodal dataset of common household objects described by people using either spoken or written language. We analyze the differences and present an experiment showing how the different modalities affect language learning from human in-put. This will enable researchers studying the intersection of robotics, NLP, and HCI to better investigate how the multiple modalities of image, text, and speech interact, as well as show differences in the vernacular of these modalities impact results.
+
+| Comments: | 11 pages, 6 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Robotics (cs.RO)**; Computation and Language (cs.CL); Human-Computer Interaction (cs.HC) |
+| Cite as:  | **[arXiv:2007.14987](https://arxiv.org/abs/2007.14987) [cs.RO]** |
+|           | (or **[arXiv:2007.14987v1](https://arxiv.org/abs/2007.14987v1) [cs.RO]** for this version) |
+
+
+
+
+
+<h2 id="2020-07-30-2">2. Mirostat: A Perplexity-Controlled Neural Text Decoding Algorithm</h2>
+
+Title: [Mirostat: A Perplexity-Controlled Neural Text Decoding Algorithm](https://arxiv.org/abs/2007.14966)
+
+Authors: [Sourya Basu](https://arxiv.org/search/cs?searchtype=author&query=Basu%2C+S), [Govardana Sachitanandam Ramachandran](https://arxiv.org/search/cs?searchtype=author&query=Ramachandran%2C+G+S), [Nitish Shirish Keskar](https://arxiv.org/search/cs?searchtype=author&query=Keskar%2C+N+S), [Lav R. Varshney](https://arxiv.org/search/cs?searchtype=author&query=Varshney%2C+L+R)
+
+> Neural text decoding is important for generating high-quality texts using language models. To generate high-quality text, popular decoding algorithms like top-k, top-p (nucleus), and temperature-based sampling truncate or distort the unreliable low probability tail of the language model. Though these methods generate high-quality text after parameter tuning, they are ad hoc. Not much is known about the control they provide over the statistics of the output, which is important since recent reports show text quality is highest for a specific range of likelihoods. Here, first we provide a theoretical analysis of perplexity in top-k, top-p, and temperature sampling, finding that cross-entropy behaves approximately linearly as a function of p in top-p sampling whereas it is a nonlinear function of k in top-k sampling, under Zipfian statistics. We use this analysis to design a feedback-based adaptive top-k text decoding algorithm called mirostat that generates text (of any length) with a predetermined value of perplexity, and thereby high-quality text without any tuning. Experiments show that for low values of k and p in top-k and top-p sampling, perplexity drops significantly with generated text length, which is also correlated with excessive repetitions in the text (the boredom trap). On the other hand, for large values of k and p, we find that perplexity increases with generated text length, which is correlated with incoherence in the text (confusion trap). Mirostat avoids both traps: experiments show that cross-entropy has a near-linear relation with repetition in generated text. This relation is almost independent of the sampling method but slightly dependent on the model used. Hence, for a given language model, control over perplexity also gives control over repetitions.
+
+| Comments: | 18 pages, 8 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Information Theory (cs.IT) |
+| Cite as:  | **[arXiv:2007.14966](https://arxiv.org/abs/2007.14966) [cs.CL]** |
+|           | (or **[arXiv:2007.14966v1](https://arxiv.org/abs/2007.14966v1) [cs.CL]** for this version) |
 
 
 
