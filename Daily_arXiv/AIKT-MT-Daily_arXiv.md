@@ -1,4 +1,4 @@
-# Daily arXiv: Machine Translation - July, 2020
+# Daily arXiv: Machine Translation - August, 2020
 
 # Index
 
