@@ -3,6 +3,12 @@
 # Index
 
 
+- [2020-08-04](#2020-08-04)
+
+  - [1. Audiovisual Speech Synthesis using Tacotron2](#2020-08-04-1)
+  - [2. DeLighT: Very Deep and Light-weight Transformer](#2020-08-04-2)
+  - [3. Multilingual Translation with Extensible Multilingual Pretraining and Finetuning](#2020-08-04-3)
+  - [4. LT@Helsinki at SemEval-2020 Task 12: Multilingual or language-specific BERT?](#2020-08-04-4)
 - [2020-08-03](#2020-08-03)
   - [1. Neural Language Generation: Formulation, Methods, and Evaluation](#2020-08-03-1)
   - [2. On Learning Universal Representations Across Languages](#2020-08-03-2)
@@ -14,7 +20,6 @@
   - [8. Neural Machine Translation model for University Email Application](#2020-08-03-8)
   - [9. Neural Composition: Learning to Generate from Multiple Models](#2020-08-03-9)
   - [10. SimulEval: An Evaluation Toolkit for Simultaneous Translation](#2020-08-03-10)
-
 - [2020-07](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2020-07.md)
 - [2020-06](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2020-06.md)
 - [2020-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2020-05.md)
@@ -32,6 +37,86 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-08-04
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-08-04-1">1. Audiovisual Speech Synthesis using Tacotron2</h2>
+
+Title: [Audiovisual Speech Synthesis using Tacotron2](https://arxiv.org/abs/2008.00620)
+
+Authors: [Ahmed Hussen Abdelaziz](https://arxiv.org/search/eess?searchtype=author&query=Abdelaziz%2C+A+H), [Anushree Prasanna Kumar](https://arxiv.org/search/eess?searchtype=author&query=Kumar%2C+A+P), [Chloe Seivwright](https://arxiv.org/search/eess?searchtype=author&query=Seivwright%2C+C), [Gabriele Fanelli](https://arxiv.org/search/eess?searchtype=author&query=Fanelli%2C+G), [Justin Binder](https://arxiv.org/search/eess?searchtype=author&query=Binder%2C+J), [Yannis Stylianou](https://arxiv.org/search/eess?searchtype=author&query=Stylianou%2C+Y), [Sachin Kajarekar](https://arxiv.org/search/eess?searchtype=author&query=Kajarekar%2C+S)
+
+> Audiovisual speech synthesis is the problem of synthesizing a talking face while maximizing the coherency of the acoustic and visual speech. In this paper, we propose and compare two audiovisual speech synthesis systems for 3D face models. The first system is the AVTacotron2, which is an end-to-end text-to-audiovisual speech synthesizer based on the Tacotron2 architecture. AVTacotron2 converts a sequence of phonemes representing the sentence to synthesize into a sequence of acoustic features and the corresponding controllers of a face model. The output acoustic features are used to condition a WaveRNN to reconstruct the speech waveform, and the output facial controllers are used to generate the corresponding video of the talking face. The second audiovisual speech synthesis system is modular, where acoustic speech is synthesized from text using the traditional Tacotron2. The reconstructed acoustic speech signal is then used to drive the facial controls of the face model using an independently trained audio-to-facial-animation neural network. We further condition both the end-to-end and modular approaches on emotion embeddings that encode the required prosody to generate emotional audiovisual speech. We analyze the performance of the two systems and compare them to the ground truth videos using subjective evaluation tests. The end-to-end and modular systems are able to synthesize close to human-like audiovisual speech with mean opinion scores (MOS) of 4.1 and 3.9, respectively, compared to a MOS of 4.1 for the ground truth generated from professionally recorded videos. While the end-to-end system gives a better overall quality, the modular approach is more flexible and the quality of acoustic speech and visual speech synthesis is almost independent of each other.
+
+| Comments: | This work has been submitted to the IEEE transactions on Multimedia for possible publication |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Sound (cs.SD) |
+| Cite as:  | **[arXiv:2008.00620](https://arxiv.org/abs/2008.00620) [eess.AS]** |
+|           | (or **[arXiv:2008.00620v1](https://arxiv.org/abs/2008.00620v1) [eess.AS]** for this version) |
+
+
+
+
+
+<h2 id="2020-08-04-2">2. DeLighT: Very Deep and Light-weight Transformer</h2>
+
+Title: [DeLighT: Very Deep and Light-weight Transformer](https://arxiv.org/abs/2008.00623)
+
+Authors: [Sachin Mehta](https://arxiv.org/search/cs?searchtype=author&query=Mehta%2C+S), [Marjan Ghazvininejad](https://arxiv.org/search/cs?searchtype=author&query=Ghazvininejad%2C+M), [Srinivasan Iyer](https://arxiv.org/search/cs?searchtype=author&query=Iyer%2C+S), [Luke Zettlemoyer](https://arxiv.org/search/cs?searchtype=author&query=Zettlemoyer%2C+L), [Hannaneh Hajishirzi](https://arxiv.org/search/cs?searchtype=author&query=Hajishirzi%2C+H)
+
+> We introduce a very deep and light-weight transformer, DeLighT, that delivers similar or better performance than transformer-based models with significantly fewer parameters. DeLighT more efficiently allocates parameters both (1) within each Transformer block using DExTra, a deep and light-weight transformation and (2) across blocks using block-wise scaling, that allows for shallower and narrower DeLighT blocks near the input and wider and deeper DeLighT blocks near the output. Overall, DeLighT networks are 2.5 to 4 times deeper than standard transformer models and yet have fewer parameters and operations. Experiments on machine translation and language modeling tasks show that DeLighT matches the performance of baseline Transformers with significantly fewer parameters. On the WMT'14 En-Fr high resource dataset, DeLighT requires 1.8 times fewer parameters and 2 times fewer operations and achieves better performance (+0.4 BLEU score) than baseline transformers. On the WMT'16 En-Ro low resource dataset, DeLighT delivers similar performance with 2.8 times fewer parameters than baseline transformers.
+
+| Comments: | 16 pages including references and appendix                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2008.00623](https://arxiv.org/abs/2008.00623) [cs.LG]** |
+|           | (or **[arXiv:2008.00623v1](https://arxiv.org/abs/2008.00623v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2020-08-04-3">3. Multilingual Translation with Extensible Multilingual Pretraining and Finetuning</h2>
+
+Title: [Multilingual Translation with Extensible Multilingual Pretraining and Finetuning](https://arxiv.org/abs/2008.00401)
+
+Authors: [Yuqing Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+Y), [Chau Tran](https://arxiv.org/search/cs?searchtype=author&query=Tran%2C+C), [Xian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Peng-Jen Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+P), [Naman Goyal](https://arxiv.org/search/cs?searchtype=author&query=Goyal%2C+N), [Vishrav Chaudhary](https://arxiv.org/search/cs?searchtype=author&query=Chaudhary%2C+V), [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J), [Angela Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+A)
+
+> Recent work demonstrates the potential of multilingual pretraining of creating one model that can be used for various tasks in different languages. Previous work in multilingual pretraining has demonstrated that machine translation systems can be created by finetuning on bitext. In this work, we show that multilingual translation models can be created through multilingual finetuning. Instead of finetuning on one direction, a pretrained model is finetuned on many directions at the same time. Compared to multilingual models trained from scratch, starting from pretrained models incorporates the benefits of large quantities of unlabeled monolingual data, which is particularly important for low resource languages where bitext is not available. We demonstrate that pretrained models can be extended to incorporate additional languages without loss of performance. We double the number of languages in mBART to support multilingual machine translation models of 50 languages. Finally, we create the ML50 benchmark, covering low, mid, and high resource languages, to facilitate reproducible research by standardizing training and evaluation data. On ML50, we demonstrate that multilingual finetuning improves on average 1 BLEU over the strongest baselines (being either multilingual from scratch or bilingual finetuning) while improving 9.3 BLEU on average over bilingual baselines from scratch.
+
+| Comments: | 10 pages (main) + 5 pages (appendices). 9 tables and 2 figures |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2008.00401](https://arxiv.org/abs/2008.00401) [cs.CL]** |
+|           | (or **[arXiv:2008.00401v1](https://arxiv.org/abs/2008.00401v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-08-04-4">4. LT@Helsinki at SemEval-2020 Task 12: Multilingual or language-specific BERT?</h2>
+
+Title: [LT@Helsinki at SemEval-2020 Task 12: Multilingual or language-specific BERT?](https://arxiv.org/abs/2008.00805)
+
+Authors: [Marc Pàmies](https://arxiv.org/search/cs?searchtype=author&query=Pàmies%2C+M), [Emily Öhman](https://arxiv.org/search/cs?searchtype=author&query=Öhman%2C+E), [Kaisla Kajava](https://arxiv.org/search/cs?searchtype=author&query=Kajava%2C+K), [Jörg Tiedemann](https://arxiv.org/search/cs?searchtype=author&query=Tiedemann%2C+J)
+
+> This paper presents the different models submitted by the LT@Helsinki team for the SemEval 2020 Shared Task 12. Our team participated in sub-tasks A and C; titled offensive language identification and offense target identification, respectively. In both cases we used the so-called Bidirectional Encoder Representation from Transformer (BERT), a model pre-trained by Google and fine-tuned by us on the OLID and SOLID datasets. The results show that offensive tweet classification is one of several language-based tasks where BERT can achieve state-of-the-art results.
+
+| Comments: | Accepted at SemEval-2020 Task 12. Identical to camera-ready version except where adjustments to fit arXiv requirements were necessary |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2008.00805](https://arxiv.org/abs/2008.00805) [cs.CL]** |
+|           | (or **[arXiv:2008.00805v1](https://arxiv.org/abs/2008.00805v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
