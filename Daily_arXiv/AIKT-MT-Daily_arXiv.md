@@ -3,6 +3,10 @@
 # Index
 
 
+- [2020-08-05](#2020-08-05)
+
+  - [1. A Survey of Orthographic Information in Machine Translation](#2020-08-05-1)
+  - [2. Defining and Evaluating Fair Natural Language Generation](#2020-08-05-2)
 - [2020-08-04](#2020-08-04)
 
   - [1. Audiovisual Speech Synthesis using Tacotron2](#2020-08-04-1)
@@ -37,6 +41,46 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-08-05
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-08-05-1">1. A Survey of Orthographic Information in Machine Translation</h2>
+
+Title: [A Survey of Orthographic Information in Machine Translation](https://arxiv.org/abs/2008.01391)
+
+Authors: [Bharathi Raja Chakravarthi](https://arxiv.org/search/cs?searchtype=author&query=Chakravarthi%2C+B+R), [Priya Rani](https://arxiv.org/search/cs?searchtype=author&query=Rani%2C+P), [Mihael Arcan](https://arxiv.org/search/cs?searchtype=author&query=Arcan%2C+M), [John P. McCrae](https://arxiv.org/search/cs?searchtype=author&query=McCrae%2C+J+P)
+
+> Machine translation is one of the applications of natural language processing which has been explored in different languages. Recently researchers started paying attention towards machine translation for resource-poor languages and closely related languages. A widespread and underlying problem for these machine translation systems is the variation in orthographic conventions which causes many issues to traditional approaches. Two languages written in two different orthographies are not easily comparable, but orthographic information can also be used to improve the machine translation system. This article offers a survey of research regarding orthography's influence on machine translation of under-resourced languages. It introduces under-resourced languages in terms of machine translation and how orthographic information can be utilised to improve machine translation. We describe previous work in this area, discussing what underlying assumptions were made, and showing how orthographic knowledge improves the performance of machine translation of under-resourced languages. We discuss different types of machine translation and demonstrate a recent trend that seeks to link orthographic information with well-established machine translation methods. Considerable attention is given to current efforts of cognates information at different levels of machine translation and the lessons that can be drawn from this. Additionally, multilingual neural machine translation of closely related languages is given a particular focus in this survey. This article ends with a discussion of the way forward in machine translation with orthographic information, focusing on multilingual settings and bilingual lexicon induction.
+
+| Comments: | 18 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2008.01391](https://arxiv.org/abs/2008.01391) [cs.CL]** |
+|           | (or **[arXiv:2008.01391v1](https://arxiv.org/abs/2008.01391v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-08-05-2">2. Defining and Evaluating Fair Natural Language Generation</h2>
+
+Title: [Defining and Evaluating Fair Natural Language Generation](https://arxiv.org/abs/2008.01548)
+
+Authors: [Catherine Yeo](https://arxiv.org/search/cs?searchtype=author&query=Yeo%2C+C), [Alyssa Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+A)
+
+> Our work focuses on the biases that emerge in the natural language generation (NLG) task of sentence completion. In this paper, we introduce a framework of fairness for NLG followed by an evaluation of gender biases in two state-of-the-art language models. Our analysis provides a theoretical formulation for biases in NLG and empirical evidence that existing language generation models embed gender bias.
+
+| Comments: | 7 pages, 2 figures, to be published in Proceedings of the The Fourth Widening Natural Language Processing Workshop at ACL |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2008.01548](https://arxiv.org/abs/2008.01548) [cs.CL]** |
+|           | (or **[arXiv:2008.01548v1](https://arxiv.org/abs/2008.01548v1) [cs.CL]** for this version) |
 
 
 
