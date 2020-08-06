@@ -3,9 +3,11 @@
 # Index
 
 
-- [2020-08-05](#2020-08-05)
+- [2020-08-06](#2020-08-06)
 
-  - [1. A Survey of Orthographic Information in Machine Translation](#2020-08-05-1)
+  - [1. An exploration of the encoding of grammatical gender in word embeddings](#2020-08-06-1)
+- [2020-08-05](#2020-08-05)
+- [1. A Survey of Orthographic Information in Machine Translation](#2020-08-05-1)
   - [2. Defining and Evaluating Fair Natural Language Generation](#2020-08-05-2)
 - [2020-08-04](#2020-08-04)
 
@@ -41,6 +43,32 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-08-06
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-08-05-1">1. An exploration of the encoding of grammatical gender in word embeddings</h2>
+
+Title: [An exploration of the encoding of grammatical gender in word embeddings](https://arxiv.org/abs/2008.01946)
+
+Authors: [Hartger Veeman](https://arxiv.org/search/cs?searchtype=author&query=Veeman%2C+H), [Ali Basirat](https://arxiv.org/search/cs?searchtype=author&query=Basirat%2C+A)
+
+> The vector representation of words, known as word embeddings, has opened a new research approach in the study of languages. These representations can capture different types of information about words. The grammatical gender of nouns is a typical classification of nouns based on their formal and semantic properties. The study of grammatical gender based on word embeddings can give insight into discussions on how grammatical genders are determined. In this research, we compare different sets of word embeddings according to the accuracy of a neural classifier determining the grammatical gender of nouns. It is found that the information about grammatical gender is encoded differently in Swedish, Danish, and Dutch embeddings. Our experimental results on the contextualized embeddings pointed out that adding more contextual (semantic) information to embeddings is detrimental to the classifier's performance. We also observed that removing morpho-syntactic features such as articles from the training corpora of embeddings decreases the classification performance dramatically, indicating a large portion of the information is encoded in the relationship between nouns and articles.
+
+| Comments: | Accepted by the 4th Swedish Symposium on Deep Learning (SSDL-2020) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2008.01946](https://arxiv.org/abs/2008.01946) [cs.CL]** |
+|           | (or **[arXiv:2008.01946v1](https://arxiv.org/abs/2008.01946v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
