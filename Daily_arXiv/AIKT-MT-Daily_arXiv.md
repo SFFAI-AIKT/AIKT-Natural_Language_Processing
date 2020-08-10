@@ -3,6 +3,11 @@
 # Index
 
 
+- [2020-08-10](#2020-08-10)
+
+  - [1. A Multilingual Neural Machine Translation Model for Biomedical Data](#2020-08-10-1)
+  - [2. Data Weighted Training Strategies for Grammatical Error Correction](#2020-08-10-2)
+  - [3. SemEval-2020 Task 10: Emphasis Selection for Written Text in Visual Media](#2020-08-10-3)
 - [2020-08-06](#2020-08-06)
 
   - [1. An exploration of the encoding of grammatical gender in word embeddings](#2020-08-06-1)
@@ -43,6 +48,67 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-08-10
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-08-10-1">1. A Multilingual Neural Machine Translation Model for Biomedical Data</h2>
+
+Title: [A Multilingual Neural Machine Translation Model for Biomedical Data](https://arxiv.org/abs/2008.02878)
+
+Authors: [Alexandre Bérard](https://arxiv.org/search/cs?searchtype=author&query=Bérard%2C+A), [Zae Myung Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+Z+M), [Vassilina Nikoulina](https://arxiv.org/search/cs?searchtype=author&query=Nikoulina%2C+V), [Eunjeong L. Park](https://arxiv.org/search/cs?searchtype=author&query=Park%2C+E+L), [Matthias Gallé](https://arxiv.org/search/cs?searchtype=author&query=Gallé%2C+M)
+
+> We release a multilingual neural machine translation model, which can be used to translate text in the biomedical domain. The model can translate from 5 languages (French, German, Italian, Korean and Spanish) into English. It is trained with large amounts of generic and biomedical data, using domain tags. Our benchmarks show that it performs near state-of-the-art both on news (generic domain) and biomedical test sets, and that it outperforms the existing publicly released models. We believe that this release will help the large-scale multilingual analysis of the digital content of the COVID-19 crisis and of its effects on society, economy, and healthcare policies.
+> We also release a test set of biomedical text for Korean-English. It consists of 758 sentences from official guidelines and recent papers, all about COVID-19.
+
+| Comments: | [this https URL](https://github.com/naver/covid19-nmt)       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2008.02878](https://arxiv.org/abs/2008.02878) [cs.CL]** |
+|           | (or **[arXiv:2008.02878v1](https://arxiv.org/abs/2008.02878v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-08-10-2">2. Data Weighted Training Strategies for Grammatical Error Correction</h2>
+
+Title: [Data Weighted Training Strategies for Grammatical Error Correction](https://arxiv.org/abs/2008.02976)
+
+Authors: [Jared Lichtarge](https://arxiv.org/search/cs?searchtype=author&query=Lichtarge%2C+J), [Chris Alberti](https://arxiv.org/search/cs?searchtype=author&query=Alberti%2C+C), [Shankar Kumar](https://arxiv.org/search/cs?searchtype=author&query=Kumar%2C+S)
+
+> Recent progress in the task of Grammatical Error Correction (GEC) has been driven by addressing data sparsity, both through new methods for generating large and noisy pretraining data and through the publication of small and higher-quality finetuning data in the BEA-2019 shared task. Building upon recent work in Neural Machine Translation (NMT), we make use of both kinds of data by deriving example-level scores on our large pretraining data based on a smaller, higher-quality dataset. In this work, we perform an empirical study to discover how to best incorporate delta-log-perplexity, a type of example scoring, into a training schedule for GEC. In doing so, we perform experiments that shed light on the function and applicability of delta-log-perplexity. Models trained on scored data achieve state-of-the-art results on common GEC test sets.
+
+| Comments: | Accepted to TACL (Transactions of the Association for Computational Linguistics) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (stat.ML) |
+| Cite as:  | **[arXiv:2008.02976](https://arxiv.org/abs/2008.02976) [cs.CL]** |
+|           | (or **[arXiv:2008.02976v1](https://arxiv.org/abs/2008.02976v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-08-10-3">3. SemEval-2020 Task 10: Emphasis Selection for Written Text in Visual Media</h2>
+
+Title: [SemEval-2020 Task 10: Emphasis Selection for Written Text in Visual Media](https://arxiv.org/abs/2008.03274)
+
+Authors: [Amirreza Shirani](https://arxiv.org/search/cs?searchtype=author&query=Shirani%2C+A), [Franck Dernoncourt](https://arxiv.org/search/cs?searchtype=author&query=Dernoncourt%2C+F), [Nedim Lipka](https://arxiv.org/search/cs?searchtype=author&query=Lipka%2C+N), [Paul Asente](https://arxiv.org/search/cs?searchtype=author&query=Asente%2C+P), [Jose Echevarria](https://arxiv.org/search/cs?searchtype=author&query=Echevarria%2C+J), [Thamar Solorio](https://arxiv.org/search/cs?searchtype=author&query=Solorio%2C+T)
+
+> In this paper, we present the main findings and compare the results of SemEval-2020 Task 10, Emphasis Selection for Written Text in Visual Media. The goal of this shared task is to design automatic methods for emphasis selection, i.e. choosing candidates for emphasis in textual content to enable automated design assistance in authoring. The main focus is on short text instances for social media, with a variety of examples, from social media posts to inspirational quotes. Participants were asked to model emphasis using plain text with no additional context from the user or other design considerations. SemEval-2020 Emphasis Selection shared task attracted 197 participants in the early phase and a total of 31 teams made submissions to this task. The highest-ranked submission achieved 0.823 Matchm score. The analysis of systems submitted to the task indicates that BERT and RoBERTa were the most common choice of pre-trained models used, and part of speech tag (POS) was the most useful feature. Full results can be found on the task's website.
+
+| Comments: | Accepted at Proceedings of 14th International Workshop on Semantic Evaluation (SemEval-2020) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2008.03274](https://arxiv.org/abs/2008.03274) [cs.CL]** |
+|           | (or **[arXiv:2008.03274v1](https://arxiv.org/abs/2008.03274v1) [cs.CL]** for this version) |
+
+
 
 
 
