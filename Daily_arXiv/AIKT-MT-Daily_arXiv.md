@@ -3,9 +3,14 @@
 # Index
 
 
-- [2020-08-10](#2020-08-10)
+- [2020-08-11](#2020-08-11)
 
-  - [1. A Multilingual Neural Machine Translation Model for Biomedical Data](#2020-08-10-1)
+  - [1. Word Error Rate Estimation Without ASR Output: e-WER2](#2020-08-11-1)
+  - [2. Navigating Language Models with Synthetic Agents](#2020-08-11-2)
+  - [3. Distilling the Knowledge of BERT for Sequence-to-Sequence ASR](#2020-08-11-3)
+  - [4. Does BERT Solve Commonsense Task via Commonsense Knowledge?](#2020-08-11-4)
+- [2020-08-10](#2020-08-10)
+- [1. A Multilingual Neural Machine Translation Model for Biomedical Data](#2020-08-10-1)
   - [2. Data Weighted Training Strategies for Grammatical Error Correction](#2020-08-10-2)
   - [3. SemEval-2020 Task 10: Emphasis Selection for Written Text in Visual Media](#2020-08-10-3)
 - [2020-08-06](#2020-08-06)
@@ -48,6 +53,85 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-08-11
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-08-11-1">1. Word Error Rate Estimation Without ASR Output: e-WER2</h2>
+
+Title: [Word Error Rate Estimation Without ASR Output: e-WER2](https://arxiv.org/abs/2008.03403)
+
+Authors: [Ahmed Ali](https://arxiv.org/search/eess?searchtype=author&query=Ali%2C+A), [Steve Renals](https://arxiv.org/search/eess?searchtype=author&query=Renals%2C+S)
+
+> Measuring the performance of automatic speech recognition (ASR) systems requires manually transcribed data in order to compute the word error rate (WER), which is often time-consuming and expensive. In this paper, we continue our effort in estimating WER using acoustic, lexical and phonotactic features. Our novel approach to estimate the WER uses a multistream end-to-end architecture. We report results for systems using internal speech decoder features (glass-box), systems without speech decoder features (black-box), and for systems without having access to the ASR system (no-box). The no-box system learns joint acoustic-lexical representation from phoneme recognition results along with MFCC acoustic features to estimate WER. Considering WER per sentence, our no-box system achieves 0.56 Pearson correlation with the reference evaluation and 0.24 root mean square error (RMSE) across 1,400 sentences. The estimated overall WER by e-WER2 is 30.9% for a three hours test set, while the WER computed using the reference transcriptions was 28.5%.
+
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Sound (cs.SD) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2008.03403](https://arxiv.org/abs/2008.03403) [eess.AS]** |
+|           | (or **[arXiv:2008.03403v1](https://arxiv.org/abs/2008.03403v1) [eess.AS]** for this version) |
+
+
+
+
+
+<h2 id="2020-08-11-2">2. Navigating Language Models with Synthetic Agents</h2>
+
+Title: [Navigating Language Models with Synthetic Agents](https://arxiv.org/abs/2008.04162)
+
+Authors: [Philip Feldman](https://arxiv.org/search/cs?searchtype=author&query=Feldman%2C+P)
+
+> Modern natural language models such as the GPT-2/GPT-3 contain tremendous amounts of information about human belief in a consistently interrogatable form. If these models could be shown to accurately reflect the underlying beliefs of the human beings that produced the data used to train these models, then such models become a powerful sociological tool in ways that are distinct from traditional methods, such as interviews and surveys. In this study, We train a version of the GPT-2 on a corpora of historical chess games, and then compare the learned relationships of words in the model to the known ground truth of the chess board, move legality, and historical patterns of play. We find that the percentages of moves by piece using the model are substantially similar from human patterns. We further find that the model creates an accurate latent representation of the chessboard, and that it is possible to plot trajectories of legal moves across the board using this knowledge.
+
+| Comments:    | 8 pages, 6 figures, 2 tables, 1 algorithm                    |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Artificial Intelligence (cs.AI)**; Computation and Language (cs.CL); Multiagent Systems (cs.MA) |
+| ACM classes: | I.2; I.6; J.4                                                |
+| Cite as:     | **[arXiv:2008.04162](https://arxiv.org/abs/2008.04162) [cs.AI]** |
+|              | (or **[arXiv:2008.04162v1](https://arxiv.org/abs/2008.04162v1) [cs.AI]** for this version) |
+
+
+
+
+
+<h2 id="2020-08-11-3">3. Distilling the Knowledge of BERT for Sequence-to-Sequence ASR</h2>
+
+Title: [Distilling the Knowledge of BERT for Sequence-to-Sequence ASR](https://arxiv.org/abs/2008.03822)
+
+Authors: [Hayato Futami](https://arxiv.org/search/cs?searchtype=author&query=Futami%2C+H), [Hirofumi Inaguma](https://arxiv.org/search/cs?searchtype=author&query=Inaguma%2C+H), [Sei Ueno](https://arxiv.org/search/cs?searchtype=author&query=Ueno%2C+S), [Masato Mimura](https://arxiv.org/search/cs?searchtype=author&query=Mimura%2C+M), [Shinsuke Sakai](https://arxiv.org/search/cs?searchtype=author&query=Sakai%2C+S), [Tatsuya Kawahara](https://arxiv.org/search/cs?searchtype=author&query=Kawahara%2C+T)
+
+> Attention-based sequence-to-sequence (seq2seq) models have achieved promising results in automatic speech recognition (ASR). However, as these models decode in a left-to-right way, they do not have access to context on the right. We leverage both left and right context by applying BERT as an external language model to seq2seq ASR through knowledge distillation. In our proposed method, BERT generates soft labels to guide the training of seq2seq ASR. Furthermore, we leverage context beyond the current utterance as input to BERT. Experimental evaluations show that our method significantly improves the ASR performance from the seq2seq baseline on the Corpus of Spontaneous Japanese (CSJ). Knowledge distillation from BERT outperforms that from a transformer LM that only looks at left context. We also show the effectiveness of leveraging context beyond the current utterance. Our method outperforms other LM application approaches such as n-best rescoring and shallow fusion, while it does not require extra inference cost.
+
+| Comments: | Accepted in INTERSPEECH2020                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2008.03822](https://arxiv.org/abs/2008.03822) [cs.CL]** |
+|           | (or **[arXiv:2008.03822v1](https://arxiv.org/abs/2008.03822v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-08-11-4">4. Does BERT Solve Commonsense Task via Commonsense Knowledge?</h2>
+
+Title: [Does BERT Solve Commonsense Task via Commonsense Knowledge?](https://arxiv.org/abs/2008.03945)
+
+Authors: [Leyang Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+L), [Sijie Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+S), [Yu Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Y), [Yue Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y)
+
+> The success of pre-trained contextualized language models such as BERT motivates a line of work that investigates linguistic knowledge inside such models in order to explain the huge improvement in downstream tasks. While previous work shows syntactic, semantic and word sense knowledge in BERT, little work has been done on investigating how BERT solves CommonsenseQA tasks. In particular, it is an interesting research question whether BERT relies on shallow syntactic patterns or deeper commonsense knowledge for disambiguation. We propose two attention-based methods to analyze commonsense knowledge inside BERT, and the contribution of such knowledge for the model prediction. We find that attention heads successfully capture the structured commonsense knowledge encoded in ConceptNet, which helps BERT solve commonsense tasks directly. Fine-tuning further makes BERT learn to use the commonsense knowledge on higher layers.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2008.03945](https://arxiv.org/abs/2008.03945) [cs.CL]** |
+|           | (or **[arXiv:2008.03945v1](https://arxiv.org/abs/2008.03945v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
