@@ -3,6 +3,11 @@
 # Index
 
 
+- [2020-08-12](#2020-08-12)
+
+  - [1. On Learning Language-Invariant Representations for Universal Machine Translation](#2020-08-12-1)
+  - [2. Revisiting Low Resource Status of Indian Languages in Machine Translation](#2020-08-12-2)
+  - [3. The Sockeye 2 Neural Machine Translation Toolkit at AMTA 2020](#2020-08-12-3)
 - [2020-08-11](#2020-08-11)
 
   - [1. Word Error Rate Estimation Without ASR Output: e-WER2](#2020-08-11-1)
@@ -53,6 +58,66 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-08-12
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-08-12-1">1. On Learning Language-Invariant Representations for Universal Machine Translation</h2>
+
+Title: [On Learning Language-Invariant Representations for Universal Machine Translation](https://arxiv.org/abs/2008.04510)
+
+Authors:[Han Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+H), [Junjie Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+J), [Andrej Risteski](https://arxiv.org/search/cs?searchtype=author&query=Risteski%2C+A)
+
+> The goal of universal machine translation is to learn to translate between any pair of languages, given a corpus of paired translated documents for \emph{a small subset} of all pairs of languages. Despite impressive empirical results and an increasing interest in massively multilingual models, theoretical analysis on translation errors made by such universal machine translation models is only nascent. In this paper, we formally prove certain impossibilities of this endeavour in general, as well as prove positive results in the presence of additional (but natural) structure of data.
+> For the former, we derive a lower bound on the translation error in the many-to-many translation setting, which shows that any algorithm aiming to learn shared sentence representations among multiple language pairs has to make a large translation error on at least one of the translation tasks, if no assumption on the structure of the languages is made. For the latter, we show that if the paired documents in the corpus follow a natural \emph{encoder-decoder} generative process, we can expect a natural notion of ``generalization'': a linear number of language pairs, rather than quadratic, suffices to learn a good representation. Our theory also explains what kinds of connection graphs between pairs of languages are better suited: ones with longer paths result in worse sample complexity in terms of the total number of documents per language pair needed. We believe our theoretical insights and implications contribute to the future algorithmic design of universal machine translation.
+
+| Comments: | Appeared in ICML 2020                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| Cite as:  | **[arXiv:2008.04510](https://arxiv.org/abs/2008.04510) [cs.LG]** |
+|           | (or **[arXiv:2008.04510v1](https://arxiv.org/abs/2008.04510v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2020-08-12-2">2. Revisiting Low Resource Status of Indian Languages in Machine Translation</h2>
+
+Title: [Revisiting Low Resource Status of Indian Languages in Machine Translation](https://arxiv.org/abs/2008.04860)
+
+Authors:[Jerin Philip](https://arxiv.org/search/cs?searchtype=author&query=Philip%2C+J), [Shashank Siripragada](https://arxiv.org/search/cs?searchtype=author&query=Siripragada%2C+S), [Vinay P. Namboodiri](https://arxiv.org/search/cs?searchtype=author&query=Namboodiri%2C+V+P), [C.V. Jawahar](https://arxiv.org/search/cs?searchtype=author&query=Jawahar%2C+C)
+
+> Indian language machine translation performance is hampered due to the lack of large scale multi-lingual sentence aligned corpora and robust benchmarks. Through this paper, we provide and analyse an automated framework to obtain such a corpus for Indian language neural machine translation (NMT) systems. Our pipeline consists of a baseline NMT system, a retrieval module, and an alignment module that is used to work with publicly available websites such as press releases by the government. The main contribution towards this effort is to obtain an incremental method that uses the above pipeline to iteratively improve the size of the corpus as well as improve each of the components of our system. Through our work, we also evaluate the design choices such as the choice of pivoting language and the effect of iterative incremental increase in corpus size. Our work in addition to providing an automated framework also results in generating a relatively larger corpus as compared to existing corpora that are available for Indian languages. This corpus helps us obtain substantially improved results on the publicly available WAT evaluation benchmark and other standard evaluation benchmarks.
+
+| Comments: | 10 pages, few figures, Preprint under review                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2008.04860](https://arxiv.org/abs/2008.04860) [cs.CL]** |
+|           | (or **[arXiv:2008.04860v1](https://arxiv.org/abs/2008.04860v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-08-12-3">3. The Sockeye 2 Neural Machine Translation Toolkit at AMTA 2020</h2>
+
+Title: [The Sockeye 2 Neural Machine Translation Toolkit at AMTA 2020](https://arxiv.org/abs/2008.04885)
+
+Authors:[Tobias Domhan](https://arxiv.org/search/cs?searchtype=author&query=Domhan%2C+T), [Michael Denkowski](https://arxiv.org/search/cs?searchtype=author&query=Denkowski%2C+M), [David Vilar](https://arxiv.org/search/cs?searchtype=author&query=Vilar%2C+D), [Xing Niu](https://arxiv.org/search/cs?searchtype=author&query=Niu%2C+X), [Felix Hieber](https://arxiv.org/search/cs?searchtype=author&query=Hieber%2C+F), [Kenneth Heafield](https://arxiv.org/search/cs?searchtype=author&query=Heafield%2C+K)
+
+> We present Sockeye 2, a modernized and streamlined version of the Sockeye neural machine translation (NMT) toolkit. New features include a simplified code base through the use of MXNet's Gluon API, a focus on state of the art model architectures, distributed mixed precision training, and efficient CPU decoding with 8-bit quantization. These improvements result in faster training and inference, higher automatic metric scores, and a shorter path from research to production.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2008.04885](https://arxiv.org/abs/2008.04885) [cs.CL]** |
+|           | (or **[arXiv:2008.04885v1](https://arxiv.org/abs/2008.04885v1) [cs.CL]** for this version) |
+
+
 
 
 
