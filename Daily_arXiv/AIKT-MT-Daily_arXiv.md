@@ -3,6 +3,13 @@
 # Index
 
 
+- [2020-08-14](#2020-08-14)
+
+  - [1. On the Importance of Local Information in Transformer Based Models](#2020-08-14-1)
+- [2020-08-13](#2020-08-13)
+
+  - [1. Paraphrase Generation as Zero-Shot Multilingual Translation: Disentangling Semantic Similarity from Lexical and Syntactic Diversity](#2020-08-13-1)
+  - [2. Approaching Neural Chinese Word Segmentation as a Low-Resource Machine Translation Task](#2020-08-13-2)
 - [2020-08-12](#2020-08-12)
 
   - [1. On Learning Language-Invariant Representations for Universal Machine Translation](#2020-08-12-1)
@@ -58,6 +65,70 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-08-14
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-08-14-1">1. On the Importance of Local Information in Transformer Based Models</h2>
+
+Title: [On the Importance of Local Information in Transformer Based Models](https://arxiv.org/abs/2008.05828)
+
+Authors: [Madhura Pande](https://arxiv.org/search/cs?searchtype=author&query=Pande%2C+M), [Aakriti Budhraja](https://arxiv.org/search/cs?searchtype=author&query=Budhraja%2C+A), [Preksha Nema](https://arxiv.org/search/cs?searchtype=author&query=Nema%2C+P), [Pratyush Kumar](https://arxiv.org/search/cs?searchtype=author&query=Kumar%2C+P), [Mitesh M. Khapra](https://arxiv.org/search/cs?searchtype=author&query=Khapra%2C+M+M)
+
+> The self-attention module is a key component of Transformer-based models, wherein each token pays attention to every other token. Recent studies have shown that these heads exhibit syntactic, semantic, or local behaviour. Some studies have also identified promise in restricting this attention to be local, i.e., a token attending to other tokens only in a small neighbourhood around it. However, no conclusive evidence exists that such local attention alone is sufficient to achieve high accuracy on multiple NLP tasks. In this work, we systematically analyse the role of locality information in learnt models and contrast it with the role of syntactic information. More specifically, we first do a sensitivity analysis and show that, at every layer, the representation of a token is much more sensitive to tokens in a small neighborhood around it than to tokens which are syntactically related to it. We then define an attention bias metric to determine whether a head pays more attention to local tokens or to syntactically related tokens. We show that a larger fraction of heads have a locality bias as compared to a syntactic bias. Having established the importance of local attention heads, we train and evaluate models where varying fractions of the attention heads are constrained to be local. Such models would be more efficient as they would have fewer computations in the attention layer. We evaluate these models on 4 GLUE datasets (QQP, SST-2, MRPC, QNLI) and 2 MT datasets (En-De, En-Ru) and clearly demonstrate that such constrained models have comparable performance to the unconstrained models. Through this systematic evaluation we establish that attention in Transformer-based models can be constrained to be local without affecting performance.
+
+| Comments: | 10 pages, 4 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2008.05828](https://arxiv.org/abs/2008.05828) [cs.CL]** |
+|           | (or **[arXiv:2008.05828v1](https://arxiv.org/abs/2008.05828v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+# 2020-08-13
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-08-13-1">1. Paraphrase Generation as Zero-Shot Multilingual Translation: Disentangling Semantic Similarity from Lexical and Syntactic Diversity</h2>
+
+Title: [Paraphrase Generation as Zero-Shot Multilingual Translation: Disentangling Semantic Similarity from Lexical and Syntactic Diversity](https://arxiv.org/abs/2008.04935)
+
+Authors: [Brian Thompson](https://arxiv.org/search/cs?searchtype=author&query=Thompson%2C+B), [Matt Post](https://arxiv.org/search/cs?searchtype=author&query=Post%2C+M)
+
+> Recent work has shown that a multilingual neural machine translation (NMT) model can be used to judge how well a sentence paraphrases another sentence in the same language; however, attempting to generate paraphrases from the model using beam search produces trivial copies or near copies. We introduce a simple paraphrase generation algorithm which discourages the production of n-grams that are present in the input. Our approach enables paraphrase generation in many languages from a single multilingual NMT model. Furthermore, the trade-off between semantic similarity and lexical/syntactic diversity between the input and output can be controlled at generation time. We conduct human evaluation to compare our method to a paraphraser trained on a large English synthetic paraphrase database and find that our model produces paraphrases that better preserve semantic meaning and grammatically, for the same level of lexical/syntactic diversity. Additional smaller human assessments demonstrate our approach also works in non-English languages.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2008.04935](https://arxiv.org/abs/2008.04935) [cs.CL]** |
+|           | (or **[arXiv:2008.04935v1](https://arxiv.org/abs/2008.04935v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-08-13-2">2. Approaching Neural Chinese Word Segmentation as a Low-Resource Machine Translation Task</h2>
+
+Title: [Approaching Neural Chinese Word Segmentation as a Low-Resource Machine Translation Task](https://arxiv.org/abs/2008.05348)
+
+Authors: [Pinzhen Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+P), [Kenneth Heafield](https://arxiv.org/search/cs?searchtype=author&query=Heafield%2C+K)
+
+> Supervised Chinese word segmentation has been widely approached as sequence labeling or sequence modeling. Recently, some researchers attempted to treat it as character-level translation, but there is still a performance gap between the translation-based approach and other methods. In this work, we apply the best practices from low-resource neural machine translation to Chinese word segmentation. We build encoder-decoder models with attention, and examine a series of techniques including regularization, data augmentation, objective weighting, transfer learning and ensembling. When benchmarked on MSR corpus under closed test condition without additional data, our method achieves 97.6% F1, which is on a par with the state of the art.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2008.05348](https://arxiv.org/abs/2008.05348) [cs.CL]** |
+|           | (or **[arXiv:2008.05348v1](https://arxiv.org/abs/2008.05348v1) [cs.CL]** for this version) |
 
 
 
