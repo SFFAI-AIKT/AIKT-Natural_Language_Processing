@@ -3,9 +3,12 @@
 # Index
 
 
-- [2020-08-14](#2020-08-14)
+- [#2020-08-18](#2020-08-18)
 
-  - [1. On the Importance of Local Information in Transformer Based Models](#2020-08-14-1)
+  - [1. Lanfrica: A Participatory Approach to Documenting Machine Translation Research on African Languages](#2020-08-18-1)
+  - [2. Adding Recurrence to Pretrained Transformers for Improved Efficiency and Context Size](#2020-08-18-2)
+- [2020-08-14](#2020-08-14)
+- [1. On the Importance of Local Information in Transformer Based Models](#2020-08-14-1)
 - [2020-08-13](#2020-08-13)
 
   - [1. Paraphrase Generation as Zero-Shot Multilingual Translation: Disentangling Semantic Similarity from Lexical and Syntactic Diversity](#2020-08-13-1)
@@ -65,6 +68,45 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-08-18
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-08-18-1">1. Lanfrica: A Participatory Approach to Documenting Machine Translation Research on African Languages</h2>
+
+Title: [Lanfrica: A Participatory Approach to Documenting Machine Translation Research on African Languages](https://arxiv.org/abs/2008.07302)
+
+Authors: [Chris C. Emezue](https://arxiv.org/search/cs?searchtype=author&query=Emezue%2C+C+C), [Bonaventure F.P. Dossou](https://arxiv.org/search/cs?searchtype=author&query=Dossou%2C+B+F)
+
+> Over the years, there have been campaigns to include the African languages in the growing research on machine translation (MT) in particular, and natural language processing (NLP) in general. Africa has the highest language diversity, with 1500-2000 documented languages and many more undocumented or extinct languages(Lewis, 2009; Bendor-Samuel, 2017). This makes it hard to keep track of the MT research, models and dataset that have been developed for some of them. As the internet and social media make up the daily lives of more than half of the world(Lin, 2020), as well as over 40% of Africans(Campbell, 2019), online platforms can be useful in creating accessibility to researches, benchmarks and datasets in these African languages, thereby improving reproducibility and sharing of existing research and their results. In this paper, we introduce Lanfrica, a novel, on-going framework that employs a participatory approach to documenting researches, projects, benchmarks and dataset on African languages.
+
+| Subjects: | **Computers and Society (cs.CY)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2008.07302](https://arxiv.org/abs/2008.07302) [cs.CY]** |
+|           | (or **[arXiv:2008.07302v1](https://arxiv.org/abs/2008.07302v1) [cs.CY]** for this version) |
+
+
+
+
+
+<h2 id="2020-08-18-2">2. Adding Recurrence to Pretrained Transformers for Improved Efficiency and Context Size</h2>
+
+Title: [Adding Recurrence to Pretrained Transformers for Improved Efficiency and Context Size](https://arxiv.org/abs/2008.07027)
+
+Authors: [Davis Yoshida](https://arxiv.org/search/cs?searchtype=author&query=Yoshida%2C+D), [Allyson Ettinger](https://arxiv.org/search/cs?searchtype=author&query=Ettinger%2C+A), [Kevin Gimpel](https://arxiv.org/search/cs?searchtype=author&query=Gimpel%2C+K)
+
+> Fine-tuning a pretrained transformer for a downstream task has become a standard method in NLP in the last few years. While the results from these models are impressive, applying them can be extremely computationally expensive, as is pretraining new models with the latest architectures. We present a novel method for applying pretrained transformer language models which lowers their memory requirement both at training and inference time. An additional benefit is that our method removes the fixed context size constraint that most transformer models have, allowing for more flexible use. When applied to the GPT-2 language model, we find that our method attains better perplexity than an unmodified GPT-2 model on the PG-19 and WikiText-103 corpora, for a given amount of computation or memory.
+
+| Comments: | 12 pages, 5 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2008.07027](https://arxiv.org/abs/2008.07027) [cs.CL]** |
+|           | (or **[arXiv:2008.07027v1](https://arxiv.org/abs/2008.07027v1) [cs.CL]** for this version) |
 
 
 
