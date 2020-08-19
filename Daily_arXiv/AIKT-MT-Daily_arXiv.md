@@ -3,12 +3,17 @@
 # Index
 
 
-- [#2020-08-18](#2020-08-18)
+- [2020-08-19](#2020-08-19)
 
-  - [1. Lanfrica: A Participatory Approach to Documenting Machine Translation Research on African Languages](#2020-08-18-1)
+  - [1. Word2vec Skip-gram Dimensionality Selection via Sequential Normalized Maximum Likelihood](#2020-08-19-1)
+  - [2. Very Deep Transformers for Neural Machine Translation](#2020-08-19-2)
+  - [3. Glancing Transformer for Non-Autoregressive Neural Machine Translation](#2020-08-19-3)
+- [2020-08-18](#2020-08-18)
+- [1. Lanfrica: A Participatory Approach to Documenting Machine Translation Research on African Languages](#2020-08-18-1)
   - [2. Adding Recurrence to Pretrained Transformers for Improved Efficiency and Context Size](#2020-08-18-2)
 - [2020-08-14](#2020-08-14)
-- [1. On the Importance of Local Information in Transformer Based Models](#2020-08-14-1)
+
+  - [1. On the Importance of Local Information in Transformer Based Models](#2020-08-14-1)
 - [2020-08-13](#2020-08-13)
 
   - [1. Paraphrase Generation as Zero-Shot Multilingual Translation: Disentangling Semantic Similarity from Lexical and Syntactic Diversity](#2020-08-13-1)
@@ -68,6 +73,65 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-08-19
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-08-19-1">1. Word2vec Skip-gram Dimensionality Selection via Sequential Normalized Maximum Likelihood</h2>
+
+Title: [Word2vec Skip-gram Dimensionality Selection via Sequential Normalized Maximum Likelihood](https://arxiv.org/abs/2008.07720)
+
+Title: [Pham Thuc Hung](https://arxiv.org/search/cs?searchtype=author&query=Hung%2C+P+T), [Kenji Yamanishi](https://arxiv.org/search/cs?searchtype=author&query=Yamanishi%2C+K)
+
+> In this paper, we propose a novel information criteria-based approach to select the dimensionality of the word2vec Skip-gram (SG). From the perspective of the probability theory, SG is considered as an implicit probability distribution estimation under the assumption that there exists a true contextual distribution among words. Therefore, we apply information criteria with the aim of selecting the best dimensionality so that the corresponding model can be as close as possible to the true distribution. We examine the following information criteria for the dimensionality selection problem: the Akaike Information Criterion, Bayesian Information Criterion, and Sequential Normalized Maximum Likelihood (SNML) criterion. SNML is the total codelength required for the sequential encoding of a data sequence on the basis of the minimum description length. The proposed approach is applied to both the original SG model and the SG Negative Sampling model to clarify the idea of using information criteria. Additionally, as the original SNML suffers from computational disadvantages, we introduce novel heuristics for its efficient computation. Moreover, we empirically demonstrate that SNML outperforms both BIC and AIC. In comparison with other evaluation methods for word embedding, the dimensionality selected by SNML is significantly closer to the optimal dimensionality obtained by word analogy or word similarity tasks.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2008.07720](https://arxiv.org/abs/2008.07720) [cs.LG]** |
+|           | (or **[arXiv:2008.07720v1](https://arxiv.org/abs/2008.07720v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2020-08-19-2">2. Very Deep Transformers for Neural Machine Translation</h2>
+
+Title: [Very Deep Transformers for Neural Machine Translation](https://arxiv.org/abs/2008.07772)
+
+Title: [Xiaodong Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Kevin Duh](https://arxiv.org/search/cs?searchtype=author&query=Duh%2C+K), [Liyuan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+L), [Jianfeng Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+J)
+
+> We explore the application of very deep Transformer models for Neural Machine Translation (NMT). Using a simple yet effective initialization technique that stabilizes training, we show that it is feasible to build standard Transformer-based models with up to 60 encoder layers and 12 decoder layers. These deep models outperform their baseline 6-layer counterparts by as much as 2.5 BLEU, and achieve new state-of-the-art benchmark results on WMT14 English-French (43.8 BLEU) and WMT14 English-German (30.1 BLEU).The code and trained models will be publicly available at: [this https URL](https://github.com/namisan/exdeep-nmt).
+
+| Comments: | 6 pages, 3 figures and 3 tables                              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2008.07772](https://arxiv.org/abs/2008.07772) [cs.CL]** |
+|           | (or **[arXiv:2008.07772v1](https://arxiv.org/abs/2008.07772v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-08-19-3">3. Glancing Transformer for Non-Autoregressive Neural Machine Translation</h2>
+
+Title: [Glancing Transformer for Non-Autoregressive Neural Machine Translation](https://arxiv.org/abs/2008.07905)
+
+Title: [Lihua Qian](https://arxiv.org/search/cs?searchtype=author&query=Qian%2C+L), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Yu Bao](https://arxiv.org/search/cs?searchtype=author&query=Bao%2C+Y), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Lin Qiu](https://arxiv.org/search/cs?searchtype=author&query=Qiu%2C+L), [Weinan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+W), [Yong Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+Y), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> Non-autoregressive neural machine translation achieves remarkable inference acceleration compared to autoregressive models. However, current non-autoregressive models still fall behind their autoregressive counterparts in prediction accuracy. We attribute the accuracy gaps to two disadvantages of non-autoregressive models: a) learning simultaneous generation under the overly strong conditional independence assumption; b) lacking explicit target language modeling. In this paper, we propose Glancing Transformer (GLAT) to address the above disadvantages, which reduces the difficulty of learning simultaneous generation and introduces explicit target language modeling in the non-autoregressive setting at the same time. Experiments on several benchmarks demonstrate that our approach significantly improves the accuracy of non-autoregressive models without sacrificing any inference efficiency. In particular, GLAT achieves 30.91 BLEU on WMT 2014 German-English, which narrows the gap between autoregressive models and non-autoregressive models to less than 0.5 BLEU score.
+
+| Comments: | 11 pages, 3 figures, 4 tables                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2008.07905](https://arxiv.org/abs/2008.07905) [cs.CL]** |
+|           | (or **[arXiv:2008.07905v1](https://arxiv.org/abs/2008.07905v1) [cs.CL]** for this version) |
+
+
 
 
 
