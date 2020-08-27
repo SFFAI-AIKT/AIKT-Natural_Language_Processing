@@ -3,6 +3,18 @@
 # Index
 
 
+- [2020-08-27](#2020-08-27)
+
+  - [1. The Impact of Indirect Machine Translation on Sentiment Classification](#2020-08-27-1)
+- [2020-08-24](#2020-08-24)
+- [1. Neural Machine Translation without Embeddings](#2020-08-24-1)
+- [2020-08-21](#2020-08-21)
+
+  - [1. Lite Training Strategies for Portuguese-English and English-Portuguese Translation](#2020-08-21-1)
+  - [2. Inducing Language-Agnostic Multilingual Representations](#2020-08-21-2)
+- [2020-08-20](#2020-08-20-1)
+
+  - [1. Transformer based Multilingual document Embedding model](#2020-08-20-1)
 - [2020-08-19](#2020-08-19)
 
   - [1. Word2vec Skip-gram Dimensionality Selection via Sequential Normalized Maximum Likelihood](#2020-08-19-1)
@@ -73,6 +85,133 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+
+
+
+
+# 2020-08-27
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-08-27-1">1. The Impact of Indirect Machine Translation on Sentiment Classification</h2>
+
+Title: [The Impact of Indirect Machine Translation on Sentiment Classification](https://arxiv.org/abs/2008.11257)
+
+Authors: [Alberto Poncelas](https://arxiv.org/search/cs?searchtype=author&query=Poncelas%2C+A), [Pintu Lohar](https://arxiv.org/search/cs?searchtype=author&query=Lohar%2C+P), [Andy Way](https://arxiv.org/search/cs?searchtype=author&query=Way%2C+A), [James Hadley](https://arxiv.org/search/cs?searchtype=author&query=Hadley%2C+J)
+
+> Sentiment classification has been crucial for many natural language processing (NLP) applications, such as the analysis of movie reviews, tweets, or customer feedback. A sufficiently large amount of data is required to build a robust sentiment classification system. However, such resources are not always available for all domains or for all languages.
+> In this work, we propose employing a machine translation (MT) system to translate customer feedback into another language to investigate in which cases translated sentences can have a positive or negative impact on an automatic sentiment classifier. Furthermore, as performing a direct translation is not always possible, we explore the performance of automatic classifiers on sentences that have been translated using a pivot MT system.
+> We conduct several experiments using the above approaches to analyse the performance of our proposed sentiment classification system and discuss the advantages and drawbacks of classifying translated sentences.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | Proceedings of Association for Machine Translation in the Americas, AMTA (2020) |
+| Cite as:           | **[arXiv:2008.11257](https://arxiv.org/abs/2008.11257) [cs.CL]** |
+|                    | (or **[arXiv:2008.11257v1](https://arxiv.org/abs/2008.11257v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+# 2020-08-24
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-08-24-1">1. Neural Machine Translation without Embeddings</h2>
+
+Title: [Neural Machine Translation without Embeddings](https://arxiv.org/abs/2008.09396)
+
+Authors: [Uri Shaham](https://arxiv.org/search/cs?searchtype=author&query=Shaham%2C+U), [Omer Levy](https://arxiv.org/search/cs?searchtype=author&query=Levy%2C+O)
+
+> Many NLP models follow the embed-contextualize-predict paradigm, in which each sequence token is represented as a dense vector via an embedding matrix, and fed into a contextualization component that aggregates the information from the entire sequence in order to make a prediction. Could NLP models work without the embedding component? To that end, we omit the input and output embeddings from a standard machine translation model, and represent text as a sequence of bytes via UTF-8 encoding, using a constant 256-dimension one-hot representation for each byte. Experiments on 10 language pairs show that removing the embedding matrix consistently improves the performance of byte-to-byte models, often outperforms character-to-character models, and sometimes even produces better translations than standard subword models.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2008.09396](https://arxiv.org/abs/2008.09396) [cs.CL]** |
+|           | (or **[arXiv:2008.09396v1](https://arxiv.org/abs/2008.09396v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+# 2020-08-21
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-08-21-1">1. Lite Training Strategies for Portuguese-English and English-Portuguese Translation</h2>
+
+Title: [Lite Training Strategies for Portuguese-English and English-Portuguese Translation](https://arxiv.org/abs/2008.08769)
+
+Authors: [Alexandre Lopes](https://arxiv.org/search/cs?searchtype=author&query=Lopes%2C+A), [Rodrigo Nogueira](https://arxiv.org/search/cs?searchtype=author&query=Nogueira%2C+R), [Roberto Lotufo](https://arxiv.org/search/cs?searchtype=author&query=Lotufo%2C+R), [Helio Pedrini](https://arxiv.org/search/cs?searchtype=author&query=Pedrini%2C+H)
+
+> Despite the widespread adoption of deep learning for machine translation, it is still expensive to develop high-quality translation models. In this work, we investigate the use of pre-trained models, such as T5 for Portuguese-English and English-Portuguese translation tasks using low-cost hardware. We explore the use of Portuguese and English pre-trained language models and propose an adaptation of the English tokenizer to represent Portuguese characters, such as diaeresis, acute and grave accents. We compare our models to the Google Translate API and MarianMT on a subset of the ParaCrawl dataset, as well as to the winning submission to the WMT19 Biomedical Translation Shared Task. We also describe our submission to the WMT20 Biomedical Translation Shared Task. Our results show that our models have a competitive performance to state-of-the-art models while being trained on modest hardware (a single 8GB gaming GPU for nine days). Our data, models and code are available at [this https URL](https://github.com/unicamp-dl/Lite-T5-Translation).
+
+| Comments: | for code and weights, visit [this https URL](https://github.com/unicamp-dl/Lite-T5-Translation) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2008.08769](https://arxiv.org/abs/2008.08769) [cs.CL]** |
+|           | (or **[arXiv:2008.08769v1](https://arxiv.org/abs/2008.08769v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-08-21-2">2. Inducing Language-Agnostic Multilingual Representations</h2>
+
+Title: [Inducing Language-Agnostic Multilingual Representations](https://arxiv.org/abs/2008.09112)
+
+Authors: [Wei Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+W), [Steffen Eger](https://arxiv.org/search/cs?searchtype=author&query=Eger%2C+S), [Johannes Bjerva](https://arxiv.org/search/cs?searchtype=author&query=Bjerva%2C+J), [Isabelle Augenstein](https://arxiv.org/search/cs?searchtype=author&query=Augenstein%2C+I)
+
+> Multilingual representations have the potential to make cross-lingual systems available to the vast majority of languages in the world. However, they currently require large pretraining corpora, or assume access to typologically similar languages. In this work, we address these obstacles by removing language identity signals from multilingual embeddings. We examine three approaches for this: 1) re-aligning the vector spaces of target languages (all together) to a pivot source language; 2) removing languages-specific means and variances, which yields better discriminativeness of embeddings as a by-product; and 3) normalizing input texts by removing morphological contractions and sentence reordering, thus yielding language-agnostic representations. We evaluate on the tasks of XNLI and reference-free MT evaluation of varying difficulty across 19 selected languages. Our experiments demonstrate the language-agnostic behavior of our multilingual representations, which manifest the potential of zero-shot cross-lingual transfer to distant and low-resource languages, and decrease the performance gap by 8.9 points (M-BERT) and 18.2 points (XLM-R) on average across all tasks and languages. We make our codes and models available.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2008.09112](https://arxiv.org/abs/2008.09112) [cs.CL]** |
+|           | (or **[arXiv:2008.09112v1](https://arxiv.org/abs/2008.09112v1) [cs.CL]** for this version) |
+
+
+
+
+
+# 2020-08-20
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-08-20-1">1. Transformer based Multilingual document Embedding model</h2>
+
+Title: [Transformer based Multilingual document Embedding model](https://arxiv.org/abs/2008.08567)
+
+Authors: [Wei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+W), [Brian Mak](https://arxiv.org/search/cs?searchtype=author&query=Mak%2C+B)
+
+> One of the current state-of-the-art multilingual document embedding model is the bidirectional LSTM-based multilingual neural machine translation model (LASER). This paper presents a transformer-based sentence/document embedding model, T-LASER, which makes three significant improvements. Firstly, the BiLSTM encoder is replaced by the attention-based transformer structure, which is more capable of learning sequential patterns in longer texts. Secondly, due to the absence of recurrence, T-LASER enables faster parallel computations in the encoder to generate the text embedding. Thirdly, we augment the NMT translation loss function with an additional novel distance constraint loss. This distance constraint loss would further bring the embeddings of parallel sentences close together in the vector space; we call the T-LASER model trained with distance constraint, cT-LASER. Our cT-LASER model significantly outperforms both BiLSTM-based LASER and the simpler transformer-based T-LASER.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2008.08567](https://arxiv.org/abs/2008.08567) [cs.CL]** |
+|           | (or **[arXiv:2008.08567v1](https://arxiv.org/abs/2008.08567v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+
 
 
 
