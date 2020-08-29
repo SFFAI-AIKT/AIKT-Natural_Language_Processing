@@ -3,6 +3,9 @@
 # Index
 
 
+- [2020-08-28](#2020-08-28)
+
+  - [1. Adaptable Filtering using Hierarchical Embeddings for Chinese Spell Check](#2020-08-28-1)
 - [2020-08-27](#2020-08-27)
 
   - [1. The Impact of Indirect Machine Translation on Sentiment Classification](#2020-08-27-1)
@@ -85,6 +88,29 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-08-28
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-08-28-1">1. Adaptable Filtering using Hierarchical Embeddings for Chinese Spell Check</h2>
+
+Title: [Adaptable Filtering using Hierarchical Embeddings for Chinese Spell Check](https://arxiv.org/abs/2008.12281)
+
+Authors: [Minh Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+M), [Gia H. Ngo](https://arxiv.org/search/cs?searchtype=author&query=Ngo%2C+G+H), [Nancy F. Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+N+F)
+
+> Spell check is a useful application which involves processing noisy human-generated text. Compared to other languages like English, it is more challenging to detect and correct spelling errors in Chinese because it has more (up to 100k) characters. For Chinese spell check, using confusion sets narrows the search space and makes finding corrections easier. However, most, if not all, confusion sets used to date are fixed and thus do not include new, evolving error patterns. We propose a scalable approach to adapt confusion sets by exploiting hierarchical character embeddings to (1) obviate the need to handcraft confusion sets, and (2) resolve sparsity issues related to seldom-occurring errors. Our approach establishes new SOTA results in spelling error correction on the 2014 and 2015 Chinese Spelling Correction Bake-off datasets.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2008.12281](https://arxiv.org/abs/2008.12281) [cs.CL]** |
+|           | (or **[arXiv:2008.12281v1](https://arxiv.org/abs/2008.12281v1) [cs.CL]** for this version) |
+
+
 
 
 
