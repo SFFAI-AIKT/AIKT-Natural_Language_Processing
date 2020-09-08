@@ -3,9 +3,14 @@
 # Index
 
 
-- [2020-09-07](#2020-09-07)
+- [2020-09-08](#2020-09-08)
 
-  - [1. Data Readiness for Natural Language Processing](#2020-09-07-1)
+  - [1. Measuring Massive Multitask Language Understanding](#2020-09-08-1)
+  - [2. Recent Trends in the Use of Deep Learning Models for Grammar Error Handling](#2020-09-08-2)
+  - [3. Bio-inspired Structure Identification in Language Embeddings](#2020-09-08-3)
+  - [4. Why Not Simply Translate? A First Swedish Evaluation Benchmark for Semantic Similarity](#2020-09-08-4)
+- [2020-09-07](#2020-09-07)
+- [1. Data Readiness for Natural Language Processing](#2020-09-07-1)
   - [2. Dynamic Context-guided Capsule Network for Multimodal Machine Translation](#2020-09-07-2)
   - [3. AutoTrans: Automating Transformer Design via Reinforced Architecture Search](#2020-09-07-3)
   - [4. Going Beyond T-SNE: Exposing \texttt{whatlies} in Text Embeddings](#2020-09-07-4)
@@ -30,6 +35,82 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-09-08
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-09-08-1">1. Measuring Massive Multitask Language Understanding</h2>
+
+Title: [Measuring Massive Multitask Language Understanding](https://arxiv.org/abs/2009.03300)
+
+Authors: [Dan Hendrycks](https://arxiv.org/search/cs?searchtype=author&query=Hendrycks%2C+D), [Collin Burns](https://arxiv.org/search/cs?searchtype=author&query=Burns%2C+C), [Steven Basart](https://arxiv.org/search/cs?searchtype=author&query=Basart%2C+S), [Andy Zou](https://arxiv.org/search/cs?searchtype=author&query=Zou%2C+A), [Mantas Mazeika](https://arxiv.org/search/cs?searchtype=author&query=Mazeika%2C+M), [Dawn Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+D), [Jacob Steinhardt](https://arxiv.org/search/cs?searchtype=author&query=Steinhardt%2C+J)
+
+> We propose a new test to measure a text model's multitask accuracy. The test covers 57 tasks including elementary mathematics, US history, computer science, law, and more. To attain high accuracy on this test, models must possess extensive world knowledge and problem solving ability. We find that while most recent models have near random-chance accuracy, the very largest GPT-3 model improves over random chance by almost 20 percentage points on average. However, on every one of the 57 tasks, the best models still need substantial improvements before they can reach human-level accuracy. Models also have lopsided performance and frequently do not know when they are wrong. Worse, they still have near-random accuracy on some socially important subjects such as morality and law. By comprehensively evaluating the breadth and depth of a model's academic and professional understanding, our test can be used to analyze models across many tasks and to identify important shortcomings.
+
+| Comments: | The test and code is available at [this https URL](https://github.com/hendrycks/test) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computers and Society (cs.CY)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2009.03300](https://arxiv.org/abs/2009.03300) [cs.CY]** |
+|           | (or **[arXiv:2009.03300v1](https://arxiv.org/abs/2009.03300v1) [cs.CY]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-08-2">2. Recent Trends in the Use of Deep Learning Models for Grammar Error Handling</h2>
+
+Title: [Recent Trends in the Use of Deep Learning Models for Grammar Error Handling](https://arxiv.org/abs/2009.02358)
+
+Authors: [Mina Naghshnejad](https://arxiv.org/search/cs?searchtype=author&query=Naghshnejad%2C+M), [Tarun Joshi](https://arxiv.org/search/cs?searchtype=author&query=Joshi%2C+T), [Vijayan N. Nair](https://arxiv.org/search/cs?searchtype=author&query=Nair%2C+V+N)
+
+> Grammar error handling (GEH) is an important topic in natural language processing (NLP). GEH includes both grammar error detection and grammar error correction. Recent advances in computation systems have promoted the use of deep learning (DL) models for NLP problems such as GEH. In this survey we focus on two main DL approaches for GEH: neural machine translation models and editor models. We describe the three main stages of the pipeline for these models: data preparation, training, and inference. Additionally, we discuss different techniques to improve the performance of these models at each stage of the pipeline. We compare the performance of different models and conclude with proposed future directions.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2009.02358](https://arxiv.org/abs/2009.02358) [cs.CL]** |
+|           | (or **[arXiv:2009.02358v1](https://arxiv.org/abs/2009.02358v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-08-3">3. Bio-inspired Structure Identification in Language Embeddings</h2>
+
+Title: [Bio-inspired Structure Identification in Language Embeddings](https://arxiv.org/abs/2009.02459)
+
+Authors: [Hongwei](https://arxiv.org/search/cs?searchtype=author&query=Hongwei) (Henry)[Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou), [Oskar Elek](https://arxiv.org/search/cs?searchtype=author&query=Elek%2C+O), [Pranav Anand](https://arxiv.org/search/cs?searchtype=author&query=Anand%2C+P), [Angus G. Forbes](https://arxiv.org/search/cs?searchtype=author&query=Forbes%2C+A+G)
+
+> Word embeddings are a popular way to improve downstream per-formances in contemporary language modeling. However, the un-derlying geometric structure of the embedding space is not wellunderstood. We present a series of explorations using bio-inspiredmethodology to traverse and visualize word embeddings, demon-strating evidence of discernible structure. Moreover, our modelalso produces word similarity rankings that are plausible yet verydifferent from common similarity metrics, mainly cosine similarityand Euclidean distance. We show that our bio-inspired model canbe used to investigate how different word embedding techniquesresult in different semantic outputs, which can emphasize or obscureparticular interpretations in textual data.
+
+| Comments: | 7 pages, 8 figures, 2 tables, Visualisation for the Digital Humanities 2020 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Human-Computer Interaction (cs.HC) |
+| Cite as:  | **[arXiv:2009.02459](https://arxiv.org/abs/2009.02459) [cs.CL]** |
+|           | (or **[arXiv:2009.02459v1](https://arxiv.org/abs/2009.02459v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-08-4">4. Why Not Simply Translate? A First Swedish Evaluation Benchmark for Semantic Similarity</h2>
+
+Title: [Why Not Simply Translate? A First Swedish Evaluation Benchmark for Semantic Similarity](https://arxiv.org/abs/2009.03116)
+
+Authors: [Tim Isbister](https://arxiv.org/search/cs?searchtype=author&query=Isbister%2C+T), [Magnus Sahlgren](https://arxiv.org/search/cs?searchtype=author&query=Sahlgren%2C+M)
+
+> This paper presents the first Swedish evaluation benchmark for textual semantic similarity. The benchmark is compiled by simply running the English STS-B dataset through the Google machine translation API. This paper discusses potential problems with using such a simple approach to compile a Swedish evaluation benchmark, including translation errors, vocabulary variation, and productive compounding. Despite some obvious problems with the resulting dataset, we use the benchmark to compare the majority of the currently existing Swedish text representations, demonstrating that native models outperform multilingual ones, and that simple bag of words performs remarkably well.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2009.03116](https://arxiv.org/abs/2009.03116) [cs.CL]** |
+|           | (or **[arXiv:2009.03116v1](https://arxiv.org/abs/2009.03116v1) [cs.CL]** for this version) |
+
+
 
 
 
