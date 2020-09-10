@@ -3,6 +3,9 @@
 # Index
 
 
+- [2020-09-10](#2020-09-10)
+
+  - [1. Central Yup'ik and Machine Translation of Low-Resource Polysynthetic Languages](#2020-09-10-1)
 - [2020-09-08](#2020-09-08)
 
   - [1. Measuring Massive Multitask Language Understanding](#2020-09-08-1)
@@ -35,6 +38,31 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-09-10
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-09-10-1">1. Central Yup'ik and Machine Translation of Low-Resource Polysynthetic Languages</h2>
+
+Title: [Central Yup'ik and Machine Translation of Low-Resource Polysynthetic Languages](https://arxiv.org/abs/2009.04087)
+
+Authors: [Christopher Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+C), [Laura Dominé](https://arxiv.org/search/cs?searchtype=author&query=Dominé%2C+L), [Kevin Chavez](https://arxiv.org/search/cs?searchtype=author&query=Chavez%2C+K), [Richard Socher](https://arxiv.org/search/cs?searchtype=author&query=Socher%2C+R)
+
+> Machine translation tools do not yet exist for the Yup'ik language, a polysynthetic language spoken by around 8,000 people who live primarily in Southwest Alaska. We compiled a parallel text corpus for Yup'ik and English and developed a morphological parser for Yup'ik based on grammar rules. We trained a seq2seq neural machine translation model with attention to translate Yup'ik input into English. We then compared the influence of different tokenization methods, namely rule-based, unsupervised (byte pair encoding), and unsupervised morphological (Morfessor) parsing, on BLEU score accuracy for Yup'ik to English translation. We find that using tokenized input increases the translation accuracy compared to that of unparsed input. Although overall Morfessor did best with a vocabulary size of 30k, our first experiments show that BPE performed best with a reduced vocabulary size.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2009.04087](https://arxiv.org/abs/2009.04087) [cs.CL]** |
+|           | (or **[arXiv:2009.04087v1](https://arxiv.org/abs/2009.04087v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
