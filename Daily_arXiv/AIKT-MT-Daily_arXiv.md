@@ -3,6 +3,12 @@
 # Index
 
 
+- [2020-09-11](#2020-09-11)
+
+  - [1. Pay Attention when Required](#2020-09-11-1)
+  - [2. Learning Universal Representations from Word to Sentence](#2020-09-11-2)
+  - [3. Modern Methods for Text Generation](#2020-09-11-3)
+  - [4. Investigating Gender Bias in BERT](#2020-09-11-4)
 - [2020-09-10](#2020-09-10)
 
   - [1. Central Yup'ik and Machine Translation of Low-Resource Polysynthetic Languages](#2020-09-10-1)
@@ -38,6 +44,79 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-09-11
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-09-11-1">1. Pay Attention when Required</h2>
+
+Title: [Pay Attention when Required](https://arxiv.org/abs/2009.04534)
+
+Authors: [Swetha Mandava](https://arxiv.org/search/cs?searchtype=author&query=Mandava%2C+S), [Szymon Migacz](https://arxiv.org/search/cs?searchtype=author&query=Migacz%2C+S), [Alex Fit Florea](https://arxiv.org/search/cs?searchtype=author&query=Florea%2C+A+F)
+
+> Transformer-based models consist of interleaved feed-forward blocks - that capture content meaning, and relatively more expensive self-attention blocks - that capture context meaning. In this paper, we explored trade-offs and ordering of the blocks to improve upon the current Transformer architecture and proposed PAR Transformer. It needs 35% lower compute time than Transformer-XL achieved by replacing ~63% of the self-attention blocks with feed-forward blocks, and retains the perplexity on WikiText-103 language modelling benchmark. We further validated our results on text8 and enwiki8 datasets, as well as on the BERT model.
+
+| Comments: | 9 pages, 4 figures, 7 tables                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2009.04534](https://arxiv.org/abs/2009.04534) [cs.LG]** |
+|           | (or **[arXiv:2009.04534v1](https://arxiv.org/abs/2009.04534v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-11-2">2. Learning Universal Representations from Word to Sentence</h2>
+
+Title: [Learning Universal Representations from Word to Sentence](https://arxiv.org/abs/2009.04656)
+
+Authors: [Yian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Hai Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+H)
+
+> Despite the well-developed cut-edge representation learning for language, most language representation models usually focus on specific level of linguistic unit, which cause great inconvenience when being confronted with handling multiple layers of linguistic objects in a unified way. Thus this work introduces and explores the universal representation learning, i.e., embeddings of different levels of linguistic unit in a uniform vector space through a task-independent evaluation. We present our approach of constructing analogy datasets in terms of words, phrases and sentences and experiment with multiple representation models to examine geometric properties of the learned vector space. Then we empirically verify that well pre-trained Transformer models incorporated with appropriate training settings may effectively yield universal representation. Especially, our implementation of fine-tuning ALBERT on NLI and PPDB datasets achieves the highest accuracy on analogy tasks in different language levels. Further experiments on the insurance FAQ task show effectiveness of universal representation models in real-world applications.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2009.04656](https://arxiv.org/abs/2009.04656) [cs.CL]** |
+|           | (or **[arXiv:2009.04656v1](https://arxiv.org/abs/2009.04656v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2020-09-11-3">3. Modern Methods for Text Generation</h2>
+
+Title: [Modern Methods for Text Generation](https://arxiv.org/abs/2009.04968)
+
+Authors: [Dimas Munoz Montesinos](https://arxiv.org/search/cs?searchtype=author&query=Montesinos%2C+D+M)
+
+> Synthetic text generation is challenging and has limited success. Recently, a new architecture, called Transformers, allow machine learning models to understand better sequential data, such as translation or summarization. BERT and GPT-2, using Transformers in their cores, have shown a great performance in tasks such as text classification, translation and NLI tasks. In this article, we analyse both algorithms and compare their output quality in text generation tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2009.04968](https://arxiv.org/abs/2009.04968) [cs.CL]** |
+|           | (or **[arXiv:2009.04968v1](https://arxiv.org/abs/2009.04968v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-11-4">4. Investigating Gender Bias in BERT</h2>
+
+Title: [Investigating Gender Bias in BERT](https://arxiv.org/abs/2009.05021)
+
+Authors: [Rishabh Bhardwaj](https://arxiv.org/search/cs?searchtype=author&query=Bhardwaj%2C+R), [Navonil Majumder](https://arxiv.org/search/cs?searchtype=author&query=Majumder%2C+N), [Soujanya Poria](https://arxiv.org/search/cs?searchtype=author&query=Poria%2C+S)
+
+> Contextual language models (CLMs) have pushed the NLP benchmarks to a new height. It has become a new norm to utilize CLM provided word embeddings in downstream tasks such as text classification. However, unless addressed, CLMs are prone to learn intrinsic gender-bias in the dataset. As a result, predictions of downstream NLP models can vary noticeably by varying gender words, such as replacing "he" to "she", or even gender-neutral words. In this paper, we focus our analysis on a popular CLM, i.e., BERT. We analyse the gender-bias it induces in five downstream tasks related to emotion and sentiment intensity prediction. For each task, we train a simple regressor utilizing BERT's word embeddings. We then evaluate the gender-bias in regressors using an equity evaluation corpus. Ideally and from the specific design, the models should discard gender informative features from the input. However, the results show a significant dependence of the system's predictions on gender-particular words and phrases. We claim that such biases can be reduced by removing genderspecific features from word embedding. Hence, for each layer in BERT, we identify directions that primarily encode gender information. The space formed by such directions is referred to as the gender subspace in the semantic space of word embeddings. We propose an algorithm that finds fine-grained gender directions, i.e., one primary direction for each BERT layer. This obviates the need of realizing gender subspace in multiple dimensions and prevents other crucial information from being omitted. Experiments show that removing embedding components in such directions achieves great success in reducing BERT-induced bias in the downstream tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2009.05021](https://arxiv.org/abs/2009.05021) [cs.CL]** |
+|           | (or **[arXiv:2009.05021v1](https://arxiv.org/abs/2009.05021v1) [cs.CL]** for this version) |
+
+
 
 
 
