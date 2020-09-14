@@ -3,9 +3,12 @@
 # Index
 
 
-- [2020-09-11](#2020-09-11)
+- [2020-09-14](#2020-09-14)
 
-  - [1. Pay Attention when Required](#2020-09-11-1)
+  - [1. FILTER: An Enhanced Fusion Method for Cross-lingual Language Understanding](#2020-09-14-1)
+  - [2. Robust Neural Machine Translation: Modeling Orthographic and Interpunctual Variation](#2020-09-14-2)
+- [2020-09-11](#2020-09-11)
+- [1. Pay Attention when Required](#2020-09-11-1)
   - [2. Learning Universal Representations from Word to Sentence](#2020-09-11-2)
   - [3. Modern Methods for Text Generation](#2020-09-11-3)
   - [4. Investigating Gender Bias in BERT](#2020-09-11-4)
@@ -44,6 +47,46 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-09-14
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-09-14-1">1. FILTER: An Enhanced Fusion Method for Cross-lingual Language Understanding</h2>
+
+Title: [FILTER: An Enhanced Fusion Method for Cross-lingual Language Understanding](https://arxiv.org/abs/2009.05166)
+
+Authors: [Yuwei Fang](https://arxiv.org/search/cs?searchtype=author&query=Fang%2C+Y), [Shuohang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Zhe Gan](https://arxiv.org/search/cs?searchtype=author&query=Gan%2C+Z), [Siqi Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+S), [Jingjing Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J)
+
+> Large-scale cross-lingual language models (LM), such as mBERT, Unicoder and XLM, have achieved great success in cross-lingual representation learning. However, when applied to zero-shot cross-lingual transfer tasks, most existing methods use only single-language input for LM finetuning, without leveraging the intrinsic cross-lingual alignment between different languages that is essential for multilingual tasks. In this paper, we propose FILTER, an enhanced fusion method that takes cross-lingual data as input for XLM finetuning. Specifically, FILTER first encodes text input in the source language and its translation in the target language independently in the shallow layers, then performs cross-lingual fusion to extract multilingual knowledge in the intermediate layers, and finally performs further language-specific encoding. During inference, the model makes predictions based on the text input in the target language and its translation in the source language. For simple tasks such as classification, translated text in the target language shares the same label as the source language. However, this shared label becomes less accurate or even unavailable for more complex tasks such as question answering, NER and POS tagging. For better model scalability, we further propose an additional KL-divergence self-teaching loss for model training, based on auto-generated soft pseudo-labels for translated text in the target language. Extensive experiments demonstrate that FILTER achieves new state of the art (77.0 on average) on the challenging multilingual multi-task benchmark, XTREME.
+
+| Comments: | Top-1 Performance on XTREME leaderboard (https://sites.research.google/xtreme) on September 8, 2020 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2009.05166](https://arxiv.org/abs/2009.05166) [cs.CL]** |
+|           | (or **[arXiv:2009.05166v1](https://arxiv.org/abs/2009.05166v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-14-2">2. Robust Neural Machine Translation: Modeling Orthographic and Interpunctual Variation</h2>
+
+Title: [Robust Neural Machine Translation: Modeling Orthographic and Interpunctual Variation](https://arxiv.org/abs/2009.05460)
+
+Authors: [Toms Bergmanis](https://arxiv.org/search/cs?searchtype=author&query=Bergmanis%2C+T), [Artūrs Stafanovičs](https://arxiv.org/search/cs?searchtype=author&query=Stafanovičs%2C+A), [Mārcis Pinnis](https://arxiv.org/search/cs?searchtype=author&query=Pinnis%2C+M)
+
+> Neural machine translation systems typically are trained on curated corpora and break when faced with non-standard orthography or punctuation. Resilience to spelling mistakes and typos, however, is crucial as machine translation systems are used to translate texts of informal origins, such as chat conversations, social media posts and web pages. We propose a simple generative noise model to generate adversarial examples of ten different types. We use these to augment machine translation systems' training data and show that, when tested on noisy data, systems trained using adversarial examples perform almost as well as when translating clean data, while baseline systems' performance drops by 2-3 BLEU points. To measure the robustness and noise invariance of machine translation systems' outputs, we use the average translation edit rate between the translation of the original sentence and its noised variants. Using this measure, we show that systems trained on adversarial examples on average yield 50% consistency improvements when compared to baselines trained on clean data.
+
+| Comments: | Accepted in BALTIC HLT 2020                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2009.05460](https://arxiv.org/abs/2009.05460) [cs.CL]** |
+|           | (or **[arXiv:2009.05460v1](https://arxiv.org/abs/2009.05460v1) [cs.CL]** for this version) |
 
 
 
