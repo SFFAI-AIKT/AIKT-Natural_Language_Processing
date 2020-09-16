@@ -3,6 +3,13 @@
 # Index
 
 
+- [2020-09-16](#2020-09-16)
+
+  - [1. Efficient Transformers: A Survey](#2020-09-16-1)
+  - [2. Attention Flows: Analyzing and Comparing Attention Mechanisms in Language Models](#2020-09-16-2)
+  - [3. Iterative Refinement in the Continuous Space for Non-Autoregressive Neural Machine Translation](#2020-09-16-3)
+  - [4. A Systematic Characterization of Sampling Algorithms for Open-ended Language Generation](#2020-09-16-4)
+  - [5. Autoregressive Knowledge Distillation through Imitation Learning](#2020-09-16-5)
 - [2020-09-15](#2020-09-15)
 
   - [1. Unit Test Case Generation with Transformers](#2020-09-15-1)
@@ -56,6 +63,94 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-09-16
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-09-16-1">1. Efficient Transformers: A Survey</h2>
+
+Title: [Efficient Transformers: A Survey](https://arxiv.org/abs/2009.06732)
+
+Authors: [Yi Tay](https://arxiv.org/search/cs?searchtype=author&query=Tay%2C+Y), [Mostafa Dehghani](https://arxiv.org/search/cs?searchtype=author&query=Dehghani%2C+M), [Dara Bahri](https://arxiv.org/search/cs?searchtype=author&query=Bahri%2C+D), [Donald Metzler](https://arxiv.org/search/cs?searchtype=author&query=Metzler%2C+D)
+
+> Transformer model architectures have garnered immense interest lately due to their effectiveness across a range of domains like language, vision and reinforcement learning. In the field of natural language processing for example, Transformers have become an indispensable staple in the modern deep learning stack. Recently, a dizzying number of \emph{"X-former"} models have been proposed - Reformer, Linformer, Performer, Longformer, to name a few - which improve upon the original Transformer architecture, many of which make improvements around computational and memory \emph{efficiency}. With the aim of helping the avid researcher navigate this flurry, this paper characterizes a large and thoughtful selection of recent efficiency-flavored "X-former" models, providing an organized and comprehensive overview of existing work and models across multiple domains.
+
+| Subjects: | **Machine Learning (cs.LG)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV); Information Retrieval (cs.IR) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2009.06732](https://arxiv.org/abs/2009.06732) [cs.LG]** |
+|           | (or **[arXiv:2009.06732v1](https://arxiv.org/abs/2009.06732v1) [cs.LG]** for this version) |
+
+
+
+<h2 id="2020-09-16-2">2. Attention Flows: Analyzing and Comparing Attention Mechanisms in Language Models</h2>
+
+Title: [Attention Flows: Analyzing and Comparing Attention Mechanisms in Language Models](https://arxiv.org/abs/2009.07053)
+
+Authors: [Joseph F DeRose](https://arxiv.org/search/cs?searchtype=author&query=DeRose%2C+J+F), [Jiayao Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+J), [Matthew Berger](https://arxiv.org/search/cs?searchtype=author&query=Berger%2C+M)
+
+> Advances in language modeling have led to the development of deep attention-based models that are performant across a wide variety of natural language processing (NLP) problems. These language models are typified by a pre-training process on large unlabeled text corpora and subsequently fine-tuned for specific tasks. Although considerable work has been devoted to understanding the attention mechanisms of pre-trained models, it is less understood how a model's attention mechanisms change when trained for a target NLP task. In this paper, we propose a visual analytics approach to understanding fine-tuning in attention-based language models. Our visualization, Attention Flows, is designed to support users in querying, tracing, and comparing attention within layers, across layers, and amongst attention heads in Transformer-based language models. To help users gain insight on how a classification decision is made, our design is centered on depicting classification-based attention at the deepest layer and how attention from prior layers flows throughout words in the input. Attention Flows supports the analysis of a single model, as well as the visual comparison between pre-trained and fine-tuned models via their similarities and differences. We use Attention Flows to study attention mechanisms in various sentence understanding tasks and highlight how attention evolves to address the nuances of solving these tasks.
+
+| Comments: | 11 pages, 12 figures, to be published in IEEE Transactions on Visualization and Computer Graphics |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Human-Computer Interaction (cs.HC)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2009.07053](https://arxiv.org/abs/2009.07053) [cs.HC]** |
+|           | (or **[arXiv:2009.07053v1](https://arxiv.org/abs/2009.07053v1) [cs.HC]** for this version) |
+
+
+
+<h2 id="2020-09-16-3">3. Iterative Refinement in the Continuous Space for Non-Autoregressive Neural Machine Translation</h2>
+
+Title: [Iterative Refinement in the Continuous Space for Non-Autoregressive Neural Machine Translation](https://arxiv.org/abs/2009.07177)
+
+Authors: [Jason Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+J), [Raphael Shu](https://arxiv.org/search/cs?searchtype=author&query=Shu%2C+R), [Kyunghyun Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+K)
+
+> We propose an efficient inference procedure for non-autoregressive machine translation that iteratively refines translation purely in the continuous space. Given a continuous latent variable model for machine translation (Shu et al., 2020), we train an inference network to approximate the gradient of the marginal log probability of the target sentence, using only the latent variable as input. This allows us to use gradient-based optimization to find the target sentence at inference time that approximately maximizes its marginal probability. As each refinement step only involves computation in the latent space of low dimensionality (we use 8 in our experiments), we avoid computational overhead incurred by existing non-autoregressive inference procedures that often refine in token space. We compare our approach to a recently proposed EM-like inference procedure (Shu et al., 2020) that optimizes in a hybrid space, consisting of both discrete and continuous variables. We evaluate our approach on WMT'14 En-De, WMT'16 Ro-En and IWSLT'16 De-En, and observe two advantages over the EM-like inference: (1) it is computationally efficient, i.e. each refinement step is twice as fast, and (2) it is more effective, resulting in higher marginal probabilities and BLEU scores with the same number of refinement steps. On WMT'14 En-De, for instance, our approach is able to decode 6.2 times faster than the autoregressive model with minimal degradation to translation quality (0.9 BLEU).
+
+| Comments: | Accepted to EMNLP 2020                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2009.07177](https://arxiv.org/abs/2009.07177) [cs.CL]** |
+|           | (or **[arXiv:2009.07177v1](https://arxiv.org/abs/2009.07177v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2020-09-16-4">4. A Systematic Characterization of Sampling Algorithms for Open-ended Language Generation</h2>
+
+Title: [A Systematic Characterization of Sampling Algorithms for Open-ended Language Generation](https://arxiv.org/abs/2009.07243)
+
+Authors: [Moin Nadeem](https://arxiv.org/search/cs?searchtype=author&query=Nadeem%2C+M), [Tianxing He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+T), [Kyunghyun Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+K), [James Glass](https://arxiv.org/search/cs?searchtype=author&query=Glass%2C+J)
+
+> This work studies the widely adopted ancestral sampling algorithms for auto-regressive language models, which is not widely studied in the literature. We use the quality-diversity (Q-D) trade-off to investigate three popular sampling algorithms (top-k, nucleus and tempered sampling). We focus on the task of open-ended language generation. We first show that the existing sampling algorithms have similar performance. After carefully inspecting the transformations defined by different sampling algorithms, we identify three key properties that are shared among them: entropy reduction, order preservation, and slope preservation. To validate the importance of the identified properties, we design two sets of new sampling algorithms: one set in which each algorithm satisfies all three properties, and one set in which each algorithm violates at least one of the properties. We compare their performance with existing sampling algorithms, and find that violating the identified properties could lead to drastic performance degradation, as measured by the Q-D trade-off. On the other hand, we find that the set of sampling algorithms that satisfies these properties performs on par with the existing sampling algorithms. Our data and code are available at [this https URL](https://github.com/moinnadeem/characterizing-sampling-algorithms)
+
+| Comments: | To appear at AACL 2020; 9 pages, 12 figures, 2 tables        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2009.07243](https://arxiv.org/abs/2009.07243) [cs.CL]** |
+|           | (or **[arXiv:2009.07243v1](https://arxiv.org/abs/2009.07243v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2020-09-16-5">5. Autoregressive Knowledge Distillation through Imitation Learning</h2>
+
+Title: [Autoregressive Knowledge Distillation through Imitation Learning](https://arxiv.org/abs/2009.07253)
+
+Authors: [Alexander Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+A), [Jeremy Wohlwend](https://arxiv.org/search/cs?searchtype=author&query=Wohlwend%2C+J), [Howard Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+H), [Tao Lei](https://arxiv.org/search/cs?searchtype=author&query=Lei%2C+T)
+
+> The performance of autoregressive models on natural language generation tasks has dramatically improved due to the adoption of deep, self-attentive architectures. However, these gains have come at the cost of hindering inference speed, making state-of-the-art models cumbersome to deploy in real-world, time-sensitive settings. We develop a compression technique for autoregressive models that is driven by an imitation learning perspective on knowledge distillation. The algorithm is designed to address the exposure bias problem. On prototypical language generation tasks such as translation and summarization, our method consistently outperforms other distillation algorithms, such as sequence-level knowledge distillation. Student models trained with our method attain 1.4 to 4.8 BLEU/ROUGE points higher than those trained from scratch, while increasing inference speed by up to 14 times in comparison to the teacher model.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2009.07253](https://arxiv.org/abs/2009.07253) [cs.CL]** |
+|           | (or **[arXiv:2009.07253v1](https://arxiv.org/abs/2009.07253v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
