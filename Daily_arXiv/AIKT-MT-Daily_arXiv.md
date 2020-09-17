@@ -3,6 +3,15 @@
 # Index
 
 
+- [2020-09-17](#2020-09-17)
+
+  - [1. Extremely Low Bit Transformer Quantization for On-Device Neural Machine Translation](#2020-09-17-1)
+  - [2. Simultaneous Machine Translation with Visual Context](#2020-09-17-2)
+  - [3. Graph-to-Sequence Neural Machine Translation](#2020-09-17-3)
+  - [4. Contextualized Perturbation for Textual Adversarial Attack](#2020-09-17-4)
+  - [5. Reusing a Pretrained Language Model on Languages with Limited Corpora for Unsupervised NMT](#2020-09-17-5)
+  - [6. Knowledge Graphs for Multilingual Language Translation and Generation](#2020-09-17-6)
+  - [7. Text Generation by Learning from Off-Policy Demonstrations](#2020-09-17-7)
 - [2020-09-16](#2020-09-16)
 
   - [1. Efficient Transformers: A Survey](#2020-09-16-1)
@@ -63,6 +72,136 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-09-17
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-09-17-1">1. Extremely Low Bit Transformer Quantization for On-Device Neural Machine Translation</h2>
+
+Title: [Extremely Low Bit Transformer Quantization for On-Device Neural Machine Translation](https://arxiv.org/abs/2009.07453)
+
+Authors: [Insoo Chung](https://arxiv.org/search/cs?searchtype=author&query=Chung%2C+I), [Byeongwook Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+B), [Yoonjung Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi%2C+Y), [Se Jung Kwon](https://arxiv.org/search/cs?searchtype=author&query=Kwon%2C+S+J), [Yongkweon Jeon](https://arxiv.org/search/cs?searchtype=author&query=Jeon%2C+Y), [Baeseong Park](https://arxiv.org/search/cs?searchtype=author&query=Park%2C+B), [Sangha Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+S), [Dongsoo Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+D)
+
+> Transformer is being widely used in Neural Machine Translation (NMT). Deploying Transformer models to mobile or edge devices with limited resources is challenging because of heavy computation and memory overhead during inference. Quantization is an effective technique to address such challenges. Our analysis shows that for a given number of quantization bits, each block of Transformer contributes to translation accuracy and inference computations in different manners. Moreover, even inside an embedding block, each word presents vastly different contributions. Correspondingly, we propose a mixed precision quantization strategy to represent Transformer weights with lower bits (e.g. under 3 bits). For example, for each word in an embedding block, we assign different quantization bits based on statistical property. Our quantized Transformer model achieves 11.8x smaller model size than the baseline model, with less than -0.5 BLEU. We achieve 8.3x reduction in run-time memory footprints and 3.5x speed up (Galaxy N10+) such that our proposed compression strategy enables efficient implementation for on-device NMT.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2009.07453](https://arxiv.org/abs/2009.07453) [cs.LG]** |
+|           | (or **[arXiv:2009.07453v1](https://arxiv.org/abs/2009.07453v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-17-2">2. Simultaneous Machine Translation with Visual Context</h2>
+
+Title: [Simultaneous Machine Translation with Visual Context](https://arxiv.org/abs/2009.07310)
+
+Authors: [Ozan Caglayan](https://arxiv.org/search/cs?searchtype=author&query=Caglayan%2C+O), [Julia Ive](https://arxiv.org/search/cs?searchtype=author&query=Ive%2C+J), [Veneta Haralampieva](https://arxiv.org/search/cs?searchtype=author&query=Haralampieva%2C+V), [Pranava Madhyastha](https://arxiv.org/search/cs?searchtype=author&query=Madhyastha%2C+P), [Loïc Barrault](https://arxiv.org/search/cs?searchtype=author&query=Barrault%2C+L), [Lucia Specia](https://arxiv.org/search/cs?searchtype=author&query=Specia%2C+L)
+
+> Simultaneous machine translation (SiMT) aims to translate a continuous input text stream into another language with the lowest latency and highest quality possible. The translation thus have to start with an incomplete source text, which is read progressively, creating the need for anticipation. In this paper, we seek to understand whether the addition of visual information can compensate for the missing source context. To this end, we analyse the impact of different multimodal approaches and visual features on state-of-the-art SiMT frameworks. Our results show that visual context is helpful and that visually-grounded models based on explicit object region information are much better than commonly used global features, reaching up to 3 BLEU points improvement under low latency scenarios. Our qualitative analysis illustrates cases where only the multimodal systems are able to translate correctly from English into gender-marked languages, as well as deal with differences in word order such as adjective-noun placement between English and French.
+
+| Comments: | Long paper accepted to EMNLP 2020                            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2009.07310](https://arxiv.org/abs/2009.07310) [cs.CL]** |
+|           | (or **[arXiv:2009.07310v1](https://arxiv.org/abs/2009.07310v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-17-3">3. Graph-to-Sequence Neural Machine Translation</h2>
+
+Title: [Graph-to-Sequence Neural Machine Translation](https://arxiv.org/abs/2009.07489)
+
+Authors: [Sufeng Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan%2C+S), [Hai Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+H), [Rui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+R)
+
+> Neural machine translation (NMT) usually works in a seq2seq learning way by viewing either source or target sentence as a linear sequence of words, which can be regarded as a special case of graph, taking words in the sequence as nodes and relationships between words as edges. In the light of the current NMT models more or less capture graph information among the sequence in a latent way, we present a graph-to-sequence model facilitating explicit graph information capturing. In detail, we propose a graph-based SAN-based NMT model called Graph-Transformer by capturing information of subgraphs of different orders in every layers. Subgraphs are put into different groups according to their orders, and every group of subgraphs respectively reflect different levels of dependency between words. For fusing subgraph representations, we empirically explore three methods which weight different groups of subgraphs of different orders. Results of experiments on WMT14 English-German and IWSLT14 German-English show that our method can effectively boost the Transformer with an improvement of 1.1 BLEU points on WMT14 English-German dataset and 1.0 BLEU points on IWSLT14 German-English dataset.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2009.07489](https://arxiv.org/abs/2009.07489) [cs.CL]** |
+|           | (or **[arXiv:2009.07489v1](https://arxiv.org/abs/2009.07489v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-17-4">4. Contextualized Perturbation for Textual Adversarial Attack</h2>
+
+Title: [Contextualized Perturbation for Textual Adversarial Attack](https://arxiv.org/abs/2009.07502)
+
+Authors: [Dianqi Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+D), [Yizhe Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Hao Peng](https://arxiv.org/search/cs?searchtype=author&query=Peng%2C+H), [Liqun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+L), [Chris Brockett](https://arxiv.org/search/cs?searchtype=author&query=Brockett%2C+C), [Ming-Ting Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M), [Bill Dolan](https://arxiv.org/search/cs?searchtype=author&query=Dolan%2C+B)
+
+> Adversarial examples expose the vulnerabilities of natural language processing (NLP) models, and can be used to evaluate and improve their robustness. Existing techniques of generating such examples are typically driven by local heuristic rules that are agnostic to the context, often resulting in unnatural and ungrammatical outputs. This paper presents CLARE, a ContextuaLized AdversaRial Example generation model that produces fluent and grammatical outputs through a mask-then-infill procedure. CLARE builds on a pre-trained masked language model and modifies the inputs in a context-aware manner. We propose three contextualized perturbations, Replace, Insert and Merge, allowing for generating outputs of varied lengths. With a richer range of available strategies, CLARE is able to attack a victim model more efficiently with fewer edits. Extensive experiments and human evaluation demonstrate that CLARE outperforms the baselines in terms of attack success rate, textual similarity, fluency and grammaticality.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2009.07502](https://arxiv.org/abs/2009.07502) [cs.CL]** |
+|           | (or **[arXiv:2009.07502v1](https://arxiv.org/abs/2009.07502v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-17-5">5. Reusing a Pretrained Language Model on Languages with Limited Corpora for Unsupervised NMT</h2>
+
+Title: [Reusing a Pretrained Language Model on Languages with Limited Corpora for Unsupervised NMT](https://arxiv.org/abs/2009.07610)
+
+Authors: [Alexandra Chronopoulou](https://arxiv.org/search/cs?searchtype=author&query=Chronopoulou%2C+A), [Dario Stojanovski](https://arxiv.org/search/cs?searchtype=author&query=Stojanovski%2C+D), [Alexander Fraser](https://arxiv.org/search/cs?searchtype=author&query=Fraser%2C+A)
+
+> Using a language model (LM) pretrained on two languages with large monolingual data in order to initialize an unsupervised neural machine translation (UNMT) system yields state-of-the-art results. When limited data is available for one language, however, this method leads to poor translations. We present an effective approach that reuses an LM that is pretrained only on the high-resource language. The monolingual LM is fine-tuned on both languages and is then used to initialize a UNMT model. To reuse the pretrained LM, we have to modify its predefined vocabulary, to account for the new language. We therefore propose a novel vocabulary extension method. Our approach, RE-LM, outperforms a competitive cross-lingual pretraining model (XLM) in English-Macedonian (En-Mk) and English-Albanian (En-Sq), yielding more than +8.3 BLEU points for all four translation directions.
+
+| Comments: | EMNLP 2020, main conference                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2009.07610](https://arxiv.org/abs/2009.07610) [cs.CL]** |
+|           | (or **[arXiv:2009.07610v1](https://arxiv.org/abs/2009.07610v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-17-6">6. Knowledge Graphs for Multilingual Language Translation and Generation</h2>
+
+Title: [Knowledge Graphs for Multilingual Language Translation and Generation](https://arxiv.org/abs/2009.07715)
+
+Authors: [Diego Moussallem](https://arxiv.org/search/cs?searchtype=author&query=Moussallem%2C+D)
+
+> The Natural Language Processing (NLP) community has recently seen outstanding progress, catalysed by the release of different Neural Network (NN) architectures. Neural-based approaches have proven effective by significantly increasing the output quality of a large number of automated solutions for NLP tasks (Belinkov and Glass, 2019). Despite these notable advancements, dealing with entities still poses a difficult challenge as they are rarely seen in training data. Entities can be classified into two groups, i.e., proper nouns and common nouns. Proper nouns are also known as Named Entities (NE) and correspond to the name of people, organizations, or locations, e.g., John, WHO, or Canada. Common nouns describe classes of objects, e.g., spoon or cancer. Both types of entities can be found in a Knowledge Graph (KG). Recent work has successfully exploited the contribution of KGs in NLP tasks, such as Natural Language Inference (NLI) (KM et al.,2018) and Question Answering (QA) (Sorokin and Gurevych, 2018). Only a few works had exploited the benefits of KGs in Neural Machine Translation (NMT) when the work presented herein began. Additionally, few works had studied the contribution of KGs to Natural Language Generation (NLG) tasks. Moreover, the multilinguality also remained an open research area in these respective tasks (Young et al., 2018). In this thesis, we focus on the use of KGs for machine translation and the generation of texts to deal with the problems caused by entities and consequently enhance the quality of automatically generated texts.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| DOI:      | [10.17619/UNIPB/1-980](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.17619%2FUNIPB%2F1-980&v=918509fa) |
+| Cite as:  | **[arXiv:2009.07715](https://arxiv.org/abs/2009.07715) [cs.CL]** |
+|           | (or **[arXiv:2009.07715v1](https://arxiv.org/abs/2009.07715v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-17-7">7. Text Generation by Learning from Off-Policy Demonstrations</h2>
+
+Title: [Text Generation by Learning from Off-Policy Demonstrations](https://arxiv.org/abs/2009.07839)
+
+Authors: [Richard Yuanzhe Pang](https://arxiv.org/search/cs?searchtype=author&query=Pang%2C+R+Y), [He He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+H)
+
+> Current approaches to text generation largely rely on autoregressive models and maximum likelihood estimation. This paradigm leads to (i) diverse but low-quality samples due to mismatched learning objective and evaluation metric (likelihood vs. quality) and (ii) exposure bias due to mismatched history distributions (gold vs. model-generated). To alleviate these problems, we frame text generation as a reinforcement learning (RL) problem with expert demonstrations (i.e., the training data), where the goal is to maximize quality given model-generated histories. Prior RL approaches to generation often face optimization issues due to the large action space and sparse reward. We propose GOLD (generation by off-policy learning from demonstrations): an algorithm that learns from the off-policy demonstrations by importance weighting and does not suffer from degenerative solutions. We find that GOLD outperforms the baselines according to automatic and human evaluation on summarization, question generation, and machine translation, including attaining state-of-the-art results for CNN/DailyMail summarization. Further, we show that models trained by GOLD are less sensitive to decoding algorithms and the generation quality does not degrade much as the length increases.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2009.07839](https://arxiv.org/abs/2009.07839) [cs.CL]** |
+|           | (or **[arXiv:2009.07839v1](https://arxiv.org/abs/2009.07839v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
