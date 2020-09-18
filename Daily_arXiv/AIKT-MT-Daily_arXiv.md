@@ -3,6 +3,10 @@
 # Index
 
 
+- [2020-09-18](#2020-09-18)
+
+  - [1. Code-switching pre-training for neural machine translation](#2020-09-18-1)
+  - [2. FewJoint: A Few-shot Learning Benchmark for Joint Language Understanding](#2020-09-18-2)
 - [2020-09-17](#2020-09-17)
 
   - [1. Extremely Low Bit Transformer Quantization for On-Device Neural Machine Translation](#2020-09-17-1)
@@ -72,6 +76,48 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-09-18
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-09-18-1">1. Code-switching pre-training for neural machine translation</h2>
+
+Title: [Code-switching pre-training for neural machine translation](https://arxiv.org/abs/2009.08088)
+
+Authors: [Zhen Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Bojie Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+B), [Ambyera Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+A), [Shen Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Qi Ju](https://arxiv.org/search/cs?searchtype=author&query=Ju%2C+Q)
+
+> This paper proposes a new pre-training method, called Code-Switching Pre-training (CSP for short) for Neural Machine Translation (NMT). Unlike traditional pre-training method which randomly masks some fragments of the input sentence, the proposed CSP randomly replaces some words in the source sentence with their translation words in the target language. Specifically, we firstly perform lexicon induction with unsupervised word embedding mapping between the source and target languages, and then randomly replace some words in the input sentence with their translation words according to the extracted translation lexicons. CSP adopts the encoder-decoder framework: its encoder takes the code-mixed sentence as input, and its decoder predicts the replaced fragment of the input sentence. In this way, CSP is able to pre-train the NMT model by explicitly making the most of the cross-lingual alignment information extracted from the source and target monolingual corpus. Additionally, we relieve the pretrain-finetune discrepancy caused by the artificial symbols like [mask]. To verify the effectiveness of the proposed method, we conduct extensive experiments on unsupervised and supervised NMT. Experimental results show that CSP achieves significant improvements over baselines without pre-training or with other pre-training methods.
+
+| Comments: | 10 pages, EMNLP2020 main conference                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2009.08088](https://arxiv.org/abs/2009.08088) [cs.CL]** |
+|           | (or **[arXiv:2009.08088v1](https://arxiv.org/abs/2009.08088v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-18-2">2. FewJoint: A Few-shot Learning Benchmark for Joint Language Understanding</h2>
+
+Title: [FewJoint: A Few-shot Learning Benchmark for Joint Language Understanding](https://arxiv.org/abs/2009.08138)
+
+Authors: [Yutai Hou](https://arxiv.org/search/cs?searchtype=author&query=Hou%2C+Y), [Jiafeng Mao](https://arxiv.org/search/cs?searchtype=author&query=Mao%2C+J), [Yongkui Lai](https://arxiv.org/search/cs?searchtype=author&query=Lai%2C+Y), [Cheng Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+C), [Wanxiang Che](https://arxiv.org/search/cs?searchtype=author&query=Che%2C+W), [Zhigang Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Z), [Ting Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T)
+
+> Few-learn learning (FSL) is one of the key future steps in machine learning and has raised a lot of attention. However, in contrast to the rapid development in other domains, such as Computer Vision, the progress of FSL in Nature Language Processing (NLP) is much slower. One of the key reasons for this is the lacking of public benchmarks. NLP FSL researches always report new results on their own constructed few-shot datasets, which is pretty inefficient in results comparison and thus impedes cumulative progress. In this paper, we present FewJoint, a novel Few-Shot Learning benchmark for NLP. Different from most NLP FSL research that only focus on simple N-classification problems, our benchmark introduces few-shot joint dialogue language understanding, which additionally covers the structure prediction and multi-task reliance problems. This allows our benchmark to reflect the real-word NLP complexity beyond simple N-classification. Our benchmark is used in the few-shot learning contest of SMP2020-ECDT task-1. We also provide a compatible FSL platform to ease experiment set-up.
+
+| Comments: | Code and dataset is available at: [this https URL](https://github.com/AtmaHou/MetaDialog) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2009.08138](https://arxiv.org/abs/2009.08138) [cs.CL]** |
+|           | (or **[arXiv:2009.08138v1](https://arxiv.org/abs/2009.08138v1) [cs.CL]** for this version) |
+
+
 
 
 
