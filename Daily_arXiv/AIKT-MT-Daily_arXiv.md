@@ -3,9 +3,14 @@
 # Index
 
 
-- [2020-09-18](#2020-09-18)
+- [2020-09-21](#2020-09-21)
 
-  - [1. Code-switching pre-training for neural machine translation](#2020-09-18-1)
+  - [1. A Study of Genetic Algorithms for Hyperparameter Optimization of Neural Networks in Machine Translation](#2020-09-21-1)
+  - [2. fastHan: A BERT-based Joint Many-Task Toolkit for Chinese NLP](#2020-09-21-2)
+  - [3. Hierarchical GPT with Congruent Transformers for Multi-Sentence Language Models](#2020-09-21-3)
+  - [4. Document-level Neural Machine Translation with Document Embeddings](#2020-09-21-4)
+- [2020-09-18](#2020-09-18)
+- [1. Code-switching pre-training for neural machine translation](#2020-09-18-1)
   - [2. FewJoint: A Few-shot Learning Benchmark for Joint Language Understanding](#2020-09-18-2)
 - [2020-09-17](#2020-09-17)
 
@@ -76,6 +81,79 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-09-21
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-09-21-1">1. A Study of Genetic Algorithms for Hyperparameter Optimization of Neural Networks in Machine Translation</h2>
+
+Title: [A Study of Genetic Algorithms for Hyperparameter Optimization of Neural Networks in Machine Translation](https://arxiv.org/abs/2009.08928)
+
+Authors: [Keshav Ganapathy](https://arxiv.org/search/cs?searchtype=author&query=Ganapathy%2C+K)
+
+> With neural networks having demonstrated their versatility and benefits, the need for their optimal performance is as prevalent as ever. A defining characteristic, hyperparameters, can greatly affect its performance. Thus engineers go through a process, tuning, to identify and implement optimal hyperparameters. That being said, excess amounts of manual effort are required for tuning network architectures, training configurations, and preprocessing settings such as Byte Pair Encoding (BPE). In this study, we propose an automatic tuning method modeled after Darwin's Survival of the Fittest Theory via a Genetic Algorithm (GA). Research results show that the proposed method, a GA, outperforms a random selection of hyperparameters.
+
+| Subjects: | **Neural and Evolutionary Computing (cs.NE)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2009.08928](https://arxiv.org/abs/2009.08928) [cs.NE]** |
+|           | (or **[arXiv:2009.08928v1](https://arxiv.org/abs/2009.08928v1) [cs.NE]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-21-2">2. fastHan: A BERT-based Joint Many-Task Toolkit for Chinese NLP</h2>
+
+Title: [fastHan: A BERT-based Joint Many-Task Toolkit for Chinese NLP](https://arxiv.org/abs/2009.08633)
+
+Authors: [Zhichao Geng](https://arxiv.org/search/cs?searchtype=author&query=Geng%2C+Z), [Hang Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+H), [Xipeng Qiu](https://arxiv.org/search/cs?searchtype=author&query=Qiu%2C+X), [Xuanjing Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+X)
+
+> We present fastHan, an open-source toolkit for four basic tasks in Chinese natural language processing: Chinese word segmentation, Part-of-Speech tagging, named entity recognition, and dependency parsing. The kernel of fastHan is a joint many-task model based on a pruned BERT, which uses the first 8 layers in BERT. We also provide a 4-layer base version of model compressed from the 8-layer model. The joint-model is trained and evaluated in 13 corpora of four tasks, yielding near state-of-the-art (SOTA) performance in the dependency parsing task and SOTA performance in the other three tasks. In addition to its small size and excellent performance, fastHan is also very user-friendly. Implemented as a python package, fastHan allows users to easily download and use it. Users can get what they want with one line of code, even if they have little knowledge of deep learning. The project is released on Github.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2009.08633](https://arxiv.org/abs/2009.08633) [cs.CL]** |
+|           | (or **[arXiv:2009.08633v1](https://arxiv.org/abs/2009.08633v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-21-3">3. Hierarchical GPT with Congruent Transformers for Multi-Sentence Language Models</h2>
+
+Title: [Hierarchical GPT with Congruent Transformers for Multi-Sentence Language Models](https://arxiv.org/abs/2009.08636)
+
+Authors: [Jihyeon Roh](https://arxiv.org/search/cs?searchtype=author&query=Roh%2C+J), [Huiseong Gim](https://arxiv.org/search/cs?searchtype=author&query=Gim%2C+H), [Soo-Young Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+S)
+
+> We report a GPT-based multi-sentence language model for dialogue generation and document understanding. First, we propose a hierarchical GPT which consists of three blocks, i.e., a sentence encoding block, a sentence generating block, and a sentence decoding block. The sentence encoding and decoding blocks are basically the encoder-decoder blocks of the standard Transformers, which work on each sentence independently. The sentence generating block is inserted between the encoding and decoding blocks, and generates the next sentence embedding vector from the previous sentence embedding vectors. We believe it is the way human make conversation and understand paragraphs and documents. Since each sentence may consist of fewer words, the sentence encoding and decoding Transformers can use much smaller dimensional embedding vectors. Secondly, we note the attention in the Transformers utilizes the inner-product similarity measure. Therefore, to compare the two vectors in the same space, we set the transform matrices for queries and keys to be the same. Otherwise, the similarity concept is incongruent. We report experimental results to show that these two modifications increase the language model performance for tasks with multiple sentences.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2009.08636](https://arxiv.org/abs/2009.08636) [cs.CL]** |
+|           | (or **[arXiv:2009.08636v1](https://arxiv.org/abs/2009.08636v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-21-4">4. Document-level Neural Machine Translation with Document Embeddings</h2>
+
+Title: [Document-level Neural Machine Translation with Document Embeddings](https://arxiv.org/abs/2009.08775)
+
+Authors: [Shu Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+S), [Hai Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+H), [Zuchao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Bao-Liang Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+B)
+
+> Standard neural machine translation (NMT) is on the assumption of document-level context independent. Most existing document-level NMT methods are satisfied with a smattering sense of brief document-level information, while this work focuses on exploiting detailed document-level context in terms of multiple forms of document embeddings, which is capable of sufficiently modeling deeper and richer document-level context. The proposed document-aware NMT is implemented to enhance the Transformer baseline by introducing both global and local document-level clues on the source end. Experiments show that the proposed method significantly improves the translation performance over strong baselines and other related studies.
+
+| Comments: | arXiv admin note: substantial text overlap with [arXiv:1910.14528](https://arxiv.org/abs/1910.14528) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2009.08775](https://arxiv.org/abs/2009.08775) [cs.CL]** |
+|           | (or **[arXiv:2009.08775v1](https://arxiv.org/abs/2009.08775v1) [cs.CL]** for this version) |
 
 
 
