@@ -3,6 +3,24 @@
 # Index
 
 
+- [2020-09-23](#2020-09-23)
+
+  - [1. KoBE: Knowledge-Based Machine Translation Evaluation](#2020-09-23-1)
+  - [2. Harnessing Multilinguality in Unsupervised Machine Translation for Rare Languages](#2020-09-23-2)
+- [2020-09-22](#2020-09-22)
+
+  - [1. Presenting Simultaneous Translation in Limited Space](#2020-09-22-1)
+  - [2. COMET: A Neural Framework for MT Evaluation](#2020-09-22-2)
+  - [3. Computer Assisted Translation with Neural Quality Estimation and Automatic Post-Editing](#2020-09-22-3)
+  - [4. Long-Short Term Masking Transformer: A Simple but Effective Baseline for Document-level Neural Machine Translation](#2020-09-22-4)
+  - [5. Towards Computational Linguistics in Minangkabau Language: Studies on Sentiment Analysis and Machine Translation](#2020-09-22-5)
+  - [6. Not Low-Resource Anymore: Aligner Ensembling, Batch Filtering, and New Datasets for Bengali-English Machine Translation](#2020-09-22-6)
+  - [7. Softmax Tempering for Training Neural Machine Translation Models](#2020-09-22-7)
+  - [8. Improving Robustness and Generality of NLP Models Using Disentangled Representations](#2020-09-22-8)
+  - [9. Generative Imagination Elevates Machine Translation](#2020-09-22-9)
+  - [10. Alleviating the Inequality of Attention Heads for Neural Machine Translation](#2020-09-22-10)
+  - [11. TED: Triple Supervision Decouples End-to-end Speech-to-text Translation](#2020-09-22-11)
+  - [12. SDST: Successive Decoding for Speech-to-text Translation](#2020-09-22-12)
 - [2020-09-21](#2020-09-21)
 
   - [1. A Study of Genetic Algorithms for Hyperparameter Optimization of Neural Networks in Machine Translation](#2020-09-21-1)
@@ -81,6 +99,260 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-09-23
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-09-23-1">1. KoBE: Knowledge-Based Machine Translation Evaluation</h2>
+
+Title: [KoBE: Knowledge-Based Machine Translation Evaluation](https://arxiv.org/abs/2009.11027)
+
+Authors: [Zorik Gekhman](https://arxiv.org/search/cs?searchtype=author&query=Gekhman%2C+Z), [Roee Aharoni](https://arxiv.org/search/cs?searchtype=author&query=Aharoni%2C+R), [Genady Beryozkin](https://arxiv.org/search/cs?searchtype=author&query=Beryozkin%2C+G), [Markus Freitag](https://arxiv.org/search/cs?searchtype=author&query=Freitag%2C+M), [Wolfgang Macherey](https://arxiv.org/search/cs?searchtype=author&query=Macherey%2C+W)
+
+> We propose a simple and effective method for machine translation evaluation which does not require reference translations. Our approach is based on (1) grounding the entity mentions found in each source sentence and candidate translation against a large-scale multilingual knowledge base, and (2) measuring the recall of the grounded entities found in the candidate vs. those found in the source. Our approach achieves the highest correlation with human judgements on 9 out of the 18 language pairs from the WMT19 benchmark for evaluation without references, which is the largest number of wins for a single evaluation method on this task. On 4 language pairs, we also achieve higher correlation with human judgements than BLEU. To foster further research, we release a dataset containing 1.8 million grounded entity mentions across 18 language pairs from the WMT19 metrics track data.
+
+| Comments: | Accepted as a short paper in Findings of EMNLP 2020          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2009.11027](https://arxiv.org/abs/2009.11027) [cs.CL]** |
+|           | (or **[arXiv:2009.11027v1](https://arxiv.org/abs/2009.11027v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-23-2">2. Harnessing Multilinguality in Unsupervised Machine Translation for Rare Languages</h2>
+
+Title: [Harnessing Multilinguality in Unsupervised Machine Translation for Rare Languages](https://arxiv.org/abs/2009.11201)
+
+Authors: [Xavier Garcia](https://arxiv.org/search/cs?searchtype=author&query=Garcia%2C+X), [Aditya Siddhant](https://arxiv.org/search/cs?searchtype=author&query=Siddhant%2C+A), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O), [Ankur P. Parikh](https://arxiv.org/search/cs?searchtype=author&query=Parikh%2C+A+P)
+
+> Unsupervised translation has reached impressive performance on resource-rich language pairs such as English-French and English-German. However, early studies have shown that in more realistic settings involving low-resource, rare languages, unsupervised translation performs poorly, achieving less than 3.0 BLEU. In this work, we show that multilinguality is critical to making unsupervised systems practical for low-resource settings. In particular, we present a single model for 5 low-resource languages (Gujarati, Kazakh, Nepali, Sinhala, and Turkish) to and from English directions, which leverages monolingual and auxiliary parallel data from other high-resource language pairs via a three-stage training scheme. We outperform all current state-of-the-art unsupervised baselines for these languages, achieving gains of up to 14.4 BLEU. Additionally, we outperform a large collection of supervised WMT submissions for various language pairs as well as match the performance of the current state-of-the-art supervised model for Nepali-English. We conduct a series of ablation studies to establish the robustness of our model under different degrees of data quality, as well as to analyze the factors which led to the superior performance of the proposed approach over traditional unsupervised models.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2009.11201](https://arxiv.org/abs/2009.11201) [cs.CL]** |
+|           | (or **[arXiv:2009.11201v1](https://arxiv.org/abs/2009.11201v1) [cs.CL]** for this version) |
+
+
+
+# 2020-09-22
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-09-22-1">1. Presenting Simultaneous Translation in Limited Space</h2>
+
+Title: [Presenting Simultaneous Translation in Limited Space](https://arxiv.org/abs/2009.09016)
+
+Authors: [Dominik Macháček](https://arxiv.org/search/cs?searchtype=author&query=Macháček%2C+D), [Ondřej Bojar](https://arxiv.org/search/cs?searchtype=author&query=Bojar%2C+O)
+
+> Some methods of automatic simultaneous translation of a long-form speech allow revisions of outputs, trading accuracy for low latency. Deploying these systems for users faces the problem of presenting subtitles in a limited space, such as two lines on a television screen. The subtitles must be shown promptly, incrementally, and with adequate time for reading. We provide an algorithm for subtitling. Furthermore, we propose a way how to estimate the overall usability of the combination of automatic translation and subtitling by measuring the quality, latency, and stability on a test set, and propose an improved measure for translation latency.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | ITAT WAFNL 2020                                              |
+| Cite as:           | **[arXiv:2009.09016](https://arxiv.org/abs/2009.09016) [cs.CL]** |
+|                    | (or **[arXiv:2009.09016v1](https://arxiv.org/abs/2009.09016v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-22-2">2. COMET: A Neural Framework for MT Evaluation</h2>
+
+Title: [COMET: A Neural Framework for MT Evaluation](https://arxiv.org/abs/2009.09025)
+
+Authors: [Ricardo Rei](https://arxiv.org/search/cs?searchtype=author&query=Rei%2C+R), [Craig Stewart](https://arxiv.org/search/cs?searchtype=author&query=Stewart%2C+C), [Ana C Farinha](https://arxiv.org/search/cs?searchtype=author&query=Farinha%2C+A+C), [Alon Lavie](https://arxiv.org/search/cs?searchtype=author&query=Lavie%2C+A)
+
+> We present COMET, a neural framework for training multilingual machine translation evaluation models which obtains new state-of-the-art levels of correlation with human judgements. Our framework leverages recent breakthroughs in cross-lingual pretrained language modeling resulting in highly multilingual and adaptable MT evaluation models that exploit information from both the source input and a target-language reference translation in order to more accurately predict MT quality. To showcase our framework, we train three models with different types of human judgements: Direct Assessments, Human-mediated Translation Edit Rate and Multidimensional Quality Metrics. Our models achieve new state-of-the-art performance on the WMT 2019 Metrics shared task and demonstrate robustness to high-performing systems.
+
+| Comments: | EMNLP 2020                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2009.09025](https://arxiv.org/abs/2009.09025) [cs.CL]** |
+|           | (or **[arXiv:2009.09025v1](https://arxiv.org/abs/2009.09025v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-22-3">3. Computer Assisted Translation with Neural Quality Estimation and Automatic Post-Editing</h2>
+
+Title: [Computer Assisted Translation with Neural Quality Estimation and Automatic Post-Editing](https://arxiv.org/abs/2009.09126)
+
+Authors: [Ke Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+K), [Jiayi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+J), [Niyu Ge](https://arxiv.org/search/cs?searchtype=author&query=Ge%2C+N), [Yangbing Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+Y), [Yu Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+Y), [Kai Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+K)
+
+> With the advent of neural machine translation, there has been a marked shift towards leveraging and consuming the machine translation results. However, the gap between machine translation systems and human translators needs to be manually closed by post-editing. In this paper, we propose an end-to-end deep learning framework of the quality estimation and automatic post-editing of the machine translation output. Our goal is to provide error correction suggestions and to further relieve the burden of human translators through an interpretable model. To imitate the behavior of human translators, we design three efficient delegation modules -- quality estimation, generative post-editing, and atomic operation post-editing and construct a hierarchical model based on them. We examine this approach with the English--German dataset from WMT 2017 APE shared task and our experimental results can achieve the state-of-the-art performance. We also verify that the certified translators can significantly expedite their post-editing processing with our model in human evaluation.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2009.09126](https://arxiv.org/abs/2009.09126) [cs.CL]** |
+|           | (or **[arXiv:2009.09126v1](https://arxiv.org/abs/2009.09126v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-22-4">4. Long-Short Term Masking Transformer: A Simple but Effective Baseline for Document-level Neural Machine Translation</h2>
+
+Title: [Long-Short Term Masking Transformer: A Simple but Effective Baseline for Document-level Neural Machine Translation](https://arxiv.org/abs/2009.09127)
+
+Authors: [Pei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+P), [Boxing Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+B), [Niyu Ge](https://arxiv.org/search/cs?searchtype=author&query=Ge%2C+N), [Kai Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+K)
+
+> Many document-level neural machine translation (NMT) systems have explored the utility of context-aware architecture, usually requiring an increasing number of parameters and computational complexity. However, few attention is paid to the baseline model. In this paper, we research extensively the pros and cons of the standard transformer in document-level translation, and find that the auto-regressive property can simultaneously bring both the advantage of the consistency and the disadvantage of error accumulation. Therefore, we propose a surprisingly simple long-short term masking self-attention on top of the standard transformer to both effectively capture the long-range dependence and reduce the propagation of errors. We examine our approach on the two publicly available document-level datasets. We can achieve a strong result in BLEU and capture discourse phenomena.
+
+| Comments: | accepted to EMNLP 2020                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2009.09127](https://arxiv.org/abs/2009.09127) [cs.CL]** |
+|           | (or **[arXiv:2009.09127v1](https://arxiv.org/abs/2009.09127v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-22-5">5. Towards Computational Linguistics in Minangkabau Language: Studies on Sentiment Analysis and Machine Translation</h2>
+
+Title: [Towards Computational Linguistics in Minangkabau Language: Studies on Sentiment Analysis and Machine Translation](https://arxiv.org/abs/2009.09309)
+
+Authors: [Fajri Koto](https://arxiv.org/search/cs?searchtype=author&query=Koto%2C+F), [Ikhwan Koto](https://arxiv.org/search/cs?searchtype=author&query=Koto%2C+I)
+
+> Although some linguists (Rusmali et al., 1985; Crouch, 2009) have fairly attempted to define the morphology and syntax of Minangkabau, information processing in this language is still absent due to the scarcity of the annotated resource. In this work, we release two Minangkabau corpora: sentiment analysis and machine translation that are harvested and constructed from Twitter and Wikipedia. We conduct the first computational linguistics in Minangkabau language employing classic machine learning and sequence-to-sequence models such as LSTM and Transformer. Our first experiments show that the classification performance over Minangkabau text significantly drops when tested with the model trained in Indonesian. Whereas, in the machine translation experiment, a simple word-to-word translation using a bilingual dictionary outperforms LSTM and Transformer model in terms of BLEU score.
+
+| Comments: | Accepted at PACLIC 2020 - The 34th Pacific Asia Conference on Language, Information and Computation |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2009.09309](https://arxiv.org/abs/2009.09309) [cs.CL]** |
+|           | (or **[arXiv:2009.09309v1](https://arxiv.org/abs/2009.09309v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-22-6">6. Not Low-Resource Anymore: Aligner Ensembling, Batch Filtering, and New Datasets for Bengali-English Machine Translation</h2>
+
+Title: [Not Low-Resource Anymore: Aligner Ensembling, Batch Filtering, and New Datasets for Bengali-English Machine Translation](https://arxiv.org/abs/2009.09359)
+
+Authors: [Tahmid Hasan](https://arxiv.org/search/cs?searchtype=author&query=Hasan%2C+T), [Abhik Bhattacharjee](https://arxiv.org/search/cs?searchtype=author&query=Bhattacharjee%2C+A), [Kazi Samin](https://arxiv.org/search/cs?searchtype=author&query=Samin%2C+K), [Md Hasan](https://arxiv.org/search/cs?searchtype=author&query=Hasan%2C+M), [Madhusudan Basak](https://arxiv.org/search/cs?searchtype=author&query=Basak%2C+M), [M. Sohel Rahman](https://arxiv.org/search/cs?searchtype=author&query=Rahman%2C+M+S), [Rifat Shahriyar](https://arxiv.org/search/cs?searchtype=author&query=Shahriyar%2C+R)
+
+> Despite being the seventh most widely spoken language in the world, Bengali has received much less attention in machine translation literature due to being low in resources. Most publicly available parallel corpora for Bengali are not large enough; and have rather poor quality, mostly because of incorrect sentence alignments resulting from erroneous sentence segmentation, and also because of a high volume of noise present in them. In this work, we build a customized sentence segmenter for Bengali and propose two novel methods for parallel corpus creation on low-resource setups: aligner ensembling and batch filtering. With the segmenter and the two methods combined, we compile a high-quality Bengali-English parallel corpus comprising of 2.75 million sentence pairs, more than 2 million of which were not available before. Training on neural machine translation models, we achieve an improvement of more than 9 BLEU over previous approaches to Bengali-English machine translation. We also evaluate on a new test set of 615 pairs made with extensive quality control. We release the segmenter, parallel corpus, and the evaluation set; thus elevating Bengali from its low-resource status. To the best of our knowledge, this is the first ever large scale study on Bengali-English machine translation. We believe our study will pave the way for future research on Bengali-English machine translation as well as other low-resource languages.
+
+| Comments: | EMNLP 2020                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2009.09359](https://arxiv.org/abs/2009.09359) [cs.CL]** |
+|           | (or **[arXiv:2009.09359v1](https://arxiv.org/abs/2009.09359v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-22-7">7. Softmax Tempering for Training Neural Machine Translation Models</h2>
+
+Title: [Softmax Tempering for Training Neural Machine Translation Models](https://arxiv.org/abs/2009.09372)
+
+Authors: [Raj Dabre](https://arxiv.org/search/cs?searchtype=author&query=Dabre%2C+R), [Atsushi Fujita](https://arxiv.org/search/cs?searchtype=author&query=Fujita%2C+A)
+
+> Neural machine translation (NMT) models are typically trained using a softmax cross-entropy loss where the softmax distribution is compared against smoothed gold labels. In low-resource scenarios, NMT models tend to over-fit because the softmax distribution quickly approaches the gold label distribution. To address this issue, we propose to divide the logits by a temperature coefficient, prior to applying softmax, during training. In our experiments on 11 language pairs in the Asian Language Treebank dataset and the WMT 2019 English-to-German translation task, we observed significant improvements in translation quality by up to 3.9 BLEU points. Furthermore, softmax tempering makes the greedy search to be as good as beam search decoding in terms of translation quality, enabling 1.5 to 3.5 times speed-up. We also study the impact of softmax tempering on multilingual NMT and recurrently stacked NMT, both of which aim to reduce the NMT model size by parameter sharing thereby verifying the utility of temperature in developing compact NMT models. Finally, an analysis of softmax entropies and gradients reveal the impact of our method on the internal behavior of NMT models.
+
+| Comments: | The paper is about prediction smoothing for improving sequence to sequence performance. Related to but not the same as label smoothing. Work in progress. Updates with deeper analyses and comparisons to related methods to follow. Rejected from EMNLP 2020 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2009.09372](https://arxiv.org/abs/2009.09372) [cs.CL]** |
+|           | (or **[arXiv:2009.09372v1](https://arxiv.org/abs/2009.09372v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-22-8">8. Improving Robustness and Generality of NLP Models Using Disentangled Representations</h2>
+
+Title: [Improving Robustness and Generality of NLP Models Using Disentangled Representations](https://arxiv.org/abs/2009.09587)
+
+Authors: [Jiawei Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+J), [Xiaoya Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Xiang Ao](https://arxiv.org/search/cs?searchtype=author&query=Ao%2C+X), [Yuxian Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+Y), [Fei Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+F), [Jiwei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J)
+
+> Supervised neural networks, which first map an input x to a single representation z, and then map z to the output label y, have achieved remarkable success in a wide range of natural language processing (NLP) tasks. Despite their success, neural models lack for both robustness and generality: small perturbations to inputs can result in absolutely different outputs; the performance of a model trained on one domain drops drastically when tested on another domain.
+> In this paper, we present methods to improve robustness and generality of NLP models from the standpoint of disentangled representation learning. Instead of mapping x to a single representation z, the proposed strategy maps x to a set of representations {z1,z2,...,zK} while forcing them to be disentangled. These representations are then mapped to different logits ls, the ensemble of which is used to make the final prediction y. We propose different methods to incorporate this idea into currently widely-used models, including adding an L2 regularizer on zs or adding Total Correlation (TC) under the framework of variational information bottleneck (VIB). We show that models trained with the proposed criteria provide better robustness and domain adaptation ability in a wide range of supervised learning tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2009.09587](https://arxiv.org/abs/2009.09587) [cs.CL]** |
+|           | (or **[arXiv:2009.09587v1](https://arxiv.org/abs/2009.09587v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-22-9">9. Generative Imagination Elevates Machine Translation</h2>
+
+Title: [Generative Imagination Elevates Machine Translation](https://arxiv.org/abs/2009.09654)
+
+Authors: [Quanyu Long](https://arxiv.org/search/cs?searchtype=author&query=Long%2C+Q), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> There are thousands of languages on earth, but visual perception is shared among peoples. Existing multimodal neural machine translation (MNMT) methods achieve knowledge transfer by enforcing one encoder to learn shared representation across textual and visual modalities. However, the training and inference process heavily relies on well-aligned bilingual sentence - image triplets as input, which are often limited in quantity. In this paper, we hypothesize that visual imagination via synthesizing visual representation from source text could help the neural model map two languages with different symbols, thus helps the translation task. Our proposed end-to-end imagination-based machine translation model (ImagiT) first learns to generate semantic-consistent visual representation from source sentence, and then generate target sentence based on both text representation and imagined visual representation. Experiments demonstrate that our translation model benefits from visual imagination and significantly outperforms the text-only neural machine translation (NMT) baseline. We also conduct analyzing experiments, and the results show that imagination can help fill in missing information when performing the degradation strategy.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2009.09654](https://arxiv.org/abs/2009.09654) [cs.CL]** |
+|           | (or **[arXiv:2009.09654v1](https://arxiv.org/abs/2009.09654v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-22-10">10. Alleviating the Inequality of Attention Heads for Neural Machine Translation</h2>
+
+Title: [Alleviating the Inequality of Attention Heads for Neural Machine Translation](https://arxiv.org/abs/2009.09672)
+
+Authors: [Zewei Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+Z), [Shujian Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Xinyu Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+X), [Jiajun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J)
+
+> Recent studies show that the attention heads in Transformer are not equal. We relate this phenomenon to the imbalance training of multi-head attention and the model dependence on specific heads. To tackle this problem, we propose a simple masking method: HeadMask, in two specific ways. Experiments show that translation improvements are achieved on multiple language pairs. Subsequent empirical analyses also support our assumption and confirm the effectiveness of the method.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2009.09672](https://arxiv.org/abs/2009.09672) [cs.CL]** |
+|           | (or **[arXiv:2009.09672v1](https://arxiv.org/abs/2009.09672v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-22-11">11. TED: Triple Supervision Decouples End-to-end Speech-to-text Translation</h2>
+
+Title: [TED: Triple Supervision Decouples End-to-end Speech-to-text Translation](https://arxiv.org/abs/2009.09704)
+
+Authors: [Qianqian Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+Q), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Shuang Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+S), [Bo Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+B), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> An end-to-end speech-to-text translation (ST) takes audio in a source language and outputs the text in a target language. Inspired by neuroscience, humans have perception systems and cognitive systems to process different information, we propose TED, \textbf{T}ransducer-\textbf{E}ncoder-\textbf{D}ecoder, a unified framework with triple supervision to decouple the end-to-end speech-to-text translation task. In addition to the target sentence translation loss, \method includes two auxiliary supervising signals to guide the acoustic transducer that extracts acoustic features from the input, and the semantic encoder to extract semantic features relevant to the source transcription text. Our method achieves state-of-the-art performance on both English-French and English-German speech translation benchmarks.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2009.09704](https://arxiv.org/abs/2009.09704) [cs.CL]** |
+|           | (or **[arXiv:2009.09704v1](https://arxiv.org/abs/2009.09704v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-22-12">12. SDST: Successive Decoding for Speech-to-text Translation</h2>
+
+Title: [SDST: Successive Decoding for Speech-to-text Translation](https://arxiv.org/abs/2009.09737)
+
+Authors: [Qianqian Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+Q), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Shuang Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+S), [Bo Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+B), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> End-to-end speech-to-text translation (ST), which directly translates the source language speech to the target language text, has attracted intensive attention recently. However, the combination of speech recognition and machine translation in a single model poses a heavy burden on the direct cross-modal cross-lingual mapping. To reduce the learning difficulty, we propose SDST, an integral framework with \textbf{S}uccessive \textbf{D}ecoding for end-to-end \textbf{S}peech-to-text \textbf{T}ranslation task. This method is verified in two mainstream datasets. Experiments show that our proposed \method improves the previous state-of-the-art methods by big margins.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2009.09737](https://arxiv.org/abs/2009.09737) [cs.CL]** |
+|           | (or **[arXiv:2009.09737v1](https://arxiv.org/abs/2009.09737v1) [cs.CL]** for this version) |
 
 
 
