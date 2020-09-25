@@ -3,6 +3,11 @@
 # Index
 
 
+- [2020-09-25](#2020-09-25)
+
+  - [1. Multi-Pass Transformer for Machine Translation](#2020-09-25-1)
+  - [2. AnchiBERT: A Pre-Trained Model for Ancient ChineseLanguage Understanding and Generation](#2020-09-25-2)
+  - [3. N-LTP: A Open-source Neural Chinese Language Technology Platform with Pretrained Models](#2020-09-25-3)
 - [2020-09-23](#2020-09-23)
 
   - [1. KoBE: Knowledge-Based Machine Translation Evaluation](#2020-09-23-1)
@@ -99,6 +104,64 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-09-25
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-09-25-1">1. Multi-Pass Transformer for Machine Translation</h2>
+
+Title: [Multi-Pass Transformer for Machine Translation](https://arxiv.org/abs/2009.11382)
+
+Authors: [Peng Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+P), [Chiori Hori](https://arxiv.org/search/cs?searchtype=author&query=Hori%2C+C), [Shijie Geng](https://arxiv.org/search/cs?searchtype=author&query=Geng%2C+S), [Takaaki Hori](https://arxiv.org/search/cs?searchtype=author&query=Hori%2C+T), [Jonathan Le Roux](https://arxiv.org/search/cs?searchtype=author&query=Roux%2C+J+L)
+
+> In contrast with previous approaches where information flows only towards deeper layers of a stack, we consider a multi-pass transformer (MPT) architecture in which earlier layers are allowed to process information in light of the output of later layers. To maintain a directed acyclic graph structure, the encoder stack of a transformer is repeated along a new multi-pass dimension, keeping the parameters tied, and information is allowed to proceed unidirectionally both towards deeper layers within an encoder stack and towards any layer of subsequent stacks. We consider both soft (i.e., continuous) and hard (i.e., discrete) connections between parallel encoder stacks, relying on a neural architecture search to find the best connection pattern in the hard case. We perform an extensive ablation study of the proposed MPT architecture and compare it with other state-of-the-art transformer architectures. Surprisingly, Base Transformer equipped with MPT can surpass the performance of Large Transformer on the challenging machine translation En-De and En-Fr datasets. In the hard connection case, the optimal connection pattern found for En-De also leads to improved performance for En-Fr.
+
+| Comments: | 10 pages, 5 figures and 2 tables                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2009.11382](https://arxiv.org/abs/2009.11382) [cs.CL]** |
+|           | (or **[arXiv:2009.11382v1](https://arxiv.org/abs/2009.11382v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-25-2">2. AnchiBERT: A Pre-Trained Model for Ancient ChineseLanguage Understanding and Generation</h2>
+
+Title: [AnchiBERT: A Pre-Trained Model for Ancient ChineseLanguage Understanding and Generation](https://arxiv.org/abs/2009.11473)
+
+Authors: [Huishuang Tian](https://arxiv.org/search/cs?searchtype=author&query=Tian%2C+H), [Kexin Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+K), [Dayiheng Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+D), [Jiancheng Lv](https://arxiv.org/search/cs?searchtype=author&query=Lv%2C+J)
+
+> Ancient Chinese is the essence of Chinese culture. There are several natural language processing tasks of ancient Chinese domain, such as ancient-modern Chinese translation, poem generation, and couplet generation. Previous studies usually use the supervised models which deeply rely on parallel data. However, it is difficult to obtain large-scale parallel data of ancient Chinese. In order to make full use of the more easily available monolingual ancient Chinese corpora, we release AnchiBERT, a pre-trained language model based on the architecture of BERT, which is trained on large-scale ancient Chinese corpora. We evaluate AnchiBERT on both language understanding and generation tasks, including poem classification, ancient-modern Chinese translation, poem generation, and couplet generation. The experimental results show that AnchiBERT outperforms BERT as well as the non-pretrained models and achieves state-of-the-art results in all cases.
+
+| Comments: | 10 pages with 3 figures                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2009.11473](https://arxiv.org/abs/2009.11473) [cs.CL]** |
+|           | (or **[arXiv:2009.11473v1](https://arxiv.org/abs/2009.11473v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-25-3">3. N-LTP: A Open-source Neural Chinese Language Technology Platform with Pretrained Models</h2>
+
+Title: [N-LTP: A Open-source Neural Chinese Language Technology Platform with Pretrained Models](https://arxiv.org/abs/2009.11616)
+
+Authors: [Wanxiang Che](https://arxiv.org/search/cs?searchtype=author&query=Che%2C+W), [Yunlong Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+Y), [Libo Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+L), [Ting Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T)
+
+> We introduce \texttt{N-LTP}, an open-source Python Chinese natural language processing toolkit supporting five basic tasks: Chinese word segmentation, part-of-speech tagging, named entity recognition, dependency parsing, and semantic dependency parsing. \texttt{N-LTP} adopts the multi-task framework with the pre-trained model to capture the shared knowledge across all Chinese relevant tasks. In addition, we propose to use knowledge distillation where single-task models teach a multi-task model, helping the multi-task model surpass its single-task teachers. Finally, we provide fundamental tasks API and a visualization tool to make users easier to use and view the processing results directly. To the best of our knowledge, this is the first toolkit to support all Chinese NLP fundamental tasks. Source code, documentation, and pre-trained models are available at [this https URL](https://github.com/HIT-SCIR/ltp).
+
+| Comments: | Work in progress. Code is available at [GitHub]([this https URL](https://github.com/HIT-SCIR/ltp)) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2009.11616](https://arxiv.org/abs/2009.11616) [cs.CL]** |
+|           | (or **[arXiv:2009.11616v1](https://arxiv.org/abs/2009.11616v1) [cs.CL]** for this version) |
 
 
 
