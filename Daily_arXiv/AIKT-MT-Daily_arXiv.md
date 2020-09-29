@@ -3,9 +3,15 @@
 # Index
 
 
-- [2020-09-25](#2020-09-25)
+- [2020-09-29](#2020-09-29)
 
-  - [1. Multi-Pass Transformer for Machine Translation](#2020-09-25-1)
+  - [1. Energy-Based Reranking: Improving Neural Machine Translation Using Energy-Based Models](#2020-09-29-1)
+  - [2. Dissecting Lottery Ticket Transformers: Structural and Behavioral Study of Sparse Neural Machine Translation](#2020-09-29-2)
+  - [3. Transformers Are Better Than Humans at Identifying Generated Text](#2020-09-29-3)
+  - [4. Aspects of Terminological and Named Entity Knowledge within Rule-Based Machine Translation Models for Under-Resourced Neural Machine Translation Scenarios](#2020-09-29-4)
+  - [5. Hierarchical Sparse Variational Autoencoder for Text Encoding](#2020-09-29-5)
+- [2020-09-25](#2020-09-25)
+- [1. Multi-Pass Transformer for Machine Translation](#2020-09-25-1)
   - [2. AnchiBERT: A Pre-Trained Model for Ancient ChineseLanguage Understanding and Generation](#2020-09-25-2)
   - [3. N-LTP: A Open-source Neural Chinese Language Technology Platform with Pretrained Models](#2020-09-25-3)
 - [2020-09-23](#2020-09-23)
@@ -104,6 +110,101 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-09-29
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-09-29-1">1. Energy-Based Reranking: Improving Neural Machine Translation Using Energy-Based Models</h2>
+
+Title: [Energy-Based Reranking: Improving Neural Machine Translation Using Energy-Based Models](https://arxiv.org/abs/2009.13267)
+
+Authors: [Subhajit Naskar](https://arxiv.org/search/cs?searchtype=author&query=Naskar%2C+S), [Amirmohammad Rooshenas](https://arxiv.org/search/cs?searchtype=author&query=Rooshenas%2C+A), [Simeng Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+S), [Mohit Iyyer](https://arxiv.org/search/cs?searchtype=author&query=Iyyer%2C+M), [Andrew McCallum](https://arxiv.org/search/cs?searchtype=author&query=McCallum%2C+A)
+
+> The discrepancy between maximum likelihood estimation (MLE) and task measures such as BLEU score has been studied before for autoregressive neural machine translation (NMT) and resulted in alternative training algorithms (Ranzato et al., 2016; Norouzi et al., 2016; Shen et al., 2016; Wu et al., 2018). However, MLE training remains the de facto approach for autoregressive NMT because of its computational efficiency and stability. Despite this mismatch between the training objective and task measure, we notice that the samples drawn from an MLE-based trained NMT support the desired distribution -- there are samples with much higher BLEU score comparing to the beam decoding output. To benefit from this observation, we train an energy-based model to mimic the behavior of the task measure (i.e., the energy-based model assigns lower energy to samples with higher BLEU score), which is resulted in a re-ranking algorithm based on the samples drawn from NMT: energy-based re-ranking (EBR). Our EBR consistently improves the performance of the Transformer-based NMT: +3 BLEU points on Sinhala-English and +2.0 BLEU points on IWSLT'17 French-English tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2009.13267](https://arxiv.org/abs/2009.13267) [cs.CL]** |
+|           | (or **[arXiv:2009.13267v1](https://arxiv.org/abs/2009.13267v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-29-2">2. Dissecting Lottery Ticket Transformers: Structural and Behavioral Study of Sparse Neural Machine Translation</h2>
+
+Title: [Dissecting Lottery Ticket Transformers: Structural and Behavioral Study of Sparse Neural Machine Translation](https://arxiv.org/abs/2009.13270)
+
+Authors: [Rajiv Movva](https://arxiv.org/search/cs?searchtype=author&query=Movva%2C+R), [Jason Y. Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+J+Y)
+
+> Recent work on the lottery ticket hypothesis has produced highly sparse Transformers for NMT while maintaining BLEU. However, it is unclear how such pruning techniques affect a model's learned representations. By probing sparse Transformers, we find that complex semantic information is first to be degraded. Analysis of internal activations reveals that higher layers diverge most over the course of pruning, gradually becoming less complex than their dense counterparts. Meanwhile, early layers of sparse models begin to perform more encoding. Attention mechanisms remain remarkably consistent as sparsity increases.
+
+| Comments:    | 8 pages, 6 figures, 11 supplementary figures                 |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2009.13270](https://arxiv.org/abs/2009.13270) [cs.CL]** |
+|              | (or **[arXiv:2009.13270v1](https://arxiv.org/abs/2009.13270v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-29-3">3. Transformers Are Better Than Humans at Identifying Generated Text</h2>
+
+Title: [Transformers Are Better Than Humans at Identifying Generated Text](https://arxiv.org/abs/2009.13375)
+
+Authors: [Antonis Maronikolakis](https://arxiv.org/search/cs?searchtype=author&query=Maronikolakis%2C+A), [Mark Stevenson](https://arxiv.org/search/cs?searchtype=author&query=Stevenson%2C+M), [Hinrich Schutze](https://arxiv.org/search/cs?searchtype=author&query=Schutze%2C+H)
+
+> Fake information spread via the internet and social media influences public opinion and user activity. Generative models enable fake content to be generated faster and more cheaply than had previously been possible. This paper examines the problem of identifying fake content generated by lightweight deep learning models. A dataset containing human and machine-generated headlines was created and a user study indicated that humans were only able to identify the fake headlines in 45.3% of the cases. However, the most accurate automatic approach, transformers, achieved an accuracy of 94%, indicating that content generated from language models can be filtered out accurately.
+
+| Subjects: | **Computation and Language (cs.CL)**; Computers and Society (cs.CY); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2009.13375](https://arxiv.org/abs/2009.13375) [cs.CL]** |
+|           | (or **[arXiv:2009.13375v1](https://arxiv.org/abs/2009.13375v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-29-4">4. Aspects of Terminological and Named Entity Knowledge within Rule-Based Machine Translation Models for Under-Resourced Neural Machine Translation Scenarios</h2>
+
+Title: [Aspects of Terminological and Named Entity Knowledge within Rule-Based Machine Translation Models for Under-Resourced Neural Machine Translation Scenarios](https://arxiv.org/abs/2009.13398)
+
+Authors: [Daniel Torregrosa](https://arxiv.org/search/cs?searchtype=author&query=Torregrosa%2C+D), [Nivranshu Pasricha](https://arxiv.org/search/cs?searchtype=author&query=Pasricha%2C+N), [Maraim Masoud](https://arxiv.org/search/cs?searchtype=author&query=Masoud%2C+M), [Bharathi Raja Chakravarthi](https://arxiv.org/search/cs?searchtype=author&query=Chakravarthi%2C+B+R), [Juan Alonso](https://arxiv.org/search/cs?searchtype=author&query=Alonso%2C+J), [Noe Casas](https://arxiv.org/search/cs?searchtype=author&query=Casas%2C+N), [Mihael Arcan](https://arxiv.org/search/cs?searchtype=author&query=Arcan%2C+M)
+
+> Rule-based machine translation is a machine translation paradigm where linguistic knowledge is encoded by an expert in the form of rules that translate text from source to target language. While this approach grants extensive control over the output of the system, the cost of formalising the needed linguistic knowledge is much higher than training a corpus-based system, where a machine learning approach is used to automatically learn to translate from examples. In this paper, we describe different approaches to leverage the information contained in rule-based machine translation systems to improve a corpus-based one, namely, a neural machine translation model, with a focus on a low-resource scenario. Three different kinds of information were used: morphological information, named entities and terminology. In addition to evaluating the general performance of the system, we systematically analysed the performance of the proposed approaches when dealing with the targeted phenomena. Our results suggest that the proposed models have limited ability to learn from external information, and most approaches do not significantly alter the results of the automatic evaluation, but our preliminary qualitative evaluation shows that in certain cases the hypothesis generated by our system exhibit favourable behaviour such as keeping the use of passive voice.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2009.13398](https://arxiv.org/abs/2009.13398) [cs.CL]** |
+|           | (or **[arXiv:2009.13398v1](https://arxiv.org/abs/2009.13398v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-09-29-5">5. Hierarchical Sparse Variational Autoencoder for Text Encoding</h2>
+
+Title: [Hierarchical Sparse Variational Autoencoder for Text Encoding](https://arxiv.org/abs/2009.12421)
+
+Authors: [Victor Prokhorov](https://arxiv.org/search/cs?searchtype=author&query=Prokhorov%2C+V), [Yingzhen Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Ehsan Shareghi](https://arxiv.org/search/cs?searchtype=author&query=Shareghi%2C+E), [Nigel Collier](https://arxiv.org/search/cs?searchtype=author&query=Collier%2C+N)
+
+> In this paper we focus on unsupervised representation learning and propose a novel framework, Hierarchical Sparse Variational Autoencoder (HSVAE), that imposes sparsity on sentence representations via direct optimisation of Evidence Lower Bound (ELBO). Our experimental results illustrate that HSVAE is flexible and adapts nicely to the underlying characteristics of the corpus which is reflected by the level of sparsity and its distributional patterns.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2009.12421](https://arxiv.org/abs/2009.12421) [cs.CL]** |
+|           | (or **[arXiv:2009.12421v1](https://arxiv.org/abs/2009.12421v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
