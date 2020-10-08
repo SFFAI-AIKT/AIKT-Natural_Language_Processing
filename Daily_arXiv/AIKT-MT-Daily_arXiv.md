@@ -3,9 +3,20 @@
 # Index
 
 
-- [2020-10-07](#2020-10-07)
+- [2020-10-08](#2020-10-08)
 
-  - [1. Multi-task Learning for Multilingual Neural Machine Translation](#2020-10-07-1)
+  - [1. Plug and Play Autoencoders for Conditional Text Generation](#2020-10-08-1)
+  - [2. Pre-training Multilingual Neural Machine Translation by Leveraging Alignment Information](#2020-10-08-2)
+  - [3. A Self-Refinement Strategy for Noise Reduction in Grammatical Error Correction](#2020-10-08-3)
+  - [4. Transfer Learning and Distant Supervision for Multilingual Transformer Models: A Study on African Languages](#2020-10-08-4)
+  - [5. Improving the Efficiency of Grammatical Error Correction with Erroneous Span Detection and Correction](#2020-10-08-5)
+  - [6. Dual Reconstruction: a Unifying Objective for Semi-Supervised Neural Machine Translation](#2020-10-08-6)
+  - [7. WER we are and WER we think we are](#2020-10-08-7)
+  - [8. Improving Sentiment Analysis over non-English Tweets using Multilingual Transformers and Automatic Translation for Data-Augmentation](#2020-10-08-8)
+  - [9. TeaForN: Teacher-Forcing with N-grams](#2020-10-08-9)
+  - [10. Galileo at SemEval-2020 Task 12: Multi-lingual Learning for Offensive Language Identification using Pre-trained Language Models](#2020-10-08-10)
+- [2020-10-07](#2020-10-07)
+- [1. Multi-task Learning for Multilingual Neural Machine Translation](#2020-10-07-1)
   - [2. Do Explicit Alignments Robustly Improve Multilingual Encoders?](#2020-10-07-2)
   - [3. The Multilingual Amazon Reviews Corpus](#2020-10-07-3)
   - [4. On the Sparsity of Neural Machine Translation Models](#2020-10-07-4)
@@ -69,6 +80,190 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-10-08
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-10-08-1">1. Plug and Play Autoencoders for Conditional Text Generation</h2>
+
+Title: [Plug and Play Autoencoders for Conditional Text Generation](https://arxiv.org/abs/2010.02983)
+
+Authors: [Florian Mai](https://arxiv.org/search/cs?searchtype=author&query=Mai%2C+F) (1 and 2), [Nikolaos Pappas](https://arxiv.org/search/cs?searchtype=author&query=Pappas%2C+N) (3), [Ivan Montero](https://arxiv.org/search/cs?searchtype=author&query=Montero%2C+I) (3), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith%2C+N+A) (3 and 4), [James Henderson](https://arxiv.org/search/cs?searchtype=author&query=Henderson%2C+J) (1) ((1) Idiap Research Institute, (2) EPFL, (3) University of Washington, (4) Allen Institute for Artificial Intelligence)
+
+> Text autoencoders are commonly used for conditional generation tasks such as style transfer. We propose methods which are plug and play, where any pretrained autoencoder can be used, and only require learning a mapping within the autoencoder's embedding space, training embedding-to-embedding (Emb2Emb). This reduces the need for labeled training data for the task and makes the training procedure more efficient. Crucial to the success of this method is a loss term for keeping the mapped embedding on the manifold of the autoencoder and a mapping which is trained to navigate the manifold by learning offset vectors. Evaluations on style transfer tasks both with and without sequence-to-sequence supervision show that our method performs better than or comparable to strong baselines while being up to four times faster.
+
+| Comments: | To be published in EMNLP 2020                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2010.02983](https://arxiv.org/abs/2010.02983) [cs.CL]** |
+|           | (or **[arXiv:2010.02983v1](https://arxiv.org/abs/2010.02983v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-08-2">2. Pre-training Multilingual Neural Machine Translation by Leveraging Alignment Information</h2>
+
+Title: [Pre-training Multilingual Neural Machine Translation by Leveraging Alignment Information](https://arxiv.org/abs/2010.03142)
+
+Authors: [Zehui Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Z), [Xiao Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C+X), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Xipeng Qiu](https://arxiv.org/search/cs?searchtype=author&query=Qiu%2C+X), [Jiangtao Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+J), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> We investigate the following question for machine translation (MT): can we develop a single universal MT model to serve as the common seed and obtain derivative and improved models on arbitrary language pairs? We propose mRASP, an approach to pre-train a universal multilingual neural machine translation model. Our key idea in mRASP is its novel technique of random aligned substitution, which brings words and phrases with similar meanings across multiple languages closer in the representation space. We pre-train a mRASP model on 32 language pairs jointly with only public datasets. The model is then fine-tuned on downstream language pairs to obtain specialized MT models. We carry out extensive experiments on 42 translation directions across a diverse settings, including low, medium, rich resource, and as well as transferring to exotic language pairs. Experimental results demonstrate that mRASP achieves significant performance improvement compared to directly training on those target pairs. It is the first time to verify that multiple low-resource language pairs can be utilized to improve rich resource MT. Surprisingly, mRASP is even able to improve the translation quality on exotic languages that never occur in the pre-training corpus. Code, data, and pre-trained models are available at [this https URL](https://github.com/linzehui/mRASP).
+
+| Comments: | EMNLP 2020                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.03142](https://arxiv.org/abs/2010.03142) [cs.CL]** |
+|           | (or **[arXiv:2010.03142v1](https://arxiv.org/abs/2010.03142v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-08-3">3. A Self-Refinement Strategy for Noise Reduction in Grammatical Error Correction</h2>
+
+Title: [A Self-Refinement Strategy for Noise Reduction in Grammatical Error Correction](https://arxiv.org/abs/2010.03155)
+
+Authors: [Masato Mita](https://arxiv.org/search/cs?searchtype=author&query=Mita%2C+M), [Shun Kiyono](https://arxiv.org/search/cs?searchtype=author&query=Kiyono%2C+S), [Masahiro Kaneko](https://arxiv.org/search/cs?searchtype=author&query=Kaneko%2C+M), [Jun Suzuki](https://arxiv.org/search/cs?searchtype=author&query=Suzuki%2C+J), [Kentaro Inui](https://arxiv.org/search/cs?searchtype=author&query=Inui%2C+K)
+
+> Existing approaches for grammatical error correction (GEC) largely rely on supervised learning with manually created GEC datasets. However, there has been little focus on verifying and ensuring the quality of the datasets, and on how lower-quality data might affect GEC performance. We indeed found that there is a non-negligible amount of "noise" where errors were inappropriately edited or left uncorrected. To address this, we designed a self-refinement method where the key idea is to denoise these datasets by leveraging the prediction consistency of existing models, and outperformed strong denoising baseline methods. We further applied task-specific techniques and achieved state-of-the-art performance on the CoNLL-2014, JFLEG, and BEA-2019 benchmarks. We then analyzed the effect of the proposed denoising method, and found that our approach leads to improved coverage of corrections and facilitated fluency edits which are reflected in higher recall and overall performance.
+
+| Comments: | accepted by EMNLP 2020 (Findings)                            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.03155](https://arxiv.org/abs/2010.03155) [cs.CL]** |
+|           | (or **[arXiv:2010.03155v1](https://arxiv.org/abs/2010.03155v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-08-4">4. Transfer Learning and Distant Supervision for Multilingual Transformer Models: A Study on African Languages</h2>
+
+Title: [Transfer Learning and Distant Supervision for Multilingual Transformer Models: A Study on African Languages](https://arxiv.org/abs/2010.03179)
+
+Authors: [Michael A. Hedderich](https://arxiv.org/search/cs?searchtype=author&query=Hedderich%2C+M+A), [David Adelani](https://arxiv.org/search/cs?searchtype=author&query=Adelani%2C+D), [Dawei Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+D), [Jesujoba Alabi](https://arxiv.org/search/cs?searchtype=author&query=Alabi%2C+J), [Udia Markus](https://arxiv.org/search/cs?searchtype=author&query=Markus%2C+U), [Dietrich Klakow](https://arxiv.org/search/cs?searchtype=author&query=Klakow%2C+D)
+
+> Multilingual transformer models like mBERT and XLM-RoBERTa have obtained great improvements for many NLP tasks on a variety of languages. However, recent works also showed that results from high-resource languages could not be easily transferred to realistic, low-resource scenarios. In this work, we study trends in performance for different amounts of available resources for the three African languages Hausa, isiXhosa and Yorùbá on both NER and topic classification. We show that in combination with transfer learning or distant supervision, these models can achieve with as little as 10 or 100 labeled sentences the same performance as baselines with much more supervised training data. However, we also find settings where this does not hold. Our discussions and additional experiments on assumptions such as time and hardware restrictions highlight challenges and opportunities in low-resource learning.
+
+| Comments: | Accepted at EMNLP'20                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2010.03179](https://arxiv.org/abs/2010.03179) [cs.CL]** |
+|           | (or **[arXiv:2010.03179v1](https://arxiv.org/abs/2010.03179v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-08-5">5. Improving the Efficiency of Grammatical Error Correction with Erroneous Span Detection and Correction</h2>
+
+Title: [Improving the Efficiency of Grammatical Error Correction with Erroneous Span Detection and Correction](https://arxiv.org/abs/2010.03260)
+
+Authors: [Mengyun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+M), [Tao Ge](https://arxiv.org/search/cs?searchtype=author&query=Ge%2C+T), [Xingxing Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+X), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F), [Ming Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+M)
+
+> We propose a novel language-independent approach to improve the efficiency for Grammatical Error Correction (GEC) by dividing the task into two subtasks: Erroneous Span Detection (ESD) and Erroneous Span Correction (ESC). ESD identifies grammatically incorrect text spans with an efficient sequence tagging model. Then, ESC leverages a seq2seq model to take the sentence with annotated erroneous spans as input and only outputs the corrected text for these spans. Experiments show our approach performs comparably to conventional seq2seq approaches in both English and Chinese GEC benchmarks with less than 50% time cost for inference.
+
+| Comments: | Accepted by EMNLP 2020                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.03260](https://arxiv.org/abs/2010.03260) [cs.CL]** |
+|           | (or **[arXiv:2010.03260v1](https://arxiv.org/abs/2010.03260v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-08-6">6. Dual Reconstruction: a Unifying Objective for Semi-Supervised Neural Machine Translation</h2>
+
+Title: [Dual Reconstruction: a Unifying Objective for Semi-Supervised Neural Machine Translation](https://arxiv.org/abs/2010.03412)
+
+Authors: [Weijia Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+W), [Xing Niu](https://arxiv.org/search/cs?searchtype=author&query=Niu%2C+X), [Marine Carpuat](https://arxiv.org/search/cs?searchtype=author&query=Carpuat%2C+M)
+
+> While Iterative Back-Translation and Dual Learning effectively incorporate monolingual training data in neural machine translation, they use different objectives and heuristic gradient approximation strategies, and have not been extensively compared. We introduce a novel dual reconstruction objective that provides a unified view of Iterative Back-Translation and Dual Learning. It motivates a theoretical analysis and controlled empirical study on German-English and Turkish-English tasks, which both suggest that Iterative Back-Translation is more effective than Dual Learning despite its relative simplicity.
+
+| Comments: | Accepted at Findings of EMNLP 2020                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2010.03412](https://arxiv.org/abs/2010.03412) [cs.CL]** |
+|           | (or **[arXiv:2010.03412v1](https://arxiv.org/abs/2010.03412v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-08-7">7. WER we are and WER we think we are</h2>
+
+Title: [WER we are and WER we think we are](https://arxiv.org/abs/2010.03432)
+
+Authors: [Piotr Szymański](https://arxiv.org/search/cs?searchtype=author&query=Szymański%2C+P), [Piotr Żelasko](https://arxiv.org/search/cs?searchtype=author&query=Żelasko%2C+P), [Mikolaj Morzy](https://arxiv.org/search/cs?searchtype=author&query=Morzy%2C+M), [Adrian Szymczak](https://arxiv.org/search/cs?searchtype=author&query=Szymczak%2C+A), [Marzena Żyła-Hoppe](https://arxiv.org/search/cs?searchtype=author&query=Żyła-Hoppe%2C+M), [Joanna Banaszczak](https://arxiv.org/search/cs?searchtype=author&query=Banaszczak%2C+J), [Lukasz Augustyniak](https://arxiv.org/search/cs?searchtype=author&query=Augustyniak%2C+L), [Jan Mizgajski](https://arxiv.org/search/cs?searchtype=author&query=Mizgajski%2C+J), [Yishay Carmiel](https://arxiv.org/search/cs?searchtype=author&query=Carmiel%2C+Y)
+
+> Natural language processing of conversational speech requires the availability of high-quality transcripts. In this paper, we express our skepticism towards the recent reports of very low Word Error Rates (WERs) achieved by modern Automatic Speech Recognition (ASR) systems on benchmark datasets. We outline several problems with popular benchmarks and compare three state-of-the-art commercial ASR systems on an internal dataset of real-life spontaneous human conversations and HUB'05 public benchmark. We show that WERs are significantly higher than the best reported results. We formulate a set of guidelines which may aid in the creation of real-life, multi-domain datasets with high quality annotations for training and testing of robust ASR systems.
+
+| Comments: | Accepted to EMNLP Findings                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2010.03432](https://arxiv.org/abs/2010.03432) [cs.CL]** |
+|           | (or **[arXiv:2010.03432v1](https://arxiv.org/abs/2010.03432v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-08-8">8. Improving Sentiment Analysis over non-English Tweets using Multilingual Transformers and Automatic Translation for Data-Augmentation</h2>
+
+Title: [Improving Sentiment Analysis over non-English Tweets using Multilingual Transformers and Automatic Translation for Data-Augmentation](https://arxiv.org/abs/2010.03486)
+
+Authors: [Valentin Barriere](https://arxiv.org/search/cs?searchtype=author&query=Barriere%2C+V), [Alexandra Balahur](https://arxiv.org/search/cs?searchtype=author&query=Balahur%2C+A)
+
+> Tweets are specific text data when compared to general text. Although sentiment analysis over tweets has become very popular in the last decade for English, it is still difficult to find huge annotated corpora for non-English languages. The recent rise of the transformer models in Natural Language Processing allows to achieve unparalleled performances in many tasks, but these models need a consequent quantity of text to adapt to the tweet domain. We propose the use of a multilingual transformer model, that we pre-train over English tweets and apply data-augmentation using automatic translation to adapt the model to non-English languages. Our experiments in French, Spanish, German and Italian suggest that the proposed technique is an efficient way to improve the results of the transformers over small corpora of tweets in a non-English language.
+
+| Comments: | Accepted to COLING2020                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.03486](https://arxiv.org/abs/2010.03486) [cs.CL]** |
+|           | (or **[arXiv:2010.03486v1](https://arxiv.org/abs/2010.03486v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-08-9">9. TeaForN: Teacher-Forcing with N-grams</h2>
+
+Title: [TeaForN: Teacher-Forcing with N-grams](https://arxiv.org/abs/2010.03494)
+
+Authors: [Sebastian Goodman](https://arxiv.org/search/cs?searchtype=author&query=Goodman%2C+S), [Nan Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+N), [Radu Soricut](https://arxiv.org/search/cs?searchtype=author&query=Soricut%2C+R)
+
+> Sequence generation models trained with teacher-forcing suffer from issues related to exposure bias and lack of differentiability across timesteps. Our proposed method, Teacher-Forcing with N-grams (TeaForN), addresses both these problems directly, through the use of a stack of N decoders trained to decode along a secondary time axis that allows model parameter updates based on N prediction steps. TeaForN can be used with a wide class of decoder architectures and requires minimal modifications from a standard teacher-forcing setup. Empirically, we show that TeaForN boosts generation quality on one Machine Translation benchmark, WMT 2014 English-French, and two News Summarization benchmarks, CNN/Dailymail and Gigaword.
+
+| Comments: | to be published in EMNLP 2020                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.03494](https://arxiv.org/abs/2010.03494) [cs.CL]** |
+|           | (or **[arXiv:2010.03494v1](https://arxiv.org/abs/2010.03494v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-08-10">10. Galileo at SemEval-2020 Task 12: Multi-lingual Learning for Offensive Language Identification using Pre-trained Language Models</h2>
+
+Title: [Galileo at SemEval-2020 Task 12: Multi-lingual Learning for Offensive Language Identification using Pre-trained Language Models](https://arxiv.org/abs/2010.03542)
+
+Authors: [Shuohuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Jiaxiang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J), [Xuan Ouyang](https://arxiv.org/search/cs?searchtype=author&query=Ouyang%2C+X), [Yu Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+Y)
+
+> This paper describes Galileo's performance in SemEval-2020 Task 12 on detecting and categorizing offensive language in social media. For Offensive Language Identification, we proposed a multi-lingual method using Pre-trained Language Models, ERNIE and XLM-R. For offensive language categorization, we proposed a knowledge distillation method trained on soft labels generated by several supervised models. Our team participated in all three sub-tasks. In Sub-task A - Offensive Language Identification, we ranked first in terms of average F1 scores in all languages. We are also the only team which ranked among the top three across all languages. We also took the first place in Sub-task B - Automatic Categorization of Offense Types and Sub-task C - Offence Target Identification.
+
+| Comments: | 8 pages, 2 figures, 6 tables. Accepted at Proceedings of 14th International Workshop on Semantic Evaluation (SemEval-2020) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.03542](https://arxiv.org/abs/2010.03542) [cs.CL]** |
+|           | (or **[arXiv:2010.03542v1](https://arxiv.org/abs/2010.03542v1) [cs.CL]** for this version) |
 
 
 
