@@ -3,9 +3,19 @@
 # Index
 
 
-- [2020-10-08](#2020-10-08)
+- [2020-10-09](#2020-10-09)
 
-  - [1. Plug and Play Autoencoders for Conditional Text Generation](#2020-10-08-1)
+  - [1. Shallow-to-Deep Training for Neural Machine Translation](#2020-10-09-1)
+  - [2. Improving Attention Mechanism with Query-Value Interaction](#2020-10-09-2)
+  - [3. ALFWorld: Aligning Text and Embodied Environments for Interactive Learning](#2020-10-09-3)
+  - [4. What Can We Do to Improve Peer Review in NLP?](#2020-10-09-4)
+  - [5. Dense Relational Image Captioning via Multi-task Triple-Stream Networks](#2020-10-09-5)
+  - [6. Towards Understanding Sample Variance in Visually Grounded Language Generation: Evaluations and Observations](#2020-10-09-6)
+  - [7. Cross-Thought for Sentence Encoder Pre-training](#2020-10-09-7)
+  - [8. Leveraging Discourse Rewards for Document-Level Neural Machine Translation](#2020-10-09-8)
+  - [9. Text-based RL Agents with Commonsense Knowledge: New Challenges, Environments and Baselines](#2020-10-09-9)
+- [2020-10-08](#2020-10-08)
+- [1. Plug and Play Autoencoders for Conditional Text Generation](#2020-10-08-1)
   - [2. Pre-training Multilingual Neural Machine Translation by Leveraging Alignment Information](#2020-10-08-2)
   - [3. A Self-Refinement Strategy for Noise Reduction in Grammatical Error Correction](#2020-10-08-3)
   - [4. Transfer Learning and Distant Supervision for Multilingual Transformer Models: A Study on African Languages](#2020-10-08-4)
@@ -80,6 +90,172 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-10-09
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-10-09-1">1. Shallow-to-Deep Training for Neural Machine Translation</h2>
+
+Title: [Shallow-to-Deep Training for Neural Machine Translation](https://arxiv.org/abs/2010.03737)
+
+Authors: [Bei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+B), [Ziyang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Hui Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+H), [Yufan Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+Y), [Quan Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+Q), [Tong Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+T), [Huizhen Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H), [Jingbo Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J)
+
+> Deep encoders have been proven to be effective in improving neural machine translation (NMT) systems, but training an extremely deep encoder is time consuming. Moreover, why deep models help NMT is an open question. In this paper, we investigate the behavior of a well-tuned deep Transformer system. We find that stacking layers is helpful in improving the representation ability of NMT models and adjacent layers perform similarly. This inspires us to develop a shallow-to-deep training method that learns deep models by stacking shallow models. In this way, we successfully train a Transformer system with a 54-layer encoder. Experimental results on WMT'16 English-German and WMT'14 English-French translation tasks show that it is 1.4 × faster than training from scratch, and achieves a BLEU score of 30.33 and 43.29 on two tasks. The code is publicly available at [this https URL](https://github.com/libeineu/SDT-Training/).
+
+| Comments: | Accepted by EMNLP 2020                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.03737](https://arxiv.org/abs/2010.03737) [cs.CL]** |
+|           | (or **[arXiv:2010.03737v1](https://arxiv.org/abs/2010.03737v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-09-2">2. Improving Attention Mechanism with Query-Value Interaction</h2>
+
+Title: [Improving Attention Mechanism with Query-Value Interaction](https://arxiv.org/abs/2010.03766)
+
+Authors: [Chuhan Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+C), [Fangzhao Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+F), [Tao Qi](https://arxiv.org/search/cs?searchtype=author&query=Qi%2C+T), [Yongfeng Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Y)
+
+> Attention mechanism has played critical roles in various state-of-the-art NLP models such as Transformer and BERT. It can be formulated as a ternary function that maps the input queries, keys and values into an output by using a summation of values weighted by the attention weights derived from the interactions between queries and keys. Similar with query-key interactions, there is also inherent relatedness between queries and values, and incorporating query-value interactions has the potential to enhance the output by learning customized values according to the characteristics of queries. However, the query-value interactions are ignored by existing attention methods, which may be not optimal. In this paper, we propose to improve the existing attention mechanism by incorporating query-value interactions. We propose a query-value interaction function which can learn query-aware attention values, and combine them with the original values and attention weights to form the final output. Extensive experiments on four datasets for different tasks show that our approach can consistently improve the performance of many attention-based models by incorporating query-value interactions.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2010.03766](https://arxiv.org/abs/2010.03766) [cs.CL]** |
+|           | (or **[arXiv:2010.03766v1](https://arxiv.org/abs/2010.03766v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-09-3">3. ALFWorld: Aligning Text and Embodied Environments for Interactive Learning</h2>
+
+Title: [ALFWorld: Aligning Text and Embodied Environments for Interactive Learning](https://arxiv.org/abs/2010.03768)
+
+Authors: [Mohit Shridhar](https://arxiv.org/search/cs?searchtype=author&query=Shridhar%2C+M), [Xingdi Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+X), [Marc-Alexandre Côté](https://arxiv.org/search/cs?searchtype=author&query=Côté%2C+M), [Yonatan Bisk](https://arxiv.org/search/cs?searchtype=author&query=Bisk%2C+Y), [Adam Trischler](https://arxiv.org/search/cs?searchtype=author&query=Trischler%2C+A), [Matthew Hausknecht](https://arxiv.org/search/cs?searchtype=author&query=Hausknecht%2C+M)
+
+> Given a simple request (e.g., Put a washed apple in the kitchen fridge), humans can reason in purely abstract terms by imagining action sequences and scoring their likelihood of success, prototypicality, and efficiency, all without moving a muscle. Once we see the kitchen in question, we can update our abstract plans to fit the scene. Embodied agents require the same abilities, but existing work does not yet provide the infrastructure necessary for both reasoning abstractly and executing concretely. We address this limitation by introducing ALFWorld, a simulator that enables agents to learn abstract, text-based policies in TextWorld (Côté et al., 2018) and then execute goals from the ALFRED benchmark (Shridhar et al., 2020) in a rich visual environment. ALFWorld enables the creation of a new BUTLER agent whose abstract knowledge, learned in TextWorld, corresponds directly to concrete, visually grounded actions. In turn, as we demonstrate empirically, this fosters better agent generalization than training only in the visually grounded environment. BUTLER's simple, modular design factors the problem to allow researchers to focus on models for improving every piece of the pipeline (language understanding, planning, navigation, visual scene understanding, and so forth).
+
+| Comments: | Data, code, and videos are available at [this http URL](http://alfworld.github.io/) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG); Robotics (cs.RO) |
+| Cite as:  | **[arXiv:2010.03768](https://arxiv.org/abs/2010.03768) [cs.CL]** |
+|           | (or **[arXiv:2010.03768v1](https://arxiv.org/abs/2010.03768v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-09-4">4. What Can We Do to Improve Peer Review in NLP?</h2>
+
+Title: [What Can We Do to Improve Peer Review in NLP?](https://arxiv.org/abs/2010.03863)
+
+Authors: [Anna Rogers](https://arxiv.org/search/cs?searchtype=author&query=Rogers%2C+A), [Isabelle Augenstein](https://arxiv.org/search/cs?searchtype=author&query=Augenstein%2C+I)
+
+> Peer review is our best tool for judging the quality of conference submissions, but it is becoming increasingly spurious. We argue that a part of the problem is that the reviewers and area chairs face a poorly defined task forcing apples-to-oranges comparisons. There are several potential ways forward, but the key difficulty is creating the incentives and mechanisms for their consistent implementation in the NLP community.
+
+| Comments: | To appear at Findings of EMNLP                               |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2010.03863](https://arxiv.org/abs/2010.03863) [cs.CL]** |
+|           | (or **[arXiv:2010.03863v1](https://arxiv.org/abs/2010.03863v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-09-5">5. Dense Relational Image Captioning via Multi-task Triple-Stream Networks</h2>
+
+Title: [Dense Relational Image Captioning via Multi-task Triple-Stream Networks](https://arxiv.org/abs/2010.03855)
+
+Authors: [Dong-Jin Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+D), [Tae-Hyun oh](https://arxiv.org/search/cs?searchtype=author&query=oh%2C+T), [Jinsoo Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi%2C+J), [In So Kweon](https://arxiv.org/search/cs?searchtype=author&query=Kweon%2C+I+S)
+
+> We introduce dense relational captioning, a novel image captioning task which aims to generate multiple captions with respect to relational information between objects in a visual scene. Relational captioning provides explicit descriptions of each relationship between object combinations. This framework is advantageous in both diversity and amount of information, leading to a comprehensive image understanding based on relationships, e.g., relational proposal generation. For relational understanding between objects, the part-of-speech (POS, i.e., subject-object-predicate categories) can be a valuable prior information to guide the causal sequence of words in a caption. We enforce our framework to not only learn to generate captions but also predict the POS of each word. To this end, we propose the multi-task triple-stream network (MTTSNet) which consists of three recurrent units responsible for each POS which is trained by jointly predicting the correct captions and POS for each word. In addition, we found that the performance of MTTSNet can be improved by modulating the object embeddings with an explicit relational module. We demonstrate that our proposed model can generate more diverse and richer captions, via extensive experimental analysis on large scale datasets and several metrics. We additionally extend analysis to an ablation study, applications on holistic image captioning, scene graph generation, and retrieval tasks
+
+| Comments: | Journal extension of our CVPR 2019 paper [arXiv:1903.05942](https://arxiv.org/abs/1903.05942) . Source code : [this https URL](https://github.com/Dong-JinKim/DenseRelationalCaptioning) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2010.03855](https://arxiv.org/abs/2010.03855) [cs.CV]** |
+|           | (or **[arXiv:2010.03855v1](https://arxiv.org/abs/2010.03855v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-09-6">6. Towards Understanding Sample Variance in Visually Grounded Language Generation: Evaluations and Observations</h2>
+
+Title: [Towards Understanding Sample Variance in Visually Grounded Language Generation: Evaluations and Observations](https://arxiv.org/abs/2010.03644)
+
+Authors: [Wanrong Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+W), [Xin Eric Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X+E), [Pradyumna Narayana](https://arxiv.org/search/cs?searchtype=author&query=Narayana%2C+P), [Kazoo Sone](https://arxiv.org/search/cs?searchtype=author&query=Sone%2C+K), [Sugato Basu](https://arxiv.org/search/cs?searchtype=author&query=Basu%2C+S), [William Yang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W+Y)
+
+> A major challenge in visually grounded language generation is to build robust benchmark datasets and models that can generalize well in real-world settings. To do this, it is critical to ensure that our evaluation protocols are correct, and benchmarks are reliable. In this work, we set forth to design a set of experiments to understand an important but often ignored problem in visually grounded language generation: given that humans have different utilities and visual attention, how will the sample variance in multi-reference datasets affect the models' performance? Empirically, we study several multi-reference datasets and corresponding vision-and-language tasks. We show that it is of paramount importance to report variance in experiments; that human-generated references could vary drastically in different datasets/tasks, revealing the nature of each task; that metric-wise, CIDEr has shown systematically larger variances than others. Our evaluations on reference-per-instance shed light on the design of reliable datasets in the future.
+
+| Comments: | EMNLP 2020                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2010.03644](https://arxiv.org/abs/2010.03644) [cs.CL]** |
+|           | (or **[arXiv:2010.03644v1](https://arxiv.org/abs/2010.03644v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-09-7">7. Cross-Thought for Sentence Encoder Pre-training</h2>
+
+Title: [Cross-Thought for Sentence Encoder Pre-training](https://arxiv.org/abs/2010.03652)
+
+Authors: [Shuohang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Yuwei Fang](https://arxiv.org/search/cs?searchtype=author&query=Fang%2C+Y), [Siqi Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+S), [Zhe Gan](https://arxiv.org/search/cs?searchtype=author&query=Gan%2C+Z), [Yu Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+Y), [Jing Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+J), [Jingjing Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J)
+
+> In this paper, we propose Cross-Thought, a novel approach to pre-training sequence encoder, which is instrumental in building reusable sequence embeddings for large-scale NLP tasks such as question answering. Instead of using the original signals of full sentences, we train a Transformer-based sequence encoder over a large set of short sequences, which allows the model to automatically select the most useful information for predicting masked words. Experiments on question answering and textual entailment tasks demonstrate that our pre-trained encoder can outperform state-of-the-art encoders trained with continuous sentence signals as well as traditional masked language modeling baselines. Our proposed approach also achieves new state of the art on HotpotQA (full-wiki setting) by improving intermediate information retrieval performance.
+
+| Comments: | Accepted by EMNLP 2020                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.03652](https://arxiv.org/abs/2010.03652) [cs.CL]** |
+|           | (or **[arXiv:2010.03652v1](https://arxiv.org/abs/2010.03652v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-09-8">8. Leveraging Discourse Rewards for Document-Level Neural Machine Translation</h2>
+
+Title: [Leveraging Discourse Rewards for Document-Level Neural Machine Translation](https://arxiv.org/abs/2010.03732)
+
+Authors: [Inigo Jauregi Unanue](https://arxiv.org/search/cs?searchtype=author&query=Unanue%2C+I+J), [Nazanin Esmaili](https://arxiv.org/search/cs?searchtype=author&query=Esmaili%2C+N), [Gholamreza Haffari](https://arxiv.org/search/cs?searchtype=author&query=Haffari%2C+G), [Massimo Piccardi](https://arxiv.org/search/cs?searchtype=author&query=Piccardi%2C+M)
+
+> Document-level machine translation focuses on the translation of entire documents from a source to a target language. It is widely regarded as a challenging task since the translation of the individual sentences in the document needs to retain aspects of the discourse at document level. However, document-level translation models are usually not trained to explicitly ensure discourse quality. Therefore, in this paper we propose a training approach that explicitly optimizes two established discourse metrics, lexical cohesion (LC) and coherence (COH), by using a reinforcement learning objective. Experiments over four different language pairs and three translation domains have shown that our training approach has been able to achieve more cohesive and coherent document translations than other competitive approaches, yet without compromising the faithfulness to the reference translation. In the case of the Zh-En language pair, our method has achieved an improvement of 2.46 percentage points (pp) in LC and 1.17 pp in COH over the runner-up, while at the same time improving 0.63 pp in BLEU score and 0.47 pp in F_BERT.
+
+| Comments: | Accepted at COLING 2020                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.03732](https://arxiv.org/abs/2010.03732) [cs.CL]** |
+|           | (or **[arXiv:2010.03732v1](https://arxiv.org/abs/2010.03732v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-09-9">9. Text-based RL Agents with Commonsense Knowledge: New Challenges, Environments and Baselines</h2>
+
+Title: [Text-based RL Agents with Commonsense Knowledge: New Challenges, Environments and Baselines](https://arxiv.org/abs/2010.03790)
+
+Authors: [Keerthiram Murugesan](https://arxiv.org/search/cs?searchtype=author&query=Murugesan%2C+K), [Mattia Atzeni](https://arxiv.org/search/cs?searchtype=author&query=Atzeni%2C+M), [Pavan Kapanipathi](https://arxiv.org/search/cs?searchtype=author&query=Kapanipathi%2C+P), [Pushkar Shukla](https://arxiv.org/search/cs?searchtype=author&query=Shukla%2C+P), [Sadhana Kumaravel](https://arxiv.org/search/cs?searchtype=author&query=Kumaravel%2C+S), [Gerald Tesauro](https://arxiv.org/search/cs?searchtype=author&query=Tesauro%2C+G), [Kartik Talamadupula](https://arxiv.org/search/cs?searchtype=author&query=Talamadupula%2C+K), [Mrinmaya Sachan](https://arxiv.org/search/cs?searchtype=author&query=Sachan%2C+M), [Murray Campbell](https://arxiv.org/search/cs?searchtype=author&query=Campbell%2C+M)
+
+> Text-based games have emerged as an important test-bed for Reinforcement Learning (RL) research, requiring RL agents to combine grounded language understanding with sequential decision making. In this paper, we examine the problem of infusing RL agents with commonsense knowledge. Such knowledge would allow agents to efficiently act in the world by pruning out implausible actions, and to perform look-ahead planning to determine how current actions might affect future world states. We design a new text-based gaming environment called TextWorld Commonsense (TWC) for training and evaluating RL agents with a specific kind of commonsense knowledge about objects, their attributes, and affordances. We also introduce several baseline RL agents which track the sequential context and dynamically retrieve the relevant commonsense knowledge from ConceptNet. We show that agents which incorporate commonsense knowledge in TWC perform better, while acting more efficiently. We conduct user-studies to estimate human performance on TWC and show that there is ample room for future improvement.
+
+| Subjects: | **Artificial Intelligence (cs.AI)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2010.03790](https://arxiv.org/abs/2010.03790) [cs.AI]** |
+|           | (or **[arXiv:2010.03790v1](https://arxiv.org/abs/2010.03790v1) [cs.AI]** for this version) |
+
+
 
 
 
