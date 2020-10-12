@@ -3,9 +3,19 @@
 # Index
 
 
-- [2020-10-09](#2020-10-09)
+- [2020-10-12](#2020-10-12)
 
-  - [1. Shallow-to-Deep Training for Neural Machine Translation](#2020-10-09-1)
+  - [1. Query-Key Normalization for Transformers](#2020-10-12-1)
+  - [2. Learning to Evaluate Translation Beyond English: BLEURT Submissions to the WMT Metrics 2020 Shared Task](#2020-10-12-2)
+  - [3. Dynamic Context Selection for Document-level Neural Machine Translation via Reinforcement Learning](#2020-10-12-3)
+  - [4. Token-level Adaptive Training for Neural Machine Translation](#2020-10-12-4)
+  - [5. A Survey of Knowledge-Enhanced Text Generation](#2020-10-12-5)
+  - [6. Uncertainty-Aware Semantic Augmentation for Neural Machine Translation](#2020-10-12-6)
+  - [7. Multichannel Generative Language Model: Learning All Possible Factorizations Within and Across Channels](#2020-10-12-7)
+  - [8. Self-Paced Learning for Neural Machine Translation](#2020-10-12-8)
+  - [9. Recursive Top-Down Production for Sentence Generation with Latent Trees](#2020-10-12-9)
+- [2020-10-09](#2020-10-09)
+- [1. Shallow-to-Deep Training for Neural Machine Translation](#2020-10-09-1)
   - [2. Improving Attention Mechanism with Query-Value Interaction](#2020-10-09-2)
   - [3. ALFWorld: Aligning Text and Embodied Environments for Interactive Learning](#2020-10-09-3)
   - [4. What Can We Do to Improve Peer Review in NLP?](#2020-10-09-4)
@@ -90,6 +100,174 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-10-12
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-10-12-1">1. Query-Key Normalization for Transformers</h2>
+
+Title: [Query-Key Normalization for Transformers](https://arxiv.org/abs/2010.04245)
+
+Authors: [Alex Henry](https://arxiv.org/search/cs?searchtype=author&query=Henry%2C+A), [Prudhvi Raj Dachapally](https://arxiv.org/search/cs?searchtype=author&query=Dachapally%2C+P+R), [Shubham Pawar](https://arxiv.org/search/cs?searchtype=author&query=Pawar%2C+S), [Yuxuan Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y)
+
+> Low-resource language translation is a challenging but socially valuable NLP task. Building on recent work adapting the Transformer's normalization to this setting, we propose QKNorm, a normalization technique that modifies the attention mechanism to make the softmax function less prone to arbitrary saturation without sacrificing expressivity. Specifically, we apply ℓ2 normalization along the head dimension of each query and key matrix prior to multiplying them and then scale up by a learnable parameter instead of dividing by the square root of the embedding dimension. We show improvements averaging 0.928 BLEU over state-of-the-art bilingual benchmarks for 5 low-resource translation pairs from the TED Talks corpus and IWSLT'15.
+
+| Comments: | 8 pages, 2 figures, accepted at Findings of EMNLP 2020       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2010.04245](https://arxiv.org/abs/2010.04245) [cs.CL]** |
+|           | (or **[arXiv:2010.04245v1](https://arxiv.org/abs/2010.04245v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-12-2">2. Learning to Evaluate Translation Beyond English: BLEURT Submissions to the WMT Metrics 2020 Shared Task</h2>
+
+Title: [Learning to Evaluate Translation Beyond English: BLEURT Submissions to the WMT Metrics 2020 Shared Task](https://arxiv.org/abs/2010.04297)
+
+Authors: [Thibault Sellam](https://arxiv.org/search/cs?searchtype=author&query=Sellam%2C+T), [Amy Pu](https://arxiv.org/search/cs?searchtype=author&query=Pu%2C+A), [Hyung Won Chung](https://arxiv.org/search/cs?searchtype=author&query=Chung%2C+H+W), [Sebastian Gehrmann](https://arxiv.org/search/cs?searchtype=author&query=Gehrmann%2C+S), [Qijun Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+Q), [Markus Freitag](https://arxiv.org/search/cs?searchtype=author&query=Freitag%2C+M), [Dipanjan Das](https://arxiv.org/search/cs?searchtype=author&query=Das%2C+D), [Ankur P. Parikh](https://arxiv.org/search/cs?searchtype=author&query=Parikh%2C+A+P)
+
+> The quality of machine translation systems has dramatically improved over the last decade, and as a result, evaluation has become an increasingly challenging problem. This paper describes our contribution to the WMT 2020 Metrics Shared Task, the main benchmark for automatic evaluation of translation. Our submission is based on BLEURT, a previously published metric based on transfer learning. We extend the metric beyond English and evaluate it on 12 languages for which training examples are available, as well as four "zero-shot" languages, for which we have no fine-tuning data. Additionally, we focus on English to German and demonstrate how to combine BLEURT's predictions with those of YiSi and use alternative reference translations to enhance the performance. Empirical results show that BLEURT achieves competitive results on the WMT Metrics 2019 Shared Task, indicating its promise for the 2020 edition.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2010.04297](https://arxiv.org/abs/2010.04297) [cs.CL]** |
+|           | (or **[arXiv:2010.04297v1](https://arxiv.org/abs/2010.04297v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-12-3">3. Dynamic Context Selection for Document-level Neural Machine Translation via Reinforcement Learning</h2>
+
+Title: [Dynamic Context Selection for Document-level Neural Machine Translation via Reinforcement Learning](https://arxiv.org/abs/2010.04314)
+
+Authors: [Xiaomian Kang](https://arxiv.org/search/cs?searchtype=author&query=Kang%2C+X), [Yang Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+Y), [Jiajun Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Chengqing Zong](https://arxiv.org/search/cs?searchtype=author&query=Zong%2C+C)
+
+> Document-level neural machine translation has yielded attractive improvements. However, majority of existing methods roughly use all context sentences in a fixed scope. They neglect the fact that different source sentences need different sizes of context. To address this problem, we propose an effective approach to select dynamic context so that the document-level translation model can utilize the more useful selected context sentences to produce better translations. Specifically, we introduce a selection module that is independent of the translation module to score each candidate context sentence. Then, we propose two strategies to explicitly select a variable number of context sentences and feed them into the translation module. We train the two modules end-to-end via reinforcement learning. A novel reward is proposed to encourage the selection and utilization of dynamic context sentences. Experiments demonstrate that our approach can select adaptive context sentences for different source sentences, and significantly improves the performance of document-level translation methods.
+
+| Comments: | Accepted to EMNLP 2020 long paper                            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.04314](https://arxiv.org/abs/2010.04314) [cs.CL]** |
+|           | (or **[arXiv:2010.04314v1](https://arxiv.org/abs/2010.04314v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-12-4">4. Token-level Adaptive Training for Neural Machine Translation</h2>
+
+Title: [Token-level Adaptive Training for Neural Machine Translation](https://arxiv.org/abs/2010.04380)
+
+Authors: [Shuhao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+S), [Jinchao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Fandong Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+F), [Yang Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+Y), [Wanying Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie%2C+W), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J), [Dong Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+D)
+
+> There exists a token imbalance phenomenon in natural language as different tokens appear with different frequencies, which leads to different learning difficulties for tokens in Neural Machine Translation (NMT). The vanilla NMT model usually adopts trivial equal-weighted objectives for target tokens with different frequencies and tends to generate more high-frequency tokens and less low-frequency tokens compared with the golden token distribution. However, low-frequency tokens may carry critical semantic information that will affect the translation quality once they are neglected. In this paper, we explored target token-level adaptive objectives based on token frequencies to assign appropriate weights for each target token during training. We aimed that those meaningful but relatively low-frequency words could be assigned with larger weights in objectives to encourage the model to pay more attention to these tokens. Our method yields consistent improvements in translation quality on ZH-EN, EN-RO, and EN-DE translation tasks, especially on sentences that contain more low-frequency tokens where we can get 1.68, 1.02, and 0.52 BLEU increases compared with baseline, respectively. Further analyses show that our method can also improve the lexical diversity of translation.
+
+| Comments: | 12 pages; Accepted by EMNLP 2020                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.04380](https://arxiv.org/abs/2010.04380) [cs.CL]** |
+|           | (or **[arXiv:2010.04380v1](https://arxiv.org/abs/2010.04380v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-12-5">5. A Survey of Knowledge-Enhanced Text Generation</h2>
+
+Title: [A Survey of Knowledge-Enhanced Text Generation](https://arxiv.org/abs/2010.04389)
+
+Authors: [Wenhao Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+W), [Chenguang Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+C), [Zaitang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Zhiting Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+Z), [Qingyun Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Q), [Heng Ji](https://arxiv.org/search/cs?searchtype=author&query=Ji%2C+H), [Meng Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+M)
+
+> The goal of text generation is to make machines express in human language. It is one of the most important yet challenging tasks in natural language processing (NLP). Since 2014, various neural encoder-decoder models pioneered by Seq2Seq have been proposed to achieve the goal by learning to map input text to output text. However, the input text alone often provides limited knowledge to generate the desired output, so the performance of text generation is still far from satisfaction in many real-world scenarios. To address this issue, researchers have considered incorporating various forms of knowledge beyond the input text into the generation models. This research direction is known as knowledge-enhanced text generation. In this survey, we present a comprehensive review of the research on knowledge enhanced text generation over the past five years. The main content includes two parts: (i) general methods and architectures for integrating knowledge into text generation; (ii) specific techniques and applications according to different forms of knowledge data. This survey can have broad audiences, researchers and practitioners, in academia and industry.
+
+| Comments: | 44 pages; Preprint; A paper and code collection is available at [this https URL](https://github.com/wyu97/KENLG-Reading) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2010.04389](https://arxiv.org/abs/2010.04389) [cs.CL]** |
+|           | (or **[arXiv:2010.04389v1](https://arxiv.org/abs/2010.04389v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-12-6">6. Uncertainty-Aware Semantic Augmentation for Neural Machine Translation</h2>
+
+Title: [Uncertainty-Aware Semantic Augmentation for Neural Machine Translation](https://arxiv.org/abs/2010.04411)
+
+Authors: [Xiangpeng Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+X), [Heng Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+H), [Yue Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+Y), [Rongxiang Weng](https://arxiv.org/search/cs?searchtype=author&query=Weng%2C+R), [Luxi Xing](https://arxiv.org/search/cs?searchtype=author&query=Xing%2C+L), [Weihua Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+W)
+
+> As a sequence-to-sequence generation task, neural machine translation (NMT) naturally contains intrinsic uncertainty, where a single sentence in one language has multiple valid counterparts in the other. However, the dominant methods for NMT only observe one of them from the parallel corpora for the model training but have to deal with adequate variations under the same meaning at inference. This leads to a discrepancy of the data distribution between the training and the inference phases. To address this problem, we propose uncertainty-aware semantic augmentation, which explicitly captures the universal semantic information among multiple semantically-equivalent source sentences and enhances the hidden representations with this information for better translations. Extensive experiments on various translation tasks reveal that our approach significantly outperforms the strong baselines and the existing methods.
+
+| Comments: | Accepted to EMNLP 2020, 12 pages, 2 figures, 9 tables        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.04411](https://arxiv.org/abs/2010.04411) [cs.CL]** |
+|           | (or **[arXiv:2010.04411v1](https://arxiv.org/abs/2010.04411v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-12-7">7. Multichannel Generative Language Model: Learning All Possible Factorizations Within and Across Channels</h2>
+
+Title: [Multichannel Generative Language Model: Learning All Possible Factorizations Within and Across Channels](https://arxiv.org/abs/2010.04438)
+
+Authors: [Harris Chan](https://arxiv.org/search/cs?searchtype=author&query=Chan%2C+H), [Jamie Kiros](https://arxiv.org/search/cs?searchtype=author&query=Kiros%2C+J), [William Chan](https://arxiv.org/search/cs?searchtype=author&query=Chan%2C+W)
+
+> A channel corresponds to a viewpoint or transformation of an underlying meaning. A pair of parallel sentences in English and French express the same underlying meaning, but through two separate channels corresponding to their languages. In this work, we present the Multichannel Generative Language Model (MGLM). MGLM is a generative joint distribution model over channels. MGLM marginalizes over all possible factorizations within and across all channels. MGLM endows flexible inference, including unconditional generation, conditional generation (where 1 channel is observed and other channels are generated), and partially observed generation (where incomplete observations are spread across all the channels). We experiment with the Multi30K dataset containing English, French, Czech, and German. We demonstrate experiments with unconditional, conditional, and partially conditional generation. We provide qualitative samples sampled unconditionally from the generative joint distribution. We also quantitatively analyze the quality-diversity trade-offs and find MGLM outperforms traditional bilingual discriminative models.
+
+| Comments: | 10 pages (+3 appendix), 11 figures, 5 tables. Accepted to Findings of EMNLP 2020 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| Cite as:  | **[arXiv:2010.04438](https://arxiv.org/abs/2010.04438) [cs.CL]** |
+|           | (or **[arXiv:2010.04438v1](https://arxiv.org/abs/2010.04438v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-12-8">8. Self-Paced Learning for Neural Machine Translation</h2>
+
+Title: [Self-Paced Learning for Neural Machine Translation](https://arxiv.org/abs/2010.04505)
+
+Authors: [Yu Wan](https://arxiv.org/search/cs?searchtype=author&query=Wan%2C+Y), [Baosong Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+B), [Derek F. Wong](https://arxiv.org/search/cs?searchtype=author&query=Wong%2C+D+F), [Yikai Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+Y), [Lidia S. Chao](https://arxiv.org/search/cs?searchtype=author&query=Chao%2C+L+S), [Haibo Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H), [Boxing Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+B)
+
+> Recent studies have proven that the training of neural machine translation (NMT) can be facilitated by mimicking the learning process of humans. Nevertheless, achievements of such kind of curriculum learning rely on the quality of artificial schedule drawn up with the handcrafted features, e.g. sentence length or word rarity. We ameliorate this procedure with a more flexible manner by proposing self-paced learning, where NMT model is allowed to 1) automatically quantify the learning confidence over training examples; and 2) flexibly govern its learning via regulating the loss in each iteration step. Experimental results over multiple translation tasks demonstrate that the proposed model yields better performance than strong baselines and those models trained with human-designed curricula on both translation quality and convergence speed.
+
+| Comments: | Accepted by EMNLP2020                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2010.04505](https://arxiv.org/abs/2010.04505) [cs.CL]** |
+|           | (or **[arXiv:2010.04505v1](https://arxiv.org/abs/2010.04505v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-12-9">9. Recursive Top-Down Production for Sentence Generation with Latent Trees</h2>
+
+Title: [Recursive Top-Down Production for Sentence Generation with Latent Trees](https://arxiv.org/abs/2010.04704)
+
+Authors: [Shawn Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+S), [Yikang Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+Y), [Timothy J. O'Donnell](https://arxiv.org/search/cs?searchtype=author&query=O'Donnell%2C+T+J), [Alessandro Sordoni](https://arxiv.org/search/cs?searchtype=author&query=Sordoni%2C+A), [Aaron Courville](https://arxiv.org/search/cs?searchtype=author&query=Courville%2C+A)
+
+> We model the recursive production property of context-free grammars for natural and synthetic languages. To this end, we present a dynamic programming algorithm that marginalises over latent binary tree structures with N leaves, allowing us to compute the likelihood of a sequence of N tokens under a latent tree model, which we maximise to train a recursive neural function. We demonstrate performance on two synthetic tasks: SCAN (Lake and Baroni, 2017), where it outperforms previous models on the LENGTH split, and English question formation (McCoy et al., 2020), where it performs comparably to decoders with the ground-truth tree structure. We also present experimental results on German-English translation on the Multi30k dataset (Elliott et al., 2016), and qualitatively analyse the induced tree structures our model learns for the SCAN tasks and the German-English translation task.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2010.04704](https://arxiv.org/abs/2010.04704) [cs.CL]** |
+|           | (or **[arXiv:2010.04704v1](https://arxiv.org/abs/2010.04704v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
