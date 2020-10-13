@@ -3,6 +3,26 @@
 # Index
 
 
+- [2020-10-13](#2020-10-13)
+
+  - [1. Collective Wisdom: Improving Low-resource Neural Machine Translation using Adaptive Knowledge Distillation](#2020-10-13-1)
+  - [2. The elephant in the interpretability room: Why use attention as explanation when we have saliency methods?](#2020-10-13-2)
+  - [3. Load What You Need: Smaller Versions of Multilingual BERT](#2020-10-13-3)
+  - [4. Controllable Paraphrasing and Translation with a Syntactic Exemplar](#2020-10-13-4)
+  - [5. Gradient Vaccine: Investigating and Improving Multi-task Optimization in Massively Multilingual Models](#2020-10-13-5)
+  - [6. Do Language Embeddings Capture Scales?](#2020-10-13-6)
+  - [7. Gradient-based Analysis of NLP Models is Manipulable](#2020-10-13-7)
+  - [8. It's not a Non-Issue: Negation as a Source of Error in Machine Translation](#2020-10-13-8)
+  - [9. Structural Knowledge Distillation](#2020-10-13-9)
+  - [10. SJTU-NICT's Supervised and Unsupervised Neural Machine Translation Systems for the WMT20 News Translation Task](#2020-10-13-10)
+  - [11. fairseq S2T: Fast Speech-to-Text Modeling with fairseq](#2020-10-13-11)
+  - [12. Machine Translation of Mathematical Text](#2020-10-13-12)
+  - [13. Neural Machine Translation Doesn't Translate Gender Coreference Right Unless You Make It](#2020-10-13-13)
+  - [14. Addressing Exposure Bias With Document Minimum Risk Training: Cambridge at the WMT20 Biomedical Translation Task](#2020-10-13-14)
+  - [15. ChrEn: Cherokee-English Machine Translation for Endangered Language Revitalization](#2020-10-13-15)
+  - [16. What Do Position Embeddings Learn? An Empirical Study of Pre-Trained Language Model Positional Encoding](#2020-10-13-16)
+  - [17. On Long-Tailed Phenomena in Neural Machine Translation](#2020-10-13-17)
+  - [18. Zero-Shot Translation Quality Estimation with Explicit Cross-Lingual Patterns](#2020-10-13-18)
 - [2020-10-12](#2020-10-12)
 
   - [1. Query-Key Normalization for Transformers](#2020-10-12-1)
@@ -100,6 +120,340 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-10-13
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-10-13-1">1. Collective Wisdom: Improving Low-resource Neural Machine Translation using Adaptive Knowledge Distillation</h2>
+
+Title: [Collective Wisdom: Improving Low-resource Neural Machine Translation using Adaptive Knowledge Distillation](https://arxiv.org/abs/2010.05445)
+
+Authors: [Fahimeh Saleh](https://arxiv.org/search/cs?searchtype=author&query=Saleh%2C+F), [Wray Buntine](https://arxiv.org/search/cs?searchtype=author&query=Buntine%2C+W), [Gholamreza Haffari](https://arxiv.org/search/cs?searchtype=author&query=Haffari%2C+G)
+
+> Scarcity of parallel sentence-pairs poses a significant hurdle for training high-quality Neural Machine Translation (NMT) models in bilingually low-resource scenarios. A standard approach is transfer learning, which involves taking a model trained on a high-resource language-pair and fine-tuning it on the data of the low-resource MT condition of interest. However, it is not clear generally which high-resource language-pair offers the best transfer learning for the target MT setting. Furthermore, different transferred models may have complementary semantic and/or syntactic strengths, hence using only one model may be sub-optimal. In this paper, we tackle this problem using knowledge distillation, where we propose to distill the knowledge of ensemble of teacher models to a single student model. As the quality of these teacher models varies, we propose an effective adaptive knowledge distillation approach to dynamically adjust the contribution of the teacher models during the distillation process. Experiments on transferring from a collection of six language pairs from IWSLT to five low-resource language-pairs from TED Talks demonstrate the effectiveness of our approach, achieving up to +0.9 BLEU score improvement compared to strong baselines.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2010.05445](https://arxiv.org/abs/2010.05445) [cs.CL]** |
+|           | (or **[arXiv:2010.05445v1](https://arxiv.org/abs/2010.05445v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-13-2">2. The elephant in the interpretability room: Why use attention as explanation when we have saliency methods?</h2>
+
+Title: [The elephant in the interpretability room: Why use attention as explanation when we have saliency methods?](https://arxiv.org/abs/2010.05607)
+
+Authors: [Jasmijn Bastings](https://arxiv.org/search/cs?searchtype=author&query=Bastings%2C+J), [Katja Filippova](https://arxiv.org/search/cs?searchtype=author&query=Filippova%2C+K)
+
+> There is a recent surge of interest in using attention as explanation of model predictions, with mixed evidence on whether attention can be used as such. While attention conveniently gives us one weight per input token and is easily extracted, it is often unclear toward what goal it is used as explanation. We find that often that goal, whether explicitly stated or not, is to find out what input tokens are the most relevant to a prediction, and that the implied user for the explanation is a model developer. For this goal and user, we argue that input saliency methods are better suited, and that there are no compelling reasons to use attention, despite the coincidence that it provides a weight for each input. With this position paper, we hope to shift some of the recent focus on attention to saliency methods, and for authors to clearly state the goal and user for their explanations.
+
+| Comments:          | Accepted at BlackboxNLP 2020                                 |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| Journal reference: | Proceedings of the 2020 EMNLP Workshop BlackboxNLP: Analyzing and Interpreting Neural Networks for NLP |
+| Cite as:           | **[arXiv:2010.05607](https://arxiv.org/abs/2010.05607) [cs.CL]** |
+|                    | (or **[arXiv:2010.05607v1](https://arxiv.org/abs/2010.05607v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-13-3">3. Load What You Need: Smaller Versions of Multilingual BERT</h2>
+
+Title: [Load What You Need: Smaller Versions of Multilingual BERT](https://arxiv.org/abs/2010.05609)
+
+Authors: [Amine Abdaoui](https://arxiv.org/search/cs?searchtype=author&query=Abdaoui%2C+A), [Camille Pradel](https://arxiv.org/search/cs?searchtype=author&query=Pradel%2C+C), [Grégoire Sigel](https://arxiv.org/search/cs?searchtype=author&query=Sigel%2C+G)
+
+> Pre-trained Transformer-based models are achieving state-of-the-art results on a variety of Natural Language Processing data sets. However, the size of these models is often a drawback for their deployment in real production applications. In the case of multilingual models, most of the parameters are located in the embeddings layer. Therefore, reducing the vocabulary size should have an important impact on the total number of parameters. In this paper, we propose to generate smaller models that handle fewer number of languages according to the targeted corpora. We present an evaluation of smaller versions of multilingual BERT on the XNLI data set, but we believe that this method may be applied to other multilingual transformers. The obtained results confirm that we can generate smaller models that keep comparable results, while reducing up to 45% of the total number of parameters. We compared our models with DistilmBERT (a distilled version of multilingual BERT) and showed that unlike language reduction, distillation induced a 1.7% to 6% drop in the overall accuracy on the XNLI data set. The presented models and code are publicly available.
+
+| Subjects:          | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | SustaiNLP / EMNLP 2020                                       |
+| Cite as:           | **[arXiv:2010.05609](https://arxiv.org/abs/2010.05609) [cs.CL]** |
+|                    | (or **[arXiv:2010.05609v1](https://arxiv.org/abs/2010.05609v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-13-4">4. Controllable Paraphrasing and Translation with a Syntactic Exemplar</h2>
+
+Title: [Controllable Paraphrasing and Translation with a Syntactic Exemplar](https://arxiv.org/abs/2010.05856)
+
+Authors: [Mingda Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+M), [Sam Wiseman](https://arxiv.org/search/cs?searchtype=author&query=Wiseman%2C+S), [Kevin Gimpel](https://arxiv.org/search/cs?searchtype=author&query=Gimpel%2C+K)
+
+> Most prior work on exemplar-based syntactically controlled paraphrase generation relies on automatically-constructed large-scale paraphrase datasets. We sidestep this prerequisite by adapting models from prior work to be able to learn solely from bilingual text (bitext). Despite only using bitext for training, and in near zero-shot conditions, our single proposed model can perform four tasks: controlled paraphrase generation in both languages and controlled machine translation in both language directions. To evaluate these tasks quantitatively, we create three novel evaluation datasets. Our experimental results show that our models achieve competitive results on controlled paraphrase generation and strong performance on controlled machine translation. Analysis shows that our models learn to disentangle semantics and syntax in their latent representations.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2010.05856](https://arxiv.org/abs/2010.05856) [cs.CL]** |
+|           | (or **[arXiv:2010.05856v1](https://arxiv.org/abs/2010.05856v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-13-5">5. Gradient Vaccine: Investigating and Improving Multi-task Optimization in Massively Multilingual Models</h2>
+
+Title: [Gradient Vaccine: Investigating and Improving Multi-task Optimization in Massively Multilingual Models](https://arxiv.org/abs/2010.05874)
+
+Authors: [Zirui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Yulia Tsvetkov](https://arxiv.org/search/cs?searchtype=author&query=Tsvetkov%2C+Y), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O), [Yuan Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+Y)
+
+> Massively multilingual models subsuming tens or even hundreds of languages pose great challenges to multi-task optimization. While it is a common practice to apply a language-agnostic procedure optimizing a joint multilingual task objective, how to properly characterize and take advantage of its underlying problem structure for improving optimization efficiency remains under-explored. In this paper, we attempt to peek into the black-box of multilingual optimization through the lens of loss function geometry. We find that gradient similarity measured along the optimization trajectory is an important signal, which correlates well with not only language proximity but also the overall model performance. Such observation helps us to identify a critical limitation of existing gradient-based multi-task learning methods, and thus we derive a simple and scalable optimization procedure, named Gradient Vaccine, which encourages more geometrically aligned parameter updates for close tasks. Empirically, our method obtains significant model performance gains on multilingual machine translation and XTREME benchmark tasks for multilingual language models. Our work reveals the importance of properly measuring and utilizing language proximity in multilingual optimization, and has broader implications for multi-task learning beyond multilingual modeling.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2010.05874](https://arxiv.org/abs/2010.05874) [cs.CL]** |
+|           | (or **[arXiv:2010.05874v1](https://arxiv.org/abs/2010.05874v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-13-6">6. Do Language Embeddings Capture Scales?</h2>
+
+Title: [Do Language Embeddings Capture Scales?](https://arxiv.org/abs/2010.05345)
+
+Authors: [Xikun Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+X), [Deepak Ramachandran](https://arxiv.org/search/cs?searchtype=author&query=Ramachandran%2C+D), [Ian Tenney](https://arxiv.org/search/cs?searchtype=author&query=Tenney%2C+I), [Yanai Elazar](https://arxiv.org/search/cs?searchtype=author&query=Elazar%2C+Y), [Dan Roth](https://arxiv.org/search/cs?searchtype=author&query=Roth%2C+D)
+
+> Pretrained Language Models (LMs) have been shown to possess significant linguistic, common sense, and factual knowledge. One form of knowledge that has not been studied yet in this context is information about the scalar magnitudes of objects. We show that pretrained language models capture a significant amount of this information but are short of the capability required for general common-sense reasoning. We identify contextual information in pre-training and numeracy as two key factors affecting their performance and show that a simple method of canonicalizing numbers can have a significant effect on the results.
+
+| Comments:    | Accepted at EMNLP Findings 2020 and EMNLP BlackboxNLP workshop 2020 |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**                         |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2010.05345](https://arxiv.org/abs/2010.05345) [cs.CL]** |
+|              | (or **[arXiv:2010.05345v1](https://arxiv.org/abs/2010.05345v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-13-7">7. Gradient-based Analysis of NLP Models is Manipulable</h2>
+
+Title: [Gradient-based Analysis of NLP Models is Manipulable](https://arxiv.org/abs/2010.05419)
+
+Authors: [Junlin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+J), [Jens Tuyls](https://arxiv.org/search/cs?searchtype=author&query=Tuyls%2C+J), [Eric Wallace](https://arxiv.org/search/cs?searchtype=author&query=Wallace%2C+E), [Sameer Singh](https://arxiv.org/search/cs?searchtype=author&query=Singh%2C+S)
+
+> Gradient-based analysis methods, such as saliency map visualizations and adversarial input perturbations, have found widespread use in interpreting neural NLP models due to their simplicity, flexibility, and most importantly, their faithfulness. In this paper, however, we demonstrate that the gradients of a model are easily manipulable, and thus bring into question the reliability of gradient-based analyses. In particular, we merge the layers of a target model with a Facade that overwhelms the gradients without affecting the predictions. This Facade can be trained to have gradients that are misleading and irrelevant to the task, such as focusing only on the stop words in the input. On a variety of NLP tasks (text classification, NLI, and QA), we show that our method can manipulate numerous gradient-based analysis techniques: saliency maps, input reduction, and adversarial perturbations all identify unimportant or targeted tokens as being highly important. The code and a tutorial of this paper is available at [this http URL](http://ucinlp.github.io/facade).
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2010.05419](https://arxiv.org/abs/2010.05419) [cs.CL]** |
+|           | (or **[arXiv:2010.05419v1](https://arxiv.org/abs/2010.05419v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-13-8">8. It's not a Non-Issue: Negation as a Source of Error in Machine Translation</h2>
+
+Title: [It's not a Non-Issue: Negation as a Source of Error in Machine Translation](https://arxiv.org/abs/2010.05432)
+
+Authors: [Md Mosharaf Hossain](https://arxiv.org/search/cs?searchtype=author&query=Hossain%2C+M+M), [Antonios Anastasopoulos](https://arxiv.org/search/cs?searchtype=author&query=Anastasopoulos%2C+A), [Eduardo Blanco](https://arxiv.org/search/cs?searchtype=author&query=Blanco%2C+E), [Alexis Palmer](https://arxiv.org/search/cs?searchtype=author&query=Palmer%2C+A)
+
+> As machine translation (MT) systems progress at a rapid pace, questions of their adequacy linger. In this study we focus on negation, a universal, core property of human language that significantly affects the semantics of an utterance. We investigate whether translating negation is an issue for modern MT systems using 17 translation directions as test bed. Through thorough analysis, we find that indeed the presence of negation can significantly impact downstream quality, in some cases resulting in quality reductions of more than 60%. We also provide a linguistically motivated analysis that directly explains the majority of our findings. We release our annotations and code to replicate our analysis here: [this https URL](https://github.com/mosharafhossain/negation-mt).
+
+| Comments: | Accepted at the Findings of EMNLP2020                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2010.05432](https://arxiv.org/abs/2010.05432) [cs.CL]** |
+|           | (or **[arXiv:2010.05432v1](https://arxiv.org/abs/2010.05432v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-13-9">9. Structural Knowledge Distillation</h2>
+
+Title: [Structural Knowledge Distillation](https://arxiv.org/abs/2010.05010)
+
+Authors: [Xinyu Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Yong Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+Y), [Zhaohui Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+Z), [Zixia Jia](https://arxiv.org/search/cs?searchtype=author&query=Jia%2C+Z), [Nguyen Bach](https://arxiv.org/search/cs?searchtype=author&query=Bach%2C+N), [Tao Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+T), [Zhongqiang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Z), [Fei Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+F), [Kewei Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+K)
+
+> Knowledge distillation is a critical technique to transfer knowledge between models, typically from a large model (the teacher) to a smaller one (the student). The objective function of knowledge distillation is typically the cross-entropy between the teacher and the student's output distributions. However, for structured prediction problems, the output space is exponential in size; therefore, the cross-entropy objective becomes intractable to compute and optimize directly. In this paper, we derive a factorized form of the knowledge distillation objective for structured prediction, which is tractable for many typical choices of the teacher and student models. In particular, we show the tractability and empirical effectiveness of structural knowledge distillation between sequence labeling and dependency parsing models under four different scenarios: 1) the teacher and student share the same factorization form of the output structure scoring function; 2) the student factorization produces smaller substructures than the teacher factorization; 3) the teacher factorization produces smaller substructures than the student factorization; 4) the factorization forms from the teacher and the student are incompatible.
+
+| Comments: | Under review as a conference paper of ICLR 2021. 15 pages    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2010.05010](https://arxiv.org/abs/2010.05010) [cs.CL]** |
+|           | (or **[arXiv:2010.05010v1](https://arxiv.org/abs/2010.05010v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-13-10">10. SJTU-NICT's Supervised and Unsupervised Neural Machine Translation Systems for the WMT20 News Translation Task</h2>
+
+Title: [SJTU-NICT's Supervised and Unsupervised Neural Machine Translation Systems for the WMT20 News Translation Task](https://arxiv.org/abs/2010.05122)
+
+Authors: [Zuchao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Hai Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+H), [Rui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+R), [Kehai Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+K), [Masao Utiyama](https://arxiv.org/search/cs?searchtype=author&query=Utiyama%2C+M), [Eiichiro Sumita](https://arxiv.org/search/cs?searchtype=author&query=Sumita%2C+E)
+
+> In this paper, we introduced our joint team SJTU-NICT 's participation in the WMT 2020 machine translation shared task. In this shared task, we participated in four translation directions of three language pairs: English-Chinese, English-Polish on supervised machine translation track, German-Upper Sorbian on low-resource and unsupervised machine translation tracks. Based on different conditions of language pairs, we have experimented with diverse neural machine translation (NMT) techniques: document-enhanced NMT, XLM pre-trained language model enhanced NMT, bidirectional translation as a pre-training, reference language based UNMT, data-dependent gaussian prior objective, and BT-BLEU collaborative filtering self-training. We also used the TF-IDF algorithm to filter the training set to obtain a domain more similar set with the test set for finetuning. In our submissions, the primary systems won the first place on English to Chinese, Polish to English, and German to Upper Sorbian translation directions.
+
+| Comments: | WMT20                                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.05122](https://arxiv.org/abs/2010.05122) [cs.CL]** |
+|           | (or **[arXiv:2010.05122v1](https://arxiv.org/abs/2010.05122v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-13-11">11. fairseq S2T: Fast Speech-to-Text Modeling with fairseq</h2>
+
+Title: [fairseq S2T: Fast Speech-to-Text Modeling with fairseq](https://arxiv.org/abs/2010.05171)
+
+Authors: [Changhan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Yun Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+Y), [Xutai Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+X), [Anne Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+A), [Dmytro Okhonko](https://arxiv.org/search/cs?searchtype=author&query=Okhonko%2C+D), [Juan Pino](https://arxiv.org/search/cs?searchtype=author&query=Pino%2C+J)
+
+> We introduce fairseq S2T, a fairseq extension for speech-to-text (S2T) modeling tasks such as end-to-end speech recognition and speech-to-text translation. It follows fairseq's careful design for scalability and extensibility. We provide end-to-end workflows from data pre-processing, model training to offline (online) inference. We implement state-of-the-art RNN-based as well as Transformer-based models and open-source detailed training recipes. Fairseq's machine translation models and language models can be seamlessly integrated into S2T workflows for multi-task learning or transfer learning. Fairseq S2T documentation and examples are available at [this https URL](https://github.com/pytorch/fairseq/tree/master/examples/speech_to_text).
+
+| Comments: | Accepted to AACL 2020 Demo                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2010.05171](https://arxiv.org/abs/2010.05171) [cs.CL]** |
+|           | (or **[arXiv:2010.05171v1](https://arxiv.org/abs/2010.05171v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-13-12">12. Machine Translation of Mathematical Text</h2>
+
+Title: [Machine Translation of Mathematical Text](https://arxiv.org/abs/2010.05229)
+
+Authors: [Aditya Ohri](https://arxiv.org/search/cs?searchtype=author&query=Ohri%2C+A), [Tanya Schmah](https://arxiv.org/search/cs?searchtype=author&query=Schmah%2C+T)
+
+> We have implemented a machine translation system, the PolyMath Translator, for LaTeX documents containing mathematical text. The current implementation translates English LaTeX to French LaTeX, attaining a BLEU score of 53.5 on a held-out test corpus of mathematical sentences. It produces LaTeX documents that can be compiled to PDF without further editing. The system first converts the body of an input LaTeX document into English sentences containing math tokens, using the pandoc universal document converter to parse LaTeX input. We have trained a Transformer-based translator model, using OpenNMT, on a combined corpus containing a small proportion of domain-specific sentences. Our full system uses both this Transformer model and Google Translate, the latter being used as a backup to better handle linguistic features that do not appear in our training dataset. If the Transformer model does not have confidence in its translation, as determined by a high perplexity score, then we use Google Translate with a custom glossary. This backup was used 26% of the time on our test corpus of mathematical sentences. The PolyMath Translator is available as a web service at [this http URL](http://www.polymathtrans.ai/).
+
+| Comments:    | 14 pages, 2 figures                                          |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**                         |
+| ACM classes: | I.2.7; I.2.6                                                 |
+| Cite as:     | **[arXiv:2010.05229](https://arxiv.org/abs/2010.05229) [cs.CL]** |
+|              | (or **[arXiv:2010.05229v1](https://arxiv.org/abs/2010.05229v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-13-13">13. Neural Machine Translation Doesn't Translate Gender Coreference Right Unless You Make It</h2>
+
+Title: [Neural Machine Translation Doesn't Translate Gender Coreference Right Unless You Make It](https://arxiv.org/abs/2010.05332)
+
+Authors: [Danielle Saunders](https://arxiv.org/search/cs?searchtype=author&query=Saunders%2C+D), [Rosie Sallis](https://arxiv.org/search/cs?searchtype=author&query=Sallis%2C+R), [Bill Byrne](https://arxiv.org/search/cs?searchtype=author&query=Byrne%2C+B)
+
+> Neural Machine Translation (NMT) has been shown to struggle with grammatical gender that is dependent on the gender of human referents, which can cause gender bias effects. Many existing approaches to this problem seek to control gender inflection in the target language by explicitly or implicitly adding a gender feature to the source sentence, usually at the sentence level.
+> In this paper we propose schemes for incorporating explicit word-level gender inflection tags into NMT. We explore the potential of this gender-inflection controlled translation when the gender feature can be determined from a human reference, assessing on English-to-Spanish and English-to-German translation.
+> We find that simple existing approaches can over-generalize a gender-feature to multiple entities in a sentence, and suggest an effective alternative in the form of tagged coreference adaptation data. We also propose an extension to assess translations of gender-neutral entities from English given a corresponding linguistic convention in the inflected target language.
+
+| Comments: | Workshop on Gender Bias in NLP, 2020                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.05332](https://arxiv.org/abs/2010.05332) [cs.CL]** |
+|           | (or **[arXiv:2010.05332v1](https://arxiv.org/abs/2010.05332v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-13-14">14. Addressing Exposure Bias With Document Minimum Risk Training: Cambridge at the WMT20 Biomedical Translation Task</h2>
+
+Title: [Addressing Exposure Bias With Document Minimum Risk Training: Cambridge at the WMT20 Biomedical Translation Task](https://arxiv.org/abs/2010.05333)
+
+Authors: [Danielle Saunders](https://arxiv.org/search/cs?searchtype=author&query=Saunders%2C+D), [Bill Byrne](https://arxiv.org/search/cs?searchtype=author&query=Byrne%2C+B)
+
+> The 2020 WMT Biomedical translation task evaluated Medline abstract translations. This is a small-domain translation task, meaning limited relevant training data with very distinct style and vocabulary. Models trained on such data are susceptible to exposure bias effects, particularly when training sentence pairs are imperfect translations of each other. This can result in poor behaviour during inference if the model learns to neglect the source sentence.
+> The UNICAM entry addresses this problem during fine-tuning using a robust variant on Minimum Risk Training. We contrast this approach with data-filtering to remove `problem' training examples. Under MRT fine-tuning we obtain good results for both directions of English-German and English-Spanish biomedical translation. In particular we achieve the best English-to-Spanish translation result and second-best Spanish-to-English result, despite using only single models with no ensembling.
+
+| Comments: | WMT20 biomedical task                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.05333](https://arxiv.org/abs/2010.05333) [cs.CL]** |
+|           | (or **[arXiv:2010.05333v1](https://arxiv.org/abs/2010.05333v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-13-15">15. ChrEn: Cherokee-English Machine Translation for Endangered Language Revitalization</h2>
+
+Title: [ChrEn: Cherokee-English Machine Translation for Endangered Language Revitalization](https://arxiv.org/abs/2010.04791)
+
+Authors: [Shiyue Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+S), [Benjamin Frey](https://arxiv.org/search/cs?searchtype=author&query=Frey%2C+B), [Mohit Bansal](https://arxiv.org/search/cs?searchtype=author&query=Bansal%2C+M)
+
+> Cherokee is a highly endangered Native American language spoken by the Cherokee people. The Cherokee culture is deeply embedded in its language. However, there are approximately only 2,000 fluent first language Cherokee speakers remaining in the world, and the number is declining every year. To help save this endangered language, we introduce ChrEn, a Cherokee-English parallel dataset, to facilitate machine translation research between Cherokee and English. Compared to some popular machine translation language pairs, ChrEn is extremely low-resource, only containing 14k sentence pairs in total. We split our parallel data in ways that facilitate both in-domain and out-of-domain evaluation. We also collect 5k Cherokee monolingual data to enable semi-supervised learning. Besides these datasets, we propose several Cherokee-English and English-Cherokee machine translation systems. We compare SMT (phrase-based) versus NMT (RNN-based and Transformer-based) systems; supervised versus semi-supervised (via language model, back-translation, and BERT/Multilingual-BERT) methods; as well as transfer learning versus multilingual joint training with 4 other languages. Our best results are 15.8/12.7 BLEU for in-domain and 6.5/5.0 BLEU for out-of-domain Chr-En/EnChr translations, respectively, and we hope that our dataset and systems will encourage future work by the community for Cherokee language revitalization. Our data, code, and demo will be publicly available at [this https URL](https://github.com/ZhangShiyue/ChrEn)
+
+| Comments: | EMNLP 2020 (19 pages)                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2010.04791](https://arxiv.org/abs/2010.04791) [cs.CL]** |
+|           | (or **[arXiv:2010.04791v1](https://arxiv.org/abs/2010.04791v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-13-16">16. What Do Position Embeddings Learn? An Empirical Study of Pre-Trained Language Model Positional Encoding</h2>
+
+Title: [What Do Position Embeddings Learn? An Empirical Study of Pre-Trained Language Model Positional Encoding](https://arxiv.org/abs/2010.04903)
+
+Authors: [Yu-An Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Yun-Nung Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y)
+
+> In recent years, pre-trained Transformers have dominated the majority of NLP benchmark tasks. Many variants of pre-trained Transformers have kept breaking out, and most focus on designing different pre-training objectives or variants of self-attention. Embedding the position information in the self-attention mechanism is also an indispensable factor in Transformers however is often discussed at will. Therefore, this paper carries out an empirical study on position embeddings of mainstream pre-trained Transformers, which mainly focuses on two questions: 1) Do position embeddings really learn the meaning of positions? 2) How do these different learned position embeddings affect Transformers for NLP tasks? This paper focuses on providing a new insight of pre-trained position embeddings through feature-level analysis and empirical experiments on most of iconic NLP tasks. It is believed that our experimental results can guide the future work to choose the suitable positional encoding function for specific tasks given the application property.
+
+| Comments: | Accepted by EMNLP 2020                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2010.04903](https://arxiv.org/abs/2010.04903) [cs.CL]** |
+|           | (or **[arXiv:2010.04903v1](https://arxiv.org/abs/2010.04903v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-13-17">17. On Long-Tailed Phenomena in Neural Machine Translation</h2>
+
+Title: [On Long-Tailed Phenomena in Neural Machine Translation](https://arxiv.org/abs/2010.04924)
+
+Authors: [Vikas Raunak](https://arxiv.org/search/cs?searchtype=author&query=Raunak%2C+V), [Siddharth Dalmia](https://arxiv.org/search/cs?searchtype=author&query=Dalmia%2C+S), [Vivek Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+V), [Florian Metze](https://arxiv.org/search/cs?searchtype=author&query=Metze%2C+F)
+
+> State-of-the-art Neural Machine Translation (NMT) models struggle with generating low-frequency tokens, tackling which remains a major challenge. The analysis of long-tailed phenomena in the context of structured prediction tasks is further hindered by the added complexities of search during inference. In this work, we quantitatively characterize such long-tailed phenomena at two levels of abstraction, namely, token classification and sequence generation. We propose a new loss function, the Anti-Focal loss, to better adapt model training to the structural dependencies of conditional text generation by incorporating the inductive biases of beam search in the training process. We show the efficacy of the proposed technique on a number of Machine Translation (MT) datasets, demonstrating that it leads to significant gains over cross-entropy across different language pairs, especially on the generation of low-frequency words. We have released the code to reproduce our results.
+
+| Comments: | Accepted to Findings of EMNLP 2020                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2010.04924](https://arxiv.org/abs/2010.04924) [cs.CL]** |
+|           | (or **[arXiv:2010.04924v1](https://arxiv.org/abs/2010.04924v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-13-18">18. Zero-Shot Translation Quality Estimation with Explicit Cross-Lingual Patterns</h2>
+
+Title: [Zero-Shot Translation Quality Estimation with Explicit Cross-Lingual Patterns](https://arxiv.org/abs/2010.04989)
+
+Authors: [Lei Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+L), [Liang Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+L), [Koichi Takeda](https://arxiv.org/search/cs?searchtype=author&query=Takeda%2C+K)
+
+> This paper describes our submission of the WMT 2020 Shared Task on Sentence Level Direct Assessment, Quality Estimation (QE). In this study, we empirically reveal the \textit{mismatching issue} when directly adopting BERTScore to QE. Specifically, there exist lots of mismatching errors between the source sentence and translated candidate sentence with token pairwise similarity. In response to this issue, we propose to expose explicit cross-lingual patterns, \textit{e.g.} word alignments and generation score, to our proposed zero-shot models. Experiments show that our proposed QE model with explicit cross-lingual patterns could alleviate the mismatching issue, thereby improving the performance. Encouragingly, our zero-shot QE method could achieve comparable performance with supervised QE method, and even outperforms the supervised counterpart on 2 out of 6 directions. We expect our work could shed light on the zero-shot QE model improvement.
+
+| Comments: | To appear in WMT2020                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.04989](https://arxiv.org/abs/2010.04989) [cs.CL]** |
+|           | (or **[arXiv:2010.04989v1](https://arxiv.org/abs/2010.04989v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
