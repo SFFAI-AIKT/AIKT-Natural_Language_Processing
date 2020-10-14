@@ -3,6 +3,18 @@
 # Index
 
 
+- [2020-10-14](#2020-10-14)
+
+  - [1. Look It Up: Bilingual and Monolingual Dictionaries Improve Neural Machine Translation](#2020-10-14-1)
+  - [2. Improving Self-supervised Pre-training via a Fully-Explored Masked Language Model](#2020-10-14-2)
+  - [3. Towards Machine Translation for the Kurdish Language](#2020-10-14-3)
+  - [4. Incorporating BERT into Parallel Sequence Decoding with Adapters](#2020-10-14-4)
+  - [5. Mitigating Gender Bias in Machine Translation with Target Gender Annotations](#2020-10-14-5)
+  - [6. CAPT: Contrastive Pre-Training for LearningDenoised Sequence Representations](#2020-10-14-6)
+  - [7. The Tatoeba Translation Challenge -- Realistic Data Sets for Low Resource and Multilingual MT](#2020-10-14-7)
+  - [8. Fine-grained linguistic evaluation for state-of-the-art Machine Translation](#2020-10-14-8)
+  - [9. Pagsusuri ng RNN-based Transfer Learning Technique sa Low-Resource Language](#2020-10-14-9)
+  - [10. Does my multimodal model learn cross-modal interactions? It's harder to tell than you might think!](#2020-10-14-10)
 - [2020-10-13](#2020-10-13)
 
   - [1. Collective Wisdom: Improving Low-resource Neural Machine Translation using Adaptive Knowledge Distillation](#2020-10-13-1)
@@ -120,6 +132,198 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-10-14
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-10-14-1">1. Look It Up: Bilingual and Monolingual Dictionaries Improve Neural Machine Translation</h2>
+
+Title: [Look It Up: Bilingual and Monolingual Dictionaries Improve Neural Machine Translation](https://arxiv.org/abs/2010.05997)
+
+Authors: [Xing Jie Zhong](https://arxiv.org/search/cs?searchtype=author&query=Zhong%2C+X+J), [David Chiang](https://arxiv.org/search/cs?searchtype=author&query=Chiang%2C+D)
+
+> Despite advances in neural machine translation (NMT) quality, rare words continue to be problematic. For humans, the solution to the rare-word problem has long been dictionaries, but dictionaries cannot be straightforwardly incorporated into NMT. In this paper, we describe a new method for "attaching" dictionary definitions to rare words so that the network can learn the best way to use them. We demonstrate improvements of up to 3.1 BLEU using bilingual dictionaries and up to 0.7 BLEU using monolingual source-language dictionaries.
+
+| Comments: | Accepted for publication in Proceedings of WMT 2020          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2010.05997](https://arxiv.org/abs/2010.05997) [cs.CL]** |
+|           | (or **[arXiv:2010.05997v1](https://arxiv.org/abs/2010.05997v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-14-2">2. Improving Self-supervised Pre-training via a Fully-Explored Masked Language Model</h2>
+
+Title: [Improving Self-supervised Pre-training via a Fully-Explored Masked Language Model](https://arxiv.org/abs/2010.06040)
+
+Authors: [Mingzhi Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+M), [Dinghan Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+D), [Yelong Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+Y), [Weizhu Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+W), [Lin Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+L)
+
+> Masked Language Model (MLM) framework has been widely adopted for self-supervised language pre-training. In this paper, we argue that randomly sampled masks in MLM would lead to undesirably large gradient variance. Thus, we theoretically quantify the gradient variance via correlating the gradient covariance with the Hamming distance between two different masks (given a certain text sequence). To reduce the variance due to the sampling of masks, we propose a fully-explored masking strategy, where a text sequence is divided into a certain number of non-overlapping segments. Thereafter, the tokens within one segment are masked for training. We prove, from a theoretical perspective, that the gradients derived from this new masking schema have a smaller variance and can lead to more efficient self-supervised training. We conduct extensive experiments on both continual pre-training and general pre-training from scratch. Empirical results confirm that this new masking strategy can consistently outperform standard random masking. Detailed efficiency analysis and ablation studies further validate the advantages of our fully-explored masking strategy under the MLM framework.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2010.06040](https://arxiv.org/abs/2010.06040) [cs.CL]** |
+|           | (or **[arXiv:2010.06040v1](https://arxiv.org/abs/2010.06040v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-14-3">3. Towards Machine Translation for the Kurdish Language</h2>
+
+Title: [Towards Machine Translation for the Kurdish Language](https://arxiv.org/abs/2010.06041)
+
+Authors: [Sina Ahmadi](https://arxiv.org/search/cs?searchtype=author&query=Ahmadi%2C+S), [Mariam Masoud](https://arxiv.org/search/cs?searchtype=author&query=Masoud%2C+M)
+
+> Machine translation is the task of translating texts from one language to another using computers. It has been one of the major tasks in natural language processing and computational linguistics and has been motivating to facilitate human communication. Kurdish, an Indo-European language, has received little attention in this realm due to the language being less-resourced. Therefore, in this paper, we are addressing the main issues in creating a machine translation system for the Kurdish language, with a focus on the Sorani dialect. We describe the available scarce parallel data suitable for training a neural machine translation model for Sorani Kurdish-English translation. We also discuss some of the major challenges in Kurdish language translation and demonstrate how fundamental text processing tasks, such as tokenization, can improve translation performance.
+
+| Comments: | 12 pages - under review in the ACM Transactions on Asian and Low-Resource Language Information Processing (TALLIP) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.06041](https://arxiv.org/abs/2010.06041) [cs.CL]** |
+|           | (or **[arXiv:2010.06041v1](https://arxiv.org/abs/2010.06041v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-14-4">4. Incorporating BERT into Parallel Sequence Decoding with Adapters</h2>
+
+Title: [Incorporating BERT into Parallel Sequence Decoding with Adapters](https://arxiv.org/abs/2010.06138)
+
+Authors: [Junliang Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+J), [Zhirui Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Linli Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+L), [Hao-Ran Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+H), [Boxing Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+B), [Enhong Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+E)
+
+> While large scale pre-trained language models such as BERT have achieved great success on various natural language understanding tasks, how to efficiently and effectively incorporate them into sequence-to-sequence models and the corresponding text generation tasks remains a non-trivial problem. In this paper, we propose to address this problem by taking two different BERT models as the encoder and decoder respectively, and fine-tuning them by introducing simple and lightweight adapter modules, which are inserted between BERT layers and tuned on the task-specific dataset. In this way, we obtain a flexible and efficient model which is able to jointly leverage the information contained in the source-side and target-side BERT models, while bypassing the catastrophic forgetting problem. Each component in the framework can be considered as a plug-in unit, making the framework flexible and task agnostic. Our framework is based on a parallel sequence decoding algorithm named Mask-Predict considering the bi-directional and conditional independent nature of BERT, and can be adapted to traditional autoregressive decoding easily. We conduct extensive experiments on neural machine translation tasks where the proposed method consistently outperforms autoregressive baselines while reducing the inference latency by half, and achieves 36.49/33.57 BLEU scores on IWSLT14 German-English/WMT14 German-English translation. When adapted to autoregressive decoding, the proposed method achieves 30.60/43.56 BLEU scores on WMT14 English-German/English-French translation, on par with the state-of-the-art baseline models.
+
+| Comments: | NeurIPS 2020                                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.06138](https://arxiv.org/abs/2010.06138) [cs.CL]** |
+|           | (or **[arXiv:2010.06138v1](https://arxiv.org/abs/2010.06138v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-14-5">5. Mitigating Gender Bias in Machine Translation with Target Gender Annotations</h2>
+
+Title: [Mitigating Gender Bias in Machine Translation with Target Gender Annotations](https://arxiv.org/abs/2010.06203)
+
+Authors: [Toms Bergmanis](https://arxiv.org/search/cs?searchtype=author&query=Bergmanis%2C+T), [Artūrs Stafanovičs](https://arxiv.org/search/cs?searchtype=author&query=Stafanovičs%2C+A), [Mārcis Pinnis](https://arxiv.org/search/cs?searchtype=author&query=Pinnis%2C+M)
+
+> When translating "The secretary asked for details." to a language with grammatical gender, it might be necessary to determine the gender of the subject "secretary". If the sentence does not contain the necessary information, it is not always possible to disambiguate. In such cases, machine translation systems select the most common translation option, which often corresponds to the stereotypical translations, thus potentially exacerbating prejudice and marginalisation of certain groups and people. We argue that the information necessary for an adequate translation can not always be deduced from the sentence being translated or even might depend on external knowledge. Therefore, in this work, we propose to decouple the task of acquiring the necessary information from the task of learning to translate correctly when such information is available. To that end, we present a method for training machine translation systems to use word-level annotations containing information about subject's gender. To prepare training data, we annotate regular source language words with grammatical gender information of the corresponding target language words. Using such data to train machine translation systems reduces their reliance on gender stereotypes when information about the subject's gender is available. Our experiments on five language pairs show that this allows improving accuracy on the WinoMT test set by up to 25.8 percentage points.
+
+| Comments: | EMNLP 2020 Fifth Conference on Machine Translation (WMT20)   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.06203](https://arxiv.org/abs/2010.06203) [cs.CL]** |
+|           | (or **[arXiv:2010.06203v1](https://arxiv.org/abs/2010.06203v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-14-6">6. CAPT: Contrastive Pre-Training for LearningDenoised Sequence Representations</h2>
+
+Title: [CAPT: Contrastive Pre-Training for LearningDenoised Sequence Representations](https://arxiv.org/abs/2010.06351)
+
+Authors: [Fuli Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+F), [Pengcheng Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+P), [Shicheng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+S), [Xuancheng Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+X), [Xu Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+X)
+
+> Pre-trained self-supervised models such as BERT have achieved striking success in learning sequence representations, especially for natural language processing. These models typically corrupt the given sequences with certain types of noise, such as masking, shuffling, or substitution, and then try to recover the original input. However, such pre-training approaches are prone to learning representations that are covariant with the noise, leading to the discrepancy between the pre-training and fine-tuning stage. To remedy this, we present ContrAstive Pre-Training (CAPT) to learn noise invariant sequence representations. The proposed CAPT encourages the consistency between representations of the original sequence and its corrupted version via unsupervised instance-wise training signals. In this way, it not only alleviates the pretrain-finetune discrepancy induced by the noise of pre-training, but also aids the pre-trained model in better capturing global semantics of the input via more effective sentence-level supervision. Different from most prior work that focuses on a particular modality, comprehensive empirical evidence on 11 natural language understanding and cross-modal tasks illustrates that CAPT is applicable for both language and vision-language tasks, and obtains surprisingly consistent improvement, including 0.6% absolute gain on GLUE benchmarks and 0.8% absolute increment on NLVR.
+
+| Comments: | 9 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.06351](https://arxiv.org/abs/2010.06351) [cs.CL]** |
+|           | (or **[arXiv:2010.06351v1](https://arxiv.org/abs/2010.06351v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-14-7">7. The Tatoeba Translation Challenge -- Realistic Data Sets for Low Resource and Multilingual MT</h2>
+
+Title: [The Tatoeba Translation Challenge -- Realistic Data Sets for Low Resource and Multilingual MT](https://arxiv.org/abs/2010.06354)
+
+Authors: [Jörg Tiedemann](https://arxiv.org/search/cs?searchtype=author&query=Tiedemann%2C+J)
+
+> This paper describes the development of a new benchmark for machine translation that provides training and test data for thousands of language pairs covering over 500 languages and tools for creating state-of-the-art translation models from that collection. The main goal is to trigger the development of open translation tools and models with a much broader coverage of the World's languages. Using the package it is possible to work on realistic low-resource scenarios avoiding artificially reduced setups that are common when demonstrating zero-shot or few-shot learning. For the first time, this package provides a comprehensive collection of diverse data sets in hundreds of languages with systematic language and script annotation and data splits to extend the narrow coverage of existing benchmarks. Together with the data release, we also provide a growing number of pre-trained baseline models for individual language pairs and selected language groups.
+
+| Comments: | to be appear at the 5th Conference on Machine Translation (WMT20) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.06354](https://arxiv.org/abs/2010.06354) [cs.CL]** |
+|           | (or **[arXiv:2010.06354v1](https://arxiv.org/abs/2010.06354v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-14-8">8. Fine-grained linguistic evaluation for state-of-the-art Machine Translation</h2>
+
+Title: [Fine-grained linguistic evaluation for state-of-the-art Machine Translation](https://arxiv.org/abs/2010.06359)
+
+Authors: [Eleftherios Avramidis](https://arxiv.org/search/cs?searchtype=author&query=Avramidis%2C+E), [Vivien Macketanz](https://arxiv.org/search/cs?searchtype=author&query=Macketanz%2C+V), [Ursula Strohriegel](https://arxiv.org/search/cs?searchtype=author&query=Strohriegel%2C+U), [Aljoscha Burchardt](https://arxiv.org/search/cs?searchtype=author&query=Burchardt%2C+A), [Sebastian Möller](https://arxiv.org/search/cs?searchtype=author&query=Möller%2C+S)
+
+> This paper describes a test suite submission providing detailed statistics of linguistic performance for the state-of-the-art German-English systems of the Fifth Conference of Machine Translation (WMT20). The analysis covers 107 phenomena organized in 14 categories based on about 5,500 test items, including a manual annotation effort of 45 person hours. Two systems (Tohoku and Huoshan) appear to have significantly better test suite accuracy than the others, although the best system of WMT20 is not significantly better than the one from WMT19 in a macro-average. Additionally, we identify some linguistic phenomena where all systems suffer (such as idioms, resultative predicates and pluperfect), but we are also able to identify particular weaknesses for individual systems (such as quotation marks, lexical ambiguity and sluicing). Most of the systems of WMT19 which submitted new versions this year show improvements.
+
+| Comments: | 11 pages, 1 figure, Fifth Conference of Machine Translation, WMT20 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.06359](https://arxiv.org/abs/2010.06359) [cs.CL]** |
+|           | (or **[arXiv:2010.06359v1](https://arxiv.org/abs/2010.06359v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-14-9">9. Pagsusuri ng RNN-based Transfer Learning Technique sa Low-Resource Language</h2>
+
+Title: [Pagsusuri ng RNN-based Transfer Learning Technique sa Low-Resource Language](https://arxiv.org/abs/2010.06447)
+
+Authors: [Dan John Velasco](https://arxiv.org/search/cs?searchtype=author&query=Velasco%2C+D+J)
+
+> Low-resource languages such as Filipino suffer from data scarcity which makes it challenging to develop NLP applications for Filipino language. The use of Transfer Learning (TL) techniques alleviates this problem in low-resource setting. In recent years, transformer-based models are proven to be effective in low-resource tasks but faces challenges in accessibility due to its high compute and memory requirements. There's a need for a cheaper but effective alternative. This paper has three contributions. First, release a pre-trained AWD LSTM language model for Filipino language. Second, benchmark AWD LSTM in the Hate Speech classification task and show that it performs on par with transformer-based models. Third, analyze the degradation rate of AWD-LSTM to smaller data using degradation test and compare it with transformer-based models.
+> \-----
+> Ang mga low-resource languages tulad ng Filipino ay gipit sa accessible na datos kaya't mahirap gumawa ng mga applications sa wikang ito. Ang mga Transfer Learning (TL) techniques ay malaking tulong para sa mga pagkakataong gipit tayo sa datos. Sa mga nagdaang taon, nanaig ang mga transformer-based TL techniques pagdating sa low-resource tasks ngunit ito ay magastos sa resources. Kaya nangangailangan ng mas mura pero epektibong alternatibo. Ang papel na ito ay may tatlong kontribusyon. Una, maglabas ng pre-trained AWD LSTM language model sa wikang Filipino upang maging tuntungan sa pagbuo ng mga NLP applications sa wikang Filipino. Pangalawa, mag benchmark ng AWD LSTM sa Hate Speech classification task at ipakita na kayang nitong makipagsabayan sa mga transformer-based models. Pangatlo, suriin ang degradation rate ng AWD-LSTM sa mas maliit na data gamit ang degradation test at ikumpara ito sa mga transformer-based models.
+
+| Comments:    | 5 pages, 3 tables, 1 figure. in Filipino language            |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**                         |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2010.06447](https://arxiv.org/abs/2010.06447) [cs.CL]** |
+|              | (or **[arXiv:2010.06447v1](https://arxiv.org/abs/2010.06447v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-14-10">10. Does my multimodal model learn cross-modal interactions? It's harder to tell than you might think!</h2>
+
+Title: [Does my multimodal model learn cross-modal interactions? It's harder to tell than you might think!](https://arxiv.org/abs/2010.06572)
+
+Authors: [Jack Hessel](https://arxiv.org/search/cs?searchtype=author&query=Hessel%2C+J), [Lillian Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+L)
+
+> Modeling expressive cross-modal interactions seems crucial in multimodal tasks, such as visual question answering. However, sometimes high-performing black-box algorithms turn out to be mostly exploiting unimodal signals in the data. We propose a new diagnostic tool, empirical multimodally-additive function projection (EMAP), for isolating whether or not cross-modal interactions improve performance for a given model on a given task. This function projection modifies model predictions so that cross-modal interactions are eliminated, isolating the additive, unimodal structure. For seven image+text classification tasks (on each of which we set new state-of-the-art benchmarks), we find that, in many cases, removing cross-modal interactions results in little to no performance degradation. Surprisingly, this holds even when expressive models, with capacity to consider interactions, otherwise outperform less expressive models; thus, performance improvements, even when present, often cannot be attributed to consideration of cross-modal feature interactions. We hence recommend that researchers in multimodal machine learning report the performance not only of unimodal baselines, but also the EMAP of their best-performing model.
+
+| Subjects:          | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | Published in EMNLP 2020                                      |
+| Cite as:           | **[arXiv:2010.06572](https://arxiv.org/abs/2010.06572) [cs.CL]** |
+|                    | (or **[arXiv:2010.06572v1](https://arxiv.org/abs/2010.06572v1) [cs.CL]** for this version) |
+
+
+
+
+
+
 
 
 
