@@ -3,6 +3,15 @@
 # Index
 
 
+- [2020-10-15](#2020-10-15)
+
+  - [1. The EOS Decision and Length Extrapolation](#2020-10-15-1)
+  - [2. Dissecting the components and factors of Neural Text Generation](#2020-10-15-2)
+  - [3. Random Network Distillation as a Diversity Metric for Both Image and Text Generation](#2020-10-15-3)
+  - [4. MulDE: Multi-teacher Knowledge Distillation for Low-dimensional Knowledge Graph Embeddings](#2020-10-15-4)
+  - [5. Memformer: The Memory-Augmented Transformer](#2020-10-15-5)
+  - [6. DA-Transformer: Distance-aware Transformer](#2020-10-15-6)
+  - [7. Length-Adaptive Transformer: Train Once with Length Drop, Use Anytime with Search](#2020-10-15-7)
 - [2020-10-14](#2020-10-14)
 
   - [1. Look It Up: Bilingual and Monolingual Dictionaries Improve Neural Machine Translation](#2020-10-14-1)
@@ -132,6 +141,155 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-10-15
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-10-15-1">1. The EOS Decision and Length Extrapolation</h2>
+
+Title: [The EOS Decision and Length Extrapolation](https://arxiv.org/abs/2010.07174)
+
+Authors: [Benjamin Newman](https://arxiv.org/search/cs?searchtype=author&query=Newman%2C+B), [John Hewitt](https://arxiv.org/search/cs?searchtype=author&query=Hewitt%2C+J), [Percy Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+P), [Christopher D. Manning](https://arxiv.org/search/cs?searchtype=author&query=Manning%2C+C+D)
+
+> Extrapolation to unseen sequence lengths is a challenge for neural generative models of language. In this work, we characterize the effect on length extrapolation of a modeling decision often overlooked: predicting the end of the generative process through the use of a special end-of-sequence (EOS) vocabulary item. We study an oracle setting - forcing models to generate to the correct sequence length at test time - to compare the length-extrapolative behavior of networks trained to predict EOS (+EOS) with networks not trained to (-EOS). We find that -EOS substantially outperforms +EOS, for example extrapolating well to lengths 10 times longer than those seen at training time in a bracket closing task, as well as achieving a 40% improvement over +EOS in the difficult SCAN dataset length generalization task. By comparing the hidden states and dynamics of -EOS and +EOS models, we observe that +EOS models fail to generalize because they (1) unnecessarily stratify their hidden states by their linear position is a sequence (structures we call length manifolds) or (2) get stuck in clusters (which we refer to as length attractors) once the EOS token is the highest-probability prediction.
+
+| Comments: | 16 page, 7 Figures, 9 Tables, Blackbox NLP Workshop at EMNLP 2020 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.07174](https://arxiv.org/abs/2010.07174) [cs.CL]** |
+|           | (or **[arXiv:2010.07174v1](https://arxiv.org/abs/2010.07174v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-15-2">2. Dissecting the components and factors of Neural Text Generation</h2>
+
+Title: [Dissecting the components and factors of Neural Text Generation](https://arxiv.org/abs/2010.07279)
+
+Authors: [Khyathi Raghavi Chandu](https://arxiv.org/search/cs?searchtype=author&query=Chandu%2C+K+R), [Alan W Black](https://arxiv.org/search/cs?searchtype=author&query=Black%2C+A+W)
+
+> Neural text generation metamorphosed into several critical natural language applications ranging from text completion to free form narrative generation. Generating natural language has fundamentally been a human attribute and the advent of ubiquitous NLP applications and virtual agents marks the need to impart this skill to machines. There has been a colossal research effort in various frontiers of neural text generation including machine translation, summarization, image captioning, storytelling etc., We believe that this is an excellent juncture to retrospect on the directions of the field. Specifically, this paper surveys the fundamental factors and components relaying task agnostic impacts across various generation tasks such as storytelling, summarization, translation etc., In specific, we present an abstraction of the imperative techniques with respect to learning paradigms, pretraining, modeling approaches, decoding and the key challenges. Thereby, we hope to deliver a one-stop destination for researchers in the field to facilitate a perspective on where to situate their work and how it impacts other closely related tasks.
+
+| Comments: | 15 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.07279](https://arxiv.org/abs/2010.07279) [cs.CL]** |
+|           | (or **[arXiv:2010.07279v1](https://arxiv.org/abs/2010.07279v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-10-15-3">3. Random Network Distillation as a Diversity Metric for Both Image and Text Generation</h2>
+
+Title: [Random Network Distillation as a Diversity Metric for Both Image and Text Generation](https://arxiv.org/abs/2010.06715)
+
+Authors: [Liam Fowl](https://arxiv.org/search/cs?searchtype=author&query=Fowl%2C+L), [Micah Goldblum](https://arxiv.org/search/cs?searchtype=author&query=Goldblum%2C+M), [Arjun Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+A), [Amr Sharaf](https://arxiv.org/search/cs?searchtype=author&query=Sharaf%2C+A), [Tom Goldstein](https://arxiv.org/search/cs?searchtype=author&query=Goldstein%2C+T)
+
+> Generative models are increasingly able to produce remarkably high quality images and text. The community has developed numerous evaluation metrics for comparing generative models. However, these metrics do not effectively quantify data diversity. We develop a new diversity metric that can readily be applied to data, both synthetic and natural, of any type. Our method employs random network distillation, a technique introduced in reinforcement learning. We validate and deploy this metric on both images and text. We further explore diversity in few-shot image generation, a setting which was previously difficult to evaluate.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2010.06715](https://arxiv.org/abs/2010.06715) [cs.LG]** |
+|           | (or **[arXiv:2010.06715v1](https://arxiv.org/abs/2010.06715v1) [cs.LG]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-10-15-4">4. MulDE: Multi-teacher Knowledge Distillation for Low-dimensional Knowledge Graph Embeddings</h2>
+
+Title: [MulDE: Multi-teacher Knowledge Distillation for Low-dimensional Knowledge Graph Embeddings](https://arxiv.org/abs/2010.07152)
+
+Authors: [Kai Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+K), [Yu Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Qian Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+Q), [Quan Z. Sheng](https://arxiv.org/search/cs?searchtype=author&query=Sheng%2C+Q+Z)
+
+> Link prediction based on knowledge graph embedding (KGE) aims to predict new triples to complete knowledge graphs (KGs) automatically. However, recent KGE models tend to improve performance by excessively increasing vector dimensions, which would cause enormous training costs and save storage in practical applications. To address this problem, we first theoretically analyze the capacity of low-dimensional space for KG embeddings based on the principle of minimum entropy. Then, we propose a novel knowledge distillation framework for knowledge graph embedding, utilizing multiple low-dimensional KGE models as teachers. Under a novel iterative distillation strategy, the MulDE model produces soft labels according to training epochs and student performance adaptively. The experimental results show that MulDE can effectively improve the performance and training speed of low-dimensional KGE models. The distilled 32-dimensional models are very competitive compared to some of state-or-the-art (SotA) high-dimensional methods on several commonly-used datasets.
+
+| Comments: | 11 pages, 4 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Artificial Intelligence (cs.AI)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2010.07152](https://arxiv.org/abs/2010.07152) [cs.AI]** |
+|           | (or **[arXiv:2010.07152v1](https://arxiv.org/abs/2010.07152v1) [cs.AI]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-10-15-5">5. Memformer: The Memory-Augmented Transformer</h2>
+
+Title: [Memformer: The Memory-Augmented Transformer](https://arxiv.org/abs/2010.06891)
+
+Authors: [Qingyang Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Q), [Zhenzhong Lan](https://arxiv.org/search/cs?searchtype=author&query=Lan%2C+Z), [Jing Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J), [Zhou Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+Z)
+
+> Transformer models have obtained remarkable accomplishments in various NLP tasks. However, these models have efficiency issues on long sequences, as the complexity of their self-attention module scales quadratically with the sequence length. To remedy the limitation, we present Memformer, a novel language model that utilizes a single unified memory to encode and retrieve past information. It includes a new optimization scheme, Memory Replay Back-Propagation, which promotes long-range back-propagation through time with a significantly reduced memory requirement. Memformer achieves (n) time complexity and (1) space complexity in processing long sequences, meaning that the model can handle an infinite length sequence during inference. Our model is also compatible with other self-supervised tasks to further improve the performance on language modeling. Experimental results show that Memformer outperforms the previous long-range sequence models on WikiText-103, including Transformer-XL and compressive Transformer.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2010.06891](https://arxiv.org/abs/2010.06891) [cs.CL]** |
+|           | (or **[arXiv:2010.06891v1](https://arxiv.org/abs/2010.06891v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-10-15-6">6. DA-Transformer: Distance-aware Transformer</h2>
+
+Title: [DA-Transformer: Distance-aware Transformer](https://arxiv.org/abs/2010.06925)
+
+Authors: [Chuhan Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+C), [Fangzhao Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+F), [Yongfeng Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Y)
+
+> Transformer has achieved great success in the NLP field by composing various advanced models like BERT and GPT. However, Transformer and its existing variants may not be optimal in capturing token distances because the position or distance embeddings used by these methods usually cannot keep the precise information of real distances, which may not be beneficial for modeling the orders and relations of contexts. In this paper, we propose DA-Transformer, which is a distance-aware Transformer that can exploit the real distance. We propose to incorporate the real distances between tokens to re-scale the raw self-attention weights, which are computed by the relevance between attention query and key. Concretely, in different self-attention heads the relative distance between each pair of tokens is weighted by different learnable parameters, which control the different preferences on long- or short-term information of these heads. Since the raw weighted real distances may not be optimal for adjusting self-attention weights, we propose a learnable sigmoid function to map them into re-scaled coefficients that have proper ranges. We first clip the raw self-attention weights via the ReLU function to keep non-negativity and introduce sparsity, and then multiply them with the re-scaled coefficients to encode real distance information into self-attention. Extensive experiments on five benchmark datasets show that DA-Transformer can effectively improve the performance of many tasks and outperform the vanilla Transformer and its several variants.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2010.06925](https://arxiv.org/abs/2010.06925) [cs.CL]** |
+|           | (or **[arXiv:2010.06925v1](https://arxiv.org/abs/2010.06925v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-10-15-7">7. Length-Adaptive Transformer: Train Once with Length Drop, Use Anytime with Search</h2>
+
+Title: [Length-Adaptive Transformer: Train Once with Length Drop, Use Anytime with Search](https://arxiv.org/abs/2010.07003)
+
+Authors: [Gyuwan Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+G), [Kyunghyun Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+K)
+
+> Although transformers have achieved impressive accuracies in various tasks in natural language processing, they often come with a prohibitive computational cost, that prevents their use in scenarios with limited computational resources for inference. This need for computational efficiency in inference has been addressed by for instance PoWER-BERT (Goyal et al., 2020) which gradually decreases the length of a sequence as it is passed through layers. These approaches however often assume that the target computational complexity is known in advance at the time of training. This implies that a separate model must be trained for each inference scenario with its distinct computational budget. In this paper, we extend PoWER-BERT to address this issue of inefficiency and redundancy. The proposed extension enables us to train a large-scale transformer, called Length-Adaptive Transformer, once and uses it for various inference scenarios without re-training it. To do so, we train a transformer with LengthDrop, a structural variant of dropout, which stochastically determines the length of a sequence at each layer. We then use a multi-objective evolutionary search to find a length configuration that maximizes the accuracy and minimizes the computational complexity under any given computational budget. Additionally, we significantly extend the applicability of PoWER-BERT beyond sequence-level classification into token-level classification such as span-based question-answering, by introducing the idea of Drop-and-Restore. With Drop-and-Restore, word-vectors are dropped temporarily in intermediate layers and restored at the last layer if necessary. We empirically verify the utility of the proposed approach by demonstrating the superior accuracy-efficiency trade-off under various setups, including SQuAD 1.1, MNLI-m, and SST-2. Code is available at [this https URL](https://github.com/clovaai/length-adaptive-transformer).
+
+| Comments: | 11 pages, 4 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2010.07003](https://arxiv.org/abs/2010.07003) [cs.CL]** |
+|           | (or **[arXiv:2010.07003v1](https://arxiv.org/abs/2010.07003v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
