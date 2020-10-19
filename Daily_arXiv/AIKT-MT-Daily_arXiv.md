@@ -3,9 +3,17 @@
 # Index
 
 
-- [2020-10-16](#2020-10-16)
+- [2020-10-19](#2020-10-19)
 
-  - [1. Decoding Methods for Neural Narrative Generation](#2020-10-16-1)
+  - [1. DiDi's Machine Translation System for WMT2020](#2020-10-19-1)
+  - [2. Training Flexible Depth Model by Multi-Task Learning for Neural Machine Translation](#2020-10-19-2)
+  - [3. It's not Greek to mBERT: Inducing Word-Level Translations from Multilingual BERT](#2020-10-19-3)
+  - [4. Multi-Adversarial Learning for Cross-Lingual Word Embeddings](#2020-10-19-4)
+  - [5. Adaptive Feature Selection for End-to-End Speech Translation](#2020-10-19-5)
+  - [6. Mischief: A Simple Black-Box Attack Against Transformer Architectures](#2020-10-19-6)
+  - [7. Explicit Alignment Objectives for Multilingual Bidirectional Encoders](#2020-10-19-7)
+- [2020-10-16](#2020-10-16)
+- [1. Decoding Methods for Neural Narrative Generation](#2020-10-16-1)
   - [2. Grammatical Error Correction in Low Error Density Domains: A New Benchmark and Analyses](#2020-10-16-2)
   - [3. Pronoun-Targeted Fine-tuning for NMT with Hybrid Losses](#2020-10-16-3)
   - [4. Does Chinese BERT Encode Word Structure?](#2020-10-16-4)
@@ -64,7 +72,8 @@
   - [8. Self-Paced Learning for Neural Machine Translation](#2020-10-12-8)
   - [9. Recursive Top-Down Production for Sentence Generation with Latent Trees](#2020-10-12-9)
 - [2020-10-09](#2020-10-09)
-- [1. Shallow-to-Deep Training for Neural Machine Translation](#2020-10-09-1)
+
+  - [1. Shallow-to-Deep Training for Neural Machine Translation](#2020-10-09-1)
   - [2. Improving Attention Mechanism with Query-Value Interaction](#2020-10-09-2)
   - [3. ALFWorld: Aligning Text and Embodied Environments for Interactive Learning](#2020-10-09-3)
   - [4. What Can We Do to Improve Peer Review in NLP?](#2020-10-09-4)
@@ -74,7 +83,8 @@
   - [8. Leveraging Discourse Rewards for Document-Level Neural Machine Translation](#2020-10-09-8)
   - [9. Text-based RL Agents with Commonsense Knowledge: New Challenges, Environments and Baselines](#2020-10-09-9)
 - [2020-10-08](#2020-10-08)
-- [1. Plug and Play Autoencoders for Conditional Text Generation](#2020-10-08-1)
+
+  - [1. Plug and Play Autoencoders for Conditional Text Generation](#2020-10-08-1)
   - [2. Pre-training Multilingual Neural Machine Translation by Leveraging Alignment Information](#2020-10-08-2)
   - [3. A Self-Refinement Strategy for Noise Reduction in Grammatical Error Correction](#2020-10-08-3)
   - [4. Transfer Learning and Distant Supervision for Multilingual Transformer Models: A Study on African Languages](#2020-10-08-4)
@@ -85,7 +95,8 @@
   - [9. TeaForN: Teacher-Forcing with N-grams](#2020-10-08-9)
   - [10. Galileo at SemEval-2020 Task 12: Multi-lingual Learning for Offensive Language Identification using Pre-trained Language Models](#2020-10-08-10)
 - [2020-10-07](#2020-10-07)
-- [1. Multi-task Learning for Multilingual Neural Machine Translation](#2020-10-07-1)
+
+  - [1. Multi-task Learning for Multilingual Neural Machine Translation](#2020-10-07-1)
   - [2. Do Explicit Alignments Robustly Improve Multilingual Encoders?](#2020-10-07-2)
   - [3. The Multilingual Amazon Reviews Corpus](#2020-10-07-3)
   - [4. On the Sparsity of Neural Machine Translation Models](#2020-10-07-4)
@@ -149,6 +160,136 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-10-19
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-10-19-1">1. DiDi's Machine Translation System for WMT2020</h2>
+
+Title: [DiDi's Machine Translation System for WMT2020](https://arxiv.org/abs/2010.08185)
+
+Authors: [Tanfang Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+T), [Weiwei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Wenyang Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+W), [Xing Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+X), [Xiangang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Jieping Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+J), [Kevin Knight](https://arxiv.org/search/cs?searchtype=author&query=Knight%2C+K)
+
+> This paper describes DiDi AI Labs' submission to the WMT2020 news translation shared task. We participate in the translation direction of Chinese->English. In this direction, we use the Transformer as our baseline model, and integrate several techniques for model enhancement, including data filtering, data selection, back-translation, fine-tuning, model ensembling, and re-ranking. As a result, our submission achieves a BLEU score of 36.6 in Chinese->English.
+
+| Comments: | Accepted at WMT 2020                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2010.08185](https://arxiv.org/abs/2010.08185) [cs.CL]** |
+|           | (or **[arXiv:2010.08185v1](https://arxiv.org/abs/2010.08185v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-19-2">2. Training Flexible Depth Model by Multi-Task Learning for Neural Machine Translation</h2>
+
+Title: [Training Flexible Depth Model by Multi-Task Learning for Neural Machine Translation](https://arxiv.org/abs/2010.08265)
+
+Authors: [Qiang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Q), [Tong Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+T), [Jingbo Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J)
+
+> The standard neural machine translation model can only decode with the same depth configuration as training. Restricted by this feature, we have to deploy models of various sizes to maintain the same translation latency, because the hardware conditions on different terminal devices (e.g., mobile phones) may vary greatly. Such individual training leads to increased model maintenance costs and slower model iterations, especially for the industry. In this work, we propose to use multi-task learning to train a flexible depth model that can adapt to different depth configurations during inference. Experimental results show that our approach can simultaneously support decoding in 24 depth configurations and is superior to the individual training and another flexible depth model training method -- LayerDrop.
+
+| Comments: | Accepted at Findings of EMNLP 2020                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2010.08265](https://arxiv.org/abs/2010.08265) [cs.CL]** |
+|           | (or **[arXiv:2010.08265v1](https://arxiv.org/abs/2010.08265v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-19-3">3. It's not Greek to mBERT: Inducing Word-Level Translations from Multilingual BERT</h2>
+
+Title: [It's not Greek to mBERT: Inducing Word-Level Translations from Multilingual BERT](https://arxiv.org/abs/2010.08275)
+
+Authors: [Hila Gonen](https://arxiv.org/search/cs?searchtype=author&query=Gonen%2C+H), [Shauli Ravfogel](https://arxiv.org/search/cs?searchtype=author&query=Ravfogel%2C+S), [Yanai Elazar](https://arxiv.org/search/cs?searchtype=author&query=Elazar%2C+Y), [Yoav Goldberg](https://arxiv.org/search/cs?searchtype=author&query=Goldberg%2C+Y)
+
+> Recent works have demonstrated that multilingual BERT (mBERT) learns rich cross-lingual representations, that allow for transfer across languages. We study the word-level translation information embedded in mBERT and present two simple methods that expose remarkable translation capabilities with no fine-tuning. The results suggest that most of this information is encoded in a non-linear way, while some of it can also be recovered with purely linear tools. As part of our analysis, we test the hypothesis that mBERT learns representations which contain both a language-encoding component and an abstract, cross-lingual component, and explicitly identify an empirical language-identity subspace within mBERT representations.
+
+| Comments: | BlackboxNLP 2020                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.08275](https://arxiv.org/abs/2010.08275) [cs.CL]** |
+|           | (or **[arXiv:2010.08275v1](https://arxiv.org/abs/2010.08275v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-19-4">4. Multi-Adversarial Learning for Cross-Lingual Word Embeddings</h2>
+
+Title: [Multi-Adversarial Learning for Cross-Lingual Word Embeddings](https://arxiv.org/abs/2010.08432)
+
+Authors: [Haozhou Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H), [James Henderson](https://arxiv.org/search/cs?searchtype=author&query=Henderson%2C+J), [Paola Merlo](https://arxiv.org/search/cs?searchtype=author&query=Merlo%2C+P)
+
+> Generative adversarial networks (GANs) have succeeded in inducing cross-lingual word embeddings -- maps of matching words across languages -- without supervision. Despite these successes, GANs' performance for the difficult case of distant languages is still not satisfactory. These limitations have been explained by GANs' incorrect assumption that source and target embedding spaces are related by a single linear mapping and are approximately isomorphic. We assume instead that, especially across distant languages, the mapping is only piece-wise linear, and propose a multi-adversarial learning method. This novel method induces the seed cross-lingual dictionary through multiple mappings, each induced to fit the mapping for one subspace. Our experiments on unsupervised bilingual lexicon induction show that this method improves performance over previous single-mapping methods, especially for distant languages.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2010.08432](https://arxiv.org/abs/2010.08432) [cs.CL]** |
+|           | (or **[arXiv:2010.08432v1](https://arxiv.org/abs/2010.08432v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-19-5">5. Adaptive Feature Selection for End-to-End Speech Translation</h2>
+
+Title: [Adaptive Feature Selection for End-to-End Speech Translation](https://arxiv.org/abs/2010.08518)
+
+Authors: [Biao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+B), [Ivan Titov](https://arxiv.org/search/cs?searchtype=author&query=Titov%2C+I), [Barry Haddow](https://arxiv.org/search/cs?searchtype=author&query=Haddow%2C+B), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R)
+
+> Information in speech signals is not evenly distributed, making it an additional challenge for end-to-end (E2E) speech translation (ST) to learn to focus on informative features. In this paper, we propose adaptive feature selection (AFS) for encoder-decoder based E2E ST. We first pre-train an ASR encoder and apply AFS to dynamically estimate the importance of each encoded speech feature to SR. A ST encoder, stacked on top of the ASR encoder, then receives the filtered features from the (frozen) ASR encoder. We take L0DROP (Zhang et al., 2020) as the backbone for AFS, and adapt it to sparsify speech features with respect to both temporal and feature dimensions. Results on LibriSpeech En-Fr and MuST-C benchmarks show that AFS facilitates learning of ST by pruning out ~84% temporal features, yielding an average translation gain of ~1.3-1.6 BLEU and a decoding speedup of ~1.4x. In particular, AFS reduces the performance gap compared to the cascade baseline, and outperforms it on LibriSpeech En-Fr with a BLEU score of 18.56 (without data augmentation)
+
+| Comments: | EMNLP2020 Findings; source code is at [this https URL](https://github.com/bzhangGo/zero) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2010.08518](https://arxiv.org/abs/2010.08518) [cs.CL]** |
+|           | (or **[arXiv:2010.08518v1](https://arxiv.org/abs/2010.08518v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-19-6">6. Mischief: A Simple Black-Box Attack Against Transformer Architectures</h2>
+
+Title: [Mischief: A Simple Black-Box Attack Against Transformer Architectures](https://arxiv.org/abs/2010.08542)
+
+Authors: [Adrian de Wynter](https://arxiv.org/search/cs?searchtype=author&query=de+Wynter%2C+A)
+
+> We introduce Mischief, a simple and lightweight method to produce a class of human-readable, realistic adversarial examples for language models. We perform exhaustive experimentations of our algorithm on four transformer-based architectures, across a variety of downstream tasks, as well as under varying concentrations of said examples. Our findings show that the presence of Mischief-generated adversarial samples in the test set significantly degrades (by up to 20%) the performance of these models with respect to their reported baselines. Nonetheless, we also demonstrate that, by including similar examples in the training set, it is possible to restore the baseline scores on the adversarial test set. Moreover, for certain tasks, the models trained with Mischief set show a modest increase on performance with respect to their original, non-adversarial baseline.
+
+| Comments: | Technical report                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Cryptography and Security (cs.CR); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2010.08542](https://arxiv.org/abs/2010.08542) [cs.CL]** |
+|           | (or **[arXiv:2010.08542v1](https://arxiv.org/abs/2010.08542v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-19-7">7. Explicit Alignment Objectives for Multilingual Bidirectional Encoders</h2>
+
+Title: [Explicit Alignment Objectives for Multilingual Bidirectional Encoders](https://arxiv.org/abs/2010.07972)
+
+Authors: [Junjie Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+J), [Melvin Johnson](https://arxiv.org/search/cs?searchtype=author&query=Johnson%2C+M), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O), [Aditya Siddhant](https://arxiv.org/search/cs?searchtype=author&query=Siddhant%2C+A), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
+
+> Pre-trained cross-lingual encoders such as mBERT (Devlin et al., 2019) and XLMR (Conneau et al., 2020) have proven to be impressively effective at enabling transfer-learning of NLP systems from high-resource languages to low-resource languages. This success comes despite the fact that there is no explicit objective to align the contextual embeddings of words/sentences with similar meanings across languages together in the same space. In this paper, we present a new method for learning multilingual encoders, AMBER (Aligned Multilingual Bidirectional EncodeR). AMBER is trained on additional parallel data using two explicit alignment objectives that align the multilingual representations at different granularities. We conduct experiments on zero-shot cross-lingual transfer learning for different tasks including sequence tagging, sentence retrieval and sentence classification. Experimental results show that AMBER obtains gains of up to 1.1 average F1 score on sequence tagging and up to 27.3 average accuracy on retrieval over the XLMR-large model which has 4.6x the parameters of AMBER.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2010.07972](https://arxiv.org/abs/2010.07972) [cs.CL]** |
+|           | (or **[arXiv:2010.07972v1](https://arxiv.org/abs/2010.07972v1) [cs.CL]** for this version) |
+
+
 
 
 
