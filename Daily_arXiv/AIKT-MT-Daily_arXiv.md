@@ -3,6 +3,27 @@
 # Index
 
 
+- [2020-10-21](#2020-10-21)
+
+  - [1. Word Shape Matters: Robust Machine Translation with Visual Embedding](#2020-10-21-1)
+  - [2. Language Representation in Multilingual BERTand its applications to improve Cross-lingual Generalization](#2020-10-21-2)
+  - [3. Fluent and Low-latency Simultaneous Speech-to-Speech Translation with Self-adaptive Training](#2020-10-21-3)
+  - [4. Complete Multilingual Neural Machine Translation](#2020-10-21-4)
+  - [5. Human-Paraphrased References Improve Neural Machine Translation](#2020-10-21-5)
+  - [6. CharacterBERT: Reconciling ELMo and BERT for Word-Level Open-Vocabulary Representations From Characters](#2020-10-21-6)
+  - [7. Comparison of Interactive Knowledge Base Spelling Correction Models for Low-Resource Languages](#2020-10-21-7)
+  - [8. Optimal Subarchitecture Extraction For BERT](#2020-10-21-8)
+- [2020-10-20](#2020-10-20)
+
+  - [1. Emerging Trends of Multimodal Research in Vision and Language](#2020-10-20-1)
+  - [2. A Corpus for English-Japanese Multimodal Neural Machine Translation with Comparable Sentences](#2020-10-20-2)
+  - [3. Incorporate Semantic Structures into Machine Translation Evaluation via UCCA](#2020-10-20-3)
+  - [4. Capturing Longer Context for Document-level Neural Machine Translation: A Multi-resolutional Approach](#2020-10-20-4)
+  - [5. Meta-Learning for Low-Resource Unsupervised Neural MachineTranslation](#2020-10-20-5)
+  - [6. Revisiting Modularized Multilingual NMT to Meet Industrial Demands](#2020-10-20-6)
+  - [7. Diving Deep into Context-Aware Neural Machine Translation](#2020-10-20-7)
+  - [8. Cold-start Active Learning through Self-supervised Language Modeling](#2020-10-20-8)
+  - [9. Subtitles to Segmentation: Improving Low-Resource Speech-to-Text Translation Pipelines](#2020-10-20-9)
 - [2020-10-19](#2020-10-19)
 
   - [1. DiDi's Machine Translation System for WMT2020](#2020-10-19-1)
@@ -160,6 +181,324 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-10-21
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-10-21-1">1. Word Shape Matters: Robust Machine Translation with Visual Embedding</h2>
+
+Title: [Word Shape Matters: Robust Machine Translation with Visual Embedding](https://arxiv.org/abs/2010.09997)
+
+Authors: [Haohan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H), [Peiyan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+P), [Eric P. Xing](https://arxiv.org/search/cs?searchtype=author&query=Xing%2C+E+P)
+
+> Neural machine translation has achieved remarkable empirical performance over standard benchmark datasets, yet recent evidence suggests that the models can still fail easily dealing with substandard inputs such as misspelled words, To overcome this issue, we introduce a new encoding heuristic of the input symbols for character-level NLP models: it encodes the shape of each character through the images depicting the letters when printed. We name this new strategy visual embedding and it is expected to improve the robustness of NLP models because humans also process the corpus visually through printed letters, instead of machinery one-hot vectors. Empirically, our method improves models' robustness against substandard inputs, even in the test scenario where the models are tested with the noises that are beyond what is available during the training phase.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2010.09997](https://arxiv.org/abs/2010.09997) [cs.CL]** |
+|           | (or **[arXiv:2010.09997v1](https://arxiv.org/abs/2010.09997v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-21-2">2. Language Representation in Multilingual BERTand its applications to improve Cross-lingual Generalization</h2>
+
+Title: [Language Representation in Multilingual BERTand its applications to improve Cross-lingual Generalization](https://arxiv.org/abs/2010.10041)
+
+Authors: [Chi-Liang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+C), [Tsung-Yuan Hsu](https://arxiv.org/search/cs?searchtype=author&query=Hsu%2C+T), [Yung-Sung Chuang](https://arxiv.org/search/cs?searchtype=author&query=Chuang%2C+Y), [Hung-yi Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+H)
+
+> A token embedding in multilingual BERT (m-BERT) contains both language and semantic information. We find that representation of a language can be obtained by simply averaging the embeddings of the tokens of the language. With the language representation, we can control the output languages of multilingual BERT by manipulating the token embeddings and achieve unsupervised token translation. We further propose a computationally cheap but effective approach to improve the cross-lingual ability of m-BERT based on the observation.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2010.10041](https://arxiv.org/abs/2010.10041) [cs.CL]** |
+|           | (or **[arXiv:2010.10041v1](https://arxiv.org/abs/2010.10041v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-21-3">3. Fluent and Low-latency Simultaneous Speech-to-Speech Translation with Self-adaptive Training</h2>
+
+Title: [Fluent and Low-latency Simultaneous Speech-to-Speech Translation with Self-adaptive Training](https://arxiv.org/abs/2010.10048)
+
+Authors: [Zheng Renjie](https://arxiv.org/search/cs?searchtype=author&query=Renjie%2C+Z), [Ma Mingbo](https://arxiv.org/search/cs?searchtype=author&query=Mingbo%2C+M), [Zheng Baigong](https://arxiv.org/search/cs?searchtype=author&query=Baigong%2C+Z), [Liu Kaibo](https://arxiv.org/search/cs?searchtype=author&query=Kaibo%2C+L), [Yuan Jiahong](https://arxiv.org/search/cs?searchtype=author&query=Jiahong%2C+Y), [Church Kenneth](https://arxiv.org/search/cs?searchtype=author&query=Kenneth%2C+C), [Huang Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+H)
+
+> Simultaneous speech-to-speech translation is widely useful but extremely challenging, since it needs to generate target-language speech concurrently with the source-language speech, with only a few seconds delay. In addition, it needs to continuously translate a stream of sentences, but all recent solutions merely focus on the single-sentence scenario. As a result, current approaches accumulate latencies progressively when the speaker talks faster, and introduce unnatural pauses when the speaker talks slower. To overcome these issues, we propose Self-Adaptive Translation (SAT) which flexibly adjusts the length of translations to accommodate different source speech rates. At similar levels of translation quality (as measured by BLEU), our method generates more fluent target speech (as measured by the naturalness metric MOS) with substantially lower latency than the baseline, in both Zh <-> En directions.
+
+| Comments:          | 10 pages, accepted by Findings of EMNLP 2020                 |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Journal reference: | Findings of EMNLP 2020                                       |
+| Cite as:           | **[arXiv:2010.10048](https://arxiv.org/abs/2010.10048) [cs.CL]** |
+|                    | (or **[arXiv:2010.10048v1](https://arxiv.org/abs/2010.10048v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-21-4">4. Complete Multilingual Neural Machine Translation</h2>
+
+Title: [Complete Multilingual Neural Machine Translation](https://arxiv.org/abs/2010.10239)
+
+Authors: [Markus Freitag](https://arxiv.org/search/cs?searchtype=author&query=Freitag%2C+M), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O)
+
+> Multilingual Neural Machine Translation (MNMT) models are commonly trained on a joint set of bilingual corpora which is acutely English-centric (i.e. English either as the source or target language). While direct data between two languages that are non-English is explicitly available at times, its use is not common. In this paper, we first take a step back and look at the commonly used bilingual corpora (WMT), and resurface the existence and importance of implicit structure that existed in it: multi-way alignment across examples (the same sentence in more than two languages). We set out to study the use of multi-way aligned examples to enrich the original English-centric parallel corpora. We reintroduce this direct parallel data from multi-way aligned corpora between all source and target languages. By doing so, the English-centric graph expands into a complete graph, every language pair being connected. We call MNMT with such connectivity pattern complete Multilingual Neural Machine Translation (cMNMT) and demonstrate its utility and efficacy with a series of experiments and analysis. In combination with a novel training data sampling strategy that is conditioned on the target language only, cMNMT yields competitive translation quality for all language pairs. We further study the size effect of multi-way aligned data, its transfer learning capabilities and how it eases adding a new language in MNMT. Finally, we stress test cMNMT at scale and demonstrate that we can train a cMNMT model with up to 111*112=12,432 language pairs that provides competitive translation quality for all language pairs.
+
+| Comments: | Accepted at WMT 2020                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2010.10239](https://arxiv.org/abs/2010.10239) [cs.CL]** |
+|           | (or **[arXiv:2010.10239v1](https://arxiv.org/abs/2010.10239v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-21-5">5. Human-Paraphrased References Improve Neural Machine Translation</h2>
+
+Title: [Human-Paraphrased References Improve Neural Machine Translation](https://arxiv.org/abs/2010.10245)
+
+Authors: [Markus Freitag](https://arxiv.org/search/cs?searchtype=author&query=Freitag%2C+M), [George Foster](https://arxiv.org/search/cs?searchtype=author&query=Foster%2C+G), [David Grangier](https://arxiv.org/search/cs?searchtype=author&query=Grangier%2C+D), [Colin Cherry](https://arxiv.org/search/cs?searchtype=author&query=Cherry%2C+C)
+
+> Automatic evaluation comparing candidate translations to human-generated paraphrases of reference translations has recently been proposed by Freitag et al. When used in place of original references, the paraphrased versions produce metric scores that correlate better with human judgment. This effect holds for a variety of different automatic metrics, and tends to favor natural formulations over more literal (translationese) ones. In this paper we compare the results of performing end-to-end system development using standard and paraphrased references. With state-of-the-art English-German NMT components, we show that tuning to paraphrased references produces a system that is significantly better according to human judgment, but 5 BLEU points worse when tested on standard references. Our work confirms the finding that paraphrased references yield metric scores that correlate better with human judgment, and demonstrates for the first time that using these scores for system development can lead to significant improvements.
+
+| Comments: | Accepted at WMT 2020                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2010.10245](https://arxiv.org/abs/2010.10245) [cs.CL]** |
+|           | (or **[arXiv:2010.10245v1](https://arxiv.org/abs/2010.10245v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-21-6">6. CharacterBERT: Reconciling ELMo and BERT for Word-Level Open-Vocabulary Representations From Characters</h2>
+
+Title: [CharacterBERT: Reconciling ELMo and BERT for Word-Level Open-Vocabulary Representations From Characters](https://arxiv.org/abs/2010.10392)
+
+Authors: [Hicham El Boukkouri](https://arxiv.org/search/cs?searchtype=author&query=Boukkouri%2C+H+E), [Olivier Ferret](https://arxiv.org/search/cs?searchtype=author&query=Ferret%2C+O), [Thomas Lavergne](https://arxiv.org/search/cs?searchtype=author&query=Lavergne%2C+T), [Hiroshi Noji](https://arxiv.org/search/cs?searchtype=author&query=Noji%2C+H), [Pierre Zweigenbaum](https://arxiv.org/search/cs?searchtype=author&query=Zweigenbaum%2C+P), [Junichi Tsujii](https://arxiv.org/search/cs?searchtype=author&query=Tsujii%2C+J)
+
+> Due to the compelling improvements brought by BERT, many recent representation models adopted the Transformer architecture as their main building block, consequently inheriting the wordpiece tokenization system even if it is not intrinsically linked to the notion of Transformer. While this system is thought to achieve a good balance between the flexibility of characters and the efficiency of full words, using predefined wordpiece vocabularies from the general domain is not always suitable, especially when building models for specialized domains (e.g., the medical domain). Moreover, adopting a wordpiece tokenization shifts the focus from the word level to the subword level, making the models conceptually more complex and arguably less convenient in practice. For these reasons, we propose CharacterBERT, a new variant of BERT that drops the wordpiece system altogether and uses a Character-CNN module instead to represent entire words by consulting their characters. We show that this new model improves the performance of BERT on a variety of medical domain tasks while at the same time producing robust, word-level and open-vocabulary representations.
+
+| Comments: | 13 pages, 8 figures and 3 tables. Accepted at COLING 2020    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.10392](https://arxiv.org/abs/2010.10392) [cs.CL]** |
+|           | (or **[arXiv:2010.10392v1](https://arxiv.org/abs/2010.10392v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-21-7">7. Comparison of Interactive Knowledge Base Spelling Correction Models for Low-Resource Languages</h2>
+
+Title: [Comparison of Interactive Knowledge Base Spelling Correction Models for Low-Resource Languages](https://arxiv.org/abs/2010.10472)
+
+Authors: [Yiyuan Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Antonios Anastasopoulos](https://arxiv.org/search/cs?searchtype=author&query=Anastasopoulos%2C+A), [Alan W Black](https://arxiv.org/search/cs?searchtype=author&query=Black%2C+A+W)
+
+> Spelling normalization for low resource languages is a challenging task because the patterns are hard to predict and large corpora are usually required to collect enough examples. This work shows a comparison of a neural model and character language models with varying amounts on target language data. Our usage scenario is interactive correction with nearly zero amounts of training examples, improving models as more data is collected, for example within a chat app. Such models are designed to be incrementally improved as feedback is given from users. In this work, we design a knowledge-base and prediction model embedded system for spelling correction in low-resource languages. Experimental results on multiple languages show that the model could become effective with a small amount of data. We perform experiments on both natural and synthetic data, as well as on data from two endangered languages (Ainu and Griko). Last, we built a prototype system that was used for a small case study on Hinglish, which further demonstrated the suitability of our approach in real world scenarios.
+
+| Comments: | 9 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.10472](https://arxiv.org/abs/2010.10472) [cs.CL]** |
+|           | (or **[arXiv:2010.10472v1](https://arxiv.org/abs/2010.10472v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-21-8">8. Optimal Subarchitecture Extraction For BERT</h2>
+
+Title: [Optimal Subarchitecture Extraction For BERT](https://arxiv.org/abs/2010.10499)
+
+Authors: [Adrian de Wynter](https://arxiv.org/search/cs?searchtype=author&query=de+Wynter%2C+A), [Daniel J. Perry](https://arxiv.org/search/cs?searchtype=author&query=Perry%2C+D+J)
+
+> We extract an optimal subset of architectural parameters for the BERT architecture from Devlin et al. (2018) by applying recent breakthroughs in algorithms for neural architecture search. This optimal subset, which we refer to as "Bort", is demonstrably smaller, having an effective (that is, not counting the embedding layer) size of 5.5% the original BERT-large architecture, and 16% of the net size. Bort is also able to be pretrained in 288 GPU hours, which is 1.2% of the time required to pretrain the highest-performing BERT parametric architectural variant, RoBERTa-large (Liu et al., 2019), and about 33% of that of the world-record, in GPU hours, required to train BERT-large on the same hardware. It is also 7.9x faster on a CPU, as well as being better performing than other compressed variants of the architecture, and some of the non-compressed variants: it obtains performance improvements of between 0.3% and 31%, absolute, with respect to BERT-large, on multiple public natural language understanding (NLU) benchmarks.
+
+| Comments: | Preprint. Under review                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2010.10499](https://arxiv.org/abs/2010.10499) [cs.CL]** |
+|           | (or **[arXiv:2010.10499v1](https://arxiv.org/abs/2010.10499v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+# 2020-10-20
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-10-20-1">1. Emerging Trends of Multimodal Research in Vision and Language</h2>
+
+Title: [Emerging Trends of Multimodal Research in Vision and Language](https://arxiv.org/abs/2010.09522)
+
+Authors: [Shagun Uppal](https://arxiv.org/search/cs?searchtype=author&query=Uppal%2C+S), [Sarthak Bhagat](https://arxiv.org/search/cs?searchtype=author&query=Bhagat%2C+S), [Devamanyu Hazarika](https://arxiv.org/search/cs?searchtype=author&query=Hazarika%2C+D), [Navonil Majumdar](https://arxiv.org/search/cs?searchtype=author&query=Majumdar%2C+N), [Soujanya Poria](https://arxiv.org/search/cs?searchtype=author&query=Poria%2C+S), [Roger Zimmermann](https://arxiv.org/search/cs?searchtype=author&query=Zimmermann%2C+R), [Amir Zadeh](https://arxiv.org/search/cs?searchtype=author&query=Zadeh%2C+A)
+
+> Deep Learning and its applications have cascaded impactful research and development with a diverse range of modalities present in the real-world data. More recently, this has enhanced research interests in the intersection of the Vision and Language arena with its numerous applications and fast-paced growth. In this paper, we present a detailed overview of the latest trends in research pertaining to visual and language modalities. We look at its applications in their task formulations and how to solve various problems related to semantic perception and content generation. We also address task-specific trends, along with their evaluation strategies and upcoming challenges. Moreover, we shed some light on multi-disciplinary patterns and insights that have emerged in the recent past, directing this field towards more modular and transparent intelligent systems. This survey identifies key trends gravitating recent literature in VisLang research and attempts to unearth directions that the field is heading towards.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2010.09522](https://arxiv.org/abs/2010.09522) [cs.CV]** |
+|           | (or **[arXiv:2010.09522v1](https://arxiv.org/abs/2010.09522v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-20-2">2. A Corpus for English-Japanese Multimodal Neural Machine Translation with Comparable Sentences</h2>
+
+Title: [A Corpus for English-Japanese Multimodal Neural Machine Translation with Comparable Sentences](https://arxiv.org/abs/2010.08725)
+
+Authors: [Andrew Merritt](https://arxiv.org/search/cs?searchtype=author&query=Merritt%2C+A), [Chenhui Chu](https://arxiv.org/search/cs?searchtype=author&query=Chu%2C+C), [Yuki Arase](https://arxiv.org/search/cs?searchtype=author&query=Arase%2C+Y)
+
+> Multimodal neural machine translation (NMT) has become an increasingly important area of research over the years because additional modalities, such as image data, can provide more context to textual data. Furthermore, the viability of training multimodal NMT models without a large parallel corpus continues to be investigated due to low availability of parallel sentences with images, particularly for English-Japanese data. However, this void can be filled with comparable sentences that contain bilingual terms and parallel phrases, which are naturally created through media such as social network posts and e-commerce product descriptions. In this paper, we propose a new multimodal English-Japanese corpus with comparable sentences that are compiled from existing image captioning datasets. In addition, we supplement our comparable sentences with a smaller parallel corpus for validation and test purposes. To test the performance of this comparable sentence translation scenario, we train several baseline NMT models with our comparable corpus and evaluate their English-Japanese translation performance. Due to low translation scores in our baseline experiments, we believe that current multimodal NMT models are not designed to effectively utilize comparable sentence data. Despite this, we hope for our corpus to be used to further research into multimodal NMT with comparable sentences.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2010.08725](https://arxiv.org/abs/2010.08725) [cs.CL]** |
+|           | (or **[arXiv:2010.08725v1](https://arxiv.org/abs/2010.08725v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-20-3">3. Incorporate Semantic Structures into Machine Translation Evaluation via UCCA</h2>
+
+Title: [Incorporate Semantic Structures into Machine Translation Evaluation via UCCA](https://arxiv.org/abs/2010.08728)
+
+Authors: [Jin Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+J), [Yinuo Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+Y), [Junfeng Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+J)
+
+> Copying mechanism has been commonly used in neural paraphrasing networks and other text generation tasks, in which some important words in the input sequence are preserved in the output sequence. Similarly, in machine translation, we notice that there are certain words or phrases appearing in all good translations of one source text, and these words tend to convey important semantic information. Therefore, in this work, we define words carrying important semantic meanings in sentences as semantic core words. Moreover, we propose an MT evaluation approach named Semantically Weighted Sentence Similarity (SWSS). It leverages the power of UCCA to identify semantic core words, and then calculates sentence similarity scores on the overlap of semantic core words. Experimental results show that SWSS can consistently improve the performance of popular MT evaluation metrics which are based on lexical similarity.
+
+| Comments: | WMT2020                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.08728](https://arxiv.org/abs/2010.08728) [cs.CL]** |
+|           | (or **[arXiv:2010.08728v1](https://arxiv.org/abs/2010.08728v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-20-4">4. Capturing Longer Context for Document-level Neural Machine Translation: A Multi-resolutional Approach</h2>
+
+Title: [Capturing Longer Context for Document-level Neural Machine Translation: A Multi-resolutional Approach](https://arxiv.org/abs/2010.08961)
+
+Authors: [Zewei Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+Z), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Chengqi Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+C), [Shujian Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Jiajun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> Discourse context has been proven useful when translating documents. It is quite a challenge to incorporate long document context in the prevailing neural machine translation models such as Transformer. In this paper, we propose multi-resolutional (MR) Doc2Doc, a method to train a neural sequence-to-sequence model for document-level translation. Our trained model can simultaneously translate sentence by sentence as well as a document as a whole. We evaluate our method and several recent approaches on nine document-level datasets and two sentence-level datasets across six languages. Experiments show that MR Doc2Doc outperforms sentence-level models and previous methods in a comprehensive set of metrics, including BLEU, four lexical indices, three newly proposed assistant linguistic indicators, and human evaluation.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2010.08961](https://arxiv.org/abs/2010.08961) [cs.CL]** |
+|           | (or **[arXiv:2010.08961v1](https://arxiv.org/abs/2010.08961v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-20-5">5. Meta-Learning for Low-Resource Unsupervised Neural MachineTranslation</h2>
+
+Title: [Meta-Learning for Low-Resource Unsupervised Neural MachineTranslation](https://arxiv.org/abs/2010.09046)
+
+Authors: [Yunwon Tae](https://arxiv.org/search/cs?searchtype=author&query=Tae%2C+Y), [Cheonbok Park](https://arxiv.org/search/cs?searchtype=author&query=Park%2C+C), [Taehee Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+T), [Soyoung Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+S), [Mohammad Azam Khan](https://arxiv.org/search/cs?searchtype=author&query=Khan%2C+M+A), [Eunjeong Park](https://arxiv.org/search/cs?searchtype=author&query=Park%2C+E), [Tao Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+T), [Jaegul Choo](https://arxiv.org/search/cs?searchtype=author&query=Choo%2C+J)
+
+> Unsupervised machine translation, which utilizes unpaired monolingual corpora as training data, has achieved comparable performance against supervised machine translation. However, it still suffers from data-scarce domains. To address this issue, this paper presents a meta-learning algorithm for unsupervised neural machine translation (UNMT) that trains the model to adapt to another domain by utilizing only a small amount of training data. We assume that domain-general knowledge is a significant factor in handling data-scarce domains. Hence, we extend the meta-learning algorithm, which utilizes knowledge learned from high-resource domains to boost the performance of low-resource UNMT. Our model surpasses a transfer learning-based approach by up to 2-4 BLEU scores. Extensive experimental results show that our proposed algorithm is pertinent for fast adaptation and consistently outperforms other baseline models.
+
+| Comments: | 10 pages, 4 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2010.09046](https://arxiv.org/abs/2010.09046) [cs.CL]** |
+|           | (or **[arXiv:2010.09046v1](https://arxiv.org/abs/2010.09046v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-20-6">6. Revisiting Modularized Multilingual NMT to Meet Industrial Demands</h2>
+
+Title: [Revisiting Modularized Multilingual NMT to Meet Industrial Demands](https://arxiv.org/abs/2010.09402)
+
+Authors: [Sungwon Lyu](https://arxiv.org/search/cs?searchtype=author&query=Lyu%2C+S), [Bokyung Son](https://arxiv.org/search/cs?searchtype=author&query=Son%2C+B), [Kichang Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+K), [Jaekyoung Bae](https://arxiv.org/search/cs?searchtype=author&query=Bae%2C+J)
+
+> The complete sharing of parameters for multilingual translation (1-1) has been the mainstream approach in current research. However, degraded performance due to the capacity bottleneck and low maintainability hinders its extensive adoption in industries. In this study, we revisit the multilingual neural machine translation model that only share modules among the same languages (M2) as a practical alternative to 1-1 to satisfy industrial requirements. Through comprehensive experiments, we identify the benefits of multi-way training and demonstrate that the M2 can enjoy these benefits without suffering from the capacity bottleneck. Furthermore, the interlingual space of the M2 allows convenient modification of the model. By leveraging trained modules, we find that incrementally added modules exhibit better performance than singly trained models. The zero-shot performance of the added modules is even comparable to supervised models. Our findings suggest that the M2 can be a competent candidate for multilingual translation in industries.
+
+| Comments: | The 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2010.09402](https://arxiv.org/abs/2010.09402) [cs.CL]** |
+|           | (or **[arXiv:2010.09402v1](https://arxiv.org/abs/2010.09402v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-20-7">7. Diving Deep into Context-Aware Neural Machine Translation</h2>
+
+Title: [Diving Deep into Context-Aware Neural Machine Translation](https://arxiv.org/abs/2010.09482)
+
+Authors: [Jingjing Huo](https://arxiv.org/search/cs?searchtype=author&query=Huo%2C+J), [Christian Herold](https://arxiv.org/search/cs?searchtype=author&query=Herold%2C+C), [Yingbo Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+Y), [Leonard Dahlmann](https://arxiv.org/search/cs?searchtype=author&query=Dahlmann%2C+L), [Shahram Khadivi](https://arxiv.org/search/cs?searchtype=author&query=Khadivi%2C+S), [Hermann Ney](https://arxiv.org/search/cs?searchtype=author&query=Ney%2C+H)
+
+> Context-aware neural machine translation (NMT) is a promising direction to improve the translation quality by making use of the additional context, e.g., document-level translation, or having meta-information. Although there exist various architectures and analyses, the effectiveness of different context-aware NMT models is not well explored yet. This paper analyzes the performance of document-level NMT models on four diverse domains with a varied amount of parallel document-level bilingual data. We conduct a comprehensive set of experiments to investigate the impact of document-level NMT. We find that there is no single best approach to document-level NMT, but rather that different architectures come out on top on different tasks. Looking at task-specific problems, such as pronoun resolution or headline translation, we find improvements in the context-aware systems, even in cases where the corpus-level metrics like BLEU show no significant improvement. We also show that document-level back-translation significantly helps to compensate for the lack of document-level bi-texts.
+
+| Comments: | Accepted at 5th Conference on Machine Translation (WMT20)    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2010.09482](https://arxiv.org/abs/2010.09482) [cs.CL]** |
+|           | (or **[arXiv:2010.09482v1](https://arxiv.org/abs/2010.09482v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-20-8">8. Cold-start Active Learning through Self-supervised Language Modeling</h2>
+
+Title: [Cold-start Active Learning through Self-supervised Language Modeling](https://arxiv.org/abs/2010.09535)
+
+Authors: [Michelle Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+M), [Hsuan-Tien Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+H), [Jordan Boyd-Graber](https://arxiv.org/search/cs?searchtype=author&query=Boyd-Graber%2C+J)
+
+> Active learning strives to reduce annotation costs by choosing the most critical examples to label. Typically, the active learning strategy is contingent on the classification model. For instance, uncertainty sampling depends on poorly calibrated model confidence scores. In the cold-start setting, active learning is impractical because of model instability and data scarcity. Fortunately, modern NLP provides an additional source of information: pre-trained language models. The pre-training loss can find examples that surprise the model and should be labeled for efficient fine-tuning. Therefore, we treat the language modeling loss as a proxy for classification uncertainty. With BERT, we develop a simple strategy based on the masked language modeling loss that minimizes labeling costs for text classification. Compared to other baselines, our approach reaches higher accuracy within less sampling iterations and computation time.
+
+| Comments: | Published in EMNLP 2020                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2010.09535](https://arxiv.org/abs/2010.09535) [cs.CL]** |
+|           | (or **[arXiv:2010.09535v1](https://arxiv.org/abs/2010.09535v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-20-9">9. Subtitles to Segmentation: Improving Low-Resource Speech-to-Text Translation Pipelines</h2>
+
+Title: [Subtitles to Segmentation: Improving Low-Resource Speech-to-Text Translation Pipelines](https://arxiv.org/abs/2010.09693)
+
+Authors: [David Wan](https://arxiv.org/search/cs?searchtype=author&query=Wan%2C+D), [Zhengping Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+Z), [Chris Kedzie](https://arxiv.org/search/cs?searchtype=author&query=Kedzie%2C+C), [Elsbeth Turcan](https://arxiv.org/search/cs?searchtype=author&query=Turcan%2C+E), [Peter Bell](https://arxiv.org/search/cs?searchtype=author&query=Bell%2C+P), [Kathleen McKeown](https://arxiv.org/search/cs?searchtype=author&query=McKeown%2C+K)
+
+> In this work, we focus on improving ASR output segmentation in the context of low-resource language speech-to-text translation. ASR output segmentation is crucial, as ASR systems segment the input audio using purely acoustic information and are not guaranteed to output sentence-like segments. Since most MT systems expect sentences as input, feeding in longer unsegmented passages can lead to sub-optimal performance. We explore the feasibility of using datasets of subtitles from TV shows and movies to train better ASR segmentation models. We further incorporate part-of-speech (POS) tag and dependency label information (derived from the unsegmented ASR outputs) into our segmentation model. We show that this noisy syntactic information can improve model accuracy. We evaluate our models intrinsically on segmentation quality and extrinsically on downstream MT performance, as well as downstream tasks including cross-lingual information retrieval (CLIR) tasks and human relevance assessments. Our model shows improved performance on downstream tasks for Lithuanian and Bulgarian.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | CLSST@LREC 2020 68-73                                        |
+| Cite as:           | **[arXiv:2010.09693](https://arxiv.org/abs/2010.09693) [cs.CL]** |
+|                    | (or **[arXiv:2010.09693v1](https://arxiv.org/abs/2010.09693v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
