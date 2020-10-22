@@ -3,6 +3,17 @@
 # Index
 
 
+- [2020-10-22](#2020-10-22)	
+
+  - [1. Towards End-to-End In-Image Neural Machine Translation](#2020-10-22-1)
+  - [2. Multi-Unit Transformer for Neural Machine Translation](#2020-10-22-2)
+  - [3. Analyzing the Source and Target Contributions to Predictions in Neural Machine Translation](#2020-10-22-3)
+  - [4. What makes multilingual BERT multilingual?](#2020-10-22-4)
+  - [5. Token Drop mechanism for Neural Machine Translation](#2020-10-22-5)
+  - [6. NeuSpell: A Neural Spelling Correction Toolkit](#2020-10-22-6)
+  - [7. Beyond English-Centric Multilingual Machine Translation](#2020-10-22-7)
+  - [8. Sentence Boundary Augmentation For Neural Machine Translation Robustness](#2020-10-22-8)
+  - [9. Cascaded Models With Cyclic Feedback For Direct Speech Translation](#2020-10-22-9)
 - [2020-10-21](#2020-10-21)
 
   - [1. Word Shape Matters: Robust Machine Translation with Visual Embedding](#2020-10-21-1)
@@ -181,6 +192,173 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-10-22
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-10-22-1">1. Towards End-to-End In-Image Neural Machine Translation</h2>
+
+Title: [Towards End-to-End In-Image Neural Machine Translation](https://arxiv.org/abs/2010.10648)
+
+Authors: [Elman Mansimov](https://arxiv.org/search/cs?searchtype=author&query=Mansimov%2C+E), [Mitchell Stern](https://arxiv.org/search/cs?searchtype=author&query=Stern%2C+M), [Mia Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+M), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O), [Jakob Uszkoreit](https://arxiv.org/search/cs?searchtype=author&query=Uszkoreit%2C+J), [Puneet Jain](https://arxiv.org/search/cs?searchtype=author&query=Jain%2C+P)
+
+> In this paper, we offer a preliminary investigation into the task of in-image machine translation: transforming an image containing text in one language into an image containing the same text in another language. We propose an end-to-end neural model for this task inspired by recent approaches to neural machine translation, and demonstrate promising initial results based purely on pixel-level supervision. We then offer a quantitative and qualitative evaluation of our system outputs and discuss some common failure modes. Finally, we conclude with directions for future work.
+
+| Comments: | Accepted as an oral presentation at EMNLP, NLP Beyond Text workshop, 2020 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2010.10648](https://arxiv.org/abs/2010.10648) [cs.CL]** |
+|           | (or **[arXiv:2010.10648v1](https://arxiv.org/abs/2010.10648v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-22-2">2. Multi-Unit Transformer for Neural Machine Translation</h2>
+
+Title: [Multi-Unit Transformer for Neural Machine Translation](https://arxiv.org/abs/2010.10743)
+
+Authors: [Jianhao Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+J), [Fandong Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+F), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J)
+
+> Transformer models achieve remarkable success in Neural Machine Translation. Many efforts have been devoted to deepening the Transformer by stacking several units (i.e., a combination of Multihead Attentions and FFN) in a cascade, while the investigation over multiple parallel units draws little attention. In this paper, we propose the Multi-Unit Transformers (MUTE), which aim to promote the expressiveness of the Transformer by introducing diverse and complementary units. Specifically, we use several parallel units and show that modeling with multiple units improves model performance and introduces diversity. Further, to better leverage the advantage of the multi-unit setting, we design biased module and sequential dependency that guide and encourage complementariness among different units. Experimental results on three machine translation tasks, the NIST Chinese-to-English, WMT'14 English-to-German and WMT'18 Chinese-to-English, show that the MUTE models significantly outperform the Transformer-Base, by up to +1.52, +1.90 and +1.10 BLEU points, with only a mild drop in inference speed (about 3.1%). In addition, our methods also surpass the Transformer-Big model, with only 54\% of its parameters. These results demonstrate the effectiveness of the MUTE, as well as its efficiency in both the inference process and parameter usage.
+
+| Comments: | Accepted as a main conference paper in EMNLP 2020            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.10743](https://arxiv.org/abs/2010.10743) [cs.CL]** |
+|           | (or **[arXiv:2010.10743v1](https://arxiv.org/abs/2010.10743v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-22-3">3. Analyzing the Source and Target Contributions to Predictions in Neural Machine Translation</h2>
+
+Title: [Analyzing the Source and Target Contributions to Predictions in Neural Machine Translation](https://arxiv.org/abs/2010.10907)
+
+Authors: [Elena Voita](https://arxiv.org/search/cs?searchtype=author&query=Voita%2C+E), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R), [Ivan Titov](https://arxiv.org/search/cs?searchtype=author&query=Titov%2C+I)
+
+> In Neural Machine Translation (and, more generally, conditional language modeling), the generation of a target token is influenced by two types of context: the source and the prefix of the target sequence. While many attempts to understand the internal workings of NMT models have been made, none of them explicitly evaluates relative source and target contributions to a generation decision. We argue that this relative contribution can be evaluated by adopting a variant of Layerwise Relevance Propagation (LRP). Its underlying 'conservation principle' makes relevance propagation unique: differently from other methods, it evaluates not an abstract quantity reflecting token importance, but the proportion of each token's influence. We extend LRP to the Transformer and conduct an analysis of NMT models which explicitly evaluates the source and target relative contributions to the generation process. We analyze changes in these contributions when conditioning on different types of prefixes, when varying the training objective or the amount of training data, and during the training process. We find that models trained with more data tend to rely on source information more and to have more sharp token contributions; the training process is non-monotonic with several stages of different nature.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2010.10907](https://arxiv.org/abs/2010.10907) [cs.CL]** |
+|           | (or **[arXiv:2010.10907v1](https://arxiv.org/abs/2010.10907v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-22-4">4. What makes multilingual BERT multilingual?</h2>
+
+Title: [What makes multilingual BERT multilingual?](https://arxiv.org/abs/2010.10938)
+
+Authors: [Chi-Liang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+C), [Tsung-Yuan Hsu](https://arxiv.org/search/cs?searchtype=author&query=Hsu%2C+T), [Yung-Sung Chuang](https://arxiv.org/search/cs?searchtype=author&query=Chuang%2C+Y), [Hung-yi Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+H)
+
+> Recently, multilingual BERT works remarkably well on cross-lingual transfer tasks, superior to static non-contextualized word embeddings. In this work, we provide an in-depth experimental study to supplement the existing literature of cross-lingual ability. We compare the cross-lingual ability of non-contextualized and contextualized representation model with the same data. We found that datasize and context window size are crucial factors to the transferability.
+
+| Comments: | arXiv admin note: substantial text overlap with [arXiv:2004.09205](https://arxiv.org/abs/2004.09205) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2010.10938](https://arxiv.org/abs/2010.10938) [cs.CL]** |
+|           | (or **[arXiv:2010.10938v1](https://arxiv.org/abs/2010.10938v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-22-5">5. Token Drop mechanism for Neural Machine Translation</h2>
+
+Title: [Token Drop mechanism for Neural Machine Translation](https://arxiv.org/abs/2010.11018)
+
+Authors: [Huaao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H), [Shigui Qiu](https://arxiv.org/search/cs?searchtype=author&query=Qiu%2C+S), [Xiangyu Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan%2C+X), [Min Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M)
+
+> Neural machine translation with millions of parameters is vulnerable to unfamiliar inputs. We propose Token Drop to improve generalization and avoid overfitting for the NMT model. Similar to word dropout, whereas we replace dropped token with a special token instead of setting zero to words. We further introduce two self-supervised objectives: Replaced Token Detection and Dropped Token Prediction. Our method aims to force model generating target translation with less information, in this way the model can learn textual representation better. Experiments on Chinese-English and English-Romanian benchmark demonstrate the effectiveness of our approach and our model achieves significant improvements over a strong Transformer baseline.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2010.11018](https://arxiv.org/abs/2010.11018) [cs.CL]** |
+|           | (or **[arXiv:2010.11018v1](https://arxiv.org/abs/2010.11018v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-22-6">6. NeuSpell: A Neural Spelling Correction Toolkit</h2>
+
+Title: [NeuSpell: A Neural Spelling Correction Toolkit](https://arxiv.org/abs/2010.11085)
+
+Authors: [Sai Muralidhar Jayanthi](https://arxiv.org/search/cs?searchtype=author&query=Jayanthi%2C+S+M), [Danish Pruthi](https://arxiv.org/search/cs?searchtype=author&query=Pruthi%2C+D), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
+
+> We introduce NeuSpell, an open-source toolkit for spelling correction in English. Our toolkit comprises ten different models, and benchmarks them on naturally occurring misspellings from multiple sources. We find that many systems do not adequately leverage the context around the misspelt token. To remedy this, (i) we train neural models using spelling errors in context, synthetically constructed by reverse engineering isolated misspellings; and (ii) use contextual representations. By training on our synthetic examples, correction rates improve by 9% (absolute) compared to the case when models are trained on randomly sampled character perturbations. Using richer contextual representations boosts the correction rate by another 3%. Our toolkit enables practitioners to use our proposed and existing spelling correction systems, both via a unified command line, as well as a web interface. Among many potential applications, we demonstrate the utility of our spell-checkers in combating adversarial misspellings. The toolkit can be accessed at [this http URL](http://neuspell.github.io/). Code and pretrained models are available at [this http URL](http://github.com/neuspell/neuspell).
+
+| Comments: | Accepted at EMNLP 2020 (system demonstrations)               |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.11085](https://arxiv.org/abs/2010.11085) [cs.CL]** |
+|           | (or **[arXiv:2010.11085v1](https://arxiv.org/abs/2010.11085v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-22-7">7. Beyond English-Centric Multilingual Machine Translation</h2>
+
+Title: [Beyond English-Centric Multilingual Machine Translation](https://arxiv.org/abs/2010.11125)
+
+Authors: [Angela Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+A), [Shruti Bhosale](https://arxiv.org/search/cs?searchtype=author&query=Bhosale%2C+S), [Holger Schwenk](https://arxiv.org/search/cs?searchtype=author&query=Schwenk%2C+H), [Zhiyi Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+Z), [Ahmed El-Kishky](https://arxiv.org/search/cs?searchtype=author&query=El-Kishky%2C+A), [Siddharth Goyal](https://arxiv.org/search/cs?searchtype=author&query=Goyal%2C+S), [Mandeep Baines](https://arxiv.org/search/cs?searchtype=author&query=Baines%2C+M), [Onur Celebi](https://arxiv.org/search/cs?searchtype=author&query=Celebi%2C+O), [Guillaume Wenzek](https://arxiv.org/search/cs?searchtype=author&query=Wenzek%2C+G), [Vishrav Chaudhary](https://arxiv.org/search/cs?searchtype=author&query=Chaudhary%2C+V), [Naman Goyal](https://arxiv.org/search/cs?searchtype=author&query=Goyal%2C+N), [Tom Birch](https://arxiv.org/search/cs?searchtype=author&query=Birch%2C+T), [Vitaliy Liptchinsky](https://arxiv.org/search/cs?searchtype=author&query=Liptchinsky%2C+V), [Sergey Edunov](https://arxiv.org/search/cs?searchtype=author&query=Edunov%2C+S), [Edouard Grave](https://arxiv.org/search/cs?searchtype=author&query=Grave%2C+E), [Michael Auli](https://arxiv.org/search/cs?searchtype=author&query=Auli%2C+M), [Armand Joulin](https://arxiv.org/search/cs?searchtype=author&query=Joulin%2C+A)
+
+> Existing work in translation demonstrated the potential of massively multilingual machine translation by training a single model able to translate between any pair of languages. However, much of this work is English-Centric by training only on data which was translated from or to English. While this is supported by large sources of training data, it does not reflect translation needs worldwide. In this work, we create a true Many-to-Many multilingual translation model that can translate directly between any pair of 100 languages. We build and open source a training dataset that covers thousands of language directions with supervised data, created through large-scale mining. Then, we explore how to effectively increase model capacity through a combination of dense scaling and language-specific sparse parameters to create high quality models. Our focus on non-English-Centric models brings gains of more than 10 BLEU when directly translating between non-English directions while performing competitively to the best single systems of WMT. We open-source our scripts so that others may reproduce the data, evaluation, and final M2M-100 model.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2010.11125](https://arxiv.org/abs/2010.11125) [cs.CL]** |
+|           | (or **[arXiv:2010.11125v1](https://arxiv.org/abs/2010.11125v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-22-8">8. Sentence Boundary Augmentation For Neural Machine Translation Robustness</h2>
+
+Title: [Sentence Boundary Augmentation For Neural Machine Translation Robustness](https://arxiv.org/abs/2010.11132)
+
+Authors: [Daniel Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+D), [Te I](https://arxiv.org/search/cs?searchtype=author&query=I%2C+T), [Naveen Arivazhagan](https://arxiv.org/search/cs?searchtype=author&query=Arivazhagan%2C+N), [Colin Cherry](https://arxiv.org/search/cs?searchtype=author&query=Cherry%2C+C), [Dirk Padfield](https://arxiv.org/search/cs?searchtype=author&query=Padfield%2C+D)
+
+> Neural Machine Translation (NMT) models have demonstrated strong state of the art performance on translation tasks where well-formed training and evaluation data are provided, but they remain sensitive to inputs that include errors of various types. Specifically, in the context of long-form speech translation systems, where the input transcripts come from Automatic Speech Recognition (ASR), the NMT models have to handle errors including phoneme substitutions, grammatical structure, and sentence boundaries, all of which pose challenges to NMT robustness. Through in-depth error analysis, we show that sentence boundary segmentation has the largest impact on quality, and we develop a simple data augmentation strategy to improve segmentation robustness.
+
+| Comments: | 5 pages, 4 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2010.11132](https://arxiv.org/abs/2010.11132) [cs.CL]** |
+|           | (or **[arXiv:2010.11132v1](https://arxiv.org/abs/2010.11132v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-10-22-9">9. Cascaded Models With Cyclic Feedback For Direct Speech Translation</h2>
+
+Title: [Cascaded Models With Cyclic Feedback For Direct Speech Translation](https://arxiv.org/abs/2010.11153)
+
+Authors: [Tsz Kin Lam](https://arxiv.org/search/cs?searchtype=author&query=Lam%2C+T+K), [Shigehiko Schamoni](https://arxiv.org/search/cs?searchtype=author&query=Schamoni%2C+S), [Stefan Riezler](https://arxiv.org/search/cs?searchtype=author&query=Riezler%2C+S)
+
+> Direct speech translation describes a scenario where only speech inputs and corresponding translations are available. Such data are notoriously limited. We present a technique that allows cascades of automatic speech recognition (ASR) and machine translation (MT) to exploit in-domain direct speech translation data in addition to out-of-domain MT and ASR data. After pre-training MT and ASR, we use a feedback cycle where the downstream performance of the MT system is used as a signal to improve the ASR system by self-training, and the MT component is fine-tuned on multiple ASR outputs, making it more tolerant towards spelling variations. A comparison to end-to-end speech translation using components of identical architecture and the same data shows gains of up to 3.8 BLEU points on LibriVoxDeEn and up to 5.1 BLEU points on CoVoST for German-to-English speech translation.
+
+| Comments: | 5 pages, 1 figure                                            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2010.11153](https://arxiv.org/abs/2010.11153) [cs.CL]** |
+|           | (or **[arXiv:2010.11153v1](https://arxiv.org/abs/2010.11153v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
