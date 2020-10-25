@@ -4,11 +4,12 @@ This repository is a sub branch of AI Knowledge Tree, mainly focus on Natural La
 
 
 
+- [Generate arXiv citation format](https://arxiv2bibtex.org/)
 - [ZNLP: State-of-the-art-NLP](https://github.com/ZNLP/SOTA-MT)
-- [A NLP Entrance Page made by Kevin Knight's team.](https://chinesenlp.xyz/#/)
+- [An NLP Entrance Page made by Kevin Knight's team.](https://chinesenlp.xyz/#/)
 - [Surveys](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/AIKT-NLP_Surveys.md)
 - [The Best and Most Current of Modern Natural Language Processing](https://medium.com/huggingface/the-best-and-most-current-of-modern-natural-language-processing-5055f409a1d1) made by HuggingFace, last updated on 22nd, May, 2019.
-- [A open-resource book collection of NLP](https://github.com/duoergun0729/nlp) made by [duoergun0729](https://github.com/duoergun0729).
+- [An open-resource book collection of NLP](https://github.com/duoergun0729/nlp) made by [duoergun0729](https://github.com/duoergun0729).
 - [会议论文合辑（Conference Papers）](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Conference_Papers/AIKT-NLP-Conference_Papers.md)
 - [表示学习（Learning Representation）](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/AIKT-Learning_Representation.md)
   - 词表示（Word Representation）
