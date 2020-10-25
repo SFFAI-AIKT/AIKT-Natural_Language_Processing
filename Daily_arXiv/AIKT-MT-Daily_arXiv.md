@@ -3,6 +3,18 @@
 # Index
 
 
+- [2020-10-23](#2020-10-23)
+
+  - [1. Similarity Analysis of Self-Supervised Speech Representations](#2020-10-23-1)
+  - [2. Autoregressive Modeling is Misspecified for Some Sequence Distributions](#2020-10-23-2)
+  - [3. Improving Simultaneous Translation with Pseudo References](#2020-10-23-3)
+  - [4. A General Multi-Task Learning Framework to Leverage Text Data for Speech to Text Tasks](#2020-10-23-4)
+  - [5. MAM: Masked Acoustic Modeling for End-to-End Speech-to-Text Translation](#2020-10-23-5)
+  - [6. A Technical Report: BUT Speech Translation Systems](#2020-10-23-6)
+  - [7. CUNI Systems for the Unsupervised and Very Low Resource Translation Task in WMT20](#2020-10-23-7)
+  - [8. Not all parameters are born equal: Attention is mostly what you need](#2020-10-23-8)
+  - [9. mT5: A massively multilingual pre-trained text-to-text transformer](#2020-10-23-9)
+  - [10. UniCase -- Rethinking Casing in Language Models](#2020-10-23-10)
 - [2020-10-22](#2020-10-22)	
 
   - [1. Towards End-to-End In-Image Neural Machine Translation](#2020-10-22-1)
@@ -192,6 +204,192 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-10-23
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-10-23-1">1. Similarity Analysis of Self-Supervised Speech Representations</h2>
+
+Title: [Similarity Analysis of Self-Supervised Speech Representations](https://arxiv.org/abs/2010.11481)
+
+Authors: [Yu-An Chung](https://arxiv.org/search/eess?searchtype=author&query=Chung%2C+Y), [Yonatan Belinkov](https://arxiv.org/search/eess?searchtype=author&query=Belinkov%2C+Y), [James Glass](https://arxiv.org/search/eess?searchtype=author&query=Glass%2C+J)
+
+> Self-supervised speech representation learning has recently been a prosperous research topic. Many algorithms have been proposed for learning useful representations from large-scale unlabeled data, and their applications to a wide range of speech tasks have also been investigated. However, there has been little research focusing on understanding the properties of existing approaches. In this work, we aim to provide a comparative study of some of the most representative self-supervised algorithms. Specifically, we quantify the similarities between different self-supervised representations using existing similarity measures. We also design probing tasks to study the correlation between the models' pre-training loss and the amount of specific speech information contained in their learned representations. In addition to showing how various self-supervised models behave differently given the same input, our study also finds that the training objective has a higher impact on representation similarity than architectural choices such as building blocks (RNN/Transformer/CNN) and directionality (uni/bidirectional). Our results also suggest that there exists a strong correlation between pre-training loss and downstream performance for some self-supervised algorithms.
+
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Machine Learning (cs.LG); Sound (cs.SD) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2010.11481](https://arxiv.org/abs/2010.11481) [eess.AS] |
+|           | (or [arXiv:2010.11481v1](https://arxiv.org/abs/2010.11481v1) [eess.AS] for this version) |
+
+
+
+
+
+<h2 id="2020-10-23-2">2. Autoregressive Modeling is Misspecified for Some Sequence Distributions</h2>
+
+Title: [Autoregressive Modeling is Misspecified for Some Sequence Distributions](https://arxiv.org/abs/2010.11939)
+
+Authors: [Chu-Cheng Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+C), [Aaron Jaech](https://arxiv.org/search/cs?searchtype=author&query=Jaech%2C+A), [Xin Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Matt Gormley](https://arxiv.org/search/cs?searchtype=author&query=Gormley%2C+M), [Jason Eisner](https://arxiv.org/search/cs?searchtype=author&query=Eisner%2C+J)
+
+> Should sequences be modeled autoregressively---one symbol at a time? How much computation is needed to predict the next symbol? While local normalization is cheap, this also limits its power. We point out that some probability distributions over discrete sequences cannot be well-approximated by any autoregressive model whose runtime and parameter size grow polynomially in the sequence length---even though their unnormalized sequence probabilities are efficient to compute exactly. Intuitively, the probability of the next symbol can be expensive to compute or approximate (even via randomized algorithms) when it marginalizes over exponentially many possible futures, which is in general NP-hard. Our result is conditional on the widely believed hypothesis that NP⊈P/poly (without which the polynomial hierarchy would collapse at the second level). This theoretical observation serves as a caution to the viewpoint that pumping up parameter size is a straightforward way to improve autoregressive models (e.g., in language modeling). It also suggests that globally normalized (energy-based) models may sometimes outperform locally normalized (autoregressive) models, as we demonstrate experimentally for language modeling.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2010.11939](https://arxiv.org/abs/2010.11939) [cs.LG] |
+|           | (or [arXiv:2010.11939v1](https://arxiv.org/abs/2010.11939v1) [cs.LG] for this version) |
+
+
+
+
+
+<h2 id="2020-10-23-3">3. Improving Simultaneous Translation with Pseudo References
+</h2>
+
+Title: [Improving Simultaneous Translation with Pseudo References](https://arxiv.org/abs/2010.11247)
+
+Authors: [Junkun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J), [Renjie Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+R), [Atsuhito Kita](https://arxiv.org/search/cs?searchtype=author&query=Kita%2C+A), [Mingbo Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+M), [Liang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+L)
+
+> Simultaneous translation is vastly different from full-sentence translation, in the sense that it starts translation before the source sentence ends, with only a few words delay. However, due to the lack of large scale and publicly available simultaneous translation datasets, most simultaneous translation systems still train with ordinary full-sentence parallel corpora which are not suitable for the simultaneous scenario due to the existence of unnecessary long-distance reorderings. Instead of expensive, time-consuming annotation, we propose a novel method that rewrites the target side of existing full-sentence corpus into simultaneous-style translation. Experiments on Chinese-to-English translation demonstrate about +2.7 BLEU improvements with the addition of newly generated pseudo references.
+
+| Comments: | 6 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2010.11247](https://arxiv.org/abs/2010.11247) [cs.CL] |
+|           | (or [arXiv:2010.11247v1](https://arxiv.org/abs/2010.11247v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-10-23-4">4. A General Multi-Task Learning Framework to Leverage Text Data for Speech to Text Tasks</h2>
+
+Title: [A General Multi-Task Learning Framework to Leverage Text Data for Speech to Text Tasks](https://arxiv.org/abs/2010.11338)
+
+Authors: [Yun Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+Y), [Juan Pino](https://arxiv.org/search/cs?searchtype=author&query=Pino%2C+J), [Changhan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Xutai Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+X), [Dmitriy Genzel](https://arxiv.org/search/cs?searchtype=author&query=Genzel%2C+D)
+
+> Attention-based sequence-to-sequence modeling provides a powerful and elegant solution for applications that need to map one sequence to a different sequence. Its success heavily relies on the availability of large amounts of training data. This presents a challenge for speech applications where labelled speech data is very expensive to obtain, such as automatic speech recognition (ASR) and speech translation (ST). In this study, we propose a general multi-task learning framework to leverage text data for ASR and ST tasks. Two auxiliary tasks, a denoising autoencoder task and machine translation task, are proposed to be co-trained with ASR and ST tasks respectively. We demonstrate that representing text input as phoneme sequences can reduce the difference between speech and text inputs, and enhance the knowledge transfer from text corpora to the speech to text tasks. Our experiments show that the proposed method achieves a relative 10~15% word error rate reduction on the English Librispeech task, and improves the speech translation quality on the MuST-C tasks by 4.2~11.1 BLEU.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2010.11338](https://arxiv.org/abs/2010.11338) [cs.CL] |
+|           | (or [arXiv:2010.11338v1](https://arxiv.org/abs/2010.11338v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-10-23-5">5. MAM: Masked Acoustic Modeling for End-to-End Speech-to-Text Translation</h2>
+
+Title: [MAM: Masked Acoustic Modeling for End-to-End Speech-to-Text Translation](https://arxiv.org/abs/2010.11445)
+
+Authors: [Junkun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J), [Mingbo Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+M), [Renjie Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+R), [Liang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+L)
+
+> End-to-end Speech-to-text Translation (E2E- ST), which directly translates source language speech to target language text, is widely useful in practice, but traditional cascaded approaches (ASR+MT) often suffer from error propagation in the pipeline. On the other hand, existing end-to-end solutions heavily depend on the source language transcriptions for pre-training or multi-task training with Automatic Speech Recognition (ASR). We instead propose a simple technique to learn a robust speech encoder in a self-supervised fashion only on the speech side, which can utilize speech data without transcription. This technique, termed Masked Acoustic Modeling (MAM), can also perform pre-training, for the first time, on any acoustic signals (including non-speech ones) without annotation. Compared with current state-of-the-art models on ST, our technique achieves +1.4 BLEU improvement without using transcriptions, and +1.2 BLEU using transcriptions. The pre-training of MAM with arbitrary acoustic signals also boosts the downstream speech-related tasks.
+
+| Comments: | 10 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2010.11445](https://arxiv.org/abs/2010.11445) [cs.CL] |
+|           | (or [arXiv:2010.11445v1](https://arxiv.org/abs/2010.11445v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-10-23-6">6. A Technical Report: BUT Speech Translation Systems</h2>
+
+Title: [A Technical Report: BUT Speech Translation Systems](https://arxiv.org/abs/2010.11593)
+
+Authors: [Hari Krishna Vydana](https://arxiv.org/search/cs?searchtype=author&query=Vydana%2C+H+K), [Lukas Burget](https://arxiv.org/search/cs?searchtype=author&query=Burget%2C+L), [Jan Cernocky](https://arxiv.org/search/cs?searchtype=author&query=Cernocky%2C+J)
+
+> The paper describes the BUT's speech translation systems. The systems are English⟶German offline speech translation systems. The systems are based on our previous works \cite{Jointly_trained_transformers}. Though End-to-End and cascade~(ASR-MT) spoken language translation~(SLT) systems are reaching comparable performances, a large degradation is observed when translating ASR hypothesis compared to the oracle input text. To reduce this performance degradation, we have jointly-trained ASR and MT modules with ASR objective as an auxiliary loss. Both the networks are connected through the neural hidden representations. This model has an End-to-End differentiable path with respect to the final objective function and also utilizes the ASR objective for better optimization. During the inference both the modules(i.e., ASR and MT) are connected through the hidden representations corresponding to the n-best hypotheses. Ensembling with independently trained ASR and MT models have further improved the performance of the system.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2010.11593](https://arxiv.org/abs/2010.11593) [cs.CL] |
+|           | (or [arXiv:2010.11593v1](https://arxiv.org/abs/2010.11593v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-10-23-7">7. CUNI Systems for the Unsupervised and Very Low Resource Translation Task in WMT20</h2>
+
+Title: [CUNI Systems for the Unsupervised and Very Low Resource Translation Task in WMT20](https://arxiv.org/abs/2010.11747)
+
+Authors: [Ivana Kvapilíková](https://arxiv.org/search/cs?searchtype=author&query=Kvapilíková%2C+I), [Tom Kocmi](https://arxiv.org/search/cs?searchtype=author&query=Kocmi%2C+T), [Ondřej Bojar](https://arxiv.org/search/cs?searchtype=author&query=Bojar%2C+O)
+
+> This paper presents a description of CUNI systems submitted to the WMT20 task on unsupervised and very low-resource supervised machine translation between German and Upper Sorbian. We experimented with training on synthetic data and pre-training on a related language pair. In the fully unsupervised scenario, we achieved 25.5 and 23.7 BLEU translating from and into Upper Sorbian, respectively. Our low-resource systems relied on transfer learning from German-Czech parallel data and achieved 57.4 BLEU and 56.1 BLEU, which is an improvement of 10 BLEU points over the baseline trained only on the available small German-Upper Sorbian parallel corpus.
+
+| Comments: | WMT20                                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2010.11747](https://arxiv.org/abs/2010.11747) [cs.CL] |
+|           | (or [arXiv:2010.11747v1](https://arxiv.org/abs/2010.11747v1) [cs.CL] for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-10-23-8">8. Not all parameters are born equal: Attention is mostly what you need</h2>
+
+Title: [Not all parameters are born equal: Attention is mostly what you need](https://arxiv.org/abs/2010.11859)
+
+Authors: [Nikolay Bogoychev](https://arxiv.org/search/cs?searchtype=author&query=Bogoychev%2C+N)
+
+> Transformers are widely used in state-of-the-art machine translation, but the key to their success is still unknown. To gain insight into this, we consider three groups of parameters: embeddings, attention, and feed forward neural network (FFN) layers. We examine the relative importance of each by performing an ablation study where we initialise them at random and freeze them, so that their weights do not change over the course of the training. Through this, we show that the attention and FFN are equally important and fulfil the same functionality in a model. We show that the decision about whether a component is frozen or allowed to train is at least as important for the final model performance as its number of parameters. At the same time, the number of parameters alone is not indicative of a component's importance. Finally, while the embedding layer is the least essential for machine translation tasks, it is the most important component for language modelling tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2010.11859](https://arxiv.org/abs/2010.11859) [cs.CL] |
+|           | (or [arXiv:2010.11859v1](https://arxiv.org/abs/2010.11859v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-10-23-9">9. mT5: A massively multilingual pre-trained text-to-text transformer</h2>
+
+Title: [mT5: A massively multilingual pre-trained text-to-text transformer](https://arxiv.org/abs/2010.11934)
+
+Authors: [Linting Xue](https://arxiv.org/search/cs?searchtype=author&query=Xue%2C+L), [Noah Constant](https://arxiv.org/search/cs?searchtype=author&query=Constant%2C+N), [Adam Roberts](https://arxiv.org/search/cs?searchtype=author&query=Roberts%2C+A), [Mihir Kale](https://arxiv.org/search/cs?searchtype=author&query=Kale%2C+M), [Rami Al-Rfou](https://arxiv.org/search/cs?searchtype=author&query=Al-Rfou%2C+R), [Aditya Siddhant](https://arxiv.org/search/cs?searchtype=author&query=Siddhant%2C+A), [Aditya Barua](https://arxiv.org/search/cs?searchtype=author&query=Barua%2C+A), [Colin Raffel](https://arxiv.org/search/cs?searchtype=author&query=Raffel%2C+C)
+
+> The recent "Text-to-Text Transfer Transformer" (T5) leveraged a unified text-to-text format and scale to attain state-of-the-art results on a wide variety of English-language NLP tasks. In this paper, we introduce mT5, a multilingual variant of T5 that was pre-trained on a new Common Crawl-based dataset covering 101 languages. We describe the design and modified training of mT5 and demonstrate its state-of-the-art performance on many multilingual benchmarks. All of the code and model checkpoints used in this work are publicly available.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2010.11934](https://arxiv.org/abs/2010.11934) [cs.CL] |
+|           | (or [arXiv:2010.11934v1](https://arxiv.org/abs/2010.11934v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-10-23-10">10. UniCase -- Rethinking Casing in Language Models</h2>
+
+Title: [UniCase -- Rethinking Casing in Language Models](https://arxiv.org/abs/2010.11936)
+
+Authors: [Rafal Powalski](https://arxiv.org/search/cs?searchtype=author&query=Powalski%2C+R), [Tomasz Stanislawek](https://arxiv.org/search/cs?searchtype=author&query=Stanislawek%2C+T)
+
+> In this paper, we introduce a new approach to dealing with the problem of case-sensitiveness in Language Modelling (LM). We propose simple architecture modification to the RoBERTa language model, accompanied by a new tokenization strategy, which we named Unified Case LM (UniCase). We tested our solution on the GLUE benchmark, which led to increased performance by 0.42 points. Moreover, we prove that the UniCase model works much better when we have to deal with text data, where all tokens are uppercased (+5.88 point).
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2010.11936](https://arxiv.org/abs/2010.11936) [cs.CL] |
+|           | (or [arXiv:2010.11936v1](https://arxiv.org/abs/2010.11936v1) [cs.CL] for this version) |
+
+
+
+
+
+
 
 
 
