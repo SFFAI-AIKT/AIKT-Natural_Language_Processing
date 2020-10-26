@@ -192,7 +192,7 @@
   - [3. Can Automatic Post-Editing Improve NMT?](#2020-10-01-3)
   - [4. Cross-lingual Spoken Language Understanding with Regularized Representation Alignment](#2020-10-01-4)
   - [5. On Romanization for Model Transfer Between Scripts in Neural Machine Translation](#2020-10-01-5)
-- [Other Colums](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+- [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
 
 
 
