@@ -3,9 +3,16 @@
 # Index
 
 
-- [2020-10-23](#2020-10-23)
+- [2020-10-26](#2020-10-26)
 
-  - [1. Similarity Analysis of Self-Supervised Speech Representations](#2020-10-23-1)
+  - [1. Multilingual BERT Post-Pretraining Alignment](#2020-10-26-1)
+  - [2. On the Transformer Growth for Progressive BERT Training](#2020-10-26-2)
+  - [3. DICT-MLM: Improved Multilingual Pre-Training using Bilingual Dictionaries](#2020-10-26-3)
+  - [4. Language-Conditioned Imitation Learning for Robot Manipulation Tasks](#2020-10-26-4)
+  - [5. How Phonotactics Affect Multilingual and Zero-shot ASR Performance](#2020-10-26-5)
+  - [6. A Survey on Recent Approaches for Natural Language Processing in Low-Resource Scenarios](#2020-10-26-6)
+- [2020-10-23](#2020-10-23)
+- [1. Similarity Analysis of Self-Supervised Speech Representations](#2020-10-23-1)
   - [2. Autoregressive Modeling is Misspecified for Some Sequence Distributions](#2020-10-23-2)
   - [3. Improving Simultaneous Translation with Pseudo References](#2020-10-23-3)
   - [4. A General Multi-Task Learning Framework to Leverage Text Data for Speech to Text Tasks](#2020-10-23-4)
@@ -204,6 +211,119 @@
 - [2019-05](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-05.md)
 - [2019-04](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-04.md)
 - [2019-03](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-2019-03.md)
+
+
+
+# 2020-10-26
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-10-26-1">1. Multilingual BERT Post-Pretraining Alignment</h2>
+
+Title: [Multilingual BERT Post-Pretraining Alignment](https://arxiv.org/abs/2010.12547)
+
+Authors: [Lin Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C+L), [Chung-Wei Hang](https://arxiv.org/search/cs?searchtype=author&query=Hang%2C+C), [Haode Qi](https://arxiv.org/search/cs?searchtype=author&query=Qi%2C+H), [Abhishek Shah](https://arxiv.org/search/cs?searchtype=author&query=Shah%2C+A), [Mo Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+M), [Saloni Potdar](https://arxiv.org/search/cs?searchtype=author&query=Potdar%2C+S)
+
+> We propose a simple method to align multilingual contextual embeddings as a post-pretraining step for improved zero-shot cross-lingual transferability of the pretrained models. Using parallel data, our method aligns embeddings on the word level through the recently proposed Translation Language Modeling objective as well as on the sentence level via contrastive learning and random input shuffling. We also perform code-switching with English when finetuning on downstream tasks. On XNLI, our best model (initialized from mBERT) improves over mBERT by 4.7% in the zero-shot setting and achieves comparable result to XLM for translate-train while using less than 18% of the same parallel data and 31% less model parameters. On MLQA, our model outperforms XLM-R_Base that has 57% more parameters than ours.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2010.12547](https://arxiv.org/abs/2010.12547) [cs.CL] |
+|           | (or [arXiv:2010.12547v1](https://arxiv.org/abs/2010.12547v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-10-26-2">2. On the Transformer Growth for Progressive BERT Training</h2>
+
+Title: [On the Transformer Growth for Progressive BERT Training](https://arxiv.org/abs/2010.12562)
+
+Authors: [Xiaotao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+X), [Liyuan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+L), [Hongkun Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+H), [Jing Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Chen Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+C), [Jiawei Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+J)
+
+> As the excessive pre-training cost arouses the need to improve efficiency, considerable efforts have been made to train BERT progressively--start from an inferior but low-cost model and gradually increase the computational complexity. Our objective is to help advance the understanding of such Transformer growth and discover principles that guide progressive training. First, we find that similar to network architecture selection, Transformer growth also favors compound scaling. Specifically, while existing methods only conduct network growth in a single dimension, we observe that it is beneficial to use compound growth operators and balance multiple dimensions (e.g., depth, width, and input length of the model). Moreover, we explore alternative growth operators in each dimension via controlled comparison to give practical guidance for operator selection. In light of our analyses, the proposed method CompoundGrow speeds up BERT pre-training by 73.6% and 82.2% for the base and large models respectively while achieving comparable performances. Code will be released for reproduction and future studies.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2010.12562](https://arxiv.org/abs/2010.12562) [cs.CL] |
+|           | (or [arXiv:2010.12562v1](https://arxiv.org/abs/2010.12562v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-10-26-3">3. DICT-MLM: Improved Multilingual Pre-Training using Bilingual Dictionaries</h2>
+
+Title: [DICT-MLM: Improved Multilingual Pre-Training using Bilingual Dictionaries](https://arxiv.org/abs/2010.12566)
+
+Authors: [Aditi Chaudhary](https://arxiv.org/search/cs?searchtype=author&query=Chaudhary%2C+A), [Karthik Raman](https://arxiv.org/search/cs?searchtype=author&query=Raman%2C+K), [Krishna Srinivasan](https://arxiv.org/search/cs?searchtype=author&query=Srinivasan%2C+K), [Jiecao Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J)
+
+> Pre-trained multilingual language models such as mBERT have shown immense gains for several natural language processing (NLP) tasks, especially in the zero-shot cross-lingual setting. Most, if not all, of these pre-trained models rely on the masked-language modeling (MLM) objective as the key language learning objective. The principle behind these approaches is that predicting the masked words with the help of the surrounding text helps learn potent contextualized representations. Despite the strong representation learning capability enabled by MLM, we demonstrate an inherent limitation of MLM for multilingual representation learning. In particular, by requiring the model to predict the language-specific token, the MLM objective disincentivizes learning a language-agnostic representation -- which is a key goal of multilingual pre-training. Therefore to encourage better cross-lingual representation learning we propose the DICT-MLM method. DICT-MLM works by incentivizing the model to be able to predict not just the original masked word, but potentially any of its cross-lingual synonyms as well. Our empirical analysis on multiple downstream tasks spanning 30+ languages, demonstrates the efficacy of the proposed approach and its ability to learn better multilingual representations.
+
+| Comments: | 13 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2010.12566](https://arxiv.org/abs/2010.12566) [cs.CL] |
+|           | (or [arXiv:2010.12566v1](https://arxiv.org/abs/2010.12566v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-10-26-4">4. Language-Conditioned Imitation Learning for Robot Manipulation Tasks</h2>
+
+Title: [Language-Conditioned Imitation Learning for Robot Manipulation Tasks](https://arxiv.org/abs/2010.12083)
+
+Authors: [Simon Stepputtis](https://arxiv.org/search/cs?searchtype=author&query=Stepputtis%2C+S), [Joseph Campbell](https://arxiv.org/search/cs?searchtype=author&query=Campbell%2C+J), [Mariano Phielipp](https://arxiv.org/search/cs?searchtype=author&query=Phielipp%2C+M), [Stefan Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+S), [Chitta Baral](https://arxiv.org/search/cs?searchtype=author&query=Baral%2C+C), [Heni Ben Amor](https://arxiv.org/search/cs?searchtype=author&query=Amor%2C+H+B)
+
+> Imitation learning is a popular approach for teaching motor skills to robots. However, most approaches focus on extracting policy parameters from execution traces alone (i.e., motion trajectories and perceptual data). No adequate communication channel exists between the human expert and the robot to describe critical aspects of the task, such as the properties of the target object or the intended shape of the motion. Motivated by insights into the human teaching process, we introduce a method for incorporating unstructured natural language into imitation learning. At training time, the expert can provide demonstrations along with verbal descriptions in order to describe the underlying intent (e.g., "go to the large green bowl"). The training process then interrelates these two modalities to encode the correlations between language, perception, and motion. The resulting language-conditioned visuomotor policies can be conditioned at runtime on new human commands and instructions, which allows for more fine-grained control over the trained policies while also reducing situational ambiguity. We demonstrate in a set of simulation experiments how our approach can learn language-conditioned manipulation policies for a seven-degree-of-freedom robot arm and compare the results to a variety of alternative methods.
+
+| Comments: | Accepted to the 34th Conference on Neural Information Processing Systems (NeurIPS 2020), Vancouver, Canada as spotlight presentation |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Robotics (cs.RO)**; Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:2010.12083](https://arxiv.org/abs/2010.12083) [cs.RO] |
+|           | (or [arXiv:2010.12083v1](https://arxiv.org/abs/2010.12083v1) [cs.RO] for this version) |
+
+
+
+
+
+<h2 id="2020-10-26-5">5. How Phonotactics Affect Multilingual and Zero-shot ASR Performance</h2>
+
+Title: [How Phonotactics Affect Multilingual and Zero-shot ASR Performance](https://arxiv.org/abs/2010.12104)
+
+Authors: [Siyuan Feng](https://arxiv.org/search/eess?searchtype=author&query=Feng%2C+S), [Piotr Żelasko](https://arxiv.org/search/eess?searchtype=author&query=Żelasko%2C+P), [Laureano Moro-Velázquez](https://arxiv.org/search/eess?searchtype=author&query=Moro-Velázquez%2C+L), [Ali Abavisani](https://arxiv.org/search/eess?searchtype=author&query=Abavisani%2C+A), [Mark Hasegawa-Johnson](https://arxiv.org/search/eess?searchtype=author&query=Hasegawa-Johnson%2C+M), [Odette Scharenborg](https://arxiv.org/search/eess?searchtype=author&query=Scharenborg%2C+O), [Najim Dehak](https://arxiv.org/search/eess?searchtype=author&query=Dehak%2C+N)
+
+> The idea of combining multiple languages' recordings to train a single automatic speech recognition (ASR) model brings the promise of the emergence of universal speech representation. Recently, a Transformer encoder-decoder model has been shown to leverage multilingual data well in IPA transcriptions of languages presented during training. However, the representations it learned were not successful in zero-shot transfer to unseen languages. Because that model lacks an explicit factorization of the acoustic model (AM) and language model (LM), it is unclear to what degree the performance suffered from differences in pronunciation or the mismatch in phonotactics. To gain more insight into the factors limiting zero-shot ASR transfer, we replace the encoder-decoder with a hybrid ASR system consisting of a separate AM and LM. Then, we perform an extensive evaluation of monolingual, multilingual, and crosslingual (zero-shot) acoustic and language models on a set of 13 phonetically diverse languages. We show that the gain from modeling crosslingual phonotactics is limited, and imposing a too strong model can hurt the zero-shot transfer. Furthermore, we find that a multilingual LM hurts a multilingual ASR system's performance, and retaining only the target language's phonotactic data in LM training is preferable.
+
+| Comments: | Submitted to ICASSP 2021. The first 2 authors contributed equally to this work |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Sound (cs.SD) |
+| Cite as:  | [arXiv:2010.12104](https://arxiv.org/abs/2010.12104) [eess.AS] |
+|           | (or [arXiv:2010.12104v1](https://arxiv.org/abs/2010.12104v1) [eess.AS] for this version) |
+
+
+
+
+
+<h2 id="2020-10-26-6">6. A Survey on Recent Approaches for Natural Language Processing in Low-Resource Scenarios</h2>
+
+Title: [A Survey on Recent Approaches for Natural Language Processing in Low-Resource Scenarios](https://arxiv.org/abs/2010.12309)
+
+Authors: [Michael A. Hedderich](https://arxiv.org/search/cs?searchtype=author&query=Hedderich%2C+M+A), [Lukas Lange](https://arxiv.org/search/cs?searchtype=author&query=Lange%2C+L), [Heike Adel](https://arxiv.org/search/cs?searchtype=author&query=Adel%2C+H), [Jannik Strötgen](https://arxiv.org/search/cs?searchtype=author&query=Strötgen%2C+J), [Dietrich Klakow](https://arxiv.org/search/cs?searchtype=author&query=Klakow%2C+D)
+
+> Current developments in natural language processing offer challenges and opportunities for low-resource languages and domains. Deep neural networks are known for requiring large amounts of training data which might not be available in resource-lean scenarios. However, there is also a growing body of works to improve the performance in low-resource settings. Motivated by fundamental changes towards neural models and the currently popular pre-train and fine-tune paradigm, we give an overview of promising approaches for low-resource natural language processing. After a discussion about the definition of low-resource scenarios and the different dimensions of data availability, we then examine methods that enable learning when training data is sparse. This includes mechanisms to create additional labeled data like data augmentation and distant supervision as well as transfer learning settings that reduce the need for target supervision. The survey closes with a brief look into methods suggested in non-NLP machine learning communities, which might be beneficial for NLP in low-resource scenarios
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2010.12309](https://arxiv.org/abs/2010.12309) [cs.CL] |
+|           | (or [arXiv:2010.12309v1](https://arxiv.org/abs/2010.12309v1) [cs.CL] for this version) |
+
+
+
+
 
 
 
