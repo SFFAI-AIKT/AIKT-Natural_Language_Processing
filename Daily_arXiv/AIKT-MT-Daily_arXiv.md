@@ -3,6 +3,22 @@
 # Index
 
 
+- [2020-10-27](#2020-10-27)
+
+  - [1. Anchor-based Bilingual Word Embeddings for Low-Resource Languages](#2020-10-27-1)
+  - [2. Rapid Domain Adaptation for Machine Translation with Monolingual Data](#2020-10-27-2)
+  - [3. Dynamic Contextualized Word Embeddings](#2020-10-27-3)
+  - [4. Improving Multilingual Models with Language-Clustered Vocabularies](#2020-10-27-4)
+  - [5. Context-aware Decoder for Neural Machine Translation using a Target-side Document-Level Language Model](#2020-10-27-5)
+  - [6. Cross-Modal Transfer Learning for Multilingual Speech-to-Text Translation](#2020-10-27-6)
+  - [7. Weakly-supervised VisualBERT: Pre-training without Parallel Images and Captions](#2020-10-27-7)
+  - [8. Multi-Task Learning with Shared Encoder for Non-Autoregressive Machine Translation](#2020-10-27-8)
+  - [9. Orthros: Non-autoregressive End-to-end Speech Translation with Dual-decoder](#2020-10-27-9)
+  - [10. Autoencoding Improves Pre-trained Word Embeddings](#2020-10-27-10)
+  - [11. Two-stage Textual Knowledge Distillation to Speech Encoder for Spoken Language Understanding](#2020-10-27-11)
+  - [12. The LMU Munich System for the WMT 2020 Unsupervised Machine Translation Shared Task](#2020-10-27-12)
+  - [13. Constraint Translation Candidates: A Bridge between Neural Query Translation and Cross-lingual Information Retrieval](#2020-10-27-13)
+  - [14. Exploiting Neural Query Translation into Cross Lingual Information Retrieval](#2020-10-27-14)
 - [2020-10-26](#2020-10-26)
 
   - [1. Multilingual BERT Post-Pretraining Alignment](#2020-10-26-1)
@@ -12,7 +28,8 @@
   - [5. How Phonotactics Affect Multilingual and Zero-shot ASR Performance](#2020-10-26-5)
   - [6. A Survey on Recent Approaches for Natural Language Processing in Low-Resource Scenarios](#2020-10-26-6)
 - [2020-10-23](#2020-10-23)
-- [1. Similarity Analysis of Self-Supervised Speech Representations](#2020-10-23-1)
+
+  - [1. Similarity Analysis of Self-Supervised Speech Representations](#2020-10-23-1)
   - [2. Autoregressive Modeling is Misspecified for Some Sequence Distributions](#2020-10-23-2)
   - [3. Improving Simultaneous Translation with Pseudo References](#2020-10-23-3)
   - [4. A General Multi-Task Learning Framework to Leverage Text Data for Speech to Text Tasks](#2020-10-23-4)
@@ -64,7 +81,8 @@
   - [6. Mischief: A Simple Black-Box Attack Against Transformer Architectures](#2020-10-19-6)
   - [7. Explicit Alignment Objectives for Multilingual Bidirectional Encoders](#2020-10-19-7)
 - [2020-10-16](#2020-10-16)
-- [1. Decoding Methods for Neural Narrative Generation](#2020-10-16-1)
+
+  - [1. Decoding Methods for Neural Narrative Generation](#2020-10-16-1)
   - [2. Grammatical Error Correction in Low Error Density Domains: A New Benchmark and Analyses](#2020-10-16-2)
   - [3. Pronoun-Targeted Fine-tuning for NMT with Hybrid Losses](#2020-10-16-3)
   - [4. Does Chinese BERT Encode Word Structure?](#2020-10-16-4)
@@ -193,6 +211,242 @@
   - [4. Cross-lingual Spoken Language Understanding with Regularized Representation Alignment](#2020-10-01-4)
   - [5. On Romanization for Model Transfer Between Scripts in Neural Machine Translation](#2020-10-01-5)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-10-27
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-10-27-1">1. Anchor-based Bilingual Word Embeddings for Low-Resource Languages</h2>
+
+Title: [Anchor-based Bilingual Word Embeddings for Low-Resource Languages](https://arxiv.org/abs/2010.12627)
+
+Authors: [Tobias Eder](https://arxiv.org/search/cs?searchtype=author&query=Eder%2C+T), [Viktor Hangya](https://arxiv.org/search/cs?searchtype=author&query=Hangya%2C+V), [Alexander Fraser](https://arxiv.org/search/cs?searchtype=author&query=Fraser%2C+A)
+
+> Bilingual word embeddings (BWEs) are useful for many cross-lingual applications, such as bilingual lexicon induction (BLI) and cross-lingual transfer learning. While recent methods have led to good quality BWEs for different language pairs using only weak bilingual signals, they still rely on an abundance of monolingual training data in both languages for their performance. This becomes a problem especially in the case of low resource languages where neither parallel bilingual corpora nor large monolingual training data are available. This paper proposes a new approach for building BWEs in which the vector space of the high resource source language is used as a starting point for training an embedding space for the low resource target language. By using the source vectors as anchors the vector spaces are automatically aligned. We evaluate the resulting BWEs on BLI and show the proposed method outperforms previous approaches in the low-resource setting by a large margin. We show strong results on the standard English-German test pair (using German to simulate low resource). We also show we can build useful BWEs for English-Hiligaynon, a true low-resource language, where previous approaches failed.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2010.12627](https://arxiv.org/abs/2010.12627) [cs.CL] |
+|           | (or [arXiv:2010.12627v1](https://arxiv.org/abs/2010.12627v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-10-27-2">2. Rapid Domain Adaptation for Machine Translation with Monolingual Data</h2>
+
+Title: [Rapid Domain Adaptation for Machine Translation with Monolingual Data](https://arxiv.org/abs/2010.12652)
+
+Authors: [Mahdis Mahdieh](https://arxiv.org/search/cs?searchtype=author&query=Mahdieh%2C+M), [Mia Xu Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+M+X), [Yuan Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+Y), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O)
+
+> One challenge of machine translation is how to quickly adapt to unseen domains in face of surging events like COVID-19, in which case timely and accurate translation of in-domain information into multiple languages is critical but little parallel data is available yet. In this paper, we propose an approach that enables rapid domain adaptation from the perspective of unsupervised translation. Our proposed approach only requires in-domain monolingual data and can be quickly applied to a preexisting translation system trained on general domain, reaching significant gains on in-domain translation quality with little or no drop on general-domain. We also propose an effective procedure of simultaneous adaptation for multiple domains and languages. To the best of our knowledge, this is the first attempt that aims to address unsupervised multilingual domain adaptation.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2010.12652](https://arxiv.org/abs/2010.12652) [cs.CL] |
+|           | (or [arXiv:2010.12652v1](https://arxiv.org/abs/2010.12652v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-10-27-3">3. Dynamic Contextualized Word Embeddings</h2>
+
+Title: [Dynamic Contextualized Word Embeddings](https://arxiv.org/abs/2010.12684)
+
+Authors: [Valentin Hofmann](https://arxiv.org/search/cs?searchtype=author&query=Hofmann%2C+V), [Janet B. Pierrehumbert](https://arxiv.org/search/cs?searchtype=author&query=Pierrehumbert%2C+J+B), [Hinrich Schütze](https://arxiv.org/search/cs?searchtype=author&query=Schütze%2C+H)
+
+> Static word embeddings that represent words by a single vector cannot capture the variability of word meaning in different linguistic and extralinguistic contexts. Building on prior work on contextualized and dynamic word embeddings, we introduce dynamic contextualized word embeddings that represent words as a function of both linguistic and extralinguistic context. Based on a pretrained language model (PLM), dynamic contextualized word embeddings model time and social space jointly, which makes them attractive for various tasks in the computational social sciences. We highlight potential applications by means of qualitative and quantitative analyses.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2010.12684](https://arxiv.org/abs/2010.12684) [cs.CL] |
+|           | (or [arXiv:2010.12684v1](https://arxiv.org/abs/2010.12684v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-10-27-4">4. Improving Multilingual Models with Language-Clustered Vocabularies</h2>
+
+Title: [Improving Multilingual Models with Language-Clustered Vocabularies](https://arxiv.org/abs/2010.12777)
+
+Authors: [Hyung Won Chung](https://arxiv.org/search/cs?searchtype=author&query=Chung%2C+H+W), [Dan Garrette](https://arxiv.org/search/cs?searchtype=author&query=Garrette%2C+D), [Kiat Chuan Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+K+C), [Jason Riesa](https://arxiv.org/search/cs?searchtype=author&query=Riesa%2C+J)
+
+> State-of-the-art multilingual models depend on vocabularies that cover all of the languages the model will expect to see at inference time, but the standard methods for generating those vocabularies are not ideal for massively multilingual applications. In this work, we introduce a novel procedure for multilingual vocabulary generation that combines the separately trained vocabularies of several automatically derived language clusters, thus balancing the trade-off between cross-lingual subword sharing and language-specific vocabularies. Our experiments show improvements across languages on key multilingual benchmark tasks TyDi QA (+2.9 F1), XNLI (+2.1\%), and WikiAnn NER (+2.8 F1) and factor of 8 reduction in out-of-vocabulary rate, all without increasing the size of the model or data.
+
+| Comments: | Published in the main conference of EMNLP 2020               |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:2010.12777](https://arxiv.org/abs/2010.12777) [cs.CL] |
+|           | (or [arXiv:2010.12777v1](https://arxiv.org/abs/2010.12777v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-10-27-5">5. Context-aware Decoder for Neural Machine Translation using a Target-side Document-Level Language Model</h2>
+
+Title: [Context-aware Decoder for Neural Machine Translation using a Target-side Document-Level Language Model](https://arxiv.org/abs/2010.12827)
+
+Authors: [Amane Sugiyama](https://arxiv.org/search/cs?searchtype=author&query=Sugiyama%2C+A), [Naoki Yoshinaga](https://arxiv.org/search/cs?searchtype=author&query=Yoshinaga%2C+N)
+
+> Although many context-aware neural machine translation models have been proposed to incorporate contexts in translation, most of those models are trained end-to-end on parallel documents aligned in sentence-level. Because only a few domains (and language pairs) have such document-level parallel data, we cannot perform accurate context-aware translation in most domains. We therefore present a simple method to turn a sentence-level translation model into a context-aware model by incorporating a document-level language model into the decoder. Our context-aware decoder is built upon only a sentence-level parallel corpora and monolingual corpora; thus no document-level parallel data is needed. In a theoretical viewpoint, the core part of this work is the novel representation of contextual information using point-wise mutual information between context and the current sentence. We show the effectiveness of our approach in three language pairs, English to French, English to Russian, and Japanese to English, by evaluation in \textsc{bleu} and contrastive tests for context-aware translation.
+
+| Comments: | Under Review                                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2010.12827](https://arxiv.org/abs/2010.12827) [cs.CL] |
+|           | (or [arXiv:2010.12827v1](https://arxiv.org/abs/2010.12827v1) [cs.CL] for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-10-27-6">6. Cross-Modal Transfer Learning for Multilingual Speech-to-Text Translation</h2>
+
+Title: [Cross-Modal Transfer Learning for Multilingual Speech-to-Text Translation](https://arxiv.org/abs/2010.12829)
+
+Authors: [Chau Tran](https://arxiv.org/search/cs?searchtype=author&query=Tran%2C+C), [Changhan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Yuqing Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+Y), [Yun Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+Y), [Juan Pino](https://arxiv.org/search/cs?searchtype=author&query=Pino%2C+J), [Xian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X)
+
+> We propose an effective approach to utilize pretrained speech and text models to perform speech-to-text translation (ST). Our recipe to achieve cross-modal and cross-lingual transfer learning (XMTL) is simple and generalizable: using an adaptor module to bridge the modules pretrained in different modalities, and an efficient finetuning step which leverages the knowledge from pretrained modules yet making it work on a drastically different downstream task. With this approach, we built a multilingual speech-to-text translation model with pretrained audio encoder (wav2vec) and multilingual text decoder (mBART), which achieves new state-of-the-art on CoVoST 2 ST benchmark [1] for English into 15 languages as well as 6 Romance languages into English with on average +2.8 BLEU and +3.9 BLEU, respectively. On low-resource languages (with less than 10 hours training data), our approach significantly improves the quality of speech-to-text translation with +9.0 BLEU on Portuguese-English and +5.2 BLEU on Dutch-English.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2010.12829](https://arxiv.org/abs/2010.12829) [cs.CL] |
+|           | (or [arXiv:2010.12829v1](https://arxiv.org/abs/2010.12829v1) [cs.CL] for this version) |
+
+
+
+<h2 id="2020-10-27-7">7. Weakly-supervised VisualBERT: Pre-training without Parallel Images and Captions</h2>
+
+Title: [Weakly-supervised VisualBERT: Pre-training without Parallel Images and Captions](https://arxiv.org/abs/2010.12831)
+
+Authors: [Liunian Harold Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L+H), [Haoxuan You](https://arxiv.org/search/cs?searchtype=author&query=You%2C+H), [Zhecan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Alireza Zareian](https://arxiv.org/search/cs?searchtype=author&query=Zareian%2C+A), [Shih-Fu Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+S), [Kai-Wei Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+K)
+
+> Pre-trained contextual vision-and-language (V&L) models have brought impressive performance improvement on various benchmarks. However, the paired text-image data required for pre-training are hard to collect and scale up. We investigate if a strong V&L representation model can be learned without text-image pairs. We propose Weakly-supervised VisualBERT with the key idea of conducting "mask-and-predict" pre-training on language-only and image-only corpora. Additionally, we introduce the object tags detected by an object recognition model as anchor points to bridge two modalities. Evaluation on four V&L benchmarks shows that Weakly-supervised VisualBERT achieves similar performance with a model pre-trained with paired data. Besides, pre-training on more image-only data further improves a model that already has access to aligned data, suggesting the possibility of utilizing billions of raw images available to enhance V&L models.
+
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2010.12831](https://arxiv.org/abs/2010.12831) [cs.CL] |
+|           | (or [arXiv:2010.12831v1](https://arxiv.org/abs/2010.12831v1) [cs.CL] for this version) |
+
+
+
+<h2 id="2020-10-27-8">8. Multi-Task Learning with Shared Encoder for Non-Autoregressive Machine Translation</h2>
+
+Title: [Multi-Task Learning with Shared Encoder for Non-Autoregressive Machine Translation](https://arxiv.org/abs/2010.12868)
+
+Authors: [Yongchang Hao](https://arxiv.org/search/cs?searchtype=author&query=Hao%2C+Y), [Shilin He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+S), [Wenxiang Jiao](https://arxiv.org/search/cs?searchtype=author&query=Jiao%2C+W), [Zhaopeng Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+Z), [Michael Lyu](https://arxiv.org/search/cs?searchtype=author&query=Lyu%2C+M), [Xing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X)
+
+> Non-Autoregressive machine Translation (NAT) models have demonstrated significant inference speedup but suffer from inferior translation accuracy. The common practice to tackle the problem is transferring the Autoregressive machine Translation (AT) knowledge to NAT models, e.g., with knowledge distillation. In this work, we hypothesize and empirically verify that AT and NAT encoders capture different linguistic properties and representations of source sentences. Therefore, we propose to adopt the multi-task learning to transfer the AT knowledge to NAT models through the encoder sharing. Specifically, we take the AT model as an auxiliary task to enhance NAT model performance. Experimental results on WMT14 English->German and WMT16 English->Romanian datasets show that the proposed multi-task NAT achieves significant improvements over the baseline NAT models. In addition, experimental results demonstrate that our multi-task NAT is complementary to the standard knowledge transfer method, knowledge distillation. Code is publicly available at [this https URL](https://github.com/yongchanghao/multi-task-nat)
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2010.12868](https://arxiv.org/abs/2010.12868) [cs.CL] |
+|           | (or [arXiv:2010.12868v1](https://arxiv.org/abs/2010.12868v1) [cs.CL] for this version) |
+
+
+
+<h2 id="2020-10-27-9">9. Orthros: Non-autoregressive End-to-end Speech Translation with Dual-decoder</h2>
+
+Title: [Orthros: Non-autoregressive End-to-end Speech Translation with Dual-decoder](https://arxiv.org/abs/2010.13047)
+
+Authors: [Hirofumi Inaguma](https://arxiv.org/search/cs?searchtype=author&query=Inaguma%2C+H), [Yosuke Higuchi](https://arxiv.org/search/cs?searchtype=author&query=Higuchi%2C+Y), [Kevin Duh](https://arxiv.org/search/cs?searchtype=author&query=Duh%2C+K), [Tatsuya Kawahara](https://arxiv.org/search/cs?searchtype=author&query=Kawahara%2C+T), [Shinji Watanabe](https://arxiv.org/search/cs?searchtype=author&query=Watanabe%2C+S)
+
+> Fast inference speed is an important goal towards real-world deployment of speech translation (ST) systems. End-to-end (E2E) models based on the encoder-decoder architecture are more suitable for this goal than traditional cascaded systems, but their effectiveness regarding decoding speed has not been explored so far. Inspired by recent progress in non-autoregressive (NAR) methods in text-based translation, which generates target tokens in parallel by eliminating conditional dependencies, we study the problem of NAR decoding for E2E-ST. We propose a novel NAR E2E-ST framework, Orthoros, in which both NAR and autoregressive (AR) decoders are jointly trained on the shared speech encoder. The latter is used for selecting better translation among various length candidates generated from the former, which dramatically improves the effectiveness of a large length beam with negligible overhead. We further investigate effective length prediction methods from speech inputs and the impact of vocabulary sizes. Experiments on four benchmarks show the effectiveness of the proposed method in improving inference speed while maintaining competitive translation quality compared to state-of-the-art AR E2E-ST systems.
+
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2010.13047](https://arxiv.org/abs/2010.13047) [cs.CL] |
+|           | (or [arXiv:2010.13047v1](https://arxiv.org/abs/2010.13047v1) [cs.CL] for this version) |
+
+
+
+<h2 id="2020-10-27-10">10. Autoencoding Improves Pre-trained Word Embeddings</h2>
+
+Title: [Autoencoding Improves Pre-trained Word Embeddings](https://arxiv.org/abs/2010.13094)
+
+Authors: [Masahiro Kaneko](https://arxiv.org/search/cs?searchtype=author&query=Kaneko%2C+M), [Danushka Bollegala](https://arxiv.org/search/cs?searchtype=author&query=Bollegala%2C+D)
+
+> Prior work investigating the geometry of pre-trained word embeddings have shown that word embeddings to be distributed in a narrow cone and by centering and projecting using principal component vectors one can increase the accuracy of a given set of pre-trained word embeddings. However, theoretically, this post-processing step is equivalent to applying a linear autoencoder to minimise the squared l2 reconstruction error. This result contradicts prior work (Mu and Viswanath, 2018) that proposed to remove the top principal components from pre-trained embeddings. We experimentally verify our theoretical claims and show that retaining the top principal components is indeed useful for improving pre-trained word embeddings, without requiring access to additional linguistic resources or labelled data.
+
+| Comments: | COLING 2020                                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2010.13094](https://arxiv.org/abs/2010.13094) [cs.CL] |
+|           | (or [arXiv:2010.13094v1](https://arxiv.org/abs/2010.13094v1) [cs.CL] for this version) |
+
+
+
+<h2 id="2020-10-27-11">11. Two-stage Textual Knowledge Distillation to Speech Encoder for Spoken Language Understanding</h2>
+
+Title: [Two-stage Textual Knowledge Distillation to Speech Encoder for Spoken Language Understanding](https://arxiv.org/abs/2010.13105)
+
+Authors: [Seongbin Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+S), [Gyuwan Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+G), [Seongjin Shin](https://arxiv.org/search/cs?searchtype=author&query=Shin%2C+S), [Sangmin Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+S)
+
+> End-to-end approaches open a new way for more accurate and efficient spoken language understanding (SLU) systems by alleviating the drawbacks of traditional pipeline systems. Previous works exploit textual information for an SLU model via pre-training with automatic speech recognition or fine-tuning with knowledge distillation. To utilize textual information more effectively, this work proposes a two-stage textual knowledge distillation method that matches utterance-level representations and predicted logits of two modalities during pre-training and fine-tuning, sequentially. We use vq-wav2vec BERT as a speech encoder because it captures general and rich features. Furthermore, we improve the performance, especially in a low-resource scenario, with data augmentation methods by randomly masking spans of discrete audio tokens and contextualized hidden representations. Consequently, we push the state-of-the-art on the Fluent Speech Commands, achieving 99.7% test accuracy in the full dataset setting and 99.5% in the 10% subset setting. Throughout the ablation studies, we empirically verify that all used methods are crucial to the final performance, providing the best practice for spoken language understanding. Code to reproduce our results will be available upon publication.
+
+| Comments: | Preprint; 5 pages, 1 figure                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | [arXiv:2010.13105](https://arxiv.org/abs/2010.13105) [cs.CL] |
+|           | (or [arXiv:2010.13105v1](https://arxiv.org/abs/2010.13105v1) [cs.CL] for this version) |
+
+
+
+<h2 id="2020-10-27-12">12. The LMU Munich System for the WMT 2020 Unsupervised Machine Translation Shared Task</h2>
+
+Title: [The LMU Munich System for the WMT 2020 Unsupervised Machine Translation Shared Task](https://arxiv.org/abs/2010.13192)
+
+Authors: [Alexandra Chronopoulou](https://arxiv.org/search/cs?searchtype=author&query=Chronopoulou%2C+A), [Dario Stojanovski](https://arxiv.org/search/cs?searchtype=author&query=Stojanovski%2C+D), [Viktor Hangya](https://arxiv.org/search/cs?searchtype=author&query=Hangya%2C+V), [Alexander Fraser](https://arxiv.org/search/cs?searchtype=author&query=Fraser%2C+A)
+
+> This paper describes the submission of LMU Munich to the WMT 2020 unsupervised shared task, in two language directions, German<->Upper Sorbian. Our core unsupervised neural machine translation (UNMT) system follows the strategy of Chronopoulou et al. (2020), using a monolingual pretrained language generation model (on German) and fine-tuning it on both German and Upper Sorbian, before initializing a UNMT model, which is trained with online backtranslation. Pseudo-parallel data obtained from an unsupervised statistical machine translation (USMT) system is used to fine-tune the UNMT model. We also apply BPE-Dropout to the low resource (Upper Sorbian) data to obtain a more robust system. We additionally experiment with residual adapters and find them useful in the Upper Sorbian->German direction. We explore sampling during backtranslation and curriculum learning to use SMT translations in a more principled way. Finally, we ensemble our best-performing systems and reach a BLEU score of 32.4 on German->Upper Sorbian and 35.2 on Upper Sorbian->German.
+
+| Comments: | WMT Unsupervised Shared Task 2020                            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2010.13192](https://arxiv.org/abs/2010.13192) [cs.CL] |
+|           | (or [arXiv:2010.13192v1](https://arxiv.org/abs/2010.13192v1) [cs.CL] for this version) |
+
+
+
+<h2 id="2020-10-27-13">13. Constraint Translation Candidates: A Bridge between Neural Query Translation and Cross-lingual Information Retrieval</h2>
+
+Title: [Constraint Translation Candidates: A Bridge between Neural Query Translation and Cross-lingual Information Retrieval](https://arxiv.org/abs/2010.13658)
+
+Authors: [Tianchi Bi](https://arxiv.org/search/cs?searchtype=author&query=Bi%2C+T), [Liang Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+L), [Baosong Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+B), [Haibo Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H), [Weihua Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+W), [Boxing Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+B)
+
+> Query translation (QT) is a key component in cross-lingual information retrieval system (CLIR). With the help of deep learning, neural machine translation (NMT) has shown promising results on various tasks. However, NMT is generally trained with large-scale out-of-domain data rather than in-domain query translation pairs. Besides, the translation model lacks a mechanism at the inference time to guarantee the generated words to match the search index. The two shortages of QT result in readable texts for human but inadequate candidates for the downstream retrieval task. In this paper, we propose a novel approach to alleviate these problems by limiting the open target vocabulary search space of QT to a set of important words mined from search index database. The constraint translation candidates are employed at both of training and inference time, thus guiding the translation model to learn and generate well performing target queries. The proposed methods are exploited and examined in a real-word CLIR system--Aliexpress e-Commerce search engine. Experimental results demonstrate that our approach yields better performance on both translation quality and retrieval accuracy than the strong NMT baseline.
+
+| Comments: | SIGIR eCom 2020                                              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Information Retrieval (cs.IR) |
+| Cite as:  | [arXiv:2010.13658](https://arxiv.org/abs/2010.13658) [cs.CL] |
+|           | (or [arXiv:2010.13658v1](https://arxiv.org/abs/2010.13658v1) [cs.CL] for this version) |
+
+
+
+<h2 id="2020-10-27-14">14. Exploiting Neural Query Translation into Cross Lingual Information Retrieval</h2>
+
+Title: [Exploiting Neural Query Translation into Cross Lingual Information Retrieval](https://arxiv.org/abs/2010.13659)
+
+Authors: [Liang Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+L), [Baosong Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+B), [Haibo Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H), [Weihua Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+W), [Boxing Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+B)
+
+> As a crucial role in cross-language information retrieval (CLIR), query translation has three main challenges: 1) the adequacy of translation; 2) the lack of in-domain parallel training data; and 3) the requisite of low latency. To this end, existing CLIR systems mainly exploit statistical-based machine translation (SMT) rather than the advanced neural machine translation (NMT), limiting the further improvements on both translation and retrieval quality. In this paper, we investigate how to exploit neural query translation model into CLIR system. Specifically, we propose a novel data augmentation method that extracts query translation pairs according to user clickthrough data, thus to alleviate the problem of domain-adaptation in NMT. Then, we introduce an asynchronous strategy which is able to leverage the advantages of the real-time in SMT and the veracity in NMT. Experimental results reveal that the proposed approach yields better retrieval quality than strong baselines and can be well applied into a real-world CLIR system, i.e. Aliexpress e-Commerce search engine. Readers can examine and test their cases on our website: [this https URL](https://aliexpress.com/) .
+
+| Comments: | SIGIR eCom 2020                                              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Information Retrieval (cs.IR) |
+| Cite as:  | [arXiv:2010.13659](https://arxiv.org/abs/2010.13659) [cs.CL] |
+|           | (or [arXiv:2010.13659v1](https://arxiv.org/abs/2010.13659v1) [cs.CL] for this version) |
+
 
 
 
