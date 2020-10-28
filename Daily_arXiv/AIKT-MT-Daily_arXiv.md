@@ -3,9 +3,15 @@
 # Index
 
 
-- [2020-10-27](#2020-10-27)
+- [2020-10-28](#2020-10-28)
 
-  - [1. Anchor-based Bilingual Word Embeddings for Low-Resource Languages](#2020-10-27-1)
+  - [1. VisualHints: A Visual-Lingual Environment for Multimodal Reinforcement Learning](#2020-10-28-1)
+  - [2. Data Troubles in Sentence Level Confidence Estimation for Machine Translation](#2020-10-28-2)
+  - [3. Volctrans Parallel Corpus Filtering System for WMT 2020](#2020-10-28-3)
+  - [4. Multitask Training with Text Data for End-to-End Speech Recognition](#2020-10-28-4)
+  - [5. Evaluating Gender Bias in Speech Translation](#2020-10-28-5)
+- [2020-10-27](#2020-10-27)
+- [1. Anchor-based Bilingual Word Embeddings for Low-Resource Languages](#2020-10-27-1)
   - [2. Rapid Domain Adaptation for Machine Translation with Monolingual Data](#2020-10-27-2)
   - [3. Dynamic Contextualized Word Embeddings](#2020-10-27-3)
   - [4. Improving Multilingual Models with Language-Clustered Vocabularies](#2020-10-27-4)
@@ -211,6 +217,106 @@
   - [4. Cross-lingual Spoken Language Understanding with Regularized Representation Alignment](#2020-10-01-4)
   - [5. On Romanization for Model Transfer Between Scripts in Neural Machine Translation](#2020-10-01-5)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-10-28
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-10-28-1">1. VisualHints: A Visual-Lingual Environment for Multimodal Reinforcement Learning</h2>
+
+Title: [VisualHints: A Visual-Lingual Environment for Multimodal Reinforcement Learning](https://arxiv.org/abs/2010.13839)
+
+Authors: [Thomas Carta](https://arxiv.org/search/cs?searchtype=author&query=Carta%2C+T), [Subhajit Chaudhury](https://arxiv.org/search/cs?searchtype=author&query=Chaudhury%2C+S), [Kartik Talamadupula](https://arxiv.org/search/cs?searchtype=author&query=Talamadupula%2C+K), [Michiaki Tatsubori](https://arxiv.org/search/cs?searchtype=author&query=Tatsubori%2C+M)
+
+> We present VisualHints, a novel environment for multimodal reinforcement learning (RL) involving text-based interactions along with visual hints (obtained from the environment). Real-life problems often demand that agents interact with the environment using both natural language information and visual perception towards solving a goal. However, most traditional RL environments either solve pure vision-based tasks like Atari games or video-based robotic manipulation; or entirely use natural language as a mode of interaction, like Text-based games and dialog systems. In this work, we aim to bridge this gap and unify these two approaches in a single environment for multimodal RL. We introduce an extension of the TextWorld cooking environment with the addition of visual clues interspersed throughout the environment. The goal is to force an RL agent to use both text and visual features to predict natural language action commands for solving the final task of cooking a meal. We enable variations and difficulties in our environment to emulate various interactive real-world scenarios. We present a baseline multimodal agent for solving such problems using CNN-based feature extraction from visual hints and LSTMs for textual feature extraction. We believe that our proposed visual-lingual environment will facilitate novel problem settings for the RL community.
+
+| Comments: | Code is available at [this http URL](http://ibm.biz/VisualHints) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| Cite as:  | [arXiv:2010.13839](https://arxiv.org/abs/2010.13839) [cs.LG] |
+|           | (or [arXiv:2010.13839v1](https://arxiv.org/abs/2010.13839v1) [cs.LG] for this version) |
+
+
+
+
+
+<h2 id="2020-10-28-2">2. Data Troubles in Sentence Level Confidence Estimation for Machine Translation</h2>
+
+Title: [Data Troubles in Sentence Level Confidence Estimation for Machine Translation](https://arxiv.org/abs/2010.13856)
+
+Authors: [Ciprian Chelba](https://arxiv.org/search/cs?searchtype=author&query=Chelba%2C+C), [Junpei Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J), [Yuezhang](https://arxiv.org/search/cs?searchtype=author&query=Yuezhang) (Music)Li, [Hideto Kazawa](https://arxiv.org/search/cs?searchtype=author&query=Kazawa%2C+H), [Jeff Klingner](https://arxiv.org/search/cs?searchtype=author&query=Klingner%2C+J), [Mengmeng Niu](https://arxiv.org/search/cs?searchtype=author&query=Niu%2C+M)
+
+> The paper investigates the feasibility of confidence estimation for neural machine translation models operating at the high end of the performance spectrum. As a side product of the data annotation process necessary for building such models we propose sentence level accuracy SACC as a simple, self-explanatory evaluation metric for quality of translation.
+> Experiments on two different annotator pools, one comprised of non-expert (crowd-sourced) and one of expert (professional) translators show that SACC can vary greatly depending on the translation proficiency of the annotators, despite the fact that both pools are about equally reliable according to Krippendorff's alpha metric; the relatively low values of inter-annotator agreement confirm the expectation that sentence-level binary labeling good / needs work for translation out of context is very hard.
+> For an English-Spanish translation model operating at SACC=0.89 according to a non-expert annotator pool we can derive a confidence estimate that labels 0.5-0.6 of the good translations in an "in-domain" test set with 0.95 Precision. Switching to an expert annotator pool decreases SACC dramatically: 0.61 for English-Spanish, measured on the exact same data as above. This forces us to lower the CE model operating point to 0.9 Precision while labeling correctly about 0.20-0.25 of the good translations in the data.
+> We find surprising the extent to which CE depends on the level of proficiency of the annotator pool used for labeling the data. This leads to an important recommendation we wish to make when tackling CE modeling in practice: it is critical to match the end-user expectation for translation quality in the desired domain with the demands of annotators assigning binary quality labels to CE training data.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2010.13856](https://arxiv.org/abs/2010.13856) [cs.CL] |
+|           | (or [arXiv:2010.13856v1](https://arxiv.org/abs/2010.13856v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-10-28-3">3. Volctrans Parallel Corpus Filtering System for WMT 2020</h2>
+
+Title: [Volctrans Parallel Corpus Filtering System for WMT 2020](https://arxiv.org/abs/2010.14029)
+
+Authors: [Runxin Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+R), [Zhuo Zhi](https://arxiv.org/search/cs?searchtype=author&query=Zhi%2C+Z), [Jun Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+J), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> In this paper, we describe our submissions to the WMT20 shared task on parallel corpus filtering and alignment for low-resource conditions. The task requires the participants to align potential parallel sentence pairs out of the given document pairs, and score them so that low-quality pairs can be filtered. Our system, Volctrans, is made of two modules, i.e., a mining module and a scoring module. Based on the word alignment model, the mining module adopts an iterative mining strategy to extract latent parallel sentences. In the scoring module, an XLM-based scorer provides scores, followed by reranking mechanisms and ensemble. Our submissions outperform the baseline by 3.x/2.x and 2.x/2.x for km-en and ps-en on From Scratch/Fine-Tune conditions, which is the highest among all submissions.
+
+| Comments: | WMT 2020                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2010.14029](https://arxiv.org/abs/2010.14029) [cs.CL] |
+|           | (or [arXiv:2010.14029v1](https://arxiv.org/abs/2010.14029v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-10-28-4">4. Multitask Training with Text Data for End-to-End Speech Recognition</h2>
+
+Title: [Multitask Training with Text Data for End-to-End Speech Recognition](https://arxiv.org/abs/2010.14318)
+
+Authors: [Peidong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+P), [Tara N. Sainath](https://arxiv.org/search/cs?searchtype=author&query=Sainath%2C+T+N), [Ron J. Weiss](https://arxiv.org/search/cs?searchtype=author&query=Weiss%2C+R+J)
+
+> We propose a multitask training method for attention-based end-to-end speech recognition models to better incorporate language level information. We regularize the decoder in a sequence-to-sequence architecture by multitask training it on both the speech recognition task and a next-token prediction language modeling task. Trained on either the 100 hour subset of LibriSpeech or the full 960 hour dataset, the proposed method leads to an 11% relative performance improvement over the baseline and is comparable to language model shallow fusion, without requiring an additional neural network during decoding. Analyses of sample output sentences and the word error rate on rare words demonstrate that the proposed method can incorporate language level information effectively.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2010.14318](https://arxiv.org/abs/2010.14318) [cs.CL] |
+|           | (or [arXiv:2010.14318v1](https://arxiv.org/abs/2010.14318v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-10-28-5">5. Evaluating Gender Bias in Speech Translation</h2>
+
+Title: [Evaluating Gender Bias in Speech Translation](https://arxiv.org/abs/2010.14465)
+
+Authors: [Marta R. Costa-jussà](https://arxiv.org/search/cs?searchtype=author&query=Costa-jussà%2C+M+R), [Christine Basta](https://arxiv.org/search/cs?searchtype=author&query=Basta%2C+C), [Gerard I. Gállego](https://arxiv.org/search/cs?searchtype=author&query=Gállego%2C+G+I)
+
+> The scientific community is more and more aware of the necessity to embrace pluralism and consistently represent major and minor social groups. In this direction, there is an urgent need to provide evaluation sets and protocols to measure existing biases in our automatic systems. This paper introduces WinoST, a new freely available challenge set for evaluating gender bias in speech translation. WinoST is the speech version of WinoMT which is an MT challenge set and both follow an evaluation protocol to measure gender accuracy. Using a state-of-the-art end-to-end speech translation system, we report the gender bias evaluation on 4 language pairs, and we show that gender accuracy in speech translation is more than 23% lower than in MT.
+
+| Comments:    | Preprint, Submitted to ICASSP 2021                           |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**                         |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | [arXiv:2010.14465](https://arxiv.org/abs/2010.14465) [cs.CL] |
+|              | (or [arXiv:2010.14465v1](https://arxiv.org/abs/2010.14465v1) [cs.CL] for this version) |
+
+
+
+
 
 
 
