@@ -3,6 +3,10 @@
 # Index
 
 
+- [2020-10-29](#2020-10-29)
+
+  - [1. The Volctrans Machine Translation System for WMT20](#2020-10-29-1)
+  - [2. Bridging the Modality Gap for Speech-to-Text Translation](#2020-10-29-2)
 - [2020-10-28](#2020-10-28)
 
   - [1. VisualHints: A Visual-Lingual Environment for Multimodal Reinforcement Learning](#2020-10-28-1)
@@ -217,6 +221,50 @@
   - [4. Cross-lingual Spoken Language Understanding with Regularized Representation Alignment](#2020-10-01-4)
   - [5. On Romanization for Model Transfer Between Scripts in Neural Machine Translation](#2020-10-01-5)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-10-29
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-10-29-1">1. The Volctrans Machine Translation System for WMT20</h2>
+
+Title: [The Volctrans Machine Translation System for WMT20](https://arxiv.org/abs/2010.14806)
+
+Authors: [Liwei Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+L), [Xiao Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C+X), [Zehui Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Z), [Yaoming Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+Y), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> This paper describes our VolcTrans system on WMT20 shared news translation task. We participated in 8 translation directions. Our basic systems are based on Transformer, with several variants (wider or deeper Transformers, dynamic convolutions). The final system includes text pre-process, data selection, synthetic data generation, advanced model ensemble, and multilingual pre-training.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2010.14806](https://arxiv.org/abs/2010.14806) [cs.CL] |
+|           | (or [arXiv:2010.14806v1](https://arxiv.org/abs/2010.14806v1) [cs.CL] for this version) |
+
+
+
+
+
+<h2 id="2020-10-29-2">2. Bridging the Modality Gap for Speech-to-Text Translation</h2>
+
+Title: [Bridging the Modality Gap for Speech-to-Text Translation](https://arxiv.org/abs/2010.14920)
+
+Authors: [Yuchen Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Junnan Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J), [Jiajun Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Chengqing Zong](https://arxiv.org/search/cs?searchtype=author&query=Zong%2C+C)
+
+> End-to-end speech translation aims to translate speech in one language into text in another language via an end-to-end way. Most existing methods employ an encoder-decoder structure with a single encoder to learn acoustic representation and semantic information simultaneously, which ignores the speech-and-text modality differences and makes the encoder overloaded, leading to great difficulty in learning such a model. To address these issues, we propose a Speech-to-Text Adaptation for Speech Translation (STAST) model which aims to improve the end-to-end model performance by bridging the modality gap between speech and text. Specifically, we decouple the speech translation encoder into three parts and introduce a shrink mechanism to match the length of speech representation with that of the corresponding text transcription. To obtain better semantic representation, we completely integrate a text-based translation model into the STAST so that two tasks can be trained in the same latent space. Furthermore, we introduce a cross-modal adaptation method to close the distance between speech and text representation. Experimental results on English-French and English-German speech translation corpora have shown that our model significantly outperforms strong baselines, and achieves the new state-of-the-art performance.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2010.14920](https://arxiv.org/abs/2010.14920) [cs.CL] |
+|           | (or [arXiv:2010.14920v1](https://arxiv.org/abs/2010.14920v1) [cs.CL] for this version) |
+
+
+
+
+
+
 
 
 
