@@ -3,6 +3,15 @@
 # Index
 
 
+- [2020-10-30](#2020-10-30)
+
+  - [1. Fusion Models for Improved Visual Captioning](#2020-10-30-1)
+  - [2. CopyNext: Explicit Span Copying and Alignment in Sequence to Sequence Models](#2020-10-30-2)
+  - [3. Combining Self-Training and Self-Supervised Learning for Unsupervised Disfluency Detection](#2020-10-30-3)
+  - [4. Tilde at WMT 2020: News Task Systems](#2020-10-30-4)
+  - [5. Memory Attentive Fusion: External Language Model Integration for Transformer-based Sequence-to-Sequence Model](#2020-10-30-5)
+  - [6. Unbabel's Participation in the WMT20 Metrics Shared Task](#2020-10-30-6)
+  - [7. Contextual BERT: Conditioning the Language Model Using a Global State](#2020-10-30-7)
 - [2020-10-29](#2020-10-29)
 
   - [1. The Volctrans Machine Translation System for WMT20](#2020-10-29-1)
@@ -221,6 +230,115 @@
   - [4. Cross-lingual Spoken Language Understanding with Regularized Representation Alignment](#2020-10-01-4)
   - [5. On Romanization for Model Transfer Between Scripts in Neural Machine Translation](#2020-10-01-5)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+
+
+# 2020-10-30
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-10-30-1">1. Fusion Models for Improved Visual Captioning
+</h2>
+
+Title: [Fusion Models for Improved Visual Captioning](https://arxiv.org/abs/2010.15251)
+
+Authors: [Marimuthu Kalimuthu](https://arxiv.org/search/cs?searchtype=author&query=Kalimuthu%2C+M), [Aditya Mogadala](https://arxiv.org/search/cs?searchtype=author&query=Mogadala%2C+A), [Marius Mosbach](https://arxiv.org/search/cs?searchtype=author&query=Mosbach%2C+M), [Dietrich Klakow](https://arxiv.org/search/cs?searchtype=author&query=Klakow%2C+D)
+
+> Visual captioning aims to generate textual descriptions given images. Traditionally, the captioning models are trained on human annotated datasets such as Flickr30k and MS-COCO, which are limited in size and diversity. This limitation hinders the generalization capabilities of these models while also rendering them to often make mistakes. Language models can, however, be trained on vast amounts of freely available unlabelled data and have recently emerged as successful language encoders and coherent text generators. Meanwhile, several unimodal and multimodal fusion techniques have been proven to work well for natural language generation and automatic speech recognition. Building on these recent developments, and with an aim of improving the quality of generated captions, the contribution of our work in this paper is two-fold: First, we propose a generic multimodal model fusion framework for caption generation as well as emendation where we utilize different fusion strategies to integrate a pretrained Auxiliary Language Model (AuxLM) within the traditional encoder-decoder visual captioning frameworks. Next, we employ the same fusion strategies to integrate a pretrained Masked Language Model (MLM), namely BERT, with a visual captioning model, viz. Show, Attend, and Tell, for emending both syntactic and semantic errors in captions. Our caption emendation experiments on three benchmark image captioning datasets, viz. Flickr8k, Flickr30k, and MSCOCO, show improvements over the baseline, indicating the usefulness of our proposed multimodal fusion strategies. Further, we perform a preliminary qualitative analysis on the emended captions and identify error categories based on the type of corrections.
+
+| Comments: | Under review at "Multi-Modal Deep Learning: Challenges and Applications", ICPR-2020 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:2010.15251](https://arxiv.org/abs/2010.15251) [cs.CV] |
+|           | (or [arXiv:2010.15251v1](https://arxiv.org/abs/2010.15251v1) [cs.CV] for this version) |
+
+<h2 id="2020-10-30-2">2. CopyNext: Explicit Span Copying and Alignment in Sequence to Sequence Models</h2>
+
+Title: [CopyNext: Explicit Span Copying and Alignment in Sequence to Sequence Models](https://arxiv.org/abs/2010.15266)
+
+Authors: [Abhinav Singh](https://arxiv.org/search/cs?searchtype=author&query=Singh%2C+A), [Patrick Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%2C+P), [Guanghui Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+G), [Mahsa Yarmohammadi](https://arxiv.org/search/cs?searchtype=author&query=Yarmohammadi%2C+M), [Benjamin Van Durme](https://arxiv.org/search/cs?searchtype=author&query=Van+Durme%2C+B)
+
+> Copy mechanisms are employed in sequence to sequence models (seq2seq) to generate reproductions of words from the input to the output. These frameworks, operating at the lexical type level, fail to provide an explicit alignment that records where each token was copied from. Further, they require contiguous token sequences from the input (spans) to be copied individually. We present a model with an explicit token-level copy operation and extend it to copying entire spans. Our model provides hard alignments between spans in the input and output, allowing for nontraditional applications of seq2seq, like information extraction. We demonstrate the approach on Nested Named Entity Recognition, achieving near state-of-the-art accuracy with an order of magnitude increase in decoding speed.
+
+| Comments: | 4th Workshop on Structured Prediction for NLP (EMNLP 2020)   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:2010.15266](https://arxiv.org/abs/2010.15266) [cs.CL] |
+|           | (or [arXiv:2010.15266v1](https://arxiv.org/abs/2010.15266v1) [cs.CL] for this version) |
+
+<h2 id="2020-10-30-3">3. Combining Self-Training and Self-Supervised Learning for Unsupervised Disfluency Detection</h2>
+
+Title: [Combining Self-Training and Self-Supervised Learning for Unsupervised Disfluency Detection](https://arxiv.org/abs/2010.15360)
+
+Authors: [Shaolei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Zhongyuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Wanxiang Che](https://arxiv.org/search/cs?searchtype=author&query=Che%2C+W), [Ting Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T)
+
+> Most existing approaches to disfluency detection heavily rely on human-annotated corpora, which is expensive to obtain in practice. There have been several proposals to alleviate this issue with, for instance, self-supervised learning techniques, but they still require human-annotated corpora. In this work, we explore the unsupervised learning paradigm which can potentially work with unlabeled text corpora that are cheaper and easier to obtain. Our model builds upon the recent work on Noisy Student Training, a semi-supervised learning approach that extends the idea of self-training. Experimental results on the commonly used English Switchboard test set show that our approach achieves competitive performance compared to the previous state-of-the-art supervised systems using contextualized word embeddings (e.g. BERT and ELECTRA).
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2010.15360](https://arxiv.org/abs/2010.15360) [cs.CL] |
+|           | (or [arXiv:2010.15360v1](https://arxiv.org/abs/2010.15360v1) [cs.CL] for this version) |
+
+<h2 id="2020-10-30-4">4. Tilde at WMT 2020: News Task Systems</h2>
+
+Title: [Tilde at WMT 2020: News Task Systems](https://arxiv.org/abs/2010.15423)
+
+Authors: [Rihards Krišlauks](https://arxiv.org/search/cs?searchtype=author&query=Krišlauks%2C+R), [Mārcis Pinnis](https://arxiv.org/search/cs?searchtype=author&query=Pinnis%2C+M)
+
+> This paper describes Tilde's submission to the WMT2020 shared task on news translation for both directions of the English-Polish language pair in both the constrained and the unconstrained tracks. We follow our submissions from the previous years and build our baseline systems to be morphologically motivated sub-word unit-based Transformer base models that we train using the Marian machine translation toolkit. Additionally, we experiment with different parallel and monolingual data selection schemes, as well as sampled back-translation. Our final models are ensembles of Transformer base and Transformer big models that feature right-to-left re-ranking.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2010.15423](https://arxiv.org/abs/2010.15423) [cs.CL] |
+|           | (or [arXiv:2010.15423v1](https://arxiv.org/abs/2010.15423v1) [cs.CL] for this version) |
+
+<h2 id="2020-10-30-5">5. Memory Attentive Fusion: External Language Model Integration for Transformer-based Sequence-to-Sequence Model</h2>
+
+Title: [Memory Attentive Fusion: External Language Model Integration for Transformer-based Sequence-to-Sequence Model](https://arxiv.org/abs/2010.15437)
+
+Authors: [Mana Ihori](https://arxiv.org/search/cs?searchtype=author&query=Ihori%2C+M), [Ryo Masumura](https://arxiv.org/search/cs?searchtype=author&query=Masumura%2C+R), [Naoki Makishima](https://arxiv.org/search/cs?searchtype=author&query=Makishima%2C+N), [Tomohiro Tanaka](https://arxiv.org/search/cs?searchtype=author&query=Tanaka%2C+T), [Akihiko Takashima](https://arxiv.org/search/cs?searchtype=author&query=Takashima%2C+A), [Shota Orihashi](https://arxiv.org/search/cs?searchtype=author&query=Orihashi%2C+S)
+
+> This paper presents a novel fusion method for integrating an external language model (LM) into the Transformer based sequence-to-sequence (seq2seq) model. While paired data are basically required to train the seq2seq model, the external LM can be trained with only unpaired data. Thus, it is important to leverage memorized knowledge in the external LM for building the seq2seq model, since it is hard to prepare a large amount of paired data. However, the existing fusion methods assume that the LM is integrated with recurrent neural network-based seq2seq models instead of the Transformer. Therefore, this paper proposes a fusion method that can explicitly utilize network structures in the Transformer. The proposed method, called {\bf memory attentive fusion}, leverages the Transformer-style attention mechanism that repeats source-target attention in a multi-hop manner for reading the memorized knowledge in the LM. Our experiments on two text-style conversion tasks demonstrate that the proposed method performs better than conventional fusion methods.
+
+| Comments: | Accepted as a short paper at INLG 2020                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2010.15437](https://arxiv.org/abs/2010.15437) [cs.CL] |
+|           | (or [arXiv:2010.15437v1](https://arxiv.org/abs/2010.15437v1) [cs.CL] for this version) |
+
+<h2 id="2020-10-30-6">6. Unbabel's Participation in the WMT20 Metrics Shared Task</h2>
+
+Title: [Unbabel's Participation in the WMT20 Metrics Shared Task](https://arxiv.org/abs/2010.15535)
+
+Authors: [Ricardo Rei](https://arxiv.org/search/cs?searchtype=author&query=Rei%2C+R), [Craig Stewart](https://arxiv.org/search/cs?searchtype=author&query=Stewart%2C+C), [Catarina Farinha](https://arxiv.org/search/cs?searchtype=author&query=Farinha%2C+C), [Alon Lavie](https://arxiv.org/search/cs?searchtype=author&query=Lavie%2C+A)
+
+> We present the contribution of the Unbabel team to the WMT 2020 Shared Task on Metrics. We intend to participate on the segment-level, document-level and system-level tracks on all language pairs, as well as the 'QE as a Metric' track. Accordingly, we illustrate results of our models in these tracks with reference to test sets from the previous year. Our submissions build upon the recently proposed COMET framework: We train several estimator models to regress on different human-generated quality scores and a novel ranking model trained on relative ranks obtained from Direct Assessments. We also propose a simple technique for converting segment-level predictions into a document-level score. Overall, our systems achieve strong results for all language pairs on previous test sets and in many cases set a new state-of-the-art.
+
+| Comments: | WMT Metrics Shared Task 2020                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2010.15535](https://arxiv.org/abs/2010.15535) [cs.CL] |
+|           | (or [arXiv:2010.15535v1](https://arxiv.org/abs/2010.15535v1) [cs.CL] for this version) |
+
+<h2 id="2020-10-30-7">7. Contextual BERT: Conditioning the Language Model Using a Global State</h2>
+
+Title: [Contextual BERT: Conditioning the Language Model Using a Global State](https://arxiv.org/abs/2010.15778)
+
+Authors: [Timo I. Denk](https://arxiv.org/search/cs?searchtype=author&query=Denk%2C+T+I), [Ana Peleteiro Ramallo](https://arxiv.org/search/cs?searchtype=author&query=Ramallo%2C+A+P)
+
+> BERT is a popular language model whose main pre-training task is to fill in the blank, i.e., predicting a word that was masked out of a sentence, based on the remaining words. In some applications, however, having an additional context can help the model make the right prediction, e.g., by taking the domain or the time of writing into account. This motivates us to advance the BERT architecture by adding a global state for conditioning on a fixed-sized context. We present our two novel approaches and apply them to an industry use-case, where we complete fashion outfits with missing articles, conditioned on a specific customer. An experimental comparison to other methods from the literature shows that our methods improve personalization significantly.
+
+| Comments: | Accepted at the TextGraphs-14 workshop at COLING'2020 - The 28th International Conference on Computational Linguistics |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2010.15778](https://arxiv.org/abs/2010.15778) [cs.CL] |
+|           | (or [arXiv:2010.15778v1](https://arxiv.org/abs/2010.15778v1) [cs.CL] for this version) |
+
+
 
 
 
