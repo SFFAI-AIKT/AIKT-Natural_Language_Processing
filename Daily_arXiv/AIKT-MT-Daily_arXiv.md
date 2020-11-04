@@ -3,6 +3,13 @@
 # Index
 
 
+- [2020-11-04](#2020-11-04)
+
+  - [1. Layer-Wise Multi-View Learning for Neural Machine Translation](#2020-11-04-1)
+  - [2. CharBERT: Character-aware Pre-trained Language Model](#2020-11-04-2)
+  - [3. TransQuest: Translation Quality Estimation with Cross-lingual Transformers](#2020-11-04-3)
+  - [4. Cross-lingual Word Embeddings beyond Zero-shot Machine Translation](#2020-11-04-4)
+  - [5. Subword Segmentation and a Single Bridge Language Affect Zero-Shot Neural Machine Translation](#2020-11-04-5)
 - [2020-11-03](#2020-11-03)
 
   - [1. COOT: Cooperative Hierarchical Transformer for Video-Text Representation Learning](#2020-11-03-1)
@@ -22,6 +29,110 @@
 - [1. VECO: Variable Encoder-decoder Pre-training for Cross-lingual Understanding and Generation](#2020-11-02-1)
   - [2. Domain-Specific Lexical Grounding in Noisy Visual-Textual Documents](#2020-11-02-2)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-11-04
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-11-04-1">1. Layer-Wise Multi-View Learning for Neural Machine Translation</h2>
+
+Title: [Layer-Wise Multi-View Learning for Neural Machine Translation](https://arxiv.org/abs/2011.01482)
+
+Authors: [Qiang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Q), [Changliang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+C), [Yue Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Tong Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+T), [Jingbo Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J)
+
+> Traditional neural machine translation is limited to the topmost encoder layer's context representation and cannot directly perceive the lower encoder layers. Existing solutions usually rely on the adjustment of network architecture, making the calculation more complicated or introducing additional structural restrictions. In this work, we propose layer-wise multi-view learning to solve this problem, circumventing the necessity to change the model structure. We regard each encoder layer's off-the-shelf output, a by-product in layer-by-layer encoding, as the redundant view for the input sentence. In this way, in addition to the topmost encoder layer (referred to as the primary view), we also incorporate an intermediate encoder layer as the auxiliary view. We feed the two views to a partially shared decoder to maintain independent prediction. Consistency regularization based on KL divergence is used to encourage the two views to learn from each other. Extensive experimental results on five translation tasks show that our approach yields stable improvements over multiple strong baselines. As another bonus, our method is agnostic to network architectures and can maintain the same inference speed as the original model.
+
+| Comments: | COLING 2020                                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2011.01482](https://arxiv.org/abs/2011.01482) [cs.CL]** |
+|           | (or **[arXiv:2011.01482v1](https://arxiv.org/abs/2011.01482v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-04-2">2. CharBERT: Character-aware Pre-trained Language Model</h2>
+
+Title: [CharBERT: Character-aware Pre-trained Language Model](https://arxiv.org/abs/2011.01513)
+
+Authors: [Wentao Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+W), [Yiming Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+Y), [Chenglei Si](https://arxiv.org/search/cs?searchtype=author&query=Si%2C+C), [Ting Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T), [Shijin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Guoping Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+G)
+
+> Most pre-trained language models (PLMs) construct word representations at subword level with Byte-Pair Encoding (BPE) or its variations, by which OOV (out-of-vocab) words are almost avoidable. However, those methods split a word into subword units and make the representation incomplete and fragile. In this paper, we propose a character-aware pre-trained language model named CharBERT improving on the previous methods (such as BERT, RoBERTa) to tackle these problems. We first construct the contextual word embedding for each token from the sequential character representations, then fuse the representations of characters and the subword representations by a novel heterogeneous interaction module. We also propose a new pre-training task named NLM (Noisy LM) for unsupervised character representation learning. We evaluate our method on question answering, sequence labeling, and text classification tasks, both on the original datasets and adversarial misspelling test sets. The experimental results show that our method can significantly improve the performance and robustness of PLMs simultaneously. Pretrained models, evaluation sets, and code are available at [this https URL](https://github.com/wtma/CharBERT)
+
+| Comments: | 12 pages, to appear at COLING 2020                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2011.01513](https://arxiv.org/abs/2011.01513) [cs.CL]** |
+|           | (or **[arXiv:2011.01513v1](https://arxiv.org/abs/2011.01513v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-11-04-3">3. TransQuest: Translation Quality Estimation with Cross-lingual Transformers</h2>
+
+Title: [TransQuest: Translation Quality Estimation with Cross-lingual Transformers](https://arxiv.org/abs/2011.01536)
+
+Authors: [Tharindu Ranasinghe](https://arxiv.org/search/cs?searchtype=author&query=Ranasinghe%2C+T), [Constantin Orasan](https://arxiv.org/search/cs?searchtype=author&query=Orasan%2C+C), [Ruslan Mitkov](https://arxiv.org/search/cs?searchtype=author&query=Mitkov%2C+R)
+
+> Recent years have seen big advances in the field of sentence-level quality estimation (QE), largely as a result of using neural-based architectures. However, the majority of these methods work only on the language pair they are trained on and need retraining for new language pairs. This process can prove difficult from a technical point of view and is usually computationally expensive. In this paper we propose a simple QE framework based on cross-lingual transformers, and we use it to implement and evaluate two different neural architectures. Our evaluation shows that the proposed methods achieve state-of-the-art results outperforming current open-source quality estimation frameworks when trained on datasets from WMT. In addition, the framework proves very useful in transfer learning settings, especially when dealing with low-resourced languages, allowing us to obtain very competitive results.
+
+| Comments: | Accepted to COLING 2020. arXiv admin note: text overlap with [arXiv:2010.05318](https://arxiv.org/abs/2010.05318) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2011.01536](https://arxiv.org/abs/2011.01536) [cs.CL]** |
+|           | (or **[arXiv:2011.01536v1](https://arxiv.org/abs/2011.01536v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-11-04-4">4. Cross-lingual Word Embeddings beyond Zero-shot Machine Translation</h2>
+
+Title: [Cross-lingual Word Embeddings beyond Zero-shot Machine Translation](https://arxiv.org/abs/2011.01682)
+
+Authors: [Shifei Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+S), [Ali Basirat](https://arxiv.org/search/cs?searchtype=author&query=Basirat%2C+A)
+
+> We explore the transferability of a multilingual neural machine translation model to unseen languages when the transfer is grounded solely on the cross-lingual word embeddings. Our experimental results show that the translation knowledge can transfer weakly to other languages and that the degree of transferability depends on the languages' relatedness. We also discuss the limiting aspects of the multilingual architectures that cause weak translation transfer and suggest how to mitigate the limitations.
+
+| Comments: | Accepted at the 8th Swedish Language Technology Conference (SLTC-2020) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2011.01682](https://arxiv.org/abs/2011.01682) [cs.CL]** |
+|           | (or **[arXiv:2011.01682v1](https://arxiv.org/abs/2011.01682v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-11-04-5">5. Subword Segmentation and a Single Bridge Language Affect Zero-Shot Neural Machine Translation</h2>
+
+Title: [Subword Segmentation and a Single Bridge Language Affect Zero-Shot Neural Machine Translation](https://arxiv.org/abs/2011.01703)
+
+Authors: [Annette Rios](https://arxiv.org/search/cs?searchtype=author&query=Rios%2C+A), [Mathias Müller](https://arxiv.org/search/cs?searchtype=author&query=Müller%2C+M), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R)
+
+> Zero-shot neural machine translation is an attractive goal because of the high cost of obtaining data and building translation systems for new translation directions. However, previous papers have reported mixed success in zero-shot translation. It is hard to predict in which settings it will be effective, and what limits performance compared to a fully supervised system. In this paper, we investigate zero-shot performance of a multilingual EN↔{FR,CS,DE,FI} system trained on WMT data. We find that zero-shot performance is highly unstable and can vary by more than 6 BLEU between training runs, making it difficult to reliably track improvements. We observe a bias towards copying the source in zero-shot translation, and investigate how the choice of subword segmentation affects this bias. We find that language-specific subword segmentation results in less subword copying at training time, and leads to better zero-shot performance compared to jointly trained segmentation. A recent trend in multilingual models is to not train on parallel data between all language pairs, but have a single bridge language, e.g. English. We find that this negatively affects zero-shot translation and leads to a failure mode where the model ignores the language tag and instead produces English output in zero-shot directions. We show that this bias towards English can be effectively reduced with even a small amount of parallel data in some of the non-English pairs.
+
+| Comments: | Accepted at WMT 2020                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2011.01703](https://arxiv.org/abs/2011.01703) [cs.CL]** |
+|           | (or **[arXiv:2011.01703v1](https://arxiv.org/abs/2011.01703v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
