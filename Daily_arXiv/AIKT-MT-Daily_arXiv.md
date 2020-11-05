@@ -3,6 +3,13 @@
 # Index
 
 
+- [2020-11-05](#2020-11-05)
+
+  - [1. SimulMT to SimulST: Adapting Simultaneous Text Translation to End-to-End Simultaneous Speech Translation](#2020-11-05-1)
+  - [2. Probing Multilingual BERT for Genetic and Typological Signals](#2020-11-05-2)
+  - [3. Chinese Grammatical Correction Using BERT-based Pre-trained Model](#2020-11-05-3)
+  - [4. PheMT: A Phenomenon-wise Dataset for Machine Translation Robustness on User-Generated Contents](#2020-11-05-4)
+  - [5. Optimizing Transformer for Low-Resource Neural Machine Translation](#2020-11-05-5)
 - [2020-11-04](#2020-11-04)
 
   - [1. Layer-Wise Multi-View Learning for Neural Machine Translation](#2020-11-04-1)
@@ -29,6 +36,102 @@
 - [1. VECO: Variable Encoder-decoder Pre-training for Cross-lingual Understanding and Generation](#2020-11-02-1)
   - [2. Domain-Specific Lexical Grounding in Noisy Visual-Textual Documents](#2020-11-02-2)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-11-05
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-11-05-1">1. SimulMT to SimulST: Adapting Simultaneous Text Translation to End-to-End Simultaneous Speech Translation</h2>
+
+Title: [SimulMT to SimulST: Adapting Simultaneous Text Translation to End-to-End Simultaneous Speech Translation](https://arxiv.org/abs/2011.02048)
+
+Authors: [Xutai Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+X), [Juan Pino](https://arxiv.org/search/cs?searchtype=author&query=Pino%2C+J), [Philipp Koehn](https://arxiv.org/search/cs?searchtype=author&query=Koehn%2C+P)
+
+> Simultaneous text translation and end-to-end speech translation have recently made great progress but little work has combined these tasks together. We investigate how to adapt simultaneous text translation methods such as wait-k and monotonic multihead attention to end-to-end simultaneous speech translation by introducing a pre-decision module. A detailed analysis is provided on the latency-quality trade-offs of combining fixed and flexible pre-decision with fixed and flexible policies. We also design a novel computation-aware latency metric, adapted from Average Lagging.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2011.02048](https://arxiv.org/abs/2011.02048) [cs.CL]** |
+|           | (or **[arXiv:2011.02048v1](https://arxiv.org/abs/2011.02048v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-05-2">2. Probing Multilingual BERT for Genetic and Typological Signals</h2>
+
+Title: [Probing Multilingual BERT for Genetic and Typological Signals](https://arxiv.org/abs/2011.02070)
+
+Authors: [Taraka Rama](https://arxiv.org/search/cs?searchtype=author&query=Rama%2C+T), [Lisa Beinborn](https://arxiv.org/search/cs?searchtype=author&query=Beinborn%2C+L), [Steffen Eger](https://arxiv.org/search/cs?searchtype=author&query=Eger%2C+S)
+
+> We probe the layers in multilingual BERT (mBERT) for phylogenetic and geographic language signals across 100 languages and compute language distances based on the mBERT representations. We 1) employ the language distances to infer and evaluate language trees, finding that they are close to the reference family tree in terms of quartet tree distance, 2) perform distance matrix regression analysis, finding that the language distances can be best explained by phylogenetic and worst by structural factors and 3) present a novel measure for measuring diachronic meaning stability (based on cross-lingual representation variability) which correlates significantly with published ranked lists based on linguistic approaches. Our results contribute to the nascent field of typological interpretability of cross-lingual text representations.
+
+| Comments: | COLING 2020                                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2011.02070](https://arxiv.org/abs/2011.02070) [cs.CL]** |
+|           | (or **[arXiv:2011.02070v1](https://arxiv.org/abs/2011.02070v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-05-3">3. Chinese Grammatical Correction Using BERT-based Pre-trained Model</h2>
+
+Title: [Chinese Grammatical Correction Using BERT-based Pre-trained Model](https://arxiv.org/abs/2011.02093)
+
+Authors: [Hongfei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H), [Michiki Kurosawa](https://arxiv.org/search/cs?searchtype=author&query=Kurosawa%2C+M), [Satoru Katsumata](https://arxiv.org/search/cs?searchtype=author&query=Katsumata%2C+S), [Mamoru Komachi](https://arxiv.org/search/cs?searchtype=author&query=Komachi%2C+M)
+
+> In recent years, pre-trained models have been extensively studied, and several downstream tasks have benefited from their utilization. In this study, we verify the effectiveness of two methods that incorporate a BERT-based pre-trained model developed by Cui et al. (2020) into an encoder-decoder model on Chinese grammatical error correction tasks. We also analyze the error type and conclude that sentence-level errors are yet to be addressed.
+
+| Comments: | 6 pages; AACL-IJCNLP 2020                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2011.02093](https://arxiv.org/abs/2011.02093) [cs.CL]** |
+|           | (or **[arXiv:2011.02093v1](https://arxiv.org/abs/2011.02093v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-05-4">4. PheMT: A Phenomenon-wise Dataset for Machine Translation Robustness on User-Generated Contents</h2>
+
+Title: [PheMT: A Phenomenon-wise Dataset for Machine Translation Robustness on User-Generated Contents](https://arxiv.org/abs/2011.02121)
+
+Authors: [Ryo Fujii](https://arxiv.org/search/cs?searchtype=author&query=Fujii%2C+R), [Masato Mita](https://arxiv.org/search/cs?searchtype=author&query=Mita%2C+M), [Kaori Abe](https://arxiv.org/search/cs?searchtype=author&query=Abe%2C+K), [Kazuaki Hanawa](https://arxiv.org/search/cs?searchtype=author&query=Hanawa%2C+K), [Makoto Morishita](https://arxiv.org/search/cs?searchtype=author&query=Morishita%2C+M), [Jun Suzuki](https://arxiv.org/search/cs?searchtype=author&query=Suzuki%2C+J), [Kentaro Inui](https://arxiv.org/search/cs?searchtype=author&query=Inui%2C+K)
+
+> Neural Machine Translation (NMT) has shown drastic improvement in its quality when translating clean input, such as text from the news domain. However, existing studies suggest that NMT still struggles with certain kinds of input with considerable noise, such as User-Generated Contents (UGC) on the Internet. To make better use of NMT for cross-cultural communication, one of the most promising directions is to develop a model that correctly handles these expressions. Though its importance has been recognized, it is still not clear as to what creates the great gap in performance between the translation of clean input and that of UGC. To answer the question, we present a new dataset, PheMT, for evaluating the robustness of MT systems against specific linguistic phenomena in Japanese-English translation. Our experiments with the created dataset revealed that not only our in-house models but even widely used off-the-shelf systems are greatly disturbed by the presence of certain phenomena.
+
+| Comments: | 15 pages, 4 figures, accepted at COLING 2020                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2011.02121](https://arxiv.org/abs/2011.02121) [cs.CL]** |
+|           | (or **[arXiv:2011.02121v1](https://arxiv.org/abs/2011.02121v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-05-5">5. Optimizing Transformer for Low-Resource Neural Machine Translation</h2>
+
+Title: [Optimizing Transformer for Low-Resource Neural Machine Translation](https://arxiv.org/abs/2011.02266)
+
+Authors: [Ali Araabi](https://arxiv.org/search/cs?searchtype=author&query=Araabi%2C+A), [Christof Monz](https://arxiv.org/search/cs?searchtype=author&query=Monz%2C+C)
+
+> Language pairs with limited amounts of parallel data, also known as low-resource languages, remain a challenge for neural machine translation. While the Transformer model has achieved significant improvements for many language pairs and has become the de facto mainstream architecture, its capability under low-resource conditions has not been fully investigated yet. Our experiments on different subsets of the IWSLT14 training data show that the effectiveness of Transformer under low-resource conditions is highly dependent on the hyper-parameter settings. Our experiments show that using an optimized Transformer for low-resource conditions improves the translation quality up to 7.3 BLEU points compared to using the Transformer default settings.
+
+| Comments:    | To be published in COLING 2020                               |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2011.02266](https://arxiv.org/abs/2011.02266) [cs.CL]** |
+|              | (or **[arXiv:2011.02266v1](https://arxiv.org/abs/2011.02266v1) [cs.CL]** for this version) |
+
+
 
 
 
