@@ -3,6 +3,9 @@
 # Index
 
 
+- [2020-11-06](#2020-11-06)
+
+  - [1. Data Augmentation and Terminology Integration for Domain-Specific Sinhala-English-Tamil Statistical Machine Translation](#2020-11-06-1)
 - [2020-11-05](#2020-11-05)
 
   - [1. SimulMT to SimulST: Adapting Simultaneous Text Translation to End-to-End Simultaneous Speech Translation](#2020-11-05-1)
@@ -36,6 +39,33 @@
 - [1. VECO: Variable Encoder-decoder Pre-training for Cross-lingual Understanding and Generation](#2020-11-02-1)
   - [2. Domain-Specific Lexical Grounding in Noisy Visual-Textual Documents](#2020-11-02-2)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-11-06
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-11-06-1">1. Data Augmentation and Terminology Integration for Domain-Specific Sinhala-English-Tamil Statistical Machine Translation</h2>
+
+Title: [Data Augmentation and Terminology Integration for Domain-Specific Sinhala-English-Tamil Statistical Machine Translation](https://arxiv.org/abs/2011.02821)
+
+Authors: [Aloka Fernando](https://arxiv.org/search/cs?searchtype=author&query=Fernando%2C+A), [Surangika Ranathunga](https://arxiv.org/search/cs?searchtype=author&query=Ranathunga%2C+S), [Gihan Dias](https://arxiv.org/search/cs?searchtype=author&query=Dias%2C+G)
+
+> Out of vocabulary (OOV) is a problem in the context of Machine Translation (MT) in low-resourced languages. When source and/or target languages are morphologically rich, it becomes even worse. Bilingual list integration is an approach to address the OOV problem. This allows more words to be translated than are in the training data. However, since bilingual lists contain words in the base form, it will not translate inflected forms for morphologically rich languages such as Sinhala and Tamil. This paper focuses on data augmentation techniques where bilingual lexicon terms are expanded based on case-markers with the objective of generating new words, to be used in Statistical machine Translation (SMT). This data augmentation technique for dictionary terms shows improved BLEU scores for Sinhala-English SMT.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2011.02821](https://arxiv.org/abs/2011.02821) [cs.CL]** |
+|           | (or **[arXiv:2011.02821v1](https://arxiv.org/abs/2011.02821v1) [cs.CL]** for this version) |
+
+
+
+
+
+
 
 
 
