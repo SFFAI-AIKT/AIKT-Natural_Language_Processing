@@ -3,9 +3,14 @@
 # Index
 
 
-- [2020-11-06](#2020-11-06)
+- [2020-11-09](#2020-11-09)
 
-  - [1. Data Augmentation and Terminology Integration for Domain-Specific Sinhala-English-Tamil Statistical Machine Translation](#2020-11-06-1)
+  - [1. Improving RNN Transducer Based ASR with Auxiliary Tasks](#2020-11-09-1)
+  - [2. Semi-Supervised Low-Resource Style Transfer of Indonesian Informal to Formal Language with Iterative Forward-Translation](#2020-11-09-2)
+  - [3. Understanding Pure Character-Based Neural Machine Translation: The Case of Translating Finnish into English](#2020-11-09-3)
+  - [4. An Unsupervised method for OCR Post-Correction and Spelling Normalisation for Finnish](#2020-11-09-4)
+- [2020-11-06](#2020-11-06)
+- [1. Data Augmentation and Terminology Integration for Domain-Specific Sinhala-English-Tamil Statistical Machine Translation](#2020-11-06-1)
 - [2020-11-05](#2020-11-05)
 
   - [1. SimulMT to SimulST: Adapting Simultaneous Text Translation to End-to-End Simultaneous Speech Translation](#2020-11-05-1)
@@ -39,6 +44,85 @@
 - [1. VECO: Variable Encoder-decoder Pre-training for Cross-lingual Understanding and Generation](#2020-11-02-1)
   - [2. Domain-Specific Lexical Grounding in Noisy Visual-Textual Documents](#2020-11-02-2)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-11-09
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-11-09-1">1. Improving RNN Transducer Based ASR with Auxiliary Tasks</h2>
+
+Title: [Improving RNN Transducer Based ASR with Auxiliary Tasks](https://arxiv.org/abs/2011.03109)
+
+Authors:[Chunxi Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+C), [Frank Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+F), [Duc Le](https://arxiv.org/search/cs?searchtype=author&query=Le%2C+D), [Suyoun Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+S), [Yatharth Saraf](https://arxiv.org/search/cs?searchtype=author&query=Saraf%2C+Y), [Geoffrey Zweig](https://arxiv.org/search/cs?searchtype=author&query=Zweig%2C+G)
+
+> End-to-end automatic speech recognition (ASR) models with a single neural network have recently demonstrated state-of-the-art results compared to conventional hybrid speech recognizers. Specifically, recurrent neural network transducer (RNN-T) has shown competitive ASR performance on various benchmarks. In this work, we examine ways in which RNN-T can achieve better ASR accuracy via performing auxiliary tasks. We propose (i) using the same auxiliary task as primary RNN-T ASR task, and (ii) performing context-dependent graphemic state prediction as in conventional hybrid modeling. In transcribing social media videos with varying training data size, we first evaluate the streaming ASR performance on three languages: Romanian, Turkish and German. We find that both proposed methods provide consistent improvements. Next, we observe that both auxiliary tasks demonstrate efficacy in learning deep transformer encoders for RNN-T criterion, thus achieving competitive results - 2.0%/4.2% WER on LibriSpeech test-clean/other - as compared to prior top performing models.
+
+| Comments: | Accepted for publication at IEEE Spoken Language Technology Workshop (SLT), 2021 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2011.03109](https://arxiv.org/abs/2011.03109) [cs.CL]** |
+|           | (or **[arXiv:2011.03109v1](https://arxiv.org/abs/2011.03109v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-09-2">2. Semi-Supervised Low-Resource Style Transfer of Indonesian Informal to Formal Language with Iterative Forward-Translation</h2>
+
+Title: [Semi-Supervised Low-Resource Style Transfer of Indonesian Informal to Formal Language with Iterative Forward-Translation](https://arxiv.org/abs/2011.03286)
+
+Authors:[Haryo Akbarianto Wibowo](https://arxiv.org/search/cs?searchtype=author&query=Wibowo%2C+H+A), [Tatag Aziz Prawiro](https://arxiv.org/search/cs?searchtype=author&query=Prawiro%2C+T+A), [Muhammad Ihsan](https://arxiv.org/search/cs?searchtype=author&query=Ihsan%2C+M), [Alham Fikri Aji](https://arxiv.org/search/cs?searchtype=author&query=Aji%2C+A+F), [Radityo Eko Prasojo](https://arxiv.org/search/cs?searchtype=author&query=Prasojo%2C+R+E), [Rahmad Mahendra](https://arxiv.org/search/cs?searchtype=author&query=Mahendra%2C+R)
+
+> In its daily use, the Indonesian language is riddled with informality, that is, deviations from the standard in terms of vocabulary, spelling, and word order. On the other hand, current available Indonesian NLP models are typically developed with the standard Indonesian in mind. In this work, we address a style-transfer from informal to formal Indonesian as a low-resource machine translation problem. We build a new dataset of parallel sentences of informal Indonesian and its formal counterpart. We benchmark several strategies to perform style transfer from informal to formal Indonesian. We also explore augmenting the training set with artificial forward-translated data. Since we are dealing with an extremely low-resource setting, we find that a phrase-based machine translation approach outperforms the Transformer-based approach. Alternatively, a pre-trained GPT-2 fined-tuned to this task performed equally well but costs more computational resource. Our findings show a promising step towards leveraging machine translation models for style transfer. Our code and data are available in [this https URL](https://github.com/haryoa/stif-indonesia)
+
+| Comments: | 6 pages, Camera ready to be presented at IALP 2020           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2011.03286](https://arxiv.org/abs/2011.03286) [cs.CL]** |
+|           | (or **[arXiv:2011.03286v1](https://arxiv.org/abs/2011.03286v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-09-3">3. Understanding Pure Character-Based Neural Machine Translation: The Case of Translating Finnish into English</h2>
+
+Title: [Understanding Pure Character-Based Neural Machine Translation: The Case of Translating Finnish into English](https://arxiv.org/abs/2011.03469)
+
+Authors:[Gongbo Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+G), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R), [Joakim Nivre](https://arxiv.org/search/cs?searchtype=author&query=Nivre%2C+J)
+
+> Recent work has shown that deeper character-based neural machine translation (NMT) models can outperform subword-based models. However, it is still unclear what makes deeper character-based models successful. In this paper, we conduct an investigation into pure character-based models in the case of translating Finnish into English, including exploring the ability to learn word senses and morphological inflections and the attention mechanism. We demonstrate that word-level information is distributed over the entire character sequence rather than over a single character, and characters at different positions play different roles in learning linguistic knowledge. In addition, character-based models need more layers to encode word senses which explains why only deeper models outperform subword-based models. The attention distribution pattern shows that separators attract a lot of attention and we explore a sparse word-level attention to enforce character hidden states to capture the full word-level information. Experimental results show that the word-level attention with a single head results in 1.2 BLEU points drop.
+
+| Comments: | accepted by COLING 2020, camera-ready version                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2011.03469](https://arxiv.org/abs/2011.03469) [cs.CL]** |
+|           | (or **[arXiv:2011.03469v1](https://arxiv.org/abs/2011.03469v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-09-4">4. An Unsupervised method for OCR Post-Correction and Spelling Normalisation for Finnish</h2>
+
+Title: [An Unsupervised method for OCR Post-Correction and Spelling Normalisation for Finnish](https://arxiv.org/abs/2011.03502)
+
+Authors:[Quan Duong](https://arxiv.org/search/cs?searchtype=author&query=Duong%2C+Q), [Mika Hämäläinen](https://arxiv.org/search/cs?searchtype=author&query=Hämäläinen%2C+M), [Simon Hengchen](https://arxiv.org/search/cs?searchtype=author&query=Hengchen%2C+S)
+
+> Historical corpora are known to contain errors introduced by OCR (optical character recognition) methods used in the digitization process, often said to be degrading the performance of NLP systems. Correcting these errors manually is a time-consuming process and a great part of the automatic approaches have been relying on rules or supervised machine learning. We build on previous work on fully automatic unsupervised extraction of parallel data to train a character-based sequence-to-sequence NMT (neural machine translation) model to conduct OCR error correction designed for English, and adapt it to Finnish by proposing solutions that take the rich morphology of the language into account. Our new method shows increased performance while remaining fully unsupervised, with the added benefit of spelling normalisation. The source code and models are available on GitHub and Zenodo.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2011.03502](https://arxiv.org/abs/2011.03502) [cs.CL]** |
+|           | (or **[arXiv:2011.03502v1](https://arxiv.org/abs/2011.03502v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
