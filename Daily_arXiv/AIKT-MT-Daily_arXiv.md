@@ -3,14 +3,21 @@
 # Index
 
 
-- [2020-11-09](#2020-11-09)
+- [2020-11-10](#2020-11-10)
 
-  - [1. Improving RNN Transducer Based ASR with Auxiliary Tasks](#2020-11-09-1)
+  - [1. Long Range Arena: A Benchmark for Efficient Transformers](#2020-11-10-1)
+  - [2. CxGBERT: BERT meets Construction Grammar](#2020-11-10-2)
+  - [3. BERT-JAM: Boosting BERT-Enhanced Neural Machine Translation with Joint Attention](#2020-11-10-3)
+  - [4. Hierarchical Multitask Learning Approach for BERT](#2020-11-10-4)
+  - [5. VisBERT: Hidden-State Visualizations for Transformers](#2020-11-10-5)
+- [2020-11-09](#2020-11-09)
+- [1. Improving RNN Transducer Based ASR with Auxiliary Tasks](#2020-11-09-1)
   - [2. Semi-Supervised Low-Resource Style Transfer of Indonesian Informal to Formal Language with Iterative Forward-Translation](#2020-11-09-2)
   - [3. Understanding Pure Character-Based Neural Machine Translation: The Case of Translating Finnish into English](#2020-11-09-3)
   - [4. An Unsupervised method for OCR Post-Correction and Spelling Normalisation for Finnish](#2020-11-09-4)
 - [2020-11-06](#2020-11-06)
-- [1. Data Augmentation and Terminology Integration for Domain-Specific Sinhala-English-Tamil Statistical Machine Translation](#2020-11-06-1)
+
+  - [1. Data Augmentation and Terminology Integration for Domain-Specific Sinhala-English-Tamil Statistical Machine Translation](#2020-11-06-1)
 - [2020-11-05](#2020-11-05)
 
   - [1. SimulMT to SimulST: Adapting Simultaneous Text Translation to End-to-End Simultaneous Speech Translation](#2020-11-05-1)
@@ -41,9 +48,107 @@
   - [12. Enabling Zero-shot Multilingual Spoken Language Translation with Language-Specific Encoders and Decoders](#2020-11-03-12)
   - [13. The Devil is in the Details: Evaluating Limitations of Transformer-based Methods for Granular Tasks](#2020-11-03-13)
 - [2020-11-02](#2020-11-02)
-- [1. VECO: Variable Encoder-decoder Pre-training for Cross-lingual Understanding and Generation](#2020-11-02-1)
+
+  - [1. VECO: Variable Encoder-decoder Pre-training for Cross-lingual Understanding and Generation](#2020-11-02-1)
   - [2. Domain-Specific Lexical Grounding in Noisy Visual-Textual Documents](#2020-11-02-2)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-11-10
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-11-10-1">1. Long Range Arena: A Benchmark for Efficient Transformers</h2>
+
+Title: [Long Range Arena: A Benchmark for Efficient Transformers](https://arxiv.org/abs/2011.04006)
+
+Authors: [Yi Tay](https://arxiv.org/search/cs?searchtype=author&query=Tay%2C+Y), [Mostafa Dehghani](https://arxiv.org/search/cs?searchtype=author&query=Dehghani%2C+M), [Samira Abnar](https://arxiv.org/search/cs?searchtype=author&query=Abnar%2C+S), [Yikang Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+Y), [Dara Bahri](https://arxiv.org/search/cs?searchtype=author&query=Bahri%2C+D), [Philip Pham](https://arxiv.org/search/cs?searchtype=author&query=Pham%2C+P), [Jinfeng Rao](https://arxiv.org/search/cs?searchtype=author&query=Rao%2C+J), [Liu Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+L), [Sebastian Ruder](https://arxiv.org/search/cs?searchtype=author&query=Ruder%2C+S), [Donald Metzler](https://arxiv.org/search/cs?searchtype=author&query=Metzler%2C+D)
+
+> Transformers do not scale very well to long sequence lengths largely because of quadratic self-attention complexity. In the recent months, a wide spectrum of efficient, fast Transformers have been proposed to tackle this problem, more often than not claiming superior or comparable model quality to vanilla Transformer models. To this date, there is no well-established consensus on how to evaluate this class of models. Moreover, inconsistent benchmarking on a wide spectrum of tasks and datasets makes it difficult to assess relative model quality amongst many models. This paper proposes a systematic and unified benchmark, LRA, specifically focused on evaluating model quality under long-context scenarios. Our benchmark is a suite of tasks consisting of sequences ranging from 1K to 16K tokens, encompassing a wide range of data types and modalities such as text, natural, synthetic images, and mathematical expressions requiring similarity, structural, and visual-spatial reasoning. We systematically evaluate ten well-established long-range Transformer models (Reformers, Linformers, Linear Transformers, Sinkhorn Transformers, Performers, Synthesizers, Sparse Transformers, and Longformers) on our newly proposed benchmark suite. LRA paves the way towards better understanding this class of efficient Transformer models, facilitates more research in this direction, and presents new challenging tasks to tackle. Our benchmark code will be released at [this https URL](https://github.com/google-research/long-range-arena).
+
+| Subjects: | **Machine Learning (cs.LG)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV); Information Retrieval (cs.IR) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2011.04006](https://arxiv.org/abs/2011.04006) [cs.LG]** |
+|           | (or **[arXiv:2011.04006v1](https://arxiv.org/abs/2011.04006v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-10-2">2. CxGBERT: BERT meets Construction Grammar</h2>
+
+Title: [CxGBERT: BERT meets Construction Grammar](https://arxiv.org/abs/2011.04134)
+
+Authors: [Harish Tayyar Madabushi](https://arxiv.org/search/cs?searchtype=author&query=Madabushi%2C+H+T), [Laurence Romain](https://arxiv.org/search/cs?searchtype=author&query=Romain%2C+L), [Dagmar Divjak](https://arxiv.org/search/cs?searchtype=author&query=Divjak%2C+D), [Petar Milin](https://arxiv.org/search/cs?searchtype=author&query=Milin%2C+P)
+
+> While lexico-semantic elements no doubt capture a large amount of linguistic information, it has been argued that they do not capture all information contained in text. This assumption is central to constructionist approaches to language which argue that language consists of constructions, learned pairings of a form and a function or meaning that are either frequent or have a meaning that cannot be predicted from its component parts. BERT's training objectives give it access to a tremendous amount of lexico-semantic information, and while BERTology has shown that BERT captures certain important linguistic dimensions, there have been no studies exploring the extent to which BERT might have access to constructional information. In this work we design several probes and conduct extensive experiments to answer this question. Our results allow us to conclude that BERT does indeed have access to a significant amount of information, much of which linguists typically call constructional information. The impact of this observation is potentially far-reaching as it provides insights into what deep learning methods learn from text, while also showing that information contained in constructions is redundantly encoded in lexico-semantics.
+
+| Comments: | 28th International Conference on Computational Linguistics (COLING 2020) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2011.04134](https://arxiv.org/abs/2011.04134) [cs.CL]** |
+|           | (or **[arXiv:2011.04134v1](https://arxiv.org/abs/2011.04134v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-10-3">3. BERT-JAM: Boosting BERT-Enhanced Neural Machine Translation with Joint Attention</h2>
+
+Title: [BERT-JAM: Boosting BERT-Enhanced Neural Machine Translation with Joint Attention](https://arxiv.org/abs/2011.04266)
+
+Authors: [Zhebin Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Sai Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+S), [Dawei Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+D), [Gang Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+G)
+
+> BERT-enhanced neural machine translation (NMT) aims at leveraging BERT-encoded representations for translation tasks. A recently proposed approach uses attention mechanisms to fuse Transformer's encoder and decoder layers with BERT's last-layer representation and shows enhanced performance. However, their method doesn't allow for the flexible distribution of attention between the BERT representation and the encoder/decoder representation. In this work, we propose a novel BERT-enhanced NMT model called BERT-JAM which improves upon existing models from two aspects: 1) BERT-JAM uses joint-attention modules to allow the encoder/decoder layers to dynamically allocate attention between different representations, and 2) BERT-JAM allows the encoder/decoder layers to make use of BERT's intermediate representations by composing them using a gated linear unit (GLU). We train BERT-JAM with a novel three-phase optimization strategy that progressively unfreezes different components of BERT-JAM. Our experiments show that BERT-JAM achieves SOTA BLEU scores on multiple translation tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2011.04266](https://arxiv.org/abs/2011.04266) [cs.CL]** |
+|           | (or **[arXiv:2011.04266v1](https://arxiv.org/abs/2011.04266v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-10-4">4. Hierarchical Multitask Learning Approach for BERT</h2>
+
+Title: [Hierarchical Multitask Learning Approach for BERT](https://arxiv.org/abs/2011.04451)
+
+Authors: [Çağla Aksoy](https://arxiv.org/search/cs?searchtype=author&query=Aksoy%2C+Ç), [Alper Ahmetoğlu](https://arxiv.org/search/cs?searchtype=author&query=Ahmetoğlu%2C+A), [Tunga Güngör](https://arxiv.org/search/cs?searchtype=author&query=Güngör%2C+T)
+
+> Recent works show that learning contextualized embeddings for words is beneficial for downstream tasks. BERT is one successful example of this approach. It learns embeddings by solving two tasks, which are masked language model (masked LM) and the next sentence prediction (NSP). The pre-training of BERT can also be framed as a multitask learning problem. In this work, we adopt hierarchical multitask learning approaches for BERT pre-training. Pre-training tasks are solved at different layers instead of the last layer, and information from the NSP task is transferred to the masked LM task. Also, we propose a new pre-training task bigram shift to encode word order information. We choose two downstream tasks, one of which requires sentence-level embeddings (textual entailment), and the other requires contextualized embeddings of words (question answering). Due to computational restrictions, we use the downstream task data instead of a large dataset for the pre-training to see the performance of proposed models when given a restricted dataset. We test their performance on several probing tasks to analyze learned embeddings. Our results show that imposing a task hierarchy in pre-training improves the performance of embeddings.
+
+| Comments: | 9 pages, 3 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2011.04451](https://arxiv.org/abs/2011.04451) [cs.CL]** |
+|           | (or **[arXiv:2011.04451v1](https://arxiv.org/abs/2011.04451v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-10-5">5. VisBERT: Hidden-State Visualizations for Transformers</h2>
+
+Title: [VisBERT: Hidden-State Visualizations for Transformers](https://arxiv.org/abs/2011.04507)
+
+Authors: [Betty van Aken](https://arxiv.org/search/cs?searchtype=author&query=van+Aken%2C+B), [Benjamin Winter](https://arxiv.org/search/cs?searchtype=author&query=Winter%2C+B), [Alexander Löser](https://arxiv.org/search/cs?searchtype=author&query=Löser%2C+A), [Felix A. Gers](https://arxiv.org/search/cs?searchtype=author&query=Gers%2C+F+A)
+
+> Explainability and interpretability are two important concepts, the absence of which can and should impede the application of well-performing neural networks to real-world problems. At the same time, they are difficult to incorporate into the large, black-box models that achieve state-of-the-art results in a multitude of NLP tasks. Bidirectional Encoder Representations from Transformers (BERT) is one such black-box model. It has become a staple architecture to solve many different NLP tasks and has inspired a number of related Transformer models. Understanding how these models draw conclusions is crucial for both their improvement and application. We contribute to this challenge by presenting VisBERT, a tool for visualizing the contextual token representations within BERT for the task of (multi-hop) Question Answering. Instead of analyzing attention weights, we focus on the hidden states resulting from each encoder block within the BERT model. This way we can observe how the semantic representations are transformed throughout the layers of the model. VisBERT enables users to get insights about the model's internal state and to explore its inference steps or potential shortcomings. The tool allows us to identify distinct phases in BERT's transformations that are similar to a traditional NLP pipeline and offer insights during failed predictions.
+
+| Comments:          | Published in WWW '20: Companion Proceedings of the Web Conference 2020 |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| Journal reference: | Companion Proceedings of the Web Conference 2020             |
+| Cite as:           | **[arXiv:2011.04507](https://arxiv.org/abs/2011.04507) [cs.CL]** |
+|                    | (or **[arXiv:2011.04507v1](https://arxiv.org/abs/2011.04507v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
