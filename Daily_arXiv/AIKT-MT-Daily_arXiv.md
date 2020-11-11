@@ -3,6 +3,15 @@
 # Index
 
 
+- [2020-11-11](#2020-11-11)
+
+  - [1. Simultaneous Speech-to-Speech Translation System with Neural Incremental ASR, MT, and TTS](#2020-11-11-1)
+  - [2. When Do You Need Billions of Words of Pretraining Data?](#2020-11-11-2)
+  - [3. To What Degree Can Language Borders Be Blurred In BERT-based Multilingual Spoken Language Understanding?](#2020-11-11-3)
+  - [4. Translating Similar Languages: Role of Mutual Intelligibility in Multilingual Transformers](#2020-11-11-4)
+  - [5. Multi-Task Sequence Prediction For Tunisian Arabizi Multi-Level Annotation](#2020-11-11-5)
+  - [6. UmBERTo-MTSA @ AcCompl-It: Improving Complexity and Acceptability Prediction with Multi-task Learning on Self-Supervised Annotations](#2020-11-11-6)
+  - [7. Towards Interpretable Natural Language Understanding with Explanations as Latent Variables](#2020-11-11-7)
 - [2020-11-10](#2020-11-10)
 
   - [1. Long Range Arena: A Benchmark for Efficient Transformers](#2020-11-10-1)
@@ -52,6 +61,140 @@
   - [1. VECO: Variable Encoder-decoder Pre-training for Cross-lingual Understanding and Generation](#2020-11-02-1)
   - [2. Domain-Specific Lexical Grounding in Noisy Visual-Textual Documents](#2020-11-02-2)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-11-11
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-11-11-1">1. Simultaneous Speech-to-Speech Translation System with Neural Incremental ASR, MT, and TTS</h2>
+
+Title: [Simultaneous Speech-to-Speech Translation System with Neural Incremental ASR, MT, and TTS](https://arxiv.org/abs/2011.04845)
+
+Authors: [Katsuhito Sudoh](https://arxiv.org/search/cs?searchtype=author&query=Sudoh%2C+K), [Takatomo Kano](https://arxiv.org/search/cs?searchtype=author&query=Kano%2C+T), [Sashi Novitasari](https://arxiv.org/search/cs?searchtype=author&query=Novitasari%2C+S), [Tomoya Yanagita](https://arxiv.org/search/cs?searchtype=author&query=Yanagita%2C+T), [Sakriani Sakti](https://arxiv.org/search/cs?searchtype=author&query=Sakti%2C+S), [Satoshi Nakamura](https://arxiv.org/search/cs?searchtype=author&query=Nakamura%2C+S)
+
+> This paper presents a newly developed, simultaneous neural speech-to-speech translation system and its evaluation. The system consists of three fully-incremental neural processing modules for automatic speech recognition (ASR), machine translation (MT), and text-to-speech synthesis (TTS). We investigated its overall latency in the system's Ear-Voice Span and speaking latency along with module-level performance.
+
+| Comments: | 6 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2011.04845](https://arxiv.org/abs/2011.04845) [cs.CL]** |
+|           | (or **[arXiv:2011.04845v1](https://arxiv.org/abs/2011.04845v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-11-2">2. When Do You Need Billions of Words of Pretraining Data?</h2>
+
+Title: [When Do You Need Billions of Words of Pretraining Data?](https://arxiv.org/abs/2011.04946)
+
+Authors: [Yian Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Alex Warstadt](https://arxiv.org/search/cs?searchtype=author&query=Warstadt%2C+A), [Haau-Sing Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+H), [Samuel R. Bowman](https://arxiv.org/search/cs?searchtype=author&query=Bowman%2C+S+R)
+
+> NLP is currently dominated by general-purpose pretrained language models like RoBERTa, which achieve strong performance on NLU tasks through pretraining on billions of words. But what exact knowledge or skills do Transformer LMs learn from large-scale pretraining that they cannot learn from less data? We adopt four probing methods---classifier probing, information-theoretic probing, unsupervised relative acceptability judgment, and fine-tuning on NLU tasks---and draw learning curves that track the growth of these different measures of linguistic ability with respect to pretraining data volume using the MiniBERTas, a group of RoBERTa models pretrained on 1M, 10M, 100M and 1B words. We find that LMs require only about 10M or 100M words to learn representations that reliably encode most syntactic and semantic features we test. A much larger quantity of data is needed in order to acquire enough commonsense knowledge and other skills required to master typical downstream NLU tasks. The results suggest that, while the ability to encode linguistic features is almost certainly necessary for language understanding, it is likely that other forms of knowledge are the major drivers of recent improvements in language understanding among large pretrained models.
+
+| Comments: | 10 pages, 6 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2011.04946](https://arxiv.org/abs/2011.04946) [cs.CL]** |
+|           | (or **[arXiv:2011.04946v1](https://arxiv.org/abs/2011.04946v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-11-3">3. To What Degree Can Language Borders Be Blurred In BERT-based Multilingual Spoken Language Understanding?</h2>
+
+Title: [To What Degree Can Language Borders Be Blurred In BERT-based Multilingual Spoken Language Understanding?](https://arxiv.org/abs/2011.05007)
+
+Authors: [Quynh Do](https://arxiv.org/search/cs?searchtype=author&query=Do%2C+Q), [Judith Gaspers](https://arxiv.org/search/cs?searchtype=author&query=Gaspers%2C+J), [Tobias Roding](https://arxiv.org/search/cs?searchtype=author&query=Roding%2C+T), [Melanie Bradford](https://arxiv.org/search/cs?searchtype=author&query=Bradford%2C+M)
+
+> This paper addresses the question as to what degree a BERT-based multilingual Spoken Language Understanding (SLU) model can transfer knowledge across languages. Through experiments we will show that, although it works substantially well even on distant language groups, there is still a gap to the ideal multilingual performance. In addition, we propose a novel BERT-based adversarial model architecture to learn language-shared and language-specific representations for multilingual SLU. Our experimental results prove that the proposed model is capable of narrowing the gap to the ideal multilingual performance.
+
+| Comments: | COLING 2020                                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2011.05007](https://arxiv.org/abs/2011.05007) [cs.CL]** |
+|           | (or **[arXiv:2011.05007v1](https://arxiv.org/abs/2011.05007v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-11-4">4. Translating Similar Languages: Role of Mutual Intelligibility in Multilingual Transformers</h2>
+
+Title: [Translating Similar Languages: Role of Mutual Intelligibility in Multilingual Transformers](https://arxiv.org/abs/2011.05037)
+
+Authors: [Ife Adebara](https://arxiv.org/search/cs?searchtype=author&query=Adebara%2C+I), [El Moatez Billah Nagoudi](https://arxiv.org/search/cs?searchtype=author&query=Nagoudi%2C+E+M+B), [Muhammad Abdul Mageed](https://arxiv.org/search/cs?searchtype=author&query=Mageed%2C+M+A)
+
+> We investigate different approaches to translate between similar languages under low resource conditions, as part of our contribution to the WMT 2020 Similar Languages Translation Shared Task. We submitted Transformer-based bilingual and multilingual systems for all language pairs, in the two directions. We also leverage back-translation for one of the language pairs, acquiring an improvement of more than 3 BLEU points. We interpret our results in light of the degree of mutual intelligibility (based on Jaccard similarity) between each pair, finding a positive correlation between mutual intelligibility and model performance. Our Spanish-Catalan model has the best performance of all the five language pairs. Except for the case of Hindi-Marathi, our bilingual models achieve better performance than the multilingual models on all pairs.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2011.05037](https://arxiv.org/abs/2011.05037) [cs.CL]** |
+|           | (or **[arXiv:2011.05037v1](https://arxiv.org/abs/2011.05037v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-11-5">5. Multi-Task Sequence Prediction For Tunisian Arabizi Multi-Level Annotation</h2>
+
+Title: [Multi-Task Sequence Prediction For Tunisian Arabizi Multi-Level Annotation](https://arxiv.org/abs/2011.05152)
+
+Authors: [Elisa Gugliotta](https://arxiv.org/search/cs?searchtype=author&query=Gugliotta%2C+E) (1,2,3), [Marco Dinarelli](https://arxiv.org/search/cs?searchtype=author&query=Dinarelli%2C+M) (2), [Olivier Kraif](https://arxiv.org/search/cs?searchtype=author&query=Kraif%2C+O) (3) ((1) Sapienza University of Rome, (2) Université Grenoble Alpes - Laboratoire LIG, (Getalp group), (3) Université Grenoble Alpes- Laboratoire LIDILEM)
+
+> In this paper we propose a multi-task sequence prediction system, based on recurrent neural networks and used to annotate on multiple levels an Arabizi Tunisian corpus. The annotation performed are text classification, tokenization, PoS tagging and encoding of Tunisian Arabizi into CODA* Arabic orthography. The system is learned to predict all the annotation levels in cascade, starting from Arabizi input. We evaluate the system on the TIGER German corpus, suitably converting data to have a multi-task problem, in order to show the effectiveness of our neural architecture. We show also how we used the system in order to annotate a Tunisian Arabizi corpus, which has been afterwards manually corrected and used to further evaluate sequence models on Tunisian data. Our system is developed for the Fairseq framework, which allows for a fast and easy use for any other sequence prediction problem.
+
+| Comments: | Paper accepted at the Fifth Arabic Natural Language Processing Workshop (WANLP) 2020 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2011.05152](https://arxiv.org/abs/2011.05152) [cs.CL]** |
+|           | (or **[arXiv:2011.05152v1](https://arxiv.org/abs/2011.05152v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-11-6">6. UmBERTo-MTSA @ AcCompl-It: Improving Complexity and Acceptability Prediction with Multi-task Learning on Self-Supervised Annotations</h2>
+
+Title: [UmBERTo-MTSA @ AcCompl-It: Improving Complexity and Acceptability Prediction with Multi-task Learning on Self-Supervised Annotations](https://arxiv.org/abs/2011.05197)
+
+Authors: [Gabriele Sarti](https://arxiv.org/search/cs?searchtype=author&query=Sarti%2C+G)
+
+> This work describes a self-supervised data augmentation approach used to improve learning models' performances when only a moderate amount of labeled data is available. Multiple copies of the original model are initially trained on the downstream task. Their predictions are then used to annotate a large set of unlabeled examples. Finally, multi-task training is performed on the parallel annotations of the resulting training set, and final scores are obtained by averaging annotator-specific head predictions. Neural language models are fine-tuned using this procedure in the context of the AcCompl-it shared task at EVALITA 2020, obtaining considerable improvements in prediction quality.
+
+| Comments:    | 5 pages, Best system award for the AcCompl-It shared task at the EVALITA 2020 workshop |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| MSC classes: | 68T50                                                        |
+| ACM classes: | I.2.7; J.5                                                   |
+| Cite as:     | **[arXiv:2011.05197](https://arxiv.org/abs/2011.05197) [cs.CL]** |
+|              | (or **[arXiv:2011.05197v1](https://arxiv.org/abs/2011.05197v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-11-7">7. Towards Interpretable Natural Language Understanding with Explanations as Latent Variables</h2>
+
+Title: [Towards Interpretable Natural Language Understanding with Explanations as Latent Variables](https://arxiv.org/abs/2011.05268)
+
+Authors: [Wangchunshu Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+W), [Jinyi Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+J), [Hanlin Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H), [Xiaodan Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+X), [Maosong Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M), [Chenyan Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+C), [Jian Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+J)
+
+> Recently generating natural language explanations has shown very promising results in not only offering interpretable explanations but also providing additional information and supervision for prediction. However, existing approaches usually require a large set of human annotated explanations for training while collecting a large set of explanations is not only time consuming but also expensive. In this paper, we develop a general framework for interpretable natural language understanding that requires only a small set of human annotated explanations for training. Our framework treats natural language explanations as latent variables that model the underlying reasoning process of a neural model. We develop a variational EM framework for optimization where an explanation generation module and an explanation-augmented prediction module are alternatively optimized and mutually enhance each other. Moreover, we further propose an explanation-based self-training method under this framework for semi-supervised learning. It alternates between assigning pseudo-labels to unlabeled data and generating new explanations to iteratively improve each other. Experiments on two natural language understanding tasks demonstrate that our framework can not only make effective predictions in both supervised and semi-supervised settings, but also generate good natural language explanation.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2011.05268](https://arxiv.org/abs/2011.05268) [cs.CL]** |
+|           | (or **[arXiv:2011.05268v1](https://arxiv.org/abs/2011.05268v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
