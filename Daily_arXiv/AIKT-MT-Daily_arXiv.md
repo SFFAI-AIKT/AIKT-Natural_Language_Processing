@@ -3,6 +3,15 @@
 # Index
 
 
+- [2020-11-13](#2020-11-13)
+
+  - [1. Incorporating a Local Translation Mechanism into Non-autoregressive Translation](#2020-11-13-1)
+- [2020-11-12](#2020-11-12)
+
+  - [1. OCR Post Correction for Endangered Language Texts](#2020-11-12-1)
+  - [2. From Unsupervised Machine Translation To Adversarial Text Generation](#2020-11-12-2)
+  - [3.On the Sentence Embeddings from Pre-trained Language Models](#2020-11-12-3)
+  - [4. The Impact of Text Presentation on Translator Performance](#2020-11-12-4)
 - [2020-11-11](#2020-11-11)
 
   - [1. Simultaneous Speech-to-Speech Translation System with Neural Incremental ASR, MT, and TTS](#2020-11-11-1)
@@ -61,6 +70,112 @@
   - [1. VECO: Variable Encoder-decoder Pre-training for Cross-lingual Understanding and Generation](#2020-11-02-1)
   - [2. Domain-Specific Lexical Grounding in Noisy Visual-Textual Documents](#2020-11-02-2)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-11-13
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-11-13-1">1. Incorporating a Local Translation Mechanism into Non-autoregressive Translation</h2>
+
+Title: [Incorporating a Local Translation Mechanism into Non-autoregressive Translation](https://arxiv.org/abs/2011.06132)
+
+Authors: [Xiang Kong](https://arxiv.org/search/cs?searchtype=author&query=Kong%2C+X), [Zhisong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Eduard Hovy](https://arxiv.org/search/cs?searchtype=author&query=Hovy%2C+E)
+
+> In this work, we introduce a novel local autoregressive translation (LAT) mechanism into non-autoregressive translation (NAT) models so as to capture local dependencies among tar-get outputs. Specifically, for each target decoding position, instead of only one token, we predict a short sequence of tokens in an autoregressive way. We further design an efficient merging algorithm to align and merge the out-put pieces into one final output sequence. We integrate LAT into the conditional masked language model (CMLM; Ghazvininejad et al.,2019) and similarly adopt iterative decoding. Empirical results on five translation tasks show that compared with CMLM, our method achieves comparable or better performance with fewer decoding iterations, bringing a 2.5xspeedup. Further analysis indicates that our method reduces repeated translations and performs better at longer sentences.
+
+| Comments: | EMNLP 2020                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2011.06132](https://arxiv.org/abs/2011.06132) [cs.CL]** |
+|           | (or **[arXiv:2011.06132v1](https://arxiv.org/abs/2011.06132v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+# 2020-11-12
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-11-12-1">1. OCR Post Correction for Endangered Language Texts</h2>
+
+Title: [OCR Post Correction for Endangered Language Texts](https://arxiv.org/abs/2011.05402)
+
+Authors: [Shruti Rijhwani](https://arxiv.org/search/cs?searchtype=author&query=Rijhwani%2C+S), [Antonios Anastasopoulos](https://arxiv.org/search/cs?searchtype=author&query=Anastasopoulos%2C+A), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
+
+> There is little to no data available to build natural language processing models for most endangered languages. However, textual data in these languages often exists in formats that are not machine-readable, such as paper books and scanned images. In this work, we address the task of extracting text from these resources. We create a benchmark dataset of transcriptions for scanned books in three critically endangered languages and present a systematic analysis of how general-purpose OCR tools are not robust to the data-scarce setting of endangered languages. We develop an OCR post-correction method tailored to ease training in this data-scarce setting, reducing the recognition error rate by 34% on average across the three languages.
+
+| Comments: | Accepted to EMNLP 2020                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2011.05402](https://arxiv.org/abs/2011.05402) [cs.CL]** |
+|           | (or **[arXiv:2011.05402v1](https://arxiv.org/abs/2011.05402v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-12-2">2. From Unsupervised Machine Translation To Adversarial Text Generation</h2>
+
+Title: [From Unsupervised Machine Translation To Adversarial Text Generation](https://arxiv.org/abs/2011.05449)
+
+Authors: [Ahmad Rashid](https://arxiv.org/search/cs?searchtype=author&query=Rashid%2C+A), [Alan Do-Omri](https://arxiv.org/search/cs?searchtype=author&query=Do-Omri%2C+A), [Md. Akmal Haidar](https://arxiv.org/search/cs?searchtype=author&query=Haidar%2C+M+A), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q), [Mehdi Rezagholizadeh](https://arxiv.org/search/cs?searchtype=author&query=Rezagholizadeh%2C+M)
+
+> We present a self-attention based bilingual adversarial text generator (B-GAN) which can learn to generate text from the encoder representation of an unsupervised neural machine translation system. B-GAN is able to generate a distributed latent space representation which can be paired with an attention based decoder to generate fluent sentences. When trained on an encoder shared between two languages and paired with the appropriate decoder, it can generate sentences in either language. B-GAN is trained using a combination of reconstruction loss for auto-encoder, a cross domain loss for translation and a GAN based adversarial loss for text generation. We demonstrate that B-GAN, trained on monolingual corpora only using multiple losses, generates more fluent sentences compared to monolingual baselines while effectively using half the number of parameters.
+
+| Comments: | Accepted at ICASSP 2020                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2011.05449](https://arxiv.org/abs/2011.05449) [cs.CL]** |
+|           | (or **[arXiv:2011.05449v1](https://arxiv.org/abs/2011.05449v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-12-3">3. On the Sentence Embeddings from Pre-trained Language Models</h2>
+
+Title: [On the Sentence Embeddings from Pre-trained Language Models](https://arxiv.org/abs/2011.05864)
+
+Authors: [Bohan Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+B), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Junxian He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+J), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Yiming Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> Pre-trained contextual representations like BERT have achieved great success in natural language processing. However, the sentence embeddings from the pre-trained language models without fine-tuning have been found to poorly capture semantic meaning of sentences. In this paper, we argue that the semantic information in the BERT embeddings is not fully exploited. We first reveal the theoretical connection between the masked language model pre-training objective and the semantic similarity task theoretically, and then analyze the BERT sentence embeddings empirically. We find that BERT always induces a non-smooth anisotropic semantic space of sentences, which harms its performance of semantic similarity. To address this issue, we propose to transform the anisotropic sentence embedding distribution to a smooth and isotropic Gaussian distribution through normalizing flows that are learned with an unsupervised objective. Experimental results show that our proposed BERT-flow method obtains significant performance gains over the state-of-the-art sentence embeddings on a variety of semantic textual similarity tasks. The code is available at [this https URL](https://github.com/bohanli/BERT-flow).
+
+| Comments: | EMNLP 2020                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2011.05864](https://arxiv.org/abs/2011.05864) [cs.CL]** |
+|           | (or **[arXiv:2011.05864v1](https://arxiv.org/abs/2011.05864v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-12-4">4. The Impact of Text Presentation on Translator Performance</h2>
+
+Title: [The Impact of Text Presentation on Translator Performance](https://arxiv.org/abs/2011.05978)
+
+Authors: [Samuel Läubli](https://arxiv.org/search/cs?searchtype=author&query=Läubli%2C+S), [Patrick Simianer](https://arxiv.org/search/cs?searchtype=author&query=Simianer%2C+P), [Joern Wuebker](https://arxiv.org/search/cs?searchtype=author&query=Wuebker%2C+J), [Geza Kovacs](https://arxiv.org/search/cs?searchtype=author&query=Kovacs%2C+G), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R), [Spence Green](https://arxiv.org/search/cs?searchtype=author&query=Green%2C+S)
+
+> Widely used computer-aided translation (CAT) tools divide documents into segments such as sentences and arrange them in a side-by-side, spreadsheet-like view. We present the first controlled evaluation of these design choices on translator performance, measuring speed and accuracy in three experimental text processing tasks. We find significant evidence that sentence-by-sentence presentation enables faster text reproduction and within-sentence error identification compared to unsegmented text, and that a top-and-bottom arrangement of source and target sentences enables faster text reproduction compared to a side-by-side arrangement. For revision, on the other hand, our results suggest that presenting unsegmented text results in the highest accuracy and time efficiency. Our findings have direct implications for best practices in designing CAT tools.
+
+| Comments: | Accepted for publication in Target                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Human-Computer Interaction (cs.HC) |
+| Cite as:  | **[arXiv:2011.05978](https://arxiv.org/abs/2011.05978) [cs.CL]** |
+|           | (or **[arXiv:2011.05978v1](https://arxiv.org/abs/2011.05978v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
