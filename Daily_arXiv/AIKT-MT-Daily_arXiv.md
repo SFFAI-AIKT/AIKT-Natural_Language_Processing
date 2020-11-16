@@ -3,6 +3,12 @@
 # Index
 
 
+- [2020-11-16](#2020-11-16)
+
+  - [1. Context-aware Stand-alone Neural Spelling Correction](#2020-11-16-1)
+  - [2. RethinkCWS: Is Chinese Word Segmentation a Solved Task?](#2020-11-16-2)
+  - [3. EDITOR: an Edit-Based Transformer with Repositioning for Neural Machine Translation with Soft Lexical Constraints](#2020-11-16-3)
+  - [4. Deconstructing word embedding algorithms](#2020-11-16-4)
 - [2020-11-13](#2020-11-13)
 
   - [1. Incorporating a Local Translation Mechanism into Non-autoregressive Translation](#2020-11-13-1)
@@ -70,6 +76,87 @@
   - [1. VECO: Variable Encoder-decoder Pre-training for Cross-lingual Understanding and Generation](#2020-11-02-1)
   - [2. Domain-Specific Lexical Grounding in Noisy Visual-Textual Documents](#2020-11-02-2)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-11-16
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-11-16-1">1. Context-aware Stand-alone Neural Spelling Correction</h2>
+
+Title: [Context-aware Stand-alone Neural Spelling Correction](https://arxiv.org/abs/2011.06642)
+
+Authors: [Xiangci Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Hairong Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+H), [Liang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+L)
+
+> Existing natural language processing systems are vulnerable to noisy inputs resulting from misspellings. On the contrary, humans can easily infer the corresponding correct words from their misspellings and surrounding context. Inspired by this, we address the stand-alone spelling correction problem, which only corrects the spelling of each token without additional token insertion or deletion, by utilizing both spelling information and global context representations. We present a simple yet powerful solution that jointly detects and corrects misspellings as a sequence labeling task by fine-turning a pre-trained language model. Our solution outperforms the previous state-of-the-art result by 12.8% absolute F0.5 score.
+
+| Comments: | 8 pages, 5 tables, 1 figure. Findings of the Association for Computational Linguistics: EMNLP 2020 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2011.06642](https://arxiv.org/abs/2011.06642) [cs.CL]** |
+|           | (or **[arXiv:2011.06642v1](https://arxiv.org/abs/2011.06642v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-16-2">2. RethinkCWS: Is Chinese Word Segmentation a Solved Task?</h2>
+
+Title: [RethinkCWS: Is Chinese Word Segmentation a Solved Task?](https://arxiv.org/abs/2011.06858)
+
+Authors: [Jinlan Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+J), [Pengfei Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+P), [Qi Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Q), [Xuanjing Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+X)
+
+> The performance of the Chinese Word Segmentation (CWS) systems has gradually reached a plateau with the rapid development of deep neural networks, especially the successful use of large pre-trained models. In this paper, we take stock of what we have achieved and rethink what's left in the CWS task. Methodologically, we propose a fine-grained evaluation for existing CWS systems, which not only allows us to diagnose the strengths and weaknesses of existing models (under the in-dataset setting), but enables us to quantify the discrepancy between different criterion and alleviate the negative transfer problem when doing multi-criteria learning. Strategically, despite not aiming to propose a novel model in this paper, our comprehensive experiments on eight models and seven datasets, as well as thorough analysis, could search for some promising direction for future research. We make all codes publicly available and release an interface that can quickly evaluate and diagnose user's models: [this https URL](https://github.com/neulab/InterpretEval).
+
+| Comments: | Accepted by EMNLP 2020                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2011.06858](https://arxiv.org/abs/2011.06858) [cs.CL]** |
+|           | (or **[arXiv:2011.06858v1](https://arxiv.org/abs/2011.06858v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-16-3">3. EDITOR: an Edit-Based Transformer with Repositioning for Neural Machine Translation with Soft Lexical Constraints</h2>
+
+Title: [EDITOR: an Edit-Based Transformer with Repositioning for Neural Machine Translation with Soft Lexical Constraints](https://arxiv.org/abs/2011.06868)
+
+Authors: [Weijia Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+W), [Marine Carpuat](https://arxiv.org/search/cs?searchtype=author&query=Carpuat%2C+M)
+
+> We introduce an Edit-Based Transformer with Repositioning (EDITOR), which makes sequence generation flexible by seamlessly allowing users to specify preferences in output lexical choice. Building on recent models for non-autoregressive sequence generation (Gu et al., 2019), EDITOR generates new sequences by iteratively editing hypotheses. It relies on a novel reposition operation designed to disentangle lexical choice from word positioning decisions, while enabling efficient oracles for imitation learning and parallel edits at decoding time. Empirically, EDITOR uses soft lexical constraints more effectively than the Levenshtein Transformer (Gu et al., 2019) while speeding up decoding dramatically compared to constrained beam search (Post and Vilar, 2018). EDITOR also achieves comparable or better translation quality with faster decoding speed than the Levenshtein Transformer on standard Romanian-English, English-German, and English-Japanese machine translation tasks.
+
+| Comments: | Accepted at TACL (pre-MIT Press publication version)         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2011.06868](https://arxiv.org/abs/2011.06868) [cs.CL]** |
+|           | (or **[arXiv:2011.06868v1](https://arxiv.org/abs/2011.06868v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-16-4">4. Deconstructing word embedding algorithms</h2>
+
+Title: [Deconstructing word embedding algorithms](https://arxiv.org/abs/2011.07013)
+
+Authors: [Kian Kenyon-Dean](https://arxiv.org/search/cs?searchtype=author&query=Kenyon-Dean%2C+K), [Edward Newell](https://arxiv.org/search/cs?searchtype=author&query=Newell%2C+E), [Jackie Chi Kit Cheung](https://arxiv.org/search/cs?searchtype=author&query=Cheung%2C+J+C+K)
+
+> Word embeddings are reliable feature representations of words used to obtain high quality results for various NLP applications. Uncontextualized word embeddings are used in many NLP tasks today, especially in resource-limited settings where high memory capacity and GPUs are not available. Given the historical success of word embeddings in NLP, we propose a retrospective on some of the most well-known word embedding algorithms. In this work, we deconstruct Word2vec, GloVe, and others, into a common form, unveiling some of the common conditions that seem to be required for making performant word embeddings. We believe that the theoretical findings in this paper can provide a basis for more informed development of future models.
+
+| Comments:    | EMNLP 2020, 6 pages. arXiv admin note: substantial text overlap with [arXiv:1911.13280](https://arxiv.org/abs/1911.13280) |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| MSC classes: | 68T50                                                        |
+| Cite as:     | **[arXiv:2011.07013](https://arxiv.org/abs/2011.07013) [cs.CL]** |
+|              | (or **[arXiv:2011.07013v1](https://arxiv.org/abs/2011.07013v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
