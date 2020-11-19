@@ -3,6 +3,11 @@
 # Index
 
 
+- [2020-11-19](#2020-11-19)
+
+  - [1. The Ubiqus English-Inuktitut System for WMT20](#2020-11-19-1)
+  - [2. Master Thesis: Neural Sign Language Translation by Learning Tokenization](#2020-11-19-2)
+  - [3. EasyTransfer -- A Simple and Scalable Deep Transfer Learning Platform for NLP Applications](#2020-11-19-3)
 - [2020-11-18](#2020-11-18)
 
   - [1. Facebook AI's WMT20 News Translation Task Submission](#2020-11-18-1)
@@ -84,6 +89,68 @@
   - [1. VECO: Variable Encoder-decoder Pre-training for Cross-lingual Understanding and Generation](#2020-11-02-1)
   - [2. Domain-Specific Lexical Grounding in Noisy Visual-Textual Documents](#2020-11-02-2)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-11-19
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-11-19-1">1. The Ubiqus English-Inuktitut System for WMT20</h2>
+
+Title: [The Ubiqus English-Inuktitut System for WMT20](https://arxiv.org/abs/2011.09249)
+
+Authors: [François Hernandez](https://arxiv.org/search/cs?searchtype=author&query=Hernandez%2C+F), [Vincent Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+V)
+
+> This paper describes Ubiqus' submission to the WMT20 English-Inuktitut shared news translation task. Our main system, and only submission, is based on a multilingual approach, jointly training a Transformer model on several agglutinative languages. The English-Inuktitut translation task is challenging at every step, from data selection, preparation and tokenization to quality evaluation down the line. Difficulties emerge both because of the peculiarities of the Inuktitut language as well as the low-resource context.
+
+| Comments: | System Description paper for WMT 2020 English-Inuktitut News Translation Task |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2011.09249](https://arxiv.org/abs/2011.09249) [cs.CL]** |
+|           | (or **[arXiv:2011.09249v1](https://arxiv.org/abs/2011.09249v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-19-2">2. Master Thesis: Neural Sign Language Translation by Learning Tokenization</h2>
+
+Title: [Master Thesis: Neural Sign Language Translation by Learning Tokenization](https://arxiv.org/abs/2011.09289)
+
+Authors: [Alptekin Orbay](https://arxiv.org/search/cs?searchtype=author&query=Orbay%2C+A)
+
+> In this thesis, we propose a multitask learning based method to improve Neural Sign Language Translation (NSLT) consisting of two parts, a tokenization layer and Neural Machine Translation (NMT). The tokenization part focuses on how Sign Language (SL) videos should be represented to be fed into the other part. It has not been studied elaborately whereas NMT research has attracted several researchers contributing enormous advancements. Up to now, there are two main input tokenization levels, namely frame-level and gloss-level tokenization. Glosses are world-like intermediate presentation and unique to SLs. Therefore, we aim to develop a generic sign-level tokenization layer so that it is applicable to other domains without further effort. We begin with investigating current tokenization approaches and explain their weaknesses with several experiments. To provide a solution, we adapt Transfer Learning, Multitask Learning and Unsupervised Domain Adaptation into this research to leverage additional supervision. We succeed in enabling knowledge transfer between SLs and improve translation quality by 5 points in BLEU-4 and 8 points in ROUGE scores. Secondly, we show the effects of body parts by extensive experiments in all the tokenization approaches. Apart from these, we adopt 3D-CNNs to improve efficiency in terms of time and space. Lastly, we discuss the advantages of sign-level tokenization over gloss-level tokenization. To sum up, our proposed method eliminates the need for gloss level annotation to obtain higher scores by providing additional supervision by utilizing weak supervision sources.
+
+| Comments: | MS Thesis Extension of the Paper with the same name          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2011.09289](https://arxiv.org/abs/2011.09289) [cs.CL]** |
+|           | (or **[arXiv:2011.09289v1](https://arxiv.org/abs/2011.09289v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-11-19-3">3. EasyTransfer -- A Simple and Scalable Deep Transfer Learning Platform for NLP Applications</h2>
+
+Title: [EasyTransfer -- A Simple and Scalable Deep Transfer Learning Platform for NLP Applications](https://arxiv.org/abs/2011.09463)
+
+Authors: [Minghui Qiu](https://arxiv.org/search/cs?searchtype=author&query=Qiu%2C+M), [Peng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+P), [Hanjie Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C+H), [Chengyu Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Cen Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+C), [Yaliang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Dehong Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+D), [Jun Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+J), [Yong Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Jun Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+J), [Deng Cai](https://arxiv.org/search/cs?searchtype=author&query=Cai%2C+D), [Wei Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+W)
+
+> The literature has witnessed the success of applying deep Transfer Learning (TL) algorithms to many NLP applications, yet it is not easy to build a simple and scalable TL toolkit for this purpose. To bridge this gap, the EasyTransfer platform is designed to make it easy to develop deep TL algorithms for NLP applications. It is built with rich API abstractions, a scalable architecture and comprehensive deep TL algorithms, to make the development of NLP applications easier. To be specific, the build-in data and model parallelism strategy shows to be 4x faster than the default distribution strategy of Tensorflow. EasyTransfer supports the mainstream pre-trained ModelZoo, including Pre-trained Language Models (PLMs) and multi-modality models. It also integrates various SOTA models for mainstream NLP applications in AppZoo, and supports mainstream TL algorithms as well. The toolkit is convenient for users to quickly start model training, evaluation, offline prediction, and online deployment. This system is currently deployed at Alibaba to support a variety of business scenarios, including item recommendation, personalized search, and conversational question answering. Extensive experiments on real-world datasets show that EasyTransfer is suitable for online production with cutting-edge performance. The source code of EasyTransfer is released at Github ([this https URL](https://github.com/alibaba/EasyTransfer)).
+
+| Comments: | 4 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2011.09463](https://arxiv.org/abs/2011.09463) [cs.CL]** |
+|           | (or **[arXiv:2011.09463v1](https://arxiv.org/abs/2011.09463v1) [cs.CL]** for this version) |
+
+
 
 
 
