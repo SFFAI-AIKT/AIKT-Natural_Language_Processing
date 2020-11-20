@@ -3,6 +3,9 @@
 # Index
 
 
+- [2020-11-20](#2020-11-20)
+
+  - [1. Everybody Sign Now: Translating Spoken Language to Photo Realistic Sign Language Video](#2020-11-20-1)
 - [2020-11-19](#2020-11-19)
 
   - [1. The Ubiqus English-Inuktitut System for WMT20](#2020-11-19-1)
@@ -89,6 +92,34 @@
   - [1. VECO: Variable Encoder-decoder Pre-training for Cross-lingual Understanding and Generation](#2020-11-02-1)
   - [2. Domain-Specific Lexical Grounding in Noisy Visual-Textual Documents](#2020-11-02-2)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-11-20
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-11-20-1">1. Everybody Sign Now: Translating Spoken Language to Photo Realistic Sign Language Video</h2>
+
+Title: [Everybody Sign Now: Translating Spoken Language to Photo Realistic Sign Language Video](https://arxiv.org/abs/2011.09846)
+
+Authors: [Ben Saunders](https://arxiv.org/search/cs?searchtype=author&query=Saunders%2C+B), [Necati Cihan Camgoz](https://arxiv.org/search/cs?searchtype=author&query=Camgoz%2C+N+C), [Richard Bowden](https://arxiv.org/search/cs?searchtype=author&query=Bowden%2C+R)
+
+> To be truly understandable and accepted by Deaf communities, an automatic Sign Language Production (SLP) system must generate a photo-realistic signer. Prior approaches based on graphical avatars have proven unpopular, whereas recent neural SLP works that produce skeleton pose sequences have been shown to be not understandable to Deaf viewers.
+> In this paper, we propose SignGAN, the first SLP model to produce photo-realistic continuous sign language videos directly from spoken language. We employ a transformer architecture with a Mixture Density Network (MDN) formulation to handle the translation from spoken language to skeletal pose. A pose-conditioned human synthesis model is then introduced to generate a photo-realistic sign language video from the skeletal pose sequence. This allows the photo-realistic production of sign videos directly translated from written text.
+> We further propose a novel keypoint-based loss function, which significantly improves the quality of synthesized hand images, operating in the keypoint space to avoid issues caused by motion blur. In addition, we introduce a method for controllable video generation, enabling training on large, diverse sign language datasets and providing the ability to control the signer appearance at inference.
+> Using a dataset of eight different sign language interpreters extracted from broadcast footage, we show that SignGAN significantly outperforms all baseline methods for quantitative metrics and human perceptual studies.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2011.09846](https://arxiv.org/abs/2011.09846) [cs.CV]** |
+|           | (or **[arXiv:2011.09846v1](https://arxiv.org/abs/2011.09846v1) [cs.CV]** for this version) |
+
+
+
+
 
 
 
