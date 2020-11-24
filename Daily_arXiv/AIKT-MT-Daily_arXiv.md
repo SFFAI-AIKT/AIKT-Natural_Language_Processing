@@ -3,9 +3,12 @@
 # Index
 
 
-- [2020-11-20](#2020-11-20)
+- [2020-11-24](#2020-11-24)
 
-  - [1. Everybody Sign Now: Translating Spoken Language to Photo Realistic Sign Language Video](#2020-11-20-1)
+  - [1. Hierachical Delta-Attention Method for Multimodal Fusion](#2020-11-24-1)
+  - [2. Unsupervised Domain Adaptation of a Pretrained Cross-Lingual Language Model](#2020-11-24-2)
+- [2020-11-20](#2020-11-20)
+- [1. Everybody Sign Now: Translating Spoken Language to Photo Realistic Sign Language Video](#2020-11-20-1)
 - [2020-11-19](#2020-11-19)
 
   - [1. The Ubiqus English-Inuktitut System for WMT20](#2020-11-19-1)
@@ -92,6 +95,47 @@
   - [1. VECO: Variable Encoder-decoder Pre-training for Cross-lingual Understanding and Generation](#2020-11-02-1)
   - [2. Domain-Specific Lexical Grounding in Noisy Visual-Textual Documents](#2020-11-02-2)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-11-24
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-11-24-1">1. Hierachical Delta-Attention Method for Multimodal Fusion</h2>
+
+Title: [Hierachical Delta-Attention Method for Multimodal Fusion](https://arxiv.org/abs/2011.10916)
+
+Authors: [Kunjal Panchal](https://arxiv.org/search/cs?searchtype=author&query=Panchal%2C+K)
+
+> In vision and linguistics; the main input modalities are facial expressions, speech patterns, and the words uttered. The issue with analysis of any one mode of expression (Visual, Verbal or Vocal) is that lot of contextual information can get lost. This asks researchers to inspect multiple modalities to get a thorough understanding of the cross-modal dependencies and temporal context of the situation to analyze the expression. This work attempts at preserving the long-range dependencies within and across different modalities, which would be bottle-necked by the use of recurrent networks and adds the concept of delta-attention to focus on local differences per modality to capture the idiosyncrasy of different people. We explore a cross-attention fusion technique to get the global view of the emotion expressed through these delta-self-attended modalities, in order to fuse all the local nuances and global context together. The addition of attention is new to the multi-modal fusion field and currently being scrutinized for on what stage the attention mechanism should be used, this work achieves competitive accuracy for overall and per-class classification which is close to the current state-of-the-art with almost half number of parameters.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2011.10916](https://arxiv.org/abs/2011.10916) [cs.CV]** |
+|           | (or **[arXiv:2011.10916v1](https://arxiv.org/abs/2011.10916v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-24-2">2. Unsupervised Domain Adaptation of a Pretrained Cross-Lingual Language Model</h2>
+
+Title: [Unsupervised Domain Adaptation of a Pretrained Cross-Lingual Language Model](https://arxiv.org/abs/2011.11499)
+
+Authors:[Juntao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Ruidan He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+R), [Hai Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+H), [Hwee Tou Ng](https://arxiv.org/search/cs?searchtype=author&query=Ng%2C+H+T), [Lidong Bing](https://arxiv.org/search/cs?searchtype=author&query=Bing%2C+L), [Rui Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+R)
+
+> Recent research indicates that pretraining cross-lingual language models on large-scale unlabeled texts yields significant performance improvements over various cross-lingual and low-resource tasks. Through training on one hundred languages and terabytes of texts, cross-lingual language models have proven to be effective in leveraging high-resource languages to enhance low-resource language processing and outperform monolingual models. In this paper, we further investigate the cross-lingual and cross-domain (CLCD) setting when a pretrained cross-lingual language model needs to adapt to new domains. Specifically, we propose a novel unsupervised feature decomposition method that can automatically extract domain-specific features and domain-invariant features from the entangled pretrained cross-lingual representations, given unlabeled raw texts in the source language. Our proposed model leverages mutual information estimation to decompose the representations computed by a cross-lingual model into domain-invariant and domain-specific parts. Experimental results show that our proposed method achieves significant performance improvements over the state-of-the-art pretrained cross-lingual language model in the CLCD setting. The source code of this paper is publicly available at [this https URL](https://github.com/lijuntaopku/UFD).
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | IJCAI-PRICAI2020                                             |
+| Cite as:           | **[arXiv:2011.11499](https://arxiv.org/abs/2011.11499) [cs.CL]** |
+|                    | (or **[arXiv:2011.11499v1](https://arxiv.org/abs/2011.11499v1) [cs.CL]** for this version) |
+
+
 
 
 
