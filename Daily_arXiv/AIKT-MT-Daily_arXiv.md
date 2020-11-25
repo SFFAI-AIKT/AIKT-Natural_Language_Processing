@@ -3,12 +3,18 @@
 # Index
 
 
-- [2020-11-24](#2020-11-24)
+- [2020-11-25](#2020-11-25)
 
-  - [1. Hierachical Delta-Attention Method for Multimodal Fusion](#2020-11-24-1)
+  - [1. Multimodal Pretraining for Dense Video Captioning](#2020-11-25-1)
+  - [2. GLGE: A New General Language Generation Evaluation Benchmark](#2020-11-25-2)
+  - [3. Two-Way Neural Machine Translation: A Proof of Concept for Bidirectional Translation Modeling using a Two-Dimensional Grid](#2020-11-25-3)
+  - [4. Tight Integrated End-to-End Training for Cascaded Speech Translation](#2020-11-25-4)
+- [2020-11-24](#2020-11-24)
+- [1. Hierachical Delta-Attention Method for Multimodal Fusion](#2020-11-24-1)
   - [2. Unsupervised Domain Adaptation of a Pretrained Cross-Lingual Language Model](#2020-11-24-2)
 - [2020-11-20](#2020-11-20)
-- [1. Everybody Sign Now: Translating Spoken Language to Photo Realistic Sign Language Video](#2020-11-20-1)
+
+  - [1. Everybody Sign Now: Translating Spoken Language to Photo Realistic Sign Language Video](#2020-11-20-1)
 - [2020-11-19](#2020-11-19)
 
   - [1. The Ubiqus English-Inuktitut System for WMT20](#2020-11-19-1)
@@ -19,7 +25,8 @@
   - [1. Facebook AI's WMT20 News Translation Task Submission](#2020-11-18-1)
   - [2. MVP-BERT: Redesigning Vocabularies for Chinese BERT and Multi-Vocab Pretraining](#2020-11-18-2)
 - [2020-11-17](#2020-11-17)
-- [1. Iterative Self-Learning for Enhanced Back-Translation in Low Resource Neural Machine Translation](#2020-11-17-1)
+
+  - [1. Iterative Self-Learning for Enhanced Back-Translation in Low Resource Neural Machine Translation](#2020-11-17-1)
   - [2. Morphologically Aware Word-Level Translation](#2020-11-17-2)
   - [3. Learning from Task Descriptions](#2020-11-17-3)
 - [2020-11-16](#2020-11-16)
@@ -54,7 +61,8 @@
   - [4. Hierarchical Multitask Learning Approach for BERT](#2020-11-10-4)
   - [5. VisBERT: Hidden-State Visualizations for Transformers](#2020-11-10-5)
 - [2020-11-09](#2020-11-09)
-- [1. Improving RNN Transducer Based ASR with Auxiliary Tasks](#2020-11-09-1)
+
+  - [1. Improving RNN Transducer Based ASR with Auxiliary Tasks](#2020-11-09-1)
   - [2. Semi-Supervised Low-Resource Style Transfer of Indonesian Informal to Formal Language with Iterative Forward-Translation](#2020-11-09-2)
   - [3. Understanding Pure Character-Based Neural Machine Translation: The Case of Translating Finnish into English](#2020-11-09-3)
   - [4. An Unsupervised method for OCR Post-Correction and Spelling Normalisation for Finnish](#2020-11-09-4)
@@ -95,6 +103,84 @@
   - [1. VECO: Variable Encoder-decoder Pre-training for Cross-lingual Understanding and Generation](#2020-11-02-1)
   - [2. Domain-Specific Lexical Grounding in Noisy Visual-Textual Documents](#2020-11-02-2)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-11-25
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-11-25-1">1. Multimodal Pretraining for Dense Video Captioning</h2>
+
+Title: [Multimodal Pretraining for Dense Video Captioning](https://arxiv.org/abs/2011.11760)
+
+Authors:[Gabriel Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+G), [Bo Pang](https://arxiv.org/search/cs?searchtype=author&query=Pang%2C+B), [Zhenhai Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+Z), [Clara Rivera](https://arxiv.org/search/cs?searchtype=author&query=Rivera%2C+C), [Radu Soricut](https://arxiv.org/search/cs?searchtype=author&query=Soricut%2C+R)
+
+> Learning specific hands-on skills such as cooking, car maintenance, and home repairs increasingly happens via instructional videos. The user experience with such videos is known to be improved by meta-information such as time-stamped annotations for the main steps involved. Generating such annotations automatically is challenging, and we describe here two relevant contributions. First, we construct and release a new dense video captioning dataset, Video Timeline Tags (ViTT), featuring a variety of instructional videos together with time-stamped annotations. Second, we explore several multimodal sequence-to-sequence pretraining strategies that leverage large unsupervised datasets of videos and caption-like texts. We pretrain and subsequently finetune dense video captioning models using both YouCook2 and ViTT. We show that such models generalize well and are robust over a wide variety of instructional videos.
+
+| Comments: | AACL-IJCNLP 2020                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2011.11760](https://arxiv.org/abs/2011.11760) [cs.CV]** |
+|           | (or **[arXiv:2011.11760v1](https://arxiv.org/abs/2011.11760v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-25-2">2. GLGE: A New General Language Generation Evaluation Benchmark</h2>
+
+Title: [GLGE: A New General Language Generation Evaluation Benchmark](https://arxiv.org/abs/2011.11928)
+
+Authors:[Dayiheng Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+D), [Yu Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+Y), [Yeyun Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+Y), [Weizhen Qi](https://arxiv.org/search/cs?searchtype=author&query=Qi%2C+W), [Hang Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H), [Jian Jiao](https://arxiv.org/search/cs?searchtype=author&query=Jiao%2C+J), [Weizhu Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+W), [Jie Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+J), [Linjun Shou](https://arxiv.org/search/cs?searchtype=author&query=Shou%2C+L), [Ming Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+M), [Pengcheng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+P), [Jiusheng Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J), [Daxin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+D), [Jiancheng Lv](https://arxiv.org/search/cs?searchtype=author&query=Lv%2C+J), [Ruofei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+R), [Winnie Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+W), [Ming Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+M), [Nan Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan%2C+N)
+
+> Multi-task benchmarks such as GLUE and SuperGLUE have driven great progress of pretraining and transfer learning in Natural Language Processing (NLP). These benchmarks mostly focus on a range of Natural Language Understanding (NLU) tasks, without considering the Natural Language Generation (NLG) models. In this paper, we present the General Language Generation Evaluation (GLGE), a new multi-task benchmark for evaluating the generalization capabilities of NLG models across eight language generation tasks. For each task, we continue to design three subtasks in terms of task difficulty (GLGE-Easy, GLGE-Medium, and GLGE-Hard). This introduces 24 subtasks to comprehensively compare model performance. To encourage research on pretraining and transfer learning on NLG models, we make GLGE publicly available and build a leaderboard with strong baselines including MASS, BART, and ProphetNet\footnote{The source code and dataset will be publicly available at [this https URL](https://github.com/microsoft/glge).
+
+| Comments: | 11 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2011.11928](https://arxiv.org/abs/2011.11928) [cs.CL]** |
+|           | (or **[arXiv:2011.11928v1](https://arxiv.org/abs/2011.11928v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-25-3">3. Two-Way Neural Machine Translation: A Proof of Concept for Bidirectional Translation Modeling using a Two-Dimensional Grid</h2>
+
+Title: [Two-Way Neural Machine Translation: A Proof of Concept for Bidirectional Translation Modeling using a Two-Dimensional Grid](https://arxiv.org/abs/2011.12165)
+
+Authors:[Parnia Bahar](https://arxiv.org/search/cs?searchtype=author&query=Bahar%2C+P), [Christopher Brix](https://arxiv.org/search/cs?searchtype=author&query=Brix%2C+C), [Hermann Ney](https://arxiv.org/search/cs?searchtype=author&query=Ney%2C+H)
+
+> Neural translation models have proven to be effective in capturing sufficient information from a source sentence and generating a high-quality target sentence. However, it is not easy to get the best effect for bidirectional translation, i.e., both source-to-target and target-to-source translation using a single model. If we exclude some pioneering attempts, such as multilingual systems, all other bidirectional translation approaches are required to train two individual models. This paper proposes to build a single end-to-end bidirectional translation model using a two-dimensional grid, where the left-to-right decoding generates source-to-target, and the bottom-to-up decoding creates target-to-source output. Instead of training two models independently, our approach encourages a single network to jointly learn to translate in both directions. Experiments on the WMT 2018 German↔English and Turkish↔English translation tasks show that the proposed model is capable of generating a good translation quality and has sufficient potential to direct the research.
+
+| Comments: | 6 pages, accepted at SLT2021                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2011.12165](https://arxiv.org/abs/2011.12165) [cs.CL]** |
+|           | (or **[arXiv:2011.12165v1](https://arxiv.org/abs/2011.12165v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-25-4">4. Tight Integrated End-to-End Training for Cascaded Speech Translation</h2>
+
+Title: [Tight Integrated End-to-End Training for Cascaded Speech Translation](https://arxiv.org/abs/2011.12167)
+
+Authors:[Parnia Bahar](https://arxiv.org/search/cs?searchtype=author&query=Bahar%2C+P), [Tobias Bieschke](https://arxiv.org/search/cs?searchtype=author&query=Bieschke%2C+T), [Ralf Schlüter](https://arxiv.org/search/cs?searchtype=author&query=Schlüter%2C+R), [Hermann Ney](https://arxiv.org/search/cs?searchtype=author&query=Ney%2C+H)
+
+> A cascaded speech translation model relies on discrete and non-differentiable transcription, which provides a supervision signal from the source side and helps the transformation between source speech and target text. Such modeling suffers from error propagation between ASR and MT models. Direct speech translation is an alternative method to avoid error propagation; however, its performance is often behind the cascade system. To use an intermediate representation and preserve the end-to-end trainability, previous studies have proposed using two-stage models by passing the hidden vectors of the recognizer into the decoder of the MT model and ignoring the MT encoder. This work explores the feasibility of collapsing the entire cascade components into a single end-to-end trainable model by optimizing all parameters of ASR and MT models jointly without ignoring any learned parameters. It is a tightly integrated method that passes renormalized source word posterior distributions as a soft decision instead of one-hot vectors and enables backpropagation. Therefore, it provides both transcriptions and translations and achieves strong consistency between them. Our experiments on four tasks with different data scenarios show that the model outperforms cascade models up to 1.8% in BLEU and 2.0% in TER and is superior compared to direct models.
+
+| Comments: | 8 pages, accepted at SLT2021                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2011.12167](https://arxiv.org/abs/2011.12167) [cs.CL]** |
+|           | (or **[arXiv:2011.12167v1](https://arxiv.org/abs/2011.12167v1) [cs.CL]** for this version) |
+
+
 
 
 
