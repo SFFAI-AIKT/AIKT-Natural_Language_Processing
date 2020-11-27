@@ -3,6 +3,9 @@
 # Index
 
 
+- [2020-11-27](#2020-11-27)
+
+  - [1. Enhancing deep neural networks with morphological information](#2020-11-27-1)
 - [2020-11-25](#2020-11-25)
 
   - [1. Multimodal Pretraining for Dense Video Captioning](#2020-11-25-1)
@@ -103,6 +106,31 @@
   - [1. VECO: Variable Encoder-decoder Pre-training for Cross-lingual Understanding and Generation](#2020-11-02-1)
   - [2. Domain-Specific Lexical Grounding in Noisy Visual-Textual Documents](#2020-11-02-2)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-11-27
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-11-27-1">1. Enhancing deep neural networks with morphological information</h2>
+
+Title: [Enhancing deep neural networks with morphological information](https://arxiv.org/abs/2011.12432)
+
+Authors:[Matej Klemen](https://arxiv.org/search/cs?searchtype=author&query=Klemen%2C+M), [Luka Krsnik](https://arxiv.org/search/cs?searchtype=author&query=Krsnik%2C+L), [Marko Robnik-Šikonja](https://arxiv.org/search/cs?searchtype=author&query=Robnik-Šikonja%2C+M)
+
+> Currently, deep learning approaches are superior in natural language processing due to their ability to extract informative features and patterns from languages. Two most successful neural architectures are LSTM and transformers, the latter mostly used in the form of large pretrained language models such as BERT. While cross-lingual approaches are on the rise, a vast majority of current natural language processing techniques is designed and applied to English, and less-resourced languages are lagging behind. In morphologically rich languages, plenty of information is conveyed through changes in morphology, e.g., through different prefixes and suffixes modifying stems of words. The existing neural approaches do not explicitly use the information on word morphology. We analyze the effect of adding morphological features to LSTM and BERT models. We use three tasks available in many less-resourced languages: named entity recognition (NER), dependency parsing (DP), and comment filtering (CF). We construct sensible baselines involving LSTM and BERT models, which we adjust by adding additional input in the form of part of speech (POS) tags and universal features. We compare the obtained models across subsets of eight languages. Our results suggest that adding morphological features has mixed effects depending on the quality of features and the task. The features improve the performance of LSTM-based models on the NER and DP tasks, while they do not benefit the performance on the CF task. For BERT-based models, the added morphological features only improve the performance on DP when they are of high quality, while they do not show any practical improvement when they are predicted. As in NER and CF datasets manually checked features are not available, we only experiment with the predicted morphological features and find that they do not cause any practical improvement in performance.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2011.12432](https://arxiv.org/abs/2011.12432) [cs.CL]** |
+|           | (or **[arXiv:2011.12432v1](https://arxiv.org/abs/2011.12432v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
