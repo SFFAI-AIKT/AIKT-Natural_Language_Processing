@@ -3,17 +3,25 @@
 # Index
 
 
+- [2020-11-30](#2020-11-30)
+
+  - [1. Learning Causal Bayesian Networks from Text](#2020-11-30-1)
+  - [2. Unsupervised Word Translation Pairing using Refinement based Point Set Registration](#2020-11-30-2)
+  - [3. NLPStatTest: A Toolkit for Comparing NLP System Performance](#2020-11-30-3)
+  - [4. Decoding and Diversity in Machine Translation](#2020-11-30-4)
+  - [5. A Survey of Deep Learning Approaches for OCR and Document Understanding](#2020-11-30-5)
+  - [6. CoRe: An Efficient Coarse-refined Training Framework for BERT](#2020-11-30-6)
+  - [7. Progressively Stacking 2.0: A Multi-stage Layerwise Training Method for BERT Training Speedup](#2020-11-30-7)
 - [2020-11-27](#2020-11-27)
-
-  - [1. Enhancing deep neural networks with morphological information](#2020-11-27-1)
+- [1. Enhancing deep neural networks with morphological information](#2020-11-27-1)
 - [2020-11-25](#2020-11-25)
-
-  - [1. Multimodal Pretraining for Dense Video Captioning](#2020-11-25-1)
+- [1. Multimodal Pretraining for Dense Video Captioning](#2020-11-25-1)
   - [2. GLGE: A New General Language Generation Evaluation Benchmark](#2020-11-25-2)
   - [3. Two-Way Neural Machine Translation: A Proof of Concept for Bidirectional Translation Modeling using a Two-Dimensional Grid](#2020-11-25-3)
   - [4. Tight Integrated End-to-End Training for Cascaded Speech Translation](#2020-11-25-4)
 - [2020-11-24](#2020-11-24)
-- [1. Hierachical Delta-Attention Method for Multimodal Fusion](#2020-11-24-1)
+
+  - [1. Hierachical Delta-Attention Method for Multimodal Fusion](#2020-11-24-1)
   - [2. Unsupervised Domain Adaptation of a Pretrained Cross-Lingual Language Model](#2020-11-24-2)
 - [2020-11-20](#2020-11-20)
 
@@ -106,6 +114,137 @@
   - [1. VECO: Variable Encoder-decoder Pre-training for Cross-lingual Understanding and Generation](#2020-11-02-1)
   - [2. Domain-Specific Lexical Grounding in Noisy Visual-Textual Documents](#2020-11-02-2)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-11-30
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-11-30-1">1. Learning Causal Bayesian Networks from Text</h2>
+
+Title: [Learning Causal Bayesian Networks from Text](https://arxiv.org/abs/2011.13115)
+
+Authors: [Farhad Moghimifar](https://arxiv.org/search/cs?searchtype=author&query=Moghimifar%2C+F), [Afshin Rahimi](https://arxiv.org/search/cs?searchtype=author&query=Rahimi%2C+A), [Mahsa Baktashmotlagh](https://arxiv.org/search/cs?searchtype=author&query=Baktashmotlagh%2C+M), [Xue Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X)
+
+> Causal relationships form the basis for reasoning and decision-making in Artificial Intelligence systems. To exploit the large volume of textual data available today, the automatic discovery of causal relationships from text has emerged as a significant challenge in recent years. Existing approaches in this realm are limited to the extraction of low-level relations among individual events. To overcome the limitations of the existing approaches, in this paper, we propose a method for automatic inference of causal relationships from human written language at conceptual level. To this end, we leverage the characteristics of hierarchy of concepts and linguistic variables created from text, and represent the extracted causal relationships in the form of a Causal Bayesian Network. Our experiments demonstrate superiority of our approach over the existing approaches in inferring complex causal reasoning from the text.
+
+| Comments: | ALTA2020                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2011.13115](https://arxiv.org/abs/2011.13115) [cs.CL]** |
+|           | (or **[arXiv:2011.13115v1](https://arxiv.org/abs/2011.13115v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-30-2">2. Unsupervised Word Translation Pairing using Refinement based Point Set Registration</h2>
+
+Title: [Unsupervised Word Translation Pairing using Refinement based Point Set Registration](https://arxiv.org/abs/2011.13200)
+
+Authors: [Silviu Oprea](https://arxiv.org/search/cs?searchtype=author&query=Oprea%2C+S), [Sourav Dutta](https://arxiv.org/search/cs?searchtype=author&query=Dutta%2C+S), [Haytham Assem](https://arxiv.org/search/cs?searchtype=author&query=Assem%2C+H)
+
+> Cross-lingual alignment of word embeddings play an important role in knowledge transfer across languages, for improving machine translation and other multi-lingual applications. Current unsupervised approaches rely on similarities in geometric structure of word embedding spaces across languages, to learn structure-preserving linear transformations using adversarial networks and refinement strategies. However, such techniques, in practice, tend to suffer from instability and convergence issues, requiring tedious fine-tuning for precise parameter setting. This paper proposes BioSpere, a novel framework for unsupervised mapping of bi-lingual word embeddings onto a shared vector space, by combining adversarial initialization and refinement procedure with point set registration algorithm used in image processing. We show that our framework alleviates the shortcomings of existing methodologies, and is relatively invariant to variable adversarial learning performance, depicting robustness in terms of parameter choices and training losses. Experimental evaluation on parallel dictionary induction task demonstrates state-of-the-art results for our framework on diverse language pairs.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2011.13200](https://arxiv.org/abs/2011.13200) [cs.CL]** |
+|           | (or **[arXiv:2011.13200v1](https://arxiv.org/abs/2011.13200v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-30-3">3. NLPStatTest: A Toolkit for Comparing NLP System Performance</h2>
+
+Title: [NLPStatTest: A Toolkit for Comparing NLP System Performance](https://arxiv.org/abs/2011.13231)
+
+Authors: [Haotian Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+H), [Denise Mak](https://arxiv.org/search/cs?searchtype=author&query=Mak%2C+D), [Jesse Gioannini](https://arxiv.org/search/cs?searchtype=author&query=Gioannini%2C+J), [Fei Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%2C+F)
+
+> Statistical significance testing centered on p-values is commonly used to compare NLP system performance, but p-values alone are insufficient because statistical significance differs from practical significance. The latter can be measured by estimating effect size. In this paper, we propose a three-stage procedure for comparing NLP system performance and provide a toolkit, NLPStatTest, that automates the process. Users can upload NLP system evaluation scores and the toolkit will analyze these scores, run appropriate significance tests, estimate effect size, and conduct power analysis to estimate Type II error. The toolkit provides a convenient and systematic way to compare NLP system performance that goes beyond statistical significance testing
+
+| Comments: | Will appear in AACL-IJCNLP 2020                              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Applications (stat.AP) |
+| Cite as:  | **[arXiv:2011.13231](https://arxiv.org/abs/2011.13231) [cs.CL]** |
+|           | (or **[arXiv:2011.13231v1](https://arxiv.org/abs/2011.13231v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-30-4">4. Decoding and Diversity in Machine Translation</h2>
+
+Title: [Decoding and Diversity in Machine Translation](https://arxiv.org/abs/2011.13477)
+
+Authors: [Nicholas Roberts](https://arxiv.org/search/cs?searchtype=author&query=Roberts%2C+N), [Davis Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+D), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G), [Zachary C. Lipton](https://arxiv.org/search/cs?searchtype=author&query=Lipton%2C+Z+C)
+
+> Neural Machine Translation (NMT) systems are typically evaluated using automated metrics that assess the agreement between generated translations and ground truth candidates. To improve systems with respect to these metrics, NLP researchers employ a variety of heuristic techniques, including searching for the conditional mode (vs. sampling) and incorporating various training heuristics (e.g., label smoothing). While search strategies significantly improve BLEU score, they yield deterministic outputs that lack the diversity of human translations. Moreover, search tends to bias the distribution of translated gender pronouns. This makes human-level BLEU a misleading benchmark in that modern MT systems cannot approach human-level BLEU while simultaneously maintaining human-level translation diversity. In this paper, we characterize distributional differences between generated and real translations, examining the cost in diversity paid for the BLEU scores enjoyed by NMT. Moreover, our study implicates search as a salient source of known bias when translating gender pronouns.
+
+| Comments: | Presented at the Resistance AI Workshop, 34th Conference on Neural Information Processing Systems (NeurIPS 2020), Vancouver, Canada |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2011.13477](https://arxiv.org/abs/2011.13477) [cs.CL]** |
+|           | (or **[arXiv:2011.13477v1](https://arxiv.org/abs/2011.13477v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-30-5">5. A Survey of Deep Learning Approaches for OCR and Document Understanding</h2>
+
+Title: [A Survey of Deep Learning Approaches for OCR and Document Understanding](https://arxiv.org/abs/2011.13534)
+
+Authors: [Nishant Subramani](https://arxiv.org/search/cs?searchtype=author&query=Subramani%2C+N), [Alexandre Matton](https://arxiv.org/search/cs?searchtype=author&query=Matton%2C+A), [Malcolm Greaves](https://arxiv.org/search/cs?searchtype=author&query=Greaves%2C+M), [Adrian Lam](https://arxiv.org/search/cs?searchtype=author&query=Lam%2C+A)
+
+> Documents are a core part of many businesses in many fields such as law, finance, and technology among others. Automatic understanding of documents such as invoices, contracts, and resumes is lucrative, opening up many new avenues of business. The fields of natural language processing and computer vision have seen tremendous progress through the development of deep learning such that these methods have started to become infused in contemporary document understanding systems. In this survey paper, we review different techniques for document understanding for documents written in English and consolidate methodologies present in literature to act as a jumping-off point for researchers exploring this area.
+
+| Comments: | Accepted to the ML-RSA Workshop at NeurIPS2020. 14 pages (9 + References) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV); Information Retrieval (cs.IR); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2011.13534](https://arxiv.org/abs/2011.13534) [cs.CL]** |
+|           | (or **[arXiv:2011.13534v1](https://arxiv.org/abs/2011.13534v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-30-6">6. CoRe: An Efficient Coarse-refined Training Framework for BERT</h2>
+
+Title: [CoRe: An Efficient Coarse-refined Training Framework for BERT]()
+
+Authors: [Cheng Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+C), [Shengnan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Yuechuan Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Chao Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+C), [Ming Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+M), [Jingqiao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Fangquan Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+F)
+
+> In recent years, BERT has made significant breakthroughs on many natural language processing tasks and attracted great attentions. Despite its accuracy gains, the BERT model generally involves a huge number of parameters and needs to be trained on massive datasets, so training such a model is computationally very challenging and time-consuming. Hence, training efficiency should be a critical issue. In this paper, we propose a novel coarse-refined training framework named CoRe to speed up the training of BERT. Specifically, we decompose the training process of BERT into two phases. In the first phase, by introducing fast attention mechanism and decomposing the large parameters in the feed-forward network sub-layer, we construct a relaxed BERT model which has much less parameters and much lower model complexity than the original BERT, so the relaxed model can be quickly trained. In the second phase, we transform the trained relaxed BERT model into the original BERT and further retrain the model. Thanks to the desired initialization provided by the relaxed model, the retraining phase requires much less training steps, compared with training an original BERT model from scratch with a random initialization. Experimental results show that the proposed CoRe framework can greatly reduce the training time without reducing the performance.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2011.13633](https://arxiv.org/abs/2011.13633) [cs.CL]** |
+|           | (or **[arXiv:2011.13633v1](https://arxiv.org/abs/2011.13633v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-11-30-7">7. Progressively Stacking 2.0: A Multi-stage Layerwise Training Method for BERT Training Speedup</h2>
+
+Title: [Progressively Stacking 2.0: A Multi-stage Layerwise Training Method for BERT Training Speedup](https://arxiv.org/abs/2011.13635)
+
+Authors: [Cheng Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+C), [Shengnan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Chao Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+C), [Yuechuan Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Ru He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+R), [Jingqiao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J)
+
+> Pre-trained language models, such as BERT, have achieved significant accuracy gain in many natural language processing tasks. Despite its effectiveness, the huge number of parameters makes training a BERT model computationally very challenging. In this paper, we propose an efficient multi-stage layerwise training (MSLT) approach to reduce the training time of BERT. We decompose the whole training process into several stages. The training is started from a small model with only a few encoder layers and we gradually increase the depth of the model by adding new encoder layers. At each stage, we only train the top (near the output layer) few encoder layers which are newly added. The parameters of the other layers which have been trained in the previous stages will not be updated in the current stage. In BERT training, the backward computation is much more time-consuming than the forward computation, especially in the distributed training setting in which the backward computation time further includes the communication time for gradient synchronization. In the proposed training strategy, only top few layers participate in backward computation, while most layers only participate in forward computation. Hence both the computation and communication efficiencies are greatly improved. Experimental results show that the proposed method can achieve more than 110% training speedup without significant performance degradation.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2011.13635](https://arxiv.org/abs/2011.13635) [cs.CL]** |
+|           | (or **[arXiv:2011.13635v1](https://arxiv.org/abs/2011.13635v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
