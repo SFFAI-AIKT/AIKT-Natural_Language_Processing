@@ -3,6 +3,13 @@
 # Index
 
 
+- [2020-12-02](#2020-12-02)
+
+  - [1. Modifying Memories in Transformer Models](#2020-12-02-1)
+  - [2. An Enhanced Knowledge Injection Model for Commonsense Generation](#2020-12-02-2)
+  - [3. CPM: A Large-scale Generative Chinese Pre-trained Language Model](#2020-12-02-3)
+  - [4. Extracting Synonyms from Bilingual Dictionaries](#2020-12-02-4)
+  - [5. Intrinsic analysis for dual word embedding space models](#2020-12-02-5)
 - [2020-12-01](#2020-12-01)
   - [1. EdgeBERT: Optimizing On-Chip Inference for Multi-Task NLP](#2020-12-01-1)
   - [2. Understanding How BERT Learns to Identify Edits](#2020-12-01-2)
@@ -12,8 +19,100 @@
   - [6. A Simple and Effective Approach to Robust Unsupervised Bilingual Dictionary Induction](#2020-12-01-6)
   - [7. Machine Translation of Novels in the Age of Transformer](#2020-12-01-7)
   - [8. Multimodal Pretraining Unmasked: Unifying the Vision and Language BERTs](#2020-12-01-8)
-
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-12-02
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-12-02-1">1. Modifying Memories in Transformer Models</h2>
+
+Title: [Modifying Memories in Transformer Models](https://arxiv.org/abs/2012.00363)
+
+Authors: [Chen Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+C), [Ankit Singh Rawat](https://arxiv.org/search/cs?searchtype=author&query=Rawat%2C+A+S), [Manzil Zaheer](https://arxiv.org/search/cs?searchtype=author&query=Zaheer%2C+M), [Srinadh Bhojanapalli](https://arxiv.org/search/cs?searchtype=author&query=Bhojanapalli%2C+S), [Daliang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+D), [Felix Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+F), [Sanjiv Kumar](https://arxiv.org/search/cs?searchtype=author&query=Kumar%2C+S)
+
+> Large Transformer models have achieved impressive performance in many natural language tasks. In particular, Transformer based language models have been shown to have great capabilities in encoding factual knowledge in their vast amount of parameters. While the tasks of improving the memorization and generalization of Transformers have been widely studied, it is not well known how to make transformers forget specific old facts and memorize new ones. In this paper, we propose a new task of \emph{explicitly modifying specific factual knowledge in Transformer models while ensuring the model performance does not degrade on the unmodified facts}. This task is useful in many scenarios, such as updating stale knowledge, protecting privacy, and eliminating unintended biases stored in the models. We benchmarked several approaches that provide natural baseline performances on this task. This leads to the discovery of key components of a Transformer model that are especially effective for knowledge modifications. The work also provides insights into the role that different training phases (such as pretraining and fine-tuning) play towards memorization and knowledge modification.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.00363](https://arxiv.org/abs/2012.00363) [cs.CL]** |
+|           | (or **[arXiv:2012.00363v1](https://arxiv.org/abs/2012.00363v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-02-2">2. An Enhanced Knowledge Injection Model for Commonsense Generation</h2>
+
+Title: [An Enhanced Knowledge Injection Model for Commonsense Generation](https://arxiv.org/abs/2012.00366)
+
+Authors: [Zhihao Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+Z), [Yeyun Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+Y), [Zhongyu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+Z), [Siyuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Yameng Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Y), [Jian Jiao](https://arxiv.org/search/cs?searchtype=author&query=Jiao%2C+J), [Xuanjing Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+X), [Nan Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan%2C+N), [Ruofei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+R)
+
+> Commonsense generation aims at generating plausible everyday scenario description based on a set of provided concepts. Digging the relationship of concepts from scratch is non-trivial, therefore, we retrieve prototypes from external knowledge to assist the understanding of the scenario for better description generation. We integrate two additional modules, namely position indicator and scaling module, into the pretrained encoder-decoder model for prototype modeling to enhance the knowledge injection procedure. We conduct experiment on CommonGen benchmark, and experimental results show that our method significantly improves the performance on all the metrics.
+
+| Comments: | Accepted to COLING 2020                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2012.00366](https://arxiv.org/abs/2012.00366) [cs.CL]** |
+|           | (or **[arXiv:2012.00366v1](https://arxiv.org/abs/2012.00366v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-02-3">3. CPM: A Large-scale Generative Chinese Pre-trained Language Model</h2>
+
+Title: [CPM: A Large-scale Generative Chinese Pre-trained Language Model](https://arxiv.org/abs/2012.00413)
+
+Authors: [Zhengyan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Xu Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+X), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Pei Ke](https://arxiv.org/search/cs?searchtype=author&query=Ke%2C+P), [Yuxian Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+Y), [Deming Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+D), [Yujia Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+Y), [Yusheng Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+Y), [Haozhe Ji](https://arxiv.org/search/cs?searchtype=author&query=Ji%2C+H), [Jian Guan](https://arxiv.org/search/cs?searchtype=author&query=Guan%2C+J), [Fanchao Qi](https://arxiv.org/search/cs?searchtype=author&query=Qi%2C+F), [Xiaozhi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Yanan Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+Y), [Guoyang Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+G), [Huanqi Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+H), [Shengqi Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+S), [Daixuan Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+D), [Zhenbo Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+Z), [Zhiyuan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Minlie Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+M), [Wentao Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+W), [Jie Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+J), [Juanzi Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Xiaoyan Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+X), [Maosong Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M)
+
+> Pre-trained Language Models (PLMs) have proven to be beneficial for various downstream NLP tasks. Recently, GPT-3, with 175 billion parameters and 570GB training data, drew a lot of attention due to the capacity of few-shot (even zero-shot) learning. However, applying GPT-3 to address Chinese NLP tasks is still challenging, as the training corpus of GPT-3 is primarily English, and the parameters are not publicly available. In this technical report, we release the Chinese Pre-trained Language Model (CPM) with generative pre-training on large-scale Chinese training data. To the best of our knowledge, CPM, with 2.6 billion parameters and 100GB Chinese training data, is the largest Chinese pre-trained language model, which could facilitate several downstream Chinese NLP tasks, such as conversation, essay generation, cloze test, and language understanding. Extensive experiments demonstrate that CPM achieves strong performance on many NLP tasks in the settings of few-shot (even zero-shot) learning. The code and parameters are available at [this https URL](https://github.com/TsinghuaAI/CPM-Generate).
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.00413](https://arxiv.org/abs/2012.00413) [cs.CL]** |
+|           | (or **[arXiv:2012.00413v1](https://arxiv.org/abs/2012.00413v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-02-4">4. Extracting Synonyms from Bilingual Dictionaries</h2>
+
+Title: [Extracting Synonyms from Bilingual Dictionaries](https://arxiv.org/abs/2012.00600)
+
+Authors: [Mustafa Jarrar](https://arxiv.org/search/cs?searchtype=author&query=Jarrar%2C+M), [Eman Karajah](https://arxiv.org/search/cs?searchtype=author&query=Karajah%2C+E), [Muhammad Khalifa](https://arxiv.org/search/cs?searchtype=author&query=Khalifa%2C+M), [Khaled Shaalan](https://arxiv.org/search/cs?searchtype=author&query=Shaalan%2C+K)
+
+> We present our progress in developing a novel algorithm to extract synonyms from bilingual dictionaries. Identification and usage of synonyms play a significant role in improving the performance of information access applications. The idea is to construct a translation graph from translation pairs, then to extract and consolidate cyclic paths to form bilingual sets of synonyms. The initial evaluation of this algorithm illustrates promising results in extracting Arabic-English bilingual synonyms. In the evaluation, we first converted the synsets in the Arabic WordNet into translation pairs (i.e., losing word-sense memberships). Next, we applied our algorithm to rebuild these synsets. We compared the original and extracted synsets obtaining an F-Measure of 82.3% and 82.1% for Arabic and English synsets extraction, respectively.
+
+| Comments: | In Proceedings - 11th International Global Wordnet Conference (GWC2021). Global Wordnet Association (2021) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Information Retrieval (cs.IR) |
+| Cite as:  | **[arXiv:2012.00600](https://arxiv.org/abs/2012.00600) [cs.CL]** |
+|           | (or **[arXiv:2012.00600v1](https://arxiv.org/abs/2012.00600v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-02-5">5. Intrinsic analysis for dual word embedding space models</h2>
+
+Title: [Intrinsic analysis for dual word embedding space models](https://arxiv.org/abs/2012.00728)
+
+Authors: [Mohit Mayank](https://arxiv.org/search/cs?searchtype=author&query=Mayank%2C+M)
+
+> Recent word embeddings techniques represent words in a continuous vector space, moving away from the atomic and sparse representations of the past. Each such technique can further create multiple varieties of embeddings based on different settings of hyper-parameters like embedding dimension size, context window size and training method. One additional variety appears when we especially consider the Dual embedding space techniques which generate not one but two-word embeddings as output. This gives rise to an interesting question - "is there one or a combination of the two word embeddings variety, which works better for a specific task?". This paper tries to answer this question by considering all of these variations. Herein, we compare two classical embedding methods belonging to two different methodologies - Word2Vec from window-based and Glove from count-based. For an extensive evaluation after considering all variations, a total of 84 different models were compared against semantic, association and analogy evaluations tasks which are made up of 9 open-source linguistics datasets. The final Word2vec reports showcase the preference of non-default model for 2 out of 3 tasks. In case of Glove, non-default models outperform in all 3 evaluation tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.00728](https://arxiv.org/abs/2012.00728) [cs.CL]** |
+|           | (or **[arXiv:2012.00728v1](https://arxiv.org/abs/2012.00728v1) [cs.CL]** for this version) |
+
+
 
 
 
