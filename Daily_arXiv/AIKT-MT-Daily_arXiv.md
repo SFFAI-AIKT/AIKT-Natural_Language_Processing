@@ -3,6 +3,11 @@
 # Index
 
 
+- [2020-12-03](#2020-12-03)
+
+  - [1. Evaluating Explanations: How much do explanations from the teacher aid students?](#2020-12-03-1)
+  - [2. How Can We Know When Language Models Know?](#2020-12-03-2)
+  - [3. Interactive Teaching for Conversational AI](#2020-12-03-3)
 - [2020-12-02](#2020-12-02)
 
   - [1. Modifying Memories in Transformer Models](#2020-12-02-1)
@@ -20,6 +25,67 @@
   - [7. Machine Translation of Novels in the Age of Transformer](#2020-12-01-7)
   - [8. Multimodal Pretraining Unmasked: Unifying the Vision and Language BERTs](#2020-12-01-8)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-12-03
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-12-03-1">1. Evaluating Explanations: How much do explanations from the teacher aid students?</h2>
+
+Title: [Evaluating Explanations: How much do explanations from the teacher aid students?](https://arxiv.org/abs/2012.00893)
+
+Authors: [Danish Pruthi](https://arxiv.org/search/cs?searchtype=author&query=Pruthi%2C+D), [Bhuwan Dhingra](https://arxiv.org/search/cs?searchtype=author&query=Dhingra%2C+B), [Livio Baldini Soares](https://arxiv.org/search/cs?searchtype=author&query=Soares%2C+L+B), [Michael Collins](https://arxiv.org/search/cs?searchtype=author&query=Collins%2C+M), [Zachary C. Lipton](https://arxiv.org/search/cs?searchtype=author&query=Lipton%2C+Z+C), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G), [William W. Cohen](https://arxiv.org/search/cs?searchtype=author&query=Cohen%2C+W+W)
+
+> While many methods purport to explain predictions by highlighting salient features, what precise aims these explanations serve and how to evaluate their utility are often unstated. In this work, we formalize the value of explanations using a student-teacher paradigm that measures the extent to which explanations improve student models in learning to simulate the teacher model on unseen examples for which explanations are unavailable. Student models incorporate explanations in training (but not prediction) procedures. Unlike many prior proposals to evaluate explanations, our approach cannot be easily gamed, enabling principled, scalable, and automatic evaluation of attributions. Using our framework, we compare multiple attribution methods and observe consistent and quantitative differences amongst them across multiple learning strategies.
+
+| Comments: | Preprint                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2012.00893](https://arxiv.org/abs/2012.00893) [cs.CL]** |
+|           | (or **[arXiv:2012.00893v1](https://arxiv.org/abs/2012.00893v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-03-2">2. How Can We Know When Language Models Know?</h2>
+
+Title: [How Can We Know When Language Models Know?](https://arxiv.org/abs/2012.00955)
+
+Authors: [Zhengbao Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+Z), [Jun Araki](https://arxiv.org/search/cs?searchtype=author&query=Araki%2C+J), [Haibo Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+H), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
+
+> Recent works have shown that language models (LM) capture different types of knowledge regarding facts or common sense. However, because no model is perfect, they still fail to provide appropriate answers in many cases. In this paper, we ask the question "how can we know when language models know, with confidence, the answer to a particular query?" We examine this question from the point of view of calibration, the property of a probabilistic model's predicted probabilities actually being well correlated with the probability of correctness. We first examine a state-of-the-art generative QA model, T5, and examine whether its probabilities are well calibrated, finding the answer is a relatively emphatic no. We then examine methods to calibrate such models to make their confidence scores correlate better with the likelihood of correctness through fine-tuning, post-hoc probability modification, or adjustment of the predicted outputs or inputs. Experiments on a diverse range of datasets demonstrate the effectiveness of our methods. We also perform analysis to study the strengths and limitations of these methods, shedding light on further improvements that may be made in methods for calibrating LMs.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.00955](https://arxiv.org/abs/2012.00955) [cs.CL]** |
+|           | (or **[arXiv:2012.00955v1](https://arxiv.org/abs/2012.00955v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-03-3">3. Interactive Teaching for Conversational AI</h2>
+
+Title: [Interactive Teaching for Conversational AI](https://arxiv.org/abs/2012.00958)
+
+Authors: [Qing Ping](https://arxiv.org/search/cs?searchtype=author&query=Ping%2C+Q), [Feiyang Niu](https://arxiv.org/search/cs?searchtype=author&query=Niu%2C+F), [Govind Thattai](https://arxiv.org/search/cs?searchtype=author&query=Thattai%2C+G), [Joel Chengottusseriyil](https://arxiv.org/search/cs?searchtype=author&query=Chengottusseriyil%2C+J), [Qiaozi Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+Q), [Aishwarya Reganti](https://arxiv.org/search/cs?searchtype=author&query=Reganti%2C+A), [Prashanth Rajagopal](https://arxiv.org/search/cs?searchtype=author&query=Rajagopal%2C+P), [Gokhan Tur](https://arxiv.org/search/cs?searchtype=author&query=Tur%2C+G), [Dilek Hakkani-Tur](https://arxiv.org/search/cs?searchtype=author&query=Hakkani-Tur%2C+D), [Prem Nataraja](https://arxiv.org/search/cs?searchtype=author&query=Nataraja%2C+P)
+
+> Current conversational AI systems aim to understand a set of pre-designed requests and execute related actions, which limits them to evolve naturally and adapt based on human interactions. Motivated by how children learn their first language interacting with adults, this paper describes a new Teachable AI system that is capable of learning new language nuggets called concepts, directly from end users using live interactive teaching sessions. The proposed setup uses three models to: a) Identify gaps in understanding automatically during live conversational interactions, b) Learn the respective interpretations of such unknown concepts from live interactions with users, and c) Manage a classroom sub-dialogue specifically tailored for interactive teaching sessions. We propose state-of-the-art transformer based neural architectures of models, fine-tuned on top of pre-trained models, and show accuracy improvements on the respective components. We demonstrate that this method is very promising in leading way to build more adaptive and personalized language understanding models.
+
+| Comments: | Accepted at Human in the Loop Dialogue Systems Workshop @NeurIPS 2020 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2012.00958](https://arxiv.org/abs/2012.00958) [cs.CL]** |
+|           | (or **[arXiv:2012.00958v1](https://arxiv.org/abs/2012.00958v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
