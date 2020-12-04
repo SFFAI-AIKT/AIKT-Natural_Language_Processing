@@ -3,6 +3,11 @@
 # Index
 
 
+- [2020-12-04](#2020-12-04)
+
+  - [1. SemMT: A Semantic-based Testing Approach for Machine Translation Systems](#2020-12-04-1)
+  - [2. Self-Explaining Structures Improve NLP Models](#2020-12-04-2)
+  - [3. On Extending NLP Techniques from the Categorical to the Latent Space: KL Divergence, Zipf's Law, and Similarity Search](#2020-12-04-3)
 - [2020-12-03](#2020-12-03)
 
   - [1. Evaluating Explanations: How much do explanations from the teacher aid students?](#2020-12-03-1)
@@ -25,6 +30,69 @@
   - [7. Machine Translation of Novels in the Age of Transformer](#2020-12-01-7)
   - [8. Multimodal Pretraining Unmasked: Unifying the Vision and Language BERTs](#2020-12-01-8)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-12-04
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-12-04-1">1. SemMT: A Semantic-based Testing Approach for Machine Translation Systems</h2>
+
+Title: [SemMT: A Semantic-based Testing Approach for Machine Translation Systems](https://arxiv.org/abs/2012.01815)
+
+Authors: [Jialun Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+J), [Meiziniu Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+M), [Yeting Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Ming Wen](https://arxiv.org/search/cs?searchtype=author&query=Wen%2C+M), [Shing-Chi Cheung](https://arxiv.org/search/cs?searchtype=author&query=Cheung%2C+S)
+
+> Machine translation has wide applications in daily life. In mission-critical applications such as translating official documents, incorrect translation can have unpleasant or sometimes catastrophic consequences. This motivates recent research on testing methodologies for machine translation systems. Existing methodologies mostly rely on metamorphic relations designed at the textual level (e.g., Levenshtein distance) or syntactic level (e.g., the distance between grammar structures) to determine the correctness of translation results. However, these metamorphic relations do not consider whether the original and translated sentences have the same meaning (i.e., Semantic similarity). Therefore, in this paper, we propose SemMT, an automatic testing approach for machine translation systems based on semantic similarity checking. SemMT applies round-trip translation and measures the semantic similarity between the original and translated sentences. Our insight is that the semantics expressed by the logic and numeric constraint in sentences can be captured using regular expressions (or deterministic finite automata) where efficient equivalence/similarity checking algorithms are available. Leveraging the insight, we propose three semantic similarity metrics and implement them in SemMT. The experiment result reveals SemMT can achieve higher effectiveness compared with state-of-the-art works, achieving an increase of 21% and 23% on accuracy and F-Score, respectively. We also explore potential improvements that can be achieved when proper combinations of metrics are adopted. Finally, we discuss a solution to locate the suspicious trip in round-trip translation, which may shed lights on further exploration.
+
+| Subjects: | **Software Engineering (cs.SE)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.01815](https://arxiv.org/abs/2012.01815) [cs.SE]** |
+|           | (or **[arXiv:2012.01815v1](https://arxiv.org/abs/2012.01815v1) [cs.SE]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-04-2">2. Self-Explaining Structures Improve NLP Models</h2>
+
+Title: [Self-Explaining Structures Improve NLP Models](https://arxiv.org/abs/2012.01786)
+
+Authors: [Zijun Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+Z), [Chun Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+C), [Qinghong Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+Q), [Xiaofei Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+X), [Yuxian Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+Y), [Fei Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+F), [Jiwei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J)
+
+> Existing approaches to explaining deep learning models in NLP usually suffer from two major drawbacks: (1) the main model and the explaining model are decoupled: an additional probing or surrogate model is used to interpret an existing model, and thus existing explaining tools are not self-explainable; (2) the probing model is only able to explain a model's predictions by operating on low-level features by computing saliency scores for individual words but are clumsy at high-level text units such as phrases, sentences, or paragraphs. To deal with these two issues, in this paper, we propose a simple yet general and effective self-explaining framework for deep learning models in NLP. The key point of the proposed framework is to put an additional layer, as is called by the interpretation layer, on top of any existing NLP model. This layer aggregates the information for each text span, which is then associated with a specific weight, and their weighted combination is fed to the softmax function for the final prediction. The proposed model comes with the following merits: (1) span weights make the model self-explainable and do not require an additional probing model for interpretation; (2) the proposed model is general and can be adapted to any existing deep learning structures in NLP; (3) the weight associated with each text span provides direct importance scores for higher-level text units such as phrases and sentences. We for the first time show that interpretability does not come at the cost of performance: a neural model of self-explaining features obtains better performances than its counterpart without the self-explaining nature, achieving a new SOTA performance of 59.1 on SST-5 and a new SOTA performance of 92.3 on SNLI.
+
+| Comments: | Code is available at [this https URL](https://github.com/ShannonAI/Self_Explaining_Structures_Improve_NLP_Models) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2012.01786](https://arxiv.org/abs/2012.01786) [cs.CL]** |
+|           | (or **[arXiv:2012.01786v1](https://arxiv.org/abs/2012.01786v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-04-3">3. On Extending NLP Techniques from the Categorical to the Latent Space: KL Divergence, Zipf's Law, and Similarity Search</h2>
+
+Title: [On Extending NLP Techniques from the Categorical to the Latent Space: KL Divergence, Zipf's Law, and Similarity Search](https://arxiv.org/abs/2012.01941)
+
+Authors: [Adam Hare](https://arxiv.org/search/cs?searchtype=author&query=Hare%2C+A), [Yu Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Yinan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Zhenming Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Christopher G. Brinton](https://arxiv.org/search/cs?searchtype=author&query=Brinton%2C+C+G)
+
+> Despite the recent successes of deep learning in natural language processing (NLP), there remains widespread usage of and demand for techniques that do not rely on machine learning. The advantage of these techniques is their interpretability and low cost when compared to frequently opaque and expensive machine learning models. Although they may not be be as performant in all cases, they are often sufficient for common and relatively simple problems. In this paper, we aim to modernize these older methods while retaining their advantages by extending approaches from categorical or bag-of-words representations to word embeddings representations in the latent space. First, we show that entropy and Kullback-Leibler divergence can be efficiently estimated using word embeddings and use this estimation to compare text across several categories. Next, we recast the heavy-tailed distribution known as Zipf's law that is frequently observed in the categorical space to the latent space. Finally, we look to improve the Jaccard similarity measure for sentence suggestion by introducing a new method of identifying similar sentences based on the set cover problem. We compare the performance of this algorithm against several baselines including Word Mover's Distance and the Levenshtein distance.
+
+| Comments: | 13 pages, 6 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2012.01941](https://arxiv.org/abs/2012.01941) [cs.CL]** |
+|           | (or **[arXiv:2012.01941v1](https://arxiv.org/abs/2012.01941v1) [cs.CL]** for this version) |
+
+
+
+
+
+
 
 
 
