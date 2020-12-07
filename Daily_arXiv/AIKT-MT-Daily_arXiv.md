@@ -3,6 +3,13 @@
 # Index
 
 
+- [2020-12-07](#2020-12-07)
+
+  - [1. A Correspondence Variational Autoencoder for Unsupervised Acoustic Word Embeddings](#2020-12-07-1)
+  - [2. Self-Supervised VQA: Answering Visual Questions using Images and Captions](#2020-12-07-2)
+  - [3. Accurate and Scalable Matching of Translators to Displaced Persons for Overcoming Language Barriers](#2020-12-07-3)
+  - [4. A Benchmark Dataset for Understandable Medical Language Translation](#2020-12-07-4)
+  - [5. Fine-tuning BERT for Low-Resource Natural Language Understanding via Active Learning](#2020-12-07-5)
 - [2020-12-04](#2020-12-04)
 
   - [1. SemMT: A Semantic-based Testing Approach for Machine Translation Systems](#2020-12-04-1)
@@ -30,6 +37,101 @@
   - [7. Machine Translation of Novels in the Age of Transformer](#2020-12-01-7)
   - [8. Multimodal Pretraining Unmasked: Unifying the Vision and Language BERTs](#2020-12-01-8)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-12-07
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-12-07-1">1. A Correspondence Variational Autoencoder for Unsupervised Acoustic Word Embeddings</h2>
+
+Title: [A Correspondence Variational Autoencoder for Unsupervised Acoustic Word Embeddings](https://arxiv.org/abs/2012.02221)
+
+Authors: [Puyuan Peng](https://arxiv.org/search/eess?searchtype=author&query=Peng%2C+P), [Herman Kamper](https://arxiv.org/search/eess?searchtype=author&query=Kamper%2C+H), [Karen Livescu](https://arxiv.org/search/eess?searchtype=author&query=Livescu%2C+K)
+
+> We propose a new unsupervised model for mapping a variable-duration speech segment to a fixed-dimensional representation. The resulting acoustic word embeddings can form the basis of search, discovery, and indexing systems for low- and zero-resource languages. Our model, which we refer to as a maximal sampling correspondence variational autoencoder (MCVAE), is a recurrent neural network (RNN) trained with a novel self-supervised correspondence loss that encourages consistency between embeddings of different instances of the same word. Our training scheme improves on previous correspondence training approaches through the use and comparison of multiple samples from the approximate posterior distribution. In the zero-resource setting, the MCVAE can be trained in an unsupervised way, without any ground-truth word pairs, by using the word-like segments discovered via an unsupervised term discovery system. In both this setting and a semi-supervised low-resource setting (with a limited set of ground-truth word pairs), the MCVAE outperforms previous state-of-the-art models, such as Siamese-, CAE- and VAE-based RNNs.
+
+| Comments: | 10 pages, 6 figures, NeurIPS 2020 Workshop Self-Supervised Learning for Speech and Audio Processing |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Sound (cs.SD) |
+| Cite as:  | **[arXiv:2012.02221](https://arxiv.org/abs/2012.02221) [eess.AS]** |
+|           | (or **[arXiv:2012.02221v1](https://arxiv.org/abs/2012.02221v1) [eess.AS]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-07-2">2. Self-Supervised VQA: Answering Visual Questions using Images and Captions
+</h2>
+
+Title: [Self-Supervised VQA: Answering Visual Questions using Images and Captions](https://arxiv.org/abs/2012.02356)
+
+Authors: [Pratyay Banerjee](https://arxiv.org/search/cs?searchtype=author&query=Banerjee%2C+P), [Tejas Gokhale](https://arxiv.org/search/cs?searchtype=author&query=Gokhale%2C+T), [Yezhou Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Chitta Baral](https://arxiv.org/search/cs?searchtype=author&query=Baral%2C+C)
+
+> Methodologies for training VQA models assume the availability of datasets with human-annotated Image-Question-Answer(I-Q-A) triplets for training. This has led to a heavy reliance and overfitting on datasets and a lack of generalization to new types of questions and scenes. Moreover, these datasets exhibit annotator subjectivity, biases, and errors, along with linguistic priors, which percolate into VQA models trained on such samples. We study whether models can be trained without any human-annotated Q-A pairs, but only with images and associated text captions which are descriptive and less subjective. We present a method to train models with procedurally generated Q-A pairs from captions using techniques, such as templates and annotation frameworks like QASRL. As most VQA models rely on dense and costly object annotations extracted from object detectors, we propose spatial-pyramid image patches as a simple but effective alternative to object bounding boxes, and demonstrate that our method uses fewer human annotations. We benchmark on VQA-v2, GQA, and on VQA-CP which contains a softer version of label shift. Our methods surpass prior supervised methods on VQA-CP and are competitive with methods without object features in fully supervised setting.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.02356](https://arxiv.org/abs/2012.02356) [cs.CV]** |
+|           | (or **[arXiv:2012.02356v1](https://arxiv.org/abs/2012.02356v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-07-3">3. Accurate and Scalable Matching of Translators to Displaced Persons for Overcoming Language Barriers</h2>
+
+Title: [Accurate and Scalable Matching of Translators to Displaced Persons for Overcoming Language Barriers](https://arxiv.org/abs/2012.02595)
+
+Authors: [Divyansh Agarwal](https://arxiv.org/search/cs?searchtype=author&query=Agarwal%2C+D), [Yuta Baba](https://arxiv.org/search/cs?searchtype=author&query=Baba%2C+Y), [Pratik Sachdeva](https://arxiv.org/search/cs?searchtype=author&query=Sachdeva%2C+P), [Tanya Tandon](https://arxiv.org/search/cs?searchtype=author&query=Tandon%2C+T), [Thomas Vetterli](https://arxiv.org/search/cs?searchtype=author&query=Vetterli%2C+T), [Aziz Alghunaim](https://arxiv.org/search/cs?searchtype=author&query=Alghunaim%2C+A)
+
+> Residents of developing countries are disproportionately susceptible to displacement as a result of humanitarian crises. During such crises, language barriers impede aid workers in providing services to those displaced. To build resilience, such services must be flexible and robust to a host of possible languages. \textit{Tarjimly} aims to overcome the barriers by providing a platform capable of matching bilingual volunteers to displaced persons or aid workers in need of translating. However, Tarjimly's large pool of translators comes with the challenge of selecting the right translator per request. In this paper, we describe a machine learning system that matches translator requests to volunteers at scale. We demonstrate that a simple logistic regression, operating on easily computable features, can accurately predict and rank translator response. In deployment, this lightweight system matches 82\% of requests with a median response time of 59 seconds, allowing aid workers to accelerate their services supporting displaced persons.
+
+| Comments: | Presented at NeurIPS 2020 Workshop on Machine Learning for the Developing World |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computers and Society (cs.CY)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2012.02595](https://arxiv.org/abs/2012.02595) [cs.CY]** |
+|           | (or **[arXiv:2012.02595v1](https://arxiv.org/abs/2012.02595v1) [cs.CY]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-07-4">4. A Benchmark Dataset for Understandable Medical Language Translation</h2>
+
+Title: [A Benchmark Dataset for Understandable Medical Language Translation](https://arxiv.org/abs/2012.02420)
+
+Authors: [Junyu Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+J), [Zifei Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+Z), [Hanzhong Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+H), [Muchao Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+M), [Yaqing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Quanzeng You](https://arxiv.org/search/cs?searchtype=author&query=You%2C+Q), [Cao Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+C), [Fenglong Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+F)
+
+> In this paper, we introduce MedLane -- a new human-annotated Medical Language translation dataset, to align professional medical sentences with layperson-understandable expressions. The dataset contains 12,801 training samples, 1,015 validation samples, and 1,016 testing samples. We then evaluate one naive and six deep learning-based approaches on the MedLane dataset, including directly copying, a statistical machine translation approach Moses, four neural machine translation approaches (i.e., the proposed PMBERT-MT model, Seq2Seq and its two variants), and a modified text summarization model PointerNet. To compare the results, we utilize eleven metrics, including three new measures specifically designed for this task. Finally, we discuss the limitations of MedLane and baselines, and point out possible research directions for this task.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.02420](https://arxiv.org/abs/2012.02420) [cs.CL]** |
+|           | (or **[arXiv:2012.02420v1](https://arxiv.org/abs/2012.02420v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-07-5">5. Fine-tuning BERT for Low-Resource Natural Language Understanding via Active Learning</h2>
+
+Title: [Fine-tuning BERT for Low-Resource Natural Language Understanding via Active Learning](https://arxiv.org/abs/2012.02462)
+
+Authors: [Daniel Grießhaber](https://arxiv.org/search/cs?searchtype=author&query=Grießhaber%2C+D), [Johannes Maucher](https://arxiv.org/search/cs?searchtype=author&query=Maucher%2C+J), [Ngoc Thang Vu](https://arxiv.org/search/cs?searchtype=author&query=Vu%2C+N+T)
+
+> Recently, leveraging pre-trained Transformer based language models in down stream, task specific models has advanced state of the art results in natural language understanding tasks. However, only a little research has explored the suitability of this approach in low resource settings with less than 1,000 training data points. In this work, we explore fine-tuning methods of BERT -- a pre-trained Transformer based language model -- by utilizing pool-based active learning to speed up training while keeping the cost of labeling new data constant. Our experimental results on the GLUE data set show an advantage in model performance by maximizing the approximate knowledge gain of the model when querying from the pool of unlabeled data. Finally, we demonstrate and analyze the benefits of freezing layers of the language model during fine-tuning to reduce the number of trainable parameters, making it more suitable for low-resource settings.
+
+| Comments: | COLING'2020                                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2012.02462](https://arxiv.org/abs/2012.02462) [cs.CL]** |
+|           | (or **[arXiv:2012.02462v1](https://arxiv.org/abs/2012.02462v1) [cs.CL]** for this version) |
+
+
 
 
 
