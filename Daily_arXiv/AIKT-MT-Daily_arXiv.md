@@ -3,9 +3,16 @@
 # Index
 
 
-- [2020-12-07](#2020-12-07)
+- [2020-12-08](#2020-12-08)
 
-  - [1. A Correspondence Variational Autoencoder for Unsupervised Acoustic Word Embeddings](#2020-12-07-1)
+  - [1. Cross-Modal Generalization: Learning in Low Resource Modalities via Meta-Alignment](#2020-12-08-1)
+  - [2. MLS: A Large-Scale Multilingual Dataset for Speech Research](#2020-12-08-2)
+  - [3. Reciprocal Supervised Learning Improves Neural Machine Translation](#2020-12-08-3)
+  - [4. Document Graph for Neural Machine Translation](#2020-12-08-4)
+  - [5. KgPLM: Knowledge-guided Language Model Pre-training via Generative and Discriminative Learning](#2020-12-08-5)
+  - [6. PPKE: Knowledge Representation Learning by Path-based Pre-training](#2020-12-08-6)
+- [2020-12-07](#2020-12-07)
+- [1. A Correspondence Variational Autoencoder for Unsupervised Acoustic Word Embeddings](#2020-12-07-1)
   - [2. Self-Supervised VQA: Answering Visual Questions using Images and Captions](#2020-12-07-2)
   - [3. Accurate and Scalable Matching of Translators to Displaced Persons for Overcoming Language Barriers](#2020-12-07-3)
   - [4. A Benchmark Dataset for Understandable Medical Language Translation](#2020-12-07-4)
@@ -37,6 +44,125 @@
   - [7. Machine Translation of Novels in the Age of Transformer](#2020-12-01-7)
   - [8. Multimodal Pretraining Unmasked: Unifying the Vision and Language BERTs](#2020-12-01-8)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-12-08
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-12-08-1">1. Cross-Modal Generalization: Learning in Low Resource Modalities via Meta-Alignment</h2>
+
+Title: [Cross-Modal Generalization: Learning in Low Resource Modalities via Meta-Alignment](https://arxiv.org/abs/2012.02813)
+
+Authors: [Paul Pu Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+P+P), [Peter Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+P), [Liu Ziyin](https://arxiv.org/search/cs?searchtype=author&query=Ziyin%2C+L), [Louis-Philippe Morency](https://arxiv.org/search/cs?searchtype=author&query=Morency%2C+L), [Ruslan Salakhutdinov](https://arxiv.org/search/cs?searchtype=author&query=Salakhutdinov%2C+R)
+
+> The natural world is abundant with concepts expressed via visual, acoustic, tactile, and linguistic modalities. Much of the existing progress in multimodal learning, however, focuses primarily on problems where the same set of modalities are present at train and test time, which makes learning in low-resource modalities particularly difficult. In this work, we propose algorithms for cross-modal generalization: a learning paradigm to train a model that can (1) quickly perform new tasks in a target modality (i.e. meta-learning) and (2) doing so while being trained on a different source modality. We study a key research question: how can we ensure generalization across modalities despite using separate encoders for different source and target modalities? Our solution is based on meta-alignment, a novel method to align representation spaces using strongly and weakly paired cross-modal data while ensuring quick generalization to new tasks across different modalities. We study this problem on 3 classification tasks: text to image, image to audio, and text to speech. Our results demonstrate strong performance even when the new target modality has only a few (1-10) labeled samples and in the presence of noisy labels, a scenario particularly prevalent in low-resource modalities.
+
+| Subjects: | **Machine Learning (cs.LG)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.02813](https://arxiv.org/abs/2012.02813) [cs.LG]** |
+|           | (or **[arXiv:2012.02813v1](https://arxiv.org/abs/2012.02813v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-08-2">2. MLS: A Large-Scale Multilingual Dataset for Speech Research</h2>
+
+Title: [MLS: A Large-Scale Multilingual Dataset for Speech Research](https://arxiv.org/abs/2012.03411)
+
+Authors: [Vineel Pratap](https://arxiv.org/search/eess?searchtype=author&query=Pratap%2C+V), [Qiantong Xu](https://arxiv.org/search/eess?searchtype=author&query=Xu%2C+Q), [Anuroop Sriram](https://arxiv.org/search/eess?searchtype=author&query=Sriram%2C+A), [Gabriel Synnaeve](https://arxiv.org/search/eess?searchtype=author&query=Synnaeve%2C+G), [Ronan Collobert](https://arxiv.org/search/eess?searchtype=author&query=Collobert%2C+R)
+
+> This paper introduces Multilingual LibriSpeech (MLS) dataset, a large multilingual corpus suitable for speech research. The dataset is derived from read audiobooks from LibriVox and consists of 8 languages, including about 44.5K hours of English and a total of about 6K hours for other languages. Additionally, we provide Language Models (LM) and baseline Automatic Speech Recognition (ASR) models and for all the languages in our dataset. We believe such a large transcribed dataset will open new avenues in ASR and Text-To-Speech (TTS) research. The dataset will be made freely available for anyone at [this http URL](http://www.openslr.org/).
+
+| Subjects:          | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Sound (cs.SD) |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | Interspeech 2020                                             |
+| DOI:               | [10.21437/Interspeech.2020-2826](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.21437%2FInterspeech.2020-2826&v=ec9c71bb) |
+| Cite as:           | **[arXiv:2012.03411](https://arxiv.org/abs/2012.03411) [eess.AS]** |
+|                    | (or **[arXiv:2012.03411v1](https://arxiv.org/abs/2012.03411v1) [eess.AS]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-12-08-3">3. Reciprocal Supervised Learning Improves Neural Machine Translation</h2>
+
+Title: [Reciprocal Supervised Learning Improves Neural Machine Translation](https://arxiv.org/abs/2012.02975)
+
+Authors: [Minkai Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+M), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Zhouhan Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Z), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Weinan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+W), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> Despite the recent success on image classification, self-training has only achieved limited gains on structured prediction tasks such as neural machine translation (NMT). This is mainly due to the compositionality of the target space, where the far-away prediction hypotheses lead to the notorious reinforced mistake problem. In this paper, we revisit the utilization of multiple diverse models and present a simple yet effective approach named Reciprocal-Supervised Learning (RSL). RSL first exploits individual models to generate pseudo parallel data, and then cooperatively trains each model on the combined synthetic corpus. RSL leverages the fact that different parameterized models have different inductive biases, and better predictions can be made by jointly exploiting the agreement among each other. Unlike the previous knowledge distillation methods built upon a much stronger teacher, RSL is capable of boosting the accuracy of one model by introducing other comparable or even weaker models. RSL can also be viewed as a more efficient alternative to ensemble. Extensive experiments demonstrate the superior performance of RSL on several benchmarks with significant margins.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.02975](https://arxiv.org/abs/2012.02975) [cs.CL]** |
+|           | (or **[arXiv:2012.02975v1](https://arxiv.org/abs/2012.02975v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-12-08-4">4. Document Graph for Neural Machine Translation</h2>
+
+Title: [Document Graph for Neural Machine Translation](https://arxiv.org/abs/2012.03477)
+
+Authors: [Mingzhou Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+M), [Liangyou Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Derek. F. Wai](https://arxiv.org/search/cs?searchtype=author&query=Wai%2C+D+F), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q), [Lidia S. Chao](https://arxiv.org/search/cs?searchtype=author&query=Chao%2C+L+S)
+
+> Previous works have shown that contextual information can improve the performance of neural machine translation (NMT). However, most existing document-level NMT methods failed to leverage contexts beyond a few set of previous sentences. How to make use of the whole document as global contexts is still a challenge. To address this issue, we hypothesize that a document can be represented as a graph that connects relevant contexts regardless of their distances. We employ several types of relations, including adjacency, syntactic dependency, lexical consistency, and coreference, to construct the document graph. Then, we incorporate both source and target graphs into the conventional Transformer architecture with graph convolutional networks. Experiments on various NMT benchmarks, including IWSLT English-French, Chinese-English, WMT English-German and Opensubtitle English-Russian, demonstrate that using document graphs can significantly improve the translation quality.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.03477](https://arxiv.org/abs/2012.03477) [cs.CL]** |
+|           | (or **[arXiv:2012.03477v1](https://arxiv.org/abs/2012.03477v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-12-08-5">5. KgPLM: Knowledge-guided Language Model Pre-training via Generative and Discriminative Learning</h2>
+
+Title: [KgPLM: Knowledge-guided Language Model Pre-training via Generative and Discriminative Learning](https://arxiv.org/abs/2012.03551)
+
+Authors: [Bin He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+B), [Xin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+X), [Jinghui Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+J), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q)
+
+> Recent studies on pre-trained language models have demonstrated their ability to capture factual knowledge and applications in knowledge-aware downstream tasks. In this work, we present a language model pre-training framework guided by factual knowledge completion and verification, and use the generative and discriminative approaches cooperatively to learn the model. Particularly, we investigate two learning schemes, named two-tower scheme and pipeline scheme, in training the generator and discriminator with shared parameter. Experimental results on LAMA, a set of zero-shot cloze-style question answering tasks, show that our model contains richer factual knowledge than the conventional pre-trained language models. Furthermore, when fine-tuned and evaluated on the MRQA shared tasks which consists of several machine reading comprehension datasets, our model achieves the state-of-the-art performance, and gains large improvements on NewsQA (+1.26 F1) and TriviaQA (+1.56 F1) over RoBERTa.
+
+| Comments: | 10 pages, 3 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2012.03551](https://arxiv.org/abs/2012.03551) [cs.CL]** |
+|           | (or **[arXiv:2012.03551v1](https://arxiv.org/abs/2012.03551v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-08-6">6. PPKE: Knowledge Representation Learning by Path-based Pre-training</h2>
+
+Title: [PPKE: Knowledge Representation Learning by Path-based Pre-training](https://arxiv.org/abs/2012.03573)
+
+Authors: [Bin He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+B), [Di Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+D), [Jing Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie%2C+J), [Jinghui Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+J), [Xin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+X), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q)
+
+> Entities may have complex interactions in a knowledge graph (KG), such as multi-step relationships, which can be viewed as graph contextual information of the entities. Traditional knowledge representation learning (KRL) methods usually treat a single triple as a training unit, and neglect most of the graph contextual information exists in the topological structure of KGs. In this study, we propose a Path-based Pre-training model to learn Knowledge Embeddings, called PPKE, which aims to integrate more graph contextual information between entities into the KRL model. Experiments demonstrate that our model achieves state-of-the-art results on several benchmark datasets for link prediction and relation prediction tasks, indicating that our model provides a feasible way to take advantage of graph contextual information in KGs.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.03573](https://arxiv.org/abs/2012.03573) [cs.CL]** |
+|           | (or **[arXiv:2012.03573v1](https://arxiv.org/abs/2012.03573v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
