@@ -3,6 +3,10 @@
 # Index
 
 
+- [2020-12-09](#2020-12-09)
+
+  - [1. Revisiting Iterative Back-Translation from the Perspective of Compositional Generalization](#2020-12-09-1)
+  - [2. Globetrotter: Unsupervised Multilingual Translation from Visual Alignment](#2020-12-09-2)
 - [2020-12-08](#2020-12-08)
 
   - [1. Cross-Modal Generalization: Learning in Low Resource Modalities via Meta-Alignment](#2020-12-08-1)
@@ -44,6 +48,48 @@
   - [7. Machine Translation of Novels in the Age of Transformer](#2020-12-01-7)
   - [8. Multimodal Pretraining Unmasked: Unifying the Vision and Language BERTs](#2020-12-01-8)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-12-09
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-12-09-1">1. Revisiting Iterative Back-Translation from the Perspective of Compositional Generalization</h2>
+
+Title: [Revisiting Iterative Back-Translation from the Perspective of Compositional Generalization](https://arxiv.org/abs/2012.04276)
+
+Authors: [Yinuo Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+Y), [Hualei Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+H), [Zeqi Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Z), [Bei Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+B), [Jian-Guang Lou](https://arxiv.org/search/cs?searchtype=author&query=Lou%2C+J), [Dongmei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+D)
+
+> Human intelligence exhibits compositional generalization (i.e., the capacity to understand and produce unseen combinations of seen components), but current neural seq2seq models lack such ability. In this paper, we revisit iterative back-translation, a simple yet effective semi-supervised method, to investigate whether and how it can improve compositional generalization. In this work: (1) We first empirically show that iterative back-translation substantially improves the performance on compositional generalization benchmarks (CFQ and SCAN). (2) To understand why iterative back-translation is useful, we carefully examine the performance gains and find that iterative back-translation can increasingly correct errors in pseudo-parallel data. (3) To further encourage this mechanism, we propose curriculum iterative back-translation, which better improves the quality of pseudo-parallel data, thus further improving the performance.
+
+| Comments: | accepted in AAAI 2021                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2012.04276](https://arxiv.org/abs/2012.04276) [cs.CL]** |
+|           | (or **[arXiv:2012.04276v1](https://arxiv.org/abs/2012.04276v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-09-2">2. Globetrotter: Unsupervised Multilingual Translation from Visual Alignment</h2>
+
+Title: [Globetrotter: Unsupervised Multilingual Translation from Visual Alignment](https://arxiv.org/abs/2012.04631)
+
+Authors: [Dídac Surís](https://arxiv.org/search/cs?searchtype=author&query=Surís%2C+D), [Dave Epstein](https://arxiv.org/search/cs?searchtype=author&query=Epstein%2C+D), [Carl Vondrick](https://arxiv.org/search/cs?searchtype=author&query=Vondrick%2C+C)
+
+> Multi-language machine translation without parallel corpora is challenging because there is no explicit supervision between languages. Existing unsupervised methods typically rely on topological properties of the language representations. We introduce a framework that instead uses the visual modality to align multiple languages, using images as the bridge between them. We estimate the cross-modal alignment between language and images, and use this estimate to guide the learning of cross-lingual representations. Our language representations are trained jointly in one model with a single stage. Experiments with fifty-two languages show that our method outperforms baselines on unsupervised word-level and sentence-level translation using retrieval.
+
+| Comments: | 19 pages, 9 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2012.04631](https://arxiv.org/abs/2012.04631) [cs.CL]** |
+|           | (or **[arXiv:2012.04631v1](https://arxiv.org/abs/2012.04631v1) [cs.CL]** for this version) |
+
+
 
 
 
