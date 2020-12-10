@@ -3,6 +3,12 @@
 # Index
 
 
+- [2020-12-10](#2020-12-10)
+
+  - [1. SongMASS: Automatic Song Writing with Pre-training and Alignment Constraint](#2020-12-10-1)
+  - [2. Breeding Gender-aware Direct Speech Translation Systems](#2020-12-10-2)
+  - [3. On Knowledge Distillation for Direct Speech Translation](#2020-12-10-3)
+  - [4. Towards Zero-shot Cross-lingual Image Retrieval](#2020-12-10-4)
 - [2020-12-09](#2020-12-09)
 
   - [1. Revisiting Iterative Back-Translation from the Perspective of Compositional Generalization](#2020-12-09-1)
@@ -48,6 +54,89 @@
   - [7. Machine Translation of Novels in the Age of Transformer](#2020-12-01-7)
   - [8. Multimodal Pretraining Unmasked: Unifying the Vision and Language BERTs](#2020-12-01-8)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-12-10
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-12-10-1">1. SongMASS: Automatic Song Writing with Pre-training and Alignment Constraint</h2>
+
+Title: [SongMASS: Automatic Song Writing with Pre-training and Alignment Constraint](https://arxiv.org/abs/2012.05168)
+
+Authors: [Zhonghao Sheng](https://arxiv.org/search/cs?searchtype=author&query=Sheng%2C+Z), [Kaitao Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+K), [Xu Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+X), [Yi Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+Y), [Wei Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+W), [Shikun Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+S), [Tao Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+T)
+
+> Automatic song writing aims to compose a song (lyric and/or melody) by machine, which is an interesting topic in both academia and industry. In automatic song writing, lyric-to-melody generation and melody-to-lyric generation are two important tasks, both of which usually suffer from the following challenges: 1) the paired lyric and melody data are limited, which affects the generation quality of the two tasks, considering a lot of paired training data are needed due to the weak correlation between lyric and melody; 2) Strict alignments are required between lyric and melody, which relies on specific alignment modeling. In this paper, we propose SongMASS to address the above challenges, which leverages masked sequence to sequence (MASS) pre-training and attention based alignment modeling for lyric-to-melody and melody-to-lyric generation. Specifically, 1) we extend the original sentence-level MASS pre-training to song level to better capture long contextual information in music, and use a separate encoder and decoder for each modality (lyric or melody); 2) we leverage sentence-level attention mask and token-level attention constraint during training to enhance the alignment between lyric and melody. During inference, we use a dynamic programming strategy to obtain the alignment between each word/syllable in lyric and note in melody. We pre-train SongMASS on unpaired lyric and melody datasets, and both objective and subjective evaluations demonstrate that SongMASS generates lyric and melody with significantly better quality than the baseline method without pre-training or alignment constraint.
+
+| Subjects: | **Sound (cs.SD)**; Computation and Language (cs.CL); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.05168](https://arxiv.org/abs/2012.05168) [cs.SD]** |
+|           | (or **[arXiv:2012.05168v1](https://arxiv.org/abs/2012.05168v1) [cs.SD]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-10-2">2. Breeding Gender-aware Direct Speech Translation Systems</h2>
+
+Title: [Breeding Gender-aware Direct Speech Translation Systems](https://arxiv.org/abs/2012.04955)
+
+Authors: [Marco Gaido](https://arxiv.org/search/cs?searchtype=author&query=Gaido%2C+M), [Beatrice Savoldi](https://arxiv.org/search/cs?searchtype=author&query=Savoldi%2C+B), [Luisa Bentivogli](https://arxiv.org/search/cs?searchtype=author&query=Bentivogli%2C+L), [Matteo Negri](https://arxiv.org/search/cs?searchtype=author&query=Negri%2C+M), [Marco Turchi](https://arxiv.org/search/cs?searchtype=author&query=Turchi%2C+M)
+
+> In automatic speech translation (ST), traditional cascade approaches involving separate transcription and translation steps are giving ground to increasingly competitive and more robust direct solutions. In particular, by translating speech audio data without intermediate transcription, direct ST models are able to leverage and preserve essential information present in the input (e.g. speaker's vocal characteristics) that is otherwise lost in the cascade framework. Although such ability proved to be useful for gender translation, direct ST is nonetheless affected by gender bias just like its cascade counterpart, as well as machine translation and numerous other natural language processing applications. Moreover, direct ST systems that exclusively rely on vocal biometric features as a gender cue can be unsuitable and potentially harmful for certain users. Going beyond speech signals, in this paper we compare different approaches to inform direct ST models about the speaker's gender and test their ability to handle gender translation from English into Italian and French. To this aim, we manually annotated large datasets with speakers' gender information and used them for experiments reflecting different possible real-world scenarios. Our results show that gender-aware direct ST solutions can significantly outperform strong - but gender-unaware - direct ST models. In particular, the translation of gender-marked words can increase up to 30 points in accuracy while preserving overall translation quality.
+
+| Comments:          | Outstanding paper at COLING 2020                             |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| Journal reference: | In Proceedings of the 28th International Conference on Computational Linguistics, Dec 2020, 3951-3964. Online |
+| Cite as:           | **[arXiv:2012.04955](https://arxiv.org/abs/2012.04955) [cs.CL]** |
+|                    | (or **[arXiv:2012.04955v1](https://arxiv.org/abs/2012.04955v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-12-10-3">3. On Knowledge Distillation for Direct Speech Translation</h2>
+
+Title: [On Knowledge Distillation for Direct Speech Translation](https://arxiv.org/abs/2012.04964)
+
+Authors: [Marco Gaido](https://arxiv.org/search/cs?searchtype=author&query=Gaido%2C+M), [Mattia A. Di Gangi](https://arxiv.org/search/cs?searchtype=author&query=Di+Gangi%2C+M+A), [Matteo Negri](https://arxiv.org/search/cs?searchtype=author&query=Negri%2C+M), [Marco Turchi](https://arxiv.org/search/cs?searchtype=author&query=Turchi%2C+M)
+
+> Direct speech translation (ST) has shown to be a complex task requiring knowledge transfer from its sub-tasks: automatic speech recognition (ASR) and machine translation (MT). For MT, one of the most promising techniques to transfer knowledge is knowledge distillation. In this paper, we compare the different solutions to distill knowledge in a sequence-to-sequence task like ST. Moreover, we analyze eventual drawbacks of this approach and how to alleviate them maintaining the benefits in terms of translation quality.
+
+| Comments: | Accepted at CLiC-IT 2020                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2012.04964](https://arxiv.org/abs/2012.04964) [cs.CL]** |
+|           | (or **[arXiv:2012.04964v1](https://arxiv.org/abs/2012.04964v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-12-10-4">4. Towards Zero-shot Cross-lingual Image Retrieval</h2>
+
+Title: [Towards Zero-shot Cross-lingual Image Retrieval](https://arxiv.org/abs/2012.05107)
+
+Authors: [Pranav Aggarwal](https://arxiv.org/search/cs?searchtype=author&query=Aggarwal%2C+P), [Ajinkya Kale](https://arxiv.org/search/cs?searchtype=author&query=Kale%2C+A)
+
+> There has been a recent spike in interest in multi-modal Language and Vision problems. On the language side, most of these models primarily focus on English since most multi-modal datasets are monolingual. We try to bridge this gap with a zero-shot approach for learning multi-modal representations using cross-lingual pre-training on the text side. We present a simple yet practical approach for building a cross-lingual image retrieval model which trains on a monolingual training dataset but can be used in a zero-shot cross-lingual fashion during inference. We also introduce a new objective function which tightens the text embedding clusters by pushing dissimilar texts from each other. Finally, we introduce a new 1K multi-lingual MSCOCO2014 caption test dataset (XTD10) in 7 languages that we collected using a crowdsourcing platform. We use this as the test set for evaluating zero-shot model performance across languages. XTD10 dataset is made publicly available here: [this https URL](https://github.com/adobe-research/Cross-lingual-Test-Dataset-XTD10)
+
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.05107](https://arxiv.org/abs/2012.05107) [cs.CL]** |
+|           | (or **[arXiv:2012.05107v1](https://arxiv.org/abs/2012.05107v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
