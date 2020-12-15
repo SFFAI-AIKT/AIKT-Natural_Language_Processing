@@ -3,6 +3,19 @@
 # Index
 
 
+- [2020-12-15](#2020-12-15)
+
+  - [1. Learning Contextual Causality from Time-consecutive Images](#2020-12-15-1)
+  - [2. LRC-BERT: Latent-representation Contrastive Knowledge Distillation for Natural Language Understanding](#2020-12-15-2)
+  - [3. A comparison of self-supervised speech representations as input features for unsupervised acoustic word embeddings](#2020-12-15-3)
+  - [4. Ensemble Distillation Approaches for Grammatical Error Correction](#2020-12-15-4)
+  - [5. Sentiment analysis in Bengali via transfer learning using multi-lingual BERT](#2020-12-15-5)
+  - [6. Vartani Spellcheck -- Automatic Context-Sensitive Spelling Correction of OCR-generated Hindi Text Using BERT and Levenshtein Distance](#2020-12-15-6)
+- [2020-12-14](#2020-12-14)
+- [1. Orthogonal Language and Task Adapters in Zero-Shot Cross-Lingual Transfer](#2020-12-14-1)
+  - [2. Comprehension and Knowledge](#2020-12-14-2)
+  - [3. Reinforced Multi-Teacher Selection for Knowledge Distillation](#2020-12-14-3)
+  - [4. Improving Task-Agnostic BERT Distillation with Layer Mapping Search](#2020-12-14-4)
 - [2020-12-11](#2020-12-11)
 
   - [1. Rewriter-Evaluator Framework for Neural Machine Translation](#2020-12-11-1)
@@ -60,6 +73,200 @@
   - [7. Machine Translation of Novels in the Age of Transformer](#2020-12-01-7)
   - [8. Multimodal Pretraining Unmasked: Unifying the Vision and Language BERTs](#2020-12-01-8)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-12-15
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-12-15-1">1. Learning Contextual Causality from Time-consecutive Images</h2>
+
+Title: [Learning Contextual Causality from Time-consecutive Images](https://arxiv.org/abs/2012.07138)
+
+Authors: [Hongming Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H), [Yintong Huo](https://arxiv.org/search/cs?searchtype=author&query=Huo%2C+Y), [Xinran Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+X), [Yangqiu Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+Y), [Dan Roth](https://arxiv.org/search/cs?searchtype=author&query=Roth%2C+D)
+
+> Causality knowledge is crucial for many artificial intelligence systems. Conventional textual-based causality knowledge acquisition methods typically require laborious and expensive human annotations. As a result, their scale is often limited. Moreover, as no context is provided during the annotation, the resulting causality knowledge records (e.g., ConceptNet) typically do not take the context into consideration. To explore a more scalable way of acquiring causality knowledge, in this paper, we jump out of the textual domain and investigate the possibility of learning contextual causality from the visual signal. Compared with pure text-based approaches, learning causality from the visual signal has the following advantages: (1) Causality knowledge belongs to the commonsense knowledge, which is rarely expressed in the text but rich in videos; (2) Most events in the video are naturally time-ordered, which provides a rich resource for us to mine causality knowledge from; (3) All the objects in the video can be used as context to study the contextual property of causal relations. In detail, we first propose a high-quality dataset Vis-Causal and then conduct experiments to demonstrate that with good language and visual representation models as well as enough training signals, it is possible to automatically discover meaningful causal knowledge from the videos. Further analysis also shows that the contextual property of causal relations indeed exists, taking which into consideration might be crucial if we want to use the causality knowledge in real applications, and the visual signal could serve as a good resource for learning such contextual causality.
+
+| Subjects: | **Artificial Intelligence (cs.AI)**; Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.07138](https://arxiv.org/abs/2012.07138) [cs.AI]** |
+|           | (or **[arXiv:2012.07138v1](https://arxiv.org/abs/2012.07138v1) [cs.AI]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-15-2">2. LRC-BERT: Latent-representation Contrastive Knowledge Distillation for Natural Language Understanding</h2>
+
+Title: [LRC-BERT: Latent-representation Contrastive Knowledge Distillation for Natural Language Understanding](https://arxiv.org/abs/2012.07335)
+
+Authors: [Hao Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+H), [Shaojun Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+S), [Qihong Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Q), [Junjie Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+J), [Guiquan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+G), [Kaikui Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+K), [Xiaolong Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X)
+
+> The pre-training models such as BERT have achieved great results in various natural language processing problems. However, a large number of parameters need significant amounts of memory and the consumption of inference time, which makes it difficult to deploy them on edge devices. In this work, we propose a knowledge distillation method LRC-BERT based on contrastive learning to fit the output of the intermediate layer from the angular distance aspect, which is not considered by the existing distillation methods. Furthermore, we introduce a gradient perturbation-based training architecture in the training phase to increase the robustness of LRC-BERT, which is the first attempt in knowledge distillation. Additionally, in order to better capture the distribution characteristics of the intermediate layer, we design a two-stage training method for the total distillation loss. Finally, by verifying 8 datasets on the General Language Understanding Evaluation (GLUE) benchmark, the performance of the proposed LRC-BERT exceeds the existing state-of-the-art methods, which proves the effectiveness of our method.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.07335](https://arxiv.org/abs/2012.07335) [cs.CL]** |
+|           | (or **[arXiv:2012.07335v1](https://arxiv.org/abs/2012.07335v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-15-3">3. A comparison of self-supervised speech representations as input features for unsupervised acoustic word embeddings</h2>
+
+Title: [A comparison of self-supervised speech representations as input features for unsupervised acoustic word embeddings](https://arxiv.org/abs/2012.07387)
+
+Authors: [Lisa van Staden](https://arxiv.org/search/cs?searchtype=author&query=van+Staden%2C+L), [Herman Kamper](https://arxiv.org/search/cs?searchtype=author&query=Kamper%2C+H)
+
+> Many speech processing tasks involve measuring the acoustic similarity between speech segments. Acoustic word embeddings (AWE) allow for efficient comparisons by mapping speech segments of arbitrary duration to fixed-dimensional vectors. For zero-resource speech processing, where unlabelled speech is the only available resource, some of the best AWE approaches rely on weak top-down constraints in the form of automatically discovered word-like segments. Rather than learning embeddings at the segment level, another line of zero-resource research has looked at representation learning at the short-time frame level. Recent approaches include self-supervised predictive coding and correspondence autoencoder (CAE) models. In this paper we consider whether these frame-level features are beneficial when used as inputs for training to an unsupervised AWE model. We compare frame-level features from contrastive predictive coding (CPC), autoregressive predictive coding and a CAE to conventional MFCCs. These are used as inputs to a recurrent CAE-based AWE model. In a word discrimination task on English and Xitsonga data, all three representation learning approaches outperform MFCCs, with CPC consistently showing the biggest improvement. In cross-lingual experiments we find that CPC features trained on English can also be transferred to Xitsonga.
+
+| Comments: | Accepted to SLT 2021                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2012.07387](https://arxiv.org/abs/2012.07387) [cs.CL]** |
+|           | (or **[arXiv:2012.07387v1](https://arxiv.org/abs/2012.07387v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-15-4">4. Ensemble Distillation Approaches for Grammatical Error Correction</h2>
+
+Title: [Ensemble Distillation Approaches for Grammatical Error Correction](https://arxiv.org/abs/2012.07535)
+
+Authors: [Yassir Fathullah](https://arxiv.org/search/cs?searchtype=author&query=Fathullah%2C+Y), [Mark Gales](https://arxiv.org/search/cs?searchtype=author&query=Gales%2C+M), [Andrey Malinin](https://arxiv.org/search/cs?searchtype=author&query=Malinin%2C+A)
+
+> Ensemble approaches are commonly used techniques to improving a system by combining multiple model predictions. Additionally these schemes allow the uncertainty, as well as the source of the uncertainty, to be derived for the prediction. Unfortunately these benefits come at a computational and memory cost. To address this problem ensemble distillation (EnD) and more recently ensemble distribution distillation (EnDD) have been proposed that compress the ensemble into a single model, representing either the ensemble average prediction or prediction distribution respectively. This paper examines the application of both these distillation approaches to a sequence prediction task, grammatical error correction (GEC). This is an important application area for language learning tasks as it can yield highly useful feedback to the learner. It is, however, more challenging than the standard tasks investigated for distillation as the prediction of any grammatical correction to a word will be highly dependent on both the input sequence and the generated output history for the word. The performance of both EnD and EnDD are evaluated on both publicly available GEC tasks as well as a spoken language task.
+
+| Comments: | Submitted to ICASSP 2020                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2012.07535](https://arxiv.org/abs/2012.07535) [cs.CL]** |
+|           | (or **[arXiv:2012.07535v1](https://arxiv.org/abs/2012.07535v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-15-5">5. Sentiment analysis in Bengali via transfer learning using multi-lingual BERT</h2>
+
+Title: [Sentiment analysis in Bengali via transfer learning using multi-lingual BERT](https://arxiv.org/abs/2012.07538)
+
+Authors: [Khondoker Ittehadul Islam](https://arxiv.org/search/cs?searchtype=author&query=Islam%2C+K+I), [Md. Saiful Islam](https://arxiv.org/search/cs?searchtype=author&query=Islam%2C+M+S), [Md Ruhul Amin](https://arxiv.org/search/cs?searchtype=author&query=Amin%2C+M+R)
+
+> Sentiment analysis (SA) in Bengali is challenging due to this Indo-Aryan language's highly inflected properties with more than 160 different inflected forms for verbs and 36 different forms for noun and 24 different forms for pronouns. The lack of standard labeled datasets in the Bengali domain makes the task of SA even harder. In this paper, we present manually tagged 2-class and 3-class SA datasets in Bengali. We also demonstrate that the multi-lingual BERT model with relevant extensions can be trained via the approach of transfer learning over those novel datasets to improve the state-of-the-art performance in sentiment classification tasks. This deep learning model achieves an accuracy of 71\% for 2-class sentiment classification compared to the current state-of-the-art accuracy of 68\%. We also present the very first Bengali SA classifier for the 3-class manually tagged dataset, and our proposed model achieves an accuracy of 60\%. We further use this model to analyze the sentiment of public comments in the online daily newspaper. Our analysis shows that people post negative comments for political or sports news more often, while the religious article comments represent positive sentiment. The dataset and code is publicly available at [this https URL](https://github.com/KhondokerIslam/Bengali)\_Sentiment.
+
+| Comments: | 5 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2012.07538](https://arxiv.org/abs/2012.07538) [cs.CL]** |
+|           | (or **[arXiv:2012.07538v1](https://arxiv.org/abs/2012.07538v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-15-6">6. Vartani Spellcheck -- Automatic Context-Sensitive Spelling Correction of OCR-generated Hindi Text Using BERT and Levenshtein Distance</h2>
+
+Title: [Vartani Spellcheck -- Automatic Context-Sensitive Spelling Correction of OCR-generated Hindi Text Using BERT and Levenshtein Distance](https://arxiv.org/abs/2012.07652)
+
+Authors: [Aditya Pal](https://arxiv.org/search/cs?searchtype=author&query=Pal%2C+A), [Abhijit Mustafi](https://arxiv.org/search/cs?searchtype=author&query=Mustafi%2C+A)
+
+> Traditional Optical Character Recognition (OCR) systems that generate text of highly inflectional Indic languages like Hindi tend to suffer from poor accuracy due to a wide alphabet set, compound characters and difficulty in segmenting characters in a word. Automatic spelling error detection and context-sensitive error correction can be used to improve accuracy by post-processing the text generated by these OCR systems. A majority of previously developed language models for error correction of Hindi spelling have been context-free. In this paper, we present Vartani Spellcheck - a context-sensitive approach for spelling correction of Hindi text using a state-of-the-art transformer - BERT in conjunction with the Levenshtein distance algorithm, popularly known as Edit Distance. We use a lookup dictionary and context-based named entity recognition (NER) for detection of possible spelling errors in the text. Our proposed technique has been tested on a large corpus of text generated by the widely used Tesseract OCR on the Hindi epic Ramayana. With an accuracy of 81%, the results show a significant improvement over some of the previously established context-sensitive error correction mechanisms for Hindi. We also explain how Vartani Spellcheck may be used for on-the-fly autocorrect suggestion during continuous typing in a text editor environment.
+
+| Comments: | 5 pages, 3 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2012.07652](https://arxiv.org/abs/2012.07652) [cs.CL]** |
+|           | (or **[arXiv:2012.07652v1](https://arxiv.org/abs/2012.07652v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+
+
+
+
+# 2020-12-14
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-12-14-1">1. Orthogonal Language and Task Adapters in Zero-Shot Cross-Lingual Transfer</h2>
+
+Title: [Orthogonal Language and Task Adapters in Zero-Shot Cross-Lingual Transfer](https://arxiv.org/abs/2012.06460)
+
+Authors: [Marko Vidoni](https://arxiv.org/search/cs?searchtype=author&query=Vidoni%2C+M), [Ivan Vulić](https://arxiv.org/search/cs?searchtype=author&query=Vulić%2C+I), [Goran Glavaš](https://arxiv.org/search/cs?searchtype=author&query=Glavaš%2C+G)
+
+> Adapter modules, additional trainable parameters that enable efficient fine-tuning of pretrained transformers, have recently been used for language specialization of multilingual transformers, improving downstream zero-shot cross-lingual transfer. In this work, we propose orthogonal language and task adapters (dubbed orthoadapters) for cross-lingual transfer. They are trained to encode language- and task-specific information that is complementary (i.e., orthogonal) to the knowledge already stored in the pretrained transformer's parameters. Our zero-shot cross-lingual transfer experiments, involving three tasks (POS-tagging, NER, NLI) and a set of 10 diverse languages, 1) point to the usefulness of orthoadapters in cross-lingual transfer, especially for the most complex NLI task, but also 2) indicate that the optimal adapter configuration highly depends on the task and the target language. We hope that our work will motivate a wider investigation of usefulness of orthogonality constraints in language- and task-specific fine-tuning of pretrained transformers.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.06460](https://arxiv.org/abs/2012.06460) [cs.CL]** |
+|           | (or **[arXiv:2012.06460v1](https://arxiv.org/abs/2012.06460v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-14-2">2. Comprehension and Knowledge</h2>
+
+Title: [Comprehension and Knowledge](https://arxiv.org/abs/2012.06561)
+
+Authors: [Pavel Naumov](https://arxiv.org/search/cs?searchtype=author&query=Naumov%2C+P), [Kevin Ros](https://arxiv.org/search/cs?searchtype=author&query=Ros%2C+K)
+
+> The ability of an agent to comprehend a sentence is tightly connected to the agent's prior experiences and background knowledge. The paper suggests to interpret comprehension as a modality and proposes a complete bimodal logical system that describes an interplay between comprehension and knowledge modalities.
+
+| Comments: | To appear in Proceedings 35th AAAI Conference on Artificial Intelligence (AAAI 21), February 2-9, 2021 (without the technical appendix) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Artificial Intelligence (cs.AI)**; Computation and Language (cs.CL); Logic in Computer Science (cs.LO) |
+| Cite as:  | **[arXiv:2012.06561](https://arxiv.org/abs/2012.06561) [cs.AI]** |
+|           | (or **[arXiv:2012.06561v1](https://arxiv.org/abs/2012.06561v1) [cs.AI]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-14-3">3. Reinforced Multi-Teacher Selection for Knowledge Distillation</h2>
+
+Title: [Reinforced Multi-Teacher Selection for Knowledge Distillation](https://arxiv.org/abs/2012.06048)
+
+Authors: [Fei Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+F), [Linjun Shou](https://arxiv.org/search/cs?searchtype=author&query=Shou%2C+L), [Jian Pei](https://arxiv.org/search/cs?searchtype=author&query=Pei%2C+J), [Wutao Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+W), [Ming Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+M), [Yan Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+Y), [Daxin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+D)
+
+> In natural language processing (NLP) tasks, slow inference speed and huge footprints in GPU usage remain the bottleneck of applying pre-trained deep models in production. As a popular method for model compression, knowledge distillation transfers knowledge from one or multiple large (teacher) models to a small (student) model. When multiple teacher models are available in distillation, the state-of-the-art methods assign a fixed weight to a teacher model in the whole distillation. Furthermore, most of the existing methods allocate an equal weight to every teacher model. In this paper, we observe that, due to the complexity of training examples and the differences in student model capability, learning differentially from teacher models can lead to better performance of student models distilled. We systematically develop a reinforced method to dynamically assign weights to teacher models for different training instances and optimize the performance of student model. Our extensive experimental results on several NLP tasks clearly verify the feasibility and effectiveness of our approach.
+
+| Comments: | AAAI 2021                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2012.06048](https://arxiv.org/abs/2012.06048) [cs.CL]** |
+|           | (or **[arXiv:2012.06048v1](https://arxiv.org/abs/2012.06048v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-14-4">4. Improving Task-Agnostic BERT Distillation with Layer Mapping Search</h2>
+
+Title: [Improving Task-Agnostic BERT Distillation with Layer Mapping Search](https://arxiv.org/abs/2012.06153)
+
+Authors:[Xiaoqi Jiao](https://arxiv.org/search/cs?searchtype=author&query=Jiao%2C+X), [Huating Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+H), [Yichun Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+Y), [Lifeng Shang](https://arxiv.org/search/cs?searchtype=author&query=Shang%2C+L), [Xin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+X), [Xiao Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+X), [Linlin Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Fang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+F), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q)
+
+> Knowledge distillation (KD) which transfers the knowledge from a large teacher model to a small student model, has been widely used to compress the BERT model recently. Besides the supervision in the output in the original KD, recent works show that layer-level supervision is crucial to the performance of the student BERT model. However, previous works designed the layer mapping strategy heuristically (e.g., uniform or last-layer), which can lead to inferior performance. In this paper, we propose to use the genetic algorithm (GA) to search for the optimal layer mapping automatically. To accelerate the search process, we further propose a proxy setting where a small portion of the training corpus are sampled for distillation, and three representative tasks are chosen for evaluation. After obtaining the optimal layer mapping, we perform the task-agnostic BERT distillation with it on the whole corpus to build a compact student model, which can be directly fine-tuned on downstream tasks. Comprehensive experiments on the evaluation benchmarks demonstrate that 1) layer mapping strategy has a significant effect on task-agnostic BERT distillation and different layer mappings can result in quite different performances; 2) the optimal layer mapping strategy from the proposed search process consistently outperforms the other heuristic ones; 3) with the optimal layer mapping, our student model achieves state-of-the-art performance on the GLUE tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.06153](https://arxiv.org/abs/2012.06153) [cs.CL]** |
+|           | (or **[arXiv:2012.06153v1](https://arxiv.org/abs/2012.06153v1) [cs.CL]** for this version) |
+
+
 
 
 
