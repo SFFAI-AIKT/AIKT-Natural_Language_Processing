@@ -3,6 +3,12 @@
 # Index
 
 
+- [2020-12-16](#2020-12-16)
+
+  - [1. Learning from History: Modeling Temporal Knowledge Graphs with Sequential Copy-Generation Networks](#2020-12-16-1)
+  - [2. Model Choices Influence Attributive Word Associations: A Semi-supervised Analysis of Static Word Embeddings](#2020-12-16-2)
+  - [3. Enhance Multimodal Transformer With External Label And In-Domain Pretrain: Hateful Meme Challenge Winning Solution](#2020-12-16-3)
+  - [4. Modeling Homophone Noise for Robust Neural Machine Translation](#2020-12-16-4)
 - [2020-12-15](#2020-12-15)
 
   - [1. Learning Contextual Causality from Time-consecutive Images](#2020-12-15-1)
@@ -73,6 +79,82 @@
   - [7. Machine Translation of Novels in the Age of Transformer](#2020-12-01-7)
   - [8. Multimodal Pretraining Unmasked: Unifying the Vision and Language BERTs](#2020-12-01-8)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-12-16
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-12-16-1">1. Learning from History: Modeling Temporal Knowledge Graphs with Sequential Copy-Generation Networks</h2>
+
+Title: [Learning from History: Modeling Temporal Knowledge Graphs with Sequential Copy-Generation Networks](https://arxiv.org/abs/2012.08492)
+
+Authors: [Cunchao Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+C), [Muhao Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+M), [Changjun Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+C), [Guangquan Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+G), [Yan Zhan](https://arxiv.org/search/cs?searchtype=author&query=Zhan%2C+Y)
+
+> Large knowledge graphs often grow to store temporal facts that model the dynamic relations or interactions of entities along the timeline. Since such temporal knowledge graphs often suffer from incompleteness, it is important to develop time-aware representation learning models that help to infer the missing temporal facts. While the temporal facts are typically evolving, it is observed that many facts often show a repeated pattern along the timeline, such as economic crises and diplomatic activities. This observation indicates that a model could potentially learn much from the known facts appeared in history. To this end, we propose a new representation learning model for temporal knowledge graphs, namely CyGNet, based on a novel timeaware copy-generation mechanism. CyGNet is not only able to predict future facts from the whole entity vocabulary, but also capable of identifying facts with repetition and accordingly predicting such future facts with reference to the known facts in the past. We evaluate the proposed method on the knowledge graph completion task using five benchmark datasets. Extensive experiments demonstrate the effectiveness of CyGNet for predicting future facts with repetition as well as de novo fact prediction.
+
+| Comments: | AAAI 2021; preprint with Appendices                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Artificial Intelligence (cs.AI)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2012.08492](https://arxiv.org/abs/2012.08492) [cs.AI]** |
+|           | (or **[arXiv:2012.08492v1](https://arxiv.org/abs/2012.08492v1) [cs.AI]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-16-2">2. Model Choices Influence Attributive Word Associations: A Semi-supervised Analysis of Static Word Embeddings</h2>
+
+Title: [Model Choices Influence Attributive Word Associations: A Semi-supervised Analysis of Static Word Embeddings](https://arxiv.org/abs/2012.07978)
+
+Authors: [Geetanjali Bihani](https://arxiv.org/search/cs?searchtype=author&query=Bihani%2C+G), [Julia Taylor Rayz](https://arxiv.org/search/cs?searchtype=author&query=Rayz%2C+J+T)
+
+> Static word embeddings encode word associations, extensively utilized in downstream NLP tasks. Although prior studies have discussed the nature of such word associations in terms of biases and lexical regularities captured, the variation in word associations based on the embedding training procedure remains in obscurity. This work aims to address this gap by assessing attributive word associations across five different static word embedding architectures, analyzing the impact of the choice of the model architecture, context learning flavor and training corpora. Our approach utilizes a semi-supervised clustering method to cluster annotated proper nouns and adjectives, based on their word embedding features, revealing underlying attributive word associations formed in the embedding space, without introducing any confirmation bias. Our results reveal that the choice of the context learning flavor during embedding training (CBOW vs skip-gram) impacts the word association distinguishability and word embeddings' sensitivity to deviations in the training corpora. Moreover, it is empirically shown that even when trained over the same corpora, there is significant inter-model disparity and intra-model similarity in the encoded word associations across different word embedding models, portraying specific patterns in the way the embedding space is created for each embedding architecture.
+
+| Comments: | 2020 IEEE/WIC/ACM International Joint Conference on Web Intelligence and Intelligent Agent Technology (WI-IAT'20) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2012.07978](https://arxiv.org/abs/2012.07978) [cs.CL]** |
+|           | (or **[arXiv:2012.07978v1](https://arxiv.org/abs/2012.07978v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-16-3">3. Enhance Multimodal Transformer With External Label And In-Domain Pretrain: Hateful Meme Challenge Winning Solution</h2>
+
+Title: [Enhance Multimodal Transformer With External Label And In-Domain Pretrain: Hateful Meme Challenge Winning Solution](https://arxiv.org/abs/2012.08290)
+
+Authors: [Ron Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+R)
+
+> Hateful meme detection is a new research area recently brought out that requires both visual, linguistic understanding of the meme and some background knowledge to performing well on the task. This technical report summarises the first place solution of the Hateful Meme Detection Challenge 2020, which extending state-of-the-art visual-linguistic transformers to tackle this problem. At the end of the report, we also point out the shortcomings and possible directions for improving the current methodology.
+
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.08290](https://arxiv.org/abs/2012.08290) [cs.CL]** |
+|           | (or **[arXiv:2012.08290v1](https://arxiv.org/abs/2012.08290v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-16-4">4. Modeling Homophone Noise for Robust Neural Machine Translation</h2>
+
+Title: [Modeling Homophone Noise for Robust Neural Machine Translation](https://arxiv.org/abs/2012.08396)
+
+Authors: [Wenjie Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+W), [Xiang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Yuhui Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+Y), [Deyi Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+D), [Jianwei Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+J), [Bin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+B)
+
+> In this paper, we propose a robust neural machine translation (NMT) framework. The framework consists of a homophone noise detector and a syllable-aware NMT model to homophone errors. The detector identifies potential homophone errors in a textual sentence and converts them into syllables to form a mixed sequence that is then fed into the syllable-aware NMT. Extensive experiments on Chinese->English translation demonstrate that our proposed method not only significantly outperforms baselines on noisy test sets with homophone noise, but also achieves a substantial improvement on clean text.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.08396](https://arxiv.org/abs/2012.08396) [cs.CL]** |
+|           | (or **[arXiv:2012.08396v1](https://arxiv.org/abs/2012.08396v1) [cs.CL]** for this version) |
+
+
 
 
 
