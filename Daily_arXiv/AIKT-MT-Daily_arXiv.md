@@ -3,6 +3,10 @@
 # Index
 
 
+- [2020-12-17](#2020-12-17)
+
+  - [1. A Closer Look at the Robustness of Vision-and-Language Pre-trained Models](#2020-12-17-1)
+  - [2. Improving Multilingual Neural Machine Translation For Low-Resource Languages: French-, English- Vietnamese](#2020-12-17-2)
 - [2020-12-16](#2020-12-16)
 
   - [1. Learning from History: Modeling Temporal Knowledge Graphs with Sequential Copy-Generation Networks](#2020-12-16-1)
@@ -79,6 +83,47 @@
   - [7. Machine Translation of Novels in the Age of Transformer](#2020-12-01-7)
   - [8. Multimodal Pretraining Unmasked: Unifying the Vision and Language BERTs](#2020-12-01-8)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-12-17
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-12-17-1">1. A Closer Look at the Robustness of Vision-and-Language Pre-trained Models</h2>
+
+Title: [A Closer Look at the Robustness of Vision-and-Language Pre-trained Models](https://arxiv.org/abs/2012.08673)
+
+Authors: [Linjie Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Zhe Gan](https://arxiv.org/search/cs?searchtype=author&query=Gan%2C+Z), [Jingjing Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J)
+
+> Large-scale pre-trained multimodal transformers, such as ViLBERT and UNITER, have propelled the state of the art in vision-and-language (V+L) research to a new level. Although achieving impressive performance on standard tasks, to date, it still remains unclear how robust these pre-trained models are. To investigate, we conduct a host of thorough evaluations on existing pre-trained models over 4 different types of V+L specific model robustness: (i) Linguistic Variation; (ii) Logical Reasoning; (iii) Visual Content Manipulation; and (iv) Answer Distribution Shift. Interestingly, by standard model finetuning, pre-trained V+L models already exhibit better robustness than many task-specific state-of-the-art methods. To further enhance model robustness, we propose Mango, a generic and efficient approach that learns a Multimodal Adversarial Noise GeneratOr in the embedding space to fool pre-trained V+L models. Differing from previous studies focused on one specific type of robustness, Mango is task-agnostic, and enables universal performance lift for pre-trained models over diverse tasks designed to evaluate broad aspects of robustness. Comprehensive experiments demonstrate that Mango achieves new state of the art on 7 out of 9 robustness benchmarks, surpassing existing methods by a significant margin. As the first comprehensive study on V+L robustness, this work puts robustness of pre-trained models into sharper focus, pointing new directions for future study.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.08673](https://arxiv.org/abs/2012.08673) [cs.CV]** |
+|           | (or **[arXiv:2012.08673v1](https://arxiv.org/abs/2012.08673v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-17-2">2. Improving Multilingual Neural Machine Translation For Low-Resource Languages: French-, English- Vietnamese</h2>
+
+Title: [Improving Multilingual Neural Machine Translation For Low-Resource Languages: French-, English- Vietnamese](https://arxiv.org/abs/2012.08743)
+
+Authors: [Thi-Vinh Ngo](https://arxiv.org/search/cs?searchtype=author&query=Ngo%2C+T), [Phuong-Thai Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+P), [Thanh-Le Ha](https://arxiv.org/search/cs?searchtype=author&query=Ha%2C+T), [Khac-Quy Dinh](https://arxiv.org/search/cs?searchtype=author&query=Dinh%2C+K), [Le-Minh Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+L)
+
+> Prior works have demonstrated that a low-resource language pair can benefit from multilingual machine translation (MT) systems, which rely on many language pairs' joint training. This paper proposes two simple strategies to address the rare word issue in multilingual MT systems for two low-resource language pairs: French-Vietnamese and English-Vietnamese. The first strategy is about dynamical learning word similarity of tokens in the shared space among source languages while another one attempts to augment the translation ability of rare words through updating their embeddings during the training. Besides, we leverage monolingual data for multilingual MT systems to increase the amount of synthetic parallel corpora while dealing with the data sparsity problem. We have shown significant improvements of up to +1.62 and +2.54 BLEU points over the bilingual baseline systems for both language pairs and released our datasets for the research community.
+
+| Subjects:          | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | The 3rd Workshop on Technologies for MT of Low Resource Languages (LoResMT 2020) |
+| Cite as:           | **[arXiv:2012.08743](https://arxiv.org/abs/2012.08743) [cs.CL]** |
+|                    | (or **[arXiv:2012.08743v1](https://arxiv.org/abs/2012.08743v1) [cs.CL]** for this version) |
+
+
 
 
 
