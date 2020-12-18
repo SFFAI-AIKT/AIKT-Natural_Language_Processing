@@ -3,6 +3,11 @@
 # Index
 
 
+- [2020-12-18](#2020-12-18)
+
+  - [1. The effectiveness of unsupervised subword modeling with autoregressive and cross-lingual phone-aware networks](#2020-12-18-1)
+  - [2. MIX : a Multi-task Learning Approach to Solve Open-Domain Question Answering](#2020-12-18-2)
+  - [3. Continual Lifelong Learning in Natural Language Processing: A Survey](#2020-12-18-3)
 - [2020-12-17](#2020-12-17)
 
   - [1. A Closer Look at the Robustness of Vision-and-Language Pre-trained Models](#2020-12-17-1)
@@ -83,6 +88,68 @@
   - [7. Machine Translation of Novels in the Age of Transformer](#2020-12-01-7)
   - [8. Multimodal Pretraining Unmasked: Unifying the Vision and Language BERTs](#2020-12-01-8)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-12-18
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-12-18-1">1. The effectiveness of unsupervised subword modeling with autoregressive and cross-lingual phone-aware networks</h2>
+
+Title: [The effectiveness of unsupervised subword modeling with autoregressive and cross-lingual phone-aware networks](https://arxiv.org/abs/2012.09544)
+
+Authors: [Siyuan Feng](https://arxiv.org/search/eess?searchtype=author&query=Feng%2C+S), [Odette Scharenborg](https://arxiv.org/search/eess?searchtype=author&query=Scharenborg%2C+O)
+
+> This study addresses unsupervised subword modeling, i.e., learning acoustic feature representations that can distinguish between subword units of a language. We propose a two-stage learning framework that combines self-supervised learning and cross-lingual knowledge transfer. The framework consists of autoregressive predictive coding (APC) as the front-end and a cross-lingual deep neural network (DNN) as the back-end. Experiments on the ABX subword discriminability task conducted with the Libri-light and ZeroSpeech 2017 databases showed that our approach is competitive or superior to state-of-the-art studies. Comprehensive and systematic analyses at the phoneme- and articulatory feature (AF)-level showed that our approach was better at capturing diphthong than monophthong vowel information, while also differences in the amount of information captured for different types of consonants were observed. Moreover, a positive correlation was found between the effectiveness of the back-end in capturing a phoneme's information and the quality of the cross-lingual phone labels assigned to the phoneme. The AF-level analysis together with t-SNE visualization results showed that the proposed approach is better than MFCC and APC features in capturing manner and place of articulation information, vowel height, and backness information. Taken together, the analyses showed that the two stages in our approach are both effective in capturing phoneme and AF information. Nevertheless, monophthong vowel information is less well captured than consonant information, which suggests that future research should focus on improving capturing monophthong vowel information.
+
+| Comments: | 18 pages (including 1 page for supplementary material), 13 figures. Submitted to IEEE Open Journal of Signal Processing (OJ-SP) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Sound (cs.SD) |
+| Cite as:  | **[arXiv:2012.09544](https://arxiv.org/abs/2012.09544) [eess.AS]** |
+|           | (or **[arXiv:2012.09544v1](https://arxiv.org/abs/2012.09544v1) [eess.AS]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-18-2">2. MIX : a Multi-task Learning Approach to Solve Open-Domain Question Answering</h2>
+
+Title: [MIX : a Multi-task Learning Approach to Solve Open-Domain Question Answering](https://arxiv.org/abs/2012.09766)
+
+Authors: [Sofian Chaybouti](https://arxiv.org/search/cs?searchtype=author&query=Chaybouti%2C+S), [Achraf Saghe](https://arxiv.org/search/cs?searchtype=author&query=Saghe%2C+A), [Aymen Shabou](https://arxiv.org/search/cs?searchtype=author&query=Shabou%2C+A)
+
+> In this paper, we introduce MIX : a multi-task deep learning approach to solve Open-Domain Question Answering. First, we design our system as a multi-stage pipeline made of 3 building blocks : a BM25-based Retriever, to reduce the search space; RoBERTa based Scorer and Extractor, to rank retrieved documents and extract relevant spans of text respectively. Eventually, we further improve computational efficiency of our system to deal with the scalability challenge : thanks to multi-task learning, we parallelize the close tasks solved by the Scorer and the Extractor. Our system outperforms previous state-of-the-art by 12 points in both f1-score and exact-match on the squad-open benchmark.
+
+| Comments:    | 7 pages, 6 figures, 4 tables                                 |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**                         |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2012.09766](https://arxiv.org/abs/2012.09766) [cs.CL]** |
+|              | (or **[arXiv:2012.09766v1](https://arxiv.org/abs/2012.09766v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-18-3">3. Continual Lifelong Learning in Natural Language Processing: A Survey</h2>
+
+Title: [Continual Lifelong Learning in Natural Language Processing: A Survey](https://arxiv.org/abs/2012.09823)
+
+Authors: [Magdalena Biesialska](https://arxiv.org/search/cs?searchtype=author&query=Biesialska%2C+M), [Katarzyna Biesialska](https://arxiv.org/search/cs?searchtype=author&query=Biesialska%2C+K), [Marta R. Costa-jussà](https://arxiv.org/search/cs?searchtype=author&query=Costa-jussà%2C+M+R)
+
+> Continual learning (CL) aims to enable information systems to learn from a continuous data stream across time. However, it is difficult for existing deep learning architectures to learn a new task without largely forgetting previously acquired knowledge. Furthermore, CL is particularly challenging for language learning, as natural language is ambiguous: it is discrete, compositional, and its meaning is context-dependent. In this work, we look at the problem of CL through the lens of various NLP tasks. Our survey discusses major challenges in CL and current methods applied in neural network models. We also provide a critical review of the existing CL evaluation methods and datasets in NLP. Finally, we present our outlook on future research directions.
+
+| Comments:          | COLING 2020                                                  |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG); Neural and Evolutionary Computing (cs.NE) |
+| Journal reference: | Proceedings of the 28th International Conference on Computational Linguistics (COLING 2020), Barcelona, Spain (Online), pp. 6523--6541 |
+| Cite as:           | **[arXiv:2012.09823](https://arxiv.org/abs/2012.09823) [cs.CL]** |
+|                    | (or **[arXiv:2012.09823v1](https://arxiv.org/abs/2012.09823v1) [cs.CL]** for this version) |
+
+
 
 
 
