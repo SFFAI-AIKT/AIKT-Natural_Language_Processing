@@ -3,9 +3,15 @@
 # Index
 
 
-- [2020-12-18](#2020-12-18)
+- [2020-12-19](#2020-12-19)
 
-  - [1. The effectiveness of unsupervised subword modeling with autoregressive and cross-lingual phone-aware networks](#2020-12-18-1)
+  - [1. On Modality Bias in the TVQA Dataset](#2020-12-19-1)
+  - [2. NeurST: Neural Speech Translation Toolkit](#2020-12-19-2)
+  - [3. Exploring Fluent Query Reformulations with Text-to-Text Transformers and Reinforcement Learning](#2020-12-19-3)
+  - [4. AdvExpander: Generating Natural Language Adversarial Examples by Expanding Text](#2020-12-19-4)
+  - [5. Understood in Translation, Transformers for Domain Understanding](#2020-12-19-5)
+- [2020-12-18](#2020-12-18)
+- [1. The effectiveness of unsupervised subword modeling with autoregressive and cross-lingual phone-aware networks](#2020-12-18-1)
   - [2. MIX : a Multi-task Learning Approach to Solve Open-Domain Question Answering](#2020-12-18-2)
   - [3. Continual Lifelong Learning in Natural Language Processing: A Survey](#2020-12-18-3)
 - [2020-12-17](#2020-12-17)
@@ -88,6 +94,105 @@
   - [7. Machine Translation of Novels in the Age of Transformer](#2020-12-01-7)
   - [8. Multimodal Pretraining Unmasked: Unifying the Vision and Language BERTs](#2020-12-01-8)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-12-19
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-12-19-1">1. On Modality Bias in the TVQA Dataset</h2>
+
+Title: [On Modality Bias in the TVQA Dataset](https://arxiv.org/abs/2012.10210)
+
+Authors: [Thomas Winterbottom](https://arxiv.org/search/cs?searchtype=author&query=Winterbottom%2C+T), [Sarah Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+S), [Alistair McLean](https://arxiv.org/search/cs?searchtype=author&query=McLean%2C+A), [Noura Al Moubayed](https://arxiv.org/search/cs?searchtype=author&query=Moubayed%2C+N+A)
+
+> TVQA is a large scale video question answering (video-QA) dataset based on popular TV shows. The questions were specifically designed to require "both vision and language understanding to answer". In this work, we demonstrate an inherent bias in the dataset towards the textual subtitle modality. We infer said bias both directly and indirectly, notably finding that models trained with subtitles learn, on-average, to suppress video feature contribution. Our results demonstrate that models trained on only the visual information can answer ~45% of the questions, while using only the subtitles achieves ~68%. We find that a bilinear pooling based joint representation of modalities damages model performance by 9% implying a reliance on modality specific information. We also show that TVQA fails to benefit from the RUBi modality bias reduction technique popularised in VQA. By simply improving text processing using BERT embeddings with the simple model first proposed for TVQA, we achieve state-of-the-art results (72.13%) compared to the highly complex STAGE model (70.50%). We recommend a multimodal evaluation framework that can highlight biases in models and isolate visual and textual reliant subsets of data. Using this framework we propose subsets of TVQA that respond exclusively to either or both modalities in order to facilitate multimodal modelling as TVQA originally intended.
+
+| Comments:    | 10 pages, 4 Figures, 2 Tables, +Supp Mats, BMVC 2020         |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| MSC classes: | 68T99                                                        |
+| ACM classes: | I.2.10; I.2.7; I.2.4                                         |
+| Cite as:     | **[arXiv:2012.10210](https://arxiv.org/abs/2012.10210) [cs.CV]** |
+|              | (or **[arXiv:2012.10210v1](https://arxiv.org/abs/2012.10210v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-19-2">2. NeurST: Neural Speech Translation Toolkit</h2>
+
+Title: [NeurST: Neural Speech Translation Toolkit](https://arxiv.org/abs/2012.10018)
+
+Authors: [Chengqi Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+C), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> NeurST is an open-source toolkit for neural speech translation developed by ByteDance AI Lab. The toolkit mainly focuses on end-to-end speech translation, which is easy to use, modify, and extend to advanced speech translation research and products. NeurST aims at facilitating the speech translation research for NLP researchers and provides a complete setup for speech translation benchmarks, including feature extraction, data preprocessing, distributed training, and evaluation. Moreover, The toolkit implements several major architectures for end-to-end speech translation. It shows experimental results for different benchmark datasets, which can be regarded as reliable baselines for future research. The toolkit is publicly available at [this https URL](https://github.com/bytedance/neurst).
+
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.10018](https://arxiv.org/abs/2012.10018) [cs.CL]** |
+|           | (or **[arXiv:2012.10018v1](https://arxiv.org/abs/2012.10018v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-19-3">3. Exploring Fluent Query Reformulations with Text-to-Text Transformers and Reinforcement Learning</h2>
+
+Title: [Exploring Fluent Query Reformulations with Text-to-Text Transformers and Reinforcement Learning](https://arxiv.org/abs/2012.10033)
+
+Authors: [Jerry Zikun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J+Z), [Shi Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+S), [Haoran Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H)
+
+> Query reformulation aims to alter potentially noisy or ambiguous text sequences into coherent ones closer to natural language questions. In this process, it is also crucial to maintain and even enhance performance in a downstream environments like question answering when rephrased queries are given as input. We explore methods to generate these query reformulations by training reformulators using text-to-text transformers and apply policy-based reinforcement learning algorithms to further encourage reward learning. Query fluency is numerically evaluated by the same class of model fine-tuned on a human-evaluated well-formedness dataset. The reformulator leverages linguistic knowledge obtained from transfer learning and generates more well-formed reformulations than a translation-based model in qualitative and quantitative analysis. During reinforcement learning, it better retains fluency while optimizing the RL objective to acquire question answering rewards and can generalize to out-of-sample textual data in qualitative evaluations. Our RL framework is demonstrated to be flexible, allowing reward signals to be sourced from different downstream environments such as intent classification.
+
+| Comments: | Workshop on the 9th Dialog System TechnologyChallenge (DSTC-9), AAAI 2021 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2012.10033](https://arxiv.org/abs/2012.10033) [cs.CL]** |
+|           | (or **[arXiv:2012.10033v1](https://arxiv.org/abs/2012.10033v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-19-4">4. AdvExpander: Generating Natural Language Adversarial Examples by Expanding Text</h2>
+
+Title: [AdvExpander: Generating Natural Language Adversarial Examples by Expanding Text](https://arxiv.org/abs/2012.10235)
+
+Authors: [Zhihong Shao](https://arxiv.org/search/cs?searchtype=author&query=Shao%2C+Z), [Zitao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Jiyong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Zhongqin Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Z), [Minlie Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+M)
+
+> Adversarial examples are vital to expose the vulnerability of machine learning models. Despite the success of the most popular substitution-based methods which substitutes some characters or words in the original examples, only substitution is insufficient to uncover all robustness issues of models. In this paper, we present AdvExpander, a method that crafts new adversarial examples by expanding text, which is complementary to previous substitution-based methods. We first utilize linguistic rules to determine which constituents to expand and what types of modifiers to expand with. We then expand each constituent by inserting an adversarial modifier searched from a CVAE-based generative model which is pre-trained on a large scale corpus. To search adversarial modifiers, we directly search adversarial latent codes in the latent space without tuning the pre-trained parameters. To ensure that our adversarial examples are label-preserving for text matching, we also constrain the modifications with a heuristic rule. Experiments on three classification tasks verify the effectiveness of AdvExpander and the validity of our adversarial examples. AdvExpander crafts a new type of adversarial examples by text expansion, thereby promising to reveal new robustness issues.
+
+| Comments: | Work in progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2012.10235](https://arxiv.org/abs/2012.10235) [cs.CL]** |
+|           | (or **[arXiv:2012.10235v1](https://arxiv.org/abs/2012.10235v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-19-5">5. Understood in Translation, Transformers for Domain Understanding</h2>
+
+Title: [Understood in Translation, Transformers for Domain Understanding](https://arxiv.org/abs/2012.10271)
+
+Authors: [Dimitrios Christofidellis](https://arxiv.org/search/cs?searchtype=author&query=Christofidellis%2C+D), [Matteo Manica](https://arxiv.org/search/cs?searchtype=author&query=Manica%2C+M), [Leonidas Georgopoulos](https://arxiv.org/search/cs?searchtype=author&query=Georgopoulos%2C+L), [Hans Vandierendonck](https://arxiv.org/search/cs?searchtype=author&query=Vandierendonck%2C+H)
+
+> Knowledge acquisition is the essential first step of any Knowledge Graph (KG) application. This knowledge can be extracted from a given corpus (KG generation process) or specified from an existing KG (KG specification process). Focusing on domain specific solutions, knowledge acquisition is a labor intensive task usually orchestrated and supervised by subject matter experts. Specifically, the domain of interest is usually manually defined and then the needed generation or extraction tools are utilized to produce the KG. Herein, we propose a supervised machine learning method, based on Transformers, for domain definition of a corpus. We argue why such automated definition of the domain's structure is beneficial both in terms of construction time and quality of the generated graph. The proposed method is extensively validated on three public datasets (WebNLG, NYT and DocRED) by comparing it with two reference methods based on CNNs and RNNs models. The evaluation shows the efficiency of our model in this task. Focusing on scientific document understanding, we present a new health domain dataset based on publications extracted from PubMed and we successfully utilize our method on this. Lastly, we demonstrate how this work lays the foundation for fully automated and unsupervised KG generation.
+
+| Comments: | 4 figures, 7 tables, main text pages 8, appendix pages 6     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2012.10271](https://arxiv.org/abs/2012.10271) [cs.CL]** |
+|           | (or **[arXiv:2012.10271v1](https://arxiv.org/abs/2012.10271v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
