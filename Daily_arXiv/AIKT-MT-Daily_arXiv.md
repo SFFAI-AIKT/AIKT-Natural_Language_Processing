@@ -3,15 +3,22 @@
 # Index
 
 
-- [2020-12-19](#2020-12-19)
+- [2020-12-22](#2020-12-22)
 
-  - [1. On Modality Bias in the TVQA Dataset](#2020-12-19-1)
-  - [2. NeurST: Neural Speech Translation Toolkit](#2020-12-19-2)
-  - [3. Exploring Fluent Query Reformulations with Text-to-Text Transformers and Reinforcement Learning](#2020-12-19-3)
-  - [4. AdvExpander: Generating Natural Language Adversarial Examples by Expanding Text](#2020-12-19-4)
-  - [5. Understood in Translation, Transformers for Domain Understanding](#2020-12-19-5)
+  - [1. Transductive Visual Verb Sense Disambiguation](#2020-12-22-1)
+  - [2. Self-Supervised Learning for Visual Summary Identification in Scientific Publications](#2020-12-22-2)
+  - [3. Finding Sparse Structure for Domain Specific Neural Machine Translation](#2020-12-22-3)
+  - [4. Lexically-constrained Text Generation through Commonsense Knowledge Extraction and Injection](#2020-12-22-4)
+  - [5. Narrative Incoherence Detection](#2020-12-22-5)
+- [2020-12-21](#2020-12-21)
+- [1. On Modality Bias in the TVQA Dataset](#2020-12-21-1)
+  - [2. NeurST: Neural Speech Translation Toolkit](#2020-12-21-2)
+  - [3. Exploring Fluent Query Reformulations with Text-to-Text Transformers and Reinforcement Learning](#2020-12-21-3)
+  - [4. AdvExpander: Generating Natural Language Adversarial Examples by Expanding Text](#2020-12-21-4)
+  - [5. Understood in Translation, Transformers for Domain Understanding](#2020-12-21-5)
 - [2020-12-18](#2020-12-18)
-- [1. The effectiveness of unsupervised subword modeling with autoregressive and cross-lingual phone-aware networks](#2020-12-18-1)
+
+  - [1. The effectiveness of unsupervised subword modeling with autoregressive and cross-lingual phone-aware networks](#2020-12-18-1)
   - [2. MIX : a Multi-task Learning Approach to Solve Open-Domain Question Answering](#2020-12-18-2)
   - [3. Continual Lifelong Learning in Natural Language Processing: A Survey](#2020-12-18-3)
 - [2020-12-17](#2020-12-17)
@@ -33,7 +40,8 @@
   - [5. Sentiment analysis in Bengali via transfer learning using multi-lingual BERT](#2020-12-15-5)
   - [6. Vartani Spellcheck -- Automatic Context-Sensitive Spelling Correction of OCR-generated Hindi Text Using BERT and Levenshtein Distance](#2020-12-15-6)
 - [2020-12-14](#2020-12-14)
-- [1. Orthogonal Language and Task Adapters in Zero-Shot Cross-Lingual Transfer](#2020-12-14-1)
+
+  - [1. Orthogonal Language and Task Adapters in Zero-Shot Cross-Lingual Transfer](#2020-12-14-1)
   - [2. Comprehension and Knowledge](#2020-12-14-2)
   - [3. Reinforced Multi-Teacher Selection for Knowledge Distillation](#2020-12-14-3)
   - [4. Improving Task-Agnostic BERT Distillation with Layer Mapping Search](#2020-12-14-4)
@@ -62,7 +70,8 @@
   - [5. KgPLM: Knowledge-guided Language Model Pre-training via Generative and Discriminative Learning](#2020-12-08-5)
   - [6. PPKE: Knowledge Representation Learning by Path-based Pre-training](#2020-12-08-6)
 - [2020-12-07](#2020-12-07)
-- [1. A Correspondence Variational Autoencoder for Unsupervised Acoustic Word Embeddings](#2020-12-07-1)
+
+  - [1. A Correspondence Variational Autoencoder for Unsupervised Acoustic Word Embeddings](#2020-12-07-1)
   - [2. Self-Supervised VQA: Answering Visual Questions using Images and Captions](#2020-12-07-2)
   - [3. Accurate and Scalable Matching of Translators to Displaced Persons for Overcoming Language Barriers](#2020-12-07-3)
   - [4. A Benchmark Dataset for Understandable Medical Language Translation](#2020-12-07-4)
@@ -97,13 +106,109 @@
 
 
 
-# 2020-12-19
+# 2020-12-22
 
 [Return to Index](#Index)
 
 
 
-<h2 id="2020-12-19-1">1. On Modality Bias in the TVQA Dataset</h2>
+<h2 id="2020-12-22-1">1. Transductive Visual Verb Sense Disambiguation</h2>
+
+Title: [Transductive Visual Verb Sense Disambiguation](https://arxiv.org/abs/2012.10821)
+
+Authors: [Sebastiano Vascon](https://arxiv.org/search/cs?searchtype=author&query=Vascon%2C+S), [Sinem Aslan](https://arxiv.org/search/cs?searchtype=author&query=Aslan%2C+S), [Gianluca Bigaglia](https://arxiv.org/search/cs?searchtype=author&query=Bigaglia%2C+G), [Lorenzo Giudice](https://arxiv.org/search/cs?searchtype=author&query=Giudice%2C+L), [Marcello Pelillo](https://arxiv.org/search/cs?searchtype=author&query=Pelillo%2C+M)
+
+> Verb Sense Disambiguation is a well-known task in NLP, the aim is to find the correct sense of a verb in a sentence. Recently, this problem has been extended in a multimodal scenario, by exploiting both textual and visual features of ambiguous verbs leading to a new problem, the Visual Verb Sense Disambiguation (VVSD). Here, the sense of a verb is assigned considering the content of an image paired with it rather than a sentence in which the verb appears. Annotating a dataset for this task is more complex than textual disambiguation, because assigning the correct sense to a pair of <image, verb> requires both non-trivial linguistic and visual skills. In this work, differently from the literature, the VVSD task will be performed in a transductive semi-supervised learning (SSL) setting, in which only a small amount of labeled information is required, reducing tremendously the need for annotated data. The disambiguation process is based on a graph-based label propagation method which takes into account mono or multimodal representations for <image, verb> pairs. Experiments have been carried out on the recently published dataset VerSe, the only available dataset for this task. The achieved results outperform the current state-of-the-art by a large margin while using only a small fraction of labeled samples per sense. Code available: [this https URL](https://github.com/GiBg1aN/TVVSD).
+
+| Comments: | Accepted at the IEEE Workshop on Application of Computer Vision 2021 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2012.10821](https://arxiv.org/abs/2012.10821) [cs.CV]** |
+|           | (or **[arXiv:2012.10821v1](https://arxiv.org/abs/2012.10821v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-22-2">2. Self-Supervised Learning for Visual Summary Identification in Scientific Publications</h2>
+
+Title: [Self-Supervised Learning for Visual Summary Identification in Scientific Publications](https://arxiv.org/abs/2012.11213)
+
+Authors: [Shintaro Yamamoto](https://arxiv.org/search/cs?searchtype=author&query=Yamamoto%2C+S), [Anne Lauscher](https://arxiv.org/search/cs?searchtype=author&query=Lauscher%2C+A), [Simone Paolo Ponzetto](https://arxiv.org/search/cs?searchtype=author&query=Ponzetto%2C+S+P), [Goran Glavaš](https://arxiv.org/search/cs?searchtype=author&query=Glavaš%2C+G), [Shigeo Morishima](https://arxiv.org/search/cs?searchtype=author&query=Morishima%2C+S)
+
+> Providing visual summaries of scientific publications can increase information access for readers and thereby help deal with the exponential growth in the number of scientific publications. Nonetheless, efforts in providing visual publication summaries have been few and fart apart, primarily focusing on the biomedical domain. This is primarily because of the limited availability of annotated gold standards, which hampers the application of robust and high-performing supervised learning techniques. To address these problems we create a new benchmark dataset for selecting figures to serve as visual summaries of publications based on their abstracts, covering several domains in computer science. Moreover, we develop a self-supervised learning approach, based on heuristic matching of inline references to figures with figure captions. Experiments in both biomedical and computer science domains show that our model is able to outperform the state of the art despite being self-supervised and therefore not relying on any annotated training data.
+
+| Subjects: | **Information Retrieval (cs.IR)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.11213](https://arxiv.org/abs/2012.11213) [cs.IR]** |
+|           | (or **[arXiv:2012.11213v1](https://arxiv.org/abs/2012.11213v1) [cs.IR]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-22-3">3. Finding Sparse Structure for Domain Specific Neural Machine Translation</h2>
+
+Title: [Finding Sparse Structure for Domain Specific Neural Machine Translation]()
+
+Authors: [Jianze Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+J), [Chengqi Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+C), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Xipeng Qiu](https://arxiv.org/search/cs?searchtype=author&query=Qiu%2C+X), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> Fine-tuning is a major approach for domain adaptation in Neural Machine Translation (NMT). However, unconstrained fine-tuning requires very careful hyper-parameter tuning otherwise it is easy to fall into over-fitting on the target domain and degradation on the general domain. To mitigate it, we propose PRUNE-TUNE, a novel domain adaptation method via gradual pruning. It learns tiny domain-specific subnetworks for tuning. During adaptation to a new domain, we only tune its corresponding subnetwork. PRUNE-TUNE alleviates the over-fitting and the degradation problem without model modification. Additionally, with no overlapping between domain-specific subnetworks, PRUNE-TUNE is also capable of sequential multi-domain learning. Empirical experiment results show that PRUNE-TUNE outperforms several strong competitors in the target domain test set without the quality degradation of the general domain in both single and multiple domain settings.
+
+| Comments: | Accepted to AAAI 2021                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2012.10586](https://arxiv.org/abs/2012.10586) [cs.CL]** |
+|           | (or **[arXiv:2012.10586v1](https://arxiv.org/abs/2012.10586v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-12-22-4">4. Lexically-constrained Text Generation through Commonsense Knowledge Extraction and Injection</h2>
+
+Title: [Lexically-constrained Text Generation through Commonsense Knowledge Extraction and Injection](https://arxiv.org/abs/2012.10813)
+
+Authors: [Yikang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Pulkit Goel](https://arxiv.org/search/cs?searchtype=author&query=Goel%2C+P), [Varsha Kuppur Rajendra](https://arxiv.org/search/cs?searchtype=author&query=Rajendra%2C+V+K), [Har Simrat Singh](https://arxiv.org/search/cs?searchtype=author&query=Singh%2C+H+S), [Jonathan Francis](https://arxiv.org/search/cs?searchtype=author&query=Francis%2C+J), [Kaixin Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+K), [Eric Nyberg](https://arxiv.org/search/cs?searchtype=author&query=Nyberg%2C+E), [Alessandro Oltramari](https://arxiv.org/search/cs?searchtype=author&query=Oltramari%2C+A)
+
+> Conditional text generation has been a challenging task that is yet to see human-level performance from state-of-the-art models. In this work, we specifically focus on the Commongen benchmark, wherein the aim is to generate a plausible sentence for a given set of input concepts. Despite advances in other tasks, large pre-trained language models that are fine-tuned on this dataset often produce sentences that are syntactically correct but qualitatively deviate from a human understanding of common sense. Furthermore, generated sequences are unable to fulfill such lexical requirements as matching part-of-speech and full concept coverage. In this paper, we explore how commonsense knowledge graphs can enhance model performance, with respect to commonsense reasoning and lexically-constrained decoding. We propose strategies for enhancing the semantic correctness of the generated text, which we accomplish through: extracting commonsense relations from Conceptnet, injecting these relations into the Unified Language Model (UniLM) through attention mechanisms, and enforcing the aforementioned lexical requirements through output constraints. By performing several ablations, we find that commonsense injection enables the generation of sentences that are more aligned with human understanding, while remaining compliant with lexical requirements.
+
+| Comments: | AAAI-CSKG 2021                                               |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2012.10813](https://arxiv.org/abs/2012.10813) [cs.CL]** |
+|           | (or **[arXiv:2012.10813v1](https://arxiv.org/abs/2012.10813v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-22-5">5. Narrative Incoherence Detection</h2>
+
+Title: [Narrative Incoherence Detection](https://arxiv.org/abs/2012.11157)
+
+Authors: [Deng Cai](https://arxiv.org/search/cs?searchtype=author&query=Cai%2C+D), [Yizhe Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Yichen Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Y), [Wai Lam](https://arxiv.org/search/cs?searchtype=author&query=Lam%2C+W), [Bill Dolan](https://arxiv.org/search/cs?searchtype=author&query=Dolan%2C+B)
+
+> Motivated by the increasing popularity of intelligent editing assistant, we introduce and investigate the task of narrative incoherence detection: Given a (corrupted) long-form narrative, decide whether there exists some semantic discrepancy in the narrative flow. Specifically, we focus on the missing sentence and incoherent sentence detection. Despite its simple setup, this task is challenging as the model needs to understand and analyze a multi-sentence narrative text, and make decisions at the sentence level. As an initial step towards this task, we implement several baselines either directly analyzing the raw text (\textit{token-level}) or analyzing learned sentence representations (\textit{sentence-level}). We observe that while token-level modeling enjoys greater expressive power and hence better performance, sentence-level modeling possesses an advantage in efficiency and flexibility. With pre-training on large-scale data and cycle-consistent sentence embedding, our extended sentence-level model can achieve comparable detection accuracy to the token-level model. As a by-product, such a strategy enables simultaneous incoherence detection and infilling/modification suggestions.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.11157](https://arxiv.org/abs/2012.11157) [cs.CL]** |
+|           | (or **[arXiv:2012.11157v1](https://arxiv.org/abs/2012.11157v1) [cs.CL]** for this version) |
+
+
+
+
+
+# 2020-12-21
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-12-21-1">1. On Modality Bias in the TVQA Dataset</h2>
 
 Title: [On Modality Bias in the TVQA Dataset](https://arxiv.org/abs/2012.10210)
 
@@ -123,7 +228,7 @@ Authors: [Thomas Winterbottom](https://arxiv.org/search/cs?searchtype=author&que
 
 
 
-<h2 id="2020-12-19-2">2. NeurST: Neural Speech Translation Toolkit</h2>
+<h2 id="2020-12-21-2">2. NeurST: Neural Speech Translation Toolkit</h2>
 
 Title: [NeurST: Neural Speech Translation Toolkit](https://arxiv.org/abs/2012.10018)
 
@@ -140,7 +245,7 @@ Authors: [Chengqi Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao
 
 
 
-<h2 id="2020-12-19-3">3. Exploring Fluent Query Reformulations with Text-to-Text Transformers and Reinforcement Learning</h2>
+<h2 id="2020-12-21-3">3. Exploring Fluent Query Reformulations with Text-to-Text Transformers and Reinforcement Learning</h2>
 
 Title: [Exploring Fluent Query Reformulations with Text-to-Text Transformers and Reinforcement Learning](https://arxiv.org/abs/2012.10033)
 
@@ -158,7 +263,7 @@ Authors: [Jerry Zikun Chen](https://arxiv.org/search/cs?searchtype=author&query=
 
 
 
-<h2 id="2020-12-19-4">4. AdvExpander: Generating Natural Language Adversarial Examples by Expanding Text</h2>
+<h2 id="2020-12-21-4">4. AdvExpander: Generating Natural Language Adversarial Examples by Expanding Text</h2>
 
 Title: [AdvExpander: Generating Natural Language Adversarial Examples by Expanding Text](https://arxiv.org/abs/2012.10235)
 
@@ -176,7 +281,7 @@ Authors: [Zhihong Shao](https://arxiv.org/search/cs?searchtype=author&query=Shao
 
 
 
-<h2 id="2020-12-19-5">5. Understood in Translation, Transformers for Domain Understanding</h2>
+<h2 id="2020-12-21-5">5. Understood in Translation, Transformers for Domain Understanding</h2>
 
 Title: [Understood in Translation, Transformers for Domain Understanding](https://arxiv.org/abs/2012.10271)
 
