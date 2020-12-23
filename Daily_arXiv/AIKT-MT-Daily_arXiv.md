@@ -3,6 +3,13 @@
 # Index
 
 
+- [2020-12-23](#2020-12-23)
+
+  - [1. A Distributional Approach to Controlled Text Generation](#2020-12-23-1)
+  - [2. Subword Sampling for Low Resource Word Alignment](#2020-12-23-2)
+  - [3. Undivided Attention: Are Intermediate Layers Necessary for BERT?](#2020-12-23-3)
+  - [4. Pre-Training a Language Model Without Human Language](#2020-12-23-4)
+  - [5. Domain Adaptation of NMT models for English-Hindi Machine Translation Task at AdapMT ICON 2020](#2020-12-23-5)
 - [2020-12-22](#2020-12-22)
 
   - [1. Transductive Visual Verb Sense Disambiguation](#2020-12-22-1)
@@ -103,6 +110,102 @@
   - [7. Machine Translation of Novels in the Age of Transformer](#2020-12-01-7)
   - [8. Multimodal Pretraining Unmasked: Unifying the Vision and Language BERTs](#2020-12-01-8)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-12-23
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-12-23-1">1. A Distributional Approach to Controlled Text Generation</h2>
+
+Title: [A Distributional Approach to Controlled Text Generation](https://arxiv.org/abs/2012.11635)
+
+Authors:[Muhammad Khalifa](https://arxiv.org/search/cs?searchtype=author&query=Khalifa%2C+M), [Hady Elsahar](https://arxiv.org/search/cs?searchtype=author&query=Elsahar%2C+H), [Marc Dymetman](https://arxiv.org/search/cs?searchtype=author&query=Dymetman%2C+M)
+
+> We propose a Distributional Approach to address Controlled Text Generation from pre-trained Language Models (LMs). This view permits to define, in a single formal framework, "pointwise" and "distributional" constraints over the target LM -- to our knowledge, this is the first approach with such generality -- while minimizing KL divergence with the initial LM distribution. The optimal target distribution is then uniquely determined as an explicit EBM (Energy-Based Model) representation. From that optimal representation we then train the target controlled autoregressive LM through an adaptive distributional variant of Policy Gradient. We conduct a first set of experiments over pointwise constraints showing the advantages of our approach over a set of baselines, in terms of obtaining a controlled LM balancing constraint satisfaction with divergence from the initial LM (GPT-2). We then perform experiments over distributional constraints, a unique feature of our approach, demonstrating its potential as a remedy to the problem of Bias in Language Models. Through an ablation study we show the effectiveness of our adaptive technique for obtaining faster convergence.
+
+| Comments: | Under review at ICLR 2021                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2012.11635](https://arxiv.org/abs/2012.11635) [cs.CL]** |
+|           | (or **[arXiv:2012.11635v1](https://arxiv.org/abs/2012.11635v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-23-2">2. Subword Sampling for Low Resource Word Alignment</h2>
+
+Title: [Subword Sampling for Low Resource Word Alignment](https://arxiv.org/abs/2012.11657)
+
+Authors:[Ehsaneddin Asgari](https://arxiv.org/search/cs?searchtype=author&query=Asgari%2C+E), [Masoud Jalili Sabet](https://arxiv.org/search/cs?searchtype=author&query=Sabet%2C+M+J), [Philipp Dufter](https://arxiv.org/search/cs?searchtype=author&query=Dufter%2C+P), [Christopher Ringlstetter](https://arxiv.org/search/cs?searchtype=author&query=Ringlstetter%2C+C), [Hinrich Schütze](https://arxiv.org/search/cs?searchtype=author&query=Schütze%2C+H)
+
+> Annotation projection is an important area in NLP that can greatly contribute to creating language resources for low-resource languages. Word alignment plays a key role in this setting. However, most of the existing word alignment methods are designed for a high resource setting in machine translation where millions of parallel sentences are available. This amount reduces to a few thousands of sentences when dealing with low-resource languages failing the existing established IBM models. In this paper, we propose subword sampling-based alignment of text units. This method's hypothesis is that the aggregation of different granularities of text for certain language pairs can help word-level alignment. For certain languages for which gold-standard alignments exist, we propose an iterative Bayesian optimization framework to optimize selecting possible subwords from the space of possible subword representations of the source and target sentences. We show that the subword sampling method consistently outperforms word-level alignment on six language pairs: English-German, English-French, English-Romanian, English-Persian, English-Hindi, and English-Inuktitut. In addition, we show that the hyperparameters learned for certain language pairs can be applied to other languages at no supervision and consistently improve the alignment results. We observe that using 5K parallel sentences together with our proposed subword sampling approach, we obtain similar F1 scores to the use of 100K's of parallel sentences in existing word-level fast-align/eflomal alignment methods.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.11657](https://arxiv.org/abs/2012.11657) [cs.CL]** |
+|           | (or **[arXiv:2012.11657v1](https://arxiv.org/abs/2012.11657v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-23-3">3. Undivided Attention: Are Intermediate Layers Necessary for BERT?</h2>
+
+Title: [Undivided Attention: Are Intermediate Layers Necessary for BERT?](https://arxiv.org/abs/2012.11881)
+
+Authors:[Sharath Nittur Sridhar](https://arxiv.org/search/cs?searchtype=author&query=Sridhar%2C+S+N), [Anthony Sarah](https://arxiv.org/search/cs?searchtype=author&query=Sarah%2C+A)
+
+> In recent times, BERT-based models have been extremely successful in solving a variety of natural language processing (NLP) tasks such as reading comprehension, natural language inference, sentiment analysis, etc. All BERT-based architectures have a self-attention block followed by a block of intermediate layers as the basic building component. However, a strong justification for the inclusion of these intermediate layers remains missing in the literature. In this work we investigate the importance of intermediate layers on the overall network performance of downstream tasks. We show that reducing the number of intermediate layers and modifying the architecture for BERT-Base results in minimal loss in fine-tuning accuracy for downstream tasks while decreasing the number of parameters and training time of the model. Additionally, we use the central kernel alignment (CKA) similarity metric and probing classifiers to demonstrate that removing intermediate layers has little impact on the learned self-attention representations.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.11881](https://arxiv.org/abs/2012.11881) [cs.CL]** |
+|           | (or **[arXiv:2012.11881v1](https://arxiv.org/abs/2012.11881v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-23-4">4. Pre-Training a Language Model Without Human Language</h2>
+
+Title: [Pre-Training a Language Model Without Human Language](https://arxiv.org/abs/2012.11995)
+
+Authors:[Cheng-Han Chiang](https://arxiv.org/search/cs?searchtype=author&query=Chiang%2C+C), [Hung-yi Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+H)
+
+> In this paper, we study how the intrinsic nature of pre-training data contributes to the fine-tuned downstream performance. To this end, we pre-train different transformer-based masked language models on several corpora with certain features, and we fine-tune those language models on GLUE benchmarks. We find that models pre-trained on unstructured data beat those trained directly from scratch on downstream tasks. Our results also show that pre-training on structured data does not always make the model acquire ability that can be transferred to natural language downstream tasks. To our great astonishment, we uncover that pre-training on certain non-human language data gives GLUE performance close to performance pre-trained on another non-English language.
+
+| Comments: | 9 pages, work in progress                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2012.11995](https://arxiv.org/abs/2012.11995) [cs.CL]** |
+|           | (or **[arXiv:2012.11995v1](https://arxiv.org/abs/2012.11995v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-23-5">5. Domain Adaptation of NMT models for English-Hindi Machine Translation Task at AdapMT ICON 2020</h2>
+
+Title: [Domain Adaptation of NMT models for English-Hindi Machine Translation Task at AdapMT ICON 2020](https://arxiv.org/abs/2012.12112)
+
+Authors:[Ramchandra Joshi](https://arxiv.org/search/cs?searchtype=author&query=Joshi%2C+R), [Rushabh Karnavat](https://arxiv.org/search/cs?searchtype=author&query=Karnavat%2C+R), [Kaustubh Jirapure](https://arxiv.org/search/cs?searchtype=author&query=Jirapure%2C+K), [Raviraj Joshi](https://arxiv.org/search/cs?searchtype=author&query=Joshi%2C+R)
+
+> Recent advancements in Neural Machine Translation (NMT) models have proved to produce a state of the art results on machine translation for low resource Indian languages. This paper describes the neural machine translation systems for the English-Hindi language presented in AdapMT Shared Task ICON 2020. The shared task aims to build a translation system for Indian languages in specific domains like Artificial Intelligence (AI) and Chemistry using a small in-domain parallel corpus. We evaluated the effectiveness of two popular NMT models i.e, LSTM, and Transformer architectures for the English-Hindi machine translation task based on BLEU scores. We train these models primarily using the out of domain data and employ simple domain adaptation techniques based on the characteristics of the in-domain dataset. The fine-tuning and mixed-domain data approaches are used for domain adaptation. Our team was ranked first in the chemistry and general domain En-Hi translation task and second in the AI domain En-Hi translation task.
+
+| Comments: | Accepted at ICON 2020                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2012.12112](https://arxiv.org/abs/2012.12112) [cs.CL]** |
+|           | (or **[arXiv:2012.12112v1](https://arxiv.org/abs/2012.12112v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
