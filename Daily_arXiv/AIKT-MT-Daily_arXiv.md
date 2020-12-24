@@ -3,6 +3,13 @@
 # Index
 
 
+- [2020-12-24](#2020-12-24)
+
+  - [1. Seeing past words: Testing the cross-modal capabilities of pretrained V&L models](#2020-12-24-1)
+  - [2. Multi-Head Self-Attention with Role-Guided Masks](#2020-12-24-2)
+  - [3. Future-Guided Incremental Transformer for Simultaneous Translation](#2020-12-24-3)
+  - [4. Code Switching Language Model Using Monolingual Training Data](#2020-12-24-4)
+  - [5. Learning Dense Representations of Phrases at Scale](#2020-12-24-5)
 - [2020-12-23](#2020-12-23)
 
   - [1. A Distributional Approach to Controlled Text Generation](#2020-12-23-1)
@@ -110,6 +117,112 @@
   - [7. Machine Translation of Novels in the Age of Transformer](#2020-12-01-7)
   - [8. Multimodal Pretraining Unmasked: Unifying the Vision and Language BERTs](#2020-12-01-8)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-12-24
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-12-24-1">1. Seeing past words: Testing the cross-modal capabilities of pretrained V&L models</h2>
+
+Title: [Seeing past words: Testing the cross-modal capabilities of pretrained V&L models](https://arxiv.org/abs/2012.12352)
+
+Authors: [Letitia Parcalabescu](https://arxiv.org/search/cs?searchtype=author&query=Parcalabescu%2C+L), [Albert Gatt](https://arxiv.org/search/cs?searchtype=author&query=Gatt%2C+A), [Anette Frank](https://arxiv.org/search/cs?searchtype=author&query=Frank%2C+A), [Iacer Calixto](https://arxiv.org/search/cs?searchtype=author&query=Calixto%2C+I)
+
+> We investigate the ability of general-purpose pretrained vision and language V&L models to perform reasoning in two tasks that require multimodal integration: (1) discriminating a correct image-sentence pair from an incorrect one, and (2) counting entities in an image. We evaluate three pretrained V&L models on these tasks: ViLBERT, ViLBERT 12-in-1 and LXMERT, in zero-shot and finetuned settings. Our results show that models solve task (1) very well, as expected, since all models use task (1) for pretraining. However, none of the pretrained V&L models are able to adequately solve task (2), our counting probe, and they cannot generalise to out-of-distribution quantities. Our investigations suggest that pretrained V&L representations are less successful than expected at integrating the two modalities. We propose a number of explanations for these findings: LXMERT's results on the image-sentence alignment task (and to a lesser extent those obtained by ViLBERT 12-in-1) indicate that the model may exhibit catastrophic forgetting. As for our results on the counting probe, we find evidence that all models are impacted by dataset bias, and also fail to individuate entities in the visual input.
+
+| Comments:    | 13 pages, 3 figures, 7 Tables                                |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| MSC classes: | 68Txx                                                        |
+| ACM classes: | I.2.7; I.2.10                                                |
+| Cite as:     | **[arXiv:2012.12352](https://arxiv.org/abs/2012.12352) [cs.CV]** |
+|              | (or **[arXiv:2012.12352v1](https://arxiv.org/abs/2012.12352v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-24-2">2. Multi-Head Self-Attention with Role-Guided Masks</h2>
+
+Title: [Multi-Head Self-Attention with Role-Guided Masks](https://arxiv.org/abs/2012.12366)
+
+Authors: [Dongsheng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+D), [Casper Hansen](https://arxiv.org/search/cs?searchtype=author&query=Hansen%2C+C), [Lucas Chaves Lima](https://arxiv.org/search/cs?searchtype=author&query=Lima%2C+L+C), [Christian Hansen](https://arxiv.org/search/cs?searchtype=author&query=Hansen%2C+C), [Maria Maistro](https://arxiv.org/search/cs?searchtype=author&query=Maistro%2C+M), [Jakob Grue Simonsen](https://arxiv.org/search/cs?searchtype=author&query=Simonsen%2C+J+G), [Christina Lioma](https://arxiv.org/search/cs?searchtype=author&query=Lioma%2C+C)
+
+> The state of the art in learning meaningful semantic representations of words is the Transformer model and its attention mechanisms. Simply put, the attention mechanisms learn to attend to specific parts of the input dispensing recurrence and convolutions. While some of the learned attention heads have been found to play linguistically interpretable roles, they can be redundant or prone to errors. We propose a method to guide the attention heads towards roles identified in prior work as important. We do this by defining role-specific masks to constrain the heads to attend to specific parts of the input, such that different heads are designed to play different roles. Experiments on text classification and machine translation using 7 different datasets show that our method outperforms competitive attention-based, CNN, and RNN baselines.
+
+| Comments: | Accepted at ECIR@2021                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2012.12366](https://arxiv.org/abs/2012.12366) [cs.CL]** |
+|           | (or **[arXiv:2012.12366v1](https://arxiv.org/abs/2012.12366v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-12-24-3">3. Future-Guided Incremental Transformer for Simultaneous Translation</h2>
+
+Title: [Future-Guided Incremental Transformer for Simultaneous Translation](https://arxiv.org/abs/2012.12465)
+
+Authors: [Shaolei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+S), [Yang Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+Y), [Liangyou Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> Simultaneous translation (ST) starts translations synchronously while reading source sentences, and is used in many online scenarios. The previous wait-k policy is concise and achieved good results in ST. However, wait-k policy faces two weaknesses: low training speed caused by the recalculation of hidden states and lack of future source information to guide training. For the low training speed, we propose an incremental Transformer with an average embedding layer (AEL) to accelerate the speed of calculation of the hidden states during training. For future-guided training, we propose a conventional Transformer as the teacher of the incremental Transformer, and try to invisibly embed some future information in the model through knowledge distillation. We conducted experiments on Chinese-English and German-English simultaneous translation tasks and compared with the wait-k policy to evaluate the proposed method. Our method can effectively increase the training speed by about 28 times on average at different k and implicitly embed some predictive abilities in the model, achieving better translation quality than wait-k baseline.
+
+| Comments: | Accepted by AAAI 2021. 9 pages, 5 figures                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2012.12465](https://arxiv.org/abs/2012.12465) [cs.CL]** |
+|           | (or **[arXiv:2012.12465v1](https://arxiv.org/abs/2012.12465v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-12-24-4">4. Code Switching Language Model Using Monolingual Training Data</h2>
+
+Title: [Code Switching Language Model Using Monolingual Training Data](https://arxiv.org/abs/2012.12543)
+
+Authors: [Asad Ullah](https://arxiv.org/search/cs?searchtype=author&query=Ullah%2C+A), [Tauseef Ahmed](https://arxiv.org/search/cs?searchtype=author&query=Ahmed%2C+T)
+
+> Training a code-switching (CS) language model using only monolingual data is still an ongoing research problem. In this paper, a CS language model is trained using only monolingual training data. As recurrent neural network (RNN) models are best suited for predicting sequential data. In this work, an RNN language model is trained using alternate batches from only monolingual English and Spanish data and the perplexity of the language model is computed. From the results, it is concluded that using alternate batches of monolingual data in training reduced the perplexity of a CS language model. The results were consistently improved using mean square error (MSE) in the output embeddings of RNN based language model. By combining both methods, perplexity is reduced from 299.63 to 80.38. The proposed methods were comparable to the language model fine tune with code-switch training data.
+
+| Comments: | submitted to ICASSP2021                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2012.12543](https://arxiv.org/abs/2012.12543) [cs.CL]** |
+|           | (or **[arXiv:2012.12543v1](https://arxiv.org/abs/2012.12543v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2020-12-24-5">5. Learning Dense Representations of Phrases at Scale</h2>
+
+Title: [Learning Dense Representations of Phrases at Scale](https://arxiv.org/abs/2012.12624)
+
+Authors: [Jinhyuk Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+J), [Mujeen Sung](https://arxiv.org/search/cs?searchtype=author&query=Sung%2C+M), [Jaewoo Kang](https://arxiv.org/search/cs?searchtype=author&query=Kang%2C+J), [Danqi Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+D)
+
+> Open-domain question answering can be reformulated as a phrase retrieval problem, without the need for processing documents on-demand during inference (Seo et al., 2019). However, current phrase retrieval models heavily depend on their sparse representations while still underperforming retriever-reader approaches. In this work, we show for the first time that we can learn dense phrase representations alone that achieve much stronger performance in open-domain QA. Our approach includes (1) learning query-agnostic phrase representations via question generation and distillation; (2) novel negative-sampling methods for global normalization; (3) query-side fine-tuning for transfer learning. On five popular QA datasets, our model DensePhrases improves previous phrase retrieval models by 15%-25% absolute accuracy and matches the performance of state-of-the-art retriever-reader models. Our model is easy to parallelize due to pure dense representations and processes more than 10 questions per second on CPUs. Finally, we directly use our pre-indexed dense phrase representations for two slot filling tasks, showing the promise of utilizing DensePhrases as a dense knowledge base for downstream tasks.
+
+| Comments: | 14 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2012.12624](https://arxiv.org/abs/2012.12624) [cs.CL]** |
+|           | (or **[arXiv:2012.12624v1](https://arxiv.org/abs/2012.12624v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
