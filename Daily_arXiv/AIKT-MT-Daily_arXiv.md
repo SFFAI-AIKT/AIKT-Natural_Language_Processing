@@ -3,6 +3,14 @@
 # Index
 
 
+- [2020-12-25](#2020-12-25)
+
+  - [1. Disentangling semantics in language throughs VAEs and a certain architectural choice](#2020-12-25-1)
+  - [2. SubICap: Towards Subword-informed Image Captioning](#2020-12-25-2)
+  - [3. Gender Bias in Multilingual Neural Machine Translation: The Architecture Matters](#2020-12-25-3)
+  - [4. Sentence-Based Model Agnostic NLP Interpretability](#2020-12-25-4)
+  - [5. A Context Aware Approach for Generating Natural Language Attacks](#2020-12-25-5)
+  - [6. To what extent do human explanations of model behavior align with actual model behavior?](#2020-12-25-6)
 - [2020-12-24](#2020-12-24)
 
   - [1. Seeing past words: Testing the cross-modal capabilities of pretrained V&L models](#2020-12-24-1)
@@ -117,6 +125,122 @@
   - [7. Machine Translation of Novels in the Age of Transformer](#2020-12-01-7)
   - [8. Multimodal Pretraining Unmasked: Unifying the Vision and Language BERTs](#2020-12-01-8)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-12-25
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-12-25-1">1. Disentangling semantics in language throughs VAEs and a certain architectural choice</h2>
+
+Title: [Disentangling semantics in language throughs VAEs and a certain architectural choice](https://arxiv.org/abs/2012.13031)
+
+Authors: [Ghazi Felhi](https://arxiv.org/search/cs?searchtype=author&query=Felhi%2C+G), [Joseph Le Roux](https://arxiv.org/search/cs?searchtype=author&query=Roux%2C+J+L), [Djamé Seddah](https://arxiv.org/search/cs?searchtype=author&query=Seddah%2C+D)
+
+> We present an unsupervised method to obtain disentangled representations of sentences that single out semantic content. Using modified Transformers as building blocks, we train a Variational Autoencoder to \emph{translate} the sentence to a fixed number of hierarchically structured latent variables. We study the influence of each latent variable in generation on the dependency structure of sentences, and on the predicate structure it yields when passed through an Open Information Extraction model. Our model could separate verbs, subjects, direct objects, and prepositional objects into latent variables we identified. We show that varying the corresponding latent variables results in varying these elements in sentences, and that swapping them between couples of sentences leads to the expected partial semantic swap.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.13031](https://arxiv.org/abs/2012.13031) [cs.CL]** |
+|           | (or **[arXiv:2012.13031v1](https://arxiv.org/abs/2012.13031v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-25-2">2. SubICap: Towards Subword-informed Image Captioning</h2>
+
+Title: [SubICap: Towards Subword-informed Image Captioning](https://arxiv.org/abs/2012.13122)
+
+Authors: [Naeha Sharif](https://arxiv.org/search/cs?searchtype=author&query=Sharif%2C+N), [Mohammed Bennamoun](https://arxiv.org/search/cs?searchtype=author&query=Bennamoun%2C+M), [Wei Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+W), [Syed Afaq Ali Shah](https://arxiv.org/search/cs?searchtype=author&query=Shah%2C+S+A+A)
+
+> Existing Image Captioning (IC) systems model words as atomic units in captions and are unable to exploit the structural information in the words. This makes representation of rare words very difficult and out-of-vocabulary words impossible. Moreover, to avoid computational complexity, existing IC models operate over a modest sized vocabulary of frequent words, such that the identity of rare words is lost. In this work we address this common limitation of IC systems in dealing with rare words in the corpora. We decompose words into smaller constituent units 'subwords' and represent captions as a sequence of subwords instead of words. This helps represent all words in the corpora using a significantly lower subword vocabulary, leading to better parameter learning. Using subword language modeling, our captioning system improves various metric scores, with a training vocabulary size approximately 90% less than the baseline and various state-of-the-art word-level models. Our quantitative and qualitative results and analysis signify the efficacy of our proposed approach.
+
+| Comments:          | 8 pages                                                      |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV) |
+| Journal reference: | Workshop on Applications of Computer Vision (WACV), 2021     |
+| Cite as:           | **[arXiv:2012.13122](https://arxiv.org/abs/2012.13122) [cs.CL]** |
+|                    | (or **[arXiv:2012.13122v1](https://arxiv.org/abs/2012.13122v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-25-3">3. Gender Bias in Multilingual Neural Machine Translation: The Architecture Matters</h2>
+
+Title: [Gender Bias in Multilingual Neural Machine Translation: The Architecture Matters](https://arxiv.org/abs/2012.13176)
+
+Authors: [Marta R. Costa-jussà](https://arxiv.org/search/cs?searchtype=author&query=Costa-jussà%2C+M+R), [Carlos Escolano](https://arxiv.org/search/cs?searchtype=author&query=Escolano%2C+C), [Christine Basta](https://arxiv.org/search/cs?searchtype=author&query=Basta%2C+C), [Javier Ferrando](https://arxiv.org/search/cs?searchtype=author&query=Ferrando%2C+J), [Roser Batlle](https://arxiv.org/search/cs?searchtype=author&query=Batlle%2C+R), [Ksenia Kharitonova](https://arxiv.org/search/cs?searchtype=author&query=Kharitonova%2C+K)
+
+> Multilingual Neural Machine Translation architectures mainly differ in the amount of sharing modules and parameters among languages. In this paper, and from an algorithmic perspective, we explore if the chosen architecture, when trained with the same data, influences the gender bias accuracy. Experiments in four language pairs show that Language-Specific encoders-decoders exhibit less bias than the Shared encoder-decoder architecture. Further interpretability analysis of source embeddings and the attention shows that, in the Language-Specific case, the embeddings encode more gender information, and its attention is more diverted. Both behaviors help in mitigating gender bias.
+
+| Comments:    | 12 pages, 5 figures, 3 tables                                |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**                         |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2012.13176](https://arxiv.org/abs/2012.13176) [cs.CL]** |
+|              | (or **[arXiv:2012.13176v1](https://arxiv.org/abs/2012.13176v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-25-4">4. Sentence-Based Model Agnostic NLP Interpretability</h2>
+
+Title: [Sentence-Based Model Agnostic NLP Interpretability](https://arxiv.org/abs/2012.13189)
+
+Authors: [Yves Rychener](https://arxiv.org/search/cs?searchtype=author&query=Rychener%2C+Y), [Xavier Renard](https://arxiv.org/search/cs?searchtype=author&query=Renard%2C+X), [Djamé Seddah](https://arxiv.org/search/cs?searchtype=author&query=Seddah%2C+D), [Pascal Frossard](https://arxiv.org/search/cs?searchtype=author&query=Frossard%2C+P), [Marcin Detyniecki](https://arxiv.org/search/cs?searchtype=author&query=Detyniecki%2C+M)
+
+> Today, interpretability of Black-Box Natural Language Processing (NLP) models based on surrogates, like LIME or SHAP, uses word-based sampling to build the explanations. In this paper we explore the use of sentences to tackle NLP interpretability. While this choice may seem straight forward, we show that, when using complex classifiers like BERT, the word-based approach raises issues not only of computational complexity, but also of an out of distribution sampling, eventually leading to non founded explanations. By using sentences, the altered text remains in-distribution and the dimensionality of the problem is reduced for better fidelity to the black-box at comparable computational complexity.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.13189](https://arxiv.org/abs/2012.13189) [cs.CL]** |
+|           | (or **[arXiv:2012.13189v1](https://arxiv.org/abs/2012.13189v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-25-5">5. A Context Aware Approach for Generating Natural Language Attacks</h2>
+
+Title: [A Context Aware Approach for Generating Natural Language Attacks](https://arxiv.org/abs/2012.13339)
+
+Authors: [Rishabh Maheshwary](https://arxiv.org/search/cs?searchtype=author&query=Maheshwary%2C+R), [Saket Maheshwary](https://arxiv.org/search/cs?searchtype=author&query=Maheshwary%2C+S), [Vikram Pudi](https://arxiv.org/search/cs?searchtype=author&query=Pudi%2C+V)
+
+> We study an important task of attacking natural language processing models in a black box setting. We propose an attack strategy that crafts semantically similar adversarial examples on text classification and entailment tasks. Our proposed attack finds candidate words by considering the information of both the original word and its surrounding context. It jointly leverages masked language modelling and next sentence prediction for context understanding. In comparison to attacks proposed in prior literature, we are able to generate high quality adversarial examples that do significantly better both in terms of success rate and word perturbation percentage.
+
+| Comments: | Accepted as Student Poster at AAAI 2021                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2012.13339](https://arxiv.org/abs/2012.13339) [cs.CL]** |
+|           | (or **[arXiv:2012.13339v1](https://arxiv.org/abs/2012.13339v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-25-6">6. To what extent do human explanations of model behavior align with actual model behavior?</h2>
+
+Title: [To what extent do human explanations of model behavior align with actual model behavior?](https://arxiv.org/abs/2012.13354)
+
+Authors: [Grusha Prasad](https://arxiv.org/search/cs?searchtype=author&query=Prasad%2C+G), [Yixin Nie](https://arxiv.org/search/cs?searchtype=author&query=Nie%2C+Y), [Mohit Bansal](https://arxiv.org/search/cs?searchtype=author&query=Bansal%2C+M), [Robin Jia](https://arxiv.org/search/cs?searchtype=author&query=Jia%2C+R), [Douwe Kiela](https://arxiv.org/search/cs?searchtype=author&query=Kiela%2C+D), [Adina Williams](https://arxiv.org/search/cs?searchtype=author&query=Williams%2C+A)
+
+> Given the increasingly prominent role NLP models (will) play in our lives, it is important to evaluate models on their alignment with human expectations of how models behave. Using Natural Language Inference (NLI) as a case study, we investigated the extent to which human-generated explanations of models' inference decisions align with how models actually make these decisions. More specifically, we defined two alignment metrics that quantify how well natural language human explanations align with model sensitivity to input words, as measured by integrated gradients. Then, we evaluated six different transformer models (the base and large versions of BERT, RoBERTa and ELECTRA), and found that the BERT-base model has the highest alignment with human-generated explanations, for both alignment metrics. Additionally, the base versions of the models we surveyed tended to have higher alignment with human-generated explanations than their larger counterparts, suggesting that increasing the number model parameters could result in worse alignment with human explanations. Finally, we find that a model's alignment with human explanations is not predicted by the model's accuracy on NLI, suggesting that accuracy and alignment are orthogonal, and both are important ways to evaluate models.
+
+| Comments: | 10 pages, 3 figures, 2 tables                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2012.13354](https://arxiv.org/abs/2012.13354) [cs.CL]** |
+|           | (or **[arXiv:2012.13354v1](https://arxiv.org/abs/2012.13354v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
