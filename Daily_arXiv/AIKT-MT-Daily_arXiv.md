@@ -3,9 +3,19 @@
 # Index
 
 
-- [2020-12-25](#2020-12-25)
+- [2020-12-29](#2020-12-29)
 
-  - [1. Disentangling semantics in language throughs VAEs and a certain architectural choice](#2020-12-25-1)
+  - [1. Spatial Reasoning from Natural Language Instructions for Robot Manipulation](#2020-12-29-1)
+  - [2. Translating Natural Language Instructions to Computer Programs for Robot Manipulation](#2020-12-29-2)
+  - [3. Why Neural Machine Translation Prefers Empty Outputs](#2020-12-29-3)
+  - [4. Contextual Temperature for Language Modeling](#2020-12-29-4)
+  - [5. Learning Light-Weight Translation Models from Deep Transformer](#2020-12-29-5)
+  - [6. Syntax-Enhanced Pre-trained Model](#2020-12-29-6)
+  - [7. Towards Fully Automated Manga Translation](#2020-12-29-7)
+  - [8. BURT: BERT-inspired Universal Representation from Learning Meaningful Segment](#2020-12-29-8)
+  - [9. Universal Sentence Representation Learning with Conditional Masked Language Model](#2020-12-29-9)
+- [2020-12-25](#2020-12-25)
+- [1. Disentangling semantics in language throughs VAEs and a certain architectural choice](#2020-12-25-1)
   - [2. SubICap: Towards Subword-informed Image Captioning](#2020-12-25-2)
   - [3. Gender Bias in Multilingual Neural Machine Translation: The Architecture Matters](#2020-12-25-3)
   - [4. Sentence-Based Model Agnostic NLP Interpretability](#2020-12-25-4)
@@ -125,6 +135,170 @@
   - [7. Machine Translation of Novels in the Age of Transformer](#2020-12-01-7)
   - [8. Multimodal Pretraining Unmasked: Unifying the Vision and Language BERTs](#2020-12-01-8)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2020-12-29
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2020-12-29-1">1. Spatial Reasoning from Natural Language Instructions for Robot Manipulation</h2>
+
+Title: [Spatial Reasoning from Natural Language Instructions for Robot Manipulation](https://arxiv.org/abs/2012.13693)
+
+Authors: [Sagar Gubbi Venkatesh](https://arxiv.org/search/cs?searchtype=author&query=Venkatesh%2C+S+G), [Anirban Biswas](https://arxiv.org/search/cs?searchtype=author&query=Biswas%2C+A), [Raviteja Upadrashta](https://arxiv.org/search/cs?searchtype=author&query=Upadrashta%2C+R), [Vikram Srinivasan](https://arxiv.org/search/cs?searchtype=author&query=Srinivasan%2C+V), [Partha Talukdar](https://arxiv.org/search/cs?searchtype=author&query=Talukdar%2C+P), [Bharadwaj Amrutur](https://arxiv.org/search/cs?searchtype=author&query=Amrutur%2C+B)
+
+> Robots that can manipulate objects in unstructured environments and collaborate with humans can benefit immensely by understanding natural language. We propose a pipelined architecture of two stages to perform spatial reasoning on the text input. All the objects in the scene are first localized, and then the instruction for the robot in natural language and the localized co-ordinates are mapped to the start and end co-ordinates corresponding to the locations where the robot must pick up and place the object respectively. We show that representing the localized objects by quantizing their positions to a binary grid is preferable to representing them as a list of 2D co-ordinates. We also show that attention improves generalization and can overcome biases in the dataset. The proposed method is used to pick-and-place playing cards using a robot arm.
+
+| Comments: | Under review for ICRA 2021                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Robotics (cs.RO)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2012.13693](https://arxiv.org/abs/2012.13693) [cs.RO]** |
+|           | (or **[arXiv:2012.13693v1](https://arxiv.org/abs/2012.13693v1) [cs.RO]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-29-2">2. Translating Natural Language Instructions to Computer Programs for Robot Manipulation</h2>
+
+Title: [Translating Natural Language Instructions to Computer Programs for Robot Manipulation](https://arxiv.org/abs/2012.13695)
+
+Authors: [Sagar Gubbi Venkatesh](https://arxiv.org/search/cs?searchtype=author&query=Venkatesh%2C+S+G), [Raviteja Upadrashta](https://arxiv.org/search/cs?searchtype=author&query=Upadrashta%2C+R), [Bharadwaj Amrutur](https://arxiv.org/search/cs?searchtype=author&query=Amrutur%2C+B)
+
+> It is highly desirable for robots that work alongside humans to be able to understand instructions in natural language. Existing language conditioned imitation learning methods predict the actuator commands from the image observation and the instruction text. Rather than directly predicting actuator commands, we propose translating the natural language instruction to a Python function which when executed queries the scene by accessing the output of the object detector and controls the robot to perform the specified task. This enables the use of non-differentiable modules such as a constraint solver when computing commands to the robot. Moreover, the labels in this setup are significantly more descriptive computer programs rather than teleoperated demonstrations. We show that the proposed method performs better than training a neural network to directly predict the robot actions.
+
+| Comments: | Under review for ICRA 2021                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Robotics (cs.RO)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2012.13695](https://arxiv.org/abs/2012.13695) [cs.RO]** |
+|           | (or **[arXiv:2012.13695v1](https://arxiv.org/abs/2012.13695v1) [cs.RO]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-29-3">3. Why Neural Machine Translation Prefers Empty Outputs</h2>
+
+Title: [Why Neural Machine Translation Prefers Empty Outputs](https://arxiv.org/abs/2012.13454)
+
+Authors: [Xing Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+X), [Yijun Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+Y), [Kevin Knight](https://arxiv.org/search/cs?searchtype=author&query=Knight%2C+K)
+
+> We investigate why neural machine translation (NMT) systems assign high probability to empty translations. We find two explanations. First, label smoothing makes correct-length translations less confident, making it easier for the empty translation to finally outscore them. Second, NMT systems use the same, high-frequency EoS word to end all target sentences, regardless of length. This creates an implicit smoothing that increases zero-length translations. Using different EoS types in target sentences of different lengths exposes and eliminates this implicit smoothing.
+
+| Comments: | 6 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2012.13454](https://arxiv.org/abs/2012.13454) [cs.CL]** |
+|           | (or **[arXiv:2012.13454v1](https://arxiv.org/abs/2012.13454v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-29-4">4. Contextual Temperature for Language Modeling</h2>
+
+Title: [Contextual Temperature for Language Modeling](https://arxiv.org/abs/2012.13575)
+
+Authors: [Pei-Hsin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+P), [Sheng-Iou Hsieh](https://arxiv.org/search/cs?searchtype=author&query=Hsieh%2C+S), [Shih-Chieh Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+S), [Yu-Ting Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Jia-Yu Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C+J), [Wei Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+W), [Da-Chang Juan](https://arxiv.org/search/cs?searchtype=author&query=Juan%2C+D)
+
+> Temperature scaling has been widely used as an effective approach to control the smoothness of a distribution, which helps the model performance in various tasks. Current practices to apply temperature scaling assume either a fixed, or a manually-crafted dynamically changing schedule. However, our studies indicate that the individual optimal trajectory for each class can change with the context. To this end, we propose contextual temperature, a generalized approach that learns an optimal temperature trajectory for each vocabulary over the context. Experimental results confirm that the proposed method significantly improves state-of-the-art language models, achieving a perplexity of 55.31 and 62.89 on the test set of Penn Treebank and WikiText-2, respectively. In-depth analyses show that the behaviour of the learned temperature schedules varies dramatically by vocabulary, and that the optimal schedules help in controlling the uncertainties. These evidences further justify the need for the proposed method and its advantages over fixed temperature schedules.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.13575](https://arxiv.org/abs/2012.13575) [cs.CL]** |
+|           | (or **[arXiv:2012.13575v1](https://arxiv.org/abs/2012.13575v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-29-5">5. Learning Light-Weight Translation Models from Deep Transformer</h2>
+
+Title: [Learning Light-Weight Translation Models from Deep Transformer](https://arxiv.org/abs/2012.13866)
+
+Authors: [Bei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+B), [Ziyang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Hui Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+H), [Quan Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+Q), [Tong Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+T), [Chunliang Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+C), [Jingbo Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J)
+
+> Recently, deep models have shown tremendous improvements in neural machine translation (NMT). However, systems of this kind are computationally expensive and memory intensive. In this paper, we take a natural step towards learning strong but light-weight NMT systems. We proposed a novel group-permutation based knowledge distillation approach to compressing the deep Transformer model into a shallow model. The experimental results on several benchmarks validate the effectiveness of our method. Our compressed model is 8X shallower than the deep model, with almost no loss in BLEU. To further enhance the teacher model, we present a Skipping Sub-Layer method to randomly omit sub-layers to introduce perturbation into training, which achieves a BLEU score of 30.63 on English-German newstest2014. The code is publicly available at [this https URL](https://github.com/libeineu/GPKD).
+
+| Comments: | Accepted by AAAI2021                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2012.13866](https://arxiv.org/abs/2012.13866) [cs.CL]** |
+|           | (or **[arXiv:2012.13866v1](https://arxiv.org/abs/2012.13866v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-29-6">6. Syntax-Enhanced Pre-trained Model</h2>
+
+Title: [Syntax-Enhanced Pre-trained Model](https://arxiv.org/abs/2012.14116)
+
+Authors: [Zenan Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+Z), [Daya Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+D), [Duyu Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+D), [Qinliang Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+Q), [Linjun Shou](https://arxiv.org/search/cs?searchtype=author&query=Shou%2C+L), [Ming Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+M), [Wanjun Zhong](https://arxiv.org/search/cs?searchtype=author&query=Zhong%2C+W), [Xiaojun Quan](https://arxiv.org/search/cs?searchtype=author&query=Quan%2C+X), [Nan Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan%2C+N), [Daxin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+D)
+
+> We study the problem of leveraging the syntactic structure of text to enhance pre-trained models such as BERT and RoBERTa. Existing methods utilize syntax of text either in the pre-training stage or in the fine-tuning stage, so that they suffer from discrepancy between the two stages. Such a problem would lead to the necessity of having human-annotated syntactic information, which limits the application of existing methods to broader scenarios. To address this, we present a model that utilizes the syntax of text in both pre-training and fine-tuning stages. Our model is based on Transformer with a syntax-aware attention layer that considers the dependency tree of the text. We further introduce a new pre-training task of predicting the syntactic distance among tokens in the dependency tree. We evaluate the model on three downstream tasks, including relation classification, entity typing, and question answering. Results show that our model achieves state-of-the-art performance on six public benchmark datasets. We have two major findings. First, we demonstrate that infusing automatically produced syntax of text improves pre-trained models. Second, global syntactic distances among tokens bring larger performance gains compared to local head relations between contiguous tokens.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2012.14116](https://arxiv.org/abs/2012.14116) [cs.CL]** |
+|           | (or **[arXiv:2012.14116v1](https://arxiv.org/abs/2012.14116v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-29-7">7. Towards Fully Automated Manga Translation</h2>
+
+Title: [Towards Fully Automated Manga Translation](https://arxiv.org/abs/2012.14271)
+
+Authors: [Ryota Hinami](https://arxiv.org/search/cs?searchtype=author&query=Hinami%2C+R), [Shonosuke Ishiwatari](https://arxiv.org/search/cs?searchtype=author&query=Ishiwatari%2C+S), [Kazuhiko Yasuda](https://arxiv.org/search/cs?searchtype=author&query=Yasuda%2C+K), [Yusuke Matsui](https://arxiv.org/search/cs?searchtype=author&query=Matsui%2C+Y)
+
+> We tackle the problem of machine translation of manga, Japanese comics. Manga translation involves two important problems in machine translation: context-aware and multimodal translation. Since text and images are mixed up in an unstructured fashion in Manga, obtaining context from the image is essential for manga translation. However, it is still an open problem how to extract context from image and integrate into MT models. In addition, corpus and benchmarks to train and evaluate such model is currently unavailable. In this paper, we make the following four contributions that establishes the foundation of manga translation research. First, we propose multimodal context-aware translation framework. We are the first to incorporate context information obtained from manga image. It enables us to translate texts in speech bubbles that cannot be translated without using context information (e.g., texts in other speech bubbles, gender of speakers, etc.). Second, for training the model, we propose the approach to automatic corpus construction from pairs of original manga and their translations, by which large parallel corpus can be constructed without any manual labeling. Third, we created a new benchmark to evaluate manga translation. Finally, on top of our proposed methods, we devised a first comprehensive system for fully automated manga translation.
+
+| Comments: | Accepted to AAAI 2021                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2012.14271](https://arxiv.org/abs/2012.14271) [cs.CL]** |
+|           | (or **[arXiv:2012.14271v1](https://arxiv.org/abs/2012.14271v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-29-8">8. BURT: BERT-inspired Universal Representation from Learning Meaningful Segment</h2>
+
+Title: [BURT: BERT-inspired Universal Representation from Learning Meaningful Segment](https://arxiv.org/abs/2012.14320)
+
+Authors: [Yian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Hai Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+H)
+
+> Although pre-trained contextualized language models such as BERT achieve significant performance on various downstream tasks, current language representation still only focuses on linguistic objective at a specific granularity, which may not applicable when multiple levels of linguistic units are involved at the same time. Thus this work introduces and explores the universal representation learning, i.e., embeddings of different levels of linguistic unit in a uniform vector space. We present a universal representation model, BURT (BERT-inspired Universal Representation from learning meaningful segmenT), to encode different levels of linguistic unit into the same vector space. Specifically, we extract and mask meaningful segments based on point-wise mutual information (PMI) to incorporate different granular objectives into the pre-training stage. We conduct experiments on datasets for English and Chinese including the GLUE and CLUE benchmarks, where our model surpasses its baselines and alternatives on a wide range of downstream tasks. We present our approach of constructing analogy datasets in terms of words, phrases and sentences and experiment with multiple representation models to examine geometric properties of the learned vector space through a task-independent evaluation. Finally, we verify the effectiveness of our unified pre-training strategy in two real-world text matching scenarios. As a result, our model significantly outperforms existing information retrieval (IR) methods and yields universal representations that can be directly applied to retrieval-based question-answering and natural language generation tasks.
+
+| Comments: | arXiv admin note: text overlap with [arXiv:2009.04656](https://arxiv.org/abs/2009.04656) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2012.14320](https://arxiv.org/abs/2012.14320) [cs.CL]** |
+|           | (or **[arXiv:2012.14320v1](https://arxiv.org/abs/2012.14320v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2020-12-29-9">9. Universal Sentence Representation Learning with Conditional Masked Language Model</h2>
+
+Title: [Universal Sentence Representation Learning with Conditional Masked Language Model](https://arxiv.org/abs/2012.14388)
+
+Authors: [Ziyi Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Yinfei Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Daniel Cer](https://arxiv.org/search/cs?searchtype=author&query=Cer%2C+D), [Jax Law](https://arxiv.org/search/cs?searchtype=author&query=Law%2C+J), [Eric Darve](https://arxiv.org/search/cs?searchtype=author&query=Darve%2C+E)
+
+> This paper presents a novel training method, Conditional Masked Language Modeling (CMLM), to effectively learn sentence representations on large scale unlabeled corpora. CMLM integrates sentence representation learning into MLM training by conditioning on the encoded vectors of adjacent sentences. Our English CMLM model achieves state-of-the-art performance on SentEval, even outperforming models learned using (semi-)supervised signals. As a fully unsupervised learning method, CMLM can be conveniently extended to a broad range of languages and domains. We find that a multilingual CMLM model co-trained with bitext retrieval~(BR) and natural language inference~(NLI) tasks outperforms the previous state-of-the-art multilingual models by a large margin. We explore the same language bias of the learned representations, and propose a principle component based approach to remove the language identifying information from the representation while still retaining sentence semantics.
+
+| Comments: | preprint                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2012.14388](https://arxiv.org/abs/2012.14388) [cs.CL]** |
+|           | (or **[arXiv:2012.14388v1](https://arxiv.org/abs/2012.14388v1) [cs.CL]** for this version) |
 
 
 
