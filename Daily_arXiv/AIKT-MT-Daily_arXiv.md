@@ -3,7 +3,12 @@
 # Index
 
 
-- [2021-01-05](#2020-01-05)
+- [2021-01-06](#2021-01-06)
+	
+  - [1. I-BERT: Integer-only BERT Quantization](#2021-01-06-1)
+  - [2. Political Depolarization of News Articles Using Attribute-aware Word Embeddings](#2021-01-06-2)
+  - [3. Local Translation Services for Neglected Languages](#2021-01-06-3)
+- [2021-01-05](#2021-01-05)
 	
   - [1. VinVL: Making Visual Representations Matter in Vision-Language Models](#2021-01-05-1)
   - [2. The Pile: An 800GB Dataset of Diverse Text for Language Modeling](#2021-01-05-2)
@@ -55,6 +60,64 @@
   - [31. Shortformer: Better Language Modeling using Shorter Inputs](#2021-01-01-31)
   - [32. Fully Non-autoregressive Neural Machine Translation: Tricks of the Trade](#2021-01-01-32)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-01-06
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-01-06-1">1. I-BERT: Integer-only BERT Quantization</h2>
+
+Title: [I-BERT: Integer-only BERT Quantization](https://arxiv.org/abs/2101.01321)
+
+Authors: [Sehoon Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+S), [Amir Gholami](https://arxiv.org/search/cs?searchtype=author&query=Gholami%2C+A), [Zhewei Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+Z), [Michael W. Mahoney](https://arxiv.org/search/cs?searchtype=author&query=Mahoney%2C+M+W), [Kurt Keutzer](https://arxiv.org/search/cs?searchtype=author&query=Keutzer%2C+K)
+
+> Transformer based models, like BERT and RoBERTa, have achieved state-of-the-art results in many Natural Language Processing tasks. However, their memory footprint, inference latency, and power consumption are prohibitive for many edge processors, and it has been a challenge to deploy these models for edge applications and devices that have resource constraints. While quantization can be a viable solution to this, previous work on quantizing Transformer based models uses floating-point arithmetic during inference, thus limiting model deployment on many edge processors. In this work, we propose a novel integer-only quantization scheme for Transformer based models that quantizes the entire inference process. In particular, we demonstrate how to approximate nonlinear operations in Transformer architectures, e.g., GELU, Softmax, and Layer Normalization, with lightweight integer computations. We use those approximations in our method, I-BERT, with an end-to-end integer-only inference, and without any floating point calculation. We test our approach on GLUE downstream tasks using RoBERTa-Base and RoBERTa-Large. For both cases, with an 8-bit integer-only quantization scheme, I-BERT achieves similar accuracy as compared to the full-precision baseline.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2101.01321](https://arxiv.org/abs/2101.01321) [cs.CL]** |
+|           | (or **[arXiv:2101.01321v1](https://arxiv.org/abs/2101.01321v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-06-2">2. Political Depolarization of News Articles Using Attribute-aware Word Embeddings</h2>
+
+Title: [Political Depolarization of News Articles Using Attribute-aware Word Embeddings](https://arxiv.org/abs/2101.01391)
+
+Authors: [Ruibo Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+R), [Lili Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Chenyan Jia](https://arxiv.org/search/cs?searchtype=author&query=Jia%2C+C), [Soroush Vosoughi](https://arxiv.org/search/cs?searchtype=author&query=Vosoughi%2C+S)
+
+> Political polarization in the US is on the rise. This polarization negatively affects the public sphere by contributing to the creation of ideological echo chambers. In this paper, we focus on addressing one of the factors that contributes to this polarity, polarized media. We introduce a framework for depolarizing news articles. Given an article on a certain topic with a particular ideological slant (eg., liberal or conservative), the framework first detects polar language in the article and then generates a new article with the polar language replaced with neutral expressions. To detect polar words, we train a multi-attribute-aware word embedding model that is aware of ideology and topics on 360k full-length media articles. Then, for text generation, we propose a new algorithm called Text Annealing Depolarization Algorithm (TADA). TADA retrieves neutral expressions from the word embedding model that not only decrease ideological polarity but also preserve the original argument of the text, while maintaining grammatical correctness. We evaluate our framework by comparing the depolarized output of our model in two modes, fully-automatic and semi-automatic, on 99 stories spanning 11 topics. Based on feedback from 161 human testers, our framework successfully depolarized 90.1% of paragraphs in semi-automatic mode and 78.3% of paragraphs in fully-automatic mode. Furthermore, 81.2% of the testers agree that the non-polar content information is well-preserved and 79% agree that depolarization does not harm semantic correctness when they compare the original text and the depolarized text. Our work shows that data-driven methods can help to locate political polarity and aid in the depolarization of articles.
+
+| Comments: | In Proceedings of the 15th International AAAI Conference on Weblogs and Social Media (ICWSM 2021) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2101.01391](https://arxiv.org/abs/2101.01391) [cs.CL]** |
+|           | (or **[arXiv:2101.01391v1](https://arxiv.org/abs/2101.01391v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-06-3">3. Local Translation Services for Neglected Languages</h2>
+
+Title: [Local Translation Services for Neglected Languages](https://arxiv.org/abs/2101.01628)
+
+Authors: [David Noever](https://arxiv.org/search/cs?searchtype=author&query=Noever%2C+D), [Josh Kalin](https://arxiv.org/search/cs?searchtype=author&query=Kalin%2C+J), [Matt Ciolino](https://arxiv.org/search/cs?searchtype=author&query=Ciolino%2C+M), [Dom Hambrick](https://arxiv.org/search/cs?searchtype=author&query=Hambrick%2C+D), [Gerry Dozier](https://arxiv.org/search/cs?searchtype=author&query=Dozier%2C+G)
+
+> Taking advantage of computationally lightweight, but high-quality translators prompt consideration of new applications that address neglected languages. Locally run translators for less popular languages may assist data projects with protected or personal data that may require specific compliance checks before posting to a public translation API, but which could render reasonable, cost-effective solutions if done with an army of local, small-scale pair translators. Like handling a specialist's dialect, this research illustrates translating two historically interesting, but obfuscated languages: 1) hacker-speak ("l33t") and 2) reverse (or "mirror") writing as practiced by Leonardo da Vinci. The work generalizes a deep learning architecture to translatable variants of hacker-speak with lite, medium, and hard vocabularies. The original contribution highlights a fluent translator of hacker-speak in under 50 megabytes and demonstrates a generator for augmenting future datasets with greater than a million bilingual sentence pairs. The long short-term memory, recurrent neural network (LSTM-RNN) extends previous work demonstrating an English-to-foreign translation service built from as little as 10,000 bilingual sentence pairs. This work further solves the equivalent translation problem in twenty-six additional (non-obfuscated) languages and rank orders those models and their proficiency quantitatively with Italian as the most successful and Mandarin Chinese as the most challenging. For neglected languages, the method prototypes novel services for smaller niche translations such as Kabyle (Algerian dialect) which covers between 5-7 million speakers but one which for most enterprise translators, has not yet reached development. One anticipates the extension of this approach to other important dialects, such as translating technical (medical or legal) jargon and processing health records.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2101.01628](https://arxiv.org/abs/2101.01628) [cs.CL]** |
+|           | (or **[arXiv:2101.01628v1](https://arxiv.org/abs/2101.01628v1) [cs.CL]** for this version) |
+
+
 
 
 
