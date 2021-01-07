@@ -3,6 +3,9 @@
 # Index
 
 
+- [2021-01-07](#2021-01-07)
+	
+  - [1. AutoDropout: Learning Dropout Patterns to Regularize Deep Networks](#2021-01-07-1)
 - [2021-01-06](#2021-01-06)
 	
   - [1. I-BERT: Integer-only BERT Quantization](#2021-01-06-1)
@@ -60,6 +63,32 @@
   - [31. Shortformer: Better Language Modeling using Shorter Inputs](#2021-01-01-31)
   - [32. Fully Non-autoregressive Neural Machine Translation: Tricks of the Trade](#2021-01-01-32)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-01-07
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-01-07-1">1. AutoDropout: Learning Dropout Patterns to Regularize Deep Networks</h2>
+
+Title: [AutoDropout: Learning Dropout Patterns to Regularize Deep Networks](https://arxiv.org/abs/2101.01761)
+
+Authors: [Hieu Pham](https://arxiv.org/search/cs?searchtype=author&query=Pham%2C+H), [Quoc V. Le](https://arxiv.org/search/cs?searchtype=author&query=Le%2C+Q+V)
+
+> Neural networks are often over-parameterized and hence benefit from aggressive regularization. Conventional regularization methods, such as Dropout or weight decay, do not leverage the structures of the network's inputs and hidden states. As a result, these conventional methods are less effective than methods that leverage the structures, such as SpatialDropout and DropBlock, which randomly drop the values at certain contiguous areas in the hidden states and setting them to zero. Although the locations of dropout areas random, the patterns of SpatialDropout and DropBlock are manually designed and fixed. Here we propose to learn the dropout patterns. In our method, a controller learns to generate a dropout pattern at every channel and layer of a target network, such as a ConvNet or a Transformer. The target network is then trained with the dropout pattern, and its resulting validation performance is used as a signal for the controller to learn from. We show that this method works well for both image recognition on CIFAR-10 and ImageNet, as well as language modeling on Penn Treebank and WikiText-2. The learned dropout patterns also transfers to different tasks and datasets, such as from language model on Penn Treebank to Engligh-French translation on WMT 2014. Our code will be available.
+
+| Comments: | Accepted to AAAI 2021                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2101.01761](https://arxiv.org/abs/2101.01761) [cs.LG]** |
+|           | (or **[arXiv:2101.01761v1](https://arxiv.org/abs/2101.01761v1) [cs.LG]** for this version) |
+
+
+
+
 
 
 
