@@ -3,6 +3,10 @@
 # Index
 
 
+- [2021-01-08](#2021-01-08)
+	
+  - [1. User Ex Machina : Simulation as a Design Probe in Human-in-the-Loop Text Analytics](#2021-01-08-1)
+  - [2. Towards a Smart Data Processing and Storage Model](#2021-01-08-2)
 - [2021-01-07](#2021-01-07)
 	
   - [1. AutoDropout: Learning Dropout Patterns to Regularize Deep Networks](#2021-01-07-1)
@@ -63,6 +67,52 @@
   - [31. Shortformer: Better Language Modeling using Shorter Inputs](#2021-01-01-31)
   - [32. Fully Non-autoregressive Neural Machine Translation: Tricks of the Trade](#2021-01-01-32)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-01-08
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-01-08-1">1. User Ex Machina : Simulation as a Design Probe in Human-in-the-Loop Text Analytics</h2>
+
+Title: [User Ex Machina : Simulation as a Design Probe in Human-in-the-Loop Text Analytics](https://arxiv.org/abs/2101.02244)
+
+Authors: [Anamaria Crisan](https://arxiv.org/search/cs?searchtype=author&query=Crisan%2C+A), [Michael Correll](https://arxiv.org/search/cs?searchtype=author&query=Correll%2C+M)
+
+> Topic models are widely used analysis techniques for clustering documents and surfacing thematic elements of text corpora. These models remain challenging to optimize and often require a "human-in-the-loop" approach where domain experts use their knowledge to steer and adjust. However, the fragility, incompleteness, and opacity of these models means even minor changes could induce large and potentially undesirable changes in resulting model. In this paper we conduct a simulation-based analysis of human-centered interactions with topic models, with the objective of measuring the sensitivity of topic models to common classes of user actions. We find that user interactions have impacts that differ in magnitude but often negatively affect the quality of the resulting modelling in a way that can be difficult for the user to evaluate. We suggest the incorporation of sensitivity and "multiverse" analyses to topic model interfaces to surface and overcome these deficiencies.
+
+| Comments:    | 16 Pages, 9 Figures, CHI 2021 Conference                     |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Human-Computer Interaction (cs.HC)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| MSC classes: | 68U15                                                        |
+| ACM classes: | H.5.0                                                        |
+| Cite as:     | **[arXiv:2101.02244](https://arxiv.org/abs/2101.02244) [cs.HC]** |
+|              | (or **[arXiv:2101.02244v1](https://arxiv.org/abs/2101.02244v1) [cs.HC]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-08-2">2. Towards a Smart Data Processing and Storage Model</h2>
+
+Title: [Towards a Smart Data Processing and Storage Model](https://arxiv.org/abs/2101.02522)
+
+Authors: [Ronie Salgado](https://arxiv.org/search/cs?searchtype=author&query=Salgado%2C+R), [Marcus Denker](https://arxiv.org/search/cs?searchtype=author&query=Denker%2C+M) (RMOD), [Stéphane Ducasse](https://arxiv.org/search/cs?searchtype=author&query=Ducasse%2C+S) (RMOD), [Anne Etien](https://arxiv.org/search/cs?searchtype=author&query=Etien%2C+A) (RMOD), [Vincent Aranega](https://arxiv.org/search/cs?searchtype=author&query=Aranega%2C+V) (RMOD)
+
+> In several domains it is crucial to store and manipulate data whose origin needs to be completely traceable to guarantee the consistency, trustworthiness and reliability on the data itself typically for ethical and legal reasons. It is also important to guarantee that such properties are also carried further when such data is composed and processed into new data. In this article we present the main requirements and theorethical problems that arise by the design of a system supporting data with such capabilities. We present an architecture for implementing a system as well as a prototype developed in Pharo.
+
+| Subjects:          | **Computation and Language (cs.CL)**; Programming Languages (cs.PL); Software Engineering (cs.SE) |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | IWST20: International Workshop on Smalltalk Technologies, Sep 2020, Novi Sad, Serbia |
+| Cite as:           | **[arXiv:2101.02522](https://arxiv.org/abs/2101.02522) [cs.CL]** |
+|                    | (or **[arXiv:2101.02522v1](https://arxiv.org/abs/2101.02522v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
