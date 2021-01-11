@@ -3,9 +3,11 @@
 # Index
 
 
-- [2021-01-08](#2021-01-08)
+- [2021-01-11](#2021-01-11)
 	
-  - [1. User Ex Machina : Simulation as a Design Probe in Human-in-the-Loop Text Analytics](#2021-01-08-1)
+  - [1. MeisterMorxrc at SemEval-2020 Task 9: Fine-Tune Bert and Multitask Learning for Sentiment Analysis of Code-Mixed Tweets](#2021-01-11-1)
+- [2021-01-08](#2021-01-08)
+	- [1. User Ex Machina : Simulation as a Design Probe in Human-in-the-Loop Text Analytics](#2021-01-08-1)
   - [2. Towards a Smart Data Processing and Storage Model](#2021-01-08-2)
 - [2021-01-07](#2021-01-07)
 	
@@ -67,6 +69,33 @@
   - [31. Shortformer: Better Language Modeling using Shorter Inputs](#2021-01-01-31)
   - [32. Fully Non-autoregressive Neural Machine Translation: Tricks of the Trade](#2021-01-01-32)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-01-11
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-01-11-1">1. MeisterMorxrc at SemEval-2020 Task 9: Fine-Tune Bert and Multitask Learning for Sentiment Analysis of Code-Mixed Tweets</h2>
+
+Title: [MeisterMorxrc at SemEval-2020 Task 9: Fine-Tune Bert and Multitask Learning for Sentiment Analysis of Code-Mixed Tweets](https://arxiv.org/abs/2101.03028)
+
+Authors:[Qi Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Q), [Peng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+P), [Chenghao Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+C)
+
+> Natural language processing (NLP) has been applied to various fields including text classification and sentiment analysis. In the shared task of sentiment analysis of code-mixed tweets, which is a part of the SemEval-2020 competition~\cite{patwa2020sentimix}, we preprocess datasets by replacing emoji and deleting uncommon characters and so on, and then fine-tune the Bidirectional Encoder Representation from Transformers(BERT) to perform the best. After exhausting top3 submissions, Our team MeisterMorxrc achieves an averaged F1 score of 0.730 in this task, and and our codalab username is MeisterMorxrc.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2101.03028](https://arxiv.org/abs/2101.03028) [cs.CL]** |
+|           | (or **[arXiv:2101.03028v1](https://arxiv.org/abs/2101.03028v1) [cs.CL]** for this version) |
+
+
+
+
+
+
 
 
 
