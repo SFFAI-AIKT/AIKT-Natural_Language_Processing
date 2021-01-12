@@ -3,6 +3,13 @@
 # Index
 
 
+- [2021-01-12](#2021-01-12)
+	
+  - [1. Misspelling Correction with Pre-trained Contextual Language Model](#2021-01-12-1)
+  - [2. SDA: Improving Text Generation with Self Data Augmentation](#2021-01-12-2)
+  - [3. Trankit: A Light-Weight Transformer-based Toolkit for Multilingual Natural Language Processing](#2021-01-12-3)
+  - [4. Learning Better Sentence Representation with Syntax Information](#2021-01-12-4)
+  - [5. Context- and Sequence-Aware Convolutional Recurrent Encoder for Neural Machine Translation](#2021-01-12-5)
 - [2021-01-11](#2021-01-11)
 	
   - [1. MeisterMorxrc at SemEval-2020 Task 9: Fine-Tune Bert and Multitask Learning for Sentiment Analysis of Code-Mixed Tweets](#2021-01-11-1)
@@ -69,6 +76,99 @@
   - [31. Shortformer: Better Language Modeling using Shorter Inputs](#2021-01-01-31)
   - [32. Fully Non-autoregressive Neural Machine Translation: Tricks of the Trade](#2021-01-01-32)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-01-12
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-01-12-1">1. Misspelling Correction with Pre-trained Contextual Language Model</h2>
+
+Title: [Misspelling Correction with Pre-trained Contextual Language Model](https://arxiv.org/abs/2101.03204)
+
+Authors: [Yifei Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+Y), [Xiaonan Jing](https://arxiv.org/search/cs?searchtype=author&query=Jing%2C+X), [Youlim Ko](https://arxiv.org/search/cs?searchtype=author&query=Ko%2C+Y), [Julia Taylor Rayz](https://arxiv.org/search/cs?searchtype=author&query=Rayz%2C+J+T)
+
+> Spelling irregularities, known now as spelling mistakes, have been found for several centuries. As humans, we are able to understand most of the misspelled words based on their location in the sentence, perceived pronunciation, and context. Unlike humans, computer systems do not possess the convenient auto complete functionality of which human brains are capable. While many programs provide spelling correction functionality, many systems do not take context into account. Moreover, Artificial Intelligence systems function in the way they are trained on. With many current Natural Language Processing (NLP) systems trained on grammatically correct text data, many are vulnerable against adversarial examples, yet correctly spelled text processing is crucial for learning. In this paper, we investigate how spelling errors can be corrected in context, with a pre-trained language model BERT. We present two experiments, based on BERT and the edit distance algorithm, for ranking and selecting candidate corrections. The results of our experiments demonstrated that when combined properly, contextual word embeddings of BERT and edit distance are capable of effectively correcting spelling errors.
+
+| Comments: | Accepted by 2020 IEEE 19th International Conference on Cognitive Informatics & Cognitive Computing (ICCI* CC). IEEE |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2101.03204](https://arxiv.org/abs/2101.03204) [cs.CL]** |
+|           | (or **[arXiv:2101.03204v1](https://arxiv.org/abs/2101.03204v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-12-2">2. SDA: Improving Text Generation with Self Data Augmentation</h2>
+
+Title: [SDA: Improving Text Generation with Self Data Augmentation](https://arxiv.org/abs/2101.03236)
+
+Authors: [Ping Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+P), [Ruiyi Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+R), [Yang Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+Y), [Yizhe Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Chunyuan Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+C), [Changyou Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+C)
+
+> Data augmentation has been widely used to improve deep neural networks in many research fields, such as computer vision. However, less work has been done in the context of text, partially due to its discrete nature and the complexity of natural languages. In this paper, we propose to improve the standard maximum likelihood estimation (MLE) paradigm by incorporating a self-imitation-learning phase for automatic data augmentation. Unlike most existing sentence-level augmentation strategies, which are only applied to specific models, our method is more general and could be easily adapted to any MLE-based training procedure. In addition, our framework allows task-specific evaluation metrics to be designed to flexibly control the generated sentences, for example, in terms of controlling vocabulary usage and avoiding nontrivial repetitions. Extensive experimental results demonstrate the superiority of our method on two synthetic and several standard real datasets, significantly improving related baselines.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2101.03236](https://arxiv.org/abs/2101.03236) [cs.CL]** |
+|           | (or **[arXiv:2101.03236v1](https://arxiv.org/abs/2101.03236v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-12-3">3. Trankit: A Light-Weight Transformer-based Toolkit for Multilingual Natural Language Processing</h2>
+
+Title: [Trankit: A Light-Weight Transformer-based Toolkit for Multilingual Natural Language Processing](https://arxiv.org/abs/2101.03289)
+
+Authors: [Minh Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+M), [Viet Lai](https://arxiv.org/search/cs?searchtype=author&query=Lai%2C+V), [Amir Pouran Ben Veyseh](https://arxiv.org/search/cs?searchtype=author&query=Veyseh%2C+A+P+B), [Thien Huu Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+T+H)
+
+> We introduce Trankit, a light-weight Transformer-based Toolkit for multilingual Natural Language Processing (NLP). It provides a trainable pipeline for fundamental NLP tasks over 100 languages, and 90 pretrained pipelines for 56 languages. Built on a state-of-the-art pretrained language model, Trankit significantly outperforms prior multilingual NLP pipelines over sentence segmentation, part-of-speech tagging, morphological feature tagging, and dependency parsing while maintaining competitive performance for tokenization, multi-word token expansion, and lemmatization over 90 Universal Dependencies treebanks. Despite the use of a large pretrained transformer, our toolkit is still efficient in memory usage and speed. This is achieved by our novel plug-and-play mechanism with Adapters where a multilingual pretrained transformer is shared across pipelines for different languages. Our toolkit along with pretrained models and code are publicly available at: [this https URL](https://github.com/nlp-uoregon/trankit). A demo website for our toolkit is also available at: [this http URL](http://nlp.uoregon.edu/trankit).
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2101.03289](https://arxiv.org/abs/2101.03289) [cs.CL]** |
+|           | (or **[arXiv:2101.03289v1](https://arxiv.org/abs/2101.03289v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-12-4">4. Learning Better Sentence Representation with Syntax Information</h2>
+
+Title: [Learning Better Sentence Representation with Syntax Information](https://arxiv.org/abs/2101.03343)
+
+Authors: [Chen Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+C) (University of Science and Technology of China)
+
+> Sentence semantic understanding is a key topic in the field of natural language processing. Recently, contextualized word representations derived from pre-trained language models such as ELMO and BERT have shown significant improvements for a wide range of semantic tasks, e.g. question answering, text classification and sentiment analysis. However, how to add external knowledge to further improve the semantic modeling capability of model is worth probing. In this paper, we propose a novel approach to combining syntax information with a pre-trained language model. In order to evaluate the effect of the pre-training model, first, we introduce RNN-based and Transformer-based pre-trained language models; secondly, to better integrate external knowledge, such as syntactic information integrate with the pre-training model, we propose a dependency syntax expansion (DSE) model. For evaluation, we have selected two subtasks: sentence completion task and biological relation extraction task. The experimental results show that our model achieves 91.2\% accuracy, outperforming the baseline model by 37.8\% on sentence completion task. And it also gets competitive performance by 75.1\% F1 score on relation extraction task.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2101.03343](https://arxiv.org/abs/2101.03343) [cs.CL]** |
+|           | (or **[arXiv:2101.03343v1](https://arxiv.org/abs/2101.03343v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-12-5">5. Context- and Sequence-Aware Convolutional Recurrent Encoder for Neural Machine Translation</h2>
+
+Title: [Context- and Sequence-Aware Convolutional Recurrent Encoder for Neural Machine Translation](https://arxiv.org/abs/2101.04030)
+
+Authors: [Ritam Mallick](https://arxiv.org/search/cs?searchtype=author&query=Mallick%2C+R), [Seba Susan](https://arxiv.org/search/cs?searchtype=author&query=Susan%2C+S), [Vaibhaw Agrawal](https://arxiv.org/search/cs?searchtype=author&query=Agrawal%2C+V), [Rizul Garg](https://arxiv.org/search/cs?searchtype=author&query=Garg%2C+R), [Prateek Rawal](https://arxiv.org/search/cs?searchtype=author&query=Rawal%2C+P)
+
+> Neural Machine Translation model is a sequence-to-sequence converter based on neural networks. Existing models use recurrent neural networks to construct both the encoder and decoder modules. In alternative research, the recurrent networks were substituted by convolutional neural networks for capturing the syntactic structure in the input sentence and decreasing the processing time. We incorporate the goodness of both approaches by proposing a convolutional-recurrent encoder for capturing the context information as well as the sequential information from the source sentence. Word embedding and position embedding of the source sentence is performed prior to the convolutional encoding layer which is basically a n-gram feature extractor capturing phrase-level context information. The rectified output of the convolutional encoding layer is added to the original embedding vector, and the sum is normalized by layer normalization. The normalized output is given as a sequential input to the recurrent encoding layer that captures the temporal information in the sequence. For the decoder, we use the attention-based recurrent neural network. Translation task on the German-English dataset verifies the efficacy of the proposed approach from the higher BLEU scores achieved as compared to the state of the art.
+
+| Comments: | Accepted in 36th ACM/SIGAPP Symposium On Applied Computing 2021 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2101.04030](https://arxiv.org/abs/2101.04030) [cs.CL]** |
+|           | (or **[arXiv:2101.04030v1](https://arxiv.org/abs/2101.04030v1) [cs.CL]** for this version) |
+
+
 
 
 
