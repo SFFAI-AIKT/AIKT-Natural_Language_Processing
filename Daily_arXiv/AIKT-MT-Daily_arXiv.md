@@ -3,6 +3,13 @@
 # Index
 
 
+- [2021-01-13](#2021-01-13)
+	
+  - [1. Quantum Mathematics in Artificial Intelligence](#2021-01-13-1)
+  - [2. Explain and Predict, and then Predict again](#2021-01-13-2)
+  - [3. Implicit Unlikelihood Training: Improving Neural Text Generation with Reinforcement Learning](#2021-01-13-3)
+  - [4. Transforming Multi-Conditioned Generation from Meaning Representation](#2021-01-13-4)
+  - [5. Toward Effective Automated Content Analysis via Crowdsourcing](#2021-01-13-5)
 - [2021-01-12](#2021-01-12)
 	
   - [1. Misspelling Correction with Pre-trained Contextual Language Model](#2021-01-12-1)
@@ -76,6 +83,105 @@
   - [31. Shortformer: Better Language Modeling using Shorter Inputs](#2021-01-01-31)
   - [32. Fully Non-autoregressive Neural Machine Translation: Tricks of the Trade](#2021-01-01-32)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-01-13
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-01-13-1">1. Quantum Mathematics in Artificial Intelligence</h2>
+
+Title: [Quantum Mathematics in Artificial Intelligence](https://arxiv.org/abs/2101.04255)
+
+Authors:[Dominic Widdows](https://arxiv.org/search/cs?searchtype=author&query=Widdows%2C+D), [Kirsty Kitto](https://arxiv.org/search/cs?searchtype=author&query=Kitto%2C+K), [Trevor Cohen](https://arxiv.org/search/cs?searchtype=author&query=Cohen%2C+T)
+
+> In the decade since 2010, successes in artificial intelligence have been at the forefront of computer science and technology, and vector space models have solidified a position at the forefront of artificial intelligence. At the same time, quantum computers have become much more powerful, and announcements of major advances are frequently in the news.
+> The mathematical techniques underlying both these areas have more in common than is sometimes realized. Vector spaces took a position at the axiomatic heart of quantum mechanics in the 1930s, and this adoption was a key motivation for the derivation of logic and probability from the linear geometry of vector spaces. Quantum interactions between particles are modelled using the tensor product, which is also used to express objects and operations in artificial neural networks.
+> This paper describes some of these common mathematical areas, including examples of how they are used in artificial intelligence (AI), particularly in automated reasoning and natural language processing (NLP). Techniques discussed include vector spaces, scalar products, subspaces and implication, orthogonal projection and negation, dual vectors, density matrices, positive operators, and tensor products. Application areas include information retrieval, categorization and implication, modelling word-senses and disambiguation, inference in knowledge bases, and semantic composition.
+> Some of these approaches can potentially be implemented on quantum hardware. Many of the practical steps in this implementation are in early stages, and some are already realized. Explaining some of the common mathematical tools can help researchers in both AI and quantum computing further exploit these overlaps, recognizing and exploring new directions along the way.
+
+| Subjects: | **Artificial Intelligence (cs.AI)**; Computation and Language (cs.CL); Information Retrieval (cs.IR) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2101.04255](https://arxiv.org/abs/2101.04255) [cs.AI]** |
+|           | (or **[arXiv:2101.04255v1](https://arxiv.org/abs/2101.04255v1) [cs.AI]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-13-2">2. Explain and Predict, and then Predict again</h2>
+
+Title: [Explain and Predict, and then Predict again](https://arxiv.org/abs/2101.04109)
+
+Authors:[Zijian Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Koustav Rudra](https://arxiv.org/search/cs?searchtype=author&query=Rudra%2C+K), [Avishek Anand](https://arxiv.org/search/cs?searchtype=author&query=Anand%2C+A)
+
+> A desirable property of learning systems is to be both effective and interpretable. Towards this goal, recent models have been proposed that first generate an extractive explanation from the input text and then generate a prediction on just the explanation called explain-then-predict models. These models primarily consider the task input as a supervision signal in learning an extractive explanation and do not effectively integrate rationales data as an additional inductive bias to improve task performance. We propose a novel yet simple approach ExPred, that uses multi-task learning in the explanation generation phase effectively trading-off explanation and prediction losses. And then we use another prediction network on just the extracted explanations for optimizing the task performance. We conduct an extensive evaluation of our approach on three diverse language datasets -- fact verification, sentiment classification, and QA -- and find that we substantially outperform existing approaches.
+
+| Comments:    | Accepted in the WSDM 2021 and the camera-ready version will be there soon |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| ACM classes: | I.2.m; I.2.7                                                 |
+| DOI:         | [10.1145/3437963.3441758](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.1145%2F3437963.3441758&v=6e4daadf) |
+| Cite as:     | **[arXiv:2101.04109](https://arxiv.org/abs/2101.04109) [cs.CL]** |
+|              | (or **[arXiv:2101.04109v1](https://arxiv.org/abs/2101.04109v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-13-3">3. Implicit Unlikelihood Training: Improving Neural Text Generation with Reinforcement Learning</h2>
+
+Title: [Implicit Unlikelihood Training: Improving Neural Text Generation with Reinforcement Learning](https://arxiv.org/abs/2101.04229)
+
+Authors:[Evgeny Lagutin](https://arxiv.org/search/cs?searchtype=author&query=Lagutin%2C+E), [Daniil Gavrilov](https://arxiv.org/search/cs?searchtype=author&query=Gavrilov%2C+D), [Pavel Kalaidin](https://arxiv.org/search/cs?searchtype=author&query=Kalaidin%2C+P)
+
+> Likelihood training and maximization-based decoding result in dull and repetitive generated texts even when using powerful language models (Holtzman et al., 2019). Adding a loss function for regularization was shown to improve text generation output by helping avoid unwanted properties, such as contradiction or repetition (Li at al., 2020). In this work, we propose fine-tuning a language model by using policy gradient reinforcement learning, directly optimizing for better generation. We apply this approach to minimizing repetition in generated text, and show that, when combined with unlikelihood training (Welleck et al., 2020), our method further reduces repetition without impacting the language model quality. We also evaluate other methods for improving generation at training and decoding time, and compare them using various metrics aimed at control for better text generation output.
+
+| Comments: | accepted to EACL 2021                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2101.04229](https://arxiv.org/abs/2101.04229) [cs.CL]** |
+|           | (or **[arXiv:2101.04229v1](https://arxiv.org/abs/2101.04229v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-13-4">4. Transforming Multi-Conditioned Generation from Meaning Representation</h2>
+
+Title: [Transforming Multi-Conditioned Generation from Meaning Representation](https://arxiv.org/abs/2101.04257)
+
+Authors:[Joosung Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+J)
+
+> In task-oriented conversation systems, natural language generation systems that generate sentences with specific information related to conversation flow are useful. Our study focuses on language generation by considering various information representing the meaning of utterances as multiple conditions of generation. NLG from meaning representations, the conditions for sentence meaning, generally goes through two steps: sentence planning and surface realization. However, we propose a simple one-stage framework to generate utterances directly from MR (Meaning Representation). Our model is based on GPT2 and generates utterances with flat conditions on slot and value pairs, which does not need to determine the structure of the sentence. We evaluate several systems in the E2E dataset with 6 automatic metrics. Our system is a simple method, but it demonstrates comparable performance to previous systems in automated metrics. In addition, using only 10\% of the data set without any other techniques, our model achieves comparable performance, and shows the possibility of performing zero-shot generation and expanding to other datasets.
+
+| Comments: | 10 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2101.04257](https://arxiv.org/abs/2101.04257) [cs.CL]** |
+|           | (or **[arXiv:2101.04257v1](https://arxiv.org/abs/2101.04257v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-13-5">5. Toward Effective Automated Content Analysis via Crowdsourcing</h2>
+
+Title: [Toward Effective Automated Content Analysis via Crowdsourcing](https://arxiv.org/abs/2101.04615)
+
+Authors:[Jiele Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+J), [Chau-Wai Wong](https://arxiv.org/search/cs?searchtype=author&query=Wong%2C+C), [Xinyan Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+X), [Xianpeng Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X)
+
+> Many computer scientists use the aggregated answers of online workers to represent ground truth. Prior work has shown that aggregation methods such as majority voting are effective for measuring relatively objective features. For subjective features such as semantic connotation, online workers, known for optimizing their hourly earnings, tend to deteriorate in the quality of their responses as they work longer. In this paper, we aim to address this issue by proposing a quality-aware semantic data annotation system. We observe that with timely feedback on workers' performance quantified by quality scores, better informed online workers can maintain the quality of their labeling throughout an extended period of time. We validate the effectiveness of the proposed annotation system through i) evaluating performance based on an expert-labeled dataset, and ii) demonstrating machine learning tasks that can lead to consistent learning behavior with 70%-80% accuracy. Our results suggest that with our system, researchers can collect high-quality answers of subjective semantic features at a large scale.
+
+| Subjects: | **Computation and Language (cs.CL)**; Information Retrieval (cs.IR); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2101.04615](https://arxiv.org/abs/2101.04615) [cs.CL]** |
+|           | (or **[arXiv:2101.04615v1](https://arxiv.org/abs/2101.04615v1) [cs.CL]** for this version) |
+
+
 
 
 
