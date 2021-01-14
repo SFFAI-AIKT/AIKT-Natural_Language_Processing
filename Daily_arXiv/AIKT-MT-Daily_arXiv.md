@@ -3,6 +3,11 @@
 # Index
 
 
+- [2021-01-14](#2021-01-14)
+	
+  - [1. Efficient Object-Level Visual Context Modeling for Multimodal Machine Translation: Masking Irrelevant Objects Helps Grounding](#2021-01-14-1)
+  - [2. Latent Alignment of Procedural Concepts in Multimodal Recipes](#2021-01-14-2)
+  - [3. Uzbek Cyrillic-Latin-Cyrillic Machine Transliteration](#2021-01-14-3)
 - [2021-01-13](#2021-01-13)
 	
   - [1. Quantum Mathematics in Artificial Intelligence](#2021-01-13-1)
@@ -83,6 +88,74 @@
   - [31. Shortformer: Better Language Modeling using Shorter Inputs](#2021-01-01-31)
   - [32. Fully Non-autoregressive Neural Machine Translation: Tricks of the Trade](#2021-01-01-32)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-01-14
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-01-14-1">1. Efficient Object-Level Visual Context Modeling for Multimodal Machine Translation: Masking Irrelevant Objects Helps Grounding</h2>
+
+Title: [Efficient Object-Level Visual Context Modeling for Multimodal Machine Translation: Masking Irrelevant Objects Helps Grounding](https://arxiv.org/abs/2101.05208)
+
+Authors: [Dexin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+D), [Deyi Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+D)
+
+> Visual context provides grounding information for multimodal machine translation (MMT). However, previous MMT models and probing studies on visual features suggest that visual information is less explored in MMT as it is often redundant to textual information. In this paper, we propose an object-level visual context modeling framework (OVC) to efficiently capture and explore visual information for multimodal machine translation. With detected objects, the proposed OVC encourages MMT to ground translation on desirable visual objects by masking irrelevant objects in the visual modality. We equip the proposed with an additional object-masking loss to achieve this goal. The object-masking loss is estimated according to the similarity between masked objects and the source texts so as to encourage masking source-irrelevant objects. Additionally, in order to generate vision-consistent target words, we further propose a vision-weighted translation loss for OVC. Experiments on MMT datasets demonstrate that the proposed OVC model outperforms state-of-the-art MMT models and analyses show that masking irrelevant objects helps grounding in MMT.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2101.05208](https://arxiv.org/abs/2101.05208) [cs.CV]** |
+|           | (or **[arXiv:2101.05208v1](https://arxiv.org/abs/2101.05208v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-14-2">2. Latent Alignment of Procedural Concepts in Multimodal Recipes</h2>
+
+Title: [Latent Alignment of Procedural Concepts in Multimodal Recipes](https://arxiv.org/abs/2101.04727)
+
+Authors: [Hossein Rajaby Faghihi](https://arxiv.org/search/cs?searchtype=author&query=Faghihi%2C+H+R), [Roshanak Mirzaee](https://arxiv.org/search/cs?searchtype=author&query=Mirzaee%2C+R), [Sudarshan Paliwal](https://arxiv.org/search/cs?searchtype=author&query=Paliwal%2C+S), [Parisa Kordjamshidi](https://arxiv.org/search/cs?searchtype=author&query=Kordjamshidi%2C+P)
+
+> We propose a novel alignment mechanism to deal with procedural reasoning on a newly released multimodal QA dataset, named RecipeQA. Our model is solving the textual cloze task which is a reading comprehension on a recipe containing images and instructions. We exploit the power of attention networks, cross-modal representations, and a latent alignment space between instructions and candidate answers to solve the problem. We introduce constrained max-pooling which refines the max-pooling operation on the alignment matrix to impose disjoint constraints among the outputs of the model. Our evaluation result indicates a 19\% improvement over the baselines.
+
+| Comments:          | Published in ALVR 2020, a workshop in ACL 2020               |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| ACM classes:       | I.2.7                                                        |
+| Journal reference: | Proceedings of the First Workshop on Advances in Language and Vision Research 2020 (26-31) |
+| DOI:               | [10.18653/v1/2020.alvr-1.5](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.18653%2Fv1%2F2020.alvr-1.5&v=43bac969) |
+| Cite as:           | **[arXiv:2101.04727](https://arxiv.org/abs/2101.04727) [cs.CL]** |
+|                    | (or **[arXiv:2101.04727v1](https://arxiv.org/abs/2101.04727v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-01-14-3">3. Uzbek Cyrillic-Latin-Cyrillic Machine Transliteration</h2>
+
+Title: [Uzbek Cyrillic-Latin-Cyrillic Machine Transliteration](https://arxiv.org/abs/2101.05162)
+
+Authors: [B. Mansurov](https://arxiv.org/search/cs?searchtype=author&query=Mansurov%2C+B), [A. Mansurov](https://arxiv.org/search/cs?searchtype=author&query=Mansurov%2C+A)
+
+> In this paper, we introduce a data-driven approach to transliterating Uzbek dictionary words from the Cyrillic script into the Latin script, and vice versa. We heuristically align characters of words in the source script with sub-strings of the corresponding words in the target script and train a decision tree classifier that learns these alignments. On the test set, our Cyrillic to Latin model achieves a character level micro-averaged F1 score of 0.9992, and our Latin to Cyrillic model achieves the score of 0.9959. Our contribution is a novel method of producing machine transliterated texts for the low-resource Uzbek language.
+
+| Comments: | 9 pages, 11 tables                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2101.05162](https://arxiv.org/abs/2101.05162) [cs.CL]** |
+|           | (or **[arXiv:2101.05162v1](https://arxiv.org/abs/2101.05162v1) [cs.CL]** for this version) |
+
+
+
+
+
+
 
 
 
