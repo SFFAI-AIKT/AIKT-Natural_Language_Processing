@@ -3,6 +3,11 @@
 # Index
 
 
+- [2021-01-15](#2021-01-15)
+	
+  - [1. Structured Prediction as Translation between Augmented Natural Languages](#2021-01-15-1)
+  - [2. Text Augmentation in a Multi-Task View](#2021-01-15-2)
+  - [3. Persuasive Natural Language Generation -- A Literature Review](#2021-01-15-3)
 - [2021-01-14](#2021-01-14)
 	
   - [1. Efficient Object-Level Visual Context Modeling for Multimodal Machine Translation: Masking Irrelevant Objects Helps Grounding](#2021-01-14-1)
@@ -88,6 +93,65 @@
   - [31. Shortformer: Better Language Modeling using Shorter Inputs](#2021-01-01-31)
   - [32. Fully Non-autoregressive Neural Machine Translation: Tricks of the Trade](#2021-01-01-32)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-01-15
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-01-15-1">1. Structured Prediction as Translation between Augmented Natural Languages</h2>
+
+Title: [Structured Prediction as Translation between Augmented Natural Languages](https://arxiv.org/abs/2101.05779)
+
+Authors:[Giovanni Paolini](https://arxiv.org/search/cs?searchtype=author&query=Paolini%2C+G), [Ben Athiwaratkun](https://arxiv.org/search/cs?searchtype=author&query=Athiwaratkun%2C+B), [Jason Krone](https://arxiv.org/search/cs?searchtype=author&query=Krone%2C+J), [Jie Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+J), [Alessandro Achille](https://arxiv.org/search/cs?searchtype=author&query=Achille%2C+A), [Rishita Anubhai](https://arxiv.org/search/cs?searchtype=author&query=Anubhai%2C+R), [Cicero Nogueira dos Santos](https://arxiv.org/search/cs?searchtype=author&query=Santos%2C+C+N+d), [Bing Xiang](https://arxiv.org/search/cs?searchtype=author&query=Xiang%2C+B), [Stefano Soatto](https://arxiv.org/search/cs?searchtype=author&query=Soatto%2C+S)
+
+> We propose a new framework, Translation between Augmented Natural Languages (TANL), to solve many structured prediction language tasks including joint entity and relation extraction, nested named entity recognition, relation classification, semantic role labeling, event extraction, coreference resolution, and dialogue state tracking. Instead of tackling the problem by training task-specific discriminative classifiers, we frame it as a translation task between augmented natural languages, from which the task-relevant information can be easily extracted. Our approach can match or outperform task-specific models on all tasks, and in particular, achieves new state-of-the-art results on joint entity and relation extraction (CoNLL04, ADE, NYT, and ACE2005 datasets), relation classification (FewRel and TACRED), and semantic role labeling (CoNLL-2005 and CoNLL-2012). We accomplish this while using the same architecture and hyperparameters for all tasks and even when training a single model to solve all tasks at the same time (multi-task learning). Finally, we show that our framework can also significantly improve the performance in a low-resource regime, thanks to better use of label semantics.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2101.05779](https://arxiv.org/abs/2101.05779) [cs.LG]** |
+|           | (or **[arXiv:2101.05779v1](https://arxiv.org/abs/2101.05779v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-15-2">2. Text Augmentation in a Multi-Task View</h2>
+
+Title: [Text Augmentation in a Multi-Task View](https://arxiv.org/abs/2101.05469)
+
+Authors:[Jason Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+J), [Chengyu Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+C), [Shiqi Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+S), [Soroush Vosoughi](https://arxiv.org/search/cs?searchtype=author&query=Vosoughi%2C+S)
+
+> Traditional data augmentation aims to increase the coverage of the input distribution by generating augmented examples that strongly resemble original samples in an online fashion where augmented examples dominate training. In this paper, we propose an alternative perspective -- a multi-task view (MTV) of data augmentation -- in which the primary task trains on original examples and the auxiliary task trains on augmented examples. In MTV data augmentation, both original and augmented samples are weighted substantively during training, relaxing the constraint that augmented examples must resemble original data and thereby allowing us to apply stronger levels of augmentation. In empirical experiments using four common data augmentation techniques on three benchmark text classification datasets, we find that the MTV leads to higher and more robust performance improvements than traditional augmentation.
+
+| Comments: | Accepted to EACL 2021                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2101.05469](https://arxiv.org/abs/2101.05469) [cs.CL]** |
+|           | (or **[arXiv:2101.05469v1](https://arxiv.org/abs/2101.05469v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-15-3">3. Persuasive Natural Language Generation -- A Literature Review</h2>
+
+Title: [Persuasive Natural Language Generation -- A Literature Review](https://arxiv.org/abs/2101.05786)
+
+Authors:[Sebastian Duerr](https://arxiv.org/search/cs?searchtype=author&query=Duerr%2C+S), [Peter A. Gloor](https://arxiv.org/search/cs?searchtype=author&query=Gloor%2C+P+A)
+
+> This literature review focuses on the use of Natural Language Generation (NLG) to automatically detect and generate persuasive texts. Extending previous research on automatic identification of persuasion in text, we concentrate on generative aspects through conceptualizing determinants of persuasion in five business-focused categories: benevolence, linguistic appropriacy, logical argumentation, trustworthiness, tools and datasets. These allow NLG to increase an existing message's persuasiveness. Previous research illustrates key aspects in each of the above mentioned five categories. A research agenda to further study persuasive NLG is developed. The review includes analysis of seventy-seven articles, outlining the existing body of knowledge and showing the steady progress in this research field.
+
+| Subjects:    | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| ------------ | ------------------------------------------------------------ |
+| ACM classes: | I.2.7; J.4                                                   |
+| Cite as:     | **[arXiv:2101.05786](https://arxiv.org/abs/2101.05786) [cs.CL]** |
+|              | (or **[arXiv:2101.05786v1](https://arxiv.org/abs/2101.05786v1) [cs.CL]** for this version) |
+
+
 
 
 
