@@ -3,9 +3,13 @@
 # Index
 
 
-- [2021-01-15](#2021-01-15)
+- [2021-01-18](#2021-01-18)
 	
-  - [1. Structured Prediction as Translation between Augmented Natural Languages](#2021-01-15-1)
+  - [1. Knowledge Graphs and Natural-Language Processing](#2021-01-18-1)
+  - [2. The Impact of Post-editing and Machine Translation on Creativity and Reading Experience](#2021-01-18-2)
+  - [3. Empirical Evaluation of Supervision Signals for Style Transfer Models](#2021-01-18-3)
+- [2021-01-15](#2021-01-15)
+	- [1. Structured Prediction as Translation between Augmented Natural Languages](#2021-01-15-1)
   - [2. Text Augmentation in a Multi-Task View](#2021-01-15-2)
   - [3. Persuasive Natural Language Generation -- A Literature Review](#2021-01-15-3)
 - [2021-01-14](#2021-01-14)
@@ -93,6 +97,74 @@
   - [31. Shortformer: Better Language Modeling using Shorter Inputs](#2021-01-01-31)
   - [32. Fully Non-autoregressive Neural Machine Translation: Tricks of the Trade](#2021-01-01-32)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-01-18
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-01-18-1">1. Knowledge Graphs and Natural-Language Processing</h2>
+
+Title: [Knowledge Graphs and Natural-Language Processing](https://arxiv.org/abs/2101.06111)
+
+Authors: [Andreas L Opdahl](https://arxiv.org/search/cs?searchtype=author&query=Opdahl%2C+A+L)
+
+> Emergency-relevant data comes in many varieties. It can be high volume and high velocity, and reaction times are critical, calling for efficient and powerful techniques for data analysis and management. Knowledge graphs represent data in a rich, flexible, and uniform way that is well matched with the needs of emergency management. They build on existing standards, resources, techniques, and tools for semantic data and computing. This chapter explains the most important semantic technologies and how they support knowledge graphs. We proceed to discuss their benefits and challenges and give examples of relevant semantic data sources and vocabularies. Natural-language texts -- in particular those collected from social media such as Twitter -- is a type of data source that poses particular analysis challenges. We therefore include an overview of techniques for processing natural-language texts.
+
+| Comments: | In Big Data in Emergency Management: Exploitation Techniques for Social and Mobile Data (pp. 75-91). Springer, Cham |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computers and Society (cs.CY)**; Computation and Language (cs.CL) |
+| DOI:      | [10.1007/978-3-030-48099-8](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.1007%2F978-3-030-48099-8&v=de8d3b97) |
+| Cite as:  | **[arXiv:2101.06111](https://arxiv.org/abs/2101.06111) [cs.CY]** |
+|           | (or **[arXiv:2101.06111v1](https://arxiv.org/abs/2101.06111v1) [cs.CY]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-18-2">2. The Impact of Post-editing and Machine Translation on Creativity and Reading Experience</h2>
+
+Title: [The Impact of Post-editing and Machine Translation on Creativity and Reading Experience](https://arxiv.org/abs/2101.06125)
+
+Authors: [Ana Guerberof Arenas](https://arxiv.org/search/cs?searchtype=author&query=Arenas%2C+A+G), [Antonio Toral](https://arxiv.org/search/cs?searchtype=author&query=Toral%2C+A)
+
+> This article presents the results of a study involving the translation of a fictional story from English into Catalan in three modalities: machine-translated (MT), post-edited (MTPE) and translated without aid (HT). Each translation was analysed to evaluate its creativity. Subsequently, a cohort of 88 Catalan participants read the story in a randomly assigned modality and completed a survey. The results show that HT presented a higher creativity score if compared to MTPE and MT. HT also ranked higher in narrative engagement, and translation reception, while MTPE ranked marginally higher in enjoyment. HT and MTPE show no statistically significant differences in any category, whereas MT does in all variables tested. We conclude that creativity is highest when professional translators intervene in the process, especially when working without any aid. We hypothesize that creativity in translation could be the factor that enhances reading engagement and the reception of translated literary texts.
+
+| Comments: | 28 pages, 10 tables, 4 figures. Translation Spaces (2020)    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| DOI:      | [10.1075/ts.20035.gue](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.1075%2Fts.20035.gue&v=1b7ea813) |
+| Cite as:  | **[arXiv:2101.06125](https://arxiv.org/abs/2101.06125) [cs.CL]** |
+|           | (or **[arXiv:2101.06125v1](https://arxiv.org/abs/2101.06125v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-18-3">3. Empirical Evaluation of Supervision Signals for Style Transfer Models</h2>
+
+Title: [Empirical Evaluation of Supervision Signals for Style Transfer Models](https://arxiv.org/abs/2101.06172)
+
+Authors: [Yevgeniy Puzikov](https://arxiv.org/search/cs?searchtype=author&query=Puzikov%2C+Y), [Simoes Stanley](https://arxiv.org/search/cs?searchtype=author&query=Stanley%2C+S), [Iryna Gurevych](https://arxiv.org/search/cs?searchtype=author&query=Gurevych%2C+I), [Immanuel Schweizer](https://arxiv.org/search/cs?searchtype=author&query=Schweizer%2C+I)
+
+> Text style transfer has gained increasing attention from the research community over the recent years. However, the proposed approaches vary in many ways, which makes it hard to assess the individual contribution of the model components. In style transfer, the most important component is the optimization technique used to guide the learning in the absence of parallel training data. In this work we empirically compare the dominant optimization paradigms which provide supervision signals during training: backtranslation, adversarial training and reinforcement learning. We find that backtranslation has model-specific limitations, which inhibits training style transfer models. Reinforcement learning shows the best performance gains, while adversarial training, despite its popularity, does not offer an advantage over the latter alternative. In this work we also experiment with Minimum Risk Training, a popular technique in the machine translation community, which, to our knowledge, has not been empirically evaluated in the task of style transfer. We fill this research gap and empirically show its efficacy.
+
+| Comments:    | 13 pages, 6 figures                                          |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| MSC classes: | 68T50                                                        |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2101.06172](https://arxiv.org/abs/2101.06172) [cs.CL]** |
+|              | (or **[arXiv:2101.06172v1](https://arxiv.org/abs/2101.06172v1) [cs.CL]** for this version) |
+
+
+
+
+
+
 
 
 
