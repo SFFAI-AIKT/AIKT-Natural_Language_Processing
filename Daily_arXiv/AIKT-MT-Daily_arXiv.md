@@ -3,6 +3,14 @@
 # Index
 
 
+- [2021-01-19](#2021-01-19)
+	
+  - [1. Latent Variable Models for Visual Question Answering](#2021-01-19-1)
+  - [2. TextGNN: Improving Text Encoder via Graph Neural Network in Sponsored Search](#2021-01-19-2)
+  - [3. To Understand Representation of Layer-aware Sequence Encoders as Multi-order-graph](#2021-01-19-3)
+  - [4. GENIE: A Leaderboard for Human-in-the-Loop Evaluation of Text Generation](#2021-01-19-4)
+  - [5. What Makes Good In-Context Examples for GPT-3?](#2021-01-19-5)
+  - [6. Can a Fruit Fly Learn Word Embeddings?](#2021-01-19-6)
 - [2021-01-18](#2021-01-18)
 	
   - [1. Knowledge Graphs and Natural-Language Processing](#2021-01-18-1)
@@ -97,6 +105,121 @@
   - [31. Shortformer: Better Language Modeling using Shorter Inputs](#2021-01-01-31)
   - [32. Fully Non-autoregressive Neural Machine Translation: Tricks of the Trade](#2021-01-01-32)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-01-19
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-01-19-1">1. Latent Variable Models for Visual Question Answering</h2>
+
+Title: [Latent Variable Models for Visual Question Answering](https://arxiv.org/abs/2101.06399)
+
+Authors: [Zixu Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Yishu Miao](https://arxiv.org/search/cs?searchtype=author&query=Miao%2C+Y), [Lucia Specia](https://arxiv.org/search/cs?searchtype=author&query=Specia%2C+L)
+
+> Conventional models for Visual Question Answering (VQA) explore deterministic approaches with various types of image features, question features, and attention mechanisms. However, there exist other modalities that can be explored in addition to image and question pairs to bring extra information to the models. In this work, we propose latent variable models for VQA where extra information (e.g. captions and answer categories) are incorporated as latent variables to improve inference, which in turn benefits question-answering performance. Experiments on the VQA v2.0 benchmarking dataset demonstrate the effectiveness of our proposed models in that they improve over strong baselines, especially those that do not rely on extensive language-vision pre-training.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2101.06399](https://arxiv.org/abs/2101.06399) [cs.CV]** |
+|           | (or **[arXiv:2101.06399v1](https://arxiv.org/abs/2101.06399v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-19-2">2. TextGNN: Improving Text Encoder via Graph Neural Network in Sponsored Search</h2>
+
+Title: [TextGNN: Improving Text Encoder via Graph Neural Network in Sponsored Search](https://arxiv.org/abs/2101.06323)
+
+Authors: [Jason Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J), [Yanling Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+Y), [Yuming Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Hao Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+H), [Xue Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Markus Pelger](https://arxiv.org/search/cs?searchtype=author&query=Pelger%2C+M), [Liangjie Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+L), [Tianqi Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+T), [Ruofei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+R), [Huasha Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+H)
+
+> Text encoders based on C-DSSM or transformers have demonstrated strong performance in many Natural Language Processing (NLP) tasks. Low latency variants of these models have also been developed in recent years in order to apply them in the field of sponsored search which has strict computational constraints. However these models are not the panacea to solve all the Natural Language Understanding (NLU) challenges as the pure semantic information in the data is not sufficient to fully identify the user intents. We propose the TextGNN model that naturally extends the strong twin tower structured encoders with the complementary graph information from user historical behaviors, which serves as a natural guide to help us better understand the intents and hence generate better language representations. The model inherits all the benefits of twin tower models such as C-DSSM and TwinBERT so that it can still be used in the low latency environment while achieving a significant performance gain than the strong encoder-only counterpart baseline models in both offline evaluations and online production system. In offline experiments, the model achieves a 0.14% overall increase in ROC-AUC with a 1% increased accuracy for long-tail low-frequency Ads, and in the online A/B testing, the model shows a 2.03% increase in Revenue Per Mille with a 2.32% decrease in Ad defect rate.
+
+| Comments: | To appear in the The Web Conference 2021 Conference          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2101.06323](https://arxiv.org/abs/2101.06323) [cs.CL]** |
+|           | (or **[arXiv:2101.06323v1](https://arxiv.org/abs/2101.06323v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-19-3">3. To Understand Representation of Layer-aware Sequence Encoders as Multi-order-graph</h2>
+
+Title: [To Understand Representation of Layer-aware Sequence Encoders as Multi-order-graph](https://arxiv.org/abs/2101.06397)
+
+Authors: [Sufeng Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan%2C+S), [Hai Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+H), [Rui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+R)
+
+> In this paper, we propose a unified explanation of representation for layer-aware neural sequence encoders, which regards the representation as a revisited multigraph called multi-order-graph (MoG), so that model encoding can be viewed as a processing to capture all subgraphs in MoG. The relationship reflected by Multi-order-graph, called n-order dependency, can present what existing simple directed graph explanation cannot present. Our proposed MoG explanation allows to precisely observe every step of the generation of representation, put diverse relationship such as syntax into a unifiedly depicted framework. Based on the proposed MoG explanation, we further propose a graph-based self-attention network empowered Graph-Transformer by enhancing the ability of capturing subgraph information over the current models. Graph-Transformer accommodates different subgraphs into different groups, which allows model to focus on salient subgraphs. Result of experiments on neural machine translation tasks show that the MoG-inspired model can yield effective performance improvement.
+
+| Comments: | arXiv admin note: text overlap with [arXiv:2009.07489](https://arxiv.org/abs/2009.07489) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2101.06397](https://arxiv.org/abs/2101.06397) [cs.CL]** |
+|           | (or **[arXiv:2101.06397v1](https://arxiv.org/abs/2101.06397v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-19-4">4. GENIE: A Leaderboard for Human-in-the-Loop Evaluation of Text Generation</h2>
+
+Title: [GENIE: A Leaderboard for Human-in-the-Loop Evaluation of Text Generation](https://arxiv.org/abs/2101.06561)
+
+Authors: [Daniel Khashabi](https://arxiv.org/search/cs?searchtype=author&query=Khashabi%2C+D), [Gabriel Stanovsky](https://arxiv.org/search/cs?searchtype=author&query=Stanovsky%2C+G), [Jonathan Bragg](https://arxiv.org/search/cs?searchtype=author&query=Bragg%2C+J), [Nicholas Lourie](https://arxiv.org/search/cs?searchtype=author&query=Lourie%2C+N), [Jungo Kasai](https://arxiv.org/search/cs?searchtype=author&query=Kasai%2C+J), [Yejin Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi%2C+Y), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith%2C+N+A), [Daniel S. Weld](https://arxiv.org/search/cs?searchtype=author&query=Weld%2C+D+S)
+
+> Leaderboards have eased model development for many NLP datasets by standardizing their evaluation and delegating it to an independent external repository. Their adoption, however, is so far limited to tasks that can be reliably evaluated in an automatic manner. This work introduces GENIE, an extensible human evaluation leaderboard, which brings the ease of leaderboards to text generation tasks. GENIE automatically posts leaderboard submissions to crowdsourcing platforms asking human annotators to evaluate them on various axes (e.g., correctness, conciseness, fluency) and compares their answers to various automatic metrics. We introduce several datasets in English to GENIE, representing four core challenges in text generation: machine translation, summarization, commonsense reasoning, and machine comprehension. We provide formal granular evaluation metrics and identify areas for future research. We make GENIE publicly available and hope that it will spur progress in language generation models as well as their automatic and manual evaluation.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2101.06561](https://arxiv.org/abs/2101.06561) [cs.CL]** |
+|           | (or **[arXiv:2101.06561v1](https://arxiv.org/abs/2101.06561v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-19-5">5. What Makes Good In-Context Examples for GPT-3?</h2>
+
+Title: [What Makes Good In-Context Examples for GPT-3?](https://arxiv.org/abs/2101.06804)
+
+Authors: [Jiachang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J), [Dinghan Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+D), [Yizhe Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Bill Dolan](https://arxiv.org/search/cs?searchtype=author&query=Dolan%2C+B), [Lawrence Carin](https://arxiv.org/search/cs?searchtype=author&query=Carin%2C+L), [Weizhu Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+W)
+
+> GPT-3 has attracted lots of attention due to its superior performance across a wide range of NLP tasks, especially with its powerful and versatile in-context few-shot learning ability. Despite its success, we found that the empirical results of GPT-3 depend heavily on the choice of in-context examples. In this work, we investigate whether there are more effective strategies for judiciously selecting in-context examples (relative to random sampling) that better leverage GPT-3's few-shot capabilities. Inspired by the recent success of leveraging a retrieval module to augment large-scale neural network models, we propose to retrieve examples that are semantically-similar to a test sample to formulate its corresponding prompt. Intuitively, the in-context examples selected with such a strategy may serve as more informative inputs to unleash GPT-3's extensive knowledge. We evaluate the proposed approach on several natural language understanding and generation benchmarks, where the retrieval-based prompt selection approach consistently outperforms the random baseline. Moreover, it is observed that the sentence encoders fine-tuned on task-related datasets yield even more helpful retrieval results. Notably, significant gains are observed on tasks such as table-to-text generation (41.9% on the ToTTo dataset) and open-domain question answering (45.5% on the NQ dataset). We hope our investigation could help understand the behaviors of GPT-3 and large-scale pre-trained LMs in general and enhance their few-shot capabilities.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2101.06804](https://arxiv.org/abs/2101.06804) [cs.CL]** |
+|           | (or **[arXiv:2101.06804v1](https://arxiv.org/abs/2101.06804v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-19-6">6. Can a Fruit Fly Learn Word Embeddings?</h2>
+
+Title: [Can a Fruit Fly Learn Word Embeddings?](https://arxiv.org/abs/2101.06887)
+
+Authors: [Yuchen Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+Y), [Chaitanya K. Ryali](https://arxiv.org/search/cs?searchtype=author&query=Ryali%2C+C+K), [Benjamin Hoover](https://arxiv.org/search/cs?searchtype=author&query=Hoover%2C+B), [Leopold Grinberg](https://arxiv.org/search/cs?searchtype=author&query=Grinberg%2C+L), [Saket Navlakha](https://arxiv.org/search/cs?searchtype=author&query=Navlakha%2C+S), [Mohammed J. Zaki](https://arxiv.org/search/cs?searchtype=author&query=Zaki%2C+M+J), [Dmitry Krotov](https://arxiv.org/search/cs?searchtype=author&query=Krotov%2C+D)
+
+> The mushroom body of the fruit fly brain is one of the best studied systems in neuroscience. At its core it consists of a population of Kenyon cells, which receive inputs from multiple sensory modalities. These cells are inhibited by the anterior paired lateral neuron, thus creating a sparse high dimensional representation of the inputs. In this work we study a mathematical formalization of this network motif and apply it to learning the correlational structure between words and their context in a corpus of unstructured text, a common natural language processing (NLP) task. We show that this network can learn semantic representations of words and can generate both static and context-dependent word embeddings. Unlike conventional methods (e.g., BERT, GloVe) that use dense representations for word embedding, our algorithm encodes semantic meaning of words and their context in the form of sparse binary hash codes. The quality of the learned representations is evaluated on word similarity analysis, word-sense disambiguation, and document classification. It is shown that not only can the fruit fly network motif achieve performance comparable to existing methods in NLP, but, additionally, it uses only a fraction of the computational resources (shorter training time and smaller memory footprint).
+
+| Comments: | Accepted for publication at ICLR 2021                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2101.06887](https://arxiv.org/abs/2101.06887) [cs.CL]** |
+|           | (or **[arXiv:2101.06887v1](https://arxiv.org/abs/2101.06887v1) [cs.CL]** for this version) |
+
+
+
+
+
+
 
 
 
