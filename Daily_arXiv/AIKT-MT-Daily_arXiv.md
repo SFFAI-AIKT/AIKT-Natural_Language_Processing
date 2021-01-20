@@ -3,6 +3,9 @@
 # Index
 
 
+- [2021-01-20](#2021-01-20)
+	
+  - [1. ArtEmis: Affective Language for Visual Art](#2021-01-20-1)
 - [2021-01-19](#2021-01-19)
 	
   - [1. Latent Variable Models for Visual Question Answering](#2021-01-19-1)
@@ -105,6 +108,36 @@
   - [31. Shortformer: Better Language Modeling using Shorter Inputs](#2021-01-01-31)
   - [32. Fully Non-autoregressive Neural Machine Translation: Tricks of the Trade](#2021-01-01-32)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+
+
+# 2021-01-20
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-01-20-1">1. ArtEmis: Affective Language for Visual Art</h2>
+
+Title: [ArtEmis: Affective Language for Visual Art](https://arxiv.org/abs/2101.07396)
+
+Authors: [Panos Achlioptas](https://arxiv.org/search/cs?searchtype=author&query=Achlioptas%2C+P), [Maks Ovsjanikov](https://arxiv.org/search/cs?searchtype=author&query=Ovsjanikov%2C+M), [Kilichbek Haydarov](https://arxiv.org/search/cs?searchtype=author&query=Haydarov%2C+K), [Mohamed Elhoseiny](https://arxiv.org/search/cs?searchtype=author&query=Elhoseiny%2C+M), [Leonidas Guibas](https://arxiv.org/search/cs?searchtype=author&query=Guibas%2C+L)
+
+> We present a novel large-scale dataset and accompanying machine learning models aimed at providing a detailed understanding of the interplay between visual content, its emotional effect, and explanations for the latter in language. In contrast to most existing annotation datasets in computer vision, we focus on the affective experience triggered by visual artworks and ask the annotators to indicate the dominant emotion they feel for a given image and, crucially, to also provide a grounded verbal explanation for their emotion choice. As we demonstrate below, this leads to a rich set of signals for both the objective content and the affective impact of an image, creating associations with abstract concepts (e.g., "freedom" or "love"), or references that go beyond what is directly visible, including visual similes and metaphors, or subjective references to personal experiences. We focus on visual art (e.g., paintings, artistic photographs) as it is a prime example of imagery created to elicit emotional responses from its viewers. Our dataset, termed ArtEmis, contains 439K emotion attributions and explanations from humans, on 81K artworks from WikiArt. Building on this data, we train and demonstrate a series of captioning systems capable of expressing and explaining emotions from visual stimuli. Remarkably, the captions produced by these systems often succeed in reflecting the semantic and abstract content of the image, going well beyond systems trained on existing datasets. The collected dataset and developed methods are available at [this https URL](https://artemisdataset.org/).
+
+| Comments: | [this https URL](https://artemisdataset.org/)                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2101.07396](https://arxiv.org/abs/2101.07396) [cs.CV]** |
+|           | (or **[arXiv:2101.07396v1](https://arxiv.org/abs/2101.07396v1) [cs.CV]** for this version) |
+
+
+
+
+
+
 
 
 
