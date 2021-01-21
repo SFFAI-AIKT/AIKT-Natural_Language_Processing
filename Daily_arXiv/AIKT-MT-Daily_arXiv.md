@@ -3,6 +3,11 @@
 # Index
 
 
+- [2021-01-21](#2021-01-21)
+	
+  - [1. Learning to Augment for Data-Scarce Domain BERT Knowledge Distillation](#2021-01-21-1)
+  - [2. Word Alignment by Fine-tuning Embeddings on Parallel Corpora](#2021-01-21-2)
+  - [3. Generating (Formulaic) Text by Splicing Together Nearest Neighbors](#2021-01-21-3)
 - [2021-01-20](#2021-01-20)
 	
   - [1. ArtEmis: Affective Language for Visual Art](#2021-01-20-1)
@@ -108,6 +113,62 @@
   - [31. Shortformer: Better Language Modeling using Shorter Inputs](#2021-01-01-31)
   - [32. Fully Non-autoregressive Neural Machine Translation: Tricks of the Trade](#2021-01-01-32)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-01-21
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-01-21-1">1. Learning to Augment for Data-Scarce Domain BERT Knowledge Distillation</h2>
+
+Title: [Learning to Augment for Data-Scarce Domain BERT Knowledge Distillation](https://arxiv.org/abs/2101.08106)
+
+Authors:[Lingyun Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+L), [Minghui Qiu](https://arxiv.org/search/cs?searchtype=author&query=Qiu%2C+M), [Yaliang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Hai-Tao Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+H), [Ying Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+Y)
+
+> Despite pre-trained language models such as BERT have achieved appealing performance in a wide range of natural language processing tasks, they are computationally expensive to be deployed in real-time applications. A typical method is to adopt knowledge distillation to compress these large pre-trained models (teacher models) to small student models. However, for a target domain with scarce training data, the teacher can hardly pass useful knowledge to the student, which yields performance degradation for the student models. To tackle this problem, we propose a method to learn to augment for data-scarce domain BERT knowledge distillation, by learning a cross-domain manipulation scheme that automatically augments the target with the help of resource-rich source domains. Specifically, the proposed method generates samples acquired from a stationary distribution near the target data and adopts a reinforced selector to automatically refine the augmentation strategy according to the performance of the student. Extensive experiments demonstrate that the proposed method significantly outperforms state-of-the-art baselines on four different tasks, and for the data-scarce domains, the compressed student models even perform better than the original large teacher model, with much fewer parameters (only ∼13.3%) when only a few labeled examples available.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2101.08106](https://arxiv.org/abs/2101.08106) [cs.CL]** |
+|           | (or **[arXiv:2101.08106v1](https://arxiv.org/abs/2101.08106v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-21-2">2. Word Alignment by Fine-tuning Embeddings on Parallel Corpora</h2>
+
+Title: [Word Alignment by Fine-tuning Embeddings on Parallel Corpora](https://arxiv.org/abs/2101.08231)
+
+Authors:[Zi-Yi Dou](https://arxiv.org/search/cs?searchtype=author&query=Dou%2C+Z), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
+
+> Word alignment over parallel corpora has a wide variety of applications, including learning translation lexicons, cross-lingual transfer of language processing tools, and automatic evaluation or analysis of translation outputs. The great majority of past work on word alignment has worked by performing unsupervised learning on parallel texts. Recently, however, other work has demonstrated that pre-trained contextualized word embeddings derived from multilingually trained language models (LMs) prove an attractive alternative, achieving competitive results on the word alignment task even in the absence of explicit training on parallel data. In this paper, we examine methods to marry the two approaches: leveraging pre-trained LMs but fine-tuning them on parallel text with objectives designed to improve alignment quality, and proposing methods to effectively extract alignments from these fine-tuned models. We perform experiments on five language pairs and demonstrate that our model can consistently outperform previous state-of-the-art models of all varieties. In addition, we demonstrate that we are able to train multilingual word aligners that can obtain robust performance on different language pairs. Our aligner, AWESOME (Aligning Word Embedding Spaces of Multilingual Encoders), with pre-trained models is available at [this https URL](https://github.com/neulab/awesome-align)
+
+| Comments: | EACL 2021                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2101.08231](https://arxiv.org/abs/2101.08231) [cs.CL]** |
+|           | (or **[arXiv:2101.08231v1](https://arxiv.org/abs/2101.08231v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-21-3">3. Generating (Formulaic) Text by Splicing Together Nearest Neighbors</h2>
+
+Title: [Generating (Formulaic) Text by Splicing Together Nearest Neighbors](https://arxiv.org/abs/2101.08248)
+
+Authors:[Sam Wiseman](https://arxiv.org/search/cs?searchtype=author&query=Wiseman%2C+S), [Arturs Backurs](https://arxiv.org/search/cs?searchtype=author&query=Backurs%2C+A), [Karl Stratos](https://arxiv.org/search/cs?searchtype=author&query=Stratos%2C+K)
+
+> We propose to tackle conditional text generation tasks, especially those which require generating formulaic text, by splicing together segments of text from retrieved "neighbor" source-target pairs. Unlike recent work that conditions on retrieved neighbors in an encoder-decoder setting but generates text token-by-token, left-to-right, we learn a policy that directly manipulates segments of neighbor text (i.e., by inserting or replacing them) to form an output. Standard techniques for training such a policy require an oracle derivation for each generation, and we prove that finding the shortest such derivation can be reduced to parsing under a particular weighted context-free grammar. We find that policies learned in this way allow for interpretable table-to-text and headline generation that is competitive with or better than state-of-the-art autoregressive token-level policies in terms of automatic metrics, and moreover allows for faster decoding.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2101.08248](https://arxiv.org/abs/2101.08248) [cs.CL]** |
+|           | (or **[arXiv:2101.08248v1](https://arxiv.org/abs/2101.08248v1) [cs.CL]** for this version) |
 
 
 
