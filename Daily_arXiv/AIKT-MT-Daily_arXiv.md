@@ -3,6 +3,15 @@
 # Index
 
 
+- [2021-01-25](#2021-01-25)
+	
+  - [1. Enriching Non-Autoregressive Transformer with Syntactic and SemanticStructures for Neural Machine Translation](#2021-01-25-1)
+  - [2. Enhanced word embeddings using multi-semantic representation through lexical chains](#2021-01-25-2)
+  - [3. Streaming Models for Joint Speech Recognition and Translation](#2021-01-25-3)
+- [2021-01-22](#2021-01-22)
+	
+  - [1. Evaluating Multilingual Text Encoders for Unsupervised Cross-Lingual Retrieval](#2021-01-22-1)
+  - [2. Adv-OLM: Generating Textual Adversaries via OLM](#2021-01-22-2)
 - [2021-01-21](#2021-01-21)
 	
   - [1. Learning to Augment for Data-Scarce Domain BERT Knowledge Distillation](#2021-01-21-1)
@@ -113,6 +122,108 @@
   - [31. Shortformer: Better Language Modeling using Shorter Inputs](#2021-01-01-31)
   - [32. Fully Non-autoregressive Neural Machine Translation: Tricks of the Trade](#2021-01-01-32)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-01-25
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-01-25-1">1. Enriching Non-Autoregressive Transformer with Syntactic and SemanticStructures for Neural Machine Translation</h2>
+
+Title: [Enriching Non-Autoregressive Transformer with Syntactic and SemanticStructures for Neural Machine Translation](https://arxiv.org/abs/2101.08942)
+
+Authors: [Ye Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Yao Wan](https://arxiv.org/search/cs?searchtype=author&query=Wan%2C+Y), [Jian-Guo Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Wenting Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+W), [Philip S. Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+P+S)
+
+> The non-autoregressive models have boosted the efficiency of neural machine translation through parallelized decoding at the cost of effectiveness when comparing with the autoregressive counterparts. In this paper, we claim that the syntactic and semantic structures among natural language are critical for non-autoregressive machine translation and can further improve the performance. However, these structures are rarely considered in the existing non-autoregressive models. Inspired by this intuition, we propose to incorporate the explicit syntactic and semantic structures of languages into a non-autoregressive Transformer, for the task of neural machine translation. Moreover, we also consider the intermediate latent alignment within target sentences to better learn the long-term token dependencies. Experimental results on two real-world datasets (i.e., WMT14 En-De and WMT16 En-Ro) show that our model achieves a significantly faster speed, as well as keeps the translation quality when compared with several state-of-the-art non-autoregressive models.
+
+| Comments: | 10 pages, Appear in EACL 2021                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2101.08942](https://arxiv.org/abs/2101.08942) [cs.CL]** |
+|           | (or **[arXiv:2101.08942v1](https://arxiv.org/abs/2101.08942v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-25-2">2. Enhanced word embeddings using multi-semantic representation through lexical chains</h2>
+
+Title: [Enhanced word embeddings using multi-semantic representation through lexical chains](https://arxiv.org/abs/2101.09023)
+
+Authors: [Terry Ruas](https://arxiv.org/search/cs?searchtype=author&query=Ruas%2C+T), [Charles Henrique Porto Ferreira](https://arxiv.org/search/cs?searchtype=author&query=Ferreira%2C+C+H+P), [William Grosky](https://arxiv.org/search/cs?searchtype=author&query=Grosky%2C+W), [Fabrício Olivetti de França](https://arxiv.org/search/cs?searchtype=author&query=de+França%2C+F+O), [Débora Maria Rossi Medeiros](https://arxiv.org/search/cs?searchtype=author&query=Medeiros%2C+D+M+R)
+
+> The relationship between words in a sentence often tells us more about the underlying semantic content of a document than its actual words, individually. In this work, we propose two novel algorithms, called Flexible Lexical Chain II and Fixed Lexical Chain II. These algorithms combine the semantic relations derived from lexical chains, prior knowledge from lexical databases, and the robustness of the distributional hypothesis in word embeddings as building blocks forming a single system. In short, our approach has three main contributions: (i) a set of techniques that fully integrate word embeddings and lexical chains; (ii) a more robust semantic representation that considers the latent relation between words in a document; and (iii) lightweight word embeddings models that can be extended to any natural language task. We intend to assess the knowledge of pre-trained models to evaluate their robustness in the document classification task. The proposed techniques are tested against seven word embeddings algorithms using five different machine learning classifiers over six scenarios in the document classification task. Our results show the integration between lexical chains and word embeddings representations sustain state-of-the-art results, even against more complex systems.
+
+| Subjects:          | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | Information Sciences. Volume 532, September 2020, Pages 16-32 |
+| DOI:               | [10.1016/j.ins.2020.04.048](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.1016%2Fj.ins.2020.04.048&v=2666f305) |
+| Cite as:           | **[arXiv:2101.09023](https://arxiv.org/abs/2101.09023) [cs.CL]** |
+|                    | (or **[arXiv:2101.09023v1](https://arxiv.org/abs/2101.09023v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-25-3">3. Streaming Models for Joint Speech Recognition and Translation</h2>
+
+Title: [Streaming Models for Joint Speech Recognition and Translation](https://arxiv.org/abs/2101.09149)
+
+Authors: [Orion Weller](https://arxiv.org/search/cs?searchtype=author&query=Weller%2C+O), [Matthias Sperber](https://arxiv.org/search/cs?searchtype=author&query=Sperber%2C+M), [Christian Gollan](https://arxiv.org/search/cs?searchtype=author&query=Gollan%2C+C), [Joris Kluivers](https://arxiv.org/search/cs?searchtype=author&query=Kluivers%2C+J)
+
+> Using end-to-end models for speech translation (ST) has increasingly been the focus of the ST community. These models condense the previously cascaded systems by directly converting sound waves into translated text. However, cascaded models have the advantage of including automatic speech recognition output, useful for a variety of practical ST systems that often display transcripts to the user alongside the translations. To bridge this gap, recent work has shown initial progress into the feasibility for end-to-end models to produce both of these outputs. However, all previous work has only looked at this problem from the consecutive perspective, leaving uncertainty on whether these approaches are effective in the more challenging streaming setting. We develop an end-to-end streaming ST model based on a re-translation approach and compare against standard cascading approaches. We also introduce a novel inference method for the joint case, interleaving both transcript and translation in generation and removing the need to use separate decoders. Our evaluation across a range of metrics capturing accuracy, latency, and consistency shows that our end-to-end models are statistically similar to cascading models, while having half the number of parameters. We also find that both systems provide strong translation quality at low latency, keeping 99% of consecutive quality at a lag of just under a second.
+
+| Comments: | Camera Ready for EACL 2021                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2101.09149](https://arxiv.org/abs/2101.09149) [cs.CL]** |
+|           | (or **[arXiv:2101.09149v1](https://arxiv.org/abs/2101.09149v1) [cs.CL]** for this version) |
+
+
+
+
+
+# 2021-01-22
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-01-22-1">1. Evaluating Multilingual Text Encoders for Unsupervised Cross-Lingual Retrieval</h2>
+
+Title: [Evaluating Multilingual Text Encoders for Unsupervised Cross-Lingual Retrieval](https://arxiv.org/abs/2101.08370)
+
+Authors: [Robert Litschko](https://arxiv.org/search/cs?searchtype=author&query=Litschko%2C+R), [Ivan Vulić](https://arxiv.org/search/cs?searchtype=author&query=Vulić%2C+I), [Simone Paolo Ponzetto](https://arxiv.org/search/cs?searchtype=author&query=Ponzetto%2C+S+P), [Goran Glavaš](https://arxiv.org/search/cs?searchtype=author&query=Glavaš%2C+G)
+
+> Pretrained multilingual text encoders based on neural Transformer architectures, such as multilingual BERT (mBERT) and XLM, have achieved strong performance on a myriad of language understanding tasks. Consequently, they have been adopted as a go-to paradigm for multilingual and cross-lingual representation learning and transfer, rendering cross-lingual word embeddings (CLWEs) effectively obsolete. However, questions remain to which extent this finding generalizes 1) to unsupervised settings and 2) for ad-hoc cross-lingual IR (CLIR) tasks. Therefore, in this work we present a systematic empirical study focused on the suitability of the state-of-the-art multilingual encoders for cross-lingual document and sentence retrieval tasks across a large number of language pairs. In contrast to supervised language understanding, our results indicate that for unsupervised document-level CLIR -- a setup with no relevance judgments for IR-specific fine-tuning -- pretrained encoders fail to significantly outperform models based on CLWEs. For sentence-level CLIR, we demonstrate that state-of-the-art performance can be achieved. However, the peak performance is not met using the general-purpose multilingual text encoders `off-the-shelf', but rather relying on their variants that have been further specialized for sentence understanding tasks.
+
+| Comments:    | accepted at ECIR'21 (preprint)                               |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Information Retrieval (cs.IR) |
+| ACM classes: | H.3.3; I.2.7                                                 |
+| Cite as:     | **[arXiv:2101.08370](https://arxiv.org/abs/2101.08370) [cs.CL]** |
+|              | (or **[arXiv:2101.08370v1](https://arxiv.org/abs/2101.08370v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-22-2">2. Adv-OLM: Generating Textual Adversaries via OLM</h2>
+
+Title: [Adv-OLM: Generating Textual Adversaries via OLM](https://arxiv.org/abs/2101.08523)
+
+Authors: [Vijit Malik](https://arxiv.org/search/cs?searchtype=author&query=Malik%2C+V), [Ashwani Bhat](https://arxiv.org/search/cs?searchtype=author&query=Bhat%2C+A), [Ashutosh Modi](https://arxiv.org/search/cs?searchtype=author&query=Modi%2C+A)
+
+> Deep learning models are susceptible to adversarial examples that have imperceptible perturbations in the original input, resulting in adversarial attacks against these models. Analysis of these attacks on the state of the art transformers in NLP can help improve the robustness of these models against such adversarial inputs. In this paper, we present Adv-OLM, a black-box attack method that adapts the idea of Occlusion and Language Models (OLM) to the current state of the art attack methods. OLM is used to rank words of a sentence, which are later substituted using word replacement strategies. We experimentally show that our approach outperforms other attack methods for several text classification tasks.
+
+| Comments: | 5 Pages + 1 Page references + 3 Pages Appendix, Accepted at EACL 2021 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2101.08523](https://arxiv.org/abs/2101.08523) [cs.CL]** |
+|           | (or **[arXiv:2101.08523v1](https://arxiv.org/abs/2101.08523v1) [cs.CL]** for this version) |
 
 
 
