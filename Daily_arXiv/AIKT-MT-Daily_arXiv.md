@@ -3,6 +3,16 @@
 # Index
 
 
+- [2021-01-26](#2021-01-26)
+	
+  - [1. Analysing the Noise Model Error for Realistic Noisy Label Data](#2021-01-26-1)
+  - [2. k-Neighbor Based Curriculum Sampling for Sequence Prediction](#2021-01-26-2)
+  - [3. Training Multilingual Pre-trained Language Model with Byte-level Subwords](#2021-01-26-3)
+  - [4. Debiasing Pre-trained Contextualised Embeddings](#2021-01-26-4)
+  - [5. Dictionary-based Debiasing of Pre-trained Word Embeddings](#2021-01-26-5)
+  - [6. RomeBERT: Robust Training of Multi-Exit BERT](#2021-01-26-6)
+  - [7. Cross-lingual Visual Pre-training for Multimodal Machine Translation](#2021-01-26-7)
+  - [8. PAWLS: PDF Annotation With Labels and Structure](#2021-01-26-8)
 - [2021-01-25](#2021-01-25)
 	
   - [1. Enriching Non-Autoregressive Transformer with Syntactic and SemanticStructures for Neural Machine Translation](#2021-01-25-1)
@@ -122,6 +132,167 @@
   - [31. Shortformer: Better Language Modeling using Shorter Inputs](#2021-01-01-31)
   - [32. Fully Non-autoregressive Neural Machine Translation: Tricks of the Trade](#2021-01-01-32)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-01-26
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-01-26-1">1. Analysing the Noise Model Error for Realistic Noisy Label Data</h2>
+
+Title: [Analysing the Noise Model Error for Realistic Noisy Label Data](https://arxiv.org/abs/2101.09763)
+
+Authors: [Michael A. Hedderich](https://arxiv.org/search/cs?searchtype=author&query=Hedderich%2C+M+A), [Dawei Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+D), [Dietrich Klakow](https://arxiv.org/search/cs?searchtype=author&query=Klakow%2C+D)
+
+> Distant and weak supervision allow to obtain large amounts of labeled training data quickly and cheaply, but these automatic annotations tend to contain a high amount of errors. A popular technique to overcome the negative effects of these noisy labels is noise modelling where the underlying noise process is modelled. In this work, we study the quality of these estimated noise models from the theoretical side by deriving the expected error of the noise model. Apart from evaluating the theoretical results on commonly used synthetic noise, we also publish NoisyNER, a new noisy label dataset from the NLP domain that was obtained through a realistic distant supervision technique. It provides seven sets of labels with differing noise patterns to evaluate different noise levels on the same instances. Parallel, clean labels are available making it possible to study scenarios where a small amount of gold-standard data can be leveraged. Our theoretical results and the corresponding experiments give insights into the factors that influence the noise model estimation like the noise distribution and the sampling technique.
+
+| Comments: | Accepted at AAAI 2021, additional material at [this https URL](https://github.com/uds-lsv/noise-estimation) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| Cite as:  | **[arXiv:2101.09763](https://arxiv.org/abs/2101.09763) [cs.LG]** |
+|           | (or **[arXiv:2101.09763v1](https://arxiv.org/abs/2101.09763v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-26-2">2. k-Neighbor Based Curriculum Sampling for Sequence Prediction</h2>
+
+Title: [k-Neighbor Based Curriculum Sampling for Sequence Prediction](https://arxiv.org/abs/2101.09313)
+
+Authors: [James O' Neill](https://arxiv.org/search/cs?searchtype=author&query=Neill%2C+J+O), [Danushka Bollegala](https://arxiv.org/search/cs?searchtype=author&query=Bollegala%2C+D)
+
+> Multi-step ahead prediction in language models is challenging due to the discrepancy between training and test time processes. At test time, a sequence predictor is required to make predictions given past predictions as the input, instead of the past targets that are provided during training. This difference, known as exposure bias, can lead to the compounding of errors along a generated sequence at test time. To improve generalization in neural language models and address compounding errors, we propose \textit{Nearest-Neighbor Replacement Sampling} -- a curriculum learning-based method that gradually changes an initially deterministic teacher policy to a stochastic policy. A token at a given time-step is replaced with a sampled nearest neighbor of the past target with a truncated probability proportional to the cosine similarity between the original word and its top k most similar words. This allows the learner to explore alternatives when the current policy provided by the teacher is sub-optimal or difficult to learn from. The proposed method is straightforward, online and requires little additional memory requirements. We report our findings on two language modelling benchmarks and find that the proposed method further improves performance when used in conjunction with scheduled sampling.
+
+| Comments: | arXiv admin note: substantial text overlap with [arXiv:1809.05916](https://arxiv.org/abs/1809.05916) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2101.09313](https://arxiv.org/abs/2101.09313) [cs.CL]** |
+|           | (or **[arXiv:2101.09313v1](https://arxiv.org/abs/2101.09313v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-26-3">3. Training Multilingual Pre-trained Language Model with Byte-level Subwords</h2>
+
+Title: [Training Multilingual Pre-trained Language Model with Byte-level Subwords](https://arxiv.org/abs/2101.09469)
+
+Authors: [Junqiu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+J), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q), [Yinpeng Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+Y), [Xin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+X)
+
+> The pre-trained language models have achieved great successes in various natural language understanding (NLU) tasks due to its capacity to capture the deep contextualized information in text by pre-training on large-scale corpora. One of the fundamental components in pre-trained language models is the vocabulary, especially for training multilingual models on many different languages. In the technical report, we present our practices on training multilingual pre-trained language models with BBPE: Byte-Level BPE (i.e., Byte Pair Encoding). In the experiment, we adopted the architecture of NEZHA as the underlying pre-trained language model and the results show that NEZHA trained with byte-level subwords consistently outperforms Google multilingual BERT and vanilla NEZHA by a notable margin in several multilingual NLU tasks. We release the source code of our byte-level vocabulary building tools and the multilingual pre-trained language models.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2101.09469](https://arxiv.org/abs/2101.09469) [cs.CL]** |
+|           | (or **[arXiv:2101.09469v1](https://arxiv.org/abs/2101.09469v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-26-4">4. Debiasing Pre-trained Contextualised Embeddings</h2>
+
+Title: [Debiasing Pre-trained Contextualised Embeddings](https://arxiv.org/abs/2101.09523)
+
+Authors: [Masahiro Kaneko](https://arxiv.org/search/cs?searchtype=author&query=Kaneko%2C+M), [Danushka Bollegala](https://arxiv.org/search/cs?searchtype=author&query=Bollegala%2C+D)
+
+> In comparison to the numerous debiasing methods proposed for the static non-contextualised word embeddings, the discriminative biases in contextualised embeddings have received relatively little attention. We propose a fine-tuning method that can be applied at token- or sentence-levels to debias pre-trained contextualised embeddings. Our proposed method can be applied to any pre-trained contextualised embedding model, without requiring to retrain those models. Using gender bias as an illustrative example, we then conduct a systematic study using several state-of-the-art (SoTA) contextualised representations on multiple benchmark datasets to evaluate the level of biases encoded in different contextualised embeddings before and after debiasing using the proposed method. We find that applying token-level debiasing for all tokens and across all layers of a contextualised embedding model produces the best performance. Interestingly, we observe that there is a trade-off between creating an accurate vs. unbiased contextualised embedding model, and different contextualised embedding models respond differently to this trade-off.
+
+| Comments: | EACL 2021                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2101.09523](https://arxiv.org/abs/2101.09523) [cs.CL]** |
+|           | (or **[arXiv:2101.09523v1](https://arxiv.org/abs/2101.09523v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-01-26-5">5. Dictionary-based Debiasing of Pre-trained Word Embeddings</h2>
+
+Title: [Dictionary-based Debiasing of Pre-trained Word Embeddings](https://arxiv.org/abs/2101.09525)
+
+Authors: [Masahiro Kaneko](https://arxiv.org/search/cs?searchtype=author&query=Kaneko%2C+M), [Danushka Bollegala](https://arxiv.org/search/cs?searchtype=author&query=Bollegala%2C+D)
+
+> Word embeddings trained on large corpora have shown to encode high levels of unfair discriminatory gender, racial, religious and ethnic biases.
+> In contrast, human-written dictionaries describe the meanings of words in a concise, objective and an unbiased manner.
+> We propose a method for debiasing pre-trained word embeddings using dictionaries, without requiring access to the original training resources or any knowledge regarding the word embedding algorithms used.
+> Unlike prior work, our proposed method does not require the types of biases to be pre-defined in the form of word lists, and learns the constraints that must be satisfied by unbiased word embeddings automatically from dictionary definitions of the words.
+> Specifically, we learn an encoder to generate a debiased version of an input word embedding such that it
+> (a) retains the semantics of the pre-trained word embeddings,
+> (b) agrees with the unbiased definition of the word according to the dictionary, and
+> (c) remains orthogonal to the vector space spanned by any biased basis vectors in the pre-trained word embedding space.
+> Experimental results on standard benchmark datasets show that the proposed method can accurately remove unfair biases encoded in pre-trained word embeddings, while preserving useful semantics.
+
+| Comments: | EACL 2021                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2101.09525](https://arxiv.org/abs/2101.09525) [cs.CL]** |
+|           | (or **[arXiv:2101.09525v1](https://arxiv.org/abs/2101.09525v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-26-6">6. RomeBERT: Robust Training of Multi-Exit BERT</h2>
+
+Title: [RomeBERT: Robust Training of Multi-Exit BERT](https://arxiv.org/abs/2101.09755)
+
+Authors: [Shijie Geng](https://arxiv.org/search/cs?searchtype=author&query=Geng%2C+S), [Peng Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+P), [Zuohui Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+Z), [Yongfeng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y)
+
+> BERT has achieved superior performances on Natural Language Understanding (NLU) tasks. However, BERT possesses a large number of parameters and demands certain resources to deploy. For acceleration, Dynamic Early Exiting for BERT (DeeBERT) has been proposed recently, which incorporates multiple exits and adopts a dynamic early-exit mechanism to ensure efficient inference. While obtaining an efficiency-performance tradeoff, the performances of early exits in multi-exit BERT are significantly worse than late exits. In this paper, we leverage gradient regularized self-distillation for RObust training of Multi-Exit BERT (RomeBERT), which can effectively solve the performance imbalance problem between early and late exits. Moreover, the proposed RomeBERT adopts a one-stage joint training strategy for multi-exits and the BERT backbone while DeeBERT needs two stages that require more training time. Extensive experiments on GLUE datasets are performed to demonstrate the superiority of our approach. Our code is available at [this https URL](https://github.com/romebert/RomeBERT).
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2101.09755](https://arxiv.org/abs/2101.09755) [cs.CL]** |
+|           | (or **[arXiv:2101.09755v1](https://arxiv.org/abs/2101.09755v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-26-7">7. Cross-lingual Visual Pre-training for Multimodal Machine Translation</h2>
+
+Title: [Cross-lingual Visual Pre-training for Multimodal Machine Translation](https://arxiv.org/abs/2101.10044)
+
+Authors: [Ozan Caglayan](https://arxiv.org/search/cs?searchtype=author&query=Caglayan%2C+O), [Menekse Kuyu](https://arxiv.org/search/cs?searchtype=author&query=Kuyu%2C+M), [Mustafa Sercan Amac](https://arxiv.org/search/cs?searchtype=author&query=Amac%2C+M+S), [Pranava Madhyastha](https://arxiv.org/search/cs?searchtype=author&query=Madhyastha%2C+P), [Erkut Erdem](https://arxiv.org/search/cs?searchtype=author&query=Erdem%2C+E), [Aykut Erdem](https://arxiv.org/search/cs?searchtype=author&query=Erdem%2C+A), [Lucia Specia](https://arxiv.org/search/cs?searchtype=author&query=Specia%2C+L)
+
+> Pre-trained language models have been shown to improve performance in many natural language tasks substantially. Although the early focus of such models was single language pre-training, recent advances have resulted in cross-lingual and visual pre-training methods. In this paper, we combine these two approaches to learn visually-grounded cross-lingual representations. Specifically, we extend the translation language modelling (Lample and Conneau, 2019) with masked region classification and perform pre-training with three-way parallel vision & language corpora. We show that when fine-tuned for multimodal machine translation, these models obtain state-of-the-art performance. We also provide qualitative insights into the usefulness of the learned grounded representations.
+
+| Comments: | Accepted to EACL 2021 (Camera-ready version)                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2101.10044](https://arxiv.org/abs/2101.10044) [cs.CL]** |
+|           | (or **[arXiv:2101.10044v1](https://arxiv.org/abs/2101.10044v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-26-8">8. PAWLS: PDF Annotation With Labels and Structure</h2>
+
+Title: [PAWLS: PDF Annotation With Labels and Structure](https://arxiv.org/abs/2101.10281)
+
+Authors: [Mark Neumann](https://arxiv.org/search/cs?searchtype=author&query=Neumann%2C+M), [Zejiang Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+Z), [Sam Skjonsberg](https://arxiv.org/search/cs?searchtype=author&query=Skjonsberg%2C+S)
+
+> Adobe's Portable Document Format (PDF) is a popular way of distributing view-only documents with a rich visual markup. This presents a challenge to NLP practitioners who wish to use the information contained within PDF documents for training models or data analysis, because annotating these documents is difficult. In this paper, we present PDF Annotation with Labels and Structure (PAWLS), a new annotation tool designed specifically for the PDF document format. PAWLS is particularly suited for mixed-mode annotation and scenarios in which annotators require extended context to annotate accurately. PAWLS supports span-based textual annotation, N-ary relations and freeform, non-textual bounding boxes, all of which can be exported in convenient formats for training multi-modal machine learning models. A read-only PAWLS server is available at [this https URL](https://pawls.apps.allenai.org/) and the source code is available at [this https URL](https://github.com/allenai/pawls).
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2101.10281](https://arxiv.org/abs/2101.10281) [cs.CL]** |
+|           | (or **[arXiv:2101.10281v1](https://arxiv.org/abs/2101.10281v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+
+
+
 
 
 
