@@ -3,9 +3,18 @@
 # Index
 
 
-- [2021-01-26](#2021-01-26)
+- [2021-01-27](#2021-01-27)
 	
-  - [1. Analysing the Noise Model Error for Realistic Noisy Label Data](#2021-01-26-1)
+  - [1. Curriculum Learning: A Survey](#2021-01-27-1)
+  - [2. On the Evaluation of Vision-and-Language Navigation Instructions](#2021-01-27-2)
+  - [3. Meta-Learning for Effective Multi-task and Multilingual Modelling](#2021-01-27-3)
+  - [4. Coloring the Black Box: What Synesthesia Tells Us about Character Embeddings](#2021-01-27-4)
+  - [5. Analyzing Zero-shot Cross-lingual Transfer in Supervised NLP Tasks](#2021-01-27-5)
+  - [6. Neural machine translation, corpus and frugality](#2021-01-27-6)
+  - [7. Spark NLP: Natural Language Understanding at Scale](#2021-01-27-7)
+  - [8. Attention Can Reflect Syntactic Structure (If You Let It)](#2021-01-27-8)
+- [2021-01-26](#2021-01-26)
+	- [1. Analysing the Noise Model Error for Realistic Noisy Label Data](#2021-01-26-1)
   - [2. k-Neighbor Based Curriculum Sampling for Sequence Prediction](#2021-01-26-2)
   - [3. Training Multilingual Pre-trained Language Model with Byte-level Subwords](#2021-01-26-3)
   - [4. Debiasing Pre-trained Contextualised Embeddings](#2021-01-26-4)
@@ -132,6 +141,156 @@
   - [31. Shortformer: Better Language Modeling using Shorter Inputs](#2021-01-01-31)
   - [32. Fully Non-autoregressive Neural Machine Translation: Tricks of the Trade](#2021-01-01-32)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-01-27
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-01-27-1">1. Curriculum Learning: A Survey</h2>
+
+Title: [Curriculum Learning: A Survey](https://arxiv.org/abs/2101.10382)
+
+Authors: [Petru Soviany](https://arxiv.org/search/cs?searchtype=author&query=Soviany%2C+P), [Radu Tudor Ionescu](https://arxiv.org/search/cs?searchtype=author&query=Ionescu%2C+R+T), [Paolo Rota](https://arxiv.org/search/cs?searchtype=author&query=Rota%2C+P), [Nicu Sebe](https://arxiv.org/search/cs?searchtype=author&query=Sebe%2C+N)
+
+> Training machine learning models in a meaningful order, from the easy samples to the hard ones, using curriculum learning can provide performance improvements over the standard training approach based on random data shuffling, without any additional computational costs. Curriculum learning strategies have been successfully employed in all areas of machine learning, in a wide range of tasks. However, the necessity of finding a way to rank the samples from easy to hard, as well as the right pacing function for introducing more difficult data can limit the usage of the curriculum approaches. In this survey, we show how these limits have been tackled in the literature, and we present different curriculum learning instantiations for various tasks in machine learning. We construct a multi-perspective taxonomy of curriculum learning approaches by hand, considering various classification criteria. We further build a hierarchical tree of curriculum learning methods using an agglomerative clustering algorithm, linking the discovered clusters with our taxonomy. At the end, we provide some interesting directions for future work.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2101.10382](https://arxiv.org/abs/2101.10382) [cs.LG]** |
+|           | (or **[arXiv:2101.10382v1](https://arxiv.org/abs/2101.10382v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-27-2">2. On the Evaluation of Vision-and-Language Navigation Instructions</h2>
+
+Title: [On the Evaluation of Vision-and-Language Navigation Instructions](https://arxiv.org/abs/2101.10504)
+
+Authors: [Ming Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+M), [Peter Anderson](https://arxiv.org/search/cs?searchtype=author&query=Anderson%2C+P), [Vihan Jain](https://arxiv.org/search/cs?searchtype=author&query=Jain%2C+V), [Su Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Alexander Ku](https://arxiv.org/search/cs?searchtype=author&query=Ku%2C+A), [Jason Baldridge](https://arxiv.org/search/cs?searchtype=author&query=Baldridge%2C+J), [Eugene Ie](https://arxiv.org/search/cs?searchtype=author&query=Ie%2C+E)
+
+> Vision-and-Language Navigation wayfinding agents can be enhanced by exploiting automatically generated navigation instructions. However, existing instruction generators have not been comprehensively evaluated, and the automatic evaluation metrics used to develop them have not been validated. Using human wayfinders, we show that these generators perform on par with or only slightly better than a template-based generator and far worse than human instructors. Furthermore, we discover that BLEU, ROUGE, METEOR and CIDEr are ineffective for evaluating grounded navigation instructions. To improve instruction evaluation, we propose an instruction-trajectory compatibility model that operates without reference instructions. Our model shows the highest correlation with human wayfinding outcomes when scoring individual instructions. For ranking instruction generation systems, if reference instructions are available we recommend using SPICE.
+
+| Comments: | Accepted to EACL 2021                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Artificial Intelligence (cs.AI)**; Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2101.10504](https://arxiv.org/abs/2101.10504) [cs.AI]** |
+|           | (or **[arXiv:2101.10504v1](https://arxiv.org/abs/2101.10504v1) [cs.AI]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-27-3">3. Meta-Learning for Effective Multi-task and Multilingual Modelling</h2>
+
+Title: [Meta-Learning for Effective Multi-task and Multilingual Modelling](https://arxiv.org/abs/2101.10368)
+
+Authors: [Ishan Tarunesh](https://arxiv.org/search/cs?searchtype=author&query=Tarunesh%2C+I), [Sushil Khyalia](https://arxiv.org/search/cs?searchtype=author&query=Khyalia%2C+S), [Vishwajeet Kumar](https://arxiv.org/search/cs?searchtype=author&query=Kumar%2C+V), [Ganesh Ramakrishnan](https://arxiv.org/search/cs?searchtype=author&query=Ramakrishnan%2C+G), [Preethi Jyothi](https://arxiv.org/search/cs?searchtype=author&query=Jyothi%2C+P)
+
+> Natural language processing (NLP) tasks (e.g. question-answering in English) benefit from knowledge of other tasks (e.g. named entity recognition in English) and knowledge of other languages (e.g. question-answering in Spanish). Such shared representations are typically learned in isolation, either across tasks or across languages. In this work, we propose a meta-learning approach to learn the interactions between both tasks and languages. We also investigate the role of different sampling strategies used during meta-learning. We present experiments on five different tasks and six different languages from the XTREME multilingual benchmark dataset. Our meta-learned model clearly improves in performance compared to competitive baseline models that also include multi-task baselines. We also present zero-shot evaluations on unseen target languages to demonstrate the utility of our proposed model.
+
+| Comments: | 8 pages, 3 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2101.10368](https://arxiv.org/abs/2101.10368) [cs.CL]** |
+|           | (or **[arXiv:2101.10368v1](https://arxiv.org/abs/2101.10368v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-27-4">4. Coloring the Black Box: What Synesthesia Tells Us about Character Embeddings</h2>
+
+Title: [Coloring the Black Box: What Synesthesia Tells Us about Character Embeddings](https://arxiv.org/abs/2101.10565)
+
+Authors: [Katharina Kann](https://arxiv.org/search/cs?searchtype=author&query=Kann%2C+K), [Mauro M. Monsalve-Mercado](https://arxiv.org/search/cs?searchtype=author&query=Monsalve-Mercado%2C+M+M)
+
+> In contrast to their word- or sentence-level counterparts, character embeddings are still poorly understood. We aim at closing this gap with an in-depth study of English character embeddings. For this, we use resources from research on grapheme-color synesthesia -- a neuropsychological phenomenon where letters are associated with colors, which give us insight into which characters are similar for synesthetes and how characters are organized in color space. Comparing 10 different character embeddings, we ask: How similar are character embeddings to a synesthete's perception of characters? And how similar are character embeddings extracted from different models? We find that LSTMs agree with humans more than transformers. Comparing across tasks, grapheme-to-phoneme conversion results in the most human-like character embeddings. Finally, ELMo embeddings differ from both humans and other models.
+
+| Comments: | EACL 2021                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2101.10565](https://arxiv.org/abs/2101.10565) [cs.CL]** |
+|           | (or **[arXiv:2101.10565v1](https://arxiv.org/abs/2101.10565v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-27-5">5. Analyzing Zero-shot Cross-lingual Transfer in Supervised NLP Tasks</h2>
+
+Title: [Analyzing Zero-shot Cross-lingual Transfer in Supervised NLP Tasks](https://arxiv.org/abs/2101.10649)
+
+Authors: [Hyunjin Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi%2C+H), [Judong Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+J), [Seongho Joe](https://arxiv.org/search/cs?searchtype=author&query=Joe%2C+S), [Seungjai Min](https://arxiv.org/search/cs?searchtype=author&query=Min%2C+S), [Youngjune Gwon](https://arxiv.org/search/cs?searchtype=author&query=Gwon%2C+Y)
+
+> In zero-shot cross-lingual transfer, a supervised NLP task trained on a corpus in one language is directly applicable to another language without any additional training. A source of cross-lingual transfer can be as straightforward as lexical overlap between languages (e.g., use of the same scripts, shared subwords) that naturally forces text embeddings to occupy a similar representation space. Recently introduced cross-lingual language model (XLM) pretraining brings out neural parameter sharing in Transformer-style networks as the most important factor for the transfer. In this paper, we aim to validate the hypothetically strong cross-lingual transfer properties induced by XLM pretraining. Particularly, we take XLM-RoBERTa (XLMR) in our experiments that extend semantic textual similarity (STS), SQuAD and KorQuAD for machine reading comprehension, sentiment analysis, and alignment of sentence embeddings under various cross-lingual settings. Our results indicate that the presence of cross-lingual transfer is most pronounced in STS, sentiment analysis the next, and MRC the last. That is, the complexity of a downstream task softens the degree of crosslingual transfer. All of our results are empirically observed and measured, and we make our code and data publicly available.
+
+| Comments: | 6 pages, 4 figures, to be published in 25th International Conference on Pattern Recognition, ICPR 2020 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2101.10649](https://arxiv.org/abs/2101.10649) [cs.CL]** |
+|           | (or **[arXiv:2101.10649v1](https://arxiv.org/abs/2101.10649v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-27-6">6. Neural machine translation, corpus and frugality</h2>
+
+Title: [Neural machine translation, corpus and frugality](https://arxiv.org/abs/2101.10650)
+
+Authors: [Raoul Blin](https://arxiv.org/search/cs?searchtype=author&query=Blin%2C+R)
+
+> In machine translation field, in both academia and industry, there is a growing interest in increasingly powerful systems, using corpora of several hundred million to several billion examples. These systems represent the state-of-the-art. Here we defend the idea of developing in parallel <<frugal>> bilingual translation systems, trained with relatively small corpora. Based on the observation of a standard human professional translator, we estimate that the corpora should be composed at maximum of a monolingual sub-corpus of 75 million examples for the source language, a second monolingual sub-corpus of 6 million examples for the target language, and an aligned bilingual sub-corpus of 6 million bi-examples. A less desirable alternative would be an aligned bilingual corpus of 47.5 million bi-examples.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2101.10650](https://arxiv.org/abs/2101.10650) [cs.CL]** |
+|           | (or **[arXiv:2101.10650v1](https://arxiv.org/abs/2101.10650v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-27-7">7. Spark NLP: Natural Language Understanding at Scale</h2>
+
+Title: [Spark NLP: Natural Language Understanding at Scale](https://arxiv.org/abs/2101.10848)
+
+Authors: [Veysel Kocaman](https://arxiv.org/search/cs?searchtype=author&query=Kocaman%2C+V), [David Talby](https://arxiv.org/search/cs?searchtype=author&query=Talby%2C+D)
+
+> Spark NLP is a Natural Language Processing (NLP) library built on top of Apache Spark ML. It provides simple, performant and accurate NLP annotations for machine learning pipelines that can scale easily in a distributed environment. Spark NLP comes with 1100 pre trained pipelines and models in more than 192 languages. It supports nearly all the NLP tasks and modules that can be used seamlessly in a cluster. Downloaded more than 2.7 million times and experiencing nine times growth since January 2020, Spark NLP is used by 54% of healthcare organizations as the worlds most widely used NLP library in the enterprise.
+
+| Comments: | =Accepted as a publication in Elsevier, Software Impacts Journal. arXiv admin note: substantial text overlap with [arXiv:2012.04005](https://arxiv.org/abs/2012.04005) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2101.10848](https://arxiv.org/abs/2101.10848) [cs.CL]** |
+|           | (or **[arXiv:2101.10848v1](https://arxiv.org/abs/2101.10848v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-27-8">8. Attention Can Reflect Syntactic Structure (If You Let It)</h2>
+
+Title: [Attention Can Reflect Syntactic Structure (If You Let It)](https://arxiv.org/abs/2101.10927)
+
+Authors: [Vinit Ravishankar](https://arxiv.org/search/cs?searchtype=author&query=Ravishankar%2C+V), [Artur Kulmizev](https://arxiv.org/search/cs?searchtype=author&query=Kulmizev%2C+A), [Mostafa Abdou](https://arxiv.org/search/cs?searchtype=author&query=Abdou%2C+M), [Anders Søgaard](https://arxiv.org/search/cs?searchtype=author&query=Søgaard%2C+A), [Joakim Nivre](https://arxiv.org/search/cs?searchtype=author&query=Nivre%2C+J)
+
+> Since the popularization of the Transformer as a general-purpose feature encoder for NLP, many studies have attempted to decode linguistic structure from its novel multi-head attention mechanism. However, much of such work focused almost exclusively on English -- a language with rigid word order and a lack of inflectional morphology. In this study, we present decoding experiments for multilingual BERT across 18 languages in order to test the generalizability of the claim that dependency syntax is reflected in attention patterns. We show that full trees can be decoded above baseline accuracy from single attention heads, and that individual relations are often tracked by the same heads across languages. Furthermore, in an attempt to address recent debates about the status of attention as an explanatory mechanism, we experiment with fine-tuning mBERT on a supervised parsing objective while freezing different series of parameters. Interestingly, in steering the objective to learn explicit linguistic structure, we find much of the same structure represented in the resulting attention patterns, with interesting differences with respect to which parameters are frozen.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | EACL 2021                                                    |
+| Cite as:           | **[arXiv:2101.10927](https://arxiv.org/abs/2101.10927) [cs.CL]** |
+|                    | (or **[arXiv:2101.10927v1](https://arxiv.org/abs/2101.10927v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
