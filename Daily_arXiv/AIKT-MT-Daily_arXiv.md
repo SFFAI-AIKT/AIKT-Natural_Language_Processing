@@ -3,6 +3,17 @@
 # Index
 
 
+- [2021-01-28](#2021-01-28)
+	
+  - [1. Scheduled Sampling in Vision-Language Pretraining with Decoupled Encoder-Decoder Network](#2021-01-28-1)
+  - [2. Muppet: Massive Multi-task Representations with Pre-Finetuning](#2021-01-28-2)
+  - [3. A Comparison of Approaches to Document-level Machine Translation](#2021-01-28-3)
+  - [4. Deep Subjecthood: Higher-Order Grammatical Features in Multilingual BERT](#2021-01-28-4)
+  - [5. First Align, then Predict: Understanding the Cross-Lingual Ability of Multilingual BERT](#2021-01-28-5)
+  - [6. CLiMP: A Benchmark for Chinese Language Model Evaluation](#2021-01-28-6)
+  - [7. VisualMRC: Machine Reading Comprehension on Document Images](#2021-01-28-7)
+  - [8. Language Modelling as a Multi-Task Problem](#2021-01-28-8)
+  - [9. On the Evolution of Syntactic Information Encoded by BERT's Contextualized Representations](#2021-01-28-9)
 - [2021-01-27](#2021-01-27)
 	
   - [1. Curriculum Learning: A Survey](#2021-01-27-1)
@@ -141,6 +152,173 @@
   - [31. Shortformer: Better Language Modeling using Shorter Inputs](#2021-01-01-31)
   - [32. Fully Non-autoregressive Neural Machine Translation: Tricks of the Trade](#2021-01-01-32)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-01-28
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-01-28-1">1. Scheduled Sampling in Vision-Language Pretraining with Decoupled Encoder-Decoder Network</h2>
+
+Title: [Scheduled Sampling in Vision-Language Pretraining with Decoupled Encoder-Decoder Network](https://arxiv.org/abs/2101.11562)
+
+Authors: [Yehao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Yingwei Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C+Y), [Ting Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+T), [Jingwen Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J), [Tao Mei](https://arxiv.org/search/cs?searchtype=author&query=Mei%2C+T)
+
+> Despite having impressive vision-language (VL) pretraining with BERT-based encoder for VL understanding, the pretraining of a universal encoder-decoder for both VL understanding and generation remains challenging. The difficulty originates from the inherently different peculiarities of the two disciplines, e.g., VL understanding tasks capitalize on the unrestricted message passing across modalities, while generation tasks only employ visual-to-textual message passing. In this paper, we start with a two-stream decoupled design of encoder-decoder structure, in which two decoupled cross-modal encoder and decoder are involved to separately perform each type of proxy tasks, for simultaneous VL understanding and generation pretraining. Moreover, for VL pretraining, the dominant way is to replace some input visual/word tokens with mask tokens and enforce the multi-modal encoder/decoder to reconstruct the original tokens, but no mask token is involved when fine-tuning on downstream tasks. As an alternative, we propose a primary scheduled sampling strategy that elegantly mitigates such discrepancy via pretraining encoder-decoder in a two-pass manner. Extensive experiments demonstrate the compelling generalizability of our pretrained encoder-decoder by fine-tuning on four VL understanding and generation downstream tasks. Source code is available at \url{[this https URL](https://github.com/YehLi/TDEN)}.
+
+| Comments: | AAAI 2021; Code is publicly available at: [this https URL](https://github.com/YehLi/TDEN) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2101.11562](https://arxiv.org/abs/2101.11562) [cs.CV]** |
+|           | (or **[arXiv:2101.11562v1](https://arxiv.org/abs/2101.11562v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-28-2">2. Muppet: Massive Multi-task Representations with Pre-Finetuning</h2>
+
+Title: [Muppet: Massive Multi-task Representations with Pre-Finetuning](https://arxiv.org/abs/2101.11038)
+
+Authors: [Armen Aghajanyan](https://arxiv.org/search/cs?searchtype=author&query=Aghajanyan%2C+A), [Anchit Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+A), [Akshat Shrivastava](https://arxiv.org/search/cs?searchtype=author&query=Shrivastava%2C+A), [Xilun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+X), [Luke Zettlemoyer](https://arxiv.org/search/cs?searchtype=author&query=Zettlemoyer%2C+L), [Sonal Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+S)
+
+> We propose pre-finetuning, an additional large-scale learning stage between language model pre-training and fine-tuning. Pre-finetuning is massively multi-task learning (around 50 datasets, over 4.8 million total labeled examples), and is designed to encourage learning of representations that generalize better to many different tasks. We show that pre-finetuning consistently improves performance for pretrained discriminators (e.g.~RoBERTa) and generation models (e.g.~BART) on a wide range of tasks (sentence prediction, commonsense reasoning, MRC, etc.), while also significantly improving sample efficiency during fine-tuning. We also show that large-scale multi-tasking is crucial; pre-finetuning can hurt performance when few tasks are used up until a critical point (usually above 15) after which performance improves linearly in the number of tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2101.11038](https://arxiv.org/abs/2101.11038) [cs.CL]** |
+|           | (or **[arXiv:2101.11038v1](https://arxiv.org/abs/2101.11038v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-28-3">3. A Comparison of Approaches to Document-level Machine Translation</h2>
+
+Title: [A Comparison of Approaches to Document-level Machine Translation](https://arxiv.org/abs/2101.11040)
+
+Authors: [Zhiyi Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+Z), [Sergey Edunov](https://arxiv.org/search/cs?searchtype=author&query=Edunov%2C+S), [Michael Auli](https://arxiv.org/search/cs?searchtype=author&query=Auli%2C+M)
+
+> Document-level machine translation conditions on surrounding sentences to produce coherent translations. There has been much recent work in this area with the introduction of custom model architectures and decoding algorithms. This paper presents a systematic comparison of selected approaches from the literature on two benchmarks for which document-level phenomena evaluation suites exist. We find that a simple method based purely on back-translating monolingual document-level data performs as well as much more elaborate alternatives, both in terms of document-level metrics as well as human evaluation.
+
+| Comments: | 10 pages, 5 tables                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2101.11040](https://arxiv.org/abs/2101.11040) [cs.CL]** |
+|           | (or **[arXiv:2101.11040v1](https://arxiv.org/abs/2101.11040v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-28-4">4. Deep Subjecthood: Higher-Order Grammatical Features in Multilingual BERT</h2>
+
+Title: [Deep Subjecthood: Higher-Order Grammatical Features in Multilingual BERT](https://arxiv.org/abs/2101.11043)
+
+Authors: [Isabel Papadimitriou](https://arxiv.org/search/cs?searchtype=author&query=Papadimitriou%2C+I), [Ethan A. Chi](https://arxiv.org/search/cs?searchtype=author&query=Chi%2C+E+A), [Richard Futrell](https://arxiv.org/search/cs?searchtype=author&query=Futrell%2C+R), [Kyle Mahowald](https://arxiv.org/search/cs?searchtype=author&query=Mahowald%2C+K)
+
+> We investigate how Multilingual BERT (mBERT) encodes grammar by examining how the high-order grammatical feature of morphosyntactic alignment (how different languages define what counts as a "subject") is manifested across the embedding spaces of different languages. To understand if and how morphosyntactic alignment affects contextual embedding spaces, we train classifiers to recover the subjecthood of mBERT embeddings in transitive sentences (which do not contain overt information about morphosyntactic alignment) and then evaluate them zero-shot on intransitive sentences (where subjecthood classification depends on alignment), within and across languages. We find that the resulting classifier distributions reflect the morphosyntactic alignment of their training languages. Our results demonstrate that mBERT representations are influenced by high-level grammatical features that are not manifested in any one input sentence, and that this is robust across languages. Further examining the characteristics that our classifiers rely on, we find that features such as passive voice, animacy and case strongly correlate with classification decisions, suggesting that mBERT does not encode subjecthood purely syntactically, but that subjecthood embedding is continuous and dependent on semantic and discourse factors, as is proposed in much of the functional linguistics literature. Together, these results provide insight into how grammatical features manifest in contextual embedding spaces, at a level of abstraction not covered by previous work.
+
+| Comments: | EACL 2021                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2101.11043](https://arxiv.org/abs/2101.11043) [cs.CL]** |
+|           | (or **[arXiv:2101.11043v1](https://arxiv.org/abs/2101.11043v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-28-5">5. First Align, then Predict: Understanding the Cross-Lingual Ability of Multilingual BERT</h2>
+
+Title: [First Align, then Predict: Understanding the Cross-Lingual Ability of Multilingual BERT](https://arxiv.org/abs/2101.11109)
+
+Authors: [Benjamin Muller](https://arxiv.org/search/cs?searchtype=author&query=Muller%2C+B), [Yanai Elazar](https://arxiv.org/search/cs?searchtype=author&query=Elazar%2C+Y), [Benoît Sagot](https://arxiv.org/search/cs?searchtype=author&query=Sagot%2C+B), [Djamé Seddah](https://arxiv.org/search/cs?searchtype=author&query=Seddah%2C+D)
+
+> Multilingual pretrained language models have demonstrated remarkable zero-shot cross-lingual transfer capabilities. Such transfer emerges by fine-tuning on a task of interest in one language and evaluating on a distinct language, not seen during the fine-tuning. Despite promising results, we still lack a proper understanding of the source of this transfer. Using a novel layer ablation technique and analyses of the model's internal representations, we show that multilingual BERT, a popular multilingual language model, can be viewed as the stacking of two sub-networks: a multilingual encoder followed by a task-specific language-agnostic predictor. While the encoder is crucial for cross-lingual transfer and remains mostly unchanged during fine-tuning, the task predictor has little importance on the transfer and can be reinitialized during fine-tuning. We present extensive experiments with three distinct tasks, seventeen typologically diverse languages and multiple domains to support our hypothesis.
+
+| Comments: | Accepted at EACL 2021                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2101.11109](https://arxiv.org/abs/2101.11109) [cs.CL]** |
+|           | (or **[arXiv:2101.11109v1](https://arxiv.org/abs/2101.11109v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-28-6">6. CLiMP: A Benchmark for Chinese Language Model Evaluation</h2>
+
+Title: [CLiMP: A Benchmark for Chinese Language Model Evaluation](https://arxiv.org/abs/2101.11131)
+
+Authors: [Beilei Xiang](https://arxiv.org/search/cs?searchtype=author&query=Xiang%2C+B), [Changbing Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+C), [Yu Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Alex Warstadt](https://arxiv.org/search/cs?searchtype=author&query=Warstadt%2C+A), [Katharina Kann](https://arxiv.org/search/cs?searchtype=author&query=Kann%2C+K)
+
+> Linguistically informed analyses of language models (LMs) contribute to the understanding and improvement of these models. Here, we introduce the corpus of Chinese linguistic minimal pairs (CLiMP), which can be used to investigate what knowledge Chinese LMs acquire. CLiMP consists of sets of 1,000 minimal pairs (MPs) for 16 syntactic contrasts in Mandarin, covering 9 major Mandarin linguistic phenomena. The MPs are semi-automatically generated, and human agreement with the labels in CLiMP is 95.8%. We evaluated 11 different LMs on CLiMP, covering n-grams, LSTMs, and Chinese BERT. We find that classifier-noun agreement and verb complement selection are the phenomena that models generally perform best at. However, models struggle the most with the ba construction, binding, and filler-gap dependencies. Overall, Chinese BERT achieves an 81.8% average accuracy, while the performances of LSTMs and 5-grams are only moderately above chance level.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2101.11131](https://arxiv.org/abs/2101.11131) [cs.CL]** |
+|           | (or **[arXiv:2101.11131v1](https://arxiv.org/abs/2101.11131v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-28-7">7. VisualMRC: Machine Reading Comprehension on Document Images</h2>
+
+Title: [VisualMRC: Machine Reading Comprehension on Document Images](https://arxiv.org/abs/2101.11272)
+
+Authors: [Ryota Tanaka](https://arxiv.org/search/cs?searchtype=author&query=Tanaka%2C+R), [Kyosuke Nishida](https://arxiv.org/search/cs?searchtype=author&query=Nishida%2C+K), [Sen Yoshida](https://arxiv.org/search/cs?searchtype=author&query=Yoshida%2C+S)
+
+> Recent studies on machine reading comprehension have focused on text-level understanding but have not yet reached the level of human understanding of the visual layout and content of real-world documents. In this study, we introduce a new visual machine reading comprehension dataset, named VisualMRC, wherein given a question and a document image, a machine reads and comprehends texts in the image to answer the question in natural language. Compared with existing visual question answering (VQA) datasets that contain texts in images, VisualMRC focuses more on developing natural language understanding and generation abilities. It contains 30,000+ pairs of a question and an abstractive answer for 10,000+ document images sourced from multiple domains of webpages. We also introduce a new model that extends existing sequence-to-sequence models, pre-trained with large-scale text corpora, to take into account the visual layout and content of documents. Experiments with VisualMRC show that this model outperformed the base sequence-to-sequence models and a state-of-the-art VQA model. However, its performance is still below that of humans on most automatic evaluation metrics. The dataset will facilitate research aimed at connecting vision and language understanding.
+
+| Comments: | Accepted as a full paper at AAAI 2021. The first two authors have equal contribution |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2101.11272](https://arxiv.org/abs/2101.11272) [cs.CL]** |
+|           | (or **[arXiv:2101.11272v1](https://arxiv.org/abs/2101.11272v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-28-8">8. Language Modelling as a Multi-Task Problem</h2>
+
+Title: [Language Modelling as a Multi-Task Problem](https://arxiv.org/abs/2101.11287)
+
+Authors: [Lucas Weber](https://arxiv.org/search/cs?searchtype=author&query=Weber%2C+L), [Jaap Jumelet](https://arxiv.org/search/cs?searchtype=author&query=Jumelet%2C+J), [Elia Bruni](https://arxiv.org/search/cs?searchtype=author&query=Bruni%2C+E), [Dieuwke Hupkes](https://arxiv.org/search/cs?searchtype=author&query=Hupkes%2C+D)
+
+> In this paper, we propose to study language modelling as a multi-task problem, bringing together three strands of research: multi-task learning, linguistics, and interpretability. Based on hypotheses derived from linguistic theory, we investigate whether language models adhere to learning principles of multi-task learning during training. To showcase the idea, we analyse the generalisation behaviour of language models as they learn the linguistic concept of Negative Polarity Items (NPIs). Our experiments demonstrate that a multi-task setting naturally emerges within the objective of the more general task of language modelling.We argue that this insight is valuable for multi-task learning, linguistics and interpretability research and can lead to exciting new findings in all three domains.
+
+| Comments: | Accepted for publication at EACL 2021                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2101.11287](https://arxiv.org/abs/2101.11287) [cs.CL]** |
+|           | (or **[arXiv:2101.11287v1](https://arxiv.org/abs/2101.11287v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-01-28-9">9. On the Evolution of Syntactic Information Encoded by BERT's Contextualized Representations</h2>
+
+Title: [On the Evolution of Syntactic Information Encoded by BERT's Contextualized Representations](https://arxiv.org/abs/2101.11492)
+
+Authors: [Laura Perez-Mayos](https://arxiv.org/search/cs?searchtype=author&query=Perez-Mayos%2C+L), [Roberto Carlini](https://arxiv.org/search/cs?searchtype=author&query=Carlini%2C+R), [Miguel Ballesteros](https://arxiv.org/search/cs?searchtype=author&query=Ballesteros%2C+M), [Leo Wanner](https://arxiv.org/search/cs?searchtype=author&query=Wanner%2C+L)
+
+> The adaptation of pretrained language models to solve supervised tasks has become a baseline in NLP, and many recent works have focused on studying how linguistic information is encoded in the pretrained sentence representations. Among other information, it has been shown that entire syntax trees are implicitly embedded in the geometry of such models. As these models are often fine-tuned, it becomes increasingly important to understand how the encoded knowledge evolves along the fine-tuning. In this paper, we analyze the evolution of the embedded syntax trees along the fine-tuning process of BERT for six different tasks, covering all levels of the linguistic structure. Experimental results show that the encoded syntactic information is forgotten (PoS tagging), reinforced (dependency and constituency parsing) or preserved (semantics-related tasks) in different ways along the fine-tuning process depending on the task.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2101.11492](https://arxiv.org/abs/2101.11492) [cs.CL]** |
+|           | (or **[arXiv:2101.11492v1](https://arxiv.org/abs/2101.11492v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
