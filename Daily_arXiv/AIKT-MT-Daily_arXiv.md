@@ -3,9 +3,12 @@
 # Index
 
 
-- [2021-02-04](#2021-02-04)
+- [2021-02-05](#2021-02-05)
 
-  - [1. The Multilingual TEDx Corpus for Speech Recognition and Translation](#2021-02-04-1)
+  - [1. Understanding the Capabilities, Limitations, and Societal Impact of Large Language Models](#2021-02-05-1)
+  - [2. Unifying Vision-and-Language Tasks via Text Generation](#2021-02-05-2)
+- [2021-02-04](#2021-02-04)
+- [1. The Multilingual TEDx Corpus for Speech Recognition and Translation](#2021-02-04-1)
   - [2. Memorization vs. Generalization: Quantifying Data Leakage in NLP Performance Evaluation](#2021-02-04-2)
   - [3. When Can Models Learn From Explanations? A Formal Framework for Understanding the Roles of Explanation Data](#2021-02-04-3)
 - [2021-02-03](#2021-02-03)
@@ -31,6 +34,45 @@
   - [3. Synthesizing Monolingual Data for Neural Machine Translation](#2021-02-01-3)
   - [4. Transition based Graph Decoder for Neural Machine Translation](#2021-02-01-4)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-02-05
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-02-05-1">1. Understanding the Capabilities, Limitations, and Societal Impact of Large Language Models</h2>
+
+Title: [Understanding the Capabilities, Limitations, and Societal Impact of Large Language Models](https://arxiv.org/abs/2102.02503)
+
+Authors: [Alex Tamkin](https://arxiv.org/search/cs?searchtype=author&query=Tamkin%2C+A), [Miles Brundage](https://arxiv.org/search/cs?searchtype=author&query=Brundage%2C+M), [Jack Clark](https://arxiv.org/search/cs?searchtype=author&query=Clark%2C+J), [Deep Ganguli](https://arxiv.org/search/cs?searchtype=author&query=Ganguli%2C+D)
+
+> On October 14th, 2020, researchers from OpenAI, the Stanford Institute for Human-Centered Artificial Intelligence, and other universities convened to discuss open research questions surrounding GPT-3, the largest publicly-disclosed dense language model at the time. The meeting took place under Chatham House Rules. Discussants came from a variety of research backgrounds including computer science, linguistics, philosophy, political science, communications, cyber policy, and more. Broadly, the discussion centered around two main questions: 1) What are the technical capabilities and limitations of large language models? 2) What are the societal effects of widespread use of large language models? Here, we provide a detailed summary of the discussion organized by the two themes above.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2102.02503](https://arxiv.org/abs/2102.02503) [cs.CL]** |
+|           | (or **[arXiv:2102.02503v1](https://arxiv.org/abs/2102.02503v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-05-2">2. Unifying Vision-and-Language Tasks via Text Generation</h2>
+
+Title: [Unifying Vision-and-Language Tasks via Text Generation](https://arxiv.org/abs/2102.02779)
+
+Authors: [Jaemin Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+J), [Jie Lei](https://arxiv.org/search/cs?searchtype=author&query=Lei%2C+J), [Hao Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+H), [Mohit Bansal](https://arxiv.org/search/cs?searchtype=author&query=Bansal%2C+M)
+
+> Existing methods for vision-and-language learning typically require designing task-specific architectures and objectives for each task. For example, a multi-label answer classifier for visual question answering, a region scorer for referring expression comprehension, and a language decoder for image captioning, etc. To alleviate these hassles, in this work, we propose a unified framework that learns different tasks in a single architecture with the same language modeling objective, i.e., multimodal conditional text generation, where our models learn to generate labels in text based on the visual and textual inputs. On 7 popular vision-and-language benchmarks, including visual question answering, referring expression comprehension, visual commonsense reasoning, most of which have been previously modeled as discriminative tasks, our generative approach (with a single unified architecture) reaches comparable performance to recent task-specific state-of-the-art vision-and-language models. Moreover, our generative approach shows better generalization ability on answering questions that have rare answers. In addition, we show that our framework allows multi-task learning in a single architecture with a single set of parameters, which achieves similar performance to separately optimized single-task models. Our code will be publicly available at: [this https URL](https://github.com/j-min/VL-T5)
+
+| Comments: | 16 pages, 4 figures, 13 tables                               |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2102.02779](https://arxiv.org/abs/2102.02779) [cs.CL]** |
+|           | (or **[arXiv:2102.02779v1](https://arxiv.org/abs/2102.02779v1) [cs.CL]** for this version) |
 
 
 
