@@ -2,10 +2,13 @@
 
 # Index
 
+- [2021-02-08](#2021-02-08)
+  - [1. Understanding Pre-Editing for Black-Box Neural Machine Translation](#2021-02-08-1)
+  - [2. Spell Correction for Azerbaijani Language using Deep Neural Networks](#2021-02-08-2)
+
 
 - [2021-02-05](#2021-02-05)
-
-  - [1. Understanding the Capabilities, Limitations, and Societal Impact of Large Language Models](#2021-02-05-1)
+- [1. Understanding the Capabilities, Limitations, and Societal Impact of Large Language Models](#2021-02-05-1)
   - [2. Unifying Vision-and-Language Tasks via Text Generation](#2021-02-05-2)
 - [2021-02-04](#2021-02-04)
 - [1. The Multilingual TEDx Corpus for Speech Recognition and Translation](#2021-02-04-1)
@@ -34,6 +37,49 @@
   - [3. Synthesizing Monolingual Data for Neural Machine Translation](#2021-02-01-3)
   - [4. Transition based Graph Decoder for Neural Machine Translation](#2021-02-01-4)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-02-08
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-02-08-1">1. Understanding Pre-Editing for Black-Box Neural Machine Translation</h2>
+
+Title: [Understanding Pre-Editing for Black-Box Neural Machine Translation](https://arxiv.org/abs/2102.02955)
+
+Auhors: [Rei Miyata](https://arxiv.org/search/cs?searchtype=author&query=Miyata%2C+R), [Atsushi Fujita](https://arxiv.org/search/cs?searchtype=author&query=Fujita%2C+A)
+
+> Pre-editing is the process of modifying the source text (ST) so that it can be translated by machine translation (MT) in a better quality. Despite the unpredictability of black-box neural MT (NMT), pre-editing has been deployed in various practical MT use cases. Although many studies have demonstrated the effectiveness of pre-editing methods for particular settings, thus far, a deep understanding of what pre-editing is and how it works for black-box NMT is lacking. To elicit such understanding, we extensively investigated human pre-editing practices. We first implemented a protocol to incrementally record the minimum edits for each ST and collected 6,652 instances of pre-editing across three translation directions, two MT systems, and four text domains. We then analysed the instances from three perspectives: the characteristics of the pre-edited ST, the diversity of pre-editing operations, and the impact of the pre-editing operations on NMT outputs. Our findings include the following: (1) enhancing the explicitness of the meaning of an ST and its syntactic structure is more important for obtaining better translations than making the ST shorter and simpler, and (2) although the impact of pre-editing on NMT is generally unpredictable, there are some tendencies of changes in the NMT outputs depending on the editing operation types.
+
+| Comments: | Accepted at EACL 2021                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2102.02955](https://arxiv.org/abs/2102.02955) [cs.CL]** |
+|           | (or **[arXiv:2102.02955v1](https://arxiv.org/abs/2102.02955v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-08-2">2. Spell Correction for Azerbaijani Language using Deep Neural Networks</h2>
+
+Title: [Spell Correction for Azerbaijani Language using Deep Neural Networks](https://arxiv.org/abs/2102.03218)
+
+Auhors: [Ahmad Ahmadzade](https://arxiv.org/search/cs?searchtype=author&query=Ahmadzade%2C+A), [Saber Malekzadeh](https://arxiv.org/search/cs?searchtype=author&query=Malekzadeh%2C+S)
+
+> Spell correction is used to detect and correct orthographic mistakes in texts. Most of the time, traditional dictionary lookup with string similarity methods is suitable for the languages that have a less complex structure such as the English language. However, the Azerbaijani language has a more complex structure and due to its morphological structure, the derivation of words is plenty that several words are derived from adding suffices, affixes to the words. Therefore, in this paper sequence to sequence model with an attention mechanism is used to develop spelling correction for Azerbaijani. Total 12000 wrong and correct sentence pairs used for training, and the model is tested on 1000 real-world misspelled words and F1-score results are 75% for distance 0, 90% for distance 1, and 96% for distance 2.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2102.03218](https://arxiv.org/abs/2102.03218) [cs.CL]** |
+|           | (or **[arXiv:2102.03218v1](https://arxiv.org/abs/2102.03218v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
