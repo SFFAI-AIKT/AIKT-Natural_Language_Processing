@@ -2,6 +2,13 @@
 
 # Index
 
+- [2021-02-09](#2021-02-09)
+  - [1. Does the Order of Training Samples Matter? Improving Neural Data-to-Text Generation with Curriculum Learning](#2021-02-09-1)
+  - [2. Does He Wink or Does He Nod? A Challenging Benchmark for Evaluating Word Understanding of Language Models](#2021-02-09-2)
+  - [3. Representation Learning for Natural Language Processing](#2021-02-09-3)
+  - [4. CSS-LM: A Contrastive Framework for Semi-supervised Fine-tuning of Pre-trained Language Models](#2021-02-09-4)
+  - [5. SLUA: A Super Lightweight Unsupervised Word Alignment Model via Cross-Lingual Contrastive Learning](#2021-02-09-5)
+  - [6. Quality Estimation without Human-labeled Data](#2021-02-09-6)
 - [2021-02-08](#2021-02-08)
   - [1. Understanding Pre-Editing for Black-Box Neural Machine Translation](#2021-02-08-1)
   - [2. Spell Correction for Azerbaijani Language using Deep Neural Networks](#2021-02-08-2)
@@ -11,7 +18,8 @@
 - [1. Understanding the Capabilities, Limitations, and Societal Impact of Large Language Models](#2021-02-05-1)
   - [2. Unifying Vision-and-Language Tasks via Text Generation](#2021-02-05-2)
 - [2021-02-04](#2021-02-04)
-- [1. The Multilingual TEDx Corpus for Speech Recognition and Translation](#2021-02-04-1)
+
+  - [1. The Multilingual TEDx Corpus for Speech Recognition and Translation](#2021-02-04-1)
   - [2. Memorization vs. Generalization: Quantifying Data Leakage in NLP Performance Evaluation](#2021-02-04-2)
   - [3. When Can Models Learn From Explanations? A Formal Framework for Understanding the Roles of Explanation Data](#2021-02-04-3)
 - [2021-02-03](#2021-02-03)
@@ -37,6 +45,132 @@
   - [3. Synthesizing Monolingual Data for Neural Machine Translation](#2021-02-01-3)
   - [4. Transition based Graph Decoder for Neural Machine Translation](#2021-02-01-4)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-02-09
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-02-09-1">1. Does the Order of Training Samples Matter? Improving Neural Data-to-Text Generation with Curriculum Learning</h2>
+
+Title: [Does the Order of Training Samples Matter? Improving Neural Data-to-Text Generation with Curriculum Learning](https://arxiv.org/abs/2102.03554)
+
+Authors: [Ernie Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+E), [Hui-Syuan Yeh](https://arxiv.org/search/cs?searchtype=author&query=Yeh%2C+H), [Vera Demberg](https://arxiv.org/search/cs?searchtype=author&query=Demberg%2C+V)
+
+> Recent advancements in data-to-text generation largely take on the form of neural end-to-end systems. Efforts have been dedicated to improving text generation systems by changing the order of training samples in a process known as curriculum learning. Past research on sequence-to-sequence learning showed that curriculum learning helps to improve both the performance and convergence speed. In this work, we delve into the same idea surrounding the training samples consisting of structured data and text pairs, where at each update, the curriculum framework selects training samples based on the model's competence. Specifically, we experiment with various difficulty metrics and put forward a soft edit distance metric for ranking training samples. Our benchmarks show faster convergence speed where training time is reduced by 38.7% and performance is boosted by 4.84 BLEU.
+
+| Comments: | Accepted at EACL 2021                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2102.03554](https://arxiv.org/abs/2102.03554) [cs.CL]** |
+|           | (or **[arXiv:2102.03554v1](https://arxiv.org/abs/2102.03554v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-09-2">2. Does He Wink or Does He Nod? A Challenging Benchmark for Evaluating Word Understanding of Language Models</h2>
+
+Title: [Does He Wink or Does He Nod? A Challenging Benchmark for Evaluating Word Understanding of Language Models](https://arxiv.org/abs/2102.03596)
+
+Authors: [Lutfi Kerem Senel](https://arxiv.org/search/cs?searchtype=author&query=Senel%2C+L+K), [Hinrich Schütze](https://arxiv.org/search/cs?searchtype=author&query=Schütze%2C+H)
+
+> Recent progress in pretraining language models on large corpora has resulted in large performance gains on many NLP tasks. These large models acquire linguistic knowledge during pretraining, which helps to improve performance on downstream tasks via fine-tuning. To assess what kind of knowledge is acquired, language models are commonly probed by querying them with `fill in the blank' style cloze questions. Existing probing datasets mainly focus on knowledge about relations between words and entities. We introduce WDLMPro (Word Definition Language Model Probing) to evaluate word understanding directly using dictionary definitions of words. In our experiments, three popular pretrained language models struggle to match words and their definitions. This indicates that they understand many words poorly and that our new probing task is a difficult challenge that could help guide research on LMs in the future.
+
+| Comments: | 5 pages, to appear in EACL 2021                              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2102.03596](https://arxiv.org/abs/2102.03596) [cs.CL]** |
+|           | (or **[arXiv:2102.03596v1](https://arxiv.org/abs/2102.03596v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-02-09-3">3. Representation Learning for Natural Language Processing</h2>
+
+Title: [Representation Learning for Natural Language Processing](https://arxiv.org/abs/2102.03732)
+
+Authors: [Zhiyuan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Yankai Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Y), [Maosong Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M)
+
+> This book aims to review and present the recent advances of distributed representation learning for NLP, including why representation learning can improve NLP, how representation learning takes part in various important topics of NLP, and what challenges are still not well addressed by distributed representation.
+
+| Comments: | Published in Springer                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| DOI:      | [10.1007/978-981-15-5573-2](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.1007%2F978-981-15-5573-2&v=bf73f6ca) |
+| Cite as:  | **[arXiv:2102.03732](https://arxiv.org/abs/2102.03732) [cs.CL]** |
+|           | (or **[arXiv:2102.03732v1](https://arxiv.org/abs/2102.03732v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-02-09-4">4. CSS-LM: A Contrastive Framework for Semi-supervised Fine-tuning of Pre-trained Language Models</h2>
+
+Title: [CSS-LM: A Contrastive Framework for Semi-supervised Fine-tuning of Pre-trained Language Models](https://arxiv.org/abs/2102.03752)
+
+Authors: [Yusheng Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+Y), [Xu Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+X), [Yankai Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Y), [Zhengyan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Zhiyuan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Peng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+P), [Maosong Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M)
+
+> Fine-tuning pre-trained language models (PLMs) has demonstrated its effectiveness on various downstream NLP tasks recently. However, in many low-resource scenarios, the conventional fine-tuning strategies cannot sufficiently capture the important semantic features for downstream tasks. To address this issue, we introduce a novel framework (named "CSS-LM") to improve the fine-tuning phase of PLMs via contrastive semi-supervised learning. Specifically, given a specific task, we retrieve positive and negative instances from large-scale unlabeled corpora according to their domain-level and class-level semantic relatedness to the task. We then perform contrastive semi-supervised learning on both the retrieved unlabeled and original labeled instances to help PLMs capture crucial task-related semantic features. The experimental results show that CSS-LM achieves better results than the conventional fine-tuning strategy on a series of downstream tasks with few-shot settings, and outperforms the latest supervised contrastive fine-tuning strategies. Our datasets and source code will be available to provide more details.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2102.03752](https://arxiv.org/abs/2102.03752) [cs.CL]** |
+|           | (or **[arXiv:2102.03752v1](https://arxiv.org/abs/2102.03752v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-02-09-5">5. SLUA: A Super Lightweight Unsupervised Word Alignment Model via Cross-Lingual Contrastive Learning</h2>
+
+Title: [SLUA: A Super Lightweight Unsupervised Word Alignment Model via Cross-Lingual Contrastive Learning](https://arxiv.org/abs/2102.04009)
+
+Authors: [Di Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+D), [Liang Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+L), [Shuo Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+S), [Dacheng Tao](https://arxiv.org/search/cs?searchtype=author&query=Tao%2C+D)
+
+> Word alignment is essential for the down-streaming cross-lingual language understanding and generation tasks. Recently, the performance of the neural word alignment models has exceeded that of statistical models. However, they heavily rely on sophisticated translation models. In this study, we propose a super lightweight unsupervised word alignment (SLUA) model, in which bidirectional symmetric attention trained with a contrastive learning objective is introduced, and an agreement loss is employed to bind the attention maps, such that the alignments follow mirror-like symmetry hypothesis. Experimental results on several public benchmarks demonstrate that our model achieves competitive, if not better, performance compared to the state of the art in word alignment while significantly reducing the training and decoding time on average. Further ablation analysis and case studies show the superiority of our proposed SLUA. Notably, we recognize our model as a pioneer attempt to unify bilingual word embedding and word alignments. Encouragingly, our approach achieves 16.4x speedup against GIZA++, and 50x parameter compression} compared with the Transformer-based alignment methods. We will release our code to facilitate the community.
+
+| Comments: | Work in progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2102.04009](https://arxiv.org/abs/2102.04009) [cs.CL]** |
+|           | (or **[arXiv:2102.04009v1](https://arxiv.org/abs/2102.04009v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-02-09-6">6. Quality Estimation without Human-labeled Data</h2>
+
+Title: [Quality Estimation without Human-labeled Data](https://arxiv.org/abs/2102.04020)
+
+Authors: [Yi-Lin Tuan](https://arxiv.org/search/cs?searchtype=author&query=Tuan%2C+Y), [Ahmed El-Kishky](https://arxiv.org/search/cs?searchtype=author&query=El-Kishky%2C+A), [Adithya Renduchintala](https://arxiv.org/search/cs?searchtype=author&query=Renduchintala%2C+A), [Vishrav Chaudhary](https://arxiv.org/search/cs?searchtype=author&query=Chaudhary%2C+V), [Francisco Guzmán](https://arxiv.org/search/cs?searchtype=author&query=Guzmán%2C+F), [Lucia Specia](https://arxiv.org/search/cs?searchtype=author&query=Specia%2C+L)
+
+> Quality estimation aims to measure the quality of translated content without access to a reference translation. This is crucial for machine translation systems in real-world scenarios where high-quality translation is needed. While many approaches exist for quality estimation, they are based on supervised machine learning requiring costly human labelled data. As an alternative, we propose a technique that does not rely on examples from human-annotators and instead uses synthetic training data. We train off-the-shelf architectures for supervised quality estimation on our synthetic data and show that the resulting models achieve comparable performance to models trained on human-annotated data, both for sentence and word-level prediction.
+
+| Comments: | Accepted by EACL2021                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2102.04020](https://arxiv.org/abs/2102.04020) [cs.CL]** |
+|           | (or **[arXiv:2102.04020v1](https://arxiv.org/abs/2102.04020v1) [cs.CL]** for this version) |
+
+
+
+
+
+
 
 
 
