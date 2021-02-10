@@ -2,6 +2,8 @@
 
 # Index
 
+- [2021-02-10](#2021-02-10)
+  - [1. CodeXGLUE: A Machine Learning Benchmark Dataset for Code Understanding and Generation](#2021-02-10-1)
 - [2021-02-09](#2021-02-09)
   - [1. Does the Order of Training Samples Matter? Improving Neural Data-to-Text Generation with Curriculum Learning](#2021-02-09-1)
   - [2. Does He Wink or Does He Nod? A Challenging Benchmark for Evaluating Word Understanding of Language Models](#2021-02-09-2)
@@ -45,6 +47,28 @@
   - [3. Synthesizing Monolingual Data for Neural Machine Translation](#2021-02-01-3)
   - [4. Transition based Graph Decoder for Neural Machine Translation](#2021-02-01-4)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-02-10
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-02-10-1">1. CodeXGLUE: A Machine Learning Benchmark Dataset for Code Understanding and Generation</h2>
+
+Title: [CodeXGLUE: A Machine Learning Benchmark Dataset for Code Understanding and Generation](https://arxiv.org/abs/2102.04664)
+
+Authors: [Shuai Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+S), [Daya Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+D), [Shuo Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+S), [Junjie Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+J), [Alexey Svyatkovskiy](https://arxiv.org/search/cs?searchtype=author&query=Svyatkovskiy%2C+A), [Ambrosio Blanco](https://arxiv.org/search/cs?searchtype=author&query=Blanco%2C+A), [Colin Clement](https://arxiv.org/search/cs?searchtype=author&query=Clement%2C+C), [Dawn Drain](https://arxiv.org/search/cs?searchtype=author&query=Drain%2C+D), [Daxin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+D), [Duyu Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+D), [Ge Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+G), [Lidong Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+L), [Linjun Shou](https://arxiv.org/search/cs?searchtype=author&query=Shou%2C+L), [Long Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+L), [Michele Tufano](https://arxiv.org/search/cs?searchtype=author&query=Tufano%2C+M), [Ming Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+M), [Ming Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+M), [Nan Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan%2C+N), [Neel Sundaresan](https://arxiv.org/search/cs?searchtype=author&query=Sundaresan%2C+N), [Shao Kun Deng](https://arxiv.org/search/cs?searchtype=author&query=Deng%2C+S+K), [Shengyu Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+S), [Shujie Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+S)
+
+> Benchmark datasets have a significant impact on accelerating research in programming language tasks. In this paper, we introduce CodeXGLUE, a benchmark dataset to foster machine learning research for program understanding and generation. CodeXGLUE includes a collection of 10 tasks across 14 datasets and a platform for model evaluation and comparison. CodeXGLUE also features three baseline systems, including the BERT-style, GPT-style, and Encoder-Decoder models, to make it easy for researchers to use the platform. The availability of such data and baselines can help the development and validation of new methods that can be applied to various program understanding and generation problems.
+
+
+
+
+
+
 
 
 
