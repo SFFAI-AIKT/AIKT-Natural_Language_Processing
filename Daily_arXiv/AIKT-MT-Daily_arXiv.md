@@ -2,6 +2,11 @@
 
 # Index
 
+- [2021-02-12](#2021-02-12)
+  - [1. Fused Acoustic and Text Encoding for Multimodal Bilingual Pretraining and Speech Translation](#2021-02-12-1)
+  - [2. Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision](#2021-02-12-2)
+- [2021-02-11](#2021-02-11)
+  - [1. Argmax Flows and Multinomial Diffusion: Towards Non-Autoregressive Language Models](#2021-02-11-1)
 - [2021-02-10](#2021-02-10)
   - [1. CodeXGLUE: A Machine Learning Benchmark Dataset for Code Understanding and Generation](#2021-02-10-1)
 - [2021-02-09](#2021-02-09)
@@ -47,6 +52,77 @@
   - [3. Synthesizing Monolingual Data for Neural Machine Translation](#2021-02-01-3)
   - [4. Transition based Graph Decoder for Neural Machine Translation](#2021-02-01-4)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-02-12
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-02-12-1">1. Fused Acoustic and Text Encoding for Multimodal Bilingual Pretraining and Speech Translation</h2>
+
+Title: [Fused Acoustic and Text Encoding for Multimodal Bilingual Pretraining and Speech Translation](https://arxiv.org/abs/2102.05766)
+
+Authors: [Renjie Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+R), [Junkun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J), [Mingbo Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+M), [Liang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+L)
+
+> Recently text and speech representation learning has successfully improved many language related tasks. However, all existing methods only learn from one input modality, while a unified acoustic and text representation is desired by many speech-related tasks such as speech translation. We propose a Fused Acoustic and Text Masked Language Model (FAT-MLM) which jointly learns a unified representation for both acoustic and text in-put. Within this cross modal representation learning framework, we further present an end-to-end model for Fused Acoustic and Text Speech Translation (FAT-ST). Experiments on three translation directions show that our proposed speech translation models fine-tuned from FAT-MLM substantially improve translation quality (+5.90 BLEU).
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2102.05766](https://arxiv.org/abs/2102.05766) [cs.CL]** |
+|           | (or **[arXiv:2102.05766v1](https://arxiv.org/abs/2102.05766v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-12-2">2. Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision</h2>
+
+Title: [Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision](https://arxiv.org/abs/2102.05918)
+
+Authors: [Chao Jia](https://arxiv.org/search/cs?searchtype=author&query=Jia%2C+C), [Yinfei Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Ye Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%2C+Y), [Yi-Ting Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Zarana Parekh](https://arxiv.org/search/cs?searchtype=author&query=Parekh%2C+Z), [Hieu Pham](https://arxiv.org/search/cs?searchtype=author&query=Pham%2C+H), [Quoc V. Le](https://arxiv.org/search/cs?searchtype=author&query=Le%2C+Q+V), [Yunhsuan Sung](https://arxiv.org/search/cs?searchtype=author&query=Sung%2C+Y), [Zhen Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Tom Duerig](https://arxiv.org/search/cs?searchtype=author&query=Duerig%2C+T)
+
+> Pre-trained representations are becoming crucial for many NLP and perception tasks. While representation learning in NLP has transitioned to training on raw text without human annotations, visual and vision-language representations still rely heavily on curated training datasets that are expensive or require expert knowledge. For vision applications, representations are mostly learned using datasets with explicit class labels such as ImageNet or OpenImages. For vision-language, popular datasets like Conceptual Captions, MSCOCO, or CLIP all involve a non-trivial data collection (and cleaning) process. This costly curation process limits the size of datasets and hence hinders the scaling of trained models. In this paper, we leverage a noisy dataset of over one billion image alt-text pairs, obtained without expensive filtering or post-processing steps in the Conceptual Captions dataset. A simple dual-encoder architecture learns to align visual and language representations of the image and text pairs using a contrastive loss. We show that the scale of our corpus can make up for its noise and leads to state-of-the-art representations even with such a simple learning scheme. Our visual representation achieves strong performance when transferred to classification tasks such as ImageNet and VTAB. The aligned visual and language representations also set new state-of-the-art results on Flickr30K and MSCOCO benchmarks, even when compared with more sophisticated cross-attention models. The representations also enable cross-modality search with complex text and text + image queries.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2102.05918](https://arxiv.org/abs/2102.05918) [cs.CV]** |
+|           | (or **[arXiv:2102.05918v1](https://arxiv.org/abs/2102.05918v1) [cs.CV]** for this version) |
+
+
+
+
+
+# 2021-02-11
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-02-11-1">1. Argmax Flows and Multinomial Diffusion: Towards Non-Autoregressive Language Models</h2>
+
+Title: [Argmax Flows and Multinomial Diffusion: Towards Non-Autoregressive Language Models](https://arxiv.org/abs/2102.05379)
+
+Authors: [Emiel Hoogeboom](https://arxiv.org/search/stat?searchtype=author&query=Hoogeboom%2C+E), [Didrik Nielsen](https://arxiv.org/search/stat?searchtype=author&query=Nielsen%2C+D), [Priyank Jaini](https://arxiv.org/search/stat?searchtype=author&query=Jaini%2C+P), [Patrick Forré](https://arxiv.org/search/stat?searchtype=author&query=Forré%2C+P), [Max Welling](https://arxiv.org/search/stat?searchtype=author&query=Welling%2C+M)
+
+> The field of language modelling has been largely dominated by autoregressive models, for which sampling is inherently difficult to parallelize. This paper introduces two new classes of generative models for categorical data such as language or image segmentation: Argmax Flows and Multinomial Diffusion. Argmax Flows are defined by a composition of a continuous distribution (such as a normalizing flow), and an argmax function. To optimize this model, we learn a probabilistic inverse for the argmax that lifts the categorical data to a continuous space. Multinomial Diffusion gradually adds categorical noise in a diffusion process, for which the generative denoising process is learned. We demonstrate that our models perform competitively on language modelling and modelling of image segmentation maps.
+
+| Subjects: | **Machine Learning (stat.ML)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2102.05379](https://arxiv.org/abs/2102.05379) [stat.ML]** |
+|           | (or **[arXiv:2102.05379v1](https://arxiv.org/abs/2102.05379v1) [stat.ML]** for this version) |
+
+
+
+
+
+
+
+
+
+
 
 
 
