@@ -2,6 +2,8 @@
 
 # Index
 
+- [2021-02-16](#2021-02-16)
+  - [1. MAPGN: MAsked Pointer-Generator network for sequence-to-sequence pre-training](#2021-02-16-1)
 - [2021-02-15](#2021-02-15)
   - [1. Continuous Learning in Neural Machine Translation using Bilingual Dictionaries](#2021-02-15-1)
   - [2. Improving Zero-shot Neural Machine Translation on Language-specific Encoders-Decoders](#2021-02-15-2)
@@ -55,6 +57,32 @@
   - [3. Synthesizing Monolingual Data for Neural Machine Translation](#2021-02-01-3)
   - [4. Transition based Graph Decoder for Neural Machine Translation](#2021-02-01-4)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-02-16
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-02-16-1">1. MAPGN: MAsked Pointer-Generator network for sequence-to-sequence pre-training</h2>
+
+Title: [MAPGN: MAsked Pointer-Generator network for sequence-to-sequence pre-training](https://arxiv.org/abs/2102.07380)
+
+Authors: [Mana Ihori](https://arxiv.org/search/cs?searchtype=author&query=Ihori%2C+M), [Naoki Makishima](https://arxiv.org/search/cs?searchtype=author&query=Makishima%2C+N), [Tomohiro Tanaka](https://arxiv.org/search/cs?searchtype=author&query=Tanaka%2C+T), [Akihiko Takashima](https://arxiv.org/search/cs?searchtype=author&query=Takashima%2C+A), [Shota Orihashi](https://arxiv.org/search/cs?searchtype=author&query=Orihashi%2C+S), [Ryo Masumura](https://arxiv.org/search/cs?searchtype=author&query=Masumura%2C+R)
+
+> This paper presents a self-supervised learning method for pointer-generator networks to improve spoken-text normalization. Spoken-text normalization that converts spoken-style text into style normalized text is becoming an important technology for improving subsequent processing such as machine translation and summarization. The most successful spoken-text normalization method to date is sequence-to-sequence (seq2seq) mapping using pointer-generator networks that possess a copy mechanism from an input sequence. However, these models require a large amount of paired data of spoken-style text and style normalized text, and it is difficult to prepare such a volume of data. In order to construct spoken-text normalization model from the limited paired data, we focus on self-supervised learning which can utilize unpaired text data to improve seq2seq models. Unfortunately, conventional self-supervised learning methods do not assume that pointer-generator networks are utilized. Therefore, we propose a novel self-supervised learning method, MAsked Pointer-Generator Network (MAPGN). The proposed method can effectively pre-train the pointer-generator network by learning to fill masked tokens using the copy mechanism. Our experiments demonstrate that MAPGN is more effective for pointer-generator networks than the conventional self-supervised learning methods in two spoken-text normalization tasks.
+
+| Comments: | Accepted at ICASSP 2021                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2102.07380](https://arxiv.org/abs/2102.07380) [cs.CL]** |
+|           | (or **[arXiv:2102.07380v1](https://arxiv.org/abs/2102.07380v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
