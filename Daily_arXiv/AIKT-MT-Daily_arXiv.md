@@ -2,6 +2,11 @@
 
 # Index
 
+- [2021-02-17](#2021-02-17)
+  - [1. Meta Back-translation](#2021-02-17-1)
+  - [2. Exploring Transformers in Natural Language Generation: GPT, BERT, and XLNet](#2021-02-17-2)
+  - [3. Non-Autoregressive Text Generation with Pre-trained Language Models](#2021-02-17-3)
+  - [4. Revisiting Language Encoding in Learning Multilingual Representations](#2021-02-17-4)
 - [2021-02-16](#2021-02-16)
   - [1. MAPGN: MAsked Pointer-Generator network for sequence-to-sequence pre-training](#2021-02-16-1)
 - [2021-02-15](#2021-02-15)
@@ -57,6 +62,85 @@
   - [3. Synthesizing Monolingual Data for Neural Machine Translation](#2021-02-01-3)
   - [4. Transition based Graph Decoder for Neural Machine Translation](#2021-02-01-4)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-02-17
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-02-17-1">1. Meta Back-translation</h2>
+
+Title: [Meta Back-translation](https://arxiv.org/abs/2102.07847)
+
+Authors: [Hieu Pham](https://arxiv.org/search/cs?searchtype=author&query=Pham%2C+H), [Xinyi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Yiming Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
+
+> Back-translation is an effective strategy to improve the performance of Neural Machine Translation~(NMT) by generating pseudo-parallel data. However, several recent works have found that better translation quality of the pseudo-parallel data does not necessarily lead to better final translation models, while lower-quality but more diverse data often yields stronger results. In this paper, we propose a novel method to generate pseudo-parallel data from a pre-trained back-translation model. Our method is a meta-learning algorithm which adapts a pre-trained back-translation model so that the pseudo-parallel data it generates would train a forward-translation model to do well on a validation set. In our evaluations in both the standard datasets WMT En-De'14 and WMT En-Fr'14, as well as a multilingual translation setting, our method leads to significant improvements over strong baselines. Our code will be made available.
+
+| Comments: | Accepted to ICLR 2021                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2102.07847](https://arxiv.org/abs/2102.07847) [cs.CL]** |
+|           | (or **[arXiv:2102.07847v1](https://arxiv.org/abs/2102.07847v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-17-2">2. Exploring Transformers in Natural Language Generation: GPT, BERT, and XLNet</h2>
+
+Title: [Exploring Transformers in Natural Language Generation: GPT, BERT, and XLNet](https://arxiv.org/abs/2102.08036)
+
+Authors: [M. Onat Topal](https://arxiv.org/search/cs?searchtype=author&query=Topal%2C+M+O), [Anil Bas](https://arxiv.org/search/cs?searchtype=author&query=Bas%2C+A), [Imke van Heerden](https://arxiv.org/search/cs?searchtype=author&query=van+Heerden%2C+I)
+
+> Recent years have seen a proliferation of attention mechanisms and the rise of Transformers in Natural Language Generation (NLG). Previously, state-of-the-art NLG architectures such as RNN and LSTM ran into vanishing gradient problems; as sentences grew larger, distance between positions remained linear, and sequential computation hindered parallelization since sentences were processed word by word. Transformers usher in a new era. In this paper, we explore three major Transformer-based models, namely GPT, BERT, and XLNet, that carry significant implications for the field. NLG is a burgeoning area that is now bolstered with rapid developments in attention mechanisms. From poetry generation to summarization, text generation derives benefit as Transformer-based language models achieve groundbreaking results.
+
+| Comments: | Accepted as oral presentation to ICIDAAI 2021 - Short Paper  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2102.08036](https://arxiv.org/abs/2102.08036) [cs.CL]** |
+|           | (or **[arXiv:2102.08036v1](https://arxiv.org/abs/2102.08036v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-17-3">3. Non-Autoregressive Text Generation with Pre-trained Language Models</h2>
+
+Title: [Non-Autoregressive Text Generation with Pre-trained Language Models](https://arxiv.org/abs/2102.08220)
+
+Authors: [Yixuan Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+Y), [Deng Cai](https://arxiv.org/search/cs?searchtype=author&query=Cai%2C+D), [Yan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [David Vandyke](https://arxiv.org/search/cs?searchtype=author&query=Vandyke%2C+D), [Simon Baker](https://arxiv.org/search/cs?searchtype=author&query=Baker%2C+S), [Piji Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+P), [Nigel Collier](https://arxiv.org/search/cs?searchtype=author&query=Collier%2C+N)
+
+> Non-autoregressive generation (NAG) has recently attracted great attention due to its fast inference speed. However, the generation quality of existing NAG models still lags behind their autoregressive counterparts. In this work, we show that BERT can be employed as the backbone of a NAG model to greatly improve performance. Additionally, we devise mechanisms to alleviate the two common problems of vanilla NAG models: the inflexibility of prefixed output length and the conditional independence of individual token predictions. Lastly, to further increase the speed advantage of the proposed model, we propose a new decoding strategy, ratio-first, for applications where the output lengths can be approximately estimated beforehand. For a comprehensive evaluation, we test the proposed model on three text generation tasks, including text summarization, sentence compression and machine translation. Experimental results show that our model significantly outperforms existing non-autoregressive baselines and achieves competitive performance with many strong autoregressive models. In addition, we also conduct extensive analysis experiments to reveal the effect of each proposed component.
+
+| Comments: | Accepted to EACL 2021                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2102.08220](https://arxiv.org/abs/2102.08220) [cs.CL]** |
+|           | (or **[arXiv:2102.08220v1](https://arxiv.org/abs/2102.08220v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-17-4">4. Revisiting Language Encoding in Learning Multilingual Representations</h2>
+
+Title: [Revisiting Language Encoding in Learning Multilingual Representations](https://arxiv.org/abs/2102.08357)
+
+Authors: [Shengjie Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+S), [Kaiyuan Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+K), [Shuxin Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+S), [Guolin Ke](https://arxiv.org/search/cs?searchtype=author&query=Ke%2C+G), [Di He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+D), [Liwei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Tie-Yan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T)
+
+> Transformer has demonstrated its great power to learn contextual word representations for multiple languages in a single model. To process multilingual sentences in the model, a learnable vector is usually assigned to each language, which is called "language embedding". The language embedding can be either added to the word embedding or attached at the beginning of the sentence. It serves as a language-specific signal for the Transformer to capture contextual representations across languages. In this paper, we revisit the use of language embedding and identify several problems in the existing formulations. By investigating the interaction between language embedding and word embedding in the self-attention module, we find that the current methods cannot reflect the language-specific word correlation well. Given these findings, we propose a new approach called Cross-lingual Language Projection (XLP) to replace language embedding. For a sentence, XLP projects the word embeddings into language-specific semantic space, and then the projected embeddings will be fed into the Transformer model to process with their language-specific meanings. In such a way, XLP achieves the purpose of appropriately encoding "language" in a multilingual Transformer model. Experimental results show that XLP can freely and significantly boost the model performance on extensive multilingual benchmark datasets. Codes and models will be released at [this https URL](https://github.com/lsj2408/XLP).
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2102.08357](https://arxiv.org/abs/2102.08357) [cs.CL]** |
+|           | (or **[arXiv:2102.08357v1](https://arxiv.org/abs/2102.08357v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
