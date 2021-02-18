@@ -2,6 +2,9 @@
 
 # Index
 
+- [2020-02-18](#2020-02-18)
+  - [1. COCO-LM: Correcting and Contrasting Text Sequences for Language Model Pretraining](#2020-02-18-1)
+  - [2. Sparsely Factored Neural Machine Translation](#2020-02-18-2)
 - [2021-02-17](#2021-02-17)
   - [1. Meta Back-translation](#2021-02-17-1)
   - [2. Exploring Transformers in Natural Language Generation: GPT, BERT, and XLNet](#2021-02-17-2)
@@ -62,6 +65,47 @@
   - [3. Synthesizing Monolingual Data for Neural Machine Translation](#2021-02-01-3)
   - [4. Transition based Graph Decoder for Neural Machine Translation](#2021-02-01-4)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+
+
+# 2021-02-18
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-02-18-1">1. COCO-LM: Correcting and Contrasting Text Sequences for Language Model Pretraining</h2>
+
+Title: [COCO-LM: Correcting and Contrasting Text Sequences for Language Model Pretraining](https://arxiv.org/abs/2102.08473)
+
+Authors: [Yu Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+Y), [Chenyan Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+C), [Payal Bajaj](https://arxiv.org/search/cs?searchtype=author&query=Bajaj%2C+P), [Saurabh Tiwary](https://arxiv.org/search/cs?searchtype=author&query=Tiwary%2C+S), [Paul Bennett](https://arxiv.org/search/cs?searchtype=author&query=Bennett%2C+P), [Jiawei Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+J), [Xia Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+X)
+
+> We present COCO-LM, a new self-supervised learning framework that pretrains Language Models by COrrecting challenging errors and COntrasting text sequences. COCO-LM employs an auxiliary language model to mask-and-predict tokens in original text sequences. It creates more challenging pretraining inputs, where noises are sampled based on their likelihood in the auxiliary language model. COCO-LM then pretrains with two tasks: The first task, corrective language modeling, learns to correct the auxiliary model's corruptions by recovering the original tokens. The second task, sequence contrastive learning, ensures that the language model generates sequence representations that are invariant to noises and transformations. In our experiments on the GLUE and SQuAD benchmarks, COCO-LM outperforms recent pretraining approaches in various pretraining settings and few-shot evaluations, with higher pretraining efficiency. Our analyses reveal that COCO-LM's advantages come from its challenging training signals, more contextualized token representations, and regularized sequence representations.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2102.08473](https://arxiv.org/abs/2102.08473) [cs.CL]** |
+|           | (or **[arXiv:2102.08473v1](https://arxiv.org/abs/2102.08473v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-18-2">2. Sparsely Factored Neural Machine Translation</h2>
+
+Title: [Sparsely Factored Neural Machine Translation](https://arxiv.org/abs/2102.08934)
+
+Authors: [Noe Casas](https://arxiv.org/search/cs?searchtype=author&query=Casas%2C+N), [Jose A. R. Fonollosa](https://arxiv.org/search/cs?searchtype=author&query=Fonollosa%2C+J+A+R), [Marta R. Costa-jussà](https://arxiv.org/search/cs?searchtype=author&query=Costa-jussà%2C+M+R)
+
+> The standard approach to incorporate linguistic information to neural machine translation systems consists in maintaining separate vocabularies for each of the annotated features to be incorporated (e.g. POS tags, dependency relation label), embed them, and then aggregate them with each subword in the word they belong to. This approach, however, cannot easily accommodate annotation schemes that are not dense for every word.
+> We propose a method suited for such a case, showing large improvements in out-of-domain data, and comparable quality for the in-domain data. Experiments are performed in morphologically-rich languages like Basque and German, for the case of low-resource scenarios.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2102.08934](https://arxiv.org/abs/2102.08934) [cs.CL]** |
+|           | (or **[arXiv:2102.08934v1](https://arxiv.org/abs/2102.08934v1) [cs.CL]** for this version) |
 
 
 
