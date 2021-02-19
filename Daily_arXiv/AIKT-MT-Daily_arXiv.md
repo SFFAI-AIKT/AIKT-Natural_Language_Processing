@@ -2,9 +2,12 @@
 
 # Index
 
-- [2020-02-18](#2020-02-18)
-  - [1. COCO-LM: Correcting and Contrasting Text Sequences for Language Model Pretraining](#2020-02-18-1)
-  - [2. Sparsely Factored Neural Machine Translation](#2020-02-18-2)
+- [2021-02-19](#2021-02-19)
+  - [1. Conceptual 12M: Pushing Web-Scale Image-Text Pre-Training To Recognize Long-Tail Visual Concepts](#2021-02-19-1)
+  - [2. Going Full-TILT Boogie on Document Understanding with Text-Image-Layout Transformer](#2021-02-19-2)
+- [2021-02-18](#2021-02-18)
+  - [1. COCO-LM: Correcting and Contrasting Text Sequences for Language Model Pretraining](#2021-02-18-1)
+  - [2. Sparsely Factored Neural Machine Translation](#2021-02-18-2)
 - [2021-02-17](#2021-02-17)
   - [1. Meta Back-translation](#2021-02-17-1)
   - [2. Exploring Transformers in Natural Language Generation: GPT, BERT, and XLNet](#2021-02-17-2)
@@ -65,6 +68,44 @@
   - [3. Synthesizing Monolingual Data for Neural Machine Translation](#2021-02-01-3)
   - [4. Transition based Graph Decoder for Neural Machine Translation](#2021-02-01-4)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-02-19
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-02-19-1">1. Conceptual 12M: Pushing Web-Scale Image-Text Pre-Training To Recognize Long-Tail Visual Concepts</h2>
+
+Title: [Conceptual 12M: Pushing Web-Scale Image-Text Pre-Training To Recognize Long-Tail Visual Concepts](https://arxiv.org/abs/2102.08981)
+
+Authors: [Soravit Changpinyo](https://arxiv.org/search/cs?searchtype=author&query=Changpinyo%2C+S), [Piyush Sharma](https://arxiv.org/search/cs?searchtype=author&query=Sharma%2C+P), [Nan Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+N), [Radu Soricut](https://arxiv.org/search/cs?searchtype=author&query=Soricut%2C+R)
+
+> The availability of large-scale image captioning and visual question answering datasets has contributed significantly to recent successes in vision-and-language pre-training. However, these datasets are often collected with overrestrictive requirements, inherited from their original target tasks (e.g., image caption generation), which limit the resulting dataset scale and diversity. We take a step further in pushing the limits of vision-and-language pre-training data by relaxing the data collection pipeline used in Conceptual Captions 3M (CC3M) [Sharma et al. 2018] and introduce the Conceptual 12M (CC12M), a dataset with 12 million image-text pairs specifically meant to be used for vision-and-language pre-training. We perform an analysis of this dataset, as well as benchmark its effectiveness against CC3M on multiple downstream tasks with an emphasis on long-tail visual recognition. The quantitative and qualitative results clearly illustrate the benefit of scaling up pre-training data for vision-and-language tasks, as indicated by the new state-of-the-art results on both the nocaps and Conceptual Captions benchmarks.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2102.08981](https://arxiv.org/abs/2102.08981) [cs.CV]** |
+|           | (or **[arXiv:2102.08981v1](https://arxiv.org/abs/2102.08981v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-19-2">2. Going Full-TILT Boogie on Document Understanding with Text-Image-Layout Transformer</h2>
+
+Title: [Going Full-TILT Boogie on Document Understanding with Text-Image-Layout Transformer](https://arxiv.org/abs/2102.09550)
+
+Authors: [Rafał Powalski](https://arxiv.org/search/cs?searchtype=author&query=Powalski%2C+R), [Łukasz Borchmann](https://arxiv.org/search/cs?searchtype=author&query=Borchmann%2C+Ł), [Dawid Jurkiewicz](https://arxiv.org/search/cs?searchtype=author&query=Jurkiewicz%2C+D), [Tomasz Dwojak](https://arxiv.org/search/cs?searchtype=author&query=Dwojak%2C+T), [Michał Pietruszka](https://arxiv.org/search/cs?searchtype=author&query=Pietruszka%2C+M), [Gabriela Pałka](https://arxiv.org/search/cs?searchtype=author&query=Pałka%2C+G)
+
+> We address the challenging problem of Natural Language Comprehension beyond plain-text documents by introducing the TILT neural network architecture which simultaneously learns layout information, visual features, and textual semantics. Contrary to previous approaches, we rely on a decoder capable of solving all problems involving natural language. The layout is represented as an attention bias and complemented with contextualized visual information, while the core of our model is a pretrained encoder-decoder Transformer. We trained our network on real-world documents with different layouts, such as tables, figures, and forms. Our novel approach achieves state-of-the-art in extracting information from documents and answering questions, demanding layout understanding (DocVQA, CORD, WikiOps, SROIE). At the same time, we simplify the process by employing an end-to-end model.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2102.09550](https://arxiv.org/abs/2102.09550) [cs.CL]** |
+|           | (or **[arXiv:2102.09550v1](https://arxiv.org/abs/2102.09550v1) [cs.CL]** for this version) |
 
 
 
