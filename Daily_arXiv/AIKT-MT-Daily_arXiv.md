@@ -2,6 +2,9 @@
 
 # Index
 
+- [2021-02-22](#2021-02-22)
+  - [1. Calibrate Before Use: Improving Few-Shot Performance of Language Models](#2021-02-22-1)
+  - [2. Multilingual Augmenter: The Model Chooses](#2021-02-22-2)
 - [2021-02-19](#2021-02-19)
   - [1. Conceptual 12M: Pushing Web-Scale Image-Text Pre-Training To Recognize Long-Tail Visual Concepts](#2021-02-19-1)
   - [2. Going Full-TILT Boogie on Document Understanding with Text-Image-Layout Transformer](#2021-02-19-2)
@@ -68,6 +71,45 @@
   - [3. Synthesizing Monolingual Data for Neural Machine Translation](#2021-02-01-3)
   - [4. Transition based Graph Decoder for Neural Machine Translation](#2021-02-01-4)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-02-22
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-02-22-1">1. Calibrate Before Use: Improving Few-Shot Performance of Language Models</h2>
+
+Title: [Calibrate Before Use: Improving Few-Shot Performance of Language Models](https://arxiv.org/abs/2102.09690)
+
+Authors: [Tony Z. Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+T+Z), [Eric Wallace](https://arxiv.org/search/cs?searchtype=author&query=Wallace%2C+E), [Shi Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+S), [Dan Klein](https://arxiv.org/search/cs?searchtype=author&query=Klein%2C+D), [Sameer Singh](https://arxiv.org/search/cs?searchtype=author&query=Singh%2C+S)
+
+> GPT-3 can perform numerous tasks when provided a natural language prompt that contains a few training examples. We show that this type of few-shot learning can be unstable: the choice of prompt format, training examples, and even the order of the training examples can cause accuracy to vary from near chance to near state-of-the-art. We demonstrate that this instability arises from the bias of language models towards predicting certain answers, e.g., those that are placed near the end of the prompt or are common in the pre-training data. To mitigate this, we first estimate the model's bias towards each answer by asking for its prediction when given the training prompt and a content-free test input such as "N/A". We then fit calibration parameters that cause the prediction for this input to be uniform across answers. On a diverse set of tasks, this contextual calibration procedure substantially improves GPT-3 and GPT-2's average accuracy (up to 30.0% absolute) and reduces variance across different choices of the prompt.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2102.09690](https://arxiv.org/abs/2102.09690) [cs.CL]** |
+|           | (or **[arXiv:2102.09690v1](https://arxiv.org/abs/2102.09690v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-22-2">2. Multilingual Augmenter: The Model Chooses</h2>
+
+Title: [Multilingual Augmenter: The Model Chooses](https://arxiv.org/abs/2102.09708)
+
+Authors: [Matthew Ciolino](https://arxiv.org/search/cs?searchtype=author&query=Ciolino%2C+M), [David Noever](https://arxiv.org/search/cs?searchtype=author&query=Noever%2C+D), [Josh Kalin](https://arxiv.org/search/cs?searchtype=author&query=Kalin%2C+J)
+
+> Natural Language Processing (NLP) relies heavily on training data. Transformers, as they have gotten bigger, have required massive amounts of training data. To satisfy this requirement, text augmentation should be looked at as a way to expand your current dataset and to generalize your models. One text augmentation we will look at is translation augmentation. We take an English sentence and translate it to another language before translating it back to English. In this paper, we look at the effect of 108 different language back translations on various metrics and text embeddings.
+
+| Comments: | 18 Pages, 10 Figures, 4 Tables, 37 References                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2102.09708](https://arxiv.org/abs/2102.09708) [cs.CL]** |
+|           | (or **[arXiv:2102.09708v1](https://arxiv.org/abs/2102.09708v1) [cs.CL]** for this version) |
 
 
 
