@@ -2,6 +2,19 @@
 
 # Index
 
+- [2021-02-23](#2021-02-23)
+  - [1. VisualGPT: Data-efficient Image Captioning by Balancing Visual Input and Linguistic Knowledge from Pretraining](#2021-02-23-1)
+  - [2. Transformer is All You Need: Multimodal Multitask Learning with a Unified Transformer](#2021-02-23-2)
+  - [3. Probing Multimodal Embeddings for Linguistic Properties: the Visual-Semantic Case](#2021-02-23-3)
+  - [4. Multi-Domain Adaptation in Neural Machine Translation Through Multidimensional Tagging](#2021-02-23-4)
+  - [5. Machine Translation Customization via Automatic Training Data Selection from the Web](#2021-02-23-5)
+  - [6. CDA: a Cost Efficient Content-based Multilingual Web Document Aligner](#2021-02-23-6)
+  - [7. Deep Structured Feature Networks for Table Detection and Tabular Data Extraction from Scanned Financial Document Images](#2021-02-23-7)
+  - [8. Understanding and Enhancing the Use of Context for Machine Translation](#2021-02-23-8)
+  - [9. Bilingual Language Modeling, A transfer learning technique for Roman Urdu](#2021-02-23-9)
+  - [10. Towards Personalised and Document-level Machine Translation of Dialogue](#2021-02-23-10)
+  - [11. Multimodal Punctuation Prediction with Contextual Dropout](#2021-02-23-11)
+  - [12. Position Information in Transformers: An Overview](#2021-02-23-12)
 - [2021-02-22](#2021-02-22)
   - [1. Calibrate Before Use: Improving Few-Shot Performance of Language Models](#2021-02-22-1)
   - [2. Multilingual Augmenter: The Model Chooses](#2021-02-22-2)
@@ -71,6 +84,225 @@
   - [3. Synthesizing Monolingual Data for Neural Machine Translation](#2021-02-01-3)
   - [4. Transition based Graph Decoder for Neural Machine Translation](#2021-02-01-4)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-02-23
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-02-23-1">1. VisualGPT: Data-efficient Image Captioning by Balancing Visual Input and Linguistic Knowledge from Pretraining</h2>
+
+Title: [VisualGPT: Data-efficient Image Captioning by Balancing Visual Input and Linguistic Knowledge from Pretraining](https://arxiv.org/abs/2102.10407)
+
+Authors: [Jun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J), [Han Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+H), [Kai Yi](https://arxiv.org/search/cs?searchtype=author&query=Yi%2C+K), [Boyang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+B), [Mohamed Elhoseiny](https://arxiv.org/search/cs?searchtype=author&query=Elhoseiny%2C+M)
+
+> In this paper, we aim to improve the data efficiency of image captioning. We propose VisualGPT, a data-efficient image captioning model that leverages the linguistic knowledge from a large pretrained language model (LM). A crucial challenge is to balance between the use of visual information in the image and prior linguistic knowledge acquired from pretraining.We designed a novel self-resurrecting encoder-decoder attention mechanism to quickly adapt the pretrained LM as the language decoder on a small amount of in-domain training data. The pro-posed self-resurrecting activation unit produces sparse activations but is not susceptible to zero gradients. When trained on 0.1%, 0.5% and 1% of MSCOCO and Conceptual Captions, the proposed model, VisualGPT, surpasses strong image captioning baselines. VisualGPT outperforms the best baseline model by up to 10.8% CIDEr on MS COCO and up to 5.4% CIDEr on Conceptual Captions.We also perform a series of ablation studies to quantify the utility of each system component. To the best of our knowledge, this is the first work that improves data efficiency of image captioning by utilizing LM pretrained on unimodal data. Our code is available at: [this https URL](https://github.com/Vision-CAIR/VisualGPT).
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Multimedia (cs.MM) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2102.10407](https://arxiv.org/abs/2102.10407) [cs.CV]** |
+|           | (or **[arXiv:2102.10407v1](https://arxiv.org/abs/2102.10407v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-23-2">2. Transformer is All You Need: Multimodal Multitask Learning with a Unified Transformer</h2>
+
+Title: [Transformer is All You Need: Multimodal Multitask Learning with a Unified Transformer](https://arxiv.org/abs/2102.10772)
+
+Authors: [Ronghang Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+R), [Amanpreet Singh](https://arxiv.org/search/cs?searchtype=author&query=Singh%2C+A)
+
+> We propose UniT, a Unified Transformer model to simultaneously learn the most prominent tasks across different domains, ranging from object detection to language understanding and multimodal reasoning. Based on the transformer encoder-decoder architecture, our UniT model encodes each input modality with an encoder and makes predictions on each task with a shared decoder over the encoded input representations, followed by task-specific output heads. The entire model is jointly trained end-to-end with losses from each task. Compared to previous efforts on multi-task learning with transformers, we share the same model parameters to all tasks instead of separately fine-tuning task-specific models and handle a much higher variety of tasks across different domains. In our experiments, we learn 7 tasks jointly over 8 datasets, achieving comparable performance to well-established prior work on each domain under the same supervision with a compact set of model parameters. Code will be released in MMF at [this https URL](https://mmf.sh/).
+
+| Comments: | 15 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2102.10772](https://arxiv.org/abs/2102.10772) [cs.CV]** |
+|           | (or **[arXiv:2102.10772v1](https://arxiv.org/abs/2102.10772v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-23-3">3. Probing Multimodal Embeddings for Linguistic Properties: the Visual-Semantic Case</h2>
+
+Title: [Probing Multimodal Embeddings for Linguistic Properties: the Visual-Semantic Case](https://arxiv.org/abs/2102.11115)
+
+Authors: [Adam Dahlgren Lindström](https://arxiv.org/search/cs?searchtype=author&query=Lindström%2C+A+D), [Suna Bensch](https://arxiv.org/search/cs?searchtype=author&query=Bensch%2C+S), [Johanna Björklund](https://arxiv.org/search/cs?searchtype=author&query=Björklund%2C+J), [Frank Drewes](https://arxiv.org/search/cs?searchtype=author&query=Drewes%2C+F)
+
+> Semantic embeddings have advanced the state of the art for countless natural language processing tasks, and various extensions to multimodal domains, such as visual-semantic embeddings, have been proposed. While the power of visual-semantic embeddings comes from the distillation and enrichment of information through machine learning, their inner workings are poorly understood and there is a shortage of analysis tools. To address this problem, we generalize the notion of probing tasks to the visual-semantic case. To this end, we (i) discuss the formalization of probing tasks for embeddings of image-caption pairs, (ii) define three concrete probing tasks within our general framework, (iii) train classifiers to probe for those properties, and (iv) compare various state-of-the-art embeddings under the lens of the proposed probing tasks. Our experiments reveal an up to 12% increase in accuracy on visual-semantic embeddings compared to the corresponding unimodal embeddings, which suggest that the text and image dimensions represented in the former do complement each other.
+
+| Comments: | Submitted July 1 2020, COLING 2020 main conference           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| DOI:      | [10.18653/v1/2020.coling-main.64](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.18653%2Fv1%2F2020.coling-main.64&v=0ae187d0) |
+| Cite as:  | **[arXiv:2102.11115](https://arxiv.org/abs/2102.11115) [cs.LG]** |
+|           | (or **[arXiv:2102.11115v1](https://arxiv.org/abs/2102.11115v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-23-4">4. Multi-Domain Adaptation in Neural Machine Translation Through Multidimensional Tagging</h2>
+
+Title: [Multi-Domain Adaptation in Neural Machine Translation Through Multidimensional Tagging](https://arxiv.org/abs/2102.10160)
+
+Authors: [Emmanouil Stergiadis](https://arxiv.org/search/cs?searchtype=author&query=Stergiadis%2C+E), [Satendra Kumar](https://arxiv.org/search/cs?searchtype=author&query=Kumar%2C+S), [Fedor Kovalev](https://arxiv.org/search/cs?searchtype=author&query=Kovalev%2C+F), [Pavel Levin](https://arxiv.org/search/cs?searchtype=author&query=Levin%2C+P)
+
+> Many modern Neural Machine Translation (NMT) systems are trained on nonhomogeneous datasets with several distinct dimensions of variation (e.g. domain, source, generation method, style, etc.). We describe and empirically evaluate multidimensional tagging (MDT), a simple yet effective method for passing sentence-level information to the model. Our human and BLEU evaluation results show that MDT can be applied to the problem of multi-domain adaptation and significantly reduce training costs without sacrificing the translation quality on any of the constituent domains.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2102.10160](https://arxiv.org/abs/2102.10160) [cs.CL]** |
+|           | (or **[arXiv:2102.10160v1](https://arxiv.org/abs/2102.10160v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-23-5">5. Machine Translation Customization via Automatic Training Data Selection from the Web</h2>
+
+Title: [Machine Translation Customization via Automatic Training Data Selection from the Web](https://arxiv.org/abs/2102.10243)
+
+Authors: [Thuy Vu](https://arxiv.org/search/cs?searchtype=author&query=Vu%2C+T), [Alessandro Moschitti](https://arxiv.org/search/cs?searchtype=author&query=Moschitti%2C+A)
+
+> Machine translation (MT) systems, especially when designed for an industrial setting, are trained with general parallel data derived from the Web. Thus, their style is typically driven by word/structure distribution coming from the average of many domains. In contrast, MT customers want translations to be specialized to their domain, for which they are typically able to provide text samples. We describe an approach for customizing MT systems on specific domains by selecting data similar to the target customer data to train neural translation models. We build document classifiers using monolingual target data, e.g., provided by the customers to select parallel training data from Web crawled data. Finally, we train MT models on our automatically selected data, obtaining a system specialized to the target domain. We tested our approach on the benchmark from WMT-18 Translation Task for News domains enabling comparisons with state-of-the-art MT systems. The results show that our models outperform the top systems while using less data and smaller models.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | ECIR 2021                                                    |
+| Cite as:           | **[arXiv:2102.10243](https://arxiv.org/abs/2102.10243) [cs.CL]** |
+|                    | (or **[arXiv:2102.10243v1](https://arxiv.org/abs/2102.10243v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-23-6">6. CDA: a Cost Efficient Content-based Multilingual Web Document Aligner</h2>
+
+Title: [CDA: a Cost Efficient Content-based Multilingual Web Document Aligner](https://arxiv.org/abs/2102.10246)
+
+Authors: [Thuy Vu](https://arxiv.org/search/cs?searchtype=author&query=Vu%2C+T), [Alessandro Moschitti](https://arxiv.org/search/cs?searchtype=author&query=Moschitti%2C+A)
+
+> We introduce a Content-based Document Alignment approach (CDA), an efficient method to align multilingual web documents based on content in creating parallel training data for machine translation (MT) systems operating at the industrial level. CDA works in two steps: (i) projecting documents of a web domain to a shared multilingual space; then (ii) aligning them based on the similarity of their representations in such space. We leverage lexical translation models to build vector representations using TF-IDF. CDA achieves performance comparable with state-of-the-art systems in the WMT-16 Bilingual Document Alignment Shared Task benchmark while operating in multilingual space. Besides, we created two web-scale datasets to examine the robustness of CDA in an industrial setting involving up to 28 languages and millions of documents. The experiments show that CDA is robust, cost-effective, and is significantly superior in (i) processing large and noisy web data and (ii) scaling to new and low-resourced languages.
+
+| Subjects:          | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Information Retrieval (cs.IR) |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | EACL 2021                                                    |
+| Cite as:           | **[arXiv:2102.10246](https://arxiv.org/abs/2102.10246) [cs.CL]** |
+|                    | (or **[arXiv:2102.10246v1](https://arxiv.org/abs/2102.10246v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-23-7">7. Deep Structured Feature Networks for Table Detection and Tabular Data Extraction from Scanned Financial Document Images</h2>
+
+Title: [Deep Structured Feature Networks for Table Detection and Tabular Data Extraction from Scanned Financial Document Images](https://arxiv.org/abs/2102.10287)
+
+Authors: [Siwen Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+S), [Mengting Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+M), [Yiwen Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+Y), [Wanying Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+W), [Josiah Poon](https://arxiv.org/search/cs?searchtype=author&query=Poon%2C+J)
+
+> Automatic table detection in PDF documents has achieved a great success but tabular data extraction are still challenging due to the integrity and noise issues in detected table areas. The accurate data extraction is extremely crucial in finance area. Inspired by this, the aim of this research is proposing an automated table detection and tabular data extraction from financial PDF documents. We proposed a method that consists of three main processes, which are detecting table areas with a Faster R-CNN (Region-based Convolutional Neural Network) model with Feature Pyramid Network (FPN) on each page image, extracting contents and structures by a compounded layout segmentation technique based on optical character recognition (OCR) and formulating regular expression rules for table header separation. The tabular data extraction feature is embedded with rule-based filtering and restructuring functions that are highly scalable. We annotate a new Financial Documents dataset with table regions for the experiment. The excellent table detection performance of the detection model is obtained from our customized dataset. The main contributions of this paper are proposing the Financial Documents dataset with table-area annotations, the superior detection model and the rule-based layout segmentation technique for the tabular data extraction from PDF files.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2102.10287](https://arxiv.org/abs/2102.10287) [cs.CL]** |
+|           | (or **[arXiv:2102.10287v1](https://arxiv.org/abs/2102.10287v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-23-8">8. Understanding and Enhancing the Use of Context for Machine Translation</h2>
+
+Title: [Understanding and Enhancing the Use of Context for Machine Translation](https://arxiv.org/abs/2102.10437)
+
+Authors: [Marzieh Fadaee](https://arxiv.org/search/cs?searchtype=author&query=Fadaee%2C+M)
+
+> To understand and infer meaning in language, neural models have to learn complicated nuances. Discovering distinctive linguistic phenomena from data is not an easy task. For instance, lexical ambiguity is a fundamental feature of language which is challenging to learn. Even more prominently, inferring the meaning of rare and unseen lexical units is difficult with neural networks. Meaning is often determined from context. With context, languages allow meaning to be conveyed even when the specific words used are not known by the reader. To model this learning process, a system has to learn from a few instances in context and be able to generalize well to unseen cases. The learning process is hindered when training data is scarce for a task. Even with sufficient data, learning patterns for the long tail of the lexical distribution is challenging. In this thesis, we focus on understanding certain potentials of contexts in neural models and design augmentation models to benefit from them. We focus on machine translation as an important instance of the more general language understanding problem. To translate from a source language to a target language, a neural model has to understand the meaning of constituents in the provided context and generate constituents with the same meanings in the target language. This task accentuates the value of capturing nuances of language and the necessity of generalization from few observations. The main problem we study in this thesis is what neural machine translation models learn from data and how we can devise more focused contexts to enhance this learning. Looking more in-depth into the role of context and the impact of data on learning models is essential to advance the NLP field. Moreover, it helps highlight the vulnerabilities of current neural networks and provides insights into designing more robust models.
+
+| Comments: | PhD dissertation defended on November 10th, 2020             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2102.10437](https://arxiv.org/abs/2102.10437) [cs.CL]** |
+|           | (or **[arXiv:2102.10437v1](https://arxiv.org/abs/2102.10437v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-23-9">9. Bilingual Language Modeling, A transfer learning technique for Roman Urdu</h2>
+
+Title: [Bilingual Language Modeling, A transfer learning technique for Roman Urdu](https://arxiv.org/abs/2102.10958)
+
+Authors: [Usama Khalid](https://arxiv.org/search/cs?searchtype=author&query=Khalid%2C+U), [Mirza Omer Beg](https://arxiv.org/search/cs?searchtype=author&query=Beg%2C+M+O), [Muhammad Umair Arshad](https://arxiv.org/search/cs?searchtype=author&query=Arshad%2C+M+U)
+
+> Pretrained language models are now of widespread use in Natural Language Processing. Despite their success, applying them to Low Resource languages is still a huge challenge. Although Multilingual models hold great promise, applying them to specific low-resource languages e.g. Roman Urdu can be excessive. In this paper, we show how the code-switching property of languages may be used to perform cross-lingual transfer learning from a corresponding high resource language. We also show how this transfer learning technique termed Bilingual Language Modeling can be used to produce better performing models for Roman Urdu. To enable training and experimentation, we also present a collection of novel corpora for Roman Urdu extracted from various sources and social networking sites, e.g. Twitter. We train Monolingual, Multilingual, and Bilingual models of Roman Urdu - the proposed bilingual model achieves 23% accuracy compared to the 2% and 11% of the monolingual and multilingual models respectively in the Masked Language Modeling (MLM) task.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2102.10958](https://arxiv.org/abs/2102.10958) [cs.CL]** |
+|           | (or **[arXiv:2102.10958v1](https://arxiv.org/abs/2102.10958v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-23-10">10. Towards Personalised and Document-level Machine Translation of Dialogue</h2>
+
+Title: [Towards Personalised and Document-level Machine Translation of Dialogue](https://arxiv.org/abs/2102.10979)
+
+Authors: [Sebastian T. Vincent](https://arxiv.org/search/cs?searchtype=author&query=Vincent%2C+S+T)
+
+> State-of-the-art (SOTA) neural machine translation (NMT) systems translate texts at sentence level, ignoring context: intra-textual information, like the previous sentence, and extra-textual information, like the gender of the speaker. Because of that, some sentences are translated incorrectly. Personalised NMT (PersNMT) and document-level NMT (DocNMT) incorporate this information into the translation process. Both fields are relatively new and previous work within them is limited. Moreover, there are no readily available robust evaluation metrics for them, which makes it difficult to develop better systems, as well as track global progress and compare different methods. This thesis proposal focuses on PersNMT and DocNMT for the domain of dialogue extracted from TV subtitles in five languages: English, Brazilian Portuguese, German, French and Polish. Three main challenges are addressed: (1) incorporating extra-textual information directly into NMT systems; (2) improving the machine translation of cohesion devices; (3) reliable evaluation for PersNMT and DocNMT.
+
+| Comments: | Thesis Proposal, 6 pages, 7 figures, accepted to the EACL2021 Student Workshop |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2102.10979](https://arxiv.org/abs/2102.10979) [cs.CL]** |
+|           | (or **[arXiv:2102.10979v1](https://arxiv.org/abs/2102.10979v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-23-11">11. Multimodal Punctuation Prediction with Contextual Dropout</h2>
+
+Title: [Multimodal Punctuation Prediction with Contextual Dropout](https://arxiv.org/abs/2102.11012)
+
+Authors: [Andrew Silva](https://arxiv.org/search/cs?searchtype=author&query=Silva%2C+A), [Barry-John Theobald](https://arxiv.org/search/cs?searchtype=author&query=Theobald%2C+B), [Nicholas Apostoloff](https://arxiv.org/search/cs?searchtype=author&query=Apostoloff%2C+N)
+
+> Automatic speech recognition (ASR) is widely used in consumer electronics. ASR greatly improves the utility and accessibility of technology, but usually the output is only word sequences without punctuation. This can result in ambiguity in inferring user-intent. We first present a transformer-based approach for punctuation prediction that achieves 8% improvement on the IWSLT 2012 TED Task, beating the previous state of the art [1]. We next describe our multimodal model that learns from both text and audio, which achieves 8% improvement over the text-only algorithm on an internal dataset for which we have both the audio and transcriptions. Finally, we present an approach to learning a model using contextual dropout that allows us to handle variable amounts of future context at test time.
+
+| Comments:    | Accepted for publication at ICASSP 2021                      |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2102.11012](https://arxiv.org/abs/2102.11012) [cs.CL]** |
+|              | (or **[arXiv:2102.11012v1](https://arxiv.org/abs/2102.11012v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-23-12">12. Position Information in Transformers: An Overview</h2>
+
+Title: [Position Information in Transformers: An Overview](https://arxiv.org/abs/2102.11090)
+
+Authors: [Philipp Dufter](https://arxiv.org/search/cs?searchtype=author&query=Dufter%2C+P), [Martin Schmitt](https://arxiv.org/search/cs?searchtype=author&query=Schmitt%2C+M), [Hinrich Schütze](https://arxiv.org/search/cs?searchtype=author&query=Schütze%2C+H)
+
+> Transformers are arguably the main workhorse in recent Natural Language Processing research. By definition a Transformer is invariant with respect to reorderings of the input. However, language is inherently sequential and word order is essential to the semantics and syntax of an utterance. In this paper, we provide an overview of common methods to incorporate position information into Transformer models. The objectives of this survey are to i) showcase that position information in Transformer is a vibrant and extensive research area; ii) enable the reader to compare existing methods by providing a unified notation and meaningful clustering; iii) indicate what characteristics of an application should be taken into account when selecting a position encoding; iv) provide stimuli for future research.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2102.11090](https://arxiv.org/abs/2102.11090) [cs.CL]** |
+|           | (or **[arXiv:2102.11090v1](https://arxiv.org/abs/2102.11090v1) [cs.CL]** for this version) |
+
+
 
 
 
