@@ -2,6 +2,13 @@
 
 # Index
 
+- [2021-02-24](#2021-02-24)
+  - [1. RUBERT: A Bilingual Roman Urdu BERT Using Cross Lingual Transfer Learning](#2021-02-24-1)
+  - [2. Exploiting Multimodal Reinforcement Learning for Simultaneous Machine Translation](#2021-02-24-2)
+  - [3. MixUp Training Leads to Reduced Overfitting and Improved Calibration for the Transformer Architecture](#2021-02-24-3)
+  - [4. Exploring Supervised and Unsupervised Rewards in Machine Translation](#2021-02-24-4)
+  - [5. Automated Quality Assessment of Cognitive Behavioral Therapy Sessions Through Highly Contextualized Language Representations](#2021-02-24-5)
+  - [6. Paraphrases do not explain word analogies](#2021-02-24-6)
 - [2021-02-23](#2021-02-23)
   - [1. VisualGPT: Data-efficient Image Captioning by Balancing Visual Input and Linguistic Knowledge from Pretraining](#2021-02-23-1)
   - [2. Transformer is All You Need: Multimodal Multitask Learning with a Unified Transformer](#2021-02-23-2)
@@ -84,6 +91,118 @@
   - [3. Synthesizing Monolingual Data for Neural Machine Translation](#2021-02-01-3)
   - [4. Transition based Graph Decoder for Neural Machine Translation](#2021-02-01-4)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-02-24
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-02-24-1">1. RUBERT: A Bilingual Roman Urdu BERT Using Cross Lingual Transfer Learning</h2>
+
+Title: [RUBERT: A Bilingual Roman Urdu BERT Using Cross Lingual Transfer Learning](https://arxiv.org/abs/2102.11278)
+
+Authors: [Usama Khalid](https://arxiv.org/search/cs?searchtype=author&query=Khalid%2C+U), [Mirza Omer Beg](https://arxiv.org/search/cs?searchtype=author&query=Beg%2C+M+O), [Muhammad Umair Arshad](https://arxiv.org/search/cs?searchtype=author&query=Arshad%2C+M+U)
+
+> In recent studies, it has been shown that Multilingual language models underperform their monolingual counterparts. It is also a well-known fact that training and maintaining monolingual models for each language is a costly and time-consuming process. Roman Urdu is a resource-starved language used popularly on social media platforms and chat apps. In this research, we propose a novel dataset of scraped tweets containing 54M tokens and 3M sentences. Additionally, we also propose RUBERT a bilingual Roman Urdu model created by additional pretraining of English BERT. We compare its performance with a monolingual Roman Urdu BERT trained from scratch and a multilingual Roman Urdu BERT created by additional pretraining of Multilingual BERT. We show through our experiments that additional pretraining of the English BERT produces the most notable performance improvement.
+
+| Comments: | arXiv admin note: substantial text overlap with [arXiv:2102.10958](https://arxiv.org/abs/2102.10958) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2102.11278](https://arxiv.org/abs/2102.11278) [cs.CL]** |
+|           | (or **[arXiv:2102.11278v1](https://arxiv.org/abs/2102.11278v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-24-2">2. Exploiting Multimodal Reinforcement Learning for Simultaneous Machine Translation</h2>
+
+Title: [Exploiting Multimodal Reinforcement Learning for Simultaneous Machine Translation](https://arxiv.org/abs/2102.11387)
+
+Authors: [Julia Ive](https://arxiv.org/search/cs?searchtype=author&query=Ive%2C+J), [Andy Mingren Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+A+M), [Yishu Miao](https://arxiv.org/search/cs?searchtype=author&query=Miao%2C+Y), [Ozan Caglayan](https://arxiv.org/search/cs?searchtype=author&query=Caglayan%2C+O), [Pranava Madhyastha](https://arxiv.org/search/cs?searchtype=author&query=Madhyastha%2C+P), [Lucia Specia](https://arxiv.org/search/cs?searchtype=author&query=Specia%2C+L)
+
+> This paper addresses the problem of simultaneous machine translation (SiMT) by exploring two main concepts: (a) adaptive policies to learn a good trade-off between high translation quality and low latency; and (b) visual information to support this process by providing additional (visual) contextual information which may be available before the textual input is produced. For that, we propose a multimodal approach to simultaneous machine translation using reinforcement learning, with strategies to integrate visual and textual information in both the agent and the environment. We provide an exploration on how different types of visual information and integration strategies affect the quality and latency of simultaneous translation models, and demonstrate that visual cues lead to higher quality while keeping the latency low.
+
+| Comments: | Long paper accepted to EACL 2021, Camera-ready version       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2102.11387](https://arxiv.org/abs/2102.11387) [cs.CL]** |
+|           | (or **[arXiv:2102.11387v1](https://arxiv.org/abs/2102.11387v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-24-3">3. MixUp Training Leads to Reduced Overfitting and Improved Calibration for the Transformer Architecture</h2>
+
+Title: [MixUp Training Leads to Reduced Overfitting and Improved Calibration for the Transformer Architecture](https://arxiv.org/abs/2102.11402)
+
+Authors: [Wancong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+W), [Ieshan Vaidya](https://arxiv.org/search/cs?searchtype=author&query=Vaidya%2C+I)
+
+> MixUp is a computer vision data augmentation technique that uses convex interpolations of input data and their labels to enhance model generalization during training. However, the application of MixUp to the natural language understanding (NLU) domain has been limited, due to the difficulty of interpolating text directly in the input space. In this study, we propose MixUp methods at the Input, Manifold, and sentence embedding levels for the transformer architecture, and apply them to finetune the BERT model for a diverse set of NLU tasks. We find that MixUp can improve model performance, as well as reduce test loss and model calibration error by up to 50%.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2102.11402](https://arxiv.org/abs/2102.11402) [cs.CL]** |
+|           | (or **[arXiv:2102.11402v1](https://arxiv.org/abs/2102.11402v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-24-4">4. Exploring Supervised and Unsupervised Rewards in Machine Translation</h2>
+
+Title: [Exploring Supervised and Unsupervised Rewards in Machine Translation](https://arxiv.org/abs/2102.11403)
+
+Authors: [Julia Ive](https://arxiv.org/search/cs?searchtype=author&query=Ive%2C+J), [Zixu Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Marina Fomicheva](https://arxiv.org/search/cs?searchtype=author&query=Fomicheva%2C+M), [Lucia Specia](https://arxiv.org/search/cs?searchtype=author&query=Specia%2C+L)
+
+> Reinforcement Learning (RL) is a powerful framework to address the discrepancy between loss functions used during training and the final evaluation metrics to be used at test time. When applied to neural Machine Translation (MT), it minimises the mismatch between the cross-entropy loss and non-differentiable evaluation metrics like BLEU. However, the suitability of these metrics as reward function at training time is questionable: they tend to be sparse and biased towards the specific words used in the reference texts. We propose to address this problem by making models less reliant on such metrics in two ways: (a) with an entropy-regularised RL method that does not only maximise a reward function but also explore the action space to avoid peaky distributions; (b) with a novel RL method that explores a dynamic unsupervised reward function to balance between exploration and exploitation. We base our proposals on the Soft Actor-Critic (SAC) framework, adapting the off-policy maximum entropy model for language generation applications such as MT. We demonstrate that SAC with BLEU reward tends to overfit less to the training data and performs better on out-of-domain data. We also show that our dynamic unsupervised reward can lead to better translation of ambiguous words.
+
+| Comments: | Long paper accepted to EACL 2021, Camera-ready version       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2102.11403](https://arxiv.org/abs/2102.11403) [cs.CL]** |
+|           | (or **[arXiv:2102.11403v1](https://arxiv.org/abs/2102.11403v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-24-5">5. Automated Quality Assessment of Cognitive Behavioral Therapy Sessions Through Highly Contextualized Language Representations</h2>
+
+Title: [Automated Quality Assessment of Cognitive Behavioral Therapy Sessions Through Highly Contextualized Language Representations](https://arxiv.org/abs/2102.11573)
+
+Authors: [Nikolaos Flemotomos](https://arxiv.org/search/cs?searchtype=author&query=Flemotomos%2C+N), [Victor R. Martinez](https://arxiv.org/search/cs?searchtype=author&query=Martinez%2C+V+R), [Zhuohao Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Z), [Torrey A. Creed](https://arxiv.org/search/cs?searchtype=author&query=Creed%2C+T+A), [David C. Atkins](https://arxiv.org/search/cs?searchtype=author&query=Atkins%2C+D+C), [Shrikanth Narayanan](https://arxiv.org/search/cs?searchtype=author&query=Narayanan%2C+S)
+
+> During a psychotherapy session, the counselor typically adopts techniques which are codified along specific dimensions (e.g., 'displays warmth and confidence', or 'attempts to set up collaboration') to facilitate the evaluation of the session. Those constructs, traditionally scored by trained human raters, reflect the complex nature of psychotherapy and highly depend on the context of the interaction. Recent advances in deep contextualized language models offer an avenue for accurate in-domain linguistic representations which can lead to robust recognition and scoring of such psychotherapy-relevant behavioral constructs, and support quality assurance and supervision. In this work, a BERT-based model is proposed for automatic behavioral scoring of a specific type of psychotherapy, called Cognitive Behavioral Therapy (CBT), where prior work is limited to frequency-based language features and/or short text excerpts which do not capture the unique elements involved in a spontaneous long conversational interaction. The model is trained in a multi-task manner in order to achieve higher interpretability. BERT-based representations are further augmented with available therapy metadata, providing relevant non-linguistic context and leading to consistent performance improvements.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2102.11573](https://arxiv.org/abs/2102.11573) [cs.CL]** |
+|           | (or **[arXiv:2102.11573v1](https://arxiv.org/abs/2102.11573v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-24-6">6. Paraphrases do not explain word analogies</h2>
+
+Title: [Paraphrases do not explain word analogies](https://arxiv.org/abs/2102.11749)
+
+Authors: [Louis Fournier](https://arxiv.org/search/cs?searchtype=author&query=Fournier%2C+L), [Ewan Dunbar](https://arxiv.org/search/cs?searchtype=author&query=Dunbar%2C+E)
+
+> Many types of distributional word embeddings (weakly) encode linguistic regularities as directions (the difference between "jump" and "jumped" will be in a similar direction to that of "walk" and "walked," and so on). Several attempts have been made to explain this fact. We respond to Allen and Hospedales' recent (ICML, 2019) theoretical explanation, which claims that word2vec and GloVe will encode linguistic regularities whenever a specific relation of paraphrase holds between the four words involved in the regularity. We demonstrate that the explanation does not go through: the paraphrase relations needed under this explanation do not hold empirically.
+
+| Comments: | To appear in Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Volume 2, Short Papers |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2102.11749](https://arxiv.org/abs/2102.11749) [cs.CL]** |
+|           | (or **[arXiv:2102.11749v1](https://arxiv.org/abs/2102.11749v1) [cs.CL]** for this version) |
+
+
 
 
 
