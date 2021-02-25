@@ -2,6 +2,13 @@
 
 # Index
 
+- [2021-02-25](#2021-02-25)
+  - [1. Do Transformer Modifications Transfer Across Implementations and Applications?](#2021-02-25-1)
+  - [2. Teach Me to Explain: A Review of Datasets for Explainable NLP](#2021-02-25-2)
+  - [3. Trajectory-Based Meta-Learning for Out-Of-Vocabulary Word Embedding Learning](#2021-02-25-3)
+  - [4. Creolizing the Web](#2021-02-25-4)
+  - [5. Task-Specific Pre-Training and Cross Lingual Transfer for Code-Switched Data](#2021-02-25-5)
+  - [6. When Attention Meets Fast Recurrence: Training Language Models with Reduced Compute](#2021-02-25-6)
 - [2021-02-24](#2021-02-24)
   - [1. RUBERT: A Bilingual Roman Urdu BERT Using Cross Lingual Transfer Learning](#2021-02-24-1)
   - [2. Exploiting Multimodal Reinforcement Learning for Simultaneous Machine Translation](#2021-02-24-2)
@@ -91,6 +98,113 @@
   - [3. Synthesizing Monolingual Data for Neural Machine Translation](#2021-02-01-3)
   - [4. Transition based Graph Decoder for Neural Machine Translation](#2021-02-01-4)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-02-25
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-02-25-1">1. Do Transformer Modifications Transfer Across Implementations and Applications?</h2>
+
+Title: [Do Transformer Modifications Transfer Across Implementations and Applications?](https://arxiv.org/abs/2102.11972)
+
+Authors: [Sharan Narang](https://arxiv.org/search/cs?searchtype=author&query=Narang%2C+S), [Hyung Won Chung](https://arxiv.org/search/cs?searchtype=author&query=Chung%2C+H+W), [Yi Tay](https://arxiv.org/search/cs?searchtype=author&query=Tay%2C+Y), [William Fedus](https://arxiv.org/search/cs?searchtype=author&query=Fedus%2C+W), [Thibault Fevry](https://arxiv.org/search/cs?searchtype=author&query=Fevry%2C+T), [Michael Matena](https://arxiv.org/search/cs?searchtype=author&query=Matena%2C+M), [Karishma Malkan](https://arxiv.org/search/cs?searchtype=author&query=Malkan%2C+K), [Noah Fiedel](https://arxiv.org/search/cs?searchtype=author&query=Fiedel%2C+N), [Noam Shazeer](https://arxiv.org/search/cs?searchtype=author&query=Shazeer%2C+N), [Zhenzhong Lan](https://arxiv.org/search/cs?searchtype=author&query=Lan%2C+Z), [Yanqi Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+Y), [Wei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+W), [Nan Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+N), [Jake Marcus](https://arxiv.org/search/cs?searchtype=author&query=Marcus%2C+J), [Adam Roberts](https://arxiv.org/search/cs?searchtype=author&query=Roberts%2C+A), [Colin Raffel](https://arxiv.org/search/cs?searchtype=author&query=Raffel%2C+C)
+
+> The research community has proposed copious modifications to the Transformer architecture since it was introduced over three years ago, relatively few of which have seen widespread adoption. In this paper, we comprehensively evaluate many of these modifications in a shared experimental setting that covers most of the common uses of the Transformer in natural language processing. Surprisingly, we find that most modifications do not meaningfully improve performance. Furthermore, most of the Transformer variants we found beneficial were either developed in the same codebase that we used or are relatively minor changes. We conjecture that performance improvements may strongly depend on implementation details and correspondingly make some recommendations for improving the generality of experimental results.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2102.11972](https://arxiv.org/abs/2102.11972) [cs.LG]** |
+|           | (or **[arXiv:2102.11972v1](https://arxiv.org/abs/2102.11972v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-25-2">2. Teach Me to Explain: A Review of Datasets for Explainable NLP</h2>
+
+Title: [Teach Me to Explain: A Review of Datasets for Explainable NLP](https://arxiv.org/abs/2102.12060)
+
+Authors: [Sarah Wiegreffe](https://arxiv.org/search/cs?searchtype=author&query=Wiegreffe%2C+S), [Ana Marasović](https://arxiv.org/search/cs?searchtype=author&query=Marasović%2C+A)
+
+> Explainable NLP (ExNLP) has increasingly focused on collecting human-annotated explanations. These explanations are used downstream in three ways: as data augmentation to improve performance on a predictive task, as a loss signal to train models to produce explanations for their predictions, and as a means to evaluate the quality of model-generated explanations. In this review, we identify three predominant classes of explanations (highlights, free-text, and structured), organize the literature on annotating each type, point to what has been learned to date, and give recommendations for collecting ExNLP datasets in the future.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2102.12060](https://arxiv.org/abs/2102.12060) [cs.CL]** |
+|           | (or **[arXiv:2102.12060v1](https://arxiv.org/abs/2102.12060v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-25-3">3. Trajectory-Based Meta-Learning for Out-Of-Vocabulary Word Embedding Learning</h2>
+
+Title: [Trajectory-Based Meta-Learning for Out-Of-Vocabulary Word Embedding Learning](https://arxiv.org/abs/2102.12266)
+
+Authors: [Gordon Buck](https://arxiv.org/search/cs?searchtype=author&query=Buck%2C+G), [Andreas Vlachos](https://arxiv.org/search/cs?searchtype=author&query=Vlachos%2C+A)
+
+> Word embedding learning methods require a large number of occurrences of a word to accurately learn its embedding. However, out-of-vocabulary (OOV) words which do not appear in the training corpus emerge frequently in the smaller downstream data. Recent work formulated OOV embedding learning as a few-shot regression problem and demonstrated that meta-learning can improve results obtained. However, the algorithm used, model-agnostic meta-learning (MAML) is known to be unstable and perform worse when a large number of gradient steps are used for parameter updates. In this work, we propose the use of Leap, a meta-learning algorithm which leverages the entire trajectory of the learning process instead of just the beginning and the end points, and thus ameliorates these two issues. In our experiments on a benchmark OOV embedding learning dataset and in an extrinsic evaluation, Leap performs comparably or better than MAML. We go on to examine which contexts are most beneficial to learn an OOV embedding from, and propose that the choice of contexts may matter more than the meta-learning employed.
+
+| Comments: | Camera ready for the EACL workshop Adapt-NLP 2021            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2102.12266](https://arxiv.org/abs/2102.12266) [cs.CL]** |
+|           | (or **[arXiv:2102.12266v1](https://arxiv.org/abs/2102.12266v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-25-4">4. Creolizing the Web</h2>
+
+Title: [Creolizing the Web](https://arxiv.org/abs/2102.12382)
+
+Authors: [Abhinav Tamaskar](https://arxiv.org/search/cs?searchtype=author&query=Tamaskar%2C+A), [Roy Rinberg](https://arxiv.org/search/cs?searchtype=author&query=Rinberg%2C+R), [Sunandan Chakraborty](https://arxiv.org/search/cs?searchtype=author&query=Chakraborty%2C+S), [Bud Mishra](https://arxiv.org/search/cs?searchtype=author&query=Mishra%2C+B)
+
+> The evolution of language has been a hotly debated subject with contradicting hypotheses and unreliable claims. Drawing from signalling games, dynamic population mechanics, machine learning and algebraic topology, we present a method for detecting evolutionary patterns in a sociological model of language evolution. We develop a minimalistic model that provides a rigorous base for any generalized evolutionary model for language based on communication between individuals. We also discuss theoretical guarantees of this model, ranging from stability of language representations to fast convergence of language by temporal communication and language drift in an interactive setting. Further we present empirical results and their interpretations on a real world dataset from \rdt to identify communities and echo chambers for opinions, thus placing obstructions to reliable communication among communities.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2102.12382](https://arxiv.org/abs/2102.12382) [cs.CL]** |
+|           | (or **[arXiv:2102.12382v1](https://arxiv.org/abs/2102.12382v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-25-5">5. Task-Specific Pre-Training and Cross Lingual Transfer for Code-Switched Data</h2>
+
+Title: [Task-Specific Pre-Training and Cross Lingual Transfer for Code-Switched Data](https://arxiv.org/abs/2102.12407)
+
+Authors: [Akshat Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+A), [Sai Krishna Rallabandi](https://arxiv.org/search/cs?searchtype=author&query=Rallabandi%2C+S+K), [Alan Black](https://arxiv.org/search/cs?searchtype=author&query=Black%2C+A)
+
+> Using task-specific pre-training and leveraging cross-lingual transfer are two of the most popular ways to handle code-switched data. In this paper, we aim to compare the effects of both for the task of sentiment analysis. We work with two Dravidian Code-Switched languages - Tamil-Engish and Malayalam-English and four different BERT based models. We compare the effects of task-specific pre-training and cross-lingual transfer and find that task-specific pre-training results in superior zero-shot and supervised performance when compared to performance achieved by leveraging cross-lingual transfer from multilingual BERT models.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2102.12407](https://arxiv.org/abs/2102.12407) [cs.CL]** |
+|           | (or **[arXiv:2102.12407v1](https://arxiv.org/abs/2102.12407v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-25-6">6. When Attention Meets Fast Recurrence: Training Language Models with Reduced Compute</h2>
+
+Title: [When Attention Meets Fast Recurrence: Training Language Models with Reduced Compute](https://arxiv.org/abs/2102.12459)
+
+Authors: [Tao Lei](https://arxiv.org/search/cs?searchtype=author&query=Lei%2C+T)
+
+> Large language models have become increasingly difficult to train because of the required computation time and cost. In this work, we present SRU++, a recurrent unit with optional built-in attention that exhibits state-of-the-art modeling capacity and training efficiency. On standard language modeling benchmarks such as enwik8 and Wiki-103 datasets, our model obtains better perplexity and bits-per-character (bpc) while using 2.5x-10x less training time and cost compared to top-performing Transformer models. Our results reaffirm that attention is not all we need and can be complementary to other sequential modeling modules. Moreover, fast recurrence with little attention can be a leading model architecture.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2102.12459](https://arxiv.org/abs/2102.12459) [cs.CL]** |
+|           | (or **[arXiv:2102.12459v1](https://arxiv.org/abs/2102.12459v1) [cs.CL]** for this version) |
 
 
 
