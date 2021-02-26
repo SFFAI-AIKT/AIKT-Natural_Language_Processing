@@ -2,6 +2,12 @@
 
 # Index
 
+- [2021-02-26](#2021-02-26)
+  - [1. LazyFormer: Self Attention with Lazy Update](#2021-02-26-1)
+  - [2. IIE-NLP-Eyas at SemEval-2021 Task 4: Enhancing PLM for ReCAM with Special Tokens, Re-Ranking, Siamese Encoders and Back Translation](#2021-02-26-2)
+  - [3. A Primer on Contrastive Pretraining in Language Processing: Methods, Lessons Learned and Perspectives](#2021-02-26-3)
+  - [4. Investigating the Limitations of the Transformers with Simple Arithmetic Tasks](#2021-02-26-4)
+  - [5. Retrieval Augmentation to Improve Robustness and Interpretability of Deep Neural Networks](#2021-02-26-5)
 - [2021-02-25](#2021-02-25)
   - [1. Do Transformer Modifications Transfer Across Implementations and Applications?](#2021-02-25-1)
   - [2. Teach Me to Explain: A Review of Datasets for Explainable NLP](#2021-02-25-2)
@@ -98,6 +104,97 @@
   - [3. Synthesizing Monolingual Data for Neural Machine Translation](#2021-02-01-3)
   - [4. Transition based Graph Decoder for Neural Machine Translation](#2021-02-01-4)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-02-26
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-02-26-1">1. LazyFormer: Self Attention with Lazy Update</h2>
+
+Title: [LazyFormer: Self Attention with Lazy Update](https://arxiv.org/abs/2102.12702)
+
+Authors: [Chengxuan Ying](https://arxiv.org/search/cs?searchtype=author&query=Ying%2C+C), [Guolin Ke](https://arxiv.org/search/cs?searchtype=author&query=Ke%2C+G), [Di He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+D), [Tie-Yan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T)
+
+> Improving the efficiency of Transformer-based language pre-training is an important task in NLP, especially for the self-attention module, which is computationally expensive. In this paper, we propose a simple but effective solution, called \emph{LazyFormer}, which computes the self-attention distribution infrequently. LazyFormer composes of multiple lazy blocks, each of which contains multiple Transformer layers. In each lazy block, the self-attention distribution is only computed once in the first layer and then is reused in all upper layers. In this way, the cost of computation could be largely saved. We also provide several training tricks for LazyFormer. Extensive experiments demonstrate the effectiveness of the proposed method.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2102.12702](https://arxiv.org/abs/2102.12702) [cs.CL]** |
+|           | (or **[arXiv:2102.12702v1](https://arxiv.org/abs/2102.12702v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-26-2">2. IIE-NLP-Eyas at SemEval-2021 Task 4: Enhancing PLM for ReCAM with Special Tokens, Re-Ranking, Siamese Encoders and Back Translation</h2>
+
+Title: [IIE-NLP-Eyas at SemEval-2021 Task 4: Enhancing PLM for ReCAM with Special Tokens, Re-Ranking, Siamese Encoders and Back Translation](https://arxiv.org/abs/2102.12777)
+
+Authors: [Yuqiang Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie%2C+Y), [Luxi Xing](https://arxiv.org/search/cs?searchtype=author&query=Xing%2C+L), [Wei Peng](https://arxiv.org/search/cs?searchtype=author&query=Peng%2C+W), [Yue Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+Y)
+
+> This paper introduces our systems for all three subtasks of SemEval-2021 Task 4: Reading Comprehension of Abstract Meaning. To help our model better represent and understand abstract concepts in natural language, we well-design many simple and effective approaches adapted to the backbone model (RoBERTa). Specifically, we formalize the subtasks into the multiple-choice question answering format and add special tokens to abstract concepts, then, the final prediction of question answering is considered as the result of subtasks. Additionally, we employ many finetuning tricks to improve the performance. Experimental results show that our approaches achieve significant performance compared with the baseline systems. Our approaches achieve eighth rank on subtask-1 and tenth rank on subtask-2.
+
+| Comments: | 5 pages, SemEval-2021 Workshop, ACL-IJCNLP 2021              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2102.12777](https://arxiv.org/abs/2102.12777) [cs.CL]** |
+|           | (or **[arXiv:2102.12777v1](https://arxiv.org/abs/2102.12777v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-26-3">3. A Primer on Contrastive Pretraining in Language Processing: Methods, Lessons Learned and Perspectives</h2>
+
+Title: [A Primer on Contrastive Pretraining in Language Processing: Methods, Lessons Learned and Perspectives](https://arxiv.org/abs/2102.12982)
+
+Authors: [Nils Rethmeier](https://arxiv.org/search/cs?searchtype=author&query=Rethmeier%2C+N), [Isabelle Augenstein](https://arxiv.org/search/cs?searchtype=author&query=Augenstein%2C+I)
+
+> Modern natural language processing (NLP) methods employ self-supervised pretraining objectives such as masked language modeling to boost the performance of various application tasks. These pretraining methods are frequently extended with recurrence, adversarial or linguistic property masking, and more recently with contrastive learning objectives. Contrastive self-supervised training objectives enabled recent successes in image representation pretraining by learning to contrast input-input pairs of augmented images as either similar or dissimilar. However, in NLP, automated creation of text input augmentations is still very challenging because a single token can invert the meaning of a sentence. For this reason, some contrastive NLP pretraining methods contrast over input-label pairs, rather than over input-input pairs, using methods from Metric Learning and Energy Based Models. In this survey, we summarize recent self-supervised and supervised contrastive NLP pretraining methods and describe where they are used to improve language modeling, few or zero-shot learning, pretraining data-efficiency and specific NLP end-tasks. We introduce key contrastive learning concepts with lessons learned from prior research and structure works by applications and cross-field relations. Finally, we point to open challenges and future directions for contrastive NLP to encourage bringing contrastive NLP pretraining closer to recent successes in image representation pretraining.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2102.12982](https://arxiv.org/abs/2102.12982) [cs.CL]** |
+|           | (or **[arXiv:2102.12982v1](https://arxiv.org/abs/2102.12982v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-26-4">4. Investigating the Limitations of the Transformers with Simple Arithmetic Tasks</h2>
+
+Title: [Investigating the Limitations of the Transformers with Simple Arithmetic Tasks](https://arxiv.org/abs/2102.13019)
+
+Authors: [Rodrigo Nogueira](https://arxiv.org/search/cs?searchtype=author&query=Nogueira%2C+R), [Zhiying Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+Z), [Jimmy Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J)
+
+> The ability to perform arithmetic tasks is a remarkable trait of human intelligence and might form a critical component of more complex reasoning tasks. In this work, we investigate if the surface form of a number has any influence on how sequence-to-sequence language models learn simple arithmetic tasks such as addition and subtraction across a wide range of values. We find that how a number is represented in its surface form has a strong influence on the model's accuracy. In particular, the model fails to learn addition of five-digit numbers when using subwords (e.g., "32"), and it struggles to learn with character-level representations (e.g., "3 2"). By introducing position tokens (e.g., "3 10e1 2"), the model learns to accurately add and subtract numbers up to 60 digits. We conclude that modern pretrained language models can easily learn arithmetic from very few examples, as long as we use the proper surface representation. This result bolsters evidence that subword tokenizers and positional encodings are components in current transformer designs that might need improvement. Moreover, we show that regardless of the number of parameters and training examples, models cannot learn addition rules that are independent of the length of the numbers seen during training. Code to reproduce our experiments is available at [this https URL](https://github.com/castorini/transformers-arithmetic)
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2102.13019](https://arxiv.org/abs/2102.13019) [cs.CL]** |
+|           | (or **[arXiv:2102.13019v1](https://arxiv.org/abs/2102.13019v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-02-26-5">5. Retrieval Augmentation to Improve Robustness and Interpretability of Deep Neural Networks</h2>
+
+Title: [Retrieval Augmentation to Improve Robustness and Interpretability of Deep Neural Networks](https://arxiv.org/abs/2102.13030)
+
+Authors: [Rita Parada Ramos](https://arxiv.org/search/cs?searchtype=author&query=Ramos%2C+R+P), [Patrícia Pereira](https://arxiv.org/search/cs?searchtype=author&query=Pereira%2C+P), [Helena Moniz](https://arxiv.org/search/cs?searchtype=author&query=Moniz%2C+H), [Joao Paulo Carvalho](https://arxiv.org/search/cs?searchtype=author&query=Carvalho%2C+J+P), [Bruno Martins](https://arxiv.org/search/cs?searchtype=author&query=Martins%2C+B)
+
+> Deep neural network models have achieved state-of-the-art results in various tasks related to vision and/or language. Despite the use of large training data, most models are trained by iterating over single input-output pairs, discarding the remaining examples for the current prediction. In this work, we actively exploit the training data to improve the robustness and interpretability of deep neural networks, using the information from nearest training examples to aid the prediction both during training and testing. Specifically, the proposed approach uses the target of the nearest input example to initialize the memory state of an LSTM model or to guide attention mechanisms. We apply this approach to image captioning and sentiment analysis, conducting experiments with both image and text retrieval. Results show the effectiveness of the proposed models for the two tasks, on the widely used Flickr8 and IMDB datasets, respectively. Our code is publicly available [this http URL](http://github.com/RitaRamo/retrieval-augmentation-nn).
+
+| Comments: | Under review as a conference paper at IJCNN 2021             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2102.13030](https://arxiv.org/abs/2102.13030) [cs.CL]** |
+|           | (or **[arXiv:2102.13030v1](https://arxiv.org/abs/2102.13030v1) [cs.CL]** for this version) |
 
 
 
