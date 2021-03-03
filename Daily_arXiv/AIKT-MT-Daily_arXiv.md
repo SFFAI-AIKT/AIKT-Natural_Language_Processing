@@ -2,6 +2,11 @@
 
 # Index
 
+- [2021-03-03](#2021-03-03)
+  - [1. WIT: Wikipedia-based Image Text Dataset for Multimodal Multilingual Machine Learning](#2021-03-03-1)
+  - [2. On the Effectiveness of Dataset Embeddings in Mono-lingual,Multi-lingual and Zero-shot Conditions](#2021-03-03-2)
+  - [3. Contrastive Explanations for Model Interpretability](#2021-03-03-3)
+  - [4. MultiSubs: A Large-scale Multimodal and Multilingual Dataset](#2021-03-03-4)
 - [2021-03-02](#2021-03-02)
   - [1. Generative Adversarial Transformers](#2021-03-02-1)
   - [2. Token-Modification Adversarial Attacks for Natural Language Processing: A Survey](#2021-03-02-2)
@@ -11,6 +16,82 @@
   - [2. Learning Chess Blindfolded: Evaluating Language Models on State Tracking](#2021-03-01-2)
   - [3. Gradient-guided Loss Masking for Neural Machine Translation](#2021-03-01-3)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-03-03
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-03-03-1">1. WIT: Wikipedia-based Image Text Dataset for Multimodal Multilingual Machine Learning</h2>
+
+Title: [WIT: Wikipedia-based Image Text Dataset for Multimodal Multilingual Machine Learning](https://arxiv.org/abs/2103.01913)
+
+Authors: [Krishna Srinivasan](https://arxiv.org/search/cs?searchtype=author&query=Srinivasan%2C+K), [Karthik Raman](https://arxiv.org/search/cs?searchtype=author&query=Raman%2C+K), [Jiecao Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J), [Michael Bendersky](https://arxiv.org/search/cs?searchtype=author&query=Bendersky%2C+M), [Marc Najork](https://arxiv.org/search/cs?searchtype=author&query=Najork%2C+M)
+
+> The milestone improvements brought about by deep representation learning and pre-training techniques have led to large performance gains across downstream NLP, IR and Vision tasks. Multimodal modeling techniques aim to leverage large high-quality visio-linguistic datasets for learning complementary information (across image and text modalities). In this paper, we introduce the Wikipedia-based Image Text (WIT) Dataset\footnote{\url{[this https URL](https://github.com/google-research-datasets/wit)}} to better facilitate multimodal, multilingual learning. WIT is composed of a curated set of 37.6 million entity rich image-text examples with 11.5 million unique images across 108 Wikipedia languages. Its size enables WIT to be used as a pretraining dataset for multimodal models, as we show when applied to downstream tasks such as image-text retrieval. WIT has four main and unique advantages. First, WIT is the largest multimodal dataset by the number of image-text examples by 3x (at the time of writing). Second, WIT is massively multilingual (first of its kind) with coverage over 100+ languages (each of which has at least 12K examples) and provides cross-lingual texts for many images. Third, WIT represents a more diverse set of concepts and real world entities relative to what previous datasets cover. Lastly, WIT provides a very challenging real-world test set, as we empirically illustrate using an image-text retrieval task as an example.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Information Retrieval (cs.IR) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2103.01913](https://arxiv.org/abs/2103.01913) [cs.CV]** |
+|           | (or **[arXiv:2103.01913v1](https://arxiv.org/abs/2103.01913v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-03-2">2. On the Effectiveness of Dataset Embeddings in Mono-lingual,Multi-lingual and Zero-shot Conditions</h2>
+
+Title: [On the Effectiveness of Dataset Embeddings in Mono-lingual,Multi-lingual and Zero-shot Conditions](https://arxiv.org/abs/2103.01273)
+
+Authors: [Rob van der Goot](https://arxiv.org/search/cs?searchtype=author&query=van+der+Goot%2C+R), [Ahmet Üstün](https://arxiv.org/search/cs?searchtype=author&query=Üstün%2C+A), [Barbara Plank](https://arxiv.org/search/cs?searchtype=author&query=Plank%2C+B)
+
+> Recent complementary strands of research have shown that leveraging information on the data source through encoding their properties into embeddings can lead to performance increase when training a single model on heterogeneous data sources. However, it remains unclear in which situations these dataset embeddings are most effective, because they are used in a large variety of settings, languages and tasks. Furthermore, it is usually assumed that gold information on the data source is available, and that the test data is from a distribution seen during training. In this work, we compare the effect of dataset embeddings in mono-lingual settings, multi-lingual settings, and with predicted data source label in a zero-shot setting. We evaluate on three morphosyntactic tasks: morphological tagging, lemmatization, and dependency parsing, and use 104 datasets, 66 languages, and two different dataset grouping strategies. Performance increases are highest when the datasets are of the same language, and we know from which distribution the test-instance is drawn. In contrast, for setups where the data is from an unseen distribution, performance increase vanishes.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2103.01273](https://arxiv.org/abs/2103.01273) [cs.CL]** |
+|           | (or **[arXiv:2103.01273v1](https://arxiv.org/abs/2103.01273v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-03-3">3. Contrastive Explanations for Model Interpretability</h2>
+
+Title: [Contrastive Explanations for Model Interpretability](https://arxiv.org/abs/2103.01378)
+
+Authors: [Alon Jacovi](https://arxiv.org/search/cs?searchtype=author&query=Jacovi%2C+A), [Swabha Swayamdipta](https://arxiv.org/search/cs?searchtype=author&query=Swayamdipta%2C+S), [Shauli Ravfogel](https://arxiv.org/search/cs?searchtype=author&query=Ravfogel%2C+S), [Yanai Elazar](https://arxiv.org/search/cs?searchtype=author&query=Elazar%2C+Y), [Yejin Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi%2C+Y), [Yoav Goldberg](https://arxiv.org/search/cs?searchtype=author&query=Goldberg%2C+Y)
+
+> Contrastive explanations clarify why an event occurred in contrast to another. They are more inherently intuitive to humans to both produce and comprehend. We propose a methodology to produce contrastive explanations for classification models by modifying the representation to disregard non-contrastive information, and modifying model behavior to only be based on contrastive reasoning. Our method is based on projecting model representation to a latent space that captures only the features that are useful (to the model) to differentiate two potential decisions. We demonstrate the value of contrastive explanations by analyzing two different scenarios, using both high-level abstract concept attribution and low-level input token/span attribution, on two widely used text classification tasks. Specifically, we produce explanations for answering: for which label, and against which alternative label, is some aspect of the input useful? And which aspects of the input are useful for and against particular decisions? Overall, our findings shed light on the ability of label-contrastive explanations to provide a more accurate and finer-grained interpretability of a model's decision.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2103.01378](https://arxiv.org/abs/2103.01378) [cs.CL]** |
+|           | (or **[arXiv:2103.01378v1](https://arxiv.org/abs/2103.01378v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-03-4">4. MultiSubs: A Large-scale Multimodal and Multilingual Dataset</h2>
+
+Title: [MultiSubs: A Large-scale Multimodal and Multilingual Dataset](https://arxiv.org/abs/2103.01910)
+
+Authors: [Josiah Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+J), [Pranava Madhyastha](https://arxiv.org/search/cs?searchtype=author&query=Madhyastha%2C+P), [Josiel Figueiredo](https://arxiv.org/search/cs?searchtype=author&query=Figueiredo%2C+J), [Chiraag Lala](https://arxiv.org/search/cs?searchtype=author&query=Lala%2C+C), [Lucia Specia](https://arxiv.org/search/cs?searchtype=author&query=Specia%2C+L)
+
+> This paper introduces a large-scale multimodal and multilingual dataset that aims to facilitate research on grounding words to images in their contextual usage in language. The dataset consists of images selected to unambiguously illustrate concepts expressed in sentences from movie subtitles. The dataset is a valuable resource as (i) the images are aligned to text fragments rather than whole sentences; (ii) multiple images are possible for a text fragment and a sentence; (iii) the sentences are free-form and real-world like; (iv) the parallel texts are multilingual. We set up a fill-in-the-blank game for humans to evaluate the quality of the automatic image selection process of our dataset. We show the utility of the dataset on two automatic tasks: (i) fill-in-the blank; (ii) lexical translation. Results of the human evaluation and automatic models demonstrate that images can be a useful complement to the textual context. The dataset will benefit research on visual grounding of words especially in the context of free-form sentences.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2103.01910](https://arxiv.org/abs/2103.01910) [cs.CL]** |
+|           | (or **[arXiv:2103.01910v1](https://arxiv.org/abs/2103.01910v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
