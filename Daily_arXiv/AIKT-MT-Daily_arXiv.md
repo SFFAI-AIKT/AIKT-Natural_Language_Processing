@@ -2,6 +2,11 @@
 
 # Index
 
+- [2021-03-04](#2021-03-04)
+  - [1. Random Feature Attention](#2021-03-04-1)
+  - [2. Meta-Curriculum Learning for Domain Adaptation in Neural Machine Translation](#2021-03-04-2)
+  - [3. Lex2vec: making Explainable Word Embedding via Distant Supervision](#2021-03-04-3)
+  - [4. NeurIPS 2020 NLC2CMD Competition: Translating Natural Language to Bash Commands](#2021-03-04-4)
 - [2021-03-03](#2021-03-03)
   - [1. WIT: Wikipedia-based Image Text Dataset for Multimodal Multilingual Machine Learning](#2021-03-03-1)
   - [2. On the Effectiveness of Dataset Embeddings in Mono-lingual,Multi-lingual and Zero-shot Conditions](#2021-03-03-2)
@@ -16,6 +21,82 @@
   - [2. Learning Chess Blindfolded: Evaluating Language Models on State Tracking](#2021-03-01-2)
   - [3. Gradient-guided Loss Masking for Neural Machine Translation](#2021-03-01-3)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-03-04
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-03-04-1">1. Random Feature Attention</h2>
+
+Title: [Random Feature Attention](https://arxiv.org/abs/2103.02143)
+
+Authors: [Hao Peng](https://arxiv.org/search/cs?searchtype=author&query=Peng%2C+H), [Nikolaos Pappas](https://arxiv.org/search/cs?searchtype=author&query=Pappas%2C+N), [Dani Yogatama](https://arxiv.org/search/cs?searchtype=author&query=Yogatama%2C+D), [Roy Schwartz](https://arxiv.org/search/cs?searchtype=author&query=Schwartz%2C+R), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith%2C+N+A), [Lingpeng Kong](https://arxiv.org/search/cs?searchtype=author&query=Kong%2C+L)
+
+> Transformers are state-of-the-art models for a variety of sequence modeling tasks. At their core is an attention function which models pairwise interactions between the inputs at every timestep. While attention is powerful, it does not scale efficiently to long sequences due to its quadratic time and space complexity in the sequence length. We propose RFA, a linear time and space attention that uses random feature methods to approximate the softmax function, and explore its application in transformers. RFA can be used as a drop-in replacement for conventional softmax attention and offers a straightforward way of learning with recency bias through an optional gating mechanism. Experiments on language modeling and machine translation demonstrate that RFA achieves similar or better performance compared to strong transformer baselines. In the machine translation experiment, RFA decodes twice as fast as a vanilla transformer. Compared to existing efficient transformer variants, RFA is competitive in terms of both accuracy and efficiency on three long text classification datasets. Our analysis shows that RFA's efficiency gains are especially notable on long sequences, suggesting that RFA will be particularly useful in tasks that require working with large inputs, fast decoding speed, or low memory footprints.
+
+| Comments: | ICLR 2021                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2103.02143](https://arxiv.org/abs/2103.02143) [cs.CL]** |
+|           | (or **[arXiv:2103.02143v1](https://arxiv.org/abs/2103.02143v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-04-2">2. Meta-Curriculum Learning for Domain Adaptation in Neural Machine Translation</h2>
+
+Title: [Meta-Curriculum Learning for Domain Adaptation in Neural Machine Translation](https://arxiv.org/abs/2103.02262)
+
+Authors: [Runzhe Zhan](https://arxiv.org/search/cs?searchtype=author&query=Zhan%2C+R), [Xuebo Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Derek F. Wong](https://arxiv.org/search/cs?searchtype=author&query=Wong%2C+D+F), [Lidia S. Chao](https://arxiv.org/search/cs?searchtype=author&query=Chao%2C+L+S)
+
+> Meta-learning has been sufficiently validated to be beneficial for low-resource neural machine translation (NMT). However, we find that meta-trained NMT fails to improve the translation performance of the domain unseen at the meta-training stage. In this paper, we aim to alleviate this issue by proposing a novel meta-curriculum learning for domain adaptation in NMT. During meta-training, the NMT first learns the similar curricula from each domain to avoid falling into a bad local optimum early, and finally learns the curricula of individualities to improve the model robustness for learning domain-specific knowledge. Experimental results on 10 different low-resource domains show that meta-curriculum learning can improve the translation performance of both familiar and unfamiliar domains. All the codes and data are freely available at [this https URL](https://github.com/NLP2CT/Meta-Curriculum).
+
+| Comments: | Accepted to AAAI 2021                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2103.02262](https://arxiv.org/abs/2103.02262) [cs.CL]** |
+|           | (or **[arXiv:2103.02262v1](https://arxiv.org/abs/2103.02262v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-04-3">3. Lex2vec: making Explainable Word Embedding via Distant Supervision</h2>
+
+Title: [Lex2vec: making Explainable Word Embedding via Distant Supervision](https://arxiv.org/abs/2103.02269)
+
+Authors: [Fabio Celli](https://arxiv.org/search/cs?searchtype=author&query=Celli%2C+F)
+
+> In this technical report we propose an algorithm, called Lex2vec, that exploits lexical resources to inject information into word embeddings and name the embedding dimensions by means of distant supervision. We evaluate the optimal parameters to extract a number of informative labels that is readable and has a good coverage for the embedding dimensions.
+
+| Comments: | 3 pages, 1 figure, 1 table                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2103.02269](https://arxiv.org/abs/2103.02269) [cs.CL]** |
+|           | (or **[arXiv:2103.02269v1](https://arxiv.org/abs/2103.02269v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-04-4">4. NeurIPS 2020 NLC2CMD Competition: Translating Natural Language to Bash Commands</h2>
+
+Title: [NeurIPS 2020 NLC2CMD Competition: Translating Natural Language to Bash Commands](https://arxiv.org/abs/2103.02523)
+
+Authors: [Mayank Agarwal](https://arxiv.org/search/cs?searchtype=author&query=Agarwal%2C+M), [Tathagata Chakraborti](https://arxiv.org/search/cs?searchtype=author&query=Chakraborti%2C+T), [Quchen Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+Q), [David Gros](https://arxiv.org/search/cs?searchtype=author&query=Gros%2C+D), [Xi Victoria Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+X+V), [Jaron Maene](https://arxiv.org/search/cs?searchtype=author&query=Maene%2C+J), [Kartik Talamadupula](https://arxiv.org/search/cs?searchtype=author&query=Talamadupula%2C+K), [Zhongwei Teng](https://arxiv.org/search/cs?searchtype=author&query=Teng%2C+Z), [Jules White](https://arxiv.org/search/cs?searchtype=author&query=White%2C+J)
+
+> The NLC2CMD Competition hosted at NeurIPS 2020 aimed to bring the power of natural language processing to the command line. Participants were tasked with building models that can transform descriptions of command line tasks in English to their Bash syntax. This is a report on the competition with details of the task, metrics, data, attempted solutions, and lessons learned.
+
+| Comments: | Competition URL: [this http URL](http://ibm.biz/nlc2cmd)     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2103.02523](https://arxiv.org/abs/2103.02523) [cs.CL]** |
+|           | (or **[arXiv:2103.02523v1](https://arxiv.org/abs/2103.02523v1) [cs.CL]** for this version) |
 
 
 
