@@ -2,6 +2,9 @@
 
 # Index
 
+- [2021-03-05](#2021-03-05)
+  - [1. An empirical analysis of phrase-based and neural machine translation](#2021-03-05-1)
+  - [2. An Empirical Study of End-to-end Simultaneous Speech Translation Decoding Strategies](#2021-03-05-2)
 - [2021-03-04](#2021-03-04)
   - [1. Random Feature Attention](#2021-03-04-1)
   - [2. Meta-Curriculum Learning for Domain Adaptation in Neural Machine Translation](#2021-03-04-2)
@@ -21,6 +24,57 @@
   - [2. Learning Chess Blindfolded: Evaluating Language Models on State Tracking](#2021-03-01-2)
   - [3. Gradient-guided Loss Masking for Neural Machine Translation](#2021-03-01-3)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-03-05
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-03-05-1">1. An empirical analysis of phrase-based and neural machine translation</h2>
+
+Title: [An empirical analysis of phrase-based and neural machine translation](https://arxiv.org/abs/2103.03108)
+
+Authors: [Hamidreza Ghader](https://arxiv.org/search/cs?searchtype=author&query=Ghader%2C+H)
+
+> Two popular types of machine translation (MT) are phrase-based and neural machine translation systems. Both of these types of systems are composed of multiple complex models or layers. Each of these models and layers learns different linguistic aspects of the source language. However, for some of these models and layers, it is not clear which linguistic phenomena are learned or how this information is learned. For phrase-based MT systems, it is often clear what information is learned by each model, and the question is rather how this information is learned, especially for its phrase reordering model. For neural machine translation systems, the situation is even more complex, since for many cases it is not exactly clear what information is learned and how it is learned.
+> To shed light on what linguistic phenomena are captured by MT systems, we analyze the behavior of important models in both phrase-based and neural MT systems. We consider phrase reordering models from phrase-based MT systems to investigate which words from inside of a phrase have the biggest impact on defining the phrase reordering behavior. Additionally, to contribute to the interpretability of neural MT systems we study the behavior of the attention model, which is a key component in neural MT systems and the closest model in functionality to phrase reordering models in phrase-based systems. The attention model together with the encoder hidden state representations form the main components to encode source side linguistic information in neural MT. To this end, we also analyze the information captured in the encoder hidden state representations of a neural MT system. We investigate the extent to which syntactic and lexical-semantic information from the source side is captured by hidden state representations of different neural MT architectures.
+
+| Comments: | PhD thesis, University of Amsterdam, October 2020. [this https URL](https://pure.uva.nl/ws/files/51388868/Thesis.pdf) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG); Neural and Evolutionary Computing (cs.NE) |
+| Cite as:  | **[arXiv:2103.03108](https://arxiv.org/abs/2103.03108) [cs.CL]** |
+|           | (or **[arXiv:2103.03108v1](https://arxiv.org/abs/2103.03108v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-05-2">2. An Empirical Study of End-to-end Simultaneous Speech Translation Decoding Strategies</h2>
+
+Title: [An Empirical Study of End-to-end Simultaneous Speech Translation Decoding Strategies](https://arxiv.org/abs/2103.03233)
+
+Authors: [Ha Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+H), [Yannick Estève](https://arxiv.org/search/cs?searchtype=author&query=Estève%2C+Y), [Laurent Besacier](https://arxiv.org/search/cs?searchtype=author&query=Besacier%2C+L)
+
+> This paper proposes a decoding strategy for end-to-end simultaneous speech translation. We leverage end-to-end models trained in offline mode and conduct an empirical study for two language pairs (English-to-German and English-to-Portuguese). We also investigate different output token granularities including characters and Byte Pair Encoding (BPE) units. The results show that the proposed decoding approach allows to control BLEU/Average Lagging trade-off along different latency regimes. Our best decoding settings achieve comparable results with a strong cascade model evaluated on the simultaneous translation track of IWSLT 2020 shared task.
+
+| Comments: | This paper has been accepted for presentation at IEEE ICASSP 2021 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2103.03233](https://arxiv.org/abs/2103.03233) [cs.CL]** |
+|           | (or **[arXiv:2103.03233v1](https://arxiv.org/abs/2103.03233v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+
+
+
 
 
 
