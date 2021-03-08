@@ -2,6 +2,10 @@
 
 # Index
 
+- [2021-03-08](#2021-03-08)
+  - [1. Hierarchical Transformer for Multilingual Machine Translation](#2021-03-08-1)
+  - [2. WordBias: An Interactive Visual Tool for Discovering Intersectional Biases Encoded in Word Embeddings](#2021-03-08-2)
+  - [3. Overcoming Poor Word Embeddings with Word Definitions](#2021-03-08-3)
 - [2021-03-05](#2021-03-05)
   - [1. An empirical analysis of phrase-based and neural machine translation](#2021-03-05-1)
   - [2. An Empirical Study of End-to-end Simultaneous Speech Translation Decoding Strategies](#2021-03-05-2)
@@ -24,6 +28,63 @@
   - [2. Learning Chess Blindfolded: Evaluating Language Models on State Tracking](#2021-03-01-2)
   - [3. Gradient-guided Loss Masking for Neural Machine Translation](#2021-03-01-3)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-03-08
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-03-08-1">1. Hierarchical Transformer for Multilingual Machine Translation</h2>
+
+Title: [Hierarchical Transformer for Multilingual Machine Translation](https://arxiv.org/abs/2103.03589)
+
+Authors: [Albina Khusainova](https://arxiv.org/search/cs?searchtype=author&query=Khusainova%2C+A), [Adil Khan](https://arxiv.org/search/cs?searchtype=author&query=Khan%2C+A), [Adín Ramírez Rivera](https://arxiv.org/search/cs?searchtype=author&query=Rivera%2C+A+R), [Vitaly Romanov](https://arxiv.org/search/cs?searchtype=author&query=Romanov%2C+V)
+
+> The choice of parameter sharing strategy in multilingual machine translation models determines how optimally parameter space is used and hence, directly influences ultimate translation quality. Inspired by linguistic trees that show the degree of relatedness between different languages, the new general approach to parameter sharing in multilingual machine translation was suggested recently. The main idea is to use these expert language hierarchies as a basis for multilingual architecture: the closer two languages are, the more parameters they share. In this work, we test this idea using the Transformer architecture and show that despite the success in previous work there are problems inherent to training such hierarchical models. We demonstrate that in case of carefully chosen training strategy the hierarchical architecture can outperform bilingual models and multilingual models with full parameter sharing.
+
+| Comments: | Accepted to VarDial 2021                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2103.03589](https://arxiv.org/abs/2103.03589) [cs.CL]** |
+|           | (or **[arXiv:2103.03589v1](https://arxiv.org/abs/2103.03589v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-08-2">2. WordBias: An Interactive Visual Tool for Discovering Intersectional Biases Encoded in Word Embeddings</h2>
+
+Title: [WordBias: An Interactive Visual Tool for Discovering Intersectional Biases Encoded in Word Embeddings](https://arxiv.org/abs/2103.03598)
+
+Authors: [Bhavya Ghai](https://arxiv.org/search/cs?searchtype=author&query=Ghai%2C+B), [Md Naimul Hoque](https://arxiv.org/search/cs?searchtype=author&query=Hoque%2C+M+N), [Klaus Mueller](https://arxiv.org/search/cs?searchtype=author&query=Mueller%2C+K)
+
+> Intersectional bias is a bias caused by an overlap of multiple social factors like gender, sexuality, race, disability, religion, etc. A recent study has shown that word embedding models can be laden with biases against intersectional groups like African American females, etc. The first step towards tackling such intersectional biases is to identify them. However, discovering biases against different intersectional groups remains a challenging task. In this work, we present WordBias, an interactive visual tool designed to explore biases against intersectional groups encoded in static word embeddings. Given a pretrained static word embedding, WordBias computes the association of each word along different groups based on race, age, etc. and then visualizes them using a novel interactive interface. Using a case study, we demonstrate how WordBias can help uncover biases against intersectional groups like Black Muslim Males, Poor Females, etc. encoded in word embedding. In addition, we also evaluate our tool using qualitative feedback from expert interviews. The source code for this tool can be publicly accessed for reproducibility at [this http URL](http://github.com/bhavyaghai/WordBias).
+
+| Comments: | Accepted to ACM SIGCHI 2021 LBW                              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Human-Computer Interaction (cs.HC) |
+| Cite as:  | **[arXiv:2103.03598](https://arxiv.org/abs/2103.03598) [cs.CL]** |
+|           | (or **[arXiv:2103.03598v1](https://arxiv.org/abs/2103.03598v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-08-3">3. Overcoming Poor Word Embeddings with Word Definitions</h2>
+
+Title: [Overcoming Poor Word Embeddings with Word Definitions](https://arxiv.org/abs/2103.03842)
+
+Authors: [Christopher Malon](https://arxiv.org/search/cs?searchtype=author&query=Malon%2C+C)
+
+> Modern natural language understanding models depend on pretrained subword embeddings, but applications may need to reason about words that were never or rarely seen during pretraining. We show that examples that depend critically on a rarer word are more challenging for natural language inference models. Then we explore how a model could learn to use definitions, provided in natural text, to overcome this handicap. Our model's understanding of a definition is usually weaker than a well-modeled word embedding, but it recovers most of the performance gap from using a completely untrained word.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2103.03842](https://arxiv.org/abs/2103.03842) [cs.CL]** |
+|           | (or **[arXiv:2103.03842v1](https://arxiv.org/abs/2103.03842v1) [cs.CL]** for this version) |
 
 
 
