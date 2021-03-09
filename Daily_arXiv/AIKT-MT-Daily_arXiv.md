@@ -2,6 +2,8 @@
 
 # Index
 
+- [2021-03-09](#2021-03-09)
+  - [1. Translating the Unseen? Yorùbá → English MT in Low-Resource, Morphologically-Unmarked Settings](#2021-03-09-1)
 - [2021-03-08](#2021-03-08)
   - [1. Hierarchical Transformer for Multilingual Machine Translation](#2021-03-08-1)
   - [2. WordBias: An Interactive Visual Tool for Discovering Intersectional Biases Encoded in Word Embeddings](#2021-03-08-2)
@@ -28,6 +30,32 @@
   - [2. Learning Chess Blindfolded: Evaluating Language Models on State Tracking](#2021-03-01-2)
   - [3. Gradient-guided Loss Masking for Neural Machine Translation](#2021-03-01-3)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-03-09
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-03-09-1">1. Hierarchical Transformer for Multilingual Machine Translation</h2>
+
+Title: [Translating the Unseen? Yorùbá → English MT in Low-Resource, Morphologically-Unmarked Settings](https://arxiv.org/abs/2103.04225)
+
+Authors: [Ife Adebara Miikka Silfverberg Muhammad Abdul-Mageed](https://arxiv.org/search/cs?searchtype=author&query=Abdul-Mageed%2C+I+A+M+S+M)
+
+> Translating between languages where certain features are marked morphologically in one but absent or marked contextually in the other is an important test case for machine translation. When translating into English which marks (in)definiteness morphologically, from Yorùbá which uses bare nouns but marks these features contextually, ambiguities arise. In this work, we perform fine-grained analysis on how an SMT system compares with two NMT systems (BiLSTM and Transformer) when translating bare nouns in Yorùbá into English. We investigate how the systems what extent they identify BNs, correctly translate them, and compare with human translation patterns. We also analyze the type of errors each model makes and provide a linguistic description of these errors. We glean insights for evaluating model performance in low-resource settings. In translating bare nouns, our results show the transformer model outperforms the SMT and BiLSTM models for 4 categories, the BiLSTM outperforms the SMT model for 3 categories while the SMT outperforms the NMT models for 1 category.
+
+| Subjects:          | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | AfricanNLP @ EACL2021                                        |
+| Cite as:           | **[arXiv:2103.04225](https://arxiv.org/abs/2103.04225) [cs.CL]** |
+|                    | (or **[arXiv:2103.04225v1](https://arxiv.org/abs/2103.04225v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
