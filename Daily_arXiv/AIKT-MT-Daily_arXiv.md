@@ -2,6 +2,8 @@
 
 # Index
 
+- [2021-03-10](#2021-03-10)
+  - [1. AfriVEC: Word Embedding Models for African Languages. Case Study of Fon and Nobiin](#2021-03-10-1)
 - [2021-03-09](#2021-03-09)
   - [1. Translating the Unseen? Yorùbá → English MT in Low-Resource, Morphologically-Unmarked Settings](#2021-03-09-1)
 - [2021-03-08](#2021-03-08)
@@ -30,6 +32,30 @@
   - [2. Learning Chess Blindfolded: Evaluating Language Models on State Tracking](#2021-03-01-2)
   - [3. Gradient-guided Loss Masking for Neural Machine Translation](#2021-03-01-3)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-03-10
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-03-10-1">1. AfriVEC: Word Embedding Models for African Languages. Case Study of Fon and Nobiin</h2>
+
+Title: [AfriVEC: Word Embedding Models for African Languages. Case Study of Fon and Nobiin](https://arxiv.org/abs/2103.05132)
+
+Authors: [Bonaventure F. P. Dossou](https://arxiv.org/search/cs?searchtype=author&query=Dossou%2C+B+F+P), [Mohammed Sabry](https://arxiv.org/search/cs?searchtype=author&query=Sabry%2C+M)
+
+> From Word2Vec to GloVe, word embedding models have played key roles in the current state-of-the-art results achieved in Natural Language Processing. Designed to give significant and unique vectorized representations of words and entities, those models have proven to efficiently extract similarities and establish relationships reflecting semantic and contextual meaning among words and entities. African Languages, representing more than 31% of the worldwide spoken languages, have recently been subject to lots of research. However, to the best of our knowledge, there are currently very few to none word embedding models for those languages words and entities, and none for the languages under study in this paper. After describing Glove, Word2Vec, and Poincaré embeddings functionalities, we build Word2Vec and Poincaré word embedding models for Fon and Nobiin, which show promising results. We test the applicability of transfer learning between these models as a landmark for African Languages to jointly involve in mitigating the scarcity of their resources, and attempt to provide linguistic and social interpretations of our results. Our main contribution is to arouse more interest in creating word embedding models proper to African Languages, ready for use, and that can significantly improve the performances of Natural Language Processing downstream tasks on them. The official repository and implementation is at [this https URL](https://github.com/bonaventuredossou/afrivec)
+
+| Subjects:          | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | Africa NLP, EACL 2021                                        |
+| Cite as:           | **[arXiv:2103.05132](https://arxiv.org/abs/2103.05132) [cs.CL]** |
+|                    | (or **[arXiv:2103.05132v1](https://arxiv.org/abs/2103.05132v1) [cs.CL]** for this version) |
+
+
 
 
 
