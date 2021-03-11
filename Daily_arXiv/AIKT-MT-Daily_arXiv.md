@@ -2,6 +2,9 @@
 
 # Index
 
+- [2021-03-11](#2021-03-11)
+  - [1. Self-Learning for Zero Shot Neural Machine Translation](#2021-03-11-1)
+  - [2. CUAD: An Expert-Annotated NLP Dataset for Legal Contract Review](#2021-03-11-2)
 - [2021-03-10](#2021-03-10)
   - [1. AfriVEC: Word Embedding Models for African Languages. Case Study of Fon and Nobiin](#2021-03-10-1)
 - [2021-03-09](#2021-03-09)
@@ -32,6 +35,45 @@
   - [2. Learning Chess Blindfolded: Evaluating Language Models on State Tracking](#2021-03-01-2)
   - [3. Gradient-guided Loss Masking for Neural Machine Translation](#2021-03-01-3)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-03-11
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-03-11-1">1. Self-Learning for Zero Shot Neural Machine Translation</h2>
+
+Title: [Self-Learning for Zero Shot Neural Machine Translation](https://arxiv.org/abs/2103.05951)
+
+Authors: [Surafel M. Lakew](https://arxiv.org/search/cs?searchtype=author&query=Lakew%2C+S+M), [Matteo Negri](https://arxiv.org/search/cs?searchtype=author&query=Negri%2C+M), [Marco Turchi](https://arxiv.org/search/cs?searchtype=author&query=Turchi%2C+M)
+
+> Neural Machine Translation (NMT) approaches employing monolingual data are showing steady improvements in resource rich conditions. However, evaluations using real-world low-resource languages still result in unsatisfactory performance. This work proposes a novel zero-shot NMT modeling approach that learns without the now-standard assumption of a pivot language sharing parallel data with the zero-shot source and target languages. Our approach is based on three stages: initialization from any pre-trained NMT model observing at least the target language, augmentation of source sides leveraging target monolingual data, and learning to optimize the initial model to the zero-shot pair, where the latter two constitute a self-learning cycle. Empirical findings involving four diverse (in terms of a language family, script and relatedness) zero-shot pairs show the effectiveness of our approach with up to +5.93 BLEU improvement against a supervised bilingual baseline. Compared to unsupervised NMT, consistent improvements are observed even in a domain-mismatch setting, attesting to the usability of our method.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2103.05951](https://arxiv.org/abs/2103.05951) [cs.CL]** |
+|           | (or **[arXiv:2103.05951v1](https://arxiv.org/abs/2103.05951v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-11-2">2. CUAD: An Expert-Annotated NLP Dataset for Legal Contract Review</h2>
+
+Title: [CUAD: An Expert-Annotated NLP Dataset for Legal Contract Review](https://arxiv.org/abs/2103.06268)
+
+Authors: [Dan Hendrycks](https://arxiv.org/search/cs?searchtype=author&query=Hendrycks%2C+D), [Collin Burns](https://arxiv.org/search/cs?searchtype=author&query=Burns%2C+C), [Anya Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+A), [Spencer Ball](https://arxiv.org/search/cs?searchtype=author&query=Ball%2C+S)
+
+> Many specialized domains remain untouched by deep learning, as large labeled datasets require expensive expert annotators. We address this bottleneck within the legal domain by introducing the Contract Understanding Atticus Dataset (CUAD), a new dataset for legal contract review. CUAD was created with dozens of legal experts from The Atticus Project and consists of over 13,000 annotations. The task is to highlight salient portions of a contract that are important for a human to review. We find that Transformer models have nascent performance, but that this performance is strongly influenced by model design and training dataset size. Despite these promising results, there is still substantial room for improvement. As one of the only large, specialized NLP benchmarks annotated by experts, CUAD can serve as a challenging research benchmark for the broader NLP community.
+
+| Comments: | Code and the CUAD dataset are available at [this https URL](https://github.com/TheAtticusProject/cuad/) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2103.06268](https://arxiv.org/abs/2103.06268) [cs.CL]** |
+|           | (or **[arXiv:2103.06268v1](https://arxiv.org/abs/2103.06268v1) [cs.CL]** for this version) |
 
 
 
