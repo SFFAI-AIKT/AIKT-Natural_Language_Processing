@@ -2,6 +2,15 @@
 
 # Index
 
+- [2021-03-12](#2021-03-12)
+  - [1. FairFil: Contrastive Neural Debiasing Method for Pretrained Text Encoders](#2021-03-12-1)
+  - [2. LightMBERT: A Simple Yet Effective Method for Multilingual BERT Distillation](#2021-03-12-2)
+  - [3. Towards Multi-Sense Cross-Lingual Alignment of Contextual Embeddings](#2021-03-12-3)
+  - [4. Active2 Learning: Actively reducing redundancies in Active Learning methods for Sequence Tagging and Machine Translation](#2021-03-12-4)
+  - [5. The Interplay of Variant, Size, and Task Type in Arabic Pre-trained Language Models](#2021-03-12-5)
+  - [6. Unsupervised Transfer Learning in Multilingual Neural Machine Translation with Cross-Lingual Word Embeddings](#2021-03-12-6)
+  - [7. Towards Continual Learning for Multilingual Machine Translation via Vocabulary Substitution](#2021-03-12-7)
+  - [8. CANINE: Pre-training an Efficient Tokenization-Free Encoder for Language Representation](#2021-03-12-8)
 - [2021-03-11](#2021-03-11)
   - [1. Self-Learning for Zero Shot Neural Machine Translation](#2021-03-11-1)
   - [2. CUAD: An Expert-Annotated NLP Dataset for Legal Contract Review](#2021-03-11-2)
@@ -35,6 +44,150 @@
   - [2. Learning Chess Blindfolded: Evaluating Language Models on State Tracking](#2021-03-01-2)
   - [3. Gradient-guided Loss Masking for Neural Machine Translation](#2021-03-01-3)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-03-12
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-03-12-1">1. FairFil: Contrastive Neural Debiasing Method for Pretrained Text Encoders</h2>
+
+Title: [FairFil: Contrastive Neural Debiasing Method for Pretrained Text Encoders](https://arxiv.org/abs/2103.06413)
+
+Authors: [Pengyu Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+P), [Weituo Hao](https://arxiv.org/search/cs?searchtype=author&query=Hao%2C+W), [Siyang Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+S), [Shijing Si](https://arxiv.org/search/cs?searchtype=author&query=Si%2C+S), [Lawrence Carin](https://arxiv.org/search/cs?searchtype=author&query=Carin%2C+L)
+
+> Pretrained text encoders, such as BERT, have been applied increasingly in various natural language processing (NLP) tasks, and have recently demonstrated significant performance gains. However, recent studies have demonstrated the existence of social bias in these pretrained NLP models. Although prior works have made progress on word-level debiasing, improved sentence-level fairness of pretrained encoders still lacks exploration. In this paper, we proposed the first neural debiasing method for a pretrained sentence encoder, which transforms the pretrained encoder outputs into debiased representations via a fair filter (FairFil) network. To learn the FairFil, we introduce a contrastive learning framework that not only minimizes the correlation between filtered embeddings and bias words but also preserves rich semantic information of the original sentences. On real-world datasets, our FairFil effectively reduces the bias degree of pretrained text encoders, while continuously showing desirable performance on downstream tasks. Moreover, our post-hoc method does not require any retraining of the text encoders, further enlarging FairFil's application space.
+
+| Comments: | Accepted by the 9th International Conference on Learning Representations (ICLR 2021) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2103.06413](https://arxiv.org/abs/2103.06413) [cs.CL]** |
+|           | (or **[arXiv:2103.06413v1](https://arxiv.org/abs/2103.06413v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-12-2">2. LightMBERT: A Simple Yet Effective Method for Multilingual BERT Distillation</h2>
+
+Title: [LightMBERT: A Simple Yet Effective Method for Multilingual BERT Distillation](https://arxiv.org/abs/2103.06418)
+
+Authors: [Xiaoqi Jiao](https://arxiv.org/search/cs?searchtype=author&query=Jiao%2C+X), [Yichun Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+Y), [Lifeng Shang](https://arxiv.org/search/cs?searchtype=author&query=Shang%2C+L), [Xin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+X), [Xiao Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+X), [Linlin Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Fang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+F), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q)
+
+> The multilingual pre-trained language models (e.g, mBERT, XLM and XLM-R) have shown impressive performance on cross-lingual natural language understanding tasks. However, these models are computationally intensive and difficult to be deployed on resource-restricted devices. In this paper, we propose a simple yet effective distillation method (LightMBERT) for transferring the cross-lingual generalization ability of the multilingual BERT to a small student model. The experiment results empirically demonstrate the efficiency and effectiveness of LightMBERT, which is significantly better than the baselines and performs comparable to the teacher mBERT.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2103.06418](https://arxiv.org/abs/2103.06418) [cs.CL]** |
+|           | (or **[arXiv:2103.06418v1](https://arxiv.org/abs/2103.06418v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-12-3">3. Towards Multi-Sense Cross-Lingual Alignment of Contextual Embeddings</h2>
+
+Title: [Towards Multi-Sense Cross-Lingual Alignment of Contextual Embeddings](https://arxiv.org/abs/2103.06459)
+
+Authors: [Linlin Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+L), [Thien Hai Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+T+H), [Shafiq Joty](https://arxiv.org/search/cs?searchtype=author&query=Joty%2C+S), [Lidong Bing](https://arxiv.org/search/cs?searchtype=author&query=Bing%2C+L), [Luo Si](https://arxiv.org/search/cs?searchtype=author&query=Si%2C+L)
+
+> Cross-lingual word embeddings (CLWE) have been proven useful in many cross-lingual tasks. However, most existing approaches to learn CLWE including the ones with contextual embeddings are sense agnostic. In this work, we propose a novel framework to align contextual embeddings at the sense level by leveraging cross-lingual signal from bilingual dictionaries only. We operationalize our framework by first proposing a novel sense-aware cross entropy loss to model word senses explicitly. The monolingual ELMo and BERT models pretrained with our sense-aware cross entropy loss demonstrate significant performance improvement for word sense disambiguation tasks. We then propose a sense alignment objective on top of the sense-aware cross entropy loss for cross-lingual model pretraining, and pretrain cross-lingual models for several language pairs (English to German/Spanish/Japanese/Chinese). Compared with the best baseline results, our cross-lingual models achieve 0.52%, 2.09% and 1.29% average performance improvements on zero-shot cross-lingual NER, sentiment classification and XNLI tasks, respectively.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2103.06459](https://arxiv.org/abs/2103.06459) [cs.CL]** |
+|           | (or **[arXiv:2103.06459v1](https://arxiv.org/abs/2103.06459v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-12-4">4. Active2 Learning: Actively reducing redundancies in Active Learning methods for Sequence Tagging and Machine Translation</h2>
+
+Title: [Active2 Learning: Actively reducing redundancies in Active Learning methods for Sequence Tagging and Machine Translation](https://arxiv.org/abs/2103.06490)
+
+Authors: [Rishi Hazra](https://arxiv.org/search/cs?searchtype=author&query=Hazra%2C+R), [Parag Dutta](https://arxiv.org/search/cs?searchtype=author&query=Dutta%2C+P), [Shubham Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+S), [Mohammed Abdul Qaathir](https://arxiv.org/search/cs?searchtype=author&query=Qaathir%2C+M+A), [Ambedkar Dukkipati](https://arxiv.org/search/cs?searchtype=author&query=Dukkipati%2C+A)
+
+> While deep learning is a powerful tool for natural language processing (NLP) problems, successful solutions to these problems rely heavily on large amounts of annotated samples. However, manually annotating data is expensive and time-consuming. Active Learning (AL) strategies reduce the need for huge volumes of labeled data by iteratively selecting a small number of examples for manual annotation based on their estimated utility in training the given model. In this paper, we argue that since AL strategies choose examples independently, they may potentially select similar examples, all of which may not contribute significantly to the learning process. Our proposed approach, Active**2** Learning (A**2**L), actively adapts to the deep learning model being trained to eliminate further such redundant examples chosen by an AL strategy. We show that A**2**L is widely applicable by using it in conjunction with several different AL strategies and NLP tasks. We empirically demonstrate that the proposed approach is further able to reduce the data requirements of state-of-the-art AL strategies by an absolute percentage reduction of ≈**3****−****25****%** on multiple NLP tasks while achieving the same performance with no additional computation overhead.
+
+| Comments: | Accepted in NAACL-HLT-2021                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Human-Computer Interaction (cs.HC); Machine Learning (cs.LG); Neural and Evolutionary Computing (cs.NE) |
+| Cite as:  | **[arXiv:2103.06490](https://arxiv.org/abs/2103.06490) [cs.CL]** |
+|           | (or **[arXiv:2103.06490v1](https://arxiv.org/abs/2103.06490v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-12-5">5. The Interplay of Variant, Size, and Task Type in Arabic Pre-trained Language Models</h2>
+
+Title: [The Interplay of Variant, Size, and Task Type in Arabic Pre-trained Language Models](https://arxiv.org/abs/2103.06678)
+
+Authors: [Go Inoue](https://arxiv.org/search/cs?searchtype=author&query=Inoue%2C+G), [Bashar Alhafni](https://arxiv.org/search/cs?searchtype=author&query=Alhafni%2C+B), [Nurpeiis Baimukan](https://arxiv.org/search/cs?searchtype=author&query=Baimukan%2C+N), [Houda Bouamor](https://arxiv.org/search/cs?searchtype=author&query=Bouamor%2C+H), [Nizar Habash](https://arxiv.org/search/cs?searchtype=author&query=Habash%2C+N)
+
+> In this paper, we explore the effects of language variants, data sizes, and fine-tuning task types in Arabic pre-trained language models. To do so, we build three pre-trained language models across three variants of Arabic: Modern Standard Arabic (MSA), dialectal Arabic, and classical Arabic, in addition to a fourth language model which is pre-trained on a mix of the three. We also examine the importance of pre-training data size by building additional models that are pre-trained on a scaled-down set of the MSA variant. We compare our different models to each other, as well as to eight publicly available models by fine-tuning them on five NLP tasks spanning 12 datasets. Our results suggest that the variant proximity of pre-training data to fine-tuning data is more important than the pre-training data size. We exploit this insight in defining an optimized system selection model for the studied tasks.
+
+| Comments: | Accepted to WANLP 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2103.06678](https://arxiv.org/abs/2103.06678) [cs.CL]** |
+|           | (or **[arXiv:2103.06678v1](https://arxiv.org/abs/2103.06678v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-12-6">6. Unsupervised Transfer Learning in Multilingual Neural Machine Translation with Cross-Lingual Word Embeddings</h2>
+
+Title: [Unsupervised Transfer Learning in Multilingual Neural Machine Translation with Cross-Lingual Word Embeddings](https://arxiv.org/abs/2103.06689)
+
+Authors: [Carlos Mullov](https://arxiv.org/search/cs?searchtype=author&query=Mullov%2C+C), [Ngoc-Quan Pham](https://arxiv.org/search/cs?searchtype=author&query=Pham%2C+N), [Alexander Waibel](https://arxiv.org/search/cs?searchtype=author&query=Waibel%2C+A)
+
+> In this work we look into adding a new language to a multilingual NMT system in an unsupervised fashion. Under the utilization of pre-trained cross-lingual word embeddings we seek to exploit a language independent multilingual sentence representation to easily generalize to a new language. While using cross-lingual embeddings for word lookup we decode from a yet entirely unseen source language in a process we call blind decoding. Blindly decoding from Portuguese using a basesystem containing several Romance languages we achieve scores of 36.4 BLEU for Portuguese-English and 12.8 BLEU for Russian-English. In an attempt to train the mapping from the encoder sentence representation to a new target language we use our model as an autoencoder. Merely training to translate from Portuguese to Portuguese while freezing the encoder we achieve 26 BLEU on English-Portuguese, and up to 28 BLEU when adding artificial noise to the input. Lastly we explore a more practical adaptation approach through non-iterative backtranslation, exploiting our model's ability to produce high quality translations through blind decoding. This yields us up to 34.6 BLEU on English-Portuguese, attaining near parity with a model adapted on real bilingual data.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2103.06689](https://arxiv.org/abs/2103.06689) [cs.CL]** |
+|           | (or **[arXiv:2103.06689v1](https://arxiv.org/abs/2103.06689v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-12-7">7. Towards Continual Learning for Multilingual Machine Translation via Vocabulary Substitution</h2>
+
+Title: [Towards Continual Learning for Multilingual Machine Translation via Vocabulary Substitution](https://arxiv.org/abs/2103.06799)
+
+Authors: [Xavier Garcia](https://arxiv.org/search/cs?searchtype=author&query=Garcia%2C+X), [Noah Constant](https://arxiv.org/search/cs?searchtype=author&query=Constant%2C+N), [Ankur P. Parikh](https://arxiv.org/search/cs?searchtype=author&query=Parikh%2C+A+P), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O)
+
+> We propose a straightforward vocabulary adaptation scheme to extend the language capacity of multilingual machine translation models, paving the way towards efficient continual learning for multilingual machine translation. Our approach is suitable for large-scale datasets, applies to distant languages with unseen scripts, incurs only minor degradation on the translation performance for the original language pairs and provides competitive performance even in the case where we only possess monolingual data for the new languages.
+
+| Comments: | Accepted at NAACL 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2103.06799](https://arxiv.org/abs/2103.06799) [cs.CL]** |
+|           | (or **[arXiv:2103.06799v1](https://arxiv.org/abs/2103.06799v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-12-8">8. CANINE: Pre-training an Efficient Tokenization-Free Encoder for Language Representation</h2>
+
+Title: [CANINE: Pre-training an Efficient Tokenization-Free Encoder for Language Representation](https://arxiv.org/abs/2103.06874)
+
+Authors: [Jonathan H. Clark](https://arxiv.org/search/cs?searchtype=author&query=Clark%2C+J+H), [Dan Garrette](https://arxiv.org/search/cs?searchtype=author&query=Garrette%2C+D), [Iulia Turc](https://arxiv.org/search/cs?searchtype=author&query=Turc%2C+I), [John Wieting](https://arxiv.org/search/cs?searchtype=author&query=Wieting%2C+J)
+
+> Pipelined NLP systems have largely been superseded by end-to-end neural modeling, yet nearly all commonly-used models still require an explicit tokenization step. While recent tokenization approaches based on data-derived subword lexicons are less brittle than manually engineered tokenizers, these techniques are not equally suited to all languages, and the use of any fixed vocabulary may limit a model's ability to adapt. In this paper, we present CANINE, a neural encoder that operates directly on character sequences--without explicit tokenization or vocabulary--and a pre-training strategy with soft inductive biases in place of hard token [this http URL](http://boundaries.to/) use its finer-grained input effectively and efficiently, CANINE combines downsampling, which reduces the input sequence length, with a deep transformer stack, which encodes con-text. CANINE outperforms a comparable mBERT model by >=1 F1 on TyDi QA, a challenging multilingual benchmark, despite having 28% fewer model parameters.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2103.06874](https://arxiv.org/abs/2103.06874) [cs.CL]** |
+|           | (or **[arXiv:2103.06874v1](https://arxiv.org/abs/2103.06874v1) [cs.CL]** for this version) |
 
 
 
