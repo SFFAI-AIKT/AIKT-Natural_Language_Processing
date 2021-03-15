@@ -1,7 +1,13 @@
-# Daily arXiv: Machine Translation - February, 2021
+# Daily arXiv: Machine Translation - March, 2021
 
 # Index
 
+- [2021-03-15](#2021-03-15)
+  - [1. Preregistering NLP Research](#2021-03-15-1)
+  - [2. Learning Policies for Multilingual Training of Neural Machine Translation Systems](#2021-03-15-2)
+  - [3. Bilingual Dictionary-based Language Model Pretraining for Neural Machine Translation](#2021-03-15-3)
+  - [4. Constrained Text Generation with Global Guidance -- Case Study on CommonGen](#2021-03-15-4)
+  - [5. Improving Translation Robustness with Visual Cues and Error Correction](#2021-03-15-5)
 - [2021-03-12](#2021-03-12)
   - [1. FairFil: Contrastive Neural Debiasing Method for Pretrained Text Encoders](#2021-03-12-1)
   - [2. LightMBERT: A Simple Yet Effective Method for Multilingual BERT Distillation](#2021-03-12-2)
@@ -44,6 +50,99 @@
   - [2. Learning Chess Blindfolded: Evaluating Language Models on State Tracking](#2021-03-01-2)
   - [3. Gradient-guided Loss Masking for Neural Machine Translation](#2021-03-01-3)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-03-15
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-03-15-1">1. Preregistering NLP Research</h2>
+
+Title: [Preregistering NLP Research](https://arxiv.org/abs/2103.06944)
+
+Authors: [Emiel van Miltenburg](https://arxiv.org/search/cs?searchtype=author&query=van+Miltenburg%2C+E), [Chris van der Lee](https://arxiv.org/search/cs?searchtype=author&query=van+der+Lee%2C+C), [Emiel Krahmer](https://arxiv.org/search/cs?searchtype=author&query=Krahmer%2C+E)
+
+> Preregistration refers to the practice of specifying what you are going to do, and what you expect to find in your study, before carrying out the study. This practice is increasingly common in medicine and psychology, but is rarely discussed in NLP. This paper discusses preregistration in more detail, explores how NLP researchers could preregister their work, and presents several preregistration questions for different kinds of studies. Finally, we argue in favour of registered reports, which could provide firmer grounds for slow science in NLP research. The goal of this paper is to elicit a discussion in the NLP community, which we hope to synthesise into a general NLP preregistration form in future research.
+
+| Comments: | Accepted at NAACL2021; pre-final draft, comments welcome     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2103.06944](https://arxiv.org/abs/2103.06944) [cs.CL]** |
+|           | (or **[arXiv:2103.06944v1](https://arxiv.org/abs/2103.06944v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-15-2">2. Learning Policies for Multilingual Training of Neural Machine Translation Systems</h2>
+
+Title: [Learning Policies for Multilingual Training of Neural Machine Translation Systems](https://arxiv.org/abs/2103.06964)
+
+Authors: [Gaurav Kumar](https://arxiv.org/search/cs?searchtype=author&query=Kumar%2C+G), [Philipp Koehn](https://arxiv.org/search/cs?searchtype=author&query=Koehn%2C+P), [Sanjeev Khudanpur](https://arxiv.org/search/cs?searchtype=author&query=Khudanpur%2C+S)
+
+> Low-resource Multilingual Neural Machine Translation (MNMT) is typically tasked with improving the translation performance on one or more language pairs with the aid of high-resource language pairs. In this paper, we propose two simple search based curricula -- orderings of the multilingual training data -- which help improve translation performance in conjunction with existing techniques such as fine-tuning. Additionally, we attempt to learn a curriculum for MNMT from scratch jointly with the training of the translation system with the aid of contextual multi-arm bandits. We show on the FLORES low-resource translation dataset that these learned curricula can provide better starting points for fine tuning and improve overall performance of the translation system.
+
+| Comments: | 7 pages, 2 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2103.06964](https://arxiv.org/abs/2103.06964) [cs.CL]** |
+|           | (or **[arXiv:2103.06964v1](https://arxiv.org/abs/2103.06964v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-15-3">3. Bilingual Dictionary-based Language Model Pretraining for Neural Machine Translation</h2>
+
+Title: [Bilingual Dictionary-based Language Model Pretraining for Neural Machine Translation](https://arxiv.org/abs/2103.07040)
+
+Authors: [Yusen Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Y), [Jiayong Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+J), [Shuaicheng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+S), [Haoying Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+H)
+
+> Recent studies have demonstrated a perceivable improvement on the performance of neural machine translation by applying cross-lingual language model pretraining (Lample and Conneau, 2019), especially the Translation Language Modeling (TLM). To alleviate the need for expensive parallel corpora by TLM, in this work, we incorporate the translation information from dictionaries into the pretraining process and propose a novel Bilingual Dictionary-based Language Model (BDLM). We evaluate our BDLM in Chinese, English, and Romanian. For Chinese-English, we obtained a 55.0 BLEU on WMT-News19 (Tiedemann, 2012) and a 24.3 BLEU on WMT20 news-commentary, outperforming the Vanilla Transformer (Vaswani et al., 2017) by more than 8.4 BLEU and 2.3 BLEU, respectively. According to our results, the BDLM also has advantages on convergence speed and predicting rare words. The increase in BLEU for WMT16 Romanian-English also shows its effectiveness in low-resources language translation.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2103.07040](https://arxiv.org/abs/2103.07040) [cs.CL]** |
+|           | (or **[arXiv:2103.07040v1](https://arxiv.org/abs/2103.07040v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-15-4">4. Constrained Text Generation with Global Guidance -- Case Study on CommonGen</h2>
+
+Title: [Constrained Text Generation with Global Guidance -- Case Study on CommonGen](https://arxiv.org/abs/2103.07170)
+
+Authors: [Yixian Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Liwen Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+L), [Wenjuan Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+W), [Yue Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Kewei Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+K)
+
+> This paper studies constrained text generation, which is to generate sentences under certain pre-conditions. We focus on CommonGen, the task of generating text based on a set of concepts, as a representative task of constrained text generation. Traditional methods mainly rely on supervised training to maximize the likelihood of target sentences.However, global constraints such as common sense and coverage cannot be incorporated into the likelihood objective of the autoregressive decoding process. In this paper, we consider using reinforcement learning to address the limitation, measuring global constraints including fluency, common sense and concept coverage with a comprehensive score, which serves as the reward for reinforcement learning. Besides, we design a guided decoding method at the word, fragment and sentence levels. Experiments demonstrate that our method significantly increases the concept coverage and outperforms existing models in various automatic evaluations.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2103.07170](https://arxiv.org/abs/2103.07170) [cs.CL]** |
+|           | (or **[arXiv:2103.07170v1](https://arxiv.org/abs/2103.07170v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-15-5">5. Improving Translation Robustness with Visual Cues and Error Correction</h2>
+
+Title: [Improving Translation Robustness with Visual Cues and Error Correction](https://arxiv.org/abs/2103.07352)
+
+Authors: [Zhenhao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Marek Rei](https://arxiv.org/search/cs?searchtype=author&query=Rei%2C+M), [Lucia Specia](https://arxiv.org/search/cs?searchtype=author&query=Specia%2C+L)
+
+> Neural Machine Translation models are brittle to input noise. Current robustness techniques mostly adapt models to existing noisy texts, but these models generally fail when faced with unseen noise and their performance degrades on clean texts. In this paper, we introduce the idea of visual context to improve translation robustness against noisy texts. In addition, we propose a novel error correction training regime by treating error correction as an auxiliary task to further improve robustness. Experiments on English-French and English-German translation show that both multimodality and error correction training are beneficial for model robustness to known and new types of errors, while keeping the quality on clean texts.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2103.07352](https://arxiv.org/abs/2103.07352) [cs.CL]** |
+|           | (or **[arXiv:2103.07352v1](https://arxiv.org/abs/2103.07352v1) [cs.CL]** for this version) |
+
+
 
 
 
