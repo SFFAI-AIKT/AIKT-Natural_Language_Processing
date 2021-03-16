@@ -2,6 +2,13 @@
 
 # Index
 
+- [2021-03-16](#2021-03-16)
+  - [1. SemVLP: Vision-Language Pre-training by Aligning Semantics at Multiple Levels](#2021-03-16-1)
+  - [2. A Systematic Review of Reproducibility Research in Natural Language Processing](#2021-03-16-2)
+  - [3. Crowdsourced Phrase-Based Tokenization for Low-Resourced Neural Machine Translation: The Case of Fon Language](#2021-03-16-3)
+  - [4. Towards the evaluation of simultaneous speech translation from a communicative perspective](#2021-03-16-4)
+  - [5. Multi-view Subword Regularization](#2021-03-16-5)
+  - [6. A Study of Automatic Metrics for the Evaluation of Natural Language Explanations](#2021-03-16-6)
 - [2021-03-15](#2021-03-15)
   - [1. Preregistering NLP Research](#2021-03-15-1)
   - [2. Learning Policies for Multilingual Training of Neural Machine Translation Systems](#2021-03-15-2)
@@ -50,6 +57,120 @@
   - [2. Learning Chess Blindfolded: Evaluating Language Models on State Tracking](#2021-03-01-2)
   - [3. Gradient-guided Loss Masking for Neural Machine Translation](#2021-03-01-3)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-03-16
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-03-16-1">1. SemVLP: Vision-Language Pre-training by Aligning Semantics at Multiple Levels</h2>
+
+Title: [SemVLP: Vision-Language Pre-training by Aligning Semantics at Multiple Levels](https://arxiv.org/abs/2103.07829)
+
+Authors: [Chenliang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+C), [Ming Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+M), [Haiyang Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+H), [Fuli Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+F), [Wei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Bin Bi](https://arxiv.org/search/cs?searchtype=author&query=Bi%2C+B), [Songfang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S)
+
+> Vision-language pre-training (VLP) on large-scale image-text pairs has recently witnessed rapid progress for learning cross-modal representations. Existing pre-training methods either directly concatenate image representation and text representation at a feature level as input to a single-stream Transformer, or use a two-stream cross-modal Transformer to align the image-text representation at a high-level semantic space. In real-world image-text data, we observe that it is easy for some of the image-text pairs to align simple semantics on both modalities, while others may be related after higher-level abstraction. Therefore, in this paper, we propose a new pre-training method SemVLP, which jointly aligns both the low-level and high-level semantics between image and text representations. The model is pre-trained iteratively with two prevalent fashions: single-stream pre-training to align at a fine-grained feature level and two-stream pre-training to align high-level semantics, by employing a shared Transformer network with a pluggable cross-modal attention module. An extensive set of experiments have been conducted on four well-established vision-language understanding tasks to demonstrate the effectiveness of the proposed SemVLP in aligning cross-modal representations towards different semantic granularities.
+
+| Comments: | 10 pages, 4 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2103.07829](https://arxiv.org/abs/2103.07829) [cs.CL]** |
+|           | (or **[arXiv:2103.07829v1](https://arxiv.org/abs/2103.07829v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-16-2">2. A Systematic Review of Reproducibility Research in Natural Language Processing</h2>
+
+Title: [A Systematic Review of Reproducibility Research in Natural Language Processing](https://arxiv.org/abs/2103.07929)
+
+Authors: [Anya Belz](https://arxiv.org/search/cs?searchtype=author&query=Belz%2C+A), [Shubham Agarwal](https://arxiv.org/search/cs?searchtype=author&query=Agarwal%2C+S), [Anastasia Shimorina](https://arxiv.org/search/cs?searchtype=author&query=Shimorina%2C+A), [Ehud Reiter](https://arxiv.org/search/cs?searchtype=author&query=Reiter%2C+E)
+
+> Against the background of what has been termed a reproducibility crisis in science, the NLP field is becoming increasingly interested in, and conscientious about, the reproducibility of its results. The past few years have seen an impressive range of new initiatives, events and active research in the area. However, the field is far from reaching a consensus about how reproducibility should be defined, measured and addressed, with diversity of views currently increasing rather than converging. With this focused contribution, we aim to provide a wide-angle, and as near as possible complete, snapshot of current work on reproducibility in NLP, delineating differences and similarities, and providing pointers to common denominators.
+
+| Comments: | To be published in proceedings of EACL'21                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2103.07929](https://arxiv.org/abs/2103.07929) [cs.CL]** |
+|           | (or **[arXiv:2103.07929v1](https://arxiv.org/abs/2103.07929v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-16-3">3. Crowdsourced Phrase-Based Tokenization for Low-Resourced Neural Machine Translation: The Case of Fon Language</h2>
+
+Title: [Crowdsourced Phrase-Based Tokenization for Low-Resourced Neural Machine Translation: The Case of Fon Language](https://arxiv.org/abs/2103.08052)
+
+Authors: [Bonaventure F. P. Dossou](https://arxiv.org/search/cs?searchtype=author&query=Dossou%2C+B+F+P), [Chris C. Emezue](https://arxiv.org/search/cs?searchtype=author&query=Emezue%2C+C+C)
+
+> Building effective neural machine translation (NMT) models for very low-resourced and morphologically rich African indigenous languages is an open challenge. Besides the issue of finding available resources for them, a lot of work is put into preprocessing and tokenization. Recent studies have shown that standard tokenization methods do not always adequately deal with the grammatical, diacritical, and tonal properties of some African languages. That, coupled with the extremely low availability of training samples, hinders the production of reliable NMT models. In this paper, using Fon language as a case study, we revisit standard tokenization methods and introduce Word-Expressions-Based (WEB) tokenization, a human-involved super-words tokenization strategy to create a better representative vocabulary for training. Furthermore, we compare our tokenization strategy to others on the Fon-French and French-Fon translation tasks.
+
+| Subjects:          | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | African NLP, EACL 2021                                       |
+| Cite as:           | **[arXiv:2103.08052](https://arxiv.org/abs/2103.08052) [cs.CL]** |
+|                    | (or **[arXiv:2103.08052v1](https://arxiv.org/abs/2103.08052v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-16-4">4. Towards the evaluation of simultaneous speech translation from a communicative perspective</h2>
+
+Title: [Towards the evaluation of simultaneous speech translation from a communicative perspective](https://arxiv.org/abs/2103.08364)
+
+Authors: [claudio Fantinuoli](https://arxiv.org/search/cs?searchtype=author&query=Fantinuoli%2C+c), [Bianca Prandi](https://arxiv.org/search/cs?searchtype=author&query=Prandi%2C+B)
+
+> In recent years, machine speech-to-speech and speech-to-text translation has gained momentum thanks to advances in artificial intelligence, especially in the domains of speech recognition and machine translation. The quality of such applications is commonly tested with automatic metrics, such as BLEU, primarily with the goal of assessing improvements of releases or in the context of evaluation campaigns. However, little is known about how such systems compare to human performances in similar communicative tasks or how the performance of such systems is perceived by final users.
+> In this paper, we present the results of an experiment aimed at evaluating the quality of a simultaneous speech translation engine by comparing it to the performance of professional interpreters. To do so, we select a framework developed for the assessment of human interpreters and use it to perform a manual evaluation on both human and machine performances. In our sample, we found better performance for the human interpreters in terms of intelligibility, while the machine performs slightly better in terms of informativeness. The limitations of the study and the possible enhancements of the chosen framework are discussed. Despite its intrinsic limitations, the use of this framework represents a first step towards a user-centric and communication-oriented methodology for evaluating simultaneous speech translation.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2103.08364](https://arxiv.org/abs/2103.08364) [cs.CL]** |
+|           | (or **[arXiv:2103.08364v1](https://arxiv.org/abs/2103.08364v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-16-5">5. Multi-view Subword Regularization</h2>
+
+Title: [Multi-view Subword Regularization](https://arxiv.org/abs/2103.08490)
+
+Authors: [Xinyi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Sebastian Ruder](https://arxiv.org/search/cs?searchtype=author&query=Ruder%2C+S), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
+
+> Multilingual pretrained representations generally rely on subword segmentation algorithms to create a shared multilingual vocabulary. However, standard heuristic algorithms often lead to sub-optimal segmentation, especially for languages with limited amounts of data. In this paper, we take two major steps towards alleviating this problem. First, we demonstrate empirically that applying existing subword regularization methods(Kudo, 2018; Provilkov et al., 2020) during fine-tuning of pre-trained multilingual representations improves the effectiveness of cross-lingual transfer. Second, to take full advantage of different possible input segmentations, we propose Multi-view Subword Regularization (MVR), a method that enforces the consistency between predictions of using inputs tokenized by the standard and probabilistic segmentations. Results on the XTREME multilingual benchmark(Hu et al., 2020) show that MVR brings consistent improvements of up to 2.5 points over using standard segmentation algorithms.
+
+| Comments: | Accepted at NAACL 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2103.08490](https://arxiv.org/abs/2103.08490) [cs.CL]** |
+|           | (or **[arXiv:2103.08490v1](https://arxiv.org/abs/2103.08490v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-16-6">6. A Study of Automatic Metrics for the Evaluation of Natural Language Explanations</h2>
+
+Title: [A Study of Automatic Metrics for the Evaluation of Natural Language Explanations](https://arxiv.org/abs/2103.08545)
+
+Authors: [Miruna Clinciu](https://arxiv.org/search/cs?searchtype=author&query=Clinciu%2C+M), [Arash Eshghi](https://arxiv.org/search/cs?searchtype=author&query=Eshghi%2C+A), [Helen Hastie](https://arxiv.org/search/cs?searchtype=author&query=Hastie%2C+H)
+
+> As transparency becomes key for robotics and AI, it will be necessary to evaluate the methods through which transparency is provided, including automatically generated natural language (NL) explanations. Here, we explore parallels between the generation of such explanations and the much-studied field of evaluation of Natural Language Generation (NLG). Specifically, we investigate which of the NLG evaluation measures map well to explanations. We present the ExBAN corpus: a crowd-sourced corpus of NL explanations for Bayesian Networks. We run correlations comparing human subjective ratings with NLG automatic measures. We find that embedding-based automatic NLG evaluation methods, such as BERTScore and BLEURT, have a higher correlation with human ratings, compared to word-overlap metrics, such as BLEU and ROUGE. This work has implications for Explainable AI and transparent robotic and autonomous systems.
+
+| Comments: | Accepted at EACL 2021                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2103.08545](https://arxiv.org/abs/2103.08545) [cs.CL]** |
+|           | (or **[arXiv:2103.08545v1](https://arxiv.org/abs/2103.08545v1) [cs.CL]** for this version) |
+
+
 
 
 
