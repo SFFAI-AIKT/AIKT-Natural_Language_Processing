@@ -2,6 +2,11 @@
 
 # Index
 
+- [2021-03-17](#2021-03-17)
+  - [1. Multilingual Multimodal Pre-training for Zero-Shot Cross-Lingual Transfer of Vision-Language Models](#2021-03-17-1)
+  - [2. MENYO-20k: A Multi-domain English-Yorùbá Corpus for Machine Translation and Domain Adaptation](#2021-03-17-2)
+  - [3. LightningDOT: Pre-training Visual-Semantic Embeddings for Real-Time Image-Text Retrieval](#2021-03-17-3)
+  - [4. Gumbel-Attention for Multi-modal Machine Translation](#2021-03-17-4)
 - [2021-03-16](#2021-03-16)
   - [1. SemVLP: Vision-Language Pre-training by Aligning Semantics at Multiple Levels](#2021-03-16-1)
   - [2. A Systematic Review of Reproducibility Research in Natural Language Processing](#2021-03-16-2)
@@ -57,6 +62,83 @@
   - [2. Learning Chess Blindfolded: Evaluating Language Models on State Tracking](#2021-03-01-2)
   - [3. Gradient-guided Loss Masking for Neural Machine Translation](#2021-03-01-3)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-03-17
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-03-17-1">1. Multilingual Multimodal Pre-training for Zero-Shot Cross-Lingual Transfer of Vision-Language Models</h2>
+
+Title: [Multilingual Multimodal Pre-training for Zero-Shot Cross-Lingual Transfer of Vision-Language Models](https://arxiv.org/abs/2103.08849)
+
+Authors: [Po-Yao Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+P), [Mandela Patrick](https://arxiv.org/search/cs?searchtype=author&query=Patrick%2C+M), [Junjie Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+J), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G), [Florian Metze](https://arxiv.org/search/cs?searchtype=author&query=Metze%2C+F), [Alexander Hauptmann](https://arxiv.org/search/cs?searchtype=author&query=Hauptmann%2C+A)
+
+> This paper studies zero-shot cross-lingual transfer of vision-language models. Specifically, we focus on multilingual text-to-video search and propose a Transformer-based model that learns contextualized multilingual multimodal embeddings. Under a zero-shot setting, we empirically demonstrate that performance degrades significantly when we query the multilingual text-video model with non-English sentences. To address this problem, we introduce a multilingual multimodal pre-training strategy, and collect a new multilingual instructional video dataset (MultiHowTo100M) for pre-training. Experiments on VTT show that our method significantly improves video search in non-English languages without additional annotations. Furthermore, when multilingual annotations are available, our method outperforms recent baselines by a large margin in multilingual text-to-video search on VTT and VATEX; as well as in multilingual text-to-image search on Multi30K. Our model and Multi-HowTo100M is available at [this http URL](http://github.com/berniebear/Mutli-HT100M).
+
+| Comments: | accepted by NAACL 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2103.08849](https://arxiv.org/abs/2103.08849) [cs.CV]** |
+|           | (or **[arXiv:2103.08849v1](https://arxiv.org/abs/2103.08849v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-17-2">2. MENYO-20k: A Multi-domain English-Yorùbá Corpus for Machine Translation and Domain Adaptation</h2>
+
+Title: [MENYO-20k: A Multi-domain English-Yorùbá Corpus for Machine Translation and Domain Adaptation](https://arxiv.org/abs/2103.08647)
+
+Authors: [David I. Adelani](https://arxiv.org/search/cs?searchtype=author&query=Adelani%2C+D+I), [Dana Ruiter](https://arxiv.org/search/cs?searchtype=author&query=Ruiter%2C+D), [Jesujoba O. Alabi](https://arxiv.org/search/cs?searchtype=author&query=Alabi%2C+J+O), [Damilola Adebonojo](https://arxiv.org/search/cs?searchtype=author&query=Adebonojo%2C+D), [Adesina Ayeni](https://arxiv.org/search/cs?searchtype=author&query=Ayeni%2C+A), [Mofe Adeyemi](https://arxiv.org/search/cs?searchtype=author&query=Adeyemi%2C+M), [Ayodele Awokoya](https://arxiv.org/search/cs?searchtype=author&query=Awokoya%2C+A), [Cristina España-Bonet](https://arxiv.org/search/cs?searchtype=author&query=España-Bonet%2C+C)
+
+> Massively multilingual machine translation (MT) has shown impressive capabilities, including zero and few-shot translation between low-resource language pairs. However, these models are often evaluated on high-resource languages with the assumption that they generalize to low-resource ones. The difficulty of evaluating MT models on low-resource pairs is often due the lack of standardized evaluation datasets. In this paper, we present MENYO-20k, the first multi-domain parallel corpus for the low-resource Yorùbá--English (yo--en) language pair with standardized train-test splits for benchmarking. We provide several neural MT (NMT) benchmarks on this dataset and compare to the performance of popular pre-trained (massively multilingual) MT models, showing that, in almost all cases, our simple benchmarks outperform the pre-trained MT models. A major gain of BLEU +9.9 and +8.6 (en2yo) is achieved in comparison to Facebook's M2M-100 and Google multilingual NMT respectively when we use MENYO-20k to fine-tune generic models.
+
+| Comments: | Accepted to the AfricaNLP 2021 Workshop @EACL 2021           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2103.08647](https://arxiv.org/abs/2103.08647) [cs.CL]** |
+|           | (or **[arXiv:2103.08647v1](https://arxiv.org/abs/2103.08647v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-17-3">3. LightningDOT: Pre-training Visual-Semantic Embeddings for Real-Time Image-Text Retrieval</h2>
+
+Title: [LightningDOT: Pre-training Visual-Semantic Embeddings for Real-Time Image-Text Retrieval](https://arxiv.org/abs/2103.08784)
+
+Authors: [Siqi Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+S), [Yen-Chun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Linjie Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Shuohang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Yuwei Fang](https://arxiv.org/search/cs?searchtype=author&query=Fang%2C+Y), [Jingjing Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J)
+
+> Multimodal pre-training has propelled great advancement in vision-and-language research. These large-scale pre-trained models, although successful, fatefully suffer from slow inference speed due to enormous computation cost mainly from cross-modal attention in Transformer architecture. When applied to real-life applications, such latency and computation demand severely deter the practical use of pre-trained models. In this paper, we study Image-text retrieval (ITR), the most mature scenario of V+L application, which has been widely studied even prior to the emergence of recent pre-trained models. We propose a simple yet highly effective approach, LightningDOT that accelerates the inference time of ITR by thousands of times, without sacrificing accuracy. LightningDOT removes the time-consuming cross-modal attention by pre-training on three novel learning objectives, extracting feature indexes offline, and employing instant dot-product matching with further re-ranking, which significantly speeds up retrieval process. In fact, LightningDOT achieves new state of the art across multiple ITR benchmarks such as Flickr30k, COCO and Multi30K, outperforming existing pre-trained models that consume 1000x magnitude of computational hours. Code and pre-training checkpoints are available at [this https URL](https://github.com/intersun/LightningDOT).
+
+| Comments: | NAACL 2021                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2103.08784](https://arxiv.org/abs/2103.08784) [cs.CL]** |
+|           | (or **[arXiv:2103.08784v1](https://arxiv.org/abs/2103.08784v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-17-4">4. Gumbel-Attention for Multi-modal Machine Translation</h2>
+
+Title: [Gumbel-Attention for Multi-modal Machine Translation](https://arxiv.org/abs/2103.08862)
+
+Authors: [Pengbo Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+P), [Hailong Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+H), [Tiejun Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+T)
+
+> Multi-modal machine translation (MMT) improves translation quality by introducing visual information. However, the existing MMT model ignores the problem that the image will bring information irrelevant to the text, causing much noise to the model and affecting the translation quality. In this paper, we propose a novel Gumbel-Attention for multi-modal machine translation, which selects the text-related parts of the image features. Specifically, different from the previous attention-based method, we first use a differentiable method to select the image information and automatically remove the useless parts of the image features. Through the score matrix of Gumbel-Attention and image features, the image-aware text representation is generated. And then, we independently encode the text representation and the image-aware text representation with the multi-modal encoder. Finally, the final output of the encoder is obtained through multi-modal gated fusion. Experiments and case analysis proves that our method retains the image features related to the text, and the remaining parts help the MMT model generates better translations.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2103.08862](https://arxiv.org/abs/2103.08862) [cs.CL]** |
+|           | (or **[arXiv:2103.08862v1](https://arxiv.org/abs/2103.08862v1) [cs.CL]** for this version) |
+
+
 
 
 
