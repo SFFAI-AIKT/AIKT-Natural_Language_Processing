@@ -2,6 +2,8 @@
 
 # Index
 
+- [2021-03-18](#2021-03-18)
+  - [1. Endangered Languages are not Low-Resourced!](#2021-03-18-1)
 - [2021-03-17](#2021-03-17)
   - [1. Multilingual Multimodal Pre-training for Zero-Shot Cross-Lingual Transfer of Vision-Language Models](#2021-03-17-1)
   - [2. MENYO-20k: A Multi-domain English-Yorùbá Corpus for Machine Translation and Domain Adaptation](#2021-03-17-2)
@@ -62,6 +64,33 @@
   - [2. Learning Chess Blindfolded: Evaluating Language Models on State Tracking](#2021-03-01-2)
   - [3. Gradient-guided Loss Masking for Neural Machine Translation](#2021-03-01-3)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+
+
+# 2021-03-18
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-03-18-1">1. Endangered Languages are not Low-Resourced!</h2>
+
+Title: [Endangered Languages are not Low-Resourced!](https://arxiv.org/abs/2103.09567)
+
+Authors: [Mika Hämäläinen](https://arxiv.org/search/cs?searchtype=author&query=Hämäläinen%2C+M)
+
+> The term low-resourced has been tossed around in the field of natural language processing to a degree that almost any language that is not English can be called "low-resourced"; sometimes even just for the sake of making a mundane or mediocre paper appear more interesting and insightful. In a field where English is a synonym for language and low-resourced is a synonym for anything not English, calling endangered languages low-resourced is a bit of an overstatement. In this paper, I inspect the relation of the endangered with the low-resourced from my own experiences.
+
+| Comments: | In Multilingual Facilitation (2021)                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| DOI:      | [10.31885/9789515150257.1](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.31885%2F9789515150257.1&v=32d3d8fb) |
+| Cite as:  | **[arXiv:2103.09567](https://arxiv.org/abs/2103.09567) [cs.CL]** |
+|           | (or **[arXiv:2103.09567v1](https://arxiv.org/abs/2103.09567v1) [cs.CL]** for this version) |
+
+
 
 
 
