@@ -2,6 +2,10 @@
 
 # Index
 
+- [2021-03-19](#2021-03-19)
+  - [1. Model Extraction and Adversarial Transferability, Your BERT is Vulnerable!](#2021-03-19-1)
+  - [2. All NLP Tasks Are Generation Tasks: A General Pretraining Framework](#2021-03-19-2)
+  - [3. GPT Understands, Too](#2021-03-19-3)
 - [2021-03-18](#2021-03-18)
   - [1. Endangered Languages are not Low-Resourced!](#2021-03-18-1)
 - [2021-03-17](#2021-03-17)
@@ -64,6 +68,64 @@
   - [2. Learning Chess Blindfolded: Evaluating Language Models on State Tracking](#2021-03-01-2)
   - [3. Gradient-guided Loss Masking for Neural Machine Translation](#2021-03-01-3)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-03-19
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-03-19-1">1. Model Extraction and Adversarial Transferability, Your BERT is Vulnerable!
+</h2>
+
+Title: [Model Extraction and Adversarial Transferability, Your BERT is Vulnerable!](https://arxiv.org/abs/2103.10013)
+
+Authors: [Xuanli He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+X), [Lingjuan Lyu](https://arxiv.org/search/cs?searchtype=author&query=Lyu%2C+L), [Qiongkai Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+Q), [Lichao Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+L)
+
+> Natural language processing (NLP) tasks, ranging from text classification to text generation, have been revolutionised by the pre-trained language models, such as BERT. This allows corporations to easily build powerful APIs by encapsulating fine-tuned BERT models for downstream tasks. However, when a fine-tuned BERT model is deployed as a service, it may suffer from different attacks launched by malicious users. In this work, we first present how an adversary can steal a BERT-based API service (the victim/target model) on multiple benchmark datasets with limited prior knowledge and queries. We further show that the extracted model can lead to highly transferable adversarial attacks against the victim model. Our studies indicate that the potential vulnerabilities of BERT-based API services still hold, even when there is an architectural mismatch between the victim model and the attack model. Finally, we investigate two defence strategies to protect the victim model and find that unless the performance of the victim model is sacrificed, both model ex-traction and adversarial transferability can effectively compromise the target models
+
+| Comments: | accepted to NAACL2021                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2103.10013](https://arxiv.org/abs/2103.10013) [cs.CL]** |
+|           | (or **[arXiv:2103.10013v1](https://arxiv.org/abs/2103.10013v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-19-2">2. All NLP Tasks Are Generation Tasks: A General Pretraining Framework</h2>
+
+Title: [All NLP Tasks Are Generation Tasks: A General Pretraining Framework](https://arxiv.org/abs/2103.10360)
+
+Authors: [Zhengxiao Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+Z), [Yujie Qian](https://arxiv.org/search/cs?searchtype=author&query=Qian%2C+Y), [Xiao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Ming Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+M), [Jiezhong Qiu](https://arxiv.org/search/cs?searchtype=author&query=Qiu%2C+J), [Zhilin Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Jie Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+J)
+
+> There have been various types of pretraining architectures including autoregressive models (e.g., GPT), autoencoding models (e.g., BERT), and encoder-decoder models (e.g., T5). On the other hand, NLP tasks are different in nature, with three main categories being classification, unconditional generation, and conditional generation. However, none of the pretraining frameworks performs the best for all tasks, which introduces inconvenience for model development and selection. We propose a novel pretraining framework GLM (General Language Model) to address this challenge. Compared to previous work, our architecture has three major benefits: (1) it performs well on classification, unconditional generation, and conditional generation tasks with one single pretrained model; (2) it outperforms BERT-like models on classification due to improved pretrain-finetune consistency; (3) it naturally handles variable-length blank filling which is crucial for many downstream tasks. Empirically, GLM substantially outperforms BERT on the SuperGLUE natural language understanding benchmark with the same amount of pre-training data. Moreover, GLM with 1.25x parameters of BERT-Large achieves the best performance in NLU, conditional and unconditional generation at the same time, which demonstrates its generalizability to different downstream tasks.
+
+| Comments: | 14 pages, 3 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2103.10360](https://arxiv.org/abs/2103.10360) [cs.CL]** |
+|           | (or **[arXiv:2103.10360v1](https://arxiv.org/abs/2103.10360v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-19-3">3. GPT Understands, Too</h2>
+
+Title: [GPT Understands, Too](https://arxiv.org/abs/2103.10385)
+
+Authors: [Xiao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Yanan Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+Y), [Zhengxiao Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+Z), [Ming Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+M), [Yujie Qian](https://arxiv.org/search/cs?searchtype=author&query=Qian%2C+Y), [Zhilin Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Jie Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+J)
+
+> While GPTs with traditional fine-tuning fail to achieve strong results on natural language understanding (NLU), we show that GPTs can be better than or comparable to similar-sized BERTs on NLU tasks with a novel method P-tuning -- which employs trainable continuous prompt embeddings. On the knowledge probing (LAMA) benchmark, the best GPT recovers 64\% (P@1) of world knowledge without any additional text provided during test time, which substantially improves the previous best by 20+ percentage points. On the SuperGlue benchmark, GPTs achieve comparable and sometimes better performance to similar-sized BERTs in supervised learning. Importantly, we find that P-tuning also improves BERTs' performance in both few-shot and supervised settings while largely reducing the need for prompt engineering. Consequently, P-tuning outperforms the state-of-the-art approaches on the few-shot SuperGlue benchmark.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2103.10385](https://arxiv.org/abs/2103.10385) [cs.CL]** |
+|           | (or **[arXiv:2103.10385v1](https://arxiv.org/abs/2103.10385v1) [cs.CL]** for this version) |
 
 
 
