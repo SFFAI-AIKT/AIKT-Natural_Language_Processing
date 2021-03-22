@@ -2,6 +2,10 @@
 
 # Index
 
+- [2021-03-22](#2021-03-22)
+  - [1. Improving the Lexical Ability of Pretrained Language Models for Unsupervised Neural Machine Translation](#2021-03-22-1)
+  - [2. MuRIL: Multilingual Representations for Indian Languages](#2021-03-22-2)
+  - [3. Congolese Swahili Machine Translation for Humanitarian Response](#2021-03-22-3)
 - [2021-03-19](#2021-03-19)
   - [1. Model Extraction and Adversarial Transferability, Your BERT is Vulnerable!](#2021-03-19-1)
   - [2. All NLP Tasks Are Generation Tasks: A General Pretraining Framework](#2021-03-19-2)
@@ -68,6 +72,66 @@
   - [2. Learning Chess Blindfolded: Evaluating Language Models on State Tracking](#2021-03-01-2)
   - [3. Gradient-guided Loss Masking for Neural Machine Translation](#2021-03-01-3)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-03-22
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-03-22-1">1. Improving the Lexical Ability of Pretrained Language Models for Unsupervised Neural Machine Translation
+</h2>
+
+Title: [Improving the Lexical Ability of Pretrained Language Models for Unsupervised Neural Machine Translation](https://arxiv.org/abs/2103.10531)
+
+Authors:[Alexandra Chronopoulou](https://arxiv.org/search/cs?searchtype=author&query=Chronopoulou%2C+A), [Dario Stojanovski](https://arxiv.org/search/cs?searchtype=author&query=Stojanovski%2C+D), [Alexander Fraser](https://arxiv.org/search/cs?searchtype=author&query=Fraser%2C+A)
+
+> Successful methods for unsupervised neural machine translation (UNMT) employ cross-lingual pretraining via self-supervision, often in the form of a masked language modeling or a sequence generation task, which requires the model to align the lexical- and high-level representations of the two languages. While cross-lingual pretraining works for similar languages with abundant corpora, it performs poorly in low-resource, distant languages. Previous research has shown that this is because the representations are not sufficiently aligned. In this paper, we enhance the bilingual masked language model pretraining with lexical-level information by using type-level cross-lingual subword embeddings. Empirical results demonstrate improved performance both on UNMT (up to 4.5 BLEU) and bilingual lexicon induction using our method compared to an established UNMT baseline.
+
+| Comments: | Accepted at NAACL 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2103.10531](https://arxiv.org/abs/2103.10531) [cs.CL]** |
+|           | (or **[arXiv:2103.10531v1](https://arxiv.org/abs/2103.10531v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-03-22-2">2. MuRIL: Multilingual Representations for Indian Languages
+</h2>
+
+Title: [MuRIL: Multilingual Representations for Indian Languages](https://arxiv.org/abs/2103.10730)
+
+Authors:[Simran Khanuja](https://arxiv.org/search/cs?searchtype=author&query=Khanuja%2C+S), [Diksha Bansal](https://arxiv.org/search/cs?searchtype=author&query=Bansal%2C+D), [Sarvesh Mehtani](https://arxiv.org/search/cs?searchtype=author&query=Mehtani%2C+S), [Savya Khosla](https://arxiv.org/search/cs?searchtype=author&query=Khosla%2C+S), [Atreyee Dey](https://arxiv.org/search/cs?searchtype=author&query=Dey%2C+A), [Balaji Gopalan](https://arxiv.org/search/cs?searchtype=author&query=Gopalan%2C+B), [Dilip Kumar Margam](https://arxiv.org/search/cs?searchtype=author&query=Margam%2C+D+K), [Pooja Aggarwal](https://arxiv.org/search/cs?searchtype=author&query=Aggarwal%2C+P), [Rajiv Teja Nagipogu](https://arxiv.org/search/cs?searchtype=author&query=Nagipogu%2C+R+T), [Shachi Dave](https://arxiv.org/search/cs?searchtype=author&query=Dave%2C+S), [Shruti Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+S), [Subhash Chandra Bose Gali](https://arxiv.org/search/cs?searchtype=author&query=Gali%2C+S+C+B), [Vish Subramanian](https://arxiv.org/search/cs?searchtype=author&query=Subramanian%2C+V), [Partha Talukdar](https://arxiv.org/search/cs?searchtype=author&query=Talukdar%2C+P)
+
+> India is a multilingual society with 1369 rationalized languages and dialects being spoken across the country (INDIA, 2011). Of these, the 22 scheduled languages have a staggering total of 1.17 billion speakers and 121 languages have more than 10,000 speakers (INDIA, 2011). India also has the second largest (and an ever growing) digital footprint (Statista, 2020). Despite this, today's state-of-the-art multilingual systems perform suboptimally on Indian (IN) languages. This can be explained by the fact that multilingual language models (LMs) are often trained on 100+ languages together, leading to a small representation of IN languages in their vocabulary and training data. Multilingual LMs are substantially less effective in resource-lean scenarios (Wu and Dredze, 2020; Lauscher et al., 2020), as limited data doesn't help capture the various nuances of a language. One also commonly observes IN language text transliterated to Latin or code-mixed with English, especially in informal settings (for example, on social media platforms) (Rijhwani et al., 2017). This phenomenon is not adequately handled by current state-of-the-art multilingual LMs. To address the aforementioned gaps, we propose MuRIL, a multilingual LM specifically built for IN languages. MuRIL is trained on significantly large amounts of IN text corpora only. We explicitly augment monolingual text corpora with both translated and transliterated document pairs, that serve as supervised cross-lingual signals in training. MuRIL significantly outperforms multilingual BERT (mBERT) on all tasks in the challenging cross-lingual XTREME benchmark (Hu et al., 2020). We also present results on transliterated (native to Latin script) test sets of the chosen datasets and demonstrate the efficacy of MuRIL in handling transliterated data.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2103.10730](https://arxiv.org/abs/2103.10730) [cs.CL]** |
+|           | (or **[arXiv:2103.10730v1](https://arxiv.org/abs/2103.10730v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-22-3">3. Congolese Swahili Machine Translation for Humanitarian Response
+</h2>
+
+Title: [Congolese Swahili Machine Translation for Humanitarian Response](https://arxiv.org/abs/2103.10734)
+
+Authors:[Alp Öktem](https://arxiv.org/search/cs?searchtype=author&query=Öktem%2C+A), [Eric DeLuca](https://arxiv.org/search/cs?searchtype=author&query=DeLuca%2C+E), [Rodrigue Bashizi](https://arxiv.org/search/cs?searchtype=author&query=Bashizi%2C+R), [Eric Paquin](https://arxiv.org/search/cs?searchtype=author&query=Paquin%2C+E), [Grace Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+G)
+
+> In this paper we describe our efforts to make a bidirectional Congolese Swahili (SWC) to French (FRA) neural machine translation system with the motivation of improving humanitarian translation workflows. For training, we created a 25,302-sentence general domain parallel corpus and combined it with publicly available data. Experimenting with low-resource methodologies like cross-dialect transfer and semi-supervised learning, we recorded improvements of up to 2.4 and 3.5 BLEU points in the SWC-FRA and FRA-SWC directions, respectively. We performed human evaluations to assess the usability of our models in a COVID-domain chatbot that operates in the Democratic Republic of Congo (DRC). Direct assessment in the SWC-FRA direction demonstrated an average quality ranking of 6.3 out of 10 with 75% of the target strings conveying the main message of the source text. For the FRA-SWC direction, our preliminary tests on post-editing assessment showed its potential usefulness for machine-assisted translation. We make our models, datasets containing up to 1 million sentences, our development pipeline, and a translator web-app available for public use.
+
+| Comments: | Accepted to Africa NLP workshop organized within the 16th Conference of the European Chapter of the Association for Computational Linguistics (EACL2021) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2103.10734](https://arxiv.org/abs/2103.10734) [cs.CL]** |
+|           | (or **[arXiv:2103.10734v1](https://arxiv.org/abs/2103.10734v1) [cs.CL]** for this version) |
+
+
 
 
 
