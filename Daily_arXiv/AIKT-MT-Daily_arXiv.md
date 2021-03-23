@@ -2,6 +2,19 @@
 
 # Index
 
+- [2021-03-23](#2021-03-23)
+  - [1. Let Your Heart Speak in its Mother Tongue: Multilingual Captioning of Cardiac Signals](#2021-03-23-1)
+  - [2. Attribute Alignment: Controlling Text Generation from Pre-trained Language Models](#2021-03-23-2)
+  - [3. Local Interpretations for Explainable Natural Language Processing: A Survey](#2021-03-23-3)
+  - [4. Token-wise Curriculum Learning for Neural Machine Translation](#2021-03-23-4)
+  - [5. Dependency Graph-to-String Statistical Machine Translation](#2021-03-23-5)
+  - [6. The Effectiveness of Morphology-aware Segmentation in Low-Resource Neural Machine Translation](#2021-03-23-6)
+  - [7. Non-Autoregressive Translation by Learning Target Categorical Codes](#2021-03-23-7)
+  - [8. SparseGAN: Sparse Generative Adversarial Network for Text Generation](#2021-03-23-8)
+  - [9. Monolingual and Parallel Corpora for Kangri Low Resource Language](#2021-03-23-9)
+  - [10. Simpson's Bias in NLP Training](#2021-03-23-10)
+  - [11. BlonD: An Automatic Evaluation Metric for Document-level MachineTranslation](#2021-03-23-11)
+  - [12. BERT: A Review of Applications in Natural Language Processing and Understanding](#2021-03-23-12)
 - [2021-03-22](#2021-03-22)
   - [1. Improving the Lexical Ability of Pretrained Language Models for Unsupervised Neural Machine Translation](#2021-03-22-1)
   - [2. MuRIL: Multilingual Representations for Indian Languages](#2021-03-22-2)
@@ -72,6 +85,238 @@
   - [2. Learning Chess Blindfolded: Evaluating Language Models on State Tracking](#2021-03-01-2)
   - [3. Gradient-guided Loss Masking for Neural Machine Translation](#2021-03-01-3)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-03-23
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-03-23-1">1. Let Your Heart Speak in its Mother Tongue: Multilingual Captioning of Cardiac Signals
+</h2>
+
+Title: [Let Your Heart Speak in its Mother Tongue: Multilingual Captioning of Cardiac Signals](https://arxiv.org/abs/2103.11011)
+
+Authors: [Dani Kiyasseh](https://arxiv.org/search/cs?searchtype=author&query=Kiyasseh%2C+D), [Tingting Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+T), [David Clifton](https://arxiv.org/search/cs?searchtype=author&query=Clifton%2C+D)
+
+> Cardiac signals, such as the electrocardiogram, convey a significant amount of information about the health status of a patient which is typically summarized by a clinician in the form of a clinical report, a cumbersome process that is prone to errors. To streamline this routine process, we propose a deep neural network capable of captioning cardiac signals; it receives a cardiac signal as input and generates a clinical report as output. We extend this further to generate multilingual reports. To that end, we create and make publicly available a multilingual clinical report dataset. In the absence of sufficient labelled data, deep neural networks can benefit from a warm-start, or pre-training, procedure in which parameters are first learned in an arbitrary task. We propose such a task in the form of discriminative multilingual pre-training where tokens from clinical reports are randomly replaced with those from other languages and the network is tasked with predicting the language of all tokens. We show that our method performs on par with state-of-the-art pre-training methods such as MLM, ELECTRA, and MARGE, while simultaneously generating diverse and plausible clinical reports. We also demonstrate that multilingual models can outperform their monolingual counterparts, informally terming this beneficial phenomenon as the blessing of multilinguality.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2103.11011](https://arxiv.org/abs/2103.11011) [cs.CL]** |
+|           | (or **[arXiv:2103.11011v1](https://arxiv.org/abs/2103.11011v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-23-2">2. Attribute Alignment: Controlling Text Generation from Pre-trained Language Models
+</h2>
+
+Title: [Attribute Alignment: Controlling Text Generation from Pre-trained Language Models](https://arxiv.org/abs/2103.11070)
+
+Authors: [Dian Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+D), [Kenji Sagae](https://arxiv.org/search/cs?searchtype=author&query=Sagae%2C+K), [Zhou Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+Z)
+
+> Large language models benefit from training with a large amount of unlabeled text, which gives them increasingly fluent and diverse generation capabilities. However, using these models for text generation that takes into account target attributes, such as sentiment polarity or specific topics, remains a challenge. We propose a simple and flexible method for controlling text generation by aligning disentangled attribute representations. In contrast to recent efforts on training a discriminator to perturb the token level distribution for an attribute, we use the same data to learn an alignment function to guide the pre-trained, non-controlled language model to generate texts with the target attribute without changing the original language model parameters. We evaluate our method on sentiment- and topic-controlled generation, and show large performance gains over previous methods while retaining fluency and diversity.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2103.11070](https://arxiv.org/abs/2103.11070) [cs.CL]** |
+|           | (or **[arXiv:2103.11070v1](https://arxiv.org/abs/2103.11070v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-23-3">3. Local Interpretations for Explainable Natural Language Processing: A Survey
+</h2>
+
+Title: [Local Interpretations for Explainable Natural Language Processing: A Survey](https://arxiv.org/abs/2103.11072)
+
+Authors: [Siwen Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+S), [Hamish Ivison](https://arxiv.org/search/cs?searchtype=author&query=Ivison%2C+H), [Caren Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+C), [Josiah Poon](https://arxiv.org/search/cs?searchtype=author&query=Poon%2C+J)
+
+> As the use of deep learning techniques has grown across various fields over the past decade, complaints about the opaqueness of the black-box models have increased, resulting in an increased focus on transparency in deep learning models. This work investigates various methods to improve the interpretability of deep neural networks for natural language processing (NLP) tasks, including machine translation and sentiment analysis. We provide a comprehensive discussion on the definition of the term \textit{interpretability} and its various aspects at the beginning of this work. The methods collected and summarised in this survey are only associated with local interpretation and are divided into three categories: 1) explaining the model's predictions through related input features; 2) explaining through natural language explanation; 3) probing the hidden states of models and word representations.
+
+| Comments: | This work is an initial draft                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2103.11072](https://arxiv.org/abs/2103.11072) [cs.CL]** |
+|           | (or **[arXiv:2103.11072v1](https://arxiv.org/abs/2103.11072v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-23-4">4. Token-wise Curriculum Learning for Neural Machine Translation
+</h2>
+
+Title: [Token-wise Curriculum Learning for Neural Machine Translation](https://arxiv.org/abs/2103.11088)
+
+Authors: [Chen Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+C), [Haoming Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+H), [Xiaodong Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Pengcheng He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+P), [Weizhu Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+W), [Jianfeng Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+J), [Tuo Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+T)
+
+> Existing curriculum learning approaches to Neural Machine Translation (NMT) require sampling sufficient amounts of "easy" samples from training data at the early training stage. This is not always achievable for low-resource languages where the amount of training data is limited. To address such limitation, we propose a novel token-wise curriculum learning approach that creates sufficient amounts of easy samples. Specifically, the model learns to predict a short sub-sequence from the beginning part of each target sentence at the early stage of training, and then the sub-sequence is gradually expanded as the training progresses. Such a new curriculum design is inspired by the cumulative effect of translation errors, which makes the latter tokens more difficult to predict than the beginning ones. Extensive experiments show that our approach can consistently outperform baselines on 5 language pairs, especially for low-resource languages. Combining our approach with sentence-level methods further improves the performance on high-resource languages.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2103.11088](https://arxiv.org/abs/2103.11088) [cs.CL]** |
+|           | (or **[arXiv:2103.11088v1](https://arxiv.org/abs/2103.11088v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-23-5">5. Dependency Graph-to-String Statistical Machine Translation
+</h2>
+
+Title: [Dependency Graph-to-String Statistical Machine Translation](https://arxiv.org/abs/2103.11089)
+
+Authors: [Liangyou Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Andy Way](https://arxiv.org/search/cs?searchtype=author&query=Way%2C+A), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q)
+
+> We present graph-based translation models which translate source graphs into target strings. Source graphs are constructed from dependency trees with extra links so that non-syntactic phrases are connected. Inspired by phrase-based models, we first introduce a translation model which segments a graph into a sequence of disjoint subgraphs and generates a translation by combining subgraph translations left-to-right using beam search. However, similar to phrase-based models, this model is weak at phrase reordering. Therefore, we further introduce a model based on a synchronous node replacement grammar which learns recursive translation rules. We provide two implementations of the model with different restrictions so that source graphs can be parsed efficiently. Experiments on Chinese--English and German--English show that our graph-based models are significantly better than corresponding sequence- and tree-based baselines.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2103.11089](https://arxiv.org/abs/2103.11089) [cs.CL]** |
+|           | (or **[arXiv:2103.11089v1](https://arxiv.org/abs/2103.11089v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-23-6">6. The Effectiveness of Morphology-aware Segmentation in Low-Resource Neural Machine Translation
+</h2>
+
+Title: [The Effectiveness of Morphology-aware Segmentation in Low-Resource Neural Machine Translation](https://arxiv.org/abs/2103.11189)
+
+Authors: [Jonne Sälevä](https://arxiv.org/search/cs?searchtype=author&query=Sälevä%2C+J), [Constantine Lignos](https://arxiv.org/search/cs?searchtype=author&query=Lignos%2C+C)
+
+> This paper evaluates the performance of several modern subword segmentation methods in a low-resource neural machine translation setting. We compare segmentations produced by applying BPE at the token or sentence level with morphologically-based segmentations from LMVR and MORSEL. We evaluate translation tasks between English and each of Nepali, Sinhala, and Kazakh, and predict that using morphologically-based segmentation methods would lead to better performance in this setting. However, comparing to BPE, we find that no consistent and reliable differences emerge between the segmentation methods. While morphologically-based methods outperform BPE in a few cases, what performs best tends to vary across tasks, and the performance of segmentation methods is often statistically indistinguishable.
+
+| Comments: | EACL 2021 Student Research Workshop                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2103.11189](https://arxiv.org/abs/2103.11189) [cs.CL]** |
+|           | (or **[arXiv:2103.11189v1](https://arxiv.org/abs/2103.11189v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-23-7">7. Non-Autoregressive Translation by Learning Target Categorical Codes
+</h2>
+
+Title: [Non-Autoregressive Translation by Learning Target Categorical Codes](https://arxiv.org/abs/2103.11405)
+
+Authors: [Yu Bao](https://arxiv.org/search/cs?searchtype=author&query=Bao%2C+Y), [Shujian Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Tong Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+T), [Dongqi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+D), [Xinyu Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+X), [Jiajun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J)
+
+> Non-autoregressive Transformer is a promising text generation model. However, current non-autoregressive models still fall behind their autoregressive counterparts in translation quality. We attribute this accuracy gap to the lack of dependency modeling among decoder inputs. In this paper, we propose CNAT, which learns implicitly categorical codes as latent variables into the non-autoregressive decoding. The interaction among these categorical codes remedies the missing dependencies and improves the model capacity. Experiment results show that our model achieves comparable or better performance in machine translation tasks, compared with several strong baselines.
+
+| Comments: | 11 pages, 3 figures, 7 tables. Accepted by NAACL-2021        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2103.11405](https://arxiv.org/abs/2103.11405) [cs.CL]** |
+|           | (or **[arXiv:2103.11405v1](https://arxiv.org/abs/2103.11405v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-23-8">8. SparseGAN: Sparse Generative Adversarial Network for Text Generation
+</h2>
+
+Title: [SparseGAN: Sparse Generative Adversarial Network for Text Generation](https://arxiv.org/abs/2103.11578)
+
+Authors: [Liping Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+L), [Jiehang Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+J), [Xiaoqing Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+X)
+
+> It is still a challenging task to learn a neural text generation model under the framework of generative adversarial networks (GANs) since the entire training process is not differentiable. The existing training strategies either suffer from unreliable gradient estimations or imprecise sentence representations. Inspired by the principle of sparse coding, we propose a SparseGAN that generates semantic-interpretable, but sparse sentence representations as inputs to the discriminator. The key idea is that we treat an embedding matrix as an over-complete dictionary, and use a linear combination of very few selected word embeddings to approximate the output feature representation of the generator at each time step. With such semantic-rich representations, we not only reduce unnecessary noises for efficient adversarial training, but also make the entire training process fully differentiable. Experiments on multiple text generation datasets yield performance improvements, especially in sequence-level metrics, such as BLEU.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2103.11578](https://arxiv.org/abs/2103.11578) [cs.CL]** |
+|           | (or **[arXiv:2103.11578v1](https://arxiv.org/abs/2103.11578v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-23-9">9. Monolingual and Parallel Corpora for Kangri Low Resource Language
+</h2>
+
+Title: [Monolingual and Parallel Corpora for Kangri Low Resource Language](https://arxiv.org/abs/2103.11596)
+
+Authors: [Shweta Chauhan](https://arxiv.org/search/cs?searchtype=author&query=Chauhan%2C+S), [Shefali Saxena](https://arxiv.org/search/cs?searchtype=author&query=Saxena%2C+S), [Philemon Daniel](https://arxiv.org/search/cs?searchtype=author&query=Daniel%2C+P)
+
+> In this paper we present the dataset of Himachali low resource endangered language, Kangri (ISO 639-3xnr) listed in the United Nations Educational, Scientific and Cultural Organization (UNESCO). The compilation of kangri corpus has been a challenging task due to the non-availability of the digitalized resources. The corpus contains 1,81,552 Monolingual and 27,362 Hindi-Kangri Parallel corpora. We shared pre-trained kangri word embeddings. We also reported the Bilingual Evaluation Understudy (BLEU) score and Metric for Evaluation of Translation with Explicit ORdering (METEOR) score of Statistical Machine Translation (SMT) and Neural Machine Translation (NMT) results for the corpus. The corpus is freely available for non-commercial usages and research. To the best of our knowledge, this is the first Himachali low resource endangered language corpus. The resources are available at ([this https URL](https://github.com/chauhanshweta/Kangri_corpus))
+
+| Comments: | 7 pages, 6 Tables, 1 Figure                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2103.11596](https://arxiv.org/abs/2103.11596) [cs.CL]** |
+|           | (or **[arXiv:2103.11596v1](https://arxiv.org/abs/2103.11596v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-23-10">10. Simpson's Bias in NLP Training
+</h2>
+
+Title: [Simpson's Bias in NLP Training](https://arxiv.org/abs/2103.11795)
+
+Authors: [Fei Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+F), [Longtu Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+L), [Huang Bojun](https://arxiv.org/search/cs?searchtype=author&query=Bojun%2C+H), [Yaobo Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+Y)
+
+> In most machine learning tasks, we evaluate a model M on a given data population S by measuring a population-level metric F(S;M). Examples of such evaluation metric F include precision/recall for (binary) recognition, the F1 score for multi-class classification, and the BLEU metric for language generation. On the other hand, the model M is trained by optimizing a sample-level loss G(St;M) at each learning step t, where St is a subset of S (a.k.a. the mini-batch). Popular choices of G include cross-entropy loss, the Dice loss, and sentence-level BLEU scores. A fundamental assumption behind this paradigm is that the mean value of the sample-level loss G, if averaged over all possible samples, should effectively represent the population-level metric F of the task, such as, that 𝔼[G(St;M)]≈F(S;M).
+> In this paper, we systematically investigate the above assumption in several NLP tasks. We show, both theoretically and experimentally, that some popular designs of the sample-level loss G may be inconsistent with the true population-level metric F of the task, so that models trained to optimize the former can be substantially sub-optimal to the latter, a phenomenon we call it, Simpson's bias, due to its deep connections with the classic paradox known as Simpson's reversal paradox in statistics and social sciences.
+
+| Comments: | AAAI 2021                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2103.11795](https://arxiv.org/abs/2103.11795) [cs.CL]** |
+|           | (or **[arXiv:2103.11795v1](https://arxiv.org/abs/2103.11795v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-23-11">11. BlonD: An Automatic Evaluation Metric for Document-level MachineTranslation
+</h2>
+
+Title: [BlonD: An Automatic Evaluation Metric for Document-level MachineTranslation](https://arxiv.org/abs/2103.11878)
+
+Authors: [Yuchen Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+Y), [Shuming Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+S), [Dongdong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+D), [Jian Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+J), [Haoyang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+H), [Ming Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+M)
+
+> Standard automatic metrics (such as BLEU) are problematic for document-level MT evaluation. They can neither distinguish document-level improvements in translation quality from sentence-level ones nor can they identify the specific discourse phenomena that caused the translation errors. To address these problems, we propose an automatic metric BlonD for document-level machine translation evaluation. BlonD takes discourse coherence into consideration by calculating the recall and distance of check-pointing phrases and tags, and further provides comprehensive evaluation scores by combining with n-gram. Extensive comparisons between BlonD and existing evaluation metrics are conducted to illustrate their critical distinctions. Experimental results show that BlonD has a much higher document-level sensitivity with respect to previous metrics. The human evaluation also reveals high Pearson R correlation values between BlonD scores and manual quality judgments.
+
+| Comments: | 8 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2103.11878](https://arxiv.org/abs/2103.11878) [cs.CL]** |
+|           | (or **[arXiv:2103.11878v1](https://arxiv.org/abs/2103.11878v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-23-12">12. BERT: A Review of Applications in Natural Language Processing and Understanding
+</h2>
+
+Title: [BERT: A Review of Applications in Natural Language Processing and Understanding](https://arxiv.org/abs/2103.11943)
+
+Authors: [M. V. Koroteev](https://arxiv.org/search/cs?searchtype=author&query=Koroteev%2C+M+V)
+
+> In this review, we describe the application of one of the most popular deep learning-based language models - BERT. The paper describes the mechanism of operation of this model, the main areas of its application to the tasks of text analytics, comparisons with similar models in each task, as well as a description of some proprietary models. In preparing this review, the data of several dozen original scientific articles published over the past few years, which attracted the most attention in the scientific community, were systematized. This survey will be useful to all students and researchers who want to get acquainted with the latest advances in the field of natural language text analysis.
+
+| Comments: | 18 pages, 7 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2103.11943](https://arxiv.org/abs/2103.11943) [cs.CL]** |
+|           | (or **[arXiv:2103.11943v1](https://arxiv.org/abs/2103.11943v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
