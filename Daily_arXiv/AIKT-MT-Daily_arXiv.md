@@ -2,6 +2,11 @@
 
 # Index
 
+- [2021-03-26](#2021-03-26)
+  - [1. Mask Attention Networks: Rethinking and Strengthen Transformer](#2021-03-26-1)
+  - [2. An Approach to Improve Robustness of NLP Systems against ASR Errors](#2021-03-26-2)
+  - [3. Pruning-then-Expanding Model for Domain Adaptation of Neural Machine Translation](#2021-03-26-3)
+  - [4. Visual Grounding Strategies for Text-Only Natural Language Processing](#2021-03-26-4)
 - [2021-03-25](#2021-03-25)
   - [1. Repairing Pronouns in Translation with BERT-Based Post-Editing](#2021-03-25-1)
   - [2. Thinking Aloud: Dynamic Context Generation Improves Zero-Shot Reasoning Performance of GPT-2](#2021-03-25-2)
@@ -92,6 +97,97 @@
   - [2. Learning Chess Blindfolded: Evaluating Language Models on State Tracking](#2021-03-01-2)
   - [3. Gradient-guided Loss Masking for Neural Machine Translation](#2021-03-01-3)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-03-26
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-03-26-1">1. Mask Attention Networks: Rethinking and Strengthen Transformer
+</h2>
+
+Title: [Mask Attention Networks: Rethinking and Strengthen Transformer](https://arxiv.org/abs/2103.13597)
+
+Authors: [Zhihao Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+Z), [Yeyun Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+Y), [Dayiheng Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+D), [Zhongyu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+Z), [Siyuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Jian Jiao](https://arxiv.org/search/cs?searchtype=author&query=Jiao%2C+J), [Nan Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan%2C+N), [Ruofei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+R), [Xuanjing Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+X)
+
+> Transformer is an attention-based neural network, which consists of two sublayers, namely, Self-Attention Network (SAN) and Feed-Forward Network (FFN). Existing research explores to enhance the two sublayers separately to improve the capability of Transformer for text representation. In this paper, we present a novel understanding of SAN and FFN as Mask Attention Networks (MANs) and show that they are two special cases of MANs with static mask matrices. However, their static mask matrices limit the capability for localness modeling in text representation learning. We therefore introduce a new layer named dynamic mask attention network (DMAN) with a learnable mask matrix which is able to model localness adaptively. To incorporate advantages of DMAN, SAN, and FFN, we propose a sequential layered structure to combine the three types of layers. Extensive experiments on various tasks, including neural machine translation and text summarization demonstrate that our model outperforms the original Transformer.
+
+| Comments: | Accepted as a long paper to NAACL 2021                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2103.13597](https://arxiv.org/abs/2103.13597) [cs.CL]** |
+|           | (or **[arXiv:2103.13597v1](https://arxiv.org/abs/2103.13597v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-26-2">2. An Approach to Improve Robustness of NLP Systems against ASR Errors
+</h2>
+
+Title: [An Approach to Improve Robustness of NLP Systems against ASR Errors](https://arxiv.org/abs/2103.13610)
+
+Authors: [Tong Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+T), [Jinghui Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+J), [Liangyou Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Xin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+X), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q)
+
+> Speech-enabled systems typically first convert audio to text through an automatic speech recognition (ASR) model and then feed the text to downstream natural language processing (NLP) modules. The errors of the ASR system can seriously downgrade the performance of the NLP modules. Therefore, it is essential to make them robust to the ASR errors. Previous work has shown it is effective to employ data augmentation methods to solve this problem by injecting ASR noise during the training process. In this paper, we utilize the prevalent pre-trained language model to generate training samples with ASR-plausible noise. Compare to the previous methods, our approach generates ASR noise that better fits the real-world error distribution. Experimental results on spoken language translation(SLT) and spoken language understanding (SLU) show that our approach effectively improves the system robustness against the ASR errors and achieves state-of-the-art results on both tasks.
+
+| Comments: | 9 pages, 3 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2103.13610](https://arxiv.org/abs/2103.13610) [cs.CL]** |
+|           | (or **[arXiv:2103.13610v1](https://arxiv.org/abs/2103.13610v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-03-26-3">3. Pruning-then-Expanding Model for Domain Adaptation of Neural Machine Translation
+</h2>
+
+Title: [Pruning-then-Expanding Model for Domain Adaptation of Neural Machine Translation](https://arxiv.org/abs/2103.13678)
+
+Authors: [Shuhao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+S), [Yang Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+Y), [Wanying Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie%2C+W)
+
+> Domain Adaptation is widely used in practical applications of neural machine translation, which aims to achieve good performance on both the general-domain and in-domain. However, the existing methods for domain adaptation usually suffer from catastrophic forgetting, domain divergence, and model explosion. To address these three problems, we propose a method of "divide and conquer" which is based on the importance of neurons or parameters in the translation model. In our method, we first prune the model and only keep the important neurons or parameters, making them responsible for both general-domain and in-domain translation. Then we further train the pruned model supervised by the original unpruned model with the knowledge distillation method. Last we expand the model to the original size and fine-tune the added parameters for the in-domain translation. We conduct experiments on different languages and domains and the results show that our method can achieve significant improvements compared with several strong baselines.
+
+| Comments: | NAACL 2021 long paper                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2103.13678](https://arxiv.org/abs/2103.13678) [cs.CL]** |
+|           | (or **[arXiv:2103.13678v1](https://arxiv.org/abs/2103.13678v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-03-26-4">4. Visual Grounding Strategies for Text-Only Natural Language Processing
+</h2>
+
+Title: [Visual Grounding Strategies for Text-Only Natural Language Processing](https://arxiv.org/abs/2103.13942)
+
+Authors: [Damien Sileo](https://arxiv.org/search/cs?searchtype=author&query=Sileo%2C+D)
+
+> Visual grounding is a promising path toward more robust and accurate Natural Language Processing (NLP) models. Many multimodal extensions of BERT (e.g., VideoBERT, LXMERT, VL-BERT) allow a joint modeling of texts and images that lead to state-of-the-art results on multimodal tasks such as Visual Question Answering. Here, we leverage multimodal modeling for purely textual tasks (language modeling and classification) with the expectation that the multimodal pretraining provides a grounding that can improve text processing accuracy. We propose possible strategies in this respect. A first type of strategy, referred to as {\it transferred grounding} consists in applying multimodal models to text-only tasks using a placeholder to replace image input. The second one, which we call {\it associative grounding}, harnesses image retrieval to match texts with related images during both pretraining and text-only downstream tasks. We draw further distinctions into both strategies and then compare them according to their impact on language modeling and commonsense-related downstream tasks, showing improvement over text-only baselines.
+
+| Comments: | Accepted at LANTERN2021                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2103.13942](https://arxiv.org/abs/2103.13942) [cs.CL]** |
+|           | (or **[arXiv:2103.13942v1](https://arxiv.org/abs/2103.13942v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
 
 
 
