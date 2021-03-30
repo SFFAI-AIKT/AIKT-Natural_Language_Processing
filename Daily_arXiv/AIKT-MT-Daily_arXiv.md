@@ -2,6 +2,14 @@
 
 # Index
 
+- [2021-03-30](#2021-03-30)
+  - [1. Bridging Vision and Language from the Video-to-Text Perspective: A Comprehensive Review](#2021-03-30-1)
+  - [2. On Hallucination and Predictive Uncertainty in Conditional Language Generation](#2021-03-30-2)
+  - [3. PENELOPIE: Enabling Open Information Extraction for the Greek Language through Machine Translation](#2021-03-30-3)
+  - [4. Changing the Mind of Transformers for Topically-Controllable Language Generation](#2021-03-30-4)
+  - [5. NLP for Ghanaian Languages](#2021-03-30-5)
+  - [6. Be Careful about Poisoned Word Embeddings: Exploring the Vulnerability of the Embedding Layers in NLP Models](#2021-03-30-6)
+  - [7. English-Twi Parallel Corpus for Machine Translation](#2021-03-30-7)
 - [2021-03-29](#2021-03-29)
   - [1. Turning transformer attention weights into zero-shot sequence labelers](#2021-03-29-1)
   - [2. Unsupervised Document Embedding via Contrastive Augmentation](#2021-03-29-2)
@@ -102,6 +110,147 @@
   - [2. Learning Chess Blindfolded: Evaluating Language Models on State Tracking](#2021-03-01-2)
   - [3. Gradient-guided Loss Masking for Neural Machine Translation](#2021-03-01-3)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-03-30
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-03-30-1">1. Bridging Vision and Language from the Video-to-Text Perspective: A Comprehensive Review
+</h2>
+
+Title: [Bridging Vision and Language from the Video-to-Text Perspective: A Comprehensive Review](https://arxiv.org/abs/2103.14785)
+
+Authors: [Jesus Perez-Martin](https://arxiv.org/search/cs?searchtype=author&query=Perez-Martin%2C+J), [Benjamin Bustos](https://arxiv.org/search/cs?searchtype=author&query=Bustos%2C+B), [Silvio Jamil F. Guimarães](https://arxiv.org/search/cs?searchtype=author&query=Guimarães%2C+S+J+F), [Ivan Sipiran](https://arxiv.org/search/cs?searchtype=author&query=Sipiran%2C+I), [Jorge Pérez](https://arxiv.org/search/cs?searchtype=author&query=Pérez%2C+J), [Grethel Coello Said](https://arxiv.org/search/cs?searchtype=author&query=Said%2C+G+C)
+
+> Research in the area of Vision and Language encompasses challenging topics that seek to connect visual and textual information. The video-to-text problem is one of these topics, in which the goal is to connect an input video with its textual description. This connection can be mainly made by retrieving the most significant descriptions from a corpus or generating a new one given a context video. These two ways represent essential tasks for Computer Vision and Natural Language Processing communities, called text retrieval from video task and video captioning/description task. These two tasks are substantially more complex than predicting or retrieving a single sentence from an image. The spatiotemporal information present in videos introduces diversity and complexity regarding the visual content and the structure of associated language descriptions. This review categorizes and describes the state-of-the-art techniques for the video-to-text problem. It covers the main video-to-text methods and the ways to evaluate their performance. We analyze how the most reported benchmark datasets have been created, showing their drawbacks and strengths for the problem requirements. We also show the impressive progress that researchers have made on each dataset, and we analyze why, despite this progress, the video-to-text conversion is still unsolved. State-of-the-art techniques are still a long way from achieving human-like performance in generating or retrieving video descriptions. We cover several significant challenges in the field and discuss future research directions.
+
+| Comments: | 66 pages, 5 figures. Submitted to Artificial Intelligence Review |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2103.14785](https://arxiv.org/abs/2103.14785) [cs.CV]** |
+|           | (or **[arXiv:2103.14785v1](https://arxiv.org/abs/2103.14785v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-30-2">2. On Hallucination and Predictive Uncertainty in Conditional Language Generation
+</h2>
+
+Title: [On Hallucination and Predictive Uncertainty in Conditional Language Generation](https://arxiv.org/abs/2103.15025)
+
+Authors: [Yijun Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+Y), [William Yang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W+Y)
+
+> Despite improvements in performances on different natural language generation tasks, deep neural models are prone to hallucinating facts that are incorrect or nonexistent. Different hypotheses are proposed and examined separately for different tasks, but no systematic explanations are available across these tasks. In this study, we draw connections between hallucinations and predictive uncertainty in conditional language generation. We investigate their relationship in both image captioning and data-to-text generation and propose a simple extension to beam search to reduce hallucination. Our analysis shows that higher predictive uncertainty corresponds to a higher chance of hallucination. Epistemic uncertainty is more indicative of hallucination than aleatoric or total uncertainties. It helps to achieve better results of trading performance in standard metric for less hallucination with the proposed beam search variant.
+
+| Comments: | EACL 2021                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2103.15025](https://arxiv.org/abs/2103.15025) [cs.CL]** |
+|           | (or **[arXiv:2103.15025v1](https://arxiv.org/abs/2103.15025v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-30-3">3. PENELOPIE: Enabling Open Information Extraction for the Greek Language through Machine Translation
+</h2>
+
+Title: [PENELOPIE: Enabling Open Information Extraction for the Greek Language through Machine Translation](https://arxiv.org/abs/2103.15075)
+
+Authors: [Dimitris Papadopoulos](https://arxiv.org/search/cs?searchtype=author&query=Papadopoulos%2C+D), [Nikolaos Papadakis](https://arxiv.org/search/cs?searchtype=author&query=Papadakis%2C+N), [Nikolaos Matsatsinis](https://arxiv.org/search/cs?searchtype=author&query=Matsatsinis%2C+N)
+
+> In this paper we present our submission for the EACL 2021 SRW; a methodology that aims at bridging the gap between high and low-resource languages in the context of Open Information Extraction, showcasing it on the Greek language. The goals of this paper are twofold: First, we build Neural Machine Translation (NMT) models for English-to-Greek and Greek-to-English based on the Transformer architecture. Second, we leverage these NMT models to produce English translations of Greek text as input for our NLP pipeline, to which we apply a series of pre-processing and triple extraction tasks. Finally, we back-translate the extracted triples to Greek. We conduct an evaluation of both our NMT and OIE methods on benchmark datasets and demonstrate that our approach outperforms the current state-of-the-art for the Greek natural language.
+
+| Comments: | 16th conference of the European Chapter of the Association for Computational Linguistics Student Research Workshop (EACL 2021 SRW) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2103.15075](https://arxiv.org/abs/2103.15075) [cs.CL]** |
+|           | (or **[arXiv:2103.15075v1](https://arxiv.org/abs/2103.15075v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-30-4">4. Changing the Mind of Transformers for Topically-Controllable Language Generation
+</h2>
+
+Title: [Changing the Mind of Transformers for Topically-Controllable Language Generation](https://arxiv.org/abs/2103.15335)
+
+Authors: [Haw-Shiuan Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+H), [Jiaming Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+J), [Mohit Iyyer](https://arxiv.org/search/cs?searchtype=author&query=Iyyer%2C+M), [Andrew McCallum](https://arxiv.org/search/cs?searchtype=author&query=McCallum%2C+A)
+
+> Large Transformer-based language models can aid human authors by suggesting plausible continuations of text written so far. However, current interactive writing assistants do not allow authors to guide text generation in desired topical directions. To address this limitation, we design a framework that displays multiple candidate upcoming topics, of which a user can select a subset to guide the generation. Our framework consists of two components: (1) a method that produces a set of candidate topics by predicting the centers of word clusters in the possible continuations, and (2) a text generation model whose output adheres to the chosen topics. The training of both components is self-supervised, using only unlabeled text. Our experiments demonstrate that our topic options are better than those of standard clustering approaches, and our framework often generates fluent sentences related to the chosen topics, as judged by automated metrics and crowdsourced workers.
+
+| Comments: | EACL 2021                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2103.15335](https://arxiv.org/abs/2103.15335) [cs.CL]** |
+|           | (or **[arXiv:2103.15335v1](https://arxiv.org/abs/2103.15335v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-30-5">5. NLP for Ghanaian Languages
+</h2>
+
+Title: [NLP for Ghanaian Languages](https://arxiv.org/abs/2103.15475)
+
+Authors: [Paul Azunre](https://arxiv.org/search/cs?searchtype=author&query=Azunre%2C+P), [Salomey Osei](https://arxiv.org/search/cs?searchtype=author&query=Osei%2C+S), [Salomey Addo](https://arxiv.org/search/cs?searchtype=author&query=Addo%2C+S), [Lawrence Asamoah Adu-Gyamfi](https://arxiv.org/search/cs?searchtype=author&query=Adu-Gyamfi%2C+L+A), [Stephen Moore](https://arxiv.org/search/cs?searchtype=author&query=Moore%2C+S), [Bernard Adabankah](https://arxiv.org/search/cs?searchtype=author&query=Adabankah%2C+B), [Bernard Opoku](https://arxiv.org/search/cs?searchtype=author&query=Opoku%2C+B), [Clara Asare-Nyarko](https://arxiv.org/search/cs?searchtype=author&query=Asare-Nyarko%2C+C), [Samuel Nyarko](https://arxiv.org/search/cs?searchtype=author&query=Nyarko%2C+S), [Cynthia Amoaba](https://arxiv.org/search/cs?searchtype=author&query=Amoaba%2C+C), [Esther Dansoa Appiah](https://arxiv.org/search/cs?searchtype=author&query=Appiah%2C+E+D), [Felix Akwerh](https://arxiv.org/search/cs?searchtype=author&query=Akwerh%2C+F), [Richard Nii Lante Lawson](https://arxiv.org/search/cs?searchtype=author&query=Lawson%2C+R+N+L), [Joel Budu](https://arxiv.org/search/cs?searchtype=author&query=Budu%2C+J), [Emmanuel Debrah](https://arxiv.org/search/cs?searchtype=author&query=Debrah%2C+E), [Nana Boateng](https://arxiv.org/search/cs?searchtype=author&query=Boateng%2C+N), [Wisdom Ofori](https://arxiv.org/search/cs?searchtype=author&query=Ofori%2C+W), [Edwin Buabeng-Munkoh](https://arxiv.org/search/cs?searchtype=author&query=Buabeng-Munkoh%2C+E), [Franklin Adjei](https://arxiv.org/search/cs?searchtype=author&query=Adjei%2C+F), [Isaac Kojo Essel Ampomah](https://arxiv.org/search/cs?searchtype=author&query=Ampomah%2C+I+K+E), [Joseph Otoo](https://arxiv.org/search/cs?searchtype=author&query=Otoo%2C+J), [Reindorf Borkor](https://arxiv.org/search/cs?searchtype=author&query=Borkor%2C+R), [Standylove Birago Mensah](https://arxiv.org/search/cs?searchtype=author&query=Mensah%2C+S+B), [Lucien Mensah](https://arxiv.org/search/cs?searchtype=author&query=Mensah%2C+L), [Mark Amoako Marcel](https://arxiv.org/search/cs?searchtype=author&query=Marcel%2C+M+A), [Anokye Acheampong Amponsah](https://arxiv.org/search/cs?searchtype=author&query=Amponsah%2C+A+A), [James Ben Hayfron-Acquah](https://arxiv.org/search/cs?searchtype=author&query=Hayfron-Acquah%2C+J+B)
+
+> NLP Ghana is an open-source non-profit organization aiming to advance the development and adoption of state-of-the-art NLP techniques and digital language tools to Ghanaian languages and problems. In this paper, we first present the motivation and necessity for the efforts of the organization; by introducing some popular Ghanaian languages while presenting the state of NLP in Ghana. We then present the NLP Ghana organization and outline its aims, scope of work, some of the methods employed and contributions made thus far in the NLP community in Ghana.
+
+| Comments: | 6 pages paper; AfricaNLP 2021                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2103.15475](https://arxiv.org/abs/2103.15475) [cs.CL]** |
+|           | (or **[arXiv:2103.15475v1](https://arxiv.org/abs/2103.15475v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-30-6">6. Be Careful about Poisoned Word Embeddings: Exploring the Vulnerability of the Embedding Layers in NLP Models
+</h2>
+
+Title: [Be Careful about Poisoned Word Embeddings: Exploring the Vulnerability of the Embedding Layers in NLP Models](https://arxiv.org/abs/2103.15543)
+
+Authors: [Wenkai Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+W), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Zhiyuan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Xuancheng Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+X), [Xu Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+X), [Bin He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+B)
+
+> Recent studies have revealed a security threat to natural language processing (NLP) models, called the Backdoor Attack. Victim models can maintain competitive performance on clean samples while behaving abnormally on samples with a specific trigger word inserted. Previous backdoor attacking methods usually assume that attackers have a certain degree of data knowledge, either the dataset which users would use or proxy datasets for a similar task, for implementing the data poisoning procedure. However, in this paper, we find that it is possible to hack the model in a data-free way by modifying one single word embedding vector, with almost no accuracy sacrificed on clean samples. Experimental results on sentiment analysis and sentence-pair classification tasks show that our method is more efficient and stealthier. We hope this work can raise the awareness of such a critical security risk hidden in the embedding layers of NLP models. Our code is available at [this https URL](https://github.com/lancopku/Embedding-Poisoning).
+
+| Comments: | NAACL-HLT 2021, Long Paper                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2103.15543](https://arxiv.org/abs/2103.15543) [cs.CL]** |
+|           | (or **[arXiv:2103.15543v1](https://arxiv.org/abs/2103.15543v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-30-7">7. English-Twi Parallel Corpus for Machine Translation
+</h2>
+
+Title: [English-Twi Parallel Corpus for Machine Translation](https://arxiv.org/abs/2103.15625)
+
+Authors: [Paul Azunre](https://arxiv.org/search/cs?searchtype=author&query=Azunre%2C+P), [Salomey Osei](https://arxiv.org/search/cs?searchtype=author&query=Osei%2C+S), [Salomey Addo](https://arxiv.org/search/cs?searchtype=author&query=Addo%2C+S), [Lawrence Asamoah Adu-Gyamfi](https://arxiv.org/search/cs?searchtype=author&query=Adu-Gyamfi%2C+L+A), [Stephen Moore](https://arxiv.org/search/cs?searchtype=author&query=Moore%2C+S), [Bernard Adabankah](https://arxiv.org/search/cs?searchtype=author&query=Adabankah%2C+B), [Bernard Opoku](https://arxiv.org/search/cs?searchtype=author&query=Opoku%2C+B), [Clara Asare-Nyarko](https://arxiv.org/search/cs?searchtype=author&query=Asare-Nyarko%2C+C), [Samuel Nyarko](https://arxiv.org/search/cs?searchtype=author&query=Nyarko%2C+S), [Cynthia Amoaba](https://arxiv.org/search/cs?searchtype=author&query=Amoaba%2C+C), [Esther Dansoa Appiah](https://arxiv.org/search/cs?searchtype=author&query=Appiah%2C+E+D), [Felix Akwerh](https://arxiv.org/search/cs?searchtype=author&query=Akwerh%2C+F), [Richard Nii Lante Lawson](https://arxiv.org/search/cs?searchtype=author&query=Lawson%2C+R+N+L), [Joel Budu](https://arxiv.org/search/cs?searchtype=author&query=Budu%2C+J), [Emmanuel Debrah](https://arxiv.org/search/cs?searchtype=author&query=Debrah%2C+E), [Nana Boateng](https://arxiv.org/search/cs?searchtype=author&query=Boateng%2C+N), [Wisdom Ofori](https://arxiv.org/search/cs?searchtype=author&query=Ofori%2C+W), [Edwin Buabeng-Munkoh](https://arxiv.org/search/cs?searchtype=author&query=Buabeng-Munkoh%2C+E), [Franklin Adjei](https://arxiv.org/search/cs?searchtype=author&query=Adjei%2C+F), [Isaac Kojo Essel Ampomah](https://arxiv.org/search/cs?searchtype=author&query=Ampomah%2C+I+K+E), [Joseph Otoo](https://arxiv.org/search/cs?searchtype=author&query=Otoo%2C+J), [Reindorf Borkor](https://arxiv.org/search/cs?searchtype=author&query=Borkor%2C+R), [Standylove Birago Mensah](https://arxiv.org/search/cs?searchtype=author&query=Mensah%2C+S+B), [Lucien Mensah](https://arxiv.org/search/cs?searchtype=author&query=Mensah%2C+L), [Mark Amoako Marcel](https://arxiv.org/search/cs?searchtype=author&query=Marcel%2C+M+A), [Anokye Acheampong Amponsah](https://arxiv.org/search/cs?searchtype=author&query=Amponsah%2C+A+A), [James Ben Hayfron-Acquah](https://arxiv.org/search/cs?searchtype=author&query=Hayfron-Acquah%2C+J+B)
+
+> We present a parallel machine translation training corpus for English and Akuapem Twi of 25,421 sentence pairs. We used a transformer-based translator to generate initial translations in Akuapem Twi, which were later verified and corrected where necessary by native speakers to eliminate any occurrence of translationese. In addition, 697 higher quality crowd-sourced sentences are provided for use as an evaluation set for downstream Natural Language Processing (NLP) tasks. The typical use case for the larger human-verified dataset is for further training of machine translation models in Akuapem Twi. The higher quality 697 crowd-sourced dataset is recommended as a testing dataset for machine translation of English to Twi and Twi to English models. Furthermore, the Twi part of the crowd-sourced data may also be used for other tasks, such as representation learning, classification, etc. We fine-tune the transformer translation model on the training corpus and report benchmarks on the crowd-sourced test set.
+
+| Comments: | 9 pages paper, Accepted at African NLP workshop @EACL 2021   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2103.15625](https://arxiv.org/abs/2103.15625) [cs.CL]** |
+|           | (or **[arXiv:2103.15625v1](https://arxiv.org/abs/2103.15625v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
