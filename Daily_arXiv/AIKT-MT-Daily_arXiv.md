@@ -2,6 +2,12 @@
 
 # Index
 
+- [2021-03-31](#2021-03-31)	
+  - [1. Diagnosing Vision-and-Language Navigation: What Really Matters](#2021-03-31-1)
+  - [2. Unsupervised Machine Translation On Dravidian Languages](#2021-03-31-2)
+  - [3. Transformer visualization via dictionary learning: contextualized embedding as a linear superposition of transformer factors](#2021-03-31-3)
+  - [4. Auto Correcting in the Process of Translation -- Multi-task Learning Improves Dialogue Machine Translation](#2021-03-31-4)
+  - [5. Representing ELMo embeddings as two-dimensional text online](#2021-03-31-5)
 - [2021-03-30](#2021-03-30)
   - [1. Bridging Vision and Language from the Video-to-Text Perspective: A Comprehensive Review](#2021-03-30-1)
   - [2. On Hallucination and Predictive Uncertainty in Conditional Language Generation](#2021-03-30-2)
@@ -110,6 +116,110 @@
   - [2. Learning Chess Blindfolded: Evaluating Language Models on State Tracking](#2021-03-01-2)
   - [3. Gradient-guided Loss Masking for Neural Machine Translation](#2021-03-01-3)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-03-31
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-03-31-1">1. Diagnosing Vision-and-Language Navigation: What Really Matters
+</h2>
+
+Title: [Diagnosing Vision-and-Language Navigation: What Really Matters](https://arxiv.org/abs/2103.16561)
+
+Authors: [Wanrong Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+W), [Yuankai Qi](https://arxiv.org/search/cs?searchtype=author&query=Qi%2C+Y), [Pradyumna Narayana](https://arxiv.org/search/cs?searchtype=author&query=Narayana%2C+P), [Kazoo Sone](https://arxiv.org/search/cs?searchtype=author&query=Sone%2C+K), [Sugato Basu](https://arxiv.org/search/cs?searchtype=author&query=Basu%2C+S), [Xin Eric Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X+E), [Qi Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Q), [Miguel Eckstein](https://arxiv.org/search/cs?searchtype=author&query=Eckstein%2C+M), [William Yang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W+Y)
+
+> Vision-and-language navigation (VLN) is a multimodal task where an agent follows natural language instructions and navigates in visual environments. Multiple setups have been proposed, and researchers apply new model architectures or training techniques to boost navigation performance. However, recent studies witness a slow-down in the performance improvements in both indoor and outdoor VLN tasks, and the agents' inner mechanisms for making navigation decisions remain unclear. To the best of our knowledge, the way the agents perceive the multimodal input is under-studied and clearly needs investigations. In this work, we conduct a series of diagnostic experiments to unveil agents' focus during navigation. Results show that indoor navigation agents refer to both object tokens and direction tokens in the instruction when making decisions. In contrast, outdoor navigation agents heavily rely on direction tokens and have a poor understanding of the object tokens. Furthermore, instead of merely staring at surrounding objects, indoor navigation agents can set their sights on objects further from the current viewpoint. When it comes to vision-and-language alignments, many models claim that they are able to align object tokens with certain visual targets, but we cast doubt on the reliability of such alignments.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2103.16561](https://arxiv.org/abs/2103.16561) [cs.CV]** |
+|           | (or **[arXiv:2103.16561v1](https://arxiv.org/abs/2103.16561v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-31-2">2. Unsupervised Machine Translation On Dravidian Languages
+</h2>
+
+Title: [Unsupervised Machine Translation On Dravidian Languages](https://arxiv.org/abs/2103.15877)
+
+Authors:[Sai Koneru](https://arxiv.org/search/cs?searchtype=author&query=Koneru%2C+S), [Danni Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+D), [Jan Niehues](https://arxiv.org/search/cs?searchtype=author&query=Niehues%2C+J)
+
+> Unsupervised neural machine translation (UNMT) is beneficial especially for low resource languages such as those from the Dravidian family. However, UNMT systems tend to fail in realistic scenarios involving actual low resource languages. Recent works propose to utilize auxiliary parallel data and have achieved state-of-the-art results. In this work, we focus on unsupervised translation between English and Kannada, a low resource Dravidian language. We additionally utilize a limited amount of auxiliary data between English and other related Dravidian languages. We show that unifying the writing systems is essential in unsupervised translation between the Dravidian languages. We explore several model architectures that use the auxiliary data in order to maximize knowledge sharing and enable UNMT for distant language pairs. Our experiments demonstrate that it is crucial to include auxiliary languages that are similar to our focal language, Kannada. Furthermore, we propose a metric to measure language similarity and show that it serves as a good indicator for selecting the auxiliary languages.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2103.15877](https://arxiv.org/abs/2103.15877) [cs.CL]** |
+|           | (or **[arXiv:2103.15877v1](https://arxiv.org/abs/2103.15877v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-31-3">3. Transformer visualization via dictionary learning: contextualized embedding as a linear superposition of transformer factors
+</h2>
+
+Title: [Transformer visualization via dictionary learning: contextualized embedding as a linear superposition of transformer factors](https://arxiv.org/abs/2103.15949)
+
+Authors:[Zeyu Yun](https://arxiv.org/search/cs?searchtype=author&query=Yun%2C+Z), [Yubei Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Bruno A Olshausen](https://arxiv.org/search/cs?searchtype=author&query=Olshausen%2C+B+A), [Yann LeCun](https://arxiv.org/search/cs?searchtype=author&query=LeCun%2C+Y)
+
+> Transformer networks have revolutionized NLP representation learning since they were introduced. Though a great effort has been made to explain the representation in transformers, it is widely recognized that our understanding is not sufficient. One important reason is that there lack enough visualization tools for detailed analysis. In this paper, we propose to use dictionary learning to open up these `black boxes' as linear superpositions of transformer factors. Through visualization, we demonstrate the hierarchical semantic structures captured by the transformer factors, e.g. word-level polysemy disambiguation, sentence-level pattern formation, and long-range dependency. While some of these patterns confirm the conventional prior linguistic knowledge, the rest are relatively unexpected, which may provide new insights. We hope this visualization tool can bring further knowledge and a better understanding of how transformer networks work.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2103.15949](https://arxiv.org/abs/2103.15949) [cs.CL]** |
+|           | (or **[arXiv:2103.15949v1](https://arxiv.org/abs/2103.15949v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-31-4">4. Auto Correcting in the Process of Translation -- Multi-task Learning Improves Dialogue Machine Translation
+</h2>
+
+Title: [Auto Correcting in the Process of Translation -- Multi-task Learning Improves Dialogue Machine Translation](https://arxiv.org/abs/2103.16189)
+
+Authors:[Tao Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+T), [Chengqi Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+C), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Deyi Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+D)
+
+> Automatic translation of dialogue texts is a much needed demand in many real life scenarios. However, the currently existing neural machine translation delivers unsatisfying results. In this paper, we conduct a deep analysis of a dialogue corpus and summarize three major issues on dialogue translation, including pronoun dropping (\droppro), punctuation dropping (\droppun), and typos (\typo). In response to these challenges, we propose a joint learning method to identify omission and typo, and utilize context to translate dialogue utterances. To properly evaluate the performance, we propose a manually annotated dataset with 1,931 Chinese-English parallel utterances from 300 dialogues as a benchmark testbed for dialogue translation. Our experiments show that the proposed method improves translation quality by 3.2 BLEU over the baselines. It also elevates the recovery rate of omitted pronouns from 26.09% to 47.16%. We will publish the code and dataset publicly at [this https URL](https://github.com/rgwt123/DialogueMT).
+
+| Comments:    | 8 pages, 3 figures, 7 tables                                 |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**                         |
+| MSC classes: | 68T50                                                        |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2103.16189](https://arxiv.org/abs/2103.16189) [cs.CL]** |
+|              | (or **[arXiv:2103.16189v1](https://arxiv.org/abs/2103.16189v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-03-31-5">5. Representing ELMo embeddings as two-dimensional text online
+</h2>
+
+Title: [Representing ELMo embeddings as two-dimensional text online](https://arxiv.org/abs/2103.16414)
+
+Authors:[Andrey Kutuzov](https://arxiv.org/search/cs?searchtype=author&query=Kutuzov%2C+A), [Elizaveta Kuzmenko](https://arxiv.org/search/cs?searchtype=author&query=Kuzmenko%2C+E)
+
+> We describe a new addition to the WebVectors toolkit which is used to serve word embedding models over the Web. The new ELMoViz module adds support for contextualized embedding architectures, in particular for ELMo models. The provided visualizations follow the metaphor of `two-dimensional text' by showing lexical substitutes: words which are most semantically similar in context to the words of the input sentence. The system allows the user to change the ELMo layers from which token embeddings are inferred. It also conveys corpus information about the query words and their lexical substitutes (namely their frequency tiers and parts of speech). The module is well integrated into the rest of the WebVectors toolkit, providing lexical hyperlinks to word representations in static embedding models. Two web services have already implemented the new functionality with pre-trained ELMo models for Russian, Norwegian and English.
+
+| Comments: | EACL'2021 demo paper                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2103.16414](https://arxiv.org/abs/2103.16414) [cs.CL]** |
+|           | (or **[arXiv:2103.16414v1](https://arxiv.org/abs/2103.16414v1) [cs.CL]** for this version) |
+
+
+
+
+
+
 
 
 
