@@ -4,7 +4,7 @@
 
 - [2021-04-02](#2021-04-02)
   - [1. Is Label Smoothing Truly Incompatible with Knowledge Distillation: An Empirical Study](#2021-04-02-1)
-- [2. Domain-specific MT for Low-resource Languages: The case of Bambara-French](#2021-04-02-2)
+	- [2. Domain-specific MT for Low-resource Languages: The case of Bambara-French](#2021-04-02-2)
   - [3. Zero-Shot Language Transfer vs Iterative Back Translation for Unsupervised Machine Translation](#2021-04-02-3)
   - [4. Detecting over/under-translation errors for determining adequacy in human translations](#2021-04-02-4)
   - [5. Many-to-English Machine Translation Tools, Data, and Pretrained Models](#2021-04-02-5)
@@ -13,7 +13,7 @@
   - [8. Sampling and Filtering of Neural Machine Translation Distillation Data](#2021-04-02-8)
 - [2021-04-01](#2021-04-01)
   - [1. An Exploration of Data Augmentation Techniques for Improving English to Tigrinya Translation](#2021-04-01-1)
-- [2. Few-shot learning through contextual data augmentation](#2021-04-01-2)
+	- [2. Few-shot learning through contextual data augmentation](#2021-04-01-2)
   - [3. UA-GEC: Grammatical Error Correction and Fluency Corpus for the Ukrainian Language](#2021-04-01-3)
   - [4. Divide and Rule: Training Context-Aware Multi-Encoder Translation Models with Little Resources](#2021-04-01-4)
   - [5. Leveraging Neural Machine Translation for Word Alignment](#2021-04-01-5)
