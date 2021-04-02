@@ -2,6 +2,15 @@
 
 # Index
 
+- [2021-04-02](#2021-04-02)
+  - [1. Is Label Smoothing Truly Incompatible with Knowledge Distillation: An Empirical Study](#2021-04-02-1)
+- [2. Domain-specific MT for Low-resource Languages: The case of Bambara-French](#2021-04-02-2)
+  - [3. Zero-Shot Language Transfer vs Iterative Back Translation for Unsupervised Machine Translation](#2021-04-02-3)
+  - [4. Detecting over/under-translation errors for determining adequacy in human translations](#2021-04-02-4)
+  - [5. Many-to-English Machine Translation Tools, Data, and Pretrained Models](#2021-04-02-5)
+  - [6. Low-Resource Neural Machine Translation for South-Eastern African Languages](#2021-04-02-6)
+  - [7. WakaVT: A Sequential Variational Transformer for Waka Generation](#2021-04-02-7)
+  - [8. Sampling and Filtering of Neural Machine Translation Distillation Data](#2021-04-02-8)
 - [2021-04-01](#2021-04-01)
   - [1. An Exploration of Data Augmentation Techniques for Improving English to Tigrinya Translation](#2021-04-01-1)
 - [2. Few-shot learning through contextual data augmentation](#2021-04-01-2)
@@ -11,6 +20,162 @@
 - [2021-03-31](#2021-03-31)	
   - [1. Diagnosing Vision-and-Language Navigation: What Really Matters](#2021-03-31-1)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-04-02
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-04-02-1">1. Is Label Smoothing Truly Incompatible with Knowledge Distillation: An Empirical Study
+</h2>
+
+Title: [Is Label Smoothing Truly Incompatible with Knowledge Distillation: An Empirical Study](https://arxiv.org/abs/2104.00676)
+
+Authors: [Zhiqiang Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+Z), [Zechun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Dejia Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+D), [Zitian Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Z), [Kwang-Ting Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+K), [Marios Savvides](https://arxiv.org/search/cs?searchtype=author&query=Savvides%2C+M)
+
+> This work aims to empirically clarify a recently discovered perspective that label smoothing is incompatible with knowledge distillation. We begin by introducing the motivation behind on how this incompatibility is raised, i.e., label smoothing erases relative information between teacher logits. We provide a novel connection on how label smoothing affects distributions of semantically similar and dissimilar classes. Then we propose a metric to quantitatively measure the degree of erased information in sample's representation. After that, we study its one-sidedness and imperfection of the incompatibility view through massive analyses, visualizations and comprehensive experiments on Image Classification, Binary Networks, and Neural Machine Translation. Finally, we broadly discuss several circumstances wherein label smoothing will indeed lose its effectiveness. Project page: [this http URL](http://zhiqiangshen.com/projects/LS_and_KD/index.html).
+
+| Comments: | ICLR 2021. Project page: [this http URL](http://zhiqiangshen.com/projects/LS_and_KD/index.html) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2104.00676](https://arxiv.org/abs/2104.00676) [cs.LG]** |
+|           | (or **[arXiv:2104.00676v1](https://arxiv.org/abs/2104.00676v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-02-2">2. Domain-specific MT for Low-resource Languages: The case of Bambara-French
+</h2>
+
+Title: [Domain-specific MT for Low-resource Languages: The case of Bambara-French](https://arxiv.org/abs/2104.00041)
+
+Authors: [Allahsera Auguste Tapo](https://arxiv.org/search/cs?searchtype=author&query=Tapo%2C+A+A), [Michael Leventhal](https://arxiv.org/search/cs?searchtype=author&query=Leventhal%2C+M), [Sarah Luger](https://arxiv.org/search/cs?searchtype=author&query=Luger%2C+S), [Christopher M. Homan](https://arxiv.org/search/cs?searchtype=author&query=Homan%2C+C+M), [Marcos Zampieri](https://arxiv.org/search/cs?searchtype=author&query=Zampieri%2C+M)
+
+> Translating to and from low-resource languages is a challenge for machine translation (MT) systems due to a lack of parallel data. In this paper we address the issue of domain-specific MT for Bambara, an under-resourced Mande language spoken in Mali. We present the first domain-specific parallel dataset for MT of Bambara into and from French. We discuss challenges in working with small quantities of domain-specific data for a low-resource language and we present the results of machine learning experiments on this data.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.00041](https://arxiv.org/abs/2104.00041) [cs.CL]** |
+|           | (or **[arXiv:2104.00041v1](https://arxiv.org/abs/2104.00041v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-02-3">3. Zero-Shot Language Transfer vs Iterative Back Translation for Unsupervised Machine Translation
+</h2>
+
+Title: [Zero-Shot Language Transfer vs Iterative Back Translation for Unsupervised Machine Translation](https://arxiv.org/abs/2104.00106)
+
+Authors: [Aviral Joshi](https://arxiv.org/search/cs?searchtype=author&query=Joshi%2C+A), [Chengzhi Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+C), [Har Simrat Singh](https://arxiv.org/search/cs?searchtype=author&query=Singh%2C+H+S)
+
+> This work focuses on comparing different solutions for machine translation on low resource language pairs, namely, with zero-shot transfer learning and unsupervised machine translation. We discuss how the data size affects the performance of both unsupervised MT and transfer learning. Additionally we also look at how the domain of the data affects the result of unsupervised MT. The code to all the experiments performed in this project are accessible on Github.
+
+| Comments: | 7 pages, 2 figures, 4 tables                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2104.00106](https://arxiv.org/abs/2104.00106) [cs.CL]** |
+|           | (or **[arXiv:2104.00106v1](https://arxiv.org/abs/2104.00106v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-02-4">4. Detecting over/under-translation errors for determining adequacy in human translations
+</h2>
+
+Title: [Detecting over/under-translation errors for determining adequacy in human translations](https://arxiv.org/abs/2104.00267)
+
+Authors: [Prabhakar Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+P), [Ridha Juneja](https://arxiv.org/search/cs?searchtype=author&query=Juneja%2C+R), [Anil Nelakanti](https://arxiv.org/search/cs?searchtype=author&query=Nelakanti%2C+A), [Tamojit Chatterjee](https://arxiv.org/search/cs?searchtype=author&query=Chatterjee%2C+T)
+
+> We present a novel approach to detecting over and under translations (OT/UT) as part of adequacy error checks in translation evaluation. We do not restrict ourselves to machine translation (MT) outputs and specifically target applications with human generated translation pipeline. The goal of our system is to identify OT/UT errors from human translated video subtitles with high error recall. We achieve this without reference translations by learning a model on synthesized training data. We compare various classification networks that we trained on embeddings from pre-trained language model with our best hybrid network of GRU + CNN achieving 89.3% accuracy on high-quality human-annotated evaluation data in 8 languages.
+
+| Comments: | 6 pages, 5 tables                                            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2104.00267](https://arxiv.org/abs/2104.00267) [cs.CL]** |
+|           | (or **[arXiv:2104.00267v1](https://arxiv.org/abs/2104.00267v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-02-5">5. Many-to-English Machine Translation Tools, Data, and Pretrained Models
+</h2>
+
+Title: [Many-to-English Machine Translation Tools, Data, and Pretrained Models](https://arxiv.org/abs/2104.00290)
+
+Authors: [Thamme Gowda](https://arxiv.org/search/cs?searchtype=author&query=Gowda%2C+T), [Zhao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Chris A Mattmann](https://arxiv.org/search/cs?searchtype=author&query=Mattmann%2C+C+A), [Jonathan May](https://arxiv.org/search/cs?searchtype=author&query=May%2C+J)
+
+> While there are more than 7000 languages in the world, most translation research efforts have targeted a few high-resource languages. Commercial translation systems support only one hundred languages or fewer, and do not make these models available for transfer to low resource languages. In this work, we present useful tools for machine translation research: MTData, NLCodec, and RTG. We demonstrate their usefulness by creating a multilingual neural machine translation model capable of translating from 500 source languages to English. We make this multilingual model readily downloadable and usable as a service, or as a parent model for transfer-learning to even lower-resource languages.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.00290](https://arxiv.org/abs/2104.00290) [cs.CL]** |
+|           | (or **[arXiv:2104.00290v1](https://arxiv.org/abs/2104.00290v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-02-6">6. Low-Resource Neural Machine Translation for South-Eastern African Languages
+</h2>
+
+Title: [Low-Resource Neural Machine Translation for South-Eastern African Languages](https://arxiv.org/abs/2104.00366)
+
+Authors: [Evander Nyoni](https://arxiv.org/search/cs?searchtype=author&query=Nyoni%2C+E), [Bruce A. Bassett](https://arxiv.org/search/cs?searchtype=author&query=Bassett%2C+B+A)
+
+> Low-resource African languages have not fully benefited from the progress in neural machine translation because of a lack of data. Motivated by this challenge we compare zero-shot learning, transfer learning and multilingual learning on three Bantu languages (Shona, isiXhosa and isiZulu) and English. Our main target is English-to-isiZulu translation for which we have just 30,000 sentence pairs, 28% of the average size of our other corpora. We show the importance of language similarity on the performance of English-to-isiZulu transfer learning based on English-to-isiXhosa and English-to-Shona parent models whose BLEU scores differ by 5.2. We then demonstrate that multilingual learning surpasses both transfer learning and zero-shot learning on our dataset, with BLEU score improvements relative to the baseline English-to-isiZulu model of 9.9, 6.1 and 2.0 respectively. Our best model also improves the previous SOTA BLEU score by more than 10.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.00366](https://arxiv.org/abs/2104.00366) [cs.CL]** |
+|           | (or **[arXiv:2104.00366v1](https://arxiv.org/abs/2104.00366v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-02-7">7. WakaVT: A Sequential Variational Transformer for Waka Generation
+</h2>
+
+Title: [WakaVT: A Sequential Variational Transformer for Waka Generation](https://arxiv.org/abs/2104.00426)
+
+Authors: [Yuka Takeishi](https://arxiv.org/search/cs?searchtype=author&query=Takeishi%2C+Y), [Mingxuan Niu](https://arxiv.org/search/cs?searchtype=author&query=Niu%2C+M), [Jing Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+J), [Zhong Jin](https://arxiv.org/search/cs?searchtype=author&query=Jin%2C+Z), [Xinyu Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+X)
+
+> Poetry generation has long been a challenge for artificial intelligence. In the scope of Japanese poetry generation, many researchers have paid attention to Haiku generation, but few have focused on Waka generation. To further explore the creative potential of natural language generation systems in Japanese poetry creation, we propose a novel Waka generation model, WakaVT, which automatically produces Waka poems given user-specified keywords. Firstly, an additive mask-based approach is presented to satisfy the form constraint. Secondly, the structures of Transformer and variational autoencoder are integrated to enhance the quality of generated content. Specifically, to obtain novelty and diversity, WakaVT employs a sequence of latent variables, which effectively captures word-level variability in Waka data. To improve linguistic quality in terms of fluency, coherence, and meaningfulness, we further propose the fused multilevel self-attention mechanism, which properly models the hierarchical linguistic structure of Waka. To the best of our knowledge, we are the first to investigate Waka generation with models based on Transformer and/or variational autoencoder. Both objective and subjective evaluation results demonstrate that our model outperforms baselines significantly.
+
+| Comments: | This paper has been submitted to Neural Processing Letters   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2104.00426](https://arxiv.org/abs/2104.00426) [cs.CL]** |
+|           | (or **[arXiv:2104.00426v1](https://arxiv.org/abs/2104.00426v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-02-8">8. Sampling and Filtering of Neural Machine Translation Distillation Data
+</h2>
+
+Title: [Sampling and Filtering of Neural Machine Translation Distillation Data](https://arxiv.org/abs/2104.00664)
+
+Authors: [Vilém Zouhar](https://arxiv.org/search/cs?searchtype=author&query=Zouhar%2C+V)
+
+> In most of neural machine translation distillation or stealing scenarios, the goal is to preserve the performance of the target model (teacher). The highest-scoring hypothesis of the teacher model is commonly used to train a new model (student). If reference translations are also available, then better hypotheses (with respect to the references) can be upsampled and poor hypotheses either removed or undersampled.
+> This paper explores the importance sampling method landscape (pruning, hypothesis upsampling and undersampling, deduplication and their combination) with English to Czech and English to German MT models using standard MT evaluation metrics. We show that careful upsampling and combination with the original data leads to better performance when compared to training only on the original or synthesized data or their direct combination.
+
+| Comments: | 6 pages (without references); to be published in NAACL-SRW   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2104.00664](https://arxiv.org/abs/2104.00664) [cs.CL]** |
+|           | (or **[arXiv:2104.00664v1](https://arxiv.org/abs/2104.00664v1) [cs.CL]** for this version) |
+
+
 
 
 
