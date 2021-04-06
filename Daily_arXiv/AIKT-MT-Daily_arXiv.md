@@ -2,6 +2,11 @@
 
 # Index
 
+- [2021-04-06](#2021-04-06)
+  - [1. TSNAT: Two-Step Non-Autoregressvie Transformer Models for Speech Recognition](#2021-04-06-1)
+  - [2. Attention Forcing for Machine Translation](#2021-04-06-2)
+  - [3. WhiteningBERT: An Easy Unsupervised Sentence Embedding Approach](#2021-04-06-3)
+  - [4. Rethinking Perturbations in Encoder-Decoders for Fast Training](#2021-04-06-4)
 - [2021-04-02](#2021-04-02)
   - [1. Is Label Smoothing Truly Incompatible with Knowledge Distillation: An Empirical Study](#2021-04-02-1)
 	- [2. Domain-specific MT for Low-resource Languages: The case of Bambara-French](#2021-04-02-2)
@@ -20,6 +25,93 @@
 - [2021-03-31](#2021-03-31)	
   - [1. Diagnosing Vision-and-Language Navigation: What Really Matters](#2021-03-31-1)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-04-06
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-04-06-1">1. TSNAT: Two-Step Non-Autoregressvie Transformer Models for Speech Recognition
+</h2>
+
+Title: [TSNAT: Two-Step Non-Autoregressvie Transformer Models for Speech Recognition](https://arxiv.org/abs/2104.01522)
+
+Authors: [Zhengkun Tian](https://arxiv.org/search/eess?searchtype=author&query=Tian%2C+Z), [Jiangyan Yi](https://arxiv.org/search/eess?searchtype=author&query=Yi%2C+J), [Jianhua Tao](https://arxiv.org/search/eess?searchtype=author&query=Tao%2C+J), [Ye Bai](https://arxiv.org/search/eess?searchtype=author&query=Bai%2C+Y), [Shuai Zhang](https://arxiv.org/search/eess?searchtype=author&query=Zhang%2C+S), [Zhengqi Wen](https://arxiv.org/search/eess?searchtype=author&query=Wen%2C+Z), [Xuefei Liu](https://arxiv.org/search/eess?searchtype=author&query=Liu%2C+X)
+
+> The autoregressive (AR) models, such as attention-based encoder-decoder models and RNN-Transducer, have achieved great success in speech recognition. They predict the output sequence conditioned on the previous tokens and acoustic encoded states, which is inefficient on GPUs. The non-autoregressive (NAR) models can get rid of the temporal dependency between the output tokens and predict the entire output tokens in at least one step. However, the NAR model still faces two major problems. On the one hand, there is still a great gap in performance between the NAR models and the advanced AR models. On the other hand, it's difficult for most of the NAR models to train and converge. To address these two problems, we propose a new model named the two-step non-autoregressive transformer(TSNAT), which improves the performance and accelerating the convergence of the NAR model by learning prior knowledge from a parameters-sharing AR model. Furthermore, we introduce the two-stage method into the inference process, which improves the model performance greatly. All the experiments are conducted on a public Chinese mandarin dataset ASIEHLL-1. The results show that the TSNAT can achieve a competitive performance with the AR model and outperform many complicated NAR models.
+
+| Comments: | Submitted to Interspeech2021                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2104.01522](https://arxiv.org/abs/2104.01522) [eess.AS]** |
+|           | (or **[arXiv:2104.01522v1](https://arxiv.org/abs/2104.01522v1) [eess.AS]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-06-2">2. Attention Forcing for Machine Translation
+</h2>
+
+Title: [Attention Forcing for Machine Translation](https://arxiv.org/abs/2104.01264)
+
+Authors: [Qingyun Dou](https://arxiv.org/search/cs?searchtype=author&query=Dou%2C+Q), [Yiting Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+Y), [Potsawee Manakul](https://arxiv.org/search/cs?searchtype=author&query=Manakul%2C+P), [Xixin Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+X), [Mark J. F. Gales](https://arxiv.org/search/cs?searchtype=author&query=Gales%2C+M+J+F)
+
+> Auto-regressive sequence-to-sequence models with attention mechanisms have achieved state-of-the-art performance in various tasks including Text-To-Speech (TTS) and Neural Machine Translation (NMT). The standard training approach, teacher forcing, guides a model with the reference output history. At inference stage, the generated output history must be used. This mismatch can impact performance. However, it is highly challenging to train the model using the generated output. Several approaches have been proposed to address this problem, normally by selectively using the generated output history. To make training stable, these approaches often require a heuristic schedule or an auxiliary classifier. This paper introduces attention forcing for NMT. This approach guides the model with the generated output history and reference attention, and can reduce the training-inference mismatch without a schedule or a classifier. Attention forcing has been successful in TTS, but its application to NMT is more challenging, due to the discrete and multi-modal nature of the output space. To tackle this problem, this paper adds a selection scheme to vanilla attention forcing, which automatically selects a suitable training approach for each pair of training data. Experiments show that attention forcing can improve the overall translation quality and the diversity of the translations.
+
+| Comments: | arXiv admin note: text overlap with [arXiv:1909.12289](https://arxiv.org/abs/1909.12289) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2104.01264](https://arxiv.org/abs/2104.01264) [cs.CL]** |
+|           | (or **[arXiv:2104.01264v1](https://arxiv.org/abs/2104.01264v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-04-06-3">3. WhiteningBERT: An Easy Unsupervised Sentence Embedding Approach
+</h2>
+
+Title: [WhiteningBERT: An Easy Unsupervised Sentence Embedding Approach](https://arxiv.org/abs/2104.01767)
+
+Authors: [Junjie Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+J), [Duyu Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+D), [Wanjun Zhong](https://arxiv.org/search/cs?searchtype=author&query=Zhong%2C+W), [Shuai Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+S), [Linjun Shou](https://arxiv.org/search/cs?searchtype=author&query=Shou%2C+L), [Ming Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+M), [Daxin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+D), [Nan Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan%2C+N)
+
+> Producing the embedding of a sentence in an unsupervised way is valuable to natural language matching and retrieval problems in practice. In this work, we conduct a thorough examination of pretrained model based unsupervised sentence embeddings. We study on four pretrained models and conduct massive experiments on seven datasets regarding sentence semantics. We have there main findings. First, averaging all tokens is better than only using [CLS] vector. Second, combining both top andbottom layers is better than only using top layers. Lastly, an easy whitening-based vector normalization strategy with less than 10 lines of code consistently boosts the performance.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.01767](https://arxiv.org/abs/2104.01767) [cs.CL]** |
+|           | (or **[arXiv:2104.01767v1](https://arxiv.org/abs/2104.01767v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-04-06-4">4. Rethinking Perturbations in Encoder-Decoders for Fast Training
+</h2>
+
+Title: [Rethinking Perturbations in Encoder-Decoders for Fast Training](https://arxiv.org/abs/2104.01853)
+
+Authors: [Sho Takase](https://arxiv.org/search/cs?searchtype=author&query=Takase%2C+S), [Shun Kiyono](https://arxiv.org/search/cs?searchtype=author&query=Kiyono%2C+S)
+
+> We often use perturbations to regularize neural models. For neural encoder-decoders, previous studies applied the scheduled sampling (Bengio et al., 2015) and adversarial perturbations (Sato et al., 2019) as perturbations but these methods require considerable computational time. Thus, this study addresses the question of whether these approaches are efficient enough for training time. We compare several perturbations in sequence-to-sequence problems with respect to computational time. Experimental results show that the simple techniques such as word dropout (Gal and Ghahramani, 2016) and random replacement of input tokens achieve comparable (or better) scores to the recently proposed perturbations, even though these simple methods are faster. Our code is publicly available at [this https URL](https://github.com/takase/rethink_perturbations).
+
+| Comments: | Accepted at NAACL-HLT 2021                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2104.01853](https://arxiv.org/abs/2104.01853) [cs.CL]** |
+|           | (or **[arXiv:2104.01853v1](https://arxiv.org/abs/2104.01853v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
