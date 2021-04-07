@@ -2,6 +2,9 @@
 
 # Index
 
+- [2021-04-07](#2021-04-07)
+  - [1. Semantic Distance: A New Metric for ASR Performance Analysis Towards Spoken Language Understanding](#2021-04-07-1)
+  - [2. ODE Transformer: An Ordinary Differential Equation-Inspired Model for Neural Machine Translation](#2021-04-07-2)
 - [2021-04-06](#2021-04-06)
   - [1. TSNAT: Two-Step Non-Autoregressvie Transformer Models for Speech Recognition](#2021-04-06-1)
   - [2. Attention Forcing for Machine Translation](#2021-04-06-2)
@@ -25,6 +28,51 @@
 - [2021-03-31](#2021-03-31)	
   - [1. Diagnosing Vision-and-Language Navigation: What Really Matters](#2021-03-31-1)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-04-07
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-04-07-1">1. Semantic Distance: A New Metric for ASR Performance Analysis Towards Spoken Language Understanding
+</h2>
+
+Title: [Semantic Distance: A New Metric for ASR Performance Analysis Towards Spoken Language Understanding](https://arxiv.org/abs/2104.02138)
+
+Authors: [Suyoun Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+S), [Abhinav Arora](https://arxiv.org/search/cs?searchtype=author&query=Arora%2C+A), [Duc Le](https://arxiv.org/search/cs?searchtype=author&query=Le%2C+D), [Ching-Feng Yeh](https://arxiv.org/search/cs?searchtype=author&query=Yeh%2C+C), [Christian Fuegen](https://arxiv.org/search/cs?searchtype=author&query=Fuegen%2C+C), [Ozlem Kalinli](https://arxiv.org/search/cs?searchtype=author&query=Kalinli%2C+O), [Michael L. Seltzer](https://arxiv.org/search/cs?searchtype=author&query=Seltzer%2C+M+L)
+
+> Word Error Rate (WER) has been the predominant metric used to evaluate the performance of automatic speech recognition (ASR) systems. However, WER is sometimes not a good indicator for downstream Natural Language Understanding (NLU) tasks, such as intent recognition, slot filling, and semantic parsing in task-oriented dialog systems. This is because WER takes into consideration only literal correctness instead of semantic correctness, the latter of which is typically more important for these downstream tasks. In this study, we propose a novel Semantic Distance (SemDist) measure as an alternative evaluation metric for ASR systems to address this issue. We define SemDist as the distance between a reference and hypothesis pair in a sentence-level embedding space. To represent the reference and hypothesis as a sentence embedding, we exploit RoBERTa, a state-of-the-art pre-trained deep contextualized language model based on the transformer architecture. We demonstrate the effectiveness of our proposed metric on various downstream tasks, including intent recognition, semantic parsing, and named entity recognition.
+
+| Comments: | submitted to Interspeech 2021                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.02138](https://arxiv.org/abs/2104.02138) [cs.CL]** |
+|           | (or **[arXiv:2104.02138v1](https://arxiv.org/abs/2104.02138v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-07-2">2. ODE Transformer: An Ordinary Differential Equation-Inspired Model for Neural Machine Translation
+</h2>
+
+Title: [ODE Transformer: An Ordinary Differential Equation-Inspired Model for Neural Machine Translation](https://arxiv.org/abs/2104.02308)
+
+Authors: [Bei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+B), [Quan Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+Q), [Tao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+T), [Shuhan Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+S), [Xin Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+X), [Tong Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+T), [Jingbo Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J)
+
+> It has been found that residual networks are an Euler discretization of solutions to Ordinary Differential Equations (ODEs). In this paper, we explore a deeper relationship between Transformer and numerical methods of ODEs. We show that a residual block of layers in Transformer can be described as a higher-order solution to ODEs. This leads us to design a new architecture (call it ODE Transformer) analogous to the Runge-Kutta method that is well motivated in ODEs. As a natural extension to Transformer, ODE Transformer is easy to implement and parameter efficient. Our experiments on three WMT tasks demonstrate the genericity of this model, and large improvements in performance over several strong baselines. It achieves 30.76 and 44.11 BLEU scores on the WMT'14 En-De and En-Fr test data. This sets a new state-of-the-art on the WMT'14 En-Fr task.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.02308](https://arxiv.org/abs/2104.02308) [cs.CL]** |
+|           | (or **[arXiv:2104.02308v1](https://arxiv.org/abs/2104.02308v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
