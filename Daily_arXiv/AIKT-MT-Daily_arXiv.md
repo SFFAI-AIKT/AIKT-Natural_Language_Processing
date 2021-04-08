@@ -2,6 +2,10 @@
 
 # Index
 
+- [2021-04-08](#2021-04-08)
+  - [1. VERB: Visualizing and Interpreting Bias Mitigation Techniques for Word Representations](#2021-04-08-1)
+  - [2. Better Neural Machine Translation by Extracting Linguistic Information from BERT](#2021-04-08-2)
+  - [3. GrammarTagger: A Multilingual, Minimally-Supervised Grammar Profiler for Language Education](#2021-04-08-3)
 - [2021-04-07](#2021-04-07)
   - [1. Semantic Distance: A New Metric for ASR Performance Analysis Towards Spoken Language Understanding](#2021-04-07-1)
   - [2. ODE Transformer: An Ordinary Differential Equation-Inspired Model for Neural Machine Translation](#2021-04-07-2)
@@ -28,6 +32,69 @@
 - [2021-03-31](#2021-03-31)	
   - [1. Diagnosing Vision-and-Language Navigation: What Really Matters](#2021-03-31-1)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-04-08
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-04-08-1">1. VERB: Visualizing and Interpreting Bias Mitigation Techniques for Word Representations
+</h2>
+
+Title: [VERB: Visualizing and Interpreting Bias Mitigation Techniques for Word Representations](https://arxiv.org/abs/2104.02797)
+
+Authors: [Archit Rathore](https://arxiv.org/search/cs?searchtype=author&query=Rathore%2C+A), [Sunipa Dev](https://arxiv.org/search/cs?searchtype=author&query=Dev%2C+S), [Jeff M. Phillips](https://arxiv.org/search/cs?searchtype=author&query=Phillips%2C+J+M), [Vivek Srikumar](https://arxiv.org/search/cs?searchtype=author&query=Srikumar%2C+V), [Yan Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+Y), [Chin-Chia Michael Yeh](https://arxiv.org/search/cs?searchtype=author&query=Yeh%2C+C+M), [Junpeng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+J), [Wei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+W), [Bei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+B)
+
+> Word vector embeddings have been shown to contain and amplify biases in data they are extracted from. Consequently, many techniques have been proposed to identify, mitigate, and attenuate these biases in word representations. In this paper, we utilize interactive visualization to increase the interpretability and accessibility of a collection of state-of-the-art debiasing techniques. To aid this, we present Visualization of Embedding Representations for deBiasing system ("VERB"), an open-source web-based visualization tool that helps the users gain a technical understanding and visual intuition of the inner workings of debiasing techniques, with a focus on their geometric properties. In particular, VERB offers easy-to-follow use cases in exploring the effects of these debiasing techniques on the geometry of high-dimensional word vectors. To help understand how various debiasing techniques change the underlying geometry, VERB decomposes each technique into interpretable sequences of primitive transformations and highlights their effect on the word vectors using dimensionality reduction and interactive visual exploration. VERB is designed to target natural language processing (NLP) practitioners who are designing decision-making systems on top of word embeddings, and also researchers working with fairness and ethics of machine learning systems in NLP. It can also serve as a visual medium for education, which helps an NLP novice to understand and mitigate biases in word embeddings.
+
+| Comments: | 11 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Human-Computer Interaction (cs.HC) |
+| Cite as:  | **[arXiv:2104.02797](https://arxiv.org/abs/2104.02797) [cs.CL]** |
+|           | (or **[arXiv:2104.02797v1](https://arxiv.org/abs/2104.02797v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-08-2">2. Better Neural Machine Translation by Extracting Linguistic Information from BERT
+</h2>
+
+Title: [Better Neural Machine Translation by Extracting Linguistic Information from BERT](https://arxiv.org/abs/2104.02831)
+
+Authors: [Hassan S. Shavarani](https://arxiv.org/search/cs?searchtype=author&query=Shavarani%2C+H+S), [Anoop Sarkar](https://arxiv.org/search/cs?searchtype=author&query=Sarkar%2C+A)
+
+> Adding linguistic information (syntax or semantics) to neural machine translation (NMT) has mostly focused on using point estimates from pre-trained models. Directly using the capacity of massive pre-trained contextual word embedding models such as BERT (Devlin et al., 2019) has been marginally useful in NMT because effective fine-tuning is difficult to obtain for NMT without making training brittle and unreliable. We augment NMT by extracting dense fine-tuned vector-based linguistic information from BERT instead of using point estimates. Experimental results show that our method of incorporating linguistic information helps NMT to generalize better in a variety of training contexts and is no more difficult to train than conventional Transformer-based NMT.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.02831](https://arxiv.org/abs/2104.02831) [cs.CL]** |
+|           | (or **[arXiv:2104.02831v1](https://arxiv.org/abs/2104.02831v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-04-08-3">3. GrammarTagger: A Multilingual, Minimally-Supervised Grammar Profiler for Language Education
+</h2>
+
+Title: [GrammarTagger: A Multilingual, Minimally-Supervised Grammar Profiler for Language Education](https://arxiv.org/abs/2104.03190)
+
+Authors: [Masato Hagiwara](https://arxiv.org/search/cs?searchtype=author&query=Hagiwara%2C+M), [Joshua Tanner](https://arxiv.org/search/cs?searchtype=author&query=Tanner%2C+J), [Keisuke Sakaguchi](https://arxiv.org/search/cs?searchtype=author&query=Sakaguchi%2C+K)
+
+> We present GrammarTagger, an open-source grammar profiler which, given an input text, identifies grammatical features useful for language education. The model architecture enables it to learn from a small amount of texts annotated with spans and their labels, which 1) enables easier and more intuitive annotation, 2) supports overlapping spans, and 3) is less prone to error propagation, compared to complex hand-crafted rules defined on constituency/dependency parses. We show that we can bootstrap a grammar profiler model with F1≈0.6 from only a couple hundred sentences both in English and Chinese, which can be further boosted via learning a multilingual model. With GrammarTagger, we also build Octanove Learn, a search engine of language learning materials indexed by their reading difficulty and grammatical features. The code and pretrained models are publicly available at \url{[this https URL](https://github.com/octanove/grammartagger)}.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.03190](https://arxiv.org/abs/2104.03190) [cs.CL]** |
+|           | (or **[arXiv:2104.03190v1](https://arxiv.org/abs/2104.03190v1) [cs.CL]** for this version) |
+
+
+
+
+
+
 
 
 
