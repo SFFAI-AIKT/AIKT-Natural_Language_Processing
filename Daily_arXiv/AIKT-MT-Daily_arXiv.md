@@ -2,6 +2,11 @@
 
 # Index
 
+- [2021-04-09](#2021-04-09)
+  - [1. Extended Parallel Corpus for Amharic-English Machine Translation](#2021-04-09-1)
+  - [2. BSTC: A Large-Scale Chinese-English Speech Translation Dataset](#2021-04-09-2)
+  - [3. A Simple Geometric Method for Cross-Lingual Linguistic Transformations with Pre-trained Autoencoders](#2021-04-09-3)
+  - [4. Probing BERT in Hyperbolic Spaces](#2021-04-09-4)
 - [2021-04-08](#2021-04-08)
   - [1. VERB: Visualizing and Interpreting Bias Mitigation Techniques for Word Representations](#2021-04-08-1)
   - [2. Better Neural Machine Translation by Extracting Linguistic Information from BERT](#2021-04-08-2)
@@ -32,6 +37,87 @@
 - [2021-03-31](#2021-03-31)	
   - [1. Diagnosing Vision-and-Language Navigation: What Really Matters](#2021-03-31-1)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-04-09
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-04-09-1">1. Extended Parallel Corpus for Amharic-English Machine Translation
+</h2>
+
+Title: [Extended Parallel Corpus for Amharic-English Machine Translation](https://arxiv.org/abs/2104.03543)
+
+Authors: [Andargachew Mekonnen Gezmu](https://arxiv.org/search/cs?searchtype=author&query=Gezmu%2C+A+M), [Andreas Nürnberger](https://arxiv.org/search/cs?searchtype=author&query=Nürnberger%2C+A), [Tesfaye Bayu Bati](https://arxiv.org/search/cs?searchtype=author&query=Bati%2C+T+B)
+
+> This paper describes the acquisition, preprocessing, segmentation, and alignment of an Amharic-English parallel corpus. It will be useful for machine translation of an under-resourced language, Amharic. The corpus is larger than previously compiled corpora; it is released for research purposes. We trained neural machine translation and phrase-based statistical machine translation models using the corpus. In the automatic evaluation, neural machine translation models outperform phrase-based statistical machine translation models.
+
+| Comments: | Accepted to AfricanNLP workshop under EACL 2021              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2104.03543](https://arxiv.org/abs/2104.03543) [cs.CL]** |
+|           | (or **[arXiv:2104.03543v1](https://arxiv.org/abs/2104.03543v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-09-2">2. BSTC: A Large-Scale Chinese-English Speech Translation Dataset
+</h2>
+
+Title: [BSTC: A Large-Scale Chinese-English Speech Translation Dataset](https://arxiv.org/abs/2104.03575)
+
+Authors: [Ruiqing Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+R), [Xiyang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Chuanqiang Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+C), [Zhongjun HeHua Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Z+H), [Zhi Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Haifeng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H), [Ying Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Qinfei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Q)
+
+> This paper presents BSTC (Baidu Speech Translation Corpus), a large-scale Chinese-English speech translation dataset. This dataset is constructed based on a collection of licensed videos of talks or lectures, including about 68 hours of Mandarin data, their manual transcripts and translations into English, as well as automated transcripts by an automatic speech recognition (ASR) model. We have further asked three experienced interpreters to simultaneously interpret the testing talks in a mock conference setting. This corpus is expected to promote the research of automatic simultaneous translation as well as the development of practical systems. We have organized simultaneous translation tasks and used this corpus to evaluate automatic simultaneous translation systems.
+
+| Comments: | 8 pages, 6 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.03575](https://arxiv.org/abs/2104.03575) [cs.CL]** |
+|           | (or **[arXiv:2104.03575v1](https://arxiv.org/abs/2104.03575v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-09-3">3. A Simple Geometric Method for Cross-Lingual Linguistic Transformations with Pre-trained Autoencoders
+</h2>
+
+Title: [A Simple Geometric Method for Cross-Lingual Linguistic Transformations with Pre-trained Autoencoders](https://arxiv.org/abs/2104.03630)
+
+Authors: [Maarten De Raedt](https://arxiv.org/search/cs?searchtype=author&query=De+Raedt%2C+M), [Fréderic Godin](https://arxiv.org/search/cs?searchtype=author&query=Godin%2C+F), [Pieter Buteneers](https://arxiv.org/search/cs?searchtype=author&query=Buteneers%2C+P), [Chris Develder](https://arxiv.org/search/cs?searchtype=author&query=Develder%2C+C), [Thomas Demeester](https://arxiv.org/search/cs?searchtype=author&query=Demeester%2C+T)
+
+> Powerful sentence encoders trained for multiple languages are on the rise. These systems are capable of embedding a wide range of linguistic properties into vector representations. While explicit probing tasks can be used to verify the presence of specific linguistic properties, it is unclear whether the vector representations can be manipulated to indirectly steer such properties. We investigate the use of a geometric mapping in embedding space to transform linguistic properties, without any tuning of the pre-trained sentence encoder or decoder. We validate our approach on three linguistic properties using a pre-trained multilingual autoencoder and analyze the results in both monolingual and cross-lingual settings.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.03630](https://arxiv.org/abs/2104.03630) [cs.CL]** |
+|           | (or **[arXiv:2104.03630v1](https://arxiv.org/abs/2104.03630v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-09-4">4. Probing BERT in Hyperbolic Spaces
+</h2>
+
+Title: [Probing BERT in Hyperbolic Spaces](https://arxiv.org/abs/2104.03869)
+
+Authors: [Boli Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+B), [Yao Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+Y), [Guangwei Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+G), [Pengjun Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie%2C+P), [Chuanqi Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+C), [Mosha Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+M), [Liping Jing](https://arxiv.org/search/cs?searchtype=author&query=Jing%2C+L)
+
+> Recently, a variety of probing tasks are proposed to discover linguistic properties learned in contextualized word embeddings. Many of these works implicitly assume these embeddings lay in certain metric spaces, typically the Euclidean space. This work considers a family of geometrically special spaces, the hyperbolic spaces, that exhibit better inductive biases for hierarchical structures and may better reveal linguistic hierarchies encoded in contextualized representations. We introduce a Poincare probe, a structural probe projecting these embeddings into a Poincare subspace with explicitly defined hierarchies. We focus on two probing objectives: (a) dependency trees where the hierarchy is defined as head-dependent structures; (b) lexical sentiments where the hierarchy is defined as the polarity of words (positivity and negativity). We argue that a key desideratum of a probe is its sensitivity to the existence of linguistic structures. We apply our probes on BERT, a typical contextualized embedding model. In a syntactic subspace, our probe better recovers tree structures than Euclidean probes, revealing the possibility that the geometry of BERT syntax may not necessarily be Euclidean. In a sentiment subspace, we reveal two possible meta-embeddings for positive and negative sentiments and show how lexically-controlled contextualization would change the geometric localization of embeddings. We demonstrate the findings with our Poincare probe via extensive experiments and visualization. Our results can be reproduced at [this https URL](https://github.com/FranxYao/PoincareProbe).
+
+| Comments: | ICLR 2021 Camera ready                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.03869](https://arxiv.org/abs/2104.03869) [cs.CL]** |
+|           | (or **[arXiv:2104.03869v1](https://arxiv.org/abs/2104.03869v1) [cs.CL]** for this version) |
+
+
 
 
 
