@@ -2,6 +2,11 @@
 
 # Index
 
+- [2021-04-12](#2021-04-12)
+  - [1. Video-aided Unsupervised Grammar Induction](#2021-04-12-1)
+  - [2. Design and Implementation of English To Yoruba Verb Phrase Machine Translation System](#2021-04-12-2)
+  - [3. Efficient Large-Scale Language Model Training on GPU Clusters](#2021-04-12-3)
+  - [4. Chinese Character Decomposition for Neural MT with Multi-Word Expressions](#2021-04-12-4)
 - [2021-04-09](#2021-04-09)
   - [1. Extended Parallel Corpus for Amharic-English Machine Translation](#2021-04-09-1)
   - [2. BSTC: A Large-Scale Chinese-English Speech Translation Dataset](#2021-04-09-2)
@@ -37,6 +42,93 @@
 - [2021-03-31](#2021-03-31)	
   - [1. Diagnosing Vision-and-Language Navigation: What Really Matters](#2021-03-31-1)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-04-12
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-04-12-1">1. Video-aided Unsupervised Grammar Induction
+</h2>
+
+Title: [Video-aided Unsupervised Grammar Induction](https://arxiv.org/abs/2104.04369)
+
+Authors: [Songyang Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+S), [Linfeng Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+L), [Lifeng Jin](https://arxiv.org/search/cs?searchtype=author&query=Jin%2C+L), [Kun Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+K), [Dong Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+D), [Jiebo Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+J)
+
+> We investigate video-aided grammar induction, which learns a constituency parser from both unlabeled text and its corresponding video. Existing methods of multi-modal grammar induction focus on learning syntactic grammars from text-image pairs, with promising results showing that the information from static images is useful in induction. However, videos provide even richer information, including not only static objects but also actions and state changes useful for inducing verb phrases. In this paper, we explore rich features (e.g. action, object, scene, audio, face, OCR and speech) from videos, taking the recent Compound PCFG model as the baseline. We further propose a Multi-Modal Compound PCFG model (MMC-PCFG) to effectively aggregate these rich features from different modalities. Our proposed MMC-PCFG is trained end-to-end and outperforms each individual modality and previous state-of-the-art systems on three benchmarks, i.e. DiDeMo, YouCook2 and MSRVTT, confirming the effectiveness of leveraging video information for unsupervised grammar induction.
+
+| Comments: | This paper is accepted by NAACL'21                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2104.04369](https://arxiv.org/abs/2104.04369) [cs.CV]** |
+|           | (or **[arXiv:2104.04369v1](https://arxiv.org/abs/2104.04369v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-12-2">2. Design and Implementation of English To Yoruba Verb Phrase Machine Translation System
+</h2>
+
+Title: [Design and Implementation of English To Yoruba Verb Phrase Machine Translation System](https://arxiv.org/abs/2104.04125)
+
+Authors: [Safiriyu Eludiora](https://arxiv.org/search/cs?searchtype=author&query=Eludiora%2C+S), [Benjamin Ajibade](https://arxiv.org/search/cs?searchtype=author&query=Ajibade%2C+B)
+
+> We aim to develop an English to Yoruba machine translation system which can translate English verb phrase text to its Yoruba equivalent.Words from both languages Source Language and Target Language were collected for the verb phrase group in the home domain.The lexical translation is done by assigning values of the matching word in the dictionary.The syntax of the two languages was realized using Context-Free Grammar,we validated the rewrite rules with finite state automata.The human evaluation method was used and expert fluency scored.The evaluation shows the system performed better than that of sampled Google translation with over 70 percent of the response matching that of the system's output.
+
+| Comments: | 9 pages, 9 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.04125](https://arxiv.org/abs/2104.04125) [cs.CL]** |
+|           | (or **[arXiv:2104.04125v1](https://arxiv.org/abs/2104.04125v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-12-3">3. Efficient Large-Scale Language Model Training on GPU Clusters
+</h2>
+
+Title: [Efficient Large-Scale Language Model Training on GPU Clusters](https://arxiv.org/abs/2104.04473)
+
+Authors: [Deepak Narayanan](https://arxiv.org/search/cs?searchtype=author&query=Narayanan%2C+D), [Mohammad Shoeybi](https://arxiv.org/search/cs?searchtype=author&query=Shoeybi%2C+M), [Jared Casper](https://arxiv.org/search/cs?searchtype=author&query=Casper%2C+J), [Patrick LeGresley](https://arxiv.org/search/cs?searchtype=author&query=LeGresley%2C+P), [Mostofa Patwary](https://arxiv.org/search/cs?searchtype=author&query=Patwary%2C+M), [Vijay Korthikanti](https://arxiv.org/search/cs?searchtype=author&query=Korthikanti%2C+V), [Dmitri Vainbrand](https://arxiv.org/search/cs?searchtype=author&query=Vainbrand%2C+D), [Prethvi Kashinkunti](https://arxiv.org/search/cs?searchtype=author&query=Kashinkunti%2C+P), [Julie Bernauer](https://arxiv.org/search/cs?searchtype=author&query=Bernauer%2C+J), [Bryan Catanzaro](https://arxiv.org/search/cs?searchtype=author&query=Catanzaro%2C+B), [Amar Phanishayee](https://arxiv.org/search/cs?searchtype=author&query=Phanishayee%2C+A), [Matei Zaharia](https://arxiv.org/search/cs?searchtype=author&query=Zaharia%2C+M)
+
+> Large language models have led to state-of-the-art accuracies across a range of tasks. However, training these large models efficiently is challenging for two reasons: a) GPU memory capacity is limited, making it impossible to fit large models on a single GPU or even on a multi-GPU server; and b) the number of compute operations required to train these models can result in unrealistically long training times. New methods of model parallelism such as tensor and pipeline parallelism have been proposed to address these challenges; unfortunately, naive usage leads to fundamental scaling issues at thousands of GPUs due to various reasons, e.g., expensive cross-node communication or idle periods waiting on other devices.
+> In this work, we show how to compose different types of parallelism methods (tensor, pipeline, and data paralleism) to scale to thousands of GPUs, achieving a two-order-of-magnitude increase in the sizes of models we can efficiently train compared to existing systems. We discuss various implementations of pipeline parallelism and propose a novel schedule that can improve throughput by more than 10% with comparable memory footprint compared to previously-proposed approaches. We quantitatively study the trade-offs between tensor, pipeline, and data parallelism, and provide intuition as to how to configure distributed training of a large model. The composition of these techniques allows us to perform training iterations on a model with 1 trillion parameters at 502 petaFLOP/s on 3072 GPUs with achieved per-GPU throughput of 52% of peak; previous efforts to train similar-sized models achieve much lower throughput (36% of theoretical peak). Our code has been open-sourced at [this https URL](https://github.com/nvidia/megatron-lm).
+
+| Subjects: | **Computation and Language (cs.CL)**; Distributed, Parallel, and Cluster Computing (cs.DC) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.04473](https://arxiv.org/abs/2104.04473) [cs.CL]** |
+|           | (or **[arXiv:2104.04473v1](https://arxiv.org/abs/2104.04473v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-12-4">4. Chinese Character Decomposition for Neural MT with Multi-Word Expressions
+</h2>
+
+Title: [Chinese Character Decomposition for Neural MT with Multi-Word Expressions](https://arxiv.org/abs/2104.04497)
+
+Authors: [Lifeng Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+L), [Gareth J. F. Jones](https://arxiv.org/search/cs?searchtype=author&query=Jones%2C+G+J+F), [Alan F. Smeaton](https://arxiv.org/search/cs?searchtype=author&query=Smeaton%2C+A+F), [Paolo Bolzoni](https://arxiv.org/search/cs?searchtype=author&query=Bolzoni%2C+P)
+
+> Chinese character decomposition has been used as a feature to enhance Machine Translation (MT) models, combining radicals into character and word level models. Recent work has investigated ideograph or stroke level embedding. However, questions remain about different decomposition levels of Chinese character representations, radical and strokes, best suited for MT. To investigate the impact of Chinese decomposition embedding in detail, i.e., radical, stroke, and intermediate levels, and how well these decompositions represent the meaning of the original character sequences, we carry out analysis with both automated and human evaluation of MT. Furthermore, we investigate if the combination of decomposed Multiword Expressions (MWEs) can enhance the model learning. MWE integration into MT has seen more than a decade of exploration. However, decomposed MWEs has not previously been explored.
+
+| Comments: | Accepted to publish in NoDaLiDa2021                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2104.04497](https://arxiv.org/abs/2104.04497) [cs.CL]** |
+|           | (or **[arXiv:2104.04497v1](https://arxiv.org/abs/2104.04497v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
 
 
 
