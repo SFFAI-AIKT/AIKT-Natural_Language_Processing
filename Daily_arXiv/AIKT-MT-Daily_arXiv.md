@@ -2,6 +2,18 @@
 
 # Index
 
+- [2021-04-13](#2021-04-13)
+  - [1. Achieving Model Robustness through Discrete Adversarial Training](#2021-04-13-1)
+  - [2. TransWiC at SemEval-2021 Task 2: Transformer-based Multilingual and Cross-lingual Word-in-Context Disambiguation](#2021-04-13-2)
+  - [3. Not All Attention Is All You Need](#2021-04-13-3)
+  - [4. Sentiment-based Candidate Selection for NMT](#2021-04-13-4)
+  - [5. Disentangled Contrastive Learning for Learning Robust Textual Representations](#2021-04-13-5)
+  - [6. Assessing Reference-Free Peer Evaluation for Machine Translation](#2021-04-13-6)
+  - [7. FUDGE: Controlled Text Generation With Future Discriminators](#2021-04-13-7)
+  - [8. Machine Translation Decoding beyond Beam Search](#2021-04-13-8)
+  - [9. Self-Training with Weak Supervision](#2021-04-13-9)
+  - [10. Survey on reinforcement learning for language processing](#2021-04-13-10)
+  - [11. Backtranslation Feedback Improves User Confidence in MT, Not Quality](#2021-04-13-11)
 - [2021-04-12](#2021-04-12)
   - [1. Video-aided Unsupervised Grammar Induction](#2021-04-12-1)
   - [2. Design and Implementation of English To Yoruba Verb Phrase Machine Translation System](#2021-04-12-2)
@@ -42,6 +54,246 @@
 - [2021-03-31](#2021-03-31)	
   - [1. Diagnosing Vision-and-Language Navigation: What Really Matters](#2021-03-31-1)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-04-13
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-04-13-1">1. Achieving Model Robustness through Discrete Adversarial Training
+</h2>
+
+Title: [Achieving Model Robustness through Discrete Adversarial Training](https://arxiv.org/abs/2104.05062)
+
+Authors: [Maor Ivgi](https://arxiv.org/search/cs?searchtype=author&query=Ivgi%2C+M), [Jonathan Berant](https://arxiv.org/search/cs?searchtype=author&query=Berant%2C+J)
+
+> Discrete adversarial attacks are symbolic perturbations to a language input that preserve the output label but lead to a prediction error. While such attacks have been extensively explored for the purpose of evaluating model robustness, their utility for improving robustness has been limited to offline augmentation only, i.e., given a trained model, attacks are used to generate perturbed (adversarial) examples, and the model is re-trained exactly once. In this work, we address this gap and leverage discrete attacks for online augmentation, where adversarial examples are generated at every step, adapting to the changing nature of the model. We also consider efficient attacks based on random sampling, that unlike prior work are not based on expensive search-based procedures. As a second contribution, we provide a general formulation for multiple search-based attacks from past work, and propose a new attack based on best-first search. Surprisingly, we find that random sampling leads to impressive gains in robustness, outperforming the commonly-used offline augmentation, while leading to a speedup at training time of ~10x. Furthermore, online augmentation with search-based attacks justifies the higher training cost, significantly improving robustness on three datasets. Last, we show that our proposed algorithm substantially improves robustness compared to prior methods.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.05062](https://arxiv.org/abs/2104.05062) [cs.LG]** |
+|           | (or **[arXiv:2104.05062v1](https://arxiv.org/abs/2104.05062v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-13-2">2. TransWiC at SemEval-2021 Task 2: Transformer-based Multilingual and Cross-lingual Word-in-Context Disambiguation
+</h2>
+
+Title: [TransWiC at SemEval-2021 Task 2: Transformer-based Multilingual and Cross-lingual Word-in-Context Disambiguation](https://arxiv.org/abs/2104.04632)
+
+Authors: [Hansi Hettiarachchi](https://arxiv.org/search/cs?searchtype=author&query=Hettiarachchi%2C+H), [Tharindu Ranasinghe](https://arxiv.org/search/cs?searchtype=author&query=Ranasinghe%2C+T)
+
+> Identifying whether a word carries the same meaning or different meaning in two contexts is an important research area in natural language processing which plays a significant role in many applications such as question answering, document summarisation, information retrieval and information extraction. Most of the previous work in this area rely on language-specific resources making it difficult to generalise across languages. Considering this limitation, our approach to SemEval-2021 Task 2 is based only on pretrained transformer models and does not use any language-specific processing and resources. Despite that, our best model achieves 0.90 accuracy for English-English subtask which is very compatible compared to the best result of the subtask; 0.93 accuracy. Our approach also achieves satisfactory results in other monolingual and cross-lingual language pairs as well.
+
+| Comments: | Accepted to SemEval-2021                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2104.04632](https://arxiv.org/abs/2104.04632) [cs.CL]** |
+|           | (or **[arXiv:2104.04632v1](https://arxiv.org/abs/2104.04632v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-04-13-3">3. Not All Attention Is All You Need
+</h2>
+
+Title: [Not All Attention Is All You Need](https://arxiv.org/abs/2104.04692)
+
+Authors: [Hongqiu Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+H), [Hai Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+H), [Min Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M)
+
+> Self-attention based models have achieved remarkable success in natural language processing. However, the self-attention network design is questioned as suboptimal in recent studies, due to its veiled validity and high redundancy. In this paper, we focus on pre-trained language models with self-pruning training design on task-specific tuning. We demonstrate that the lighter state-of-the-art models with nearly 80% of self-attention layers pruned, may achieve even better results on multiple tasks, including natural language understanding, document classification, named entity recognition and POS tagging, with nearly twice faster inference.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.04692](https://arxiv.org/abs/2104.04692) [cs.CL]** |
+|           | (or **[arXiv:2104.04692v1](https://arxiv.org/abs/2104.04692v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-04-13-4">4. Sentiment-based Candidate Selection for NMT
+</h2>
+
+Title: [Sentiment-based Candidate Selection for NMT](https://arxiv.org/abs/2104.04840)
+
+Authors: [Alex Jones](https://arxiv.org/search/cs?searchtype=author&query=Jones%2C+A), [Derry Tanti Wijaya](https://arxiv.org/search/cs?searchtype=author&query=Wijaya%2C+D+T)
+
+> The explosion of user-generated content (UGC)--e.g. social media posts, comments, and reviews--has motivated the development of NLP applications tailored to these types of informal texts. Prevalent among these applications have been sentiment analysis and machine translation (MT). Grounded in the observation that UGC features highly idiomatic, sentiment-charged language, we propose a decoder-side approach that incorporates automatic sentiment scoring into the MT candidate selection process. We train separate English and Spanish sentiment classifiers, then, using n-best candidates generated by a baseline MT model with beam search, select the candidate that minimizes the absolute difference between the sentiment score of the source sentence and that of the translation, and perform a human evaluation to assess the produced translations. Unlike previous work, we select this minimally divergent translation by considering the sentiment scores of the source sentence and translation on a continuous interval, rather than using e.g. binary classification, allowing for more fine-grained selection of translation candidates. The results of human evaluations show that, in comparison to the open-source MT baseline model on top of which our sentiment-based pipeline is built, our pipeline produces more accurate translations of colloquial, sentiment-heavy source texts.
+
+| Comments:    | 14 pages, 1 figure                                           |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2104.04840](https://arxiv.org/abs/2104.04840) [cs.CL]** |
+|              | (or **[arXiv:2104.04840v1](https://arxiv.org/abs/2104.04840v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-04-13-5">5. Disentangled Contrastive Learning for Learning Robust Textual Representations
+</h2>
+
+Title: [Disentangled Contrastive Learning for Learning Robust Textual Representations](https://arxiv.org/abs/2104.04907)
+
+Authors: [Xiang Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+X), [Xin Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie%2C+X), [Zhen Bi](https://arxiv.org/search/cs?searchtype=author&query=Bi%2C+Z), [Hongbin Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+H), [Shumin Deng](https://arxiv.org/search/cs?searchtype=author&query=Deng%2C+S), [Ningyu Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+N), [Huajun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+H)
+
+> Although the self-supervised pre-training of transformer models has resulted in the revolutionizing of natural language processing (NLP) applications and the achievement of state-of-the-art results with regard to various benchmarks, this process is still vulnerable to small and imperceptible permutations originating from legitimate inputs. Intuitively, the representations should be similar in the feature space with subtle input permutations, while large variations occur with different meanings. This motivates us to investigate the learning of robust textual representation in a contrastive manner. However, it is non-trivial to obtain opposing semantic instances for textual samples. In this study, we propose a disentangled contrastive learning method that separately optimizes the uniformity and alignment of representations without negative sampling. Specifically, we introduce the concept of momentum representation consistency to align features and leverage power normalization while conforming the uniformity. Our experimental results for the NLP benchmarks demonstrate that our approach can obtain better results compared with the baselines, as well as achieve promising improvements with invariance tests and adversarial attacks. The code is available in [this https URL](https://github.com/zjunlp/DCL).
+
+| Comments: | Work in progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2104.04907](https://arxiv.org/abs/2104.04907) [cs.CL]** |
+|           | (or **[arXiv:2104.04907v1](https://arxiv.org/abs/2104.04907v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-04-13-6">6. Assessing Reference-Free Peer Evaluation for Machine Translation
+</h2>
+
+Title: [Assessing Reference-Free Peer Evaluation for Machine Translation](https://arxiv.org/abs/2104.05146)
+
+Authors: [Sweta Agrawal](https://arxiv.org/search/cs?searchtype=author&query=Agrawal%2C+S), [George Foster](https://arxiv.org/search/cs?searchtype=author&query=Foster%2C+G), [Markus Freitag](https://arxiv.org/search/cs?searchtype=author&query=Freitag%2C+M), [Colin Cherry](https://arxiv.org/search/cs?searchtype=author&query=Cherry%2C+C)
+
+> Reference-free evaluation has the potential to make machine translation evaluation substantially more scalable, allowing us to pivot easily to new languages or domains. It has been recently shown that the probabilities given by a large, multilingual model can achieve state of the art results when used as a reference-free metric. We experiment with various modifications to this model and demonstrate that by scaling it up we can match the performance of BLEU. We analyze various potential weaknesses of the approach and find that it is surprisingly robust and likely to offer reasonable performance across a broad spectrum of domains and different system qualities.
+
+| Comments: | NAACL 2021                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.05146](https://arxiv.org/abs/2104.05146) [cs.CL]** |
+|           | (or **[arXiv:2104.05146v1](https://arxiv.org/abs/2104.05146v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-04-13-7">7. FUDGE: Controlled Text Generation With Future Discriminators
+</h2>
+
+Title: [FUDGE: Controlled Text Generation With Future Discriminators](https://arxiv.org/abs/2104.05218)
+
+Authors: [Kevin Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+K), [Dan Klein](https://arxiv.org/search/cs?searchtype=author&query=Klein%2C+D)
+
+> We propose Future Discriminators for Generation (FUDGE), a flexible and modular method for controlled text generation. Given a pre-existing model G for generating text from a distribution of interest, FUDGE enables conditioning on a desired attribute a (for example, formality) while requiring access only to G's output logits. FUDGE learns an attribute predictor operating on a partial sequence, and uses this predictor's outputs to adjust G's original probabilities. We show that FUDGE models terms corresponding to a Bayesian decomposition of the conditional distribution of G given attribute a. Moreover, FUDGE can easily compose predictors for multiple desired attributes. We evaluate FUDGE on three tasks -- couplet completion in poetry, topic control in language generation, and formality change in machine translation -- and observe gains in all three tasks.
+
+| Comments: | To appear at NAACL 2021                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2104.05218](https://arxiv.org/abs/2104.05218) [cs.CL]** |
+|           | (or **[arXiv:2104.05218v1](https://arxiv.org/abs/2104.05218v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-04-13-8">8. Machine Translation Decoding beyond Beam Search
+</h2>
+
+Title: [Machine Translation Decoding beyond Beam Search](https://arxiv.org/abs/2104.05336)
+
+Authors: [Rémi Leblond](https://arxiv.org/search/cs?searchtype=author&query=Leblond%2C+R), [Jean-Baptiste Alayrac](https://arxiv.org/search/cs?searchtype=author&query=Alayrac%2C+J), [Laurent Sifre](https://arxiv.org/search/cs?searchtype=author&query=Sifre%2C+L), [Miruna Pislar](https://arxiv.org/search/cs?searchtype=author&query=Pislar%2C+M), [Jean-Baptiste Lespiau](https://arxiv.org/search/cs?searchtype=author&query=Lespiau%2C+J), [Ioannis Antonoglou](https://arxiv.org/search/cs?searchtype=author&query=Antonoglou%2C+I), [Karen Simonyan](https://arxiv.org/search/cs?searchtype=author&query=Simonyan%2C+K), [Oriol Vinyals](https://arxiv.org/search/cs?searchtype=author&query=Vinyals%2C+O)
+
+> Beam search is the go-to method for decoding auto-regressive machine translation models. While it yields consistent improvements in terms of BLEU, it is only concerned with finding outputs with high model likelihood, and is thus agnostic to whatever end metric or score practitioners care about. Our aim is to establish whether beam search can be replaced by a more powerful metric-driven search technique. To this end, we explore numerous decoding algorithms, including some which rely on a value function parameterised by a neural network, and report results on a variety of metrics. Notably, we introduce a Monte-Carlo Tree Search (MCTS) based method and showcase its competitiveness. We provide a blueprint for how to use MCTS fruitfully in language applications, which opens promising future directions. We find that which algorithm is best heavily depends on the characteristics of the goal metric; we believe that our extensive experiments and analysis will inform further research in this area.
+
+| Comments: | 23 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2104.05336](https://arxiv.org/abs/2104.05336) [cs.CL]** |
+|           | (or **[arXiv:2104.05336v1](https://arxiv.org/abs/2104.05336v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-04-13-9">9. Self-Training with Weak Supervision
+</h2>
+
+Title: [Self-Training with Weak Supervision](https://arxiv.org/abs/2104.05514)
+
+Authors: [Giannis Karamanolakis](https://arxiv.org/search/cs?searchtype=author&query=Karamanolakis%2C+G), [Subhabrata Mukherjee](https://arxiv.org/search/cs?searchtype=author&query=Mukherjee%2C+S), [Guoqing Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+G), [Ahmed Hassan Awadallah](https://arxiv.org/search/cs?searchtype=author&query=Awadallah%2C+A+H)
+
+> State-of-the-art deep neural networks require large-scale labeled training data that is often expensive to obtain or not available for many tasks. Weak supervision in the form of domain-specific rules has been shown to be useful in such settings to automatically generate weakly labeled training data. However, learning with weak rules is challenging due to their inherent heuristic and noisy nature. An additional challenge is rule coverage and overlap, where prior work on weak supervision only considers instances that are covered by weak rules, thus leaving valuable unlabeled data behind.
+> In this work, we develop a weak supervision framework (ASTRA) that leverages all the available data for a given task. To this end, we leverage task-specific unlabeled data through self-training with a model (student) that considers contextualized representations and predicts pseudo-labels for instances that may not be covered by weak rules. We further develop a rule attention network (teacher) that learns how to aggregate student pseudo-labels with weak rule labels, conditioned on their fidelity and the underlying context of an instance. Finally, we construct a semi-supervised learning objective for end-to-end training with unlabeled data, domain-specific rules, and a small amount of labeled data. Extensive experiments on six benchmark datasets for text classification demonstrate the effectiveness of our approach with significant improvements over state-of-the-art baselines.
+
+| Comments: | Accepted to NAACL 2021 (Long Paper)                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (stat.ML) |
+| Cite as:  | **[arXiv:2104.05514](https://arxiv.org/abs/2104.05514) [cs.CL]** |
+|           | (or **[arXiv:2104.05514v1](https://arxiv.org/abs/2104.05514v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-04-13-10">10. Survey on reinforcement learning for language processing
+</h2>
+
+Title: [Survey on reinforcement learning for language processing](https://arxiv.org/abs/2104.05565)
+
+Authors: [Victor Uc-Cetina](https://arxiv.org/search/cs?searchtype=author&query=Uc-Cetina%2C+V), [Nicolas Navarro-Guerrero](https://arxiv.org/search/cs?searchtype=author&query=Navarro-Guerrero%2C+N), [Anabel Martin-Gonzalez](https://arxiv.org/search/cs?searchtype=author&query=Martin-Gonzalez%2C+A), [Cornelius Weber](https://arxiv.org/search/cs?searchtype=author&query=Weber%2C+C), [Stefan Wermter](https://arxiv.org/search/cs?searchtype=author&query=Wermter%2C+S)
+
+> In recent years some researchers have explored the use of reinforcement learning (RL) algorithms as key components in the solution of various natural language processing tasks. For instance, some of these algorithms leveraging deep neural learning have found their way into conversational systems. This paper reviews the state of the art of RL methods for their possible use for different problems of natural language processing, focusing primarily on conversational systems, mainly due to their growing relevance. We provide detailed descriptions of the problems as well as discussions of why RL is well-suited to solve them. Also, we analyze the advantages and limitations of these methods. Finally, we elaborate on promising research directions in natural language processing that might benefit from reinforcement learning.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.05565](https://arxiv.org/abs/2104.05565) [cs.CL]** |
+|           | (or **[arXiv:2104.05565v1](https://arxiv.org/abs/2104.05565v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-04-13-11">11. Backtranslation Feedback Improves User Confidence in MT, Not Quality
+</h2>
+
+Title: [Backtranslation Feedback Improves User Confidence in MT, Not Quality](https://arxiv.org/abs/2104.05688)
+
+Authors: [Vilém Zouhar](https://arxiv.org/search/cs?searchtype=author&query=Zouhar%2C+V), [Michal Novák](https://arxiv.org/search/cs?searchtype=author&query=Novák%2C+M), [Matúš Žilinec](https://arxiv.org/search/cs?searchtype=author&query=Žilinec%2C+M), [Ondřej Bojar](https://arxiv.org/search/cs?searchtype=author&query=Bojar%2C+O), [Mateo Obregón](https://arxiv.org/search/cs?searchtype=author&query=Obregón%2C+M), [Robin L. Hill](https://arxiv.org/search/cs?searchtype=author&query=Hill%2C+R+L), [Frédéric Blain](https://arxiv.org/search/cs?searchtype=author&query=Blain%2C+F), [Marina Fomicheva](https://arxiv.org/search/cs?searchtype=author&query=Fomicheva%2C+M), [Lucia Specia](https://arxiv.org/search/cs?searchtype=author&query=Specia%2C+L), [Lisa Yankovskaya](https://arxiv.org/search/cs?searchtype=author&query=Yankovskaya%2C+L)
+
+> Translating text into a language unknown to the text's author, dubbed outbound translation, is a modern need for which the user experience has significant room for improvement, beyond the basic machine translation facility. We demonstrate this by showing three ways in which user confidence in the outbound translation, as well as its overall final quality, can be affected: backward translation, quality estimation (with alignment) and source paraphrasing. In this paper, we describe an experiment on outbound translation from English to Czech and Estonian. We examine the effects of each proposed feedback module and further focus on how the quality of machine translation systems influence these findings and the user perception of success. We show that backward translation feedback has a mixed effect on the whole process: it increases user confidence in the produced translation, but not the objective quality.
+
+| Comments: | 9 pages (excluding references); to appear at NAACL-HWT 2021  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Human-Computer Interaction (cs.HC) |
+| Cite as:  | **[arXiv:2104.05688](https://arxiv.org/abs/2104.05688) [cs.CL]** |
+|           | (or **[arXiv:2104.05688v1](https://arxiv.org/abs/2104.05688v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+
+
+
 
 
 
