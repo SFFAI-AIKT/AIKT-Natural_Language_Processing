@@ -2,6 +2,15 @@
 
 # Index
 
+- [2021-04-15](#2021-04-15)
+  - [1. Source and Target Bidirectional Knowledge Distillation for End-to-end Speech Translation](#2021-04-15-1)
+  - [2. Large-Scale Self- and Semi-Supervised Learning for Speech Translation](#2021-04-15-2)
+  - [3. The Curious Case of Hallucinations in Neural Machine Translation](#2021-04-15-3)
+  - [4. Sentence Embeddings by Ensemble Distillation](#2021-04-15-4)
+  - [5. Distributed Word Representation in Tsetlin Machine](#2021-04-15-5)
+  - [6. Domain Adaptation and Multi-Domain Adaptation for Neural Machine Translation: A Survey](#2021-04-15-6)
+  - [7. TSDAE: Using Transformer-based Sequential Denoising Auto-Encoder for Unsupervised Sentence Embedding Learning](#2021-04-15-7)
+  - [8. Sparse Attention with Linear Units](#2021-04-15-8 )
 - [2021-04-14](#2021-04-14)
   - [1. Towards a parallel corpus of Portuguese and the Bantu language Emakhuwa of Mozambique](#2021-04-14-1)
   - [2. Targeted Adversarial Training for Natural Language Understanding](#2021-04-14-2)
@@ -67,6 +76,164 @@
 - [2021-03-31](#2021-03-31)	
   - [1. Diagnosing Vision-and-Language Navigation: What Really Matters](#2021-03-31-1)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-04-15
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-04-15-1">1. Source and Target Bidirectional Knowledge Distillation for End-to-end Speech Translation
+</h2>
+
+Title: [Source and Target Bidirectional Knowledge Distillation for End-to-end Speech Translation](https://arxiv.org/abs/2104.06457)
+
+Authors: [Hirofumi Inaguma](https://arxiv.org/search/cs?searchtype=author&query=Inaguma%2C+H), [Tatsuya Kawahara](https://arxiv.org/search/cs?searchtype=author&query=Kawahara%2C+T), [Shinji Watanabe](https://arxiv.org/search/cs?searchtype=author&query=Watanabe%2C+S)
+
+> A conventional approach to improving the performance of end-to-end speech translation (E2E-ST) models is to leverage the source transcription via pre-training and joint training with automatic speech recognition (ASR) and neural machine translation (NMT) tasks. However, since the input modalities are different, it is difficult to leverage source language text successfully. In this work, we focus on sequence-level knowledge distillation (SeqKD) from external text-based NMT models. To leverage the full potential of the source language information, we propose backward SeqKD, SeqKD from a target-to-source backward NMT model. To this end, we train a bilingual E2E-ST model to predict paraphrased transcriptions as an auxiliary task with a single decoder. The paraphrases are generated from the translations in bitext via back-translation. We further propose bidirectional SeqKD in which SeqKD from both forward and backward NMT models is combined. Experimental evaluations on both autoregressive and non-autoregressive models show that SeqKD in each direction consistently improves the translation performance, and the effectiveness is complementary regardless of the model capacity.
+
+| Comments: | Accepted at NAACL-HLT 2021 (short paper)                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2104.06457](https://arxiv.org/abs/2104.06457) [cs.CL]** |
+|           | (or **[arXiv:2104.06457v1](https://arxiv.org/abs/2104.06457v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-15-2">2. Large-Scale Self- and Semi-Supervised Learning for Speech Translation
+</h2>
+
+Title: [Large-Scale Self- and Semi-Supervised Learning for Speech Translation](https://arxiv.org/abs/2104.06678)
+
+Authors: [Changhan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Anne Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+A), [Juan Pino](https://arxiv.org/search/cs?searchtype=author&query=Pino%2C+J), [Alexei Baevski](https://arxiv.org/search/cs?searchtype=author&query=Baevski%2C+A), [Michael Auli](https://arxiv.org/search/cs?searchtype=author&query=Auli%2C+M), [Alexis Conneau](https://arxiv.org/search/cs?searchtype=author&query=Conneau%2C+A)
+
+> In this paper, we improve speech translation (ST) through effectively leveraging large quantities of unlabeled speech and text data in different and complementary ways. We explore both pretraining and self-training by using the large Libri-Light speech audio corpus and language modeling with CommonCrawl. Our experiments improve over the previous state of the art by 2.6 BLEU on average on all four considered CoVoST 2 language pairs via a simple recipe of combining wav2vec 2.0 pretraining, a single iteration of self-training and decoding with a language model. Different to existing work, our approach does not leverage any other supervision than ST data. Code and models will be publicly released.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.06678](https://arxiv.org/abs/2104.06678) [cs.CL]** |
+|           | (or **[arXiv:2104.06678v1](https://arxiv.org/abs/2104.06678v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-15-3">3. The Curious Case of Hallucinations in Neural Machine Translation
+</h2>
+
+Title: [The Curious Case of Hallucinations in Neural Machine Translation](https://arxiv.org/abs/2104.06683)
+
+Authors: [Vikas Raunak](https://arxiv.org/search/cs?searchtype=author&query=Raunak%2C+V), [Arul Menezes](https://arxiv.org/search/cs?searchtype=author&query=Menezes%2C+A), [Marcin Junczys-Dowmunt](https://arxiv.org/search/cs?searchtype=author&query=Junczys-Dowmunt%2C+M)
+
+> In this work, we study hallucinations in Neural Machine Translation (NMT), which lie at an extreme end on the spectrum of NMT pathologies. Firstly, we connect the phenomenon of hallucinations under source perturbation to the Long-Tail theory of Feldman (2020), and present an empirically validated hypothesis that explains hallucinations under source perturbation. Secondly, we consider hallucinations under corpus-level noise (without any source perturbation) and demonstrate that two prominent types of natural hallucinations (detached and oscillatory outputs) could be generated and explained through specific corpus-level noise patterns. Finally, we elucidate the phenomenon of hallucination amplification in popular data-generation processes such as Backtranslation and sequence-level Knowledge Distillation.
+
+| Comments: | Accepted to NAACL 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2104.06683](https://arxiv.org/abs/2104.06683) [cs.CL]** |
+|           | (or **[arXiv:2104.06683v1](https://arxiv.org/abs/2104.06683v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-15-4">4. Sentence Embeddings by Ensemble Distillation
+</h2>
+
+Title: [Sentence Embeddings by Ensemble Distillation](https://arxiv.org/abs/2104.06719)
+
+Authors: [Fredrik Carlsson Magnus Sahlgren](https://arxiv.org/search/cs?searchtype=author&query=Sahlgren%2C+F+C+M)
+
+> This paper contributes a new State Of The Art (SOTA) for Semantic Textual Similarity (STS). We compare and combine a number of recently proposed sentence embedding methods for STS, and propose a novel and simple ensemble knowledge distillation scheme that improves on previous approaches. Our experiments demonstrate that a model trained to learn the average embedding space from multiple ensemble students outperforms all the other individual models with high robustness. Utilizing our distillation method in combination with previous methods, we significantly improve on the SOTA unsupervised STS, and by proper hyperparameter tuning of previous methods we improve the supervised SOTA scores.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.06719](https://arxiv.org/abs/2104.06719) [cs.CL]** |
+|           | (or **[arXiv:2104.06719v1](https://arxiv.org/abs/2104.06719v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-15-5">5. Distributed Word Representation in Tsetlin Machine
+</h2>
+
+Title: [Distributed Word Representation in Tsetlin Machine](https://arxiv.org/abs/2104.06901)
+
+Authors: [Rohan Kumar Yadav](https://arxiv.org/search/cs?searchtype=author&query=Yadav%2C+R+K), [Lei Jiao](https://arxiv.org/search/cs?searchtype=author&query=Jiao%2C+L), [Ole-Christoffer Granmo](https://arxiv.org/search/cs?searchtype=author&query=Granmo%2C+O), [Morten Goodwin](https://arxiv.org/search/cs?searchtype=author&query=Goodwin%2C+M)
+
+> Tsetlin Machine (TM) is an interpretable pattern recognition algorithm based on propositional logic. The algorithm has demonstrated competitive performance in many Natural Language Processing (NLP) tasks, including sentiment analysis, text classification, and Word Sense Disambiguation (WSD). To obtain human-level interpretability, legacy TM employs Boolean input features such as bag-of-words (BOW). However, the BOW representation makes it difficult to use any pre-trained information, for instance, word2vec and GloVe word representations. This restriction has constrained the performance of TM compared to deep neural networks (DNNs) in NLP. To reduce the performance gap, in this paper, we propose a novel way of using pre-trained word representations for TM. The approach significantly enhances the TM performance and maintains interpretability at the same time. We achieve this by extracting semantically related words from pre-trained word representations as input features to the TM. Our experiments show that the accuracy of the proposed approach is significantly higher than the previous BOW-based TM, reaching the level of DNN-based models.
+
+| Comments: | 9 pages, 13 figures, and 4 tables                            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2104.06901](https://arxiv.org/abs/2104.06901) [cs.CL]** |
+|           | (or **[arXiv:2104.06901v1](https://arxiv.org/abs/2104.06901v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-15-6">6. Domain Adaptation and Multi-Domain Adaptation for Neural Machine Translation: A Survey
+</h2>
+
+Title: [Domain Adaptation and Multi-Domain Adaptation for Neural Machine Translation: A Survey](https://arxiv.org/abs/2104.06951)
+
+Authors: [Danielle Saunders](https://arxiv.org/search/cs?searchtype=author&query=Saunders%2C+D)
+
+> The development of deep learning techniques has allowed Neural Machine Translation (NMT) models to become extremely powerful, given sufficient training data and training time. However, systems struggle when translating text from a new domain with a distinct style or vocabulary. Tuning on a representative training corpus allows good in-domain translation, but such data-centric approaches can cause over-fitting to new data and `catastrophic forgetting' of previously learned behaviour.
+> We concentrate on more robust approaches to domain adaptation for NMT, particularly the case where a system may need to translate sentences from multiple domains. We divide techniques into those relating to data selection, model architecture, parameter adaptation procedure, and inference procedure. We finally highlight the benefits of domain adaptation and multi-domain adaptation techniques to other lines of NMT research.
+
+| Comments: | 39 pages + references                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.06951](https://arxiv.org/abs/2104.06951) [cs.CL]** |
+|           | (or **[arXiv:2104.06951v1](https://arxiv.org/abs/2104.06951v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-15-7">7. TSDAE: Using Transformer-based Sequential Denoising Auto-Encoder for Unsupervised Sentence Embedding Learning
+</h2>
+
+Title: [TSDAE: Using Transformer-based Sequential Denoising Auto-Encoder for Unsupervised Sentence Embedding Learning](https://arxiv.org/abs/2104.06979)
+
+Authors: [Kexin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+K), [Nils Reimers](https://arxiv.org/search/cs?searchtype=author&query=Reimers%2C+N), [Iryna Gurevych](https://arxiv.org/search/cs?searchtype=author&query=Gurevych%2C+I)
+
+> Learning sentence embeddings often requires large amount of labeled data. However, for most tasks and domains, labeled data is seldom available and creating it is expensive. In this work, we present a new state-of-the-art unsupervised method based on pre-trained Transformers and Sequential Denoising Auto-Encoder (TSDAE) which outperforms previous approaches by up to 6.4 points. It can achieve up to 93.1% of the performance of in-domain supervised approaches. Further, we show that TSDAE is a strong pre-training method for learning sentence embeddings, significantly outperforming other approaches like Masked Language Model.
+> A crucial shortcoming of previous studies is the narrow evaluation: Most work mainly evaluates on the single task of Semantic Textual Similarity (STS), which does not require any domain knowledge. It is unclear if these proposed methods generalize to other domains and tasks. We fill this gap and evaluate TSDAE and other recent approaches on four different datasets from heterogeneous domains.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.06979](https://arxiv.org/abs/2104.06979) [cs.CL]** |
+|           | (or **[arXiv:2104.06979v1](https://arxiv.org/abs/2104.06979v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-15-8">8. Sparse Attention with Linear Units
+</h2>
+
+Title: [Sparse Attention with Linear Units](https://arxiv.org/abs/2104.07012)
+
+Authors: [Biao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+B), [Ivan Titov](https://arxiv.org/search/cs?searchtype=author&query=Titov%2C+I), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R)
+
+> Recently, it has been argued that encoder-decoder models can be made more interpretable by replacing the softmax function in the attention with its sparse variants. In this work, we introduce a novel, simple method for achieving sparsity in attention: we replace the softmax activation with a ReLU, and show that sparsity naturally emerges from such a formulation. Training stability is achieved with layer normalization with either a specialized initialization or an additional gating function. Our model, which we call Rectified Linear Attention (ReLA), is easy to implement and more efficient than previously proposed sparse attention mechanisms. We apply ReLA to the Transformer and conduct experiments on five machine translation tasks. ReLA achieves translation performance comparable to several strong baselines, with training and decoding speed similar to that of the vanilla attention. Our analysis shows that ReLA delivers high sparsity rate and head diversity, and the induced cross attention achieves better accuracy with respect to source-target word alignment than recent sparsified softmax-based models. Intriguingly, ReLA heads also learn to attend to nothing (i.e. 'switch off') for some queries, which is not possible with sparsified softmax alternatives.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.07012](https://arxiv.org/abs/2104.07012) [cs.CL]** |
+|           | (or **[arXiv:2104.07012v1](https://arxiv.org/abs/2104.07012v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
