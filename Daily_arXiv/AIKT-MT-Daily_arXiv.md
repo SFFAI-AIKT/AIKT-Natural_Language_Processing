@@ -2,6 +2,19 @@
 
 # Index
 
+- [2021-04-14](#2021-04-14)
+  - [1. Towards a parallel corpus of Portuguese and the Bantu language Emakhuwa of Mozambique](#2021-04-14-1)
+  - [2. Targeted Adversarial Training for Natural Language Understanding](#2021-04-14-2)
+  - [3. Family of Origin and Family of Choice: Massively Parallel Lexiconized Iterative Pretraining for Severely Low Resource Machine Translation](#2021-04-14-3)
+  - [4. Discourse Probing of Pretrained Language Models](#2021-04-14-4)
+  - [5. Restoring and Mining the Records of the Joseon Dynasty via Neural Language Modeling and Machine Translation](#2021-04-14-5)
+  - [6. Gender Bias in Machine Translation](#2021-04-14-6)
+  - [7. Lessons on Parameter Sharing across Layers in Transformers](#2021-04-14-7)
+  - [8. What's in your Head? Emergent Behaviour in Multi-Task Transformer Models](#2021-04-14-8)
+  - [9. Understanding Hard Negatives in Noise Contrastive Estimation](#2021-04-14-9)
+  - [10. Multilingual Transfer Learning for Code-Switched Language and Speech Neural Modeling](#2021-04-14-10)
+  - [11. EXPLAINABOARD: An Explainable Leaderboard for NLP](#2021-04-14-11)
+  - [12. Bridging the Gap Between Clean Data Training and Real-World Inference for Spoken Language Understanding](#2021-04-14-12)
 - [2021-04-13](#2021-04-13)
   - [1. Achieving Model Robustness through Discrete Adversarial Training](#2021-04-13-1)
   - [2. TransWiC at SemEval-2021 Task 2: Transformer-based Multilingual and Cross-lingual Word-in-Context Disambiguation](#2021-04-13-2)
@@ -54,6 +67,235 @@
 - [2021-03-31](#2021-03-31)	
   - [1. Diagnosing Vision-and-Language Navigation: What Really Matters](#2021-03-31-1)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-04-14
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-04-14-1">1. Towards a parallel corpus of Portuguese and the Bantu language Emakhuwa of Mozambique
+</h2>
+
+Title: [Towards a parallel corpus of Portuguese and the Bantu language Emakhuwa of Mozambique](https://arxiv.org/abs/2104.05753)
+
+Authors: [Felermino D. M. A. Ali](https://arxiv.org/search/cs?searchtype=author&query=Ali%2C+F+D+M+A), [Andrew Caines](https://arxiv.org/search/cs?searchtype=author&query=Caines%2C+A), [Jaimito L. A. Malavi](https://arxiv.org/search/cs?searchtype=author&query=Malavi%2C+J+L+A)
+
+> Major advancement in the performance of machine translation models has been made possible in part thanks to the availability of large-scale parallel corpora. But for most languages in the world, the existence of such corpora is rare. Emakhuwa, a language spoken in Mozambique, is like most African languages low-resource in NLP terms. It lacks both computational and linguistic resources and, to the best of our knowledge, few parallel corpora including Emakhuwa already exist. In this paper we describe the creation of the Emakhuwa-Portuguese parallel corpus, which is a collection of texts from the Jehovah's Witness website and a variety of other sources including the African Story Book website, the Universal Declaration of Human Rights and Mozambican legal documents. The dataset contains 47,415 sentence pairs, amounting to 699,976 word tokens of Emakhuwa and 877,595 word tokens in Portuguese. After normalization processes which remain to be completed, the corpus will be made freely available for research use.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.05753](https://arxiv.org/abs/2104.05753) [cs.CL]** |
+|           | (or **[arXiv:2104.05753v1](https://arxiv.org/abs/2104.05753v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-14-2">2. Targeted Adversarial Training for Natural Language Understanding
+</h2>
+
+Title: [Targeted Adversarial Training for Natural Language Understanding](https://arxiv.org/abs/2104.05847)
+
+Authors: [Lis Pereira](https://arxiv.org/search/cs?searchtype=author&query=Pereira%2C+L), [Xiaodong Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Hao Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+H), [Hoifung Poon](https://arxiv.org/search/cs?searchtype=author&query=Poon%2C+H), [Jianfeng Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+J), [Ichiro Kobayashi](https://arxiv.org/search/cs?searchtype=author&query=Kobayashi%2C+I)
+
+> We present a simple yet effective Targeted Adversarial Training (TAT) algorithm to improve adversarial training for natural language understanding. The key idea is to introspect current mistakes and prioritize adversarial training steps to where the model errs the most. Experiments show that TAT can significantly improve accuracy over standard adversarial training on GLUE and attain new state-of-the-art zero-shot results on XNLI. Our code will be released at: [this https URL](https://github.com/namisan/mt-dnn).
+
+| Comments: | 9 pages, 4 tables, 3 figurers, NAACL 2021                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.05847](https://arxiv.org/abs/2104.05847) [cs.CL]** |
+|           | (or **[arXiv:2104.05847v1](https://arxiv.org/abs/2104.05847v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-14-3">3. Family of Origin and Family of Choice: Massively Parallel Lexiconized Iterative Pretraining for Severely Low Resource Machine Translation
+</h2>
+
+Title: [Family of Origin and Family of Choice: Massively Parallel Lexiconized Iterative Pretraining for Severely Low Resource Machine Translation](https://arxiv.org/abs/2104.05848)
+
+Authors: [Zhong Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+Z), [Alex Waibel](https://arxiv.org/search/cs?searchtype=author&query=Waibel%2C+A)
+
+> We translate a closed text that is known in advance into a severely low resource language by leveraging massive source parallelism. Our contribution is four-fold. Firstly, we rank 124 source languages empirically to determine their closeness to the low resource language and select the top few. We call the linguistic definition of language family Family of Origin (FAMO), and we call the empirical definition of higher-ranked languages using our metrics Family of Choice (FAMC). Secondly, we build an Iteratively Pretrained Multilingual Order-preserving Lexiconized Transformer (IPML) to train on ~1,000 lines (~3.5\%) of low resource data from the Bible dataset and the medical EMEA dataset. Using English as a hypothetical low resource language to translate from Spanish, we obtain a +24.7 BLEU increase over a multilingual baseline, and a +10.2 BLEU increase over our asymmetric baseline. Thirdly, we also use a real severely low resource Mayan language, Eastern Pokomchi. Finally, we add an order-preserving lexiconized component to translate named entities accurately. We build a massive lexicon table for 2,939 Bible named entities in 124 source languages, and include many that occur once and covers more than 66 severely low resource languages. Training on randomly sampled 1,093 lines of low resource data, we reach a 30.3 BLEU score for Spanish-English translation testing on 30,022 lines of Bible, and a 42.8 BLEU score for Portuguese-English translation on the medical EMEA dataset.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.05848](https://arxiv.org/abs/2104.05848) [cs.CL]** |
+|           | (or **[arXiv:2104.05848v1](https://arxiv.org/abs/2104.05848v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-14-4">4. Discourse Probing of Pretrained Language Models
+</h2>
+
+Title: [Discourse Probing of Pretrained Language Models](https://arxiv.org/abs/2104.05882)
+
+Authors: [Fajri Koto](https://arxiv.org/search/cs?searchtype=author&query=Koto%2C+F), [Jey Han Lau](https://arxiv.org/search/cs?searchtype=author&query=Lau%2C+J+H), [Timothy Baldwin](https://arxiv.org/search/cs?searchtype=author&query=Baldwin%2C+T)
+
+> Existing work on probing of pretrained language models (LMs) has predominantly focused on sentence-level syntactic tasks. In this paper, we introduce document-level discourse probing to evaluate the ability of pretrained LMs to capture document-level relations. We experiment with 7 pretrained LMs, 4 languages, and 7 discourse probing tasks, and find BART to be overall the best model at capturing discourse -- but only in its encoder, with BERT performing surprisingly well as the baseline model. Across the different models, there are substantial differences in which layers best capture discourse information, and large disparities between models.
+
+| Comments: | Accepted at NAACL 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.05882](https://arxiv.org/abs/2104.05882) [cs.CL]** |
+|           | (or **[arXiv:2104.05882v1](https://arxiv.org/abs/2104.05882v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-14-5">5. Restoring and Mining the Records of the Joseon Dynasty via Neural Language Modeling and Machine Translation
+</h2>
+
+Title: [Restoring and Mining the Records of the Joseon Dynasty via Neural Language Modeling and Machine Translation](https://arxiv.org/abs/2104.05964)
+
+Authors: [Kyeongpil Kang](https://arxiv.org/search/cs?searchtype=author&query=Kang%2C+K), [Kyohoon Jin](https://arxiv.org/search/cs?searchtype=author&query=Jin%2C+K), [Soyoung Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+S), [Sujin Jang](https://arxiv.org/search/cs?searchtype=author&query=Jang%2C+S), [Jaegul Choo](https://arxiv.org/search/cs?searchtype=author&query=Choo%2C+J), [Yougbin Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+Y)
+
+> Understanding voluminous historical records provides clues on the past in various aspects, such as social and political issues and even natural science facts. However, it is generally difficult to fully utilize the historical records, since most of the documents are not written in a modern language and part of the contents are damaged over time. As a result, restoring the damaged or unrecognizable parts as well as translating the records into modern languages are crucial tasks. In response, we present a multi-task learning approach to restore and translate historical documents based on a self-attention mechanism, specifically utilizing two Korean historical records, ones of the most voluminous historical records in the world. Experimental results show that our approach significantly improves the accuracy of the translation task than baselines without multi-task learning. In addition, we present an in-depth exploratory analysis on our translated results via topic modeling, uncovering several significant historical events.
+
+| Comments: | Accepted to NAACL 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2104.05964](https://arxiv.org/abs/2104.05964) [cs.CL]** |
+|           | (or **[arXiv:2104.05964v1](https://arxiv.org/abs/2104.05964v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-14-6">6. Gender Bias in Machine Translation
+</h2>
+
+Title: [Gender Bias in Machine Translation](https://arxiv.org/abs/2104.06001)
+
+Authors: [Beatrice Savoldi](https://arxiv.org/search/cs?searchtype=author&query=Savoldi%2C+B), [Marco Gaido](https://arxiv.org/search/cs?searchtype=author&query=Gaido%2C+M), [Luisa Bentivogli](https://arxiv.org/search/cs?searchtype=author&query=Bentivogli%2C+L), [Matteo Negri](https://arxiv.org/search/cs?searchtype=author&query=Negri%2C+M), [Marco Turchi](https://arxiv.org/search/cs?searchtype=author&query=Turchi%2C+M)
+
+> Machine translation (MT) technology has facilitated our daily tasks by providing accessible shortcuts for gathering, elaborating and communicating information. However, it can suffer from biases that harm users and society at large. As a relatively new field of inquiry, gender bias in MT still lacks internal cohesion, which advocates for a unified framework to ease future research. To this end, we: i)critically review current conceptualizations of bias in light of theoretical insights from related disciplines, ii) summarize previous analyses aimed at assessing gender bias in MT, iii)discuss the mitigating strategies proposed so far, and iv)point toward potential directions for future work.
+
+| Comments: | Accepted for publication in Transaction of the Association for Computational Linguistics (TACL), 2021. Pre-MIT Press publication version |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.06001](https://arxiv.org/abs/2104.06001) [cs.CL]** |
+|           | (or **[arXiv:2104.06001v1](https://arxiv.org/abs/2104.06001v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-14-7">7. Lessons on Parameter Sharing across Layers in Transformers
+</h2>
+
+Title: [Lessons on Parameter Sharing across Layers in Transformers](https://arxiv.org/abs/2104.06022)
+
+Authors: [Sho Takase](https://arxiv.org/search/cs?searchtype=author&query=Takase%2C+S), [Shun Kiyono](https://arxiv.org/search/cs?searchtype=author&query=Kiyono%2C+S)
+
+> We propose a parameter sharing method for Transformers (Vaswani et al., 2017). The proposed approach relaxes a widely used technique, which shares parameters for one layer with all layers such as Universal Transformers (Dehghani et al., 2019), to increase the efficiency in the computational time. We propose three strategies: Sequence, Cycle, and Cycle (rev) to assign parameters to each layer. Experimental results show that the proposed strategies are efficient in the parameter size and computational time. Moreover, we indicate that the proposed strategies are also effective in the configuration where we use many training data such as the recent WMT competition.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.06022](https://arxiv.org/abs/2104.06022) [cs.CL]** |
+|           | (or **[arXiv:2104.06022v1](https://arxiv.org/abs/2104.06022v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-14-8">8. What's in your Head? Emergent Behaviour in Multi-Task Transformer Models
+</h2>
+
+Title: [What's in your Head? Emergent Behaviour in Multi-Task Transformer Models](https://arxiv.org/abs/2104.06129)
+
+Authors: [Mor Geva](https://arxiv.org/search/cs?searchtype=author&query=Geva%2C+M), [Uri Katz](https://arxiv.org/search/cs?searchtype=author&query=Katz%2C+U), [Aviv Ben-Arie](https://arxiv.org/search/cs?searchtype=author&query=Ben-Arie%2C+A), [Jonathan Berant](https://arxiv.org/search/cs?searchtype=author&query=Berant%2C+J)
+
+> The primary paradigm for multi-task training in natural language processing is to represent the input with a shared pre-trained language model, and add a small, thin network (head) per task. Given an input, a target head is the head that is selected for outputting the final prediction. In this work, we examine the behaviour of non-target heads, that is, the output of heads when given input that belongs to a different task than the one they were trained for. We find that non-target heads exhibit emergent behaviour, which may either explain the target task, or generalize beyond their original task. For example, in a numerical reasoning task, a span extraction head extracts from the input the arguments to a computation that results in a number generated by a target generative head. In addition, a summarization head that is trained with a target question answering head, outputs query-based summaries when given a question and a context from which the answer is to be extracted. This emergent behaviour suggests that multi-task training leads to non-trivial extrapolation of skills, which can be harnessed for interpretability and generalization.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.06129](https://arxiv.org/abs/2104.06129) [cs.CL]** |
+|           | (or **[arXiv:2104.06129v1](https://arxiv.org/abs/2104.06129v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-14-9">9. Understanding Hard Negatives in Noise Contrastive Estimation
+</h2>
+
+Title: [Understanding Hard Negatives in Noise Contrastive Estimation](https://arxiv.org/abs/2104.06245)
+
+Authors: [Wenzheng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+W), [Karl Stratos](https://arxiv.org/search/cs?searchtype=author&query=Stratos%2C+K)
+
+> The choice of negative examples is important in noise contrastive estimation. Recent works find that hard negatives -- highest-scoring incorrect examples under the model -- are effective in practice, but they are used without a formal justification. We develop analytical tools to understand the role of hard negatives. Specifically, we view the contrastive loss as a biased estimator of the gradient of the cross-entropy loss, and show both theoretically and empirically that setting the negative distribution to be the model distribution results in bias reduction. We also derive a general form of the score function that unifies various architectures used in text retrieval. By combining hard negatives with appropriate score functions, we obtain strong results on the challenging task of zero-shot entity linking.
+
+| Comments: | NAACL 2021                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2104.06245](https://arxiv.org/abs/2104.06245) [cs.CL]** |
+|           | (or **[arXiv:2104.06245v1](https://arxiv.org/abs/2104.06245v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-14-10">10. Multilingual Transfer Learning for Code-Switched Language and Speech Neural Modeling
+</h2>
+
+Title: [Multilingual Transfer Learning for Code-Switched Language and Speech Neural Modeling](https://arxiv.org/abs/2104.06268)
+
+Authors: [Genta Indra Winata](https://arxiv.org/search/cs?searchtype=author&query=Winata%2C+G+I)
+
+> In this thesis, we address the data scarcity and limitations of linguistic theory by proposing language-agnostic multi-task training methods. First, we introduce a meta-learning-based approach, meta-transfer learning, in which information is judiciously extracted from high-resource monolingual speech data to the code-switching domain. The meta-transfer learning quickly adapts the model to the code-switching task from a number of monolingual tasks by learning to learn in a multi-task learning fashion. Second, we propose a novel multilingual meta-embeddings approach to effectively represent code-switching data by acquiring useful knowledge learned in other languages, learning the commonalities of closely related languages and leveraging lexical composition. The method is far more efficient compared to contextualized pre-trained multilingual models. Third, we introduce multi-task learning to integrate syntactic information as a transfer learning strategy to a language model and learn where to code-switch. To further alleviate the aforementioned issues, we propose a data augmentation method using Pointer-Gen, a neural network using a copy mechanism to teach the model the code-switch points from monolingual parallel sentences. We disentangle the need for linguistic theory, and the model captures code-switching points by attending to input words and aligning the parallel words, without requiring any word alignments or constituency parsers. More importantly, the model can be effectively used for languages that are syntactically different, and it outperforms the linguistic theory-based models.
+
+| Comments: | HKUST PhD Thesis. 120 pages                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2104.06268](https://arxiv.org/abs/2104.06268) [cs.CL]** |
+|           | (or **[arXiv:2104.06268v1](https://arxiv.org/abs/2104.06268v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-14-11">11. EXPLAINABOARD: An Explainable Leaderboard for NLP
+</h2>
+
+Title: [EXPLAINABOARD: An Explainable Leaderboard for NLP](https://arxiv.org/abs/2104.06387)
+
+Authors: [Pengfei Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+P), [Jinlan Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+J), [Yang Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+Y), [Weizhe Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+W), [Shuaicheng Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+S), [Junqi Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+J), [Yixin Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Zihuiwen Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+Z), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
+
+> With the rapid development of NLP research, leaderboards have emerged as one tool to track the performance of various systems on various NLP tasks. They are effective in this goal to some extent, but generally present a rather simplistic one-dimensional view of the submitted systems, communicated only through holistic accuracy numbers. In this paper, we present a new conceptualization and implementation of NLP evaluation: the ExplainaBoard, which in addition to inheriting the functionality of the standard leaderboard, also allows researchers to (i) diagnose strengths and weaknesses of a single system (e.g. what is the best-performing system bad at?) (ii) interpret relationships between multiple systems. (e.g. where does system A outperform system B? What if we combine systems A, B, C?) and (iii) examine prediction results closely (e.g. what are common errors made by multiple systems or and in what contexts do particular errors occur?). ExplainaBoard has been deployed at \url{[this http URL](http://explainaboard.nlpedia.ai/)}, and we have additionally released our interpretable evaluation code at \url{[this https URL](https://github.com/neulab/ExplainaBoard)} and output files from more than 300 systems, 40 datasets, and 9 tasks to motivate the "output-driven" research in the future.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.06387](https://arxiv.org/abs/2104.06387) [cs.CL]** |
+|           | (or **[arXiv:2104.06387v1](https://arxiv.org/abs/2104.06387v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-14-12">12. Bridging the Gap Between Clean Data Training and Real-World Inference for Spoken Language Understanding
+</h2>
+
+Title: [Bridging the Gap Between Clean Data Training and Real-World Inference for Spoken Language Understanding](https://arxiv.org/abs/2104.06393)
+
+Authors: [Di Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+D), [Yiren Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Liang Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+L), [Dacheng Tao](https://arxiv.org/search/cs?searchtype=author&query=Tao%2C+D)
+
+> Spoken language understanding (SLU) system usually consists of various pipeline components, where each component heavily relies on the results of its upstream ones. For example, Intent detection (ID), and slot filling (SF) require its upstream automatic speech recognition (ASR) to transform the voice into text. In this case, the upstream perturbations, e.g. ASR errors, environmental noise and careless user speaking, will propagate to the ID and SF models, thus deteriorating the system performance. Therefore, the well-performing SF and ID models are expected to be noise resistant to some extent. However, existing models are trained on clean data, which causes a \textit{gap between clean data training and real-world inference.} To bridge the gap, we propose a method from the perspective of domain adaptation, by which both high- and low-quality samples are embedding into similar vector space. Meanwhile, we design a denoising generation model to reduce the impact of the low-quality samples. Experiments on the widely-used dataset, i.e. Snips, and large scale in-house dataset (10 million training examples) demonstrate that this method not only outperforms the baseline models on real-world (noisy) corpus but also enhances the robustness, that is, it produces high-quality results under a noisy environment. The source code will be released.
+
+| Comments: | Work in progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2104.06393](https://arxiv.org/abs/2104.06393) [cs.CL]** |
+|           | (or **[arXiv:2104.06393v1](https://arxiv.org/abs/2104.06393v1) [cs.CL]** for this version) |
+
+
 
 
 
