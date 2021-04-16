@@ -2,6 +2,23 @@
 
 # Index
 
+- [2021-04-16](#2021-04-16)
+  - [1. What Makes a Scientific Paper be Accepted for Publication?](#2021-04-16-1)
+  - [2. An Interpretability Illusion for BERT](#2021-04-16-2)
+  - [3. An Alignment-Agnostic Model for Chinese Text Error Correction](#2021-04-16-3)
+  - [4. Lattice-BERT: Leveraging Multi-Granularity Representations in Chinese Pre-trained Language Models](#2021-04-16-4)
+  - [5. Sentence-Permuted Paragraph Generation](#2021-04-16-5)
+  - [6. Adaptive Sparse Transformer for Multilingual Translation](#2021-04-16-6)
+  - [7. Simultaneous Multi-Pivot Neural Machine Translation](#2021-04-16-7)
+  - [8. First the worst: Finding better gender translations during beam search](#2021-04-16-8)
+  - [9. Effect of Post-processing on Contextualized Word Representations](#2021-04-16-9)
+  - [10. IndT5: A Text-to-Text Transformer for 10 Indigenous Languages](#2021-04-16-10)
+  - [11. Generating Datasets with Pretrained Language Models](#2021-04-16-11)
+  - [12. Reward Optimization for Neural Machine Translation with Learned Metrics](#2021-04-16-12)
+  - [13. Hierarchical Learning for Generation with Long Source Sequences](#2021-04-16-13)
+  - [14. Sometimes We Want Translationese](#2021-04-16-14)
+  - [15. Demystify Optimization Challenges in Multilingual Transformers](#2021-04-16-15)
+  - [16. Bilingual alignment transfers to multilingual alignment for unsupervised parallel text mining](#2021-04-16-16)
 - [2021-04-15](#2021-04-15)
   - [1. Source and Target Bidirectional Knowledge Distillation for End-to-end Speech Translation](#2021-04-15-1)
   - [2. Large-Scale Self- and Semi-Supervised Learning for Speech Translation](#2021-04-15-2)
@@ -76,6 +93,309 @@
 - [2021-03-31](#2021-03-31)	
   - [1. Diagnosing Vision-and-Language Navigation: What Really Matters](#2021-03-31-1)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-04-16
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-04-16-1">1. What Makes a Scientific Paper be Accepted for Publication?
+</h2>
+
+Title: [What Makes a Scientific Paper be Accepted for Publication?](https://arxiv.org/abs/2104.07112)
+
+Authors: [Panagiotis Fytas](https://arxiv.org/search/cs?searchtype=author&query=Fytas%2C+P), [Georgios Rizos](https://arxiv.org/search/cs?searchtype=author&query=Rizos%2C+G), [Lucia Specia](https://arxiv.org/search/cs?searchtype=author&query=Specia%2C+L)
+
+> Despite peer-reviewing being an essential component of academia since the 1600s, it has repeatedly received criticisms for lack of transparency and consistency. We posit that recent work in machine learning and explainable AI provide tools that enable insights into the decisions from a given peer review process. We start by extracting global explanations in the form of linguistic features that affect the acceptance of a scientific paper for publication on an open peer-review dataset. Second, since such global explanations do not justify causal interpretations, we provide a methodology for detecting confounding effects in natural language in order to generate causal explanations, under assumptions, in the form of lexicons. Our proposed linguistic explanation methodology indicates the following on a case dataset of ICLR submissions: a) the organising committee follows, for the most part, the recommendations of reviewers, and, b) the paper's main characteristics that led to reviewers recommending acceptance for publication are originality, clarity and substance.
+
+| Subjects:    | **Computation and Language (cs.CL)**                         |
+| ------------ | ------------------------------------------------------------ |
+| MSC classes: | 68T50                                                        |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2104.07112](https://arxiv.org/abs/2104.07112) [cs.CL]** |
+|              | (or **[arXiv:2104.07112v1](https://arxiv.org/abs/2104.07112v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-16-2">2. An Interpretability Illusion for BERT
+</h2>
+
+Title: [An Interpretability Illusion for BERT](https://arxiv.org/abs/2104.07143)
+
+Authors: [Tolga Bolukbasi](https://arxiv.org/search/cs?searchtype=author&query=Bolukbasi%2C+T), [Adam Pearce](https://arxiv.org/search/cs?searchtype=author&query=Pearce%2C+A), [Ann Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+A), [Andy Coenen](https://arxiv.org/search/cs?searchtype=author&query=Coenen%2C+A), [Emily Reif](https://arxiv.org/search/cs?searchtype=author&query=Reif%2C+E), [Fernanda Viégas](https://arxiv.org/search/cs?searchtype=author&query=Viégas%2C+F), [Martin Wattenberg](https://arxiv.org/search/cs?searchtype=author&query=Wattenberg%2C+M)
+
+> We describe an "interpretability illusion" that arises when analyzing the BERT model. Activations of individual neurons in the network may spuriously appear to encode a single, simple concept, when in fact they are encoding something far more complex. The same effect holds for linear combinations of activations. We trace the source of this illusion to geometric properties of BERT's embedding space as well as the fact that common text corpora represent only narrow slices of possible English sentences. We provide a taxonomy of model-learned concepts and discuss methodological implications for interpretability research, especially the importance of testing hypotheses on multiple data sets.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.07143](https://arxiv.org/abs/2104.07143) [cs.CL]** |
+|           | (or **[arXiv:2104.07143v1](https://arxiv.org/abs/2104.07143v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-16-3">3. An Alignment-Agnostic Model for Chinese Text Error Correction
+</h2>
+
+Title: [An Alignment-Agnostic Model for Chinese Text Error Correction](https://arxiv.org/abs/2104.07190)
+
+Authors: [Liying Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+L), [Yue Deng](https://arxiv.org/search/cs?searchtype=author&query=Deng%2C+Y), [Weishun Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+W), [Liang Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+L), [Jing Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+J)
+
+> This paper investigates how to correct Chinese text errors with types of mistaken, missing and redundant characters, which is common for Chinese native speakers. Most existing models based on detect-correct framework can correct mistaken characters errors, but they cannot deal with missing or redundant characters. The reason is that lengths of sentences before and after correction are not the same, leading to the inconsistence between model inputs and outputs. Although the Seq2Seq-based or sequence tagging methods provide solutions to the problem and achieved relatively good results on English context, but they do not perform well in Chinese context according to our experimental results. In our work, we propose a novel detect-correct framework which is alignment-agnostic, meaning that it can handle both text aligned and non-aligned occasions, and it can also serve as a cold start model when there are no annotated data provided. Experimental results on three datasets demonstrate that our method is effective and achieves the best performance among existing published models.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.07190](https://arxiv.org/abs/2104.07190) [cs.CL]** |
+|           | (or **[arXiv:2104.07190v1](https://arxiv.org/abs/2104.07190v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-16-4">4. Lattice-BERT: Leveraging Multi-Granularity Representations in Chinese Pre-trained Language Models
+</h2>
+
+Title: [Lattice-BERT: Leveraging Multi-Granularity Representations in Chinese Pre-trained Language Models](https://arxiv.org/abs/2104.07204)
+
+Authors: [Yuxuan Lai](https://arxiv.org/search/cs?searchtype=author&query=Lai%2C+Y), [Yijia Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Yansong Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+Y), [Songfang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Dongyan Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+D)
+
+> Chinese pre-trained language models usually process text as a sequence of characters, while ignoring more coarse granularity, e.g., words. In this work, we propose a novel pre-training paradigm for Chinese -- Lattice-BERT, which explicitly incorporates word representations along with characters, thus can model a sentence in a multi-granularity manner. Specifically, we construct a lattice graph from the characters and words in a sentence and feed all these text units into transformers. We design a lattice position attention mechanism to exploit the lattice structures in self-attention layers. We further propose a masked segment prediction task to push the model to learn from rich but redundant information inherent in lattices, while avoiding learning unexpected tricks. Experiments on 11 Chinese natural language understanding tasks show that our model can bring an average increase of 1.5% under the 12-layer setting, which achieves new state-of-the-art among base-size models on the CLUE benchmarks. Further analysis shows that Lattice-BERT can harness the lattice structures, and the improvement comes from the exploration of redundant information and multi-granularity representations. Our code will be available at [this https URL](https://github.com/alibaba/pretrained-language-models/LatticeBERT).
+
+| Comments: | Accepted at NAACL 2021, 16 pages                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.07204](https://arxiv.org/abs/2104.07204) [cs.CL]** |
+|           | (or **[arXiv:2104.07204v1](https://arxiv.org/abs/2104.07204v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-16-5">5. Sentence-Permuted Paragraph Generation
+</h2>
+
+Title: [Sentence-Permuted Paragraph Generation](https://arxiv.org/abs/2104.07228)
+
+Authors: [Wenhao Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+W), [Chenguang Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+C), [Tong Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+T), [Zhichun Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+Z), [Meng Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+M)
+
+> Generating paragraphs of diverse contents is important in many applications. Existing generation models produce similar contents from homogenized contexts due to the fixed left-to-right sentence order. Our idea is permuting the sentence orders to improve the content diversity of multi-sentence paragraph. We propose a novel framework PermGen whose objective is to maximize the expected log-likelihood of output paragraph distributions with respect to all possible sentence orders. PermGen uses hierarchical positional embedding and designs new procedures for training, decoding, and candidate ranking in the sentence-permuted generation. Experiments on three paragraph generation benchmarks demonstrate PermGen generates more diverse outputs with a higher quality than existing models.
+
+| Comments: | 19 pages, 6 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2104.07228](https://arxiv.org/abs/2104.07228) [cs.CL]** |
+|           | (or **[arXiv:2104.07228v1](https://arxiv.org/abs/2104.07228v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-16-6">6. Adaptive Sparse Transformer for Multilingual Translation
+</h2>
+
+Title: [Adaptive Sparse Transformer for Multilingual Translation](https://arxiv.org/abs/2104.07358)
+
+Authors: [Hongyu Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+H), [Xian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Dmitriy Genzel](https://arxiv.org/search/cs?searchtype=author&query=Genzel%2C+D)
+
+> Multilingual machine translation has attracted much attention recently due to its support of knowledge transfer among languages and the low cost of training and deployment compared with numerous bilingual models. A known challenge of multilingual models is the negative language interference. In order to enhance the translation quality, deeper and wider architectures are applied to multilingual modeling for larger model capacity, which suffers from the increased inference cost at the same time. It has been pointed out in recent studies that parameters shared among languages are the cause of interference while they may also enable positive transfer. Based on these insights, we propose an adaptive and sparse architecture for multilingual modeling, and train the model to learn shared and language-specific parameters to improve the positive transfer and mitigate the interference. The sparse architecture only activates a subnetwork which preserves inference efficiency, and the adaptive design selects different subnetworks based on the input languages. Evaluated on multilingual translation across multiple public datasets, our model outperforms strong baselines in terms of translation quality without increasing the inference cost.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.07358](https://arxiv.org/abs/2104.07358) [cs.CL]** |
+|           | (or **[arXiv:2104.07358v1](https://arxiv.org/abs/2104.07358v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-16-7">7. Simultaneous Multi-Pivot Neural Machine Translation
+</h2>
+
+Title: [Simultaneous Multi-Pivot Neural Machine Translation](https://arxiv.org/abs/2104.07410)
+
+Authors: [Raj Dabre](https://arxiv.org/search/cs?searchtype=author&query=Dabre%2C+R), [Aizhan Imankulova](https://arxiv.org/search/cs?searchtype=author&query=Imankulova%2C+A), [Masahiro Kaneko](https://arxiv.org/search/cs?searchtype=author&query=Kaneko%2C+M), [Abhisek Chakrabarty](https://arxiv.org/search/cs?searchtype=author&query=Chakrabarty%2C+A)
+
+> Parallel corpora are indispensable for training neural machine translation (NMT) models, and parallel corpora for most language pairs do not exist or are scarce. In such cases, pivot language NMT can be helpful where a pivot language is used such that there exist parallel corpora between the source and pivot and pivot and target languages. Naturally, the quality of pivot language translation is more inferior to what could be achieved with a direct parallel corpus of a reasonable size for that pair. In a real-time simultaneous translation setting, the quality of pivot language translation deteriorates even further given that the model has to output translations the moment a few source words become available. To solve this issue, we propose multi-pivot translation and apply it to a simultaneous translation setting involving pivot languages. Our approach involves simultaneously translating a source language into multiple pivots, which are then simultaneously translated together into the target language by leveraging multi-source NMT. Our experiments in a low-resource setting using the N-way parallel UN corpus for Arabic to English NMT via French and Spanish as pivots reveals that in a simultaneous pivot NMT setting, using two pivot languages can lead to an improvement of up to 5.8 BLEU.
+
+| Comments: | preliminary work. pardon the messy writing and mistakes. will be submitted to emnlp after major overhaul |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.07410](https://arxiv.org/abs/2104.07410) [cs.CL]** |
+|           | (or **[arXiv:2104.07410v1](https://arxiv.org/abs/2104.07410v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-16-8">8. First the worst: Finding better gender translations during beam search
+</h2>
+
+Title: [First the worst: Finding better gender translations during beam search](https://arxiv.org/abs/2104.07429)
+
+Authors: [Danielle Saunders](https://arxiv.org/search/cs?searchtype=author&query=Saunders%2C+D), [Rosie Sallis](https://arxiv.org/search/cs?searchtype=author&query=Sallis%2C+R), [Bill Byrne](https://arxiv.org/search/cs?searchtype=author&query=Byrne%2C+B)
+
+> Neural machine translation inference procedures like beam search generate the most likely output under the model. This can exacerbate any demographic biases exhibited by the model. We focus on gender bias resulting from systematic errors in grammatical gender translation, which can lead to human referents being misrepresented or misgendered.
+> Most approaches to this problem adjust the training data or the model. By contrast, we experiment with simply adjusting the inference procedure. We experiment with reranking nbest lists using gender features obtained automatically from the source sentence, and applying gender constraints while decoding to improve nbest list gender diversity. We find that a combination of these techniques allows large gains in WinoMT accuracy without requiring additional bilingual data or an additional NMT model.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.07429](https://arxiv.org/abs/2104.07429) [cs.CL]** |
+|           | (or **[arXiv:2104.07429v1](https://arxiv.org/abs/2104.07429v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-16-9">9. Effect of Post-processing on Contextualized Word Representations
+</h2>
+
+Title: [Effect of Post-processing on Contextualized Word Representations](https://arxiv.org/abs/2104.07456)
+
+Authors: [Hassan Sajjad](https://arxiv.org/search/cs?searchtype=author&query=Sajjad%2C+H), [Firoj Alam](https://arxiv.org/search/cs?searchtype=author&query=Alam%2C+F), [Fahim Dalvi](https://arxiv.org/search/cs?searchtype=author&query=Dalvi%2C+F), [Nadir Durrani](https://arxiv.org/search/cs?searchtype=author&query=Durrani%2C+N)
+
+> Post-processing of static embedding has beenshown to improve their performance on both lexical and sequence-level tasks. However, post-processing for contextualized embeddings is an under-studied problem. In this work, we question the usefulness of post-processing for contextualized embeddings obtained from different layers of pre-trained language models. More specifically, we standardize individual neuron activations using z-score, min-max normalization, and by removing top principle components using the all-but-the-top method. Additionally, we apply unit length normalization to word representations. On a diverse set of pre-trained models, we show that post-processing unwraps vital information present in the representations for both lexical tasks (such as word similarity and analogy)and sequence classification tasks. Our findings raise interesting points in relation to theresearch studies that use contextualized representations, and suggest z-score normalization as an essential step to consider when using them in an application.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.07456](https://arxiv.org/abs/2104.07456) [cs.CL]** |
+|           | (or **[arXiv:2104.07456v1](https://arxiv.org/abs/2104.07456v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-16-10">10. IndT5: A Text-to-Text Transformer for 10 Indigenous Languages
+</h2>
+
+Title: [IndT5: A Text-to-Text Transformer for 10 Indigenous Languages](https://arxiv.org/abs/2104.07483)
+
+Authors: [El Moatez Billah Nagoudi](https://arxiv.org/search/cs?searchtype=author&query=Nagoudi%2C+E+M+B), [Wei-Rui Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+W), [Muhammad Abdul-Mageed](https://arxiv.org/search/cs?searchtype=author&query=Abdul-Mageed%2C+M), [Hasan Cavusogl](https://arxiv.org/search/cs?searchtype=author&query=Cavusogl%2C+H)
+
+> Transformer language models have become fundamental components of NLP based pipelines. Although several Transformer have been introduced to serve many languages, there is a shortage of models pre-trained for low-resource and Indigenous languages in particular. In this work, we introduce IndT5, the first Transformer language model for Indigenous languages. To train IndT5, we build IndCorpus, a new corpus for 10 Indigenous languages and Spanish. We also present the application of IndT5 to machine translation by investigating different approaches to translate between Spanish and the Indigenous languages as part of our contribution to the AmericasNLP 2021 Shared Task on Open Machine Translation. IndT5 and IndCorpus are publicly available for research.
+
+| Comments: | AmericasNLP 2021                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.07483](https://arxiv.org/abs/2104.07483) [cs.CL]** |
+|           | (or **[arXiv:2104.07483v1](https://arxiv.org/abs/2104.07483v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-16-11">11. Generating Datasets with Pretrained Language Models
+</h2>
+
+Title: [Generating Datasets with Pretrained Language Models](https://arxiv.org/abs/2104.07540)
+
+Authors: [Timo Schick](https://arxiv.org/search/cs?searchtype=author&query=Schick%2C+T), [Hinrich Schütze](https://arxiv.org/search/cs?searchtype=author&query=Schütze%2C+H)
+
+> To obtain high-quality sentence embeddings from pretrained language models, they must either be augmented with additional pretraining objectives or finetuned on large amounts of labeled text pairs. While the latter approach typically outperforms the former, it requires great human effort to generate suitable datasets of sufficient size. In this paper, we show how large pretrained language models can be leveraged to obtain high-quality embeddings without requiring any labeled data, finetuning or modifications to their pretraining objective: We utilize their generative abilities to generate entire datasets of labeled text pairs from scratch, which can then be used for regular finetuning of much smaller models. Our fully unsupervised approach outperforms strong baselines on several English semantic textual similarity datasets.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.07540](https://arxiv.org/abs/2104.07540) [cs.CL]** |
+|           | (or **[arXiv:2104.07540v1](https://arxiv.org/abs/2104.07540v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-16-12">12. Reward Optimization for Neural Machine Translation with Learned Metrics
+</h2>
+
+Title: [Reward Optimization for Neural Machine Translation with Learned Metrics](https://arxiv.org/abs/2104.07541)
+
+Authors: [Raphael Shu](https://arxiv.org/search/cs?searchtype=author&query=Shu%2C+R), [Kang Min Yoo](https://arxiv.org/search/cs?searchtype=author&query=Yoo%2C+K+M), [Jung-Woo Ha](https://arxiv.org/search/cs?searchtype=author&query=Ha%2C+J)
+
+> Neural machine translation (NMT) models are conventionally trained with token-level negative log-likelihood (NLL), which does not guarantee that the generated translations will be optimized for a selected sequence-level evaluation metric. Multiple approaches are proposed to train NMT with BLEU as the reward, in order to directly improve the metric. However, it was reported that the gain in BLEU does not translate to real quality improvement, limiting the application in industry. Recently, it became clear to the community that BLEU has a low correlation with human judgment when dealing with state-of-the-art models. This leads to the emerging of model-based evaluation metrics. These new metrics are shown to have a much higher human correlation. In this paper, we investigate whether it is beneficial to optimize NMT models with the state-of-the-art model-based metric, BLEURT. We propose a contrastive-margin loss for fast and stable reward optimization suitable for large NMT models. In experiments, we perform automatic and human evaluations to compare models trained with smoothed BLEU and BLEURT to the baseline models. Results show that the reward optimization with BLEURT is able to increase the metric scores by a large margin, in contrast to limited gain when training with smoothed BLEU. The human evaluation shows that models trained with BLEURT improve adequacy and coverage of translations. Code is available via [this https URL](https://github.com/naver-ai/MetricMT).
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.07541](https://arxiv.org/abs/2104.07541) [cs.CL]** |
+|           | (or **[arXiv:2104.07541v1](https://arxiv.org/abs/2104.07541v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-16-13">13. Hierarchical Learning for Generation with Long Source Sequences
+</h2>
+
+Title: [Hierarchical Learning for Generation with Long Source Sequences](https://arxiv.org/abs/2104.07545)
+
+Authors: [Tobias Rohde](https://arxiv.org/search/cs?searchtype=author&query=Rohde%2C+T), [Xiaoxia Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+X), [Yinhan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y)
+
+> One of the challenges for current sequence to sequence (seq2seq) models is processing long sequences, such as those in summarization and document level machine translation tasks. These tasks require the model to reason at the token level as well as the sentence and paragraph level. We design and study a new Hierarchical Attention Transformer-based architecture (HAT) that outperforms standard Transformers on several sequence to sequence tasks. In particular, our model achieves stateof-the-art results on four summarization tasks, including ArXiv, CNN/DM, SAMSum, and AMI, and we push PubMed R1 & R2 SOTA further. Our model significantly outperforms our document-level machine translation baseline by 28 BLEU on the WMT19 EN-DE document translation task. We also investigate what the hierarchical layers learn by visualizing the hierarchical encoder-decoder attention. Finally, we study hierarchical learning on encoder-only pre-training and analyze its performance on classification downstream tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.07545](https://arxiv.org/abs/2104.07545) [cs.CL]** |
+|           | (or **[arXiv:2104.07545v1](https://arxiv.org/abs/2104.07545v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-16-14">14. Sometimes We Want Translationese
+</h2>
+
+Title: [Sometimes We Want Translationese](https://arxiv.org/abs/2104.07623)
+
+Authors: [Prasanna Parthasarathi](https://arxiv.org/search/cs?searchtype=author&query=Parthasarathi%2C+P), [Koustuv Sinha](https://arxiv.org/search/cs?searchtype=author&query=Sinha%2C+K), [Joelle Pineau](https://arxiv.org/search/cs?searchtype=author&query=Pineau%2C+J), [Adina Williams](https://arxiv.org/search/cs?searchtype=author&query=Williams%2C+A)
+
+> Rapid progress in Neural Machine Translation (NMT) systems over the last few years has been driven primarily towards improving translation quality, and as a secondary focus, improved robustness to input perturbations (e.g. spelling and grammatical mistakes). While performance and robustness are important objectives, by over-focusing on these, we risk overlooking other important properties. In this paper, we draw attention to the fact that for some applications, faithfulness to the original (input) text is important to preserve, even if it means introducing unusual language patterns in the (output) translation. We propose a simple, novel way to quantify whether an NMT system exhibits robustness and faithfulness, focusing on the case of word-order perturbations. We explore a suite of functions to perturb the word order of source sentences without deleting or injecting tokens, and measure the effects on the target side in terms of both robustness and faithfulness. Across several experimental conditions, we observe a strong tendency towards robustness rather than faithfulness. These results allow us to better understand the trade-off between faithfulness and robustness in NMT, and opens up the possibility of developing systems where users have more autonomy and control in selecting which property is best suited for their use case.
+
+| Comments: | 16 pages, 11 figures and 3 tables                            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.07623](https://arxiv.org/abs/2104.07623) [cs.CL]** |
+|           | (or **[arXiv:2104.07623v1](https://arxiv.org/abs/2104.07623v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-16-15">15. Demystify Optimization Challenges in Multilingual Transformers
+</h2>
+
+Title: [Demystify Optimization Challenges in Multilingual Transformers](https://arxiv.org/abs/2104.07639)
+
+Authors: [Xian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Hongyu Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+H)
+
+> Multilingual Transformer improves parameter efficiency and crosslingual transfer. How to effectively train multilingual models has not been well studied. Using multilingual machine translation as a testbed, we study optimization challenges from loss landscape and parameter plasticity perspectives. We found that imbalanced training data poses task interference between high and low resource languages, characterized by nearly orthogonal gradients for major parameters and the optimization trajectory being mostly dominated by high resource. We show that local curvature of the loss surface affects the degree of interference, and existing heuristics of data subsampling implicitly reduces the sharpness, although still face a trade-off between high and low resource languages. We propose a principled multi-objective optimization algorithm, Curvature Aware Task Scaling (CATS), which improves both optimization and generalization especially for low resource. Experiments on TED, WMT and OPUS-100 benchmarks demonstrate that CATS advances the Pareto front of accuracy while being efficient to apply to massive multilingual settings at the scale of 100 languages.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.07639](https://arxiv.org/abs/2104.07639) [cs.CL]** |
+|           | (or **[arXiv:2104.07639v1](https://arxiv.org/abs/2104.07639v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-16-16">16. Bilingual alignment transfers to multilingual alignment for unsupervised parallel text mining
+</h2>
+
+Title: [Bilingual alignment transfers to multilingual alignment for unsupervised parallel text mining](https://arxiv.org/abs/2104.07642)
+
+Authors: [Chih-chan Tien](https://arxiv.org/search/cs?searchtype=author&query=Tien%2C+C), [Shane Steinert-Threlkeld](https://arxiv.org/search/cs?searchtype=author&query=Steinert-Threlkeld%2C+S)
+
+> This work presents methods for learning cross-lingual sentence representations using paired or unpaired bilingual texts. We hypothesize that the cross-lingual alignment strategy is transferable, and therefore a model trained to align only two languages can encode multilingually more aligned representations. And such transfer from bilingual alignment to multilingual alignment is a dual-pivot transfer from two pivot languages to other language pairs. To study this theory, we train an unsupervised model with unpaired sentences and another single-pair supervised model with bitexts, both based on the unsupervised language model XLM-R. The experiments evaluate the models as universal sentence encoders on the task of unsupervised bitext mining on two datasets, where the unsupervised model reaches the state of the art of unsupervised retrieval, and the alternative single-pair supervised model approaches the performance of multilingually supervised models. The results suggest that bilingual training techniques as proposed can be applied to get sentence representations with higher multilingual alignment.
+
+| Comments: | 10 pages, 2 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.07642](https://arxiv.org/abs/2104.07642) [cs.CL]** |
+|           | (or **[arXiv:2104.07642v1](https://arxiv.org/abs/2104.07642v1) [cs.CL]** for this version) |
+
+
 
 
 
