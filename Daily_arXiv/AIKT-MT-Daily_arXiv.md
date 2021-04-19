@@ -2,6 +2,23 @@
 
 # Index
 
+- [2021-04-19](#2021-04-19)
+  - [1. Improving Gender Translation Accuracy with Filtered Self-Training](#2021-04-19-1)
+  - [2. Cross-lingual Entity Alignment with Adversarial Kernel Embedding and Adversarial Knowledge Translation](#2021-04-19-2)
+  - [3. Investigating Failures of Automatic Translation in the Case of Unambiguous Gender](#2021-04-19-3)
+  - [4. Comparison of Grammatical Error Correction Using Back-Translation Models](#2021-04-19-4)
+  - [5. Segmenting Subtitles for Correcting ASR Segmentation Errors](#2021-04-19-5)
+  - [6. Translational NLP: A New Paradigm and General Principles for Natural Language Processing Research](#2021-04-19-6)
+  - [7. Generating Bug-Fixes Using Pretrained Transformers](#2021-04-19-7)
+  - [8. MetaXL: Meta Representation Transformation for Low-resource Cross-lingual Learning](#2021-04-19-8)
+  - [9. Language Models are Few-Shot Butlers](#2021-04-19-9)
+  - [10. Fast, Effective and Self-Supervised: Transforming Masked LanguageModels into Universal Lexical and Sentence Encoders](#2021-04-19-10)
+  - [11. Effect of Vision-and-Language Extensions on Natural Language Understanding in Vision-and-Language Models](#2021-04-19-11)
+  - [12. Towards Variable-Length Textual Adversarial Attacks](#2021-04-19-12)
+  - [13. Serial or Parallel? Plug-able Adapter for multilingual machine translation](#2021-04-19-13)
+  - [14. Robust Open-Vocabulary Translation from Visual Text Representations](#2021-04-19-14)
+  - [15. Is Your Language Model Ready for Dense Representation Fine-tuning?](#2021-04-19-15)
+  - [16. Context-Adaptive Document-Level Neural Machine Translation](#2021-04-19-16)
 - [2021-04-16](#2021-04-16)
   - [1. What Makes a Scientific Paper be Accepted for Publication?](#2021-04-16-1)
   - [2. An Interpretability Illusion for BERT](#2021-04-16-2)
@@ -93,6 +110,307 @@
 - [2021-03-31](#2021-03-31)	
   - [1. Diagnosing Vision-and-Language Navigation: What Really Matters](#2021-03-31-1)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-04-19
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-04-19-1">1. Improving Gender Translation Accuracy with Filtered Self-Training
+</h2>
+
+Title: [Improving Gender Translation Accuracy with Filtered Self-Training](https://arxiv.org/abs/2104.07695)
+
+Authors: [Prafulla Kumar Choubey](https://arxiv.org/search/cs?searchtype=author&query=Choubey%2C+P+K), [Anna Currey](https://arxiv.org/search/cs?searchtype=author&query=Currey%2C+A), [Prashant Mathur](https://arxiv.org/search/cs?searchtype=author&query=Mathur%2C+P), [Georgiana Dinu](https://arxiv.org/search/cs?searchtype=author&query=Dinu%2C+G)
+
+> Targeted evaluations have found that machine translation systems often output incorrect gender, even when the gender is clear from context. Furthermore, these incorrectly gendered translations have the potential to reflect or amplify social biases. We propose a gender-filtered self-training technique to improve gender translation accuracy on unambiguously gendered inputs. This approach uses a source monolingual corpus and an initial model to generate gender-specific pseudo-parallel corpora which are then added to the training data. We filter the gender-specific corpora on the source and target sides to ensure that sentence pairs contain and correctly translate the specified gender. We evaluate our approach on translation from English into five languages, finding that our models improve gender translation accuracy without any cost to generic translation quality. In addition, we show the viability of our approach on several settings, including re-training from scratch, fine-tuning, controlling the balance of the training data, forward translation, and back-translation.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.07695](https://arxiv.org/abs/2104.07695) [cs.CL]** |
+|           | (or **[arXiv:2104.07695v1](https://arxiv.org/abs/2104.07695v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-19-2">2. Cross-lingual Entity Alignment with Adversarial Kernel Embedding and Adversarial Knowledge Translation
+</h2>
+
+Title: [Cross-lingual Entity Alignment with Adversarial Kernel Embedding and Adversarial Knowledge Translation](https://arxiv.org/abs/2104.07837)
+
+Authors: [Gong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+G), [Yang Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+Y), [Sixing Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+S), [Zeru Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Dejing Dou](https://arxiv.org/search/cs?searchtype=author&query=Dou%2C+D)
+
+> Cross-lingual entity alignment, which aims to precisely connect the same entities in different monolingual knowledge bases (KBs) together, often suffers challenges from feature inconsistency to sequence context unawareness. This paper presents a dual adversarial learning framework for cross-lingual entity alignment, DAEA, with two original contributions. First, in order to address the structural and attribute feature inconsistency between entities in two knowledge graphs (KGs), an adversarial kernel embedding technique is proposed to extract graph-invariant information in an unsupervised manner, and project two KGs into the common embedding space. Second, in order to further improve successful rate of entity alignment, we propose to produce multiple random walks through each entity to be aligned and mask these entities in random walks. With the guidance of known aligned entities in the context of multiple random walks, an adversarial knowledge translation model is developed to fill and translate masked entities in pairwise random walks from two KGs. Extensive experiments performed on real-world datasets show that DAEA can well solve the feature inconsistency and sequence context unawareness issues and significantly outperforms thirteen state-of-the-art entity alignment methods.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.07837](https://arxiv.org/abs/2104.07837) [cs.CL]** |
+|           | (or **[arXiv:2104.07837v1](https://arxiv.org/abs/2104.07837v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-19-3">3. Investigating Failures of Automatic Translation in the Case of Unambiguous Gender
+</h2>
+
+Title: [Investigating Failures of Automatic Translation in the Case of Unambiguous Gender](https://arxiv.org/abs/2104.07838)
+
+Authors: [Adithya Renduchintala](https://arxiv.org/search/cs?searchtype=author&query=Renduchintala%2C+A), [Adina Williams](https://arxiv.org/search/cs?searchtype=author&query=Williams%2C+A)
+
+> Transformer based models are the modern work horses for neural machine translation (NMT), reaching state of the art across several benchmarks. Despite their impressive accuracy, we observe a systemic and rudimentary class of errors made by transformer based models with regards to translating from a language that doesn't mark gender on nouns into others that do. We find that even when the surrounding context provides unambiguous evidence of the appropriate grammatical gender marking, no transformer based model we tested was able to accurately gender occupation nouns systematically. We release an evaluation scheme and dataset for measuring the ability of transformer based NMT models to translate gender morphology correctly in unambiguous contexts across syntactically diverse sentences. Our dataset translates from an English source into 20 languages from several different language families. With the availability of this dataset, our hope is that the NMT community can iterate on solutions for this class of especially egregious errors.
+
+| Comments: | 10 pages, 2 figures, 4 tables, submitting to EMNLP 2021      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.07838](https://arxiv.org/abs/2104.07838) [cs.CL]** |
+|           | (or **[arXiv:2104.07838v1](https://arxiv.org/abs/2104.07838v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-19-4">4. Comparison of Grammatical Error Correction Using Back-Translation Models
+</h2>
+
+Title: [Comparison of Grammatical Error Correction Using Back-Translation Models](https://arxiv.org/abs/2104.07848)
+
+Authors: [Aomi Koyama](https://arxiv.org/search/cs?searchtype=author&query=Koyama%2C+A), [Kengo Hotate](https://arxiv.org/search/cs?searchtype=author&query=Hotate%2C+K), [Masahiro Kaneko](https://arxiv.org/search/cs?searchtype=author&query=Kaneko%2C+M), [Mamoru Komachi](https://arxiv.org/search/cs?searchtype=author&query=Komachi%2C+M)
+
+> Grammatical error correction (GEC) suffers from a lack of sufficient parallel data. Therefore, GEC studies have developed various methods to generate pseudo data, which comprise pairs of grammatical and artificially produced ungrammatical sentences. Currently, a mainstream approach to generate pseudo data is back-translation (BT). Most previous GEC studies using BT have employed the same architecture for both GEC and BT models. However, GEC models have different correction tendencies depending on their architectures. Thus, in this study, we compare the correction tendencies of the GEC models trained on pseudo data generated by different BT models, namely, Transformer, CNN, and LSTM. The results confirm that the correction tendencies for each error type are different for every BT model. Additionally, we examine the correction tendencies when using a combination of pseudo data generated by different BT models. As a result, we find that the combination of different BT models improves or interpolates the F_0.5 scores of each error type compared with that of single BT models with different seeds.
+
+| Comments: | 10 pages; camera-ready for NAACL Student Research Workshop 2021 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.07848](https://arxiv.org/abs/2104.07848) [cs.CL]** |
+|           | (or **[arXiv:2104.07848v1](https://arxiv.org/abs/2104.07848v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-19-5">5. Segmenting Subtitles for Correcting ASR Segmentation Errors
+</h2>
+
+Title: [Segmenting Subtitles for Correcting ASR Segmentation Errors](https://arxiv.org/abs/2104.07868)
+
+Authors: [David Wan](https://arxiv.org/search/cs?searchtype=author&query=Wan%2C+D), [Chris Kedzie](https://arxiv.org/search/cs?searchtype=author&query=Kedzie%2C+C), [Faisal Ladhak](https://arxiv.org/search/cs?searchtype=author&query=Ladhak%2C+F), [Elsbeth Turcan](https://arxiv.org/search/cs?searchtype=author&query=Turcan%2C+E), [Petra Galuščáková](https://arxiv.org/search/cs?searchtype=author&query=Galuščáková%2C+P), [Elena Zotkina](https://arxiv.org/search/cs?searchtype=author&query=Zotkina%2C+E), [Zhengping Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+Z), [Peter Bell](https://arxiv.org/search/cs?searchtype=author&query=Bell%2C+P), [Kathleen McKeown](https://arxiv.org/search/cs?searchtype=author&query=McKeown%2C+K)
+
+> Typical ASR systems segment the input audio into utterances using purely acoustic information, which may not resemble the sentence-like units that are expected by conventional machine translation (MT) systems for Spoken Language Translation. In this work, we propose a model for correcting the acoustic segmentation of ASR models for low-resource languages to improve performance on downstream tasks. We propose the use of subtitles as a proxy dataset for correcting ASR acoustic segmentation, creating synthetic acoustic utterances by modeling common error modes. We train a neural tagging model for correcting ASR acoustic segmentation and show that it improves downstream performance on MT and audio-document cross-language information retrieval (CLIR).
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.07868](https://arxiv.org/abs/2104.07868) [cs.CL]** |
+|           | (or **[arXiv:2104.07868v1](https://arxiv.org/abs/2104.07868v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-19-6">6. Translational NLP: A New Paradigm and General Principles for Natural Language Processing Research
+</h2>
+
+Title: [Translational NLP: A New Paradigm and General Principles for Natural Language Processing Research](https://arxiv.org/abs/2104.07874)
+
+Authors: [Denis Newman-Griffis](https://arxiv.org/search/cs?searchtype=author&query=Newman-Griffis%2C+D), [Jill Fain Lehman](https://arxiv.org/search/cs?searchtype=author&query=Lehman%2C+J+F), [Carolyn Rosé](https://arxiv.org/search/cs?searchtype=author&query=Rosé%2C+C), [Harry Hochheiser](https://arxiv.org/search/cs?searchtype=author&query=Hochheiser%2C+H)
+
+> Natural language processing (NLP) research combines the study of universal principles, through basic science, with applied science targeting specific use cases and settings. However, the process of exchange between basic NLP and applications is often assumed to emerge naturally, resulting in many innovations going unapplied and many important questions left unstudied. We describe a new paradigm of Translational NLP, which aims to structure and facilitate the processes by which basic and applied NLP research inform one another. Translational NLP thus presents a third research paradigm, focused on understanding the challenges posed by application needs and how these challenges can drive innovation in basic science and technology design. We show that many significant advances in NLP research have emerged from the intersection of basic principles with application needs, and present a conceptual framework outlining the stakeholders and key questions in translational research. Our framework provides a roadmap for developing Translational NLP as a dedicated research area, and identifies general translational principles to facilitate exchange between basic and applied research.
+
+| Comments: | Accepted to NAACL-HLT 2021                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2104.07874](https://arxiv.org/abs/2104.07874) [cs.CL]** |
+|           | (or **[arXiv:2104.07874v1](https://arxiv.org/abs/2104.07874v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-19-7">7. Generating Bug-Fixes Using Pretrained Transformers
+</h2>
+
+Title: [Generating Bug-Fixes Using Pretrained Transformers](https://arxiv.org/abs/2104.07896)
+
+Authors: [Dawn Drain](https://arxiv.org/search/cs?searchtype=author&query=Drain%2C+D), [Chen Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+C), [Alexey Svyatkovskiy](https://arxiv.org/search/cs?searchtype=author&query=Svyatkovskiy%2C+A), [Neel Sundaresan](https://arxiv.org/search/cs?searchtype=author&query=Sundaresan%2C+N)
+
+> Detecting and fixing bugs are two of the most important yet frustrating parts of the software development cycle. Existing bug detection tools are based mainly on static analyzers, which rely on mathematical logic and symbolic reasoning about the program execution to detect common types of bugs. Fixing bugs is typically left out to the developer. In this work we introduce DeepDebug: a data-driven program repair approach which learns to detect and fix bugs in Java methods mined from real-world GitHub repositories. We frame bug-patching as a sequence-to-sequence learning task consisting of two steps: (i) denoising pretraining, and (ii) supervised finetuning on the target translation task. We show that pretraining on source code programs improves the number of patches found by 33% as compared to supervised training from scratch, while domain-adaptive pretraining from natural language to code further improves the accuracy by another 32%. We refine the standard accuracy evaluation metric into non-deletion and deletion-only fixes, and show that our best model generates 75% more non-deletion fixes than the previous state of the art. In contrast to prior work, we attain our best results when generating raw code, as opposed to working with abstracted code that tends to only benefit smaller capacity models. Finally, we observe a subtle improvement from adding syntax embeddings along with the standard positional embeddings, as well as with adding an auxiliary task to predict each token's syntactic class. Despite focusing on Java, our approach is language agnostic, requiring only a general-purpose parser such as tree-sitter.
+
+| Subjects: | **Computation and Language (cs.CL)**; Programming Languages (cs.PL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.07896](https://arxiv.org/abs/2104.07896) [cs.CL]** |
+|           | (or **[arXiv:2104.07896v1](https://arxiv.org/abs/2104.07896v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-19-8">8. MetaXL: Meta Representation Transformation for Low-resource Cross-lingual Learning
+</h2>
+
+Title: [MetaXL: Meta Representation Transformation for Low-resource Cross-lingual Learning](https://arxiv.org/abs/2104.07908)
+
+Authors: [Mengzhou Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%2C+M), [Guoqing Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+G), [Subhabrata Mukherjee](https://arxiv.org/search/cs?searchtype=author&query=Mukherjee%2C+S), [Milad Shokouhi](https://arxiv.org/search/cs?searchtype=author&query=Shokouhi%2C+M), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G), [Ahmed Hassan Awadallah](https://arxiv.org/search/cs?searchtype=author&query=Awadallah%2C+A+H)
+
+> The combination of multilingual pre-trained representations and cross-lingual transfer learning is one of the most effective methods for building functional NLP systems for low-resource languages. However, for extremely low-resource languages without large-scale monolingual corpora for pre-training or sufficient annotated data for fine-tuning, transfer learning remains an under-studied and challenging task. Moreover, recent work shows that multilingual representations are surprisingly disjoint across languages, bringing additional challenges for transfer onto extremely low-resource languages. In this paper, we propose MetaXL, a meta-learning based framework that learns to transform representations judiciously from auxiliary languages to a target one and brings their representation spaces closer for effective transfer. Extensive experiments on real-world low-resource languages - without access to large-scale monolingual corpora or large amounts of labeled data - for tasks like cross-lingual sentiment analysis and named entity recognition show the effectiveness of our approach. Code for MetaXL is publicly available at [this http URL](http://github.com/microsoft/MetaXL).
+
+| Comments: | 2021 Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL 2021) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2104.07908](https://arxiv.org/abs/2104.07908) [cs.CL]** |
+|           | (or **[arXiv:2104.07908v1](https://arxiv.org/abs/2104.07908v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-19-9">9. Language Models are Few-Shot Butlers
+</h2>
+
+Title: [Language Models are Few-Shot Butlers](https://arxiv.org/abs/2104.07972)
+
+Authors: [Vincent Micheli](https://arxiv.org/search/cs?searchtype=author&query=Micheli%2C+V), [François Fleuret](https://arxiv.org/search/cs?searchtype=author&query=Fleuret%2C+F)
+
+> Pretrained language models demonstrate strong performance in most NLP tasks when fine-tuned on small task-specific datasets. Hence, these autoregressive models constitute ideal agents to operate in text-based environments where language understanding and generative capabilities are essential. Nonetheless, collecting expert demonstrations in such environments is a time-consuming endeavour. We introduce a two-stage procedure to learn from a small set of demonstrations and further improve by interacting with an environment. We show that language models fine-tuned with only 1.2% of the expert demonstrations and a simple reinforcement learning algorithm achieve a 51% absolute improvement in success rate over existing methods in the ALFWorld environment.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.07972](https://arxiv.org/abs/2104.07972) [cs.CL]** |
+|           | (or **[arXiv:2104.07972v1](https://arxiv.org/abs/2104.07972v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-19-10">10. Fast, Effective and Self-Supervised: Transforming Masked LanguageModels into Universal Lexical and Sentence Encoders
+</h2>
+
+Title: [Fast, Effective and Self-Supervised: Transforming Masked LanguageModels into Universal Lexical and Sentence Encoders](https://arxiv.org/abs/2104.08027)
+
+Authors: [Fangyu Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+F), [Ivan Vulić](https://arxiv.org/search/cs?searchtype=author&query=Vulić%2C+I), [Anna Korhonen](https://arxiv.org/search/cs?searchtype=author&query=Korhonen%2C+A), [Nigel Collier](https://arxiv.org/search/cs?searchtype=author&query=Collier%2C+N)
+
+> Pretrained Masked Language Models (MLMs) have revolutionised NLP in recent years. However, previous work has indicated that off-the-shelf MLMs are not effective as universal lexical or sentence encoders without further task-specific fine-tuning on NLI, sentence similarity, or paraphrasing tasks using annotated task data. In this work, we demonstrate that it is possible to turn MLMs into effective universal lexical and sentence encoders even without any additional data and without any supervision. We propose an extremely simple, fast and effective contrastive learning technique, termed Mirror-BERT, which converts MLMs (e.g., BERT and RoBERTa) into such encoders in less than a minute without any additional external knowledge. Mirror-BERT relies on fully identical or slightly modified string pairs as positive (i.e., synonymous) fine-tuning examples, and aims to maximise their similarity during identity fine-tuning. We report huge gains over off-the-shelf MLMs with Mirror-BERT in both lexical-level and sentence-level tasks, across different domains and different languages. Notably, in the standard sentence semantic similarity (STS) tasks, our self-supervised Mirror-BERT model even matches the performance of the task-tuned Sentence-BERT models from prior work. Finally, we delve deeper into the inner workings of MLMs, and suggest some evidence on why this simple approach can yield effective univeral lexical and sentence encoders.
+
+| Comments: | 11 pages, 4 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2104.08027](https://arxiv.org/abs/2104.08027) [cs.CL]** |
+|           | (or **[arXiv:2104.08027v1](https://arxiv.org/abs/2104.08027v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-19-11">11. Effect of Vision-and-Language Extensions on Natural Language Understanding in Vision-and-Language Models
+</h2>
+
+Title: [Effect of Vision-and-Language Extensions on Natural Language Understanding in Vision-and-Language Models](https://arxiv.org/abs/2104.08066)
+
+Authors: [Taichi Iki](https://arxiv.org/search/cs?searchtype=author&query=Iki%2C+T), [Akiko Aizawa](https://arxiv.org/search/cs?searchtype=author&query=Aizawa%2C+A)
+
+> Extending language models with structural modifications and vision-and-language (V&L) pretraining are successful ways of making V&L models that can ground vision and language. Potential applications of these advanced models include multi-modal machine reading comprehension models and multi-modal dialogue models, which require language ability upon grounding. Although language capability is crucial for such applications, the impact of extending their visual capabilities on their language capabilities is not fully understood. This paper investigates how visual extension affects the language capability of V&L models using the GLUE benchmark. We found that visual extension causes some decreases in language capability and that V&L pretraining has a greater impact than structural modifications on the decreases. Our results suggest the need for further study on pretraining that can maintain or, if possible, improve a model's language capability.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.08066](https://arxiv.org/abs/2104.08066) [cs.CL]** |
+|           | (or **[arXiv:2104.08066v1](https://arxiv.org/abs/2104.08066v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-19-12">12. Towards Variable-Length Textual Adversarial Attacks
+</h2>
+
+Title: [Towards Variable-Length Textual Adversarial Attacks](https://arxiv.org/abs/2104.08139)
+
+Authors: [Junliang Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+J), [Zhirui Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Linlin Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+L), [Linli Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+L), [Boxing Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+B), [Enhong Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+E), [Weihua Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+W)
+
+> Adversarial attacks have shown the vulnerability of machine learning models, however, it is non-trivial to conduct textual adversarial attacks on natural language processing tasks due to the discreteness of data. Most previous approaches conduct attacks with the atomic \textit{replacement} operation, which usually leads to fixed-length adversarial examples and therefore limits the exploration on the decision space. In this paper, we propose variable-length textual adversarial attacks~(VL-Attack) and integrate three atomic operations, namely \textit{insertion}, \textit{deletion} and \textit{replacement}, into a unified framework, by introducing and manipulating a special \textit{blank} token while attacking. In this way, our approach is able to more comprehensively find adversarial examples around the decision boundary and effectively conduct adversarial attacks. Specifically, our method drops the accuracy of IMDB classification by 96% with only editing 1.3% tokens while attacking a pre-trained BERT model. In addition, fine-tuning the victim model with generated adversarial samples can improve the robustness of the model without hurting the performance, especially for length-sensitive models. On the task of non-autoregressive machine translation, our method can achieve 33.18 BLEU score on IWSLT14 German-English translation, achieving an improvement of 1.47 over the baseline model.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.08139](https://arxiv.org/abs/2104.08139) [cs.CL]** |
+|           | (or **[arXiv:2104.08139v1](https://arxiv.org/abs/2104.08139v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-19-13">13. Serial or Parallel? Plug-able Adapter for multilingual machine translation
+</h2>
+
+Title: [Serial or Parallel? Plug-able Adapter for multilingual machine translation](https://arxiv.org/abs/2104.08154)
+
+Authors: [Yaoming Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+Y), [Jiangtao Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+J), [Chengqi Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+C), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> Developing a unified multilingual translation model is a key topic in machine translation research. However, existing approaches suffer from performance degradation: multilingual models yield inferior performance compared to the ones trained separately on rich bilingual data. We attribute the performance degradation to two issues: multilingual embedding conflation and multilingual fusion effects. To address the two issues, we propose PAM, a Transformer model augmented with defusion adaptation for multilingual machine translation. Specifically, PAM consists of embedding and layer adapters to shift the word and intermediate representations towards language-specific ones. Extensive experiment results on IWSLT, OPUS-100, and WMT benchmarks show that \method outperforms several strong competitors, including series adapter and multilingual knowledge distillation.
+
+| Comments: | 13 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2104.08154](https://arxiv.org/abs/2104.08154) [cs.CL]** |
+|           | (or **[arXiv:2104.08154v1](https://arxiv.org/abs/2104.08154v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-19-14">14. Robust Open-Vocabulary Translation from Visual Text Representations
+</h2>
+
+Title: [Robust Open-Vocabulary Translation from Visual Text Representations](https://arxiv.org/abs/2104.08211)
+
+Authors: [Elizabeth Salesky](https://arxiv.org/search/cs?searchtype=author&query=Salesky%2C+E), [David Etter](https://arxiv.org/search/cs?searchtype=author&query=Etter%2C+D), [Matt Post](https://arxiv.org/search/cs?searchtype=author&query=Post%2C+M)
+
+> Machine translation models have discrete vocabularies and commonly use subword segmentation techniques to achieve an 'open-vocabulary.' This approach relies on consistent and correct underlying unicode sequences, and makes models susceptible to degradation from common types of noise and variation. Motivated by the robustness of human language processing, we propose the use of visual text representations, which dispense with a finite set of text embeddings in favor of continuous vocabularies created by processing visually rendered text. We show that models using visual text representations approach or match performance of text baselines on clean TED datasets. More importantly, models with visual embeddings demonstrate significant robustness to varied types of noise, achieving e.g., 25.9 BLEU on a character permuted German--English task where subword models degrade to 1.9.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.08211](https://arxiv.org/abs/2104.08211) [cs.CL]** |
+|           | (or **[arXiv:2104.08211v1](https://arxiv.org/abs/2104.08211v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-19-15">15. Is Your Language Model Ready for Dense Representation Fine-tuning?
+</h2>
+
+Title: [Is Your Language Model Ready for Dense Representation Fine-tuning?](https://arxiv.org/abs/2104.08253)
+
+Authors: [Luyu Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+L), [Jamie Callan](https://arxiv.org/search/cs?searchtype=author&query=Callan%2C+J)
+
+> Pre-trained language models (LM) have become go-to text representation encoders. Prior research used deep LMs to encode text sequences such as sentences and passages into single dense vector representations. These dense representations have been used in efficient text comparison and embedding-based retrieval. However, dense encoders suffer in low resource situations. Many techniques have been developed to solve this problem. Despite their success, not much is known about why this happens. This paper shows that one cause lies in the readiness of the LM to expose its knowledge through dense representation in fine-tuning, which we term Optimization Readiness. To validate the theory, we present Condenser, a general pre-training architecture based on Transformer LMs, to improve dense optimization readiness. We show that fine-tuning from Condenser significantly improves performance for small and/or noisy training sets.
+
+| Subjects: | **Computation and Language (cs.CL)**; Information Retrieval (cs.IR) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.08253](https://arxiv.org/abs/2104.08253) [cs.CL]** |
+|           | (or **[arXiv:2104.08253v1](https://arxiv.org/abs/2104.08253v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-19-16">16. Context-Adaptive Document-Level Neural Machine Translation
+</h2>
+
+Title: [Context-Adaptive Document-Level Neural Machine Translation](https://arxiv.org/abs/2104.08259)
+
+Authors: [Linlin Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+L)
+
+> Most existing document-level neural machine translation (NMT) models leverage a fixed number of the previous or all global source sentences to handle the context-independent problem in standard NMT. However, the translating of each source sentence benefits from various sizes of context, and inappropriate context may harm the translation performance. In this work, we introduce a data-adaptive method that enables the model to adopt the necessary and useful context. Specifically, we introduce a light predictor into two document-level translation models to select the explicit context. Experiments demonstrate the proposed approach can significantly improve the performance over the previous methods with a gain up to 1.99 BLEU points.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.08259](https://arxiv.org/abs/2104.08259) [cs.CL]** |
+|           | (or **[arXiv:2104.08259v1](https://arxiv.org/abs/2104.08259v1) [cs.CL]** for this version) |
+
+
+
 
 
 
