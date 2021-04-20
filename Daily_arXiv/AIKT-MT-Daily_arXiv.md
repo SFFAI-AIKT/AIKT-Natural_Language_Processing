@@ -2,6 +2,32 @@
 
 # Index
 
+- [2021-04-20](#2021-04-20)
+  - [1. Improving Zero-Shot Cross-Lingual Transfer Learning via Robust Training](#2021-04-20-1)
+  - [2. Worst of Both Worlds: Biases Compound in Pre-trained Vision-and-Language Models](#2021-04-20-2)
+  - [3. Improving Neural Machine Translation with Compact Word Embedding Tables](#2021-04-20-3)
+  - [4. mT6: Multilingual Pretrained Text-to-Text Transformer with Translation Pairs](#2021-04-20-4)
+  - [5. Knowledge Neurons in Pretrained Transformers](#2021-04-20-5)
+  - [6. Zero-shot Cross-lingual Transfer of Neural Machine Translation with Multilingual Pretrained Encoders](#2021-04-20-6)
+  - [7. On the Strengths of Cross-Attention in Pretrained Transformers for Machine Translation](#2021-04-20-7)
+  - [8. Chinese Sentences Similarity via Cross-Attention Based Siamese Network](#2021-04-20-8)
+  - [9. Lifelong Learning of Few-shot Learners across NLP Tasks](#2021-04-20-9)
+  - [10. Contrastive Out-of-Distribution Detection for Pretrained Transformers](#2021-04-20-10)
+  - [11. Stream-level Latency Evaluation for Simultaneous Machine Translation](#2021-04-20-11)
+  - [12. SimCSE: Simple Contrastive Learning of Sentence Embeddings](#2021-04-20-12)
+  - [13. GPT3Mix: Leveraging Large-scale Language Models for Text Augmentation](#2021-04-20-13)
+  - [14. CrossFit: A Few-shot Learning Challenge for Cross-task Generalization in NLP](#2021-04-20-14)
+  - [15. LayoutXLM: Multimodal Pre-training for Multilingual Visually-rich Document Understanding](#2021-04-20-15)
+  - [16. Language in a (Search) Box: Grounding Language Learning in Real-World Human-Machine Interaction](#2021-04-20-16)
+  - [17. Probing for Bridging Inference in Transformer Language Models](#2021-04-20-17)
+  - [18. LAMPRET: Layout-Aware Multimodal PreTraining for Document Understanding](#2021-04-20-18)
+  - [19. Frequency-based Distortions in Contextualized Word Embeddings](#2021-04-20-19)
+  - [20. Sentence Concatenation Approach to Data Augmentation for Neural Machine Translation](#2021-04-20-20)
+  - [21. Sentence Alignment with Parallel Documents Helps Biomedical Machine Translation](#2021-04-20-21)
+  - [22. Embodying Pre-Trained Word Embeddings Through Robot Actions](#2021-04-20-22)
+  - [23. Dual-View Distilled BERT for Sentence Embedding](#2021-04-20-23)
+  - [24. CLIPScore: A Reference-free Evaluation Metric for Image Captioning](#2021-04-20-24)
+  - [25. "Wikily" Neural Machine Translation Tailored to Cross-Lingual Tasks](#2021-04-20-25)
 - [2021-04-19](#2021-04-19)
   - [1. Improving Gender Translation Accuracy with Filtered Self-Training](#2021-04-19-1)
   - [2. Cross-lingual Entity Alignment with Adversarial Kernel Embedding and Adversarial Knowledge Translation](#2021-04-19-2)
@@ -110,6 +136,475 @@
 - [2021-03-31](#2021-03-31)	
   - [1. Diagnosing Vision-and-Language Navigation: What Really Matters](#2021-03-31-1)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-04-20
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-04-20-1">1. Improving Zero-Shot Cross-Lingual Transfer Learning via Robust Training
+</h2>
+
+Title: [Improving Zero-Shot Cross-Lingual Transfer Learning via Robust Training](https://arxiv.org/abs/2104.08645)
+
+Authors: [Kuan-Hao Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+K), [Wasi Uddin Ahmad](https://arxiv.org/search/cs?searchtype=author&query=Ahmad%2C+W+U), [Nanyun Peng](https://arxiv.org/search/cs?searchtype=author&query=Peng%2C+N), [Kai-Wei Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+K)
+
+> In recent years, pre-trained multilingual language models, such as multilingual BERT and XLM-R, exhibit good performance on zero-shot cross-lingual transfer learning. However, since their multilingual contextual embedding spaces for different languages are not perfectly aligned, the difference between representations of different languages might cause zero-shot cross-lingual transfer failed in some cases. In this work, we draw connections between those failed cases and adversarial examples. We then propose to use robust training methods to train a robust model that can tolerate some noise in input embeddings. We study two widely used robust training methods: adversarial training and randomized smoothing. The experimental results demonstrate that robust training can improve zero-shot cross-lingual transfer for text classification. The performance improvements become significant when the distance between the source language and the target language increases.
+
+| Comments: | Preprint                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.08645](https://arxiv.org/abs/2104.08645) [cs.CL]** |
+|           | (or **[arXiv:2104.08645v1](https://arxiv.org/abs/2104.08645v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-20-2">2. Worst of Both Worlds: Biases Compound in Pre-trained Vision-and-Language Models
+</h2>
+
+Title: [Worst of Both Worlds: Biases Compound in Pre-trained Vision-and-Language Models](https://arxiv.org/abs/2104.08666)
+
+Authors: [Tejas Srinivasan](https://arxiv.org/search/cs?searchtype=author&query=Srinivasan%2C+T), [Yonatan Bisk](https://arxiv.org/search/cs?searchtype=author&query=Bisk%2C+Y)
+
+> Numerous works have analyzed biases in vision and pre-trained language models individually - however, less attention has been paid to how these biases interact in multimodal settings. This work extends text-based bias analysis methods to investigate multimodal language models, and analyzes intra- and inter-modality associations and biases learned by these models. Specifically, we demonstrate that VL-BERT (Su et al., 2020) exhibits gender biases, often preferring to reinforce a stereotype over faithfully describing the visual scene. We demonstrate these findings on a controlled case-study and extend them for a larger set of stereotypically gendered entities.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.08666](https://arxiv.org/abs/2104.08666) [cs.CL]** |
+|           | (or **[arXiv:2104.08666v1](https://arxiv.org/abs/2104.08666v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-20-3">3. Improving Neural Machine Translation with Compact Word Embedding Tables
+</h2>
+
+Title: [Improving Neural Machine Translation with Compact Word Embedding Tables](https://arxiv.org/abs/2104.08677)
+
+Authors: [Krtin Kumar](https://arxiv.org/search/cs?searchtype=author&query=Kumar%2C+K), [Mehdi Rezagholizadeh](https://arxiv.org/search/cs?searchtype=author&query=Rezagholizadeh%2C+M), [Yiu Sing Lau](https://arxiv.org/search/cs?searchtype=author&query=Lau%2C+Y+S), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q)
+
+> Embedding matrices are key components in neural natural language processing (NLP) models that are responsible to provide numerical representations of input tokens.\footnote{In this paper words and subwords are referred to as \textit{tokens} and the term \textit{embedding} only refers to embeddings of inputs.} In this paper, we analyze the impact and utility of such matrices in the context of neural machine translation (NMT). We show that detracting syntactic and semantic information from word embeddings and running NMT systems with random embeddings is not as damaging as it initially sounds. We also show how incorporating only a limited amount of task-specific knowledge from fully-trained embeddings can boost the performance NMT systems. Our findings demonstrate that in exchange for negligible deterioration in performance, any NMT model can be run with partially random embeddings. Working with such structures means a minimal memory requirement as there is no longer need to store large embedding tables, which is a significant gain in industrial and on-device settings. We evaluated our embeddings in translating {English} into {German} and {French} and achieved a 5.3x compression rate. Despite having a considerably smaller architecture, our models in some cases are even able to outperform state-of-the-art baselines.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.08677](https://arxiv.org/abs/2104.08677) [cs.CL]** |
+|           | (or **[arXiv:2104.08677v1](https://arxiv.org/abs/2104.08677v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-20-4">4. mT6: Multilingual Pretrained Text-to-Text Transformer with Translation Pairs
+</h2>
+
+Title: [mT6: Multilingual Pretrained Text-to-Text Transformer with Translation Pairs](https://arxiv.org/abs/2104.08692)
+
+Authors: [Zewen Chi](https://arxiv.org/search/cs?searchtype=author&query=Chi%2C+Z), [Li Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+L), [Shuming Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+S), [Shaohan Huang Xian-Ling Mao](https://arxiv.org/search/cs?searchtype=author&query=Mao%2C+S+H+X), [Heyan Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+H), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F)
+
+> Multilingual T5 (mT5) pretrains a sequence-to-sequence model on massive monolingual texts, which has shown promising results on many cross-lingual tasks. In this paper, we improve multilingual text-to-text transfer Transformer with translation pairs (mT6). Specifically, we explore three cross-lingual text-to-text pre-training tasks, namely, machine translation, translation pair span corruption, and translation span corruption. In addition, we propose a partially non-autoregressive objective for text-to-text pre-training. We evaluate the methods on seven multilingual benchmark datasets, including sentence classification, named entity recognition, question answering, and abstractive summarization. Experimental results show that the proposed mT6 improves cross-lingual transferability over mT5.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.08692](https://arxiv.org/abs/2104.08692) [cs.CL]** |
+|           | (or **[arXiv:2104.08692v1](https://arxiv.org/abs/2104.08692v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-20-5">5. Knowledge Neurons in Pretrained Transformers
+</h2>
+
+Title: [Knowledge Neurons in Pretrained Transformers](https://arxiv.org/abs/2104.08696)
+
+Authors: [Damai Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+D), [Li Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+L), [Yaru Hao](https://arxiv.org/search/cs?searchtype=author&query=Hao%2C+Y), [Zhifang Sui](https://arxiv.org/search/cs?searchtype=author&query=Sui%2C+Z), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F)
+
+> Large-scale pretrained language models are surprisingly good at recalling factual knowledge presented in the training corpus. In this paper, we explore how implicit knowledge is stored in pretrained Transformers by introducing the concept of knowledge neurons. Given a relational fact, we propose a knowledge attribution method to identify the neurons that express the fact. We present that the activation of such knowledge neurons is highly correlated to the expression of their corresponding facts. In addition, even without fine-tuning, we can leverage knowledge neurons to explicitly edit (such as update, and erase) specific factual knowledge for pretrained Transformers.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.08696](https://arxiv.org/abs/2104.08696) [cs.CL]** |
+|           | (or **[arXiv:2104.08696v1](https://arxiv.org/abs/2104.08696v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-20-6">6. Zero-shot Cross-lingual Transfer of Neural Machine Translation with Multilingual Pretrained Encoders
+</h2>
+
+Title: [Zero-shot Cross-lingual Transfer of Neural Machine Translation with Multilingual Pretrained Encoders](https://arxiv.org/abs/2104.08757)
+
+Authors: [Guanhua Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+G), [Shuming Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+S), [Yun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Li Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+L), [Dongdong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+D), [Jia Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C+J), [Wenping Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F)
+
+> Previous works mainly focus on improving cross-lingual transfer for NLU tasks with multilingual pretrained encoder (MPE), or improving the translation performance on NMT task with BERT. However, how to improve the cross-lingual transfer of NMT model with multilingual pretrained encoder is under-explored. In this paper, we focus on a zero-shot cross-lingual transfer task in NMT. In this task, the NMT model is trained with one parallel dataset and an off-the-shelf MPE, then is directly tested on zero-shot language pairs. We propose SixT, a simple yet effective model for this task. The SixT model leverages the MPE with a two-stage training schedule and gets further improvement with a position disentangled encoder and a capacity-enhanced decoder. The extensive experiments prove that SixT significantly improves the translation quality of the unseen languages. With much less computation cost and training data, our model achieves better performance on many-to-English testsets than CRISS and m2m-100, two strong multilingual NMT baselines.
+
+| Comments: | Preprint                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.08757](https://arxiv.org/abs/2104.08757) [cs.CL]** |
+|           | (or **[arXiv:2104.08757v1](https://arxiv.org/abs/2104.08757v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-20-7">7. On the Strengths of Cross-Attention in Pretrained Transformers for Machine Translation
+</h2>
+
+Title: [On the Strengths of Cross-Attention in Pretrained Transformers for Machine Translation](https://arxiv.org/abs/2104.08771)
+
+Authors: [Mozhdeh Gheini](https://arxiv.org/search/cs?searchtype=author&query=Gheini%2C+M), [Xiang Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+X), [Jonathan May](https://arxiv.org/search/cs?searchtype=author&query=May%2C+J)
+
+> We study the power of cross-attention in the Transformer architecture within the context of machine translation. In transfer learning experiments, where we fine-tune a translation model on a dataset with one new language, we find that, apart from the new language's embeddings, only the cross-attention parameters need to be fine-tuned to obtain competitive BLEU performance. We provide insights into why this is the case and further find that limiting fine-tuning in this manner yields cross-lingually aligned type embeddings. The implications of this finding include a mitigation of catastrophic forgetting in the network and the potential for zero-shot translation.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.08771](https://arxiv.org/abs/2104.08771) [cs.CL]** |
+|           | (or **[arXiv:2104.08771v1](https://arxiv.org/abs/2104.08771v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-20-8">8. Chinese Sentences Similarity via Cross-Attention Based Siamese Network
+</h2>
+
+Title: [Chinese Sentences Similarity via Cross-Attention Based Siamese Network](https://arxiv.org/abs/2104.08787)
+
+Authors: [Zhen Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Xiangxie Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+X), [Yicong Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+Y)
+
+> Measuring sentence similarity is a key research area nowadays as it allows machines to better understand human languages. In this paper, we proposed a Cross-Attention Siamese Network (CATsNet) to carry out the task of learning the semantic meanings of Chinese sentences and comparing the similarity between two sentences. This novel model is capable of catching non-local features. Additionally, we also tried to apply the long short-term memory (LSTM) network in the model to improve its performance. The experiments were conducted on the LCQMC dataset and the results showed that our model could achieve a higher accuracy than previous work.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.08787](https://arxiv.org/abs/2104.08787) [cs.CL]** |
+|           | (or **[arXiv:2104.08787v1](https://arxiv.org/abs/2104.08787v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-20-9">9. Lifelong Learning of Few-shot Learners across NLP Tasks
+</h2>
+
+Title: [Lifelong Learning of Few-shot Learners across NLP Tasks](https://arxiv.org/abs/2104.08808)
+
+Authors: [Xisen Jin](https://arxiv.org/search/cs?searchtype=author&query=Jin%2C+X), [Mohammad Rostami](https://arxiv.org/search/cs?searchtype=author&query=Rostami%2C+M), [Xiang Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+X)
+
+> Recent advances in large pre-trained language models have greatly improved the performance on a broad set of NLP tasks. However, adapting an existing model to new tasks often requires (repeated) re-training over enormous labeled data that is prohibitively expensive to obtain. Moreover, models learned on new tasks may gradually "forget" about the knowledge learned from earlier tasks (i.e., catastrophic forgetting). In this paper, we study the challenge of lifelong learning to few-shot learn over a sequence of diverse NLP tasks, through continuously fine-tuning a language model. We investigate the model's ability of few-shot generalization to new tasks while retaining its performance on the previously learned tasks. We explore existing continual learning methods in solving this problem and propose a continual meta-learning approach which learns to generate adapter weights from a few examples while regularizing changes of the weights to mitigate catastrophic forgetting. We demonstrate our approach preserves model performance over training tasks and leads to positive knowledge transfer when the future tasks are learned.
+
+| Comments: | 9 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.08808](https://arxiv.org/abs/2104.08808) [cs.CL]** |
+|           | (or **[arXiv:2104.08808v1](https://arxiv.org/abs/2104.08808v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-20-10">10. Contrastive Out-of-Distribution Detection for Pretrained Transformers
+</h2>
+
+Title: [Contrastive Out-of-Distribution Detection for Pretrained Transformers](https://arxiv.org/abs/2104.08812)
+
+Authors: [Wenxuan Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+W), [Muhao Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+M)
+
+> Pretrained transformers achieve remarkable performance when the test data follows the same distribution as the training data. However, in real-world NLU tasks, the model often faces out-of-distribution (OoD) instances. Such instances can cause the severe semantic shift problem to inference, hence they are supposed to be identified and rejected by the model. In this paper, we study the OoD detection problem for pretrained transformers using only in-distribution data in training. We observe that such instances can be found using the Mahalanobis distance in the penultimate layer. We further propose a contrastive loss that improves the compactness of representations, such that OoD instances can be better differentiated from in-distribution ones. Experiments on the GLUE benchmark demonstrate the effectiveness of the proposed methods.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.08812](https://arxiv.org/abs/2104.08812) [cs.CL]** |
+|           | (or **[arXiv:2104.08812v1](https://arxiv.org/abs/2104.08812v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-20-11">11. Stream-level Latency Evaluation for Simultaneous Machine Translation
+</h2>
+
+Title: [Stream-level Latency Evaluation for Simultaneous Machine Translation](https://arxiv.org/abs/2104.08817)
+
+Authors: [Javier Iranzo-Sánchez](https://arxiv.org/search/cs?searchtype=author&query=Iranzo-Sánchez%2C+J), [Jorge Civera](https://arxiv.org/search/cs?searchtype=author&query=Civera%2C+J), [Alfons Juan](https://arxiv.org/search/cs?searchtype=author&query=Juan%2C+A)
+
+> Simultaneous machine translation has recently gained traction thanks to significant quality improvements and the advent of streaming applications. Simultaneous translation systems need to find a trade-off between translation quality and response time, and with this purpose multiple latency measures have been proposed. However, latency evaluations for simultaneous translation are estimated at the sentence level, not taking into account the sequential nature of a streaming scenario. Indeed, these sentence-level latency measures are not well suited for continuous stream translation resulting in figures that are not coherent with the simultaneous translation policy of the system being assessed. This work proposes a stream-level adaptation of the current latency measures based on a re-segmentation approach applied to the output translation, that is successfully evaluated on streaming conditions for a reference IWSLT task.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.08817](https://arxiv.org/abs/2104.08817) [cs.CL]** |
+|           | (or **[arXiv:2104.08817v1](https://arxiv.org/abs/2104.08817v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-20-12">12. SimCSE: Simple Contrastive Learning of Sentence Embeddings
+</h2>
+
+Title: [SimCSE: Simple Contrastive Learning of Sentence Embeddings](https://arxiv.org/abs/2104.08821)
+
+Authors: [Tianyu Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+T), [Xingcheng Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+X), [Danqi Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+D)
+
+> This paper presents SimCSE, a simple contrastive learning framework that greatly advances the state-of-the-art sentence embeddings. We first describe an unsupervised approach, which takes an input sentence and predicts itself in a contrastive objective, with only standard dropout used as noise. This simple method works surprisingly well, performing on par with previous supervised counterparts. We hypothesize that dropout acts as minimal data augmentation and removing it leads to a representation collapse. Then, we draw inspiration from the recent success of learning sentence embeddings from natural language inference (NLI) datasets and incorporate annotated pairs from NLI datasets into contrastive learning by using "entailment" pairs as positives and "contradiction" pairs as hard negatives. We evaluate SimCSE on standard semantic textual similarity (STS) tasks, and our unsupervised and supervised models using BERT-base achieve an average of 74.5% and 81.6% Spearman's correlation respectively, a 7.9 and 4.6 points improvement compared to previous best results. We also show that contrastive learning theoretically regularizes pre-trained embeddings' anisotropic space to be more uniform, and it better aligns positive pairs when supervised signals are available.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.08821](https://arxiv.org/abs/2104.08821) [cs.CL]** |
+|           | (or **[arXiv:2104.08821v1](https://arxiv.org/abs/2104.08821v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-20-13">13. GPT3Mix: Leveraging Large-scale Language Models for Text Augmentation
+</h2>
+
+Title: [GPT3Mix: Leveraging Large-scale Language Models for Text Augmentation](https://arxiv.org/abs/2104.08826)
+
+Authors: [Kang Min Yoo](https://arxiv.org/search/cs?searchtype=author&query=Yoo%2C+K+M), [Dongju Park](https://arxiv.org/search/cs?searchtype=author&query=Park%2C+D), [Jaewook Kang](https://arxiv.org/search/cs?searchtype=author&query=Kang%2C+J), [Sang-Woo Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+S), [Woomyeong Park](https://arxiv.org/search/cs?searchtype=author&query=Park%2C+W)
+
+> Large-scale language models such as GPT-3 are excellent few-shot learners, allowing them to be controlled via natural text prompts. Recent studies report that prompt-based direct classification eliminates the need for fine-tuning but lacks data and inference scalability. This paper proposes a novel data augmentation technique that leverages large-scale language models to generate realistic text samples from a mixture of real samples. We also propose utilizing soft-labels predicted by the language models, effectively distilling knowledge from the large-scale language models and creating textual perturbations simultaneously. We perform data augmentation experiments on diverse classification tasks and show that our method hugely outperforms existing text augmentation methods. Ablation studies and a qualitative analysis provide more insights into our approach.
+
+| Comments: | 11 pages, 7 tables, 2 figures                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2104.08826](https://arxiv.org/abs/2104.08826) [cs.CL]** |
+|           | (or **[arXiv:2104.08826v1](https://arxiv.org/abs/2104.08826v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-20-14">14. CrossFit: A Few-shot Learning Challenge for Cross-task Generalization in NLP
+</h2>
+
+Title: [CrossFit: A Few-shot Learning Challenge for Cross-task Generalization in NLP](https://arxiv.org/abs/2104.08835)
+
+Authors: [Qinyuan Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+Q), [Bill Yuchen Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+B+Y), [Xiang Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+X)
+
+> Humans can learn a new language task more efficiently than machines, conceivably by leveraging their prior experience and knowledge in learning other tasks. In this paper, we explore whether such cross-task generalization ability can be acquired, and further applied to build better few-shot learners across diverse NLP tasks. We introduce CrossFit, a task setup for studying cross-task few-shot learning ability, which standardizes seen/unseen task splits, data access during different learning stages, and the evaluation protocols. In addition, we present NLP Few-shot Gym, a repository of 160 few-shot NLP tasks, covering diverse task categories and applications, and converted to a unified text-to-text format. Our empirical analysis reveals that the few-shot learning ability on unseen tasks can be improved via an upstream learning stage using a set of seen tasks. Additionally, the advantage lasts into medium-resource scenarios when thousands of training examples are available. We also observe that selection of upstream learning tasks can significantly influence few-shot performance on unseen tasks, asking further analysis on task similarity and transferability.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.08835](https://arxiv.org/abs/2104.08835) [cs.CL]** |
+|           | (or **[arXiv:2104.08835v1](https://arxiv.org/abs/2104.08835v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-20-15">15. LayoutXLM: Multimodal Pre-training for Multilingual Visually-rich Document Understanding
+</h2>
+
+Title: [LayoutXLM: Multimodal Pre-training for Multilingual Visually-rich Document Understanding](https://arxiv.org/abs/2104.08836)
+
+Authors: [Yiheng Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+Y), [Tengchao Lv](https://arxiv.org/search/cs?searchtype=author&query=Lv%2C+T), [Lei Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+L), [Guoxin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+G), [Yijuan Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+Y), [Dinei Florencio](https://arxiv.org/search/cs?searchtype=author&query=Florencio%2C+D), [Cha Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+C), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F)
+
+> Multimodal pre-training with text, layout, and image has achieved SOTA performance for visually-rich document understanding tasks recently, which demonstrates the great potential for joint learning across different modalities. In this paper, we present LayoutXLM, a multimodal pre-trained model for multilingual document understanding, which aims to bridge the language barriers for visually-rich document understanding. To accurately evaluate LayoutXLM, we also introduce a multilingual form understanding benchmark dataset named XFUN, which includes form understanding samples in 7 languages (Chinese, Japanese, Spanish, French, Italian, German, Portuguese), and key-value pairs are manually labeled for each language. Experiment results show that the LayoutXLM model has significantly outperformed the existing SOTA cross-lingual pre-trained models on the XFUN dataset. The pre-trained LayoutXLM model and the XFUN dataset will be publicly available at [this https URL](https://aka.ms/layoutxlm).
+
+| Comments: | Work in progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.08836](https://arxiv.org/abs/2104.08836) [cs.CL]** |
+|           | (or **[arXiv:2104.08836v1](https://arxiv.org/abs/2104.08836v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-20-16">16. Language in a (Search) Box: Grounding Language Learning in Real-World Human-Machine Interaction
+</h2>
+
+Title: [Language in a (Search) Box: Grounding Language Learning in Real-World Human-Machine Interaction](https://arxiv.org/abs/2104.08874)
+
+Authors: [Federico Bianchi](https://arxiv.org/search/cs?searchtype=author&query=Bianchi%2C+F), [Ciro Greco](https://arxiv.org/search/cs?searchtype=author&query=Greco%2C+C), [Jacopo Tagliabue](https://arxiv.org/search/cs?searchtype=author&query=Tagliabue%2C+J)
+
+> We investigate grounded language learning through real-world data, by modelling a teacher-learner dynamics through the natural interactions occurring between users and search engines; in particular, we explore the emergence of semantic generalization from unsupervised dense representations outside of synthetic environments. A grounding domain, a denotation function and a composition function are learned from user data only. We show how the resulting semantics for noun phrases exhibits compositional properties while being fully learnable without any explicit labelling. We benchmark our grounded semantics on compositionality and zero-shot inference tasks, and we show that it provides better results and better generalizations than SOTA non-grounded models, such as word2vec and BERT.
+
+| Comments: | Published as a conference paper at NAACL2021                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.08874](https://arxiv.org/abs/2104.08874) [cs.CL]** |
+|           | (or **[arXiv:2104.08874v1](https://arxiv.org/abs/2104.08874v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-20-17">17. Probing for Bridging Inference in Transformer Language Models
+</h2>
+
+Title: [Probing for Bridging Inference in Transformer Language Models](https://arxiv.org/abs/2104.09400)
+
+Authors: [Onkar Pandit](https://arxiv.org/search/cs?searchtype=author&query=Pandit%2C+O), [Yufang Hou](https://arxiv.org/search/cs?searchtype=author&query=Hou%2C+Y)
+
+> We probe pre-trained transformer language models for bridging inference. We first investigate individual attention heads in BERT and observe that attention heads at higher layers prominently focus on bridging relations in-comparison with the lower and middle layers, also, few specific attention heads concentrate consistently on bridging. More importantly, we consider language models as a whole in our second approach where bridging anaphora resolution is formulated as a masked token prediction task (Of-Cloze test). Our formulation produces optimistic results without any fine-tuning, which indicates that pre-trained language models substantially capture bridging inference. Our further investigation shows that the distance between anaphor-antecedent and the context provided to language models play an important role in the inference.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.09400](https://arxiv.org/abs/2104.09400) [cs.CL]** |
+|           | (or **[arXiv:2104.09400v1](https://arxiv.org/abs/2104.09400v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-20-18">18. LAMPRET: Layout-Aware Multimodal PreTraining for Document Understanding
+</h2>
+
+Title: [LAMPRET: Layout-Aware Multimodal PreTraining for Document Understanding](https://arxiv.org/abs/2104.08405)
+
+Authors: [Te-Lin Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+T), [Cheng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+C), [Mingyang Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M), [Tao Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+T), [Spurthi Amba Hombaiah](https://arxiv.org/search/cs?searchtype=author&query=Hombaiah%2C+S+A), [Michael Bendersky](https://arxiv.org/search/cs?searchtype=author&query=Bendersky%2C+M)
+
+> Document layout comprises both structural and visual (eg. font-sizes) information that is vital but often ignored by machine learning models. The few existing models which do use layout information only consider textual contents, and overlook the existence of contents in other modalities such as images. Additionally, spatial interactions of presented contents in a layout were never really fully exploited. To bridge this gap, we parse a document into content blocks (eg. text, table, image) and propose a novel layout-aware multimodal hierarchical framework, LAMPreT, to model the blocks and the whole document. Our LAMPreT encodes each block with a multimodal transformer in the lower-level and aggregates the block-level representations and connections utilizing a specifically designed transformer at the higher-level. We design hierarchical pretraining objectives where the lower-level model is trained similarly to multimodal grounding models, and the higher-level model is trained with our proposed novel layout-aware objectives. We evaluate the proposed model on two layout-aware tasks -- text block filling and image suggestion and show the effectiveness of our proposed hierarchical architecture as well as pretraining techniques.
+
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV); Information Retrieval (cs.IR) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.08405](https://arxiv.org/abs/2104.08405) [cs.CL]** |
+|           | (or **[arXiv:2104.08405v1](https://arxiv.org/abs/2104.08405v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-20-19">19. Frequency-based Distortions in Contextualized Word Embeddings
+</h2>
+
+Title: [Frequency-based Distortions in Contextualized Word Embeddings](https://arxiv.org/abs/2104.08465)
+
+Authors: [Kaitlyn Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+K), [Kawin Ethayarajh](https://arxiv.org/search/cs?searchtype=author&query=Ethayarajh%2C+K), [Dan Jurafsky](https://arxiv.org/search/cs?searchtype=author&query=Jurafsky%2C+D)
+
+> How does word frequency in pre-training data affect the behavior of similarity metrics in contextualized BERT embeddings? Are there systematic ways in which some word relationships are exaggerated or understated? In this work, we explore the geometric characteristics of contextualized word embeddings with two novel tools: (1) an identity probe that predicts the identity of a word using its embedding; (2) the minimal bounding sphere for a word's contextualized representations. Our results reveal that words of high and low frequency differ significantly with respect to their representational geometry. Such differences introduce distortions: when compared to human judgments, point estimates of embedding similarity (e.g., cosine similarity) can over- or under-estimate the semantic similarity of two words, depending on the frequency of those words in the training data. This has downstream societal implications: BERT-Base has more trouble differentiating between South American and African countries than North American and European ones. We find that these distortions persist when using BERT-Multilingual, suggesting that they cannot be easily fixed with additional data, which in turn introduces new distortions.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.08465](https://arxiv.org/abs/2104.08465) [cs.CL]** |
+|           | (or **[arXiv:2104.08465v1](https://arxiv.org/abs/2104.08465v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-20-20">20. Sentence Concatenation Approach to Data Augmentation for Neural Machine Translation
+</h2>
+
+Title: [Sentence Concatenation Approach to Data Augmentation for Neural Machine Translation](https://arxiv.org/abs/2104.08478)
+
+Authors: [Seiichiro Kondo](https://arxiv.org/search/cs?searchtype=author&query=Kondo%2C+S), [Kengo Hotate](https://arxiv.org/search/cs?searchtype=author&query=Hotate%2C+K), [Masahiro Kaneko](https://arxiv.org/search/cs?searchtype=author&query=Kaneko%2C+M), [Mamoru Komachi](https://arxiv.org/search/cs?searchtype=author&query=Komachi%2C+M)
+
+> Neural machine translation (NMT) has recently gained widespread attention because of its high translation accuracy. However, it shows poor performance in the translation of long sentences, which is a major issue in low-resource languages. It is assumed that this issue is caused by insufficient number of long sentences in the training data. Therefore, this study proposes a simple data augmentation method to handle long sentences. In this method, we use only the given parallel corpora as the training data and generate long sentences by concatenating two sentences. Based on the experimental results, we confirm improvements in long sentence translation by the proposed data augmentation method, despite its simplicity. Moreover, the translation quality is further improved by the proposed method, when combined with back-translation.
+
+| Comments: | 7 pages; camera-ready for NAACL Student Research Workshop 2021 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.08478](https://arxiv.org/abs/2104.08478) [cs.CL]** |
+|           | (or **[arXiv:2104.08478v1](https://arxiv.org/abs/2104.08478v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-20-21">21. Sentence Alignment with Parallel Documents Helps Biomedical Machine Translation
+</h2>
+
+Title: [Sentence Alignment with Parallel Documents Helps Biomedical Machine Translation](https://arxiv.org/abs/2104.08588)
+
+Authors: [Shengxuan Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+S), [Huaiyuan Ying](https://arxiv.org/search/cs?searchtype=author&query=Ying%2C+H), [Sheng Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+S)
+
+> The existing neural machine translation system has achieved near human-level performance in general domain in some languages, but the lack of parallel corpora poses a key problem in specific domains. In biomedical domain, the parallel corpus is less accessible. This work presents a new unsupervised sentence alignment method and explores features in training biomedical neural machine translation (NMT) systems. We use a simple but effective way to build bilingual word embeddings (BWEs) to evaluate bilingual word similarity and transferred the sentence alignment problem into an extended earth mover's distance (EMD) problem. The proposed method achieved high accuracy in both 1-to-1 and many-to-many cases. Pre-training in general domain, the larger in-domain dataset and n-to-m sentence pairs benefit the NMT model. Fine-tuning in domain corpus helps the translation model learns more terminology and fits the in-domain style of text.
+
+| Comments: | 11 pages, 4 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.08588](https://arxiv.org/abs/2104.08588) [cs.CL]** |
+|           | (or **[arXiv:2104.08588v1](https://arxiv.org/abs/2104.08588v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-20-22">22. Embodying Pre-Trained Word Embeddings Through Robot Actions
+</h2>
+
+Title: [Embodying Pre-Trained Word Embeddings Through Robot Actions](https://arxiv.org/abs/2104.08521)
+
+Authors: [Minori Toyoda](https://arxiv.org/search/cs?searchtype=author&query=Toyoda%2C+M), [Kanata Suzuki](https://arxiv.org/search/cs?searchtype=author&query=Suzuki%2C+K), [Hiroki Mori](https://arxiv.org/search/cs?searchtype=author&query=Mori%2C+H), [Yoshihiko Hayashi](https://arxiv.org/search/cs?searchtype=author&query=Hayashi%2C+Y), [Tetsuya Ogata](https://arxiv.org/search/cs?searchtype=author&query=Ogata%2C+T)
+
+> We propose a promising neural network model with which to acquire a grounded representation of robot actions and the linguistic descriptions thereof. Properly responding to various linguistic expressions, including polysemous words, is an important ability for robots that interact with people via linguistic dialogue. Previous studies have shown that robots can use words that are not included in the action-description paired datasets by using pre-trained word embeddings. However, the word embeddings trained under the distributional hypothesis are not grounded, as they are derived purely from a text corpus. In this letter, we transform the pre-trained word embeddings to embodied ones by using the robot's sensory-motor experiences. We extend a bidirectional translation model for actions and descriptions by incorporating non-linear layers that retrofit the word embeddings. By training the retrofit layer and the bidirectional translation model alternately, our proposed model is able to transform the pre-trained word embeddings to adapt to a paired action-description dataset. Our results demonstrate that the embeddings of synonyms form a semantic cluster by reflecting the experiences (actions and environments) of a robot. These embeddings allow the robot to properly generate actions from unseen words that are not paired with actions in a dataset.
+
+| Comments:          | To appear in IEEE Robotics and Automation Letters (RA-L) and IEEE International Conference on Robotics and Automation (ICRA 2021) |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Robotics (cs.RO)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Journal reference: | IEEE Robotics and Automation Letters, vol. 6, no. 2, pp. 4225-4232, 2021 |
+| DOI:               | [10.1109/LRA.2021.3067862](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.1109%2FLRA.2021.3067862&v=ee623705) |
+| Cite as:           | **[arXiv:2104.08521](https://arxiv.org/abs/2104.08521) [cs.RO]** |
+|                    | (or **[arXiv:2104.08521v1](https://arxiv.org/abs/2104.08521v1) [cs.RO]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-20-23">23. Dual-View Distilled BERT for Sentence Embedding
+</h2>
+
+Title: [Dual-View Distilled BERT for Sentence Embedding](https://arxiv.org/abs/2104.08675)
+
+Authors: [Xingyi Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+X)
+
+> Recently, BERT realized significant progress for sentence matching via word-level cross sentence attention. However, the performance significantly drops when using siamese BERT-networks to derive two sentence embeddings, which fall short in capturing the global semantic since the word-level attention between two sentences is absent. In this paper, we propose a Dual-view distilled BERT~(DvBERT) for sentence matching with sentence embeddings. Our method deals with a sentence pair from two distinct views, i.e., Siamese View and Interaction View. Siamese View is the backbone where we generate sentence embeddings. Interaction View integrates the cross sentence interaction as multiple teachers to boost the representation ability of sentence embeddings. Experiments on six STS tasks show that our method outperforms the state-of-the-art sentence embedding methods significantly.
+
+| Comments: | Accepted at SIGIR 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Artificial Intelligence (cs.AI)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2104.08675](https://arxiv.org/abs/2104.08675) [cs.AI]** |
+|           | (or **[arXiv:2104.08675v1](https://arxiv.org/abs/2104.08675v1) [cs.AI]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-20-24">24. CLIPScore: A Reference-free Evaluation Metric for Image Captioning
+</h2>
+
+Title: [CLIPScore: A Reference-free Evaluation Metric for Image Captioning](https://arxiv.org/abs/2104.08718)
+
+Authors: [Jack Hessel](https://arxiv.org/search/cs?searchtype=author&query=Hessel%2C+J), [Ari Holtzman](https://arxiv.org/search/cs?searchtype=author&query=Holtzman%2C+A), [Maxwell Forbes](https://arxiv.org/search/cs?searchtype=author&query=Forbes%2C+M), [Ronan Le Bras](https://arxiv.org/search/cs?searchtype=author&query=Bras%2C+R+L), [Yejin Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi%2C+Y)
+
+> Image captioning has conventionally relied on reference-based automatic evaluations, where machine captions are compared against captions written by humans. This is in stark contrast to the reference-free manner in which humans assess caption quality.
+> In this paper, we report the surprising empirical finding that CLIP (Radford et al., 2021), a cross-modal model pretrained on 400M image+caption pairs from the web, can be used for robust automatic evaluation of image captioning without the need for references. Experiments spanning several corpora demonstrate that our new reference-free metric, CLIPScore, achieves the highest correlation with human judgements, outperforming existing reference-based metrics like CIDEr and SPICE. Information gain experiments demonstrate that CLIPScore, with its tight focus on image-text compatibility, is complementary to existing reference-based metrics that emphasize text-text similarities. Thus, we also present a reference-augmented version, RefCLIPScore, which achieves even higher correlation. Beyond literal description tasks, several case studies reveal domains where CLIPScore performs well (clip-art images, alt-text rating), but also where it is relatively weaker vs reference-based metrics, e.g., news captions that require richer contextual knowledge.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.08718](https://arxiv.org/abs/2104.08718) [cs.CV]** |
+|           | (or **[arXiv:2104.08718v1](https://arxiv.org/abs/2104.08718v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-20-25">25. "Wikily" Neural Machine Translation Tailored to Cross-Lingual Tasks
+</h2>
+
+Title: ["Wikily" Neural Machine Translation Tailored to Cross-Lingual Tasks](https://arxiv.org/abs/2104.08384)
+
+Authors: [Mohammad Sadegh Rasooli](https://arxiv.org/search/cs?searchtype=author&query=Rasooli%2C+M+S), [Chris Callison-Burch](https://arxiv.org/search/cs?searchtype=author&query=Callison-Burch%2C+C), [Derry Tanti Wijaya](https://arxiv.org/search/cs?searchtype=author&query=Wijaya%2C+D+T)
+
+> We present a simple but effective approach for leveraging Wikipedia for neural machine translation as well as cross-lingual tasks of image captioning and dependency parsing without using any direct supervision from external parallel data or supervised models in the target language. We show that first sentences and titles of linked Wikipedia pages, as well as cross-lingual image captions, are strong signals for a seed parallel data to extract bilingual dictionaries and cross-lingual word embeddings for mining parallel text from Wikipedia. Our final model achieves high BLEU scores that are close to or sometimes higher than strong supervised baselines in low-resource languages; e.g. supervised BLEU of 4.0 versus 12.1 from our model in English-to-Kazakh. Moreover, we tailor our wikily translation models to unsupervised image captioning and cross-lingual dependency parser transfer. In image captioning, we train a multi-tasking machine translation and image captioning pipeline for Arabic and English from which the Arabic training data is a wikily translation of the English captioning data. Our captioning results in Arabic are slightly better than that of its supervised model. In dependency parsing, we translate a large amount of monolingual text, and use it as an artificial training data in an annotation projection framework. We show that our model outperforms recent work on cross-lingual transfer of dependency parsers.
+
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.08384](https://arxiv.org/abs/2104.08384) [cs.CL]** |
+|           | (or **[arXiv:2104.08384v1](https://arxiv.org/abs/2104.08384v1) [cs.CL]** for this version) |
+
+
 
 
 
