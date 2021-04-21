@@ -2,6 +2,13 @@
 
 # Index
 
+- [2021-04-21](#2021-04-21)
+  - [1. Can Latent Alignments Improve Autoregressive Machine Translation?](#2021-04-21-1)
+  - [2. Efficient pre-training objectives for Transformers](#2021-04-21-2)
+  - [3. Problems and Countermeasures in Natural Language Processing Evaluation](#2021-04-21-3)
+  - [4. Addressing the Vulnerability of NMT in Input Perturbations](#2021-04-21-4)
+  - [5. Grammatical Error Generation Based on Translated Fragments](#2021-04-21-5)
+  - [6. Towards Solving Multimodal Comprehension](#2021-04-21-6)
 - [2021-04-20](#2021-04-20)
   - [1. Improving Zero-Shot Cross-Lingual Transfer Learning via Robust Training](#2021-04-20-1)
   - [2. Worst of Both Worlds: Biases Compound in Pre-trained Vision-and-Language Models](#2021-04-20-2)
@@ -136,6 +143,125 @@
 - [2021-03-31](#2021-03-31)	
   - [1. Diagnosing Vision-and-Language Navigation: What Really Matters](#2021-03-31-1)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-04-21
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-04-21-1">1. Can Latent Alignments Improve Autoregressive Machine Translation?
+</h2>
+
+Title: [Can Latent Alignments Improve Autoregressive Machine Translation?](https://arxiv.org/abs/2104.09554)
+
+Authors: [Adi Haviv](https://arxiv.org/search/cs?searchtype=author&query=Haviv%2C+A), [Lior Vassertail](https://arxiv.org/search/cs?searchtype=author&query=Vassertail%2C+L), [Omer Levy](https://arxiv.org/search/cs?searchtype=author&query=Levy%2C+O)
+
+> Latent alignment objectives such as CTC and AXE significantly improve non-autoregressive machine translation models. Can they improve autoregressive models as well? We explore the possibility of training autoregressive machine translation models with latent alignment objectives, and observe that, in practice, this approach results in degenerate models. We provide a theoretical explanation for these empirical results, and prove that latent alignment objectives are incompatible with teacher forcing.
+
+| Comments: | Accepted to NAACL 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2104.09554](https://arxiv.org/abs/2104.09554) [cs.CL]** |
+|           | (or **[arXiv:2104.09554v1](https://arxiv.org/abs/2104.09554v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-21-2">2. Efficient pre-training objectives for Transformers
+</h2>
+
+Title: [Efficient pre-training objectives for Transformers](https://arxiv.org/abs/2104.09694)
+
+Authors: [Luca Di Liello](https://arxiv.org/search/cs?searchtype=author&query=Di+Liello%2C+L), [Matteo Gabburo](https://arxiv.org/search/cs?searchtype=author&query=Gabburo%2C+M), [Alessandro Moschitti](https://arxiv.org/search/cs?searchtype=author&query=Moschitti%2C+A)
+
+> The Transformer architecture deeply changed the natural language processing, outperforming all previous state-of-the-art models. However, well-known Transformer models like BERT, RoBERTa, and GPT-2 require a huge compute budget to create a high quality contextualised representation. In this paper, we study several efficient pre-training objectives for Transformers-based models. By testing these objectives on different tasks, we determine which of the ELECTRA model's new features is the most relevant. We confirm that Transformers pre-training is improved when the input does not contain masked tokens and that the usage of the whole output to compute the loss reduces training time. Moreover, inspired by ELECTRA, we study a model composed of two blocks; a discriminator and a simple generator based on a statistical model with no impact on the computational performances. Besides, we prove that eliminating the MASK token and considering the whole output during the loss computation are essential choices to improve performance. Furthermore, we show that it is possible to efficiently train BERT-like models using a discriminative approach as in ELECTRA but without a complex generator, which is expensive. Finally, we show that ELECTRA benefits heavily from a state-of-the-art hyper-parameters search.
+
+| Subjects: | **Computation and Language (cs.CL)**; Information Retrieval (cs.IR); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.09694](https://arxiv.org/abs/2104.09694) [cs.CL]** |
+|           | (or **[arXiv:2104.09694v1](https://arxiv.org/abs/2104.09694v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-21-3">3. Problems and Countermeasures in Natural Language Processing Evaluation
+</h2>
+
+Title: [Problems and Countermeasures in Natural Language Processing Evaluation](https://arxiv.org/abs/2104.09712)
+
+Authors: [Qingxiu Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+Q), [Zhifang Sui](https://arxiv.org/search/cs?searchtype=author&query=Sui%2C+Z), [Weidong Zhan](https://arxiv.org/search/cs?searchtype=author&query=Zhan%2C+W), [Baobao Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+B)
+
+> Evaluation in natural language processing guides and promotes research on models and methods. In recent years, new evalua-tion data sets and evaluation tasks have been continuously proposed. At the same time, a series of problems exposed by ex-isting evaluation have also restricted the progress of natural language processing technology. Starting from the concept, com-position, development and meaning of natural language evaluation, this article classifies and summarizes the tasks and char-acteristics of mainstream natural language evaluation, and then summarizes the problems and causes of natural language pro-cessing evaluation. Finally, this article refers to the human language ability evaluation standard, puts forward the concept of human-like machine language ability evaluation, and proposes a series of basic principles and implementation ideas for hu-man-like machine language ability evaluation from the three aspects of reliability, difficulty and validity.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.09712](https://arxiv.org/abs/2104.09712) [cs.CL]** |
+|           | (or **[arXiv:2104.09712v1](https://arxiv.org/abs/2104.09712v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-21-4">4. Addressing the Vulnerability of NMT in Input Perturbations
+</h2>
+
+Title: [Addressing the Vulnerability of NMT in Input Perturbations](https://arxiv.org/abs/2104.09810)
+
+Authors: [Weiwen Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+W), [Ai Ti Aw](https://arxiv.org/search/cs?searchtype=author&query=Aw%2C+A+T), [Yang Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+Y), [Kui Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+K), [Shafiq Joty](https://arxiv.org/search/cs?searchtype=author&query=Joty%2C+S)
+
+> Neural Machine Translation (NMT) has achieved significant breakthrough in performance but is known to suffer vulnerability to input perturbations. As real input noise is difficult to predict during training, robustness is a big issue for system deployment. In this paper, we improve the robustness of NMT models by reducing the effect of noisy words through a Context-Enhanced Reconstruction (CER) approach. CER trains the model to resist noise in two steps: (1) perturbation step that breaks the naturalness of input sequence with made-up words; (2) reconstruction step that defends the noise propagation by generating better and more robust contextual representation. Experimental results on Chinese-English (ZH-EN) and French-English (FR-EN) translation tasks demonstrate robustness improvement on both news and social media text. Further fine-tuning experiments on social media text show our approach can converge at a higher position and provide a better adaptation.
+
+| Comments: | Accepted by NAACL 2021 Industry Track                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.09810](https://arxiv.org/abs/2104.09810) [cs.CL]** |
+|           | (or **[arXiv:2104.09810v1](https://arxiv.org/abs/2104.09810v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-21-5">5. Grammatical Error Generation Based on Translated Fragments
+</h2>
+
+Title: [Grammatical Error Generation Based on Translated Fragments](https://arxiv.org/abs/2104.09933)
+
+Authors: [Eetu Sjöblom](https://arxiv.org/search/cs?searchtype=author&query=Sjöblom%2C+E), [Mathias Creutz](https://arxiv.org/search/cs?searchtype=author&query=Creutz%2C+M), [Teemu Vahtola](https://arxiv.org/search/cs?searchtype=author&query=Vahtola%2C+T)
+
+> We perform neural machine translation of sentence fragments in order to create large amounts of training data for English grammatical error correction. Our method aims at simulating mistakes made by second language learners, and produces a wider range of non-native style language in comparison to state-of-the-art synthetic data creation methods. In addition to purely grammatical errors, our approach generates other types of errors, such as lexical errors. We perform grammatical error correction experiments using neural sequence-to-sequence models, and carry out quantitative and qualitative evaluation. A model trained on data created using our proposed method is shown to outperform a baseline model on test data with a high proportion of errors.
+
+| Comments: | Accepted for NoDaLiDa 2021                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.09933](https://arxiv.org/abs/2104.09933) [cs.CL]** |
+|           | (or **[arXiv:2104.09933v1](https://arxiv.org/abs/2104.09933v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-21-6">6. Towards Solving Multimodal Comprehension
+</h2>
+
+Title: [Towards Solving Multimodal Comprehension](https://arxiv.org/abs/2104.10139)
+
+Authors: [Pritish Sahu](https://arxiv.org/search/cs?searchtype=author&query=Sahu%2C+P), [Karan Sikka](https://arxiv.org/search/cs?searchtype=author&query=Sikka%2C+K), [Ajay Divakaran](https://arxiv.org/search/cs?searchtype=author&query=Divakaran%2C+A)
+
+> This paper targets the problem of procedural multimodal machine comprehension (M3C). This task requires an AI to comprehend given steps of multimodal instructions and then answer questions. Compared to vanilla machine comprehension tasks where an AI is required only to understand a textual input, procedural M3C is more challenging as the AI needs to comprehend both the temporal and causal factors along with multimodal inputs. Recently Yagcioglu et al. [35] introduced RecipeQA dataset to evaluate M3C. Our first contribution is the introduction of two new M3C datasets- WoodworkQA and DecorationQA with 16K and 10K instructional procedures, respectively. We then evaluate M3C using a textual cloze style question-answering task and highlight an inherent bias in the question answer generation method from [35] that enables a naive baseline to cheat by learning from only answer choices. This naive baseline performs similar to a popular method used in question answering- Impatient Reader [6] that uses attention over both the context and the query. We hypothesized that this naturally occurring bias present in the dataset affects even the best performing model. We verify our proposed hypothesis and propose an algorithm capable of modifying the given dataset to remove the bias elements. Finally, we report our performance on the debiased dataset with several strong baselines. We observe that the performance of all methods falls by a margin of 8% - 16% after correcting for the bias. We hope these datasets and the analysis will provide valuable benchmarks and encourage further research in this area.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.10139](https://arxiv.org/abs/2104.10139) [cs.CL]** |
+|           | (or **[arXiv:2104.10139v1](https://arxiv.org/abs/2104.10139v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
