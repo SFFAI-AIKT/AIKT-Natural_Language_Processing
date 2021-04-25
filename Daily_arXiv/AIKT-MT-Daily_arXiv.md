@@ -2,6 +2,18 @@
 
 # Index
 
+- [2021-04-23](#2021-04-23)
+  - [1. Disfluency Detection with Unlabeled Data and Small BERT Models](#2021-04-23-1)
+  - [2. Provable Limitations of Acquiring Meaning from Ungrounded Form: What will Future Language Models Understand?](#2021-04-23-2)
+- [2021-04-22](#2021-04-22)
+  - [1. Revisiting Document Representations for Large-Scale Zero-Shot Learning](#2021-04-22-1)
+  - [2. Discriminative Self-training for Punctuation Prediction](#2021-04-22-2)
+  - [3. Pre-training for Spoken Language Understanding with Joint Textual and Phonetic Representation Learning](#2021-04-22-3)
+  - [4. End-to-end Speech Translation via Cross-modal Progressive Training](#2021-04-22-4)
+  - [5. On User Interfaces for Large-Scale Document-Level Human Evaluation of Machine Translation Outputs](#2021-04-22-5)
+  - [6. Should we Stop Training More Monolingual Models, and Simply Use Machine Translation Instead?](#2021-04-22-6)
+  - [7. Improving BERT Pretraining with Syntactic Supervision](#2021-04-22-7)
+  - [8. Using GPT-2 to Create Synthetic Data to Improve the Prediction Performance of NLP Machine Learning Classification Models](#2021-04-22-8)
 - [2021-04-21](#2021-04-21)
   - [1. Can Latent Alignments Improve Autoregressive Machine Translation?](#2021-04-21-1)
   - [2. Efficient pre-training objectives for Transformers](#2021-04-21-2)
@@ -143,6 +155,209 @@
 - [2021-03-31](#2021-03-31)	
   - [1. Diagnosing Vision-and-Language Navigation: What Really Matters](#2021-03-31-1)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-04-23
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-04-23-1">1. Disfluency Detection with Unlabeled Data and Small BERT Models
+</h2>
+
+Title: [Disfluency Detection with Unlabeled Data and Small BERT Models](https://arxiv.org/abs/2104.10769)
+
+Authors: [Johann C. Rocholl](https://arxiv.org/search/cs?searchtype=author&query=Rocholl%2C+J+C), [Vicky Zayats](https://arxiv.org/search/cs?searchtype=author&query=Zayats%2C+V), [Daniel D. Walker](https://arxiv.org/search/cs?searchtype=author&query=Walker%2C+D+D), [Noah B. Murad](https://arxiv.org/search/cs?searchtype=author&query=Murad%2C+N+B), [Aaron Schneider](https://arxiv.org/search/cs?searchtype=author&query=Schneider%2C+A), [Daniel J. Liebling](https://arxiv.org/search/cs?searchtype=author&query=Liebling%2C+D+J)
+
+> Disfluency detection models now approach high accuracy on English text. However, little exploration has been done in improving the size and inference time of the model. At the same time, automatic speech recognition (ASR) models are moving from server-side inference to local, on-device inference. Supporting models in the transcription pipeline (like disfluency detection) must follow suit. In this work we concentrate on the disfluency detection task, focusing on small, fast, on-device models based on the BERT architecture. We demonstrate it is possible to train disfluency detection models as small as 1.3 MiB, while retaining high performance. We build on previous work that showed the benefit of data augmentation approaches such as self-training. Then, we evaluate the effect of domain mismatch between conversational and written text on model performance. We find that domain adaptation and data augmentation strategies have a more pronounced effect on these smaller models, as compared to conventional BERT models.
+
+| Comments: | Submitted to INTERSPEECH 2021                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.10769](https://arxiv.org/abs/2104.10769) [cs.CL]** |
+|           | (or **[arXiv:2104.10769v1](https://arxiv.org/abs/2104.10769v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-23-2">2. Provable Limitations of Acquiring Meaning from Ungrounded Form: What will Future Language Models Understand?
+</h2>
+
+Title: [Provable Limitations of Acquiring Meaning from Ungrounded Form: What will Future Language Models Understand?](https://arxiv.org/abs/2104.10809)
+
+Authors: [William Merrill](https://arxiv.org/search/cs?searchtype=author&query=Merrill%2C+W), [Yoav Goldberg](https://arxiv.org/search/cs?searchtype=author&query=Goldberg%2C+Y), [Roy Schwartz](https://arxiv.org/search/cs?searchtype=author&query=Schwartz%2C+R), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith%2C+N+A)
+
+> Language models trained on billions of tokens have recently led to unprecedented results on many NLP tasks. This success raises the question of whether, in principle, a system can ever "understand" raw text without access to some form of grounding. We formally investigate the abilities of ungrounded systems to acquire meaning. Our analysis focuses on the role of "assertions": contexts within raw text that provide indirect clues about underlying semantics. We study whether assertions enable a system to emulate representations preserving semantic relations like equivalence. We find that assertions enable semantic emulation if all expressions in the language are referentially transparent. However, if the language uses non-transparent patterns like variable binding, we show that emulation can become an uncomputable problem. Finally, we discuss differences between our formal model and natural language, exploring how our results generalize to a modal setting and other semantic relations. Together, our results suggest that assertions in code or language do not provide sufficient signal to fully emulate semantic representations. We formalize ways in which ungrounded language models appear to be fundamentally limited in their ability to "understand".
+
+| Comments: | Accepted at TACL; pre-MIT Press publication version          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.10809](https://arxiv.org/abs/2104.10809) [cs.CL]** |
+|           | (or **[arXiv:2104.10809v1](https://arxiv.org/abs/2104.10809v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+# 2021-04-22
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-04-22-1">1. Revisiting Document Representations for Large-Scale Zero-Shot Learning
+</h2>
+
+Title: [Revisiting Document Representations for Large-Scale Zero-Shot Learning](https://arxiv.org/abs/2104.10355)
+
+Authors: [Jihyung Kil](https://arxiv.org/search/cs?searchtype=author&query=Kil%2C+J), [Wei-Lun Chao](https://arxiv.org/search/cs?searchtype=author&query=Chao%2C+W)
+
+> Zero-shot learning aims to recognize unseen objects using their semantic representations. Most existing works use visual attributes labeled by humans, not suitable for large-scale applications. In this paper, we revisit the use of documents as semantic representations. We argue that documents like Wikipedia pages contain rich visual information, which however can easily be buried by the vast amount of non-visual sentences. To address this issue, we propose a semi-automatic mechanism for visual sentence extraction that leverages the document section headers and the clustering structure of visual sentences. The extracted visual sentences, after a novel weighting scheme to distinguish similar classes, essentially form semantic representations like visual attributes but need much less human effort. On the ImageNet dataset with over 10,000 unseen classes, our representations lead to a 64% relative improvement against the commonly used ones.
+
+| Comments: | Accepted to NAACL 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2104.10355](https://arxiv.org/abs/2104.10355) [cs.CV]** |
+|           | (or **[arXiv:2104.10355v1](https://arxiv.org/abs/2104.10355v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-22-2">2. Discriminative Self-training for Punctuation Prediction
+</h2>
+
+Title: [Discriminative Self-training for Punctuation Prediction](https://arxiv.org/abs/2104.10339)
+
+Authors: [Qian Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Q), [Wen Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Mengzhe Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+M), [Qinglin Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Q)
+
+> Punctuation prediction for automatic speech recognition (ASR) output transcripts plays a crucial role for improving the readability of the ASR transcripts and for improving the performance of downstream natural language processing applications. However, achieving good performance on punctuation prediction often requires large amounts of labeled speech transcripts, which is expensive and laborious. In this paper, we propose a Discriminative Self-Training approach with weighted loss and discriminative label smoothing to exploit unlabeled speech transcripts. Experimental results on the English IWSLT2011 benchmark test set and an internal Chinese spoken language dataset demonstrate that the proposed approach achieves significant improvement on punctuation prediction accuracy over strong baselines including BERT, RoBERTa, and ELECTRA models. The proposed Discriminative Self-Training approach outperforms the vanilla self-training approach. We establish a new state-of-the-art (SOTA) on the IWSLT2011 test set, outperforming the current SOTA model by 1.3% absolute gain on F1.
+
+| Comments: | Submitted to INTERSPEECH 2021                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.10339](https://arxiv.org/abs/2104.10339) [cs.CL]** |
+|           | (or **[arXiv:2104.10339v1](https://arxiv.org/abs/2104.10339v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-22-3">3. Pre-training for Spoken Language Understanding with Joint Textual and Phonetic Representation Learning
+</h2>
+
+Title: [Pre-training for Spoken Language Understanding with Joint Textual and Phonetic Representation Learning](https://arxiv.org/abs/2104.10357)
+
+Authors: [Qian Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Q), [Wen Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Qinglin Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Q)
+
+> In the traditional cascading architecture for spoken language understanding (SLU), it has been observed that automatic speech recognition errors could be detrimental to the performance of natural language understanding. End-to-end (E2E) SLU models have been proposed to directly map speech input to desired semantic frame with a single model, hence mitigating ASR error propagation. Recently, pre-training technologies have been explored for these E2E models. In this paper, we propose a novel joint textual-phonetic pre-training approach for learning spoken language representations, aiming at exploring the full potentials of phonetic information to improve SLU robustness to ASR errors. We explore phoneme labels as high-level speech features, and design and compare pre-training tasks based on conditional masked language model objectives and inter-sentence relation objectives. We also investigate the efficacy of combining textual and phonetic information during fine-tuning. Experimental results on spoken language understanding benchmarks, Fluent Speech Commands and SNIPS, show that the proposed approach significantly outperforms strong baseline models and improves robustness of spoken language understanding to ASR errors.
+
+| Comments: | Submitted to INTERSPEECH 2021                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.10357](https://arxiv.org/abs/2104.10357) [cs.CL]** |
+|           | (or **[arXiv:2104.10357v1](https://arxiv.org/abs/2104.10357v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-22-4">4. End-to-end Speech Translation via Cross-modal Progressive Training
+</h2>
+
+Title: [End-to-end Speech Translation via Cross-modal Progressive Training](https://arxiv.org/abs/2104.10380)
+
+Authors: [Rong Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+R), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> End-to-end speech translation models have become a new trend in the research due to their potential of reducing error propagation. However, these models still suffer from the challenge of data scarcity. How to effectively make use of unlabeled or other parallel corpora from machine translation is promising but still an open problem. In this paper, we propose Cross Speech-Text Network (XSTNet), an end-to-end model for speech-to-text translation. XSTNet takes both speech and text as input and outputs both transcription and translation text. The model benefits from its three key design aspects: a self supervising pre-trained sub-network as the audio encoder, a multi-task training objective to exploit additional parallel bilingual text, and a progressive training procedure. We evaluate the performance of XSTNet and baselines on the MuST-C En-De/Fr/Ru datasets. XSTNet achieves state-of-the-art results on all three language directions with an average BLEU of 27.8, outperforming the previous best method by 3.7 BLEU. The code and the models will be released to the public.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.10380](https://arxiv.org/abs/2104.10380) [cs.CL]** |
+|           | (or **[arXiv:2104.10380v1](https://arxiv.org/abs/2104.10380v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-22-5">5. On User Interfaces for Large-Scale Document-Level Human Evaluation of Machine Translation Outputs
+</h2>
+
+Title: [On User Interfaces for Large-Scale Document-Level Human Evaluation of Machine Translation Outputs](https://arxiv.org/abs/2104.10408)
+
+Authors: [Roman Grundkiewicz](https://arxiv.org/search/cs?searchtype=author&query=Grundkiewicz%2C+R), [Marcin Junczys-Dowmunt](https://arxiv.org/search/cs?searchtype=author&query=Junczys-Dowmunt%2C+M), [Christian Federmann](https://arxiv.org/search/cs?searchtype=author&query=Federmann%2C+C), [Tom Kocmi](https://arxiv.org/search/cs?searchtype=author&query=Kocmi%2C+T)
+
+> Recent studies emphasize the need of document context in human evaluation of machine translations, but little research has been done on the impact of user interfaces on annotator productivity and the reliability of assessments. In this work, we compare human assessment data from the last two WMT evaluation campaigns collected via two different methods for document-level evaluation. Our analysis shows that a document-centric approach to evaluation where the annotator is presented with the entire document context on a screen leads to higher quality segment and document level assessments. It improves the correlation between segment and document scores and increases inter-annotator agreement for document scores but is considerably more time consuming for annotators.
+
+| Comments: | Presented at HumEval, EACL 2021                              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.10408](https://arxiv.org/abs/2104.10408) [cs.CL]** |
+|           | (or **[arXiv:2104.10408v1](https://arxiv.org/abs/2104.10408v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-22-6">6. Should we Stop Training More Monolingual Models, and Simply Use Machine Translation Instead?
+</h2>
+
+Title: [Should we Stop Training More Monolingual Models, and Simply Use Machine Translation Instead?](https://arxiv.org/abs/2104.10441)
+
+Authors: [Tim Isbister](https://arxiv.org/search/cs?searchtype=author&query=Isbister%2C+T), [Fredrik Carlsson](https://arxiv.org/search/cs?searchtype=author&query=Carlsson%2C+F), [Magnus Sahlgren](https://arxiv.org/search/cs?searchtype=author&query=Sahlgren%2C+M)
+
+> Most work in NLP makes the assumption that it is desirable to develop solutions in the native language in question. There is consequently a strong trend towards building native language models even for low-resource languages. This paper questions this development, and explores the idea of simply translating the data into English, thereby enabling the use of pretrained, and large-scale, English language models. We demonstrate empirically that a large English language model coupled with modern machine translation outperforms native language models in most Scandinavian languages. The exception to this is Finnish, which we assume is due to inferior translation quality. Our results suggest that machine translation is a mature technology, which raises a serious counter-argument for training native language models for low-resource languages. This paper therefore strives to make a provocative but important point. As English language models are improving at an unprecedented pace, which in turn improves machine translation, it is from an empirical and environmental stand-point more effective to translate data from low-resource languages into English, than to build language models for such languages.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.10441](https://arxiv.org/abs/2104.10441) [cs.CL]** |
+|           | (or **[arXiv:2104.10441v1](https://arxiv.org/abs/2104.10441v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-22-7">7. Improving BERT Pretraining with Syntactic Supervision
+</h2>
+
+Title: [Improving BERT Pretraining with Syntactic Supervision](https://arxiv.org/abs/2104.10516)
+
+Authors: [Giorgos Tziafas](https://arxiv.org/search/cs?searchtype=author&query=Tziafas%2C+G), [Konstantinos Kogkalidis](https://arxiv.org/search/cs?searchtype=author&query=Kogkalidis%2C+K), [Gijs Wijnholds](https://arxiv.org/search/cs?searchtype=author&query=Wijnholds%2C+G), [Michael Moortgat](https://arxiv.org/search/cs?searchtype=author&query=Moortgat%2C+M)
+
+> Bidirectional masked Transformers have become the core theme in the current NLP landscape. Despite their impressive benchmarks, a recurring theme in recent research has been to question such models' capacity for syntactic generalization. In this work, we seek to address this question by adding a supervised, token-level supertagging objective to standard unsupervised pretraining, enabling the explicit incorporation of syntactic biases into the network's training dynamics. Our approach is straightforward to implement, induces a marginal computational overhead and is general enough to adapt to a variety of settings. We apply our methodology on Lassy Large, an automatically annotated corpus of written Dutch. Our experiments suggest that our syntax-aware model performs on par with established baselines, despite Lassy Large being one order of magnitude smaller than commonly used corpora.
+
+| Comments: | 4 pages, rejected by IWCS due to "not fitting the conference theme" |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2104.10516](https://arxiv.org/abs/2104.10516) [cs.CL]** |
+|           | (or **[arXiv:2104.10516v1](https://arxiv.org/abs/2104.10516v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-22-8">8. Using GPT-2 to Create Synthetic Data to Improve the Prediction Performance of NLP Machine Learning Classification Models
+</h2>
+
+Title: [Using GPT-2 to Create Synthetic Data to Improve the Prediction Performance of NLP Machine Learning Classification Models](https://arxiv.org/abs/2104.10658)
+
+Authors: [Dewayne Whitfield](https://arxiv.org/search/cs?searchtype=author&query=Whitfield%2C+D)
+
+> Classification Models use input data to predict the likelihood that the subsequent input data will fall into predetermined categories. To perform effective classifications, these models require large datasets for training. It is becoming common practice to utilize synthetic data to boost the performance of Machine Learning Models. It is reported that Shell is using synthetic data to build models to detect problems that rarely occur; for example Shell created synthetic data to help models to identify deteriorating oil lines. It is common practice for Machine Learning Practitioners to generate synthetic data by rotating, flipping, and cropping images to increase the volume of image data to train Convolutional Neural Networks. The purpose of this paper is to explore creating and utilizing synthetic NLP data to improve the performance of Natural Language Processing Machine Learning Classification Models. In this paper I used a Yelp pizza restaurant reviews dataset and transfer learning to fine-tune a pre-trained GPT-2 Transformer Model to generate synthetic pizza reviews data. I then combined this synthetic data with the original genuine data to create a new joint dataset. The new combined model significantly outperformed the original model in accuracy and precision.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.10658](https://arxiv.org/abs/2104.10658) [cs.CL]** |
+|           | (or **[arXiv:2104.10658v1](https://arxiv.org/abs/2104.10658v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
