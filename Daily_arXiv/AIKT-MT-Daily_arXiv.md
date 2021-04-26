@@ -2,6 +2,9 @@
 
 # Index
 
+- [2021-04-26](#2021-04-26)
+  - [1. Beyond Voice Activity Detection: Hybrid Audio Segmentation for Direct Speech Translation](#2021-04-26-1)
+  - [2. LeBenchmark: A Reproducible Framework for Assessing Self-Supervised Representation Learning from Speech](#2021-04-26-2)
 - [2021-04-23](#2021-04-23)
   - [1. Disfluency Detection with Unlabeled Data and Small BERT Models](#2021-04-23-1)
   - [2. Provable Limitations of Acquiring Meaning from Ungrounded Form: What will Future Language Models Understand?](#2021-04-23-2)
@@ -155,6 +158,50 @@
 - [2021-03-31](#2021-03-31)	
   - [1. Diagnosing Vision-and-Language Navigation: What Really Matters](#2021-03-31-1)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-04-26
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-04-26-1">1. Beyond Voice Activity Detection: Hybrid Audio Segmentation for Direct Speech Translation
+</h2>
+
+Title: [Beyond Voice Activity Detection: Hybrid Audio Segmentation for Direct Speech Translation](https://arxiv.org/abs/2104.11710)
+
+Authors:[Marco Gaido](https://arxiv.org/search/cs?searchtype=author&query=Gaido%2C+M), [Matteo Negri](https://arxiv.org/search/cs?searchtype=author&query=Negri%2C+M), [Mauro Cettolo](https://arxiv.org/search/cs?searchtype=author&query=Cettolo%2C+M), [Marco Turchi](https://arxiv.org/search/cs?searchtype=author&query=Turchi%2C+M)
+
+> The audio segmentation mismatch between training data and those seen at run-time is a major problem in direct speech translation. Indeed, while systems are usually trained on manually segmented corpora, in real use cases they are often presented with continuous audio requiring automatic (and sub-optimal) segmentation. After comparing existing techniques (VAD-based, fixed-length and hybrid segmentation methods), in this paper we propose enhanced hybrid solutions to produce better results without sacrificing latency. Through experiments on different domains and language pairs, we show that our methods outperform all the other techniques, reducing by at least 30% the gap between the traditional VAD-based approach and optimal manual segmentation.
+
+| Subjects: | **Sound (cs.SD)**; Computation and Language (cs.CL); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.11710](https://arxiv.org/abs/2104.11710) [cs.SD]** |
+|           | (or **[arXiv:2104.11710v1](https://arxiv.org/abs/2104.11710v1) [cs.SD]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-26-2">2. LeBenchmark: A Reproducible Framework for Assessing Self-Supervised Representation Learning from Speech
+</h2>
+
+Title: [LeBenchmark: A Reproducible Framework for Assessing Self-Supervised Representation Learning from Speech](https://arxiv.org/abs/2104.11462)
+
+Authors:[Solene Evain](https://arxiv.org/search/cs?searchtype=author&query=Evain%2C+S), [Ha Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+H), [Hang Le](https://arxiv.org/search/cs?searchtype=author&query=Le%2C+H), [Marcely Zanon Boito](https://arxiv.org/search/cs?searchtype=author&query=Boito%2C+M+Z), [Salima Mdhaffar](https://arxiv.org/search/cs?searchtype=author&query=Mdhaffar%2C+S), [Sina Alisamir](https://arxiv.org/search/cs?searchtype=author&query=Alisamir%2C+S), [Ziyi Tong](https://arxiv.org/search/cs?searchtype=author&query=Tong%2C+Z), [Natalia Tomashenko](https://arxiv.org/search/cs?searchtype=author&query=Tomashenko%2C+N), [Marco Dinarelli](https://arxiv.org/search/cs?searchtype=author&query=Dinarelli%2C+M), [Titouan Parcollet](https://arxiv.org/search/cs?searchtype=author&query=Parcollet%2C+T), [Alexandre Allauzen](https://arxiv.org/search/cs?searchtype=author&query=Allauzen%2C+A), [Yannick Esteve](https://arxiv.org/search/cs?searchtype=author&query=Esteve%2C+Y), [Benjamin Lecouteux](https://arxiv.org/search/cs?searchtype=author&query=Lecouteux%2C+B), [Francois Portet](https://arxiv.org/search/cs?searchtype=author&query=Portet%2C+F), [Solange Rossato](https://arxiv.org/search/cs?searchtype=author&query=Rossato%2C+S), [Fabien Ringeval](https://arxiv.org/search/cs?searchtype=author&query=Ringeval%2C+F), [Didier Schwab](https://arxiv.org/search/cs?searchtype=author&query=Schwab%2C+D), [Laurent Besacier](https://arxiv.org/search/cs?searchtype=author&query=Besacier%2C+L)
+
+> Self-Supervised Learning (SSL) using huge unlabeled data has been successfully explored for image and natural language processing. Recent works also investigated SSL from speech. They were notably successful to improve performance on downstream tasks such as automatic speech recognition (ASR). While these works suggest it is possible to reduce dependence on labeled data for building efficient speech systems, their evaluation was mostly made on ASR and using multiple and heterogeneous experimental settings (most of them for English). This renders difficult the objective comparison between SSL approaches and the evaluation of their impact on building speech systems. In this paper, we propose LeBenchmark: a reproducible framework for assessing SSL from speech. It not only includes ASR (high and low resource) tasks but also spoken language understanding, speech translation and emotion recognition. We also target speech technologies in a language different than English: French. SSL models of different sizes are trained from carefully sourced and documented datasets. Experiments show that SSL is beneficial for most but not all tasks which confirms the need for exhaustive and reliable benchmarks to evaluate its real impact. LeBenchmark is shared with the scientific community for reproducible research in SSL from speech.
+
+| Comments: | Submitted to Interspeech 2021                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2104.11462](https://arxiv.org/abs/2104.11462) [cs.CL]** |
+|           | (or **[arXiv:2104.11462v1](https://arxiv.org/abs/2104.11462v1) [cs.CL]** for this version) |
+
+
+
 
 
 
