@@ -2,6 +2,15 @@
 
 # Index
 
+- [2021-04-27](#2021-04-27)
+  - [1. Modeling Coverage for Non-Autoregressive Neural Machine Translation](#2021-04-27-1)
+  - [2. Extract then Distill: Efficient and Effective Task-Agnostic BERT Distillation](#2021-04-27-2)
+  - [3. Automatic Post-Editing for Translating Chinese Novels to Vietnamese](#2021-04-27-3)
+  - [4. XLM-T: A Multilingual Language Model Toolkit for Twitter](#2021-04-27-4)
+  - [5. Reranking Machine Translation Hypotheses with Structured and Web-based Language Models](#2021-04-27-5)
+  - [6. PanGu-α: Large-scale Autoregressive Pretrained Chinese Language Models with Auto-parallel Computation](#2021-04-27-6)
+  - [7. Attention vs non-attention for a Shapley-based explanation method](#2021-04-27-7)
+  - [8. Easy and Efficient Transformer : Scalable Inference Solution For large NLP mode](#2021-04-27-8)
 - [2021-04-26](#2021-04-26)
   - [1. Beyond Voice Activity Detection: Hybrid Audio Segmentation for Direct Speech Translation](#2021-04-26-1)
   - [2. LeBenchmark: A Reproducible Framework for Assessing Self-Supervised Representation Learning from Speech](#2021-04-26-2)
@@ -158,6 +167,164 @@
 - [2021-03-31](#2021-03-31)	
   - [1. Diagnosing Vision-and-Language Navigation: What Really Matters](#2021-03-31-1)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-04-27
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-04-27-1">1. Modeling Coverage for Non-Autoregressive Neural Machine Translation
+</h2>
+
+Title: [Modeling Coverage for Non-Autoregressive Neural Machine Translation](https://arxiv.org/abs/2104.11897)
+
+Authors: [Yong Shan](https://arxiv.org/search/cs?searchtype=author&query=Shan%2C+Y), [Yang Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+Y), [Chenze Shao](https://arxiv.org/search/cs?searchtype=author&query=Shao%2C+C)
+
+> Non-Autoregressive Neural Machine Translation (NAT) has achieved significant inference speedup by generating all tokens simultaneously. Despite its high efficiency, NAT usually suffers from two kinds of translation errors: over-translation (e.g. repeated tokens) and under-translation (e.g. missing translations), which eventually limits the translation quality. In this paper, we argue that these issues of NAT can be addressed through coverage modeling, which has been proved to be useful in autoregressive decoding. We propose a novel Coverage-NAT to model the coverage information directly by a token-level coverage iterative refinement mechanism and a sentence-level coverage agreement, which can remind the model if a source token has been translated or not and improve the semantics consistency between the translation and the source, respectively. Experimental results on WMT14 En-De and WMT16 En-Ro translation tasks show that our method can alleviate those errors and achieve strong improvements over the baseline system.
+
+| Comments: | Accepted by the 2021 International Joint Conference on Neural Networks (IJCNN 2021) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.11897](https://arxiv.org/abs/2104.11897) [cs.CL]** |
+|           | (or **[arXiv:2104.11897v1](https://arxiv.org/abs/2104.11897v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-27-2">2. Extract then Distill: Efficient and Effective Task-Agnostic BERT Distillation
+</h2>
+
+Title: [Extract then Distill: Efficient and Effective Task-Agnostic BERT Distillation](https://arxiv.org/abs/2104.11928)
+
+Authors: [Cheng Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+C), [Yichun Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+Y), [Lifeng Shang](https://arxiv.org/search/cs?searchtype=author&query=Shang%2C+L), [Zhi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Xin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+X), [Xiao Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+X), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q)
+
+> Task-agnostic knowledge distillation, a teacher-student framework, has been proved effective for BERT compression. Although achieving promising results on NLP tasks, it requires enormous computational resources. In this paper, we propose Extract Then Distill (ETD), a generic and flexible strategy to reuse the teacher's parameters for efficient and effective task-agnostic distillation, which can be applied to students of any size. Specifically, we introduce two variants of ETD, ETD-Rand and ETD-Impt, which extract the teacher's parameters in a random manner and by following an importance metric respectively. In this way, the student has already acquired some knowledge at the beginning of the distillation process, which makes the distillation process converge faster. We demonstrate the effectiveness of ETD on the GLUE benchmark and SQuAD. The experimental results show that: (1) compared with the baseline without an ETD strategy, ETD can save 70\% of computation cost. Moreover, it achieves better results than the baseline when using the same computing resource. (2) ETD is generic and has been proven effective for different distillation methods (e.g., TinyBERT and MiniLM) and students of different sizes. The source code will be publicly available upon publication.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.11928](https://arxiv.org/abs/2104.11928) [cs.CL]** |
+|           | (or **[arXiv:2104.11928v1](https://arxiv.org/abs/2104.11928v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-27-3">3. Automatic Post-Editing for Translating Chinese Novels to Vietnamese
+</h2>
+
+Title: [Automatic Post-Editing for Translating Chinese Novels to Vietnamese](https://arxiv.org/abs/2104.12128)
+
+Authors: [Thanh Vu](https://arxiv.org/search/cs?searchtype=author&query=Vu%2C+T), [Dai Quoc Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+D+Q)
+
+> Automatic post-editing (APE) is an important remedy for reducing errors of raw translated texts that are produced by machine translation (MT) systems or software-aided translation. In this paper, we present the first attempt to tackle the APE task for Vietnamese. Specifically, we construct the first large-scale dataset of 5M Vietnamese translated and corrected sentence pairs. We then apply strong neural MT models to handle the APE task, using our constructed dataset. Experimental results from both automatic and human evaluations show the effectiveness of the neural MT models in handling the Vietnamese APE task.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.12128](https://arxiv.org/abs/2104.12128) [cs.CL]** |
+|           | (or **[arXiv:2104.12128v1](https://arxiv.org/abs/2104.12128v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-27-4">4. XLM-T: A Multilingual Language Model Toolkit for Twitter
+</h2>
+
+Title: [XLM-T: A Multilingual Language Model Toolkit for Twitter](https://arxiv.org/abs/2104.12250)
+
+Authors: [Francesco Barbieri](https://arxiv.org/search/cs?searchtype=author&query=Barbieri%2C+F), [Luis Espinosa Anke](https://arxiv.org/search/cs?searchtype=author&query=Anke%2C+L+E), [Jose Camacho-Collados](https://arxiv.org/search/cs?searchtype=author&query=Camacho-Collados%2C+J)
+
+> Language models are ubiquitous in current NLP, and their multilingual capacity has recently attracted considerable attention. However, current analyses have almost exclusively focused on (multilingual variants of) standard benchmarks, and have relied on clean pre-training and task-specific corpora as multilingual signals. In this paper, we introduce XLM-T, a framework for using and evaluating multilingual language models in Twitter. This framework features two main assets: (1) a strong multilingual baseline consisting of an XLM-R (Conneau et al. 2020) model pre-trained on millions of tweets in over thirty languages, alongside starter code to subsequently fine-tune on a target task; and (2) a set of unified sentiment analysis Twitter datasets in eight different languages. This is a modular framework that can easily be extended to additional tasks, as well as integrated with recent efforts also aimed at the homogenization of Twitter-specific datasets (Barbieri et al. 2020).
+
+| Comments: | Submitted to ACL demo. Code and data available at [this https URL](https://github.com/cardiffnlp/xlm-t) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.12250](https://arxiv.org/abs/2104.12250) [cs.CL]** |
+|           | (or **[arXiv:2104.12250v1](https://arxiv.org/abs/2104.12250v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-27-5">5. Reranking Machine Translation Hypotheses with Structured and Web-based Language Models
+</h2>
+
+Title: [Reranking Machine Translation Hypotheses with Structured and Web-based Language Models](https://arxiv.org/abs/2104.12277)
+
+Authors: [Wen Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Andreas Stolcke](https://arxiv.org/search/cs?searchtype=author&query=Stolcke%2C+A), [Jing Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+J)
+
+> In this paper, we investigate the use of linguistically motivated and computationally efficient structured language models for reranking N-best hypotheses in a statistical machine translation system. These language models, developed from Constraint Dependency Grammar parses, tightly integrate knowledge of words, morphological and lexical features, and syntactic dependency constraints. Two structured language models are applied for N-best rescoring, one is an almost-parsing language model, and the other utilizes more syntactic features by explicitly modeling syntactic dependencies between words. We also investigate effective and efficient language modeling methods to use N-grams extracted from up to 1 teraword of web documents. We apply all these language models for N-best re-ranking on the NIST and DARPA GALE program 2006 and 2007 machine translation evaluation tasks and find that the combination of these language models increases the BLEU score up to 1.6% absolutely on blind test sets.
+
+| Comments:          | With a correction to the math in Figure 1 caption            |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| Journal reference: | Proc. 2007 IEEE ASRU Workshop, pp. 159-164                   |
+| DOI:               | [10.1109/ASRU.2007.4430102](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.1109%2FASRU.2007.4430102&v=b42f7934) |
+| Cite as:           | **[arXiv:2104.12277](https://arxiv.org/abs/2104.12277) [cs.CL]** |
+|                    | (or **[arXiv:2104.12277v1](https://arxiv.org/abs/2104.12277v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-04-27-6">6. PanGu-α: Large-scale Autoregressive Pretrained Chinese Language Models with Auto-parallel Computation
+</h2>
+
+Title: [PanGu-α: Large-scale Autoregressive Pretrained Chinese Language Models with Auto-parallel Computation](https://arxiv.org/abs/2104.12369)
+
+Authors: [Wei Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+W), [Xiaozhe Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+X), [Teng Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+T), [Hui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H), [Yi Liao](https://arxiv.org/search/cs?searchtype=author&query=Liao%2C+Y), [Zhiwei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Xin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+X), [ZhenZhang Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Kaisheng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+K), [Xiaoda Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+X), [Chen Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+C), [Ziyan Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+Z), [Yifan Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+Y), [Xinjing Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+X), [Jun Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+J), [Jianfeng Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+J), [Qi Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+Q), [Yue Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+Y), [Yan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Jin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+J), [Hengtao Tao](https://arxiv.org/search/cs?searchtype=author&query=Tao%2C+H), [Dasen Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+D), [Zexuan Yi](https://arxiv.org/search/cs?searchtype=author&query=Yi%2C+Z), [Fang Peng](https://arxiv.org/search/cs?searchtype=author&query=Peng%2C+F), [Fangqing Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+F), [Han Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H), [Lingfeng Deng](https://arxiv.org/search/cs?searchtype=author&query=Deng%2C+L), [Yehong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Zhe Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Z), [Chao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+C), [Shaojie Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+S), [Mingyue Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+M), [Shanzhi Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+S), [Gaojun Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+G), [Yaowei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Xuefeng Jin](https://arxiv.org/search/cs?searchtype=author&query=Jin%2C+X), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q), [Yonghong Tian](https://arxiv.org/search/cs?searchtype=author&query=Tian%2C+Y)
+
+> Large-scale Pretrained Language Models (PLMs) have become the new paradigm for Natural Language Processing (NLP). PLMs with hundreds of billions parameters such as GPT-3 have demonstrated strong performances on natural language understanding and generation with \textit{few-shot in-context} learning. In this work, we present our practice on training large-scale autoregressive language models named PanGu-α, with up to 200 billion parameters. PanGu-α is developed under the MindSpore and trained on a cluster of 2048 Ascend 910 AI processors. The training parallelism strategy is implemented based on MindSpore Auto-parallel, which composes five parallelism dimensions to scale the training task to 2048 processors efficiently, including data parallelism, op-level model parallelism, pipeline model parallelism, optimizer model parallelism and rematerialization. To enhance the generalization ability of PanGu-α, we collect 1.1TB high-quality Chinese data from a wide range of domains to pretrain the model. We empirically test the generation ability of PanGu-α in various scenarios including text summarization, question answering, dialogue generation, etc. Moreover, we investigate the effect of model scales on the few-shot performances across a broad range of Chinese NLP tasks. The experimental results demonstrate the superior capabilities of PanGu-α in performing various tasks under few-shot or zero-shot settings.
+
+| Comments: | The technique report for PanGu-α                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.12369](https://arxiv.org/abs/2104.12369) [cs.CL]** |
+|           | (or **[arXiv:2104.12369v1](https://arxiv.org/abs/2104.12369v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-27-7">7. Attention vs non-attention for a Shapley-based explanation method
+</h2>
+
+Title: [Attention vs non-attention for a Shapley-based explanation method](https://arxiv.org/abs/2104.12424)
+
+Authors: [Tom Kersten](https://arxiv.org/search/cs?searchtype=author&query=Kersten%2C+T), [Hugh Mee Wong](https://arxiv.org/search/cs?searchtype=author&query=Wong%2C+H+M), [Jaap Jumelet](https://arxiv.org/search/cs?searchtype=author&query=Jumelet%2C+J), [Dieuwke Hupkes](https://arxiv.org/search/cs?searchtype=author&query=Hupkes%2C+D)
+
+> The field of explainable AI has recently seen an explosion in the number of explanation methods for highly non-linear deep neural networks. The extent to which such methods -- that are often proposed and tested in the domain of computer vision -- are appropriate to address the explainability challenges in NLP is yet relatively unexplored. In this work, we consider Contextual Decomposition (CD) -- a Shapley-based input feature attribution method that has been shown to work well for recurrent NLP models -- and we test the extent to which it is useful for models that contain attention operations. To this end, we extend CD to cover the operations necessary for attention-based models. We then compare how long distance subject-verb relationships are processed by models with and without attention, considering a number of different syntactic structures in two different languages: English and Dutch. Our experiments confirm that CD can successfully be applied for attention-based models as well, providing an alternative Shapley-based attribution method for modern neural networks. In particular, using CD, we show that the English and Dutch models demonstrate similar processing behaviour, but that under the hood there are consistent differences between our attention and non-attention models.
+
+| Comments: | Accepted for publication at DeeLIO 2021                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2104.12424](https://arxiv.org/abs/2104.12424) [cs.CL]** |
+|           | (or **[arXiv:2104.12424v1](https://arxiv.org/abs/2104.12424v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-04-27-8">8. Easy and Efficient Transformer : Scalable Inference Solution For large NLP mode
+</h2>
+
+Title: [Easy and Efficient Transformer : Scalable Inference Solution For large NLP mode](https://arxiv.org/abs/2104.12470)
+
+Authors: [Gongzheng li](https://arxiv.org/search/cs?searchtype=author&query=li%2C+G), [Yadong Xi](https://arxiv.org/search/cs?searchtype=author&query=Xi%2C+Y), [Jingzhen Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+J), [Duan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+D), [Bai Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+B), [Changjie Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+C), [Xiaoxi Mao](https://arxiv.org/search/cs?searchtype=author&query=Mao%2C+X), [Zeng Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+Z)
+
+> The ultra-large-scale pre-training model can effectively improve the effect of a variety of tasks, and it also brings a heavy computational burden to inference. This paper introduces a series of ultra-large-scale pre-training model optimization methods that combine algorithm characteristics and GPU processor hardware characteristics, and on this basis, propose an inference engine -- Easy and Efficient Transformer (EET), Which has a significant performance improvement over the existing schemes.
+> We firstly introduce a pre-padding decoding mechanism that improves token parallelism for generation tasks. Then we design high optimized kernels to remove sequence masks and achieve cost-free calculation for padding tokens, as well as support long sequence and long embedding sizes. Thirdly a user-friendly inference system with an easy service pipeline was introduced which greatly reduces the difficulty of engineering deployment with high throughput. Compared to Faster Transformer's implementation for GPT-2 on A100, EET achieves a 1.5-15x state-of-art speedup varying with context length.EET is available [this https URL](https://github.com/NetEase-FuXi/EET).
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.12470](https://arxiv.org/abs/2104.12470) [cs.CL]** |
+|           | (or **[arXiv:2104.12470v1](https://arxiv.org/abs/2104.12470v1) [cs.CL]** for this version) |
+
+
 
 
 
