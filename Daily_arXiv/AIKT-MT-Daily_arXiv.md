@@ -2,6 +2,8 @@
 
 # Index
 
+- [2021-04-29](#2021-04-29)
+  - [1. Gradient-based Adversarial Attacks against Text Transformers](#2021-04-29-1)
 - [2021-04-28](#2021-04-28)
   - [1. SE-DAE: Style-Enhanced Denoising Auto-Encoder for Unsupervised Text Style Transfer](#2021-04-28-1)
   - [2. Teaching a Massive Open Online Course on Natural Language Processing](#2021-04-28-2)
@@ -171,6 +173,32 @@
 - [2021-03-31](#2021-03-31)	
   - [1. Diagnosing Vision-and-Language Navigation: What Really Matters](#2021-03-31-1)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-04-29
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-04-29-1">1. Gradient-based Adversarial Attacks against Text Transformers
+</h2>
+
+Title: [Gradient-based Adversarial Attacks against Text Transformers](https://arxiv.org/abs/2104.13733)
+
+Authors: [Chuan Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+C), [Alexandre Sablayrolles](https://arxiv.org/search/cs?searchtype=author&query=Sablayrolles%2C+A), [Hervé Jégou](https://arxiv.org/search/cs?searchtype=author&query=Jégou%2C+H), [Douwe Kiela](https://arxiv.org/search/cs?searchtype=author&query=Kiela%2C+D)
+
+> We propose the first general-purpose gradient-based attack against transformer models. Instead of searching for a single adversarial example, we search for a distribution of adversarial examples parameterized by a continuous-valued matrix, hence enabling gradient-based optimization. We empirically demonstrate that our white-box attack attains state-of-the-art attack performance on a variety of natural language tasks. Furthermore, we show that a powerful black-box transfer attack, enabled by sampling from the adversarial distribution, matches or exceeds existing methods, while only requiring hard-label outputs.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Cryptography and Security (cs.CR); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.13733](https://arxiv.org/abs/2104.13733) [cs.CL]** |
+|           | (or **[arXiv:2104.13733v1](https://arxiv.org/abs/2104.13733v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
