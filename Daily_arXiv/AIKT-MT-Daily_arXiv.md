@@ -2,6 +2,10 @@
 
 # Index
 
+- [2021-04-30](#2021-04-30)
+  - [1. Dynabench: Rethinking Benchmarking in NLP](#2021-04-30-1)
+  - [2. Impact of Encoding and Segmentation Strategies on End-to-End Simultaneous Speech Translation](#2021-04-30-2)
+  - [3. Experts, Errors, and Context: A Large-Scale Study of Human Evaluation for Machine Translation](#2021-04-30-3)
 - [2021-04-29](#2021-04-29)
   - [1. Gradient-based Adversarial Attacks against Text Transformers](#2021-04-29-1)
 - [2021-04-28](#2021-04-28)
@@ -173,6 +177,66 @@
 - [2021-03-31](#2021-03-31)	
   - [1. Diagnosing Vision-and-Language Navigation: What Really Matters](#2021-03-31-1)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-04-30
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-04-30-1">1. Dynabench: Rethinking Benchmarking in NLP
+</h2>
+
+Title: [Dynabench: Rethinking Benchmarking in NLP](https://arxiv.org/abs/2104.14337)
+
+Authors:[Douwe Kiela](https://arxiv.org/search/cs?searchtype=author&query=Kiela%2C+D), [Max Bartolo](https://arxiv.org/search/cs?searchtype=author&query=Bartolo%2C+M), [Yixin Nie](https://arxiv.org/search/cs?searchtype=author&query=Nie%2C+Y), [Divyansh Kaushik](https://arxiv.org/search/cs?searchtype=author&query=Kaushik%2C+D), [Atticus Geiger](https://arxiv.org/search/cs?searchtype=author&query=Geiger%2C+A), [Zhengxuan Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Z), [Bertie Vidgen](https://arxiv.org/search/cs?searchtype=author&query=Vidgen%2C+B), [Grusha Prasad](https://arxiv.org/search/cs?searchtype=author&query=Prasad%2C+G), [Amanpreet Singh](https://arxiv.org/search/cs?searchtype=author&query=Singh%2C+A), [Pratik Ringshia](https://arxiv.org/search/cs?searchtype=author&query=Ringshia%2C+P), [Zhiyi Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+Z), [Tristan Thrush](https://arxiv.org/search/cs?searchtype=author&query=Thrush%2C+T), [Sebastian Riedel](https://arxiv.org/search/cs?searchtype=author&query=Riedel%2C+S), [Zeerak Waseem](https://arxiv.org/search/cs?searchtype=author&query=Waseem%2C+Z), [Pontus Stenetorp](https://arxiv.org/search/cs?searchtype=author&query=Stenetorp%2C+P), [Robin Jia](https://arxiv.org/search/cs?searchtype=author&query=Jia%2C+R), [Mohit Bansal](https://arxiv.org/search/cs?searchtype=author&query=Bansal%2C+M), [Christopher Potts](https://arxiv.org/search/cs?searchtype=author&query=Potts%2C+C), [Adina Williams](https://arxiv.org/search/cs?searchtype=author&query=Williams%2C+A)
+
+> We introduce Dynabench, an open-source platform for dynamic dataset creation and model benchmarking. Dynabench runs in a web browser and supports human-and-model-in-the-loop dataset creation: annotators seek to create examples that a target model will misclassify, but that another person will not. In this paper, we argue that Dynabench addresses a critical need in our community: contemporary models quickly achieve outstanding performance on benchmark tasks but nonetheless fail on simple challenge examples and falter in real-world scenarios. With Dynabench, dataset creation, model development, and model assessment can directly inform each other, leading to more robust and informative benchmarks. We report on four initial NLP tasks, illustrating these concepts and highlighting the promise of the platform, and address potential objections to dynamic benchmarking as a new standard for the field.
+
+| Comments: | NAACL 2021                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2104.14337](https://arxiv.org/abs/2104.14337) [cs.CL]** |
+|           | (or **[arXiv:2104.14337v1](https://arxiv.org/abs/2104.14337v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-30-2">2. Impact of Encoding and Segmentation Strategies on End-to-End Simultaneous Speech Translation
+</h2>
+
+Title: [Impact of Encoding and Segmentation Strategies on End-to-End Simultaneous Speech Translation](https://arxiv.org/abs/2104.14470)
+
+Authors:[Ha Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+H), [Yannick Estève](https://arxiv.org/search/cs?searchtype=author&query=Estève%2C+Y), [Laurent Besacier](https://arxiv.org/search/cs?searchtype=author&query=Besacier%2C+L)
+
+> Boosted by the simultaneous translation shared task at IWSLT 2020, promising end-to-end online speech translation approaches were recently proposed. They consist in incrementally encoding a speech input (in a source language) and decoding the corresponding text (in a target language) with the best possible trade-off between latency and translation quality. This paper investigates two key aspects of end-to-end simultaneous speech translation: (a) how to encode efficiently the continuous speech flow, and (b) how to segment the speech flow in order to alternate optimally between reading (R: encoding input) and writing (W: decoding output) operations. We extend our previously proposed end-to-end online decoding strategy and show that while replacing BLSTM by ULSTM encoding degrades performance in offline mode, it actually improves both efficiency and performance in online mode. We also measure the impact of different methods to segment the speech signal (using fixed interval boundaries, oracle word boundaries or randomly set boundaries) and show that our best end-to-end online decoding strategy is surprisingly the one that alternates R/W operations on fixed size blocks on our English-German speech translation setup.
+
+| Comments: | Submitted to Interspeech 2021                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2104.14470](https://arxiv.org/abs/2104.14470) [cs.CL]** |
+|           | (or **[arXiv:2104.14470v1](https://arxiv.org/abs/2104.14470v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-04-30-3">3. Experts, Errors, and Context: A Large-Scale Study of Human Evaluation for Machine Translation
+</h2>
+
+Title: [Experts, Errors, and Context: A Large-Scale Study of Human Evaluation for Machine Translation](https://arxiv.org/abs/2104.14478)
+
+Authors:[Markus Freitag](https://arxiv.org/search/cs?searchtype=author&query=Freitag%2C+M), [George Foster](https://arxiv.org/search/cs?searchtype=author&query=Foster%2C+G), [David Grangier](https://arxiv.org/search/cs?searchtype=author&query=Grangier%2C+D), [Viresh Ratnakar](https://arxiv.org/search/cs?searchtype=author&query=Ratnakar%2C+V), [Qijun Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+Q), [Wolfgang Macherey](https://arxiv.org/search/cs?searchtype=author&query=Macherey%2C+W)
+
+> Human evaluation of modern high-quality machine translation systems is a difficult problem, and there is increasing evidence that inadequate evaluation procedures can lead to erroneous conclusions. While there has been considerable research on human evaluation, the field still lacks a commonly-accepted standard procedure. As a step toward this goal, we propose an evaluation methodology grounded in explicit error analysis, based on the Multidimensional Quality Metrics (MQM) framework. We carry out the largest MQM research study to date, scoring the outputs of top systems from the WMT 2020 shared task in two language pairs using annotations provided by professional translators with access to full document context. We analyze the resulting data extensively, finding among other results a substantially different ranking of evaluated systems from the one established by the WMT crowd workers, exhibiting a clear preference for human over machine output. Surprisingly, we also find that automatic metrics based on pre-trained embeddings can outperform human crowd workers. We make our corpus publicly available for further research.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2104.14478](https://arxiv.org/abs/2104.14478) [cs.CL]** |
+|           | (or **[arXiv:2104.14478v1](https://arxiv.org/abs/2104.14478v1) [cs.CL]** for this version) |
 
 
 
