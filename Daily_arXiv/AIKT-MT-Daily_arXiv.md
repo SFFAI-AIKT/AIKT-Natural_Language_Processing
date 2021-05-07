@@ -3,6 +3,12 @@
 # Index
 
 
+- [2021-05-07](#2021-05-07)
+  
+  - [1. XeroAlign: Zero-Shot Cross-lingual Transformer Alignment](#2021-05-07-1)
+  - [2. Quantitative Evaluation of Alternative Translations in a Corpus of Highly Dissimilar Finnish Paraphrases](#2021-05-07-2)
+  - [3. Content4All Open Research Sign Language Translation Datasets](#2021-05-07-3)
+  - [4. Reliability Testing for Natural Language Processing Systems](#2021-05-07-4)
 - [2021-05-06](#2021-05-06)
   
   - [1. Data Augmentation by Concatenation for Low-Resource Translation: A Mystery and a Solution](#2021-05-06-1)
@@ -17,14 +23,98 @@
 
 
 
-# 2021-05-04
+# 2021-05-07
 
 [Return to Index](#Index)
 
 
 
-<h2 id="2021-05-04-1">1. Data Augmentation by Concatenation for Low-Resource Translation: A Mystery and a Solution
+<h2 id="2021-05-07-1">1. XeroAlign: Zero-Shot Cross-lingual Transformer Alignment
+</h2>
 
+Title: [XeroAlign: Zero-Shot Cross-lingual Transformer Alignment](https://arxiv.org/abs/2105.02472)
+
+Authors: [Milan Gritta](https://arxiv.org/search/cs?searchtype=author&query=Gritta%2C+M), [Ignacio Iacobacci](https://arxiv.org/search/cs?searchtype=author&query=Iacobacci%2C+I)
+
+> The introduction of pretrained cross-lingual language models brought decisive improvements to multilingual NLP tasks. However, the lack of labelled task data necessitates a variety of methods aiming to close the gap to high-resource languages. Zero-shot methods in particular, often use translated task data as a training signal to bridge the performance gap between the source and target language(s). We introduce XeroAlign, a simple method for task-specific alignment of cross-lingual pretrained transformers such as XLM-R. XeroAlign uses translated task data to encourage the model to generate similar sentence embeddings for different languages. The XeroAligned XLM-R, called XLM-RA, shows strong improvements over the baseline models to achieve state-of-the-art zero-shot results on three multilingual natural language understanding tasks. XLM-RA's text classification accuracy exceeds that of XLM-R trained with labelled data and performs on par with state-of-the-art models on a cross-lingual adversarial paraphrasing task.
+
+| Comments: | Accepted as long paper at Findings of ACL 2021               |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.02472](https://arxiv.org/abs/2105.02472) [cs.CL]** |
+|           | (or **[arXiv:2105.02472v1](https://arxiv.org/abs/2105.02472v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-07-2">2. Quantitative Evaluation of Alternative Translations in a Corpus of Highly Dissimilar Finnish Paraphrases
+</h2>
+
+Title: [Quantitative Evaluation of Alternative Translations in a Corpus of Highly Dissimilar Finnish Paraphrases](https://arxiv.org/abs/2105.02477)
+
+Authors: [Li-Hsin Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+L), [Sampo Pyysalo](https://arxiv.org/search/cs?searchtype=author&query=Pyysalo%2C+S), [Jenna Kanerva](https://arxiv.org/search/cs?searchtype=author&query=Kanerva%2C+J), [Filip Ginter](https://arxiv.org/search/cs?searchtype=author&query=Ginter%2C+F)
+
+> In this paper, we present a quantitative evaluation of differences between alternative translations in a large recently released Finnish paraphrase corpus focusing in particular on non-trivial variation in translation. We combine a series of automatic steps detecting systematic variation with manual analysis to reveal regularities and identify categories of translation differences. We find the paraphrase corpus to contain highly non-trivial translation variants difficult to recognize through automatic approaches.
+
+| Comments: | Accepted to Workshop on MOdelling TRAnslation: Translatology in the Digital Age |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.02477](https://arxiv.org/abs/2105.02477) [cs.CL]** |
+|           | (or **[arXiv:2105.02477v1](https://arxiv.org/abs/2105.02477v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-07-3">3. Content4All Open Research Sign Language Translation Datasets
+</h2>
+
+Title: [Content4All Open Research Sign Language Translation Datasets](https://arxiv.org/abs/2105.02351)
+
+Authors: [Necati Cihan Camgoz](https://arxiv.org/search/cs?searchtype=author&query=Camgoz%2C+N+C), [Ben Saunders](https://arxiv.org/search/cs?searchtype=author&query=Saunders%2C+B), [Guillaume Rochette](https://arxiv.org/search/cs?searchtype=author&query=Rochette%2C+G), [Marco Giovanelli](https://arxiv.org/search/cs?searchtype=author&query=Giovanelli%2C+M), [Giacomo Inches](https://arxiv.org/search/cs?searchtype=author&query=Inches%2C+G), [Robin Nachtrab-Ribback](https://arxiv.org/search/cs?searchtype=author&query=Nachtrab-Ribback%2C+R), [Richard Bowden](https://arxiv.org/search/cs?searchtype=author&query=Bowden%2C+R)
+
+> Computational sign language research lacks the large-scale datasets that enables the creation of useful reallife applications. To date, most research has been limited to prototype systems on small domains of discourse, e.g. weather forecasts. To address this issue and to push the field forward, we release six datasets comprised of 190 hours of footage on the larger domain of news. From this, 20 hours of footage have been annotated by Deaf experts and interpreters and is made publicly available for research purposes. In this paper, we share the dataset collection process and tools developed to enable the alignment of sign language video and subtitles, as well as baseline translation results to underpin future research.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2105.02351](https://arxiv.org/abs/2105.02351) [cs.CV]** |
+|           | (or **[arXiv:2105.02351v1](https://arxiv.org/abs/2105.02351v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-07-4">4. Reliability Testing for Natural Language Processing Systems
+</h2>
+
+Title: [Reliability Testing for Natural Language Processing Systems](https://arxiv.org/abs/2105.02590)
+
+Authors: [Samson Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+S), [Shafiq Joty](https://arxiv.org/search/cs?searchtype=author&query=Joty%2C+S), [Kathy Baxter](https://arxiv.org/search/cs?searchtype=author&query=Baxter%2C+K), [Araz Taeihagh](https://arxiv.org/search/cs?searchtype=author&query=Taeihagh%2C+A), [Gregory A. Bennett](https://arxiv.org/search/cs?searchtype=author&query=Bennett%2C+G+A), [Min-Yen Kan](https://arxiv.org/search/cs?searchtype=author&query=Kan%2C+M)
+
+> Questions of fairness, robustness, and transparency are paramount to address before deploying NLP systems. Central to these concerns is the question of reliability: Can NLP systems reliably treat different demographics fairly and function correctly in diverse and noisy environments? To address this, we argue for the need for reliability testing and contextualize it among existing work on improving accountability. We show how adversarial attacks can be reframed for this goal, via a framework for developing reliability tests. We argue that reliability testing -- with an emphasis on interdisciplinary collaboration -- will enable rigorous and targeted testing, and aid in the enactment and enforcement of industry standards.
+
+| Comments: | Accepted to ACL-IJCNLP 2021 (main conference). Final camera-ready version to follow shortly |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2105.02590](https://arxiv.org/abs/2105.02590) [cs.LG]** |
+|           | (or **[arXiv:2105.02590v1](https://arxiv.org/abs/2105.02590v1) [cs.LG]** for this version) |
+
+
+
+
+
+
+
+
+
+# 2021-05-06
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-05-06-1">1. Data Augmentation by Concatenation for Low-Resource Translation: A Mystery and a Solution
 </h2>
 
 Title: [Data Augmentation by Concatenation for Low-Resource Translation: A Mystery and a Solution](https://arxiv.org/abs/2105.01691)
@@ -40,7 +130,7 @@ Authors: [Toan Q. Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Ng
 
 
 
-<h2 id="2021-05-04-2">2. Full-Sentence Models Perform Better in Simultaneous Translation Using the Information Enhanced Decoding Strategy
+<h2 id="2021-05-06-2">2. Full-Sentence Models Perform Better in Simultaneous Translation Using the Information Enhanced Decoding Strategy
 </h2>
 
 Title: [Full-Sentence Models Perform Better in Simultaneous Translation Using the Information Enhanced Decoding Strategy](https://arxiv.org/abs/2105.01893)
