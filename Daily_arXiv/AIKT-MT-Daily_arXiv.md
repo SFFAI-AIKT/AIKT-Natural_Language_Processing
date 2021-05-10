@@ -3,8 +3,17 @@
 # Index
 
 
-- [2021-05-07](#2021-05-07)
+- [2021-05-10](#2021-05-10)
   
+  - [1. Adapting by Pruning: A Case Study on BERT](#2021-05-10-1)
+  - [2. On-the-Fly Controlled Text Generation with Experts and Anti-Experts](#2021-05-10-2)
+  - [3. Regression Bugs Are In Your Model! Measuring, Reducing and Analyzing Regressions In NLP Model Updates](#2021-05-10-3)
+  - [4. A Survey of Data Augmentation Approaches for NLP](#2021-05-10-4)
+  - [5. Learning Shared Semantic Space for Speech-to-Text Translation](#2021-05-10-5)
+  - [6. Translation Quality Assessment: A Brief Survey on Manual and Automatic Methods](#2021-05-10-6)
+  - [7. Are Pre-trained Convolutions Better than Pre-trained Transformers?](#2021-05-10-7)
+  - [8. ∂-Explainer: Abductive Natural Language Inference via Differentiable Convex Optimization](#2021-05-10-8)
+- [2021-05-07](#2021-05-07)
   - [1. XeroAlign: Zero-Shot Cross-lingual Transformer Alignment](#2021-05-07-1)
   - [2. Quantitative Evaluation of Alternative Translations in a Corpus of Highly Dissimilar Finnish Paraphrases](#2021-05-07-2)
   - [3. Content4All Open Research Sign Language Translation Datasets](#2021-05-07-3)
@@ -20,6 +29,163 @@
   - [4. BERT memorisation and pitfalls in low-resource scenarios](#2021-05-04-4)
   - [5. Natural Language Generation Using Link Grammar for General Conversational Intelligence](#2021-05-04-5)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-05-10
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-05-10-1">1. Adapting by Pruning: A Case Study on BERT
+</h2>
+
+Title: [Adapting by Pruning: A Case Study on BERT](https://arxiv.org/abs/2105.03343)
+
+Authors: [Yang Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+Y), [Nicolo Colombo](https://arxiv.org/search/cs?searchtype=author&query=Colombo%2C+N), [Wei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W)
+
+> Adapting pre-trained neural models to downstream tasks has become the standard practice for obtaining high-quality models. In this work, we propose a novel model adaptation paradigm, adapting by pruning, which prunes neural connections in the pre-trained model to optimise the performance on the target task; all remaining connections have their weights intact. We formulate adapting-by-pruning as an optimisation problem with a differentiable loss and propose an efficient algorithm to prune the model. We prove that the algorithm is near-optimal under standard assumptions and apply the algorithm to adapt BERT to some GLUE tasks. Results suggest that our method can prune up to 50% weights in BERT while yielding similar performance compared to the fine-tuned full model. We also compare our method with other state-of-the-art pruning methods and study the topological differences of their obtained sub-networks.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2105.03343](https://arxiv.org/abs/2105.03343) [cs.LG]** |
+|           | (or **[arXiv:2105.03343v1](https://arxiv.org/abs/2105.03343v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-10-2">2. On-the-Fly Controlled Text Generation with Experts and Anti-Experts
+</h2>
+
+Title: [On-the-Fly Controlled Text Generation with Experts and Anti-Experts](https://arxiv.org/abs/2105.03023)
+
+Authors: [Alisa Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+A), [Maarten Sap](https://arxiv.org/search/cs?searchtype=author&query=Sap%2C+M), [Ximing Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+X), [Swabha Swayamdipta](https://arxiv.org/search/cs?searchtype=author&query=Swayamdipta%2C+S), [Chandra Bhagavatula](https://arxiv.org/search/cs?searchtype=author&query=Bhagavatula%2C+C), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith%2C+N+A), [Yejin Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi%2C+Y)
+
+> Despite recent advances in natural language generation, it remains challenging to control attributes of generated text. We propose DExperts: Decoding-time Experts, a decoding-time method for controlled text generation which combines a pretrained language model with experts and/or anti-experts in an ensemble of language models. Intuitively, under our ensemble, output tokens only get high probability if they are considered likely by the experts, and unlikely by the anti-experts. We apply DExperts to language detoxification and sentiment-controlled generation, where we outperform existing controllable generation methods on both automatic and human evaluations. Our work highlights the promise of using LMs trained on text with (un)desired attributes for efficient decoding-time controlled language generation.
+
+| Comments: | Accepted to ACL 2021, camera-ready version coming soon       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.03023](https://arxiv.org/abs/2105.03023) [cs.CL]** |
+|           | (or **[arXiv:2105.03023v1](https://arxiv.org/abs/2105.03023v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-10-3">3. Regression Bugs Are In Your Model! Measuring, Reducing and Analyzing Regressions In NLP Model Updates
+</h2>
+
+Title: [Regression Bugs Are In Your Model! Measuring, Reducing and Analyzing Regressions In NLP Model Updates](https://arxiv.org/abs/2105.03048)
+
+Authors: [Yuqing Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie%2C+Y), [Yi-an Lai](https://arxiv.org/search/cs?searchtype=author&query=Lai%2C+Y), [Yuanjun Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+Y), [Yi Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Stefano Soatto](https://arxiv.org/search/cs?searchtype=author&query=Soatto%2C+S)
+
+> Behavior of deep neural networks can be inconsistent between different versions. Regressions during model update are a common cause of concern that often over-weigh the benefits in accuracy or efficiency gain. This work focuses on quantifying, reducing and analyzing regression errors in the NLP model updates. Using negative flip rate as regression measure, we show that regression has a prevalent presence across tasks in the GLUE benchmark. We formulate the regression-free model updates into a constrained optimization problem, and further reduce it into a relaxed form which can be approximately optimized through knowledge distillation training method. We empirically analyze how model ensemble reduces regression. Finally, we conduct CheckList behavioral testing to understand the distribution of regressions across linguistic phenomena, and the efficacy of ensemble and distillation methods.
+
+| Comments: | 13 pages, 3 figures, Accepted at ACL 2021 main conference    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.03048](https://arxiv.org/abs/2105.03048) [cs.CL]** |
+|           | (or **[arXiv:2105.03048v1](https://arxiv.org/abs/2105.03048v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-10-4">4. A Survey of Data Augmentation Approaches for NLP
+</h2>
+
+Title: [A Survey of Data Augmentation Approaches for NLP](https://arxiv.org/abs/2105.03075)
+
+Authors: [Steven Y. Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+S+Y), [Varun Gangal](https://arxiv.org/search/cs?searchtype=author&query=Gangal%2C+V), [Jason Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+J), [Sarath Chandar](https://arxiv.org/search/cs?searchtype=author&query=Chandar%2C+S), [Soroush Vosoughi](https://arxiv.org/search/cs?searchtype=author&query=Vosoughi%2C+S), [Teruko Mitamura](https://arxiv.org/search/cs?searchtype=author&query=Mitamura%2C+T), [Eduard Hovy](https://arxiv.org/search/cs?searchtype=author&query=Hovy%2C+E)
+
+> Data augmentation has recently seen increased interest in NLP due to more work in low-resource domains, new tasks, and the popularity of large-scale neural networks that require large amounts of training data. Despite this recent upsurge, this area is still relatively underexplored, perhaps due to the challenges posed by the discrete nature of language data. In this paper, we present a comprehensive and unifying survey of data augmentation for NLP by summarizing the literature in a structured manner. We first introduce and motivate data augmentation for NLP, and then discuss major methodologically representative approaches. Next, we highlight techniques that are used for popular NLP applications and tasks. We conclude by outlining current challenges and directions for future research. Overall, our paper aims to clarify the landscape of existing literature in data augmentation for NLP and motivate additional work in this area.
+
+| Comments: | Accepted to ACL 2021 Findings                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2105.03075](https://arxiv.org/abs/2105.03075) [cs.CL]** |
+|           | (or **[arXiv:2105.03075v1](https://arxiv.org/abs/2105.03075v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-10-5">5. Learning Shared Semantic Space for Speech-to-Text Translation
+</h2>
+
+Title: [Learning Shared Semantic Space for Speech-to-Text Translation](https://arxiv.org/abs/2105.03095)
+
+Authors: [Chi Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+C), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Heng Ji](https://arxiv.org/search/cs?searchtype=author&query=Ji%2C+H), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> Having numerous potential applications and great impact, end-to-end speech translation (ST) has long been treated as an independent task, failing to fully draw strength from the rapid advances of its sibling - text machine translation (MT). With text and audio inputs represented differently, the modality gap has rendered MT data and its end-to-end models incompatible with their ST counterparts. In observation of this obstacle, we propose to bridge this representation gap with Chimera. By projecting audio and text features to a common semantic representation, Chimera unifies MT and ST tasks and boosts the performance on ST benchmark, MuST-C, to a new state-of-the-art. Specifically, Chimera obtains 26.3 BLEU on EN-DE, improving the SOTA by a +2.7 BLEU margin. Further experimental analyses demonstrate that the shared semantic space indeed conveys common knowledge between these two tasks and thus paves a new way for augmenting training resources across modalities.
+
+| Comments: | 8 pages, 5 figures, Accepted by Findings of ACL 2021         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.03095](https://arxiv.org/abs/2105.03095) [cs.CL]** |
+|           | (or **[arXiv:2105.03095v1](https://arxiv.org/abs/2105.03095v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-10-6">6. Translation Quality Assessment: A Brief Survey on Manual and Automatic Methods
+</h2>
+
+Title: [Translation Quality Assessment: A Brief Survey on Manual and Automatic Methods](https://arxiv.org/abs/2105.03311)
+
+Authors: [Lifeng Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+L), [Gareth J. F. Jones](https://arxiv.org/search/cs?searchtype=author&query=Jones%2C+G+J+F), [Alan F. Smeaton](https://arxiv.org/search/cs?searchtype=author&query=Smeaton%2C+A+F)
+
+> To facilitate effective translation modeling and translation studies, one of the crucial questions to address is how to assess translation quality. From the perspectives of accuracy, reliability, repeatability and cost, translation quality assessment (TQA) itself is a rich and challenging task. In this work, we present a high-level and concise survey of TQA methods, including both manual judgement criteria and automated evaluation metrics, which we classify into further detailed sub-categories. We hope that this work will be an asset for both translation model researchers and quality assessment researchers. In addition, we hope that it will enable practitioners to quickly develop a better understanding of the conventional TQA field, and to find corresponding closely relevant evaluation solutions for their own needs. This work may also serve inspire further development of quality assessment and evaluation methodologies for other natural language processing (NLP) tasks in addition to machine translation (MT), such as automatic text summarization (ATS), natural language understanding (NLU) and natural language generation (NLG).
+
+| Comments: | Accepted to 23rd Nordic Conference on Computational Linguistics (NoDaLiDa 2021): Workshop on Modelling Translation: Translatology in the Digital Age (MoTra21). arXiv admin note: substantial text overlap with [arXiv:1605.04515](https://arxiv.org/abs/1605.04515) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.03311](https://arxiv.org/abs/2105.03311) [cs.CL]** |
+|           | (or **[arXiv:2105.03311v1](https://arxiv.org/abs/2105.03311v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-10-7">7. Are Pre-trained Convolutions Better than Pre-trained Transformers?
+</h2>
+
+Title: [Are Pre-trained Convolutions Better than Pre-trained Transformers?](https://arxiv.org/abs/2105.03322)
+
+Authors: [Yi Tay](https://arxiv.org/search/cs?searchtype=author&query=Tay%2C+Y), [Mostafa Dehghani](https://arxiv.org/search/cs?searchtype=author&query=Dehghani%2C+M), [Jai Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+J), [Dara Bahri](https://arxiv.org/search/cs?searchtype=author&query=Bahri%2C+D), [Vamsi Aribandi](https://arxiv.org/search/cs?searchtype=author&query=Aribandi%2C+V), [Zhen Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+Z), [Donald Metzler](https://arxiv.org/search/cs?searchtype=author&query=Metzler%2C+D)
+
+> In the era of pre-trained language models, Transformers are the de facto choice of model architectures. While recent research has shown promise in entirely convolutional, or CNN, architectures, they have not been explored using the pre-train-fine-tune paradigm. In the context of language models, are convolutional models competitive to Transformers when pre-trained? This paper investigates this research question and presents several interesting findings. Across an extensive set of experiments on 8 datasets/tasks, we find that CNN-based pre-trained models are competitive and outperform their Transformer counterpart in certain scenarios, albeit with caveats. Overall, the findings outlined in this paper suggest that conflating pre-training and architectural advances is misguided and that both advances should be considered independently. We believe our research paves the way for a healthy amount of optimism in alternative architectures.
+
+| Comments: | Accepted to ACL 2021                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2105.03322](https://arxiv.org/abs/2105.03322) [cs.CL]** |
+|           | (or **[arXiv:2105.03322v1](https://arxiv.org/abs/2105.03322v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-10-8">8. ∂-Explainer: Abductive Natural Language Inference via Differentiable Convex Optimization
+</h2>
+
+Title: [∂-Explainer: Abductive Natural Language Inference via Differentiable Convex Optimization](https://arxiv.org/abs/2105.03417)
+
+Authors: [Mokanarangan Thayaparan](https://arxiv.org/search/cs?searchtype=author&query=Thayaparan%2C+M), [Marco Valentino](https://arxiv.org/search/cs?searchtype=author&query=Valentino%2C+M), [Deborah Ferreira](https://arxiv.org/search/cs?searchtype=author&query=Ferreira%2C+D), [Julia Rozanova](https://arxiv.org/search/cs?searchtype=author&query=Rozanova%2C+J), [André Freitas](https://arxiv.org/search/cs?searchtype=author&query=Freitas%2C+A)
+
+> Constrained optimization solvers with Integer Linear programming (ILP) have been the cornerstone for explainable natural language inference during its inception. ILP based approaches provide a way to encode explicit and controllable assumptions casting natural language inference as an abductive reasoning problem, where the solver constructs a plausible explanation for a given hypothesis. While constrained based solvers provide explanations, they are often limited by the use of explicit constraints and cannot be integrated as part of broader deep neural architectures. In contrast, state-of-the-art transformer-based models can learn from data and implicitly encode complex constraints. However, these models are intrinsically black boxes. This paper presents a novel framework named ∂-Explainer (Diff-Explainer) that combines the best of both worlds by casting the constrained optimization as part of a deep neural network via differentiable convex optimization and fine-tuning pre-trained transformers for downstream explainable NLP tasks. To demonstrate the efficacy of the framework, we transform the constraints presented by TupleILP and integrate them with sentence embedding transformers for the task of explainable science QA. Our experiments show up to ≈10% improvement over non-differentiable solver while still providing explanations for supporting its inference.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2105.03417](https://arxiv.org/abs/2105.03417) [cs.CL]** |
+|           | (or **[arXiv:2105.03417v1](https://arxiv.org/abs/2105.03417v1) [cs.CL]** for this version) |
+
+
+
 
 
 
