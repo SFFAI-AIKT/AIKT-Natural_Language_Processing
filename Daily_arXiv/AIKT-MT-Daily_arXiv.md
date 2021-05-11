@@ -3,6 +3,14 @@
 # Index
 
 
+- [2021-05-11](#2021-05-11-1)
+  
+  - [1. Duplex Sequence-to-Sequence Learning for Reversible Machine Translation](#2021-05-11-1)
+  - [2. Measuring and Increasing Context Usage in Context-Aware Machine Translation](#2021-05-11-2)
+  - [3. Continual Mixed-Language Pre-Training for Extremely Low-Resource Neural Machine Translation](#2021-05-11-3)
+  - [4. Neural Quality Estimation with Multiple Hypotheses for Grammatical Error Correction](#2021-05-11-4)
+  - [5. Self-Guided Curriculum Learning for Neural Machine Translation](#2021-05-11-5)
+  - [6. UPC's Speech Translation System for IWSLT 2021](#2021-05-11-6)
 - [2021-05-10](#2021-05-10)
   
   - [1. Adapting by Pruning: A Case Study on BERT](#2021-05-10-1)
@@ -29,6 +37,128 @@
   - [4. BERT memorisation and pitfalls in low-resource scenarios](#2021-05-04-4)
   - [5. Natural Language Generation Using Link Grammar for General Conversational Intelligence](#2021-05-04-5)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-05-11
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-05-11-1">1. Duplex Sequence-to-Sequence Learning for Reversible Machine Translation
+</h2>
+
+Title: [Duplex Sequence-to-Sequence Learning for Reversible Machine Translation](https://arxiv.org/abs/2105.03458)
+
+Authors: [Zaixiang Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+Z), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Shujian Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Jiajun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J), [Jingjing Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+J), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> Sequence-to-sequence (seq2seq) problems such as machine translation are bidirectional, which naturally derive a pair of directional tasks and two directional learning signals. However, typical seq2seq neural networks are {\em simplex} that only model one unidirectional task, which cannot fully exploit the potential of bidirectional learning signals from parallel data. To address this issue, we propose a {\em duplex} seq2seq neural network, REDER (Reversible Duplex Transformer), and apply it to machine translation. The architecture of REDER has two ends, each of which specializes in a language so as to read and yield sequences in that language. As a result, REDER can simultaneously learn from the bidirectional signals, and enables {\em reversible machine translation} by simply flipping the input and output ends, Experiments on widely-used machine translation benchmarks verify that REDER achieves the first success of reversible machine translation, which helps obtain considerable gains over several strong baselines.
+
+| Comments: | Under review, 10 pages                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.03458](https://arxiv.org/abs/2105.03458) [cs.CL]** |
+|           | (or **[arXiv:2105.03458v1](https://arxiv.org/abs/2105.03458v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-11-2">2. Measuring and Increasing Context Usage in Context-Aware Machine Translation
+</h2>
+
+Title: [Measuring and Increasing Context Usage in Context-Aware Machine Translation](https://arxiv.org/abs/2105.03482)
+
+Authors: [Patrick Fernandes](https://arxiv.org/search/cs?searchtype=author&query=Fernandes%2C+P), [Kayo Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+K), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G), [André F. T. Martins](https://arxiv.org/search/cs?searchtype=author&query=Martins%2C+A+F+T)
+
+> Recent work in neural machine translation has demonstrated both the necessity and feasibility of using inter-sentential context -- context from sentences other than those currently being translated. However, while many current methods present model architectures that theoretically can use this extra context, it is often not clear how much they do actually utilize it at translation time. In this paper, we introduce a new metric, conditional cross-mutual information, to quantify the usage of context by these models. Using this metric, we measure how much document-level machine translation systems use particular varieties of context. We find that target context is referenced more than source context, and that conditioning on a longer context has a diminishing effect on results. We then introduce a new, simple training method, context-aware word dropout, to increase the usage of context by context-aware models. Experiments show that our method increases context usage and that this reflects on the translation quality according to metrics such as BLEU and COMET, as well as performance on anaphoric pronoun resolution and lexical cohesion contrastive datasets.
+
+| Comments: | ACL 2021                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.03482](https://arxiv.org/abs/2105.03482) [cs.CL]** |
+|           | (or **[arXiv:2105.03482v1](https://arxiv.org/abs/2105.03482v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-11-3">3. Continual Mixed-Language Pre-Training for Extremely Low-Resource Neural Machine Translation
+</h2>
+
+Title: [Continual Mixed-Language Pre-Training for Extremely Low-Resource Neural Machine Translation](https://arxiv.org/abs/2105.03953)
+
+Authors: [Zihan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Genta Indra Winata](https://arxiv.org/search/cs?searchtype=author&query=Winata%2C+G+I), [Pascale Fung](https://arxiv.org/search/cs?searchtype=author&query=Fung%2C+P)
+
+> The data scarcity in low-resource languages has become a bottleneck to building robust neural machine translation systems. Fine-tuning a multilingual pre-trained model (e.g., mBART (Liu et al., 2020)) on the translation task is a good approach for low-resource languages; however, its performance will be greatly limited when there are unseen languages in the translation pairs. In this paper, we present a continual pre-training (CPT) framework on mBART to effectively adapt it to unseen languages. We first construct noisy mixed-language text from the monolingual corpus of the target language in the translation pair to cover both the source and target languages, and then, we continue pre-training mBART to reconstruct the original monolingual text. Results show that our method can consistently improve the fine-tuning performance upon the mBART baseline, as well as other strong baselines, across all tested low-resource translation pairs containing unseen languages. Furthermore, our approach also boosts the performance on translation pairs where both languages are seen in the original mBART's pre-training. The code is available at [this https URL](https://github.com/zliucr/cpt-nmt).
+
+| Comments: | Accepted in Findings of ACL 2021                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2105.03953](https://arxiv.org/abs/2105.03953) [cs.CL]** |
+|           | (or **[arXiv:2105.03953v1](https://arxiv.org/abs/2105.03953v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-11-4">4. Neural Quality Estimation with Multiple Hypotheses for Grammatical Error Correction
+</h2>
+
+Title: [Neural Quality Estimation with Multiple Hypotheses for Grammatical Error Correction](https://arxiv.org/abs/2105.04443)
+
+Authors: [Zhenghao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Xiaoyuan Yi](https://arxiv.org/search/cs?searchtype=author&query=Yi%2C+X), [Maosong Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M), [Liner Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+L), [Tat-Seng Chua](https://arxiv.org/search/cs?searchtype=author&query=Chua%2C+T)
+
+> Grammatical Error Correction (GEC) aims to correct writing errors and help language learners improve their writing skills. However, existing GEC models tend to produce spurious corrections or fail to detect lots of errors. The quality estimation model is necessary to ensure learners get accurate GEC results and avoid misleading from poorly corrected sentences. Well-trained GEC models can generate several high-quality hypotheses through decoding, such as beam search, which provide valuable GEC evidence and can be used to evaluate GEC quality. However, existing models neglect the possible GEC evidence from different hypotheses. This paper presents the Neural Verification Network (VERNet) for GEC quality estimation with multiple hypotheses. VERNet establishes interactions among hypotheses with a reasoning graph and conducts two kinds of attention mechanisms to propagate GEC evidence to verify the quality of generated hypotheses. Our experiments on four GEC datasets show that VERNet achieves state-of-the-art grammatical error detection performance, achieves the best quality estimation results, and significantly improves GEC performance by reranking hypotheses. All data and source codes are available at [this https URL](https://github.com/thunlp/VERNet).
+
+| Comments: | Accepted by NAACL2021, 9 pages, 5 figures                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.04443](https://arxiv.org/abs/2105.04443) [cs.CL]** |
+|           | (or **[arXiv:2105.04443v1](https://arxiv.org/abs/2105.04443v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-11-5">5. Self-Guided Curriculum Learning for Neural Machine Translation
+</h2>
+
+Title: [Self-Guided Curriculum Learning for Neural Machine Translation](https://arxiv.org/abs/2105.04475)
+
+Authors: [Lei Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+L), [Liang Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+L), [Kevin Duh](https://arxiv.org/search/cs?searchtype=author&query=Duh%2C+K), [Ryohei Sasano](https://arxiv.org/search/cs?searchtype=author&query=Sasano%2C+R), [Koichi Takeda](https://arxiv.org/search/cs?searchtype=author&query=Takeda%2C+K)
+
+> In the field of machine learning, the well-trained model is assumed to be able to recover the training labels, i.e. the synthetic labels predicted by the model should be as close to the ground-truth labels as possible. Inspired by this, we propose a self-guided curriculum strategy to encourage the learning of neural machine translation (NMT) models to follow the above recovery criterion, where we cast the recovery degree of each training example as its learning difficulty. Specifically, we adopt the sentence level BLEU score as the proxy of recovery degree. Different from existing curricula relying on linguistic prior knowledge or third-party language models, our chosen learning difficulty is more suitable to measure the degree of knowledge mastery of the NMT models. Experiments on translation benchmarks, including WMT14 English⇒German and WMT17 Chinese⇒English, demonstrate that our approach can consistently improve translation performance against strong baseline Transformer.
+
+| Comments: | Work in progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2105.04475](https://arxiv.org/abs/2105.04475) [cs.CL]** |
+|           | (or **[arXiv:2105.04475v1](https://arxiv.org/abs/2105.04475v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-11-6">6. UPC's Speech Translation System for IWSLT 2021
+</h2>
+
+Title: [UPC's Speech Translation System for IWSLT 2021](https://arxiv.org/abs/2105.04512)
+
+Authors: [Gerard I. Gállego](https://arxiv.org/search/cs?searchtype=author&query=Gállego%2C+G+I), [Ioannis Tsiamas](https://arxiv.org/search/cs?searchtype=author&query=Tsiamas%2C+I), [Carlos Escolano](https://arxiv.org/search/cs?searchtype=author&query=Escolano%2C+C), [José A. R. Fonollosa](https://arxiv.org/search/cs?searchtype=author&query=Fonollosa%2C+J+A+R), [Marta R. Costa-jussà](https://arxiv.org/search/cs?searchtype=author&query=Costa-jussà%2C+M+R)
+
+> This paper describes the submission to the IWSLT 2021 offline speech translation task by the UPC Machine Translation group. The task consists of building a system capable of translating English audio recordings extracted from TED talks into German text. Submitted systems can be either cascade or end-to-end and use a custom or given segmentation. Our submission is an end-to-end speech translation system, which combines pre-trained models (Wav2Vec 2.0 and mBART) with coupling modules between the encoder and decoder, and uses an efficient fine-tuning technique, which trains only 20% of its total parameters. We show that adding an Adapter to the system and pre-training it, can increase the convergence speed and the final result, with which we achieve a BLEU score of 27.3 on the MuST-C test set. Our final model is an ensemble that obtains 28.22 BLEU score on the same set. Our submission also uses a custom segmentation algorithm that employs pre-trained Wav2Vec 2.0 for identifying periods of untranscribable text and can bring improvements of 2.5 to 3 BLEU score on the IWSLT 2019 test set, as compared to the result with the given segmentation.
+
+| Comments: | Submitted to IWSLT 2021                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.04512](https://arxiv.org/abs/2105.04512) [cs.CL]** |
+|           | (or **[arXiv:2105.04512v1](https://arxiv.org/abs/2105.04512v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
