@@ -3,6 +3,28 @@
 # Index
 
 
+- [2021-05-14](#2021-05-14)
+  
+  - [1. Better than BERT but Worse than Baseline](#2021-05-14-1)
+  - [2. Spelling Correction with Denoising Transformer](#2021-05-14-2)
+  - [3. Designing Multimodal Datasets for NLP Challenges](#2021-05-14-3)
+  - [4. Are Larger Pretrained Language Models Uniformly Better? Comparing Performance at the Instance Level](#2021-05-14-4)
+- [2021-05-13]($2021-05-13)
+  
+  - [1. Improving Lexically Constrained Neural Machine Translation with Source-Conditioned Masked Span Prediction](#2021-05-13-1)
+  - [2. Evaluating Gender Bias in Natural Language Inference](#2021-05-13-2)
+  - [3. Stacked Acoustic-and-Textual Encoding: Integrating the Pre-trained Models into Speech Translation Encoders](#2021-05-13-3)
+- [2021-05-12](#2021-05-21)
+  
+  - [1. Cross-Modal Generative Augmentation for Visual Question Answering](#2021-05-21-1)
+  - [2. Automatic Classification of Human Translation and Machine Translation: A Study from the Perspective of Lexical Diversity](#2021-05-21-2)
+  - [3. Language Acquisition is Embodied, Interactive, Emotive: a Research Proposal](#2021-05-21-3)
+  - [4. Assessing the Syntactic Capabilities of Transformer-based Multilingual Language Models](#2021-05-21-4)
+  - [5. Investigating the Reordering Capability in CTC-based Non-Autoregressive End-to-End Speech Translation](#2021-05-21-5)
+  - [6. Can You Traducir This? Machine Translation for Code-Switched Input](#2021-05-21-6)
+  - [7. BERT is to NLP what AlexNet is to CV: Can Pre-Trained Language Models Identify Analogies?](#2021-05-21-7)
+  - [8. Towards transparency in NLP shared tasks](#2021-05-21-8)
+  - [9. Including Signed Languages in Natural Language Processing](#2021-05-21-9)
 - [2021-05-11](#2021-05-11-1)
   
   - [1. Duplex Sequence-to-Sequence Learning for Reversible Machine Translation](#2021-05-11-1)
@@ -37,6 +59,332 @@
   - [4. BERT memorisation and pitfalls in low-resource scenarios](#2021-05-04-4)
   - [5. Natural Language Generation Using Link Grammar for General Conversational Intelligence](#2021-05-04-5)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-05-14
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-05-14-1">1. Better than BERT but Worse than Baseline
+</h2>
+
+Title: [Better than BERT but Worse than Baseline](https://arxiv.org/abs/2105.05915)
+
+Authors: [Boxiang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+B), [Jiaji Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+J), [Xingyu Cai](https://arxiv.org/search/cs?searchtype=author&query=Cai%2C+X), [Kenneth Church](https://arxiv.org/search/cs?searchtype=author&query=Church%2C+K)
+
+> This paper compares BERT-SQuAD and Ab3P on the Abbreviation Definition Identification (ADI) task. ADI inputs a text and outputs short forms (abbreviations/acronyms) and long forms (expansions). BERT with reranking improves over BERT without reranking but fails to reach the Ab3P rule-based baseline. What is BERT missing? Reranking introduces two new features: charmatch and freq. The first feature identifies opportunities to take advantage of character constraints in acronyms and the second feature identifies opportunities to take advantage of frequency constraints across documents.
+
+| Comments: | 6 pages, 2 figures, 5 tables                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2105.05915](https://arxiv.org/abs/2105.05915) [cs.CL]** |
+|           | (or **[arXiv:2105.05915v1](https://arxiv.org/abs/2105.05915v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-14-2">2. Spelling Correction with Denoising Transformer
+</h2>
+
+Title: [Spelling Correction with Denoising Transformer](https://arxiv.org/abs/2105.05977)
+
+Authors: [Alex Kuznetsov](https://arxiv.org/search/cs?searchtype=author&query=Kuznetsov%2C+A), [Hector Urdiales](https://arxiv.org/search/cs?searchtype=author&query=Urdiales%2C+H)
+
+> We present a novel method of performing spelling correction on short input strings, such as search queries or individual words. At its core lies a procedure for generating artificial typos which closely follow the error patterns manifested by humans. This procedure is used to train the production spelling correction model based on a transformer architecture. This model is currently served in the HubSpot product search. We show that our approach to typo generation is superior to the widespread practice of adding noise, which ignores human patterns. We also demonstrate how our approach may be extended to resource-scarce settings and train spelling correction models for Arabic, Greek, Russian, and Setswana languages, without using any labeled data.
+
+| Comments: | 9 pages, 3 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2105.05977](https://arxiv.org/abs/2105.05977) [cs.CL]** |
+|           | (or **[arXiv:2105.05977v1](https://arxiv.org/abs/2105.05977v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-14-3">3. Designing Multimodal Datasets for NLP Challenges
+</h2>
+
+Title: [Designing Multimodal Datasets for NLP Challenges](https://arxiv.org/abs/2105.05999)
+
+Authors: [James Pustejovsky](https://arxiv.org/search/cs?searchtype=author&query=Pustejovsky%2C+J), [Eben Holderness](https://arxiv.org/search/cs?searchtype=author&query=Holderness%2C+E), [Jingxuan Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+J), [Parker Glenn](https://arxiv.org/search/cs?searchtype=author&query=Glenn%2C+P), [Kyeongmin Rim](https://arxiv.org/search/cs?searchtype=author&query=Rim%2C+K), [Kelley Lynch](https://arxiv.org/search/cs?searchtype=author&query=Lynch%2C+K), [Richard Brutti](https://arxiv.org/search/cs?searchtype=author&query=Brutti%2C+R)
+
+> In this paper, we argue that the design and development of multimodal datasets for natural language processing (NLP) challenges should be enhanced in two significant respects: to more broadly represent commonsense semantic inferences; and to better reflect the dynamics of actions and events, through a substantive alignment of textual and visual information. We identify challenges and tasks that are reflective of linguistic and cognitive competencies that humans have when speaking and reasoning, rather than merely the performance of systems on isolated tasks. We introduce the distinction between challenge-based tasks and competence-based performance, and describe a diagnostic dataset, Recipe-to-Video Questions (R2VQ), designed for testing competence-based comprehension over a multimodal recipe collection ([this http URL](http://r2vq.org/)). The corpus contains detailed annotation supporting such inferencing tasks and facilitating a rich set of question families that we use to evaluate NLP systems.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2105.05999](https://arxiv.org/abs/2105.05999) [cs.CL]** |
+|           | (or **[arXiv:2105.05999v1](https://arxiv.org/abs/2105.05999v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-14-4">4. Are Larger Pretrained Language Models Uniformly Better? Comparing Performance at the Instance Level
+</h2>
+
+Title: [Are Larger Pretrained Language Models Uniformly Better? Comparing Performance at the Instance Level](https://arxiv.org/abs/2105.06020)
+
+Authors: [Ruiqi Zhong](https://arxiv.org/search/cs?searchtype=author&query=Zhong%2C+R), [Dhruba Ghosh](https://arxiv.org/search/cs?searchtype=author&query=Ghosh%2C+D), [Dan Klein](https://arxiv.org/search/cs?searchtype=author&query=Klein%2C+D), [Jacob Steinhardt](https://arxiv.org/search/cs?searchtype=author&query=Steinhardt%2C+J)
+
+> Larger language models have higher accuracy on average, but are they better on every single instance (datapoint)? Some work suggests larger models have higher out-of-distribution robustness, while other work suggests they have lower accuracy on rare subgroups. To understand these differences, we investigate these models at the level of individual instances. However, one major challenge is that individual predictions are highly sensitive to noise in the randomness in training. We develop statistically rigorous methods to address this, and after accounting for pretraining and finetuning noise, we find that our BERT-Large is worse than BERT-Mini on at least 1-4% of instances across MNLI, SST-2, and QQP, compared to the overall accuracy improvement of 2-10%. We also find that finetuning noise increases with model size and that instance-level accuracy has momentum: improvement from BERT-Mini to BERT-Medium correlates with improvement from BERT-Medium to BERT-Large. Our findings suggest that instance-level predictions provide a rich source of information; we therefore, recommend that researchers supplement model weights with model predictions.
+
+| Comments: | ACL 2021 Findings. Code and data: [this https URL](https://github.com/ruiqi-zhong/acl2021-instance-level) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2105.06020](https://arxiv.org/abs/2105.06020) [cs.CL]** |
+|           | (or **[arXiv:2105.06020v1](https://arxiv.org/abs/2105.06020v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+# 2021-05-13
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-05-13-1">1. Improving Lexically Constrained Neural Machine Translation with Source-Conditioned Masked Span Prediction
+</h2>
+
+Title: [Improving Lexically Constrained Neural Machine Translation with Source-Conditioned Masked Span Prediction](https://arxiv.org/abs/2105.05498)
+
+Authors: [Gyubok Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+G), [Seongjun Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+S), [Edward Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi%2C+E)
+
+> Generating accurate terminology is a crucial component for the practicality and reliability of neural machine translation (NMT) systems. To address this, lexically constrained NMT explores various methods to ensure pre-specified words and phrases to appear in the translations. In many cases, however, those methods are evaluated on general domain corpora, where the terms are mostly uni- and bi-grams (>98%). In this paper, we instead tackle a more challenging setup consisting of domain-specific corpora with much longer n-gram and highly specialized terms. To encourage span-level representations in generation, we additionally impose a source-sentence conditioned masked span prediction loss in the decoder and observe improvements on both terminology translation as well as BLEU scores. Experimental results on three domain-specific corpora in two language pairs demonstrate that the proposed training scheme can improve the performance of existing lexically constrained methods that can operate both with or without a term dictionary at test time.
+
+| Comments: | To appear in ACL 2021                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2105.05498](https://arxiv.org/abs/2105.05498) [cs.CL]** |
+|           | (or **[arXiv:2105.05498v1](https://arxiv.org/abs/2105.05498v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-13-2">2. Evaluating Gender Bias in Natural Language Inference
+</h2>
+
+Title: [Evaluating Gender Bias in Natural Language Inference](https://arxiv.org/abs/2105.05541)
+
+Authors: [Shanya Sharma](https://arxiv.org/search/cs?searchtype=author&query=Sharma%2C+S), [Manan Dey](https://arxiv.org/search/cs?searchtype=author&query=Dey%2C+M), [Koustuv Sinha](https://arxiv.org/search/cs?searchtype=author&query=Sinha%2C+K)
+
+> Gender-bias stereotypes have recently raised significant ethical concerns in natural language processing. However, progress in detection and evaluation of gender bias in natural language understanding through inference is limited and requires further investigation. In this work, we propose an evaluation methodology to measure these biases by constructing a challenge task that involves pairing gender-neutral premises against a gender-specific hypothesis. We use our challenge task to investigate state-of-the-art NLI models on the presence of gender stereotypes using occupations. Our findings suggest that three models (BERT, RoBERTa, BART) trained on MNLI and SNLI datasets are significantly prone to gender-induced prediction errors. We also find that debiasing techniques such as augmenting the training dataset to ensure a gender-balanced dataset can help reduce such bias in certain cases.
+
+| Comments:    | NeurIPS 2020 Workshop on Dataset Curation and Security       |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| MSC classes: | 68T50                                                        |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2105.05541](https://arxiv.org/abs/2105.05541) [cs.CL]** |
+|              | (or **[arXiv:2105.05541v1](https://arxiv.org/abs/2105.05541v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-13-3">3. Stacked Acoustic-and-Textual Encoding: Integrating the Pre-trained Models into Speech Translation Encoders
+</h2>
+
+Title: [Stacked Acoustic-and-Textual Encoding: Integrating the Pre-trained Models into Speech Translation Encoders](https://arxiv.org/abs/2105.05752)
+
+Authors: [Chen Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+C), [Bojie Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+B), [Yanyang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Yuhao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [shen huang](https://arxiv.org/search/cs?searchtype=author&query=huang%2C+s), [Qi Ju](https://arxiv.org/search/cs?searchtype=author&query=Ju%2C+Q), [Tong Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+T), [Jingbo Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J)
+
+> Encoder pre-training is promising in end-to-end Speech Translation (ST), given the fact that speech-to-translation data is scarce. But ST encoders are not simple instances of Automatic Speech Recognition (ASR) or Machine Translation (MT) encoders. For example, we find ASR encoders lack the global context representation, which is necessary for translation, whereas MT encoders are not designed to deal with long but locally attentive acoustic sequences. In this work, we propose a Stacked Acoustic-and-Textual Encoding (SATE) method for speech translation. Our encoder begins with processing the acoustic sequence as usual, but later behaves more like an MT encoder for a global representation of the input sequence. In this way, it is straightforward to incorporate the pre-trained models into the system. Also, we develop an adaptor module to alleviate the representation inconsistency between the pre-trained ASR encoder and MT encoder, and a multi-teacher knowledge distillation method to preserve the pre-training knowledge. Experimental results on the LibriSpeech En-Fr and MuST-C En-De show that our method achieves the state-of-the-art performance of 18.3 and 25.2 BLEU points. To our knowledge, we are the first to develop an end-to-end ST system that achieves comparable or even better BLEU performance than the cascaded ST counterpart when large-scale ASR and MT data is available.
+
+| Comments: | ACL 2021                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2105.05752](https://arxiv.org/abs/2105.05752) [cs.CL]** |
+|           | (or **[arXiv:2105.05752v1](https://arxiv.org/abs/2105.05752v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+# 2021-05-12
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-05-12-1">1. Cross-Modal Generative Augmentation for Visual Question Answering
+</h2>
+
+Title: [Cross-Modal Generative Augmentation for Visual Question Answering](https://arxiv.org/abs/2105.04780)
+
+Authors: [Zixu Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Yishu Miao](https://arxiv.org/search/cs?searchtype=author&query=Miao%2C+Y), [Lucia Specia](https://arxiv.org/search/cs?searchtype=author&query=Specia%2C+L)
+
+> Data augmentation is an approach that can effectively improve the performance of multimodal machine learning. This paper introduces a generative model for data augmentation by leveraging the correlations among multiple modalities. Different from conventional data augmentation approaches that apply low level operations with deterministic heuristics, our method proposes to learn an augmentation sampler that generates samples of the target modality conditioned on observed modalities in the variational auto-encoder framework. Additionally, the proposed model is able to quantify the confidence of augmented data by its generative probability, and can be jointly updated with a downstream pipeline. Experiments on Visual Question Answering tasks demonstrate the effectiveness of the proposed generative model, which is able to boost the strong UpDn-based models to the state-of-the-art performance.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2105.04780](https://arxiv.org/abs/2105.04780) [cs.CV]** |
+|           | (or **[arXiv:2105.04780v1](https://arxiv.org/abs/2105.04780v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-12-2">2. Automatic Classification of Human Translation and Machine Translation: A Study from the Perspective of Lexical Diversity
+</h2>
+
+Title: [Automatic Classification of Human Translation and Machine Translation: A Study from the Perspective of Lexical Diversity](https://arxiv.org/abs/2105.04616)
+
+Authors: [Yingxue Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+Y), [Mark-Jan Nederhof](https://arxiv.org/search/cs?searchtype=author&query=Nederhof%2C+M)
+
+> By using a trigram model and fine-tuning a pretrained BERT model for sequence classification, we show that machine translation and human translation can be classified with an accuracy above chance level, which suggests that machine translation and human translation are different in a systematic way. The classification accuracy of machine translation is much higher than of human translation. We show that this may be explained by the difference in lexical diversity between machine translation and human translation. If machine translation has independent patterns from human translation, automatic metrics which measure the deviation of machine translation from human translation may conflate difference with quality. Our experiment with two different types of automatic metrics shows correlation with the result of the classification task. Therefore, we suggest the difference in lexical diversity between machine translation and human translation be given more attention in machine translation evaluation.
+
+| Comments: | accepted by MoTra21, Nodalida 2021                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.04616](https://arxiv.org/abs/2105.04616) [cs.CL]** |
+|           | (or **[arXiv:2105.04616v1](https://arxiv.org/abs/2105.04616v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-12-3">3. Language Acquisition is Embodied, Interactive, Emotive: a Research Proposal
+</h2>
+
+Title: [Language Acquisition is Embodied, Interactive, Emotive: a Research Proposal](https://arxiv.org/abs/2105.04633)
+
+Authors: [Casey Kennington](https://arxiv.org/search/cs?searchtype=author&query=Kennington%2C+C)
+
+> Humans' experience of the world is profoundly multimodal from the beginning, so why do existing state-of-the-art language models only use text as a modality to learn and represent semantic meaning? In this paper we review the literature on the role of embodiment and emotion in the interactive setting of spoken dialogue as necessary prerequisites for language learning for human children, including how words in child vocabularies are largely concrete, then shift to become more abstract as the children get older. We sketch a model of semantics that leverages current transformer-based models and a word-level grounded model, then explain the robot-dialogue system that will make use of our semantic model, the setting for the system to learn language, and existing benchmarks for evaluation.
+
+| Comments: | 6 pages, ICLR 2021 Embodied Multimodal Learning Workshop     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.04633](https://arxiv.org/abs/2105.04633) [cs.CL]** |
+|           | (or **[arXiv:2105.04633v1](https://arxiv.org/abs/2105.04633v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-12-4">4. Assessing the Syntactic Capabilities of Transformer-based Multilingual Language Models
+</h2>
+
+Title: [Assessing the Syntactic Capabilities of Transformer-based Multilingual Language Models](https://arxiv.org/abs/2105.04688)
+
+Authors: [Laura Pérez-Mayos](https://arxiv.org/search/cs?searchtype=author&query=Pérez-Mayos%2C+L), [Alba Táboas García](https://arxiv.org/search/cs?searchtype=author&query=García%2C+A+T), [Simon Mille](https://arxiv.org/search/cs?searchtype=author&query=Mille%2C+S), [Leo Wanner](https://arxiv.org/search/cs?searchtype=author&query=Wanner%2C+L)
+
+> Multilingual Transformer-based language models, usually pretrained on more than 100 languages, have been shown to achieve outstanding results in a wide range of cross-lingual transfer tasks. However, it remains unknown whether the optimization for different languages conditions the capacity of the models to generalize over syntactic structures, and how languages with syntactic phenomena of different complexity are affected. In this work, we explore the syntactic generalization capabilities of the monolingual and multilingual versions of BERT and RoBERTa. More specifically, we evaluate the syntactic generalization potential of the models on English and Spanish tests, comparing the syntactic abilities of monolingual and multilingual models on the same language (English), and of multilingual models on two different languages (English and Spanish). For English, we use the available SyntaxGym test suite; for Spanish, we introduce SyntaxGymES, a novel ensemble of targeted syntactic tests in Spanish, designed to evaluate the syntactic generalization capabilities of language models through the SyntaxGym online platform.
+
+| Comments: | To be published in Findings of ACL 2021                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.04688](https://arxiv.org/abs/2105.04688) [cs.CL]** |
+|           | (or **[arXiv:2105.04688v1](https://arxiv.org/abs/2105.04688v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-12-5">5. Investigating the Reordering Capability in CTC-based Non-Autoregressive End-to-End Speech Translation
+</h2>
+
+Title: [Investigating the Reordering Capability in CTC-based Non-Autoregressive End-to-End Speech Translation](https://arxiv.org/abs/2105.04840)
+
+Authors: [Shun-Po Chuang](https://arxiv.org/search/cs?searchtype=author&query=Chuang%2C+S), [Yung-Sung Chuang](https://arxiv.org/search/cs?searchtype=author&query=Chuang%2C+Y), [Chih-Chiang Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+C), [Hung-yi Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+H)
+
+> We study the possibilities of building a non-autoregressive speech-to-text translation model using connectionist temporal classification (CTC), and use CTC-based automatic speech recognition as an auxiliary task to improve the performance. CTC's success on translation is counter-intuitive due to its monotonicity assumption, so we analyze its reordering capability. Kendall's tau distance is introduced as the quantitative metric, and gradient-based visualization provides an intuitive way to take a closer look into the model. Our analysis shows that transformer encoders have the ability to change the word order and points out the future research direction that worth being explored more on non-autoregressive speech translation.
+
+| Comments: | Accepted in Findings of ACL-IJCNLP 2021                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.04840](https://arxiv.org/abs/2105.04840) [cs.CL]** |
+|           | (or **[arXiv:2105.04840v1](https://arxiv.org/abs/2105.04840v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-12-6">6. Can You Traducir This? Machine Translation for Code-Switched Input
+</h2>
+
+Title: [Can You Traducir This? Machine Translation for Code-Switched Input](https://arxiv.org/abs/2105.04846)
+
+Authors: [Jitao Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+J) (TLP), [François Yvon](https://arxiv.org/search/cs?searchtype=author&query=Yvon%2C+F) (TLP)
+
+> Code-Switching (CSW) is a common phenomenon that occurs in multilingual geographic or social contexts, which raises challenging problems for natural language processing tools. We focus here on Machine Translation (MT) of CSW texts, where we aim to simultaneously disentangle and translate the two mixed languages. Due to the lack of actual translated CSW data, we generate artificial training data from regular parallel texts. Experiments show this training strategy yields MT systems that surpass multilingual systems for code-switched texts. These results are confirmed in an alternative task aimed at providing contextual translations for a L2 writing assistant.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | Workshop on Computational Approaches to Linguistic Code Switching, Jun 2021, Online, United States |
+| Cite as:           | **[arXiv:2105.04846](https://arxiv.org/abs/2105.04846) [cs.CL]** |
+|                    | (or **[arXiv:2105.04846v1](https://arxiv.org/abs/2105.04846v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-12-7">7. BERT is to NLP what AlexNet is to CV: Can Pre-Trained Language Models Identify Analogies?
+</h2>
+
+Title: [BERT is to NLP what AlexNet is to CV: Can Pre-Trained Language Models Identify Analogies?](https://arxiv.org/abs/2105.04949)
+
+Authors: [Asahi Ushio](https://arxiv.org/search/cs?searchtype=author&query=Ushio%2C+A), [Luis Espinosa-Anke](https://arxiv.org/search/cs?searchtype=author&query=Espinosa-Anke%2C+L), [Steven Schockaert](https://arxiv.org/search/cs?searchtype=author&query=Schockaert%2C+S), [Jose Camacho-Collados](https://arxiv.org/search/cs?searchtype=author&query=Camacho-Collados%2C+J)
+
+> Analogies play a central role in human commonsense reasoning. The ability to recognize analogies such as eye is to seeing what ear is to hearing, sometimes referred to as analogical proportions, shape how we structure knowledge and understand language. Surprisingly, however, the task of identifying such analogies has not yet received much attention in the language model era. In this paper, we analyze the capabilities of transformer-based language models on this unsupervised task, using benchmarks obtained from educational settings, as well as more commonly used datasets. We find that off-the-shelf language models can identify analogies to a certain extent, but struggle with abstract and complex relations, and results are highly sensitive to model architecture and hyperparameters. Overall the best results were obtained with GPT-2 and RoBERTa, while configurations using BERT were not able to outperform word embedding models. Our results raise important questions for future work about how, and to what extent, pre-trained language models capture knowledge about abstract semantic relations\footnote{Source code and data to reproduce our experimental results are available in the following repository: \url{[this https URL](https://github.com/asahi417/analogy-language-model)}}.
+
+| Comments: | Accepted by ACL 2021 main conference                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2105.04949](https://arxiv.org/abs/2105.04949) [cs.CL]** |
+|           | (or **[arXiv:2105.04949v1](https://arxiv.org/abs/2105.04949v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-12-8">8. Towards transparency in NLP shared tasks
+</h2>
+
+Title: [Towards transparency in NLP shared tasks](https://arxiv.org/abs/2105.05020)
+
+Authors: [Carla Parra Escartín](https://arxiv.org/search/cs?searchtype=author&query=Escartín%2C+C+P), [Teresa Lynn](https://arxiv.org/search/cs?searchtype=author&query=Lynn%2C+T), [Joss Moorkens](https://arxiv.org/search/cs?searchtype=author&query=Moorkens%2C+J), [Jane Dunne](https://arxiv.org/search/cs?searchtype=author&query=Dunne%2C+J)
+
+> This article reports on a survey carried out across the Natural Language Processing (NLP) community. The survey aimed to capture the opinions of the research community on issues surrounding shared tasks, with respect to both participation and organisation. Amongst the 175 responses received, both positive and negative observations were made. We carried out and report on an extensive analysis of these responses, which leads us to propose a Shared Task Organisation Checklist that could support future participants and organisers. The proposed Checklist is flexible enough to accommodate the wide diversity of shared tasks in our field and its goal is not to be prescriptive, but rather to serve as a tool that encourages shared task organisers to foreground ethical behaviour, beginning with the common issues that the 175 respondents deemed important. Its usage would not only serve as an instrument to reflect on important aspects of shared tasks, but would also promote increased transparency around them.
+
+| Comments: | 38 pages, 26 figures                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.05020](https://arxiv.org/abs/2105.05020) [cs.CL]** |
+|           | (or **[arXiv:2105.05020v1](https://arxiv.org/abs/2105.05020v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-12-9">9. Including Signed Languages in Natural Language Processing
+</h2>
+
+Title: [Including Signed Languages in Natural Language Processing](https://arxiv.org/abs/2105.05222)
+
+Authors: [Kayo Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+K), [Amit Moryossef](https://arxiv.org/search/cs?searchtype=author&query=Moryossef%2C+A), [Julie Hochgesang](https://arxiv.org/search/cs?searchtype=author&query=Hochgesang%2C+J), [Yoav Goldberg](https://arxiv.org/search/cs?searchtype=author&query=Goldberg%2C+Y), [Malihe Alikhani](https://arxiv.org/search/cs?searchtype=author&query=Alikhani%2C+M)
+
+> Signed languages are the primary means of communication for many deaf and hard of hearing individuals. Since signed languages exhibit all the fundamental linguistic properties of natural language, we believe that tools and theories of Natural Language Processing (NLP) are crucial towards its modeling. However, existing research in Sign Language Processing (SLP) seldom attempt to explore and leverage the linguistic organization of signed languages. This position paper calls on the NLP community to include signed languages as a research area with high social and scientific impact. We first discuss the linguistic properties of signed languages to consider during their modeling. Then, we review the limitations of current SLP models and identify the open challenges to extend NLP to signed languages. Finally, we urge (1) the adoption of an efficient tokenization method; (2) the development of linguistically-informed models; (3) the collection of real-world signed language data; (4) the inclusion of local signed language communities as an active and leading voice in the direction of research.
+
+| Comments: | Accepted as a Theme paper to ACL 2021                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2105.05222](https://arxiv.org/abs/2105.05222) [cs.CL]** |
+|           | (or **[arXiv:2105.05222v1](https://arxiv.org/abs/2105.05222v1) [cs.CL]** for this version) |
+
+
 
 
 
