@@ -3,8 +3,12 @@
 # Index
 
 
-- [2021-05-14](#2021-05-14)
+- [2021-05-17](#2021-05-17)
   
+  - [1. Distilling BERT for low complexity network training](#2021-05-17-1)
+  - [2. Dynamic Multi-Branch Layers for On-Device Neural Machine Translation](#2021-05-17-2)
+  - [3. Do Context-Aware Translation Models Pay the Right Attention?](#2021-05-17-3)
+- [2021-05-14](#2021-05-14)
   - [1. Better than BERT but Worse than Baseline](#2021-05-14-1)
   - [2. Spelling Correction with Denoising Transformer](#2021-05-14-2)
   - [3. Designing Multimodal Datasets for NLP Challenges](#2021-05-14-3)
@@ -59,6 +63,70 @@
   - [4. BERT memorisation and pitfalls in low-resource scenarios](#2021-05-04-4)
   - [5. Natural Language Generation Using Link Grammar for General Conversational Intelligence](#2021-05-04-5)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-05-17
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-05-17-1">1. Distilling BERT for low complexity network training
+</h2>
+
+Title: [Distilling BERT for low complexity network training](https://arxiv.org/abs/2105.06514)
+
+Authors: [Bansidhar Mangalwedhekar](https://arxiv.org/search/cs?searchtype=author&query=Mangalwedhekar%2C+B)
+
+> This paper studies the efficiency of transferring BERT learnings to low complexity models like BiLSTM, BiLSTM with attention and shallow CNNs using sentiment analysis on SST-2 dataset. It also compares the complexity of inference of the BERT model with these lower complexity models and underlines the importance of these techniques in enabling high performance NLP models on edge devices like mobiles, tablets and MCU development boards like Raspberry Pi etc. and enabling exciting new applications.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2105.06514](https://arxiv.org/abs/2105.06514) [cs.CL]** |
+|           | (or **[arXiv:2105.06514v1](https://arxiv.org/abs/2105.06514v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-17-2">2. Dynamic Multi-Branch Layers for On-Device Neural Machine Translation
+</h2>
+
+Title: [Dynamic Multi-Branch Layers for On-Device Neural Machine Translation](https://arxiv.org/abs/2105.06679)
+
+Authors: [Zhixing Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+Z), [Maosong Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y)
+
+> With the rapid development of artificial intelligence (AI), there is a trend in moving AI applications such as neural machine translation (NMT) from cloud to mobile devices such as smartphones. Constrained by limited hardware resources and battery, the performance of on-device NMT systems is far from satisfactory. Inspired by conditional computation, we propose to improve the performance of on-device NMT systems with dynamic multi-branch layers. Specifically, we design a layer-wise dynamic multi-branch network with only one branch activated during training and inference. As not all branches are activated during training, we propose shared-private reparameterization to ensure sufficient training for each branch. At almost the same computational cost, our method achieves improvements of up to 1.7 BLEU points on the WMT14 English-German translation task and 1.8 BLEU points on the WMT20 Chinese-English translation task over the Transformer model, respectively. Compared with a strong baseline that also uses multiple branches, the proposed method is up to 1.6 times faster with the same number of parameters.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2105.06679](https://arxiv.org/abs/2105.06679) [cs.CL]** |
+|           | (or **[arXiv:2105.06679v1](https://arxiv.org/abs/2105.06679v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-17-3">3. Do Context-Aware Translation Models Pay the Right Attention?
+</h2>
+
+Title: [Do Context-Aware Translation Models Pay the Right Attention?](https://arxiv.org/abs/2105.06977)
+
+Authors: [Kayo Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+K), [Patrick Fernandes](https://arxiv.org/search/cs?searchtype=author&query=Fernandes%2C+P), [Danish Pruthi](https://arxiv.org/search/cs?searchtype=author&query=Pruthi%2C+D), [Aditi Chaudhary](https://arxiv.org/search/cs?searchtype=author&query=Chaudhary%2C+A), [André F. T. Martins](https://arxiv.org/search/cs?searchtype=author&query=Martins%2C+A+F+T), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
+
+> Context-aware machine translation models are designed to leverage contextual information, but often fail to do so. As a result, they inaccurately disambiguate pronouns and polysemous words that require context for resolution. In this paper, we ask several questions: What contexts do human translators use to resolve ambiguous words? Are models paying large amounts of attention to the same context? What if we explicitly train them to do so? To answer these questions, we introduce SCAT (Supporting Context for Ambiguous Translations), a new English-French dataset comprising supporting context words for 14K translations that professional translators found useful for pronoun disambiguation. Using SCAT, we perform an in-depth analysis of the context used to disambiguate, examining positional and lexical characteristics of the supporting words. Furthermore, we measure the degree of alignment between the model's attention scores and the supporting context from SCAT, and apply a guided attention strategy to encourage agreement between the two.
+
+| Comments: | Accepted to ACL2021                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2105.06977](https://arxiv.org/abs/2105.06977) [cs.CL]** |
+|           | (or **[arXiv:2105.06977v1](https://arxiv.org/abs/2105.06977v1) [cs.CL]** for this version) |
+
+
+
+
+
 
 
 
