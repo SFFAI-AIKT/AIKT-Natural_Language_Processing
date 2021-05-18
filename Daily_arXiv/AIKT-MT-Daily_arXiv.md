@@ -3,6 +3,17 @@
 # Index
 
 
+- [2021-05-18](#2021-05-18)
+
+  - [1. Rethinking Skip Connection with Layer Normalization in Transformers and ResNets](#2021-05-18-1)
+  - [2. Conscious AI](#2021-05-18-2)
+  - [3. Pay Attention to MLPs](#2021-05-18-3)
+  - [4. DirectQE: Direct Pretraining for Machine Translation Quality Estimation](#2021-05-18-4)
+  - [5. From Masked Language Modeling to Translation: Non-English Auxiliary Tasks Improve Zero-shot Spoken Language Understanding](#2021-05-18-5)
+  - [6. The Volctrans Neural Speech Translation System for IWSLT 2021](#2021-05-18-6 )
+  - [7. Data Augmentation for Sign Language Gloss Translation](#2021-05-18-7)
+  - [8. Ensemble-based Transfer Learning for Low-resource Machine Translation Quality Estimation](#2021-05-18-8)
+  - [9. Stage-wise Fine-tuning for Graph-to-Text Generation](#2021-05-18-9)
 - [2021-05-17](#2021-05-17)
   
   - [1. Distilling BERT for low complexity network training](#2021-05-17-1)
@@ -63,6 +74,180 @@
   - [4. BERT memorisation and pitfalls in low-resource scenarios](#2021-05-04-4)
   - [5. Natural Language Generation Using Link Grammar for General Conversational Intelligence](#2021-05-04-5)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-05-18
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-05-18-1">1. Rethinking Skip Connection with Layer Normalization in Transformers and ResNets
+</h2>
+
+Title: [Rethinking Skip Connection with Layer Normalization in Transformers and ResNets](https://arxiv.org/abs/2105.07205)
+
+Authors: [Fenglin Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+F), [Xuancheng Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+X), [Zhiyuan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Xu Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+X), [Yuexian Zou](https://arxiv.org/search/cs?searchtype=author&query=Zou%2C+Y)
+
+> Skip connection, is a widely-used technique to improve the performance and the convergence of deep neural networks, which is believed to relieve the difficulty in optimization due to non-linearity by propagating a linear component through the neural network layers. However, from another point of view, it can also be seen as a modulating mechanism between the input and the output, with the input scaled by a pre-defined value one. In this work, we investigate how the scale factors in the effectiveness of the skip connection and reveal that a trivial adjustment of the scale will lead to spurious gradient exploding or vanishing in line with the deepness of the models, which could be addressed by normalization, in particular, layer normalization, which induces consistent improvements over the plain skip connection. Inspired by the findings, we further propose to adaptively adjust the scale of the input by recursively applying skip connection with layer normalization, which promotes the performance substantially and generalizes well across diverse tasks including both machine translation and image classification datasets.
+
+| Comments: | Accepted by COLING2020 (The 28th International Conference on Computational Linguistics (COLING 2020)) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2105.07205](https://arxiv.org/abs/2105.07205) [cs.LG]** |
+|           | (or **[arXiv:2105.07205v1](https://arxiv.org/abs/2105.07205v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-18-2">2. Conscious AI
+</h2>
+
+Title: [Conscious AI](https://arxiv.org/abs/2105.07879)
+
+Authors: [Hadi Esmaeilzadeh](https://arxiv.org/search/cs?searchtype=author&query=Esmaeilzadeh%2C+H), [Reza Vaezi](https://arxiv.org/search/cs?searchtype=author&query=Vaezi%2C+R)
+
+> Recent advances in artificial intelligence (AI) have achieved human-scale speed and accuracy for classification tasks. In turn, these capabilities have made AI a viable replacement for many human activities that at their core involve classification, such as basic mechanical and analytical tasks in low-level service jobs. Current systems do not need to be conscious to recognize patterns and classify them. However, for AI to progress to more complicated tasks requiring intuition and empathy, it must develop capabilities such as metathinking, creativity, and empathy akin to human self-awareness or consciousness. We contend that such a paradigm shift is possible only through a fundamental shift in the state of artificial intelligence toward consciousness, a shift similar to what took place for humans through the process of natural selection and evolution. As such, this paper aims to theoretically explore the requirements for the emergence of consciousness in AI. It also provides a principled understanding of how conscious AI can be detected and how it might be manifested in contrast to the dominant paradigm that seeks to ultimately create machines that are linguistically indistinguishable from humans.
+
+| Subjects: | **Artificial Intelligence (cs.AI)**; Computation and Language (cs.CL); Computers and Society (cs.CY) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2105.07879](https://arxiv.org/abs/2105.07879) [cs.AI]** |
+|           | (or **[arXiv:2105.07879v1](https://arxiv.org/abs/2105.07879v1) [cs.AI]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-18-3">3. Pay Attention to MLPs
+</h2>
+
+Title: [Pay Attention to MLPs](https://arxiv.org/abs/2105.08050)
+
+Authors: [Hanxiao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+H), [Zihang Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+Z), [David R. So](https://arxiv.org/search/cs?searchtype=author&query=So%2C+D+R), [Quoc V. Le](https://arxiv.org/search/cs?searchtype=author&query=Le%2C+Q+V)
+
+> Transformers have become one of the most important architectural innovations in deep learning and have enabled many breakthroughs over the past few years. Here we propose a simple attention-free network architecture, gMLP, based solely on MLPs with gating, and show that it can perform as well as Transformers in key language and vision applications. Our comparisons show that self-attention is not critical for Vision Transformers, as gMLP can achieve the same accuracy. For BERT, our model achieves parity with Transformers on pretraining perplexity and is better on some downstream tasks. On finetuning tasks where gMLP performs worse, making the gMLP model substantially larger can close the gap with Transformers. In general, our experiments show that gMLP can scale as well as Transformers over increased data and compute.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2105.08050](https://arxiv.org/abs/2105.08050) [cs.LG]** |
+|           | (or **[arXiv:2105.08050v1](https://arxiv.org/abs/2105.08050v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-18-4">4. DirectQE: Direct Pretraining for Machine Translation Quality Estimation
+</h2>
+
+Title: [DirectQE: Direct Pretraining for Machine Translation Quality Estimation](https://arxiv.org/abs/2105.07149)
+
+Authors: [Qu Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+Q), [Shujian Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Jiahuan Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Xiang Geng](https://arxiv.org/search/cs?searchtype=author&query=Geng%2C+X), [Zaixiang Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+Z), [Guoping Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+G), [Jiajun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J)
+
+> Machine Translation Quality Estimation (QE) is a task of predicting the quality of machine translations without relying on any reference. Recently, the predictor-estimator framework trains the predictor as a feature extractor, which leverages the extra parallel corpora without QE labels, achieving promising QE performance. However, we argue that there are gaps between the predictor and the estimator in both data quality and training objectives, which preclude QE models from benefiting from a large number of parallel corpora more directly. We propose a novel framework called DirectQE that provides a direct pretraining for QE tasks. In DirectQE, a generator is trained to produce pseudo data that is closer to the real QE data, and a detector is pretrained on these data with novel objectives that are akin to the QE task. Experiments on widely used benchmarks show that DirectQE outperforms existing methods, without using any pretraining models such as BERT. We also give extensive analyses showing how fixing the two gaps contributes to our improvements.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2105.07149](https://arxiv.org/abs/2105.07149) [cs.CL]** |
+|           | (or **[arXiv:2105.07149v1](https://arxiv.org/abs/2105.07149v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-18-5">5. From Masked Language Modeling to Translation: Non-English Auxiliary Tasks Improve Zero-shot Spoken Language Understanding
+</h2>
+
+Title: [From Masked Language Modeling to Translation: Non-English Auxiliary Tasks Improve Zero-shot Spoken Language Understanding](https://arxiv.org/abs/2105.07316)
+
+Authors: [Rob van der Goot](https://arxiv.org/search/cs?searchtype=author&query=van+der+Goot%2C+R), [Ibrahim Sharaf](https://arxiv.org/search/cs?searchtype=author&query=Sharaf%2C+I), [Aizhan Imankulova](https://arxiv.org/search/cs?searchtype=author&query=Imankulova%2C+A), [Ahmet Üstün](https://arxiv.org/search/cs?searchtype=author&query=Üstün%2C+A), [Marija Stepanović](https://arxiv.org/search/cs?searchtype=author&query=Stepanović%2C+M), [Alan Ramponi](https://arxiv.org/search/cs?searchtype=author&query=Ramponi%2C+A), [Siti Oryza Khairunnisa](https://arxiv.org/search/cs?searchtype=author&query=Khairunnisa%2C+S+O), [Mamoru Komachi](https://arxiv.org/search/cs?searchtype=author&query=Komachi%2C+M), [Barbara Plank](https://arxiv.org/search/cs?searchtype=author&query=Plank%2C+B)
+
+> The lack of publicly available evaluation data for low-resource languages limits progress in Spoken Language Understanding (SLU). As key tasks like intent classification and slot filling require abundant training data, it is desirable to reuse existing data in high-resource languages to develop models for low-resource scenarios. We introduce xSID, a new benchmark for cross-lingual Slot and Intent Detection in 13 languages from 6 language families, including a very low-resource dialect. To tackle the challenge, we propose a joint learning approach, with English SLU training data and non-English auxiliary tasks from raw text, syntax and translation for transfer. We study two setups which differ by type and language coverage of the pre-trained embeddings. Our results show that jointly learning the main tasks with masked language modeling is effective for slots, while machine translation transfer works best for intent classification.
+
+| Comments: | To appear in the proceedings of NAACL 2021                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.07316](https://arxiv.org/abs/2105.07316) [cs.CL]** |
+|           | (or **[arXiv:2105.07316v1](https://arxiv.org/abs/2105.07316v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-18-6">6. The Volctrans Neural Speech Translation System for IWSLT 2021
+</h2>
+
+Title: [The Volctrans Neural Speech Translation System for IWSLT 2021](https://arxiv.org/abs/2105.07319)
+
+Authors: [Chengqi Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+C), [Zhicheng Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Jian Tong](https://arxiv.org/search/cs?searchtype=author&query=Tong%2C+J), [Tao Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+T), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Rong Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+R), [Qianqian Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+Q), [Jun Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+J), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> This paper describes the systems submitted to IWSLT 2021 by the Volctrans team. We participate in the offline speech translation and text-to-text simultaneous translation tracks. For offline speech translation, our best end-to-end model achieves 8.1 BLEU improvements over the benchmark on the MuST-C test set and is even approaching the results of a strong cascade solution. For text-to-text simultaneous translation, we explore the best practice to optimize the wait-k model. As a result, our final submitted systems exceed the benchmark at around 7 BLEU on the same latency regime. We will publish our code and model to facilitate both future research works and industrial applications.
+
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2105.07319](https://arxiv.org/abs/2105.07319) [cs.CL]** |
+|           | (or **[arXiv:2105.07319v1](https://arxiv.org/abs/2105.07319v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-18-7">7. Data Augmentation for Sign Language Gloss Translation
+</h2>
+
+Title: [Data Augmentation for Sign Language Gloss Translation](https://arxiv.org/abs/2105.07476)
+
+Authors: [Amit Moryossef](https://arxiv.org/search/cs?searchtype=author&query=Moryossef%2C+A), [Kayo Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+K), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G), [Yoav Goldberg](https://arxiv.org/search/cs?searchtype=author&query=Goldberg%2C+Y)
+
+> Sign language translation (SLT) is often decomposed into video-to-gloss recognition and gloss-to-text translation, where a gloss is a sequence of transcribed spoken-language words in the order in which they are signed. We focus here on gloss-to-text translation, which we treat as a low-resource neural machine translation (NMT) problem. However, unlike traditional low-resource NMT, gloss-to-text translation differs because gloss-text pairs often have a higher lexical overlap and lower syntactic overlap than pairs of spoken languages. We exploit this lexical overlap and handle syntactic divergence by proposing two rule-based heuristics that generate pseudo-parallel gloss-text pairs from monolingual spoken language text. By pre-training on the thus obtained synthetic data, we improve translation from American Sign Language (ASL) to English and German Sign Language (DGS) to German by up to 3.14 and 2.20 BLEU, respectively.
+
+| Comments: | 4 pages, 1 page abstract                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.07476](https://arxiv.org/abs/2105.07476) [cs.CL]** |
+|           | (or **[arXiv:2105.07476v1](https://arxiv.org/abs/2105.07476v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-18-8">8. Ensemble-based Transfer Learning for Low-resource Machine Translation Quality Estimation
+</h2>
+
+Title: [Ensemble-based Transfer Learning for Low-resource Machine Translation Quality Estimation](https://arxiv.org/abs/2105.07622)
+
+Authors: [Ting-Wei Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+T), [Yung-An Hsieh](https://arxiv.org/search/cs?searchtype=author&query=Hsieh%2C+Y), [Yi-Chieh Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y)
+
+> Quality Estimation (QE) of Machine Translation (MT) is a task to estimate the quality scores for given translation outputs from an unknown MT system. However, QE scores for low-resource languages are usually intractable and hard to collect. In this paper, we focus on the Sentence-Level QE Shared Task of the Fifth Conference on Machine Translation (WMT20), but in a more challenging setting. We aim to predict QE scores of given translation outputs when barely none of QE scores of that paired languages are given during training. We propose an ensemble-based predictor-estimator QE model with transfer learning to overcome such QE data scarcity challenge by leveraging QE scores from other miscellaneous languages and translation results of targeted languages. Based on the evaluation results, we provide a detailed analysis of how each of our extension affects QE models on the reliability and the generalization ability to perform transfer learning under multilingual tasks. Finally, we achieve the best performance on the ensemble model combining the models pretrained by individual languages as well as different levels of parallel trained corpus with a Pearson's correlation of 0.298, which is 2.54 times higher than baselines.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2105.07622](https://arxiv.org/abs/2105.07622) [cs.CL]** |
+|           | (or **[arXiv:2105.07622v1](https://arxiv.org/abs/2105.07622v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-18-9">9. Stage-wise Fine-tuning for Graph-to-Text Generation
+</h2>
+
+Title: [Stage-wise Fine-tuning for Graph-to-Text Generation](https://arxiv.org/abs/2105.08021)
+
+Authors: [Qingyun Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Q), [Semih Yavuz](https://arxiv.org/search/cs?searchtype=author&query=Yavuz%2C+S), [Victoria Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+V), [Heng Ji](https://arxiv.org/search/cs?searchtype=author&query=Ji%2C+H), [Nazneen Rajani](https://arxiv.org/search/cs?searchtype=author&query=Rajani%2C+N)
+
+> Graph-to-text generation has benefited from pre-trained language models (PLMs) in achieving better performance than structured graph encoders. However, they fail to fully utilize the structure information of the input graph. In this paper, we aim to further improve the performance of the pre-trained language model by proposing a structured graph-to-text model with a two-step fine-tuning mechanism which first fine-tunes model on Wikipedia before adapting to the graph-to-text generation. In addition to using the traditional token and position embeddings to encode the knowledge graph (KG), we propose a novel tree-level embedding method to capture the inter-dependency structures of the input graph. This new approach has significantly improved the performance of all text generation metrics for the English WebNLG 2017 dataset.
+
+| Comments: | 9 pages, Accepted by Proceedings of ACL-IJCNLP 2021 Student Research Workshop, Code and Resources at this [this https URL](https://github.com/EagleW/Stage-wise-Fine-tuning) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2105.08021](https://arxiv.org/abs/2105.08021) [cs.CL]** |
+|           | (or **[arXiv:2105.08021v1](https://arxiv.org/abs/2105.08021v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
