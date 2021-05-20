@@ -3,8 +3,21 @@
 # Index
 
 
-- [2021-05-18](#2021-05-18)
+- [2021-05-20](#2021-05-20)
 
+  - [1. Exploring Text-to-Text Transformers for English to Hinglish Machine Translation with Synthetic Code-Mixing](#2021-05-20-1)
+  - [2. Representation Learning in Sequence to Sequence Tasks: Multi-filter Gaussian Mixture Autoencoder](#2021-05-20-2)
+  - [3. Effective Attention Sheds Light On Interpretability](#2021-05-20-3)
+  - [4. Investigating Math Word Problems using Pretrained Multilingual Language Models](#2021-05-20-4)
+  - [5. Combining GCN and Transformer for Chinese Grammatical Error Detection](#2021-05-20-5)
+  - [6. TableZa -- A classical Computer Vision approach to Tabular Extraction](#2021-05-20-6)
+  - [7. Learning Language Specific Sub-network for Multilingual Machine Translation](#2021-05-20-7)
+- [2021-05-19](#2021-05-19)
+  - [1. Relative Positional Encoding for Transformers with Linear Complexity](#2021-05-19-1)
+  - [2. Multi-Modal Image Captioning for the Visually Impaired](#2021-05-19-2)
+  - [3. DRILL: Dynamic Representations for Imbalanced Lifelong Learning](#2021-05-19-3)
+  - [4. Understanding the Properties of Minimum Bayes Risk Decoding in Neural Machine Translation](#2021-05-19-4)
+- [2021-05-18](#2021-05-18)
   - [1. Rethinking Skip Connection with Layer Normalization in Transformers and ResNets](#2021-05-18-1)
   - [2. Conscious AI](#2021-05-18-2)
   - [3. Pay Attention to MLPs](#2021-05-18-3)
@@ -74,6 +87,232 @@
   - [4. BERT memorisation and pitfalls in low-resource scenarios](#2021-05-04-4)
   - [5. Natural Language Generation Using Link Grammar for General Conversational Intelligence](#2021-05-04-5)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-05-20
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-05-20-1">1. Exploring Text-to-Text Transformers for English to Hinglish Machine Translation with Synthetic Code-Mixing
+</h2>
+
+Title: [Exploring Text-to-Text Transformers for English to Hinglish Machine Translation with Synthetic Code-Mixing](https://arxiv.org/abs/2105.08807)
+
+Authors: [Ganesh Jawahar](https://arxiv.org/search/cs?searchtype=author&query=Jawahar%2C+G), [El Moatez Billah Nagoudi](https://arxiv.org/search/cs?searchtype=author&query=Nagoudi%2C+E+M+B), [Muhammad Abdul-Mageed](https://arxiv.org/search/cs?searchtype=author&query=Abdul-Mageed%2C+M), [Laks V.S. Lakshmanan](https://arxiv.org/search/cs?searchtype=author&query=Lakshmanan%2C+L+V)
+
+> We describe models focused at the understudied problem of translating between monolingual and code-mixed language pairs. More specifically, we offer a wide range of models that convert monolingual English text into Hinglish (code-mixed Hindi and English). Given the recent success of pretrained language models, we also test the utility of two recent Transformer-based encoder-decoder models (i.e., mT5 and mBART) on the task finding both to work well. Given the paucity of training data for code-mixing, we also propose a dependency-free method for generating code-mixed texts from bilingual distributed representations that we exploit for improving language model performance. In particular, armed with this additional data, we adopt a curriculum learning approach where we first finetune the language models on synthetic data then on gold code-mixed data. We find that, although simple, our synthetic code-mixing method is competitive with (and in some cases is even superior to) several standard methods (backtranslation, method based on equivalence constraint theory) under a diverse set of conditions. Our work shows that the mT5 model, finetuned following the curriculum learning procedure, achieves best translation performance (12.67 BLEU). Our models place first in the overall ranking of the English-Hinglish official shared task.
+
+| Comments: | Computational Approaches to Linguistic Code-Switching (CALCS 2021) workshop |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.08807](https://arxiv.org/abs/2105.08807) [cs.CL]** |
+|           | (or **[arXiv:2105.08807v1](https://arxiv.org/abs/2105.08807v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-20-2">2. Representation Learning in Sequence to Sequence Tasks: Multi-filter Gaussian Mixture Autoencoder
+</h2>
+
+Title: [Representation Learning in Sequence to Sequence Tasks: Multi-filter Gaussian Mixture Autoencoder](https://arxiv.org/abs/2105.08840)
+
+Authors: [Yunhao Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Zhaokun Xue](https://arxiv.org/search/cs?searchtype=author&query=Xue%2C+Z)
+
+> Heterogeneity of sentences exists in sequence to sequence tasks such as machine translation. Sentences with largely varied meanings or grammatical structures may increase the difficulty of convergence while training the network. In this paper, we introduce a model to resolve the heterogeneity in the sequence to sequence task. The Multi-filter Gaussian Mixture Autoencoder (MGMAE) utilizes an autoencoder to learn the representations of the inputs. The representations are the outputs from the encoder, lying in the latent space whose dimension is the hidden dimension of the encoder. The representations of training data in the latent space are used to train Gaussian mixtures. The latent space representations are divided into several mixtures of Gaussian distributions. A filter (decoder) is tuned to fit the data in one of the Gaussian distributions specifically. Each Gaussian is corresponding to one filter so that the filter is responsible for the heterogeneity within this Gaussian. Thus the heterogeneity of the training data can be resolved. Comparative experiments are conducted on the Geo-query dataset and English-French translation. Our experiments show that compares to the traditional encoder-decoder model, this network achieves better performance on sequence to sequence tasks such as machine translation and question answering.
+
+| Comments: | 7 pages, 3 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2105.08840](https://arxiv.org/abs/2105.08840) [cs.CL]** |
+|           | (or **[arXiv:2105.08840v1](https://arxiv.org/abs/2105.08840v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-20-3">3. Effective Attention Sheds Light On Interpretability
+</h2>
+
+Title: [Effective Attention Sheds Light On Interpretability](https://arxiv.org/abs/2105.08855)
+
+Authors: [Kaiser Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+K), [Ana Marasović](https://arxiv.org/search/cs?searchtype=author&query=Marasović%2C+A)
+
+> An attention matrix of a transformer self-attention sublayer can provably be decomposed into two components and only one of them (effective attention) contributes to the model output. This leads us to ask whether visualizing effective attention gives different conclusions than interpretation of standard attention. Using a subset of the GLUE tasks and BERT, we carry out an analysis to compare the two attention matrices, and show that their interpretations differ. Effective attention is less associated with the features related to the language modeling pretraining such as the separator token, and it has more potential to illustrate linguistic features captured by the model for solving the end-task. Given the found differences, we recommend using effective attention for studying a transformer's behavior since it is more pertinent to the model output by design.
+
+| Comments: | Accepted to Findings of ACL 2021                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.08855](https://arxiv.org/abs/2105.08855) [cs.CL]** |
+|           | (or **[arXiv:2105.08855v1](https://arxiv.org/abs/2105.08855v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-20-4">4. Investigating Math Word Problems using Pretrained Multilingual Language Models
+</h2>
+
+Title: [Investigating Math Word Problems using Pretrained Multilingual Language Models](https://arxiv.org/abs/2105.08928)
+
+Authors: [Minghuan Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+M), [Lei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Lingxiao Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+L), [Jing Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+J)
+
+> In this paper, we revisit math word problems~(MWPs) from the cross-lingual and multilingual perspective. We construct our MWP solvers over pretrained multilingual language models using sequence-to-sequence model with copy mechanism. We compare how the MWP solvers perform in cross-lingual and multilingual scenarios. To facilitate the comparison of cross-lingual performance, we first adapt the large-scale English dataset MathQA as a counterpart of the Chinese dataset Math23K. Then we extend several English datasets to bilingual datasets through machine translation plus human annotation. Our experiments show that the MWP solvers may not be transferred to a different language even if the target expressions have the same operator set and constants. But for both cross-lingual and multilingual cases, it can be better generalized if problem types exist on both source language and target language.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2105.08928](https://arxiv.org/abs/2105.08928) [cs.CL]** |
+|           | (or **[arXiv:2105.08928v1](https://arxiv.org/abs/2105.08928v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-20-5">5. Combining GCN and Transformer for Chinese Grammatical Error Detection
+</h2>
+
+Title: [Combining GCN and Transformer for Chinese Grammatical Error Detection](https://arxiv.org/abs/2105.09085)
+
+Authors: [Jinhong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J)
+
+> This paper introduces our system at NLPTEA-2020 Task: Chinese Grammatical Error Diagnosis (CGED). CGED aims to diagnose four types of grammatical errors which are missing words (M), redundant words (R), bad word selection (S) and disordered words (W). The automatic CGED system contains two parts including error detection and error correction and our system is designed to solve the error detection problem. Our system is built on three models: 1) a BERT-based model leveraging syntactic information; 2) a BERT-based model leveraging contextual embeddings; 3) a lexicon-based graph neural network. We also design an ensemble mechanism to improve the performance of the single model. Finally, our system obtains the highest F1 scores at detection level and identification level among all teams participating in the CGED 2020 task.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2105.09085](https://arxiv.org/abs/2105.09085) [cs.CL]** |
+|           | (or **[arXiv:2105.09085v1](https://arxiv.org/abs/2105.09085v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-20-6">6. TableZa -- A classical Computer Vision approach to Tabular Extraction
+</h2>
+
+Title: [TableZa -- A classical Computer Vision approach to Tabular Extraction](https://arxiv.org/abs/2105.09137)
+
+Authors: [Saumya Banthia](https://arxiv.org/search/cs?searchtype=author&query=Banthia%2C+S), [Anantha Sharma](https://arxiv.org/search/cs?searchtype=author&query=Sharma%2C+A), [Ravi Mangipudi](https://arxiv.org/search/cs?searchtype=author&query=Mangipudi%2C+R)
+
+> Computer aided Tabular Data Extraction has always been a very challenging and error prone task because it demands both Spectral and Spatial Sanity of data. In this paper we discuss an approach for Tabular Data Extraction in the realm of document comprehension. Given the different kinds of the Tabular formats that are often found across various documents, we discuss a novel approach using Computer Vision for extraction of tabular data from images or vector pdf(s) converted to image(s).
+
+| Comments:    | 14 pages, 16 figures, 1 table                                |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV); Information Retrieval (cs.IR) |
+| ACM classes: | I.5.1; I.5.2; I.5.4                                          |
+| Cite as:     | **[arXiv:2105.09137](https://arxiv.org/abs/2105.09137) [cs.CL]** |
+|              | (or **[arXiv:2105.09137v1](https://arxiv.org/abs/2105.09137v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-20-7">7. Learning Language Specific Sub-network for Multilingual Machine Translation
+</h2>
+
+Title: [Learning Language Specific Sub-network for Multilingual Machine Translation](https://arxiv.org/abs/2105.09259)
+
+Authors: [Zehui Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Z), [Liwei Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+L), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> Multilingual neural machine translation aims at learning a single translation model for multiple languages. These jointly trained models often suffer from performance degradation on rich-resource language pairs. We attribute this degeneration to parameter interference. In this paper, we propose LaSS to jointly train a single unified multilingual MT model. LaSS learns Language Specific Sub-network (LaSS) for each language pair to counter parameter interference. Comprehensive experiments on IWSLT and WMT datasets with various Transformer architectures show that LaSS obtains gains on 36 language pairs by up to 1.2 BLEU. Besides, LaSS shows its strong generalization performance at easy extension to new language pairs and zero-shot translation.LaSS boosts zero-shot translation with an average of 8.3 BLEU on 30 language pairs. Codes and trained models are available at [this https URL](https://github.com/NLP-Playground/LaSS).
+
+| Comments: | To appear at ACL2021                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.09259](https://arxiv.org/abs/2105.09259) [cs.CL]** |
+|           | (or **[arXiv:2105.09259v1](https://arxiv.org/abs/2105.09259v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+
+# 2021-05-19
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-05-19-1">1. Relative Positional Encoding for Transformers with Linear Complexity
+</h2>
+
+Title: [Relative Positional Encoding for Transformers with Linear Complexity](https://arxiv.org/abs/2105.08399)
+
+Authors: [Antoine Liutkus](https://arxiv.org/search/cs?searchtype=author&query=Liutkus%2C+A), [Ondřej Cífka](https://arxiv.org/search/cs?searchtype=author&query=Cífka%2C+O), [Shih-Lun Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+S), [Umut Şimşekli](https://arxiv.org/search/cs?searchtype=author&query=Şimşekli%2C+U), [Yi-Hsuan Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Gaël Richard](https://arxiv.org/search/cs?searchtype=author&query=Richard%2C+G)
+
+> Recent advances in Transformer models allow for unprecedented sequence lengths, due to linear space and time complexity. In the meantime, relative positional encoding (RPE) was proposed as beneficial for classical Transformers and consists in exploiting lags instead of absolute positions for inference. Still, RPE is not available for the recent linear-variants of the Transformer, because it requires the explicit computation of the attention matrix, which is precisely what is avoided by such methods. In this paper, we bridge this gap and present Stochastic Positional Encoding as a way to generate PE that can be used as a replacement to the classical additive (sinusoidal) PE and provably behaves like RPE. The main theoretical contribution is to make a connection between positional encoding and cross-covariance structures of correlated Gaussian processes. We illustrate the performance of our approach on the Long-Range Arena benchmark and on music generation.
+
+| Comments: | Accepted to ICML 2021 (long talk). 23 pages                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Sound (cs.SD); Audio and Speech Processing (eess.AS); Machine Learning (stat.ML) |
+| Cite as:  | **[arXiv:2105.08399](https://arxiv.org/abs/2105.08399) [cs.LG]** |
+|           | (or **[arXiv:2105.08399v1](https://arxiv.org/abs/2105.08399v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-19-2">2. Multi-Modal Image Captioning for the Visually Impaired
+</h2>
+
+Title: [Multi-Modal Image Captioning for the Visually Impaired](https://arxiv.org/abs/2105.08106)
+
+Authors: [Hiba Ahsan](https://arxiv.org/search/cs?searchtype=author&query=Ahsan%2C+H), [Nikita Bhalla](https://arxiv.org/search/cs?searchtype=author&query=Bhalla%2C+N), [Daivat Bhatt](https://arxiv.org/search/cs?searchtype=author&query=Bhatt%2C+D), [Kaivankumar Shah](https://arxiv.org/search/cs?searchtype=author&query=Shah%2C+K)
+
+> One of the ways blind people understand their surroundings is by clicking images and relying on descriptions generated by image captioning systems. Current work on captioning images for the visually impaired do not use the textual data present in the image when generating captions. This problem is critical as many visual scenes contain text. Moreover, up to 21% of the questions asked by blind people about the images they click pertain to the text present in them. In this work, we propose altering AoANet, a state-of-the-art image captioning model, to leverage the text detected in the image as an input feature. In addition, we use a pointer-generator mechanism to copy the detected text to the caption when tokens need to be reproduced accurately. Our model outperforms AoANet on the benchmark dataset VizWiz, giving a 35% and 16.2% performance improvement on CIDEr and SPICE scores, respectively.
+
+| Comments: | 8 pages, 2 figures, 2 tables, accepted to NAACL-HLT SRW 2021 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.08106](https://arxiv.org/abs/2105.08106) [cs.CL]** |
+|           | (or **[arXiv:2105.08106v1](https://arxiv.org/abs/2105.08106v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-19-3">3. DRILL: Dynamic Representations for Imbalanced Lifelong Learning
+</h2>
+
+Title: [DRILL: Dynamic Representations for Imbalanced Lifelong Learning](https://arxiv.org/abs/2105.08445)
+
+Authors: [Kyra Ahrens](https://arxiv.org/search/cs?searchtype=author&query=Ahrens%2C+K), [Fares Abawi](https://arxiv.org/search/cs?searchtype=author&query=Abawi%2C+F), [Stefan Wermter](https://arxiv.org/search/cs?searchtype=author&query=Wermter%2C+S)
+
+> Continual or lifelong learning has been a long-standing challenge in machine learning to date, especially in natural language processing (NLP). Although state-of-the-art language models such as BERT have ushered in a new era in this field due to their outstanding performance in multitask learning scenarios, they suffer from forgetting when being exposed to a continuous stream of data with shifting data distributions. In this paper, we introduce DRILL, a novel continual learning architecture for open-domain text classification. DRILL leverages a biologically inspired self-organizing neural architecture to selectively gate latent language representations from BERT in a task-incremental manner. We demonstrate in our experiments that DRILL outperforms current methods in a realistic scenario of imbalanced, non-stationary data without prior knowledge about task boundaries. To the best of our knowledge, DRILL is the first of its kind to use a self-organizing neural architecture for open-domain lifelong learning in NLP.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2105.08445](https://arxiv.org/abs/2105.08445) [cs.CL]** |
+|           | (or **[arXiv:2105.08445v1](https://arxiv.org/abs/2105.08445v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-19-4">4. Understanding the Properties of Minimum Bayes Risk Decoding in Neural Machine Translation
+</h2>
+
+Title: [Understanding the Properties of Minimum Bayes Risk Decoding in Neural Machine Translation](https://arxiv.org/abs/2105.08504)
+
+Authors: [Mathias Müller](https://arxiv.org/search/cs?searchtype=author&query=Müller%2C+M), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R)
+
+> Neural Machine Translation (NMT) currently exhibits biases such as producing translations that are too short and overgenerating frequent words, and shows poor robustness to copy noise in training data or domain shift. Recent work has tied these shortcomings to beam search -- the de facto standard inference algorithm in NMT -- and Eikema & Aziz (2020) propose to use Minimum Bayes Risk (MBR) decoding on unbiased samples instead.
+> In this paper, we empirically investigate the properties of MBR decoding on a number of previously reported biases and failure cases of beam search. We find that MBR still exhibits a length and token frequency bias, owing to the MT metrics used as utility functions, but that MBR also increases robustness against copy noise in the training data and domain shift.
+
+| Comments: | V1: ACL 2021 camera-ready                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2105.08504](https://arxiv.org/abs/2105.08504) [cs.CL]** |
+|           | (or **[arXiv:2105.08504v1](https://arxiv.org/abs/2105.08504v1) [cs.CL]** for this version) |
+
+
+
+
+
 
 
 
