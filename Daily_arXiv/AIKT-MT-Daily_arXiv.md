@@ -3,8 +3,14 @@
 # Index
 
 
-- [2021-05-20](#2021-05-20)
+- [2021-05-24](2021-05-24)
 
+  - [1. VLM: Task-agnostic Video-Language Model Pre-training for Video Understanding](#2021-05-24-1)
+  - [2. Pretrained Language Models for Text Generation: A Survey](#2021-05-24-2)
+  - [3. Unsupervised Multilingual Sentence Embeddings for Parallel Corpus Mining](#2021-05-24-3)
+- [2021-05-21](#2021-05-21-1)
+- [1. Contrastive Learning for Many-to-many Multilingual Neural Machine Translation](#2021-05-21-1)
+- [2021-05-20](#2021-05-20)
   - [1. Exploring Text-to-Text Transformers for English to Hinglish Machine Translation with Synthetic Code-Mixing](#2021-05-20-1)
   - [2. Representation Learning in Sequence to Sequence Tasks: Multi-filter Gaussian Mixture Autoencoder](#2021-05-20-2)
   - [3. Effective Attention Sheds Light On Interpretability](#2021-05-20-3)
@@ -87,6 +93,101 @@
   - [4. BERT memorisation and pitfalls in low-resource scenarios](#2021-05-04-4)
   - [5. Natural Language Generation Using Link Grammar for General Conversational Intelligence](#2021-05-04-5)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-05-24
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-05-24-1">1. VLM: Task-agnostic Video-Language Model Pre-training for Video Understanding
+</h2>
+
+Title: [VLM: Task-agnostic Video-Language Model Pre-training for Video Understanding](https://arxiv.org/abs/2105.09996)
+
+Authors: [Hu Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+H), [Gargi Ghosh](https://arxiv.org/search/cs?searchtype=author&query=Ghosh%2C+G), [Po-Yao Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+P), [Prahal Arora](https://arxiv.org/search/cs?searchtype=author&query=Arora%2C+P), [Masoumeh Aminzadeh](https://arxiv.org/search/cs?searchtype=author&query=Aminzadeh%2C+M), [Christoph Feichtenhofer](https://arxiv.org/search/cs?searchtype=author&query=Feichtenhofer%2C+C), [Florian Metze](https://arxiv.org/search/cs?searchtype=author&query=Metze%2C+F), [Luke Zettlemoyer](https://arxiv.org/search/cs?searchtype=author&query=Zettlemoyer%2C+L)
+
+> We present a simplified, task-agnostic multi-modal pre-training approach that can accept either video or text input, or both for a variety of end tasks. Existing pre-training are task-specific by adopting either a single cross-modal encoder that requires both modalities, limiting their use for retrieval-style end tasks or more complex multitask learning with two unimodal encoders, limiting early cross-modal fusion. We instead introduce new pretraining masking schemes that better mix across modalities (e.g. by forcing masks for text to predict the closest video embeddings) while also maintaining separability (e.g. unimodal predictions are sometimes required, without using all the input). Experimental results show strong performance across a wider range of tasks than any previous methods, often outperforming task-specific pre-training.
+
+| Comments: | 9 pages, ACL Findings 2021                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2105.09996](https://arxiv.org/abs/2105.09996) [cs.CV]** |
+|           | (or **[arXiv:2105.09996v1](https://arxiv.org/abs/2105.09996v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-24-2">2. Pretrained Language Models for Text Generation: A Survey
+</h2>
+
+Title: [Pretrained Language Models for Text Generation: A Survey](https://arxiv.org/abs/2105.10311)
+
+Authors: [Junyi Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Tianyi Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+T), [Wayne Xin Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+W+X), [Ji-Rong Wen](https://arxiv.org/search/cs?searchtype=author&query=Wen%2C+J)
+
+> Text generation has become one of the most important yet challenging tasks in natural language processing (NLP). The resurgence of deep learning has greatly advanced this field by neural generation models, especially the paradigm of pretrained language models (PLMs). In this paper, we present an overview of the major advances achieved in the topic of PLMs for text generation. As the preliminaries, we present the general task definition and briefly describe the mainstream architectures of PLMs for text generation. As the core content, we discuss how to adapt existing PLMs to model different input data and satisfy special properties in the generated text. We further summarize several important fine-tuning strategies for text generation. Finally, we present several future directions and conclude this paper. Our survey aims to provide text generation researchers a synthesis and pointer to related research.
+
+| Comments: | Accepted by IJCAI 2021 Survey Track                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2105.10311](https://arxiv.org/abs/2105.10311) [cs.CL]** |
+|           | (or **[arXiv:2105.10311v1](https://arxiv.org/abs/2105.10311v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-24-3">3. Unsupervised Multilingual Sentence Embeddings for Parallel Corpus Mining
+</h2>
+
+Title: [Unsupervised Multilingual Sentence Embeddings for Parallel Corpus Mining](https://arxiv.org/abs/2105.10419)
+
+Authors: [Ivana Kvapilıkova](https://arxiv.org/search/cs?searchtype=author&query=Kvapilıkova%2C+I), [Mikel Artetxe](https://arxiv.org/search/cs?searchtype=author&query=Artetxe%2C+M), [Gorka Labaka](https://arxiv.org/search/cs?searchtype=author&query=Labaka%2C+G), [Eneko Agirre](https://arxiv.org/search/cs?searchtype=author&query=Agirre%2C+E), [Ondřej Bojar](https://arxiv.org/search/cs?searchtype=author&query=Bojar%2C+O)
+
+> Existing models of multilingual sentence embeddings require large parallel data resources which are not available for low-resource languages. We propose a novel unsupervised method to derive multilingual sentence embeddings relying only on monolingual data. We first produce a synthetic parallel corpus using unsupervised machine translation, and use it to fine-tune a pretrained cross-lingual masked language model (XLM) to derive the multilingual sentence representations. The quality of the representations is evaluated on two parallel corpus mining tasks with improvements of up to 22 F1 points over vanilla XLM. In addition, we observe that a single synthetic bilingual corpus is able to improve results for other language pairs.
+
+| Comments:          | ACL SRW 2020                                                 |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| Journal reference: | Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics - Student Research Workshop, pages 255-262, Association for Computational Linguistics, 2020 |
+| DOI:               | [10.18653/v1/2020.acl-srw.34](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.18653%2Fv1%2F2020.acl-srw.34&v=659f8833) |
+| Cite as:           | **[arXiv:2105.10419](https://arxiv.org/abs/2105.10419) [cs.CL]** |
+|                    | (or **[arXiv:2105.10419v1](https://arxiv.org/abs/2105.10419v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+# 2021-05-21
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-05-21-1">1. Contrastive Learning for Many-to-many Multilingual Neural Machine Translation
+</h2>
+
+Title: [Contrastive Learning for Many-to-many Multilingual Neural Machine Translation](https://arxiv.org/abs/2105.09501)
+
+Authors: [Xiao Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C+X), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Liwei Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+L), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> Existing multilingual machine translation approaches mainly focus on English-centric directions, while the non-English directions still lag behind. In this work, we aim to build a many-to-many translation system with an emphasis on the quality of non-English language directions. Our intuition is based on the hypothesis that a universal cross-language representation leads to better multilingual translation performance. To this end, we propose \method, a training method to obtain a single unified multilingual translation model. mCOLT is empowered by two techniques: (i) a contrastive learning scheme to close the gap among representations of different languages, and (ii) data augmentation on both multiple parallel and monolingual data to further align token representations. For English-centric directions, mCOLT achieves competitive or even better performance than a strong pre-trained model mBART on tens of WMT benchmarks. For non-English directions, mCOLT achieves an improvement of average 10+ BLEU compared with the multilingual baseline.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2105.09501](https://arxiv.org/abs/2105.09501) [cs.CL]** |
+|           | (or **[arXiv:2105.09501v1](https://arxiv.org/abs/2105.09501v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
 
 
 
