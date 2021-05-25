@@ -3,6 +3,11 @@
 # Index
 
 
+- [2021-05-25](#2021-05-25)
+
+  - [1. Prevent the Language Model from being Overconfident in Neural Machine Translation](#2021-05-25-1)
+  - [2. Neural Machine Translation with Monolingual Translation Memory](#2021-05-25-2)
+  - [3. True Few-Shot Learning with Language Models](#2021-05-25-3)
 - [2021-05-24](2021-05-24)
 
   - [1. VLM: Task-agnostic Video-Language Model Pre-training for Video Understanding](#2021-05-24-1)
@@ -93,6 +98,69 @@
   - [4. BERT memorisation and pitfalls in low-resource scenarios](#2021-05-04-4)
   - [5. Natural Language Generation Using Link Grammar for General Conversational Intelligence](#2021-05-04-5)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-05-25
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-05-25-1">1. Prevent the Language Model from being Overconfident in Neural Machine Translation
+</h2>
+
+Title: [Prevent the Language Model from being Overconfident in Neural Machine Translation](https://arxiv.org/abs/2105.11098)
+
+Authors: [Mengqi Miao](https://arxiv.org/search/cs?searchtype=author&query=Miao%2C+M), [Fandong Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+F), [Yijin Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Xiao-Hua Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+X), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J)
+
+> The Neural Machine Translation (NMT) model is essentially a joint language model conditioned on both the source sentence and partial translation. Therefore, the NMT model naturally involves the mechanism of the Language Model (LM) that predicts the next token only based on partial translation. Despite its success, NMT still suffers from the hallucination problem, generating fluent but inadequate translations. The main reason is that NMT pays excessive attention to the partial translation while neglecting the source sentence to some extent, namely overconfidence of the LM. Accordingly, we define the Margin between the NMT and the LM, calculated by subtracting the predicted probability of the LM from that of the NMT model for each token. The Margin is negatively correlated to the overconfidence degree of the LM. Based on the property, we propose a Margin-based Token-level Objective (MTO) and a Margin-based Sentencelevel Objective (MSO) to maximize the Margin for preventing the LM from being overconfident. Experiments on WMT14 English-to-German, WMT19 Chinese-to-English, and WMT14 English-to-French translation tasks demonstrate the effectiveness of our approach, with 1.36, 1.50, and 0.63 BLEU improvements, respectively, compared to the Transformer baseline. The human evaluation further verifies that our approaches improve translation adequacy as well as fluency.
+
+| Comments: | Accepted as a long paper at ACL 2021. Code is available at: [this https URL](https://github.com/Mlair77/nmt_adequacy) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2105.11098](https://arxiv.org/abs/2105.11098) [cs.CL]** |
+|           | (or **[arXiv:2105.11098v1](https://arxiv.org/abs/2105.11098v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-25-2">2. Neural Machine Translation with Monolingual Translation Memory
+</h2>
+
+Title: [Neural Machine Translation with Monolingual Translation Memory](https://arxiv.org/abs/2105.11269)
+
+Authors: [Deng Cai](https://arxiv.org/search/cs?searchtype=author&query=Cai%2C+D), [Yan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Huayang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+H), [Wai Lam](https://arxiv.org/search/cs?searchtype=author&query=Lam%2C+W), [Lemao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+L)
+
+> Prior work has proved that Translation memory (TM) can boost the performance of Neural Machine Translation (NMT). In contrast to existing work that uses bilingual corpus as TM and employs source-side similarity search for memory retrieval, we propose a new framework that uses monolingual memory and performs learnable memory retrieval in a cross-lingual manner. Our framework has unique advantages. First, the cross-lingual memory retriever allows abundant monolingual data to be TM. Second, the memory retriever and NMT model can be jointly optimized for the ultimate translation goal. Experiments show that the proposed method obtains substantial improvements. Remarkably, it even outperforms strong TM-augmented NMT baselines using bilingual TM. Owning to the ability to leverage monolingual data, our model also demonstrates effectiveness in low-resource and domain adaptation scenarios.
+
+| Comments: | ACL2021                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2105.11269](https://arxiv.org/abs/2105.11269) [cs.CL]** |
+|           | (or **[arXiv:2105.11269v1](https://arxiv.org/abs/2105.11269v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-25-3">3. True Few-Shot Learning with Language Models
+</h2>
+
+Title: [True Few-Shot Learning with Language Models](https://arxiv.org/abs/2105.11447)
+
+Authors: [Ethan Perez](https://arxiv.org/search/cs?searchtype=author&query=Perez%2C+E), [Douwe Kiela](https://arxiv.org/search/cs?searchtype=author&query=Kiela%2C+D), [Kyunghyun Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+K)
+
+> Pretrained language models (LMs) perform well on many tasks even when learning from a few examples, but prior work uses many held-out examples to tune various aspects of learning, such as hyperparameters, training objectives, and natural language templates ("prompts"). Here, we evaluate the few-shot ability of LMs when such held-out examples are unavailable, a setting we call true few-shot learning. We test two model selection criteria, cross-validation and minimum description length, for choosing LM prompts and hyperparameters in the true few-shot setting. On average, both marginally outperform random selection and greatly underperform selection based on held-out examples. Moreover, selection criteria often prefer models that perform significantly worse than randomly-selected ones. We find similar results even when taking into account our uncertainty in a model's true performance during selection, as well as when varying the amount of computation and number of examples used for selection. Overall, our findings suggest that prior work significantly overestimated the true few-shot ability of LMs given the difficulty of few-shot model selection.
+
+| Comments: | Code at [this https URL](https://github.com/ethanjperez/true_few_shot) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| Cite as:  | **[arXiv:2105.11447](https://arxiv.org/abs/2105.11447) [cs.CL]** |
+|           | (or **[arXiv:2105.11447v1](https://arxiv.org/abs/2105.11447v1) [cs.CL]** for this version) |
+
+
 
 
 
