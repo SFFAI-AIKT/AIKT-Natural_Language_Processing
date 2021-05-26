@@ -3,6 +3,10 @@
 # Index
 
 
+- [2021-05-26](#2021-05-26)
+
+  - [1. Super Tickets in Pre-Trained Language Models: From Model Compression to Improving Generalization](#2021-05-26-1)
+  - [2. ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer](#2021-05-26-2)
 - [2021-05-25](#2021-05-25)
 
   - [1. Prevent the Language Model from being Overconfident in Neural Machine Translation](#2021-05-25-1)
@@ -98,6 +102,50 @@
   - [4. BERT memorisation and pitfalls in low-resource scenarios](#2021-05-04-4)
   - [5. Natural Language Generation Using Link Grammar for General Conversational Intelligence](#2021-05-04-5)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-05-26
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-05-26-1">1. Super Tickets in Pre-Trained Language Models: From Model Compression to Improving Generalization
+</h2>
+
+Title: [Super Tickets in Pre-Trained Language Models: From Model Compression to Improving Generalization](https://arxiv.org/abs/2105.12002)
+
+Authors:[Chen Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+C), [Simiao Zuo](https://arxiv.org/search/cs?searchtype=author&query=Zuo%2C+S), [Minshuo Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+M), [Haoming Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+H), [Xiaodong Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Pengcheng He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+P), [Tuo Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+T), [Weizhu Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+W)
+
+> The Lottery Ticket Hypothesis suggests that an over-parametrized network consists of "lottery tickets", and training a certain collection of them (i.e., a subnetwork) can match the performance of the full model. In this paper, we study such a collection of tickets, which is referred to as "winning tickets", in extremely over-parametrized models, e.g., pre-trained language models. We observe that at certain compression ratios, generalization performance of the winning tickets can not only match, but also exceed that of the full model. In particular, we observe a phase transition phenomenon: As the compression ratio increases, generalization performance of the winning tickets first improves then deteriorates after a certain threshold. We refer to the tickets on the threshold as "super tickets". We further show that the phase transition is task and model dependent -- as model size becomes larger and training data set becomes smaller, the transition becomes more pronounced. Our experiments on the GLUE benchmark show that the super tickets improve single task fine-tuning by 0.9 points on BERT-base and 1.0 points on BERT-large, in terms of task-average score. We also demonstrate that adaptively sharing the super tickets across tasks benefits multi-task learning.
+
+| Comments: | The 59th annual meeting of the Association for Computational Linguistics (ACL 2021) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2105.12002](https://arxiv.org/abs/2105.12002) [cs.LG]** |
+|           | (or **[arXiv:2105.12002v1](https://arxiv.org/abs/2105.12002v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-26-2">2. ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer
+</h2>
+
+Title: [ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer](https://arxiv.org/abs/2105.11741)
+
+Authors:[Yuanmeng Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+Y), [Rumei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+R), [Sirui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Fuzheng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+F), [Wei Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+W), [Weiran Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+W)
+
+> Learning high-quality sentence representations benefits a wide range of natural language processing tasks. Though BERT-based pre-trained language models achieve high performance on many downstream tasks, the native derived sentence representations are proved to be collapsed and thus produce a poor performance on the semantic textual similarity (STS) tasks. In this paper, we present ConSERT, a Contrastive Framework for Self-Supervised Sentence Representation Transfer, that adopts contrastive learning to fine-tune BERT in an unsupervised and effective way. By making use of unlabeled texts, ConSERT solves the collapse issue of BERT-derived sentence representations and make them more applicable for downstream tasks. Experiments on STS datasets demonstrate that ConSERT achieves an 8\% relative improvement over the previous state-of-the-art, even comparable to the supervised SBERT-NLI. And when further incorporating NLI supervision, we achieve new state-of-the-art performance on STS tasks. Moreover, ConSERT obtains comparable results with only 1000 samples available, showing its robustness in data scarcity scenarios.
+
+| Comments: | Accepted by ACL2021, 10 pages, 7 figures, 4 tables           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2105.11741](https://arxiv.org/abs/2105.11741) [cs.CL]** |
+|           | (or **[arXiv:2105.11741v1](https://arxiv.org/abs/2105.11741v1) [cs.CL]** for this version) |
+
+
 
 
 
