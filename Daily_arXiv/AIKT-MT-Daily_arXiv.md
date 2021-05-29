@@ -3,8 +3,15 @@
 # Index
 
 
-- [2021-05-27](#2021-05-27)
+- [2021-05-28](#2021-05-28)
 
+  - [1. How Does Distilled Data Complexity Impact the Quality and Confidence of Non-Autoregressive Machine Translation?](#2021-05-28-1)
+  - [2. Selective Knowledge Distillation for Neural Machine Translation](#2021-05-28-2)
+  - [3. Adaptive Nearest Neighbor Machine Translation](#2021-05-28-3)
+  - [4. Extremely low-resource machine translation for closely related languages](#2021-05-28-4)
+  - [5. TranSmart: A Practical Interactive Machine Translation System](#2021-05-28-5)
+  - [6. Synthetic Data Generation for Grammatical Error Correction with Tagged Corruption Models](#2021-05-28-6)
+- [2021-05-27](#2021-05-27)
   - [1. Improving Sign Language Translation with Monolingual Data by Sign Back-Translation](#2021-05-27-1)
   - [2. IntelliCAT: Intelligent Machine Translation Post-Editing with Quality Estimation and Translation Suggestion](#2021-05-27-2)
   - [3. Context-Sensitive Visualization of Deep Learning Natural Language Processing Models](#2021-05-27-3)
@@ -110,6 +117,126 @@
   - [4. BERT memorisation and pitfalls in low-resource scenarios](#2021-05-04-4)
   - [5. Natural Language Generation Using Link Grammar for General Conversational Intelligence](#2021-05-04-5)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-05-28
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-05-28-1">1. How Does Distilled Data Complexity Impact the Quality and Confidence of Non-Autoregressive Machine Translation?
+</h2>
+
+Title: [How Does Distilled Data Complexity Impact the Quality and Confidence of Non-Autoregressive Machine Translation?](https://arxiv.org/abs/2105.12900)
+
+Authors: [Weijia Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+W), [Shuming Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+S), [Dongdong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+D), [Marine Carpuat](https://arxiv.org/search/cs?searchtype=author&query=Carpuat%2C+M)
+
+> While non-autoregressive (NAR) models are showing great promise for machine translation, their use is limited by their dependence on knowledge distillation from autoregressive models. To address this issue, we seek to understand why distillation is so effective. Prior work suggests that distilled training data is less complex than manual translations. Based on experiments with the Levenshtein Transformer and the Mask-Predict NAR models on the WMT14 German-English task, this paper shows that different types of complexity have different impacts: while reducing lexical diversity and decreasing reordering complexity both help NAR learn better alignment between source and target, and thus improve translation quality, lexical diversity is the main reason why distillation increases model confidence, which affects the calibration of different NAR models differently.
+
+| Comments: | Findings of ACL 2021                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.12900](https://arxiv.org/abs/2105.12900) [cs.CL]** |
+|           | (or **[arXiv:2105.12900v1](https://arxiv.org/abs/2105.12900v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-28-2">2. Selective Knowledge Distillation for Neural Machine Translation
+</h2>
+
+Title: [Selective Knowledge Distillation for Neural Machine Translation](https://arxiv.org/abs/2105.12967)
+
+Authors: [Fusheng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+F), [Jianhao Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+J), [Fandong Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+F), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J)
+
+> Neural Machine Translation (NMT) models achieve state-of-the-art performance on many translation benchmarks. As an active research field in NMT, knowledge distillation is widely applied to enhance the model's performance by transferring teacher model's knowledge on each training sample. However, previous work rarely discusses the different impacts and connections among these samples, which serve as the medium for transferring teacher knowledge. In this paper, we design a novel protocol that can effectively analyze the different impacts of samples by comparing various samples' partitions. Based on above protocol, we conduct extensive experiments and find that the teacher's knowledge is not the more, the better. Knowledge over specific samples may even hurt the whole performance of knowledge distillation. Finally, to address these issues, we propose two simple yet effective strategies, i.e., batch-level and global-level selections, to pick suitable samples for distillation. We evaluate our approaches on two large-scale machine translation tasks, WMT'14 English->German and WMT'19 Chinese->English. Experimental results show that our approaches yield up to +1.28 and +0.89 BLEU points improvements over the Transformer baseline, respectively.
+
+| Comments: | Accepted as a long paper at ACL 2021. Code is available at [this https URL](https://github.com/LeslieOverfitting/selective_distillation) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2105.12967](https://arxiv.org/abs/2105.12967) [cs.CL]** |
+|           | (or **[arXiv:2105.12967v1](https://arxiv.org/abs/2105.12967v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-28-3">3. Adaptive Nearest Neighbor Machine Translation
+</h2>
+
+Title: [Adaptive Nearest Neighbor Machine Translation](https://arxiv.org/abs/2105.13022)
+
+Authors: [Xin Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+X), [Zhirui Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Junliang Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+J), [Shujian Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Boxing Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+B), [Weihua Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+W), [Jiajun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J)
+
+> kNN-MT, recently proposed by Khandelwal et al. (2020a), successfully combines pre-trained neural machine translation (NMT) model with token-level k-nearest-neighbor (kNN) retrieval to improve the translation accuracy. However, the traditional kNN algorithm used in kNN-MT simply retrieves a same number of nearest neighbors for each target token, which may cause prediction errors when the retrieved neighbors include noises. In this paper, we propose Adaptive kNN-MT to dynamically determine the number of k for each target token. We achieve this by introducing a light-weight Meta-k Network, which can be efficiently trained with only a few training samples. On four benchmark machine translation datasets, we demonstrate that the proposed method is able to effectively filter out the noises in retrieval results and significantly outperforms the vanilla kNN-MT model. Even more noteworthy is that the Meta-k Network learned on one domain could be directly applied to other domains and obtain consistent improvements, illustrating the generality of our method. Our implementation is open-sourced at [this https URL](https://github.com/zhengxxn/adaptive-knn-mt).
+
+| Comments: | Accepted by ACL-IJCNLP 2021 main conference                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.13022](https://arxiv.org/abs/2105.13022) [cs.CL]** |
+|           | (or **[arXiv:2105.13022v1](https://arxiv.org/abs/2105.13022v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-28-4">4. Extremely low-resource machine translation for closely related languages
+</h2>
+
+Title: [Extremely low-resource machine translation for closely related languages](https://arxiv.org/abs/2105.13065)
+
+Authors: [Maali Tars](https://arxiv.org/search/cs?searchtype=author&query=Tars%2C+M), [Andre Tättar](https://arxiv.org/search/cs?searchtype=author&query=Tättar%2C+A), [Mark Fišel](https://arxiv.org/search/cs?searchtype=author&query=Fišel%2C+M)
+
+> An effective method to improve extremely low-resource neural machine translation is multilingual training, which can be improved by leveraging monolingual data to create synthetic bilingual corpora using the back-translation method. This work focuses on closely related languages from the Uralic language family: from Estonian and Finnish geographical regions. We find that multilingual learning and synthetic corpora increase the translation quality in every language pair for which we have data. We show that transfer learning and fine-tuning are very effective for doing low-resource machine translation and achieve the best results. We collected new parallel data for Võro, North and South Saami and present first results of neural machine translation for these languages.
+
+| Comments: | Accepted at Nodalida'2021                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.13065](https://arxiv.org/abs/2105.13065) [cs.CL]** |
+|           | (or **[arXiv:2105.13065v1](https://arxiv.org/abs/2105.13065v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-28-5">5. TranSmart: A Practical Interactive Machine Translation System
+</h2>
+
+Title: [TranSmart: A Practical Interactive Machine Translation System](https://arxiv.org/abs/2105.13072)
+
+Authors: [Guoping Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+G), [Lemao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+L), [Xing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Longyue Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Huayang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+H), [Zhaopeng Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+Z), [Chengyan Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+C), [Shuming Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+S)
+
+> Automatic machine translation is super efficient to produce translations yet their quality is not guaranteed. This technique report introduces TranSmart, a practical human-machine interactive translation system that is able to trade off translation quality and efficiency. Compared to existing publicly available interactive translation systems, TranSmart supports three key features, word-level autocompletion, sentence-level autocompletion and translation memory. By word-level and sentence-level autocompletion, TranSmart allows users to interactively translate words in their own manners rather than the strict manner from left to right. In addition, TranSmart has the potential to avoid similar translation mistakes by using translated sentences in history as its memory. This report presents major functions of TranSmart, algorithms for achieving these functions, how to use the TranSmart APIs, and evaluation results of some key functions. TranSmart is publicly available at its homepage ([this https URL](https://transmart.qq.com/)).
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2105.13072](https://arxiv.org/abs/2105.13072) [cs.CL]** |
+|           | (or **[arXiv:2105.13072v1](https://arxiv.org/abs/2105.13072v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-28-6">6. Synthetic Data Generation for Grammatical Error Correction with Tagged Corruption Models
+</h2>
+
+Title: [Synthetic Data Generation for Grammatical Error Correction with Tagged Corruption Models](https://arxiv.org/abs/2105.13318)
+
+Authors: [Felix Stahlberg](https://arxiv.org/search/cs?searchtype=author&query=Stahlberg%2C+F), [Shankar Kumar](https://arxiv.org/search/cs?searchtype=author&query=Kumar%2C+S)
+
+> Synthetic data generation is widely known to boost the accuracy of neural grammatical error correction (GEC) systems, but existing methods often lack diversity or are too simplistic to generate the broad range of grammatical errors made by human writers. In this work, we use error type tags from automatic annotation tools such as ERRANT to guide synthetic data generation. We compare several models that can produce an ungrammatical sentence given a clean sentence and an error type tag. We use these models to build a new, large synthetic pre-training data set with error tag frequency distributions matching a given development set. Our synthetic data set yields large and consistent gains, improving the state-of-the-art on the BEA-19 and CoNLL-14 test sets. We also show that our approach is particularly effective in adapting a GEC system, trained on mixed native and non-native English, to a native English test set, even surpassing real training data consisting of high-quality sentence pairs.
+
+| Comments: | Proceedings of the 16th Workshop on Innovative Use of NLP for Building Educational Applications, 2021. [this https URL](https://github.com/google-research-datasets/C4_200M-synthetic-dataset-for-grammatical-error-correction) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.13318](https://arxiv.org/abs/2105.13318) [cs.CL]** |
+|           | (or **[arXiv:2105.13318v1](https://arxiv.org/abs/2105.13318v1) [cs.CL]** for this version) |
+
+
+
 
 
 
