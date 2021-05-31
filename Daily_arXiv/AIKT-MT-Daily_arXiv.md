@@ -3,8 +3,17 @@
 # Index
 
 
-- [2021-05-28](#2021-05-28)
+- [2021-05-31](#2021-05-31)
 
+  - [1. Investigating Code-Mixed Modern Standard Arabic-Egyptian to English Machine Translation](#2021-05-31-1)
+  - [2. Online Learning Meets Machine Translation Evaluation: Finding the Best Systems with the Least Human Effort](#2021-05-31-2)
+  - [3. Hierarchical Transformer Encoders for Vietnamese Spelling Correction](#2021-05-31-3)
+  - [4. Data Augmentation for Text Generation Without Any Augmented Data](#2021-05-31-4)
+  - [5. How to Split: the Effect of Word Segmentation on Gender Bias in Speech Translation](#2021-05-31-5)
+  - [6. Lightweight Cross-Lingual Sentence Representation Learning](#2021-05-31-6)
+  - [7. Knowledge Inheritance for Pre-trained Language Models](#2021-05-31-7)
+  - [8. Changing the World by Changing the Data](#2021-05-31-8)
+- [2021-05-28](#2021-05-28)
   - [1. How Does Distilled Data Complexity Impact the Quality and Confidence of Non-Autoregressive Machine Translation?](#2021-05-28-1)
   - [2. Selective Knowledge Distillation for Neural Machine Translation](#2021-05-28-2)
   - [3. Adaptive Nearest Neighbor Machine Translation](#2021-05-28-3)
@@ -117,6 +126,179 @@
   - [4. BERT memorisation and pitfalls in low-resource scenarios](#2021-05-04-4)
   - [5. Natural Language Generation Using Link Grammar for General Conversational Intelligence](#2021-05-04-5)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-05-31
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-05-31-1">1. Investigating Code-Mixed Modern Standard Arabic-Egyptian to English Machine Translation
+</h2>
+
+Title: [Investigating Code-Mixed Modern Standard Arabic-Egyptian to English Machine Translation](https://arxiv.org/abs/2105.13573)
+
+Authors: [El Moatez Billah Nagoudi](https://arxiv.org/search/cs?searchtype=author&query=Nagoudi%2C+E+M+B), [AbdelRahim Elmadany](https://arxiv.org/search/cs?searchtype=author&query=Elmadany%2C+A), [Muhammad Abdul-Mageed](https://arxiv.org/search/cs?searchtype=author&query=Abdul-Mageed%2C+M)
+
+> Recent progress in neural machine translation (NMT) has made it possible to translate successfully between monolingual language pairs where large parallel data exist, with pre-trained models improving performance even further. Although there exists work on translating in code-mixed settings (where one of the pairs includes text from two or more languages), it is still unclear what recent success in NMT and language modeling exactly means for translating code-mixed text. We investigate one such context, namely MT from code-mixed Modern Standard Arabic and Egyptian Arabic (MSAEA) into English. We develop models under different conditions, employing both (i) standard end-to-end sequence-to-sequence (S2S) Transformers trained from scratch and (ii) pre-trained S2S language models (LMs). We are able to acquire reasonable performance using only MSA-EN parallel data with S2S models trained from scratch. We also find LMs fine-tuned on data from various Arabic dialects to help the MSAEA-EN task. Our work is in the context of the Shared Task on Machine Translation in Code-Switching. Our best model achieves **25.72** BLEU, placing us first on the official shared task evaluation for MSAEA-EN.
+
+| Comments: | CALCS2021, colocated with NAACL-2021                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2105.13573](https://arxiv.org/abs/2105.13573) [cs.LG]** |
+|           | (or **[arXiv:2105.13573v1](https://arxiv.org/abs/2105.13573v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-05-31-2">2. Online Learning Meets Machine Translation Evaluation: Finding the Best Systems with the Least Human Effort
+</h2>
+
+Title: [Online Learning Meets Machine Translation Evaluation: Finding the Best Systems with the Least Human Effort](https://arxiv.org/abs/2105.13385)
+
+Authors: [Vânia Mendonça](https://arxiv.org/search/cs?searchtype=author&query=Mendonça%2C+V) (1 and 2), [Ricardo Rei](https://arxiv.org/search/cs?searchtype=author&query=Rei%2C+R) (1 and 2 and 3), [Luisa Coheur](https://arxiv.org/search/cs?searchtype=author&query=Coheur%2C+L) (1 and 2), [Alberto Sardinha](https://arxiv.org/search/cs?searchtype=author&query=Sardinha%2C+A) (1 and 2), [Ana Lúcia Santos](https://arxiv.org/search/cs?searchtype=author&query=Santos%2C+A+L) (4 and 5) ((1) INESC-ID Lisboa, (2) Instituto Superior Técnico, (3) Unbabel AI, (4) Centro de Linguística da Universidade de Lisboa, (5) Faculdade de Letras da Universidade de Lisboa)
+
+> In Machine Translation, assessing the quality of a large amount of automatic translations can be challenging. Automatic metrics are not reliable when it comes to high performing systems. In addition, resorting to human evaluators can be expensive, especially when evaluating multiple systems. To overcome the latter challenge, we propose a novel application of online learning that, given an ensemble of Machine Translation systems, dynamically converges to the best systems, by taking advantage of the human feedback available. Our experiments on WMT'19 datasets show that our online approach quickly converges to the top-3 ranked systems for the language pairs considered, despite the lack of human feedback for many translations.
+
+| Comments: | Accepted to ACL-IJCNLP 2021 Main Conference (long paper)     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.13385](https://arxiv.org/abs/2105.13385) [cs.CL]** |
+|           | (or **[arXiv:2105.13385v1](https://arxiv.org/abs/2105.13385v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-05-31-3">3. Hierarchical Transformer Encoders for Vietnamese Spelling Correction
+</h2>
+
+Title: [Hierarchical Transformer Encoders for Vietnamese Spelling Correction](https://arxiv.org/abs/2105.13578)
+
+Authors: [Hieu Tran](https://arxiv.org/search/cs?searchtype=author&query=Tran%2C+H), [Cuong V. Dinh](https://arxiv.org/search/cs?searchtype=author&query=Dinh%2C+C+V), [Long Phan](https://arxiv.org/search/cs?searchtype=author&query=Phan%2C+L), [Son T. Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+S+T)
+
+> In this paper, we propose a Hierarchical Transformer model for Vietnamese spelling correction problem. The model consists of multiple Transformer encoders and utilizes both character-level and word-level to detect errors and make corrections. In addition, to facilitate future work in Vietnamese spelling correction tasks, we propose a realistic dataset collected from real-life texts for the problem. We compare our method with other methods and publicly available systems. The proposed method outperforms all of the contemporary methods in terms of recall, precision, and f1-score. A demo version is publicly available.
+
+| Comments: | Accepted by The 34th International Conference on Industrial, Engineering & Other Applications of Applied Intelligent Systems(IEA/AIE 2021) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.13578](https://arxiv.org/abs/2105.13578) [cs.CL]** |
+|           | (or **[arXiv:2105.13578v1](https://arxiv.org/abs/2105.13578v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-05-31-4">4. Data Augmentation for Text Generation Without Any Augmented Data
+</h2>
+
+Title: [Data Augmentation for Text Generation Without Any Augmented Data](https://arxiv.org/abs/2105.13650)
+
+Authors: [Wei Bi](https://arxiv.org/search/cs?searchtype=author&query=Bi%2C+W), [Huayang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+H), [Jiacheng Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+J)
+
+> Data augmentation is an effective way to improve the performance of many neural text generation models. However, current data augmentation methods need to define or choose proper data mapping functions that map the original samples into the augmented samples. In this work, we derive an objective to formulate the problem of data augmentation on text generation tasks without any use of augmented data constructed by specific mapping functions. Our proposed objective can be efficiently optimized and applied to popular loss functions on text generation tasks with a convergence rate guarantee. Experiments on five datasets of two text generation tasks show that our approach can approximate or even surpass popular data augmentation methods.
+
+| Comments: | Accepted into the main conference of ACL 2021                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2105.13650](https://arxiv.org/abs/2105.13650) [cs.CL]** |
+|           | (or **[arXiv:2105.13650v1](https://arxiv.org/abs/2105.13650v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-05-31-5">5. How to Split: the Effect of Word Segmentation on Gender Bias in Speech Translation
+</h2>
+
+Title: [How to Split: the Effect of Word Segmentation on Gender Bias in Speech Translation](https://arxiv.org/abs/2105.13782)
+
+Authors: [Marco Gaido](https://arxiv.org/search/cs?searchtype=author&query=Gaido%2C+M), [Beatrice Savoldi](https://arxiv.org/search/cs?searchtype=author&query=Savoldi%2C+B), [Luisa Bentivogli](https://arxiv.org/search/cs?searchtype=author&query=Bentivogli%2C+L), [Matteo Negri](https://arxiv.org/search/cs?searchtype=author&query=Negri%2C+M), [Marco Turchi](https://arxiv.org/search/cs?searchtype=author&query=Turchi%2C+M)
+
+> Having recognized gender bias as a major issue affecting current translation technologies, researchers have primarily attempted to mitigate it by working on the data front. However, whether algorithmic aspects concur to exacerbate unwanted outputs remains so far under-investigated. In this work, we bring the analysis on gender bias in automatic translation onto a seemingly neutral yet critical component: word segmentation. Can segmenting methods influence the ability to translate gender? Do certain segmentation approaches penalize the representation of feminine linguistic markings? We address these questions by comparing 5 existing segmentation strategies on the target side of speech translation systems. Our results on two language pairs (English-Italian/French) show that state-of-the-art sub-word splitting (BPE) comes at the cost of higher gender bias. In light of this finding, we propose a combined approach that preserves BPE overall translation quality, while leveraging the higher ability of character-based segmentation to properly translate gender.
+
+| Comments: | Accepted in Findings of ACL 2021                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2105.13782](https://arxiv.org/abs/2105.13782) [cs.CL]** |
+|           | (or **[arXiv:2105.13782v1](https://arxiv.org/abs/2105.13782v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-05-31-6">6. Lightweight Cross-Lingual Sentence Representation Learning
+</h2>
+
+Title: [Lightweight Cross-Lingual Sentence Representation Learning](https://arxiv.org/abs/2105.13856)
+
+Authors: [Zhuoyuan Mao](https://arxiv.org/search/cs?searchtype=author&query=Mao%2C+Z), [Prakhar Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+P), [Chenhui Chu](https://arxiv.org/search/cs?searchtype=author&query=Chu%2C+C), [Martin Jaggi](https://arxiv.org/search/cs?searchtype=author&query=Jaggi%2C+M), [Sadao Kurohashi](https://arxiv.org/search/cs?searchtype=author&query=Kurohashi%2C+S)
+
+> Large-scale models for learning fixed-dimensional cross-lingual sentence representations like Large-scale models for learning fixed-dimensional cross-lingual sentence representations like LASER (Artetxe and Schwenk, 2019b) lead to significant improvement in performance on downstream tasks. However, further increases and modifications based on such large-scale models are usually impractical due to memory limitations. In this work, we introduce a lightweight dual-transformer architecture with just 2 layers for generating memory-efficient cross-lingual sentence representations. We explore different training tasks and observe that current cross-lingual training tasks leave a lot to be desired for this shallow architecture. To ameliorate this, we propose a novel cross-lingual language model, which combines the existing single-word masked language model with the newly proposed cross-lingual token-level reconstruction task. We further augment the training task by the introduction of two computationally-lite sentence-level contrastive learning tasks to enhance the alignment of cross-lingual sentence representation space, which compensates for the learning bottleneck of the lightweight transformer for generative tasks. Our comparisons with competing models on cross-lingual sentence retrieval and multilingual document classification confirm the effectiveness of the newly proposed training tasks for a shallow model.
+
+| Comments: | ACL 2021                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2105.13856](https://arxiv.org/abs/2105.13856) [cs.CL]** |
+|           | (or **[arXiv:2105.13856v1](https://arxiv.org/abs/2105.13856v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-05-31-7">7. Knowledge Inheritance for Pre-trained Language Models
+</h2>
+
+Title: [Knowledge Inheritance for Pre-trained Language Models](https://arxiv.org/abs/2105.13880)
+
+Authors: [Yujia Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+Y), [Yankai Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Y), [Jing Yi](https://arxiv.org/search/cs?searchtype=author&query=Yi%2C+J), [Jiajie Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Xu Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+X), [Zhengyan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Yusheng Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+Y), [Zhiyuan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Peng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+P), [Maosong Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J)
+
+> Recent explorations of large-scale pre-trained language models (PLMs) such as GPT-3 have revealed the power of PLMs with huge amounts of parameters, setting off a wave of training ever-larger PLMs. However, training a large-scale PLM requires tremendous amounts of computational resources, which is time-consuming and expensive. In addition, existing large-scale PLMs are mainly trained from scratch individually, ignoring the availability of many existing well-trained PLMs. To this end, we explore the question that how can previously trained PLMs benefit training larger PLMs in future. Specifically, we introduce a novel pre-training framework named "knowledge inheritance" (KI), which combines both self-learning and teacher-guided learning to efficiently train larger PLMs. Sufficient experimental results demonstrate the feasibility of our KI framework. We also conduct empirical analyses to explore the effects of teacher PLMs' pre-training settings, including model architecture, pre-training data, etc. Finally, we show that KI can well support lifelong learning and knowledge transfer.
+
+| Comments: | preprint                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2105.13880](https://arxiv.org/abs/2105.13880) [cs.CL]** |
+|           | (or **[arXiv:2105.13880v1](https://arxiv.org/abs/2105.13880v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-05-31-8">8. Changing the World by Changing the Data
+</h2>
+
+Title: [Changing the World by Changing the Data](https://arxiv.org/abs/2105.13947)
+
+Authors: [Anna Rogers](https://arxiv.org/search/cs?searchtype=author&query=Rogers%2C+A)
+
+> NLP community is currently investing a lot more research and resources into development of deep learning models than training data. While we have made a lot of progress, it is now clear that our models learn all kinds of spurious patterns, social biases, and annotation artifacts. Algorithmic solutions have so far had limited success. An alternative that is being actively discussed is more careful design of datasets so as to deliver specific signals. This position paper maps out the arguments for and against data curation, and argues that fundamentally the point is moot: curation already is and will be happening, and it is changing the world. The question is only how much thought we want to invest into that process.
+
+| Comments: | ACL 2021                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2105.13947](https://arxiv.org/abs/2105.13947) [cs.CL]** |
+|           | (or **[arXiv:2105.13947v1](https://arxiv.org/abs/2105.13947v1) [cs.CL]** for this version) |
+
+
+
+
+
 
 
 
