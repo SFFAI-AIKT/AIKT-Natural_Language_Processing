@@ -3,8 +3,21 @@
 # Index
 
 
-- [2021-06-01](#2021-06-01)
+- [2021-06-02](#2021-06-02)
 
+  - [1. Adversarial VQA: A New Benchmark for Evaluating the Robustness of VQA Models](#2021-06-02-1)
+  - [2. Language Model Evaluation Beyond Perplexity](#2021-06-02-2)
+  - [3. An Exploratory Analysis of Multilingual Word-Level Quality Estimation with Cross-Lingual Transformers](#2021-06-02-3)
+  - [4. Gender Bias Amplification During Speed-Quality Optimization in Neural Machine Translation](#2021-06-02-4)
+  - [5. Gender Bias Hidden Behind Chinese Word Embeddings: The Case of Chinese Adjectives](#2021-06-02-5)
+  - [6. Multilingual Speech Translation with Unified Transformer: Huawei Noah's Ark Lab at IWSLT 2021](#2021-06-02-6)
+  - [7. ViTA: Visual-Linguistic Translation by Aligning Object Tags](#2021-06-02-7)
+  - [8. An In-depth Study on Internal Structure of Chinese Words](#2021-06-02-8)
+  - [9. SHUOWEN-JIEZI: Linguistically Informed Tokenizers For Chinese Language Model Pretraining](#2021-06-02-9)
+  - [10. DoT: An efficient Double Transformer for NLP tasks with tables](#2021-06-02-10)
+  - [11. NewsEmbed: Modeling News through Pre-trained DocumentRepresentations](#2021-06-02-11)
+  - [12. Incorporating Visual Layout Structures for Scientific Text Classification](#2021-06-02-12)
+- [2021-06-01](#2021-06-01)
   - [1. An Attention Free Transformer](#2021-06-01-1)
   - [2. LPF: A Language-Prior Feedback Objective Function for De-biased Visual Question Answering](#2021-06-01-2)
   - [3. Re-evaluating Word Mover's Distance](#2021-06-01-3)
@@ -31,6 +44,264 @@
   - [24. Adapting High-resource NMT Models to Translate Low-resource Related Languages without Parallel Data](#2021-06-01-24)
   - [25. Beyond Noise: Mitigating the Impact of Fine-grained Semantic Divergences on Neural Machine Translation](#2021-06-01-25)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-06-02
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-06-02-1">1. Adversarial VQA: A New Benchmark for Evaluating the Robustness of VQA Models
+</h2>
+
+Title: [Adversarial VQA: A New Benchmark for Evaluating the Robustness of VQA Models](https://arxiv.org/abs/2106.00245)
+
+Authors: [Linjie Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Jie Lei](https://arxiv.org/search/cs?searchtype=author&query=Lei%2C+J), [Zhe Gan](https://arxiv.org/search/cs?searchtype=author&query=Gan%2C+Z), [Jingjing Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J)
+
+> With large-scale pre-training, the past two years have witnessed significant performance boost on the Visual Question Answering (VQA) task. Though rapid progresses have been made, it remains unclear whether these state-of-the-art (SOTA) VQA models are robust when encountering test examples in the wild. To study this, we introduce Adversarial VQA, a new large-scale VQA benchmark, collected iteratively via an adversarial human-and-model-in-the-loop procedure. Through this new benchmark, we present several interesting findings. (i) Surprisingly, during dataset collection, we find that non-expert annotators can successfully attack SOTA VQA models with relative ease. (ii) We test a variety of SOTA VQA models on our new dataset to highlight their fragility, and find that both large-scale pre-trained models and adversarial training methods can only achieve far lower performance than what they can achieve on the standard VQA v2 dataset. (iii) When considered as data augmentation, our dataset can be used to improve the performance on other robust VQA benchmarks. (iv) We present a detailed analysis of the dataset, providing valuable insights on the challenges it brings to the community. We hope Adversarial VQA can serve as a valuable benchmark that will be used by future work to test the robustness of its developed VQA models. Our dataset is publicly available at https://adversarialvqa. [this http URL](http://github.io/).
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.00245](https://arxiv.org/abs/2106.00245) [cs.CV]** |
+|           | (or **[arXiv:2106.00245v1](https://arxiv.org/abs/2106.00245v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-02-2">2. Language Model Evaluation Beyond Perplexity
+</h2>
+
+Title: [Language Model Evaluation Beyond Perplexity](https://arxiv.org/abs/2106.00085)
+
+Authors: [Clara Meister](https://arxiv.org/search/cs?searchtype=author&query=Meister%2C+C), [Ryan Cotterell](https://arxiv.org/search/cs?searchtype=author&query=Cotterell%2C+R)
+
+> We propose an alternate approach to quantifying how well language models learn natural language: we ask how well they match the statistical tendencies of natural language. To answer this question, we analyze whether text generated from language models exhibits the statistical tendencies present in the human-generated text on which they were trained. We provide a framework--paired with significance tests--for evaluating the fit of language models to certain statistical tendencies of natural language. We find that neural language models appear to learn only a subset of the statistical tendencies considered, but align much more closely with empirical trends than theoretical laws (when present). Further, the fit to different distributions is dependent on both model architecture and generation strategy. As concrete examples, text generated under the nucleus sampling scheme adheres more closely to the type--token relationship of natural language than text produced using standard ancestral sampling; text from LSTMs reflects the natural language distributions over length, stopwords, and symbols suprisingly well.
+
+| Comments: | ACL 2021                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.00085](https://arxiv.org/abs/2106.00085) [cs.CL]** |
+|           | (or **[arXiv:2106.00085v1](https://arxiv.org/abs/2106.00085v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-06-02-3">3. An Exploratory Analysis of Multilingual Word-Level Quality Estimation with Cross-Lingual Transformers
+</h2>
+
+Title: [An Exploratory Analysis of Multilingual Word-Level Quality Estimation with Cross-Lingual Transformers](https://arxiv.org/abs/2106.00143)
+
+Authors: [Tharindu Ranasinghe](https://arxiv.org/search/cs?searchtype=author&query=Ranasinghe%2C+T), [Constantin Orasan](https://arxiv.org/search/cs?searchtype=author&query=Orasan%2C+C), [Ruslan Mitkov](https://arxiv.org/search/cs?searchtype=author&query=Mitkov%2C+R)
+
+> Most studies on word-level Quality Estimation (QE) of machine translation focus on language-specific models. The obvious disadvantages of these approaches are the need for labelled data for each language pair and the high cost required to maintain several language-specific models. To overcome these problems, we explore different approaches to multilingual, word-level QE. We show that these QE models perform on par with the current language-specific models. In the cases of zero-shot and few-shot QE, we demonstrate that it is possible to accurately predict word-level quality for any given new language pair from models trained on other language pairs. Our findings suggest that the word-level QE models based on powerful pre-trained transformers that we propose in this paper generalise well across languages, making them more useful in real-world scenarios.
+
+| Comments: | Accepted to appear at the ACL-IJCNLP 2021 Main conference    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2106.00143](https://arxiv.org/abs/2106.00143) [cs.CL]** |
+|           | (or **[arXiv:2106.00143v1](https://arxiv.org/abs/2106.00143v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-06-02-4">4. Gender Bias Amplification During Speed-Quality Optimization in Neural Machine Translation
+</h2>
+
+Title: [Gender Bias Amplification During Speed-Quality Optimization in Neural Machine Translation](https://arxiv.org/abs/2106.00169)
+
+Authors: [Adithya Renduchintala](https://arxiv.org/search/cs?searchtype=author&query=Renduchintala%2C+A), [Denise Diaz](https://arxiv.org/search/cs?searchtype=author&query=Diaz%2C+D), [Kenneth Heafield](https://arxiv.org/search/cs?searchtype=author&query=Heafield%2C+K), [Xian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Mona Diab](https://arxiv.org/search/cs?searchtype=author&query=Diab%2C+M)
+
+> Is bias amplified when neural machine translation (NMT) models are optimized for speed and evaluated on generic test sets using BLEU? We investigate architectures and techniques commonly used to speed up decoding in Transformer-based models, such as greedy search, quantization, average attention networks (AANs) and shallow decoder models and show their effect on gendered noun translation. We construct a new gender bias test set, SimpleGEN, based on gendered noun phrases in which there is a single, unambiguous, correct answer. While we find minimal overall BLEU degradation as we apply speed optimizations, we observe that gendered noun translation performance degrades at a much faster rate.
+
+| Comments: | Accepted at ACL 2021                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.00169](https://arxiv.org/abs/2106.00169) [cs.CL]** |
+|           | (or **[arXiv:2106.00169v1](https://arxiv.org/abs/2106.00169v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-06-02-5">5. Gender Bias Hidden Behind Chinese Word Embeddings: The Case of Chinese Adjectives
+</h2>
+
+Title: [Gender Bias Hidden Behind Chinese Word Embeddings: The Case of Chinese Adjectives](https://arxiv.org/abs/2106.00181)
+
+Authors: [Meichun Jiao](https://arxiv.org/search/cs?searchtype=author&query=Jiao%2C+M), [Ziyang Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+Z)
+
+> Gender bias in word embeddings gradually becomes a vivid research field in recent years. Most studies in this field aim at measurement and debiasing methods with English as the target language. This paper investigates gender bias in static word embeddings from a unique perspective, Chinese adjectives. By training word representations with different models, the gender bias behind the vectors of adjectives is assessed. Through a comparison between the produced results and a human-scored data set, we demonstrate how gender bias encoded in word embeddings differentiates from people's attitudes.
+
+| Comments: | Accepted at the 3rd Workshop on Gender Bias in Natural Language Processing |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.00181](https://arxiv.org/abs/2106.00181) [cs.CL]** |
+|           | (or **[arXiv:2106.00181v1](https://arxiv.org/abs/2106.00181v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-06-02-6">6. Multilingual Speech Translation with Unified Transformer: Huawei Noah's Ark Lab at IWSLT 2021
+</h2>
+
+Title: [Multilingual Speech Translation with Unified Transformer: Huawei Noah's Ark Lab at IWSLT 2021](https://arxiv.org/abs/2106.00197)
+
+Authors: [Xingshan Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+X), [Liangyou Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q)
+
+> This paper describes the system submitted to the IWSLT 2021 Multilingual Speech Translation (MultiST) task from Huawei Noah's Ark Lab. We use a unified transformer architecture for our MultiST model, so that the data from different modalities (i.e., speech and text) and different tasks (i.e., Speech Recognition, Machine Translation, and Speech Translation) can be exploited to enhance the model's ability. Specifically, speech and text inputs are firstly fed to different feature extractors to extract acoustic and textual features, respectively. Then, these features are processed by a shared encoder--decoder architecture. We apply several training techniques to improve the performance, including multi-task learning, task-level curriculum learning, data augmentation, etc. Our final system achieves significantly better results than bilingual baselines on supervised language pairs and yields reasonable results on zero-shot language pairs.
+
+| Comments: | IWSLT 2021                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2106.00197](https://arxiv.org/abs/2106.00197) [cs.CL]** |
+|           | (or **[arXiv:2106.00197v1](https://arxiv.org/abs/2106.00197v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-06-02-7">7. ViTA: Visual-Linguistic Translation by Aligning Object Tags
+</h2>
+
+Title: [ViTA: Visual-Linguistic Translation by Aligning Object Tags](https://arxiv.org/abs/2106.00250)
+
+Authors: [Kshitij Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+K), [Devansh Gautam](https://arxiv.org/search/cs?searchtype=author&query=Gautam%2C+D), [Radhika Mamidi](https://arxiv.org/search/cs?searchtype=author&query=Mamidi%2C+R)
+
+> Multimodal Machine Translation (MMT) enriches the source text with visual information for translation. It has gained popularity in recent years, and several pipelines have been proposed in the same direction. Yet, the task lacks quality datasets to illustrate the contribution of visual modality in the translation systems. In this paper, we propose our system for the Multimodal Translation Task of WAT 2021 from English to Hindi. We propose to use mBART, a pretrained multilingual sequence-to-sequence model, for the textual-only translations. Further, we bring the visual information to a textual domain by extracting object tags from the image and enhance the input for the multimodal task. We also explore the robustness of our system by systematically degrading the source text. Finally, we achieve a BLEU score of 44.6 and 51.6 on the test set and challenge set of the task.
+
+| Comments: | 7 pages, accepted at WAT-2021 co-located with ACL-IJCNLP 2021 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2106.00250](https://arxiv.org/abs/2106.00250) [cs.CL]** |
+|           | (or **[arXiv:2106.00250v1](https://arxiv.org/abs/2106.00250v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-06-02-8">8. An In-depth Study on Internal Structure of Chinese Words
+</h2>
+
+Title: [An In-depth Study on Internal Structure of Chinese Words](https://arxiv.org/abs/2106.00334)
+
+Authors: [Chen Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+C), [Saihao Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Houquan Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Zhenghua Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Min Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M), [Zhefeng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Baoxing Huai](https://arxiv.org/search/cs?searchtype=author&query=Huai%2C+B), [Nicholas Jing Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+N+J)
+
+> Unlike English letters, Chinese characters have rich and specific meanings. Usually, the meaning of a word can be derived from its constituent characters in some way. Several previous works on syntactic parsing propose to annotate shallow word-internal structures for better utilizing character-level information. This work proposes to model the deep internal structures of Chinese words as dependency trees with 11 labels for distinguishing syntactic relationships. First, based on newly compiled annotation guidelines, we manually annotate a word-internal structure treebank (WIST) consisting of over 30K multi-char words from Chinese Penn Treebank. To guarantee quality, each word is independently annotated by two annotators and inconsistencies are handled by a third senior annotator. Second, we present detailed and interesting analysis on WIST to reveal insights on Chinese word formation. Third, we propose word-internal structure parsing as a new task, and conduct benchmark experiments using a competitive dependency parser. Finally, we present two simple ways to encode word-internal structures, leading to promising gains on the sentence-level syntactic parsing task.
+
+| Comments: | Accepted by ACL-IJCNLP 2021 (long paper)                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.00334](https://arxiv.org/abs/2106.00334) [cs.CL]** |
+|           | (or **[arXiv:2106.00334v1](https://arxiv.org/abs/2106.00334v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-06-02-9">9. SHUOWEN-JIEZI: Linguistically Informed Tokenizers For Chinese Language Model Pretraining
+</h2>
+
+Title: [SHUOWEN-JIEZI: Linguistically Informed Tokenizers For Chinese Language Model Pretraining](https://arxiv.org/abs/2106.00400)
+
+Authors: [Chenglei Si](https://arxiv.org/search/cs?searchtype=author&query=Si%2C+C), [Zhengyan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Yingfa Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Fanchao Qi](https://arxiv.org/search/cs?searchtype=author&query=Qi%2C+F), [Xiaozhi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Zhiyuan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Maosong Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M)
+
+> Conventional tokenization methods for Chinese pretrained language models (PLMs) treat each character as an indivisible token (Devlin et al., 2019), which ignores the characteristics of the Chinese writing system. In this work, we comprehensively study the influences of three main factors on the Chinese tokenization for PLM: pronunciation, glyph (i.e., shape), and word boundary. Correspondingly, we propose three kinds of tokenizers: 1) SHUOWEN (meaning Talk Word), the pronunciation-based tokenizers; 2) JIEZI (meaning Solve Character), the glyph-based tokenizers; 3) Word segmented tokenizers, the tokenizers with Chinese word segmentation. To empirically compare the effectiveness of studied tokenizers, we pretrain BERT-style language models with them and evaluate the models on various downstream NLU tasks. We find that SHUOWEN and JIEZI tokenizers can generally outperform conventional single-character tokenizers, while Chinese word segmentation shows no benefit as a preprocessing step. Moreover, the proposed SHUOWEN and JIEZI tokenizers exhibit significantly better robustness in handling noisy texts. The code and pretrained models will be publicly released to facilitate linguistically informed Chinese NLP.
+
+| Comments: | Work in progress. Feedback is welcome                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.00400](https://arxiv.org/abs/2106.00400) [cs.CL]** |
+|           | (or **[arXiv:2106.00400v1](https://arxiv.org/abs/2106.00400v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-06-02-10">10. DoT: An efficient Double Transformer for NLP tasks with tables
+</h2>
+
+Title: [DoT: An efficient Double Transformer for NLP tasks with tables](https://arxiv.org/abs/2106.00479)
+
+Authors: [Syrine Krichene](https://arxiv.org/search/cs?searchtype=author&query=Krichene%2C+S), [Thomas Müller](https://arxiv.org/search/cs?searchtype=author&query=Müller%2C+T), [Julian Martin Eisenschlos](https://arxiv.org/search/cs?searchtype=author&query=Eisenschlos%2C+J+M)
+
+> Transformer-based approaches have been successfully used to obtain state-of-the-art accuracy on natural language processing (NLP) tasks with semi-structured tables. These model architectures are typically deep, resulting in slow training and inference, especially for long inputs. To improve efficiency while maintaining a high accuracy, we propose a new architecture, DoT, a double transformer model, that decomposes the problem into two sub-tasks: A shallow pruning transformer that selects the top-K tokens, followed by a deep task-specific transformer that takes as input those K tokens. Additionally, we modify the task-specific attention to incorporate the pruning scores. The two transformers are jointly trained by optimizing the task-specific loss. We run experiments on three benchmarks, including entailment and question-answering. We show that for a small drop of accuracy, DoT improves training and inference time by at least 50%. We also show that the pruning transformer effectively selects relevant tokens enabling the end-to-end model to maintain similar accuracy as slower baseline models. Finally, we analyse the pruning and give some insight into its impact on the task model.
+
+| Comments:    | 11 pages, 4 figures, to be published in Findings of ACL-IJCNLP 2021 |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**                         |
+| MSC classes: | 68-06                                                        |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2106.00479](https://arxiv.org/abs/2106.00479) [cs.CL]** |
+|              | (or **[arXiv:2106.00479v1](https://arxiv.org/abs/2106.00479v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-06-02-11">11. NewsEmbed: Modeling News through Pre-trained DocumentRepresentations
+</h2>
+
+Title: [NewsEmbed: Modeling News through Pre-trained DocumentRepresentations](https://arxiv.org/abs/2106.00590)
+
+Authors: [Jialu Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J), [Tianqi Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T), [Cong Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+C)
+
+> Effectively modeling text-rich fresh content such as news articles at document-level is a challenging problem. To ensure a content-based model generalize well to a broad range of applications, it is critical to have a training dataset that is large beyond the scale of human labels while achieving desired quality. In this work, we address those two challenges by proposing a novel approach to mine semantically-relevant fresh documents, and their topic labels, with little human supervision. Meanwhile, we design a multitask model called NewsEmbed that alternatively trains a contrastive learning with a multi-label classification to derive a universal document encoder. We show that the proposed approach can provide billions of high quality organic training examples and can be naturally extended to multilingual setting where texts in different languages are encoded in the same semantic space. We experimentally demonstrate NewsEmbed's competitive performance across multiple natural language understanding tasks, both supervised and unsupervised.
+
+| Subjects: | **Computation and Language (cs.CL)**; Information Retrieval (cs.IR); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| DOI:      | [10.1145/3447548.3467392](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.1145%2F3447548.3467392&v=694504da) |
+| Cite as:  | **[arXiv:2106.00590](https://arxiv.org/abs/2106.00590) [cs.CL]** |
+|           | (or **[arXiv:2106.00590v1](https://arxiv.org/abs/2106.00590v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-06-02-12">12. Incorporating Visual Layout Structures for Scientific Text Classification
+</h2>
+
+Title: [Incorporating Visual Layout Structures for Scientific Text Classification](https://arxiv.org/abs/2106.00676)
+
+Authors: [Zejiang Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+Z), [Kyle Lo](https://arxiv.org/search/cs?searchtype=author&query=Lo%2C+K), [Lucy Lu Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L+L), [Bailey Kuehl](https://arxiv.org/search/cs?searchtype=author&query=Kuehl%2C+B), [Daniel S. Weld](https://arxiv.org/search/cs?searchtype=author&query=Weld%2C+D+S), [Doug Downey](https://arxiv.org/search/cs?searchtype=author&query=Downey%2C+D)
+
+> Classifying the core textual components of a scientific paper-title, author, body text, etc.-is a critical first step in automated scientific document understanding. Previous work has shown how using elementary layout information, i.e., each token's 2D position on the page, leads to more accurate classification. We introduce new methods for incorporating VIsual LAyout structures (VILA), e.g., the grouping of page texts into text lines or text blocks, into language models to further improve performance. We show that the I-VILA approach, which simply adds special tokens denoting boundaries between layout structures into model inputs, can lead to +1~4.5 F1 Score improvements in token classification tasks. Moreover, we design a hierarchical model H-VILA that encodes these layout structures and record a up-to 70% efficiency boost without hurting prediction accuracy. The experiments are conducted on a newly curated evaluation suite, S2-VLUE, with a novel metric measuring VILA awareness and a new dataset covering 19 scientific disciplines with gold annotations. Pre-trained weights, benchmark datasets, and source code will be available at [this https URL](https://github.com/allenai/VILA)}{[this https URL](https://github.com/allenai/VILA).
+
+| Comments: | 13 pages, 5 figures, 6 tables                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2106.00676](https://arxiv.org/abs/2106.00676) [cs.CL]** |
+|           | (or **[arXiv:2106.00676v1](https://arxiv.org/abs/2106.00676v1) [cs.CL]** for this version) |
+
+
+
+
+
 
 
 
