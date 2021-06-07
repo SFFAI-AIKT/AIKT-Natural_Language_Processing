@@ -3,6 +3,44 @@
 # Index
 
 
+- [2021-06-07](#2021-06-07)
+
+  - [1. Neural semi-Markov CRF for Monolingual Word Alignment](#2021-06-07-1)
+  - [2. Human-Adversarial Visual Question Answering](#2021-06-07-2)
+  - [3. How to Adapt Your Pretrained Multilingual Model to 1600 Languages](#2021-06-07-3)
+  - [4. Syntax-augmented Multilingual BERT for Cross-lingual Transfer](#2021-06-07-4)
+  - [5. Grounding 'Grounding' in NLP](#2021-06-07-5)
+  - [6. BERTTune: Fine-Tuning Neural Machine Translation with BERTScore](#2021-06-07-6)
+  - [7. Scalable Transformers for Neural Machine Translation](#2021-06-07-7)
+  - [8. Bi-Granularity Contrastive Learning for Post-Training in Few-Shot Scene](#2021-06-07-8)
+  - [9. Language Model Metrics and Procrustes Analysis for Improved Vector Transformation of NLP Embeddings](#2021-06-07-9)
+- [2021-06-04](#2021-06-04)
+  - [1. TVDIM: Enhancing Image Self-Supervised Pretraining via Noisy Text Data](#2021-06-04-1)
+  - [2. Representing Syntax and Composition with Geometric Transformations](#2021-06-04-2)
+  - [3. The Case for Translation-Invariant Self-Attention in Transformer-Based Language Models](#2021-06-04-3)
+  - [4. A Dataset and Baselines for Multilingual Reply Suggestion](#2021-06-04-4)
+  - [5. E2E-VLP: End-to-End Vision-Language Pre-training Enhanced by Visual Learning](#2021-06-04-5)
+  - [6. Lightweight Adapter Tuning for Multilingual Speech Translation](#2021-06-04-6)
+  - [7. Can Generative Pre-trained Language Models Serve as Knowledge Bases for Closed-book QA?](#2021-06-04-7)
+  - [8. Tail-to-Tail Non-Autoregressive Sequence Prediction for Chinese Grammatical Error Correction](#2021-06-04-8)
+  - [9. Few-shot Knowledge Graph-to-Text Generation with Pretrained Language Models](#2021-06-04-9)
+  - [10. Fingerprinting Fine-tuned Language Models in the Wild](#2021-06-04-10 )
+  - [11. Bilingual Alignment Pre-training for Zero-shot Cross-lingual Transfer](#2021-06-04-11)
+- [2021-06-03](#2021-06-03)
+
+  - [1. Part of Speech and Universal Dependency effects on English Arabic Machine Translation](#2021-06-03-1)
+  - [2. Rejuvenating Low-Frequency Words: Making the Most of Parallel Data in Non-Autoregressive Translation](#2021-06-03-2)
+  - [3. Discrete Cosine Transform as Universal Sentence Encoder](#2021-06-03-3)
+  - [4. Self-Training Sampling with Monolingual Data Uncertainty for Neural Machine Translation](#2021-06-03-4)
+  - [5. One Teacher is Enough? Pre-trained Language Model Distillation from Multiple Teachers](#2021-06-03-5)
+  - [6. Hi-Transformer: Hierarchical Interactive Transformer for Efficient and Effective Long Document Modeling](#2021-06-03-6)
+  - [7. Cascade versus Direct Speech Translation: Do the Differences Still Make a Difference?](#2021-06-03-7)
+  - [8. Evidence-based Factual Error Correction](#2021-06-03-8)
+  - [9. Is Sparse Attention more Interpretable?](#2021-06-03-9)
+  - [10. End-to-End NLP Knowledge Graph Construction](#2021-06-03-10)
+  - [11. IrEne: Interpretable Energy Prediction for Transformers](#2021-06-03-11)
+  - [12. Lower Perplexity is Not Always Human-Like](#2021-06-03-12)
+  - [13. On the Distribution, Sparsity, and Inference-time Quantization of Attention Values in Transformers](#2021-06-03-13)
 - [2021-06-02](#2021-06-02)
 
   - [1. Adversarial VQA: A New Benchmark for Evaluating the Robustness of VQA Models](#2021-06-02-1)
@@ -44,6 +82,657 @@
   - [24. Adapting High-resource NMT Models to Translate Low-resource Related Languages without Parallel Data](#2021-06-01-24)
   - [25. Beyond Noise: Mitigating the Impact of Fine-grained Semantic Divergences on Neural Machine Translation](#2021-06-01-25)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-06-07
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-06-07-1">1. Neural semi-Markov CRF for Monolingual Word Alignment
+</h2>
+
+Title: [Neural semi-Markov CRF for Monolingual Word Alignment](https://arxiv.org/abs/2106.02569)
+
+Authors: [Wuwei Lan](https://arxiv.org/search/cs?searchtype=author&query=Lan%2C+W), [Chao Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+C), [Wei Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+W)
+
+> Monolingual word alignment is important for studying fine-grained editing operations (i.e., deletion, addition, and substitution) in text-to-text generation tasks, such as paraphrase generation, text simplification, neutralizing biased language, etc. In this paper, we present a novel neural semi-Markov CRF alignment model, which unifies word and phrase alignments through variable-length spans. We also create a new benchmark with human annotations that cover four different text genres to evaluate monolingual word alignment models in more realistic settings. Experimental results show that our proposed model outperforms all previous approaches for monolingual word alignment as well as a competitive QA-based baseline, which was previously only applied to bilingual data. Our model demonstrates good generalizability to three out-of-domain datasets and shows great utility in two downstream applications: automatic text simplification and sentence pair classification tasks.
+
+| Comments: | Accepted to ACL 2021                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.02569](https://arxiv.org/abs/2106.02569) [cs.CL]** |
+|           | (or **[arXiv:2106.02569v1](https://arxiv.org/abs/2106.02569v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-07-2">2. Human-Adversarial Visual Question Answering
+</h2>
+
+Title: [Human-Adversarial Visual Question Answering](https://arxiv.org/abs/2106.02280)
+
+Authors: [Sasha Sheng](https://arxiv.org/search/cs?searchtype=author&query=Sheng%2C+S), [Amanpreet Singh](https://arxiv.org/search/cs?searchtype=author&query=Singh%2C+A), [Vedanuj Goswami](https://arxiv.org/search/cs?searchtype=author&query=Goswami%2C+V), [Jose Alberto Lopez Magana](https://arxiv.org/search/cs?searchtype=author&query=Magana%2C+J+A+L), [Wojciech Galuba](https://arxiv.org/search/cs?searchtype=author&query=Galuba%2C+W), [Devi Parikh](https://arxiv.org/search/cs?searchtype=author&query=Parikh%2C+D), [Douwe Kiela](https://arxiv.org/search/cs?searchtype=author&query=Kiela%2C+D)
+
+> Performance on the most commonly used Visual Question Answering dataset (VQA v2) is starting to approach human accuracy. However, in interacting with state-of-the-art VQA models, it is clear that the problem is far from being solved. In order to stress test VQA models, we benchmark them against human-adversarial examples. Human subjects interact with a state-of-the-art VQA model, and for each image in the dataset, attempt to find a question where the model's predicted answer is incorrect. We find that a wide range of state-of-the-art models perform poorly when evaluated on these examples. We conduct an extensive analysis of the collected adversarial examples and provide guidance on future research directions. We hope that this Adversarial VQA (AdVQA) benchmark can help drive progress in the field and advance the state of the art.
+
+| Comments: | 22 pages, 13 figures. First two authors contributed equally  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2106.02280](https://arxiv.org/abs/2106.02280) [cs.CV]** |
+|           | (or **[arXiv:2106.02280v1](https://arxiv.org/abs/2106.02280v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-07-3">3. How to Adapt Your Pretrained Multilingual Model to 1600 Languages
+</h2>
+
+Title: [How to Adapt Your Pretrained Multilingual Model to 1600 Languages](https://arxiv.org/abs/2106.02124)
+
+Authors: [Abteen Ebrahimi](https://arxiv.org/search/cs?searchtype=author&query=Ebrahimi%2C+A), [Katharina Kann](https://arxiv.org/search/cs?searchtype=author&query=Kann%2C+K)
+
+> Pretrained multilingual models (PMMs) enable zero-shot learning via cross-lingual transfer, performing best for languages seen during pretraining. While methods exist to improve performance for unseen languages, they have almost exclusively been evaluated using amounts of raw text only available for a small fraction of the world's languages. In this paper, we evaluate the performance of existing methods to adapt PMMs to new languages using a resource available for over 1600 languages: the New Testament. This is challenging for two reasons: (1) the small corpus size, and (2) the narrow domain. While performance drops for all approaches, we surprisingly still see gains of up to 17.69% accuracy for part-of-speech tagging and 6.29 F1 for NER on average over all languages as compared to XLM-R. Another unexpected finding is that continued pretraining, the simplest approach, performs best. Finally, we perform a case study to disentangle the effects of domain and size and to shed light on the influence of the finetuning source language.
+
+| Comments: | Accepted to ACL 2021                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.02124](https://arxiv.org/abs/2106.02124) [cs.CL]** |
+|           | (or **[arXiv:2106.02124v1](https://arxiv.org/abs/2106.02124v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-07-4">4. Syntax-augmented Multilingual BERT for Cross-lingual Transfer
+</h2>
+
+Title: [Syntax-augmented Multilingual BERT for Cross-lingual Transfer](https://arxiv.org/abs/2106.02134)
+
+Authors: [Wasi Uddin Ahmad](https://arxiv.org/search/cs?searchtype=author&query=Ahmad%2C+W+U), [Haoran Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+H), [Kai-Wei Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+K), [Yashar Mehdad](https://arxiv.org/search/cs?searchtype=author&query=Mehdad%2C+Y)
+
+> In recent years, we have seen a colossal effort in pre-training multilingual text encoders using large-scale corpora in many languages to facilitate cross-lingual transfer learning. However, due to typological differences across languages, the cross-lingual transfer is challenging. Nevertheless, language syntax, e.g., syntactic dependencies, can bridge the typological gap. Previous works have shown that pre-trained multilingual encoders, such as mBERT \cite{devlin-etal-2019-bert}, capture language syntax, helping cross-lingual transfer. This work shows that explicitly providing language syntax and training mBERT using an auxiliary objective to encode the universal dependency tree structure helps cross-lingual transfer. We perform rigorous experiments on four NLP tasks, including text classification, question answering, named entity recognition, and task-oriented semantic parsing. The experiment results show that syntax-augmented mBERT improves cross-lingual transfer on popular benchmarks, such as PAWS-X and MLQA, by 1.4 and 1.6 points on average across all languages. In the \emph{generalized} transfer setting, the performance boosted significantly, with 3.9 and 3.1 points on average in PAWS-X and MLQA.
+
+| Comments: | ACL 2021 (camera ready)                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.02134](https://arxiv.org/abs/2106.02134) [cs.CL]** |
+|           | (or **[arXiv:2106.02134v1](https://arxiv.org/abs/2106.02134v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-07-5">5. Grounding 'Grounding' in NLP
+</h2>
+
+Title: [Grounding 'Grounding' in NLP](https://arxiv.org/abs/2106.02192)
+
+Authors: [Khyathi Raghavi Chandu](https://arxiv.org/search/cs?searchtype=author&query=Chandu%2C+K+R), [Yonatan Bisk](https://arxiv.org/search/cs?searchtype=author&query=Bisk%2C+Y), [Alan W Black](https://arxiv.org/search/cs?searchtype=author&query=Black%2C+A+W)
+
+> The NLP community has seen substantial recent interest in grounding to facilitate interaction between language technologies and the world. However, as a community, we use the term broadly to reference any linking of text to data or non-textual modality. In contrast, Cognitive Science more formally defines "grounding" as the process of establishing what mutual information is required for successful communication between two interlocutors -- a definition which might implicitly capture the NLP usage but differs in intent and scope. We investigate the gap between these definitions and seek answers to the following questions: (1) What aspects of grounding are missing from NLP tasks? Here we present the dimensions of coordination, purviews and constraints. (2) How is the term "grounding" used in the current research? We study the trends in datasets, domains, and tasks introduced in recent NLP conferences. And finally, (3) How to advance our current definition to bridge the gap with Cognitive Science? We present ways to both create new tasks or repurpose existing ones to make advancements towards achieving a more complete sense of grounding.
+
+| Comments: | 24 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.02192](https://arxiv.org/abs/2106.02192) [cs.CL]** |
+|           | (or **[arXiv:2106.02192v1](https://arxiv.org/abs/2106.02192v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-07-6">6. BERTTune: Fine-Tuning Neural Machine Translation with BERTScore
+</h2>
+
+Title: [BERTTune: Fine-Tuning Neural Machine Translation with BERTScore](https://arxiv.org/abs/2106.02208)
+
+Authors: [Inigo Jauregi Unanue](https://arxiv.org/search/cs?searchtype=author&query=Unanue%2C+I+J), [Jacob Parnell](https://arxiv.org/search/cs?searchtype=author&query=Parnell%2C+J), [Massimo Piccardi](https://arxiv.org/search/cs?searchtype=author&query=Piccardi%2C+M)
+
+> Neural machine translation models are often biased toward the limited translation references seen during training. To amend this form of overfitting, in this paper we propose fine-tuning the models with a novel training objective based on the recently-proposed BERTScore evaluation metric. BERTScore is a scoring function based on contextual embeddings that overcomes the typical limitations of n-gram-based metrics (e.g. synonyms, paraphrases), allowing translations that are different from the references, yet close in the contextual embedding space, to be treated as substantially correct. To be able to use BERTScore as a training objective, we propose three approaches for generating soft predictions, allowing the network to remain completely differentiable end-to-end. Experiments carried out over four, diverse language pairs have achieved improvements of up to 0.58 pp (3.28%) in BLEU score and up to 0.76 pp (0.98%) in BERTScore (F_BERT) when fine-tuning a strong baseline.
+
+| Comments: | Accepted at ACL 2021                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.02208](https://arxiv.org/abs/2106.02208) [cs.CL]** |
+|           | (or **[arXiv:2106.02208v1](https://arxiv.org/abs/2106.02208v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-07-7">7. Scalable Transformers for Neural Machine Translation
+</h2>
+
+Title: [Scalable Transformers for Neural Machine Translation](https://arxiv.org/abs/2106.02242)
+
+Authors: [Peng Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+P), [Shijie Geng](https://arxiv.org/search/cs?searchtype=author&query=Geng%2C+S), [Xiaogang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Jifeng Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+J), [Hongsheng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+H)
+
+> Transformer has been widely adopted in Neural Machine Translation (NMT) because of its large capacity and parallel training of sequence generation. However, the deployment of Transformer is challenging because different scenarios require models of different complexities and scales. Naively training multiple Transformers is redundant in terms of both computation and memory. In this paper, we propose a novel scalable Transformers, which naturally contains sub-Transformers of different scales and have shared parameters. Each sub-Transformer can be easily obtained by cropping the parameters of the largest Transformer. A three-stage training scheme is proposed to tackle the difficulty of training the scalable Transformers, which introduces additional supervisions from word-level and sequence-level self-distillation. Extensive experiments were conducted on WMT EN-De and En-Fr to validate our proposed scalable Transformers.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.02242](https://arxiv.org/abs/2106.02242) [cs.CL]** |
+|           | (or **[arXiv:2106.02242v1](https://arxiv.org/abs/2106.02242v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-07-8">8. Bi-Granularity Contrastive Learning for Post-Training in Few-Shot Scene
+</h2>
+
+Title: [Bi-Granularity Contrastive Learning for Post-Training in Few-Shot Scene](https://arxiv.org/abs/2106.02327)
+
+Authors: [Ruikun Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+R), [Guanhuan Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+G), [Xiaojun Quan](https://arxiv.org/search/cs?searchtype=author&query=Quan%2C+X)
+
+> The major paradigm of applying a pre-trained language model to downstream tasks is to fine-tune it on labeled task data, which often suffers instability and low performance when the labeled examples are scarce.~One way to alleviate this problem is to apply post-training on unlabeled task data before fine-tuning, adapting the pre-trained model to target domains by contrastive learning that considers either token-level or sequence-level similarity. Inspired by the success of sequence masking, we argue that both token-level and sequence-level similarities can be captured with a pair of masked sequences.~Therefore, we propose complementary random masking (CRM) to generate a pair of masked sequences from an input sequence for sequence-level contrastive learning and then develop contrastive masked language modeling (CMLM) for post-training to integrate both token-level and sequence-level contrastive learnings.~Empirical results show that CMLM surpasses several recent post-training methods in few-shot settings without the need for data augmentation.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.02327](https://arxiv.org/abs/2106.02327) [cs.CL]** |
+|           | (or **[arXiv:2106.02327v1](https://arxiv.org/abs/2106.02327v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-07-9">9. Language Model Metrics and Procrustes Analysis for Improved Vector Transformation of NLP Embeddings
+</h2>
+
+Title: [Language Model Metrics and Procrustes Analysis for Improved Vector Transformation of NLP Embeddings](https://arxiv.org/abs/2106.02490)
+
+Authors: [Thomas Conley](https://arxiv.org/search/cs?searchtype=author&query=Conley%2C+T), [Jugal Kalita](https://arxiv.org/search/cs?searchtype=author&query=Kalita%2C+J)
+
+> Artificial Neural networks are mathematical models at their core. This truismpresents some fundamental difficulty when networks are tasked with Natural Language Processing. A key problem lies in measuring the similarity or distance among vectors in NLP embedding space, since the mathematical concept of distance does not always agree with the linguistic concept. We suggest that the best way to measure linguistic distance among vectors is by employing the Language Model (LM) that created them. We introduce Language Model Distance (LMD) for measuring accuracy of vector transformations based on the Distributional Hypothesis ( LMD Accuracy ). We show the efficacy of this metric by applying it to a simple neural network learning the Procrustes algorithm for bilingual word mapping.
+
+| Subjects:          | **Computation and Language (cs.CL)**; Neural and Evolutionary Computing (cs.NE) |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | Proceedings of the 17th International Conference on Natural Language Processing, pages 170-174, Patna, India, December 18-21, 2020 |
+| Cite as:           | **[arXiv:2106.02490](https://arxiv.org/abs/2106.02490) [cs.CL]** |
+|                    | (or **[arXiv:2106.02490v1](https://arxiv.org/abs/2106.02490v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+
+# 2021-06-04
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-06-04-1">1. TVDIM: Enhancing Image Self-Supervised Pretraining via Noisy Text Data
+</h2>
+
+Title: [TVDIM: Enhancing Image Self-Supervised Pretraining via Noisy Text Data](https://arxiv.org/abs/2106.01797)
+
+Authors: [Pengda Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+P), [Yuhong Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y)
+
+> Among ubiquitous multimodal data in the real world, text is the modality generated by human, while image reflects the physical world honestly. In a visual understanding application, machines are expected to understand images like human. Inspired by this, we propose a novel self-supervised learning method, named Text-enhanced Visual Deep InfoMax (TVDIM), to learn better visual representations by fully utilizing the naturally-existing multimodal data. Our core idea of self-supervised learning is to maximize the mutual information between features extracted from multiple views of a shared context to a rational degree. Different from previous methods which only consider multiple views from a single modality, our work produces multiple views from different modalities, and jointly optimizes the mutual information for features pairs of intra-modality and inter-modality. Considering the information gap between inter-modality features pairs from data noise, we adopt a \emph{ranking-based} contrastive learning to optimize the mutual information. During evaluation, we directly use the pre-trained visual representations to complete various image classification tasks. Experimental results show that, TVDIM significantly outperforms previous visual self-supervised methods when processing the same set of images.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.01797](https://arxiv.org/abs/2106.01797) [cs.CL]** |
+|           | (or **[arXiv:2106.01797v1](https://arxiv.org/abs/2106.01797v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-04-2">2. Representing Syntax and Composition with Geometric Transformations
+</h2>
+
+Title: [Representing Syntax and Composition with Geometric Transformations](https://arxiv.org/abs/2106.01904)
+
+Authors: [Lorenzo Bertolini](https://arxiv.org/search/cs?searchtype=author&query=Bertolini%2C+L), [Julie Weeds](https://arxiv.org/search/cs?searchtype=author&query=Weeds%2C+J), [David Weir](https://arxiv.org/search/cs?searchtype=author&query=Weir%2C+D), [Qiwei Peng](https://arxiv.org/search/cs?searchtype=author&query=Peng%2C+Q)
+
+> The exploitation of syntactic graphs (SyGs) as a word's context has been shown to be beneficial for distributional semantic models (DSMs), both at the level of individual word representations and in deriving phrasal representations via composition. However, notwithstanding the potential performance benefit, the syntactically-aware DSMs proposed to date have huge numbers of parameters (compared to conventional DSMs) and suffer from data sparsity. Furthermore, the encoding of the SyG links (i.e., the syntactic relations) has been largely limited to linear maps. The knowledge graphs' literature, on the other hand, has proposed light-weight models employing different geometric transformations (GTs) to encode edges in a knowledge graph (KG). Our work explores the possibility of adopting this family of models to encode SyGs. Furthermore, we investigate which GT better encodes syntactic relations, so that these representations can be used to enhance phrase-level composition via syntactic contextualisation.
+
+| Comments: | to appear in Findings of ACL 2021                            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.01904](https://arxiv.org/abs/2106.01904) [cs.CL]** |
+|           | (or **[arXiv:2106.01904v1](https://arxiv.org/abs/2106.01904v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-04-3">3. The Case for Translation-Invariant Self-Attention in Transformer-Based Language Models
+</h2>
+
+Title: [The Case for Translation-Invariant Self-Attention in Transformer-Based Language Models](https://arxiv.org/abs/2106.01950)
+
+Authors: [Ulme Wennberg](https://arxiv.org/search/cs?searchtype=author&query=Wennberg%2C+U), [Gustav Eje Henter](https://arxiv.org/search/cs?searchtype=author&query=Henter%2C+G+E)
+
+> Mechanisms for encoding positional information are central for transformer-based language models. In this paper, we analyze the position embeddings of existing language models, finding strong evidence of translation invariance, both for the embeddings themselves and for their effect on self-attention. The degree of translation invariance increases during training and correlates positively with model performance. Our findings lead us to propose translation-invariant self-attention (TISA), which accounts for the relative position between tokens in an interpretable fashion without needing conventional position embeddings. Our proposal has several theoretical advantages over existing position-representation approaches. Experiments show that it improves on regular ALBERT on GLUE tasks, while only adding orders of magnitude less positional parameters.
+
+| Comments: | 11 pages, 8 figures, Accepted to ACL 2021                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2106.01950](https://arxiv.org/abs/2106.01950) [cs.CL]** |
+|           | (or **[arXiv:2106.01950v1](https://arxiv.org/abs/2106.01950v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-04-4">4. A Dataset and Baselines for Multilingual Reply Suggestion
+</h2>
+
+Title: [A Dataset and Baselines for Multilingual Reply Suggestion](https://arxiv.org/abs/2106.02017)
+
+Authors: [Mozhi Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M), [Wei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Budhaditya Deb](https://arxiv.org/search/cs?searchtype=author&query=Deb%2C+B), [Guoqing Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+G), [Milad Shokouhi](https://arxiv.org/search/cs?searchtype=author&query=Shokouhi%2C+M), [Ahmed Hassan Awadallah](https://arxiv.org/search/cs?searchtype=author&query=Awadallah%2C+A+H)
+
+> Reply suggestion models help users process emails and chats faster. Previous work only studies English reply suggestion. Instead, we present MRS, a multilingual reply suggestion dataset with ten languages. MRS can be used to compare two families of models: 1) retrieval models that select the reply from a fixed set and 2) generation models that produce the reply from scratch. Therefore, MRS complements existing cross-lingual generalization benchmarks that focus on classification and sequence labeling tasks. We build a generation model and a retrieval model as baselines for MRS. The two models have different strengths in the monolingual setting, and they require different strategies to generalize across languages. MRS is publicly available at [this https URL](https://github.com/zhangmozhi/mrs).
+
+| Comments: | ACL 2021                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2106.02017](https://arxiv.org/abs/2106.02017) [cs.CL]** |
+|           | (or **[arXiv:2106.02017v1](https://arxiv.org/abs/2106.02017v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-04-5">5. E2E-VLP: End-to-End Vision-Language Pre-training Enhanced by Visual Learning
+</h2>
+
+Title: [E2E-VLP: End-to-End Vision-Language Pre-training Enhanced by Visual Learning](https://arxiv.org/abs/2106.01804)
+
+Authors: [Haiyang Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+H), [Ming Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+M), [Chenliang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+C), [Bin Bi](https://arxiv.org/search/cs?searchtype=author&query=Bi%2C+B), [Songfang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Wenming Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+W), [Fei Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+F)
+
+> Vision-language pre-training (VLP) on large-scale image-text pairs has achieved huge success for the cross-modal downstream tasks. The most existing pre-training methods mainly adopt a two-step training procedure, which firstly employs a pre-trained object detector to extract region-based visual features, then concatenates the image representation and text embedding as the input of Transformer to train. However, these methods face problems of using task-specific visual representation of the specific object detector for generic cross-modal understanding, and the computation inefficiency of two-stage pipeline. In this paper, we propose the first end-to-end vision-language pre-trained model for both V+L understanding and generation, namely E2E-VLP, where we build a unified Transformer framework to jointly learn visual representation, and semantic alignments between image and text. We incorporate the tasks of object detection and image captioning into pre-training with a unified Transformer encoder-decoder architecture for enhancing visual learning. An extensive set of experiments have been conducted on well-established vision-language downstream tasks to demonstrate the effectiveness of this novel VLP paradigm.
+
+| Subjects:          | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | ACL2021 main conference                                      |
+| Cite as:           | **[arXiv:2106.01804](https://arxiv.org/abs/2106.01804) [cs.CV]** |
+|                    | (or **[arXiv:2106.01804v1](https://arxiv.org/abs/2106.01804v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-04-6">6. Lightweight Adapter Tuning for Multilingual Speech Translation
+</h2>
+
+Title: [Lightweight Adapter Tuning for Multilingual Speech Translation](https://arxiv.org/abs/2106.01463)
+
+Authors: [Hang Le](https://arxiv.org/search/cs?searchtype=author&query=Le%2C+H), [Juan Pino](https://arxiv.org/search/cs?searchtype=author&query=Pino%2C+J), [Changhan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J), [Didier Schwab](https://arxiv.org/search/cs?searchtype=author&query=Schwab%2C+D), [Laurent Besacier](https://arxiv.org/search/cs?searchtype=author&query=Besacier%2C+L)
+
+> Adapter modules were recently introduced as an efficient alternative to fine-tuning in NLP. Adapter tuning consists in freezing pretrained parameters of a model and injecting lightweight modules between layers, resulting in the addition of only a small number of task-specific trainable parameters. While adapter tuning was investigated for multilingual neural machine translation, this paper proposes a comprehensive analysis of adapters for multilingual speech translation (ST). Starting from different pre-trained models (a multilingual ST trained on parallel data or a multilingual BART (mBART) trained on non-parallel multilingual data), we show that adapters can be used to: (a) efficiently specialize ST to specific language pairs with a low extra cost in terms of parameters, and (b) transfer from an automatic speech recognition (ASR) task and an mBART pre-trained model to a multilingual ST task. Experiments show that adapter tuning offer competitive results to full fine-tuning, while being much more parameter-efficient.
+
+| Comments: | Accepted at ACL-IJCNLP 2021                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.01463](https://arxiv.org/abs/2106.01463) [cs.CL]** |
+|           | (or **[arXiv:2106.01463v1](https://arxiv.org/abs/2106.01463v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-04-7">7. Can Generative Pre-trained Language Models Serve as Knowledge Bases for Closed-book QA?
+</h2>
+
+Title: [Can Generative Pre-trained Language Models Serve as Knowledge Bases for Closed-book QA?](https://arxiv.org/abs/2106.01561)
+
+Authors: [Cunxiang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Pai Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+P), [Yue Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y)
+
+> Recent work has investigated the interesting question using pre-trained language models (PLMs) as knowledge bases for answering open questions. However, existing work is limited in using small benchmarks with high test-train overlaps. We construct a new dataset of closed-book QA using SQuAD, and investigate the performance of BART. Experiments show that it is challenging for BART to remember training facts in high precision, and also challenging to answer closed-book questions even if relevant knowledge is retained. Some promising directions are found, including decoupling the knowledge memorizing process and the QA finetune process, forcing the model to recall relevant knowledge when question answering.
+
+| Comments: | Accepted By ACL-IJCNLP 2021                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.01561](https://arxiv.org/abs/2106.01561) [cs.CL]** |
+|           | (or **[arXiv:2106.01561v1](https://arxiv.org/abs/2106.01561v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-04-8">8. Tail-to-Tail Non-Autoregressive Sequence Prediction for Chinese Grammatical Error Correction
+</h2>
+
+Title: [Tail-to-Tail Non-Autoregressive Sequence Prediction for Chinese Grammatical Error Correction](https://arxiv.org/abs/2106.01609)
+
+Authors: [Piji Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+P), [Shuming Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+S)
+
+> We investigate the problem of Chinese Grammatical Error Correction (CGEC) and present a new framework named Tail-to-Tail (\textbf{TtT}) non-autoregressive sequence prediction to address the deep issues hidden in CGEC. Considering that most tokens are correct and can be conveyed directly from source to target, and the error positions can be estimated and corrected based on the bidirectional context information, thus we employ a BERT-initialized Transformer Encoder as the backbone model to conduct information modeling and conveying. Considering that only relying on the same position substitution cannot handle the variable-length correction cases, various operations such substitution, deletion, insertion, and local paraphrasing are required jointly. Therefore, a Conditional Random Fields (CRF) layer is stacked on the up tail to conduct non-autoregressive sequence prediction by modeling the token dependencies. Since most tokens are correct and easily to be predicted/conveyed to the target, then the models may suffer from a severe class imbalance issue. To alleviate this problem, focal loss penalty strategies are integrated into the loss functions. Moreover, besides the typical fix-length error correction datasets, we also construct a variable-length corpus to conduct experiments. Experimental results on standard datasets, especially on the variable-length datasets, demonstrate the effectiveness of TtT in terms of sentence-level Accuracy, Precision, Recall, and F1-Measure on tasks of error Detection and Correction.
+
+| Comments: | Accepted in the main conference of ACL 2021. Code: [this https URL](https://github.com/lipiji/TtT) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2106.01609](https://arxiv.org/abs/2106.01609) [cs.CL]** |
+|           | (or **[arXiv:2106.01609v1](https://arxiv.org/abs/2106.01609v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-04-9">9. Few-shot Knowledge Graph-to-Text Generation with Pretrained Language Models
+</h2>
+
+Title: [Few-shot Knowledge Graph-to-Text Generation with Pretrained Language Models](https://arxiv.org/abs/2106.01623)
+
+Authors: [Junyi Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Tianyi Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+T), [Wayne Xin Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+W+X), [Zhicheng Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+Z), [Nicholas Jing Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+N+J), [Ji-Rong Wen](https://arxiv.org/search/cs?searchtype=author&query=Wen%2C+J)
+
+> This paper studies how to automatically generate a natural language text that describes the facts in knowledge graph (KG). Considering the few-shot setting, we leverage the excellent capacities of pretrained language models (PLMs) in language understanding and generation. We make three major technical contributions, namely representation alignment for bridging the semantic gap between KG encodings and PLMs, relation-biased KG linearization for deriving better input representations, and multi-task learning for learning the correspondence between KG and text. Extensive experiments on three benchmark datasets have demonstrated the effectiveness of our model on KG-to-text generation task. In particular, our model outperforms all comparison methods on both fully-supervised and few-shot settings. Our code and datasets are available at [this https URL](https://github.com/RUCAIBox/Few-Shot-KG2Text).
+
+| Comments: | Accepted to ACL 2021 Findings                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.01623](https://arxiv.org/abs/2106.01623) [cs.CL]** |
+|           | (or **[arXiv:2106.01623v1](https://arxiv.org/abs/2106.01623v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-04-10">10. Fingerprinting Fine-tuned Language Models in the Wild
+</h2>
+
+Title: [Fingerprinting Fine-tuned Language Models in the Wild](https://arxiv.org/abs/2106.01703)
+
+Authors: [Nirav Diwan](https://arxiv.org/search/cs?searchtype=author&query=Diwan%2C+N), [Tanmoy Chakravorty](https://arxiv.org/search/cs?searchtype=author&query=Chakravorty%2C+T), [Zubair Shafiq](https://arxiv.org/search/cs?searchtype=author&query=Shafiq%2C+Z)
+
+> There are concerns that the ability of language models (LMs) to generate high quality synthetic text can be misused to launch spam, disinformation, or propaganda. Therefore, the research community is actively working on developing approaches to detect whether a given text is organic or synthetic. While this is a useful first step, it is important to be able to further fingerprint the author LM to attribute its origin. Prior work on fingerprinting LMs is limited to attributing synthetic text generated by a handful (usually < 10) of pre-trained LMs. However, LMs such as GPT2 are commonly fine-tuned in a myriad of ways (e.g., on a domain-specific text corpus) before being used to generate synthetic text. It is challenging to fingerprinting fine-tuned LMs because the universe of fine-tuned LMs is much larger in realistic scenarios. To address this challenge, we study the problem of large-scale fingerprinting of fine-tuned LMs in the wild. Using a real-world dataset of synthetic text generated by 108 different fine-tuned LMs, we conduct comprehensive experiments to demonstrate the limitations of existing fingerprinting approaches. Our results show that fine-tuning itself is the most effective in attributing the synthetic text generated by fine-tuned LMs.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.01703](https://arxiv.org/abs/2106.01703) [cs.CL]** |
+|           | (or **[arXiv:2106.01703v1](https://arxiv.org/abs/2106.01703v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-04-11">11. Bilingual Alignment Pre-training for Zero-shot Cross-lingual Transfer
+</h2>
+
+Title: [Bilingual Alignment Pre-training for Zero-shot Cross-lingual Transfer](https://arxiv.org/abs/2106.01732)
+
+Authors: [Ziqing Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Wentao Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+W), [Yiming Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+Y), [Jiani Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+J), [Wanxiang Che](https://arxiv.org/search/cs?searchtype=author&query=Che%2C+W), [Shijin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S)
+
+> Multilingual pre-trained models have achieved remarkable transfer performance by pre-trained on rich kinds of languages. Most of the models such as mBERT are pre-trained on unlabeled corpora. The static and contextual embeddings from the models could not be aligned very well. In this paper, we aim to improve the zero-shot cross-lingual transfer performance by aligning the embeddings better. We propose a pre-training task named Alignment Language Model (AlignLM), which uses the statistical alignment information as the prior knowledge to guide bilingual word prediction. We evaluate our method on multilingual machine reading comprehension and natural language interface tasks. The results show AlignLM can improve the zero-shot performance significantly on MLQA and XNLI datasets.
+
+| Comments: | 4 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.01732](https://arxiv.org/abs/2106.01732) [cs.CL]** |
+|           | (or **[arXiv:2106.01732v1](https://arxiv.org/abs/2106.01732v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+
+
+# 2021-06-03
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-06-03-1">1. Part of Speech and Universal Dependency effects on English Arabic Machine Translation
+</h2>
+
+Title: [Part of Speech and Universal Dependency effects on English Arabic Machine Translation](https://arxiv.org/abs/2106.00745)
+
+Authors: [Omri Abend](https://arxiv.org/search/cs?searchtype=author&query=Abend%2C+O), [Leshem Choshen](https://arxiv.org/search/cs?searchtype=author&query=Choshen%2C+L), [Dmitry Nikolaev](https://arxiv.org/search/cs?searchtype=author&query=Nikolaev%2C+D), [Ofek Rafaeli](https://arxiv.org/search/cs?searchtype=author&query=Rafaeli%2C+O)
+
+> In this research paper, I will elaborate on a method to evaluate machine translation models based on their performance on underlying syntactical phenomena between English and Arabic languages. This method is especially important as such "neural" and "machine learning" are hard to fine-tune and change. Thus, finding a way to evaluate them easily and diversely would greatly help the task of bettering them.
+
+| Comments: | 19 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2106.00745](https://arxiv.org/abs/2106.00745) [cs.CL]** |
+|           | (or **[arXiv:2106.00745v1](https://arxiv.org/abs/2106.00745v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-03-2">2. Rejuvenating Low-Frequency Words: Making the Most of Parallel Data in Non-Autoregressive Translation
+</h2>
+
+Title: [Rejuvenating Low-Frequency Words: Making the Most of Parallel Data in Non-Autoregressive Translation](https://arxiv.org/abs/2106.00903)
+
+Authors: [Liang Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+L), [Longyue Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Xuebo Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Derek F. Wong](https://arxiv.org/search/cs?searchtype=author&query=Wong%2C+D+F), [Dacheng Tao](https://arxiv.org/search/cs?searchtype=author&query=Tao%2C+D), [Zhaopeng Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+Z)
+
+> Knowledge distillation (KD) is commonly used to construct synthetic data for training non-autoregressive translation (NAT) models. However, there exists a discrepancy on low-frequency words between the distilled and the original data, leading to more errors on predicting low-frequency words. To alleviate the problem, we directly expose the raw data into NAT by leveraging pretraining. By analyzing directed alignments, we found that KD makes low-frequency source words aligned with targets more deterministically but fails to align sufficient low-frequency words from target to source. Accordingly, we propose reverse KD to rejuvenate more alignments for low-frequency target words. To make the most of authentic and synthetic data, we combine these complementary approaches as a new training strategy for further boosting NAT performance. We conduct experiments on five translation benchmarks over two advanced architectures. Results demonstrate that the proposed approach can significantly and universally improve translation quality by reducing translation errors on low-frequency words. Encouragingly, our approach achieves 28.2 and 33.9 BLEU points on the WMT14 English-German and WMT16 Romanian-English datasets, respectively. Our code, data, and trained models are available at \url{[this https URL](https://github.com/longyuewangdcu/RLFW-NAT)}.
+
+| Comments: | ACL 2021                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2106.00903](https://arxiv.org/abs/2106.00903) [cs.CL]** |
+|           | (or **[arXiv:2106.00903v1](https://arxiv.org/abs/2106.00903v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-03-3">3. Discrete Cosine Transform as Universal Sentence Encoder
+</h2>
+
+Title: [Discrete Cosine Transform as Universal Sentence Encoder](https://arxiv.org/abs/2106.00934)
+
+Authors: [Nada Almarwani](https://arxiv.org/search/cs?searchtype=author&query=Almarwani%2C+N), [Mona Diab](https://arxiv.org/search/cs?searchtype=author&query=Diab%2C+M)
+
+> Modern sentence encoders are used to generate dense vector representations that capture the underlying linguistic characteristics for a sequence of words, including phrases, sentences, or paragraphs. These kinds of representations are ideal for training a classifier for an end task such as sentiment analysis, question answering and text classification. Different models have been proposed to efficiently generate general purpose sentence representations to be used in pretraining protocols. While averaging is the most commonly used efficient sentence encoder, Discrete Cosine Transform (DCT) was recently proposed as an alternative that captures the underlying syntactic characteristics of a given text without compromising practical efficiency compared to averaging. However, as with most other sentence encoders, the DCT sentence encoder was only evaluated in English. To this end, we utilize DCT encoder to generate universal sentence representation for different languages such as German, French, Spanish and Russian. The experimental results clearly show the superior effectiveness of DCT encoding in which consistent performance improvements are achieved over strong baselines on multiple standardized datasets.
+
+| Comments: | to be published in ACL-IJCNLP 2021                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.00934](https://arxiv.org/abs/2106.00934) [cs.CL]** |
+|           | (or **[arXiv:2106.00934v1](https://arxiv.org/abs/2106.00934v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-03-4">4. Self-Training Sampling with Monolingual Data Uncertainty for Neural Machine Translation
+</h2>
+
+Title: [Self-Training Sampling with Monolingual Data Uncertainty for Neural Machine Translation](https://arxiv.org/abs/2106.00941)
+
+Authors: [Wenxiang Jiao](https://arxiv.org/search/cs?searchtype=author&query=Jiao%2C+W), [Xing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Zhaopeng Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+Z), [Shuming Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+S), [Michael R. Lyu](https://arxiv.org/search/cs?searchtype=author&query=Lyu%2C+M+R), [Irwin King](https://arxiv.org/search/cs?searchtype=author&query=King%2C+I)
+
+> Self-training has proven effective for improving NMT performance by augmenting model training with synthetic parallel data. The common practice is to construct synthetic data based on a randomly sampled subset of large-scale monolingual data, which we empirically show is sub-optimal. In this work, we propose to improve the sampling procedure by selecting the most informative monolingual sentences to complement the parallel data. To this end, we compute the uncertainty of monolingual sentences using the bilingual dictionary extracted from the parallel data. Intuitively, monolingual sentences with lower uncertainty generally correspond to easy-to-translate patterns which may not provide additional gains. Accordingly, we design an uncertainty-based sampling strategy to efficiently exploit the monolingual data for self-training, in which monolingual sentences with higher uncertainty would be sampled with higher probability. Experimental results on large-scale WMT English⇒German and English⇒Chinese datasets demonstrate the effectiveness of the proposed approach. Extensive analyses suggest that emphasizing the learning on uncertain monolingual sentences by our approach does improve the translation quality of high-uncertainty sentences and also benefits the prediction of low-frequency words at the target side.
+
+| Comments: | ACL 2021 main conference, long paper, 11 pages               |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Information Theory (cs.IT) |
+| Cite as:  | **[arXiv:2106.00941](https://arxiv.org/abs/2106.00941) [cs.CL]** |
+|           | (or **[arXiv:2106.00941v1](https://arxiv.org/abs/2106.00941v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-03-5">5. One Teacher is Enough? Pre-trained Language Model Distillation from Multiple Teachers
+</h2>
+
+Title: [One Teacher is Enough? Pre-trained Language Model Distillation from Multiple Teachers](https://arxiv.org/abs/2106.01023)
+
+Authors: [Chuhan Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+C), [Fangzhao Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+F), [Yongfeng Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Y)
+
+> Pre-trained language models (PLMs) achieve great success in NLP. However, their huge model sizes hinder their applications in many practical systems. Knowledge distillation is a popular technique to compress PLMs, which learns a small student model from a large teacher PLM. However, the knowledge learned from a single teacher may be limited and even biased, resulting in low-quality student model. In this paper, we propose a multi-teacher knowledge distillation framework named MT-BERT for pre-trained language model compression, which can train high-quality student model from multiple teacher PLMs. In MT-BERT we design a multi-teacher co-finetuning method to jointly finetune multiple teacher PLMs in downstream tasks with shared pooling and prediction layers to align their output space for better collaborative teaching. In addition, we propose a multi-teacher hidden loss and a multi-teacher distillation loss to transfer the useful knowledge in both hidden states and soft labels from multiple teacher PLMs to the student model. Experiments on three benchmark datasets validate the effectiveness of MT-BERT in compressing PLMs.
+
+| Comments: | Findings of ACL-IJCNLP 2021                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.01023](https://arxiv.org/abs/2106.01023) [cs.CL]** |
+|           | (or **[arXiv:2106.01023v1](https://arxiv.org/abs/2106.01023v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-03-6">6. Hi-Transformer: Hierarchical Interactive Transformer for Efficient and Effective Long Document Modeling
+</h2>
+
+Title: [Hi-Transformer: Hierarchical Interactive Transformer for Efficient and Effective Long Document Modeling](https://arxiv.org/abs/2106.01040)
+
+Authors: [Chuhan Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+C), [Fangzhao Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+F), [Tao Qi](https://arxiv.org/search/cs?searchtype=author&query=Qi%2C+T), [Yongfeng Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Y)
+
+> Transformer is important for text modeling. However, it has difficulty in handling long documents due to the quadratic complexity with input text length. In order to handle this problem, we propose a hierarchical interactive Transformer (Hi-Transformer) for efficient and effective long document modeling. Hi-Transformer models documents in a hierarchical way, i.e., first learns sentence representations and then learns document representations. It can effectively reduce the complexity and meanwhile capture global document context in the modeling of each sentence. More specifically, we first use a sentence Transformer to learn the representations of each sentence. Then we use a document Transformer to model the global document context from these sentence representations. Next, we use another sentence Transformer to enhance sentence modeling using the global document context. Finally, we use hierarchical pooling method to obtain document embedding. Extensive experiments on three benchmark datasets validate the efficiency and effectiveness of Hi-Transformer in long document modeling.
+
+| Comments: | ACL-IJCNLP 2021                                              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.01040](https://arxiv.org/abs/2106.01040) [cs.CL]** |
+|           | (or **[arXiv:2106.01040v1](https://arxiv.org/abs/2106.01040v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-03-7">7. Cascade versus Direct Speech Translation: Do the Differences Still Make a Difference?
+</h2>
+
+Title: [Cascade versus Direct Speech Translation: Do the Differences Still Make a Difference?](https://arxiv.org/abs/2106.01045)
+
+Authors: [Luisa Bentivogli](https://arxiv.org/search/cs?searchtype=author&query=Bentivogli%2C+L), [Mauro Cettolo](https://arxiv.org/search/cs?searchtype=author&query=Cettolo%2C+M), [Marco Gaido](https://arxiv.org/search/cs?searchtype=author&query=Gaido%2C+M), [Alina Karakanta](https://arxiv.org/search/cs?searchtype=author&query=Karakanta%2C+A), [Alberto Martinelli](https://arxiv.org/search/cs?searchtype=author&query=Martinelli%2C+A), [Matteo Negri](https://arxiv.org/search/cs?searchtype=author&query=Negri%2C+M), [Marco Turchi](https://arxiv.org/search/cs?searchtype=author&query=Turchi%2C+M)
+
+> Five years after the first published proofs of concept, direct approaches to speech translation (ST) are now competing with traditional cascade solutions. In light of this steady progress, can we claim that the performance gap between the two is closed? Starting from this question, we present a systematic comparison between state-of-the-art systems representative of the two paradigms. Focusing on three language directions (English-German/Italian/Spanish), we conduct automatic and manual evaluations, exploiting high-quality professional post-edits and annotations. Our multi-faceted analysis on one of the few publicly available ST benchmarks attests for the first time that: i) the gap between the two paradigms is now closed, and ii) the subtle differences observed in their behavior are not sufficient for humans neither to distinguish them nor to prefer one over the other.
+
+| Comments: | Accepted at ACL2021                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.01045](https://arxiv.org/abs/2106.01045) [cs.CL]** |
+|           | (or **[arXiv:2106.01045v1](https://arxiv.org/abs/2106.01045v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-03-8">8. Evidence-based Factual Error Correction
+</h2>
+
+Title: [Evidence-based Factual Error Correction](https://arxiv.org/abs/2106.01072)
+
+Authors: [James Thorne](https://arxiv.org/search/cs?searchtype=author&query=Thorne%2C+J), [Andreas Vlachos](https://arxiv.org/search/cs?searchtype=author&query=Vlachos%2C+A)
+
+> This paper introduces the task of factual error correction: performing edits to a claim so that the generated rewrite is better supported by evidence. This extends the well-studied task of fact verification by providing a mechanism to correct written texts that are refuted or only partially supported by evidence. We demonstrate that it is feasible to train factual error correction systems from existing fact checking datasets which only contain labeled claims accompanied by evidence, but not the correction. We achieve this by employing a two-stage distant supervision approach that incorporates evidence into masked claims when generating corrections. Our approach, based on the T5 transformer and using retrieved evidence, achieved better results than existing work which used a pointer copy network and gold evidence, producing accurate factual error corrections for 5x more instances in human evaluation and a .125 increase in SARI score. The evaluation is conducted on a dataset of 65,000 instances based on a recent fact verification shared task and we release it to enable further work on the task.
+
+| Comments: | To appear at ACL2021. arXiv admin note: text overlap with [arXiv:2012.15788](https://arxiv.org/abs/2012.15788) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2106.01072](https://arxiv.org/abs/2106.01072) [cs.CL]** |
+|           | (or **[arXiv:2106.01072v1](https://arxiv.org/abs/2106.01072v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-03-9">9. Is Sparse Attention more Interpretable?
+</h2>
+
+Title: [Is Sparse Attention more Interpretable?](https://arxiv.org/abs/2106.01087)
+
+Authors: [Clara Meister](https://arxiv.org/search/cs?searchtype=author&query=Meister%2C+C), [Stefan Lazov](https://arxiv.org/search/cs?searchtype=author&query=Lazov%2C+S), [Isabelle Augenstein](https://arxiv.org/search/cs?searchtype=author&query=Augenstein%2C+I), [Ryan Cotterell](https://arxiv.org/search/cs?searchtype=author&query=Cotterell%2C+R)
+
+> Sparse attention has been claimed to increase model interpretability under the assumption that it highlights influential inputs. Yet the attention distribution is typically over representations internal to the model rather than the inputs themselves, suggesting this assumption may not have merit. We build on the recent work exploring the interpretability of attention; we design a set of experiments to help us understand how sparsity affects our ability to use attention as an explainability tool. On three text classification tasks, we verify that only a weak relationship between inputs and co-indexed intermediate representations exists -- under sparse attention and otherwise. Further, we do not find any plausible mappings from sparse attention distributions to a sparse set of influential inputs through other avenues. Rather, we observe in this setting that inducing sparsity may make it less plausible that attention can be used as a tool for understanding model behavior.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | Proceedings of ACL-IJCNLP 2021                               |
+| Cite as:           | **[arXiv:2106.01087](https://arxiv.org/abs/2106.01087) [cs.CL]** |
+|                    | (or **[arXiv:2106.01087v1](https://arxiv.org/abs/2106.01087v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-03-10">10. End-to-End NLP Knowledge Graph Construction
+</h2>
+
+Title: [End-to-End NLP Knowledge Graph Construction](https://arxiv.org/abs/2106.01167)
+
+Authors: [Ishani Mondal](https://arxiv.org/search/cs?searchtype=author&query=Mondal%2C+I), [Yufang Hou](https://arxiv.org/search/cs?searchtype=author&query=Hou%2C+Y), [Charles Jochim](https://arxiv.org/search/cs?searchtype=author&query=Jochim%2C+C)
+
+> This paper studies the end-to-end construction of an NLP Knowledge Graph (KG) from scientific papers. We focus on extracting four types of relations: evaluatedOn between tasks and datasets, evaluatedBy between tasks and evaluation metrics, as well as coreferent and related relations between the same type of entities. For instance, F1-score is coreferent with F-measure. We introduce novel methods for each of these relation types and apply our final framework (SciNLP-KG) to 30,000 NLP papers from ACL Anthology to build a large-scale KG, which can facilitate automatically constructing scientific leaderboards for the NLP community. The results of our experiments indicate that the resulting KG contains high-quality information.
+
+| Comments: | Accepted in ACL 2021                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.01167](https://arxiv.org/abs/2106.01167) [cs.CL]** |
+|           | (or **[arXiv:2106.01167v1](https://arxiv.org/abs/2106.01167v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-03-11">11. IrEne: Interpretable Energy Prediction for Transformers
+</h2>
+
+Title: [IrEne: Interpretable Energy Prediction for Transformers](https://arxiv.org/abs/2106.01199)
+
+Authors: [Qingqing Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+Q), [Yash Kumar Lal](https://arxiv.org/search/cs?searchtype=author&query=Lal%2C+Y+K), [Harsh Trivedi](https://arxiv.org/search/cs?searchtype=author&query=Trivedi%2C+H), [Aruna Balasubramanian](https://arxiv.org/search/cs?searchtype=author&query=Balasubramanian%2C+A), [Niranjan Balasubramanian](https://arxiv.org/search/cs?searchtype=author&query=Balasubramanian%2C+N)
+
+> Existing software-based energy measurements of NLP models are not accurate because they do not consider the complex interactions between energy consumption and model execution. We present IrEne, an interpretable and extensible energy prediction system that accurately predicts the inference energy consumption of a wide range of Transformer-based NLP models. IrEne constructs a model tree graph that breaks down the NLP model into modules that are further broken down into low-level machine learning (ML) primitives. IrEne predicts the inference energy consumption of the ML primitives as a function of generalizable features and fine-grained runtime resource usage. IrEne then aggregates these low-level predictions recursively to predict the energy of each module and finally of the entire model. Experiments across multiple Transformer models show IrEne predicts inference energy consumption of transformer models with an error of under 7% compared to the ground truth. In contrast, existing energy models see an error of over 50%. We also show how IrEne can be used to conduct energy bottleneck analysis and to easily evaluate the energy impact of different architectural choices. We release the code and data at [this https URL](https://github.com/StonyBrookNLP/irene).
+
+| Comments: | ACL 2021 camera ready                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.01199](https://arxiv.org/abs/2106.01199) [cs.CL]** |
+|           | (or **[arXiv:2106.01199v1](https://arxiv.org/abs/2106.01199v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-03-12">12. Lower Perplexity is Not Always Human-Like
+</h2>
+
+Title: [Lower Perplexity is Not Always Human-Like](https://arxiv.org/abs/2106.01229)
+
+Authors: [Tatsuki Kuribayashi](https://arxiv.org/search/cs?searchtype=author&query=Kuribayashi%2C+T), [Yohei Oseki](https://arxiv.org/search/cs?searchtype=author&query=Oseki%2C+Y), [Takumi Ito](https://arxiv.org/search/cs?searchtype=author&query=Ito%2C+T), [Ryo Yoshida](https://arxiv.org/search/cs?searchtype=author&query=Yoshida%2C+R), [Masayuki Asahara](https://arxiv.org/search/cs?searchtype=author&query=Asahara%2C+M), [Kentaro Inui](https://arxiv.org/search/cs?searchtype=author&query=Inui%2C+K)
+
+> In computational psycholinguistics, various language models have been evaluated against human reading behavior (e.g., eye movement) to build human-like computational models. However, most previous efforts have focused almost exclusively on English, despite the recent trend towards linguistic universal within the general community. In order to fill the gap, this paper investigates whether the established results in computational psycholinguistics can be generalized across languages. Specifically, we re-examine an established generalization -- the lower perplexity a language model has, the more human-like the language model is -- in Japanese with typologically different structures from English. Our experiments demonstrate that this established generalization exhibits a surprising lack of universality; namely, lower perplexity is not always human-like. Moreover, this discrepancy between English and Japanese is further explored from the perspective of (non-)uniform information density. Overall, our results suggest that a cross-lingual evaluation will be necessary to construct human-like computational models.
+
+| Comments: | Accepted by ACL 2021                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.01229](https://arxiv.org/abs/2106.01229) [cs.CL]** |
+|           | (or **[arXiv:2106.01229v1](https://arxiv.org/abs/2106.01229v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-03-13">13. On the Distribution, Sparsity, and Inference-time Quantization of Attention Values in Transformers
+</h2>
+
+Title: [On the Distribution, Sparsity, and Inference-time Quantization of Attention Values in Transformers](https://arxiv.org/abs/2106.01335)
+
+Authors: [Tianchu Ji](https://arxiv.org/search/cs?searchtype=author&query=Ji%2C+T), [Shraddhan Jain](https://arxiv.org/search/cs?searchtype=author&query=Jain%2C+S), [Michael Ferdman](https://arxiv.org/search/cs?searchtype=author&query=Ferdman%2C+M), [Peter Milder](https://arxiv.org/search/cs?searchtype=author&query=Milder%2C+P), [H. Andrew Schwartz](https://arxiv.org/search/cs?searchtype=author&query=Schwartz%2C+H+A), [Niranjan Balasubramanian](https://arxiv.org/search/cs?searchtype=author&query=Balasubramanian%2C+N)
+
+> How much information do NLP tasks really need from a transformer's attention mechanism at application-time (inference)? From recent work, we know that there is sparsity in transformers and that the floating-points within its computation can be discretized to fewer values with minimal loss to task accuracies. However, this requires retraining or even creating entirely new models, both of which can be expensive and carbon-emitting. Focused on optimizations that do not require training, we systematically study the full range of typical attention values necessary. This informs the design of an inference-time quantization technique using both pruning and log-scaled mapping which produces only a few (e.g. 23) unique values. Over the tasks of question answering and sentiment analysis, we find nearly 80% of attention values can be pruned to zeros with minimal (<1.0%) relative loss in accuracy. We use this pruning technique in conjunction with quantizing the attention values to only a 3-bit format, without retraining, resulting in only a 0.8% accuracy reduction on question answering with fine-tuned RoBERTa.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.01335](https://arxiv.org/abs/2106.01335) [cs.CL]** |
+|           | (or **[arXiv:2106.01335v1](https://arxiv.org/abs/2106.01335v1) [cs.CL]** for this version) |
+
+
+
+
+
+
 
 
 
