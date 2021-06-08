@@ -3,6 +3,19 @@
 # Index
 
 
+- [2021-06-08](#2021-06-08)
+
+  - [1. CAPE: Encoding Relative Positions with Continuous Augmented Positional Embeddings](#2021-06-08-1)
+  - [2. SelfDoc: Self-Supervised Document Representation Learning](#2021-06-08-2)
+  - [3. Do Grammatical Error Correction Models Realize Grammatical Generalization?](#2021-06-08-3)
+  - [4. The FLORES-101 Evaluation Benchmark for Low-Resource and Multilingual Machine Translation](#2021-06-08-4)
+  - [5. Itihasa: A large-scale corpus for Sanskrit to English translation](#2021-06-08-5)
+  - [6. On the Language Coverage Bias for Neural Machine Translation](#2021-06-08-6)
+  - [7. BERTGEN: Multi-task Generation through BERT](#2021-06-08-7)
+  - [8. RoSearch: Search for Robust Student Architectures When Distilling Pre-trained Language Models](#2021-06-08-8)
+  - [9. Diverse Pretrained Context Encodings Improve Document Translation](#2021-06-08-9)
+  - [10. Encouraging Neural Machine Translation to Satisfy Terminology Constraints](#2021-06-08-10)
+  - [11. A Simple Recipe for Multilingual Grammatical Error Correction](#2021-06-08-11)
 - [2021-06-07](#2021-06-07)
 
   - [1. Neural semi-Markov CRF for Monolingual Word Alignment](#2021-06-07-1)
@@ -82,6 +95,217 @@
   - [24. Adapting High-resource NMT Models to Translate Low-resource Related Languages without Parallel Data](#2021-06-01-24)
   - [25. Beyond Noise: Mitigating the Impact of Fine-grained Semantic Divergences on Neural Machine Translation](#2021-06-01-25)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-06-08
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-06-08-1">1. CAPE: Encoding Relative Positions with Continuous Augmented Positional Embeddings
+</h2>
+
+Title: [CAPE: Encoding Relative Positions with Continuous Augmented Positional Embeddings](https://arxiv.org/abs/2106.03143)
+
+Authors: [Tatiana Likhomanenko](https://arxiv.org/search/cs?searchtype=author&query=Likhomanenko%2C+T), [Qiantong Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+Q), [Ronan Collobert](https://arxiv.org/search/cs?searchtype=author&query=Collobert%2C+R), [Gabriel Synnaeve](https://arxiv.org/search/cs?searchtype=author&query=Synnaeve%2C+G), [Alex Rogozhnikov](https://arxiv.org/search/cs?searchtype=author&query=Rogozhnikov%2C+A)
+
+> Without positional information, attention-based transformer neural networks are permutation-invariant. Absolute or relative positional embeddings are the most popular ways to feed transformer models positional information. Absolute positional embeddings are simple to implement, but suffer from generalization issues when evaluating on sequences of different length than those seen at training time. Relative positions are more robust to length change, but are more complex to implement and yield inferior model throughput. In this paper, we propose an augmentation-based approach (CAPE) for absolute positional embeddings, which keeps the advantages of both absolute (simplicity and speed) and relative position embeddings (better generalization). In addition, our empirical evaluation on state-of-the-art models in machine translation, image and speech recognition demonstrates that CAPE leads to better generalization performance as well as increased stability with respect to training hyper-parameters.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.03143](https://arxiv.org/abs/2106.03143) [cs.LG]** |
+|           | (or **[arXiv:2106.03143v1](https://arxiv.org/abs/2106.03143v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-08-2">2. SelfDoc: Self-Supervised Document Representation Learning
+</h2>
+
+Title: [SelfDoc: Self-Supervised Document Representation Learning](https://arxiv.org/abs/2106.03331)
+
+Authors: [Peizhao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+P), [Jiuxiang Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J), [Jason Kuen](https://arxiv.org/search/cs?searchtype=author&query=Kuen%2C+J), [Vlad I. Morariu](https://arxiv.org/search/cs?searchtype=author&query=Morariu%2C+V+I), [Handong Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+H), [Rajiv Jain](https://arxiv.org/search/cs?searchtype=author&query=Jain%2C+R), [Varun Manjunatha](https://arxiv.org/search/cs?searchtype=author&query=Manjunatha%2C+V), [Hongfu Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+H)
+
+> We propose SelfDoc, a task-agnostic pre-training framework for document image understanding. Because documents are multimodal and are intended for sequential reading, our framework exploits the positional, textual, and visual information of every semantically meaningful component in a document, and it models the contextualization between each block of content. Unlike existing document pre-training models, our model is coarse-grained instead of treating individual words as input, therefore avoiding an overly fine-grained with excessive contextualization. Beyond that, we introduce cross-modal learning in the model pre-training phase to fully leverage multimodal information from unlabeled documents. For downstream usage, we propose a novel modality-adaptive attention mechanism for multimodal feature fusion by adaptively emphasizing language and vision signals. Our framework benefits from self-supervised pre-training on documents without requiring annotations by a feature masking training strategy. It achieves superior performance on multiple downstream tasks with significantly fewer document images used in the pre-training stage compared to previous works.
+
+| Comments: | To appear in CVPR'2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2106.03331](https://arxiv.org/abs/2106.03331) [cs.CV]** |
+|           | (or **[arXiv:2106.03331v1](https://arxiv.org/abs/2106.03331v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-08-3">3. Do Grammatical Error Correction Models Realize Grammatical Generalization?
+</h2>
+
+Title: [Do Grammatical Error Correction Models Realize Grammatical Generalization?](https://arxiv.org/abs/2106.03031)
+
+Authors: [Masato Mita](https://arxiv.org/search/cs?searchtype=author&query=Mita%2C+M), [Hitomi Yanaka](https://arxiv.org/search/cs?searchtype=author&query=Yanaka%2C+H)
+
+> There has been an increased interest in data generation approaches to grammatical error correction (GEC) using pseudo data. However, these approaches suffer from several issues that make them inconvenient for real-world deployment including a demand for large amounts of training data. On the other hand, some errors based on grammatical rules may not necessarily require a large amount of data if GEC models can realize grammatical generalization. This study explores to what extent GEC models generalize grammatical knowledge required for correcting errors. We introduce an analysis method using synthetic and real GEC datasets with controlled vocabularies to evaluate whether models can generalize to unseen errors. We found that a current standard Transformer-based GEC model fails to realize grammatical generalization even in simple settings with limited vocabulary and syntax, suggesting that it lacks the generalization ability required to correct errors from provided training examples.
+
+| Comments: | ACL 2021 (Findings)                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.03031](https://arxiv.org/abs/2106.03031) [cs.CL]** |
+|           | (or **[arXiv:2106.03031v1](https://arxiv.org/abs/2106.03031v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-08-4">4. The FLORES-101 Evaluation Benchmark for Low-Resource and Multilingual Machine Translation
+</h2>
+
+Title: [The FLORES-101 Evaluation Benchmark for Low-Resource and Multilingual Machine Translation](https://arxiv.org/abs/2106.03193)
+
+Authors: [Naman Goyal](https://arxiv.org/search/cs?searchtype=author&query=Goyal%2C+N), [Cynthia Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+C), [Vishrav Chaudhary](https://arxiv.org/search/cs?searchtype=author&query=Chaudhary%2C+V), [Peng-Jen Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+P), [Guillaume Wenzek](https://arxiv.org/search/cs?searchtype=author&query=Wenzek%2C+G), [Da Ju](https://arxiv.org/search/cs?searchtype=author&query=Ju%2C+D), [Sanjana Krishnan](https://arxiv.org/search/cs?searchtype=author&query=Krishnan%2C+S), [Marc'Aurelio Ranzato](https://arxiv.org/search/cs?searchtype=author&query=Ranzato%2C+M), [Francisco Guzman](https://arxiv.org/search/cs?searchtype=author&query=Guzman%2C+F), [Angela Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+A)
+
+> One of the biggest challenges hindering progress in low-resource and multilingual machine translation is the lack of good evaluation benchmarks. Current evaluation benchmarks either lack good coverage of low-resource languages, consider only restricted domains, or are low quality because they are constructed using semi-automatic procedures. In this work, we introduce the FLORES-101 evaluation benchmark, consisting of 3001 sentences extracted from English Wikipedia and covering a variety of different topics and domains. These sentences have been translated in 101 languages by professional translators through a carefully controlled process. The resulting dataset enables better assessment of model quality on the long tail of low-resource languages, including the evaluation of many-to-many multilingual translation systems, as all translations are multilingually aligned. By publicly releasing such a high-quality and high-coverage dataset, we hope to foster progress in the machine translation community and beyond.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.03193](https://arxiv.org/abs/2106.03193) [cs.CL]** |
+|           | (or **[arXiv:2106.03193v1](https://arxiv.org/abs/2106.03193v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-08-5">5. Itihasa: A large-scale corpus for Sanskrit to English translation
+</h2>
+
+Title: [Itihasa: A large-scale corpus for Sanskrit to English translation](https://arxiv.org/abs/2106.03269)
+
+Authors: [Rahul Aralikatte](https://arxiv.org/search/cs?searchtype=author&query=Aralikatte%2C+R), [Miryam de Lhoneux](https://arxiv.org/search/cs?searchtype=author&query=de+Lhoneux%2C+M), [Anoop Kunchukuttan](https://arxiv.org/search/cs?searchtype=author&query=Kunchukuttan%2C+A), [Anders Søgaard](https://arxiv.org/search/cs?searchtype=author&query=Søgaard%2C+A)
+
+> This work introduces Itihasa, a large-scale translation dataset containing 93,000 pairs of Sanskrit shlokas and their English translations. The shlokas are extracted from two Indian epics viz., The Ramayana and The Mahabharata. We first describe the motivation behind the curation of such a dataset and follow up with empirical analysis to bring out its nuances. We then benchmark the performance of standard translation models on this corpus and show that even state-of-the-art transformer architectures perform poorly, emphasizing the complexity of the dataset.
+
+| Comments: | WAT 2021                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.03269](https://arxiv.org/abs/2106.03269) [cs.CL]** |
+|           | (or **[arXiv:2106.03269v1](https://arxiv.org/abs/2106.03269v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-08-6">6. On the Language Coverage Bias for Neural Machine Translation
+</h2>
+
+Title: [On the Language Coverage Bias for Neural Machine Translation](https://arxiv.org/abs/2106.03297)
+
+Authors: [Shuo Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Zhaopeng Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+Z), [Zhixing Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+Z), [Shuming Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+S), [Maosong Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y)
+
+> Language coverage bias, which indicates the content-dependent differences between sentence pairs originating from the source and target languages, is important for neural machine translation (NMT) because the target-original training data is not well exploited in current practice. By carefully designing experiments, we provide comprehensive analyses of the language coverage bias in the training data, and find that using only the source-original data achieves comparable performance with using full training data. Based on these observations, we further propose two simple and effective approaches to alleviate the language coverage bias problem through explicitly distinguishing between the source- and target-original training data, which consistently improve the performance over strong baselines on six WMT20 translation tasks. Complementary to the translationese effect, language coverage bias provides another explanation for the performance drop caused by back-translation. We also apply our approach to both back- and forward-translation and find that mitigating the language coverage bias can improve the performance of both the two representative data augmentation methods and their tagged variants.
+
+| Comments: | ACL 2021, Long Findings                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.03297](https://arxiv.org/abs/2106.03297) [cs.CL]** |
+|           | (or **[arXiv:2106.03297v1](https://arxiv.org/abs/2106.03297v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-08-7">7. BERTGEN: Multi-task Generation through BERT
+</h2>
+
+Title: [BERTGEN: Multi-task Generation through BERT](https://arxiv.org/abs/2106.03484)
+
+Authors: [Faidon Mitzalis](https://arxiv.org/search/cs?searchtype=author&query=Mitzalis%2C+F), [Ozan Caglayan](https://arxiv.org/search/cs?searchtype=author&query=Caglayan%2C+O), [Pranava Madhyastha](https://arxiv.org/search/cs?searchtype=author&query=Madhyastha%2C+P), [Lucia Specia](https://arxiv.org/search/cs?searchtype=author&query=Specia%2C+L)
+
+> We present BERTGEN, a novel generative, decoder-only model which extends BERT by fusing multimodal and multilingual pretrained models VL-BERT and M-BERT, respectively. BERTGEN is auto-regressively trained for language generation tasks, namely image captioning, machine translation and multimodal machine translation, under a multitask setting. With a comprehensive set of evaluations, we show that BERTGEN outperforms many strong baselines across the tasks explored. We also show BERTGEN's ability for zero-shot language generation, where it exhibits competitive performance to supervised counterparts. Finally, we conduct ablation studies which demonstrate that BERTGEN substantially benefits from multi-tasking and effectively transfers relevant inductive biases from the pre-trained models.
+
+| Comments: | Accepted to ACL 2021 Main Conference                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.03484](https://arxiv.org/abs/2106.03484) [cs.CL]** |
+|           | (or **[arXiv:2106.03484v1](https://arxiv.org/abs/2106.03484v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-08-8">8. RoSearch: Search for Robust Student Architectures When Distilling Pre-trained Language Models
+</h2>
+
+Title: [RoSearch: Search for Robust Student Architectures When Distilling Pre-trained Language Models](https://arxiv.org/abs/2106.03613)
+
+Authors: [Xin Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+X), [Jianlei Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+J), [Haoyi Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Xucheng Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+X), [Jianxin Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J)
+
+> Pre-trained language models achieve outstanding performance in NLP tasks. Various knowledge distillation methods have been proposed to reduce the heavy computation and storage requirements of pre-trained language models. However, from our observations, student models acquired by knowledge distillation suffer from adversarial attacks, which limits their usage in security sensitive scenarios. In order to overcome these security problems, RoSearch is proposed as a comprehensive framework to search the student models with better adversarial robustness when performing knowledge distillation. A directed acyclic graph based search space is built and an evolutionary search strategy is utilized to guide the searching approach. Each searched architecture is trained by knowledge distillation on pre-trained language model and then evaluated under a robustness-, accuracy- and efficiency-aware metric as environmental fitness. Experimental results show that RoSearch can improve robustness of student models from 7%~18% up to 45.8%~47.8% on different datasets with comparable weight compression ratio to existing distillation methods (4.6×~6.5× improvement from teacher model BERT_BASE) and low accuracy drop. In addition, we summarize the relationship between student architecture and robustness through statistics of searched models.
+
+| Comments: | 10 pages, 9 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2106.03613](https://arxiv.org/abs/2106.03613) [cs.CL]** |
+|           | (or **[arXiv:2106.03613v1](https://arxiv.org/abs/2106.03613v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-08-9">9. Diverse Pretrained Context Encodings Improve Document Translation
+</h2>
+
+Title: [Diverse Pretrained Context Encodings Improve Document Translation](https://arxiv.org/abs/2106.03717)
+
+Authors: [Domenic Donato](https://arxiv.org/search/cs?searchtype=author&query=Donato%2C+D), [Lei Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+L), [Chris Dyer](https://arxiv.org/search/cs?searchtype=author&query=Dyer%2C+C)
+
+> We propose a new architecture for adapting a sentence-level sequence-to-sequence transformer by incorporating multiple pretrained document context signals and assess the impact on translation performance of (1) different pretraining approaches for generating these signals, (2) the quantity of parallel data for which document context is available, and (3) conditioning on source, target, or source and target contexts. Experiments on the NIST Chinese-English, and IWSLT and WMT English-German tasks support four general conclusions: that using pretrained context representations markedly improves sample efficiency, that adequate parallel data resources are crucial for learning to use document context, that jointly conditioning on multiple context representations outperforms any single representation, and that source context is more valuable for translation performance than target side context. Our best multi-context model consistently outperforms the best existing context-aware transformers.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.03717](https://arxiv.org/abs/2106.03717) [cs.CL]** |
+|           | (or **[arXiv:2106.03717v1](https://arxiv.org/abs/2106.03717v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-08-10">10. Encouraging Neural Machine Translation to Satisfy Terminology Constraints
+</h2>
+
+Title: [Encouraging Neural Machine Translation to Satisfy Terminology Constraints](https://arxiv.org/abs/2106.03730)
+
+Authors: [Melissa Ailem](https://arxiv.org/search/cs?searchtype=author&query=Ailem%2C+M), [Jinghsu Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J), [Raheel Qader](https://arxiv.org/search/cs?searchtype=author&query=Qader%2C+R)
+
+> We present a new approach to encourage neural machine translation to satisfy lexical constraints. Our method acts at the training step and thereby avoiding the introduction of any extra computational overhead at inference step. The proposed method combines three main ingredients. The first one consists in augmenting the training data to specify the constraints. Intuitively, this encourages the model to learn a copy behavior when it encounters constraint terms. Compared to previous work, we use a simplified augmentation strategy without source factors. The second ingredient is constraint token masking, which makes it even easier for the model to learn the copy behavior and generalize better. The third one, is a modification of the standard cross entropy loss to bias the model towards assigning high probabilities to constraint words. Empirical results show that our method improves upon related baselines in terms of both BLEU score and the percentage of generated constraint terms.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.03730](https://arxiv.org/abs/2106.03730) [cs.CL]** |
+|           | (or **[arXiv:2106.03730v1](https://arxiv.org/abs/2106.03730v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-08-11">11. A Simple Recipe for Multilingual Grammatical Error Correction
+</h2>
+
+Title: [A Simple Recipe for Multilingual Grammatical Error Correction](https://arxiv.org/abs/2106.03830)
+
+Authors: [Sascha Rothe](https://arxiv.org/search/cs?searchtype=author&query=Rothe%2C+S), [Jonathan Mallinson](https://arxiv.org/search/cs?searchtype=author&query=Mallinson%2C+J), [Eric Malmi](https://arxiv.org/search/cs?searchtype=author&query=Malmi%2C+E), [Sebastian Krause](https://arxiv.org/search/cs?searchtype=author&query=Krause%2C+S), [Aliaksei Severyn](https://arxiv.org/search/cs?searchtype=author&query=Severyn%2C+A)
+
+> This paper presents a simple recipe to train state-of-the-art multilingual Grammatical Error Correction (GEC) models. We achieve this by first proposing a language-agnostic method to generate a large number of synthetic examples. The second ingredient is to use large-scale multilingual language models (up to 11B parameters). Once fine-tuned on language-specific supervised sets we surpass the previous state-of-the-art results on GEC benchmarks in four languages: English, Czech, German and Russian. Having established a new set of baselines for GEC, we make our results easily reproducible and accessible by releasing a cLang-8 dataset. It is produced by using our best model, which we call gT5, to clean the targets of a widely used yet noisy lang-8 dataset. cLang-8 greatly simplifies typical GEC training pipelines composed of multiple fine-tuning stages -- we demonstrate that performing a single fine-tuning step on cLang-8 with the off-the-shelf language models yields further accuracy improvements over an already top-performing gT5 model for English.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.03830](https://arxiv.org/abs/2106.03830) [cs.CL]** |
+|           | (or **[arXiv:2106.03830v1](https://arxiv.org/abs/2106.03830v1) [cs.CL]** for this version) |
+
+
+
 
 
 
