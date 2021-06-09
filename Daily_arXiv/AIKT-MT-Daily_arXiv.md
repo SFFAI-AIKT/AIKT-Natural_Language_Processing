@@ -3,8 +3,16 @@
 # Index
 
 
-- [2021-06-08](#2021-06-08)
+- [2021-06-09](#2021-06-09)
 
+  - [1. A Survey of Transformers](#2021-06-09-1)
+  - [2. Meta Learning for Knowledge Distillation](#2021-06-09-2)
+  - [3. Lexicon Learning for Few-Shot Neural Sequence Modeling](#2021-06-09-3)
+  - [4. Self-supervised and Supervised Joint Training for Resource-rich Machine Translation](#2021-06-09-4)
+  - [5. Obtaining Better Static Word Embeddings Using Contextual Embedding Models](#2021-06-09-5)
+  - [6. CLTR: An End-to-End, Transformer-Based System for Cell Level TableRetrieval and Table Question Answering](#2021-06-09-6)
+  - [7. Parameter-efficient Multi-task Fine-tuning for Transformers via Shared Hypernetworks](#2021-06-09-7)
+- [2021-06-08](#2021-06-08)
   - [1. CAPE: Encoding Relative Positions with Continuous Augmented Positional Embeddings](#2021-06-08-1)
   - [2. SelfDoc: Self-Supervised Document Representation Learning](#2021-06-08-2)
   - [3. Do Grammatical Error Correction Models Realize Grammatical Generalization?](#2021-06-08-3)
@@ -95,6 +103,142 @@
   - [24. Adapting High-resource NMT Models to Translate Low-resource Related Languages without Parallel Data](#2021-06-01-24)
   - [25. Beyond Noise: Mitigating the Impact of Fine-grained Semantic Divergences on Neural Machine Translation](#2021-06-01-25)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+
+
+# 2021-06-09
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-06-09-1">1. A Survey of Transformers
+</h2>
+
+Title: [A Survey of Transformers](https://arxiv.org/abs/2106.04554)
+
+Authors: [Tianyang Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+T), [Yuxin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Xiangyang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Xipeng Qiu](https://arxiv.org/search/cs?searchtype=author&query=Qiu%2C+X)
+
+> Transformers have achieved great success in many artificial intelligence fields, such as natural language processing, computer vision, and audio processing. Therefore, it is natural to attract lots of interest from academic and industry researchers. Up to the present, a great variety of Transformer variants (a.k.a. X-formers) have been proposed, however, a systematic and comprehensive literature review on these Transformer variants is still missing. In this survey, we provide a comprehensive review of various X-formers. We first briefly introduce the vanilla Transformer and then propose a new taxonomy of X-formers. Next, we introduce the various X-formers from three perspectives: architectural modification, pre-training, and applications. Finally, we outline some potential directions for future research.
+
+| Subjects: | **Machine Learning (cs.LG)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.04554](https://arxiv.org/abs/2106.04554) [cs.LG]** |
+|           | (or **[arXiv:2106.04554v1](https://arxiv.org/abs/2106.04554v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-09-2">2. Meta Learning for Knowledge Distillation
+</h2>
+
+Title: [Meta Learning for Knowledge Distillation](https://arxiv.org/abs/2106.04570)
+
+Authors: [Wangchunshu Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+W), [Canwen Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+C), [Julian McAuley](https://arxiv.org/search/cs?searchtype=author&query=McAuley%2C+J)
+
+> We present Meta Learning for Knowledge Distillation (MetaDistil), a simple yet effective alternative to traditional knowledge distillation (KD) methods where the teacher model is fixed during training. We show the teacher network can learn to better transfer knowledge to the student network (i.e., learning to teach) with the feedback from the performance of the distilled student network in a meta learning framework. Moreover, we introduce a pilot update mechanism to improve the alignment between the inner-learner and meta-learner in meta learning algorithms that focus on an improved inner-learner. Experiments on various benchmarks show that MetaDistil can yield significant improvements compared with traditional KD algorithms and is less sensitive to the choice of different student capacity and hyperparameters, facilitating the use of KD on different tasks and models. The code is available at [this https URL](https://github.com/JetRunner/MetaDistil)
+
+| Subjects: | **Machine Learning (cs.LG)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.04570](https://arxiv.org/abs/2106.04570) [cs.LG]** |
+|           | (or **[arXiv:2106.04570v1](https://arxiv.org/abs/2106.04570v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-09-3">3. Lexicon Learning for Few-Shot Neural Sequence Modeling
+</h2>
+
+Title: [Lexicon Learning for Few-Shot Neural Sequence Modeling](https://arxiv.org/abs/2106.03993)
+
+Authors: [Ekin Akyürek](https://arxiv.org/search/cs?searchtype=author&query=Akyürek%2C+E), [Jacob Andreas](https://arxiv.org/search/cs?searchtype=author&query=Andreas%2C+J)
+
+> Sequence-to-sequence transduction is the core problem in language processing applications as diverse as semantic parsing, machine translation, and instruction following. The neural network models that provide the dominant solution to these problems are brittle, especially in low-resource settings: they fail to generalize correctly or systematically from small datasets. Past work has shown that many failures of systematic generalization arise from neural models' inability to disentangle lexical phenomena from syntactic ones. To address this, we augment neural decoders with a lexical translation mechanism that generalizes existing copy mechanisms to incorporate learned, decontextualized, token-level translation rules. We describe how to initialize this mechanism using a variety of lexicon learning algorithms, and show that it improves systematic generalization on a diverse set of sequence modeling tasks drawn from cognitive science, formal semantics, and machine translation.
+
+| Comments: | ACL 2021                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2106.03993](https://arxiv.org/abs/2106.03993) [cs.CL]** |
+|           | (or **[arXiv:2106.03993v1](https://arxiv.org/abs/2106.03993v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-09-4">4. Self-supervised and Supervised Joint Training for Resource-rich Machine Translation
+</h2>
+
+Title: [Self-supervised and Supervised Joint Training for Resource-rich Machine Translation](https://arxiv.org/abs/2106.04060)
+
+Authors: [Yong Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+Y), [Wei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Lu Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+L), [Wolfgang Macherey](https://arxiv.org/search/cs?searchtype=author&query=Macherey%2C+W)
+
+> Self-supervised pre-training of text representations has been successfully applied to low-resource Neural Machine Translation (NMT). However, it usually fails to achieve notable gains on resource-rich NMT. In this paper, we propose a joint training approach, F2-XEnDec, to combine self-supervised and supervised learning to optimize NMT models. To exploit complementary self-supervised signals for supervised learning, NMT models are trained on examples that are interbred from monolingual and parallel sentences through a new process called crossover encoder-decoder. Experiments on two resource-rich translation benchmarks, WMT'14 English-German and WMT'14 English-French, demonstrate that our approach achieves substantial improvements over several strong baseline methods and obtains a new state of the art of 46.19 BLEU on English-French when incorporating back translation. Results also show that our approach is capable of improving model robustness to input perturbations such as code-switching noise which frequently appears on social media.
+
+| Comments: | Accepted by ICML 2021                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.04060](https://arxiv.org/abs/2106.04060) [cs.CL]** |
+|           | (or **[arXiv:2106.04060v1](https://arxiv.org/abs/2106.04060v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-09-5">5. Obtaining Better Static Word Embeddings Using Contextual Embedding Models
+</h2>
+
+Title: [Obtaining Better Static Word Embeddings Using Contextual Embedding Models](https://arxiv.org/abs/2106.04302)
+
+Authors: [Prakhar Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+P), [Martin Jaggi](https://arxiv.org/search/cs?searchtype=author&query=Jaggi%2C+M)
+
+> The advent of contextual word embeddings -- representations of words which incorporate semantic and syntactic information from their context -- has led to tremendous improvements on a wide variety of NLP tasks. However, recent contextual models have prohibitively high computational cost in many use-cases and are often hard to interpret. In this work, we demonstrate that our proposed distillation method, which is a simple extension of CBOW-based training, allows to significantly improve computational efficiency of NLP applications, while outperforming the quality of existing static embeddings trained from scratch as well as those distilled from previously proposed methods. As a side-effect, our approach also allows a fair comparison of both contextual and static embeddings via standard lexical evaluation tasks.
+
+| Comments: | ACL 2021 accept                                              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2106.04302](https://arxiv.org/abs/2106.04302) [cs.CL]** |
+|           | (or **[arXiv:2106.04302v1](https://arxiv.org/abs/2106.04302v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-09-6">6. CLTR: An End-to-End, Transformer-Based System for Cell Level TableRetrieval and Table Question Answering
+</h2>
+
+Title: [CLTR: An End-to-End, Transformer-Based System for Cell Level TableRetrieval and Table Question Answering](https://arxiv.org/abs/2106.04441)
+
+Authors: [Feifei Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C+F), [Mustafa Canim](https://arxiv.org/search/cs?searchtype=author&query=Canim%2C+M), [Michael Glass](https://arxiv.org/search/cs?searchtype=author&query=Glass%2C+M), [Alfio Gliozzo](https://arxiv.org/search/cs?searchtype=author&query=Gliozzo%2C+A), [Peter Fox](https://arxiv.org/search/cs?searchtype=author&query=Fox%2C+P)
+
+> We present the first end-to-end, transformer-based table question answering (QA) system that takes natural language questions and massive table corpus as inputs to retrieve the most relevant tables and locate the correct table cells to answer the question. Our system, CLTR, extends the current state-of-the-art QA over tables model to build an end-to-end table QA architecture. This system has successfully tackled many real-world table QA problems with a simple, unified pipeline. Our proposed system can also generate a heatmap of candidate columns and rows over complex tables and allow users to quickly identify the correct cells to answer questions. In addition, we introduce two new open-domain benchmarks, E2E_WTQ and E2E_GNQ, consisting of 2,005 natural language questions over 76,242 tables. The benchmarks are designed to validate CLTR as well as accommodate future table retrieval and end-to-end table QA research and experiments. Our experiments demonstrate that our system is the current state-of-the-art model on the table retrieval task and produces promising results for end-to-end table QA.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.04441](https://arxiv.org/abs/2106.04441) [cs.CL]** |
+|           | (or **[arXiv:2106.04441v1](https://arxiv.org/abs/2106.04441v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-09-7">7. Parameter-efficient Multi-task Fine-tuning for Transformers via Shared Hypernetworks
+</h2>
+
+Title: [Parameter-efficient Multi-task Fine-tuning for Transformers via Shared Hypernetworks](https://arxiv.org/abs/2106.04489)
+
+Authors: [Rabeeh Karimi Mahabadi](https://arxiv.org/search/cs?searchtype=author&query=Mahabadi%2C+R+K), [Sebastian Ruder](https://arxiv.org/search/cs?searchtype=author&query=Ruder%2C+S), [Mostafa Dehghani](https://arxiv.org/search/cs?searchtype=author&query=Dehghani%2C+M), [James Henderson](https://arxiv.org/search/cs?searchtype=author&query=Henderson%2C+J)
+
+> State-of-the-art parameter-efficient fine-tuning methods rely on introducing adapter modules between the layers of a pretrained language model. However, such modules are trained separately for each task and thus do not enable sharing information across tasks. In this paper, we show that we can learn adapter parameters for all layers and tasks by generating them using shared hypernetworks, which condition on task, adapter position, and layer id in a transformer model. This parameter-efficient multi-task learning framework allows us to achieve the best of both worlds by sharing knowledge across tasks via hypernetworks while enabling the model to adapt to each individual task through task-specific adapters. Experiments on the well-known GLUE benchmark show improved performance in multi-task learning while adding only 0.29% parameters per task. We additionally demonstrate substantial performance improvements in few-shot domain generalization across a variety of tasks. Our code is publicly available in [this https URL](https://github.com/rabeehk/hyperformer).
+
+| Comments: | accepted in ACL, 2021                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.04489](https://arxiv.org/abs/2106.04489) [cs.CL]** |
+|           | (or **[arXiv:2106.04489v1](https://arxiv.org/abs/2106.04489v1) [cs.CL]** for this version) |
 
 
 
