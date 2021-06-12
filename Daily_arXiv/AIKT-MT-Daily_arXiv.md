@@ -3,6 +3,28 @@
 # Index
 
 
+- [2021-06-11](#2021-06-11)
+
+  - [1. Data augmentation to improve robustness of image captioning solutions](#2021-06-11-1)
+  - [2. Input Augmentation Improves Constrained Beam Search for Neural Machine Translation: NTT at WAT 2021](#2021-06-11-2)
+  - [3. Progressive Multi-Granularity Training for Non-Autoregressive Translation](#2021-06-11-3)
+  - [4. AUGNLG: Few-shot Natural Language Generation using Self-trained Data Augmentation](#2021-06-11-4)
+  - [5. Exploring Unsupervised Pretraining Objectives for Machine Translation](#2021-06-11-5)
+  - [6. Marginal Utility Diminishes: Exploring the Minimum Knowledge for BERT Knowledge Distillation](#2021-06-11-6)
+  - [7. GroupBERT: Enhanced Transformer Architecture with Efficient Grouped Structures](#2021-06-11-7)
+  - [8. ImaginE: An Imagination-Based Automatic Evaluation Metric for Natural Language Generation](#2021-06-11-8)
+- [2021-06-10](#2021-06-10)
+
+  - [1. PAM: Understanding Product Images in Cross Product Category Attribute Extraction](#2021-06-10-1)
+  - [2. VALUE: A Multi-Task Benchmark for Video-and-Language Understanding Evaluation](#2021-06-10-2)
+  - [3. FastSeq: Make Sequence Generation Faster](#2021-06-10-3)
+  - [4. Sentence Embeddings using Supervised Contrastive Learning](#2021-06-10-4)
+  - [5. Probing Multilingual Language Models for Discourse](#2021-06-10-5)
+  - [6. RealTranS: End-to-End Simultaneous Speech Translation with Convolutional Weighted-Shrinking Transformer](#2021-06-10-6)
+  - [7. Instantaneous Grammatical Error Correction with Shallow Aggressive Decoding](#2021-06-10-7)
+  - [8. Crosslingual Embeddings are Essential in UNMT for Distant Languages: An English to IndoAryan Case Study](#2021-06-10-8)
+  - [9. Order-Agnostic Cross Entropy for Non-Autoregressive Machine Translation](#2021-06-10-9)
+  - [10. AUGVIC: Exploiting BiText Vicinity for Low-Resource NMT](#2021-06-10-10)
 - [2021-06-09](#2021-06-09)
 
   - [1. A Survey of Transformers](#2021-06-09-1)
@@ -103,6 +125,355 @@
   - [24. Adapting High-resource NMT Models to Translate Low-resource Related Languages without Parallel Data](#2021-06-01-24)
   - [25. Beyond Noise: Mitigating the Impact of Fine-grained Semantic Divergences on Neural Machine Translation](#2021-06-01-25)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-06-11
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-06-11-1">1. Data augmentation to improve robustness of image captioning solutions
+</h2>
+
+Title: [Data augmentation to improve robustness of image captioning solutions](https://arxiv.org/abs/2106.05437)
+
+Authors: [Shashank Bujimalla](https://arxiv.org/search/cs?searchtype=author&query=Bujimalla%2C+S), [Mahesh Subedar](https://arxiv.org/search/cs?searchtype=author&query=Subedar%2C+M), [Omesh Tickoo](https://arxiv.org/search/cs?searchtype=author&query=Tickoo%2C+O)
+
+> In this paper, we study the impact of motion blur, a common quality flaw in real world images, on a state-of-the-art two-stage image captioning solution, and notice a degradation in solution performance as blur intensity increases. We investigate techniques to improve the robustness of the solution to motion blur using training data augmentation at each or both stages of the solution, i.e., object detection and captioning, and observe improved results. In particular, augmenting both the stages reduces the CIDEr-D degradation for high motion blur intensity from 68.7 to 11.7 on MS COCO dataset, and from 22.4 to 6.8 on Vizwiz dataset.
+
+| Comments: | CVPR VizWiz 2021 workshop                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2106.05437](https://arxiv.org/abs/2106.05437) [cs.CL]** |
+|           | (or **[arXiv:2106.05437v1](https://arxiv.org/abs/2106.05437v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-11-2">2. Input Augmentation Improves Constrained Beam Search for Neural Machine Translation: NTT at WAT 2021
+</h2>
+
+Title: [Input Augmentation Improves Constrained Beam Search for Neural Machine Translation: NTT at WAT 2021](https://arxiv.org/abs/2106.05450)
+
+Authors: [Katsuki Chousa](https://arxiv.org/search/cs?searchtype=author&query=Chousa%2C+K), [Makoto Morishita](https://arxiv.org/search/cs?searchtype=author&query=Morishita%2C+M)
+
+> This paper describes our systems that were submitted to the restricted translation task at WAT 2021. In this task, the systems are required to output translated sentences that contain all given word constraints. Our system combined input augmentation and constrained beam search algorithms. Through experiments, we found that this combination significantly improves translation accuracy and can save inference time while containing all the constraints in the output. For both En->Ja and Ja->En, our systems obtained the best evaluation performances in automatic evaluation.
+
+| Comments: | 9 pages, 4 figures, WAT 2021 Restricted Translation Task     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.05450](https://arxiv.org/abs/2106.05450) [cs.CL]** |
+|           | (or **[arXiv:2106.05450v1](https://arxiv.org/abs/2106.05450v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-11-3">3. Progressive Multi-Granularity Training for Non-Autoregressive Translation
+</h2>
+
+Title: [Progressive Multi-Granularity Training for Non-Autoregressive Translation](https://arxiv.org/abs/2106.05546)
+
+Authors: [Liang Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+L), [Longyue Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Xuebo Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Derek F. Wong](https://arxiv.org/search/cs?searchtype=author&query=Wong%2C+D+F), [Dacheng Tao](https://arxiv.org/search/cs?searchtype=author&query=Tao%2C+D), [Zhaopeng Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+Z)
+
+> Non-autoregressive translation (NAT) significantly accelerates the inference process via predicting the entire target sequence. However, recent studies show that NAT is weak at learning high-mode of knowledge such as one-to-many translations. We argue that modes can be divided into various granularities which can be learned from easy to hard. In this study, we empirically show that NAT models are prone to learn fine-grained lower-mode knowledge, such as words and phrases, compared with sentences. Based on this observation, we propose progressive multi-granularity training for NAT. More specifically, to make the most of the training data, we break down the sentence-level examples into three types, i.e. words, phrases, sentences, and with the training goes, we progressively increase the granularities. Experiments on Romanian-English, English-German, Chinese-English, and Japanese-English demonstrate that our approach improves the phrase translation accuracy and model reordering ability, therefore resulting in better translation quality against strong NAT baselines. Also, we show that more deterministic fine-grained knowledge can further enhance performance.
+
+| Comments: | findings of ACL 2021                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.05546](https://arxiv.org/abs/2106.05546) [cs.CL]** |
+|           | (or **[arXiv:2106.05546v1](https://arxiv.org/abs/2106.05546v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-11-4">4. AUGNLG: Few-shot Natural Language Generation using Self-trained Data Augmentation
+</h2>
+
+Title: [AUGNLG: Few-shot Natural Language Generation using Self-trained Data Augmentation](https://arxiv.org/abs/2106.05589)
+
+Authors: [Xinnuo Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+X), [Guoyin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+G), [Young-Bum Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+Y), [Sungjin Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+S)
+
+> Natural Language Generation (NLG) is a key component in a task-oriented dialogue system, which converts the structured meaning representation (MR) to the natural language. For large-scale conversational systems, where it is common to have over hundreds of intents and thousands of slots, neither template-based approaches nor model-based approaches are scalable. Recently, neural NLGs started leveraging transfer learning and showed promising results in few-shot settings. This paper proposes AUGNLG, a novel data augmentation approach that combines a self-trained neural retrieval model with a few-shot learned NLU model, to automatically create MR-to-Text data from open-domain texts. The proposed system mostly outperforms the state-of-the-art methods on the FewShotWOZ data in both BLEU and Slot Error Rate. We further confirm improved results on the FewShotSGD data and provide comprehensive analysis results on key components of our system. Our code and data are available at [this https URL](https://github.com/XinnuoXu/AugNLG).
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics (ACL2021) |
+| Cite as:           | **[arXiv:2106.05589](https://arxiv.org/abs/2106.05589) [cs.CL]** |
+|                    | (or **[arXiv:2106.05589v1](https://arxiv.org/abs/2106.05589v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-11-5">5. Exploring Unsupervised Pretraining Objectives for Machine Translation
+</h2>
+
+Title: [Exploring Unsupervised Pretraining Objectives for Machine Translation](https://arxiv.org/abs/2106.05634)
+
+Authors: [Christos Baziotis](https://arxiv.org/search/cs?searchtype=author&query=Baziotis%2C+C), [Ivan Titov](https://arxiv.org/search/cs?searchtype=author&query=Titov%2C+I), [Alexandra Birch](https://arxiv.org/search/cs?searchtype=author&query=Birch%2C+A), [Barry Haddow](https://arxiv.org/search/cs?searchtype=author&query=Haddow%2C+B)
+
+> Unsupervised cross-lingual pretraining has achieved strong results in neural machine translation (NMT), by drastically reducing the need for large parallel data. Most approaches adapt masked-language modeling (MLM) to sequence-to-sequence architectures, by masking parts of the input and reconstructing them in the decoder. In this work, we systematically compare masking with alternative objectives that produce inputs resembling real (full) sentences, by reordering and replacing words based on their context. We pretrain models with different methods on English↔German, English↔Nepali and English↔Sinhala monolingual data, and evaluate them on NMT. In (semi-) supervised NMT, varying the pretraining objective leads to surprisingly small differences in the finetuned performance, whereas unsupervised NMT is much more sensitive to it. To understand these results, we thoroughly study the pretrained models using a series of probes and verify that they encode and use information in different ways. We conclude that finetuning on parallel data is mostly sensitive to few properties that are shared by most models, such as a strong decoder, in contrast to unsupervised NMT that also requires models with strong cross-lingual abilities.
+
+| Comments: | Findings of ACL 2021                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.05634](https://arxiv.org/abs/2106.05634) [cs.CL]** |
+|           | (or **[arXiv:2106.05634v1](https://arxiv.org/abs/2106.05634v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-11-6">6. Marginal Utility Diminishes: Exploring the Minimum Knowledge for BERT Knowledge Distillation
+</h2>
+
+Title: [Marginal Utility Diminishes: Exploring the Minimum Knowledge for BERT Knowledge Distillation](https://arxiv.org/abs/2106.05691)
+
+Authors: [Yuanxin Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Fandong Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+F), [Zheng Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Z), [Weiping Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J)
+
+> Recently, knowledge distillation (KD) has shown great success in BERT compression. Instead of only learning from the teacher's soft label as in conventional KD, researchers find that the rich information contained in the hidden layers of BERT is conducive to the student's performance. To better exploit the hidden knowledge, a common practice is to force the student to deeply mimic the teacher's hidden states of all the tokens in a layer-wise manner. In this paper, however, we observe that although distilling the teacher's hidden state knowledge (HSK) is helpful, the performance gain (marginal utility) diminishes quickly as more HSK is distilled. To understand this effect, we conduct a series of analysis. Specifically, we divide the HSK of BERT into three dimensions, namely depth, length and width. We first investigate a variety of strategies to extract crucial knowledge for each single dimension and then jointly compress the three dimensions. In this way, we show that 1) the student's performance can be improved by extracting and distilling the crucial HSK, and 2) using a tiny fraction of HSK can achieve the same performance as extensive HSK distillation. Based on the second finding, we further propose an efficient KD paradigm to compress BERT, which does not require loading the teacher during the training of student. For two kinds of student models and computing devices, the proposed KD paradigm gives rise to training speedup of 2.7x ~ 3.4x.
+
+| Comments: | Accepted by ACL 2021                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.05691](https://arxiv.org/abs/2106.05691) [cs.CL]** |
+|           | (or **[arXiv:2106.05691v1](https://arxiv.org/abs/2106.05691v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-11-7">7. GroupBERT: Enhanced Transformer Architecture with Efficient Grouped Structures
+</h2>
+
+Title: [GroupBERT: Enhanced Transformer Architecture with Efficient Grouped Structures](https://arxiv.org/abs/2106.05822)
+
+Authors: [Ivan Chelombiev](https://arxiv.org/search/cs?searchtype=author&query=Chelombiev%2C+I), [Daniel Justus](https://arxiv.org/search/cs?searchtype=author&query=Justus%2C+D), [Douglas Orr](https://arxiv.org/search/cs?searchtype=author&query=Orr%2C+D), [Anastasia Dietrich](https://arxiv.org/search/cs?searchtype=author&query=Dietrich%2C+A), [Frithjof Gressmann](https://arxiv.org/search/cs?searchtype=author&query=Gressmann%2C+F), [Alexandros Koliousis](https://arxiv.org/search/cs?searchtype=author&query=Koliousis%2C+A), [Carlo Luschi](https://arxiv.org/search/cs?searchtype=author&query=Luschi%2C+C)
+
+> Attention based language models have become a critical component in state-of-the-art natural language processing systems. However, these models have significant computational requirements, due to long training times, dense operations and large parameter count. In this work we demonstrate a set of modifications to the structure of a Transformer layer, producing a more efficient architecture. First, we add a convolutional module to complement the self-attention module, decoupling the learning of local and global interactions. Secondly, we rely on grouped transformations to reduce the computational cost of dense feed-forward layers and convolutions, while preserving the expressivity of the model. We apply the resulting architecture to language representation learning and demonstrate its superior performance compared to BERT models of different scales. We further highlight its improved efficiency, both in terms of floating-point operations (FLOPs) and time-to-train.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.05822](https://arxiv.org/abs/2106.05822) [cs.CL]** |
+|           | (or **[arXiv:2106.05822v1](https://arxiv.org/abs/2106.05822v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-11-8">8. ImaginE: An Imagination-Based Automatic Evaluation Metric for Natural Language Generation
+</h2>
+
+Title: [ImaginE: An Imagination-Based Automatic Evaluation Metric for Natural Language Generation](https://arxiv.org/abs/2106.05970)
+
+Authors: [Wanrong Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+W), [Xin Eric Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X+E), [An Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+A), [Miguel Eckstein](https://arxiv.org/search/cs?searchtype=author&query=Eckstein%2C+M), [William Yang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W+Y)
+
+> Automatic evaluations for natural language generation (NLG) conventionally rely on token-level or embedding-level comparisons with the text references. This is different from human language processing, for which visual imaginations often improve comprehension. In this work, we propose ImaginE, an imagination-based automatic evaluation metric for natural language generation. With the help of CLIP and DALL-E, two cross-modal models pre-trained on large-scale image-text pairs, we automatically generate an image as the embodied imagination for the text snippet and compute the imagination similarity using contextual embeddings. Experiments spanning several text generation tasks demonstrate that adding imagination with our ImaginE displays great potential in introducing multi-modal information into NLG evaluation, and improves existing automatic metrics' correlations with human similarity judgments in many circumstances.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.05970](https://arxiv.org/abs/2106.05970) [cs.CL]** |
+|           | (or **[arXiv:2106.05970v1](https://arxiv.org/abs/2106.05970v1) [cs.CL]** for this version) |
+
+
+
+
+
+# 2021-06-10
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-06-10-1">1. PAM: Understanding Product Images in Cross Product Category Attribute Extraction
+</h2>
+
+Title: [PAM: Understanding Product Images in Cross Product Category Attribute Extraction](https://arxiv.org/abs/2106.04630)
+
+Authors: [Rongmei Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+R), [Xiang He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+X), [Jie Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+J), [Nasser Zalmout](https://arxiv.org/search/cs?searchtype=author&query=Zalmout%2C+N), [Yan Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+Y), [Li Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+L), [Xin Luna Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+X+L)
+
+> Understanding product attributes plays an important role in improving online shopping experience for customers and serves as an integral part for constructing a product knowledge graph. Most existing methods focus on attribute extraction from text description or utilize visual information from product images such as shape and color. Compared to the inputs considered in prior works, a product image in fact contains more information, represented by a rich mixture of words and visual clues with a layout carefully designed to impress customers. This work proposes a more inclusive framework that fully utilizes these different modalities for attribute extraction. Inspired by recent works in visual question answering, we use a transformer based sequence to sequence model to fuse representations of product text, Optical Character Recognition (OCR) tokens and visual objects detected in the product image. The framework is further extended with the capability to extract attribute value across multiple product categories with a single model, by training the decoder to predict both product category and attribute value and conditioning its output on product category. The model provides a unified attribute extraction solution desirable at an e-commerce platform that offers numerous product categories with a diverse body of product attributes. We evaluated the model on two product attributes, one with many possible values and one with a small set of possible values, over 14 product categories and found the model could achieve 15% gain on the Recall and 10% gain on the F1 score compared to existing methods using text-only features.
+
+| Comments: | KDD 2021                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| DOI:      | [10.1145/3447548.3467164](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.1145%2F3447548.3467164&v=ffa91bdd) |
+| Cite as:  | **[arXiv:2106.04630](https://arxiv.org/abs/2106.04630) [cs.CV]** |
+|           | (or **[arXiv:2106.04630v1](https://arxiv.org/abs/2106.04630v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-10-2">2. VALUE: A Multi-Task Benchmark for Video-and-Language Understanding Evaluation
+</h2>
+
+Title: [VALUE: A Multi-Task Benchmark for Video-and-Language Understanding Evaluation](https://arxiv.org/abs/2106.04632)
+
+Authors: [Linjie Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Jie Lei](https://arxiv.org/search/cs?searchtype=author&query=Lei%2C+J), [Zhe Gan](https://arxiv.org/search/cs?searchtype=author&query=Gan%2C+Z), [Licheng Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+L), [Yen-Chun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Rohit Pillai](https://arxiv.org/search/cs?searchtype=author&query=Pillai%2C+R), [Yu Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+Y), [Luowei Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+L), [Xin Eric Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X+E), [William Yang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W+Y), [Tamara Lee Berg](https://arxiv.org/search/cs?searchtype=author&query=Berg%2C+T+L), [Mohit Bansal](https://arxiv.org/search/cs?searchtype=author&query=Bansal%2C+M), [Jingjing Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J), [Lijuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Zicheng Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z)
+
+> Most existing video-and-language (VidL) research focuses on a single dataset, or multiple datasets of a single task. In reality, a truly useful VidL system is expected to be easily generalizable to diverse tasks, domains, and datasets. To facilitate the evaluation of such systems, we introduce Video-And-Language Understanding Evaluation (VALUE) benchmark, an assemblage of 11 VidL datasets over 3 popular tasks: (i) text-to-video retrieval; (ii) video question answering; and (iii) video captioning. VALUE benchmark aims to cover a broad range of video genres, video lengths, data volumes, and task difficulty levels. Rather than focusing on single-channel videos with visual information only, VALUE promotes models that leverage information from both video frames and their associated subtitles, as well as models that share knowledge across multiple tasks. We evaluate various baseline methods with and without large-scale VidL pre-training, and systematically investigate the impact of video input channels, fusion methods, and different video representations. We also study the transferability between tasks, and conduct multi-task learning under different settings. The significant gap between our best model and human performance calls for future study for advanced VidL models. VALUE is available at [this https URL](https://value-leaderboard.github.io/).
+
+| Comments: | VALUE is available at [this https URL](https://value-leaderboard.github.io/) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2106.04632](https://arxiv.org/abs/2106.04632) [cs.CV]** |
+|           | (or **[arXiv:2106.04632v1](https://arxiv.org/abs/2106.04632v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-10-3">3. FastSeq: Make Sequence Generation Faster
+</h2>
+
+Title: [FastSeq: Make Sequence Generation Faster](https://arxiv.org/abs/2106.04718)
+
+Authors: [Yu Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+Y), [Fei Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+F), [Jiusheng Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J), [Nikhil Bhendawade](https://arxiv.org/search/cs?searchtype=author&query=Bhendawade%2C+N), [Ting Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+T), [Yeyun Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+Y), [Nan Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan%2C+N), [Desheng Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+D), [Bingyu Chi](https://arxiv.org/search/cs?searchtype=author&query=Chi%2C+B), [Ruifei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+R)
+
+> Transformer-based models have made tremendous impacts in natural language generation. However the inference speed is a bottleneck due to large model size and intensive computing involved in auto-regressive decoding process. We develop FastSeq framework to accelerate sequence generation without accuracy loss. The proposed optimization techniques include an attention cache optimization, an efficient algorithm for detecting repeated n-grams, and an asynchronous generation pipeline with parallel I/O. These optimizations are general enough to be applicable to Transformer-based models (e.g., T5, GPT2, and UniLM). Our benchmark results on a set of widely used and diverse models demonstrate 4-9x inference speed gain. Additionally, FastSeq is easy to use with a simple one-line code change. The source code is available at [this https URL](https://github.com/microsoft/fastseq).
+
+| Comments: | ACL 2021 Demo Track                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2106.04718](https://arxiv.org/abs/2106.04718) [cs.CL]** |
+|           | (or **[arXiv:2106.04718v1](https://arxiv.org/abs/2106.04718v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-10-4">4. Sentence Embeddings using Supervised Contrastive Learning
+</h2>
+
+Title: [Sentence Embeddings using Supervised Contrastive Learning](https://arxiv.org/abs/2106.04791)
+
+Authors: [Danqi Liao](https://arxiv.org/search/cs?searchtype=author&query=Liao%2C+D)
+
+> Sentence embeddings encode sentences in fixed dense vectors and have played an important role in various NLP tasks and systems. Methods for building sentence embeddings include unsupervised learning such as Quick-Thoughts and supervised learning such as InferSent. With the success of pretrained NLP models, recent research shows that fine-tuning pretrained BERT on SNLI and Multi-NLI data creates state-of-the-art sentence embeddings, outperforming previous sentence embeddings methods on various evaluation benchmarks. In this paper, we propose a new method to build sentence embeddings by doing supervised contrastive learning. Specifically our method fine-tunes pretrained BERT on SNLI data, incorporating both supervised crossentropy loss and supervised contrastive loss. Compared with baseline where fine-tuning is only done with supervised cross-entropy loss similar to current state-of-the-art method SBERT, our supervised contrastive method improves 2.8% in average on Semantic Textual Similarity (STS) benchmarks and 1.05% in average on various sentence transfer tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.04791](https://arxiv.org/abs/2106.04791) [cs.CL]** |
+|           | (or **[arXiv:2106.04791v1](https://arxiv.org/abs/2106.04791v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-10-5">5. Probing Multilingual Language Models for Discourse
+</h2>
+
+Title: [Probing Multilingual Language Models for Discourse](https://arxiv.org/abs/2106.04832)
+
+Authors: [Murathan Kurfalı](https://arxiv.org/search/cs?searchtype=author&query=Kurfalı%2C+M), [Robert Östling](https://arxiv.org/search/cs?searchtype=author&query=Östling%2C+R)
+
+> Pre-trained multilingual language models have become an important building block in multilingual natural language processing. In the present paper, we investigate a range of such models to find out how well they transfer discourse-level knowledge across languages. This is done with a systematic evaluation on a broader set of discourse-level tasks than has been previously been assembled. We find that the XLM-RoBERTa family of models consistently show the best performance, by simultaneously being good monolingual models and degrading relatively little in a zero-shot setting. Our results also indicate that model distillation may hurt the ability of cross-lingual transfer of sentence representations, while language dissimilarity at most has a modest effect. We hope that our test suite, covering 5 tasks with a total of 22 languages in 10 distinct families, will serve as a useful evaluation platform for multilingual performance at and beyond the sentence level.
+
+| Comments: | To be presented at RepL4NLP 2021                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.04832](https://arxiv.org/abs/2106.04832) [cs.CL]** |
+|           | (or **[arXiv:2106.04832v1](https://arxiv.org/abs/2106.04832v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-10-6">6. RealTranS: End-to-End Simultaneous Speech Translation with Convolutional Weighted-Shrinking Transformer
+</h2>
+
+Title: [RealTranS: End-to-End Simultaneous Speech Translation with Convolutional Weighted-Shrinking Transformer](https://arxiv.org/abs/2106.04833)
+
+Authors: [Xingshan Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+X), [Liangyou Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q)
+
+> End-to-end simultaneous speech translation (SST), which directly translates speech in one language into text in another language in real-time, is useful in many scenarios but has not been fully investigated. In this work, we propose RealTranS, an end-to-end model for SST. To bridge the modality gap between speech and text, RealTranS gradually downsamples the input speech with interleaved convolution and unidirectional Transformer layers for acoustic modeling, and then maps speech features into text space with a weighted-shrinking operation and a semantic encoder. Besides, to improve the model performance in simultaneous scenarios, we propose a blank penalty to enhance the shrinking quality and a Wait-K-Stride-N strategy to allow local reranking during decoding. Experiments on public and widely-used datasets show that RealTranS with the Wait-K-Stride-N strategy outperforms prior end-to-end models as well as cascaded models in diverse latency settings.
+
+| Comments: | Accepted by ACL2021 Findings                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2106.04833](https://arxiv.org/abs/2106.04833) [cs.CL]** |
+|           | (or **[arXiv:2106.04833v1](https://arxiv.org/abs/2106.04833v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-10-7">7. Instantaneous Grammatical Error Correction with Shallow Aggressive Decoding
+</h2>
+
+Title: [Instantaneous Grammatical Error Correction with Shallow Aggressive Decoding](https://arxiv.org/abs/2106.04970)
+
+Authors: [Xin Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+X), [Tao Ge](https://arxiv.org/search/cs?searchtype=author&query=Ge%2C+T), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F), [Houfeng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H)
+
+> In this paper, we propose Shallow Aggressive Decoding (SAD) to improve the online inference efficiency of the Transformer for instantaneous Grammatical Error Correction (GEC). SAD optimizes the online inference efficiency for GEC by two innovations: 1) it aggressively decodes as many tokens as possible in parallel instead of always decoding only one token in each step to improve computational parallelism; 2) it uses a shallow decoder instead of the conventional Transformer architecture with balanced encoder-decoder depth to reduce the computational cost during inference. Experiments in both English and Chinese GEC benchmarks show that aggressive decoding could yield the same predictions as greedy decoding but with a significant speedup for online inference. Its combination with the shallow decoder could offer an even higher online inference speedup over the powerful Transformer baseline without quality loss. Not only does our approach allow a single model to achieve the state-of-the-art results in English GEC benchmarks: 66.4 F0.5 in the CoNLL-14 and 72.9 F0.5 in the BEA-19 test set with an almost 10x online inference speedup over the Transformer-big model, but also it is easily adapted to other languages. Our code is available at [this https URL](https://github.com/AutoTemp/Shallow-Aggressive-Decoding).
+
+| Comments: | Accepted by ACL2021 (main conference)                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2106.04970](https://arxiv.org/abs/2106.04970) [cs.CL]** |
+|           | (or **[arXiv:2106.04970v1](https://arxiv.org/abs/2106.04970v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-10-8">8. Crosslingual Embeddings are Essential in UNMT for Distant Languages: An English to IndoAryan Case Study
+</h2>
+
+Title: [Crosslingual Embeddings are Essential in UNMT for Distant Languages: An English to IndoAryan Case Study](https://arxiv.org/abs/2106.04995)
+
+Authors: [Tamali Banerjee](https://arxiv.org/search/cs?searchtype=author&query=Banerjee%2C+T), [Rudra Murthy V](https://arxiv.org/search/cs?searchtype=author&query=V%2C+R+M), [Pushpak Bhattacharyya](https://arxiv.org/search/cs?searchtype=author&query=Bhattacharyya%2C+P)
+
+> Recent advances in Unsupervised Neural Machine Translation (UNMT) have minimized the gap between supervised and unsupervised machine translation performance for closely related language pairs. However, the situation is very different for distant language pairs. Lack of lexical overlap and low syntactic similarities such as between English and Indo-Aryan languages leads to poor translation quality in existing UNMT systems. In this paper, we show that initializing the embedding layer of UNMT models with cross-lingual embeddings shows significant improvements in BLEU score over existing approaches with embeddings randomly initialized. Further, static embeddings (freezing the embedding layer weights) lead to better gains compared to updating the embedding layer weights during training (non-static). We experimented using Masked Sequence to Sequence (MASS) and Denoising Autoencoder (DAE) UNMT approaches for three distant language pairs. The proposed cross-lingual embedding initialization yields BLEU score improvement of as much as ten times over the baseline for English-Hindi, English-Bengali, and English-Gujarati. Our analysis shows the importance of cross-lingual embedding, comparisons between approaches, and the scope of improvements in these systems.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.04995](https://arxiv.org/abs/2106.04995) [cs.CL]** |
+|           | (or **[arXiv:2106.04995v1](https://arxiv.org/abs/2106.04995v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-10-9">9. Order-Agnostic Cross Entropy for Non-Autoregressive Machine Translation
+</h2>
+
+Title: [Order-Agnostic Cross Entropy for Non-Autoregressive Machine Translation](https://arxiv.org/abs/2106.05093)
+
+Authors: [Cunxiao Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+C), [Zhaopeng Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+Z), [Jing Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+J)
+
+> We propose a new training objective named order-agnostic cross entropy (OaXE) for fully non-autoregressive translation (NAT) models. OaXE improves the standard cross-entropy loss to ameliorate the effect of word reordering, which is a common source of the critical multimodality problem in NAT. Concretely, OaXE removes the penalty for word order errors, and computes the cross entropy loss based on the best possible alignment between model predictions and target tokens. Since the log loss is very sensitive to invalid references, we leverage cross entropy initialization and loss truncation to ensure the model focuses on a good part of the search space. Extensive experiments on major WMT benchmarks show that OaXE substantially improves translation performance, setting new state of the art for fully NAT models. Further analyses show that OaXE alleviates the multimodality problem by reducing token repetitions and increasing prediction confidence. Our code, data, and trained models are available at [this https URL](https://github.com/tencent-ailab/ICML21_OAXE).
+
+| Comments: | ICML 2021 (Oral), Code at [this https URL](https://github.com/tencent-ailab/ICML21_OAXE) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2106.05093](https://arxiv.org/abs/2106.05093) [cs.CL]** |
+|           | (or **[arXiv:2106.05093v1](https://arxiv.org/abs/2106.05093v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-10-10">10. AUGVIC: Exploiting BiText Vicinity for Low-Resource NMT
+</h2>
+
+Title: [AUGVIC: Exploiting BiText Vicinity for Low-Resource NMT](https://arxiv.org/abs/2106.05141)
+
+Authors: [Tasnim Mohiuddin](https://arxiv.org/search/cs?searchtype=author&query=Mohiuddin%2C+T), [M Saiful Bari](https://arxiv.org/search/cs?searchtype=author&query=Bari%2C+M+S), [Shafiq Joty](https://arxiv.org/search/cs?searchtype=author&query=Joty%2C+S)
+
+> The success of Neural Machine Translation (NMT) largely depends on the availability of large bitext training corpora. Due to the lack of such large corpora in low-resource language pairs, NMT systems often exhibit poor performance. Extra relevant monolingual data often helps, but acquiring it could be quite expensive, especially for low-resource languages. Moreover, domain mismatch between bitext (train/test) and monolingual data might degrade the performance. To alleviate such issues, we propose AUGVIC, a novel data augmentation framework for low-resource NMT which exploits the vicinal samples of the given bitext without using any extra monolingual data explicitly. It can diversify the in-domain bitext data with finer level control. Through extensive experiments on four low-resource language pairs comprising data from different domains, we have shown that our method is comparable to the traditional back-translation that uses extra in-domain monolingual data. When we combine the synthetic parallel data generated from AUGVIC with the ones from the extra monolingual data, we achieve further improvements. We show that AUGVIC helps to attenuate the discrepancies between relevant and distant-domain monolingual data in traditional back-translation. To understand the contributions of different components of AUGVIC, we perform an in-depth framework analysis.
+
+| Comments: | ACL-2021 accepted paper                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.05141](https://arxiv.org/abs/2106.05141) [cs.CL]** |
+|           | (or **[arXiv:2106.05141v1](https://arxiv.org/abs/2106.05141v1) [cs.CL]** for this version) |
 
 
 
