@@ -3,8 +3,17 @@
 # Index
 
 
-- [2021-06-11](#2021-06-11)
+- [2021-06-14](#2021-06-14)
 
+  - [1. One Sense Per Translation](#2021-06-14-1)
+  - [2. Graph Neural Networks for Natural Language Processing: A Survey](#2021-06-14-2)
+  - [3. Bridging Subword Gaps in Pretrain-Finetune Paradigm for Natural Language Generation](#2021-06-14-3)
+  - [4. Towards User-Driven Neural Machine Translation](#2021-06-14-4)
+  - [5. A Discussion on Building Practical NLP Leaderboards: The Case of Machine Translation](#2021-06-14-5)
+  - [6. Improving Pretrained Cross-Lingual Language Models via Self-Labeled Word Alignment](#2021-06-14-6)
+  - [7. Zero-Shot Controlled Generation with Encoder-Decoder Transformers](#2021-06-14-7)
+  - [8. Semi-Supervised and Unsupervised Sense Annotation via Translations](#2021-06-14-8)
+- [2021-06-11](#2021-06-11)
   - [1. Data augmentation to improve robustness of image captioning solutions](#2021-06-11-1)
   - [2. Input Augmentation Improves Constrained Beam Search for Neural Machine Translation: NTT at WAT 2021](#2021-06-11-2)
   - [3. Progressive Multi-Granularity Training for Non-Autoregressive Translation](#2021-06-11-3)
@@ -125,6 +134,161 @@
   - [24. Adapting High-resource NMT Models to Translate Low-resource Related Languages without Parallel Data](#2021-06-01-24)
   - [25. Beyond Noise: Mitigating the Impact of Fine-grained Semantic Divergences on Neural Machine Translation](#2021-06-01-25)
 - [Other Columns](https://github.com/SFFAI-AIKT/AIKT-Natural_Language_Processing/blob/master/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-06-14
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-06-14-1">1. One Sense Per Translation
+</h2>
+
+Title: [One Sense Per Translation](https://arxiv.org/abs/2106.06082)
+
+Authors: [Bradley Hauer](https://arxiv.org/search/cs?searchtype=author&query=Hauer%2C+B), [Grzegorz Kondrak](https://arxiv.org/search/cs?searchtype=author&query=Kondrak%2C+G)
+
+> The idea of using lexical translations to define sense inventories has a long history in lexical semantics. We propose a theoretical framework which allows us to answer the question of why this apparently reasonable idea failed to produce useful results. We formally prove several propositions on how the translations of a word relate to its senses, as well as on the relationship between synonymy and polysemy. We empirically validate our theoretical findings on BabelNet, and demonstrate how they could be used to perform unsupervised word sense disambiguation of a substantial fraction of the lexicon.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.06082](https://arxiv.org/abs/2106.06082) [cs.CL]** |
+|           | (or **[arXiv:2106.06082v1](https://arxiv.org/abs/2106.06082v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-14-2">2. Graph Neural Networks for Natural Language Processing: A Survey
+</h2>
+
+Title: [Graph Neural Networks for Natural Language Processing: A Survey](https://arxiv.org/abs/2106.06090)
+
+Authors: [Lingfei Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+L), [Yu Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Kai Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+K), [Xiaojie Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+X), [Hanning Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+H), [Shucheng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+S), [Jian Pei](https://arxiv.org/search/cs?searchtype=author&query=Pei%2C+J), [Bo Long](https://arxiv.org/search/cs?searchtype=author&query=Long%2C+B)
+
+> Deep learning has become the dominant approach in coping with various tasks in Natural LanguageProcessing (NLP). Although text inputs are typically represented as a sequence of tokens, there isa rich variety of NLP problems that can be best expressed with a graph structure. As a result, thereis a surge of interests in developing new deep learning techniques on graphs for a large numberof NLP tasks. In this survey, we present a comprehensive overview onGraph Neural Networks(GNNs) for Natural Language Processing. We propose a new taxonomy of GNNs for NLP, whichsystematically organizes existing research of GNNs for NLP along three axes: graph construction,graph representation learning, and graph based encoder-decoder models. We further introducea large number of NLP applications that are exploiting the power of GNNs and summarize thecorresponding benchmark datasets, evaluation metrics, and open-source codes. Finally, we discussvarious outstanding challenges for making the full use of GNNs for NLP as well as future researchdirections. To the best of our knowledge, this is the first comprehensive overview of Graph NeuralNetworks for Natural Language Processing.
+
+| Comments: | 127 pages                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2106.06090](https://arxiv.org/abs/2106.06090) [cs.CL]** |
+|           | (or **[arXiv:2106.06090v1](https://arxiv.org/abs/2106.06090v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-14-3">3. Bridging Subword Gaps in Pretrain-Finetune Paradigm for Natural Language Generation
+</h2>
+
+Title: [Bridging Subword Gaps in Pretrain-Finetune Paradigm for Natural Language Generation](https://arxiv.org/abs/2106.06125)
+
+Authors: [Xin Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Baosong Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+B), [Dayiheng Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+D), [Haibo Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H), [Weihua Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+W), [Min Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M), [Haiying Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H), [Jinsong Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+J)
+
+> A well-known limitation in pretrain-finetune paradigm lies in its inflexibility caused by the one-size-fits-all vocabulary. This potentially weakens the effect when applying pretrained models into natural language generation (NLG) tasks, especially for the subword distributions between upstream and downstream tasks with significant discrepancy. Towards approaching this problem, we extend the vanilla pretrain-finetune pipeline with an extra embedding transfer step. Specifically, a plug-and-play embedding generator is introduced to produce the representation of any input token, according to pre-trained embeddings of its morphologically similar ones. Thus, embeddings of mismatch tokens in downstream tasks can also be efficiently initialized. We conduct experiments on a variety of NLG tasks under the pretrain-finetune fashion. Experimental results and extensive analyses show that the proposed strategy offers us opportunities to feel free to transfer the vocabulary, leading to more efficient and better performed downstream NLG models.
+
+| Comments: | Accepted by ACL2021                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.06125](https://arxiv.org/abs/2106.06125) [cs.CL]** |
+|           | (or **[arXiv:2106.06125v1](https://arxiv.org/abs/2106.06125v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-14-4">4. Towards User-Driven Neural Machine Translation
+</h2>
+
+Title: [Towards User-Driven Neural Machine Translation](https://arxiv.org/abs/2106.06200)
+
+Authors: [Huan Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+H), [Liang Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+L), [Baosong Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+B), [Dayiheng Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+D), [Haibo Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H), [Weihua Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+W), [Degen Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+D), [Jinsong Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+J)
+
+> A good translation should not only translate the original content semantically, but also incarnate personal traits of the original text. For a real-world neural machine translation (NMT) system, these user traits (e.g., topic preference, stylistic characteristics and expression habits) can be preserved in user behavior (e.g., historical inputs). However, current NMT systems marginally consider the user behavior due to: 1) the difficulty of modeling user portraits in zero-shot scenarios, and 2) the lack of user-behavior annotated parallel dataset. To fill this gap, we introduce a novel framework called user-driven NMT. Specifically, a cache-based module and a user-driven contrastive learning method are proposed to offer NMT the ability to capture potential user traits from their historical inputs under a zero-shot learning fashion. Furthermore, we contribute the first Chinese-English parallel corpus annotated with user behavior called UDT-Corpus. Experimental results confirm that the proposed user-driven NMT can generate user-specific translations.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.06200](https://arxiv.org/abs/2106.06200) [cs.CL]** |
+|           | (or **[arXiv:2106.06200v1](https://arxiv.org/abs/2106.06200v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-14-5">5. A Discussion on Building Practical NLP Leaderboards: The Case of Machine Translation
+</h2>
+
+Title: [A Discussion on Building Practical NLP Leaderboards: The Case of Machine Translation](https://arxiv.org/abs/2106.06292)
+
+Authors: [Sebastin Santy](https://arxiv.org/search/cs?searchtype=author&query=Santy%2C+S), [Prasanta Bhattacharya](https://arxiv.org/search/cs?searchtype=author&query=Bhattacharya%2C+P)
+
+> Recent advances in AI and ML applications have benefited from rapid progress in NLP research. Leaderboards have emerged as a popular mechanism to track and accelerate progress in NLP through competitive model development. While this has increased interest and participation, the over-reliance on single, and accuracy-based metrics have shifted focus from other important metrics that might be equally pertinent to consider in real-world contexts. In this paper, we offer a preliminary discussion of the risks associated with focusing exclusively on accuracy metrics and draw on recent discussions to highlight prescriptive suggestions on how to develop more practical and effective leaderboards that can better reflect the real-world utility of models.
+
+| Comments: | pre-print: comments and suggestions welcome                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.06292](https://arxiv.org/abs/2106.06292) [cs.CL]** |
+|           | (or **[arXiv:2106.06292v1](https://arxiv.org/abs/2106.06292v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-14-6">6. Improving Pretrained Cross-Lingual Language Models via Self-Labeled Word Alignment
+</h2>
+
+Title: [Improving Pretrained Cross-Lingual Language Models via Self-Labeled Word Alignment](https://arxiv.org/abs/2106.06381)
+
+Authors: [Zewen Chi](https://arxiv.org/search/cs?searchtype=author&query=Chi%2C+Z), [Li Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+L), [Bo Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+B), [Shaohan Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Xian-Ling Mao](https://arxiv.org/search/cs?searchtype=author&query=Mao%2C+X), [Heyan Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+H), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F)
+
+> The cross-lingual language models are typically pretrained with masked language modeling on multilingual text or parallel sentences. In this paper, we introduce denoising word alignment as a new cross-lingual pre-training task. Specifically, the model first self-labels word alignments for parallel sentences. Then we randomly mask tokens in a bitext pair. Given a masked token, the model uses a pointer network to predict the aligned token in the other language. We alternately perform the above two steps in an expectation-maximization manner. Experimental results show that our method improves cross-lingual transferability on various datasets, especially on the token-level tasks, such as question answering, and structured prediction. Moreover, the model can serve as a pretrained word aligner, which achieves reasonably low error rates on the alignment benchmarks. The code and pretrained parameters are available at [this https URL](https://github.com/CZWin32768/XLM-Align).
+
+| Comments: | ACL-2021                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.06381](https://arxiv.org/abs/2106.06381) [cs.CL]** |
+|           | (or **[arXiv:2106.06381v1](https://arxiv.org/abs/2106.06381v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-14-7">7. Zero-Shot Controlled Generation with Encoder-Decoder Transformers
+</h2>
+
+Title: [Zero-Shot Controlled Generation with Encoder-Decoder Transformers](https://arxiv.org/abs/2106.06411)
+
+Authors: [Devamanyu Hazarika](https://arxiv.org/search/cs?searchtype=author&query=Hazarika%2C+D), [Mahdi Namazifar](https://arxiv.org/search/cs?searchtype=author&query=Namazifar%2C+M), [Dilek Hakkani-Tür](https://arxiv.org/search/cs?searchtype=author&query=Hakkani-Tür%2C+D)
+
+> Controlling neural network-based models for natural language generation (NLG) has broad applications in numerous areas such as machine translation, document summarization, and dialog systems. Approaches that enable such control in a zero-shot manner would be of great importance as, among other reasons, they remove the need for additional annotated data and training. In this work, we propose novel approaches for controlling encoder-decoder transformer-based NLG models in a zero-shot manner. This is done by introducing three control knobs; namely, attention biasing, decoder mixing, and context augmentation, that are applied to these models at generation time. These knobs control the generation process by directly manipulating trained NLG models (e.g., biasing cross-attention layers) to realize the desired attributes in the generated outputs. We show that not only are these NLG models robust to such manipulations, but also their behavior could be controlled without an impact on their generation performance. These results, to the best of our knowledge, are the first of their kind. Through these control knobs, we also investigate the role of transformer decoder's self-attention module and show strong evidence that its primary role is maintaining fluency of sentences generated by these models. Based on this hypothesis, we show that alternative architectures for transformer decoders could be viable options. We also study how this hypothesis could lead to more efficient ways for training encoder-decoder transformer models.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.06411](https://arxiv.org/abs/2106.06411) [cs.CL]** |
+|           | (or **[arXiv:2106.06411v1](https://arxiv.org/abs/2106.06411v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-14-8">8. Semi-Supervised and Unsupervised Sense Annotation via Translations
+</h2>
+
+Title: [Semi-Supervised and Unsupervised Sense Annotation via Translations](https://arxiv.org/abs/2106.06462)
+
+Authors: [Bradley Hauer](https://arxiv.org/search/cs?searchtype=author&query=Hauer%2C+B), [Grzegorz Kondrak](https://arxiv.org/search/cs?searchtype=author&query=Kondrak%2C+G), [Yixing Luan](https://arxiv.org/search/cs?searchtype=author&query=Luan%2C+Y), [Arnob Mallik](https://arxiv.org/search/cs?searchtype=author&query=Mallik%2C+A), [Lili Mou](https://arxiv.org/search/cs?searchtype=author&query=Mou%2C+L)
+
+> Acquisition of multilingual training data continues to be a challenge in word sense disambiguation (WSD). To address this problem, unsupervised approaches have been developed in recent years that automatically generate sense annotations suitable for training supervised WSD systems. We present three new methods to creating sense-annotated corpora, which leverage translations, parallel corpora, lexical resources, and contextual and synset embeddings. Our semi-supervised method applies machine translation to transfer existing sense annotations to other languages. Our two unsupervised methods use a knowledge-based WSD system to annotate a parallel corpus, and refine the resulting sense annotations by identifying lexical translations. We obtain state-of-the-art results on standard WSD benchmarks.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.06462](https://arxiv.org/abs/2106.06462) [cs.CL]** |
+|           | (or **[arXiv:2106.06462v1](https://arxiv.org/abs/2106.06462v1) [cs.CL]** for this version) |
+
+
+
 
 
 
